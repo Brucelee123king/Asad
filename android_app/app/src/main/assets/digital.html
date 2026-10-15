@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital Habit Tracker</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#040604;--pn:#090c09;--bd:#1d281a;--ne:#9dff1f;--ne2:#6fd10f;--tx:#e9f0e4;--dim:#8a9984;--off:#33432e}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font-family:'Rajdhani','Segoe UI',system-ui,Arial,sans-serif;font-weight:600;overflow-x:hidden;min-height:100vh}
+#stage{margin:0 auto;position:relative}
+#app{width:520px;transform-origin:0 0;padding:10px;display:flex;flex-direction:column;gap:8px}
+.pn{background:var(--pn);border:1px solid var(--bd);border-radius:6px;padding:10px 12px;position:relative}
+.lab{color:var(--ne);font-size:10px;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-bottom:6px}
+.glow{text-shadow:0 0 8px rgba(157,255,31,.7)}
+.orb{font-family:'Orbitron','Segoe UI',sans-serif}
+
+/* header */
+.hdr{display:grid;grid-template-columns:140px 1fr 150px;align-items:center;gap:6px;padding:14px 12px}
+.quote .q{color:var(--ne);font:900 30px/1 Orbitron,sans-serif;height:20px}
+.quote p{font-size:14px;line-height:1.3;font-weight:700;letter-spacing:.5px;margin:6px 0}
+.quote small{color:var(--ne);font-size:7.5px;letter-spacing:1px}
+.ttl{text-align:center}
+.ttl .d{color:var(--ne);font:500 14px Orbitron,sans-serif;letter-spacing:14px;margin-right:-14px}
+.ttl h1{font:900 56px/1 Orbitron,sans-serif;color:var(--ne);letter-spacing:1px;text-shadow:0 0 14px rgba(157,255,31,.8),0 0 34px rgba(157,255,31,.35)}
+.ttl .t{font:500 22px Orbitron,sans-serif;letter-spacing:10px;margin-right:-10px;color:var(--tx);margin-top:2px}
+.ttl .s{color:var(--ne);font-size:7.5px;letter-spacing:2px;margin-top:8px}
+.focus ul{list-style:none;display:flex;flex-direction:column;gap:5px}
+.focus li{font-size:8.5px;letter-spacing:.8px;display:flex;gap:7px;align-items:center}
+.focus li i{color:var(--ne);font-style:normal;font-size:10px;width:12px;text-align:center}
+.focus .lab{font-size:8.5px}
+
+/* row 2 */
+.r2{display:grid;grid-template-columns:112px 1fr 164px;gap:8px}
+.wk .big{display:flex;align-items:baseline;gap:6px;margin:2px 0 8px}
+.wk input{width:62px;background:transparent;border:0;color:var(--tx);font:500 36px Orbitron,sans-serif;outline:none;-moz-appearance:textfield}
+.wk input::-webkit-outer-spin-button,.wk input::-webkit-inner-spin-button{-webkit-appearance:none}
+.wk .of{font-size:10px;color:var(--dim);letter-spacing:1px}
+.bar{height:5px;background:#1a2216;border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--ne);box-shadow:0 0 6px var(--ne);transition:width .4s}
+.ov{display:flex;flex-direction:column}
+.ov .row{display:flex;align-items:center;gap:12px}
+.ring{position:relative;width:62px;height:62px;flex:none}
+.ring svg{width:62px;height:62px;transform:rotate(-90deg)}
+.ring circle{fill:none;stroke-width:5}
+.ring .v{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:500 15px Orbitron,sans-serif}
+.ov p{font-size:11px;letter-spacing:1.2px;line-height:1.4;font-weight:600}
+.ov svg.hb{width:100%;height:16px;margin-top:2px}
+.ms{display:flex;gap:6px;align-items:center}
+.ms p{font-size:9.5px;line-height:1.55;letter-spacing:1px}
+
+/* tracker grid */
+.tg{padding:10px 8px 8px}
+.tg h2{text-align:center;color:var(--ne);font-size:10px;letter-spacing:2.5px;margin-bottom:8px}
+.gh,.gr{display:flex;align-items:center}
+.gh{height:18px;font-size:8.5px;color:var(--tx);margin-left:64px}
+.gh .l{width:128px;flex:none}
+.gh .w{width:21px;text-align:center;flex:none}
+.gh .p{width:42px;text-align:center;flex:none;color:var(--dim);font-size:7.5px;letter-spacing:.5px}
+.grp{display:flex;border-top:1px solid var(--bd)}
+.gl{width:64px;flex:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;color:var(--ne);font-size:7.5px;letter-spacing:1.2px;text-align:center;line-height:1.2;text-transform:uppercase}
+.gl svg{width:24px;height:24px}
+.gb{flex:1}
+.gr{height:22px}
+.gr .n{width:128px;flex:none;font-size:8.5px;letter-spacing:.7px;line-height:1.1;color:var(--tx)}
+.gr .n small{font-size:7px;color:var(--dim)}
+.gr .p{width:42px;text-align:center;flex:none;font-size:9px;letter-spacing:.5px}
+.gr .c{width:21px;display:flex;justify-content:center;flex:none}
+.dot{width:14px;height:14px;border-radius:50%;border:1.3px solid var(--off);background:transparent;cursor:pointer;padding:0;position:relative;transition:all .15s}
+.dot:hover{border-color:var(--ne2)}
+.dot.on{background:var(--ne);border-color:var(--ne);box-shadow:0 0 7px rgba(157,255,31,.85)}
+.dot.on::after{content:'';position:absolute;left:4px;top:1.5px;width:3px;height:6.5px;border:solid #031003;border-width:0 1.8px 1.8px 0;transform:rotate(45deg)}
+
+/* row: chart + streaks */
+.r3{display:grid;grid-template-columns:1fr 168px;gap:8px}
+.r3 svg{width:100%;height:auto;display:block}
+.st{display:flex;flex-direction:column;gap:10px;margin-top:6px}
+.st div{display:flex;align-items:center;font-size:9.5px;letter-spacing:1px}
+.st i{color:var(--ne);font-style:normal;width:22px;font-size:12px}
+.st span{flex:1}
+.st b{color:var(--ne);font:500 15px Orbitron,sans-serif;margin-right:4px}
+.st em{font-style:normal;font-size:7.5px;color:var(--dim)}
+
+/* row 4 */
+.r4{display:grid;grid-template-columns:1fr 1fr 1.15fr;gap:8px}
+.fa{display:flex;flex-direction:column;gap:9px;margin-top:4px}
+.fa .h{display:flex;justify-content:space-between;font-size:8px;letter-spacing:.8px;margin-bottom:3px}
+.pg{display:flex;gap:8px}
+.pg svg{width:52px;flex:none;filter:drop-shadow(0 0 4px rgba(157,255,31,.5))}
+.pg p{font-size:8px;letter-spacing:.9px;line-height:1.65;color:var(--tx)}
+.pg p b{color:var(--ne);font-weight:700;display:block;letter-spacing:1.2px;margin-top:5px}
+.pg p b:first-child{margin-top:0}
+.lb .qq{color:var(--ne);font:900 18px Orbitron;line-height:1}
+.lb p{font-size:9.5px;line-height:1.45;letter-spacing:.8px;margin:2px 0 6px}
+.lb .ic{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;text-align:center;margin-top:8px;font-size:7px;letter-spacing:.8px;line-height:1.25}
+.lb .ic b{display:block;color:var(--ne);font-size:7.5px;letter-spacing:1px}
+.lb .ic s{text-decoration:none;display:block;color:var(--ne);font-size:15px;margin-bottom:2px}
+.lb .ic span{color:var(--dim);font-size:6.5px}
+
+/* bottom row */
+.r5{display:grid;grid-template-columns:1fr 1.25fr 1fr;gap:8px}
+.af p{font-size:9px;line-height:1.7;letter-spacing:1px}
+.tp .it{display:flex;align-items:center;gap:6px;font-size:8px;letter-spacing:1px;margin-bottom:5px}
+.tp .it span{width:40px}
+.tp .it .bar{flex:1;height:4px}
+.sl{display:flex;align-items:center;justify-content:space-between;gap:4px}
+.sl p{color:var(--ne);font-size:9px;line-height:1.5;letter-spacing:1.5px}
+.rst{align-self:flex-end;background:none;border:0;color:#4d5d48;font:600 9px Rajdhani,sans-serif;letter-spacing:1px;cursor:pointer;padding:2px 4px}
+.rst:hover{color:var(--ne)}
+</style>
+<script>window.__u=(function(){try{var s=JSON.parse(localStorage.getItem('ht.session')||sessionStorage.getItem('ht.session')||'null');return s&&s.user&&!s.guest?'u:'+s.user+'::':'guest::'}catch(e){return ''}})();try{window.Android&&Android.orient('portrait')}catch(e){}</script>
+</head>
+<body>
+<div id="stage"><div id="app">
+
+<div class="pn hdr">
+  <div class="quote"><div class="q">&ldquo;</div><p>DISCIPLINE TODAY, FREEDOM TOMORROW.</p><small>&mdash; FUTURE CA. TEACHER. STRONGER ME.</small></div>
+  <div class="ttl"><div class="d">DIGITAL</div><h1>HABIT</h1><div class="t">TRACKER</div><div class="s">BUILDING MY BEST SELF EVERYDAY.</div></div>
+  <div class="focus"><div class="lab">Current Focus</div><ul>
+    <li><i>&#9830;</i>CA FOUNDATION JOURNEY</li><li><i>&#9830;</i>GROWING AS A TEACHER</li>
+    <li><i>&#9830;</i>STRONGER MIND &amp; BODY</li><li><i>&#9830;</i>FINANCIAL FREEDOM</li><li><i>&#9830;</i>IMPACT &amp; INSPIRATION</li></ul></div>
+</div>
+
+<div class="r2">
+  <div class="pn wk"><div class="lab">Week</div><div class="big"><input id="wkIn" type="number" min="1" max="52" aria-label="Current week"><span class="of">OF 52</span></div><div class="bar"><i id="wkBar"></i></div></div>
+  <div class="pn ov"><div class="lab">Overall Progress</div><div class="row">
+    <div class="ring"><svg viewBox="0 0 62 62"><circle cx="31" cy="31" r="26" stroke="#1a2216"/><circle id="ringArc" cx="31" cy="31" r="26" stroke="#9dff1f" stroke-linecap="round" stroke-dasharray="0 163.4" style="filter:drop-shadow(0 0 4px #9dff1f);transition:stroke-dasharray .5s"/></svg><div class="v" id="ringV">0%</div></div>
+    <p>YOU'VE COME THIS FAR.<br>DON'T STOP NOW.</p></div>
+    <svg class="hb" viewBox="0 0 200 16" preserveAspectRatio="none"><polyline fill="none" stroke="#9dff1f" stroke-width="1" points="0,8 60,8 66,8 70,3 74,13 78,1 82,15 86,8 130,8 134,6 138,10 142,8 200,8"/></svg></div>
+  <div class="pn"><div class="lab">Mission</div><div class="ms"><p>BALANCING MY ROLES.<br>MASTERING MY GOALS.<br>BECOMING UNSTOPPABLE.</p>
+    <svg width="58" height="58" viewBox="0 0 60 60" style="flex:none;filter:drop-shadow(0 0 5px #9dff1f)"><g fill="none" stroke="#9dff1f" stroke-width="2.5"><circle cx="28" cy="32" r="21"/><circle cx="28" cy="32" r="13"/><circle cx="28" cy="32" r="5" fill="#9dff1f"/><path d="M28 32L54 8M54 8v9M54 8h-9" stroke-linecap="round"/></g></svg></div></div>
+</div>
+
+<div class="pn tg"><h2 class="glow">WEEKLY HABIT TRACKER</h2><div id="grid"></div></div>
+
+<div class="r3">
+  <div class="pn"><div class="lab">Consistency Over Time</div><svg id="chart" viewBox="0 0 330 150"></svg></div>
+  <div class="pn"><div class="lab">Streaks</div><div class="st" id="streaks"></div></div>
+</div>
+
+<div class="r4">
+  <div class="pn"><div class="lab">Focus Areas</div><div class="fa" id="focusAreas"></div></div>
+  <div class="pn"><div class="lab">Physical Goals</div><div class="pg">
+    <svg viewBox="0 0 60 120"><g fill="rgba(157,255,31,.08)" stroke="#9dff1f" stroke-width="1"><circle cx="30" cy="10" r="7"/><path d="M22 20Q30 24 38 20L48 28 50 60 46 62 44 38 42 62 44 90 42 116 34 116 31 78 29 78 26 116 18 116 16 90 18 62 16 38 14 62 10 60 12 28Z"/></g><ellipse cx="30" cy="66" rx="9" ry="5" fill="rgba(157,255,31,.45)" stroke="none"/></svg>
+    <p><b>CURRENT FOCUS:</b>TONED CORE<br>BELLY FAT REDUCTION<br>STRONGER HIPS<b>REMEMBER:</b>CONSISTENCY<br>+ PATIENCE<br>= TRANSFORMATION</p></div></div>
+  <div class="pn lb"><div class="lab">Life Balance Reminder</div><div class="qq">&ldquo;</div>
+    <p>YOU'RE NOT JUST PREPARING FOR EXAMS. YOU'RE BUILDING A LIFE YOU'RE PROUD TO LIVE.</p><p style="color:var(--dim)">DON'T BURN OUT.<br>LEVEL UP.</p>
+    <div class="ic"><div><s>&#9998;</s><b>TEACH</b><span>INSPIRE</span></div><div><s>&#9636;</s><b>STUDY</b><span>PROGRESS</span></div><div><s>&#10010;</s><b>TRAIN</b><span>TRANSFORM</span></div><div><s>&#10048;</s><b>REST</b><span>RECHARGE</span></div></div></div>
+</div>
+
+<div class="r5">
+  <div class="pn af"><div class="lab">Daily Affirmation</div><p>I SHOW UP CONSISTENTLY.<br>I TRUST THE PROCESS.<br>I BECOME MY BEST VERSION.</p></div>
+  <div class="pn tp"><div class="lab">Today's Plan</div><div id="plan"></div></div>
+  <div class="pn sl"><p>ONE DAY<br>OR DAY ONE.<br>YOU DECIDE.<br>KEEP GOING.</p>
+    <svg width="34" height="46" viewBox="0 0 34 46" style="filter:drop-shadow(0 0 6px #9dff1f)"><path d="M20 0L2 26h12l-4 20L32 18H19z" fill="#9dff1f"/></svg></div>
+</div>
+<button class="rst" id="rst">RESET ALL TICKS</button>
+
+</div></div>
+
+<script>
+(()=>{
+const $=(s,r=document)=>r.querySelector(s);
+const NE='#9dff1f';
+const ICONS={
+ brain:'<svg viewBox="0 0 24 24" fill="none" stroke="#9dff1f" stroke-width="1.4"><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 3 3 3 0 0 0 1 5 3 3 0 0 0 4 4h1V4zM15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 3 3 3 0 0 1-1 5 3 3 0 0 1-4 4h-1V4z"/><path d="M9 10h2M13 14h2"/></svg>',
+ body:'<svg viewBox="0 0 24 24" fill="none" stroke="#9dff1f" stroke-width="1.6" stroke-linecap="round"><path d="M2 9v6M5 7v10M19 7v10M22 9v6M5 12h14"/></svg>',
+ lotus:'<svg viewBox="0 0 24 24" fill="none" stroke="#9dff1f" stroke-width="1.4"><path d="M12 4c3 3 3 9 0 13-3-4-3-10 0-13zM3 11c5 0 8 3 9 6-5 0-8-2-9-6zM21 11c-5 0-8 3-9 6 5 0 8-2 9-6zM6 19h12"/></svg>',
+ growth:'<svg viewBox="0 0 24 24" fill="none" stroke="#9dff1f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19h18M5 15l5-5 3 3 6-7M15 6h4v4"/></svg>'};
+const GROUPS=[
+ {n:'LIMITLESS MIND',ic:'brain',h:[['CA STUDY','(3+ HRS)',92],['REVISION & NOTES','',83],['MOCK TEST / PYQ','',75],['READ','(30 MINS)',67],['TEACHER PREP','',88]]},
+ {n:'STRONG BODY',ic:'body',h:[['WORKOUT','(45 MINS)',79],['STEPS','(8K+)',95],['PROTEIN-RICH DIET','',71],['TONING FOCUS','(BELLY FAT - ABS)',68],['HIP ENHANCEMENT','',72]]},
+ {n:'BALANCED LIFE',ic:'lotus',h:[['SLEEP','(7-8 HRS)',85],['HYDRATION','(3L+)',93],['MEDITATION','(10 MINS)',76],['NO SCREEN','(BEFORE BED)',81],['SELF CARE','(30 MINS)',70]]},
+ {n:'GROWTH & BALANCE',ic:'growth',h:[['JOURNALING','',60],['GRATITUDE','',84],['SKILL DEVELOPMENT','',72],['FINANCE TRACKING','',66],['TIME BLOCKING','',78]]}];
+const HAB=[];GROUPS.forEach((g,gi)=>g.h.forEach(h=>HAB.push({g:gi,n:h[0],s:h[1],p:h[2]})));
+const NW=12,NH=HAB.length;
+const KEY=(window.__u||'')+'digitalHabitTracker.v1';
+
+function rng(a){return()=>{a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function seed(){const r=rng(12);return HAB.map(h=>{const a=Array(NW).fill(0),c=Math.round(h.p/100*NW);const idx=[...Array(NW).keys()].sort(()=>r()-.5);idx.slice(0,c).forEach(i=>a[i]=1);return a;});}
+let S=null;
+try{const s=JSON.parse(localStorage.getItem(KEY));if(s&&s.g&&s.g.length===NH)S=s;}catch(e){}
+if(!S){S={week:12,g:seed()};save();}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
+
+// grid
+let html='<div class="gh"><div class="l"></div>'+Array.from({length:NW},(_,i)=>`<div class="w">W${i+1}</div>`).join('')+'<div class="p">WEEK %</div></div>';
+GROUPS.forEach((g,gi)=>{
+  html+=`<div class="grp"><div class="gl">${ICONS[g.ic]}<span>${g.n}</span></div><div class="gb">`;
+  g.h.forEach((h,hi)=>{const id=HAB.findIndex(x=>x.g===gi&&x.n===h[0]);
+    html+=`<div class="gr"><div class="n">${h[0]}${h[1]?` <small>${h[1]}</small>`:''}</div>`+
+      Array.from({length:NW},(_,w)=>`<div class="c"><button class="dot" data-h="${id}" data-w="${w}" aria-label="${h[0]} week ${w+1}"></button></div>`).join('')+
+      `<div class="p" data-p="${id}"></div></div>`;});
+  html+='</div></div>';
+});
+$('#grid').innerHTML=html;
+$('#grid').addEventListener('click',e=>{
+  const b=e.target.closest('.dot');if(!b)return;
+  const h=+b.dataset.h,w=+b.dataset.w;S.g[h][w]=S.g[h][w]?0:1;save();paint();update();
+});
+function paint(){document.querySelectorAll('.dot').forEach(b=>b.classList.toggle('on',S.g[+b.dataset.h][+b.dataset.w]===1));}
+
+const sum=a=>a.reduce((x,y)=>x+y,0), avg=a=>a.length?sum(a)/a.length:0;
+const hp=i=>sum(S.g[i])/NW*100;
+
+function update(){
+  HAB.forEach((_,i)=>$(`[data-p="${i}"]`).textContent=Math.round(hp(i))+'%');
+  const total=sum(S.g.map(sum)),all=total/(NH*NW)*100;
+  $('#ringV').textContent=Math.round(all)+'%';
+  const C=2*Math.PI*26;$('#ringArc').setAttribute('stroke-dasharray',(all/100*C)+' '+C);
+  $('#wkIn').value=S.week;$('#wkBar').style.width=(S.week/52*100)+'%';
+
+  // consistency chart
+  const wp=Array.from({length:NW},(_,w)=>sum(S.g.map(r=>r[w]))/NH*100);
+  const W=330,Ht=150,L=34,R=8,T=8,B=22,pw=W-L-R,ph=Ht-T-B;let s='';
+  for(let k=0;k<=4;k++){const y=T+ph*(1-k/4);s+=`<line x1="${L}" x2="${W-R}" y1="${y}" y2="${y}" stroke="#1d281a"/><text x="${L-5}" y="${y+3}" text-anchor="end" font-size="8" fill="#8a9984">${k*25}%</text>`;}
+  const pts=wp.map((v,i)=>[L+pw*i/(NW-1),T+ph*(1-v/100)]);
+  const ln=pts.map((p,i)=>(i?'L':'M')+p[0].toFixed(1)+' '+p[1].toFixed(1)).join(' ');
+  s+=`<defs><linearGradient id="gf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${NE}" stop-opacity=".25"/><stop offset="1" stop-color="${NE}" stop-opacity="0"/></linearGradient></defs>`;
+  s+=`<path d="${ln} L${pts[NW-1][0]} ${T+ph} L${pts[0][0]} ${T+ph}Z" fill="url(#gf)"/><path d="${ln}" fill="none" stroke="${NE}" stroke-width="1.5" style="filter:drop-shadow(0 0 3px ${NE})"/>`;
+  pts.forEach((p,i)=>{s+=`<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="3" fill="${NE}"><title>W${i+1}: ${Math.round(wp[i])}%</title></circle><text x="${p[0].toFixed(1)}" y="${Ht-7}" text-anchor="middle" font-size="8" fill="#8a9984">W${i+1}</text>`;});
+  $('#chart').innerHTML=s;
+
+  // streaks: consecutive ticked weeks ending at the most recent ticked week
+  const streak=i=>{const a=S.g[i];let e=NW-1;while(e>=0&&!a[e])e--;let c=0;while(e>=0&&a[e]){c++;e--;}return c;};
+  const SK=[['✎','CA STUDY',0],['✚','WORKOUT',5],['▤','READ',3],['❊','MEDITATION',12],['⊘','NO SCREEN',13]];
+  $('#streaks').innerHTML=SK.map(k=>`<div><i>${k[0]}</i><span>${k[1]}</span><b>${streak(k[2])}</b><em>${streak(k[2])===1?'WEEK':'WEEKS'}</em></div>`).join('');
+
+  // focus areas
+  const FA=[['CA FOUNDATION',[0,1,2]],['TEACHING EXCELLENCE',[3,4]],['PHYSICAL FITNESS',[5,6,7,8,9]],['MENTAL WELLNESS',[10,11,12,13,14]],['FINANCIAL GROWTH',[17,18]]];
+  $('#focusAreas').innerHTML=FA.map(f=>{const p=Math.round(avg(f[1].map(hp)));return `<div><div class="h"><span>${f[0]}</span><span>${p}%</span></div><div class="bar"><i style="width:${p}%"></i></div></div>`;}).join('');
+
+  // today's plan
+  const PL=[['STUDY',[0,1,2]],['TEACH',[4]],['TRAIN',[5,6,7,8,9]],['GROW',[15,16,17,18,19]]];
+  $('#plan').innerHTML=PL.map(f=>`<div class="it"><span>${f[0]}</span><div class="bar"><i style="width:${avg(f[1].map(hp))}%"></i></div></div>`).join('');
+}
+$('#wkIn').addEventListener('input',e=>{S.week=Math.max(1,Math.min(52,parseInt(e.target.value)||1));save();$('#wkBar').style.width=(S.week/52*100)+'%';});
+$('#wkIn').addEventListener('change',()=>{$('#wkIn').value=S.week;});
+
+let rt=null;const rb=$('#rst');
+rb.onclick=()=>{
+  if(rt){clearTimeout(rt);rt=null;rb.textContent='RESET ALL TICKS';S.g=HAB.map(()=>Array(NW).fill(0));save();paint();update();return;}
+  rb.textContent='TAP AGAIN TO CONFIRM';rt=setTimeout(()=>{rt=null;rb.textContent='RESET ALL TICKS';},3000);
+};
+
+function fit(){const app=$('#app'),st=$('#stage');const s=Math.max(.5,Math.min(1.8,innerWidth/520));
+  app.style.transform='scale('+s+')';st.style.width=(520*s)+'px';st.style.height=(app.offsetHeight*s)+'px';}
+addEventListener('resize',fit);
+paint();update();fit();
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);
+})();
+</script>
+</body>
+</html>

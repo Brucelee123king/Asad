@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Habit Tracker - Welcome</title>
+<style>
+:root{--bg1:#f2f6ff;--bg2:#dbe5fa;--tx:#0b1030;--dim:#5d6a8f;--glass:rgba(255,255,255,.55);--gb:rgba(255,255,255,.9);--sh:rgba(80,110,200,.25);--bl:#2f6bff;--bl2:#4a45e8;--ph:#6d7aa3;--circ:rgba(120,150,235,.28);--circ2:rgba(255,255,255,.55)}
+[data-theme=dark]{--bg1:#0d1330;--bg2:#070a1c;--tx:#f1f4ff;--dim:#93a0cc;--glass:rgba(255,255,255,.07);--gb:rgba(255,255,255,.16);--sh:rgba(0,0,0,.5);--ph:#8591bd;--circ:rgba(80,100,220,.3);--circ2:rgba(255,255,255,.07)}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{min-height:100%}
+body{font-family:'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif;color:var(--tx);background:linear-gradient(160deg,var(--bg1),var(--bg2));min-height:100vh;overflow-x:hidden;position:relative}
+.c{position:fixed;border-radius:50%;pointer-events:none;background:radial-gradient(circle at 30% 25%,var(--circ2),var(--circ));box-shadow:inset 0 0 0 10px var(--circ2),0 10px 40px var(--sh)}
+.c1{width:260px;height:260px;left:-120px;top:-110px}
+.c2{width:150px;height:150px;right:-70px;top:34%}
+.c3{width:230px;height:230px;left:-110px;bottom:-90px}
+.c4{width:300px;height:300px;right:-130px;bottom:-130px}
+.wrap{position:relative;z-index:1;max-width:430px;margin:0 auto;padding:max(20px,env(safe-area-inset-top)) 26px max(24px,env(safe-area-inset-bottom));min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.moon{position:fixed;top:max(16px,env(safe-area-inset-top));right:16px;z-index:5;width:46px;height:46px;border-radius:14px;border:1px solid var(--gb);background:var(--glass);backdrop-filter:blur(8px);box-shadow:0 6px 18px var(--sh);color:var(--tx);cursor:pointer;display:flex;align-items:center;justify-content:center}
+.logo{width:118px;height:118px;border-radius:34px;background:linear-gradient(145deg,rgba(255,255,255,.85),rgba(210,222,250,.5));border:1px solid var(--gb);box-shadow:0 14px 34px var(--sh),inset 0 2px 6px #fff;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+[data-theme=dark] .logo{background:linear-gradient(145deg,rgba(255,255,255,.14),rgba(255,255,255,.04))}
+.logo svg{width:92px;height:92px;filter:drop-shadow(0 6px 8px rgba(30,64,175,.35))}
+h1{font-size:38px;font-weight:800;letter-spacing:-1px}
+.sub{color:var(--dim);letter-spacing:3.5px;font-size:13px;margin:6px 0 22px}
+form{width:100%;display:flex;flex-direction:column;gap:14px}
+.f{position:relative;height:58px;border-radius:20px;background:var(--glass);border:1px solid var(--gb);box-shadow:0 6px 18px var(--sh),inset 0 1px 3px rgba(255,255,255,.7);display:flex;align-items:center;padding:0 16px;gap:14px}
+.f svg{flex:none;width:24px;height:24px;color:var(--dim)}
+.f input{flex:1;min-width:0;border:0;background:transparent;outline:none;font:500 16px inherit;font-family:inherit;color:var(--tx)}
+.f input::placeholder{color:var(--ph)}
+.f:focus-within{border-color:var(--bl);box-shadow:0 0 0 3px rgba(47,107,255,.2),0 6px 18px var(--sh)}
+.eye{background:none;border:0;color:var(--dim);cursor:pointer;display:flex;padding:4px}
+.row{display:flex;align-items:center;justify-content:space-between;font-size:14px}
+.rem{display:flex;align-items:center;gap:10px;cursor:pointer;user-select:none}
+.rem input{display:none}
+.box{width:26px;height:26px;border-radius:8px;background:var(--glass);border:1px solid var(--gb);display:flex;align-items:center;justify-content:center;transition:.15s}
+.rem input:checked+.box{background:linear-gradient(135deg,#2f6bff,#4a45e8);border-color:transparent}
+.box svg{width:16px;height:16px;color:#fff;opacity:0}
+.rem input:checked+.box svg{opacity:1}
+.lnk{background:none;border:0;color:var(--bl);font:600 14px inherit;font-family:inherit;cursor:pointer}
+.go{height:60px;border-radius:30px;border:1px solid rgba(255,255,255,.5);background:linear-gradient(90deg,#2f6bff,#4a45e8);color:#fff;font:700 19px inherit;font-family:inherit;cursor:pointer;position:relative;box-shadow:0 12px 28px rgba(60,80,240,.45);display:flex;align-items:center;justify-content:center}
+.go .ar{position:absolute;right:8px;top:8px;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center}
+.go:active{transform:scale(.985)}
+.guest{height:50px;border-radius:25px;background:var(--glass);border:1px solid var(--gb);color:var(--tx);font:600 15px inherit;font-family:inherit;cursor:pointer;box-shadow:0 6px 18px var(--sh)}
+.msg{min-height:18px;text-align:center;font-size:13px;color:#e5484d;font-weight:600}
+.msg.ok{color:#18a058}
+.or{display:flex;align-items:center;gap:14px;width:100%;margin:20px 0 14px;color:var(--dim);font-size:11px;letter-spacing:3.5px}
+.or:before,.or:after{content:'';flex:1;height:1px;background:var(--bl);opacity:.45}
+.soc{display:flex;gap:18px}
+.soc button{width:84px;height:68px;border-radius:22px;background:var(--glass);border:1px solid var(--gb);box-shadow:0 8px 20px var(--sh);cursor:pointer;display:flex;align-items:center;justify-content:center}
+.soc svg{width:34px;height:34px}
+.mode{margin-top:18px;font-size:13px;color:var(--dim)}
+.tag{margin-top:20px;font-size:11px;letter-spacing:3.5px;color:var(--dim);text-align:center}
+.corner{align-self:flex-end;margin-top:16px;font-size:9.5px;letter-spacing:3px;color:var(--dim);line-height:1.7}
+.corner:after{content:'';display:block;width:24px;height:2px;background:var(--dim);margin-top:6px;opacity:.6}
+@media (max-height:760px){.logo{width:92px;height:92px;border-radius:28px;margin-bottom:12px}.logo svg{width:70px;height:70px}h1{font-size:32px}.sub{margin-bottom:14px}.f{height:52px}.go{height:54px}}
+</style>
+</head>
+<body>
+<div class="c c1"></div><div class="c c2"></div><div class="c c3"></div><div class="c c4"></div>
+<button class="moon" id="theme" aria-label="Toggle dark mode"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z"/></svg></button>
+
+<div class="wrap">
+  <div class="logo"><svg viewBox="0 0 100 100"><defs>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4f7ff"/><stop offset="1" stop-color="#9fb2f0"/></linearGradient>
+    <linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f8bff"/><stop offset="1" stop-color="#1d4ed8"/></linearGradient>
+    <linearGradient id="d" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2f5fe8"/><stop offset="1" stop-color="#1b2f9e"/></linearGradient></defs>
+    <path d="M58 8C76 16 82 34 71 51 67 43 59 39 50 41 59 30 61 19 58 8Z" fill="url(#a)" stroke="#8da2e8" stroke-width=".8"/>
+    <path d="M42 27C62 35 69 55 56 74 52 63 42 57 31 59 42 49 46 38 42 27Z" fill="url(#b)"/>
+    <path d="M27 47C44 56 49 75 36 93 32 82 24 76 12 78 24 69 30 58 27 47Z" fill="url(#d)"/></svg></div>
+  <h1>Welcome</h1>
+  <div class="sub" id="sub">Sign in to continue</div>
+
+  <form id="form" autocomplete="on" novalidate>
+    <label class="f"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg><input id="user" type="text" placeholder="Username or Email" autocomplete="username" autocapitalize="none"></label>
+    <label class="f"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="10" width="16" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.5" r="1.3" fill="currentColor"/></svg><input id="pass" type="password" placeholder="Password" autocomplete="current-password">
+      <button type="button" class="eye" id="eye" aria-label="Show password"><svg id="eyeI" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" style="width:24px;height:24px"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/><path id="slash" d="M4 4l16 16"/></svg></button></label>
+    <div class="row"><label class="rem"><input type="checkbox" id="rem" checked><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span>Remember Me</label><button type="button" class="lnk" id="forgot">Forgot Password?</button></div>
+    <div class="msg" id="msg" role="alert"></div>
+    <button class="go" id="go" type="submit"><span id="goT">Login</span><span class="ar"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+    <button class="guest" id="guest" type="button">Use as a Guest</button>
+  </form>
+  <div class="mode"><span id="modeQ">New here?</span> <button type="button" class="lnk" id="mode">Create account</button></div>
+
+  <div class="or">OR CONTINUE WITH</div>
+  <div class="soc">
+    <button data-s="Google" aria-label="Google"><svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.9 6.1C12.4 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.7c-.6 3-2.3 5.5-4.8 7.2l7.5 5.8c4.4-4.1 7.1-10.1 7.1-17.5z"/><path fill="#FBBC05" d="M10.5 28.7a14.5 14.5 0 0 1 0-9.4l-7.9-6.1a24 24 0 0 0 0 21.6l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.5-5.8c-2.1 1.4-4.8 2.3-8.4 2.3-6.3 0-11.6-4.1-13.5-9.8l-7.9 6.1C6.5 42.6 14.6 48 24 48z"/></svg></button>
+    <button data-s="Discord" aria-label="Discord"><svg viewBox="0 0 48 48"><rect width="48" height="48" rx="12" fill="#5865F2"/><path fill="#fff" d="M33.6 15.4a21 21 0 0 0-5.2-1.6l-.7 1.4a19 19 0 0 0-5.4 0l-.7-1.4a21 21 0 0 0-5.2 1.6C13.100 20.300 12.200 25 12.600 29.700a21 21 0 0 0 6.400 3.200l1.400-2.200c-.8-.3-1.500-.7-2.200-1.100l.5-.4a15 15 0 0 0 12.600 0l.5.4c-.7.4-1.400.8-2.200 1.100l1.400 2.200a21 21 0 0 0 6.400-3.200c.5-5.400-.9-10.100-3.800-14.300zM21 27c-1.200 0-2.100-1.100-2.100-2.400s.9-2.400 2.100-2.400 2.100 1.100 2.100 2.400S22.200 27 21 27zm6 0c-1.200 0-2.100-1.100-2.100-2.400s.9-2.400 2.100-2.400 2.100 1.100 2.100 2.400S28.200 27 27 27z"/></svg></button>
+    <button data-s="Facebook" aria-label="Facebook"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#1877F2"/><path fill="#fff" d="M26.600 38V26h4l.6-4.700h-4.600v-3c0-1.300.4-2.300 2.300-2.300h2.400v-4.200c-.4-.1-1.800-.2-3.500-.2-3.500 0-5.800 2.100-5.800 6v3.700h-4V26h4v12z"/></svg></button>
+  </div>
+  <div class="tag">PLAY &nbsp;&bull;&nbsp; COMPETE &nbsp;&bull;&nbsp; GROW TOGETHER</div>
+  <div class="corner">MORE<br>THAN<br>A GAME</div>
+</div>
+
+<script>
+(()=>{
+const $=s=>document.querySelector(s);
+try{window.Android&&Android.orient('portrait');}catch(e){}
+const ls={get:k=>{try{return localStorage.getItem(k)}catch(e){return null}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}},del:k=>{try{localStorage.removeItem(k)}catch(e){}}};
+const ss={get:k=>{try{return sessionStorage.getItem(k)}catch(e){return null}},set:(k,v)=>{try{sessionStorage.setItem(k,v)}catch(e){}}};
+// already signed in? go straight to the home screen
+if(ls.get('ht.session')||ss.get('ht.session')){location.replace('home.html');return;}
+
+// theme
+function theme(t){document.documentElement.dataset.theme=t;ls.set('ht.theme',t);}
+theme(ls.get('ht.theme')||'light');
+$('#theme').onclick=()=>theme(document.documentElement.dataset.theme==='dark'?'light':'dark');
+
+// helpers
+function hash(str){let h1=0xdeadbeef,h2=0x41c6ce57;for(let i=0;i<str.length;i++){const c=str.charCodeAt(i);h1=Math.imul(h1^c,2654435761);h2=Math.imul(h2^c,1597334677);}
+  h1=Math.imul(h1^(h1>>>16),2246822507)^Math.imul(h2^(h2>>>13),3266489909);h2=Math.imul(h2^(h2>>>16),2246822507)^Math.imul(h1^(h1>>>13),3266489909);
+  return (4294967296*(2097151&h2)+(h1>>>0)).toString(36);}
+const users=()=>{try{return JSON.parse(ls.get('ht.users')||'{}')}catch(e){return {}}};
+const msg=(t,ok)=>{const m=$('#msg');m.textContent=t||'';m.className='msg'+(ok?' ok':'');};
+let create=false;
+function setMode(c){create=c;$('#goT').textContent=c?'Create Account':'Login';$('#sub').textContent=c?'Create your account':'Sign in to continue';
+  $('#mode').textContent=c?'Sign in':'Create account';$('#modeQ').textContent=c?'Already have an account?':'New here?';
+  $('#pass').autocomplete=c?'new-password':'current-password';msg('');}
+$('#mode').onclick=()=>setMode(!create);
+
+function start(sess,remember){
+  const v=JSON.stringify(sess);
+  if(remember){ls.set('ht.session',v);}else{ss.set('ht.session',v);}
+  location.replace('home.html');
+}
+$('#form').addEventListener('submit',e=>{
+  e.preventDefault();
+  const name=$('#user').value.trim(),pw=$('#pass').value,k=name.toLowerCase();
+  if(!name||!pw){msg('Enter your username/email and password.');return;}
+  const U=users();
+  if(create){
+    if(pw.length<6){msg('Password must be at least 6 characters.');return;}
+    if(U[k]){msg('That account already exists. Try signing in.');return;}
+    const salt=Math.random().toString(36).slice(2,10);
+    U[k]={n:name,s:salt,h:hash(salt+pw)};ls.set('ht.users',JSON.stringify(U));
+    start({user:name,guest:false},$('#rem').checked);
+  }else{
+    const a=U[k];
+    if(!a||a.h!==hash(a.s+pw)){msg('Wrong username or password. New here? Tap "Create account".');return;}
+    start({user:a.n,guest:false},$('#rem').checked);
+  }
+});
+$('#guest').onclick=()=>start({user:'Guest',guest:true},true);
+$('#forgot').onclick=()=>msg('Password reset is not available yet. Create a new account or use as a guest.');
+document.querySelectorAll('.soc button').forEach(b=>b.onclick=()=>msg(b.dataset.s+' sign-in is not available yet. Use email or guest.'));
+$('#eye').onclick=()=>{const p=$('#pass'),show=p.type==='password';p.type=show?'text':'password';$('#slash').style.display=show?'none':'';};
+})();
+</script>
+</body>
+</html>

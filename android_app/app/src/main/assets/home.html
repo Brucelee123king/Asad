@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Habit Tracker</title>
+<style>
+:root{--bg1:#f2f6ff;--bg2:#dbe5fa;--tx:#0b1030;--dim:#5d6a8f;--card:rgba(255,255,255,.65);--cb:rgba(255,255,255,.95);--sh:rgba(80,110,200,.25)}
+[data-theme=dark]{--bg1:#0d1330;--bg2:#070a1c;--tx:#f1f4ff;--dim:#93a0cc;--card:rgba(255,255,255,.07);--cb:rgba(255,255,255,.16);--sh:rgba(0,0,0,.5)}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+body{font-family:'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif;color:var(--tx);background:linear-gradient(160deg,var(--bg1),var(--bg2)) fixed;min-height:100vh}
+.wrap{max-width:480px;margin:0 auto;padding:max(22px,env(safe-area-inset-top)) 20px max(28px,env(safe-area-inset-bottom))}
+.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
+.top small{color:var(--dim);font-size:13px;letter-spacing:1px}
+.top h1{font-size:26px;font-weight:800;letter-spacing:-.5px;word-break:break-word}
+.out{border:1px solid var(--cb);background:var(--card);color:var(--tx);border-radius:14px;padding:10px 14px;font:600 13px inherit;font-family:inherit;cursor:pointer;box-shadow:0 6px 16px var(--sh);flex:none}
+h2{font-size:12px;letter-spacing:3px;color:var(--dim);margin-bottom:12px;font-weight:600}
+.list{display:flex;flex-direction:column;gap:14px}
+.t{display:flex;align-items:center;gap:16px;text-align:left;width:100%;padding:16px;border-radius:24px;border:1px solid var(--cb);background:var(--card);box-shadow:0 10px 26px var(--sh);color:var(--tx);cursor:pointer;font-family:inherit}
+.t:active{transform:scale(.985)}
+.pv{width:74px;height:74px;border-radius:20px;flex:none;display:flex;align-items:center;justify-content:center;font-size:30px;box-shadow:inset 0 2px 8px rgba(255,255,255,.35),0 8px 18px var(--sh)}
+.t b{display:block;font-size:18px;margin-bottom:3px}
+.t span{display:block;color:var(--dim);font-size:13px;line-height:1.4}
+.t i{margin-left:auto;font-style:normal;font-size:22px;color:var(--dim)}
+.note{margin-top:22px;color:var(--dim);font-size:12px;line-height:1.5;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><div><small id="hi">WELCOME</small><h1 id="who">Guest</h1></div><button class="out" id="out">Log out</button></div>
+  <h2>YOUR TRACKERS</h2>
+  <div class="list" id="list"></div>
+  <p class="note" id="note"></p>
+</div>
+<script>
+// ---- To add a new tracker: copy its HTML into assets and add one entry below. ----
+const TRACKERS=[
+  {title:'Ultimate Habit Tracker',desc:'Monthly dashboard with weekly bars, progress and insights. Best in landscape.',file:'ultimate.html',icon:'\u{1F3AF}',bg:'linear-gradient(135deg,#1f6df0,#7b3fe4)'},
+  {title:'Digital Habit Tracker',desc:'12-week tracker with streaks, focus areas and a consistency chart.',file:'digital.html',icon:'⚡',bg:'linear-gradient(135deg,#14210a,#6fd10f)'},
+  {title:'Task Tracker Dashboard',desc:'Daily grid for any month. Add your own habits and see the analysis.',file:'task.html',icon:'✅',bg:'linear-gradient(135deg,#4a3ad8,#8b5cf6)'},
+  {title:'Build Your Own Tracker',desc:'Create a custom tracker from your own habits and daily timetable.',file:'custom.html',icon:'\u{1F9E9}',bg:'linear-gradient(135deg,#0ea5b7,#2f6bff)'}
+];
+(()=>{
+const $=s=>document.querySelector(s);
+try{window.Android&&Android.orient('portrait');}catch(e){}
+let sess=null;
+try{sess=JSON.parse(localStorage.getItem('ht.session')||sessionStorage.getItem('ht.session')||'null');}catch(e){}
+if(!sess){location.replace('index.html');return;}
+try{document.documentElement.dataset.theme=localStorage.getItem('ht.theme')||'light';}catch(e){}
+$('#who').textContent=sess.guest?'Guest':sess.user;
+$('#note').textContent=sess.guest?'You are using the app as a guest. Your data is saved on this device only.':'Your data is saved on this device only.';
+$('#list').innerHTML=TRACKERS.map(t=>`<button class="t" data-f="${t.file}"><div class="pv" style="background:${t.bg}">${t.icon}</div><div><b>${t.title}</b><span>${t.desc}</span></div><i>&rsaquo;</i></button>`).join('');
+$('#list').addEventListener('click',e=>{const b=e.target.closest('.t');if(b)location.href=b.dataset.f;});
+$('#out').onclick=()=>{try{localStorage.removeItem('ht.session');sessionStorage.removeItem('ht.session');}catch(e){}location.replace('index.html');};
+})();
+</script>
+</body>
+</html>

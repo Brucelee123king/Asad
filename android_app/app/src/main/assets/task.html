@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Task Tracker Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#090a12;--pn:#11121d;--pn2:#171828;--bd:#20223a;--pu:#6d4df0;--pu2:#8b5cf6;--tx:#eceefb;--dim:#8d90ad;--off:#1a1b2c}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font-family:Inter,'Segoe UI',system-ui,Arial,sans-serif;overflow-x:hidden;min-height:100vh}
+#stage{margin:0 auto;position:relative}
+#app{width:520px;transform-origin:0 0;padding:16px 12px 20px}
+h1{text-align:center;font-size:30px;font-weight:700;letter-spacing:-.5px}
+.sub{text-align:center;color:var(--dim);font-size:13px;margin:4px 0 14px}
+.card{background:var(--pn);border:1px solid var(--bd);border-radius:12px;overflow:hidden;margin-bottom:10px}
+.hbar{background:linear-gradient(90deg,#4a3ad8,#8b5cf6);padding:11px 14px;display:flex;align-items:center;gap:10px}
+.hbar b{font-size:15px;font-weight:600}
+.hbar select{background:rgba(255,255,255,.16);color:#fff;border:0;border-radius:6px;padding:4px 8px;font:500 11px Inter,sans-serif;outline:none;cursor:pointer}
+.hbar select option{color:#111}
+.top{display:grid;grid-template-columns:1.05fr 1fr}
+.sec{padding:12px 14px}
+.sec h3,.pad h3{font-size:10px;font-weight:600;letter-spacing:.8px;color:#c9cbe6;text-transform:uppercase;margin-bottom:8px}
+.top .sec:first-child{border-right:1px solid var(--bd)}
+#bars{width:100%;height:auto;display:block}
+.right{display:flex;gap:10px;align-items:center}
+.stats{display:flex;flex-direction:column;gap:7px;flex:1}
+.stat{background:var(--pn2);border:1px solid var(--bd);border-radius:8px;padding:8px 8px;display:flex;align-items:center;gap:8px}
+.stat .ic{width:22px;height:22px;color:var(--pu2);font-size:15px;display:flex;align-items:center;justify-content:center;flex:none}
+.stat small{display:block;font-size:7.5px;color:var(--dim);letter-spacing:.8px;text-transform:uppercase}
+.stat b{font-size:17px;font-weight:700;line-height:1.1}
+.dn{position:relative;width:104px;flex:none;text-align:center}
+.dn svg{width:104px;height:104px;transform:rotate(-90deg)}
+.dn circle{fill:none;stroke-width:13}
+.dn .c{position:absolute;top:0;left:0;width:104px;height:104px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.dn .c b{font-size:15px}.dn .c span{font-size:6.5px;color:var(--dim);letter-spacing:.8px}
+.lg{font-size:8px;color:var(--dim);display:flex;gap:8px;justify-content:center;margin-top:6px}
+.lg i{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:3px}
+.pad{padding:12px 14px}
+.add{display:flex;gap:8px;margin-bottom:10px}
+.add input{flex:1;background:var(--pn2);border:1px solid var(--bd);border-radius:6px;padding:7px 9px;color:var(--tx);font:400 10px Inter,sans-serif;outline:none}
+.add input:focus{border-color:var(--pu)}
+.add button{background:linear-gradient(90deg,#5a43e6,#7c52f0);color:#fff;border:0;border-radius:6px;padding:7px 14px;font:600 10px Inter,sans-serif;cursor:pointer}
+.gs{overflow-x:auto;border:1px solid var(--bd);border-radius:6px;background:#0d0e18;scrollbar-width:thin;scrollbar-color:#3a3c62 transparent}
+.gt{min-width:max-content}
+.gr{display:flex;height:24px;align-items:center;border-top:1px solid #151628}
+.gr.h{height:22px;border-top:0}
+.nm{width:124px;flex:none;position:sticky;left:0;z-index:2;background:#0f101b;height:100%;display:flex;align-items:center;gap:6px;padding:0 6px;font-size:8.5px;font-weight:500;border-right:1px solid var(--bd)}
+.nm .t{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nm .ic{font-size:10px;width:13px;text-align:center;flex:none}
+.nm .x{background:none;border:0;color:#4a4d70;font-size:11px;cursor:pointer;padding:0 2px;line-height:1}
+.nm .x.arm{color:#ff6b7a;font-size:7.5px;font-weight:600}
+.wh{display:flex;flex:none}
+.wh div{background:linear-gradient(90deg,#4d3bd9,#7c52f0);font-size:8px;font-weight:600;text-align:center;border-right:1px solid #0d0e18;height:22px;line-height:22px;letter-spacing:.4px}
+.dh{height:20px;background:#151628}
+.dh div:not(.nm),.c{width:22px;flex:none;text-align:center}
+.dh div:not(.nm){font-size:8px;color:#c9cbe6;line-height:20px}
+.c{display:flex;justify-content:center}
+.d{width:14px;height:14px;border-radius:4px;border:1px solid #25273f;background:var(--off);cursor:pointer;padding:0;transition:all .15s}
+.d:hover{border-color:var(--pu2)}
+.d.on{border-radius:50%;border-color:#7c52f0;background:radial-gradient(circle at 35% 30%,#a58bff,#5a3de0 70%);box-shadow:0 0 5px rgba(124,82,240,.5)}
+.bot{display:grid;grid-template-columns:1.5fr 1fr;gap:10px}
+.bot .card{margin:0}
+table{width:100%;border-collapse:collapse;font-size:8px}
+th{color:var(--dim);font-weight:500;text-align:center;padding:5px 2px;background:#0f101b;letter-spacing:.3px}
+th:first-child,td:first-child{text-align:left;padding-left:6px}
+td{padding:6px 2px;text-align:center;border-top:1px solid #171829;font-weight:500}
+td:first-child{display:flex;align-items:center;gap:4px;max-width:96px}
+td:first-child span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pb{height:5px;border-radius:3px;background:#1e2038;overflow:hidden;width:48px;margin:0 auto}
+.pb i{display:block;height:100%;background:linear-gradient(90deg,#4d3bd9,#8b5cf6);border-radius:3px;transition:width .3s}
+.tn{list-style:none;display:flex;flex-direction:column}
+.tn li{display:flex;align-items:center;gap:9px;padding:7px 0;border-bottom:1px solid #1a1b2e;font-size:9px;font-weight:500}
+.tn li:last-child{border-bottom:0}
+.tn b{width:18px;height:18px;border-radius:50%;background:linear-gradient(135deg,#5a43e6,#8b5cf6);display:flex;align-items:center;justify-content:center;font-size:8.5px;flex:none}
+.tn span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rst{display:block;margin:10px auto 0;background:none;border:0;color:#4a4d70;font:500 10px Inter,sans-serif;cursor:pointer}
+.rst:hover{color:var(--pu2)}
+</style>
+<script>window.__u=(function(){try{var s=JSON.parse(localStorage.getItem('ht.session')||sessionStorage.getItem('ht.session')||'null');return s&&s.user&&!s.guest?'u:'+s.user+'::':'guest::'}catch(e){return ''}})();try{window.Android&&Android.orient('portrait')}catch(e){}</script>
+</head>
+<body>
+<div id="stage"><div id="app">
+<h1>Task Tracker Dashboard</h1>
+<div class="sub">Build better habits, one day at a time.</div>
+
+<div class="card">
+  <div class="hbar"><b>Task Tracker &mdash;</b><select id="selM" aria-label="Month"></select><select id="selY" aria-label="Year"></select></div>
+  <div class="top">
+    <div class="sec"><h3>Daily Progress</h3><svg id="bars" viewBox="0 0 250 170"></svg></div>
+    <div class="sec right">
+      <div class="stats">
+        <div class="stat"><div class="ic">&#9678;</div><div><small>Total Goals</small><b id="sT">0</b></div></div>
+        <div class="stat"><div class="ic">&#10003;</div><div><small>Completed</small><b id="sC">0</b></div></div>
+        <div class="stat"><div class="ic">&#8987;</div><div><small>Left</small><b id="sL">0</b></div></div>
+      </div>
+      <div><div class="dn"><svg viewBox="0 0 104 104"><circle cx="52" cy="52" r="42" stroke="#1d1f36"/><circle id="arc" cx="52" cy="52" r="42" stroke="#5a43e6" stroke-dasharray="0 264" style="transition:stroke-dasharray .5s"/></svg><div class="c"><b id="dP">0%</b><span>COMPLETED</span></div></div>
+      <div class="lg"><span><i style="background:#5a43e6"></i>Completed</span><span><i style="background:#2a2c48"></i>Left</span></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="card pad">
+  <h3>Week Overview</h3>
+  <div class="add"><input id="newH" type="text" maxlength="40" placeholder="Add a new habit..." aria-label="New habit name"><button id="addB">Add Habit</button></div>
+  <div class="gs"><div class="gt" id="grid"></div></div>
+</div>
+
+<div class="bot">
+  <div class="card pad"><h3>Analysis</h3>
+    <table><thead><tr><th>HABIT</th><th>GOAL</th><th>ACTUAL</th><th>LEFT</th><th>PROGRESS</th><th>%</th></tr></thead><tbody id="an"></tbody></table></div>
+  <div class="card pad"><h3>Top 10 Habits</h3><ul class="tn" id="top"></ul></div>
+</div>
+<button class="rst" id="rst">Reset this month</button>
+</div></div>
+
+<script>
+(()=>{
+const $=(s,r=document)=>r.querySelector(s);
+const MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];
+const DEF=[['☀️','Wake up at 06:00',87],['🏋️','Gym',61],['📖','Reading / Learning',55],['📅','Day Planning',61],['⏰','No Snoozing',26],['💼','Project Work',52],['🚫','No Alcohol',58],['💬','Social Media Detox',52],['🚿','Cold Shower',45],['👟','10K Steps',52],['📝','Plan Tomorrow',55]];
+const KEY=(window.__u||'')+'taskTrackerDashboard.v1';
+function rng(a){return()=>{a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+let S=null;
+try{const s=JSON.parse(localStorage.getItem(KEY));if(s&&s.habits)S=s;}catch(e){}
+if(!S){
+  S={habits:DEF.map((d,i)=>({id:i+1,i:d[0],n:d[1]})),next:DEF.length+1,months:{},y:2026,m:3};
+  const r=rng(3);S.months['2026-3']={};
+  DEF.forEach((d,i)=>{const p=d[2]/100*31/16;S.months['2026-3'][i+1]=Array.from({length:31},(_,k)=>r()<(k<16?Math.min(.97,p):.02)?1:0);});
+  save();
+}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
+const key=()=>S.y+'-'+S.m, nd=()=>new Date(S.y,S.m,0).getDate();
+function md(){
+  const k=key(),n=nd();if(!S.months[k])S.months[k]={};
+  S.habits.forEach(h=>{let a=S.months[k][h.id];if(!a)a=S.months[k][h.id]=Array(n).fill(0);while(a.length<n)a.push(0);});
+  return S.months[k];
+}
+const sum=a=>a.reduce((x,y)=>x+y,0);
+
+const selM=$('#selM'),selY=$('#selY');
+MONTHS.forEach((m,i)=>selM.add(new Option(m,i+1)));
+for(let y=2020;y<=2040;y++)selY.add(new Option(y,y));
+selM.value=S.m;selY.value=S.y;
+selM.onchange=()=>{S.m=+selM.value;save();build();};
+selY.onchange=()=>{S.y=+selY.value;save();build();};
+
+const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+function build(){
+  const n=nd(),D=md(),wk=Math.ceil(n/7);
+  let h='<div class="gr h"><div class="nm"></div><div class="wh">';
+  for(let w=0;w<wk;w++){const len=Math.min(7,n-w*7);h+=`<div style="width:${len*22}px">WEEK ${w+1}</div>`;}
+  h+='</div></div><div class="gr h dh"><div class="nm" style="background:#151628"></div>'+Array.from({length:n},(_,i)=>`<div>${i+1}</div>`).join('')+'</div>';
+  S.habits.forEach(x=>{
+    h+=`<div class="gr"><div class="nm"><span class="ic">${x.i}</span><span class="t" title="${esc(x.n)}">${esc(x.n)}</span><button class="x" data-del="${x.id}" aria-label="Delete habit">&times;</button></div>`+
+      Array.from({length:n},(_,d)=>`<div class="c"><button class="d" data-h="${x.id}" data-d="${d}" aria-label="${esc(x.n)} day ${d+1}"></button></div>`).join('')+'</div>';
+  });
+  $('#grid').innerHTML=h;
+  document.querySelectorAll('.d').forEach(b=>b.classList.toggle('on',D[b.dataset.h][+b.dataset.d]===1));
+  update();fit();
+}
+$('#grid').addEventListener('click',e=>{
+  const b=e.target.closest('.d');
+  if(b){const D=md(),id=b.dataset.h,d=+b.dataset.d;D[id][d]=D[id][d]?0:1;b.classList.toggle('on',D[id][d]===1);save();update();return;}
+  const x=e.target.closest('.x');
+  if(x){
+    if(x.classList.contains('arm')){const id=+x.dataset.del;S.habits=S.habits.filter(h=>h.id!==id);Object.values(S.months).forEach(m=>delete m[id]);save();build();}
+    else{x.classList.add('arm');x.textContent='Delete?';setTimeout(()=>{x.classList.remove('arm');x.innerHTML='&times;';},3000);}
+  }
+});
+function addHabit(){
+  const v=$('#newH').value.trim();if(!v)return;
+  S.habits.push({id:S.next++,i:'✦',n:v});$('#newH').value='';save();build();
+  const g=$('#grid').parentNode;g.scrollTop=0;
+}
+$('#addB').onclick=addHabit;
+$('#newH').addEventListener('keydown',e=>{if(e.key==='Enter')addHabit();});
+
+function update(){
+  const n=nd(),D=md(),H=S.habits.length,wk=Math.ceil(n/7);
+  const rows=S.habits.map(h=>{const a=D[h.id].slice(0,n),c=sum(a);return {h,c,left:n-c,p:Math.round(c/n*100)};});
+  const total=H*n,done=sum(rows.map(r=>r.c)),pct=total?done/total*100:0;
+  $('#sT').textContent=total;$('#sC').textContent=done;$('#sL').textContent=total-done;
+  $('#dP').textContent=(Math.round(pct*10)/10).toFixed(1)+'%';
+  const C=2*Math.PI*42;$('#arc').setAttribute('stroke-dasharray',(pct/100*C)+' '+C);
+
+  // weekly bars
+  const L=26,R=6,T=14,B=22,W=250,Ht=170,pw=W-L-R,ph=Ht-T-B;
+  let s='<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9a7bff"/><stop offset="1" stop-color="#4b3bd0"/></linearGradient></defs>';
+  [0,25,50,75,100].forEach(v=>{const y=T+ph*(1-v/100);s+=`<line x1="${L}" x2="${W-R}" y1="${y}" y2="${y}" stroke="#1b1d33"/><text x="${L-5}" y="${y+3}" text-anchor="end" font-size="8" fill="#8d90ad">${v}</text>`;});
+  const slot=pw/5;
+  for(let w=0;w<wk;w++){
+    const a=w*7,b=Math.min(a+7,n);let c=0;rows.forEach(r=>{c+=sum(D[r.h.id].slice(a,b));});
+    const p=H?Math.round(c/(H*(b-a))*100):0,bh=Math.max(1.5,ph*p/100),x=L+slot*w+slot/2-14;
+    s+=`<rect x="${x}" y="${T+ph-bh}" width="28" height="${bh}" rx="2" fill="url(#bg)"/><text x="${x+14}" y="${T+ph-bh-4}" text-anchor="middle" font-size="8" font-weight="600" fill="#eceefb">${p}%</text><text x="${x+14}" y="${Ht-7}" text-anchor="middle" font-size="7.5" fill="#8d90ad">WEEK ${w+1}</text>`;
+  }
+  $('#bars').innerHTML=s;
+
+  $('#an').innerHTML=rows.map(r=>`<tr><td><span>${r.h.i}</span><span title="${esc(r.h.n)}">${esc(r.h.n)}</span></td><td>${n}</td><td>${r.c}</td><td>${r.left}</td><td><div class="pb"><i style="width:${r.p}%"></i></div></td><td>${r.p}%</td></tr>`).join('');
+  const top=rows.map((r,i)=>({r,i})).sort((a,b)=>b.r.p-a.r.p||a.i-b.i).slice(0,10);
+  $('#top').innerHTML=top.map((t,i)=>`<li><b>${i+1}</b><span>${esc(t.r.h.n)}</span></li>`).join('');
+}
+let rt=null;const rb=$('#rst');
+rb.onclick=()=>{
+  if(rt){clearTimeout(rt);rt=null;rb.textContent='Reset this month';delete S.months[key()];save();build();return;}
+  rb.textContent='Tap again to confirm';rt=setTimeout(()=>{rt=null;rb.textContent='Reset this month';},3000);
+};
+function fit(){const app=$('#app'),st=$('#stage');const s=Math.max(.5,Math.min(1.8,innerWidth/520));
+  app.style.transform='scale('+s+')';st.style.width=(520*s)+'px';st.style.height=(app.offsetHeight*s)+'px';}
+addEventListener('resize',fit);
+build();
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);
+})();
+</script>
+</body>
+</html>
