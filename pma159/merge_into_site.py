@@ -27,10 +27,22 @@ def sub(a, b, count=1):
     s = s.replace(a, b)
 
 # insert data right after the ALL object
+SPLIT_JS = '''(function () {
+            const NEW = {};
+            Object.keys(ALL).forEach(k => {
+                const a = parseInt(k.split('-')[0], 10), b = parseInt(k.split('-')[1], 10), arr = ALL[k];
+                const half = arr.length / 2;
+                NEW[a + '-' + (a + half - 1)] = arr.slice(0, half).map((q, i) => Object.assign({}, q, { id: i + 1 }));
+                NEW[(a + half) + '-' + b] = arr.slice(half).map((q, i) => Object.assign({}, q, { id: i + 1 }));
+            });
+            Object.keys(ALL).forEach(k => delete ALL[k]);
+            Object.assign(ALL, NEW);
+        })();
+        '''
 m = re.search(r'const ALL = ', s)
 eol = s.index('\n', m.start())
 assert s[:eol].rstrip().endswith(';')
-s = s[:eol] + '\n        const PMA_DATA = ' + json.dumps(PMA, ensure_ascii=False) + ';\n        Object.assign(ALL, PMA_DATA);\n        let TEST_SECS = 1200;\n        const isPMA = k => String(k).indexOf("PMA-") === 0;' + s[eol:]
+s = s[:eol] + '\n        const PMA_DATA = ' + json.dumps(PMA, ensure_ascii=False) + ';\n        ' + SPLIT_JS + 'Object.assign(ALL, PMA_DATA);\n        let TEST_SECS = 1200;\n        const isPMA = k => String(k).indexOf("PMA-") === 0;' + s[eol:]
 
 # ---- 2. second section on the selection page ----
 sub('<div id="test-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>',
@@ -65,11 +77,11 @@ sub("            renderSelect(); window.scrollTo(0, 0);\n        }\n\n        fu
 # ---- 4. selectTest: labels + per-test time ----
 sub("const label = k.replace('-', '–');\n            document.getElementById('q-total').textContent = quizData.length;\n            document.getElementById('home-badge').textContent = '100 MCQs (Original Questions ' + label + ')';\n            document.getElementById('home-desc').textContent = 'Challenge yourself with 100 MCQs from original questions ' + label + '.';",
     """const label = k.replace('-', '–');
-            TEST_SECS = isPMA(k) ? 600 : 1200;
+            TEST_SECS = 600;
             const nQ = quizData.length, nMin = TEST_SECS / 60;
             document.getElementById('q-total').textContent = nQ;
-            document.getElementById('home-badge').textContent = isPMA(k) ? (nQ + ' MCQs (PMA 159 Long Course – Part ' + k.slice(4) + ')') : ('100 MCQs (Original Questions ' + label + ')');
-            document.getElementById('home-desc').textContent = isPMA(k) ? ('Practice ' + nQ + ' MCQs from PMA 159 test experiences. Every answer shows a reason.') : ('Challenge yourself with 100 MCQs from original questions ' + label + '.');
+            document.getElementById('home-badge').textContent = isPMA(k) ? (nQ + ' MCQs (PMA 159 Long Course – Part ' + k.slice(4) + ')') : (nQ + ' MCQs (Original Questions ' + label + ')');
+            document.getElementById('home-desc').textContent = isPMA(k) ? ('Practice ' + nQ + ' MCQs from PMA 159 test experiences. Every answer shows a reason.') : ('Challenge yourself with ' + nQ + ' MCQs from original questions ' + label + '.');
             document.getElementById('info-total').textContent = nQ + ' MCQs';
             document.getElementById('info-time').textContent = nMin + ' Minutes';
             document.getElementById('info-timer-note').textContent = '• The quiz will auto-submit when the ' + nMin + '-minute timer expires.';""")
@@ -87,6 +99,14 @@ sub("""                    <div class="space-y-1.5 pt-1">${optionsHtml}</div>
                 `;""", """                    <div class="space-y-1.5 pt-1">${optionsHtml}</div>
                     ${q.pma ? '<div class="p-3 rounded-lg text-xs sm:text-sm bg-emerald-50 text-emerald-900"><b>Reason:</b> ' + q.facts + '</div>' : ''}
                 `;""")
+
+# ---- 8. 20 tests of 50 MCQs ----
+sub('10 Tests &bull; 1000 MCQs', '20 Tests &bull; 1000 MCQs')
+sub('Original questions 1 to 1000, in 10 tests of 100 MCQs each, all questions included.', 'Original questions 1 to 1000, in 20 tests of 50 MCQs each, all questions included.')
+sub('${ALL[k].length} MCQs &bull; 20 Minutes &bull; Instant feedback</div>\n                    <div class="text-sm font-semibold text-indigo-600">', '${ALL[k].length} MCQs &bull; 10 Minutes &bull; Instant feedback</div>\n                    <div class="text-sm font-semibold text-indigo-600">')
+sub('<div id="info-total" class="text-lg font-bold text-slate-900">100 MCQs</div>', '<div id="info-total" class="text-lg font-bold text-slate-900">50 MCQs</div>')
+sub('<div id="info-time" class="text-lg font-bold text-slate-900">20 Minutes</div>', '<div id="info-time" class="text-lg font-bold text-slate-900">10 Minutes</div>')
+sub('auto-submit when the 20-minute timer expires.</p>', 'auto-submit when the 10-minute timer expires.</p>')
 
 # ---- 6. branding: Asadullah Notes, Asad signature ----
 import base64, os
