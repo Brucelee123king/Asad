@@ -1,14 +1,36 @@
 plugins { id 'com.android.application' }
+
+// Release signing: copy keystore.properties.template to keystore.properties (never commit it)
+def ksFile = rootProject.file('keystore.properties')
+def ks = new Properties()
+if (ksFile.exists()) ksFile.withInputStream { ks.load(it) }
+
 android {
     namespace 'com.habittracker.app'
-    compileSdk 34
+    compileSdk 35
     defaultConfig {
         applicationId 'com.habittracker.app'
         minSdk 24
-        targetSdk 34
-        versionCode 1
-        versionName '1.0'
+        targetSdk 35
+        versionCode 3
+        versionName '2.0.0'
     }
-    buildTypes { release { minifyEnabled false } }
+    signingConfigs {
+        release {
+            if (ks['storeFile']) {
+                storeFile file(ks['storeFile'])
+                storePassword ks['storePassword']
+                keyAlias ks['keyAlias']
+                keyPassword ks['keyPassword']
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig ks['storeFile'] ? signingConfigs.release : null
+        }
+    }
     compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+    lint { abortOnError false }
 }

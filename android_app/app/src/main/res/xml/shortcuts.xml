@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:shortcutId="add" android:enabled="true" android:icon="@mipmap/ic_launcher" android:shortcutShortLabel="@string/sc_add">
+        <intent android:action="android.intent.action.VIEW" android:data="habitflow://add" android:targetPackage="com.habittracker.app" android:targetClass="com.habittracker.app.MainActivity"/>
+    </shortcut>
+    <shortcut android:shortcutId="focus" android:enabled="true" android:icon="@mipmap/ic_launcher" android:shortcutShortLabel="@string/sc_focus">
+        <intent android:action="android.intent.action.VIEW" android:data="habitflow://focus" android:targetPackage="com.habittracker.app" android:targetClass="com.habittracker.app.MainActivity"/>
+    </shortcut>
+    <shortcut android:shortcutId="journal" android:enabled="true" android:icon="@mipmap/ic_launcher" android:shortcutShortLabel="@string/sc_journal">
+        <intent android:action="android.intent.action.VIEW" android:data="habitflow://journal" android:targetPackage="com.habittracker.app" android:targetClass="com.habittracker.app.MainActivity"/>
+    </shortcut>
+</shortcuts>

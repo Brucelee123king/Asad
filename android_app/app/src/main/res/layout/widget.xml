@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/w_root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="14dp" android:background="@drawable/widget_bg">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="HabitFlow · Today" android:textColor="#9AA3B2" android:textSize="12sp" android:textStyle="bold"/>
+    <TextView android:id="@+id/w_pct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="–" android:textColor="#FFFFFF" android:textSize="32sp" android:textStyle="bold"/>
+    <TextView android:id="@+id/w_sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Open HabitFlow" android:textColor="#C9D2E3" android:textSize="12sp"/>
+    <TextView android:id="@+id/w_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:textColor="#7EA6FF" android:textSize="12sp" android:maxLines="3" android:ellipsize="end"/>
+</LinearLayout>

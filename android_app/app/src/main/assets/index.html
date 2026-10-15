@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Habit Tracker - Welcome</title>
+<title>HabitFlow</title>
 <style>
 :root{--bg1:#f2f6ff;--bg2:#dbe5fa;--tx:#0b1030;--dim:#5d6a8f;--glass:rgba(255,255,255,.55);--gb:rgba(255,255,255,.9);--sh:rgba(80,110,200,.25);--bl:#2f6bff;--bl2:#4a45e8;--ph:#6d7aa3;--circ:rgba(120,150,235,.28);--circ2:rgba(255,255,255,.55)}
 [data-theme=dark]{--bg1:#0d1330;--bg2:#070a1c;--tx:#f1f4ff;--dim:#93a0cc;--glass:rgba(255,255,255,.07);--gb:rgba(255,255,255,.16);--sh:rgba(0,0,0,.5);--ph:#8591bd;--circ:rgba(80,100,220,.3);--circ2:rgba(255,255,255,.07)}
@@ -17,10 +17,18 @@ body{font-family:'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif;colo
 .c4{width:300px;height:300px;right:-130px;bottom:-130px}
 .wrap{position:relative;z-index:1;max-width:430px;margin:0 auto;padding:max(20px,env(safe-area-inset-top)) 26px max(24px,env(safe-area-inset-bottom));min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center}
 .moon{position:fixed;top:max(16px,env(safe-area-inset-top));right:16px;z-index:5;width:46px;height:46px;border-radius:14px;border:1px solid var(--gb);background:var(--glass);backdrop-filter:blur(8px);box-shadow:0 6px 18px var(--sh);color:var(--tx);cursor:pointer;display:flex;align-items:center;justify-content:center}
-.logo{width:118px;height:118px;border-radius:34px;background:linear-gradient(145deg,rgba(255,255,255,.85),rgba(210,222,250,.5));border:1px solid var(--gb);box-shadow:0 14px 34px var(--sh),inset 0 2px 6px #fff;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.logo{width:118px;height:118px;border-radius:30px;box-shadow:0 14px 34px var(--sh);margin-bottom:20px;overflow:hidden}
 [data-theme=dark] .logo{background:linear-gradient(145deg,rgba(255,255,255,.14),rgba(255,255,255,.04))}
 .logo svg{width:92px;height:92px;filter:drop-shadow(0 6px 8px rgba(30,64,175,.35))}
 h1{font-size:38px;font-weight:800;letter-spacing:-1px}
+.brandname{font-weight:700;color:var(--bl);letter-spacing:2px;font-size:13px;margin-top:2px}
+.modal[hidden]{display:none}
+.modal{position:fixed;inset:0;z-index:20;background:rgba(5,10,30,.45);display:flex;align-items:center;justify-content:center;padding:20px}
+.modal>div{background:var(--bg1);color:var(--tx);border-radius:22px;padding:22px;max-width:400px;width:100%;max-height:85vh;overflow:auto;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.modal h2{font-size:20px;margin-bottom:10px}.modal p{font-size:14px;line-height:1.5;color:var(--dim);margin-bottom:10px}
+.modal .code{font:700 22px monospace;letter-spacing:2px;text-align:center;background:var(--glass);border:1px dashed var(--bl);border-radius:14px;padding:14px;margin:10px 0;user-select:all;color:var(--tx)}
+.modal input{width:100%;height:48px;border-radius:14px;border:1px solid var(--gb);background:var(--glass);padding:0 14px;margin-bottom:10px;font-size:15px;color:var(--tx)}
+.legal{margin-top:10px;font-size:12px;color:var(--dim)}
 .sub{color:var(--dim);letter-spacing:3.5px;font-size:13px;margin:6px 0 22px}
 form{width:100%;display:flex;flex-direction:column;gap:14px}
 .f{position:relative;height:58px;border-radius:20px;background:var(--glass);border:1px solid var(--gb);box-shadow:0 6px 18px var(--sh),inset 0 1px 3px rgba(255,255,255,.7);display:flex;align-items:center;padding:0 16px;gap:14px}
@@ -56,18 +64,13 @@ form{width:100%;display:flex;flex-direction:column;gap:14px}
 </style>
 </head>
 <body>
+<div class="modal" id="modal" hidden><div id="mbox"></div></div>
 <div class="c c1"></div><div class="c c2"></div><div class="c c3"></div><div class="c c4"></div>
 <button class="moon" id="theme" aria-label="Toggle dark mode"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z"/></svg></button>
 
 <div class="wrap">
-  <div class="logo"><svg viewBox="0 0 100 100"><defs>
-    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4f7ff"/><stop offset="1" stop-color="#9fb2f0"/></linearGradient>
-    <linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f8bff"/><stop offset="1" stop-color="#1d4ed8"/></linearGradient>
-    <linearGradient id="d" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2f5fe8"/><stop offset="1" stop-color="#1b2f9e"/></linearGradient></defs>
-    <path d="M58 8C76 16 82 34 71 51 67 43 59 39 50 41 59 30 61 19 58 8Z" fill="url(#a)" stroke="#8da2e8" stroke-width=".8"/>
-    <path d="M42 27C62 35 69 55 56 74 52 63 42 57 31 59 42 49 46 38 42 27Z" fill="url(#b)"/>
-    <path d="M27 47C44 56 49 75 36 93 32 82 24 76 12 78 24 69 30 58 27 47Z" fill="url(#d)"/></svg></div>
-  <h1>Welcome</h1>
+  <div class="logo"><img src="icon.png" alt="HabitFlow logo" style="width:100%;height:100%;border-radius:30px;object-fit:cover"></div>
+  <h1>Welcome</h1><div class="brandname">HabitFlow</div>
   <div class="sub" id="sub">Sign in to continue</div>
 
   <form id="form" autocomplete="on" novalidate>
@@ -87,61 +90,83 @@ form{width:100%;display:flex;flex-direction:column;gap:14px}
     <button data-s="Discord" aria-label="Discord"><svg viewBox="0 0 48 48"><rect width="48" height="48" rx="12" fill="#5865F2"/><path fill="#fff" d="M33.6 15.4a21 21 0 0 0-5.2-1.6l-.7 1.4a19 19 0 0 0-5.4 0l-.7-1.4a21 21 0 0 0-5.2 1.6C13.100 20.300 12.200 25 12.600 29.700a21 21 0 0 0 6.400 3.200l1.400-2.200c-.8-.3-1.500-.7-2.200-1.100l.5-.4a15 15 0 0 0 12.600 0l.5.4c-.7.4-1.400.8-2.200 1.100l1.400 2.200a21 21 0 0 0 6.400-3.200c.5-5.400-.9-10.100-3.800-14.300zM21 27c-1.200 0-2.100-1.100-2.100-2.400s.9-2.400 2.100-2.400 2.100 1.100 2.100 2.400S22.200 27 21 27zm6 0c-1.200 0-2.100-1.100-2.100-2.400s.9-2.400 2.100-2.400 2.100 1.100 2.100 2.400S28.200 27 27 27z"/></svg></button>
     <button data-s="Facebook" aria-label="Facebook"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="#1877F2"/><path fill="#fff" d="M26.600 38V26h4l.6-4.700h-4.600v-3c0-1.300.4-2.300 2.300-2.300h2.400v-4.200c-.4-.1-1.800-.2-3.500-.2-3.500 0-5.800 2.100-5.800 6v3.700h-4V26h4v12z"/></svg></button>
   </div>
-  <div class="tag">PLAY &nbsp;&bull;&nbsp; COMPETE &nbsp;&bull;&nbsp; GROW TOGETHER</div>
-  <div class="corner">MORE<br>THAN<br>A GAME</div>
+  <div class="tag">TRACK &nbsp;&bull;&nbsp; IMPROVE &nbsp;&bull;&nbsp; GROW</div>
+  <div class="legal"><button type="button" class="lnk" style="font-size:12px" data-doc="privacy">Privacy policy</button> &middot; <button type="button" class="lnk" style="font-size:12px" data-doc="terms">Terms</button></div>
+  <div class="corner">MORE<br>THAN<br>A HABIT</div>
 </div>
 
 <script>
 (()=>{
 const $=s=>document.querySelector(s);
 try{window.Android&&Android.orient('portrait');}catch(e){}
-const ls={get:k=>{try{return localStorage.getItem(k)}catch(e){return null}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}},del:k=>{try{localStorage.removeItem(k)}catch(e){}}};
+const ls={get:k=>{try{return localStorage.getItem(k)}catch(e){return null}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}}};
 const ss={get:k=>{try{return sessionStorage.getItem(k)}catch(e){return null}},set:(k,v)=>{try{sessionStorage.setItem(k,v)}catch(e){}}};
-// already signed in? go straight to the home screen
-if(ls.get('ht.session')||ss.get('ht.session')){location.replace('home.html');return;}
-
-// theme
+if(ls.get('ht.session')||ss.get('ht.session')){location.replace('app.html');return;}
 function theme(t){document.documentElement.dataset.theme=t;ls.set('ht.theme',t);}
 theme(ls.get('ht.theme')||'light');
 $('#theme').onclick=()=>theme(document.documentElement.dataset.theme==='dark'?'light':'dark');
 
-// helpers
-function hash(str){let h1=0xdeadbeef,h2=0x41c6ce57;for(let i=0;i<str.length;i++){const c=str.charCodeAt(i);h1=Math.imul(h1^c,2654435761);h2=Math.imul(h2^c,1597334677);}
-  h1=Math.imul(h1^(h1>>>16),2246822507)^Math.imul(h2^(h2>>>13),3266489909);h2=Math.imul(h2^(h2>>>16),2246822507)^Math.imul(h1^(h1>>>13),3266489909);
-  return (4294967296*(2097151&h2)+(h1>>>0)).toString(36);}
+/* SHA-256 (pure JS, works offline and on file:// pages) */
+function sha256(msg){const K=[0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2];
+ const b=unescape(encodeURIComponent(msg)),l=b.length,w=[],H=[0x6a09e667,0xbb67ae85,0x3c6ef372,0xa54ff53a,0x510e527f,0x9b05688c,0x1f83d9ab,0x5be0cd19];
+ const n=((l+9+63)>>6)<<4,m=new Array(n).fill(0);for(let i=0;i<l;i++)m[i>>2]|=b.charCodeAt(i)<<(24-(i%4)*8);m[l>>2]|=0x80<<(24-(l%4)*8);m[n-1]=l*8;
+ const r=(x,k)=>(x>>>k)|(x<<(32-k));
+ for(let j=0;j<n;j+=16){let[a,b2,c,d,e,f,g,h]=H;for(let i=0;i<64;i++){w[i]=i<16?m[j+i]:(r(w[i-2],17)^r(w[i-2],19)^(w[i-2]>>>10))+w[i-7]+(r(w[i-15],7)^r(w[i-15],18)^(w[i-15]>>>3))+w[i-16]|0;
+  const t1=h+(r(e,6)^r(e,11)^r(e,25))+((e&f)^(~e&g))+K[i]+w[i]|0,t2=(r(a,2)^r(a,13)^r(a,22))+((a&b2)^(a&c)^(b2&c))|0;h=g;g=f;f=e;e=d+t1|0;d=c;c=b2;b2=a;a=t1+t2|0;}
+  H[0]=H[0]+a|0;H[1]=H[1]+b2|0;H[2]=H[2]+c|0;H[3]=H[3]+d|0;H[4]=H[4]+e|0;H[5]=H[5]+f|0;H[6]=H[6]+g|0;H[7]=H[7]+h|0;}
+ return H.map(x=>('00000000'+(x>>>0).toString(16)).slice(-8)).join('');}
+const ROUNDS=4000;
+function stretch(salt,pw){let h=sha256(salt+':'+pw);for(let i=0;i<ROUNDS;i++)h=sha256(salt+h);return h;}
+function legacy(str){let h1=0xdeadbeef,h2=0x41c6ce57;for(let i=0;i<str.length;i++){const c=str.charCodeAt(i);h1=Math.imul(h1^c,2654435761);h2=Math.imul(h2^c,1597334677);}
+  h1=Math.imul(h1^(h1>>>16),2246822507)^Math.imul(h2^(h2>>>13),3266489909);h2=Math.imul(h2^(h2>>>16),2246822507)^Math.imul(h1^(h1>>>13),3266489909);return (4294967296*(2097151&h2)+(h1>>>0)).toString(36);}
+function rnd(n){const a=new Uint32Array(n);(window.crypto&&crypto.getRandomValues)?crypto.getRandomValues(a):a.forEach((_,i)=>a[i]=Math.random()*4294967296);return Array.from(a);}
+const salt=()=>rnd(4).map(x=>x.toString(36)).join('');
+const recCode=()=>{const al='ABCDEFGHJKLMNPQRSTUVWXYZ23456789';return rnd(12).map(x=>al[x%al.length]).join('').replace(/(.{4})(?=.)/g,'$1-');};
 const users=()=>{try{return JSON.parse(ls.get('ht.users')||'{}')}catch(e){return {}}};
+const saveUsers=U=>ls.set('ht.users',JSON.stringify(U));
 const msg=(t,ok)=>{const m=$('#msg');m.textContent=t||'';m.className='msg'+(ok?' ok':'');};
+const modal=(html,bind)=>{$('#mbox').innerHTML=html;$('#modal').hidden=false;bind&&bind($('#mbox'));};
+const closeModal=()=>{$('#modal').hidden=true;};
+$('#modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal();});
+const validEmailOrName=v=>/^[^\s@]{2,40}$/.test(v)||/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
+
 let create=false;
 function setMode(c){create=c;$('#goT').textContent=c?'Create Account':'Login';$('#sub').textContent=c?'Create your account':'Sign in to continue';
   $('#mode').textContent=c?'Sign in':'Create account';$('#modeQ').textContent=c?'Already have an account?':'New here?';
   $('#pass').autocomplete=c?'new-password':'current-password';msg('');}
 $('#mode').onclick=()=>setMode(!create);
-
-function start(sess,remember){
-  const v=JSON.stringify(sess);
-  if(remember){ls.set('ht.session',v);}else{ss.set('ht.session',v);}
-  location.replace('home.html');
-}
+function start(sess,remember){const v=JSON.stringify(sess);if(remember)ls.set('ht.session',v);else ss.set('ht.session',v);location.replace('app.html');}
 $('#form').addEventListener('submit',e=>{
   e.preventDefault();
   const name=$('#user').value.trim(),pw=$('#pass').value,k=name.toLowerCase();
-  if(!name||!pw){msg('Enter your username/email and password.');return;}
+  if(!name||!pw){msg('Enter your username or email and your password.');return;}
   const U=users();
   if(create){
-    if(pw.length<6){msg('Password must be at least 6 characters.');return;}
-    if(U[k]){msg('That account already exists. Try signing in.');return;}
-    const salt=Math.random().toString(36).slice(2,10);
-    U[k]={n:name,s:salt,h:hash(salt+pw)};ls.set('ht.users',JSON.stringify(U));
-    start({user:name,guest:false},$('#rem').checked);
+    if(!validEmailOrName(name)){msg('Use an email address or a username of 2–40 characters without spaces.');return;}
+    if(pw.length<8||!/[A-Za-z]/.test(pw)||!/\d/.test(pw)){msg('Use at least 8 characters with letters and numbers.');return;}
+    if(U[k]){msg('That account already exists on this device. Try signing in.');return;}
+    const s=salt(),code=recCode(),rs=salt();
+    U[k]={n:name,v:2,s,h:stretch(s,pw),rs,rc:stretch(rs,code.replace(/-/g,'')),created:Date.now()};saveUsers(U);
+    modal(`<h2>Save your recovery code</h2><p>HabitFlow keeps your account on this phone, without a server. If you forget your password, this code is the only way to reset it. Write it down or take a screenshot.</p><div class="code">${code}</div><button class="go" style="width:100%;height:52px;font-size:16px" id="cont">I saved it, continue</button>`,
+      b=>b.querySelector('#cont').onclick=()=>start({user:name,guest:false},$('#rem').checked));
   }else{
     const a=U[k];
-    if(!a||a.h!==hash(a.s+pw)){msg('Wrong username or password. New here? Tap "Create account".');return;}
+    if(!a){msg('No account with that name on this device. New here? Tap "Create account".');return;}
+    const ok=a.v===2?a.h===stretch(a.s,pw):a.h===legacy(a.s+pw);
+    if(!ok){msg('Wrong password. Use "Forgot Password?" if you need to reset it.');return;}
+    if(a.v!==2){const s=salt();Object.assign(a,{v:2,s,h:stretch(s,pw)});saveUsers(U);} // upgrade old hashes
     start({user:a.n,guest:false},$('#rem').checked);
   }
 });
 $('#guest').onclick=()=>start({user:'Guest',guest:true},true);
-$('#forgot').onclick=()=>msg('Password reset is not available yet. Create a new account or use as a guest.');
-document.querySelectorAll('.soc button').forEach(b=>b.onclick=()=>msg(b.dataset.s+' sign-in is not available yet. Use email or guest.'));
+$('#forgot').onclick=()=>modal(`<h2>Reset password</h2><p>Enter your username and the recovery code you saved when you created the account.</p><input id="fu" placeholder="Username or email" autocapitalize="none" value="${($('#user').value||'').replace(/"/g,'')}"><input id="fc" placeholder="Recovery code (XXXX-XXXX-XXXX)" autocapitalize="characters"><input id="fp" type="password" placeholder="New password" autocomplete="new-password"><div class="msg" id="fm"></div><button class="go" style="width:100%;height:52px;font-size:16px" id="fgo">Reset password</button>
+  <p style="margin-top:12px;font-size:12px">No recovery code? Accounts are stored only on this phone, so a lost password cannot be recovered. You can still use the app as a guest.</p>`,b=>{
+  b.querySelector('#fgo').onclick=()=>{const U=users(),k=b.querySelector('#fu').value.trim().toLowerCase(),c=b.querySelector('#fc').value.trim().toUpperCase().replace(/[^A-Z0-9]/g,''),p=b.querySelector('#fp').value,a=U[k],fm=b.querySelector('#fm');
+    if(!a||!a.rc||a.rc!==stretch(a.rs,c)){fm.textContent='That username and recovery code do not match.';return;}
+    if(p.length<8||!/[A-Za-z]/.test(p)||!/\d/.test(p)){fm.textContent='Use at least 8 characters with letters and numbers.';return;}
+    const s=salt();Object.assign(a,{v:2,s,h:stretch(s,p)});saveUsers(U);closeModal();msg('Password updated. You can sign in now.',true);};});
+document.querySelectorAll('.soc button').forEach(b=>b.onclick=()=>msg(b.dataset.s+' sign-in is not set up yet (it needs a server and API keys). Use email or guest.'));
+document.querySelectorAll('[data-doc]').forEach(b=>b.onclick=()=>modal(b.dataset.doc==='privacy'?'<h2>Privacy policy</h2><p>HabitFlow stores your account and all your data only on this device. Passwords are never stored; only a salted, stretched hash is kept. Nothing is sent to a server, and there are no ads or analytics. You can export or delete your data at any time in Settings.</p><button class="go" style="width:100%;height:48px" onclick="document.getElementById(\'modal\').hidden=true">Close</button>':'<h2>Terms of use</h2><p>HabitFlow is a free preview provided as is. Your data lives on your device, so keep backups. Insights and suggestions are for motivation only, not medical or professional advice. Nothing can be purchased in this version.</p><button class="go" style="width:100%;height:48px" onclick="document.getElementById(\'modal\').hidden=true">Close</button>'));
 $('#eye').onclick=()=>{const p=$('#pass'),show=p.type==='password';p.type=show?'text':'password';$('#slash').style.display=show?'none':'';};
 })();
 </script>

@@ -75,7 +75,7 @@ input,select{font-family:inherit;color:var(--tx)}
 .wk i{display:block;width:100%;max-width:38px;border-radius:8px 8px 3px 3px;background:linear-gradient(180deg,#7ea1ff,var(--bl2));min-height:3px;transition:height .3s}
 .wk b{color:var(--tx);font-size:12px}
 </style>
-<script>window.__u=(function(){try{var s=JSON.parse(localStorage.getItem('ht.session')||sessionStorage.getItem('ht.session')||'null');return s&&s.user&&!s.guest?'u:'+s.user+'::':'guest::'}catch(e){return ''}})();try{window.Android&&Android.orient('portrait')}catch(e){}</script>
+<script>window.__u=(function(){try{var s=JSON.parse(localStorage.getItem('ht.session')||sessionStorage.getItem('ht.session')||'null');return s&&s.user&&!s.guest?'u:'+s.user.toLowerCase()+'::':'guest::'}catch(e){return ''}})();try{window.Android&&Android.orient('portrait')}catch(e){}</script>
 </head>
 <body>
 <div class="wrap" id="root"></div>
