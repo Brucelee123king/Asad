@@ -258,7 +258,12 @@ MONTHS.forEach((m,i)=>selM.add(new Option(m,i+1)));
 selY.value=S.y;selM.value=S.m;
 selY.onchange=()=>{S.y=+selY.value;save();build();};
 selM.onchange=()=>{S.m=+selM.value;save();build();};
-$('#btnClear').onclick=()=>{if(confirm('Clear all ticks for '+MONTHS[S.m-1]+' '+S.y+'?')){delete S.months[key()];save();build();}};
+let clrT=null;const btnC=$('#btnClear'),clrTxt=btnC.textContent;
+btnC.onclick=()=>{
+  if(clrT){clearTimeout(clrT);clrT=null;btnC.textContent=clrTxt;delete S.months[key()];save();build();return;}
+  btnC.textContent='Click again to confirm';
+  clrT=setTimeout(()=>{clrT=null;btnC.textContent=clrTxt;},3000);
+};
 
 const esc=s=>String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
 const dayName=d=>DAYN[new Date(S.y,S.m-1,d).getDay()];
