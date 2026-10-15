@@ -1,0 +1,150 @@
+<title>PMA 159 MCQ Tests</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: one centred column. Home lists the five 50-question parts, the quiz shows one question with a palette, the result page reviews every answer with its reason. */
+:root{
+  --bg:#edf0ed; --card:#ffffff; --fg:#16221c; --mut:#58675e; --line:#d3dbd5;
+  --accent:#27553f; --accent-fg:#ffffff; --gold:#a8791f; --goldbg:#f6ecd3;
+  --ok:#1b7a45; --okbg:#e0f3e7; --bad:#b3261e; --badbg:#fbe4e1; --warn:#8a5a00; --warnbg:#fbefd0;
+  --display:"Barlow Condensed","Arial Narrow",sans-serif; --body:"Source Sans 3",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f1713; --card:#18231d; --fg:#e7eee9; --mut:#9baba2; --line:#2b3a32;
+  --accent:#6fc79c; --accent-fg:#0c1510; --gold:#e1b857; --goldbg:#34290f;
+  --ok:#7fdca5; --okbg:#143323; --bad:#ff9d94; --badbg:#3d1f1c; --warn:#f0c76a; --warnbg:#352a0d; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1713; --card:#18231d; --fg:#e7eee9; --mut:#9baba2; --line:#2b3a32;
+  --accent:#6fc79c; --accent-fg:#0c1510; --gold:#e1b857; --goldbg:#34290f;
+  --ok:#7fdca5; --okbg:#143323; --bad:#ff9d94; --badbg:#3d1f1c; --warn:#f0c76a; --warnbg:#352a0d; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:16px/1.5 var(--body);padding-block:20px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+main{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+h1,h2{font-family:var(--display);margin:0;letter-spacing:.02em;text-wrap:balance}
+h1{font-size:clamp(30px,7vw,44px);line-height:1;text-transform:uppercase}
+h2{font-size:26px}
+.sub{color:var(--mut);margin:6px 0 0}
+.crest{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.pill{font:600 12px var(--body);letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);border-radius:99px;padding:4px 10px;color:var(--mut)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.part{text-align:left;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.part:hover{border-color:var(--accent)}
+.part b{font:700 28px/1 var(--display);color:var(--accent);text-transform:uppercase}
+.part span{font-size:14px;color:var(--mut)}
+.part em{font-style:normal;font-size:13px;color:var(--gold);font-weight:600}
+.rules{margin:0;padding-left:18px;color:var(--mut);font-size:15px}
+.btn{border:1px solid var(--line);background:transparent;border-radius:8px;padding:10px 18px;font-weight:600}
+.btn.main{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+.btn:disabled{opacity:.4;cursor:default}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.row.sp{justify-content:space-between}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding:8px 0;display:flex;flex-direction:column;gap:8px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.timer{font:700 26px var(--display);font-variant-numeric:tabular-nums;color:var(--accent)}
+.timer.low{color:var(--bad)}
+.track{height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.track i{display:block;height:100%;width:0;background:var(--accent);transition:width .2s}
+.qh{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-size:13px;color:var(--mut)}
+.tag{font-weight:600;border-radius:6px;padding:2px 8px;background:var(--line);color:var(--fg)}
+.rep{font-weight:700;color:var(--warn);background:var(--warnbg);border-radius:6px;padding:2px 8px}
+.q{font:600 22px/1.3 var(--body);margin:0;text-wrap:balance;overflow-wrap:anywhere}
+.opts{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.opt{width:100%;text-align:left;display:flex;gap:12px;align-items:baseline;background:transparent;border:1px solid var(--line);border-radius:8px;padding:12px 14px;min-height:52px}
+.opt:hover{border-color:var(--accent)}
+.opt b{font:700 13px var(--body);min-width:1.4em;color:var(--mut)}
+.opt[aria-pressed=true]{border-color:var(--accent);background:var(--okbg)}
+.pal{display:grid;grid-template-columns:repeat(auto-fill,minmax(40px,1fr));gap:6px}
+.pal button{height:38px;border:1px solid var(--line);border-radius:6px;background:transparent;font-weight:600;font-variant-numeric:tabular-nums}
+.pal button.ans{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+.pal button.cur{outline:2px solid var(--gold);outline-offset:1px}
+.legend{display:flex;gap:14px;font-size:13px;color:var(--mut)}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px;border:1px solid var(--line)}
+.score{font:700 72px/1 var(--display);font-variant-numeric:tabular-nums}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:100%}
+.stats div{border:1px solid var(--line);border-radius:8px;padding:10px;display:flex;flex-direction:column}
+.stats b{font:700 28px var(--display)}
+.stats span{font-size:13px;color:var(--mut)}
+.verdict{font:700 14px var(--body);letter-spacing:.1em;text-transform:uppercase;padding:4px 14px;border-radius:99px}
+.verdict.p{background:var(--okbg);color:var(--ok)} .verdict.f{background:var(--badbg);color:var(--bad)}
+.rev{border:1px solid var(--line);border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:10px;background:var(--card);min-width:0}
+.rev .o{border:1px solid var(--line);border-radius:8px;padding:9px 12px;display:flex;flex-direction:column;gap:6px}
+.rev .o.ok{background:var(--okbg);border-color:var(--ok)}
+.rev .o.bad{background:var(--badbg);border-color:var(--bad)}
+.rev .why{font-size:14.5px;border-top:1px dashed var(--ok);padding-top:6px}
+.rev .why b{color:var(--ok)}
+.chips{display:flex;gap:6px}
+.chip{border:1px solid var(--line);background:transparent;border-radius:99px;padding:4px 14px;font-size:14px}
+.chip[aria-pressed=true]{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+.modal{border:1px solid var(--gold);background:var(--goldbg);border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:10px}
+@media (max-width:480px){.q{font-size:19px}.score{font-size:56px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<main id="app"></main>
+<script>
+const PARTS=/*DATA*/;
+const TOTAL_SECS=600; // 10 minutes for 50 MCQs
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const L="ABCD";
+let pi=0,qi=0,ans=[],left=TOTAL_SECS,tick=null,t0=0,confirming=false,filter="all";
+const app=$("#app");
+const mmss=n=>String(Math.floor(n/60)).padStart(2,"0")+":"+String(n%60).padStart(2,"0");
+const repTag=r=>r>0?`<span class="rep">(Repeated in ${r} test${r>1?"s":""})</span>`:"";
+const partSecs=p=>[...new Set(PARTS[p].map(x=>x.s))].join(" · ");
+
+function home(){
+  clearInterval(tick);confirming=false;
+  const rep=PARTS.flat().filter(x=>x.r>0).length;
+  app.innerHTML=`<header class="crest"><div><h1>PMA 159 MCQ Tests</h1><p class="sub">Initial test practice built from shared PMA 159 Long Course experiences.</p></div><span class="pill">${PARTS.flat().length} MCQs · ${PARTS.length} tests</span></header>
+  <section class="card"><h2>Choose your test</h2><div class="grid">${PARTS.map((p,i)=>`<button class="part" data-p="${i}"><b>Test ${i+1}</b><span>${p.length} MCQs · ${Math.round(p.length*12/60)} min</span><span>${esc(partSecs(i))}</span><em>${p.filter(x=>x.r>0).length} repeated questions</em></button>`).join("")}</div></section>
+  <section class="card"><h2>Instructions</h2><ul class="rules"><li>Each test has 50 MCQs and a 10 minute timer. It submits itself when time ends.</li><li>Move between questions with Previous, Next or the question palette. You can change an answer before you submit.</li><li>Unanswered questions count as incorrect.</li><li>After submitting you see the correct option for every question with a short reason under it.</li><li>A bracket such as (Repeated in 5 tests) means that question was reported in that many shared test experiences. ${rep} of ${PARTS.flat().length} questions carry it.</li></ul></section>`;
+  app.querySelectorAll(".part").forEach(b=>b.onclick=()=>start(+b.dataset.p));
+}
+function start(p){
+  pi=p;qi=0;ans=new Array(PARTS[p].length).fill(null);left=TOTAL_SECS;t0=Date.now();confirming=false;
+  clearInterval(tick);tick=setInterval(()=>{left=Math.max(0,TOTAL_SECS-Math.floor((Date.now()-t0)/1000));const t=$("#tm");if(t){t.textContent=mmss(left);t.classList.toggle("low",left<=60)}if(left<=0)finish()},1000);
+  window.scrollTo(0,0);quiz();
+}
+function quiz(){
+  const P=PARTS[pi],q=P[qi],done=ans.filter(a=>a!==null).length;
+  app.innerHTML=`<div class="bar"><div class="top"><span class="pill">Test ${pi+1} · ${done}/${P.length} answered</span><span class="timer ${left<=60?"low":""}" id="tm">${mmss(left)}</span></div><div class="track"><i style="width:${qi/(P.length-1)*100}%"></i></div></div>
+  <section class="card"><div class="qh"><span>Question ${qi+1} of ${P.length}</span><span class="tag">${esc(q.s)}</span>${repTag(q.r)}</div>
+  <h2 class="q">${esc(q.q)}</h2>
+  <ul class="opts">${q.o.map((o,k)=>`<li><button class="opt" data-k="${k}" aria-pressed="${ans[qi]===k}"><b>${L[k]}</b><span>${esc(o)}</span></button></li>`).join("")}</ul>
+  <div class="row sp"><button class="btn" id="pv" ${qi?"":"disabled"}>Previous</button><button class="btn" id="cl" ${ans[qi]===null?"disabled":""}>Clear choice</button><button class="btn main" id="nx">${qi==P.length-1?"Review & submit":"Next"}</button></div></section>
+  <section class="card"><div class="row sp"><b>Question palette</b><button class="btn" id="sb">Submit test</button></div>
+  <div class="pal">${P.map((_,k)=>`<button data-k="${k}" class="${ans[k]!==null?"ans":""} ${k==qi?"cur":""}" aria-label="Question ${k+1}">${k+1}</button>`).join("")}</div>
+  <div class="legend"><span><i style="background:var(--accent)"></i>Answered</span><span><i></i>Unanswered</span></div>
+  ${confirming?`<div class="modal"><b>Submit this test?</b><span>You answered ${done} of ${P.length}. ${P.length-done} unanswered will count as incorrect.</span><div class="row"><button class="btn" id="no">Keep going</button><button class="btn main" id="yes">Yes, submit</button></div></div>`:""}</section>`;
+  app.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{ans[qi]=+b.dataset.k;quiz()});
+  $("#pv").onclick=()=>{qi--;quiz()};
+  $("#cl").onclick=()=>{ans[qi]=null;quiz()};
+  $("#nx").onclick=()=>{if(qi==P.length-1){confirming=true;quiz()}else{qi++;quiz();window.scrollTo(0,0)}};
+  $("#sb").onclick=()=>{confirming=true;quiz()};
+  app.querySelectorAll(".pal button").forEach(b=>b.onclick=()=>{qi=+b.dataset.k;quiz();window.scrollTo(0,0)});
+  if(confirming){$("#no").onclick=()=>{confirming=false;quiz()};$("#yes").onclick=finish}
+}
+function finish(){
+  clearInterval(tick);const P=PARTS[pi];
+  const used=Math.min(TOTAL_SECS,Math.floor((Date.now()-t0)/1000));
+  const right=P.filter((q,k)=>ans[k]===q.a).length,pct=Math.round(right/P.length*100);
+  filter="all";result(right,pct,used);
+}
+function result(right,pct,used){
+  const P=PARTS[pi],wrong=P.length-right;
+  const items=P.map((q,k)=>({q,k})).filter(({q,k})=>filter=="all"||ans[k]!==q.a);
+  app.innerHTML=`<section class="card" style="align-items:center;text-align:center"><span class="pill">Test ${pi+1} completed</span><div class="score">${right} / ${P.length}</div><div>${pct}% correct</div><span class="verdict ${pct>=50?"p":"f"}">${pct>=50?"Pass":"Fail"}</span>
+  <div class="stats"><div><b>${right}</b><span>Correct</span></div><div><b>${wrong}</b><span>Incorrect / unanswered</span></div><div><b>${mmss(used)}</b><span>Time taken</span></div></div>
+  <div class="row"><button class="btn main" id="rt">Retake test</button><button class="btn" id="hm">All tests</button></div></section>
+  <div class="row sp"><h2>Answer review</h2><div class="chips"><button class="chip" data-f="all" aria-pressed="${filter=="all"}">All</button><button class="chip" data-f="bad" aria-pressed="${filter=="bad"}">Incorrect only</button></div></div>
+  ${items.length?items.map(({q,k})=>`<article class="rev"><div class="qh"><span>Q${k+1}</span><span class="tag">${esc(q.s)}</span>${repTag(q.r)}${ans[k]===null?'<span class="tag">Not answered</span>':""}</div><div class="q" style="font-size:19px">${esc(q.q)}</div>
+  ${q.o.map((o,j)=>`<div class="o ${j===q.a?"ok":j===ans[k]?"bad":""}"><div><b>${L[j]}.</b> ${esc(o)} ${j===q.a?"<b>✓ Correct answer</b>":j===ans[k]?"<b>✗ Your answer</b>":""}</div>${j===q.a?`<div class="why"><b>Reason:</b> ${esc(q.e)}</div>`:""}</div>`).join("")}</article>`).join(""):`<div class="card">Nothing to show. Every question was answered correctly.</div>`}`;
+  $("#rt").onclick=()=>start(pi);$("#hm").onclick=home;
+  app.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{filter=b.dataset.f;result(right,pct,used)});
+  window.scrollTo(0,0);
+}
+home();
+</script>
