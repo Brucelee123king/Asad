@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ultimate Habit Tracker</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Poppins',system-ui,'Segoe UI',Roboto,Arial,sans-serif;color:#0f1b4d;overflow-x:hidden;
+  background:radial-gradient(ellipse at 50% 0%,#1a2370 0%,#0a1030 45%,#050819 100%) fixed;min-height:100vh}
+#stage{margin:0 auto;position:relative}
+#app{width:1500px;transform-origin:0 0;padding:26px 30px 24px}
+
+/* header */
+header{display:flex;align-items:center;justify-content:center;gap:46px;margin-bottom:16px}
+.logo{width:84px;height:84px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.logo.l{filter:drop-shadow(0 0 14px #2f6bff)}
+.logo.r{filter:drop-shadow(0 0 14px #19e07a)}
+.ttl{text-align:center}
+h1{font-size:62px;font-weight:900;letter-spacing:2px;color:#fff;line-height:1.05;text-shadow:0 0 22px rgba(120,140,255,.55)}
+h1 span{background:linear-gradient(#ffe066,#ff9d00);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;filter:drop-shadow(0 0 12px rgba(255,170,0,.5))}
+.ttl p{margin-top:6px;color:#dfe5ff;font-weight:600;letter-spacing:5px;font-size:19px}
+.ttl p i{display:inline-block;width:9px;height:9px;border-radius:50%;margin:0 12px 1px;vertical-align:middle}
+
+/* panel */
+.panel{background:#f3f5ff;border-radius:22px;padding:14px;display:grid;grid-template-columns:1fr 262px;
+  grid-template-areas:"top side" "ov side" "bot ins";gap:10px;
+  box-shadow:0 0 0 3px #6d5cff,0 0 0 6px rgba(109,92,255,.25),0 0 40px rgba(88,101,255,.6)}
+.card{background:#fff;border:1px solid #d9def2;border-radius:8px;overflow:hidden}
+.hd{color:#fff;font-weight:800;font-size:12px;letter-spacing:.6px;text-align:center;padding:6px 4px;background:#159a5b;text-transform:uppercase}
+
+/* top row */
+.top{grid-area:top;display:grid;grid-template-columns:240px 1fr 240px;gap:10px}
+.left{display:flex;flex-direction:column;gap:8px}
+.title-box{border-radius:8px;overflow:hidden;background:linear-gradient(135deg,#7b3fe4,#5a22c4);padding:10px 12px 12px;color:#fff;text-align:center}
+.title-box h2{font-size:19px;font-weight:800;letter-spacing:1px;margin-bottom:8px}
+.title-box h2 em{color:#ffd23f;font-style:normal;font-size:14px;vertical-align:top}
+.pill{background:#fff;color:#2a2f6e;font-weight:800;border-radius:6px;padding:7px 0;font-size:15px;letter-spacing:1px}
+.cal .hd{background:#1b2a8a;font-size:11px}
+.cal-row{display:flex;height:30px;border-top:1px solid #dfe5fb}
+.cal-row label{width:80px;background:#e5ebff;font-size:11px;font-weight:700;display:flex;align-items:center;padding-left:10px;color:#23306b}
+.cal-row select{flex:1;border:0;background:#fff;font:700 13px 'Poppins',sans-serif;text-align:center;text-align-last:center;color:#111;cursor:pointer;outline:none}
+.clear{border:0;background:#eef1ff;color:#4a56a6;font:600 11px 'Poppins',sans-serif;padding:6px;border-radius:6px;cursor:pointer}
+.clear:hover{background:#e0e5ff}
+.chart-card{padding:8px 10px 4px}
+.chart-card h3{text-align:center;font-size:13px;font-weight:800;letter-spacing:.5px;margin-bottom:2px}
+.chart-card svg{width:100%;height:auto;display:block}
+.donut-body{position:relative;height:172px;display:flex;align-items:center;justify-content:center}
+.donut-body svg{width:132px;height:132px}
+.donut-body circle{transition:stroke-dasharray .5s ease}
+.lbl{position:absolute;font-size:10px;font-weight:800;line-height:1.25}
+.lbl b{display:block;font-size:14px}
+.lbl.l{left:10px;top:20px;color:#e03535}
+.lbl.c{right:8px;bottom:16px;color:#16a05a;text-align:right}
+
+/* top 10 */
+.top10{grid-area:side;display:flex;flex-direction:column;border-color:#159a5b}
+.top10 .hd{padding:8px}
+.t10{flex:1;display:flex;flex-direction:column}
+.t10 div{flex:1;display:flex;align-items:center;gap:10px;padding:0 12px;border-top:1px solid #edf0fa;font-weight:700;font-size:14px}
+.t10 div:first-child{border-top:0}
+.t10 b{width:24px;height:24px;border-radius:50%;background:linear-gradient(#27c47c,#13904f);color:#fff;font-size:12px;display:flex;align-items:center;justify-content:center;flex:none}
+.t10 span.ic{font-size:18px;width:24px;text-align:center}
+.t10 span.nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* overview */
+.ov{grid-area:ov;display:flex;background:#fff;border:1px solid #d9def2;border-radius:8px;overflow:hidden}
+.ov-l{width:110px;flex:none;display:flex;flex-direction:column;background:#eef2ff}
+.ov-l .big{height:66px;background:linear-gradient(#1f6df0,#1456cc);color:#fff;font-weight:800;display:flex;align-items:center;padding-left:12px;font-size:14px;letter-spacing:.5px}
+.ov-l .sp{height:120px;background:#fff}
+.ov-l .lb{height:24px;display:flex;align-items:center;padding-left:10px;font-size:10px;font-weight:800;color:#23306b;border-top:1px solid #dfe5fb;letter-spacing:.3px}
+.ov-l .lbp{height:60px;display:flex;align-items:center;padding-left:10px;font-size:10px;font-weight:800;color:#23306b;border-top:1px solid #dfe5fb;line-height:1.2}
+.ov-w{flex:1;display:flex;min-width:0}
+.wk{display:flex;flex-direction:column;min-width:0;border-left:2px solid #fff;background:var(--t)}
+.wk-title{height:26px;background:var(--c);color:#fff;font-weight:800;font-size:12px;letter-spacing:.5px;display:flex;align-items:center;justify-content:center}
+.wk-days{height:40px;display:flex}
+.wk-days div{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:9px;line-height:1.15;color:#3a4470;font-weight:500}
+.wk-days b{font-size:13px;font-weight:700;color:#111}
+.wk-bars{height:120px;display:flex;background:#fff}
+.barcell{flex:1;display:flex;align-items:flex-end;justify-content:center;padding:0 5px}
+.barcell i{display:block;width:100%;max-width:18px;background:var(--b);border-radius:3px 3px 0 0;transition:height .4s ease;height:0}
+.wk-row{height:24px;display:flex;border-top:1px solid rgba(0,0,0,.07)}
+.wk-row span{flex:1;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600}
+.wk-prog{height:60px;border-top:1px solid rgba(0,0,0,.07);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.wk-prog .f{font-size:12px;font-weight:700}
+.wk-prog .p{font-size:13px;font-weight:800}
+.track{width:88%;height:8px;border-radius:5px;background:#dfe4f3;overflow:hidden}
+.track i{display:block;height:100%;background:var(--c);border-radius:5px;transition:width .4s ease;width:0}
+
+/* bottom */
+.bot{grid-area:bot;display:flex;gap:10px;align-items:flex-start}
+.hg{flex:1;min-width:0}
+.hhead{display:flex;height:50px}
+.hl{width:236px;display:flex;flex:none}
+.hl div{background:#1b2a8a;color:#fff;font-weight:800;font-size:11px;letter-spacing:.5px;display:flex;align-items:center;justify-content:center}
+.hl .n{flex:1}.hl .g{width:56px;border-left:1px solid rgba(255,255,255,.3)}
+.hr{flex:1;display:flex;flex-direction:column;min-width:0}
+.hr1,.hr2{display:flex}
+.hr1{height:26px}.hr2{height:24px;background:#f4f6ff}
+.hr1 div{background:var(--c);color:#fff;font-weight:800;font-size:11px;display:flex;align-items:center;justify-content:center;border-left:2px solid #fff}
+.hr2 div{flex:1;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#3a4470}
+.hr2 div.ws{border-left:2px solid #fff}
+.hrow{display:flex;height:30px;border-top:1px solid #edf0fa}
+.hname{width:180px;flex:none;display:flex;align-items:center;gap:6px;padding-left:8px}
+.hname .ic{font-size:16px;width:22px;text-align:center}
+.hname input{border:0;background:transparent;font:700 12px 'Poppins',sans-serif;color:#17235e;width:130px;outline:none;border-radius:4px;padding:2px 3px}
+.hname input:focus,.hgoal input:focus{background:#eef2ff}
+.hgoal{width:56px;flex:none;display:flex;align-items:center;justify-content:center;border-left:1px solid #edf0fa;border-right:1px solid #edf0fa}
+.hgoal input{width:38px;border:0;background:transparent;text-align:center;font:800 13px 'Poppins',sans-serif;color:#17235e;outline:none;border-radius:4px;-moz-appearance:textfield}
+.hgoal input::-webkit-outer-spin-button,.hgoal input::-webkit-inner-spin-button{-webkit-appearance:none}
+.hcells{flex:1;display:flex;min-width:0}
+.hc{flex:1;display:flex;align-items:center;justify-content:center;background:var(--t)}
+.hc.ws{border-left:2px solid #fff}
+.cb{width:17px;height:17px;border-radius:4px;border:2px solid #ef8a8a;background:#fff;cursor:pointer;padding:0;position:relative;transition:background .15s,border-color .15s,transform .1s}
+.cb:hover{transform:scale(1.15)}
+.cb.on{background:#1fb76a;border-color:#16a05a}
+.cb.on::after{content:'';position:absolute;left:3.5px;top:-.5px;width:4px;height:8.5px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}
+
+.pg{width:190px;flex:none}
+.pg .hd{height:26px;padding:0;display:flex;align-items:center;justify-content:center}
+.pg .sub{height:24px;display:flex;font-size:10px;font-weight:800;background:#e6f6ee;color:#12643a;align-items:center}
+.pg .sub span:nth-child(1){width:26px;text-align:center}
+.pg .sub span:nth-child(2){width:36px;text-align:center}
+.pg .sub span:nth-child(3){flex:1;text-align:center}
+.pr{height:30px;display:flex;align-items:center;border-top:1px solid #edf0fa}
+.pr .no{width:26px;text-align:center;font-weight:700;font-size:11px}
+.pr .lf{width:36px;text-align:center;font-weight:700;font-size:12px}
+.pr .bar{flex:1;height:12px;background:#e5e9f6;border-radius:3px;overflow:hidden}
+.pr .bar i{display:block;height:100%;width:0;background:var(--pc);transition:width .4s ease,background .3s}
+.pr .pc{width:42px;text-align:center;font-weight:700;font-size:11px}
+
+/* insight */
+.ins{grid-area:ins;display:flex;flex-direction:column;border-color:#7a35d9}
+.ins .hd{background:#7a35d9;padding:8px}
+.ins-b{flex:1;display:flex;flex-direction:column;justify-content:space-around;padding:6px 10px}
+.it{display:flex;align-items:center;gap:10px}
+.it .ico{width:36px;height:36px;border-radius:50%;background:#f0eaff;display:flex;align-items:center;justify-content:center;font-size:19px;flex:none}
+.it b{display:block;font-size:12px;line-height:1.3}
+.it small{display:block;font-size:10px;color:#6a7399;font-weight:500;margin-top:1px}
+
+/* footer */
+.foot{display:flex;margin-top:18px;padding:14px 10px;border:1px solid rgba(110,120,255,.45);border-radius:14px;background:rgba(10,16,60,.65)}
+.foot div{flex:1;display:flex;align-items:center;justify-content:center;gap:12px;color:#fff;font-weight:700;font-size:14px;letter-spacing:.8px;border-left:1px solid rgba(255,255,255,.18);text-transform:uppercase}
+.foot div:first-child{border-left:0}
+.foot span{font-size:24px}
+</style>
+</head>
+<body>
+<div id="stage"><div id="app">
+
+<header>
+  <div class="logo l">
+    <svg width="84" height="84" viewBox="0 0 84 84"><circle cx="42" cy="42" r="38" fill="#0b1655" stroke="#2f6bff" stroke-width="4"/><circle cx="42" cy="42" r="28" fill="#fff"/><circle cx="42" cy="42" r="21" fill="#ef4444"/><circle cx="42" cy="42" r="14" fill="#fff"/><circle cx="42" cy="42" r="7" fill="#ef4444"/><line x1="42" y1="42" x2="70" y2="14" stroke="#ffc400" stroke-width="4" stroke-linecap="round"/><path d="M70 14l1-9m-1 9l9-1m-9 1" stroke="#ffc400" stroke-width="3" stroke-linecap="round"/></svg>
+  </div>
+  <div class="ttl">
+    <h1>ULTIMATE <span>HABIT</span> TRACKER</h1>
+    <p>TRACK<i style="background:#ff4d5e"></i>ANALYZE<i style="background:#4d8dff"></i>IMPROVE<i style="background:#22d68a"></i>ACHIEVE</p>
+  </div>
+  <div class="logo r">
+    <svg width="84" height="84" viewBox="0 0 84 84"><circle cx="42" cy="42" r="37" fill="#062a1c" stroke="#19e07a" stroke-width="5"/><path d="M25 43l12 12 23-26" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+</header>
+
+<div class="panel">
+  <div class="top">
+    <div class="left">
+      <div class="title-box"><h2>HABIT TRACKER <em>&#9733;</em></h2><div class="pill" id="pill">- MAY 2026 -</div></div>
+      <div class="card cal">
+        <div class="hd">Calendar Setting</div>
+        <div class="cal-row"><label>YEAR</label><select id="selYear"></select></div>
+        <div class="cal-row"><label>MONTH</label><select id="selMonth"></select></div>
+      </div>
+      <button class="clear" id="btnClear">&#8635; Clear this month</button>
+    </div>
+    <div class="card chart-card"><h3>MONTHLY OVERVIEW</h3><svg id="chart" viewBox="0 0 620 190"></svg></div>
+    <div class="card">
+      <div class="hd">Overview Daily Progress</div>
+      <div class="donut-body">
+        <div class="lbl l">LEFT<b id="leftPct">0%</b></div>
+        <svg viewBox="0 0 132 132"><g transform="rotate(-90 66 66)">
+          <circle cx="66" cy="66" r="46" fill="none" stroke="#ef4444" stroke-width="24"/>
+          <circle id="donutArc" cx="66" cy="66" r="46" fill="none" stroke="#1fb76a" stroke-width="24" stroke-dasharray="0 289.03"/>
+        </g></svg>
+        <div class="lbl c">COMPLETED<b id="compPct">0%</b></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card top10"><div class="hd">Top 10 Daily Habits</div><div class="t10" id="t10"></div></div>
+
+  <div class="ov" id="ov"></div>
+
+  <div class="bot">
+    <div class="card hg" id="hg"></div>
+    <div class="card pg" id="pg"></div>
+  </div>
+
+  <div class="card ins"><div class="hd">Habit Insight</div>
+    <div class="ins-b">
+      <div class="it"><div class="ico">&#128640;</div><div><b id="i1">Keep going! You are doing great!</b><small id="i1s"></small></div></div>
+      <div class="it"><div class="ico">&#128161;</div><div><b>Consistency is the key</b><small id="i2s"></small></div></div>
+      <div class="it"><div class="ico">&#127793;</div><div><b>Small Habits Big Changes</b><small id="i3s"></small></div></div>
+      <div class="it"><div class="ico">&#127942;</div><div><b>Progress today, Success tomorrow!</b><small id="i4s"></small></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="foot">
+  <div><span>&#9989;</span>Easy to use</div>
+  <div><span>&#9881;&#65039;</span>Automated dashboard</div>
+  <div><span>&#128202;</span>Visual &amp; insightful</div>
+  <div><span>&#127919;</span>Stay consistent</div>
+  <div><span>&#127942;</span>Achieve your goals</div>
+</div>
+
+</div></div>
+
+<script>
+(()=>{
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];
+const DAYN=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+const WC=['#16a269','#f39c12','#ef4444','#7c4ddb','#2d7be5','#0ea5b7'];
+const WB=['#17b890','#f59e0b','#f05a6a','#8b5cf6','#3b82f6','#14b8a6'];
+const WT=['#e8f7f0','#fff3e0','#fdeaea','#f0eafd','#e6f0fd','#e0f6f8'];
+const DEFAULT_HABITS=[
+ {n:'Drink Water',i:'\u{1F4A7}',g:8},{n:'Workout',i:'\u{1F3CB}️',g:5},{n:'Read Book',i:'\u{1F4D5}',g:6},
+ {n:'Meditation',i:'\u{1F9D8}',g:5},{n:'No Sugar',i:'\u{1F36C}',g:4},{n:'Healthy Food',i:'\u{1F957}',g:20},
+ {n:'8+ Hours Sleep',i:'\u{1F634}',g:20},{n:'Morning Walk',i:'\u{1F6B6}',g:20},{n:'Journal',i:'\u{1F4D3}',g:20},
+ {n:'No Screen Time',i:'\u{1F4F5}',g:20}];
+const KEY='ultimateHabitTracker.v1';
+
+let S=null;
+try{const s=JSON.parse(localStorage.getItem(KEY));if(s&&s.habits)S=s;}catch(e){}
+if(!S){S={habits:DEFAULT_HABITS.map(h=>({...h})),months:{},y:2026,m:5};seed();save();}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
+function rng(a){return()=>{a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function seed(){ // demo data for May 2026 (use "Clear this month" to start fresh)
+  const r=rng(2026),P=[.9,.85,.45,.65,.7];
+  S.months['2026-5']=S.habits.map((h,hi)=>Array.from({length:31},(_,d)=>r()<P[Math.floor(d/7)]-hi*.015?1:0));
+}
+
+const H=S.habits.length;
+const daysIn=()=>new Date(S.y,S.m,0).getDate();
+const key=()=>S.y+'-'+S.m;
+function data(){
+  const n=daysIn();let a=S.months[key()];
+  if(!a)a=S.months[key()]=S.habits.map(()=>Array(n).fill(0));
+  return a;
+}
+const weeks=()=>{const n=daysIn(),w=[];for(let s=0;s<n;s+=7)w.push([s,Math.min(s+7,n)]);return w;};
+
+// selectors
+const selY=$('#selYear'),selM=$('#selMonth');
+for(let y=2020;y<=2040;y++)selY.add(new Option(y,y));
+MONTHS.forEach((m,i)=>selM.add(new Option(m,i+1)));
+selY.value=S.y;selM.value=S.m;
+selY.onchange=()=>{S.y=+selY.value;save();build();};
+selM.onchange=()=>{S.m=+selM.value;save();build();};
+$('#btnClear').onclick=()=>{if(confirm('Clear all ticks for '+MONTHS[S.m-1]+' '+S.y+'?')){delete S.months[key()];save();build();}};
+
+const esc=s=>String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+const dayName=d=>DAYN[new Date(S.y,S.m-1,d).getDay()];
+
+function build(){
+  const n=daysIn(),W=weeks();
+  $('#pill').textContent='- '+MONTHS[S.m-1].toUpperCase()+' '+S.y+' -';
+
+  // overview
+  let ov=`<div class="ov-l"><div class="big">OVERVIEW</div><div class="sp"></div><div class="lb">COMPLETED</div><div class="lb">GOAL</div><div class="lb">LEFT</div><div class="lbp">WEEKLY<br>PROGRESS</div></div><div class="ov-w">`;
+  W.forEach(([a,b],w)=>{
+    const ds=[];for(let d=a+1;d<=b;d++)ds.push(d);
+    ov+=`<div class="wk" style="flex:${ds.length};--c:${WC[w]};--t:${WT[w]};--b:${WB[w]}">
+      <div class="wk-title">WEEK ${w+1}</div>
+      <div class="wk-days">${ds.map(d=>`<div><span>${dayName(d)}</span><b>${d}</b></div>`).join('')}</div>
+      <div class="wk-bars">${ds.map(d=>`<div class="barcell"><i data-bar="${d-1}"></i></div>`).join('')}</div>
+      <div class="wk-row">${ds.map(d=>`<span data-comp="${d-1}"></span>`).join('')}</div>
+      <div class="wk-row">${ds.map(()=>`<span>${H}</span>`).join('')}</div>
+      <div class="wk-row">${ds.map(d=>`<span data-left="${d-1}"></span>`).join('')}</div>
+      <div class="wk-prog"><div class="f" data-wf="${w}"></div><div class="p" data-wp="${w}"></div><div class="track"><i data-wb="${w}"></i></div></div>
+    </div>`;
+  });
+  $('#ov').innerHTML=ov+'</div>';
+
+  // habit grid
+  let g=`<div class="hhead"><div class="hl"><div class="n">DAILY HABIT</div><div class="g">GOAL</div></div><div class="hr">
+    <div class="hr1">${W.map(([a,b],w)=>`<div style="flex:${b-a};--c:${WC[w]}">WEEK ${w+1}</div>`).join('')}</div>
+    <div class="hr2">${Array.from({length:n},(_,i)=>`<div class="${i%7===0&&i?'ws':''}">${i+1}</div>`).join('')}</div></div></div>`;
+  S.habits.forEach((h,hi)=>{
+    g+=`<div class="hrow"><div class="hname"><span class="ic">${h.i}</span><input data-name="${hi}" value="${esc(h.n)}" spellcheck="false"></div>
+      <div class="hgoal"><input type="number" min="0" max="31" data-goal="${hi}" value="${h.g}"></div>
+      <div class="hcells">${Array.from({length:n},(_,d)=>`<div class="hc ${d%7===0&&d?'ws':''}" style="--t:${WT[Math.floor(d/7)]}"><button class="cb" data-h="${hi}" data-d="${d}" aria-label="${esc(h.n)} day ${d+1}"></button></div>`).join('')}</div></div>`;
+  });
+  $('#hg').innerHTML=g;
+
+  // progress panel
+  $('#pg').innerHTML=`<div class="hd">PROGRESS</div><div class="sub"><span>#</span><span>LEFT</span><span>%</span></div>`+
+    S.habits.map((h,i)=>`<div class="pr"><span class="no">${i+1}</span><span class="lf" data-pl="${i}"></span><div class="bar"><i data-pb="${i}"></i></div><span class="pc" data-pp="${i}"></span></div>`).join('');
+
+  // top 10
+  $('#t10').innerHTML=S.habits.map((h,i)=>`<div><b>${i+1}</b><span class="ic">${h.i}</span><span class="nm" data-tn="${i}"></span></div>`).join('');
+
+  sync();update();fit();
+}
+
+function sync(){ // reflect saved ticks into the grid
+  const d=data();
+  $$('.cb').forEach(b=>{const on=d[+b.dataset.h][+b.dataset.d]===1;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on);});
+}
+
+$('#hg').addEventListener('click',e=>{
+  const b=e.target.closest('.cb');if(!b)return;
+  const h=+b.dataset.h,d=+b.dataset.d,a=data();
+  a[h][d]=a[h][d]?0:1;
+  b.classList.toggle('on',a[h][d]===1);b.setAttribute('aria-pressed',a[h][d]===1);
+  save();update();
+});
+$('#hg').addEventListener('input',e=>{
+  const t=e.target;
+  if(t.dataset.name!==undefined){S.habits[+t.dataset.name].n=t.value;}
+  else if(t.dataset.goal!==undefined){S.habits[+t.dataset.goal].g=Math.max(0,Math.min(31,parseInt(t.value)||0));}
+  else return;
+  save();update();
+});
+
+const f1=n=>(Math.round(n*10)/10).toFixed(1);
+function update(){
+  const n=daysIn(),d=data(),W=weeks();
+  const dc=Array.from({length:n},(_,i)=>d.reduce((s,r)=>s+r[i],0));
+  const total=dc.reduce((a,b)=>a+b,0),poss=H*n,cp=poss?total/poss*100:0;
+
+  $$('[data-bar]').forEach(el=>{const i=+el.dataset.bar;el.style.height=(dc[i]/H*100)+'%';el.parentNode.title='Day '+(i+1)+': '+dc[i]+'/'+H;});
+  $$('[data-comp]').forEach(el=>el.textContent=dc[+el.dataset.comp]);
+  $$('[data-left]').forEach(el=>el.textContent=H-dc[+el.dataset.left]);
+  W.forEach(([a,b],w)=>{
+    let done=0;for(let i=a;i<b;i++)done+=dc[i];
+    const pos=H*(b-a),p=pos?done/pos*100:0;
+    $(`[data-wf="${w}"]`).textContent=done+'/'+pos;
+    $(`[data-wp="${w}"]`).textContent=f1(p)+'%';
+    $(`[data-wb="${w}"]`).style.width=p+'%';
+  });
+
+  // donut
+  const C=2*Math.PI*46;
+  $('#donutArc').setAttribute('stroke-dasharray',(cp/100*C)+' '+C);
+  $('#compPct').textContent=f1(cp)+'%';$('#leftPct').textContent=f1(100-cp)+'%';
+
+  // line chart
+  $('#chart').innerHTML=chart(dc,n);
+
+  // per habit
+  const ph=S.habits.map((h,i)=>{
+    const c=d[i].reduce((a,b)=>a+b,0);
+    return {c,left:Math.max(0,h.g-c),p:h.g>0?Math.min(100,Math.round(c/h.g*100)):0};
+  });
+  ph.forEach((x,i)=>{
+    $(`[data-pl="${i}"]`).textContent=x.left;
+    $(`[data-pp="${i}"]`).textContent=x.p+'%';
+    const bar=$(`[data-pb="${i}"]`);bar.style.width=x.p+'%';
+    bar.style.setProperty('--pc',x.p>=75?'#1fb76a':x.p>=50?'#f5b301':'#ef4444');
+    $(`[data-tn="${i}"]`).textContent=S.habits[i].n;
+  });
+
+  // insight
+  let best=0,weak=0;ph.forEach((x,i)=>{if(x.p>ph[best].p)best=i;if(x.p<ph[weak].p)weak=i;});
+  $('#i1').textContent=cp<30?'Start strong! Every tick counts!':cp<60?'Keep going! You are doing great!':cp<85?'Awesome! You are crushing it!':'Legendary! Perfect consistency!';
+  $('#i1s').textContent='Overall '+f1(cp)+'% complete';
+  $('#i2s').textContent='Best habit: '+S.habits[best].n+' ('+ph[best].p+'%)';
+  $('#i3s').textContent='Needs focus: '+S.habits[weak].n+' ('+ph[weak].p+'%)';
+  $('#i4s').textContent=total+' of '+poss+' ticks done';
+}
+
+function chart(dc,n){
+  const W=620,Ht=190,L=40,R=10,T=10,B=26,pw=W-L-R,ph=Ht-T-B;
+  let s='';
+  for(let k=0;k<=4;k++){const y=T+ph*(1-k/4);
+    s+=`<line x1="${L}" x2="${W-R}" y1="${y}" y2="${y}" stroke="#e3e7f5"/><text x="${L-6}" y="${y+3}" text-anchor="end" font-size="10" font-weight="600" fill="#5a6488">${k*25}%</text>`;}
+  const pts=dc.map((c,i)=>[L+(n>1?pw*i/(n-1):0),T+ph*(1-c/H)]);
+  const line=pts.map((p,i)=>(i?'L':'M')+p[0].toFixed(1)+' '+p[1].toFixed(1)).join(' ');
+  s+=`<path d="${line} L${pts[n-1][0]} ${T+ph} L${pts[0][0]} ${T+ph} Z" fill="rgba(66,133,244,.14)"/>`;
+  s+=`<path d="${line}" fill="none" stroke="#1f5fd0" stroke-width="2" stroke-linejoin="round"/>`;
+  pts.forEach((p,i)=>{
+    s+=`<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="3.2" fill="#1f5fd0"><title>Day ${i+1}: ${Math.round(dc[i]/H*100)}%</title></circle>`;
+    s+=`<text x="${p[0].toFixed(1)}" y="${Ht-9}" text-anchor="middle" font-size="9" font-weight="600" fill="#5a6488">${i+1}</text>`;
+  });
+  return s;
+}
+
+// scale the fixed-size dashboard to the viewport
+function fit(){
+  const app=$('#app'),stage=$('#stage');
+  const s=Math.max(.45,Math.min(1.4,innerWidth/1500));
+  app.style.transform='scale('+s+')';
+  stage.style.width=(1500*s)+'px';stage.style.height=(app.offsetHeight*s)+'px';
+}
+addEventListener('resize',fit);
+build();
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);
+})();
+</script>
+</body>
+</html>
