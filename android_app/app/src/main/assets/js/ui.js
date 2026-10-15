@@ -72,9 +72,10 @@ const UI = (() => {
   const sw = (id, on, act, label) => `<label class="sw"><input type="checkbox" ${on ? 'checked' : ''} data-change="${act}" ${id ? 'id="' + id + '"' : ''} aria-label="${esc(label || '')}"><i></i></label>`;
   const STAT = {
     done: { l: 'Completed', i: '\u2713' }, skip: { l: 'Skipped', i: '\u21B7' }, missed: { l: 'Missed', i: '!' }, failed: { l: 'Not done', i: '\u2715' }, slip: { l: 'Setback', i: '!' },
-    partial: { l: 'In progress', i: '\u25D0' }, open: { l: 'Open', i: '\u25D0' }, pending: { l: 'Not started', i: '' }, off: { l: 'Not scheduled', i: '' }
+    partial: { l: 'In progress', i: '' }, open: { l: 'Open', i: '' }, pending: { l: 'Not started', i: '' }, off: { l: 'Not scheduled', i: '' }
   };
   const badge = st => `<span class="badge ${st === 'failed' ? 'missed' : st}">${STAT[st] ? (STAT[st].i ? STAT[st].i + ' ' : '') + STAT[st].l : st}</span>`;
+  const dotGlyph = st => st === 'partial' || st === 'open' ? '\u2022' : (STAT[st] && STAT[st].i) || '';
 
   /* formatting */
   function fmtTime(t, fmt) { if (!t) return ''; const p = t.split(':').map(Number); if (fmt === '24') return t; const h = p[0] % 12 || 12; return h + ':' + (p[1] < 10 ? '0' : '') + p[1] + (p[0] < 12 ? ' AM' : ' PM'); }
@@ -115,5 +116,5 @@ const UI = (() => {
         sh => { sh.querySelector('#cNo').onclick = () => fin(false); sh.querySelector('#cOk').onclick = () => fin(true); });
     });
   }
-  return { esc, icon, ring, pbar, bars, line, heat, seg, empty, sw, badge, STAT, fmtTime, fmtDate, fmtDur, clock, MN, MFULL, DN, DFULL, sheet, closeSheet, toast, confirm };
+  return { dotGlyph, esc, icon, ring, pbar, bars, line, heat, seg, empty, sw, badge, STAT, fmtTime, fmtDate, fmtDur, clock, MN, MFULL, DN, DFULL, sheet, closeSheet, toast, confirm };
 })();

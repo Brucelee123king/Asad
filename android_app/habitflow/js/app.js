@@ -30,9 +30,17 @@ const App = (() => {
   try { const t = sessionStorage.getItem('hf.tab'); if (t) ui.tab = t; } catch (e) { }
   const cur = () => !D.settings.onboarded ? { s: 'onboarding', p: {} } : ui.stack.length ? ui.stack[ui.stack.length - 1] : { s: ui.tab, p: {} };
   function go(tab) { ui.tab = tab; ui.stack = []; try { sessionStorage.setItem('hf.tab', tab); } catch (e) { } render(); window.scrollTo(0, 0); }
-  function push(s, p) { ui.stack.push({ s, p: p || {} }); try { history.pushState({ n: ui.stack.length }, ''); } catch (e) { } render(); window.scrollTo(0, 0); }
-  function back() { if (document.querySelector('.scrim')) { UI.closeSheet(); return; } if (ui.stack.length) history.back(); }
+  function push(s, p) { ui.stack.push({ s, p: p || {} }); if (!window.Android) try { history.pushState({ n: ui.stack.length }, ''); } catch (e) { } render(); window.scrollTo(0, 0); }
+  function back() { if (document.querySelector('.scrim')) { UI.closeSheet(); return; } if (!ui.stack.length) return; if (window.Android) handleBack(); else history.back(); }
   window.addEventListener('popstate', () => { if (document.querySelector('.scrim')) UI.closeSheet(); if (ui.stack.length) { ui.stack.pop(); render(); } });
+  /* Android back button: sheet → screen → Home tab → leave the app (returns false) */
+  function handleBack() {
+    if (document.querySelector('.scrim')) { UI.closeSheet(); return true; }
+    if (!D.settings.onboarded) return false;
+    if (ui.stack.length) { ui.stack.pop(); render(); window.scrollTo(0, 0); return true; }
+    if (ui.tab !== 'home') { go('home'); return true; }
+    return false;
+  }
   function replaceTop(s, p) { ui.stack[ui.stack.length - 1] = { s, p: p || {} }; render(); }
 
   /* ---------- theme ---------- */
@@ -208,6 +216,6 @@ const App = (() => {
     setInterval(() => { const t = tdy(); if (t !== lastDay) { if (ui.date === lastDay) ui.date = t; lastDay = t; render(); syncNative(); } if (Screens.focus && Screens.focus.tick) Screens.focus.tick(); }, 1000);
     document.addEventListener('visibilitychange', () => { if (!document.hidden) { takeNativeActions(); render(); syncNative(); } });
   }
-  return { get D() { return D; }, set D(v) { D = v; }, ui, sess, tdy, save, render, go, push, back, replaceTop, act, habit, cat, share, native: N, syncNative, boot, applyTheme, KEY,
+  return { get D() { return D; }, set D(v) { D = v; }, ui, sess, tdy, save, render, go, push, back, handleBack, replaceTop, act, habit, cat, share, native: N, syncNative, boot, applyTheme, KEY,
     logSheet, stepsSheet, noteSheet, occSheet, moreSheet, unitLabel };
 })();

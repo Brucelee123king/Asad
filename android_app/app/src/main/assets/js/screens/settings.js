@@ -1,6 +1,6 @@
 /* Settings and its sub-screens */
 const ACCENTS = ['#2f6bff', '#0a84ff', '#2fbf4f', '#30d158', '#ff9f0a', '#ff453a', '#ff375f', '#bf5af2', '#5e5ce6', '#00a5a5'];
-const VERSION = '2.0.0';
+const VERSION = '2.1.0';
 const back = t => `<div class="top"><button class="ib" data-act="back" aria-label="Back">${UI.icon('left')}</button><h1 class="t2">${t}</h1></div>`;
 const setS = (fn, msg) => App.act(fn, msg || null, { noUndo: 1 });
 Screens.settings = (() => {

@@ -10,7 +10,7 @@ Requirements: JDK 17+, Android SDK (platform 35, build-tools 35), Gradle 8.7+.
 cd android_app
 python3 build_assets.py                 # copies habitflow/ + login/classic pages into app/src/main/assets
 cp keystore.properties.template keystore.properties   # fill in your release keystore (never commit it)
-gradle assembleRelease bundleRelease     # APK: app/build/outputs/apk/release, AAB (Play Store): app/build/outputs/bundle/release
+gradle assembleDebug assembleRelease bundleRelease     # debug APK (signed with the same key), APK: app/build/outputs/apk/release, AAB (Play Store): app/build/outputs/bundle/release
 ```
 
 Without `keystore.properties`, `assembleDebug` still works but produces a debug-signed APK. **Keep the release keystore and its password safe.** Every future update must be signed with the same key, or users have to uninstall first.
@@ -22,9 +22,16 @@ node android_app/habitflow/tests/core.test.js                       # 30 unit te
 for tz in UTC America/New_York Asia/Kolkata Pacific/Auckland; do TZ=$tz node android_app/habitflow/tests/core.test.js; done
 ```
 
-End-to-end flows were also exercised with Playwright (Chromium, 390×844), covering:
+End-to-end tests (Playwright, Chromium, 390×844), 27 checks, including tapping every control on 35 screens:
+
+```bash
+cd android_app && python3 build_assets.py && NODE_PATH=$(npm root -g) node habitflow/tests/e2e.test.js
+```
+
+They cover:
 
 - sign-up, login, password reset and onboarding
+- Android back-button behaviour (sheet → screen → Home → exit)
 - habit creation, check-ins with undo, and Add/Set for amounts
 - journal, mood, goals, the focus timer and the assistant
 - every settings screen, theme changes, and persistence after reload
@@ -87,3 +94,5 @@ Native features (notifications, widget, shortcuts, boot rescheduling) compile an
 - Screen-time tracking: needs the Usage Access permission, which also increases Play Protect warnings.
 - NFC tags, location-based reminders, image attachments, multiple languages: not built yet.
 - Friends, shared challenges and leaderboards: need a backend. No fake users are shown.
+
+See `RELEASE_CHECKLIST.md` for the Google Play steps.

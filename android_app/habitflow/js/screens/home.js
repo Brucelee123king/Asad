@@ -23,9 +23,9 @@ Screens.home = (() => {
       return h;
     }
     const pctTxt = c.total ? c.pct : 0;
-    h += `<div class="card"><div class="row" style="gap:18px">${UI.ring(pctTxt, 118, 12, `<b>${pctTxt}%</b><span>${date === t ? 'today' : UI.fmtDate(date, s.dateFmt).replace(/, \d{4}$/, '')}</span>`)}
-      <div class="stats grow" style="grid-template-columns:repeat(2,1fr)"><div class="stat"><b>${c.total}</b><span>Scheduled</span></div><div class="stat"><b>${c.done}</b><span>Completed</span></div>
-      <div class="stat"><b>${c.remaining.length - c.missed.length}</b><span>Remaining</span></div><div class="stat"><b>${c.skipped.length} · ${c.missed.length}</b><span>Skipped · Missed</span></div></div></div>
+    h += `<div class="card"><div class="row" style="gap:18px">${UI.ring(pctTxt, 108, 11, `<b>${pctTxt}%</b><span>${date === t ? 'today' : UI.fmtDate(date, s.dateFmt).replace(/, \d{4}$/, '')}</span>`)}
+      <div class="grow"><div class="b" style="font-size:1.05rem">${c.done} of ${c.total} done</div><div class="small muted" style="margin-bottom:10px">${c.total ? (c.done === c.total ? 'Everything is done for today.' : (c.total - c.done - c.missed.length) + ' still to do') : 'Nothing scheduled'}${c.flex.length ? ' · ' + c.flex.length + ' flexible' : ''}</div>
+      <div class="stats" style="grid-template-columns:repeat(3,1fr);gap:6px"><div class="stat"><b>${c.total - c.done - c.missed.length}</b><span>Left</span></div><div class="stat"><b>${c.skipped.length}</b><span>Skipped</span></div><div class="stat"><b>${c.missed.length}</b><span>Missed</span></div></div></div></div>
       ${hc.motivation ? `<p class="small muted" style="margin-top:12px">${motiv(c)}</p>` : ''}</div>`;
     h += `<div class="chips scroll"><button class="chip" data-act="go" data-s="habitForm">${UI.icon('plus', 16)}Habit</button><button class="chip" data-act="tab" data-v="focus">${UI.icon('focus', 16)}Focus</button>
       <button class="chip" data-act="go" data-s="entry">${UI.icon('note', 16)}Journal</button>${s.moodOn ? `<button class="chip" data-act="mood">${UI.icon('mood', 16)}Mood</button>` : ''}<button class="chip" data-act="go" data-s="goals">${UI.icon('target', 16)}Goals</button></div>`;

@@ -32,7 +32,7 @@ public class ReminderReceiver extends BroadcastReceiver {
             }
             case Reminders.A_TIMER: {
                 Reminders.ensureChannels(c);
-                if (nm == null || (Build.VERSION.SDK_INT >= 24 && !nm.areNotificationsEnabled())) return;
+                if (nm == null || !nm.areNotificationsEnabled()) return;
                 Intent open = new Intent(c, MainActivity.class).setData(android.net.Uri.parse("habitflow://focus")).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 Notification.Builder b = Build.VERSION.SDK_INT >= 26 ? new Notification.Builder(c, Reminders.CH_FOCUS) : new Notification.Builder(c);
                 b.setSmallIcon(R.drawable.ic_stat).setContentTitle(i.getStringExtra("title")).setContentText(i.getStringExtra("text")).setColor(0xFF2F6BFF).setAutoCancel(true)

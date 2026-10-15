@@ -89,9 +89,10 @@ Screens.progress = (() => {
   }
   function habits() {
     const D = App.D, t = App.tdy(), f = App.ui.f; let hs = f.harch ? D.habits.filter(x => x.archived) : Core.live(D);
+    if (f.hq) { const q = f.hq.toLowerCase(); hs = hs.filter(x => (x.name + ' ' + (x.desc || '')).toLowerCase().indexOf(q) >= 0); }
     if (f.hcat2) hs = hs.filter(x => Core.habitCats(x).indexOf(f.hcat2) >= 0); if (f.hpart) hs = hs.filter(x => (x.part || 'anytime') === f.hpart); if (f.hfreq) hs = hs.filter(x => (x.sched.kind === 'weekly' ? 'weekly' : x.sched.kind) === f.hfreq);
     hs = HC.sortHabits(hs, D.settings.sort);
-    return `<div class="row"><select class="inp" data-change="hcat2" aria-label="Category"><option value="">All categories</option>${D.cats.map(c => `<option value="${c.id}" ${f.hcat2 === c.id ? 'selected' : ''}>${E(c.name)}</option>`).join('')}</select>
+    return `<input class="inp" type="search" placeholder="Search habits" value="${E(f.hq || '')}" data-input="hq" aria-label="Search habits"><div class="row"><select class="inp" data-change="hcat2" aria-label="Category"><option value="">All categories</option>${D.cats.map(c => `<option value="${c.id}" ${f.hcat2 === c.id ? 'selected' : ''}>${E(c.name)}</option>`).join('')}</select>
       <select class="inp" data-change="hpart" aria-label="Time of day"><option value="">Any time</option>${D.sections.map(c => `<option value="${c.id}" ${f.hpart === c.id ? 'selected' : ''}>${E(c.name)}</option>`).join('')}</select></div>
       <div class="row"><select class="inp" data-change="hfreq" aria-label="Schedule"><option value="">Any schedule</option>${[['daily', 'Every day'], ['weekly', 'Days of week'], ['interval', 'Interval'], ['times', 'Times per period'], ['monthly', 'Monthly'], ['once', 'One time']].map(o => `<option value="${o[0]}" ${f.hfreq === o[0] ? 'selected' : ''}>${o[1]}</option>`).join('')}</select>
       <select class="inp" data-change="sort" aria-label="Sort"><option value="manual">Manual order</option><option value="alpha" ${D.settings.sort === 'alpha' ? 'selected' : ''}>A–Z</option><option value="time" ${D.settings.sort === 'time' ? 'selected' : ''}>Reminder time</option></select></div>
@@ -121,6 +122,7 @@ Screens.progress = (() => {
       csv: () => App.share('HabitFlow export', Core.csv(App.D), 'habitflow-records.csv', 'text/csv'),
       cdel: t => Screens.goals.acts.cdel(t)
     },
+    inputs: { hq: t => { App.ui.f.hq = t.value; clearTimeout(Screens.progress._qt); Screens.progress._qt = setTimeout(() => { App.render(); const n = document.querySelector('[data-input=hq]'); if (n) { n.focus(); n.setSelectionRange(n.value.length, n.value.length); } }, 250); } },
     changes: {
       pcat: t => { App.ui.f.pcat = t.value; App.render(); }, phid: t => { App.ui.f.phid = t.value; App.render(); }, chid: t => { App.ui.f.chid = t.value; App.render(); },
       hcat2: t => { App.ui.f.hcat2 = t.value; App.render(); }, hpart: t => { App.ui.f.hpart = t.value; App.render(); }, hfreq: t => { App.ui.f.hfreq = t.value; App.render(); },

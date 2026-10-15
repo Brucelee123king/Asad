@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
     private class Bridge {
         @JavascriptInterface public void orient(final String mode) {
             runOnUiThread(() -> setRequestedOrientation("landscape".equals(mode)
-                    ? ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE : ActivityInfo.SCREEN_ORIENTATION_PORTRAIT));
+                    ? ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE : defaultOrientation()));
         }
         @JavascriptInterface public void setReminders(String json) { Reminders.replaceAll(MainActivity.this, json); }
         @JavascriptInterface public String notifStatus() {
@@ -47,7 +47,9 @@ public class MainActivity extends Activity {
                     Reminders.prefs(MainActivity.this).edit().putBoolean("asked_notif", true).apply();
                     requestPermissions(new String[]{Manifest.permission.POST_NOTIFICATIONS}, 7);
                 } else {   // already refused once: Android only allows changing it in system settings
-                    Intent i = new Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS).putExtra(Settings.EXTRA_APP_PACKAGE, getPackageName());
+                    Intent i = Build.VERSION.SDK_INT >= 26
+                            ? new Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS).putExtra(Settings.EXTRA_APP_PACKAGE, getPackageName())
+                            : new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.parse("package:" + getPackageName()));
                     try { startActivity(i); } catch (Exception e) { startActivity(new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.parse("package:" + getPackageName()))); }
                 }
             });
@@ -69,6 +71,12 @@ public class MainActivity extends Activity {
         @JavascriptInterface public String shareText(String title, String text) { return shareText(title, text, "habitflow.txt", "text/plain"); }
     }
 
+    /** Phones stay in portrait; tablets and Chromebooks may rotate (HabitFlow has a wide layout). */
+    private int defaultOrientation() {
+        return getResources().getConfiguration().smallestScreenWidthDp >= 600
+                ? ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED : ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
+    }
+
     private String saveToDownloads(String name, String mime, String text) {
         try {
             byte[] data = text.getBytes(StandardCharsets.UTF_8);
@@ -88,6 +96,7 @@ public class MainActivity extends Activity {
 
     @Override protected void onCreate(Bundle b) {
         super.onCreate(b);
+        setRequestedOrientation(defaultOrientation());
         Reminders.ensureChannels(this);
         web = new WebView(this);
         web.setBackgroundColor(Color.parseColor("#0D0F12"));
@@ -122,5 +131,12 @@ public class MainActivity extends Activity {
     @Override protected void onSaveInstanceState(Bundle o) { super.onSaveInstanceState(o); web.saveState(o); }
     @Override protected void onPause() { super.onPause(); web.onPause(); }
     @Override protected void onResume() { super.onResume(); web.onResume(); }
-    @Override public void onBackPressed() { if (web.canGoBack()) web.goBack(); else super.onBackPressed(); }
+    /** Back: let HabitFlow close a sheet or go back a screen first; other pages use WebView history. */
+    @Override public void onBackPressed() {
+        web.evaluateJavascript("(window.App&&App.handleBack)?String(App.handleBack()):'none'", r -> {
+            if ("\"true\"".equals(r)) return;
+            if ("\"none\"".equals(r) && web.canGoBack()) { web.goBack(); return; }
+            finish();
+        });
+    }
 }

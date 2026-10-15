@@ -19,8 +19,8 @@ Screens.journal = (() => {
       <div class="grow" style="text-align:center"><b>${v === 'month' ? UI.MFULL[+date.slice(5, 7) - 1] + ' ' + date.slice(0, 4) : v === 'week' ? 'Week of ' + UI.fmtDate(HC.weekDays(date)[0], s.dateFmt) : UI.fmtDate(date, s.dateFmt, true)}</b>
       ${date !== t ? `<div><button class="lnk small" data-act="dtoday">Back to today</button></div>` : ''}</div>
       <button class="ib" data-act="dnav" data-v="1" aria-label="Next">${UI.icon('right')}</button></div>
-      <div class="row">${UI.seg('jview', [['day', 'Day'], ['week', 'Week'], ['month', 'Month']], v)}
-      <select class="inp" style="width:auto;min-height:42px" data-change="sort" aria-label="Sort habits"><option value="manual" ${s.sort === 'manual' || !s.sort ? 'selected' : ''}>Manual</option><option value="alpha" ${s.sort === 'alpha' ? 'selected' : ''}>A–Z</option><option value="time" ${s.sort === 'time' ? 'selected' : ''}>Reminder time</option></select></div>`;
+      ${UI.seg('jview', [['day', 'Day'], ['week', 'Week'], ['month', 'Month']], v)}
+      <div class="row" style="justify-content:flex-end"><span class="small muted">Sort</span><select class="inp" style="width:auto;min-height:40px;padding:6px 10px" data-change="sort" aria-label="Sort habits"><option value="manual" ${s.sort === 'manual' || !s.sort ? 'selected' : ''}>Manual</option><option value="alpha" ${s.sort === 'alpha' ? 'selected' : ''}>A–Z</option><option value="time" ${s.sort === 'time' ? 'selected' : ''}>Reminder time</option></select></div>`;
     if (!Core.live(D).length) return h + `<div class="card">${UI.empty('\u{1F4CB}', 'No habits yet', 'Create a habit to start checking in.', '<button class="btn" data-act="go" data-s="library">Browse templates</button>')}</div>`;
     if (v === 'day') {
       const c = Core.dayCompletion(D, date, t);
@@ -32,7 +32,7 @@ Screens.journal = (() => {
       const days = HC.weekDays(date), hs = HC.sortHabits(Core.live(D), s.sort);
       h += `<div class="card wkgrid"><table><thead><tr><th></th>${days.map(d => `<th${d === t ? ' style="color:var(--ac)"' : ''}>${UI.DN[Core.dow(d)].slice(0, 2)}<br>${+d.slice(8)}</th>`).join('')}</tr></thead><tbody>
         ${hs.map(x => `<tr><td title="${E(x.name)}">${E(x.icon)} ${E(x.name)}</td>${days.map(d => { const st = Core.status(D, x, d, t);
-          return `<td>${st === 'off' ? '<span class="dot off">·</span>' : `<button class="dot ${st === 'failed' ? 'missed' : st}" data-act="wcell" data-h="${x.id}" data-d="${d}" aria-label="${E(x.name)} ${d}: ${UI.STAT[st].l}">${UI.STAT[st].i || ''}</button>`}</td>`; }).join('')}</tr>`).join('')}</tbody></table>
+          return `<td>${st === 'off' ? '<span class="dot off">·</span>' : `<button class="dot ${st === 'failed' ? 'missed' : st}" data-act="wcell" data-h="${x.id}" data-d="${d}" aria-label="${E(x.name)} ${d}: ${UI.STAT[st].l}">${UI.dotGlyph(st)}</button>`}</td>`; }).join('')}</tr>`).join('')}</tbody></table>
         <div class="legend"><span><i style="background:var(--done)"></i>Completed</span><span><i style="background:var(--part)"></i>In progress</span><span><i style="background:var(--miss)"></i>Missed / not done</span><span><i style="border:1px dashed var(--skip)"></i>Skipped</span></div></div>`;
     } else {
       h += `<div class="card">${monthCal(date, d => { const c = Core.dayCompletion(D, d, t); return c.total && d <= t ? c.pct : null; })}<p class="hint mt">Tap a day to open its check-in.</p></div>`;

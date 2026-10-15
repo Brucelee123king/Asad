@@ -39,7 +39,7 @@ const HC = (() => {
     const rt = remTime(h); if (rt) subs.push(UI.icon('bell', 12) + UI.fmtTime(rt, D.settings.timeFmt));
     if (h.stack) { const a = App.habit(h.stack); if (a) subs.push('After ' + E(a.name)); }
     if (e.note) subs.push(UI.icon('note', 12));
-    if (st !== 'pending' && st !== 'done' && st !== 'open') subs.push(UI.badge(st));
+    if (st !== 'pending' && st !== 'done' && st !== 'open' && st !== 'partial') subs.push(UI.badge(st));
     let ctl = '';
     const ckBtn = (on, label) => `<button class="ck ${on ? 'on' : ''} ${st === 'skip' ? 'skip' : ''}" data-act="hcheck" data-h="${h.id}" data-d="${date}" aria-pressed="${on}" aria-label="${label}">${UI.icon(st === 'skip' ? 'skip' : 'check', 22)}</button>`;
     if (neg) ctl = `<button class="pill ac" data-act="hocc" data-h="${h.id}" data-d="${date}" aria-label="Record an occurrence">${UI.icon('plus', 16)}</button>` + (st === 'slip' ? '' : ckBtn(st === 'done', 'Record successful day for ' + E(h.name)));
