@@ -88,14 +88,14 @@ sub("""                    <div class="space-y-1.5 pt-1">${optionsHtml}</div>
                     ${q.pma ? '<div class="p-3 rounded-lg text-xs sm:text-sm bg-emerald-50 text-emerald-900"><b>Reason:</b> ' + q.facts + '</div>' : ''}
                 `;""")
 
-# ---- 6. branding: Asadullah Notes Commission, Asad signature ----
+# ---- 6. branding: Asadullah Notes, Asad signature ----
 import base64, os
-sub('<title>Mission Commission Academy – MCQ Tests 1 to 1000</title>', '<title>Asadullah Notes Commission – MCQ Tests 1 to 1000</title>')
-sub('tracking-tight">Mission Commission Academy</h1>', 'tracking-tight">Asadullah Notes Commission</h1>')
-sub('This test belongs to <span class="text-indigo-600 font-bold">Mission Commission Academy</span>', 'This test belongs to <span class="text-indigo-600 font-bold">Asadullah Notes Commission</span>')
+sub('<title>Mission Commission Academy – MCQ Tests 1 to 1000</title>', '<title>Asadullah Notes – MCQ Tests 1 to 1000</title>')
+sub('tracking-tight">Mission Commission Academy</h1>', 'tracking-tight">Asadullah Notes</h1>')
+sub('This test belongs to <span class="text-indigo-600 font-bold">Mission Commission Academy</span>', 'This test belongs to <span class="text-indigo-600 font-bold">Asadullah Notes</span>')
 sub('Software Created by Admin Mubasher', 'Software Created by Admin Asadullah')
-sub('<h1 class="ln">MISSION <span>COMMISSION</span></h1>', '<h1 class="ln">ASADULLAH NOTES <span>COMMISSION</span></h1>')
-sub('This test is provided by Mission Commission for all of you.', 'This test is provided by Asadullah Notes Commission for all of you.')
+sub('<h1 class="ln">MISSION <span>COMMISSION</span></h1>', '<h1 class="ln">ASADULLAH <span>NOTES</span></h1>')
+sub('This test is provided by Mission Commission for all of you.', 'This test is provided by Asadullah Notes for all of you.')
 sub('Special thanks to Sir Safeer and his admins.', 'Special thanks to Asadullah and his admins.')
 sig = base64.b64encode(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'asad_signature.jpg'), 'rb').read()).decode()
 s, n = re.subn(r'(<div class="sig"><img alt="Signature" src=")[^"]+(")', lambda m: m.group(1) + 'data:image/jpeg;base64,' + sig + m.group(2), s)
