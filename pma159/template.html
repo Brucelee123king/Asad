@@ -56,6 +56,17 @@ h2{font-size:26px}
 .opt:hover{border-color:var(--accent)}
 .opt b{font:700 13px var(--body);min-width:1.4em;color:var(--mut)}
 .opt[aria-pressed=true]{border-color:var(--accent);background:var(--okbg)}
+.opt.ok{border-color:var(--ok);background:var(--okbg)}
+.opt.bad{border-color:var(--bad);background:var(--badbg)}
+.opt:disabled{cursor:default;color:var(--fg)}
+.fb{border-radius:8px;padding:12px 14px;display:flex;flex-direction:column;gap:8px;font-size:15.5px}
+.fb.ok{background:var(--okbg);border:1px solid var(--ok)}
+.fb.bad{background:var(--badbg);border:1px solid var(--bad)}
+.fb p{margin:0}
+.fb h3{margin:0;font:700 20px var(--display);letter-spacing:.03em;text-transform:uppercase}
+.fb.ok h3{color:var(--ok)} .fb.bad h3{color:var(--bad)}
+.pal button.wrong{background:var(--badbg);border-color:var(--bad);color:var(--bad)}
+.pal button.right{background:var(--okbg);border-color:var(--ok);color:var(--ok)}
 .pal{display:grid;grid-template-columns:repeat(auto-fill,minmax(40px,1fr));gap:6px}
 .pal button{height:38px;border:1px solid var(--line);border-radius:6px;background:transparent;font-weight:600;font-variant-numeric:tabular-nums}
 .pal button.ans{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
@@ -100,7 +111,7 @@ function home(){
   const rep=PARTS.flat().filter(x=>x.r>0).length;
   app.innerHTML=`<header class="crest"><div><h1>PMA 159 MCQ Tests</h1><p class="sub">Initial test practice built from shared PMA 159 Long Course experiences.</p></div><span class="pill">${PARTS.flat().length} MCQs · ${PARTS.length} tests</span></header>
   <section class="card"><h2>Choose your test</h2><div class="grid">${PARTS.map((p,i)=>`<button class="part" data-p="${i}"><b>Test ${i+1}</b><span>${p.length} MCQs · ${Math.round(p.length*12/60)} min</span><span>${esc(partSecs(i))}</span><em>${p.filter(x=>x.r>0).length} repeated questions</em></button>`).join("")}</div></section>
-  <section class="card"><h2>Instructions</h2><ul class="rules"><li>Each test has 50 MCQs and a 10 minute timer. It submits itself when time ends.</li><li>Move between questions with Previous, Next or the question palette. You can change an answer before you submit.</li><li>Unanswered questions count as incorrect.</li><li>After submitting you see the correct option for every question with a short reason under it.</li><li>A bracket such as (Repeated in 5 tests) means that question was reported in that many shared test experiences. ${rep} of ${PARTS.flat().length} questions carry it.</li></ul></section>`;
+  <section class="card"><h2>Instructions</h2><ul class="rules"><li>Each test has 50 MCQs and a 10 minute timer. It submits itself when time ends.</li><li>You see right away whether each answer is correct. A wrong answer shows why it is wrong and why the right option is correct. Once you tick an option it is locked, so choose carefully.</li><li>Move between questions with Previous, Next or the question palette. Unanswered questions count as incorrect.</li><li>After submitting you get a full review with the correct option and reason for every question.</li><li>A bracket such as (Repeated in 5 tests) means that question was reported in that many shared test experiences. ${rep} of ${PARTS.flat().length} questions carry it.</li></ul></section>`;
   app.querySelectorAll(".part").forEach(b=>b.onclick=()=>start(+b.dataset.p));
 }
 function start(p){
@@ -108,20 +119,25 @@ function start(p){
   clearInterval(tick);tick=setInterval(()=>{left=Math.max(0,TOTAL_SECS-Math.floor((Date.now()-t0)/1000));const t=$("#tm");if(t){t.textContent=mmss(left);t.classList.toggle("low",left<=60)}if(left<=0)finish()},1000);
   window.scrollTo(0,0);quiz();
 }
+function feedback(q,a){
+  if(a===null)return"";
+  if(a===q.a)return`<div class="fb ok" role="status"><h3>✓ Correct</h3><p><b>Why ${L[q.a]}. ${esc(q.o[q.a])} is correct:</b> ${esc(q.e)}</p></div>`;
+  return`<div class="fb bad" role="status"><h3>✗ Wrong answer</h3><p><b>Why your choice is wrong:</b> You chose ${L[a]}. ${esc(q.o[a])}. That option does not answer this question correctly.</p><p><b>Correct answer: ${L[q.a]}. ${esc(q.o[q.a])}</b></p><p><b>Why it is correct:</b> ${esc(q.e)}</p></div>`;
+}
 function quiz(){
   const P=PARTS[pi],q=P[qi],done=ans.filter(a=>a!==null).length;
-  app.innerHTML=`<div class="bar"><div class="top"><span class="pill">Test ${pi+1} · ${done}/${P.length} answered</span><span class="timer ${left<=60?"low":""}" id="tm">${mmss(left)}</span></div><div class="track"><i style="width:${qi/(P.length-1)*100}%"></i></div></div>
+  app.innerHTML=`<div class="bar"><div class="top"><span class="pill">Test ${pi+1} · ${done}/${P.length} answered · ${P.filter((x,k)=>ans[k]===x.a).length} correct</span><span class="timer ${left<=60?"low":""}" id="tm">${mmss(left)}</span></div><div class="track"><i style="width:${qi/(P.length-1)*100}%"></i></div></div>
   <section class="card"><div class="qh"><span>Question ${qi+1} of ${P.length}</span><span class="tag">${esc(q.s)}</span>${repTag(q.r)}</div>
   <h2 class="q">${esc(q.q)}</h2>
-  <ul class="opts">${q.o.map((o,k)=>`<li><button class="opt" data-k="${k}" aria-pressed="${ans[qi]===k}"><b>${L[k]}</b><span>${esc(o)}</span></button></li>`).join("")}</ul>
-  <div class="row sp"><button class="btn" id="pv" ${qi?"":"disabled"}>Previous</button><button class="btn" id="cl" ${ans[qi]===null?"disabled":""}>Clear choice</button><button class="btn main" id="nx">${qi==P.length-1?"Review & submit":"Next"}</button></div></section>
+  <ul class="opts">${q.o.map((o,k)=>`<li><button class="opt ${ans[qi]!==null?(k===q.a?"ok":k===ans[qi]?"bad":""):""}" data-k="${k}" ${ans[qi]!==null?"disabled":""}><b>${L[k]}</b><span>${esc(o)}</span></button></li>`).join("")}</ul>
+  ${feedback(q,ans[qi])}
+  <div class="row sp"><button class="btn" id="pv" ${qi?"":"disabled"}>Previous</button><button class="btn main" id="nx">${qi==P.length-1?"Review & submit":"Next"}</button></div></section>
   <section class="card"><div class="row sp"><b>Question palette</b><button class="btn" id="sb">Submit test</button></div>
-  <div class="pal">${P.map((_,k)=>`<button data-k="${k}" class="${ans[k]!==null?"ans":""} ${k==qi?"cur":""}" aria-label="Question ${k+1}">${k+1}</button>`).join("")}</div>
-  <div class="legend"><span><i style="background:var(--accent)"></i>Answered</span><span><i></i>Unanswered</span></div>
+  <div class="pal">${P.map((_,k)=>`<button data-k="${k}" class="${ans[k]===null?"":ans[k]===P[k].a?"right":"wrong"} ${k==qi?"cur":""}" aria-label="Question ${k+1}">${k+1}</button>`).join("")}</div>
+  <div class="legend"><span><i style="background:var(--okbg)"></i>Correct</span><span><i style="background:var(--badbg)"></i>Wrong</span><span><i></i>Unanswered</span></div>
   ${confirming?`<div class="modal"><b>Submit this test?</b><span>You answered ${done} of ${P.length}. ${P.length-done} unanswered will count as incorrect.</span><div class="row"><button class="btn" id="no">Keep going</button><button class="btn main" id="yes">Yes, submit</button></div></div>`:""}</section>`;
-  app.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{ans[qi]=+b.dataset.k;quiz()});
+  app.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{if(ans[qi]===null){ans[qi]=+b.dataset.k;quiz()}});
   $("#pv").onclick=()=>{qi--;quiz()};
-  $("#cl").onclick=()=>{ans[qi]=null;quiz()};
   $("#nx").onclick=()=>{if(qi==P.length-1){confirming=true;quiz()}else{qi++;quiz();window.scrollTo(0,0)}};
   $("#sb").onclick=()=>{confirming=true;quiz()};
   app.querySelectorAll(".pal button").forEach(b=>b.onclick=()=>{qi=+b.dataset.k;quiz();window.scrollTo(0,0)});
