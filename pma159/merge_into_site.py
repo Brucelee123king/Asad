@@ -87,5 +87,27 @@ sub("""                    <div class="space-y-1.5 pt-1">${optionsHtml}</div>
                 `;""", """                    <div class="space-y-1.5 pt-1">${optionsHtml}</div>
                     ${q.pma ? '<div class="p-3 rounded-lg text-xs sm:text-sm bg-emerald-50 text-emerald-900"><b>Reason:</b> ' + q.facts + '</div>' : ''}
                 `;""")
+
+# ---- 6. branding: Asadullah Notes Commission, Asad signature ----
+import base64, os
+sub('<title>Mission Commission Academy – MCQ Tests 1 to 1000</title>', '<title>Asadullah Notes Commission – MCQ Tests 1 to 1000</title>')
+sub('tracking-tight">Mission Commission Academy</h1>', 'tracking-tight">Asadullah Notes Commission</h1>')
+sub('This test belongs to <span class="text-indigo-600 font-bold">Mission Commission Academy</span>', 'This test belongs to <span class="text-indigo-600 font-bold">Asadullah Notes Commission</span>')
+sub('Software Created by Admin Mubasher', 'Software Created by Admin Asadullah')
+sub('<h1 class="ln">MISSION <span>COMMISSION</span></h1>', '<h1 class="ln">ASADULLAH NOTES <span>COMMISSION</span></h1>')
+sub('This test is provided by Mission Commission for all of you.', 'This test is provided by Asadullah Notes Commission for all of you.')
+sub('Special thanks to Sir Safeer and his admins.', 'Special thanks to Asadullah and his admins.')
+sig = base64.b64encode(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'asad_signature.jpg'), 'rb').read()).decode()
+s, n = re.subn(r'(<div class="sig"><img alt="Signature" src=")[^"]+(")', lambda m: m.group(1) + 'data:image/jpeg;base64,' + sig + m.group(2), s)
+assert n == 1
+assert 'Mission Commission' not in s and 'MISSION <span>' not in s and 'Mubasher' not in s and 'Safeer' not in s
+# ---- 7. splash screen: black instead of green ----
+sub('radial-gradient(circle at 50% 20%,#1f3a2a 0%,#0b120f 65%)', 'radial-gradient(circle at 50% 20%,#2a2a2a 0%,#000000 65%)')
+sub('background:#6f8f52;top:-60px', 'background:#555555;top:-60px')
+sub('color:#91ad70;margin:12px 0 22px', 'color:#bdbdbd;margin:12px 0 22px')
+sub('color:#e4ebe5;animation-delay:2s', 'color:#ececec;animation-delay:2s')
+sub('background:linear-gradient(135deg,#6f8f52,#4e6b38);color:#fff;border:1px solid rgba(255,255,255,.2)', 'background:linear-gradient(135deg,#2e2e2e,#0a0a0a);color:#fff;border:1px solid rgba(197,167,90,.6)')
+sub('color:#9aa8a0;background:none;border:1px solid rgba(255,255,255,.15)', 'color:#b5b5b5;background:none;border:1px solid rgba(255,255,255,.2)')
+
 open(out, 'w', encoding='utf8').write(s)
 print("written", out, len(s))
