@@ -16,7 +16,7 @@ for i, (sec, q, ok, wrong, why, rep) in enumerate(Q):
     items.append({"id": 0, "question": q + (f" (Repeated in {rep} test{'s' if rep > 1 else ''})" if rep else ""),
                   "options": o, "correct": o.index(ok), "facts": why, "pma": True, "sec": sec})
 PMA = {}
-for n in range(5):
+for n in range((len(items) + 49) // 50):
     chunk = items[n * 50:(n + 1) * 50]
     for k, it in enumerate(chunk): it["id"] = k + 1
     PMA[f"PMA-{n + 1}"] = chunk
@@ -48,12 +48,13 @@ s = s[:eol] + '\n        const PMA_DATA = ' + json.dumps(PMA, ensure_ascii=False
 sub('<div id="test-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>',
     '''<div id="test-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
             <div class="bg-gradient-to-r from-emerald-700 to-teal-600 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
-                <span class="inline-block bg-white/20 text-emerald-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">5 Tests &bull; 250 MCQs</span>
+                <span class="inline-block bg-white/20 text-emerald-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">@@PMA_COUNT@@</span>
                 <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">PMA 159 Long Course &ndash; Initial Test Practice</h2>
                 <p class="text-emerald-50 text-sm sm:text-base">Built from PMA 159 test experiences. Questions marked (Repeated in N tests) were reported in several experiences. Every answer comes with a reason.</p>
             </div>
             <div id="pma-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>''')
 
+s = s.replace('@@PMA_COUNT@@', '%d Tests &bull; %d MCQs' % (len(PMA), len(items)))
 # ---- 3. render both grids ----
 sub("grid.innerHTML = Object.keys(ALL).map((k, i) => {",
     "grid.innerHTML = Object.keys(ALL).filter(k => !isPMA(k)).map((k, i) => {")
@@ -66,7 +67,7 @@ sub("function selectTest(k) {", '''function renderPMA() {
                     <div class="flex items-center justify-between"><span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full">PMA Test ${i + 1}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
                     <div class="text-xl font-bold text-slate-900">PMA 159 &ndash; Part ${i + 1}</div>
                     <div class="text-xs text-slate-500">${secs}</div>
-                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; 10 Minutes &bull; Instant feedback</div>
+                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * 12) / 60))} Minutes &bull; Instant feedback</div>
                     <div class="text-sm font-semibold text-emerald-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
             }).join('');
         }
@@ -77,8 +78,9 @@ sub("            renderSelect(); window.scrollTo(0, 0);\n        }\n\n        fu
 # ---- 4. selectTest: labels + per-test time ----
 sub("const label = k.replace('-', '–');\n            document.getElementById('q-total').textContent = quizData.length;\n            document.getElementById('home-badge').textContent = '100 MCQs (Original Questions ' + label + ')';\n            document.getElementById('home-desc').textContent = 'Challenge yourself with 100 MCQs from original questions ' + label + '.';",
     """const label = k.replace('-', '–');
-            TEST_SECS = 600;
-            const nQ = quizData.length, nMin = TEST_SECS / 60;
+            const nQ = quizData.length;
+            TEST_SECS = isPMA(k) ? Math.max(60, nQ * 12) : 600;
+            const nMin = Math.ceil(TEST_SECS / 60);
             document.getElementById('q-total').textContent = nQ;
             document.getElementById('home-badge').textContent = isPMA(k) ? (nQ + ' MCQs (PMA 159 Long Course – Part ' + k.slice(4) + ')') : (nQ + ' MCQs (Original Questions ' + label + ')');
             document.getElementById('home-desc').textContent = isPMA(k) ? ('Practice ' + nQ + ' MCQs from PMA 159 test experiences. Every answer shows a reason.') : ('Challenge yourself with ' + nQ + ' MCQs from original questions ' + label + '.');

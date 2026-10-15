@@ -96,7 +96,7 @@ h2{font-size:26px}
 <main id="app"></main>
 <script>
 const PARTS=/*DATA*/;
-const TOTAL_SECS=600; // 10 minutes for 50 MCQs
+let TOTAL_SECS=600; // 12 seconds per MCQ (10 minutes for 50)
 const $=s=>document.querySelector(s);
 const esc=s=>String(s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
 const L="ABCD";
@@ -110,12 +110,12 @@ function home(){
   clearInterval(tick);confirming=false;
   const rep=PARTS.flat().filter(x=>x.r>0).length;
   app.innerHTML=`<header class="crest"><div><h1>PMA 159 MCQ Tests</h1><p class="sub">Initial test practice built from shared PMA 159 Long Course experiences.</p></div><span class="pill">${PARTS.flat().length} MCQs · ${PARTS.length} tests</span></header>
-  <section class="card"><h2>Choose your test</h2><div class="grid">${PARTS.map((p,i)=>`<button class="part" data-p="${i}"><b>Test ${i+1}</b><span>${p.length} MCQs · ${Math.round(p.length*12/60)} min</span><span>${esc(partSecs(i))}</span><em>${p.filter(x=>x.r>0).length} repeated questions</em></button>`).join("")}</div></section>
-  <section class="card"><h2>Instructions</h2><ul class="rules"><li>Each test has 50 MCQs and a 10 minute timer. It submits itself when time ends.</li><li>You see right away whether each answer is correct. A wrong answer shows why it is wrong and why the right option is correct. Once you tick an option it is locked, so choose carefully.</li><li>Move between questions with Previous, Next or the question palette. Unanswered questions count as incorrect.</li><li>After submitting you get a full review with the correct option and reason for every question.</li><li>A bracket such as (Repeated in 5 tests) means that question was reported in that many shared test experiences. ${rep} of ${PARTS.flat().length} questions carry it.</li></ul></section>`;
+  <section class="card"><h2>Choose your test</h2><div class="grid">${PARTS.map((p,i)=>`<button class="part" data-p="${i}"><b>Test ${i+1}</b><span>${p.length} MCQs · ${Math.ceil(p.length*12/60)} min</span><span>${esc(partSecs(i))}</span><em>${p.filter(x=>x.r>0).length} repeated questions</em></button>`).join("")}</div></section>
+  <section class="card"><h2>Instructions</h2><ul class="rules"><li>Each test has up to 50 MCQs with a timer of 12 seconds per question (10 minutes for 50). It submits itself when time ends.</li><li>You see right away whether each answer is correct. A wrong answer shows why it is wrong and why the right option is correct. Once you tick an option it is locked, so choose carefully.</li><li>Move between questions with Previous, Next or the question palette. Unanswered questions count as incorrect.</li><li>After submitting you get a full review with the correct option and reason for every question.</li><li>A bracket such as (Repeated in 5 tests) means that question was reported in that many shared test experiences. ${rep} of ${PARTS.flat().length} questions carry it.</li></ul></section>`;
   app.querySelectorAll(".part").forEach(b=>b.onclick=()=>start(+b.dataset.p));
 }
 function start(p){
-  pi=p;qi=0;ans=new Array(PARTS[p].length).fill(null);left=TOTAL_SECS;t0=Date.now();confirming=false;
+  pi=p;qi=0;ans=new Array(PARTS[p].length).fill(null);TOTAL_SECS=Math.max(60,PARTS[p].length*12);left=TOTAL_SECS;t0=Date.now();confirming=false;
   clearInterval(tick);tick=setInterval(()=>{left=Math.max(0,TOTAL_SECS-Math.floor((Date.now()-t0)/1000));const t=$("#tm");if(t){t.textContent=mmss(left);t.classList.toggle("low",left<=60)}if(left<=0)finish()},1000);
   window.scrollTo(0,0);quiz();
 }
