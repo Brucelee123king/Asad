@@ -67,7 +67,7 @@ QS = [
 (S, "If the letters BEYTUA are rearranged to make a correct word, what is the last letter of that word?",
  ["A", "B", "Y", "T"], 2,
  "The letters rearrange to BEAUTY, whose last letter is Y.",
- "BEAUTY contains all five vowel-like patterns E, A, U plus Y as its closing letter.", 2),
+ "Beauty is a six-letter English word and the scrambled form BEYTUA uses exactly the same letters.", 2),
 (S, "If today is Monday, what day will it be the day after tomorrow?",
  ["Tuesday", "Thursday", "Wednesday", "Friday"], 2,
  "Tomorrow is Tuesday, so the day after tomorrow is Wednesday.",
