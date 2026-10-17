@@ -43,6 +43,16 @@ for n in range((len(fa_items) + 49) // 50):
     FA['FA-%d' % (n + 1)] = [{"id": k + 1, "question": q, "options": o, "correct": a, "facts": why, "rel": rel, "pma": True, "sec": sec}
                               for k, (sec, q, o, a, why, rel) in enumerate(fa_items[n * 50:(n + 1) * 50])]
 
+HK = {}
+hk_items = []
+_hkp = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma149', 'hk_final.json')
+if os.path.exists(_hkp):
+    hk_items = json.load(open(_hkp, encoding='utf8'))
+for n in range((len(hk_items) + 49) // 50):
+    HK['HK-%d' % (n + 1)] = [{"id": k + 1, "question": q + (' (%d)' % rep if rep > 1 else ''), "options": o, "correct": a, "facts": why, "rel": rel,
+                              "pma": True, "sec": sec, "rep": rep}
+                             for k, (sec, q, o, a, why, rel, rep) in enumerate(hk_items[n * 50:(n + 1) * 50])]
+
 def sub(a, b, count=1):
     global s
     assert s.count(a) == count, (s.count(a), a[:80])
@@ -64,7 +74,7 @@ SPLIT_JS = '''(function () {
 m = re.search(r'const ALL = ', s)
 eol = s.index('\n', m.start())
 assert s[:eol].rstrip().endswith(';')
-s = s[:eol] + '\n        const PMA_DATA = ' + json.dumps(PMA, ensure_ascii=False) + ';\n        ' + SPLIT_JS + 'Object.assign(ALL, PMA_DATA);\n        const FA_DATA = ' + json.dumps(FA, ensure_ascii=False) + ';\n        Object.assign(ALL, FA_DATA);\n        let TEST_SECS = 1200;\n        const isPMA = k => String(k).indexOf("PMA-") === 0;\n        const isFA = k => String(k).indexOf("FA-") === 0;\n        const isExtra = k => isPMA(k) || isFA(k);' + s[eol:]
+s = s[:eol] + '\n        const PMA_DATA = ' + json.dumps(PMA, ensure_ascii=False) + ';\n        ' + SPLIT_JS + 'Object.assign(ALL, PMA_DATA);\n        const FA_DATA = ' + json.dumps(FA, ensure_ascii=False) + ';\n        Object.assign(ALL, FA_DATA);\n        const HK_DATA = ' + json.dumps(HK, ensure_ascii=False) + ';\n        Object.assign(ALL, HK_DATA);\n        let TEST_SECS = 1200;\n        const isPMA = k => String(k).indexOf("PMA-") === 0;\n        const isFA = k => String(k).indexOf("FA-") === 0;\n        const isHK = k => String(k).indexOf("HK-") === 0;\n        const isExtra = k => isPMA(k) || isFA(k) || isHK(k);' + s[eol:]
 
 # ---- 2. second section on the selection page ----
 sub('<div id="test-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>',
@@ -183,6 +193,35 @@ sub("isPMA(k) ? (nQ + ' MCQs (PMA 159 Long Course – Part ' + k.slice(4) + ')')
 sub("isPMA(k) ? ('Practice ' + nQ + ' MCQs from PMA 159 test experiences. Every answer shows a reason.')", "isExtra(k) ? ('Practice ' + nQ + (isFA(k) ? ' MCQs from Forces Academy Lahore tests and academic lists. Every answer shows a reason and a related fact.' : ' MCQs from PMA 159 test experiences. Every answer shows a reason.'))")
 sub("optionsContainer.appendChild(ff); }", "optionsContainer.appendChild(ff); }\n                if (q.rel) { const rf = document.createElement('div'); rf.className = 'mt-2 p-3 rounded-xl text-xs sm:text-sm bg-slate-100 text-slate-700'; rf.innerHTML = '<b>Related fact:</b> '; rf.appendChild(document.createTextNode(q.rel)); optionsContainer.appendChild(rf); }")
 sub("<b>Reason:</b> ' + q.facts + '</div>' : ''}", "<b>Reason:</b> ' + q.facts + '</div>' : ''}\n                    ${q.rel ? '<div class=\"p-3 rounded-lg text-xs sm:text-sm bg-slate-100 text-slate-700\"><b>Related fact:</b> ' + q.rel + '</div>' : ''}")
+
+# ---- 10. Hakeem Force Academy section ----
+sub('<div id="fa-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>', '''<div id="fa-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            <div class="bg-gradient-to-r from-indigo-800 to-purple-700 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
+                <span class="inline-block bg-white/20 text-indigo-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">@@HK_COUNT@@</span>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Hakeem Force Academy &ndash; PMA 149 ASRC Initial Experiences</h2>
+                <p class="text-indigo-50 text-sm sm:text-base">Questions from about 400 PMA 149 test experiences, each written once. The number in brackets shows how many times that question was repeated. The most repeated questions come first. Every answer has a reason and a related fact, and current-affairs answers are updated to today.</p>
+            </div>
+            <div id="hk-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>''')
+s = s.replace('@@HK_COUNT@@', '%d Tests &bull; %d MCQs' % (len(HK), len(hk_items)))
+sub("function selectTest(k) {", """function renderHK() {
+            const g = document.getElementById('hk-grid');
+            g.innerHTML = Object.keys(ALL).filter(isHK).map((k, i) => {
+                let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
+                const reps = ALL[k].map(q => q.rep || 1), hi = Math.max.apply(null, reps), lo = Math.min.apply(null, reps);
+                const rtxt = hi > 1 ? ('Repeated ' + hi + (lo !== hi ? ' to ' + lo : '') + ' times') : 'Asked once each';
+                return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-indigo-500 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full">HK Test ${i + 1}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
+                    <div class="text-xl font-bold text-slate-900">Hakeem Force Academy &ndash; Part ${i + 1}</div>
+                    <div class="text-xs text-slate-500">${rtxt}</div>
+                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * 12) / 60))} Minutes &bull; Instant feedback</div>
+                    <div class="text-sm font-semibold text-indigo-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+            }).join('');
+        }
+        function selectTest(k) {""")
+sub("renderSelect(); renderPMA(); renderFA(); window.scrollTo(0, 0);", "renderSelect(); renderPMA(); renderFA(); renderHK(); window.scrollTo(0, 0);")
+sub("function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA();", "function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA(); renderHK();")
+sub("(isFA(k) ? ' MCQs (Forces Academy Lahore – Part ' + k.slice(3) + ')' : ' MCQs (PMA 159 Long Course – Part ' + k.slice(4) + ')')", "(isHK(k) ? ' MCQs (Hakeem Force Academy – Part ' + k.slice(3) + ')' : isFA(k) ? ' MCQs (Forces Academy Lahore – Part ' + k.slice(3) + ')' : ' MCQs (PMA 159 Long Course – Part ' + k.slice(4) + ')')")
+sub("(isFA(k) ? ' MCQs from Forces Academy Lahore tests and academic lists. Every answer shows a reason and a related fact.' : ' MCQs from PMA 159 test experiences. Every answer shows a reason.')", "(isHK(k) ? ' MCQs from PMA 149 test experiences. The number in brackets is how many times the question was repeated. Every answer shows a reason and a related fact.' : isFA(k) ? ' MCQs from Forces Academy Lahore tests and academic lists. Every answer shows a reason and a related fact.' : ' MCQs from PMA 159 test experiences. Every answer shows a reason.')")
 
 open(out, 'w', encoding='utf8').write(s)
 print("written", out, len(s))
