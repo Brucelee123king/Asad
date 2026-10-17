@@ -31,3 +31,10 @@ Write ONE Python file (path given in your assignment) defining `QS = [ ... ]`, a
 
 ## Check and report
 Run `python3 /home/user/Asad/pma149/check_hk.py <your file>` and fix every problem. Reply (short) with: the file path, number of MCQs written, number of input lines, the skipped questions with a reason (very short), and the questions whose answer you changed from the candidates' answer because it was outdated or wrong (question and new answer).
+
+
+## Extra rules for this batch (phase 2: questions mentioned in only one experience)
+- WebSearch is a deferred tool in your environment: before using it, call ToolSearch with the query `select:WebSearch` so that its schema is loaded. Then use it for every time-sensitive or doubtful fact (office holders, records, rankings, currencies, populations, recent events, anything dated after 2020). Do NOT skip searching because the tool "was not loaded".
+- The file /home/user/Asad/pma149/phase1_questions.txt lists the questions that already have MCQs (one per line). Before writing an MCQ, run a quick `grep -i` on a distinctive keyword of your question in that file. If the same fact is already covered there, SKIP yours (do not write a duplicate). If your question is a different fact or a different number or version of a similar question, write it.
+- These questions were each noted by a single candidate, so some are fragments or garbled. Write an MCQ only when you can state ONE clear, correct, defensible answer. Otherwise skip it and list it in your report.
+- "repeat" for every MCQ in this batch is 1 (or the number of distinct experiences if you merge duplicates inside your own file).
