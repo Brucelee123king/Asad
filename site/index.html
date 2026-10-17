@@ -830,11 +830,53 @@
             viewHome.classList.add('hidden'); viewQuiz.classList.add('hidden'); viewResults.classList.add('hidden');
             headerTimerContainer.classList.add('hidden'); headerTimerContainer.classList.remove('flex');
             document.getElementById('view-select').classList.remove('hidden');
-            renderSelect(); renderPMA(); renderFA(); renderHK(); window.scrollTo(0, 0);
+            renderSelect(); renderPMA(); renderFA(); renderHK(); applySec(); window.scrollTo(0, 0);
         }
 
+        let curSec = null, menuReady = false;
+        const SECS = [
+            {id: 'o', name: '1000 MCQs', sub: 'Original questions 1 to 1000', grad: 'from-indigo-600 to-violet-600', icon: 'fa-book', test: k => !isExtra(k)},
+            {id: 'pma', name: 'PMA 159 MCQs', sub: 'PMA 159 Long Course test experiences', grad: 'from-emerald-700 to-teal-600', icon: 'fa-shield-halved', test: k => isPMA(k)},
+            {id: 'fa', name: 'Forces Academy Lahore MCQs', sub: 'Intelligence tests and academic practice', grad: 'from-amber-700 to-orange-600', icon: 'fa-brain', test: k => isFA(k)},
+            {id: 'hk', name: 'Hakeem Force Academy MCQs', sub: 'PMA 149 ASRC initial experiences', grad: 'from-indigo-800 to-purple-700', icon: 'fa-medal', test: k => isHK(k)}
+        ];
+        function initMenu() {
+            if (menuReady) return; menuReady = true;
+            const v = document.getElementById('view-select');
+            const kids = Array.from(v.children);
+            SECS.forEach((sc, i) => {
+                const a = kids[2 * i], b = kids[2 * i + 1];
+                a.dataset.sec = sc.id; b.dataset.sec = sc.id;
+                const bar = document.createElement('div');
+                bar.dataset.sec = sc.id; bar.className = 'mb-4';
+                bar.innerHTML = '<button type="button" onclick="openSec(null)" class="inline-flex items-center gap-2 bg-white border border-slate-200 hover:border-indigo-400 text-slate-700 text-sm font-semibold px-4 py-2 rounded-full shadow-sm"><i class="fa-solid fa-arrow-left"></i> All categories</button>';
+                v.insertBefore(bar, a);
+                a.classList.remove('mt-10');
+            });
+            const m = document.createElement('div'); m.id = 'sec-menu'; v.insertBefore(m, v.firstChild);
+        }
+        function renderMenu() {
+            const keys = Object.keys(ALL);
+            document.getElementById('sec-menu').innerHTML = '<div class="text-center mb-6"><h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">Choose a Category</h2><p class="text-slate-500 text-sm mt-1">Tap a category to see its tests</p></div><div class="grid grid-cols-1 sm:grid-cols-2 gap-4">' + SECS.map(sc => {
+                const ks = keys.filter(sc.test), n = ks.reduce((t, k) => t + ALL[k].length, 0);
+                return `<button type="button" onclick="openSec('${sc.id}')" class="text-left bg-gradient-to-r ${sc.grad} text-white rounded-2xl shadow-xl hover:shadow-2xl hover:scale-[1.01] transition p-6 flex flex-col gap-2">
+                    <div class="flex items-center gap-3"><i class="fa-solid ${sc.icon} text-2xl"></i><span class="text-xl sm:text-2xl font-bold">${sc.name}</span></div>
+                    <div class="text-white/90 text-sm">${sc.sub}</div>
+                    <div class="text-white/80 text-xs font-semibold">${ks.length} Tests &bull; ${n} MCQs</div>
+                    <div class="text-sm font-bold mt-1">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+            }).join('') + '</div>';
+        }
+        function applySec() {
+            initMenu(); renderMenu();
+            const v = document.getElementById('view-select');
+            Array.from(v.children).forEach(e => {
+                if (e.id === 'sec-menu') e.classList.toggle('hidden', curSec !== null);
+                else e.classList.toggle('hidden', e.dataset.sec !== curSec);
+            });
+        }
+        function openSec(id) { curSec = id; applySec(); window.scrollTo(0, 0); }
         function bootQuizApp() {
-            renderSelect(); renderPMA(); renderFA(); renderHK();
+            renderSelect(); renderPMA(); renderFA(); renderHK(); applySec();
             
             const startButton = document.getElementById('start-quiz-btn');
             if (startButton) {
