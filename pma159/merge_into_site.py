@@ -26,6 +26,19 @@ FA = {}
 fa_items = []
 for f in sorted(glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fa_parts', 'fa_0*.py'))):
     fa_items += runpy.run_path(f)['QS']
+_ov = runpy.run_path(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fa_parts', 'fa_overrides.py'))
+_lab = lambda q: q.split(')', 1)[0] + ')'
+_removed = [it for it in fa_items if _lab(it[1]) in _ov['REMOVE']]
+assert len(_removed) == len(_ov['REMOVE']), (len(_removed), len(_ov['REMOVE']))
+fa_items = [it for it in fa_items if _lab(it[1]) not in _ov['REMOVE']]
+_fixed = []
+for _i, (_sec, _q, _o, _a, _why, _rel) in enumerate(fa_items):
+    _f = _ov['FIX'].get(_lab(_q))
+    if _f:
+        _a = _f.get('correct', _a); _why = _f.get('reason', _why) + _f.get('append_reason', ''); _rel = _f.get('rel', _rel)
+        if 'append_reason' in _f and 'reason' not in _f: _why = fa_items[_i][4] + _f['append_reason']
+        fa_items[_i] = (_sec, _q, _o, _a, _why, _rel); _fixed.append(_lab(_q))
+assert sorted(_fixed) == sorted(_ov['FIX']), set(_ov['FIX']) ^ set(_fixed)
 for n in range((len(fa_items) + 49) // 50):
     FA['FA-%d' % (n + 1)] = [{"id": k + 1, "question": q, "options": o, "correct": a, "facts": why, "rel": rel, "pma": True, "sec": sec}
                               for k, (sec, q, o, a, why, rel) in enumerate(fa_items[n * 50:(n + 1) * 50])]
