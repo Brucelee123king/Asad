@@ -616,4 +616,7 @@ QS = [('Forces Academy Academic',
   ['27 December 2008', '27 October 2007', '18 October 2007', '27 December 2007'],
   3,
   'She was killed at Liaquat Bagh, Rawalpindi on 27 December 2007.',
-  'A suicide attack in Karachi on 18 October 2007 had targeted her earlier.')]
+  'A suicide attack in Karachi on 18 October 2007 had targeted her earlier.'),
+ ("Forces Academy Academic", "(Forces Academy Academic · Sheet Q27) Which princely state is described in standard Pakistani textbooks as the first state to accede to Pakistan (October 1947)?", ["Bahawalpur", "Kalat", "Swat", "Chitral"], 0, "The Nawab of Bahawalpur signed the agreement with Pakistan in October 1947 (accepted on 9 October), and textbooks name Bahawalpur as the first state to join.", "Khairpur acceded at about the same time, Junagadh announced accession in September 1947 but India took it over, and Kalat joined in March 1948."),
+ ("Forces Academy Academic", "(Forces Academy Academic · Sheet Q32) In which year was the famous Urdu autobiography 'Shahab Nama' by Qudratullah Shahab published?", ["1987", "1977", "1997", "1967"], 0, "Shahab Nama was published in 1987, shortly after the author died in 1986.", "Qudratullah Shahab was a senior civil servant and writer who worked closely with several Pakistani rulers."),
+]

@@ -15,7 +15,7 @@ _add(T, 2, D15 + "A. EVU, B. RHI, C. OLK, D. SHG, E. HSR", ["EVU", "RHI", "OLK",
      "EVU, OLK, SHG and HSR all end with two letters in backward alphabetical order (V U, L K, H G, S R). RHI ends with H I, which goes forward.",
      "Tip: compare the direction of movement inside each group, not only the letters themselves.")
 _add(T, 3, D15 + "A. PQO, B. KJL, C. UYW, D. SRT, E. FEG", ["PQO", "KJL", "UYW", "SRT", "FEG"], 0,
-     "KJL, SRT and FEG each go one step back then two steps forward (-1, +2), and UYW (U+4 = Y, Y-2 = W) is the only other group that does not fit simply, but PQO goes one forward then two back (+1, -2), so it breaks the pattern.",
+     "KJL, SRT and FEG each go one step back then two steps forward (-1, +2). PQO goes forward then back (+1, -2), the reverse of that pattern, which is the answer given in the key.",
      "Tip: write the step sizes between neighbouring letters, as in +1, -2, to spot the odd group.")
 _add(T, 4, D15 + "A. LLMN, B. UUVW, C. CCDE, D. GGHI, E. RRRS", ["LLMN", "UUVW", "CCDE", "GGHI", "RRRS"], 4,
      "The others repeat the first letter twice and then follow with the next two consecutive letters. RRRS repeats its first letter three times.",
