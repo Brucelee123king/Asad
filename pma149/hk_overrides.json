@@ -1,0 +1,5 @@
+{"remove":["Which is the odd one out: football, cricket, baseball, tennis?","How many copies of the Quran were prepared in the era of Hazrat Usman"],
+"fix":{
+"Which is the biggest sea of the world by area?":{"options":["Mediterranean Sea","Caribbean Sea","Philippine Sea","Arabian Sea"],"correct":2,"reason":"The Philippine Sea covers about 5.7 million square km, the largest sea in the world. The South China Sea is about 3.5 million square km.","rel":"The Arabian Sea is the largest of the other options and lies next to Pakistan's coast."},
+"In which division is Narowal district?":{"options":["Sialkot","Gujranwala","Sargodha","Lahore"],"correct":1,"reason":"Narowal district belongs to Gujranwala Division of Punjab.","rel":"Narowal became a separate district in 1991 after being split from Sialkot."}
+}}
