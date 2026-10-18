@@ -1,0 +1,72 @@
+S = "Hakeem Force Academy"
+QS = [
+(S, "Why do people read newspapers?", ["To get information and knowledge about current events", "To avoid learning anything new", "To pass time without thinking", "To make their eyesight weaker"], 0, "Newspapers report news and information about local and world events. People read them mainly to gain knowledge and stay informed.", "The first printed newspapers appeared in Europe in the early 1600s.", [5458, 1485]),
+(S, "Change into active voice: The book is being read by her.", ["She is reading the book.", "She was reading the book.", "She reads the book.", "She has read the book."], 0, "The passive form is being read becomes the active is reading, and the agent her becomes the subject she. The tense stays present continuous.", "In active voice the doer of the action is the subject of the sentence.", [1883]),
+(S, "Change into passive voice: We are reading a book.", ["A book is being read by us.", "A book was being read by us.", "A book is read by us.", "A book has been read by us."], 0, "Present continuous passive uses is or are being plus the past participle. The object a book becomes the subject and we becomes by us.", "Passive voice puts the focus on the action or receiver rather than the doer.", [1870]),
+(S, "What is the value of the real number -(4! + 6)?", ["-30", "-10", "30", "-26"], 0, "4! = 4 x 3 x 2 x 1 = 24. So -(24 + 6) = -30.", "The factorial of 5 is 120.", [1979]),
+(S, "In the complex number 6 + 7i, what is the real part?", ["7", "6", "13", "42"], 1, "A complex number a + bi has real part a and imaginary part b. Here a = 6 and b = 7.", "The imaginary unit i is defined by i squared = -1.", [893]),
+(S, "What is the real part of the complex number -i(4i + 6)?", ["-6", "6", "4", "-4"], 2, "-i(4i + 6) = -4i squared - 6i = 4 - 6i since i squared = -1. The real part is 4.", "The imaginary part of this number is -6.", [611]),
+(S, "What is the real part of the complex number 6 - 9i?", ["-9", "9", "-6", "6"], 3, "In a + bi form, the real part is the term without i. Here it is 6.", "The conjugate of 6 - 9i is 6 + 9i.", [1163]),
+(S, "What is the real part of the complex number 7 - 2i?", ["7", "-2", "2", "5"], 0, "In a + bi form with a = 7 and b = -2, the real part is 7.", "Real numbers are complex numbers whose imaginary part is zero.", [3908]),
+(S, "What was the real name of Iblis (Shaitan) before he was cursed?", ["Azazil", "Harut", "Qabil", "Jibril"], 0, "Iblis is said in many Islamic traditions to have been called Azazil before he refused to bow to Adam (AS). He was a jinn and was cursed for his pride.", "Some narrations give his earlier name as Harith, so sources differ.", [1558, 4159]),
+(S, "Rearrange the letters V I S R E L to make a word. What is the second last letter of that word?", ["L", "E", "I", "R"], 1, "The letters form the word SILVER. Its letters are S, I, L, V, E, R so the second last letter is E.", "Silver has the chemical symbol Ag from the Latin argentum.", [2961]),
+(S, "Who recited verses of the Quran in the court of King Najashi of Abyssinia?", ["Hazrat Jafar bin Abi Talib (RA)", "Hazrat Ali (RA)", "Hazrat Umar (RA)", "Hazrat Bilal (RA)"], 0, "Hazrat Jafar (RA) led the Muslim migrants to Abyssinia and recited the opening verses of Surah Maryam before Najashi. The king was moved and refused to hand the Muslims over to Quraish.", "Hazrat Jafar (RA) is also known as Jafar Tayyar and was martyred at the Battle of Mutah.", [667, 4903, 239]),
+(S, "Who rebuilt the Kaaba together with his son Hazrat Ismail (AS)?", ["Hazrat Ibrahim (AS)", "Hazrat Adam (AS)", "Hazrat Nuh (AS)", "Hazrat Musa (AS)"], 0, "Hazrat Ibrahim (AS) and his son Hazrat Ismail (AS) raised the foundations of the Kaaba by Allah's command. This is mentioned in Surah Al-Baqarah.", "Quraish later rebuilt it again when the Prophet (PBUH) was about 35 years old.", [5246, 5247, 5248]),
+(S, "How many Pakistani Nobel Prize winners have won in the field of physics?", ["1", "2", "0", "3"], 0, "Only Dr Abdus Salam won the Nobel Prize in Physics, in 1979 for the electroweak theory. Malala Yousafzai won the Peace Prize in 2014.", "Abdus Salam shared the 1979 physics prize with Sheldon Glashow and Steven Weinberg.", [2212]),
+(S, "Who is the President of India (as of 2026)?", ["Droupadi Murmu", "Ram Nath Kovind", "Pranab Mukherjee", "Narendra Modi"], 0, "Droupadi Murmu became the 15th President of India on 25 July 2022 and still holds the office. Narendra Modi is the Prime Minister.", "Her predecessor was Ram Nath Kovind, who served from 2017 to 2022.", [5189]),
+(S, "Which of the following is one of the eight categories of zakat recipients (masarif) mentioned in Surah At-Tawbah?", ["Al-Gharimin (those in debt)", "Rich landowners", "Government ministers", "Wealthy traders"], 0, "Surah At-Tawbah (verse 60) lists the fakir, miskin, zakat collectors, those whose hearts are to be reconciled, slaves, debtors, fi sabilillah and travellers. Debtors (Al-Gharimin) are one of them.", "Zakat cannot be given to the Prophet's family (Bani Hashim) according to the majority view.", [3163]),
+(S, "What is dead reckoning in navigation?", ["Estimating current position from a known starting point, speed, time and direction", "Finding position using only satellites", "Sailing only at night using the stars", "Measuring the depth of the sea"], 0, "Dead reckoning calculates the present position by using a previously known position and adding the distance travelled on a known course. It does not need external signals.", "Before GPS, ships and aircraft relied heavily on dead reckoning.", [3373]),
+(S, "Who wrote the book Dead Reckoning: Memories of the 1971 Bangladesh War?", ["Sarmila Bose", "Shrabani Basu", "Arundhati Roy", "Ayesha Jalal"], 0, "Dead Reckoning (2011) was written by Sarmila Bose and discusses the 1971 war and its casualty figures. It is often confused with works by authors with similar names.", "Shrabani Basu wrote Victoria and Abdul, a different book.", [703]),
+(S, "In which year did China recognize Pakistan?", ["1950", "1947", "1951", "1955"], 0, "The People's Republic of China was proclaimed in 1949 and Pakistan recognized it in 1950, among the first countries to do so. Diplomatic relations began on 21 May 1951.", "Pakistan was among the first Muslim countries to recognize the People's Republic of China.", [4202]),
+(S, "What is a decimal number that neither terminates nor repeats called?", ["Irrational number", "Rational number", "Integer", "Whole number"], 0, "A non-terminating, non-recurring decimal cannot be written as a fraction p over q. Such a number is called irrational.", "Pi and the square root of 2 are common irrational numbers.", [1056]),
+(S, "A decimal in which one or more digits repeat endlessly in the same pattern is called:", ["A recurring decimal", "A terminating decimal", "An irrational number", "A whole number"], 0, "In a recurring decimal, a digit or a block of digits repeats forever, such as 0.333... or 0.142857142857... Such numbers are rational.", "1 divided by 3 gives 0.333..., a recurring decimal.", [1059]),
+(S, "Where is the Red Sea located?", ["Between Africa and Asia (Arabian Peninsula)", "Between Europe and North America", "Between India and Sri Lanka", "Between Australia and New Zealand"], 0, "The Red Sea lies between northeast Africa (Egypt, Sudan, Eritrea) and the Arabian Peninsula (Saudi Arabia, Yemen). It connects to the Mediterranean through the Suez Canal.", "The Red Sea joins the Indian Ocean through the Bab-el-Mandeb strait.", [4380]),
+(S, "Who said that the character of the Holy Prophet (PBUH) was the Quran?", ["Hazrat Ayesha (RA)", "Hazrat Abu Bakr (RA)", "Hazrat Umar (RA)", "Hazrat Ali (RA)"], 0, "When asked about the Prophet's character, Hazrat Ayesha (RA) replied that his character was the Quran. This shows he lived by its teachings.", "Hazrat Ayesha (RA) is also known as Umm-ul-Momineen and narrated over 2000 hadith.", [5260]),
+(S, "What did the Montagu-Chelmsford Reforms (Government of India Act 1919) introduce in the provinces?", ["Dyarchy (dual government)", "Complete provincial independence", "Separate electorates for Hindus", "Abolition of the Viceroy"], 0, "The 1919 reforms divided provincial subjects into transferred (under elected ministers) and reserved (under the Governor). This system was called dyarchy.", "Dyarchy was ended by the Government of India Act 1935, which introduced provincial autonomy.", [1234]),
+(S, "What does the word refund mean?", ["To pay back money", "To spend money", "To borrow money", "To save money"], 0, "Refund means to give back money that was paid, for example for a returned item. Its synonym is reimburse.", "Refund can be a noun (a refund) or a verb (to refund).", [3237, 1190]),
+(S, "What is the meaning of the word refute?", ["To disprove", "To confirm", "To support", "To repeat"], 0, "To refute a claim is to prove it wrong. Synonyms include disprove, rebut and counter.", "Refute is sometimes wrongly used to mean simply deny.", [3949, 619]),
+(S, "In which region of the world is Pakistan located?", ["South Asia", "Central Asia", "Southeast Asia", "East Asia"], 0, "Pakistan lies in South Asia, bordered by Iran, Afghanistan, China and India. The Arabian Sea is to the south.", "Pakistan is a member of SAARC, the regional body of South Asia.", [2664]),
+(S, "Between which two regions does the Rann of Kutch lie?", ["Sindh (Pakistan) and Gujarat (India)", "Punjab and Rajasthan", "Balochistan and Iran", "Kashmir and Himachal"], 0, "The Rann of Kutch is a large salt marsh in the Thar desert area on the border between Sindh in Pakistan and Gujarat in India. A border dispute there was settled by tribunal in 1968.", "The 1965 war began with clashes in the Rann of Kutch in April 1965.", [785]),
+(S, "Which country does not have a regular army?", ["Costa Rica", "Pakistan", "Brazil", "Egypt"], 0, "Costa Rica abolished its army in 1948 after a civil war. It relies on police forces for security.", "Dominica, Iceland and Panama are other countries without a standing army.", [1755, 1295, 4511]),
+(S, "Jabal-e-Rehmat (Mount of Mercy) is located near which city?", ["Makkah (Saudi Arabia)", "Madinah", "Jerusalem", "Taif"], 0, "Jabal-e-Rehmat is a hill on the plain of Arafat, about 20 km southeast of Makkah in Saudi Arabia. Pilgrims stand at Arafat on 9 Dhul Hijjah.", "The Prophet (PBUH) delivered his Farewell Sermon near this area in 10 AH.", [2541, 2542, 2565, 4343, 4344]),
+(S, "In the reign of which caliph was the Battle of Yamama fought?", ["Hazrat Abu Bakr (RA)", "Hazrat Umar (RA)", "Hazrat Usman (RA)", "Hazrat Ali (RA)"], 0, "The Battle of Yamama was fought in 632 CE against the false prophet Musaylima in the caliphate of Hazrat Abu Bakr (RA). Many Huffaz of the Quran were martyred.", "This loss led to the first compilation of the Quran in one book.", [2510]),
+(S, "In which province of Pakistan is the Reko Diq mine located?", ["Balochistan", "Sindh", "Punjab", "Khyber Pakhtunkhwa"], 0, "Reko Diq is in Chagai district of Balochistan. It holds one of the world's largest copper and gold deposits.", "Saindak, also in Chagai, is another copper and gold project.", [4381]),
+(S, "What does SUPARCO stand for and what is it related to?", ["Pakistan's space and upper atmosphere research agency", "Pakistan's nuclear energy commission", "Pakistan's oil company", "Pakistan's railway authority"], 0, "SUPARCO is the Space and Upper Atmosphere Research Commission, Pakistan's national space agency. It was founded in 1961.", "Pakistan launched its first satellite Badr-1 in 1990.", [388]),
+(S, "What was the relation of Hazrat Ali (RA) to the Holy Prophet (PBUH)?", ["Cousin and son-in-law", "Uncle and father-in-law", "Brother and uncle", "Nephew and grandson"], 0, "Hazrat Ali (RA) was the son of Abu Talib, the Prophet's uncle, so he was a cousin. He married the Prophet's daughter Hazrat Fatima (RA).", "Hazrat Ali (RA) was the fourth Rightly Guided Caliph.", [3916]),
+(S, "In which year was the film Jinnah released?", ["1998", "1990", "2005", "1985"], 0, "The biographical film Jinnah, starring Christopher Lee as Jinnah, was released in 1998. It was directed by Jamil Dehlavi.", "The film's screenplay was written by Akbar Ahmed and Jamil Dehlavi.", [226]),
+(S, "According to the Quran, which religion is accepted by Allah?", ["Islam", "Judaism", "Christianity", "Buddhism"], 0, "The Quran states that the religion with Allah is Islam (Surah Al-Imran 3:19). It also says no other religion will be accepted from anyone.", "The Quran was completed with the verse declaring Islam as the chosen religion (Surah Al-Maidah 5:3).", [1691]),
+(S, "Nankana Sahib is a famous holy site of which religion?", ["Sikhism", "Hinduism", "Buddhism", "Jainism"], 0, "Nankana Sahib is the birthplace of Guru Nanak, the founder of Sikhism. It is in Punjab, Pakistan.", "Guru Nanak was born there in 1469.", [997]),
+(S, "What is the meaning of the word reluctant?", ["Unwilling", "Eager", "Brave", "Careless"], 0, "Reluctant means unwilling or hesitant to do something. A reluctant person does not want to act.", "The noun form is reluctance.", [3350, 3547, 3740]),
+(S, "What is the antonym of reluctant?", ["Willing", "Hesitant", "Unwilling", "Doubtful"], 0, "Reluctant means unwilling, so its opposite is willing or eager. The other options are synonyms.", "Eager and keen are also antonyms of reluctant.", [3489]),
+(S, "For how many days did the Holy Prophet (PBUH) stay in the Cave of Thawr (Ghar-e-Saur) during the Hijrat?", ["Three days", "One day", "Seven days", "Ten days"], 0, "During the migration to Madinah the Prophet (PBUH) and Hazrat Abu Bakr (RA) hid in the Cave of Thawr for three days. They then continued to Madinah.", "The cave is near Makkah, south of the city.", [1992]),
+]
+DUPS = [
+(261, 5246), (261, 5247), (261, 5248),
+(288, 1782), (866, 1787),
+(821, 5203), (821, 1594), (821, 1589),
+(1509, 4799), (1509, 1581),
+(824, 667) if False else (824, 0),
+(1379, 654),
+(1376, 3141),
+(565, 4438),
+(307, 2792),
+(63, 3915), (63, 3928), (63, 4074),
+(194, 49),
+(1536, 5058), (1536, 5073),
+(193, 1479),
+(727, 2962), (727, 1236),
+(1618, 2963),
+(1619, 2965),
+]
+DUPS = [d for d in DUPS if d[1] != 0]
+
+def _vary(qs):
+    out = []
+    for n, (s, q, o, c, r, f, i) in enumerate(qs):
+        o = list(o)
+        ans = o.pop(c)
+        pos = (n * 5 + n // 4) % (len(o) + 1)
+        o.insert(pos, ans)
+        out.append((s, q, o, pos, r, f, i))
+    return out
+QS = _vary(QS)
