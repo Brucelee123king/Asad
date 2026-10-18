@@ -20,6 +20,17 @@ for r in rows:
     t=toks(r['q']); r['t']=t
     r['nums']=tuple(sorted(w for w in t if re.search(r'\d',w)))
     r['set']=frozenset(w for w in t if not re.search(r'\d',w))
+# merge duplicated write-ups: exps (within 3 of each other) whose question sets overlap 80%+
+byexp=collections.defaultdict(set)
+for r in rows: byexp[r['exp']].add((r['nums'],r['set']))
+ex=sorted(byexp); canon={}
+for i,a in enumerate(ex):
+    for b in ex[max(0,i-3):i]:
+        A,B=byexp[a],byexp[b]
+        if min(len(A),len(B))>=5 and len(A&B)/len(A|B)>=0.8:
+            canon[a]=canon.get(b,b); break
+for r in rows: r['exp']=canon.get(r['exp'],r['exp'])
+print('duplicate write-ups merged:',len(canon))
 # union-find on exact key first, then Jaccard within same nums
 parent=list(range(len(rows)))
 def find(x):
