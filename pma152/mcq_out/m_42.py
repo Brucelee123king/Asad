@@ -29,7 +29,7 @@ QS = [
  (S, "The Battle of Badr, the first battle of Islam, was fought between the Muslims and which tribe?", ["Banu Quraizah", "Quraish of Makkah", "Banu Nadir", "Banu Ghatafan"], 1,
   "The Battle of Badr in 2 AH was fought between the Muslims of Madina and the Quraish of Makkah.", "The Muslims had about 313 men against about 1000 of the Quraish.", [1376, 2410]),
  (S, "Who was the first Pakistani to score a triple century in Test cricket?", ["Inzamam-ul-Haq", "Hanif Mohammad", "Javed Miandad", "Younis Khan"], 1,
-  "Hanif Mohammad scored 337 against the West Indies at Bridgetown in 1958, the first Pakistani triple century.", "Younis Khan later scored 313 against Sri Lanka in 2009, and Hanif's 337 was the Pakistan record until Inzamam, Younis and others fell short of it.", [1245]),
+  "Hanif Mohammad scored 337 against the West Indies at Bridgetown in 1958, the first Pakistani triple century.", "Hanif's 337 in 970 minutes is one of the longest Test innings, and Younis Khan later scored 313 against Sri Lanka in 2009.", [1245]),
  (S, "What is the antonym of \"trivial\"?", ["Petty", "Minor", "Important", "Small"], 2,
   "\"Trivial\" means of little importance, so its opposite is \"important\" or significant.", "Synonyms of trivial include petty, minor and insignificant.", [465]),
  (S, "What is the synonym (closest meaning) of \"trivial\"?", ["Serious", "Insignificant", "Valuable", "Huge"], 1,

@@ -56,12 +56,14 @@ _hkp5 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'dedupe',
 if os.path.exists(_hkp5): _hkp = _hkp5
 _hkp6 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma152', 'hk_final4.json')
 if os.path.exists(_hkp6): _hkp = _hkp6
+_hkp7 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma152', 'hk_final5.json')
+if os.path.exists(_hkp7): _hkp = _hkp7; _hkp6 = _hkp7
 if os.path.exists(_hkp):
     hk_items = json.load(open(_hkp, encoding='utf8'))
 # Hakeem section is split by experience: each MCQ lives in the PMA (149/150/151/152) where it first appeared;
 # repeats from later PMAs only raise its bracket count. Origin list: dedupe/make_origin.py
 HK_META = {}
-_hko = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma152', 'hk_origin4.json') if os.path.exists(_hkp6) else os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'dedupe', 'hk_origin2.json')
+_hko = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma152', 'hk_origin5.json' if _hkp == _hkp7 else 'hk_origin4.json') if os.path.exists(_hkp6) else os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'dedupe', 'hk_origin2.json')
 hk_org = json.load(open(_hko)) if os.path.exists(_hko) and len(json.load(open(_hko))) == len(hk_items) else [149] * len(hk_items)
 _hn = 0
 for _p in (149, 150, 151, 152):
