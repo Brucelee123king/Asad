@@ -66,3 +66,6 @@ pma159/features_block.html (dashboard, streak, Daily Challenge, Saved/bookmarks,
 
 ## User preference (standing)
 Asadullah's messages may arrive in Hindi/Urdu script (voice typing). Always reply in simple English (Roman Urdu is fine). He asked that this be remembered every session.
+
+## Phase 6: sign-in redesign + liquid glass + 3D
+auth_block.html (planet photo scene from space_imgs.json, placeholders {{IMG_scene}} replaced in merge script), glass_block.html (liquid glass, goo blobs, droplets), d3_block.html (3D cubes/orbs/ring, tilt cards, clay buttons). All appended to _blk in merge_into_site.py.
