@@ -50,6 +50,8 @@ _hkp2 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma150',
 if os.path.exists(_hkp2): _hkp = _hkp2
 _hkp3 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma151', 'hk_final3.json')
 if os.path.exists(_hkp3): _hkp = _hkp3
+_hkp4 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'dedupe', 'hk_final_dedup.json')
+if os.path.exists(_hkp4): _hkp = _hkp4
 if os.path.exists(_hkp):
     hk_items = json.load(open(_hkp, encoding='utf8'))
 for n in range((len(hk_items) + 49) // 50):
