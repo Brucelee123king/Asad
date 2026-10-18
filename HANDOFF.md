@@ -1,3 +1,21 @@
+# START HERE (read this first in a new chat)
+
+**User:** Asadullah, admin of an MCQ-practice Netlify site. He types Hindi/Urdu by voice. **Always reply in simple English.** He uploads `site/index.html` to Netlify himself (same link each time). Never change/mix MCQ data unless he asks.
+
+**Deliverable:** `site/index.html` (single file). Rebuild with:
+`python3 pma159/merge_into_site.py pma159/base_original_site.html site/index.html` (run from repo root). Never hand-edit site/index.html; edit the source blocks and rebuild.
+
+**Sections / data (do not change unless asked):** 1000 MCQs (20 tests x 50), PMA 159, Forces Academy Lahore, Hakeem Force Academy (PMA 149+150+151, 4033 MCQs, repeat count in brackets). Each 50-MCQ test has a 20-minute timer. Hakeem data priority: dedupe/hk_final_dedup.json > pma151/hk_final3.json > pma150/hk_final2.json > pma149/hk_final.json.
+
+**UI blocks (all in pma159/, injected in this order by merge_into_site.py `_blk`):**
+theme_block (day/night) > auth_block (login/sign-up page: planet photo scene, astronaut/comet animation, glass form, Continue as Guest; images in space_imgs.json via {{IMG_x}} placeholders) > seccolor_block (section colours inside tests) > polish_block (premium look) > backnav_block (Back button + phone back) > features_block (dashboard, streak, Daily Challenge, Saved, Mistakes, Search, Share score, keyboard shortcuts) > glass_block (liquid glass, goo blobs, droplets) > d3_block (3D cubes/orbs/ring, tilt cards, clay buttons, slow parallax background motion).
+Splash screen is permanently removed. Accounts/streaks/saved are device-local (localStorage); Google/Facebook buttons are cosmetic.
+
+**Workflow:** edit block -> rebuild -> `node --check` inline scripts -> playwright test in /opt/pw-browsers/chromium (light+dark, 400px and desktop) -> commit with trailers -> push branch `ccr-c452b4f4-v2803x` -> SendUserFile site/index.html -> tell him to upload to Netlify.
+
+**Ideas not done yet:** check ~235 time-sensitive Hakeem answers on the web; real Google login would need a server.
+
+---
 # Hand-over: MCQ site for Asadullah Notes (branch ccr-c452b4f4-v2803x)
 
 ## What exists
