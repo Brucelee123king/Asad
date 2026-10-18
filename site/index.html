@@ -1467,21 +1467,21 @@ html.dark{--gl-bg:linear-gradient(135deg,rgba(255,255,255,.11),rgba(255,255,255,
  --gl-sh:0 18px 50px -14px rgba(0,0,0,.65),inset 0 1.5px 1px rgba(255,255,255,.22),inset 0 -1.5px 1px rgba(255,255,255,.05),inset 0 0 26px rgba(150,130,255,.07)}
 #liquidBg{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
 #liquidBg .goo{position:absolute;inset:0;filter:url(#goo);opacity:.9}
-.lb{position:absolute;border-radius:50%;animation:lbMove 60s ease-in-out infinite alternate}
+.lb{position:absolute;border-radius:50%;animation:lbMove 102s ease-in-out infinite alternate}
 .lb.b1{width:42vmax;height:42vmax;left:-12vmax;top:-10vmax;background:#c9b8ff}
-.lb.b2{width:34vmax;height:34vmax;right:-10vmax;top:6vmax;background:#9fe3ff;animation-duration:70s;animation-delay:-8s}
-.lb.b3{width:30vmax;height:30vmax;left:24vw;bottom:-14vmax;background:#ffc9e4;animation-duration:63s;animation-delay:-14s}
-.lb.b4{width:20vmax;height:20vmax;right:14vw;bottom:8vh;background:#ffe2b8;animation-duration:52s;animation-delay:-4s}
-.lb.b5{width:18vmax;height:18vmax;left:8vw;top:48vh;background:#b9f0d8;animation-duration:77s;animation-delay:-20s}
+.lb.b2{width:34vmax;height:34vmax;right:-10vmax;top:6vmax;background:#9fe3ff;animation-duration:119s;animation-delay:-8s}
+.lb.b3{width:30vmax;height:30vmax;left:24vw;bottom:-14vmax;background:#ffc9e4;animation-duration:107s;animation-delay:-14s}
+.lb.b4{width:20vmax;height:20vmax;right:14vw;bottom:8vh;background:#ffe2b8;animation-duration:88s;animation-delay:-4s}
+.lb.b5{width:18vmax;height:18vmax;left:8vw;top:48vh;background:#b9f0d8;animation-duration:131s;animation-delay:-20s}
 html.dark .lb.b1{background:#4c2fd1}html.dark .lb.b2{background:#0e7fb8}html.dark .lb.b3{background:#a1226f}html.dark .lb.b4{background:#b4540f}html.dark .lb.b5{background:#0d8a64}
 html.dark #liquidBg .goo{opacity:.5}
 @keyframes lbMove{0%{transform:translate(0,0) scale(1) rotate(0)}50%{transform:translate(3vw,2vh) scale(1.08) rotate(8deg)}100%{transform:translate(-2vw,4vh) scale(.96) rotate(-6deg)}}
 .drop{position:absolute;border-radius:50%;bottom:-80px;background:radial-gradient(circle at 30% 26%,rgba(255,255,255,.95) 0,rgba(255,255,255,.35) 18%,rgba(190,215,255,.16) 48%,rgba(255,255,255,.06) 70%);
- box-shadow:inset 0 -6px 12px rgba(255,255,255,.35),inset 0 4px 8px rgba(255,255,255,.4),0 6px 18px rgba(120,130,220,.18);animation:dropUp 50s linear infinite}
+ box-shadow:inset 0 -6px 12px rgba(255,255,255,.35),inset 0 4px 8px rgba(255,255,255,.4),0 6px 18px rgba(120,130,220,.18);animation:dropUp 85s linear infinite}
 html.dark .drop{background:radial-gradient(circle at 30% 26%,rgba(255,255,255,.7) 0,rgba(255,255,255,.18) 18%,rgba(140,160,255,.1) 48%,rgba(255,255,255,.03) 70%)}
-.drop.d1{left:8%;width:46px;height:46px;animation-duration:52s}.drop.d2{left:24%;width:22px;height:22px;animation-duration:41s;animation-delay:-6s}
-.drop.d3{left:47%;width:64px;height:64px;animation-duration:66s;animation-delay:-12s}.drop.d4{left:66%;width:30px;height:30px;animation-duration:46s;animation-delay:-3s}
-.drop.d5{left:82%;width:52px;height:52px;animation-duration:59s;animation-delay:-16s}.drop.d6{left:93%;width:18px;height:18px;animation-duration:37s;animation-delay:-9s}
+.drop.d1{left:8%;width:46px;height:46px;animation-duration:88s}.drop.d2{left:24%;width:22px;height:22px;animation-duration:70s;animation-delay:-6s}
+.drop.d3{left:47%;width:64px;height:64px;animation-duration:112s;animation-delay:-12s}.drop.d4{left:66%;width:30px;height:30px;animation-duration:78s;animation-delay:-3s}
+.drop.d5{left:82%;width:52px;height:52px;animation-duration:100s;animation-delay:-16s}.drop.d6{left:93%;width:18px;height:18px;animation-duration:63s;animation-delay:-9s}
 @keyframes dropUp{0%{transform:translate(0,0) scale(.9);opacity:0}8%{opacity:1}50%{transform:translate(24px,-55vh) scale(1.05)}92%{opacity:1}100%{transform:translate(-18px,-118vh) scale(1);opacity:0}}
 body::before{opacity:.55}
 /* header */
@@ -1520,36 +1520,27 @@ main button.bg-indigo-600:before,main button.bg-emerald-600:before,button[onclic
 })();
 </script>
 <div id="obj3d" aria-hidden="true">
-  <div class="o3 cubeW c1"><div class="cube"><i class="f f1"></i><i class="f f2"></i><i class="f f3"></i><i class="f f4"></i><i class="f f5"></i><i class="f f6"></i></div></div>
-  <div class="o3 cubeW c2"><div class="cube"><i class="f f1"></i><i class="f f2"></i><i class="f f3"></i><i class="f f4"></i><i class="f f5"></i><i class="f f6"></i></div></div>
-  <div class="o3 orbW"><div class="orb"></div></div>
-  <div class="o3 ringW"><div class="ring"></div></div>
-  <div class="o3 orbW2"><div class="orb orb2"></div></div>
+  <div class="o3 st sBook"><svg viewBox="0 0 64 64" class="si"><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#5b3fd6"/></linearGradient></defs><path d="M6 14c8-3 18-3 26 3v37c-8-6-18-6-26-3z" fill="url(#g1)"/><path d="M58 14c-8-3-18-3-26 3v37c8-6 18-6 26-3z" fill="url(#g1)" opacity=".8"/><path d="M12 22c6-1.5 12-1 16 2M12 30c6-1.5 12-1 16 2M52 22c-6-1.5-12-1-16 2M52 30c-6-1.5-12-1-16 2" stroke="#fff" stroke-width="2.4" stroke-linecap="round" fill="none" opacity=".85"/></svg></div>
+  <div class="o3 st sPen"><svg viewBox="0 0 64 64" class="si"><defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fde68a"/><stop offset="1" stop-color="#f59e0b"/></linearGradient></defs><g transform="rotate(40 32 32)"><rect x="25" y="4" width="14" height="40" rx="3" fill="url(#g2)"/><rect x="25" y="4" width="14" height="7" rx="3" fill="#f9a8d4"/><path d="M25 44h14l-7 15z" fill="#fde7c3"/><path d="M29.5 53h5l-2.5 6z" fill="#334155"/><path d="M29 12v32" stroke="#fff" stroke-width="2" opacity=".6"/></g></svg></div>
+  <div class="o3 st sCap"><svg viewBox="0 0 64 64" class="si"><defs><linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#4338ca"/></linearGradient></defs><path d="M32 10 2 25l30 15 30-15z" fill="url(#g3)"/><path d="M14 33v13c0 5 8 9 18 9s18-4 18-9V33l-18 9z" fill="url(#g3)" opacity=".85"/><path d="M58 27v18" stroke="#fde68a" stroke-width="2.6" stroke-linecap="round"/><circle cx="58" cy="47" r="3" fill="#fde68a"/></svg></div>
+  <div class="o3 st sBulb"><svg viewBox="0 0 64 64" class="si"><defs><linearGradient id="g4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fef08a"/><stop offset="1" stop-color="#f59e0b"/></linearGradient></defs><path d="M32 5c-10 0-18 7.5-18 17 0 6.5 3.5 10.500 7 14.500 2 2.300 3 4 3 7h16c0-3 1-4.700 3-7 3.500-4 7-8 7-14.500C50 12.500 42 5 32 5z" fill="url(#g4)"/><rect x="23" y="46" width="18" height="5" rx="2.500" fill="#94a3b8"/><rect x="25" y="53" width="14" height="5" rx="2.500" fill="#64748b"/><path d="M26 22c1-4 4-6 8-6" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none" opacity=".8"/></svg></div>
+  <div class="o3 st sClock"><svg viewBox="0 0 64 64" class="si"><defs><linearGradient id="g5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f0abfc"/><stop offset="1" stop-color="#c026d3"/></linearGradient></defs><circle cx="32" cy="34" r="22" fill="url(#g5)"/><circle cx="32" cy="34" r="17" fill="#fff" opacity=".92"/><path d="M32 34V23M32 34l8 5" stroke="#6d28d9" stroke-width="3.200" stroke-linecap="round"/><path d="M22 8l-6 6M42 8l6 6" stroke="#c026d3" stroke-width="5" stroke-linecap="round"/></svg></div>
 </div>
 <style>
 /* ======== 3D MIX: floating glass objects, tilt cards, clay buttons ======== */
 #obj3d{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;perspective:900px;transform-style:preserve-3d}
 .o3{position:absolute;transform-style:preserve-3d;transform:translate3d(calc(var(--gx,0)*var(--k,20)*.7px),calc(var(--gy,0)*var(--k,20)*.7px + var(--sy,0)*var(--s,-.12)*.4px),0) rotateY(calc(var(--gx,0)*6deg)) rotateX(calc(var(--gy,0)*-5deg))}
-.cubeW{--k:34;--s:-.18;width:96px;height:96px;perspective:700px}.cubeW.c1{right:1.5vw;top:56vh}.cubeW.c2{--k:-22;left:1vw;bottom:6vh;width:60px;height:60px}
-.cube{position:relative;width:100%;height:100%;transform-style:preserve-3d;animation:spin3d 60s linear infinite}
-.c2 .cube{animation-duration:80s;animation-direction:reverse}
-.cube .f{position:absolute;inset:0;border:1.5px solid rgba(255,255,255,.75);border-radius:12px;background:linear-gradient(135deg,rgba(255,255,255,.55),rgba(170,150,255,.2) 55%,rgba(110,200,255,.25));box-shadow:inset 0 0 22px rgba(255,255,255,.5),0 0 20px rgba(130,110,255,.25)}
-.cubeW .f1{transform:translateZ(48px)}.cubeW .f2{transform:rotateY(90deg) translateZ(48px)}.cubeW .f3{transform:rotateY(180deg) translateZ(48px)}.cubeW .f4{transform:rotateY(-90deg) translateZ(48px)}.cubeW .f5{transform:rotateX(90deg) translateZ(48px)}.cubeW .f6{transform:rotateX(-90deg) translateZ(48px)}
-.c2 .f1{transform:translateZ(30px)}.c2 .f2{transform:rotateY(90deg) translateZ(30px)}.c2 .f3{transform:rotateY(180deg) translateZ(30px)}.c2 .f4{transform:rotateY(-90deg) translateZ(30px)}.c2 .f5{transform:rotateX(90deg) translateZ(30px)}.c2 .f6{transform:rotateX(-90deg) translateZ(30px)}
-@keyframes spin3d{from{transform:rotateX(-24deg) rotateY(0)}to{transform:rotateX(336deg) rotateY(360deg)}}
-.orbW{--k:-40;--s:-.25;right:-2vw;bottom:4vh;width:120px;height:120px}.orbW2{--k:28;left:-1vw;top:44vh;width:54px;height:54px}
-.orb{width:100%;height:100%;border-radius:50%;animation:bob 16s ease-in-out infinite;
- background:radial-gradient(circle at 30% 24%,#fff 0,rgba(255,255,255,.85) 5%,rgba(255,255,255,0) 14%),radial-gradient(circle at 36% 32%,#e3d8ff,#8f6cf5 46%,#3a1f9a 100%);
- box-shadow:inset -14px -18px 34px rgba(20,0,90,.55),inset 8px 8px 18px rgba(255,255,255,.35),0 34px 40px -12px rgba(60,40,170,.45)}
-.orb2{background:radial-gradient(circle at 30% 24%,#fff 0,rgba(255,255,255,0) 16%),radial-gradient(circle at 36% 32%,#ffe0f2,#f58fc3 48%,#8f2a78 100%);box-shadow:inset -8px -10px 18px rgba(90,0,60,.5),0 22px 26px -10px rgba(170,40,120,.4);animation-delay:-3s}
+.st{width:84px;height:84px;filter:drop-shadow(0 14px 14px rgba(60,40,170,.35));animation:bob 26s ease-in-out infinite}
+.si{width:100%;height:100%;display:block;animation:sway 34s ease-in-out infinite alternate}
+.sBook{--k:34;--s:-.18;right:2vw;top:56vh;width:96px;height:96px}
+.sPen{--k:-22;--s:-.2;left:1.5vw;bottom:7vh;width:76px;height:76px;animation-delay:-6s}
+.sCap{--k:18;--s:-.2;right:3vw;top:74px;width:110px;height:110px;opacity:.9;animation-delay:-11s}
+.sBulb{--k:-40;--s:-.25;right:1vw;bottom:4vh;width:80px;height:80px;animation-delay:-3s}
+.sClock{--k:28;--s:-.15;left:1vw;top:44vh;width:66px;height:66px;animation-delay:-15s}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
-.ringW{--k:18;--s:-.2;left:calc(50vw - 75px);top:-34px;width:150px;height:150px;opacity:.8}
-.ring{width:100%;height:100%;border-radius:50%;background:conic-gradient(#a78bfa,#38bdf8,#f0abfc,#fde68a,#a78bfa);-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 16px),#000 calc(100% - 15px));mask:radial-gradient(farthest-side,transparent calc(100% - 16px),#000 calc(100% - 15px));animation:ringSpin 40s linear infinite;filter:drop-shadow(0 8px 12px rgba(100,80,220,.35))}
-@keyframes ringSpin{from{transform:rotateX(68deg) rotateZ(0)}to{transform:rotateX(68deg) rotateZ(360deg)}}
-html.dark .cube .f{background:linear-gradient(135deg,rgba(255,255,255,.2),rgba(120,100,255,.14) 55%,rgba(60,170,255,.18));border-color:rgba(255,255,255,.4)}
-html.dark .ring{filter:drop-shadow(0 0 14px rgba(130,110,255,.6))}
-@media (max-width:700px){.cubeW.c1{width:62px;height:62px;right:2vw;top:60vh}.cubeW.c1 .f1{transform:translateZ(31px)}.cubeW.c1 .f2{transform:rotateY(90deg) translateZ(31px)}.cubeW.c1 .f3{transform:rotateY(180deg) translateZ(31px)}.cubeW.c1 .f4{transform:rotateY(-90deg) translateZ(31px)}.cubeW.c1 .f5{transform:rotateX(90deg) translateZ(31px)}.cubeW.c1 .f6{transform:rotateX(-90deg) translateZ(31px)}
- .orbW{width:80px;height:80px;right:5vw}.ringW{width:100px;height:100px;left:calc(50vw - 50px);top:-22px}.cubeW.c2{display:none}}
+@keyframes sway{from{transform:rotate(-7deg)}to{transform:rotate(7deg)}}
+html.dark .st{filter:drop-shadow(0 0 16px rgba(130,110,255,.5))}
+@media (max-width:700px){.sBook{width:62px;height:62px;top:60vh}.sPen,.sClock{display:none}.sBulb{width:60px;height:60px}.sCap{width:70px;height:70px;top:70px}}
 /* background depth: blobs and droplets drift with pointer / tilt / scroll */
 #liquidBg .goo{transform:translate3d(calc(var(--gx,0)*-14px),calc(var(--gy,0)*-10px + var(--sy,0)*-.02px),0) scale(1.08)}
 #liquidBg .drw{position:absolute;inset:0;transform:translate3d(calc(var(--gx,0)*18px),calc(var(--gy,0)*13px + var(--sy,0)*-.05px),0)}
@@ -1574,7 +1565,7 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
 #sec-menu .grid>button,#test-grid>button,#pma-grid>button,#fa-grid>button,#hk-grid>button,.dash .st,.dash .act{animation:cardIn .6s cubic-bezier(.2,.8,.2,1) backwards}
 @keyframes cardIn{from{opacity:0;transform:perspective(800px) translateY(30px) rotateX(-14deg) scale(.96)}to{opacity:1}}
 .grid>*:nth-child(2),.dash .st:nth-child(2){animation-delay:.07s}.grid>*:nth-child(3),.dash .st:nth-child(3){animation-delay:.14s}.grid>*:nth-child(4),.dash .st:nth-child(4){animation-delay:.21s}.grid>*:nth-child(5){animation-delay:.28s}.grid>*:nth-child(6){animation-delay:.35s}.grid>*:nth-child(n+7){animation-delay:.4s}
-@media (prefers-reduced-motion:reduce){.cube,.orb,.ring{animation:none}}
+@media (prefers-reduced-motion:reduce){.st,.si{animation:none}}
 </style>
 <script>
 (function(){
@@ -1584,8 +1575,8 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
   window.addEventListener('touchmove',function(e){var t=e.touches[0];if(t){tx=t.clientX/innerWidth*2-1;hasIn=performance.now()}},{passive:true});
   function loop(now){
     var idle=now-hasIn>2500,k=(now-t0)/1000;
-    var gx=idle?Math.sin(k*.18)*.35:tx,gy=idle?Math.cos(k*.14)*.3:ty;
-    cx+=(gx-cx)*.025;cy+=(gy-cy)*.025;
+    var gx=idle?Math.sin(k*.09)*.35:tx,gy=idle?Math.cos(k*.07)*.3:ty;
+    cx+=(gx-cx)*.012;cy+=(gy-cy)*.012;
     R.style.setProperty('--gx',cx.toFixed(4));R.style.setProperty('--gy',cy.toFixed(4));
     R.style.setProperty('--sy',(window.scrollY||0).toFixed(0));
     requestAnimationFrame(loop)}

@@ -14,21 +14,21 @@ html.dark{--gl-bg:linear-gradient(135deg,rgba(255,255,255,.11),rgba(255,255,255,
  --gl-sh:0 18px 50px -14px rgba(0,0,0,.65),inset 0 1.5px 1px rgba(255,255,255,.22),inset 0 -1.5px 1px rgba(255,255,255,.05),inset 0 0 26px rgba(150,130,255,.07)}
 #liquidBg{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
 #liquidBg .goo{position:absolute;inset:0;filter:url(#goo);opacity:.9}
-.lb{position:absolute;border-radius:50%;animation:lbMove 60s ease-in-out infinite alternate}
+.lb{position:absolute;border-radius:50%;animation:lbMove 102s ease-in-out infinite alternate}
 .lb.b1{width:42vmax;height:42vmax;left:-12vmax;top:-10vmax;background:#c9b8ff}
-.lb.b2{width:34vmax;height:34vmax;right:-10vmax;top:6vmax;background:#9fe3ff;animation-duration:70s;animation-delay:-8s}
-.lb.b3{width:30vmax;height:30vmax;left:24vw;bottom:-14vmax;background:#ffc9e4;animation-duration:63s;animation-delay:-14s}
-.lb.b4{width:20vmax;height:20vmax;right:14vw;bottom:8vh;background:#ffe2b8;animation-duration:52s;animation-delay:-4s}
-.lb.b5{width:18vmax;height:18vmax;left:8vw;top:48vh;background:#b9f0d8;animation-duration:77s;animation-delay:-20s}
+.lb.b2{width:34vmax;height:34vmax;right:-10vmax;top:6vmax;background:#9fe3ff;animation-duration:119s;animation-delay:-8s}
+.lb.b3{width:30vmax;height:30vmax;left:24vw;bottom:-14vmax;background:#ffc9e4;animation-duration:107s;animation-delay:-14s}
+.lb.b4{width:20vmax;height:20vmax;right:14vw;bottom:8vh;background:#ffe2b8;animation-duration:88s;animation-delay:-4s}
+.lb.b5{width:18vmax;height:18vmax;left:8vw;top:48vh;background:#b9f0d8;animation-duration:131s;animation-delay:-20s}
 html.dark .lb.b1{background:#4c2fd1}html.dark .lb.b2{background:#0e7fb8}html.dark .lb.b3{background:#a1226f}html.dark .lb.b4{background:#b4540f}html.dark .lb.b5{background:#0d8a64}
 html.dark #liquidBg .goo{opacity:.5}
 @keyframes lbMove{0%{transform:translate(0,0) scale(1) rotate(0)}50%{transform:translate(3vw,2vh) scale(1.08) rotate(8deg)}100%{transform:translate(-2vw,4vh) scale(.96) rotate(-6deg)}}
 .drop{position:absolute;border-radius:50%;bottom:-80px;background:radial-gradient(circle at 30% 26%,rgba(255,255,255,.95) 0,rgba(255,255,255,.35) 18%,rgba(190,215,255,.16) 48%,rgba(255,255,255,.06) 70%);
- box-shadow:inset 0 -6px 12px rgba(255,255,255,.35),inset 0 4px 8px rgba(255,255,255,.4),0 6px 18px rgba(120,130,220,.18);animation:dropUp 50s linear infinite}
+ box-shadow:inset 0 -6px 12px rgba(255,255,255,.35),inset 0 4px 8px rgba(255,255,255,.4),0 6px 18px rgba(120,130,220,.18);animation:dropUp 85s linear infinite}
 html.dark .drop{background:radial-gradient(circle at 30% 26%,rgba(255,255,255,.7) 0,rgba(255,255,255,.18) 18%,rgba(140,160,255,.1) 48%,rgba(255,255,255,.03) 70%)}
-.drop.d1{left:8%;width:46px;height:46px;animation-duration:52s}.drop.d2{left:24%;width:22px;height:22px;animation-duration:41s;animation-delay:-6s}
-.drop.d3{left:47%;width:64px;height:64px;animation-duration:66s;animation-delay:-12s}.drop.d4{left:66%;width:30px;height:30px;animation-duration:46s;animation-delay:-3s}
-.drop.d5{left:82%;width:52px;height:52px;animation-duration:59s;animation-delay:-16s}.drop.d6{left:93%;width:18px;height:18px;animation-duration:37s;animation-delay:-9s}
+.drop.d1{left:8%;width:46px;height:46px;animation-duration:88s}.drop.d2{left:24%;width:22px;height:22px;animation-duration:70s;animation-delay:-6s}
+.drop.d3{left:47%;width:64px;height:64px;animation-duration:112s;animation-delay:-12s}.drop.d4{left:66%;width:30px;height:30px;animation-duration:78s;animation-delay:-3s}
+.drop.d5{left:82%;width:52px;height:52px;animation-duration:100s;animation-delay:-16s}.drop.d6{left:93%;width:18px;height:18px;animation-duration:63s;animation-delay:-9s}
 @keyframes dropUp{0%{transform:translate(0,0) scale(.9);opacity:0}8%{opacity:1}50%{transform:translate(24px,-55vh) scale(1.05)}92%{opacity:1}100%{transform:translate(-18px,-118vh) scale(1);opacity:0}}
 body::before{opacity:.55}
 /* header */
