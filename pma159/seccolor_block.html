@@ -1,0 +1,31 @@
+<style>
+/* each section keeps its own colour inside the test (start page, questions, results) */
+body[data-sec="pma"]{--c1:#047857;--c2:#0d9488;--cs:#059669;--ch:#047857;--cl:#ecfdf5;--ct:#065f46;--cb:#10b981;--cr:#34d399}
+body[data-sec="fa"]{--c1:#b45309;--c2:#ea580c;--cs:#d97706;--ch:#b45309;--cl:#fffbeb;--ct:#92400e;--cb:#f59e0b;--cr:#fbbf24}
+body[data-sec="hk"]{--c1:#3730a3;--c2:#7e22ce;--cs:#6d28d9;--ch:#5b21b6;--cl:#f5f3ff;--ct:#5b21b6;--cb:#8b5cf6;--cr:#a78bfa}
+body[data-sec] :is(#view-home,#view-quiz,#view-results) .from-indigo-600{--tw-gradient-from:var(--c1) var(--tw-gradient-from-position)!important;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)!important}
+body[data-sec] :is(#view-home,#view-quiz,#view-results) .to-violet-600,body[data-sec] :is(#view-home,#view-quiz,#view-results) .to-indigo-900{--tw-gradient-to:var(--c2) var(--tw-gradient-to-position)!important}
+body[data-sec] :is(#view-home,#view-quiz,#view-results) .bg-indigo-600{background-color:var(--cs)!important}
+body[data-sec] :is(#view-home,#view-quiz,#view-results) .bg-indigo-700,body[data-sec] :is(#view-home,#view-quiz,#view-results) .hover\:bg-indigo-700:hover{background-color:var(--ch)!important}
+body[data-sec] :is(#view-home,#view-quiz,#view-results) .bg-indigo-50,body[data-sec] :is(#view-home,#view-quiz,#view-results) .bg-indigo-100{background-color:var(--cl)!important}
+body[data-sec] :is(#view-home,#view-quiz,#view-results) :is(.text-indigo-500,.text-indigo-600,.text-indigo-700,.text-indigo-800){color:var(--ct)!important}
+body[data-sec] :is(#view-home,#view-quiz,#view-results) :is(.border-indigo-300,.border-indigo-500,.border-indigo-600,.border-indigo-700){border-color:var(--cb)!important}
+body[data-sec] :is(#view-home,#view-quiz,#view-results) .ring-indigo-400{--tw-ring-color:var(--cr)!important}
+body[data-sec] #header-timer-container{border-color:var(--cb)}
+html.dark body[data-sec] :is(#view-home,#view-quiz,#view-results) :is(.bg-indigo-50,.bg-indigo-100){background-color:color-mix(in srgb,var(--cs) 22%,transparent)!important}
+html.dark body[data-sec] :is(#view-home,#view-quiz,#view-results) :is(.text-indigo-500,.text-indigo-600,.text-indigo-700,.text-indigo-800){color:var(--cr)!important}
+button[onclick^="confirmSubmitQuiz"],button[onclick^="executeSubmitQuiz"]{background:#4f46e5!important;box-shadow:0 10px 22px -8px rgba(79,70,229,.55)!important}
+button[onclick^="confirmSubmitQuiz"]:hover,button[onclick^="executeSubmitQuiz"]:hover{background:#4338ca!important}
+body[data-sec] button[onclick^="confirmSubmitQuiz"],body[data-sec] button[onclick^="executeSubmitQuiz"]{background:linear-gradient(135deg,var(--c1),var(--c2))!important;box-shadow:0 10px 22px -8px var(--cs)!important}
+body[data-sec] button[onclick^="confirmSubmitQuiz"]:hover,body[data-sec] button[onclick^="executeSubmitQuiz"]:hover{filter:brightness(1.08)}
+#view-home .text-emerald-600{color:#4f46e5!important}
+body[data-sec] #view-home .text-emerald-600{color:var(--cs)!important}
+</style>
+<script>
+(function(){
+  if(typeof selectTest!=='function')return;
+  var _sel=selectTest,_show=showSelect;
+  window.selectTest=selectTest=function(k){var c=isHK(k)?'hk':isFA(k)?'fa':isPMA(k)?'pma':'';if(c)document.body.dataset.sec=c;else delete document.body.dataset.sec;return _sel.apply(this,arguments)};
+  window.showSelect=showSelect=function(){var r=_show.apply(this,arguments);if(!quizActive)delete document.body.dataset.sec;return r};
+})();
+</script>

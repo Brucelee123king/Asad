@@ -276,6 +276,12 @@ sub("function bootQuizApp() {", MENU_JS)
 sub("renderSelect(); renderPMA(); renderFA(); renderHK(); window.scrollTo(0, 0);", "renderSelect(); renderPMA(); renderFA(); renderHK(); applySec(); window.scrollTo(0, 0);")
 sub("function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA(); renderHK();", "function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA(); renderHK(); applySec();")
 
+# login screen (glassy sign in / create account / continue as guest) and day-night mode
+_d = os.path.dirname(os.path.abspath(__file__))
+_blk = open(os.path.join(_d, 'theme_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'auth_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'seccolor_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'polish_block.html'), encoding='utf8').read()
+assert s.count('<div id="splash"') == 1
+s = s.replace('<div id="splash"', _blk + '\n<div id="splash"')
+
 # user request: 20 minutes for every 50-MCQ test (24 seconds per MCQ)
 s = s.replace("TEST_SECS = isExtra(k) ? Math.max(60, nQ * 12) : 600;", "TEST_SECS = isExtra(k) ? Math.max(60, nQ * 24) : 1200;")
 s = s.replace("ALL[k].length * 12) / 60))} Minutes", "ALL[k].length * 24) / 60))} Minutes")

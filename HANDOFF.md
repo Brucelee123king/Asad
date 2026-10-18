@@ -56,3 +56,7 @@ Tell the user: "Continue the task from HANDOFF.md ... Phase 2 PMA 150".
 
 ### Phase 3 DONE
 - PMA 151 added: 53 batches, blind check of 1105 new MCQs (12 disagreements reviewed, fixes in pma151/hk151_overrides.json), key current affairs web-checked. Hakeem section now 4304 MCQs, 87 blocks. Timer 20 min for all tests. site/index.html rebuilt and sent.
+
+### Phase 4 (design)
+- Hakeem dedupe: dedupe/ (pairs reviewed, apply.py -> dedupe/hk_final_dedup.json, 4033 MCQs). merge script uses it automatically.
+- Added blocks injected by merge_into_site.py: pma159/theme_block.html (day/night mode), pma159/auth_block.html (glassy Sign In / Create Account / Continue as Guest, accounts stored in the browser's localStorage only), pma159/seccolor_block.html (each section keeps its colour inside tests incl. Submit button), pma159/polish_block.html (premium look, header avatar, desktop bug fix: hidden views stay hidden).

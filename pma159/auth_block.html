@@ -1,0 +1,161 @@
+<style>
+#auth{position:fixed;inset:0;z-index:9990;display:flex;align-items:center;justify-content:center;padding:18px;overflow:auto;
+  background:#04070c;font-family:'Plus Jakarta Sans','Inter',system-ui,sans-serif;color:#e8f1f8;transition:opacity .6s ease,visibility .6s}
+#auth.hide{opacity:0;visibility:hidden}
+#auth .bg{position:fixed;inset:0;overflow:hidden;pointer-events:none}
+#auth .bg i{position:absolute;left:-30%;width:160%;height:140px;border-radius:50%;filter:blur(2px);opacity:.75;
+  background:linear-gradient(90deg,transparent,rgba(64,170,230,.0) 10%,rgba(64,170,230,.55) 45%,rgba(140,220,255,.9) 50%,rgba(64,170,230,.45) 55%,transparent 90%);
+  box-shadow:0 0 60px rgba(40,140,210,.35);animation:authFlow 9s ease-in-out infinite}
+#auth .bg i:nth-child(1){top:8%;transform:rotate(-24deg)}
+#auth .bg i:nth-child(2){top:34%;transform:rotate(-18deg);height:90px;opacity:.5;animation-delay:-3s}
+#auth .bg i:nth-child(3){top:70%;transform:rotate(-28deg);height:120px;opacity:.6;animation-delay:-6s}
+#auth .bg i:nth-child(4){top:52%;transform:rotate(-12deg);height:60px;opacity:.35;animation-delay:-1.5s}
+#auth .bg b{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(4,7,12,.15),rgba(4,7,12,.85) 75%)}
+@keyframes authFlow{0%,100%{translate:0 0}50%{translate:6% -14px}}
+#auth .wrap{position:relative;width:min(440px,100%);margin:auto}
+#auth .card{position:relative;padding:30px 28px 22px;border:1px solid rgba(160,210,240,.22);
+  background:linear-gradient(160deg,rgba(40,60,80,.55),rgba(10,18,28,.62));backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);
+  clip-path:polygon(44px 0,100% 0,100% calc(100% - 44px),calc(100% - 44px) 100%,0 100%,0 44px);border-radius:18px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 30px 80px rgba(0,0,0,.6);min-height:520px;transition:transform .5s ease}
+#auth .tab{position:absolute;width:52px;height:52px;border:1px solid rgba(160,210,240,.3);background:rgba(40,70,95,.35);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+#auth .tab.t1{left:-6px;top:-6px;clip-path:polygon(0 0,100% 0,0 100%);border-radius:10px 0 0 0}
+#auth .tab.t2{right:-6px;bottom:-6px;clip-path:polygon(100% 0,100% 100%,0 100%);border-radius:0 0 10px 0}
+#auth h2{font-size:28px;font-weight:800;letter-spacing:-.3px;margin:4px 0 4px 6px}
+#auth h2 span{background:linear-gradient(90deg,#7fd3ff,#3aa7e8);-webkit-background-clip:text;background-clip:text;color:transparent}
+#auth .sub{font-size:13px;color:#9fb4c4;margin:0 0 22px 6px}
+#auth label.l{display:block;font-size:13px;font-weight:600;color:#d7e6f1;margin:12px 0 6px}
+#auth .f{position:relative;display:flex;align-items:center}
+#auth .f svg.ic{position:absolute;left:12px;width:16px;height:16px;color:#7f93a3}
+#auth input.in{width:100%;padding:12px 40px 12px 38px;border-radius:10px;border:1px solid rgba(160,200,230,.18);background:rgba(8,16,26,.55);color:#e8f1f8;font-size:14px;outline:none;transition:border .2s,box-shadow .2s}
+#auth input.in::placeholder{color:#5f7383}
+#auth input.in:focus{border-color:#4fb8ef;box-shadow:0 0 0 3px rgba(79,184,239,.18)}
+#auth .eye{position:absolute;right:10px;background:none;border:0;color:#7f93a3;cursor:pointer;padding:4px}
+#auth .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+#auth .opts{display:flex;justify-content:space-between;align-items:center;margin:14px 0 16px;font-size:13px;color:#b8c9d6}
+#auth .opts a,#auth .foot a{color:#7fd3ff;text-decoration:none;font-weight:600;cursor:pointer}
+#auth .chk{display:flex;align-items:center;gap:8px;cursor:pointer}
+#auth .chk input{accent-color:#3aa7e8;width:16px;height:16px}
+#auth .btn{width:100%;padding:13px;border:0;border-radius:10px;font-weight:700;font-size:15px;color:#062033;cursor:pointer;
+  background:linear-gradient(180deg,#8fdcff,#3aa7e8);box-shadow:0 10px 30px rgba(58,167,232,.35),inset 0 1px 0 rgba(255,255,255,.5);transition:transform .15s,filter .2s}
+#auth .btn:hover{filter:brightness(1.08)}#auth .btn:active{transform:scale(.98)}
+#auth .guest{width:100%;margin-top:10px;padding:12px;border-radius:10px;font-weight:700;font-size:14px;cursor:pointer;color:#cfe9f8;
+  background:rgba(20,40,58,.45);border:1px solid rgba(127,211,255,.35);transition:background .2s}
+#auth .guest:hover{background:rgba(40,80,110,.5)}
+#auth .or{display:flex;align-items:center;gap:10px;margin:16px 0 12px;font-size:11px;letter-spacing:2px;color:#6f8495;text-transform:uppercase}
+#auth .or:before,#auth .or:after{content:"";flex:1;height:1px;background:rgba(160,200,230,.15)}
+#auth .soc{display:flex;gap:10px;justify-content:center}
+#auth .soc button{flex:0 1 150px;display:flex;align-items:center;justify-content:center;gap:8px;padding:10px;border-radius:10px;border:1px solid rgba(160,200,230,.18);background:rgba(8,16,26,.5);color:#e8f1f8;font-size:14px;cursor:pointer}
+#auth .foot{text-align:center;font-size:13px;color:#9fb4c4;margin-top:14px}
+#auth .err{min-height:18px;font-size:12.5px;color:#ff8f8f;margin-top:10px;text-align:center}
+#auth .err.ok{color:#8ff0b8}
+#auth .pane{transition:opacity .35s ease,filter .35s ease,transform .35s ease}
+#auth .pane.out{opacity:0;filter:blur(8px);transform:scale(.97);pointer-events:none}
+#auth .pane[hidden]{display:none}
+#auth .logo{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .35s}
+#auth .logo.on{opacity:1}
+#auth .logo .ring{position:absolute;width:190px;height:190px;border-radius:50%;border:2px solid rgba(127,211,255,.35);box-shadow:0 0 50px rgba(58,167,232,.35),inset 0 0 40px rgba(58,167,232,.25)}
+#auth .logo.on .ring{animation:authRing .9s ease-out}
+#auth .logo .mk{position:relative;width:70px;height:70px}
+#auth .logo .mk i{position:absolute;width:38px;height:38px;border-radius:9px;background:linear-gradient(135deg,#8fdcff,#2a8fd0);transform:rotate(45deg) skew(-6deg,-6deg);box-shadow:0 0 25px rgba(58,167,232,.6)}
+#auth .logo .mk i:first-child{left:22px;top:0}#auth .logo .mk i:last-child{left:4px;top:28px;opacity:.85}
+#auth .logo.on .mk{animation:authPop .9s ease}
+@keyframes authRing{0%{transform:scale(.4);opacity:0}60%{opacity:1}100%{transform:scale(1.15);opacity:0}}
+@keyframes authPop{0%{transform:scale(.6) rotate(-20deg);opacity:0}50%{transform:scale(1.08) rotate(0);opacity:1}100%{transform:scale(1)}}
+#auth .brand{text-align:center;font-size:12px;letter-spacing:4px;color:#7f93a3;margin:0 0 14px;text-transform:uppercase}
+#auth .brand b{color:#c5a75a}
+#authUser{position:fixed;right:12px;bottom:12px;z-index:60;display:none;align-items:center;gap:8px;padding:7px 12px;border-radius:999px;font-size:12px;font-weight:600;
+  background:rgba(15,23,42,.88);color:#e2e8f0;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+#authUser button{background:none;border:1px solid rgba(255,255,255,.25);color:#cbd5e1;border-radius:999px;padding:3px 9px;font-size:11px;cursor:pointer}
+@media (max-width:420px){#auth .card{padding:26px 18px 18px}#auth .row2{grid-template-columns:1fr}#auth h2{font-size:24px}}
+</style>
+<div id="auth" role="dialog" aria-label="Sign in">
+  <div class="bg"><i></i><i></i><i></i><i></i><b></b></div>
+  <div class="wrap">
+    <span class="tab t1"></span><span class="tab t2"></span>
+    <div class="card" id="authCard">
+      <p class="brand">Asadullah <b>Notes</b></p>
+      <div class="logo" id="authLogo"><span class="ring"></span><span class="mk"><i></i><i></i></span></div>
+      <form class="pane" id="paneIn" autocomplete="on" onsubmit="return authSignIn(event)">
+        <h2>Welcome <span>Back</span></h2>
+        <p class="sub">Enter your credentials to access your secure account</p>
+        <label class="l" for="inEmail">Email Address</label>
+        <div class="f"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          <input class="in" id="inEmail" type="email" placeholder="name@domain.com" autocomplete="email" required></div>
+        <label class="l" for="inPass">Password</label>
+        <div class="f"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+          <input class="in" id="inPass" type="password" placeholder="••••••••••" autocomplete="current-password" required>
+          <button type="button" class="eye" onclick="authEye('inPass')" aria-label="Show password"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+        <div class="opts"><label class="chk"><input type="checkbox" id="inRemember" checked> Remember me</label><a onclick="authForgot()">Forgot password?</a></div>
+        <button class="btn" type="submit">Sign In &rarr;</button>
+        <button class="guest" type="button" onclick="authGuest()">Continue as Guest</button>
+        <div class="or">or continue with</div>
+        <div class="soc"><button type="button" onclick="authSocial('Google')"><svg width="16" height="16" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34.1 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34.1 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.3 0-9.7-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg>Google</button>
+          <button type="button" onclick="authSocial('Apple')"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.9 4.9c.7-.9 1.2-2 1.1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3-1.5z"/></svg>Apple</button></div>
+        <div class="err" id="inErr"></div>
+        <div class="foot">Don't have an account? <a onclick="authSwitch('up')">Sign Up</a></div>
+      </form>
+      <form class="pane out" id="paneUp" hidden autocomplete="on" onsubmit="return authSignUp(event)">
+        <h2>Create <span>Account</span></h2>
+        <p class="sub">Join us today to access your secure workspace</p>
+        <label class="l" for="upName">Full Name</label>
+        <div class="f"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+          <input class="in" id="upName" type="text" placeholder="Alex Johnson" autocomplete="name" required></div>
+        <label class="l" for="upEmail">Email Address</label>
+        <div class="f"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          <input class="in" id="upEmail" type="email" placeholder="name@domain.com" autocomplete="email" required></div>
+        <div class="row2">
+          <div><label class="l" for="upPass">Password</label>
+            <div class="f"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+            <input class="in" id="upPass" type="password" placeholder="••••••••" autocomplete="new-password" required minlength="6">
+            <button type="button" class="eye" onclick="authEye('upPass')" aria-label="Show password"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div></div>
+          <div><label class="l" for="upPass2">Confirm Password</label>
+            <div class="f"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+            <input class="in" id="upPass2" type="password" placeholder="••••••••" autocomplete="new-password" required>
+            <button type="button" class="eye" onclick="authEye('upPass2')" aria-label="Show password"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div></div>
+        </div>
+        <div class="opts"><label class="chk"><input type="checkbox" id="upAgree" checked> I agree to the <a style="margin-left:4px">Terms &amp; Privacy Policy</a></label></div>
+        <button class="btn" type="submit">Create Account &rarr;</button>
+        <button class="guest" type="button" onclick="authGuest()">Continue as Guest</button>
+        <div class="or">or sign up with</div>
+        <div class="soc"><button type="button" onclick="authSocial('Google')"><svg width="16" height="16" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34.1 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34.1 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.3 0-9.7-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg>Google</button>
+          <button type="button" onclick="authSocial('Apple')"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.9 4.9c.7-.9 1.2-2 1.1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3-1.5z"/></svg>Apple</button></div>
+        <div class="err" id="upErr"></div>
+        <div class="foot">Already have an account? <a onclick="authSwitch('in')">Sign In</a></div>
+      </form>
+    </div>
+  </div>
+</div>
+<div id="authUser"><span id="authUserName"></span><button onclick="authLogout()">Log out</button></div>
+<script>
+(function(){
+  var LS={get:function(k){try{return JSON.parse(localStorage.getItem(k))}catch(e){return null}},set:function(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}},del:function(k){try{localStorage.removeItem(k)}catch(e){}}};
+  var S=null; try{S=JSON.parse(sessionStorage.getItem('an_session_tmp'))}catch(e){}
+  function hash(s){var h=5381;for(var i=0;i<s.length;i++){h=((h<<5)+h+s.charCodeAt(i))|0}return 'h'+(h>>>0).toString(36)+'_'+s.length}
+  function $(id){return document.getElementById(id)}
+  function showUser(u){var b=$('authUser');if(!u){b.style.display='none';return}$('authUserName').textContent=(u.guest?'Guest':'\u{1F464} '+u.name);b.style.display='flex'}
+  function enter(u,remember){if(remember)LS.set('an_session',u);else{LS.del('an_session');try{sessionStorage.setItem('an_session_tmp',JSON.stringify(u))}catch(e){}}
+    var a=$('auth');a.classList.add('hide');showUser(u)}
+  window.authEye=function(id){var i=$(id);i.type=i.type==='password'?'text':'password'};
+  window.authSwitch=function(to){var from=to==='up'?$('paneIn'):$('paneUp'),nx=to==='up'?$('paneUp'):$('paneIn'),lg=$('authLogo');
+    $('inErr').textContent='';$('upErr').textContent='';from.classList.add('out');
+    setTimeout(function(){from.hidden=true;lg.classList.add('on')},300);
+    setTimeout(function(){lg.classList.remove('on');nx.hidden=false;void nx.offsetWidth;nx.classList.remove('out')},1150)};
+  window.authGuest=function(){enter({guest:true,name:'Guest'},false)};
+  window.authSocial=function(n){var e=$('paneIn').hidden?$('upErr'):$('inErr');e.className='err';e.textContent=n+' sign-in is not available yet. Please use email, or Continue as Guest.'};
+  window.authForgot=function(){var e=$('inErr');e.className='err';e.textContent='Accounts are saved on this device only. If you forgot the password, create a new account or Continue as Guest.'};
+  window.authSignUp=function(ev){ev.preventDefault();var n=$('upName').value.trim(),m=$('upEmail').value.trim().toLowerCase(),p=$('upPass').value,p2=$('upPass2').value,e=$('upErr');e.className='err';
+    if(p.length<6){e.textContent='Password must be at least 6 characters.';return false}
+    if(p!==p2){e.textContent='Passwords do not match.';return false}
+    if(!$('upAgree').checked){e.textContent='Please agree to the Terms & Privacy Policy.';return false}
+    var us=LS.get('an_users')||{};if(us[m]){e.textContent='An account with this email already exists. Please sign in.';return false}
+    us[m]={name:n,h:hash(m+'|'+p)};LS.set('an_users',us);e.className='err ok';e.textContent='Account created. Welcome, '+n+'!';
+    setTimeout(function(){enter({name:n,email:m},true)},700);return false};
+  window.authSignIn=function(ev){ev.preventDefault();var m=$('inEmail').value.trim().toLowerCase(),p=$('inPass').value,e=$('inErr');e.className='err';
+    var us=LS.get('an_users')||{},u=us[m];
+    if(!u){e.textContent='No account found with this email on this device. Please Sign Up first.';return false}
+    if(u.h!==hash(m+'|'+p)){e.textContent='Wrong password. Please try again.';return false}
+    enter({name:u.name,email:m},$('inRemember').checked);return false};
+  window.authLogout=function(){LS.del('an_session');try{sessionStorage.removeItem('an_session_tmp')}catch(e){}showUser(null);var pi=$('paneIn'),pu=$('paneUp');pu.hidden=true;pu.classList.add('out');pi.hidden=false;pi.classList.remove('out');$('inErr').textContent='';$('upErr').textContent='';var a=$('auth');a.classList.remove('hide');window.scrollTo(0,0)};
+  var cur=LS.get('an_session')||S;if(cur){$('auth').classList.add('hide');showUser(cur)}
+})();
+</script>
