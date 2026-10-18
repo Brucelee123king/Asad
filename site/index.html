@@ -1205,6 +1205,45 @@ html.dark #hdrUser .av{border-color:rgba(255,255,255,.2)}
   new MutationObserver(sync).observe(document.getElementById('authUser'),{attributes:true,childList:true,subtree:true});sync();
 })();
 </script>
+<style>
+#backBtn{display:none;align-items:center;justify-content:center;gap:6px;height:40px;min-width:40px;padding:0 12px 0 10px;margin-right:12px;border-radius:999px;cursor:pointer;
+  font-weight:700;font-size:13px;border:1px solid rgba(148,163,184,.35);background:rgba(255,255,255,.85);color:#1e1b4b;box-shadow:0 6px 16px rgba(15,23,42,.12);transition:transform .15s,background .2s}
+#backBtn:active{transform:scale(.94)}
+#backBtn.show{display:inline-flex}
+html.dark #backBtn{background:rgba(15,23,42,.85);color:#e0e7ff;border-color:rgba(148,163,184,.25)}
+#backBtn svg{width:18px;height:18px}
+@media (max-width:420px){#backBtn span{display:none}#backBtn{padding:0 10px;margin-right:8px}}
+</style>
+<script>
+(function(){
+  var row=document.querySelector('header>div>div');if(!row)return;
+  var b=document.createElement('button');b.id='backBtn';b.type='button';b.setAttribute('aria-label','Go back');
+  b.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg><span>Back</span>';
+  row.insertBefore(b,row.firstChild);
+  function vis(id){var e=document.getElementById(id);return !!e&&!e.classList.contains('hidden')}
+  function atMenu(){return vis('view-select')&&typeof curSec!=='undefined'&&curSec===null}
+  function sync(){b.classList.toggle('show',!atMenu())}
+  function performBack(){
+    if(vis('view-home')||vis('view-quiz')||vis('view-results')){
+      if(vis('view-quiz')&&typeof quizActive!=='undefined'&&quizActive){
+        if(!confirm('Leave this test? Your progress will be lost.')){history.pushState({n:1},'');return}
+        quizActive=false;
+      }
+      showSelect();
+    }else if(vis('view-select')&&curSec!==null){openSec(null)}
+    sync();window.scrollTo(0,0);
+  }
+  b.addEventListener('click',function(){if(history.state&&history.state.n)history.back();else performBack()});
+  window.addEventListener('popstate',function(){performBack()});
+  function wrap(name,push){var f=window[name];if(typeof f!=='function')return;
+    window[name]=function(){var r=f.apply(this,arguments);if(push.apply(null,arguments))history.pushState({n:1},'');sync();return r}}
+  wrap('openSec',function(id){return id!==null&&id!==undefined});
+  wrap('selectTest',function(){return true});
+  wrap('showSelect',function(){return false});
+  new MutationObserver(sync).observe(document.querySelector('main'),{attributes:true,subtree:true,attributeFilter:['class']});
+  sync();
+})();
+</script>
 
 <script>function closeSplash(){}</script>
 </body>
