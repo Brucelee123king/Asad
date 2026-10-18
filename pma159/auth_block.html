@@ -1,128 +1,158 @@
 <style>
-#auth{position:fixed;inset:0;z-index:9990;display:flex;align-items:center;justify-content:center;padding:18px;overflow:auto;
-  background:#04070c;font-family:'Plus Jakarta Sans','Inter',system-ui,sans-serif;color:#e8f1f8;transition:opacity .6s ease,visibility .6s}
+#auth{--tx:#f4efff;--mu:#b9a9e6;--fb:rgba(20,8,52,.62);--fbd:rgba(190,160,255,.22);--ph:#7d6ba8;--lk:#b794ff;--gh:rgba(255,255,255,.07);--gb:rgba(190,160,255,.35);
+  position:fixed;inset:0;z-index:9990;display:flex;overflow:auto;font-family:'Plus Jakarta Sans','Inter',system-ui,sans-serif;color:var(--tx);
+  background:linear-gradient(160deg,#12063a 0%,#240b57 45%,#1b0946 100%);transition:opacity .6s ease,visibility .6s}
+html:not(.dark) #auth{--tx:#241552;--mu:#5d4f8e;--fb:rgba(255,255,255,.72);--fbd:rgba(120,90,200,.25);--ph:#9a8fc0;--lk:#6d3fd6;--gh:rgba(255,255,255,.7);--gb:rgba(120,90,200,.35);
+  background:linear-gradient(160deg,#f1ebff 0%,#dcecff 55%,#efe4ff 100%)}
 #auth.hide{opacity:0;visibility:hidden}
-#auth .bg{position:fixed;inset:0;overflow:hidden;pointer-events:none}
-#auth .bg i{position:absolute;left:-30%;width:160%;height:140px;border-radius:50%;filter:blur(2px);opacity:.75;
-  background:linear-gradient(90deg,transparent,rgba(64,170,230,.0) 10%,rgba(64,170,230,.55) 45%,rgba(140,220,255,.9) 50%,rgba(64,170,230,.45) 55%,transparent 90%);
-  box-shadow:0 0 60px rgba(40,140,210,.35);animation:authFlow 9s ease-in-out infinite}
-#auth .bg i:nth-child(1){top:8%;transform:rotate(-24deg)}
-#auth .bg i:nth-child(2){top:34%;transform:rotate(-18deg);height:90px;opacity:.5;animation-delay:-3s}
-#auth .bg i:nth-child(3){top:70%;transform:rotate(-28deg);height:120px;opacity:.6;animation-delay:-6s}
-#auth .bg i:nth-child(4){top:52%;transform:rotate(-12deg);height:60px;opacity:.35;animation-delay:-1.5s}
-#auth .bg b{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(4,7,12,.15),rgba(4,7,12,.85) 75%)}
-@keyframes authFlow{0%,100%{translate:0 0}50%{translate:6% -14px}}
-#auth .wrap{position:relative;width:min(440px,100%);margin:auto}
-#auth .card{position:relative;padding:30px 28px 22px;border:1px solid rgba(160,210,240,.22);
-  background:linear-gradient(160deg,rgba(40,60,80,.55),rgba(10,18,28,.62));backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);
-  clip-path:polygon(44px 0,100% 0,100% calc(100% - 44px),calc(100% - 44px) 100%,0 100%,0 44px);border-radius:18px;
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 30px 80px rgba(0,0,0,.6);min-height:520px;transition:transform .5s ease}
-#auth .tab{position:absolute;width:52px;height:52px;border:1px solid rgba(160,210,240,.3);background:rgba(40,70,95,.35);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
-#auth .tab.t1{left:-6px;top:-6px;clip-path:polygon(0 0,100% 0,0 100%);border-radius:10px 0 0 0}
-#auth .tab.t2{right:-6px;bottom:-6px;clip-path:polygon(100% 0,100% 100%,0 100%);border-radius:0 0 10px 0}
-#auth h2{font-size:28px;font-weight:800;letter-spacing:-.3px;margin:4px 0 4px 6px}
-#auth h2 span{background:linear-gradient(90deg,#7fd3ff,#3aa7e8);-webkit-background-clip:text;background-clip:text;color:transparent}
-#auth .sub{font-size:13px;color:#9fb4c4;margin:0 0 22px 6px}
-#auth label.l{display:block;font-size:13px;font-weight:600;color:#d7e6f1;margin:12px 0 6px}
+/* ---- space scene ---- */
+#auth .sky{position:fixed;inset:0;overflow:hidden;pointer-events:none}
+#auth .stars,#auth .stars2{position:absolute;inset:-50%;background-repeat:repeat;opacity:.9}
+#auth .stars{background-image:radial-gradient(1.4px 1.4px at 20px 30px,#fff,transparent),radial-gradient(1px 1px at 90px 120px,#d9c8ff,transparent),radial-gradient(1.6px 1.6px at 160px 60px,#fff,transparent),radial-gradient(1px 1px at 210px 190px,#bfe6ff,transparent),radial-gradient(1.2px 1.2px at 60px 210px,#fff,transparent);background-size:240px 240px;animation:auDrift 160s linear infinite,auTw 4s ease-in-out infinite}
+#auth .stars2{background-image:radial-gradient(1px 1px at 40px 80px,#fff,transparent),radial-gradient(1.3px 1.3px at 130px 20px,#e8dcff,transparent),radial-gradient(1px 1px at 190px 150px,#fff,transparent);background-size:310px 310px;animation:auDrift 260s linear infinite reverse,auTw 6s 1s ease-in-out infinite}
+html:not(.dark) #auth .stars,html:not(.dark) #auth .stars2{opacity:.35;filter:hue-rotate(200deg) brightness(.6)}
+@keyframes auDrift{to{transform:translate3d(240px,120px,0)}}
+@keyframes auTw{0%,100%{opacity:.95}50%{opacity:.45}}
+#auth .neb{position:absolute;border-radius:50%;filter:blur(60px);animation:auFloat 18s ease-in-out infinite}
+#auth .neb.n1{width:520px;height:520px;left:-120px;bottom:-160px;background:rgba(124,58,237,.38)}
+#auth .neb.n2{width:460px;height:460px;right:-100px;top:-120px;background:rgba(56,189,248,.20);animation-delay:-7s}
+html:not(.dark) #auth .neb.n1{background:rgba(167,139,250,.45)}html:not(.dark) #auth .neb.n2{background:rgba(125,211,252,.5)}
+@keyframes auFloat{0%,100%{transform:translate(0,0)}50%{transform:translate(30px,-24px)}}
+#auth .planet{position:absolute;left:-9%;top:-22%;width:min(54vw,680px);aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(circle at 38% 78%,#bff3ff 0,#5fd3f3 22%,#2c93d6 48%,#1d4fa8 72%,#27227a 100%);
+  box-shadow:0 0 120px rgba(80,190,255,.45),inset -40px -50px 120px rgba(20,10,80,.55);animation:auPlanet 22s ease-in-out infinite}
+#auth .planet:before,#auth .planet:after{content:"";position:absolute;border-radius:48% 52% 55% 45%/50% 45% 55% 50%;background:rgba(20,70,150,.35)}
+#auth .planet:before{width:34%;height:22%;left:22%;top:46%;transform:rotate(-14deg)}
+#auth .planet:after{width:26%;height:16%;left:52%;top:62%;transform:rotate(18deg);background:rgba(120,230,255,.28)}
+html:not(.dark) #auth .planet{box-shadow:0 0 90px rgba(80,170,255,.4),inset -40px -50px 110px rgba(80,60,200,.35)}
+@keyframes auPlanet{0%,100%{transform:translate(0,0) rotate(0)}50%{transform:translate(14px,18px) rotate(2deg)}}
+#auth .moon{position:absolute;left:9%;top:40%;width:min(15vw,150px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#efe3ff,#a779f0 45%,#5a2ea8 100%);box-shadow:0 0 50px rgba(167,121,240,.55);animation:auMoon 14s ease-in-out infinite}
+@keyframes auMoon{0%,100%{transform:translate(0,0)}50%{transform:translate(-16px,22px)}}
+#auth .shoot{position:absolute;height:2px;width:140px;background:linear-gradient(90deg,transparent,#fff);border-radius:2px;opacity:0;transform:rotate(28deg);animation:auShoot 7s linear infinite}
+#auth .shoot.s1{left:48%;top:10%}#auth .shoot.s2{left:20%;top:55%;animation-delay:-3.5s;width:100px}#auth .shoot.s3{left:70%;top:35%;animation-delay:-5.2s}
+html:not(.dark) #auth .shoot{background:linear-gradient(90deg,transparent,#7c5cff)}
+@keyframes auShoot{0%{opacity:0;translate:-60px -30px}6%{opacity:1}22%{opacity:0;translate:260px 140px}100%{opacity:0;translate:260px 140px}}
+/* ---- layout ---- */
+#auth .shell{position:relative;z-index:2;width:100%;min-height:100%;display:grid;grid-template-columns:1.15fr 1fr;align-items:center;max-width:1280px;margin:0 auto;padding:28px 40px}
+#auth .logoTop{position:absolute;left:36px;top:26px;display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;letter-spacing:.2px}
+#auth .logoTop i{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,#8b5cf6,#38bdf8);box-shadow:0 8px 22px rgba(139,92,246,.5);font-style:normal;font-size:17px}
+#auth .logoTop small{display:block;font-size:9px;letter-spacing:5px;font-weight:600;color:var(--mu);margin-top:-2px}
+#auth .tag{align-self:end;padding-bottom:36px;font-size:clamp(26px,3.2vw,40px);font-weight:800;line-height:1.08;letter-spacing:-.5px;text-transform:uppercase;align-self:end;margin-top:60vh}
+#auth .tag span{display:block;background:linear-gradient(90deg,#c4a6ff,#7dd3fc);-webkit-background-clip:text;background-clip:text;color:transparent}
+#auth .wrap{width:min(420px,100%);margin:70px auto 40px;justify-self:center}
+#auth h2{font-size:clamp(40px,5vw,56px);font-weight:800;letter-spacing:-1px;line-height:1;margin:0 0 14px;text-transform:uppercase}
+#auth .sub{font-size:13px;font-weight:700;color:var(--tx);margin:0 0 12px}
+#auth .hint{font-size:12.5px;color:var(--mu);margin:-6px 0 14px}
+#auth label.l{display:block;font-size:12.5px;font-weight:600;color:var(--mu);margin:12px 0 6px}
 #auth .f{position:relative;display:flex;align-items:center}
-#auth .f svg.ic{position:absolute;left:12px;width:16px;height:16px;color:#7f93a3}
-#auth input.in{width:100%;padding:12px 40px 12px 38px;border-radius:10px;border:1px solid rgba(160,200,230,.18);background:rgba(8,16,26,.55);color:#e8f1f8;font-size:14px;outline:none;transition:border .2s,box-shadow .2s}
-#auth input.in::placeholder{color:#5f7383}
-#auth input.in:focus{border-color:#4fb8ef;box-shadow:0 0 0 3px rgba(79,184,239,.18)}
-#auth .eye{position:absolute;right:10px;background:none;border:0;color:#7f93a3;cursor:pointer;padding:4px}
+#auth .f svg.ic{z-index:2;pointer-events:none;position:absolute;left:14px;width:17px;height:17px;color:var(--ph)}
+#auth input.in{width:100%;padding:15px 42px 15px 42px;border-radius:12px;border:1px solid var(--fbd);background:var(--fb);color:var(--tx);font-size:14.5px;outline:none;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:border .2s,box-shadow .2s}
+#auth input.in::placeholder{color:var(--ph)}
+#auth input.in:focus{border-color:#8b5cf6;box-shadow:0 0 0 3px rgba(139,92,246,.28)}
+#auth .eye{z-index:2;position:absolute;right:10px;background:none;border:0;color:var(--ph);cursor:pointer;padding:4px}
 #auth .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-#auth .opts{display:flex;justify-content:space-between;align-items:center;margin:14px 0 16px;font-size:13px;color:#b8c9d6}
-#auth .opts a,#auth .foot a{color:#7fd3ff;text-decoration:none;font-weight:600;cursor:pointer}
+#auth .opts{display:flex;justify-content:space-between;align-items:center;margin:14px 0 16px;font-size:12.5px;color:var(--mu)}
+#auth .opts a,#auth .foot a,#auth .tc a{color:var(--lk);text-decoration:none;font-weight:700;cursor:pointer}
 #auth .chk{display:flex;align-items:center;gap:8px;cursor:pointer}
-#auth .chk input{accent-color:#3aa7e8;width:16px;height:16px}
-#auth .btn{width:100%;padding:13px;border:0;border-radius:10px;font-weight:700;font-size:15px;color:#062033;cursor:pointer;
-  background:linear-gradient(180deg,#8fdcff,#3aa7e8);box-shadow:0 10px 30px rgba(58,167,232,.35),inset 0 1px 0 rgba(255,255,255,.5);transition:transform .15s,filter .2s}
-#auth .btn:hover{filter:brightness(1.08)}#auth .btn:active{transform:scale(.98)}
-#auth .guest{width:100%;margin-top:10px;padding:12px;border-radius:10px;font-weight:700;font-size:14px;cursor:pointer;color:#cfe9f8;
-  background:rgba(20,40,58,.45);border:1px solid rgba(127,211,255,.35);transition:background .2s}
-#auth .guest:hover{background:rgba(40,80,110,.5)}
-#auth .or{display:flex;align-items:center;gap:10px;margin:16px 0 12px;font-size:11px;letter-spacing:2px;color:#6f8495;text-transform:uppercase}
-#auth .or:before,#auth .or:after{content:"";flex:1;height:1px;background:rgba(160,200,230,.15)}
-#auth .soc{display:flex;gap:10px;justify-content:center}
-#auth .soc button{flex:0 1 150px;display:flex;align-items:center;justify-content:center;gap:8px;padding:10px;border-radius:10px;border:1px solid rgba(160,200,230,.18);background:rgba(8,16,26,.5);color:#e8f1f8;font-size:14px;cursor:pointer}
-#auth .foot{text-align:center;font-size:13px;color:#9fb4c4;margin-top:14px}
-#auth .err{min-height:18px;font-size:12.5px;color:#ff8f8f;margin-top:10px;text-align:center}
-#auth .err.ok{color:#8ff0b8}
+#auth .chk input{accent-color:#8b5cf6;width:16px;height:16px}
+#auth .btn{width:100%;padding:15px;border:0;border-radius:12px;font-weight:700;font-size:15.5px;color:#fff;cursor:pointer;margin-top:4px;
+  background:linear-gradient(90deg,#6d28d9,#4f46e5 55%,#3b82c4);box-shadow:0 12px 30px -8px rgba(99,70,229,.7),inset 0 1px 0 rgba(255,255,255,.25);transition:transform .15s,filter .2s}
+#auth .btn:hover{filter:brightness(1.12);transform:translateY(-1px)}#auth .btn:active{transform:scale(.98)}
+#auth .guest{width:100%;margin-top:10px;padding:14px;border-radius:12px;font-weight:700;font-size:14.5px;cursor:pointer;color:var(--tx);background:var(--gh);border:1px solid var(--gb);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:background .2s,transform .15s}
+#auth .guest:hover{background:rgba(139,92,246,.2);transform:translateY(-1px)}
+#auth .or{display:flex;align-items:center;gap:10px;margin:20px 0 12px;font-size:12px;color:var(--mu)}
+#auth .or:after{content:"";flex:1;height:1px;background:var(--fbd)}
+#auth .soc{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+#auth .soc button{display:flex;align-items:center;justify-content:center;gap:8px;padding:12px;border-radius:12px;border:1px solid var(--fbd);background:var(--gh);color:var(--tx);font-size:13.5px;font-weight:600;cursor:pointer;transition:background .2s,transform .15s}
+#auth .soc button:hover{background:rgba(139,92,246,.2);transform:translateY(-1px)}
+#auth .tc{font-size:11.5px;color:var(--mu);margin-top:16px}
+#auth .foot{font-size:13px;color:var(--mu);margin-top:14px}
+#auth .err{min-height:18px;font-size:12.5px;color:#ff8fa3;margin-top:10px}
+#auth .err.ok{color:#7ff0b8}
+html:not(.dark) #auth .err{color:#d6334a}html:not(.dark) #auth .err.ok{color:#14905a}
+#auth .copy{position:absolute;right:28px;bottom:14px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--mu);opacity:.6}
 #auth .pane{transition:opacity .35s ease,filter .35s ease,transform .35s ease}
-#auth .pane.out{opacity:0;filter:blur(8px);transform:scale(.97);pointer-events:none}
+#auth .pane.out{opacity:0;filter:blur(8px);transform:translateY(10px);pointer-events:none}
 #auth .pane[hidden]{display:none}
-#auth .logo{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .35s}
+html:not(.dark) #auth .tag span{background:linear-gradient(90deg,#6d3fd6,#0284c7);-webkit-background-clip:text;background-clip:text}
+#auth .logo{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .35s;z-index:5}
 #auth .logo.on{opacity:1}
-#auth .logo .ring{position:absolute;width:190px;height:190px;border-radius:50%;border:2px solid rgba(127,211,255,.35);box-shadow:0 0 50px rgba(58,167,232,.35),inset 0 0 40px rgba(58,167,232,.25)}
+#auth .logo .ring{position:absolute;width:200px;height:200px;border-radius:50%;border:2px solid rgba(167,139,250,.5);box-shadow:0 0 60px rgba(139,92,246,.5),inset 0 0 40px rgba(139,92,246,.3)}
 #auth .logo.on .ring{animation:authRing .9s ease-out}
 #auth .logo .mk{position:relative;width:70px;height:70px}
-#auth .logo .mk i{position:absolute;width:38px;height:38px;border-radius:9px;background:linear-gradient(135deg,#8fdcff,#2a8fd0);transform:rotate(45deg) skew(-6deg,-6deg);box-shadow:0 0 25px rgba(58,167,232,.6)}
+#auth .logo .mk i{position:absolute;width:38px;height:38px;border-radius:9px;background:linear-gradient(135deg,#c4b5fd,#38bdf8);transform:rotate(45deg);box-shadow:0 0 25px rgba(139,92,246,.7)}
 #auth .logo .mk i:first-child{left:22px;top:0}#auth .logo .mk i:last-child{left:4px;top:28px;opacity:.85}
 #auth .logo.on .mk{animation:authPop .9s ease}
 @keyframes authRing{0%{transform:scale(.4);opacity:0}60%{opacity:1}100%{transform:scale(1.15);opacity:0}}
 @keyframes authPop{0%{transform:scale(.6) rotate(-20deg);opacity:0}50%{transform:scale(1.08) rotate(0);opacity:1}100%{transform:scale(1)}}
-#auth .brand{text-align:center;font-size:12px;letter-spacing:4px;color:#7f93a3;margin:0 0 14px;text-transform:uppercase}
-#auth .brand b{color:#c5a75a}
-#authUser{position:fixed;right:12px;bottom:12px;z-index:60;display:none;align-items:center;gap:8px;padding:7px 12px;border-radius:999px;font-size:12px;font-weight:600;
-  background:rgba(15,23,42,.88);color:#e2e8f0;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+#authUser{position:fixed;right:12px;bottom:12px;z-index:60;display:none;align-items:center;gap:8px;padding:7px 12px;border-radius:999px;font-size:12px;font-weight:600;background:rgba(15,23,42,.88);color:#e2e8f0}
 #authUser button{background:none;border:1px solid rgba(255,255,255,.25);color:#cbd5e1;border-radius:999px;padding:3px 9px;font-size:11px;cursor:pointer}
-@media (max-width:420px){#auth .card{padding:26px 18px 18px}#auth .row2{grid-template-columns:1fr}#auth h2{font-size:24px}}
+@media (max-width:860px){
+  #auth .shell{grid-template-columns:1fr;padding:0 22px 24px;align-items:start}
+  #auth .planet{left:50%;top:-18%;width:130vw;margin-left:-65vw}
+  #auth .moon{left:6%;top:24%;width:70px}
+  #auth .logoTop{left:22px;top:20px}
+  #auth .tag{display:none}
+  #auth .wrap{margin:calc(34vh) auto 20px}
+  #auth .copy{display:none}
+}
+@media (max-width:420px){#auth .row2{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){#auth *{animation:none!important}}
 </style>
 <div id="auth" role="dialog" aria-label="Sign in">
-  <div class="bg"><i></i><i></i><i></i><i></i><b></b></div>
-  <div class="wrap">
-    <span class="tab t1"></span><span class="tab t2"></span>
-    <div class="card" id="authCard">
-      <p class="brand">Asadullah <b>Notes</b></p>
-      <div class="logo" id="authLogo"><span class="ring"></span><span class="mk"><i></i><i></i></span></div>
+  <div class="sky"><div class="neb n1"></div><div class="neb n2"></div><div class="stars"></div><div class="stars2"></div><div class="planet"></div><div class="moon"></div><span class="shoot s1"></span><span class="shoot s2"></span><span class="shoot s3"></span></div>
+  <div class="logo" id="authLogo"><span class="ring"></span><span class="mk"><i></i><i></i></span></div>
+  <div class="shell">
+    <div class="logoTop"><i>&#127891;</i><div>Asadullah<small>NOTES</small></div></div>
+    <div class="tag">Study to your<span>Success!</span></div>
+    <div class="wrap">
       <form class="pane" id="paneIn" autocomplete="on" onsubmit="return authSignIn(event)">
-        <h2>Welcome <span>Back</span></h2>
-        <p class="sub">Enter your credentials to access your secure account</p>
-        <label class="l" for="inEmail">Email Address</label>
+        <h2>Sign In</h2>
+        <p class="sub">Sign in with email address</p>
         <div class="f"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
-          <input class="in" id="inEmail" type="email" placeholder="name@domain.com" autocomplete="email" required></div>
+          <input class="in" id="inEmail" type="email" placeholder="Yourname@gmail.com" autocomplete="email" required></div>
         <label class="l" for="inPass">Password</label>
         <div class="f"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
-          <input class="in" id="inPass" type="password" placeholder="••••••••••" autocomplete="current-password" required>
-          <button type="button" class="eye" onclick="authEye('inPass')" aria-label="Show password"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+          <input class="in" id="inPass" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" autocomplete="current-password" required>
+          <button type="button" class="eye" onclick="authEye('inPass')" aria-label="Show password"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
         <div class="opts"><label class="chk"><input type="checkbox" id="inRemember" checked> Remember me</label><a onclick="authForgot()">Forgot password?</a></div>
-        <button class="btn" type="submit">Sign In &rarr;</button>
-        <button class="guest" type="button" onclick="authGuest()">Continue as Guest</button>
-        <div class="or">or continue with</div>
-        <div class="soc"><button type="button" onclick="authSocial('Google')"><svg width="16" height="16" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34.1 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34.1 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.3 0-9.7-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg>Google</button>
-          <button type="button" onclick="authSocial('Apple')"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.9 4.9c.7-.9 1.2-2 1.1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3-1.5z"/></svg>Apple</button></div>
+        <button class="btn" type="submit">Sign in</button>
+        <button class="guest" type="button" onclick="authGuest()">Continue as Guest &rarr;</button>
+        <div class="or">Or continue with</div>
+        <div class="soc"><button type="button" onclick="authSocial('Google')"><svg width="16" height="16" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34.1 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34.1 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.3 0-9.7-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg> Google</button>
+          <button type="button" onclick="authSocial('Facebook')"><svg width="17" height="17" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#1877F2"/><path fill="#fff" d="M13.2 19v-6h2l.4-2.4h-2.4V9.3c0-.7.3-1.2 1.3-1.2h1.2V6c-.2 0-1-.1-1.9-.1-1.9 0-3.1 1.1-3.1 3.2v1.5H8.7V13h2v6z"/></svg> Facebook</button></div>
         <div class="err" id="inErr"></div>
+        <p class="tc">By registering you with our <a>Terms and Conditions</a></p>
         <div class="foot">Don't have an account? <a onclick="authSwitch('up')">Sign Up</a></div>
       </form>
       <form class="pane out" id="paneUp" hidden autocomplete="on" onsubmit="return authSignUp(event)">
-        <h2>Create <span>Account</span></h2>
-        <p class="sub">Join us today to access your secure workspace</p>
+        <h2>Sign Up</h2>
+        <p class="sub">Create your free account</p>
         <label class="l" for="upName">Full Name</label>
         <div class="f"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
-          <input class="in" id="upName" type="text" placeholder="Alex Johnson" autocomplete="name" required></div>
-        <label class="l" for="upEmail">Email Address</label>
+          <input class="in" id="upName" type="text" placeholder="Your name" autocomplete="name" required></div>
+        <label class="l" for="upEmail">Email address</label>
         <div class="f"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
-          <input class="in" id="upEmail" type="email" placeholder="name@domain.com" autocomplete="email" required></div>
+          <input class="in" id="upEmail" type="email" placeholder="Yourname@gmail.com" autocomplete="email" required></div>
         <div class="row2">
-          <div><label class="l" for="upPass">Password</label>
-            <div class="f"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
-            <input class="in" id="upPass" type="password" placeholder="••••••••" autocomplete="new-password" required minlength="6">
-            <button type="button" class="eye" onclick="authEye('upPass')" aria-label="Show password"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div></div>
-          <div><label class="l" for="upPass2">Confirm Password</label>
-            <div class="f"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
-            <input class="in" id="upPass2" type="password" placeholder="••••••••" autocomplete="new-password" required>
-            <button type="button" class="eye" onclick="authEye('upPass2')" aria-label="Show password"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div></div>
+          <div><label class="l" for="upPass">Password</label><div class="f"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+          <input class="in" id="upPass" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;" autocomplete="new-password" required minlength="6">
+          <button type="button" class="eye" onclick="authEye('upPass')" aria-label="Show password"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div></div>
+          <div><label class="l" for="upPass2">Confirm</label><div class="f"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+          <input class="in" id="upPass2" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;" autocomplete="new-password" required>
+          <button type="button" class="eye" onclick="authEye('upPass2')" aria-label="Show password"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div></div>
         </div>
-        <div class="opts"><label class="chk"><input type="checkbox" id="upAgree" checked> I agree to the <a style="margin-left:4px">Terms &amp; Privacy Policy</a></label></div>
-        <button class="btn" type="submit">Create Account &rarr;</button>
-        <button class="guest" type="button" onclick="authGuest()">Continue as Guest</button>
-        <div class="or">or sign up with</div>
-        <div class="soc"><button type="button" onclick="authSocial('Google')"><svg width="16" height="16" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34.1 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34.1 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.3 0-9.7-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg>Google</button>
-          <button type="button" onclick="authSocial('Apple')"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.9 4.9c.7-.9 1.2-2 1.1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3-1.5z"/></svg>Apple</button></div>
+        <div class="opts"><label class="chk"><input type="checkbox" id="upAgree" checked> I agree to the <a style="margin-left:4px">Terms &amp; Privacy</a></label></div>
+        <button class="btn" type="submit">Sign up</button>
+        <button class="guest" type="button" onclick="authGuest()">Continue as Guest &rarr;</button>
+        <div class="or">Or sign up with</div>
+        <div class="soc"><button type="button" onclick="authSocial('Google')"><svg width="16" height="16" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34.1 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34.1 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.3 0-9.7-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg> Google</button>
+          <button type="button" onclick="authSocial('Facebook')"><svg width="17" height="17" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#1877F2"/><path fill="#fff" d="M13.2 19v-6h2l.4-2.4h-2.4V9.3c0-.7.3-1.2 1.3-1.2h1.2V6c-.2 0-1-.1-1.9-.1-1.9 0-3.1 1.1-3.1 3.2v1.5H8.7V13h2v6z"/></svg> Facebook</button></div>
         <div class="err" id="upErr"></div>
         <div class="foot">Already have an account? <a onclick="authSwitch('in')">Sign In</a></div>
       </form>
     </div>
+    <div class="copy">&copy; Asadullah Notes</div>
   </div>
 </div>
 <div id="authUser"><span id="authUserName"></span><button onclick="authLogout()">Log out</button></div>
