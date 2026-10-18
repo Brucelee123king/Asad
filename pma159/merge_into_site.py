@@ -290,5 +290,12 @@ s = s.replace('<div id="info-time" class="text-lg font-bold text-slate-900">10 M
 s = s.replace("auto-submit when the 10-minute timer expires.", "auto-submit when the 20-minute timer expires.")
 assert "nQ * 24" in s and "* 12) / 60" not in s and "10 Minutes" not in s
 
+# user request: remove the front "ASADULLAH NOTES presents" splash page completely
+import re as _re
+_a = s.index('<div id="splash"'); _b = s.index('</script>', s.index('setTimeout(closeSplash', _a)) + len('</script>')
+s = s[:_a] + '<script>function closeSplash(){}</script>' + s[_b:]
+s = _re.sub(r'[ \t]*#splash[^\n]*\n', '', s)
+assert 'id="splash"' not in s
+
 open(out, 'w', encoding='utf8').write(s)
 print("written", out, len(s))
