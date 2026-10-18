@@ -53,3 +53,6 @@ Tell the user: "Continue the task from HANDOFF.md ... Phase 2 PMA 150".
 - Same pipeline in `pma151/`: chunks c_01..40 extracted; cluster151.py, match151.py (existing = pma150/hk_final2.json, 3201 MCQs), make_batches -> mcq_in/b_01..53.
 - MCQ writers: spec SPEC_mcq151.md, check151.py, output mcq_out/m_NN.py. A batch is done when m_NN.py exists.
 - Then: `python3 pma151/build151.py` -> pma151/hk_final3.json (merge script picks it up automatically), make_blind.py 160 -> verify/blind_*, blind checkers (SPEC_blind.md) -> verify/answers_*, cmp151.py, fixes in pma151/hk151_overrides.json, rebuild site, test, send.
+
+### Phase 3 DONE
+- PMA 151 added: 53 batches, blind check of 1105 new MCQs (12 disagreements reviewed, fixes in pma151/hk151_overrides.json), key current affairs web-checked. Hakeem section now 4304 MCQs, 87 blocks. Timer 20 min for all tests. site/index.html rebuilt and sent.
