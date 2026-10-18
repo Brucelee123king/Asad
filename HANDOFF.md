@@ -87,3 +87,6 @@ Asadullah's messages may arrive in Hindi/Urdu script (voice typing). Always repl
 
 ## Phase 6: sign-in redesign + liquid glass + 3D
 auth_block.html (planet photo scene from space_imgs.json, placeholders {{IMG_scene}} replaced in merge script), glass_block.html (liquid glass, goo blobs, droplets), d3_block.html (3D cubes/orbs/ring, tilt cards, clay buttons). All appended to _blk in merge_into_site.py.
+
+## Phase 7: Hakeem section split by experience
+Hakeem Force Academy card -> 3 cards (PMA 149 / 150 / 151 Experience) -> blocks of 50 for that PMA. Each MCQ is written once, in the PMA where it first appeared (repeats from later PMAs only raise the bracket count). Origin list: `python3 dedupe/make_origin.py` -> dedupe/hk_origin.json (parallel to hk_final_dedup.json; 1533 / 1450 / 1050 MCQs, total 4033). merge_into_site.py builds HK_META and renderHK/openHkSub; backnav_block handles Back. Other sections untouched (verified identical).

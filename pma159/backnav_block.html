@@ -23,7 +23,7 @@ html.dark #backBtn{background:rgba(15,23,42,.85);color:#e0e7ff;border-color:rgba
         quizActive=false;
       }
       showSelect();
-    }else if(vis('view-select')&&curSec!==null){openSec(null)}
+    }else if(vis('view-select')&&curSec!==null){if(curSec==='hk'&&typeof hkSub!=='undefined'&&hkSub!==null)openHkSub(null);else openSec(null)}
     sync();window.scrollTo(0,0);
   }
   b.addEventListener('click',function(){if(history.state&&history.state.n)history.back();else performBack()});
@@ -31,6 +31,7 @@ html.dark #backBtn{background:rgba(15,23,42,.85);color:#e0e7ff;border-color:rgba
   function wrap(name,push){var f=window[name];if(typeof f!=='function')return;
     window[name]=function(){var r=f.apply(this,arguments);if(push.apply(null,arguments))history.pushState({n:1},'');sync();return r}}
   wrap('openSec',function(id){return id!==null&&id!==undefined});
+  wrap('openHkSub',function(p){return p!==null&&p!==undefined});
   wrap('selectTest',function(){return true});
   wrap('showSelect',function(){return false});
   new MutationObserver(sync).observe(document.querySelector('main'),{attributes:true,subtree:true,attributeFilter:['class']});
