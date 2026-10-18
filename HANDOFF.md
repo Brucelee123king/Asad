@@ -90,3 +90,4 @@ auth_block.html (planet photo scene from space_imgs.json, placeholders {{IMG_sce
 
 ## Phase 7: Hakeem section split by experience
 Hakeem Force Academy card -> 3 cards (PMA 149 / 150 / 151 Experience) -> blocks of 50 for that PMA. Each MCQ is written once, in the PMA where it first appeared (repeats from later PMAs only raise the bracket count). Origin list: `python3 dedupe/make_origin.py` -> dedupe/hk_origin.json (parallel to hk_final_dedup.json; 1533 / 1450 / 1050 MCQs, total 4033). merge_into_site.py builds HK_META and renderHK/openHkSub; backnav_block handles Back. Other sections untouched (verified identical).
+Second duplicate pass (paraphrased repeats): dedupe/r2_same.txt (33 pairs, reviewed) -> `python3 dedupe/apply2.py` -> hk_final_dedup2.json + hk_origin2.json (4000 MCQs: 1517/1441/1042). merge_into_site.py prefers these. Earlier-placed MCQ kept, counts added.
