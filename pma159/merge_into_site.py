@@ -48,6 +48,8 @@ hk_items = []
 _hkp = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma149', 'hk_final.json')
 _hkp2 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma150', 'hk_final2.json')
 if os.path.exists(_hkp2): _hkp = _hkp2
+_hkp3 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma151', 'hk_final3.json')
+if os.path.exists(_hkp3): _hkp = _hkp3
 if os.path.exists(_hkp):
     hk_items = json.load(open(_hkp, encoding='utf8'))
 for n in range((len(hk_items) + 49) // 50):
@@ -200,8 +202,8 @@ sub("<b>Reason:</b> ' + q.facts + '</div>' : ''}", "<b>Reason:</b> ' + q.facts +
 sub('<div id="fa-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>', '''<div id="fa-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
             <div class="bg-gradient-to-r from-indigo-800 to-purple-700 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
                 <span class="inline-block bg-white/20 text-indigo-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">@@HK_COUNT@@</span>
-                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Hakeem Force Academy &ndash; PMA 149 and PMA 150 Initial Experiences</h2>
-                <p class="text-indigo-50 text-sm sm:text-base">Questions from PMA 149 and PMA 150 test experiences (about 1,700 candidates), each written once. The number in brackets shows how many times that question was repeated. The most repeated questions come first. Every answer has a reason and a related fact, and current-affairs answers are updated to today.</p>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Hakeem Force Academy &ndash; PMA 149, 150 and 151 Initial Experiences</h2>
+                <p class="text-indigo-50 text-sm sm:text-base">Questions from PMA 149, PMA 150 and PMA 151 test experiences, each written once. The number in brackets shows how many times that question was repeated. The most repeated questions come first. Every answer has a reason and a related fact, and current-affairs answers are updated to today.</p>
             </div>
             <div id="hk-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>''')
 s = s.replace('@@HK_COUNT@@', '%d Tests &bull; %d MCQs' % (len(HK), len(hk_items)))
@@ -230,7 +232,7 @@ MENU_JS = """let curSec = null, menuReady = false;
             {id: 'o', name: '1000 MCQs', sub: 'Original questions 1 to 1000', grad: 'from-indigo-600 to-violet-600', icon: 'fa-book', test: k => !isExtra(k)},
             {id: 'pma', name: 'PMA 159 MCQs', sub: 'PMA 159 Long Course test experiences', grad: 'from-emerald-700 to-teal-600', icon: 'fa-shield-halved', test: k => isPMA(k)},
             {id: 'fa', name: 'Forces Academy Lahore MCQs', sub: 'Intelligence tests and academic practice', grad: 'from-amber-700 to-orange-600', icon: 'fa-brain', test: k => isFA(k)},
-            {id: 'hk', name: 'Hakeem Force Academy MCQs', sub: 'PMA 149 and PMA 150 initial experiences', grad: 'from-indigo-800 to-purple-700', icon: 'fa-medal', test: k => isHK(k)}
+            {id: 'hk', name: 'Hakeem Force Academy MCQs', sub: 'PMA 149, 150 and 151 initial experiences', grad: 'from-indigo-800 to-purple-700', icon: 'fa-medal', test: k => isHK(k)}
         ];
         function initMenu() {
             if (menuReady) return; menuReady = true;
