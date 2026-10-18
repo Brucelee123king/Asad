@@ -167,7 +167,7 @@
                     <div class="bg-slate-50 border border-slate-200/80 rounded-xl p-4 text-center">
                         <div class="text-amber-600 text-xl mb-1"><i class="fa-solid fa-stopwatch"></i></div>
                         <div class="text-xs text-slate-500 font-medium">Time Limit</div>
-                        <div id="info-time" class="text-lg font-bold text-slate-900">10 Minutes</div>
+                        <div id="info-time" class="text-lg font-bold text-slate-900">20 Minutes</div>
                     </div>
                     <div class="bg-slate-50 border border-slate-200/80 rounded-xl p-4 text-center">
                         <div class="text-emerald-600 text-xl mb-1"><i class="fa-solid fa-layer-group"></i></div>
@@ -181,7 +181,7 @@
                     <p class="font-semibold text-slate-700"><i class="fa-solid fa-circle-info text-indigo-500 mr-1.5"></i> Important Instructions:</p>
                     <p>• You can navigate between questions using the question palette or Previous/Next buttons.</p>
                     <p>• Unanswered questions will be marked as incorrect upon submission.</p>
-                    <p id="info-timer-note">• The quiz will auto-submit when the 10-minute timer expires.</p>
+                    <p id="info-timer-note">• The quiz will auto-submit when the 20-minute timer expires.</p>
                 </div>
 
                 <button type="button" onclick="showSelect()" class="w-full border border-slate-300 hover:bg-slate-100 text-slate-700 font-semibold py-2.5 px-6 rounded-xl text-sm transition"><i class="fa-solid fa-arrow-left mr-1.5"></i> All Tests</button>
@@ -762,7 +762,7 @@
                 return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-indigo-400 hover:shadow-lg transition p-5 flex flex-col gap-3">
                     <div class="flex items-center justify-between"><span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full">Test ${i + 1}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
                     <div class="text-xl font-bold text-slate-900">Questions ${label}</div>
-                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; 10 Minutes &bull; Instant feedback</div>
+                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; 20 Minutes &bull; Instant feedback</div>
                     <div class="text-sm font-semibold text-indigo-600">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
             }).join('');
         }
@@ -775,7 +775,7 @@
                     <div class="flex items-center justify-between"><span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full">PMA Test ${i + 1}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
                     <div class="text-xl font-bold text-slate-900">PMA 159 &ndash; Part ${i + 1}</div>
                     <div class="text-xs text-slate-500">${secs}</div>
-                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * 12) / 60))} Minutes &bull; Instant feedback</div>
+                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * 24) / 60))} Minutes &bull; Instant feedback</div>
                     <div class="text-sm font-semibold text-emerald-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
             }).join('');
         }
@@ -788,7 +788,7 @@
                     <div class="flex items-center justify-between"><span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full">FA Test ${i + 1}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
                     <div class="text-xl font-bold text-slate-900">Forces Academy &ndash; Part ${i + 1}</div>
                     <div class="text-xs text-slate-500">${secs}</div>
-                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * 12) / 60))} Minutes &bull; Instant feedback</div>
+                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * 24) / 60))} Minutes &bull; Instant feedback</div>
                     <div class="text-sm font-semibold text-amber-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
             }).join('');
         }
@@ -802,7 +802,7 @@
                     <div class="flex items-center justify-between"><span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full">HK Test ${i + 1}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
                     <div class="text-xl font-bold text-slate-900">Hakeem Force Academy &ndash; Part ${i + 1}</div>
                     <div class="text-xs text-slate-500">${rtxt}</div>
-                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * 12) / 60))} Minutes &bull; Instant feedback</div>
+                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * 24) / 60))} Minutes &bull; Instant feedback</div>
                     <div class="text-sm font-semibold text-indigo-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
             }).join('');
         }
@@ -811,7 +811,7 @@
             userAnswers = new Array(quizData.length).fill(null);
             const label = k.replace('-', '–');
             const nQ = quizData.length;
-            TEST_SECS = isExtra(k) ? Math.max(60, nQ * 12) : 600;
+            TEST_SECS = isExtra(k) ? Math.max(60, nQ * 24) : 1200;
             const nMin = Math.ceil(TEST_SECS / 60);
             document.getElementById('q-total').textContent = nQ;
             document.getElementById('home-badge').textContent = isExtra(k) ? (nQ + (isHK(k) ? ' MCQs (Hakeem Force Academy – Part ' + k.slice(3) + ')' : isFA(k) ? ' MCQs (Forces Academy Lahore – Part ' + k.slice(3) + ')' : ' MCQs (PMA 159 Long Course – Part ' + k.slice(4) + ')')) : (nQ + ' MCQs (Original Questions ' + label + ')');

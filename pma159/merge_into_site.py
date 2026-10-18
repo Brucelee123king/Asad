@@ -272,5 +272,13 @@ sub("function bootQuizApp() {", MENU_JS)
 sub("renderSelect(); renderPMA(); renderFA(); renderHK(); window.scrollTo(0, 0);", "renderSelect(); renderPMA(); renderFA(); renderHK(); applySec(); window.scrollTo(0, 0);")
 sub("function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA(); renderHK();", "function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA(); renderHK(); applySec();")
 
+# user request: 20 minutes for every 50-MCQ test (24 seconds per MCQ)
+s = s.replace("TEST_SECS = isExtra(k) ? Math.max(60, nQ * 12) : 600;", "TEST_SECS = isExtra(k) ? Math.max(60, nQ * 24) : 1200;")
+s = s.replace("ALL[k].length * 12) / 60))} Minutes", "ALL[k].length * 24) / 60))} Minutes")
+s = s.replace("${ALL[k].length} MCQs &bull; 10 Minutes &bull;", "${ALL[k].length} MCQs &bull; 20 Minutes &bull;")
+s = s.replace('<div id="info-time" class="text-lg font-bold text-slate-900">10 Minutes</div>', '<div id="info-time" class="text-lg font-bold text-slate-900">20 Minutes</div>')
+s = s.replace("auto-submit when the 10-minute timer expires.", "auto-submit when the 20-minute timer expires.")
+assert "nQ * 24" in s and "* 12) / 60" not in s and "10 Minutes" not in s
+
 open(out, 'w', encoding='utf8').write(s)
 print("written", out, len(s))
