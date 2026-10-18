@@ -279,6 +279,9 @@ sub("function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA
 # login screen (glassy sign in / create account / continue as guest) and day-night mode
 _d = os.path.dirname(os.path.abspath(__file__))
 _blk = open(os.path.join(_d, 'theme_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'auth_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'seccolor_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'polish_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'backnav_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'features_block.html'), encoding='utf8').read()
+import json as _j
+_imgs=_j.load(open(os.path.join(_d,'space_imgs.json')))
+for _k,_v in _imgs.items(): _blk=_blk.replace('{{IMG_'+_k+'}}','data:image/webp;base64,'+_v)
 assert s.count('<div id="splash"') == 1
 s = s.replace('<div id="splash"', _blk + '\n<div id="splash"')
 

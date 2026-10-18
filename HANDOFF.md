@@ -63,3 +63,6 @@ Tell the user: "Continue the task from HANDOFF.md ... Phase 2 PMA 150".
 
 ## Phase 5: ilampoint-style features
 pma159/features_block.html (dashboard, streak, Daily Challenge, Saved/bookmarks, Mistakes bank, Search, Share score, keyboard shortcuts) is appended to _blk in merge_into_site.py. Question data unchanged. Rebuild: python3 pma159/merge_into_site.py pma159/base_original_site.html site/index.html
+
+## User preference (standing)
+Asadullah's messages may arrive in Hindi/Urdu script (voice typing). Always reply in simple English (Roman Urdu is fine). He asked that this be remembered every session.
