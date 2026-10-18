@@ -949,20 +949,17 @@ html:not(.dark) #auth .stars,html:not(.dark) #auth .stars2{opacity:.35;filter:hu
 #auth .neb.n2{width:460px;height:460px;right:-100px;top:-120px;background:rgba(56,189,248,.20);animation-delay:-7s}
 html:not(.dark) #auth .neb.n1{background:rgba(167,139,250,.45)}html:not(.dark) #auth .neb.n2{background:rgba(125,211,252,.5)}
 @keyframes auFloat{0%,100%{transform:translate(0,0)}50%{transform:translate(30px,-24px)}}
-#auth .planet{position:absolute;left:-9%;top:-22%;width:min(54vw,680px);aspect-ratio:1;border-radius:50%;
-  background:radial-gradient(circle at 38% 78%,#bff3ff 0,#5fd3f3 22%,#2c93d6 48%,#1d4fa8 72%,#27227a 100%);
-  box-shadow:0 0 120px rgba(80,190,255,.45),inset -40px -50px 120px rgba(20,10,80,.55);animation:auPlanet 22s ease-in-out infinite}
-#auth .planet:before,#auth .planet:after{content:"";position:absolute;border-radius:48% 52% 55% 45%/50% 45% 55% 50%;background:rgba(20,70,150,.35)}
-#auth .planet:before{width:34%;height:22%;left:22%;top:46%;transform:rotate(-14deg)}
-#auth .planet:after{width:26%;height:16%;left:52%;top:62%;transform:rotate(18deg);background:rgba(120,230,255,.28)}
-html:not(.dark) #auth .planet{box-shadow:0 0 90px rgba(80,170,255,.4),inset -40px -50px 110px rgba(80,60,200,.35)}
-@keyframes auPlanet{0%,100%{transform:translate(0,0) rotate(0)}50%{transform:translate(14px,18px) rotate(2deg)}}
-#auth .moon{position:absolute;left:9%;top:40%;width:min(15vw,150px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#efe3ff,#a779f0 45%,#5a2ea8 100%);box-shadow:0 0 50px rgba(167,121,240,.55);animation:auMoon 14s ease-in-out infinite}
+#auth .planet{position:absolute;left:-9%;top:-22%;width:min(54vw,680px);aspect-ratio:1;border-radius:50%;box-shadow:0 0 120px rgba(80,190,255,.45);animation:auPlanet 22s ease-in-out infinite}
+#auth .moon{position:absolute;left:9%;top:40%;width:min(12vw,130px);aspect-ratio:1;border-radius:50%;box-shadow:0 0 50px rgba(167,121,240,.55);animation:auMoon 14s ease-in-out infinite}
 @keyframes auMoon{0%,100%{transform:translate(0,0)}50%{transform:translate(-16px,22px)}}
 #auth .shoot{position:absolute;height:2px;width:140px;background:linear-gradient(90deg,transparent,#fff);border-radius:2px;opacity:0;transform:rotate(28deg);animation:auShoot 7s linear infinite}
 #auth .shoot.s1{left:48%;top:10%}#auth .shoot.s2{left:20%;top:55%;animation-delay:-3.5s;width:100px}#auth .shoot.s3{left:70%;top:35%;animation-delay:-5.2s}
 html:not(.dark) #auth .shoot{background:linear-gradient(90deg,transparent,#7c5cff)}
 @keyframes auShoot{0%{opacity:0;translate:-60px -30px}6%{opacity:1}22%{opacity:0;translate:260px 140px}100%{opacity:0;translate:260px 140px}}
+#auth .lyr{position:absolute;inset:0;transform:translate3d(calc(var(--px,0)*var(--d)*1px),calc(var(--py,0)*var(--d)*1px),0);transition:transform .25s ease-out;will-change:transform}
+#auth .mini{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,#9ad7ff 50%,#3a52c4);box-shadow:0 0 24px rgba(120,190,255,.6);animation:auMoon 11s ease-in-out infinite}
+#auth .mini.m1{width:22px;height:22px;right:30%;top:6%}#auth .mini.m2{width:12px;height:12px;left:3%;top:76%;animation-delay:-4s}
+#auth .stars,#auth .stars2{inset:-50%}
 /* ---- layout ---- */
 #auth .shell{position:relative;z-index:2;width:100%;min-height:100%;display:grid;grid-template-columns:1.15fr 1fr;align-items:center;max-width:1280px;margin:0 auto;padding:28px 40px}
 #auth .logoTop{position:absolute;left:36px;top:26px;display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;letter-spacing:.2px}
@@ -1020,7 +1017,7 @@ html:not(.dark) #auth .tag span{background:linear-gradient(90deg,#6d3fd6,#0284c7
 #authUser button{background:none;border:1px solid rgba(255,255,255,.25);color:#cbd5e1;border-radius:999px;padding:3px 9px;font-size:11px;cursor:pointer}
 @media (max-width:860px){
   #auth .shell{grid-template-columns:1fr;padding:0 22px 24px;align-items:start}
-  #auth .planet{left:50%;top:-18%;width:130vw;margin-left:-65vw}
+  #auth .planet{left:50%;top:-14%;width:120vw;margin-left:-60vw}
   #auth .moon{left:6%;top:24%;width:70px}
   #auth .logoTop{left:22px;top:20px}
   #auth .tag{display:none}
@@ -1031,7 +1028,29 @@ html:not(.dark) #auth .tag span{background:linear-gradient(90deg,#6d3fd6,#0284c7
 @media (prefers-reduced-motion:reduce){#auth *{animation:none!important}}
 </style>
 <div id="auth" role="dialog" aria-label="Sign in">
-  <div class="sky"><div class="neb n1"></div><div class="neb n2"></div><div class="stars"></div><div class="stars2"></div><div class="planet"></div><div class="moon"></div><span class="shoot s1"></span><span class="shoot s2"></span><span class="shoot s3"></span></div>
+  <div class="sky">
+    <div class="lyr" data-d="4"><div class="neb n1"></div><div class="neb n2"></div></div>
+    <div class="lyr" data-d="8"><div class="stars"></div></div>
+    <div class="lyr" data-d="14"><div class="stars2"></div></div>
+    <div class="lyr" data-d="26"><span class="shoot s1"></span><span class="shoot s2"></span><span class="shoot s3"></span></div>
+    <div class="lyr pl" data-d="34"><div class="planet"><svg viewBox="0 0 400 400" width="100%" height="100%">
+      <defs>
+        <radialGradient id="pg" cx="38%" cy="80%" r="95%"><stop offset="0" stop-color="#c9f6ff"/><stop offset=".25" stop-color="#5fd3f3"/><stop offset=".55" stop-color="#2d8fdc"/><stop offset=".85" stop-color="#2a3fa8"/><stop offset="1" stop-color="#241a6e"/></radialGradient>
+        <filter id="tx" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".012 .02" numOctaves="4" seed="7"/><feColorMatrix values="0 0 0 0 .05  0 0 0 0 .25  0 0 0 0 .5  0 0 0 2.2 -.95"/></filter>
+        <filter id="tx2" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".02 .03" numOctaves="3" seed="21"/><feColorMatrix values="0 0 0 0 .8  0 0 0 0 .97  0 0 0 0 1  0 0 0 1.8 -.85"/></filter>
+        <clipPath id="pc"><circle cx="200" cy="200" r="198"/></clipPath>
+        <radialGradient id="sh" cx="30%" cy="25%" r="85%"><stop offset=".5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#0a0630" stop-opacity=".75"/></radialGradient>
+      </defs>
+      <g clip-path="url(#pc)"><circle cx="200" cy="200" r="200" fill="url(#pg)"/>
+        <rect width="400" height="400" filter="url(#tx)" opacity=".75"/><rect width="400" height="400" filter="url(#tx2)" opacity=".5"/>
+        <circle cx="200" cy="200" r="200" fill="url(#sh)"/></g>
+      <ellipse cx="200" cy="205" rx="330" ry="70" fill="none" stroke="rgba(190,225,255,.45)" stroke-width="1.2" transform="rotate(-18 200 200)"/>
+      <ellipse cx="200" cy="205" rx="380" ry="95" fill="none" stroke="rgba(190,225,255,.22)" stroke-width="1" transform="rotate(-18 200 200)"/>
+    </svg></div></div>
+    <div class="lyr" data-d="52"><div class="moon"><svg viewBox="0 0 100 100" width="100%" height="100%"><defs><radialGradient id="mg" cx="35%" cy="30%" r="80%"><stop offset="0" stop-color="#f1e6ff"/><stop offset=".45" stop-color="#a97bf2"/><stop offset="1" stop-color="#4b2398"/></radialGradient></defs><circle cx="50" cy="50" r="50" fill="url(#mg)"/><g fill="rgba(60,20,130,.35)"><circle cx="32" cy="62" r="9"/><circle cx="62" cy="36" r="6"/><circle cx="68" cy="68" r="7"/><circle cx="40" cy="30" r="4"/></g></svg></div></div>
+    <div class="lyr" data-d="70"><div class="mini m1"></div><div class="mini m2"></div></div>
+  </div>
+
   <div class="logo" id="authLogo"><span class="ring"></span><span class="mk"><i></i><i></i></span></div>
   <div class="shell">
     <div class="logoTop"><i>&#127891;</i><div>Asadullah<small>NOTES</small></div></div>
@@ -1086,6 +1105,25 @@ html:not(.dark) #auth .tag span{background:linear-gradient(90deg,#6d3fd6,#0284c7
     <div class="copy">&copy; Asadullah Notes</div>
   </div>
 </div>
+<script>
+(function(){
+  var a=document.getElementById('auth');if(!a)return;
+  function set(x,y){a.style.setProperty('--px',Math.max(-1,Math.min(1,x)).toFixed(3));a.style.setProperty('--py',Math.max(-1,Math.min(1,y)).toFixed(3))}
+  window.addEventListener('mousemove',function(e){set(e.clientX/innerWidth*2-1,e.clientY/innerHeight*2-1)});
+  var base=null,on=false;
+  function ori(e){if(e.gamma==null)return;if(!base)base={b:e.beta,g:e.gamma};set((e.gamma-base.g)/25,(e.beta-base.b)/25)}
+  function start(){if(on)return;on=true;window.addEventListener('deviceorientation',ori)}
+  function ask(){
+    if(typeof DeviceOrientationEvent!=='undefined'&&typeof DeviceOrientationEvent.requestPermission==='function'){
+      DeviceOrientationEvent.requestPermission().then(function(r){if(r==='granted')start()}).catch(function(){});
+    }else start();
+  }
+  a.addEventListener('touchstart',function(){ask()},{once:true,passive:true});
+  a.addEventListener('click',function(){ask()},{once:true});
+  if(typeof DeviceOrientationEvent!=='undefined'&&typeof DeviceOrientationEvent.requestPermission!=='function')start();
+  a.addEventListener('touchmove',function(e){var t=e.touches[0];if(t&&!base)set(t.clientX/innerWidth*2-1,t.clientY/innerHeight*2-1)},{passive:true});
+})();
+</script>
 <div id="authUser"><span id="authUserName"></span><button onclick="authLogout()">Log out</button></div>
 <script>
 (function(){
