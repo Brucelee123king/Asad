@@ -12,10 +12,6 @@ QS = [
  ["Jhelum", "Indus", "Chenab", "Ravi"], 2,
  "The Baglihar hydroelectric dam is built by India on the Chenab river in Jammu and Kashmir. The Chenab flows on into Pakistan.",
  "Under the Indus Waters Treaty of 1960 the Chenab is one of the three western rivers allotted to Pakistan.", [2913]),
-(S, "Where did the Holy Prophet (PBUH) build the first mosque of Islam?",
- ["Quba", "Makkah", "Hudaibiya", "Taif"], 0,
- "On his migration to Madina the Prophet (PBUH) stopped at Quba and built the first mosque there. It is known as Masjid Quba.",
- "Masjid Nabawi in Madina was built soon after, in the city itself.", [1255]),
 (S, "A train travels at 120 km/h. How much distance does it cover in 30 minutes?",
  ["30 km", "90 km", "120 km", "60 km"], 3,
  "30 minutes is half an hour, so distance = 120 x 1/2 = 60 km.",
@@ -190,6 +186,6 @@ DUPS = [
 (134, 1255) if False else (134, 1255),
 ]
 DUPS = [(134,1255)] if False else []
-DUPS = [(386,1453),(386,5398),(1437,1287),(1437,1481),(1437,5440),(1437,5441),
+DUPS = [(134,1255),(386,1453),(386,5398),(1437,1287),(1437,1481),(1437,5440),(1437,5441),
  (36,23),(39,3706),(683,5011),(274,1801),(1079,2037),(1079,4527),(990,2628),(1064,3124),
  (1076,2935),(1076,4422),(1076,4923),(5,846),(157,550)]
