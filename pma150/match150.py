@@ -32,10 +32,12 @@ for c in cl:
             if hkk[i][0]!=n: continue
             j=len(s&hkk[i][1])/len(s|hkk[i][1])
             if j>best[0]: best=(j,i)
-    if best[0]>=TH and min(len(key(c['q'])[1]),len(hkk[best[1]][1]))>=2:
+    if best[0]>=TH and (best[0]==1.0 or min(len(key(c['q'])[1]),len(hkk[best[1]][1]))>=2):
         matched[best[1]].update(c['all_exps']); c['hk']=best[1]
     else: unmatched.append(c)
 json.dump({str(k):sorted(v) for k,v in matched.items()},open('hk_add.json','w'))
-json.dump(unmatched,open('unmatched.json','w'),ensure_ascii=False,indent=0)
+json.dump([c['q'] for c in cl if 'hk' in c],open('matched_q.json','w'),ensure_ascii=False)
+# NOTE: unmatched.json is frozen (writer ids refer to it); do not rewrite it
+if not __import__('os').path.exists('unmatched.json'): json.dump(unmatched,open('unmatched.json','w'),ensure_ascii=False,indent=0)
 print('clusters',len(cl),'matched to existing',len(cl)-len(unmatched),'(',len(matched),'HK MCQs get extra counts ) unmatched',len(unmatched))
 print('unmatched repeat>=2:',sum(1 for c in unmatched if c['repeat']>=2),' singles:',sum(1 for c in unmatched if c['repeat']==1))

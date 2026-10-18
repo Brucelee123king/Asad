@@ -5,12 +5,15 @@ hk = json.load(open('../pma149/hk_final.json', encoding='utf8'))
 un = json.load(open('unmatched.json', encoding='utf8'))
 add = {int(k): set(v) for k, v in json.load(open('hk_add.json')).items()}
 new = []; ndup = 0
+mq = set(json.load(open('matched_q.json', encoding='utf8')))
+skip_ids = {i for i, c in enumerate(un) if c['q'] in mq}
 for f in sorted(glob.glob('mcq_out/m_*.py')):
     m = runpy.run_path(f)
     for e, i in m.get('DUPS', []):
-        if 0 <= e < len(hk) and 0 <= i < len(un): add.setdefault(e, set()).update(un[i]['all_exps']); ndup += 1
+        if 0 <= e < len(hk) and 0 <= i < len(un) and i not in skip_ids: add.setdefault(e, set()).update(un[i]['all_exps']); ndup += 1
     for t in m['QS']:
-        new.append(list(t))
+        t = list(t); t[6] = [i for i in t[6] if i not in skip_ids]
+        if t[6]: new.append(t)
 try: ov = json.load(open('hk150_overrides.json', encoding='utf8'))
 except FileNotFoundError: ov = {"remove": [], "fix": {}}
 # merge new MCQs that ask exactly the same question
