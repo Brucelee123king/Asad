@@ -36,4 +36,4 @@ DUPS = [ (existing_number, input_id), ... ]
 5. Search only where needed (there is a search budget).
 
 ## Check and report
-Run `python3 /home/user/Asad/pma151/check150.py <your file>` and fix every problem. Reply SHORT: file path, MCQs written, dups found, input lines, number skipped. Do not paste questions back.
+Run `python3 /home/user/Asad/pma151/check151.py <your file>` and fix every problem. Reply SHORT: file path, MCQs written, dups found, input lines, number skipped. Do not paste questions back.
