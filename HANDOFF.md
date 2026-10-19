@@ -144,3 +144,7 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 ## Phase 19 - Light Forces Academy experiences added to PMA 159 section (done)
 - Narrative file (10 write-ups, ~48 remembered questions without answers) -> pma163/ (clean.txt, m_q1.py MATCH/NEW; existing list = current 308-MCQ PMA 159 list). 6 matched existing (rep +1), 26 NEW written with web-verified answers, 2 duplicates merged (items 31->7, 42->20, rep+1) -> 24 added; PMA 159 now 332 MCQs, 7 parts (part 7 has 32). 15 items skipped as unclear/disputed (age at Hijrat, atomic site, CPEC HQ, etc.).
 - merge_into_site.py applies pma162 then pma163 right after `from questions import Q`.
+
+## Phase 20 - PMA 158 Long Course section (done)
+- New 5th category on the home menu (after Hakeem Force Academy): "PMA 158 Long Course MCQs" (violet). Source "Pma_158_LC_15-_students_experience" (226 numbered items, many answers wrong/missing) -> pma164/ (clean.txt, m_a1..a3.py, pma158_all.json, pma158_final.json = 205 MCQs, 5 tests LC-1..LC-5 of 50, last has 5). 30 s per MCQ. Items skipped as vague/disputed (Iran operation name, Hero's Medal, India dam river, plateau/peak of Balochistan, 1937 seats, Quaid-e-Azam title year, first CJ, first naval chief, King of Khan, Usman Quran copies etc.). Blind check: 2 disagreements: #72 area of Pakistan removed (881,913 vs 796,096 disputed); Shaikh-ul-Anbiya = Nuh kept.
+- merge_into_site.py: LC dict, isLC, renderLC, lc-grid, SECS entry id 'lc', seccolor 'lc'.
