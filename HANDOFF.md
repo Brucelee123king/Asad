@@ -105,3 +105,8 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - FINAL RULE from user: an MCQ in PMA 154 that already exists in PMA 149-153 is NOT written in 154; it stays in the earlier PMA and its repeat count is raised by the 154 repeats (940 earlier MCQs got higher counts). Only genuinely new MCQs are in 154. (An earlier version copied them into 154; user rejected that.)
 - Pipeline in pma154/: extract -> cluster154/match154 -> writers -> build154.py -> blind check (233 new, 0 disagreements) -> paraphrase merge (dup_pairs_text.json, 14 pairs; apply_dups.py never merges two earlier-PMA MCQs) -> hk_final7/hk_origin7.json. Build: `python3 pma159/merge_into_site.py pma159/base_original_site.html site/index.html`.
 - Weak spots: writers skipped vague/garbled questions; blind check was quick.
+
+## Phase 11 - PMA 155 (done)
+- PDF "PMA 155 long course important MCQs" = list of short Q + answer (not experiences). Pipeline in pma155/ (same as 154, apply_dups.py uses N0=5942). Rule: repeats of earlier-PMA MCQs raise the earlier MCQ's count (394 MCQs), only new MCQs (148) are in PMA 155 (3 blocks). Total Hakeem 6090.
+- Blind check: 154 new, 5 disagreements; removed 2 ambiguous (first institution of Islam, Zardak Peak). Candidate answers in the PDF are often outdated; our answers are current (Oct 2026).
+- merge_into_site.py now supports 155 (card, HK_META, texts).
