@@ -64,15 +64,17 @@ _hkp9 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma154',
 if os.path.exists(_hkp9): _hkp = _hkp9; _hkp6 = _hkp9
 _hkp10 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma155', 'hk_final7.json')
 if os.path.exists(_hkp10): _hkp = _hkp10; _hkp6 = _hkp10
+_hkp11 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma156', 'hk_final7.json')
+if os.path.exists(_hkp11): _hkp = _hkp11; _hkp6 = _hkp11
 if os.path.exists(_hkp):
     hk_items = json.load(open(_hkp, encoding='utf8'))
 # Hakeem section is split by experience: each MCQ lives in the PMA (149/150/151/152/153/154) where it first appeared;
 # repeats from later PMAs only raise its bracket count. Origin list: dedupe/make_origin.py
 HK_META = {}
-_hko = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', *(('pma155', 'hk_origin7.json') if _hkp == _hkp10 else ('pma154', 'hk_origin7.json') if _hkp == _hkp9 else ('pma153', 'hk_origin7.json') if _hkp == _hkp8 else ('pma152', 'hk_origin5.json' if _hkp == _hkp7 else 'hk_origin4.json'))) if os.path.exists(_hkp6) else os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'dedupe', 'hk_origin2.json')
+_hko = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', *(('pma156', 'hk_origin7.json') if _hkp == _hkp11 else ('pma155', 'hk_origin7.json') if _hkp == _hkp10 else ('pma154', 'hk_origin7.json') if _hkp == _hkp9 else ('pma153', 'hk_origin7.json') if _hkp == _hkp8 else ('pma152', 'hk_origin5.json' if _hkp == _hkp7 else 'hk_origin4.json'))) if os.path.exists(_hkp6) else os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'dedupe', 'hk_origin2.json')
 hk_org = json.load(open(_hko)) if os.path.exists(_hko) and len(json.load(open(_hko))) == len(hk_items) else [149] * len(hk_items)
 _hn = 0
-for _p in (149, 150, 151, 152, 153, 154, 155):
+for _p in (149, 150, 151, 152, 153, 154, 155, 156):
     _its = [it for it, o_ in zip(hk_items, hk_org) if o_ == _p]
     for n in range((len(_its) + 49) // 50):
         _hn += 1
@@ -227,7 +229,7 @@ sub('<div id="fa-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap
             <div class="bg-gradient-to-r from-sky-700 to-cyan-500 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
                 <span class="inline-block bg-white/20 text-sky-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">@@HK_COUNT@@</span>
                 <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Hakeem Force Academy</h2>
-                <p class="text-sky-50 text-sm sm:text-base">Choose PMA 149, 150, 151, 152, 153, 154 or 155 experience. Every question is written only once. The number in brackets shows how many times that question was repeated. The most repeated questions come first. Every answer has a reason and a related fact, and current-affairs answers are updated to today.</p>
+                <p class="text-sky-50 text-sm sm:text-base">Choose PMA 149, 150, 151, 152, 153, 154, 155 or 156 experience. Every question is written only once. The number in brackets shows how many times that question was repeated. The most repeated questions come first. Every answer has a reason and a related fact, and current-affairs answers are updated to today.</p>
             </div>
             <div id="hk-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>''')
 s = s.replace('@@HK_COUNT@@', '%d Tests &bull; %d MCQs' % (len(HK), len(hk_items)))
@@ -237,7 +239,7 @@ sub("function selectTest(k) {", """let hkSub = null;
             const g = document.getElementById('hk-grid');
             const ks = Object.keys(ALL).filter(isHK);
             if (hkSub === null) {
-                g.innerHTML = [149, 150, 151, 152, 153, 154, 155].map(p => {
+                g.innerHTML = [149, 150, 151, 152, 153, 154, 155, 156].map(p => {
                     const pk = ks.filter(k => HK_META[k].pma === p), n = pk.reduce((t, k) => t + ALL[k].length, 0);
                     return `<button type="button" onclick="openHkSub(${p})" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-sky-500 hover:shadow-lg transition p-6 flex flex-col gap-3">
                         <div class="flex items-center gap-3"><i class="fa-solid fa-medal text-2xl text-sky-600"></i><span class="text-xl font-bold text-slate-900">PMA ${p} Experience</span></div>
@@ -271,7 +273,7 @@ MENU_JS = """let curSec = null, menuReady = false;
             {id: 'o', name: '1000 MCQs', sub: 'Original questions 1 to 1000', grad: 'from-indigo-600 to-violet-600', icon: 'fa-book', test: k => !isExtra(k)},
             {id: 'pma', name: 'PMA 159 MCQs', sub: 'PMA 159 Long Course test experiences', grad: 'from-emerald-700 to-teal-600', icon: 'fa-shield-halved', test: k => isPMA(k)},
             {id: 'fa', name: 'Forces Academy Lahore MCQs', sub: 'Intelligence tests and academic practice', grad: 'from-amber-700 to-orange-600', icon: 'fa-brain', test: k => isFA(k)},
-            {id: 'hk', name: 'Hakeem Force Academy MCQs', sub: 'PMA 149, 150, 151, 152, 153, 154 and 155 experiences', grad: 'from-sky-700 to-cyan-500', icon: 'fa-medal', test: k => isHK(k)}
+            {id: 'hk', name: 'Hakeem Force Academy MCQs', sub: 'PMA 149, 150, 151, 152, 153, 154, 155 and 156 experiences', grad: 'from-sky-700 to-cyan-500', icon: 'fa-medal', test: k => isHK(k)}
         ];
         function initMenu() {
             if (menuReady) return; menuReady = true;
