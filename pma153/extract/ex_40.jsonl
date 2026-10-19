@@ -10,9 +10,7 @@
 {"exp": 40002, "q": "What is Mohenjo-daro also called?", "a": "", "ok": true, "kind": "academic"}
 {"exp": 40002, "q": "In which ghazwa was Hazrat Hamza martyred?", "a": "", "ok": true, "kind": "academic"}
 {"exp": 40003, "q": "What is 90% of 90?", "a": "81", "ok": true, "kind": "verbal"}
-{"exp": 40003, "q": "A helicopter question about gallons of fuel appeared (details not remembered).", "a": "", "ok": false, "kind": "verbal"}
 {"exp": 40003, "q": "A train's speed is twice the speed of a car. If the car covers 60 km in 1 hour, how much distance does the train cover in 30 minutes?", "a": "", "ok": true, "kind": "verbal"}
-{"exp": 40003, "q": "Find the synonym/odd item: a series of numbers with 34 (details not remembered).", "a": "", "ok": false, "kind": "verbal"}
 {"exp": 40003, "q": "Which one is different from the others: football, hockey, cricket, baseball?", "a": "football", "ok": true, "kind": "verbal"}
 {"exp": 40003, "q": "What is one-third of 30% of 120?", "a": "", "ok": true, "kind": "verbal"}
 {"exp": 40003, "q": "If it is Monday on the 3rd day of the month, what day will it be on the 14th?", "a": "", "ok": true, "kind": "verbal"}
@@ -24,7 +22,6 @@
 {"exp": 40004, "q": "Who conquered Sindh?", "a": "Muhammad bin Qasim", "ok": true, "kind": "academic"}
 {"exp": 40004, "q": "In a class of 1500 students, 1200 are present. What is the percentage of absent students?", "a": "", "ok": true, "kind": "verbal"}
 {"exp": 40004, "q": "What is the capital of Kazakhstan?", "a": "Astana", "ok": true, "kind": "academic"}
-{"exp": 40004, "q": "Series question with Austria's capital appeared.", "a": "", "ok": false, "kind": "verbal"}
 {"exp": 40004, "q": "Which is the shortest dam of Pakistan?", "a": "", "ok": false, "kind": "academic"}
 {"exp": 40004, "q": "Why do parents send children to school?", "a": "", "ok": true, "kind": "academic"}
 {"exp": 40005, "q": "What is one-third of 10% of 90?", "a": "", "ok": true, "kind": "verbal"}
@@ -89,7 +86,6 @@
 {"exp": 40010, "q": "A train's speed is twice the speed of a car. If the car covers 60 km in 1 hour, how much distance does the train cover in 30 minutes?", "a": "", "ok": true, "kind": "verbal"}
 {"exp": 40010, "q": "In a class of 1500 students, 1200 are present. What is the percentage of absent students?", "a": "", "ok": true, "kind": "verbal"}
 {"exp": 40010, "q": "In a class of 33, boys outnumber girls by 7. How many girls are there?", "a": "", "ok": true, "kind": "verbal"}
-{"exp": 40010, "q": "A helicopter question with answer 175 appeared (details not remembered).", "a": "175", "ok": false, "kind": "verbal"}
 {"exp": 40010, "q": "In the Constitution of Pakistan, which article gives the right to education?", "a": "", "ok": true, "kind": "academic"}
 {"exp": 40010, "q": "In which country did Pakistan open its first embassy?", "a": "", "ok": true, "kind": "academic"}
 {"exp": 40010, "q": "How many elements does the first period of the periodic table have?", "a": "", "ok": false, "kind": "academic"}
@@ -210,7 +206,6 @@
 {"exp": 40019, "q": "Why do we send children to school?", "a": "", "ok": true, "kind": "academic"}
 {"exp": 40019, "q": "A boy moves north, turns left, after some time turns right. Which direction is he facing?", "a": "", "ok": true, "kind": "verbal"}
 {"exp": 40019, "q": "A boy moves north, turns left, after some time again moves left. Which direction is he facing?", "a": "", "ok": true, "kind": "verbal"}
-{"exp": 40019, "q": "Blood relations question appeared (details not remembered).", "a": "", "ok": false, "kind": "verbal"}
 {"exp": 40019, "q": "A train moves at double the speed of a car; the car moves at 60 km/h. How much distance will the train cover in 12 minutes?", "a": "", "ok": true, "kind": "verbal"}
 {"exp": 40019, "q": "What is the opposite of wild?", "a": "", "ok": true, "kind": "academic"}
 {"exp": 40019, "q": "On which river in India is a hydropower plant being built?", "a": "", "ok": false, "kind": "academic"}
@@ -222,7 +217,6 @@
 {"exp": 40019, "q": "What is one-fourth of one-tenth of 120?", "a": "", "ok": true, "kind": "verbal"}
 {"exp": 40019, "q": "What is the capital of Somalia?", "a": "", "ok": true, "kind": "academic"}
 {"exp": 40019, "q": "What is the capital of Turkey?", "a": "", "ok": true, "kind": "academic"}
-{"exp": 40019, "q": "Mirror images question appeared (details not remembered).", "a": "", "ok": false, "kind": "verbal"}
 {"exp": 40019, "q": "What is the height of K2?", "a": "", "ok": true, "kind": "academic"}
 {"exp": 40019, "q": "Which city of China connects with Pakistan?", "a": "", "ok": true, "kind": "academic"}
 {"exp": 40019, "q": "Who is the Chief Minister of Balochistan?", "a": "", "ok": true, "kind": "academic"}
@@ -306,8 +300,8 @@
 {"exp": 40026, "q": "Why do we boil milk?", "a": "", "ok": true, "kind": "academic"}
 {"exp": 40026, "q": "Why do we send children to school?", "a": "", "ok": true, "kind": "academic"}
 {"exp": 40026, "q": "Who was the first Prime Minister of Pakistan?", "a": "", "ok": true, "kind": "academic"}
-{"exp": 40026, "q": "Which Article of the Constitution was asked (question about 3)?", "a": "", "ok": false, "kind": "academic"}
 {"exp": 40026, "q": "What is the currency of Japan?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 40026, "q": "Which is the cricket league of Pakistan?", "a": "", "ok": true, "kind": "academic"}
 {"exp": 40027, "q": "The emperor is from which era (Turkey, Arab, or other)?", "a": "Turkey or Arabi", "ok": false, "kind": "academic"}
 {"exp": 40027, "q": "What is the heart of Pakistan?", "a": "Lahore", "ok": true, "kind": "academic"}
 {"exp": 40027, "q": "What is the synonym/antonym of wild?", "a": "Tamed", "ok": true, "kind": "academic"}
@@ -334,7 +328,6 @@
 {"exp": 40029, "q": "Series: 115, 55, 170, 65, 235, 90 ... what comes next?", "a": "325", "ok": true, "kind": "verbal"}
 {"exp": 40029, "q": "Mehar Ghari is near which option: Karachi, Lahore, Multan, Larkana?", "a": "", "ok": false, "kind": "verbal"}
 {"exp": 40029, "q": "Who invented Microsoft?", "a": "Bill Gates", "ok": true, "kind": "academic"}
-{"exp": 40029, "q": "Question about 'Sibi' (details not remembered).", "a": "", "ok": false, "kind": "academic"}
 {"exp": 40029, "q": "Find the odd one out: Lahore, Peshawar, Quetta, Karachi, Rawalpindi.", "a": "", "ok": true, "kind": "verbal"}
 {"exp": 40029, "q": "Arrange the words in alphabetical order (question with three options).", "a": "", "ok": true, "kind": "verbal"}
 {"exp": 40029, "q": "Which number comes next: 1, 3, 7, 15, 31, ?", "a": "", "ok": true, "kind": "verbal"}
@@ -344,7 +337,6 @@
 {"exp": 40030, "q": "Why do we boil milk?", "a": "", "ok": true, "kind": "academic"}
 {"exp": 40030, "q": "Why do we send children to school?", "a": "", "ok": true, "kind": "academic"}
 {"exp": 40030, "q": "In a class of 1500 students, 1200 are present. What is the percentage of present students?", "a": "", "ok": true, "kind": "verbal"}
-{"exp": 40030, "q": "A question on 56 days / age-related questions appeared (details not remembered).", "a": "", "ok": false, "kind": "verbal"}
 {"exp": 40030, "q": "Who is the president of Iraq?", "a": "", "ok": true, "kind": "academic"}
 {"exp": 40030, "q": "Who is the Prime Minister of the UK?", "a": "", "ok": true, "kind": "academic"}
 {"exp": 40030, "q": "Who is the current Chairman of NAB?", "a": "", "ok": true, "kind": "academic"}
