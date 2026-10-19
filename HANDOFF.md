@@ -125,3 +125,6 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - Most Repeated: tests are repeat-count BANDS, no MCQ in two tests: 500+, 450-499 (empty, skipped), 400-449, 350-399, 300-349, 250-299, 200-249, 150-199, 100-149, 50-99, 40-49, 30-39, 20-29, 10-19 (14 tests incl. 5-9 band, 2274 MCQs). Keys `MR-<lower>`; HK_META has pma:'rep', thr, hi. Time = 30 s per MCQ (nQ*30). MCQs are copies; the PMA tests are untouched.
 - hkSub states: null (landing), 'all', 'rep', number (PMA). Back: number->'all'->null->menu. merge_into_site.py (MR_THR, isMR, renderHK), seccolor/backnav blocks updated.
 - Added band 5-9 (MR-5, 835 MCQs, ~418 min).
+
+## Phase 15 - Timer pace (done)
+- All tests (1000 MCQs, PMA 159, Forces Academy, Hakeem PMA tests, Most Repeated) now use SEC_PER_MCQ = 30 seconds per MCQ (50 MCQs = 25 min). Real PMA initial test (unofficial prep sites): verbal ~84 MCQs/30 min (~21 s), non-verbal ~64/30 min (~28 s), academic ~50/30-40 min (36-48 s); whole paper ~27 s average. Change SEC_PER_MCQ in merge_into_site.py to adjust.

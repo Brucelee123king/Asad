@@ -364,13 +364,16 @@ for _k,_v in _imgs.items(): _blk=_blk.replace('{{IMG_'+_k+'}}','data:image/webp;
 assert s.count('<div id="splash"') == 1
 s = s.replace('<div id="splash"', _blk + '\n<div id="splash"')
 
-# user request: 20 minutes for every 50-MCQ test (24 seconds per MCQ)
-s = s.replace("TEST_SECS = isExtra(k) ? Math.max(60, nQ * 12) : 600;", "TEST_SECS = isMR(k) ? Math.max(60, nQ * 30) : isExtra(k) ? Math.max(60, nQ * 24) : 1200;")
-s = s.replace("ALL[k].length * 12) / 60))} Minutes", "ALL[k].length * 24) / 60))} Minutes")
-s = s.replace("${ALL[k].length} MCQs &bull; 10 Minutes &bull;", "${ALL[k].length} MCQs &bull; 20 Minutes &bull;")
-s = s.replace('<div id="info-time" class="text-lg font-bold text-slate-900">10 Minutes</div>', '<div id="info-time" class="text-lg font-bold text-slate-900">20 Minutes</div>')
-s = s.replace("auto-submit when the 10-minute timer expires.", "auto-submit when the 20-minute timer expires.")
-assert "nQ * 24" in s and "* 12) / 60" not in s and "10 Minutes" not in s
+# user request: real PMA initial-test pace, 30 seconds per MCQ in every test (50 MCQs = 25 minutes)
+s = s.replace("TEST_SECS = isExtra(k) ? Math.max(60, nQ * 12) : 600;", "TEST_SECS = Math.max(60, nQ * SEC_PER_MCQ);")
+s = s.replace("ALL[k].length * 12) / 60))} Minutes", "ALL[k].length * SEC_PER_MCQ) / 60))} Minutes")
+s = s.replace("${ALL[k].length} MCQs &bull; 10 Minutes &bull;", "${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * SEC_PER_MCQ) / 60))} Minutes &bull;")
+s = s.replace("mins = Math.ceil(n * 30 / 60);", "mins = Math.ceil(n * SEC_PER_MCQ / 60);")
+s = s.replace("Minutes (30 seconds each)", "Minutes (' + SEC_PER_MCQ + ' seconds each)".replace("' + SEC_PER_MCQ + '", "${SEC_PER_MCQ}"))
+s = s.replace("let TEST_SECS = 1200;", "let TEST_SECS = 1500;\n        const SEC_PER_MCQ = 30;")
+s = s.replace('<div id="info-time" class="text-lg font-bold text-slate-900">10 Minutes</div>', '<div id="info-time" class="text-lg font-bold text-slate-900">25 Minutes</div>')
+s = s.replace("auto-submit when the 10-minute timer expires.", "auto-submit when the 25-minute timer expires.")
+assert "SEC_PER_MCQ" in s and "nQ * 12" not in s and "* 12) / 60" not in s and "10 Minutes" not in s
 
 # user request: remove the front "ASADULLAH NOTES presents" splash page completely
 import re as _re
