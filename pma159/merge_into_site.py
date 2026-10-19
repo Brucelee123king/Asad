@@ -24,9 +24,11 @@ if os.path.exists(_p163):
     _m = _rp2.run_path(_p163)
     for _n, _idx in _m['MATCH']:
         _t = list(Q[_idx]); _t[5] = _t[5] + 1; Q[_idx] = tuple(_t)
+    _dup163 = {31: 7, 42: 20}   # same question written twice by the writer: merge into the first, raise its repeat count
     for _t in _m['NEW']:
-        if _t[0] in globals().get('_drop163', set()): continue
-        Q.append((_t[1], _t[2], _t[3], _t[4], _t[5], _t[6]))
+        if _t[0] in _dup163: continue
+        _extra = sum(1 for _d, _k in _dup163.items() if _k == _t[0])
+        Q.append((_t[1], _t[2], _t[3], _t[4], _t[5], _t[6] + _extra))
 
 src, out = sys.argv[1], sys.argv[2]
 s = open(src, encoding='utf8').read()

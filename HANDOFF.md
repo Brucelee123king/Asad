@@ -140,3 +140,7 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 ## Phase 18 - New PMA 159 file (Vision Force Academy) merged into PMA 159 section (done)
 - File "PMA 159 Experience vision force academy" (74 MCQs) -> pma162/ (src_items.json, m_p1.py, m_p2.py with MATCH/NEW). 32 items matched existing PMA 159 MCQs: their repeat count (rep) +1 each, MCQ not rewritten. 39 new MCQs appended to the PMA 159 list (items 42 and 52 removed after review) -> 308 MCQs, 7 parts (part 6 filled to 50, part 7 has 8). Done in merge_into_site.py right after `from questions import Q` (questions.py untouched). Old 269 MCQs verified unchanged (question+answer).
 - Writers did not use web search for this file (facts are stable); item 13 author answer Tuesday was wrong (Monday used).
+
+## Phase 19 - Light Forces Academy experiences added to PMA 159 section (done)
+- Narrative file (10 write-ups, ~48 remembered questions without answers) -> pma163/ (clean.txt, m_q1.py MATCH/NEW; existing list = current 308-MCQ PMA 159 list). 6 matched existing (rep +1), 26 NEW written with web-verified answers, 2 duplicates merged (items 31->7, 42->20, rep+1) -> 24 added; PMA 159 now 332 MCQs, 7 parts (part 7 has 32). 15 items skipped as unclear/disputed (age at Hijrat, atomic site, CPEC HQ, etc.).
+- merge_into_site.py applies pma162 then pma163 right after `from questions import Q`.
