@@ -3,6 +3,20 @@ usage: python3 merge_into_site.py <original_site.html> <output.html>"""
 import json, os, random, re, sys, html
 sys.path.insert(0, '.')
 from questions import Q
+# new PMA 159 experience file (Vision Force Academy, pma162/): repeated MCQs raise the repeat count of the existing PMA 159 MCQ,
+# new MCQs are appended (they fill the last part up to 50 and then start new 50-MCQ parts). Existing MCQs are not rewritten.
+Q = list(Q)
+_p162 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma162')
+if os.path.exists(os.path.join(_p162, 'm_p1.py')):
+    import runpy as _rp
+    _drop = {42, 52}   # source item numbers removed after review (unverifiable / disputed)
+    for _f in ('m_p1.py', 'm_p2.py'):
+        _m = _rp.run_path(os.path.join(_p162, _f))
+        for _n, _idx in _m['MATCH']:
+            _t = list(Q[_idx]); _t[5] = _t[5] + 1; Q[_idx] = tuple(_t)
+        for _t in _m['NEW']:
+            if _t[0] in _drop: continue
+            Q.append((_t[1], _t[2], _t[3], _t[4], _t[5], _t[6]))
 
 src, out = sys.argv[1], sys.argv[2]
 s = open(src, encoding='utf8').read()

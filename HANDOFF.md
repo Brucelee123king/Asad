@@ -136,3 +136,7 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 ## Phase 17 - 100 Most Repeated Questions (done)
 - PDF MOST_IMPORTANT_VERBEL_QUESTIONS (100 verbal statements, several wrong) -> pma161/ (src_text.txt, m_v1/m_v2 writer outputs, verbal_final.json = 107 MCQs; multi-part items split, 4 items skipped as ambiguous/missing). Wrong printed answers corrected (items 25, 28, 31, 34, 37, 43, 51, 53, 73, 89, 98).
 - Hakeem landing now has a 4th card "100 Most Repeated Questions" -> ONE test IV-1 (107 MCQs, 30 s each = 54 min). Bracket = repeat count of the same MCQ in the earlier Hakeem tests (81 MCQs); earlier tests untouched. Site code: IV/isIV/hkSub 'imp' in merge_into_site.py.
+
+## Phase 18 - New PMA 159 file (Vision Force Academy) merged into PMA 159 section (done)
+- File "PMA 159 Experience vision force academy" (74 MCQs) -> pma162/ (src_items.json, m_p1.py, m_p2.py with MATCH/NEW). 32 items matched existing PMA 159 MCQs: their repeat count (rep) +1 each, MCQ not rewritten. 39 new MCQs appended to the PMA 159 list (items 42 and 52 removed after review) -> 308 MCQs, 7 parts (part 6 filled to 50, part 7 has 8). Done in merge_into_site.py right after `from questions import Q` (questions.py untouched). Old 269 MCQs verified unchanged (question+answer).
+- Writers did not use web search for this file (facts are stable); item 13 author answer Tuesday was wrong (Monday used).
