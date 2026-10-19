@@ -114,3 +114,7 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 ## Phase 12 - PMA 156 (done)
 - PMA 156 PDF (919 pages, experiences format) done with same pipeline (pma156/, existing = pma155/hk_final7.json, apply_dups N0=6090). Rule unchanged: repeats raise earlier PMA's count; only new MCQs (177) in PMA 156 (4 blocks). Total Hakeem 6267. merge_into_site.py supports 156.
 - Blind check 193 new: 0 disagreements (checkers mostly did not use web); 3 current-affairs facts verified by web search (AO 2026 final, ISI DG, Bangladesh PM).
+
+## Phase 13 - PMA 157 (done)
+- PMA 157 PDF (337 pages, experiences format) via pma157/ pipeline (existing = pma156/hk_final7.json, apply_dups N0=6267). Same rule: repeats raise earlier PMA's count (314 MCQs); only new MCQs (156) in PMA 157 (4 blocks). Total Hakeem 6423. merge_into_site.py supports 157.
+- Blind check 162 new (with web search): 2 disagreements, both ambiguous (national dish, martial law count) -> removed.
