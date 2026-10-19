@@ -218,10 +218,10 @@ sub("<b>Reason:</b> ' + q.facts + '</div>' : ''}", "<b>Reason:</b> ' + q.facts +
 
 # ---- 10. Hakeem Force Academy section ----
 sub('<div id="fa-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>', '''<div id="fa-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
-            <div class="bg-gradient-to-r from-rose-700 to-pink-600 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
-                <span class="inline-block bg-white/20 text-rose-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">@@HK_COUNT@@</span>
+            <div class="bg-gradient-to-r from-sky-700 to-cyan-500 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
+                <span class="inline-block bg-white/20 text-sky-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">@@HK_COUNT@@</span>
                 <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Hakeem Force Academy</h2>
-                <p class="text-rose-50 text-sm sm:text-base">Choose PMA 149, 150, 151 or 152 experience. Every question is written only once. The number in brackets shows how many times that question was repeated. The most repeated questions come first. Every answer has a reason and a related fact, and current-affairs answers are updated to today.</p>
+                <p class="text-sky-50 text-sm sm:text-base">Choose PMA 149, 150, 151 or 152 experience. Every question is written only once. The number in brackets shows how many times that question was repeated. The most repeated questions come first. Every answer has a reason and a related fact, and current-affairs answers are updated to today.</p>
             </div>
             <div id="hk-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>''')
 s = s.replace('@@HK_COUNT@@', '%d Tests &bull; %d MCQs' % (len(HK), len(hk_items)))
@@ -233,25 +233,25 @@ sub("function selectTest(k) {", """let hkSub = null;
             if (hkSub === null) {
                 g.innerHTML = [149, 150, 151, 152].map(p => {
                     const pk = ks.filter(k => HK_META[k].pma === p), n = pk.reduce((t, k) => t + ALL[k].length, 0);
-                    return `<button type="button" onclick="openHkSub(${p})" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-rose-500 hover:shadow-lg transition p-6 flex flex-col gap-3">
-                        <div class="flex items-center gap-3"><i class="fa-solid fa-medal text-2xl text-rose-600"></i><span class="text-xl font-bold text-slate-900">PMA ${p} Experience</span></div>
+                    return `<button type="button" onclick="openHkSub(${p})" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-sky-500 hover:shadow-lg transition p-6 flex flex-col gap-3">
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-medal text-2xl text-sky-600"></i><span class="text-xl font-bold text-slate-900">PMA ${p} Experience</span></div>
                         <div class="text-xs text-slate-500">${pk.length} Tests &bull; ${n} MCQs</div>
-                        <div class="text-sm font-semibold text-rose-700">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+                        <div class="text-sm font-semibold text-sky-700">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
                 }).join('');
                 return;
             }
-            const bar = '<div class="col-span-full"><button type="button" onclick="openHkSub(null)" class="inline-flex items-center gap-2 bg-white border border-slate-200 hover:border-rose-400 text-slate-700 text-sm font-semibold px-4 py-2 rounded-full shadow-sm"><i class="fa-solid fa-arrow-left"></i> Hakeem Force Academy</button><div class="text-lg font-bold text-slate-900 mt-3">PMA ' + hkSub + ' Experience</div></div>';
+            const bar = '<div class="col-span-full"><button type="button" onclick="openHkSub(null)" class="inline-flex items-center gap-2 bg-white border border-slate-200 hover:border-sky-400 text-slate-700 text-sm font-semibold px-4 py-2 rounded-full shadow-sm"><i class="fa-solid fa-arrow-left"></i> Hakeem Force Academy</button><div class="text-lg font-bold text-slate-900 mt-3">PMA ' + hkSub + ' Experience</div></div>';
             g.innerHTML = bar + ks.filter(k => HK_META[k].pma === hkSub).map(k => {
                 let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
                 const part = HK_META[k].part;
                 const reps = ALL[k].map(q => q.rep || 1), hi = Math.max.apply(null, reps), lo = Math.min.apply(null, reps);
                 const rtxt = hi > 1 ? ('Repeated ' + hi + (lo !== hi ? ' to ' + lo : '') + ' times') : 'Asked once each';
-                return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-rose-500 hover:shadow-lg transition p-5 flex flex-col gap-3">
-                    <div class="flex items-center justify-between"><span class="bg-rose-100 text-rose-800 text-xs font-bold px-3 py-1 rounded-full">PMA ${hkSub} &bull; Test ${part}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
+                return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-sky-500 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="bg-sky-100 text-sky-800 text-xs font-bold px-3 py-1 rounded-full">PMA ${hkSub} &bull; Test ${part}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
                     <div class="text-xl font-bold text-slate-900">PMA ${hkSub} Experience &ndash; Part ${part}</div>
                     <div class="text-xs text-slate-500">${rtxt}</div>
                     <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * 12) / 60))} Minutes &bull; Instant feedback</div>
-                    <div class="text-sm font-semibold text-rose-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+                    <div class="text-sm font-semibold text-sky-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
             }).join('');
         }
         function selectTest(k) {""")
@@ -265,7 +265,7 @@ MENU_JS = """let curSec = null, menuReady = false;
             {id: 'o', name: '1000 MCQs', sub: 'Original questions 1 to 1000', grad: 'from-indigo-600 to-violet-600', icon: 'fa-book', test: k => !isExtra(k)},
             {id: 'pma', name: 'PMA 159 MCQs', sub: 'PMA 159 Long Course test experiences', grad: 'from-emerald-700 to-teal-600', icon: 'fa-shield-halved', test: k => isPMA(k)},
             {id: 'fa', name: 'Forces Academy Lahore MCQs', sub: 'Intelligence tests and academic practice', grad: 'from-amber-700 to-orange-600', icon: 'fa-brain', test: k => isFA(k)},
-            {id: 'hk', name: 'Hakeem Force Academy MCQs', sub: 'PMA 149, 150, 151 and 152 initial experiences', grad: 'from-rose-700 to-pink-600', icon: 'fa-medal', test: k => isHK(k)}
+            {id: 'hk', name: 'Hakeem Force Academy MCQs', sub: 'PMA 149, 150, 151 and 152 initial experiences', grad: 'from-sky-700 to-cyan-500', icon: 'fa-medal', test: k => isHK(k)}
         ];
         function initMenu() {
             if (menuReady) return; menuReady = true;
