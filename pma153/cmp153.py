@@ -1,5 +1,5 @@
 import json,re,glob
-f=json.load(open('hk_final4.json')); L="ABCDE"; ans={}
+f=json.load(open('hk_final6.json')); L="ABCDE"; ans={}
 for fn in sorted(glob.glob('verify/answers_*.txt')):
     for line in open(fn):
         m=re.match(r'\s*(\d+):\s*([A-EX])\s*\|\s*(\w+)\s*\|?\s*(.*)',line)
