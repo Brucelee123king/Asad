@@ -1,0 +1,32 @@
+S = "Hakeem Force Academy"
+QS = [
+(S, "Which is considered the oldest sport (game) in the world?", ["Wrestling", "Cricket", "Hockey", "Football"], 0, "Wrestling is widely regarded as the oldest sport, shown in cave paintings and practised in ancient civilisations.", "Sources differ, but most Pakistani textbooks give wrestling as the oldest sport.", [453, 180]),
+(S, "In which country are the Olympic Mountains located?", ["United States (Washington state)", "Greece", "Canada", "Switzerland"], 0, "The Olympic Mountains are a mountain range in Washington state, USA, on the Olympic Peninsula.", "Mount Olympus in Greece is a different mountain, the home of the gods in Greek myth.", [703]),
+(S, "Sir Syed Ahmad Khan opened Victoria School at Ghazipur in which year?", ["1863", "1859", "1875", "1857"], 0, "Sir Syed founded Victoria School at Ghazipur in 1863 while he was posted there.", "In 1864 he also founded the Scientific Society at Ghazipur.", [3611]),
+(S, "Which force opposes the relative motion between two surfaces in contact?", ["Friction", "Gravity", "Magnetism", "Tension"], 0, "Friction acts between surfaces in contact and resists their sliding over each other.", "Friction produces heat and wears out surfaces.", [444]),
+(S, "Fill in the blank: He is a ___ worker (opposite of careful).", ["careless", "careful", "cautious", "attentive"], 0, "Careless means not taking care, which is the opposite of careful.", "The suffix less means without, as in careless and helpless.", [1707]),
+(S, "What is the opposite of dominant?", ["Powerful", "Ruling", "Submissive", "Leading"], 2, "Dominant means having power and control, so its opposite is submissive, meaning yielding to others.", "Subordinate is another opposite of dominant.", [3295]),
+(S, "What is the antonym of oppression?", ["Cruelty", "Freedom", "Tyranny", "Persecution"], 1, "Oppression means harsh and unfair treatment, so freedom and justice are its opposite.", "Liberty is another antonym of oppression.", [2989]),
+(S, "What is a synonym of oppression?", ["Tyranny", "Kindness", "Freedom", "Generosity"], 0, "Oppression means cruel and unjust use of power, which is the same as tyranny.", "Persecution is another synonym of oppression.", [344]),
+(S, "Through which province does the Orange Line Metro Train run?", ["Sindh", "Punjab", "Balochistan", "Khyber Pakhtunkhwa"], 1, "The Orange Line Metro Train runs in Lahore, which is in Punjab.", "It is Pakistan's first metro train service.", [2213]),
+(S, "In which year did the Ottoman Caliphate (Khilafat Usmania) come to an end?", ["1924", "1918", "1857", "1947"], 0, "The Turkish Grand National Assembly abolished the caliphate in March 1924, ending the Khilafat Usmania.", "The Ottoman Sultanate had been abolished earlier, in 1922.", [2335]),
+(S, "Which number is different from the others: 3, 5, 7, 11, 12, 13, 17, 19?", ["11", "12", "13", "19"], 1, "All the numbers except 12 are prime numbers. 12 is divisible by 2, 3, 4 and 6.", "2 is the only even prime number.", [736]),
+(S, "How many peaks above 8000 metres are there in Pakistan?", ["5", "4", "3", "7"], 0, "Pakistan has five: K2, Nanga Parbat, Gasherbrum I, Gasherbrum II and Broad Peak.", "Pakistan has the most peaks above 7000 metres of any country except China and Nepal.", [876]),
+(S, "If the National Assembly and the Senate disagree on a bill, how is the matter resolved under the 1973 Constitution?", ["By a joint sitting of Parliament", "By the Supreme Court", "By the Prime Minister alone", "By the Chief Election Commissioner"], 0, "Under Article 70, the President calls a joint sitting of both Houses, and the bill passes by a majority of the members present.", "The Senate has 96 members and the National Assembly 336 seats.", [2017]),
+(S, "Which process do plants use to make their own food?", ["Respiration", "Photosynthesis", "Transpiration", "Digestion"], 1, "In photosynthesis plants use sunlight, water and carbon dioxide to make glucose and release oxygen.", "Chlorophyll in green leaves absorbs the sunlight needed for photosynthesis.", [208]),
+(S, "What is the synonym of the word pacific?", ["Peaceful", "Violent", "Noisy", "Angry"], 0, "Pacific means peaceful and calm; the Pacific Ocean was named for its calm waters by Magellan.", "The Pacific is the largest and deepest ocean on Earth.", [3405]),
+(S, "What was the Tashkent Pact (Declaration) of 1966?", ["A peace agreement between Pakistan and India after the 1965 war", "A trade treaty between Pakistan and China", "A defence pact between Pakistan and the USA", "A water treaty on the Indus rivers"], 0, "It was a peace agreement signed on 10 January 1966 in which both sides agreed to withdraw to pre-war positions.", "The Soviet Union mediated the agreement.", [466]),
+(S, "Who signed the Tashkent Declaration on behalf of India?", ["Lal Bahadur Shastri", "Jawaharlal Nehru", "Indira Gandhi", "Morarji Desai"], 0, "Indian Prime Minister Lal Bahadur Shastri signed it and died in Tashkent the next day.", "Ayub Khan signed it for Pakistan.", [500]),
+(S, "If 5 men type 5 pages in 5 minutes, how long will 1 man take to type 1 page?", ["5 minutes", "1 minute", "25 minutes", "10 minutes"], 0, "5 men type 5 pages in 5 minutes, so each man types 1 page in 5 minutes.", "Work equals number of workers multiplied by time, divided by the number of pages.", [1426]),
+]
+DUPS = [
+(3776,2161),(3776,3748),(3776,604),(3776,2432),(3776,3749),(1003,2456),(1319,4609),
+(3017,2146),(3017,3689),(3017,1265),(3017,3935),(910,2207),(910,3705),
+(723,87),(723,1189),(452,3854),(727,2455),(1523,3840),(974,4607),
+(940,248),(940,692),(940,3649),(3082,3212),
+(777,4647),(777,4734),(777,4735),(777,4736),(777,4738),(774,224),
+(3032,3296),(904,2126),(4012,3830),
+(1208,2263),(1208,2343),(1208,2344),(1208,697),(310,826),(310,3301),
+(938,2272),(4060,3616),(279,810),(1344,155),(366,4550),(366,4551),(2749,4739),
+(993,2648),(993,2649),(3310,3044),(3310,661),(805,2680),
+]
