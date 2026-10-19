@@ -21,7 +21,7 @@
 {"exp": 15002, "q": "Which is the longest country by area?", "a": "Russia", "ok": true, "kind": "academic"}
 {"exp": 15003, "q": "How many sides does a prism have?", "a": "6", "ok": true, "kind": "verbal"}
 {"exp": 15003, "q": "What is the capital of Malaysia?", "a": "Kuala Lumpur", "ok": true, "kind": "academic"}
-{"exp": 15003, "q": "Who built the Akbar's... Sher Shah Suri's tomb? (Where is Sher Shah Suri's story/work mentioned)", "a": "", "ok": false, "kind": "academic"}
+{"exp": 15003, "q": "Which Mughal emperor's... Who was Sher Shah Suri's tomb built for? (Sher Shah Suri question, unclear)", "a": "", "ok": false, "kind": "academic"}
 {"exp": 15003, "q": "What is the average of 8 and 12?", "a": "10", "ok": true, "kind": "verbal"}
 {"exp": 15003, "q": "What is the permutation 3P2?", "a": "", "ok": false, "kind": "verbal"}
 {"exp": 15003, "q": "Money makes the mare go: which preposition/word completes the proverb?", "a": "go", "ok": false, "kind": "academic"}
@@ -123,7 +123,7 @@
 {"exp": 15006, "q": "In which year was the European Union constitution presented?", "a": "2003", "ok": true, "kind": "academic"}
 {"exp": 15006, "q": "In which year was NWFP changed to KPK?", "a": "2010", "ok": true, "kind": "academic"}
 {"exp": 15007, "q": "What is the India-China border called?", "a": "", "ok": true, "kind": "academic"}
-{"exp": 15007, "q": "Who was the total number of Prime Ministers of Pakistan from 1947 to 1958?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 15007, "q": "What was the total number of Prime Ministers of Pakistan from 1947 to 1958?", "a": "", "ok": true, "kind": "academic"}
 {"exp": 15007, "q": "In which year did Pakistan win the ICC World Cricket Championship?", "a": "", "ok": true, "kind": "academic"}
 {"exp": 15007, "q": "Who is the author of 'Adequates of Happiness'?", "a": "", "ok": true, "kind": "academic"}
 {"exp": 15007, "q": "What is the name of Liaquat Ali Khan's book?", "a": "", "ok": true, "kind": "academic"}
@@ -273,7 +273,7 @@
 {"exp": 15021, "q": "Who is the Foreign Minister?", "a": "", "ok": true, "kind": "academic"}
 {"exp": 15021, "q": "What is the deepest lake?", "a": "", "ok": true, "kind": "academic"}
 {"exp": 15021, "q": "What is the largest desert of Pakistan?", "a": "", "ok": true, "kind": "academic"}
-{"exp": 15021, "q": "Who won the Battle of Badr: who was the leader of the Quraish in the Battle of Badr?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 15021, "q": "Who was the leader of the Quraish in the Battle of Badr?", "a": "", "ok": true, "kind": "academic"}
 {"exp": 15021, "q": "Who was given the Nishan-e-Haider in 1999?", "a": "", "ok": true, "kind": "academic"}
 {"exp": 15021, "q": "What is the highest civil award of Pakistan?", "a": "", "ok": true, "kind": "academic"}
 {"exp": 15022, "q": "In which sport is the term butterfly stroke used?", "a": "", "ok": true, "kind": "academic"}
