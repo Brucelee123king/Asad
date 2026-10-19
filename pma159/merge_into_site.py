@@ -140,6 +140,15 @@ if os.path.exists(_ivp):
                    "pma": True, "sec": sec, "rep": rep} for i, (sec, q, o, a, why, rel, rep) in enumerate(_iv)]
     HK_META['IV-1'] = {"pma": "imp", "part": 1}
 
+LC = {}
+_lcp = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma164', 'pma158_final.json')
+_lc_n = 0
+if os.path.exists(_lcp):
+    _lc = json.load(open(_lcp, encoding='utf8')); _lc_n = len(_lc)
+    for _n in range((len(_lc) + 49) // 50):
+        LC['LC-%d' % (_n + 1)] = [{"id": k + 1, "question": q + (' (%d)' % rep if rep > 1 else ''), "options": o, "correct": a, "facts": why, "rel": rel,
+                                   "pma": True, "sec": sec, "rep": rep} for k, (sec, q, o, a, why, rel, rep) in enumerate(_lc[_n * 50:(_n + 1) * 50])]
+
 def sub(a, b, count=1):
     global s
     assert s.count(a) == count, (s.count(a), a[:80])
@@ -161,7 +170,7 @@ SPLIT_JS = '''(function () {
 m = re.search(r'const ALL = ', s)
 eol = s.index('\n', m.start())
 assert s[:eol].rstrip().endswith(';')
-s = s[:eol] + '\n        const PMA_DATA = ' + json.dumps(PMA, ensure_ascii=False) + ';\n        ' + SPLIT_JS + 'Object.assign(ALL, PMA_DATA);\n        const FA_DATA = ' + json.dumps(FA, ensure_ascii=False) + ';\n        Object.assign(ALL, FA_DATA);\n        const HK_DATA = ' + json.dumps(HK, ensure_ascii=False) + ';\n        Object.assign(ALL, HK_DATA);\n        const MR_DATA = ' + json.dumps(MR, ensure_ascii=False) + ';\n        Object.assign(ALL, MR_DATA);\n        const CN_DATA = ' + json.dumps(CN, ensure_ascii=False) + ';\n        Object.assign(ALL, CN_DATA);\n        const IV_DATA = ' + json.dumps(IV, ensure_ascii=False) + ';\n        Object.assign(ALL, IV_DATA);\n        const HK_META = ' + json.dumps(HK_META) + ';\n        let TEST_SECS = 1200;\n        const isPMA = k => String(k).indexOf("PMA-") === 0;\n        const isFA = k => String(k).indexOf("FA-") === 0;\n        const isHK = k => String(k).indexOf("HK-") === 0;\n        const isMR = k => String(k).indexOf("MR-") === 0;\n        const isCN = k => String(k).indexOf("CN-") === 0;\n        const isIV = k => String(k).indexOf("IV-") === 0;\n        const isExtra = k => isPMA(k) || isFA(k) || isHK(k) || isMR(k) || isCN(k) || isIV(k);' + s[eol:]
+s = s[:eol] + '\n        const PMA_DATA = ' + json.dumps(PMA, ensure_ascii=False) + ';\n        ' + SPLIT_JS + 'Object.assign(ALL, PMA_DATA);\n        const FA_DATA = ' + json.dumps(FA, ensure_ascii=False) + ';\n        Object.assign(ALL, FA_DATA);\n        const HK_DATA = ' + json.dumps(HK, ensure_ascii=False) + ';\n        Object.assign(ALL, HK_DATA);\n        const MR_DATA = ' + json.dumps(MR, ensure_ascii=False) + ';\n        Object.assign(ALL, MR_DATA);\n        const CN_DATA = ' + json.dumps(CN, ensure_ascii=False) + ';\n        Object.assign(ALL, CN_DATA);\n        const IV_DATA = ' + json.dumps(IV, ensure_ascii=False) + ';\n        Object.assign(ALL, IV_DATA);\n        const LC_DATA = ' + json.dumps(LC, ensure_ascii=False) + ';\n        Object.assign(ALL, LC_DATA);\n        const HK_META = ' + json.dumps(HK_META) + ';\n        let TEST_SECS = 1200;\n        const isPMA = k => String(k).indexOf("PMA-") === 0;\n        const isFA = k => String(k).indexOf("FA-") === 0;\n        const isHK = k => String(k).indexOf("HK-") === 0;\n        const isMR = k => String(k).indexOf("MR-") === 0;\n        const isCN = k => String(k).indexOf("CN-") === 0;\n        const isIV = k => String(k).indexOf("IV-") === 0;\n        const isLC = k => String(k).indexOf("LC-") === 0;\n        const isExtra = k => isPMA(k) || isFA(k) || isHK(k) || isMR(k) || isCN(k) || isIV(k) || isLC(k);' + s[eol:]
 
 # ---- 2. second section on the selection page ----
 sub('<div id="test-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>',
@@ -288,9 +297,28 @@ sub('<div id="fa-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap
                 <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Hakeem Force Academy</h2>
                 <p class="text-sky-50 text-sm sm:text-base">Choose PMA All Experiences (PMA 149 to 157), Most Repeated MCQs, the Constitution of Pakistan or the 100 Most Repeated Questions. Every question is written only once. The number in brackets shows how many times that question was repeated. Every answer has a reason and a related fact, and current-affairs answers are updated to today.</p>
             </div>
-            <div id="hk-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>''')
+            <div id="hk-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            <div class="bg-gradient-to-r from-violet-700 to-fuchsia-600 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
+                <span class="inline-block bg-white/20 text-violet-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">@@LC_COUNT@@</span>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">PMA 158 Long Course</h2>
+                <p class="text-violet-50 text-sm sm:text-base">MCQs from the PMA 158 Long Course test experiences, in tests of 50 MCQs. Every answer shows a reason and a related fact, and current-affairs answers are updated to today.</p>
+            </div>
+            <div id="lc-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>''')
+s = s.replace('@@LC_COUNT@@', '%d Tests &bull; %d MCQs' % (len(LC), _lc_n))
 s = s.replace('@@HK_COUNT@@', '%d Tests &bull; %d MCQs' % _hk_count)
-sub("function selectTest(k) {", """let hkSub = null;
+sub("function selectTest(k) {", """function renderLC() {
+            const g = document.getElementById('lc-grid'); if (!g) return;
+            g.innerHTML = Object.keys(ALL).filter(isLC).map((k, i) => {
+                let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
+                const secs = [...new Set(ALL[k].map(q => q.sec))].join(' &bull; ');
+                return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-violet-500 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="bg-violet-100 text-violet-800 text-xs font-bold px-3 py-1 rounded-full">PMA 158 &bull; Test ${i + 1}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
+                    <div class="text-xl font-bold text-slate-900">PMA 158 Long Course &ndash; Part ${i + 1}</div>
+                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * 12) / 60))} Minutes &bull; Instant feedback</div>
+                    <div class="text-sm font-semibold text-violet-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+            }).join('');
+        }
+        let hkSub = null;
         function openHkSub(p) { hkSub = p; renderHK(); window.scrollTo(0, 0); }
         function renderHK() {
             const g = document.getElementById('hk-grid');
@@ -381,15 +409,16 @@ sub("function selectTest(k) {", """let hkSub = null;
         function selectTest(k) {""")
 sub("renderSelect(); renderPMA(); renderFA(); window.scrollTo(0, 0);", "renderSelect(); renderPMA(); renderFA(); renderHK(); window.scrollTo(0, 0);")
 sub("function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA();", "function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA(); renderHK();")
-sub("(isFA(k) ? ' MCQs (Forces Academy Lahore – Part ' + k.slice(3) + ')' : ' MCQs (PMA 159 Long Course – Part ' + k.slice(4) + ')')", "(isIV(k) ? ' MCQs (100 Most Repeated Verbal Questions)' : isCN(k) ? ' MCQs (Constitution of Pakistan – 1956, 1962, 1973)' : isMR(k) ? ' MCQs (Most Repeated – ' + (HK_META[k].hi ? HK_META[k].thr + ' to ' + HK_META[k].hi : HK_META[k].thr + '+') + ' times)' : isHK(k) ? ' MCQs (Hakeem Force Academy – PMA ' + HK_META[k].pma + ' Part ' + HK_META[k].part + ')' : isFA(k) ? ' MCQs (Forces Academy Lahore – Part ' + k.slice(3) + ')' : ' MCQs (PMA 159 Long Course – Part ' + k.slice(4) + ')')")
-sub("(isFA(k) ? ' MCQs from Forces Academy Lahore tests and academic lists. Every answer shows a reason and a related fact.' : ' MCQs from PMA 159 test experiences. Every answer shows a reason.')", "(isIV(k) ? ' of the most important verbal intelligence questions. The number in brackets is how many times the question was repeated in the earlier tests. Every answer shows a reason and a related fact.' : isCN(k) ? ' MCQs on the Constitutions of Pakistan of 1956, 1962 and 1973. The number in brackets is how many times the question was repeated in the PMA experiences. Every answer shows a reason and a related fact.' : isMR(k) ? ' MCQs repeated ' + (HK_META[k].hi ? HK_META[k].thr + ' to ' + HK_META[k].hi : HK_META[k].thr + ' or more') + ' times in the Hakeem Force Academy experiences. The number in brackets is how many times the question was repeated. Every answer shows a reason and a related fact.' : isHK(k) ? ' MCQs from PMA ' + HK_META[k].pma + ' test experiences. The number in brackets is how many times the question was repeated. Every answer shows a reason and a related fact.' : isFA(k) ? ' MCQs from Forces Academy Lahore tests and academic lists. Every answer shows a reason and a related fact.' : ' MCQs from PMA 159 test experiences. Every answer shows a reason.')")
+sub("(isFA(k) ? ' MCQs (Forces Academy Lahore – Part ' + k.slice(3) + ')' : ' MCQs (PMA 159 Long Course – Part ' + k.slice(4) + ')')", "(isLC(k) ? ' MCQs (PMA 158 Long Course – Part ' + k.slice(3) + ')' : isIV(k) ? ' MCQs (100 Most Repeated Verbal Questions)' : isCN(k) ? ' MCQs (Constitution of Pakistan – 1956, 1962, 1973)' : isMR(k) ? ' MCQs (Most Repeated – ' + (HK_META[k].hi ? HK_META[k].thr + ' to ' + HK_META[k].hi : HK_META[k].thr + '+') + ' times)' : isHK(k) ? ' MCQs (Hakeem Force Academy – PMA ' + HK_META[k].pma + ' Part ' + HK_META[k].part + ')' : isFA(k) ? ' MCQs (Forces Academy Lahore – Part ' + k.slice(3) + ')' : ' MCQs (PMA 159 Long Course – Part ' + k.slice(4) + ')')")
+sub("(isFA(k) ? ' MCQs from Forces Academy Lahore tests and academic lists. Every answer shows a reason and a related fact.' : ' MCQs from PMA 159 test experiences. Every answer shows a reason.')", "(isLC(k) ? ' MCQs from the PMA 158 Long Course test experiences. Every answer shows a reason and a related fact.' : isIV(k) ? ' of the most important verbal intelligence questions. The number in brackets is how many times the question was repeated in the earlier tests. Every answer shows a reason and a related fact.' : isCN(k) ? ' MCQs on the Constitutions of Pakistan of 1956, 1962 and 1973. The number in brackets is how many times the question was repeated in the PMA experiences. Every answer shows a reason and a related fact.' : isMR(k) ? ' MCQs repeated ' + (HK_META[k].hi ? HK_META[k].thr + ' to ' + HK_META[k].hi : HK_META[k].thr + ' or more') + ' times in the Hakeem Force Academy experiences. The number in brackets is how many times the question was repeated. Every answer shows a reason and a related fact.' : isHK(k) ? ' MCQs from PMA ' + HK_META[k].pma + ' test experiences. The number in brackets is how many times the question was repeated. Every answer shows a reason and a related fact.' : isFA(k) ? ' MCQs from Forces Academy Lahore tests and academic lists. Every answer shows a reason and a related fact.' : ' MCQs from PMA 159 test experiences. Every answer shows a reason.')")
 
 MENU_JS = """let curSec = null, menuReady = false;
         const SECS = [
             {id: 'o', name: '1000 MCQs', sub: 'Original questions 1 to 1000', grad: 'from-indigo-600 to-violet-600', icon: 'fa-book', test: k => !isExtra(k)},
             {id: 'pma', name: 'PMA 159 MCQs', sub: 'PMA 159 Long Course test experiences', grad: 'from-emerald-700 to-teal-600', icon: 'fa-shield-halved', test: k => isPMA(k)},
             {id: 'fa', name: 'Forces Academy Lahore MCQs', sub: 'Intelligence tests and academic practice', grad: 'from-amber-700 to-orange-600', icon: 'fa-brain', test: k => isFA(k)},
-            {id: 'hk', name: 'Hakeem Force Academy MCQs', sub: 'PMA All Experiences, Most Repeated MCQs, Constitution of Pakistan and 100 Most Repeated Questions', grad: 'from-sky-700 to-cyan-500', icon: 'fa-medal', test: k => isHK(k)}
+            {id: 'hk', name: 'Hakeem Force Academy MCQs', sub: 'PMA All Experiences, Most Repeated MCQs, Constitution of Pakistan and 100 Most Repeated Questions', grad: 'from-sky-700 to-cyan-500', icon: 'fa-medal', test: k => isHK(k)},
+            {id: 'lc', name: 'PMA 158 Long Course MCQs', sub: 'PMA 158 Long Course test experiences', grad: 'from-violet-700 to-fuchsia-600', icon: 'fa-flag', test: k => isLC(k)}
         ];
         function initMenu() {
             if (menuReady) return; menuReady = true;
@@ -428,8 +457,8 @@ MENU_JS = """let curSec = null, menuReady = false;
         function openSec(id) { if (id === 'hk' && curSec !== 'hk' && typeof hkSub !== 'undefined') { hkSub = null; renderHK(); } curSec = id; applySec(); window.scrollTo(0, 0); }
         function bootQuizApp() {"""
 sub("function bootQuizApp() {", MENU_JS)
-sub("renderSelect(); renderPMA(); renderFA(); renderHK(); window.scrollTo(0, 0);", "renderSelect(); renderPMA(); renderFA(); renderHK(); applySec(); window.scrollTo(0, 0);")
-sub("function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA(); renderHK();", "function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA(); renderHK(); applySec();")
+sub("renderSelect(); renderPMA(); renderFA(); renderHK(); window.scrollTo(0, 0);", "renderSelect(); renderPMA(); renderFA(); renderHK(); renderLC(); applySec(); window.scrollTo(0, 0);")
+sub("function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA(); renderHK();", "function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA(); renderHK(); renderLC(); applySec();")
 
 # login screen (glassy sign in / create account / continue as guest) and day-night mode
 _d = os.path.dirname(os.path.abspath(__file__))
