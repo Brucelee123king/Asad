@@ -71,20 +71,12 @@ for sec, q, o, a, why, rel, ids in keep:
 out_new.sort(key=lambda x: -x[6])
 final = []
 for i, x in enumerate(hk):
-    x = list(x)
+    x = list(x); x[6] = x[6] + len(add.get(i, ()))
     f = next((v for k, v in ov['fix'].items() if x[1].startswith(k)), None)
     if f:
         x[1] = f.get('question', x[1]); x[2] = f.get('options', x[2]); x[3] = f.get('correct', x[3]); x[4] = f.get('reason', x[4]); x[5] = f.get('rel', x[5])
     final.append(x)
-# PMA 154 section: copies of earlier-PMA MCQs repeated in 154 (count = repeats within 154 only) + new MCQs.
-# Earlier PMAs stay untouched.
-copies = []
-for e, exps in add.items():
-    x = list(final[e]); x[6] = max(1, len(exps)); copies.append(x)
-items154 = copies + out_new
-items154.sort(key=lambda x: -x[6])
-n0 = len(final)
-final += items154
+final += out_new
 json.dump(final, open('hk_final6.json', 'w', encoding='utf8'), ensure_ascii=False)
-json.dump(json.load(open('../pma153/hk_origin7.json')) + [154] * len(items154), open('hk_origin6.json', 'w'))
-print('existing', n0, 'copies in 154', len(copies), '(writer dups', ndup, ') new', len(out_new), 'section154', len(items154), 'total', len(final), 'blocks154', (len(items154) + 49) // 50)
+json.dump(json.load(open('../pma153/hk_origin7.json')) + [154] * len(out_new), open('hk_origin6.json', 'w'))
+print('existing', len(hk), 'raised', len(add), 'new', len(out_new), 'total', len(final), 'blocks154', (len(out_new) + 49) // 50)
