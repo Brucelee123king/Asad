@@ -25,7 +25,7 @@ body[data-sec] #view-home .text-emerald-600{color:var(--cs)!important}
 (function(){
   if(typeof selectTest!=='function')return;
   var _sel=selectTest,_show=showSelect;
-  window.selectTest=selectTest=function(k){var c=isHK(k)?'hk':isFA(k)?'fa':isPMA(k)?'pma':'';if(c)document.body.dataset.sec=c;else delete document.body.dataset.sec;return _sel.apply(this,arguments)};
+  window.selectTest=selectTest=function(k){var c=(isHK(k)||isMR(k))?'hk':isFA(k)?'fa':isPMA(k)?'pma':'';if(c)document.body.dataset.sec=c;else delete document.body.dataset.sec;return _sel.apply(this,arguments)};
   window.showSelect=showSelect=function(){var r=_show.apply(this,arguments);if(!quizActive)delete document.body.dataset.sec;return r};
 })();
 </script>

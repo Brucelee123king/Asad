@@ -118,3 +118,9 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 ## Phase 13 - PMA 157 (done)
 - PMA 157 PDF (337 pages, experiences format) via pma157/ pipeline (existing = pma156/hk_final7.json, apply_dups N0=6267). Same rule: repeats raise earlier PMA's count (314 MCQs); only new MCQs (156) in PMA 157 (4 blocks). Total Hakeem 6423. merge_into_site.py supports 157.
 - Blind check 162 new (with web search): 2 disagreements, both ambiguous (national dish, martial law count) -> removed.
+
+## Phase 14 - Hakeem menu: All Experiences + Most Repeated (done)
+- PMA 158 PDF was byte-identical in text to PMA 155 (checked); not added.
+- Hakeem Force Academy now opens a landing page with 2 cards: "PMA All Experiences" (the PMA 149-157 cards, unchanged) and "Most Repeated MCQs".
+- Most Repeated: tests are repeat-count BANDS, no MCQ in two tests: 500+, 450-499 (empty, skipped), 400-449, 350-399, 300-349, 250-299, 200-249, 150-199, 100-149, 50-99, 40-49, 30-39, 20-29, 10-19 (13 tests, 1439 MCQs). Keys `MR-<lower>`; HK_META has pma:'rep', thr, hi. Time = 30 s per MCQ (nQ*30). MCQs are copies; the PMA tests are untouched.
+- hkSub states: null (landing), 'all', 'rep', number (PMA). Back: number->'all'->null->menu. merge_into_site.py (MR_THR, isMR, renderHK), seccolor/backnav blocks updated.

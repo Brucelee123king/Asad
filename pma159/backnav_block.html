@@ -23,7 +23,7 @@ html.dark #backBtn{background:rgba(15,23,42,.85);color:#e0e7ff;border-color:rgba
         quizActive=false;
       }
       showSelect();
-    }else if(vis('view-select')&&curSec!==null){if(curSec==='hk'&&typeof hkSub!=='undefined'&&hkSub!==null)openHkSub(null);else openSec(null)}
+    }else if(vis('view-select')&&curSec!==null){if(curSec==='hk'&&typeof hkSub!=='undefined'&&hkSub!==null)openHkSub(typeof hkSub==='number'?'all':null);else openSec(null)}
     sync();window.scrollTo(0,0);
   }
   b.addEventListener('click',function(){if(history.state&&history.state.n)history.back();else performBack()});
