@@ -86,8 +86,8 @@ for _p in (149, 150, 151, 152, 153, 154, 155, 156, 157):
                              for k, (sec, q, o, a, why, rel, rep) in enumerate(_its[n * 50:(n + 1) * 50])]
 
 _hk_count = (len(HK), len(hk_items))
-# Most repeated MCQs: one test per repeat band (500+, 450-499, 400-449, ... 10-19), 30 seconds per MCQ; empty bands are skipped.
-MR_THR = [500, 450, 400, 350, 300, 250, 200, 150, 100, 50, 40, 30, 20, 10]
+# Most repeated MCQs: one test per repeat band (500+, 450-499, 400-449, ... 10-19, 5-9), 30 seconds per MCQ; empty bands are skipped.
+MR_THR = [500, 450, 400, 350, 300, 250, 200, 150, 100, 50, 40, 30, 20, 10, 5]
 MR = {}
 for _i, _t in enumerate(MR_THR):
     _hi = MR_THR[_i - 1] if _i else 10 ** 9  # band: _t <= repeats < next higher threshold (no MCQ in two tests)
@@ -262,7 +262,7 @@ sub("function selectTest(k) {", """let hkSub = null;
                         <div class="text-sm font-semibold text-sky-700">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>
                     <button type="button" onclick="openHkSub('rep')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-sky-500 hover:shadow-lg transition p-6 flex flex-col gap-3">
                         <div class="flex items-center gap-3"><i class="fa-solid fa-fire text-2xl text-sky-600"></i><span class="text-xl font-bold text-slate-900">Most Repeated MCQs</span></div>
-                        <div class="text-xs text-slate-500">${mk.length} Tests &bull; 500+ down to 10 repeats</div>
+                        <div class="text-xs text-slate-500">${mk.length} Tests &bull; 500+ down to 5 repeats</div>
                         <div class="text-sm font-semibold text-sky-700">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
                 return;
             }
