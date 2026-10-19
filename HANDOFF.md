@@ -128,3 +128,7 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 
 ## Phase 15 - Timer pace (done)
 - All tests (1000 MCQs, PMA 159, Forces Academy, Hakeem PMA tests, Most Repeated) now use SEC_PER_MCQ = 30 seconds per MCQ (50 MCQs = 25 min). Real PMA initial test (unofficial prep sites): verbal ~84 MCQs/30 min (~21 s), non-verbal ~64/30 min (~28 s), academic ~50/30-40 min (36-48 s); whole paper ~27 s average. Change SEC_PER_MCQ in merge_into_site.py to adjust.
+
+## Phase 16 - Constitution of Pakistan (done)
+- PDF "constitution of Pakistan 1956,1962,1973" has 96 MCQs with the author's answers (some wrong). pma160/src_mcqs.json = parsed list; agents (m_s1, m_s2) fixed wording/answers with web search -> 89 MCQs kept (7 dropped as unverifiable/duplicate). User said: NO MCQs of our own. Extra MCQs written by agents (m_e1..e4, 336 MCQs, con_all.json) are NOT used (kept in repo only).
+- Hakeem landing now has a 3rd card "Constitution of Pakistan" -> ONE test CN-1 (89 MCQs, 30 s each = 45 min). If the same MCQ exists in Hakeem sets, its repeat count (hk_final7 rep) is shown in brackets (18 MCQs); the existing Hakeem MCQs are untouched. Data: pma160/constitution_final.json; site code in merge_into_site.py (CN, isCN, hkSub 'con').
