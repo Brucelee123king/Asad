@@ -99,3 +99,9 @@ Result: Hakeem section 4798 MCQs: PMA 149 1517, PMA 150 1441, PMA 151 1042, PMA 
 ## Phase 9: PMA 153 (8337-page PDF; its text layer is broken: word fragments, lost spaces) added
 Pipeline in `pma153/` (same as 152): chunks c_01..49 -> extract (agents rebuilt questions from garbled text, ok=false when unsure) -> cluster153.py/match153.py (existing = pma152/hk_final5.json) -> mcq_in/b_01..49 -> writers mcq_out -> `python3 pma153/build153.py` (hk_final6.json/hk_origin6.json; overrides in hk153_overrides.json: 7 removals + fixes of the existing "342-member National Assembly" MCQ -> 336/169) -> blind check (cmp153.py, 11 disagreements reviewed) -> `python3 pma153/apply_dups.py` merges 29 paraphrased repeats -> hk_final7.json + hk_origin7.json (preferred by merge_into_site.py).
 Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153 923. Hakeem colour is now ocean blue (sky/cyan). Time-sensitive answers web-checked.
+
+## Phase 10 - PMA 154 (done)
+- Hakeem now has PMA 154 (24 tests; 1160 MCQs in its own section). Total Hakeem entries 6880.
+- RULE from user: MCQs repeated from earlier PMAs STAY in those PMAs untouched (counts not raised). PMA 154 holds COPIES of them with the bracket number = repeats inside PMA 154 only, plus the new MCQs. Each question appears once in PMA 154 (bracket = repeat count).
+- Pipeline in pma154/: extract -> cluster154/match154 -> writers (mcq_out, deleted before commit is fine) -> build154.py -> blind check (233 new, 0 disagreements) -> paraphrase merge (dup_pairs_text.json, 14 pairs) -> apply_dups.py -> hk_final7/hk_origin7.json. Build: `python3 pma159/merge_into_site.py pma159/base_original_site.html site/index.html`.
+- Weak spots: some vague/garbled questions were skipped by the writers; blind check was quick.
