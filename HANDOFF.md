@@ -132,3 +132,7 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 ## Phase 16 - Constitution of Pakistan (done)
 - PDF "constitution of Pakistan 1956,1962,1973" has 96 MCQs with the author's answers (some wrong). pma160/src_mcqs.json = parsed list; agents (m_s1, m_s2) fixed wording/answers with web search -> 89 MCQs kept (7 dropped as unverifiable/duplicate). User said: NO MCQs of our own. Extra MCQs written by agents (m_e1..e4, 336 MCQs, con_all.json) are NOT used (kept in repo only).
 - Hakeem landing now has a 3rd card "Constitution of Pakistan" -> ONE test CN-1 (89 MCQs, 30 s each = 45 min). If the same MCQ exists in Hakeem sets, its repeat count (hk_final7 rep) is shown in brackets (18 MCQs); the existing Hakeem MCQs are untouched. Data: pma160/constitution_final.json; site code in merge_into_site.py (CN, isCN, hkSub 'con').
+
+## Phase 17 - 100 Most Repeated Questions (done)
+- PDF MOST_IMPORTANT_VERBEL_QUESTIONS (100 verbal statements, several wrong) -> pma161/ (src_text.txt, m_v1/m_v2 writer outputs, verbal_final.json = 107 MCQs; multi-part items split, 4 items skipped as ambiguous/missing). Wrong printed answers corrected (items 25, 28, 31, 34, 37, 43, 51, 53, 73, 89, 98).
+- Hakeem landing now has a 4th card "100 Most Repeated Questions" -> ONE test IV-1 (107 MCQs, 30 s each = 54 min). Bracket = repeat count of the same MCQ in the earlier Hakeem tests (81 MCQs); earlier tests untouched. Site code: IV/isIV/hkSub 'imp' in merge_into_site.py.
