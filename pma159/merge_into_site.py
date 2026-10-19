@@ -98,6 +98,14 @@ for _i, _t in enumerate(MR_THR):
                "pma": True, "sec": sec, "rep": rep} for i, (sec, q, o, a, why, rel, rep) in enumerate(_its)]
     HK_META[_k] = {"pma": "rep", "thr": _t, "hi": (_hi - 1 if _i else 0), "part": len(MR)}
 
+CN = {}
+_cnp = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma160', 'constitution_final.json')
+if os.path.exists(_cnp):
+    _cn = json.load(open(_cnp, encoding='utf8'))
+    CN['CN-1'] = [{"id": i + 1, "question": q + (' (%d)' % rep if rep > 1 else ''), "options": o, "correct": a, "facts": why, "rel": rel,
+                   "pma": True, "sec": sec, "rep": rep} for i, (sec, q, o, a, why, rel, rep) in enumerate(_cn)]
+    HK_META['CN-1'] = {"pma": "con", "part": 1}
+
 def sub(a, b, count=1):
     global s
     assert s.count(a) == count, (s.count(a), a[:80])
@@ -119,7 +127,7 @@ SPLIT_JS = '''(function () {
 m = re.search(r'const ALL = ', s)
 eol = s.index('\n', m.start())
 assert s[:eol].rstrip().endswith(';')
-s = s[:eol] + '\n        const PMA_DATA = ' + json.dumps(PMA, ensure_ascii=False) + ';\n        ' + SPLIT_JS + 'Object.assign(ALL, PMA_DATA);\n        const FA_DATA = ' + json.dumps(FA, ensure_ascii=False) + ';\n        Object.assign(ALL, FA_DATA);\n        const HK_DATA = ' + json.dumps(HK, ensure_ascii=False) + ';\n        Object.assign(ALL, HK_DATA);\n        const MR_DATA = ' + json.dumps(MR, ensure_ascii=False) + ';\n        Object.assign(ALL, MR_DATA);\n        const HK_META = ' + json.dumps(HK_META) + ';\n        let TEST_SECS = 1200;\n        const isPMA = k => String(k).indexOf("PMA-") === 0;\n        const isFA = k => String(k).indexOf("FA-") === 0;\n        const isHK = k => String(k).indexOf("HK-") === 0;\n        const isMR = k => String(k).indexOf("MR-") === 0;\n        const isExtra = k => isPMA(k) || isFA(k) || isHK(k) || isMR(k);' + s[eol:]
+s = s[:eol] + '\n        const PMA_DATA = ' + json.dumps(PMA, ensure_ascii=False) + ';\n        ' + SPLIT_JS + 'Object.assign(ALL, PMA_DATA);\n        const FA_DATA = ' + json.dumps(FA, ensure_ascii=False) + ';\n        Object.assign(ALL, FA_DATA);\n        const HK_DATA = ' + json.dumps(HK, ensure_ascii=False) + ';\n        Object.assign(ALL, HK_DATA);\n        const MR_DATA = ' + json.dumps(MR, ensure_ascii=False) + ';\n        Object.assign(ALL, MR_DATA);\n        const CN_DATA = ' + json.dumps(CN, ensure_ascii=False) + ';\n        Object.assign(ALL, CN_DATA);\n        const HK_META = ' + json.dumps(HK_META) + ';\n        let TEST_SECS = 1200;\n        const isPMA = k => String(k).indexOf("PMA-") === 0;\n        const isFA = k => String(k).indexOf("FA-") === 0;\n        const isHK = k => String(k).indexOf("HK-") === 0;\n        const isMR = k => String(k).indexOf("MR-") === 0;\n        const isCN = k => String(k).indexOf("CN-") === 0;\n        const isExtra = k => isPMA(k) || isFA(k) || isHK(k) || isMR(k) || isCN(k);' + s[eol:]
 
 # ---- 2. second section on the selection page ----
 sub('<div id="test-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>',
@@ -244,7 +252,7 @@ sub('<div id="fa-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap
             <div class="bg-gradient-to-r from-sky-700 to-cyan-500 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
                 <span class="inline-block bg-white/20 text-sky-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">@@HK_COUNT@@</span>
                 <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Hakeem Force Academy</h2>
-                <p class="text-sky-50 text-sm sm:text-base">Choose PMA All Experiences (PMA 149 to 157) or Most Repeated MCQs. Every question is written only once. The number in brackets shows how many times that question was repeated. Every answer has a reason and a related fact, and current-affairs answers are updated to today.</p>
+                <p class="text-sky-50 text-sm sm:text-base">Choose PMA All Experiences (PMA 149 to 157), Most Repeated MCQs or the Constitution of Pakistan. Every question is written only once. The number in brackets shows how many times that question was repeated. Every answer has a reason and a related fact, and current-affairs answers are updated to today.</p>
             </div>
             <div id="hk-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>''')
 s = s.replace('@@HK_COUNT@@', '%d Tests &bull; %d MCQs' % _hk_count)
@@ -263,7 +271,11 @@ sub("function selectTest(k) {", """let hkSub = null;
                     <button type="button" onclick="openHkSub('rep')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-sky-500 hover:shadow-lg transition p-6 flex flex-col gap-3">
                         <div class="flex items-center gap-3"><i class="fa-solid fa-fire text-2xl text-sky-600"></i><span class="text-xl font-bold text-slate-900">Most Repeated MCQs</span></div>
                         <div class="text-xs text-slate-500">${mk.length} Tests &bull; 500+ down to 5 repeats</div>
-                        <div class="text-sm font-semibold text-sky-700">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+                        <div class="text-sm font-semibold text-sky-700">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`
+                    + (Object.keys(ALL).some(isCN) ? `<button type="button" onclick="openHkSub('con')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-sky-500 hover:shadow-lg transition p-6 flex flex-col gap-3">
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-scale-balanced text-2xl text-sky-600"></i><span class="text-xl font-bold text-slate-900">Constitution of Pakistan</span></div>
+                        <div class="text-xs text-slate-500">1956, 1962 and 1973 &bull; ${Object.keys(ALL).filter(isCN).reduce((t, k) => t + ALL[k].length, 0)} MCQs in one test</div>
+                        <div class="text-sm font-semibold text-sky-700">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>` : '');
                 return;
             }
             if (hkSub === 'all') {
@@ -273,6 +285,19 @@ sub("function selectTest(k) {", """let hkSub = null;
                         <div class="flex items-center gap-3"><i class="fa-solid fa-medal text-2xl text-sky-600"></i><span class="text-xl font-bold text-slate-900">PMA ${p} Experience</span></div>
                         <div class="text-xs text-slate-500">${pk.length} Tests &bull; ${n} MCQs</div>
                         <div class="text-sm font-semibold text-sky-700">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+                }).join('');
+                return;
+            }
+            if (hkSub === 'con') {
+                g.innerHTML = bk('null', 'Hakeem Force Academy', 'Constitution of Pakistan (1956, 1962, 1973)') + Object.keys(ALL).filter(isCN).map(k => {
+                    let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
+                    const n = ALL[k].length, mins = Math.ceil(Math.max(60, n * SEC_PER_MCQ) / 60), nr = ALL[k].filter(q => (q.rep || 1) > 1).length;
+                    return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-sky-500 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="bg-sky-100 text-sky-800 text-xs font-bold px-3 py-1 rounded-full">Constitution &bull; All MCQs</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
+                    <div class="text-xl font-bold text-slate-900">Constitution of Pakistan &ndash; 1956, 1962, 1973</div>
+                    <div class="text-xs text-slate-500">${nr} MCQs show a repeat number in brackets (asked before in the PMA experiences)</div>
+                    <div class="text-xs text-slate-500">${n} MCQs &bull; ${mins} Minutes (${SEC_PER_MCQ} seconds each) &bull; Instant feedback</div>
+                    <div class="text-sm font-semibold text-sky-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
                 }).join('');
                 return;
             }
@@ -305,15 +330,15 @@ sub("function selectTest(k) {", """let hkSub = null;
         function selectTest(k) {""")
 sub("renderSelect(); renderPMA(); renderFA(); window.scrollTo(0, 0);", "renderSelect(); renderPMA(); renderFA(); renderHK(); window.scrollTo(0, 0);")
 sub("function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA();", "function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA(); renderHK();")
-sub("(isFA(k) ? ' MCQs (Forces Academy Lahore – Part ' + k.slice(3) + ')' : ' MCQs (PMA 159 Long Course – Part ' + k.slice(4) + ')')", "(isMR(k) ? ' MCQs (Most Repeated – ' + (HK_META[k].hi ? HK_META[k].thr + ' to ' + HK_META[k].hi : HK_META[k].thr + '+') + ' times)' : isHK(k) ? ' MCQs (Hakeem Force Academy – PMA ' + HK_META[k].pma + ' Part ' + HK_META[k].part + ')' : isFA(k) ? ' MCQs (Forces Academy Lahore – Part ' + k.slice(3) + ')' : ' MCQs (PMA 159 Long Course – Part ' + k.slice(4) + ')')")
-sub("(isFA(k) ? ' MCQs from Forces Academy Lahore tests and academic lists. Every answer shows a reason and a related fact.' : ' MCQs from PMA 159 test experiences. Every answer shows a reason.')", "(isMR(k) ? ' MCQs repeated ' + (HK_META[k].hi ? HK_META[k].thr + ' to ' + HK_META[k].hi : HK_META[k].thr + ' or more') + ' times in the Hakeem Force Academy experiences. The number in brackets is how many times the question was repeated. Every answer shows a reason and a related fact.' : isHK(k) ? ' MCQs from PMA ' + HK_META[k].pma + ' test experiences. The number in brackets is how many times the question was repeated. Every answer shows a reason and a related fact.' : isFA(k) ? ' MCQs from Forces Academy Lahore tests and academic lists. Every answer shows a reason and a related fact.' : ' MCQs from PMA 159 test experiences. Every answer shows a reason.')")
+sub("(isFA(k) ? ' MCQs (Forces Academy Lahore – Part ' + k.slice(3) + ')' : ' MCQs (PMA 159 Long Course – Part ' + k.slice(4) + ')')", "(isCN(k) ? ' MCQs (Constitution of Pakistan – 1956, 1962, 1973)' : isMR(k) ? ' MCQs (Most Repeated – ' + (HK_META[k].hi ? HK_META[k].thr + ' to ' + HK_META[k].hi : HK_META[k].thr + '+') + ' times)' : isHK(k) ? ' MCQs (Hakeem Force Academy – PMA ' + HK_META[k].pma + ' Part ' + HK_META[k].part + ')' : isFA(k) ? ' MCQs (Forces Academy Lahore – Part ' + k.slice(3) + ')' : ' MCQs (PMA 159 Long Course – Part ' + k.slice(4) + ')')")
+sub("(isFA(k) ? ' MCQs from Forces Academy Lahore tests and academic lists. Every answer shows a reason and a related fact.' : ' MCQs from PMA 159 test experiences. Every answer shows a reason.')", "(isCN(k) ? ' MCQs on the Constitutions of Pakistan of 1956, 1962 and 1973. The number in brackets is how many times the question was repeated in the PMA experiences. Every answer shows a reason and a related fact.' : isMR(k) ? ' MCQs repeated ' + (HK_META[k].hi ? HK_META[k].thr + ' to ' + HK_META[k].hi : HK_META[k].thr + ' or more') + ' times in the Hakeem Force Academy experiences. The number in brackets is how many times the question was repeated. Every answer shows a reason and a related fact.' : isHK(k) ? ' MCQs from PMA ' + HK_META[k].pma + ' test experiences. The number in brackets is how many times the question was repeated. Every answer shows a reason and a related fact.' : isFA(k) ? ' MCQs from Forces Academy Lahore tests and academic lists. Every answer shows a reason and a related fact.' : ' MCQs from PMA 159 test experiences. Every answer shows a reason.')")
 
 MENU_JS = """let curSec = null, menuReady = false;
         const SECS = [
             {id: 'o', name: '1000 MCQs', sub: 'Original questions 1 to 1000', grad: 'from-indigo-600 to-violet-600', icon: 'fa-book', test: k => !isExtra(k)},
             {id: 'pma', name: 'PMA 159 MCQs', sub: 'PMA 159 Long Course test experiences', grad: 'from-emerald-700 to-teal-600', icon: 'fa-shield-halved', test: k => isPMA(k)},
             {id: 'fa', name: 'Forces Academy Lahore MCQs', sub: 'Intelligence tests and academic practice', grad: 'from-amber-700 to-orange-600', icon: 'fa-brain', test: k => isFA(k)},
-            {id: 'hk', name: 'Hakeem Force Academy MCQs', sub: 'PMA All Experiences (149 to 157) and Most Repeated MCQs', grad: 'from-sky-700 to-cyan-500', icon: 'fa-medal', test: k => isHK(k)}
+            {id: 'hk', name: 'Hakeem Force Academy MCQs', sub: 'PMA All Experiences, Most Repeated MCQs and Constitution of Pakistan', grad: 'from-sky-700 to-cyan-500', icon: 'fa-medal', test: k => isHK(k)}
         ];
         function initMenu() {
             if (menuReady) return; menuReady = true;
