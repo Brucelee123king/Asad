@@ -17,6 +17,16 @@ if os.path.exists(os.path.join(_p162, 'm_p1.py')):
         for _t in _m['NEW']:
             if _t[0] in _drop: continue
             Q.append((_t[1], _t[2], _t[3], _t[4], _t[5], _t[6]))
+# Light Forces Academy experiences (pma163/): same procedure
+_p163 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma163', 'm_q1.py')
+if os.path.exists(_p163):
+    import runpy as _rp2
+    _m = _rp2.run_path(_p163)
+    for _n, _idx in _m['MATCH']:
+        _t = list(Q[_idx]); _t[5] = _t[5] + 1; Q[_idx] = tuple(_t)
+    for _t in _m['NEW']:
+        if _t[0] in globals().get('_drop163', set()): continue
+        Q.append((_t[1], _t[2], _t[3], _t[4], _t[5], _t[6]))
 
 src, out = sys.argv[1], sys.argv[2]
 s = open(src, encoding='utf8').read()
