@@ -124,7 +124,7 @@
             <div class="bg-gradient-to-r from-sky-700 to-cyan-500 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
                 <span class="inline-block bg-white/20 text-sky-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">116 Tests &bull; 5720 MCQs</span>
                 <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Hakeem Force Academy</h2>
-                <p class="text-sky-50 text-sm sm:text-base">Choose PMA 149, 150, 151, 152 or 153 experience. Every question is written only once. The number in brackets shows how many times that question was repeated. The most repeated questions come first. Every answer has a reason and a related fact, and current-affairs answers are updated to today.</p>
+                <p class="text-sky-50 text-sm sm:text-base">Choose PMA 149, 150, 151, 152, 153 or 154 experience. Every question is written only once. The number in brackets shows how many times that question was repeated. The most repeated questions come first. Every answer has a reason and a related fact, and current-affairs answers are updated to today.</p>
             </div>
             <div id="hk-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
         </div>
@@ -781,7 +781,7 @@
             const g = document.getElementById('hk-grid');
             const ks = Object.keys(ALL).filter(isHK);
             if (hkSub === null) {
-                g.innerHTML = [149, 150, 151, 152, 153].map(p => {
+                g.innerHTML = [149, 150, 151, 152, 153, 154].map(p => {
                     const pk = ks.filter(k => HK_META[k].pma === p), n = pk.reduce((t, k) => t + ALL[k].length, 0);
                     return `<button type="button" onclick="openHkSub(${p})" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-sky-500 hover:shadow-lg transition p-6 flex flex-col gap-3">
                         <div class="flex items-center gap-3"><i class="fa-solid fa-medal text-2xl text-sky-600"></i><span class="text-xl font-bold text-slate-900">PMA ${p} Experience</span></div>
@@ -836,7 +836,7 @@
             {id: 'o', name: '1000 MCQs', sub: 'Original questions 1 to 1000', grad: 'from-indigo-600 to-violet-600', icon: 'fa-book', test: k => !isExtra(k)},
             {id: 'pma', name: 'PMA 159 MCQs', sub: 'PMA 159 Long Course test experiences', grad: 'from-emerald-700 to-teal-600', icon: 'fa-shield-halved', test: k => isPMA(k)},
             {id: 'fa', name: 'Forces Academy Lahore MCQs', sub: 'Intelligence tests and academic practice', grad: 'from-amber-700 to-orange-600', icon: 'fa-brain', test: k => isFA(k)},
-            {id: 'hk', name: 'Hakeem Force Academy MCQs', sub: 'PMA 149, 150, 151, 152 and 153 initial experiences', grad: 'from-sky-700 to-cyan-500', icon: 'fa-medal', test: k => isHK(k)}
+            {id: 'hk', name: 'Hakeem Force Academy MCQs', sub: 'PMA 149, 150, 151, 152, 153 and 154 initial experiences', grad: 'from-sky-700 to-cyan-500', icon: 'fa-medal', test: k => isHK(k)}
         ];
         function initMenu() {
             if (menuReady) return; menuReady = true;
