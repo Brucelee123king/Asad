@@ -1,0 +1,138 @@
+<style>
+/* ======== CUSTOM RANGE TEST: pick MCQs by how many times they were asked in all sections ======== */
+#rngCard{text-align:left;color:#fff;border:0;border-radius:1rem;padding:1.5rem;display:flex;flex-direction:column;gap:.5rem;cursor:pointer;
+ background:linear-gradient(90deg,#be123c,#ec4899);box-shadow:0 20px 25px -5px rgba(0,0,0,.18),0 8px 10px -6px rgba(0,0,0,.12)}
+#rngModal{position:fixed;left:0;top:0;right:0;bottom:0;z-index:9997;display:none;align-items:flex-start;justify-content:center;padding:16px;background:rgba(2,6,23,.55);overflow:auto}
+#rngModal.open{display:flex}
+#rngModal .box{width:min(720px,100%);margin:auto;margin-top:5vh;border-radius:22px;padding:18px;background:#fff;color:#0f172a;box-shadow:0 30px 70px -20px rgba(0,0,0,.5)}
+html.dark #rngModal .box{background:#0f172a;color:#e2e8f0;border:1px solid rgba(148,163,184,.18)}
+#rngModal .top{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:6px}
+#rngModal h3{font-size:19px;font-weight:800;margin:0}
+#rngModal .x{border:0;background:rgba(148,163,184,.2);width:40px;height:40px;border-radius:12px;cursor:pointer;font-size:16px;color:inherit}
+#rngModal p.sub{font-size:13px;opacity:.75;margin:0 0 12px;line-height:1.45}
+#rngModal .row{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+#rngModal .row label{flex:1;font-size:12px;font-weight:700;opacity:.8;display:block}
+#rngModal .row input{width:100%;margin-top:4px;padding:13px 12px;border-radius:12px;border:1px solid rgba(148,163,184,.45);font-size:17px;font-weight:700;text-align:center;background:transparent;color:inherit;outline:none;box-sizing:border-box}
+#rngModal .row input:focus{border-color:#6366f1;box-shadow:0 0 0 3px rgba(99,102,241,.22)}
+#rngModal .dash2{font-size:22px;font-weight:800;opacity:.6;padding-top:18px}
+#rngModal .info{font-size:14px;font-weight:700;margin:8px 0;min-height:20px}
+#rngModal .list{max-height:36vh;overflow:auto;border-radius:12px;border:1px solid rgba(148,163,184,.3)}
+#rngModal .it{padding:9px 12px;font-size:13px;line-height:1.4;border-bottom:1px solid rgba(148,163,184,.2)}
+#rngModal .it:last-child{border-bottom:0}
+#rngModal .it b{display:inline-block;min-width:34px;margin-right:6px;color:#be123c}
+html.dark #rngModal .it b{color:#f9a8d4}
+#rngModal .it small{display:block;opacity:.6;font-size:11px;margin-top:2px}
+#rngModal .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+#rngModal .go{border:0;border-radius:14px;padding:13px 18px;font-size:15px;font-weight:700;color:#fff;background:#4f46e5;cursor:pointer}
+#rngModal .go.alt{background:transparent;color:#4f46e5;border:1px solid #4f46e5}
+html.dark #rngModal .go.alt{color:#a5b4fc;border-color:#a5b4fc}
+#rngModal .szrow{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-top:12px;font-size:14px;font-weight:700;flex-basis:100%}
+#rngModal .szrow input{width:84px;margin:0 6px;padding:9px 8px;border-radius:10px;border:1px solid rgba(148,163,184,.45);font-size:16px;font-weight:700;text-align:center;background:transparent;color:inherit;box-sizing:border-box}
+#rngModal .szrow span{font-size:12px;font-weight:600;opacity:.65}
+#rngModal .chips{display:flex;flex-wrap:wrap;gap:8px;flex-basis:100%}
+#rngModal .go[disabled]{opacity:.4;pointer-events:none}
+</style>
+<div id="rngModal" role="dialog" aria-label="Custom range test"><div class="box">
+  <div class="top"><h3>Custom Range Test</h3><button class="x" onclick="closeRange()" aria-label="Close">&#10005;</button></div>
+  <p class="sub">Type two numbers. You get every MCQ that was asked that many times, counted over ALL sections and blocks (the number in brackets counts too). Example: 7 to 10 = all MCQs asked 7 to 10 times in total.</p>
+  <div class="row"><label>From<input id="rngFrom" type="number" inputmode="numeric" min="1" placeholder="e.g. 7"></label><div class="dash2">&#8212;</div><label>To<input id="rngTo" type="number" inputmode="numeric" min="1" placeholder="e.g. 10"></label></div>
+  <div class="info" id="rngInfo">Enter the numbers.</div>
+  <div class="list" id="rngList" style="display:none"></div>
+  <div class="acts" id="rngActs"></div>
+</div></div>
+<script>
+(function(){
+  var $=function(id){return document.getElementById(id)};
+  var SKIP=/^(MR|IV|CN)-/;           /* these tests only repeat Hakeem MCQs: never count them twice */
+  var idx=null;
+  function strip(q){
+    var s=String(q).replace(/^\s*\((?:Original MCQ #\d+|[^)]*·\s*Q\d+)\)\s*/i,'');
+    var w=1,m=/\s*\((?:Repeated in\s+)?(\d+)(?:\s+tests?)?\)\s*$/i.exec(s);
+    if(m){w=Math.max(1,parseInt(m[1],10));s=s.slice(0,m.index)}
+    return {core:s.trim(),w:w};
+  }
+  var STOP={what:1,which:1,who:1,whom:1,is:1,are:1,was:1,were:1,the:1,of:1,a:1,an:1,in:1,on:1,at:1,to:1,for:1,by:1,as:1,do:1,does:1,did:1,name:1,called:1,known:1,following:1,from:1,with:1,and:1,or:1,be:1,been:1,has:1,have:1,had:1,s:1};
+  /* same question written a little differently (What is 90% of 90? / 90% of 90 is:) with the same answer = one MCQ */
+  function normKey(s){return s.toLowerCase().replace(/%/g,' percent ').replace(/[^a-z0-9]+/g,' ').trim().split(' ').filter(function(w){return w&&!STOP[w]}).join(' ')}
+  function ansKey(q){var t=(q.options&&q.options[q.correct])||'';return String(t).toLowerCase().replace(/[^a-z0-9]+/g,' ').trim()}
+  function build(){
+    if(idx)return idx;
+    var map={},keys=Object.keys(ALL);
+    keys.forEach(function(k){
+      if(SKIP.test(k)||k.indexOf('CUS-')===0)return;
+      ALL[k].forEach(function(q){
+        var p=strip(q.question),nk=normKey(p.core);if(!nk)return;nk+='|'+ansKey(q);
+        var e=map[nk];
+        if(!e){e=map[nk]={total:0,core:p.core,best:q,score:-1,secs:{}};}
+        e.total+=p.w;e.secs[k.split('-')[0]]=1;
+        var sc=(q.facts?String(q.facts).length:0)+(q.rel?String(q.rel).length:0);
+        if(sc>e.score){e.score=sc;e.best=q;e.core=p.core}
+      });
+    });
+    idx=Object.keys(map).map(function(k){return map[k]});
+    return idx;
+  }
+  var SECN={PMA:'PMA 159',FA:'Forces Academy',HK:'Hakeem',LC:'PMA 158'};
+  function secLabel(e){var o=Object.keys(e.secs).map(function(s){return SECN[s]||'1000 MCQs'});return o.join(', ')}
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  var cur=[];
+  function find(){
+    var a=parseInt($('rngFrom').value,10),b=parseInt($('rngTo').value,10),info=$('rngInfo'),list=$('rngList'),acts=$('rngActs');
+    acts.innerHTML='';list.style.display='none';cur=[];
+    if(isNaN(a)||isNaN(b)){info.textContent='Enter both numbers.';return}
+    if(a>b){var t=a;a=b;b=t}
+    var all=build();
+    cur=all.filter(function(e){return e.total>=a&&e.total<=b}).sort(function(x,y){return y.total-x.total||(x.core<y.core?-1:1)});
+    var n=cur.length;
+    if(!n){info.textContent='No MCQ was asked between '+a+' and '+b+' times. Try another range.';return}
+    info.textContent=n+' MCQ'+(n>1?'s':'')+' found (asked '+a+' to '+b+' times).';
+    var shown=cur.slice(0,60);
+    list.innerHTML=shown.map(function(e){return '<div class="it"><b>'+e.total+'x</b>'+esc(e.core)+'<small>'+esc(secLabel(e))+'</small></div>'}).join('')+(n>60?'<div class="it" style="opacity:.7">... and '+(n-60)+' more (they are all in the test)</div>':'');
+    list.style.display='block';
+    acts.innerHTML='<div class="szrow"><label>Make blocks of <input id="rngSize" type="number" inputmode="numeric" min="1" value="'+(window.__rngSize||50)+'"> MCQs</label><span>30 seconds for every MCQ</span></div>'
+      +'<div class="chips" id="rngChips"></div><div class="chips"><button class="go" onclick="startRange(0)">Start ALL '+n+' MCQs as one test</button></div>';
+    $('rngSize').addEventListener('input',drawChips);drawChips();
+  }
+  function size(){var v=parseInt(($('rngSize')||{}).value,10);if(!v||v<1)v=50;if(v>2000)v=2000;window.__rngSize=v;return v}
+  function drawChips(){
+    var n=cur.length,sz=size(),el=$('rngChips');if(!el)return;
+    if(!n){el.innerHTML='';return}
+    var blocks=Math.ceil(n/sz),cap=Math.min(blocks,30),h='';
+    for(var i=1;i<=cap;i++){var lo=(i-1)*sz+1,hi=Math.min(n,i*sz);h+='<button class="go alt" onclick="startRange('+i+')">Block '+i+' ('+(hi-lo+1)+' MCQs)</button>'}
+    if(blocks>cap)h+='<div style="flex-basis:100%;font-size:12px;opacity:.7">Only the first '+cap+' blocks are shown ('+blocks+' in total). Use a bigger block size or a narrower range.</div>';
+    el.innerHTML=h;
+  }
+  var tmr=0;function later(){clearTimeout(tmr);tmr=setTimeout(find,250)}
+  window.openRange=function(){
+    $('rngModal').classList.add('open');$('rngInfo').textContent='Counting all sections...';
+    setTimeout(function(){build();$('rngInfo').textContent='Enter the numbers.';if($('rngFrom').value&&$('rngTo').value)find()},30);
+  };
+  window.closeRange=function(){$('rngModal').classList.remove('open')};
+  $('rngFrom').addEventListener('input',later);$('rngTo').addEventListener('input',later);
+  $('rngModal').addEventListener('click',function(e){if(e.target===this)closeRange()});
+  window.startRange=function(block){
+    var qs=cur;if(!qs.length)return;
+    var a=Math.min(parseInt($('rngFrom').value,10),parseInt($('rngTo').value,10)),b=Math.max(parseInt($('rngFrom').value,10),parseInt($('rngTo').value,10));
+    var sz=size();if(block)qs=cur.slice((block-1)*sz,block*sz);
+    Object.keys(ALL).forEach(function(k){if(k.indexOf('CUS-range')===0)delete ALL[k]});
+    var key='CUS-range'+(block?'-b'+block:'');
+    ALL[key]=qs.map(function(e,i){
+      var q=JSON.parse(JSON.stringify(e.best));q.id=i+1;q.question=e.core+(e.total>1?' ('+e.total+')':'');return q;
+    });
+    closeRange();
+    selectTest(key);document.body.dataset.sec='cus';
+    $('home-badge').textContent=qs.length+' MCQs (asked '+a+' to '+b+' times'+(block?' - block '+block:'')+')';
+    $('home-desc').textContent='Every MCQ in this test was asked '+a+' to '+b+' times in total over all sections. The number in brackets is how many times it was asked. Every answer shows a reason'+' and a related fact where available.';
+  };
+  /* the card: first tile of the category menu */
+  function inject(){
+    var m=$('sec-menu');if(!m||m.querySelector('#rngCard'))return;
+    var g=m.querySelector('.grid')||m.lastElementChild;if(!g)return;
+    var b=document.createElement('button');b.type='button';b.id='rngCard';b.onclick=openRange;
+    b.innerHTML='<div class="flex items-center gap-3"><i class="fa-solid fa-sliders text-2xl"></i><span class="text-xl sm:text-2xl font-bold">Custom Range Test</span></div><div class="text-white/90 text-sm">Pick your own numbers: e.g. 7 to 10 gives every MCQ asked 7 to 10 times in all sections</div><div class="text-white/80 text-xs font-semibold">Counted over all sections and blocks</div><div class="text-sm font-bold mt-1">Open <i class="fa-solid fa-arrow-right ml-1"></i></div>';
+    g.insertBefore(b,g.firstChild);
+  }
+  var _rm=renderMenu;renderMenu=window.renderMenu=function(){var r=_rm.apply(this,arguments);try{inject()}catch(e){}return r};
+  try{inject()}catch(e){}
+})();
+</script>
