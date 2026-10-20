@@ -20,6 +20,10 @@ html.lite *,html.lite *::before,html.lite *::after{animation-duration:.01ms!impo
 @media (max-width:360px){header>div{padding-right:12px!important}}
 /* long review lists: only lay out/paint cards that are on screen */
 #review-list-container>div{content-visibility:auto;contain-intrinsic-size:auto 260px}
+html body #themeBtn{z-index:40!important}
+#review-section{scroll-margin-top:calc(var(--sat) + 70px)}
+#header-timer-container{white-space:nowrap}
+@media (max-width:380px){header h1{display:none}#hdrUser{display:none!important}}
 ::view-transition-old(root),::view-transition-new(root){animation-duration:.32s;animation-timing-function:ease-in-out;mix-blend-mode:normal}
 /* page is drawn behind the status bar (Android 15+): --sat = status-bar height, set by the app; 0 elsewhere */
 html{--sat:0px}

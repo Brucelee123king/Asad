@@ -172,3 +172,10 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 
 ## Phase 23 - 11 friends' PMA 159 experiences (Oct 2026) added
 - Raw text pma166/raw.txt, de-duplicated items pma166/items.json (108, with count), 12 slices m_s01..12.py (MATCH raises rep by count, NEW appended), pma166/drop.json (dropped NEW item ids), blind check in pma166/blind/ (55/55 agree). merge_into_site.py applies pma166 after pma165. PMA 159 = 394 MCQs, 8 parts. APK v1.0.13: android-app/release/AsadullahNotes-v1013.apk
+
+## v1.0.14 (versionCode 15)
+- Custom Range Test (From/To total-ask range, block size, 30 s per MCQ, "Start ALL").
+- PMA 159 now 394 MCQs (8 tests). 5 wrong MATCH counts fixed. 2 broken MCQs fixed (1-50 id 23, 451-500 id 31).
+- Native fixes: dialog leak, render-crash loop, saved bar colours, onJsBeforeUnload.
+- CSS: themeBtn z-index 40, review scroll margin, header title/avatar hidden <=380px.
+- Known: 28 MCQs in 1000 MCQs (51-100, 951-1000, 1-50) have no reason text in data. Not tested on a real phone.

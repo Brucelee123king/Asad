@@ -90,3 +90,6 @@ See the end of this file for the final table.
 ## v1.0.13 - PMA 159 section extended with 11 friends' experiences (Oct 2026)
 - 108 remembered questions (cleaned, de-duplicated) were processed by 12 agents with web checks: 46 repeated MCQs already in PMA 159 got their repeat count raised (written once, count in brackets); 55 new MCQs were appended (all 55 solved blind by 3 other agents, 0 disagreements); the rest were skipped as vague / disputed (e.g. sons of Prophet SAW, sons of Hazrat Ibrahim, direction of China, KP Chief Minister during Governor's rule, Hajj faraiz, Highest plateau of Balochistan, number of Government houses). 1 new MCQ (Hajj faraiz) dropped as disputed.
 - PMA 159: 339 -> 394 MCQs, 8 tests of 50 (last has 44). Other sections unchanged. Source files: pma166/.
+
+## v1.0.14
+Custom Range Test added; PMA 159 = 394 MCQs; native robustness fixes; small CSS fixes for narrow screens. Not tested on a real device; 28 MCQs have no reason text.
