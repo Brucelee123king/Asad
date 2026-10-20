@@ -48,6 +48,7 @@ class MainActivity : Activity() {
     private lateinit var assetLoader: WebViewAssetLoader
     private var lastBackPress = 0L
     private var night = false
+    private var topColor = 0   // 0 = not reported yet (brand colour)
     private var pageShown = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -112,7 +113,7 @@ class MainActivity : Activity() {
     /** Status/navigation bar colours follow the page's day/night theme. */
     private fun applyBars(nightMode: Boolean) {
         night = nightMode
-        val top = getColor(if (nightMode) R.color.brand_night else R.color.brand)
+        val top = if (topColor != 0) topColor else getColor(if (nightMode) R.color.brand_night else R.color.brand)
         val nav = getColor(if (nightMode) R.color.nav_night else R.color.nav_day)
         topBar.setBackgroundColor(top)
         bottomBar.setBackgroundColor(nav)
@@ -121,10 +122,14 @@ class MainActivity : Activity() {
             window.statusBarColor = top
             window.navigationBarColor = nav
         }
-        // status-bar icons: always light (bar is dark indigo); navigation icons: dark on the light bar, light on the dark bar
+        // status-bar icons: dark icons on a light bar, light icons on a dark bar; navigation icons follow the day/night theme
+        val lightTop = isLight(top)
         if (Build.VERSION.SDK_INT >= 30) {
             window.insetsController?.apply {
-                setSystemBarsAppearance(0, WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS)
+                setSystemBarsAppearance(
+                    if (lightTop) WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS else 0,
+                    WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS
+                )
                 setSystemBarsAppearance(
                     if (nightMode) 0 else WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS,
                     WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS
@@ -132,7 +137,9 @@ class MainActivity : Activity() {
             }
         } else {
             @Suppress("DEPRECATION")
-            var flags = window.decorView.systemUiVisibility and View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR.inv()
+            var flags = window.decorView.systemUiVisibility
+            @Suppress("DEPRECATION")
+            flags = if (lightTop) flags or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR else flags and View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR.inv()
             @Suppress("DEPRECATION")
             if (Build.VERSION.SDK_INT >= 26) {
                 flags = if (nightMode) flags and View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR.inv()
@@ -142,6 +149,9 @@ class MainActivity : Activity() {
             window.decorView.systemUiVisibility = flags
         }
     }
+
+    private fun isLight(c: Int): Boolean =
+        (0.299 * Color.red(c) + 0.587 * Color.green(c) + 0.114 * Color.blue(c)) > 160
 
     // ---------------------------------------------------------------- WebView
 
@@ -186,11 +196,12 @@ class MainActivity : Activity() {
         }
         WebView.setWebContentsDebuggingEnabled(false)
 
-        // theme bridge: only our own origin may talk to the app, and the only message is "night" / "day"
+        // theme bridge: only our own origin may talk to the app, and messages are "night" / "day" / "top:#rrggbb" (status-bar colour)
         if (WebViewFeature.isFeatureSupported(WebViewFeature.WEB_MESSAGE_LISTENER)) {
             WebViewCompat.addWebMessageListener(wv, "AsadApp", setOf("https://$HOST")) { _, message: WebMessageCompat, _, _, _ ->
                 val m = message.data
                 if (m == "night" || m == "day") runOnUiThread { applyBars(m == "night") }
+                else if (m != null && TOP_RE.matches(m)) runOnUiThread { topColor = Color.parseColor(m.substring(4)); applyBars(night) }
             }
         }
 
@@ -304,5 +315,6 @@ class MainActivity : Activity() {
         private const val HOST = "appassets.androidplatform.net"
         private const val START_URL = "https://$HOST/assets/www/index.html"
         private const val ERROR_URL = "https://$HOST/assets/www/error.html"
+        private val TOP_RE = Regex("^top:#[0-9a-fA-F]{6}$")
     }
 }

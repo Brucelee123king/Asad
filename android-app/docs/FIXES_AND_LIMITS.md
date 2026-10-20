@@ -61,3 +61,6 @@ See the end of this file for the final table.
 ## v1.0.3 - look fix after a real-phone screenshot
 - The "goo" SVG filter on the coloured background blobs rendered as solid purple blocks on the phone GPU. Replaced with filter-free soft radial gradients (same colours), study icons kept (static), page colour #eef2f8, cards slightly see-through, corners clipped. No blur, no animation.
 - Measured (CPU slowed 6x): scroll frame 172 ms -> 16 ms, idle 10 -> 60 fps. 201-step walk-through: 0 errors.
+
+## v1.0.4 - status bar follows the page
+- The bar at the very top (time / battery) was always indigo. The page now tells the app the colour at its top (login: lavender, app screens: white by day / deep indigo at night); the app paints the status bar with it and switches the icons dark/light. Nothing else changed.
