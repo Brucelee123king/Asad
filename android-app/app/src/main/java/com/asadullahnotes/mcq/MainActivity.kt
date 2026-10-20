@@ -56,6 +56,9 @@ class MainActivity : Activity() {
     private var topColor = 0   // 0 = not reported yet (brand colour)
     private var topInsetPx = 0 // status-bar height on Android 15+, where the page is drawn behind it
     private var pageShown = false
+    private var crashCount = 0
+    private var openDialog: AlertDialog? = null
+    private var pendingResult: JsResult? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -64,7 +67,10 @@ class MainActivity : Activity() {
             .addPathHandler("/assets/", WebViewAssetLoader.AssetsPathHandler(this))
             .build()
         buildUi()
-        applyBars(false)
+        night = savedInstanceState?.getBoolean("night") ?: false
+        topColor = savedInstanceState?.getInt("top") ?: 0
+        applyBars(night)
+        window.decorView.post { applyBars(night) }   // the insets controller is not always ready inside onCreate (Android 11)
         if (savedInstanceState != null && webView.restoreState(savedInstanceState) != null) {
             // history restored; page itself is re-created by the WebView
         } else {
@@ -251,6 +257,7 @@ class MainActivity : Activity() {
 
             override fun onRenderProcessGone(view: WebView, detail: RenderProcessGoneDetail): Boolean {
                 // the WebView process died (usually low memory): rebuild the screen instead of crashing
+                if (++crashCount > 2) { finish(); return true }   // never loop forever if the page itself kills the renderer
                 recreate()
                 return true
             }
@@ -266,6 +273,8 @@ class MainActivity : Activity() {
                 showAppDialog(message ?: "", true, result); return true
             }
 
+            override fun onJsBeforeUnload(view: WebView, url: String?, message: String?, result: JsResult): Boolean { result.confirm(); return true }
+
             override fun onJsPrompt(view: WebView, url: String?, message: String?, defaultValue: String?, result: JsPromptResult): Boolean {
                 result.cancel(); return true
             }
@@ -274,6 +283,7 @@ class MainActivity : Activity() {
 
     /** App-styled replacement for the plain system dialog used by the page's confirm()/alert(). */
     private fun showAppDialog(message: String, confirmType: Boolean, result: JsResult) {
+        if (isFinishing || isDestroyed) { result.cancel(); return }
         val leave = message.contains("Leave this test", true) || message.contains("chhor dein", true)
         val logout = message.contains("Log out", true)
         val title: String; val body: String; val yes: String; val no: String; val icon: String
@@ -312,8 +322,9 @@ class MainActivity : Activity() {
         panel.addView(tv(body, 15f, sub, false).apply { setLineSpacing(0f, 1.15f) }, LinearLayout.LayoutParams(-1, -2).apply { bottomMargin = dp(22) })
         val row = LinearLayout(this).apply { orientation = LinearLayout.HORIZONTAL }
         val dialog = AlertDialog.Builder(this).create()
+        openDialog = dialog; pendingResult = result
         var answered = false
-        fun finish(ok: Boolean) { if (answered) return; answered = true; if (ok) result.confirm() else result.cancel(); dialog.dismiss() }
+        fun finish(ok: Boolean) { if (answered) return; answered = true; pendingResult = null; if (ok) result.confirm() else result.cancel(); dialog.dismiss() }
         if (confirmType) {
             val stay = tv(no, 16f, indigo, true).apply { background = pill(Color.TRANSPARENT, indigo); setOnClickListener { finish(false) } }
             row.addView(stay, LinearLayout.LayoutParams(0, dp(48), 1f).apply { rightMargin = dp(6) })
@@ -325,7 +336,7 @@ class MainActivity : Activity() {
         panel.addView(row, LinearLayout.LayoutParams(-1, -2))
         val holder = FrameLayout(this).apply { setPadding(dp(22), 0, dp(22), 0); addView(panel, FrameLayout.LayoutParams(-1, -2)) }
         dialog.setView(holder)
-        dialog.setOnCancelListener { if (!answered) { answered = true; result.cancel() } }
+        dialog.setOnCancelListener { if (!answered) { answered = true; pendingResult = null; result.cancel() } }
         dialog.show()
         dialog.window?.apply {
             setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
@@ -373,6 +384,7 @@ class MainActivity : Activity() {
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
+        outState.putBoolean("night", night); outState.putInt("top", topColor)
         webView.saveState(outState)
     }
 
@@ -381,6 +393,10 @@ class MainActivity : Activity() {
     }
 
     override fun onDestroy() {
+        try { pendingResult?.cancel() } catch (e: Exception) {}
+        pendingResult = null
+        try { openDialog?.dismiss() } catch (e: Exception) {}
+        openDialog = null
         (webView.parent as? ViewGroup)?.removeView(webView)
         webView.stopLoading()
         webView.destroy()
