@@ -86,3 +86,7 @@ See the end of this file for the final table.
 ## v1.0.12 - day/night button position, solid header
 - The day/night (moon/sun) button had slipped up into the status bar (the page's own rule overrode the new position). It now sits below the status bar, in line with the avatar / logo (checked with a 34 px bar).
 - Header is nearly solid (97%), so page text no longer shows through it.
+
+## v1.0.13 - PMA 159 section extended with 11 friends' experiences (Oct 2026)
+- 108 remembered questions (cleaned, de-duplicated) were processed by 12 agents with web checks: 46 repeated MCQs already in PMA 159 got their repeat count raised (written once, count in brackets); 55 new MCQs were appended (all 55 solved blind by 3 other agents, 0 disagreements); the rest were skipped as vague / disputed (e.g. sons of Prophet SAW, sons of Hazrat Ibrahim, direction of China, KP Chief Minister during Governor's rule, Hajj faraiz, Highest plateau of Balochistan, number of Government houses). 1 new MCQ (Hajj faraiz) dropped as disputed.
+- PMA 159: 339 -> 394 MCQs, 8 tests of 50 (last has 44). Other sections unchanged. Source files: pma166/.
