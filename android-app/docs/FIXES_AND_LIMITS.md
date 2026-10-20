@@ -44,3 +44,8 @@ See the end of this file for the final table.
 - Review of 835-question results can still take several seconds on slow phones (only partly improved).
 - Data saved by the Netlify site (best scores, login) does not carry into the app (different origin).
 - The quiz-QA helper agent never wrote its own report; the results above come from running its script myself.
+
+## v1.0.1 - smoothness update (after a real-phone report of lag)
+- Cause found: the glass styles put a heavy blur (backdrop-filter) on the header, every card and hundreds of list buttons; the app also ran decorative animations on phones with 6-8 cores.
+- Fix (app only): blur/backdrop/drop-shadow filters and continuous animations are always off in the app; pointer tracking skipped on touch; data tables loaded with JSON.parse. Look is almost identical.
+- Measured (Chromium, CPU slowed 6x, software drawing): idle 8 fps -> 60 fps, scroll frame time 197 ms -> 29 ms, start-up a little faster. Question data identical (11,208 entries). Still NOT measured on a real phone.

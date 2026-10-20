@@ -17,7 +17,7 @@ html.lite *,html.lite *::before,html.lite *::after{animation-duration:.01ms!impo
   var d = document.documentElement;
   try {
     var mem = navigator.deviceMemory || 8, cores = navigator.hardwareConcurrency || 8;
-    if (mem <= 3 || cores <= 4) d.classList.add('lite');
+    d.classList.add('lite'); /* the app always uses the light, smooth look (no blur / continuous animation) */
   } catch (e) {}
   /* tell the native shell whether the night theme is on, so system-bar colours match (only if the bridge exists) */
   function sync() { try { if (window.AsadApp && AsadApp.postMessage) AsadApp.postMessage(d.classList.contains('dark') ? 'night' : 'day'); } catch (e) {} }

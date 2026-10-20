@@ -158,3 +158,5 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - Web bundle for the app is built by `android-app/tools/build_web.py` from `android-app/source/index.html` (= `site/index.html`); offline, performance and layout fixes live only in that script (and tools/android_head.html), not in the Netlify site.
 - Audit: all 8,931 unique MCQs blind-checked (batches in `android-app/verify_all/`), 360 flagged items re-judged, 70 MCQs patched via `pma159/corrections.json` (applied at runtime inside the page by `merge_into_site.py`, matched by test key + id). 22 unresolved items listed in `verify_all/final_lists.json`. Web search budget ran out, so many current-affairs answers are NOT web-verified.
 - Not tested on a real device or emulator.
+
+- v1.0.1 (versionCode 2): smoothness fix in `android-app/tools/build_web.py` + `tools/android_head.html` (always 'lite': no backdrop-filter/blur/animations; JSON.parse data). Netlify site unchanged. APK: `android-app/release/AsadullahNotes-1.0.1.apk`.

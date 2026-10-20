@@ -103,6 +103,25 @@ rep("if(!matchMedia('(prefers-reduced-motion:reduce)').matches)requestAnimationF
 # bug found by QA: if the timer hits 0 while the "Submit?" popup is open, the popup stayed on top of the results
 rep("                    clearInterval(timerInterval);\n                    autoSubmitQuiz();",
     "                    clearInterval(timerInterval);\n                    closeSubmitModal();\n                    autoSubmitQuiz();")
+# --- phone smoothness (user report: laggy on a real phone) ---
+# 1) the glass blocks put backdrop-filter:blur on the header, every card and hundreds of list buttons, with !important: the biggest GPU cost
+#    on a phone. Add a stylesheet at the END of <body> (wins by specificity) that turns blur/backdrop/drop-shadow filters off.
+TAIL = ('<style id="android-perf">'
+        'html.lite body *,html.lite body *::before,html.lite body *::after{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}'
+        'html.lite body .st,html.lite body .fi,html.lite body .o3,html.lite body #auth .bl{filter:none!important}'
+        'html.lite body *{-webkit-tap-highlight-color:transparent}'
+        '</style>')
+assert html.count('</body>') == 1
+html = html.replace('</body>', TAIL + '</body>')
+# 2) no pointer-tracking work for touch
+rep("document.addEventListener('pointermove',function(e){lx=e.clientX", "document.addEventListener('pointermove',function(e){if(e.pointerType==='touch')return;lx=e.clientX")
+# 3) big data tables: JSON.parse of a string is about 3x faster than evaluating the same object literal
+import json as _json
+for _n in ('PMA_DATA', 'FA_DATA', 'HK_DATA', 'MR_DATA', 'CN_DATA', 'IV_DATA', 'LC_DATA'):
+    _a = 'const %s = ' % _n
+    _i = html.index(_a) + len(_a)
+    _val, _end = _json.JSONDecoder().raw_decode(html, _i)   # literal is pure JSON (written with json.dumps)
+    html = html[:_i] + 'JSON.parse(' + _json.dumps(_json.dumps(_val, ensure_ascii=False, separators=(',', ':'))) + ')' + html[_end:]
 assert 'cdn.tailwindcss.com' not in html and 'googleapis' not in html and 'cloudflare' not in html and 'netlify/scripts' not in html
 open(os.path.join(WWW, 'index.html'), 'w', encoding='utf8').write(html)
 shutil.copy(os.path.join(HERE, 'error.html'), os.path.join(WWW, 'error.html'))
