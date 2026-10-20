@@ -1,0 +1,24 @@
+<style id="android-compat">
+/* Android app: no double-tap zoom delay, no accidental text-size jumps, no overscroll glow/bounce chaining */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;overscroll-behavior-y:none}
+*{touch-action:manipulation}
+body{-webkit-touch-callout:none}
+button,[role="button"],.option-card,a{-webkit-user-select:none;user-select:none}
+/* low-end phones: same layout, but no continuous decorative animation and no blur/backdrop filters (smoother, cooler, saves battery) */
+html.lite *,html.lite *::before,html.lite *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+</style>
+<script>
+(function () {
+  var d = document.documentElement;
+  try {
+    var mem = navigator.deviceMemory || 8, cores = navigator.hardwareConcurrency || 8;
+    if (mem <= 3 || cores <= 4) d.classList.add('lite');
+  } catch (e) {}
+  /* tell the native shell whether the night theme is on, so system-bar colours match (only if the bridge exists) */
+  function sync() { try { if (window.AsadApp && AsadApp.postMessage) AsadApp.postMessage(d.classList.contains('dark') ? 'night' : 'day'); } catch (e) {} }
+  document.addEventListener('DOMContentLoaded', function () {
+    sync();
+    try { new MutationObserver(sync).observe(d, { attributes: true, attributeFilter: ['class'] }); } catch (e) {}
+  });
+})();
+</script>
