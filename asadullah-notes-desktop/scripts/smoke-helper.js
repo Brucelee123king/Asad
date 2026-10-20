@@ -1,0 +1,24 @@
+const { app, BrowserWindow } = require('electron');
+require('../main.js'); const fs = require('fs');
+app.disableHardwareAcceleration();
+app.whenReady().then(async () => {
+  await new Promise(r => setTimeout(r, 4000));
+  const w = BrowserWindow.getAllWindows()[0], run = c => w.webContents.executeJavaScript(c), wait = ms => new Promise(r => setTimeout(r, ms));
+  const errors = []; w.webContents.on('console-message', (e, l, m) => { if (l >= 3) errors.push(m); });
+  const shot = async n => fs.writeFileSync(process.env.OUT + '/' + n + '.png', (await w.webContents.capturePage()).toPNG());
+  const res = {};
+  await run("authGuest()"); await wait(1500);
+  await run("document.getElementById('anHelpBtn').click()"); await wait(1200);
+  res.tabAtOpen = await run("document.getElementById('anTabOn').classList.contains('on') ? 'online':'offline'");
+  await run("document.getElementById('anText').value='Mangla Dam'; document.getElementById('anSend').click()"); await wait(1500);
+  res.offlineHits = await run("document.querySelectorAll('.anHit').length");
+  res.firstHit = await run("(document.querySelector('.anHit')||{}).innerText");
+  await wait(1500); await shot('helper-offline');
+  await run("document.getElementById('anTabOn').click()"); await wait(1500);
+  res.settingsShown = await run("document.getElementById('anSet').style.display !== 'none'"); await shot('helper-settings');
+  res.badKey = await run("window.__anAI.setKey('hello')");
+  res.setKey = await run("window.__anAI.setKey('sk-ant-api03-FAKEKEYFAKEKEYFAKEKEY1234567890')");
+  res.chat = await run("window.__anAI.chat({messages:[{role:'user',text:'Who is CM of Punjab?'}]})");
+  await run("window.__anAI.clearKey()"); res.hasKeyAfterClear = await run("window.__anAI.hasKey()");
+  console.log('HELPER', JSON.stringify(res), 'ERRORS', JSON.stringify(errors)); app.quit();
+});

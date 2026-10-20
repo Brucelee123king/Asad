@@ -13,6 +13,12 @@ try {
     toggleFullscreen: () => ipcRenderer.send('win:fullscreen'),
     onFullscreen: (cb) => ipcRenderer.on('win:fs', (_e, on) => cb(!!on))
   });
+  contextBridge.exposeInMainWorld('__anAI', {
+    hasKey: () => ipcRenderer.invoke('ai:hasKey'),
+    setKey: (k) => ipcRenderer.invoke('ai:setKey', k),
+    clearKey: () => ipcRenderer.invoke('ai:clearKey'),
+    chat: (payload) => ipcRenderer.invoke('ai:chat', payload)
+  });
   contextBridge.exposeInMainWorld('__anStore', { set: (k, v) => ipcRenderer.send('store:set', String(k), v === null ? null : String(v)) });
   // the page runs in the main world, so the hook must be installed there
   webFrame.executeJavaScript(`(function () {
