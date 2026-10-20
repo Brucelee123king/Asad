@@ -164,3 +164,4 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - v1.0.3 (versionCode 4): filter-free coloured background (FLAT block in build_web.py). APK: android-app/release/AsadullahNotes-v103.apk
 - v1.0.4 (versionCode 5): status bar colour follows page (MainActivity.kt 'top:#rrggbb' bridge + tools/android_head.html). Nothing else changed. APK: android-app/release/AsadullahNotes-v104.apk
 - v1.0.5/1.0.6: fixed selector-split bug in hover-strip script (coloured block behind quiz), removed page-entry animations, rounded instructions box, native app-styled confirm dialog (showAppDialog in MainActivity.kt). APK: android-app/release/AsadullahNotes-v106.apk
+- v1.0.7/1.0.8: 7 more MCQ fixes (161,686,749,852,911,3923,1349) in pma159/corrections.json; smooth theme-switch fade in tools/android_head.html. APK: android-app/release/AsadullahNotes-v108.apk
