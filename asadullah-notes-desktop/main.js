@@ -38,6 +38,11 @@ ipcMain.on('store:set', (e, k, v) => {
   if (!writeTimer) writeTimer = setTimeout(flushStore, 400);
 });
 
+ipcMain.on('win:fullscreen', (e) => {
+  const w = BrowserWindow.fromWebContents(e.sender);
+  if (w) w.setFullScreen(!w.isFullScreen());
+});
+
 function createWindow() {
   const win = new BrowserWindow({
     width: 1280, height: 840, minWidth: 900, minHeight: 600,
@@ -50,6 +55,12 @@ function createWindow() {
   });
   Menu.setApplicationMenu(null);
   win.once('ready-to-show', () => win.show());
+  // F11 toggles full screen (the menu bar is hidden, so there is no built-in shortcut)
+  win.webContents.on('before-input-event', (e, input) => {
+    if (input.type === 'keyDown' && input.key === 'F11') { e.preventDefault(); win.setFullScreen(!win.isFullScreen()); }
+  });
+  const sendFs = () => { if (!win.isDestroyed()) win.webContents.send('win:fs', win.isFullScreen()); };
+  win.on('enter-full-screen', sendFs); win.on('leave-full-screen', sendFs);
   win.webContents.on('will-navigate', (e, url) => { if (!url.startsWith('app://')) e.preventDefault(); });
   win.webContents.setWindowOpenHandler(({ url }) => {
     if (/^https:\/\//.test(url)) shell.openExternal(url);

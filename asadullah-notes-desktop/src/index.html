@@ -356,6 +356,43 @@
         </div>
     </div>
 
+    <!-- Styled confirmation dialog (replaces the plain browser confirm/alert boxes) -->
+    <div id="modal-an-confirm" class="fixed inset-0 z-[10000] bg-slate-900/60 backdrop-blur-sm hidden flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="anc-title">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-100 fade-in space-y-4">
+            <div id="anc-icon" class="w-12 h-12 rounded-full bg-amber-50 text-amber-600 flex items-center justify-center text-xl mx-auto font-bold">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <div class="text-center space-y-1">
+                <h3 id="anc-title" class="text-lg font-bold text-slate-900">Are you sure?</h3>
+                <p id="anc-msg" class="text-xs sm:text-sm text-slate-500"></p>
+            </div>
+            <div class="flex space-x-3 pt-2">
+                <button type="button" id="anc-cancel" class="flex-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold py-2.5 rounded-xl text-sm transition">Stay</button>
+                <button type="button" id="anc-ok" class="flex-1 bg-rose-600 hover:bg-rose-700 text-white font-semibold py-2.5 rounded-xl text-sm transition shadow-md shadow-rose-100">Yes, Leave</button>
+            </div>
+        </div>
+    </div>
+    <script>
+    (function () {
+        var m = document.getElementById('modal-an-confirm'), okB = document.getElementById('anc-ok'), noB = document.getElementById('anc-cancel'), onOk = null, onNo = null, prevFocus = null;
+        function close(fn) { m.classList.add('hidden'); document.removeEventListener('keydown', key, true); var f = fn; onOk = onNo = null; if (prevFocus && prevFocus.focus) { try { prevFocus.focus(); } catch (e) {} } if (f) f(); }
+        function key(e) { if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); close(onNo); } else if (e.key === 'Tab') { e.preventDefault(); (document.activeElement === okB ? noB : okB).focus(); } }
+        okB.addEventListener('click', function () { close(onOk); });
+        noB.addEventListener('click', function () { close(onNo); });
+        m.addEventListener('click', function (e) { if (e.target === m) close(onNo); });
+        /* anConfirm({title, msg, ok, cancel, danger, single}, onConfirm, onCancel) */
+        window.anConfirm = function (o, yes, no) {
+            o = o || {}; onOk = yes || null; onNo = no || null; prevFocus = document.activeElement;
+            document.getElementById('anc-title').textContent = o.title || 'Are you sure?';
+            document.getElementById('anc-msg').textContent = o.msg || '';
+            okB.textContent = o.ok || 'OK'; noB.textContent = o.cancel || 'Cancel';
+            noB.style.display = o.single ? 'none' : '';
+            okB.className = 'flex-1 text-white font-semibold py-2.5 rounded-xl text-sm transition shadow-md ' + (o.danger === false ? 'bg-indigo-600 hover:bg-indigo-700 shadow-indigo-100' : 'bg-rose-600 hover:bg-rose-700 shadow-rose-100');
+            m.classList.remove('hidden'); document.addEventListener('keydown', key, true); okB.focus();
+        };
+    })();
+    </script>
+
     <!-- Footer Credit Line -->
     <footer class="bg-white border-t border-slate-200 py-4 px-4 text-center">
         <p class="text-xs sm:text-sm font-semibold text-slate-600 mb-1">This test belongs to <span class="text-indigo-600 font-bold">Asadullah Notes</span> &copy; All rights reserved</p>
@@ -876,7 +913,7 @@
             viewHome.classList.remove('hidden'); renderPalette(); window.scrollTo(0, 0);
         }
         function showSelect() {
-            if (quizActive && !confirm('Is test ko chhor dein? Aap ka progress ja sakta hai.')) return;
+            if (quizActive) { anConfirm({ title: 'Leave this test?', msg: 'Your progress will be lost.', ok: 'Yes, Leave', cancel: 'Stay' }, function () { quizActive = false; showSelect(); }); return; }
             if (timerInterval) clearInterval(timerInterval);
             quizActive = false;
             viewHome.classList.add('hidden'); viewQuiz.classList.add('hidden'); viewResults.classList.add('hidden');
@@ -937,7 +974,7 @@
                     try { startQuiz(); }
                     catch (error) {
                         console.error('Quiz could not start:', error);
-                        alert('Test start nahi ho saka. Page ko refresh karke dobara koshish karein.');
+                        anConfirm({ title: 'Could not start the test', msg: 'Please close and reopen the app, then try again.', ok: 'OK', single: true, danger: false });
                     }
                 });
             }
@@ -989,6 +1026,25 @@ html.dark #authUser{background:rgba(30,41,59,.95)}
 html.dark #themeBtn{background:rgba(15,23,42,.85);color:#fde68a;border-color:rgba(148,163,184,.3)}
 body{transition:background-color .3s ease}
 </style>
+<button id="fsBtn" type="button" aria-label="Full screen" title="Full screen (F11)"><i class="fa-solid fa-expand"></i></button>
+<style>
+#fsBtn{position:fixed;top:12px;right:58px;z-index:9995;width:40px;height:40px;border-radius:999px;display:none;align-items:center;justify-content:center;cursor:pointer;font-size:15px;
+  border:1px solid rgba(148,163,184,.4);background:rgba(255,255,255,.85);color:#0f172a;box-shadow:0 6px 18px rgba(0,0,0,.18);backdrop-filter:blur(8px);transition:background .3s,color .3s,transform .15s}
+#fsBtn.on{display:flex}
+#fsBtn:hover{transform:scale(1.06)}#fsBtn:active{transform:scale(.92)}
+html.dark #fsBtn{background:rgba(15,23,42,.85);color:#c7d2fe;border-color:rgba(148,163,184,.3)}
+header>div{padding-right:calc(1rem + 52px)}
+</style>
+<script>
+(function(){
+  var b=document.getElementById('fsBtn'),w=window.__anWin;
+  if(!w){return}
+  b.classList.add('on');
+  function icon(on){b.innerHTML='<i class="fa-solid '+(on?'fa-compress':'fa-expand')+'"></i>';b.title=on?'Exit full screen (F11)':'Full screen (F11)';b.setAttribute('aria-label',b.title)}
+  b.addEventListener('click',function(){w.toggleFullscreen()});
+  w.onFullscreen(icon);
+})();
+</script>
 <button id="themeBtn" type="button" aria-label="Switch day / night mode" title="Day / Night mode" onclick="toggleTheme()"></button>
 <script>
 (function(){
@@ -1299,7 +1355,7 @@ html.dark #hdrUser .av{border-color:rgba(255,255,255,.2)}
   function sync(){var src=document.getElementById('authUser'),nm=(document.getElementById('authUserName')||{}).textContent||'';
     var on=src&&src.style.display==='flex';box.style.display=on?'flex':'none';
     var n=nm.replace(/^\W+\s*/,'').trim()||'Guest';av.textContent=n.charAt(0).toUpperCase();av.title=n+' — tap to log out'}
-  av.onclick=function(){if(confirm('Log out of Asadullah Notes?'))authLogout();sync()};
+  av.onclick=function(){anConfirm({title:'Log out?',msg:'You will be signed out of Asadullah Notes on this device. Your saved scores stay safe.',ok:'Yes, Log out',cancel:'Stay signed in'},function(){authLogout();sync()})};
   new MutationObserver(sync).observe(document.getElementById('authUser'),{attributes:true,childList:true,subtree:true});sync();
 })();
 </script>
@@ -1324,8 +1380,8 @@ html.dark #backBtn{background:rgba(15,23,42,.85);color:#e0e7ff;border-color:rgba
   function performBack(){
     if(vis('view-home')||vis('view-quiz')||vis('view-results')){
       if(vis('view-quiz')&&typeof quizActive!=='undefined'&&quizActive){
-        if(!confirm('Leave this test? Your progress will be lost.')){history.pushState({n:1},'');return}
-        quizActive=false;
+        anConfirm({title:'Leave this test?',msg:'Your progress will be lost.',ok:'Yes, Leave',cancel:'Stay'},function(){quizActive=false;showSelect();sync();window.scrollTo(0,0)},function(){history.pushState({n:1},'')});
+        return;
       }
       showSelect();
     }else if(vis('view-select')&&curSec!==null){if(curSec==='hk'&&typeof hkSub!=='undefined'&&hkSub!==null)openHkSub(typeof hkSub==='number'?'all':null);else openSec(null)}

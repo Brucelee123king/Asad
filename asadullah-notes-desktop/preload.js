@@ -9,6 +9,10 @@ try {
     const k = localStorage.key(i);
     if (!(k in saved)) ipcRenderer.send('store:set', k, localStorage.getItem(k));
   }
+  contextBridge.exposeInMainWorld('__anWin', {
+    toggleFullscreen: () => ipcRenderer.send('win:fullscreen'),
+    onFullscreen: (cb) => ipcRenderer.on('win:fs', (_e, on) => cb(!!on))
+  });
   contextBridge.exposeInMainWorld('__anStore', { set: (k, v) => ipcRenderer.send('store:set', String(k), v === null ? null : String(v)) });
   // the page runs in the main world, so the hook must be installed there
   webFrame.executeJavaScript(`(function () {
