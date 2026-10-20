@@ -33,8 +33,8 @@ const secOf = k => /^PMA-/.test(k) ? 'pma' : /^FA-/.test(k) ? 'fa' : /^HK-/.test
   const timer = () => page.evaluate(() => document.getElementById('timer-display').textContent);
   const secs = s => { const [m, x] = s.split(':').map(Number); return m * 60 + x; };
 
-  if (E.DATA) {  // ---- data counts
   const data = await page.evaluate(() => { const o = {}; Object.keys(ALL).forEach(k => o[k] = ALL[k].length); return o; });
+  if (E.DATA) {  // ---- data counts
   const bySec = {}; const keys = Object.keys(data);
   keys.forEach(k => { const s = ['o'].concat([]); });
   const secKeys = { o: [], pma: [], fa: [], hk: [], lc: [] };

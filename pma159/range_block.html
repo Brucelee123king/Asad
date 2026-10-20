@@ -84,6 +84,7 @@ html.dark #rngModal .go.alt{color:#a5b4fc;border-color:#a5b4fc}
     var a=parseInt($('rngFrom').value,10),b=parseInt($('rngTo').value,10),info=$('rngInfo'),list=$('rngList'),acts=$('rngActs');
     acts.innerHTML='';list.style.display='none';cur=[];
     if(isNaN(a)||isNaN(b)){info.textContent='Enter both numbers.';return}
+    a=Math.max(1,Math.floor(a));b=Math.max(1,Math.floor(b));
     if(a>b){var t=a;a=b;b=t}
     var all=build();
     cur=all.filter(function(e){return e.total>=a&&e.total<=b}).sort(function(x,y){return y.total-x.total||(x.core<y.core?-1:1)});
@@ -95,9 +96,10 @@ html.dark #rngModal .go.alt{color:#a5b4fc;border-color:#a5b4fc}
     list.style.display='block';
     acts.innerHTML='<div class="szrow"><label>Make blocks of <input id="rngSize" type="number" inputmode="numeric" min="1" value="'+(window.__rngSize||50)+'"> MCQs</label><span>30 seconds for every MCQ</span></div>'
       +'<div class="chips" id="rngChips"></div><div class="chips"><button class="go" onclick="startRange(0)">Start ALL '+n+' MCQs as one test</button></div>';
-    $('rngSize').addEventListener('input',drawChips);drawChips();
+    $('rngSize').addEventListener('input',drawChips);$('rngSize').addEventListener('change',function(){fixSize();drawChips()});drawChips();
   }
-  function size(){var v=parseInt(($('rngSize')||{}).value,10);if(!v||v<1)v=50;if(v>2000)v=2000;window.__rngSize=v;return v}
+  function size(){var el=$('rngSize'),v=parseInt((el||{}).value,10);if(!v||v<1)v=50;if(v>2000)v=2000;window.__rngSize=v;return v}
+  function fixSize(){var el=$('rngSize');if(el){var v=size();if(String(el.value)!==String(v))el.value=v}}
   function drawChips(){
     var n=cur.length,sz=size(),el=$('rngChips');if(!el)return;
     if(!n){el.innerHTML='';return}
@@ -119,7 +121,7 @@ html.dark #rngModal .go.alt{color:#a5b4fc;border-color:#a5b4fc}
   window.startRange=function(block){
     clearTimeout(tmr);find();
     var qs=cur;if(!qs.length)return;
-    var a=Math.min(parseInt($('rngFrom').value,10),parseInt($('rngTo').value,10)),b=Math.max(parseInt($('rngFrom').value,10),parseInt($('rngTo').value,10));
+    var fa=Math.max(1,Math.floor(parseFloat($('rngFrom').value))),fb=Math.max(1,Math.floor(parseFloat($('rngTo').value))),a=Math.min(fa,fb),b=Math.max(fa,fb);
     var sz=size();if(block)qs=cur.slice((block-1)*sz,block*sz);
     Object.keys(ALL).forEach(function(k){if(k.indexOf('CUS-range')===0)delete ALL[k]});
     var key='CUS-range'+(block?'-b'+block:'');
