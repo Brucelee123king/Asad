@@ -2,8 +2,8 @@
  {
   "id": 1,
   "text": "90% of 90",
-  "count": 5,
-  "src": "WU1,5,7,9(9% of 90),11"
+  "count": 4,
+  "src": "WU1,5,7,11 (WU9 wrote 9% of 90, not counted)"
  },
  {
   "id": 2,
@@ -218,8 +218,8 @@
  {
   "id": 37,
   "text": "Simla Agreement/conference held at which place",
-  "count": 1,
-  "src": "WU8"
+  "count": 2,
+  "src": "WU4,8"
  },
  {
   "id": 38,

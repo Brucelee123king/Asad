@@ -1,4 +1,4 @@
-MATCH = [(102,195),(103,197),(104,264),(107,56),(108,260)]
+MATCH = [(102,194),(103,196),(104,263),(107,55),(108,259)]
 NEW = [
 (100,"Current Affairs","Who is the current Chief of Army Staff of Pakistan?","Field Marshal Asim Munir",["General Sahir Shamshad Mirza","General Qamar Javed Bajwa","General Ashfaq Parvez Kayani"],"Field Marshal Asim Munir is Chief of Army Staff and, since December 2025 under the 27th Amendment, also Chief of Defence Forces.",0),
 (101,"General Knowledge","Which team won the 2022 Asia Cup cricket tournament?","Sri Lanka",["Pakistan","India","Bangladesh"],"Sri Lanka beat Pakistan by 23 runs in the final at Dubai on 11 September 2022.",0),
