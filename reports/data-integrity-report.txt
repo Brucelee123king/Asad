@@ -1,0 +1,25 @@
+DATA INTEGRITY REPORT - Asadullah Notes 2026-10-20
+Source of truth: original-backup/index-7.original.html (sha256 ac097c2d654bba21dfce6176ebfd950dc6c61d28fa7b7f9f3f72dc36a438abe0)
+Tests found: 196
+Questions found: 11208
+  ORIG   1000 questions
+  PMA     339 questions
+  FA      771 questions
+  HK     6423 questions
+  MR     2274 questions
+  CN       89 questions
+  IV      107 questions
+  LC      205 questions
+Result: no questions truncated or deleted. The desktop build loads the original database unchanged (src/data.js) and applies the corrections overlay (src/corrections.js) on top.
+Checks over all 11208 questions (automated):
+  Question text present ............ pass
+  Answer key index within options .. pass (0 failures)
+  Empty options .................... pass (0 failures)
+  Identical options in one question  1 found (case-insensitive; 1 is a false positive: "Ee" vs "EE" are different letters in HK-96 #6)
+  Corrupted characters (U+FFFD etc.) 0
+  Script/iframe markup in text ..... 0
+  Questions with 3 or 5 options .... 178 (FA sections; accepted by the app)
+  Same question appearing in more than one test: 2324 repeats (by design: HK experience tests and Most Repeated tests reuse questions); repeats with a CONFLICTING answer: 0
+  Garbled distractor "Surah An-Naml, =)" ... 4 occurrences (1 corrected, 3 flagged for manual review)
+Corrections overlay: 96 owner-supplied entries (59 wording/format cleanups, 37 change an answer or fact and are NOT independently verified) + 1 audit correction(s).
+Limits: factual accuracy of 11,208 questions was NOT fully verified against external sources in this audit. See MCQ_Audit_Report.html.

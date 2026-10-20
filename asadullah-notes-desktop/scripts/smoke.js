@@ -9,9 +9,10 @@ app.whenReady().then(async () => {
   w.webContents.on('console-message', (e, lvl, msg) => { if (lvl >= 3) errors.push(msg); });
   const run = (c) => w.webContents.executeJavaScript(c);
   const res = {};
-  res.title = await run('document.title');
+  res.title = await run('document.title'); res.lsAtStart = await run("localStorage.getItem('an_st')");
   res.tests = await run('Object.keys(ALL).length');
   res.questions = await run('Object.values(ALL).reduce((n,a)=>n+a.length,0)');
+  res.corr = await run("[ALL['1-50'].find(q=>q.id===30).options[ALL['1-50'].find(q=>q.id===30).correct], ALL['751-800'].find(q=>q.id===4).options[1]]");
   await run("document.getElementById('auth') && authGuest()");
   await run("openSec('o')"); await run("selectTest('1-50')");
   await run("document.getElementById('start-quiz-btn').click()");

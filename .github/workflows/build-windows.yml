@@ -1,0 +1,22 @@
+name: Build Windows installer
+on:
+  workflow_dispatch:
+  push:
+    branches: [ccr-d07b9b5e-3edt46]
+    paths: ['asadullah-notes-desktop/**']
+jobs:
+  build:
+    runs-on: windows-latest
+    defaults: { run: { working-directory: asadullah-notes-desktop } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: npm install --no-audit --no-fund
+      - run: npx electron-builder --win nsis portable --x64
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AsadullahNotes-Windows
+          path: |
+            asadullah-notes-desktop/dist/AsadullahNotes-Setup.exe
+            asadullah-notes-desktop/dist/AsadullahNotes-Portable.exe

@@ -16,6 +16,7 @@
     "electron-builder": "^25.1.8"
   },
   "build": {
+    "publish": null,
     "appId": "com.asadullahnotes.desktop",
     "productName": "Asadullah Notes",
     "copyright": "Asadullah Notes",
