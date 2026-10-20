@@ -11,6 +11,7 @@ html.lite *,html.lite *::before,html.lite *::after{animation-duration:.01ms!impo
 @media (max-width:360px){header>div{padding-right:12px!important}}
 /* long review lists: only lay out/paint cards that are on screen */
 #review-list-container>div{content-visibility:auto;contain-intrinsic-size:auto 260px}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.32s;animation-timing-function:ease-in-out;mix-blend-mode:normal}
 </style>
 <script>
 (function () {
@@ -41,30 +42,21 @@ html.lite *,html.lite *::before,html.lite *::after{animation-duration:.01ms!impo
   var timer = 0;
   function soon() { if (!timer) timer = setTimeout(function () { timer = 0; sync(); }, 60); }
 
-  /* smooth day/night switch: fade to the new background colour, switch the theme while hidden, fade back (compositor-only, no jump) */
+  /* smooth day/night switch: the browser keeps a picture of the old screen and cross-fades it into the new theme
+     (View Transitions) - the screen never goes blank. If the phone's WebView is too old, the theme just switches at once. */
   var busy = false;
   function wrapTheme() {
     var orig = window.toggleTheme;
     if (!orig || orig.__smooth) return;
     var fn = function () {
-      if (busy) return; busy = true;
-      var toDark = !d.classList.contains('dark');
-      var ov = document.createElement('div');
-      ov.setAttribute('aria-hidden', 'true');
-      ov.style.cssText = 'position:fixed;left:0;top:0;right:0;bottom:0;z-index:2147483000;opacity:0;background:' + (toDark ? '#0b1220' : '#eef2f8');
-      ov.style.setProperty('transition', 'opacity .16s ease-out', 'important');
-      document.body.appendChild(ov);
-      requestAnimationFrame(function () { requestAnimationFrame(function () {
-        ov.style.opacity = '1';
-        setTimeout(function () {
-          try { orig(); } catch (e) {}
-          requestAnimationFrame(function () { requestAnimationFrame(function () {
-            ov.style.setProperty('transition', 'opacity .28s ease-in', 'important');
-            ov.style.opacity = '0';
-            setTimeout(function () { try { ov.remove(); } catch (e) {} busy = false; }, 340);
-          }); });
-        }, 190);
-      }); });
+      if (!document.startViewTransition || busy) { if (!busy) orig(); return; }
+      busy = true;
+      var vt;
+      try { vt = document.startViewTransition(function () { orig(); }); }
+      catch (e) { busy = false; orig(); return; }
+      var done = function () { busy = false; };
+      try { vt.finished.then(done, done); } catch (e) { done(); }
+      setTimeout(done, 1200);
     };
     fn.__smooth = true; window.toggleTheme = fn;
   }

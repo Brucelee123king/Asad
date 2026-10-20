@@ -1,13 +1,13 @@
 # Asadullah Notes - Android app (WebView, fully offline)
 
-- Package ID: `com.asadullahnotes.mcq`   Version: `1.0.8` (versionCode 9)
+- Package ID: `com.asadullahnotes.mcq`   Version: `1.0.9` (versionCode 10)
 - minSdk 24 (Android 7.0), targetSdk / compileSdk 35, portrait only
 - Permissions: none (no INTERNET). No ads, no trackers.
 - The whole site (all MCQs, all sections, timers, palette, scoring, review, retake, footer credit) is bundled in `app/src/main/assets/www/`.
 - Tailwind is pre-compiled; Inter, Plus Jakarta Sans and Font Awesome are bundled. Nothing is loaded from the internet.
 
 ## Install (phone)
-1. Copy `release/AsadullahNotes-v108.apk` to the phone.
+1. Copy `release/AsadullahNotes-v109.apk` to the phone.
 2. Open it. If Android asks, allow "Install unknown apps" for the app you opened it from.
 3. Tap Install, then open "Asadullah Notes".
 
