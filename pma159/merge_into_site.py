@@ -33,10 +33,12 @@ if os.path.exists(_p163):
 _p165 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma165')
 if os.path.exists(os.path.join(_p165, 'm_r1.py')):
     import runpy as _rp3
-    _seen165 = {}
+    _seen165 = {}; _seenm165 = set()
     for _f in ('m_r1.py', 'm_r2.py', 'm_r3.py'):
         _m = _rp3.run_path(os.path.join(_p165, _f))
         for _n, _idx in _m['MATCH']:
+            if _n in _seenm165: continue   # Q46 is printed on a page boundary and was read by two agents
+            _seenm165.add(_n)
             _t = list(Q[_idx]); _t[5] = _t[5] + 1; Q[_idx] = tuple(_t)
         for _t in _m['NEW']:
             _key = re.sub(r'[^a-z0-9]+', ' ', _t[2].lower()).strip()
