@@ -168,3 +168,4 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - v1.0.9: theme switch now uses document.startViewTransition cross-fade (no blank screen); v1.0.8 overlay-fade removed. APK: android-app/release/AsadullahNotes-v109.apk
 - v1.0.10: page drawn behind status bar (MainActivity.kt topInsetPx/applyInsetToPage + --sat CSS in tools/android_head.html). APK: android-app/release/AsadullahNotes-v1010.apk
 - v1.0.11: press feedback (:active scale/opacity) in tools/build_web.py PRESS block. APK: android-app/release/AsadullahNotes-v1011.apk
+- v1.0.12: themeBtn/brand/side selectors given higher specificity (html body ...) so --sat offset wins over page rules; header 97% opaque. APK: android-app/release/AsadullahNotes-v1012.apk

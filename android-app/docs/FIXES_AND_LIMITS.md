@@ -82,3 +82,7 @@ See the end of this file for the final table.
 
 ## v1.0.11 - tap feedback back
 - Every tappable thing (buttons, option cards, test cards, category tiles, palette numbers, login buttons) gives a light press effect: shrinks slightly (2.5% for big cards, 5% for buttons) and dims a little for 0.12 s while pressed. Transform/opacity only, so it stays smooth. Checked in a desktop browser on 7 element types.
+
+## v1.0.12 - day/night button position, solid header
+- The day/night (moon/sun) button had slipped up into the status bar (the page's own rule overrode the new position). It now sits below the status bar, in line with the avatar / logo (checked with a 34 px bar).
+- Header is nearly solid (97%), so page text no longer shows through it.
