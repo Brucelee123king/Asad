@@ -179,3 +179,8 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - Native fixes: dialog leak, render-crash loop, saved bar colours, onJsBeforeUnload.
 - CSS: themeBtn z-index 40, review scroll margin, header title/avatar hidden <=380px.
 - Known: 28 MCQs in 1000 MCQs (51-100, 951-1000, 1-50) have no reason text in data. Not tested on a real phone.
+
+## v1.0.15 (versionCode 16)
+- AI Helper: round button bottom-right (pma159/ai_block.html). Offline = keyword search over all MCQs; Online = POST to Netlify function netlify/functions/ask.js (Gemini, key in env GEMINI_API_KEY; setup in netlify/SETUP_AI_ONLINE.md). Quick-action chips for the current question. Image/PDF/text attach (online).
+- APK now has INTERNET permission (Online mode only) and a file chooser; server address set via gear box.
+- Known: some original 1-50/51-100 MCQs have wrong or missing reason text (e.g. 1-50 Q1 shows FIFA text). Not edited (data rule).

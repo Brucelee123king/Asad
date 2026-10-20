@@ -26,6 +26,11 @@ html.dark #aiMsgs .a{background:#141b34}
 #aiChip{display:flex;gap:6px;flex-wrap:wrap;padding:6px 12px 0}
 #aiChip button{border:1px solid rgba(99,102,241,.5);background:transparent;color:inherit;border-radius:999px;padding:6px 11px;font-size:12px;cursor:pointer}
 #aiAtt{padding:4px 12px;font-size:12px;display:none}
+#aiPanel .hd b{white-space:nowrap}
+#aiPanel .seg{flex:none}
+#aiChip{max-height:84px;overflow:auto}
+@media (max-width:360px){#aiPanel .hd{gap:5px;padding:10px 8px}#aiPanel .ib{min-width:34px;padding:0 6px}#aiPanel .seg button{padding:8px 9px;font-size:12px}}
+@media (max-width:340px){#aiPanel .hd b{display:none}}
 </style>
 <button id="aiFab" aria-label="AI Helper" title="AI Helper"><i class="fas fa-robot"></i></button>
 <div id="aiPanel" role="dialog" aria-modal="true" aria-label="AI Helper">
@@ -43,7 +48,7 @@ html.dark #aiMsgs .a{background:#141b34}
   <div id="aiBar">
     <button class="ib" id="aiClip" title="Attach image or file">&#128206;</button>
     <input type="file" id="aiFile" accept="image/*,.pdf,.txt" style="display:none">
-    <textarea id="aiIn" rows="1" placeholder="Ask anything about an MCQ..."></textarea>
+    <textarea id="aiIn" rows="1" placeholder="Ask about an MCQ..."></textarea>
     <button class="ib" id="aiSend">Send</button>
   </div>
 </div>
@@ -130,7 +135,7 @@ html.dark #aiMsgs .a{background:#141b34}
     if(mode==='off'){if(att){add('a','Offline mode cannot read images or files. Switch to <b>Online</b>.');att=null;showAtt();return}offline(q)}else online(q);
   }
   function setMode(m){mode=m;$('aiOff').className=m==='off'?'on':'';$('aiOn').className=m==='on'?'on':'';LS.set('ai_mode',m);
-    $('aiIn').placeholder=m==='off'?'Ask anything about an MCQ...':'Ask anything (needs internet)...';chips()}
+    $('aiIn').placeholder=m==='off'?'Ask about an MCQ...':'Ask anything (online)...';chips()}
   var ACTS=[['Explain this question','Explain this MCQ clearly: why the correct answer is right.'],
     ['Explain in simple words','Explain this MCQ in very simple words, like to a beginner.'],
     ['Explain in detail','Explain this MCQ in full detail with background and context.'],
