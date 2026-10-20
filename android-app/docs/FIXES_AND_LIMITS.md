@@ -64,3 +64,8 @@ See the end of this file for the final table.
 
 ## v1.0.4 - status bar follows the page
 - The bar at the very top (time / battery) was always indigo. The page now tells the app the colour at its top (login: lavender, app screens: white by day / deep indigo at night); the app paints the status bar with it and switches the icons dark/light. Nothing else changed.
+
+## v1.0.5 / v1.0.6 - section-colour box, corners, styled dialog
+- Bug found and fixed: my "no hover" script split selector lists inside `:is(...)`, which turned one rule into `#view-quiz{background:<section colour>}` - this painted a solid orange / sky-blue / purple / green block behind every test page (day and dark mode). Fixed (selectors are now split only on top-level commas).
+- Page-entry animations (blur + 3D) removed in the app; "Important Instructions" box has all four corners rounded again.
+- The "Leave this test? Your progress will be lost." box (and log-out / alerts) is now an app-styled dialog: rounded card, icon, "Stay" / "Leave" buttons, follows day/night. Compiled and packaged but NOT seen on a device (no emulator here).

@@ -4,6 +4,11 @@ import android.app.Activity
 import android.app.AlertDialog
 import android.content.res.Configuration
 import android.graphics.Color
+import android.widget.TextView
+import android.util.TypedValue
+import android.graphics.Typeface
+import android.graphics.drawable.GradientDrawable
+import android.graphics.drawable.ColorDrawable
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -238,23 +243,78 @@ class MainActivity : Activity() {
         // JavaScript confirm()/alert() are used by the app (leave test, submit): WebView needs real dialogs for them
         wv.webChromeClient = object : WebChromeClient() {
             override fun onJsAlert(view: WebView, url: String?, message: String?, result: JsResult): Boolean {
-                AlertDialog.Builder(this@MainActivity).setMessage(message)
-                    .setPositiveButton(R.string.ok) { _, _ -> result.confirm() }
-                    .setOnCancelListener { result.cancel() }.show()
-                return true
+                showAppDialog(message ?: "", false, result); return true
             }
 
             override fun onJsConfirm(view: WebView, url: String?, message: String?, result: JsResult): Boolean {
-                AlertDialog.Builder(this@MainActivity).setMessage(message)
-                    .setPositiveButton(R.string.ok) { _, _ -> result.confirm() }
-                    .setNegativeButton(R.string.cancel) { _, _ -> result.cancel() }
-                    .setOnCancelListener { result.cancel() }.show()
-                return true
+                showAppDialog(message ?: "", true, result); return true
             }
 
             override fun onJsPrompt(view: WebView, url: String?, message: String?, defaultValue: String?, result: JsPromptResult): Boolean {
                 result.cancel(); return true
             }
+        }
+    }
+
+    /** App-styled replacement for the plain system dialog used by the page's confirm()/alert(). */
+    private fun showAppDialog(message: String, confirmType: Boolean, result: JsResult) {
+        val leave = message.contains("Leave this test", true) || message.contains("chhor dein", true)
+        val logout = message.contains("Log out", true)
+        val title: String; val body: String; val yes: String; val no: String; val icon: String
+        val accent: Int
+        when {
+            leave -> { title = "Leave this test?"; body = "Your progress in this test will be lost."; yes = "Leave"; no = "Stay"; icon = "!"; accent = Color.parseColor("#E11D48") }
+            logout -> { title = "Log out?"; body = "Do you want to log out of Asadullah Notes?"; yes = "Log out"; no = "Cancel"; icon = "\u21AA"; accent = Color.parseColor("#E11D48") }
+            else -> { title = "Asadullah Notes"; body = message; yes = "OK"; no = "Cancel"; icon = "i"; accent = Color.parseColor("#4F46E5") }
+        }
+        val dark = night
+        val card = if (dark) Color.parseColor("#17114A") else Color.WHITE
+        val ink = if (dark) Color.parseColor("#F3EFFF") else Color.parseColor("#0F172A")
+        val sub = if (dark) Color.parseColor("#BDB3E6") else Color.parseColor("#475569")
+        val indigo = Color.parseColor("#4F46E5")
+        fun pill(fill: Int, stroke: Int = 0) = GradientDrawable().apply {
+            cornerRadius = dp(14).toFloat(); setColor(fill); if (stroke != 0) setStroke(dp(1), stroke)
+        }
+        fun tv(text: String, sp: Float, color: Int, bold: Boolean) = TextView(this).apply {
+            this.text = text; setTextSize(TypedValue.COMPLEX_UNIT_SP, sp); setTextColor(color)
+            if (bold) typeface = Typeface.DEFAULT_BOLD; gravity = android.view.Gravity.CENTER
+        }
+        val panel = LinearLayout(this).apply {
+            orientation = LinearLayout.VERTICAL
+            setPadding(dp(22), dp(26), dp(22), dp(20))
+            background = GradientDrawable().apply {
+                cornerRadius = dp(26).toFloat(); setColor(card)
+                if (dark) setStroke(dp(1), Color.parseColor("#33FFFFFF"))
+            }
+            elevation = dp(8).toFloat()
+        }
+        val badge = tv(icon, 30f, accent, true).apply {
+            background = GradientDrawable().apply { shape = GradientDrawable.OVAL; setColor((accent and 0x00FFFFFF) or 0x22000000) }
+        }
+        panel.addView(badge, LinearLayout.LayoutParams(dp(64), dp(64)).apply { gravity = android.view.Gravity.CENTER_HORIZONTAL; bottomMargin = dp(14) })
+        panel.addView(tv(title, 20f, ink, true), LinearLayout.LayoutParams(-1, -2).apply { bottomMargin = dp(8) })
+        panel.addView(tv(body, 15f, sub, false).apply { setLineSpacing(0f, 1.15f) }, LinearLayout.LayoutParams(-1, -2).apply { bottomMargin = dp(22) })
+        val row = LinearLayout(this).apply { orientation = LinearLayout.HORIZONTAL }
+        val dialog = AlertDialog.Builder(this).create()
+        var answered = false
+        fun finish(ok: Boolean) { if (answered) return; answered = true; if (ok) result.confirm() else result.cancel(); dialog.dismiss() }
+        if (confirmType) {
+            val stay = tv(no, 16f, indigo, true).apply { background = pill(Color.TRANSPARENT, indigo); setOnClickListener { finish(false) } }
+            row.addView(stay, LinearLayout.LayoutParams(0, dp(48), 1f).apply { rightMargin = dp(6) })
+        }
+        val go = tv(if (confirmType) yes else "OK", 16f, Color.WHITE, true).apply {
+            background = pill(if (confirmType) accent else indigo); setOnClickListener { finish(true) }
+        }
+        row.addView(go, LinearLayout.LayoutParams(0, dp(48), 1f).apply { if (confirmType) leftMargin = dp(6) })
+        panel.addView(row, LinearLayout.LayoutParams(-1, -2))
+        val holder = FrameLayout(this).apply { setPadding(dp(22), 0, dp(22), 0); addView(panel, FrameLayout.LayoutParams(-1, -2)) }
+        dialog.setView(holder)
+        dialog.setOnCancelListener { if (!answered) { answered = true; result.cancel() } }
+        dialog.show()
+        dialog.window?.apply {
+            setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+            setDimAmount(0.55f)
+            setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
         }
     }
 

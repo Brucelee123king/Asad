@@ -171,10 +171,16 @@ html = html.replace('</body>', '<style id="android-perf3">#options-container [ro
 #     (3) tap highlight / text selection flashes. App only.
 HOVER_OFF = """<script id="android-nohover">
 (function(){
+  /* split a selector list on top-level commas only (commas inside :is(...) / [..] / (..) belong to one selector) */
+  function splitSel(t){ var out = [], depth = 0, cur = '';
+    for (var i = 0; i < t.length; i++) { var ch = t[i];
+      if (ch === '(' || ch === '[') depth++; else if (ch === ')' || ch === ']') depth--;
+      if (ch === ',' && depth === 0) { out.push(cur.trim()); cur = ''; } else cur += ch; }
+    if (cur.trim()) out.push(cur.trim()); return out; }
   function strip(list){ for (var i = list.length - 1; i >= 0; i--) { var r = list[i];
       if (r.cssRules && r.type !== 1) { strip(r.cssRules); continue; }
       if (r.selectorText && r.selectorText.indexOf(':hover') > -1) {
-        var keep = r.selectorText.split(',').filter(function(x){ return x.indexOf(':hover') < 0; });
+        var keep = splitSel(r.selectorText).filter(function(x){ return x.indexOf(':hover') < 0; });
         try { if (keep.length) r.selectorText = keep.join(','); else (r.parentRule || r.parentStyleSheet).deleteRule(i); } catch (e) {}
       } } }
   function run(){ for (var k = 0; k < document.styleSheets.length; k++) { try { strip(document.styleSheets[k].cssRules); } catch (e) {} } }
@@ -219,6 +225,17 @@ FLAT = ('<style id="android-flat">'
  'html.lite body main button.bg-indigo-600:before,html.lite body main button.bg-emerald-600:before,html.lite body button[onclick^="confirmSubmitQuiz"]:before{display:none!important}'
  '</style>')
 html = html.replace('</body>', FLAT + '</body>')
+# --- coloured rectangle behind the quiz (section colour, light AND dark mode) on the phone: every page container (.fade-in) and every
+#     card (.grid>*) runs an entry animation with blur + 3D transform and "forwards" fill, so each becomes a composited GPU layer that the
+#     phone paints as a solid block. No entry animations in the app: elements simply appear in their final state.
+NOANIM = ('<style id="android-noanim">'
+  'html.lite body .fade-in,html.lite body .grid>*,html.lite body .dash>*,html.lite body .dash .st,html.lite body .dash .act,html.lite body .dash .week,'
+  'html.lite body main>*,html.lite body #view-home,html.lite body #view-select,html.lite body #view-quiz,html.lite body #view-results{'
+  'animation:none!important;-webkit-animation:none!important;opacity:1!important;filter:none!important;-webkit-filter:none!important;will-change:auto!important}'
+  'html.lite body .rounded-r-xl{border-radius:.75rem!important}'
+  'html.lite body .fade-in,html.lite body .grid>*,html.lite body #view-quiz,html.lite body #view-results,html.lite body #view-select,html.lite body #view-home{transform:none!important}'
+  '</style>')
+html = html.replace('</body>', NOANIM + '</body>')
 assert 'cdn.tailwindcss.com' not in html and 'googleapis' not in html and 'cloudflare' not in html and 'netlify/scripts' not in html
 open(os.path.join(WWW, 'index.html'), 'w', encoding='utf8').write(html)
 shutil.copy(os.path.join(HERE, 'error.html'), os.path.join(WWW, 'error.html'))
