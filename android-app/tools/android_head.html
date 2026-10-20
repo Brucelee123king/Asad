@@ -6,6 +6,11 @@ body{-webkit-touch-callout:none}
 button,[role="button"],.option-card,a{-webkit-user-select:none;user-select:none}
 /* low-end phones: same layout, but no continuous decorative animation and no blur/backdrop filters (smoother, cooler, saves battery) */
 html.lite *,html.lite *::before,html.lite *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+/* layout fixes found by the audit: dashboard tiles were hit by the floating-icon rule (.st = 84px), header padding on 320px screens */
+.dash .st{width:auto;height:auto;filter:none}
+@media (max-width:360px){header>div{padding-right:12px!important}}
+/* long review lists: only lay out/paint cards that are on screen */
+#review-list-container>div{content-visibility:auto;contain-intrinsic-size:auto 260px}
 </style>
 <script>
 (function () {

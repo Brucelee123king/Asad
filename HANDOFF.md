@@ -151,3 +151,10 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 
 ## Phase 21 - Pro Genius "Solved Academic Experience" PDF added to PMA 159 section (done)
 - PDF is page images (no text): pages rendered to pma165/pg/p-NN.png and read visually by agents (m_r1..r3.py MATCH/NEW; list of existing = 332 MCQs). 58 items seen: 47 matched existing PMA 159 MCQs (rep +1 each; Q46 read twice, counted once), 7 NEW (appended, part 7 now 39), 4 skipped (Gwadar price, Hajj year, two unclear maths, Balochistan plateau). PMA 159 = 339 MCQs, 7 parts. merge_into_site.py applies pma162, pma163, pma165 in order after `from questions import Q`.
+
+
+## Phase 22 - Android APK + full MCQ answer audit
+- Android project: `android-app/` (package com.asadullahnotes.mcq, v1.0.0, minSdk 24, target 35). Signed APK: `android-app/release/AsadullahNotes-1.0.0.apk`. Keystore is OUTSIDE the repo (`/home/user/keystore/asadullah-notes.jks`, user was sent a copy) - never commit it. Read `android-app/README.md` and `android-app/docs/FIXES_AND_LIMITS.md`.
+- Web bundle for the app is built by `android-app/tools/build_web.py` from `android-app/source/index.html` (= `site/index.html`); offline, performance and layout fixes live only in that script (and tools/android_head.html), not in the Netlify site.
+- Audit: all 8,931 unique MCQs blind-checked (batches in `android-app/verify_all/`), 360 flagged items re-judged, 70 MCQs patched via `pma159/corrections.json` (applied at runtime inside the page by `merge_into_site.py`, matched by test key + id). 22 unresolved items listed in `verify_all/final_lists.json`. Web search budget ran out, so many current-affairs answers are NOT web-verified.
+- Not tested on a real device or emulator.

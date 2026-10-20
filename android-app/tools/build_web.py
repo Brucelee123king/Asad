@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Builds the offline web bundle for the Android app.
 
-Input : ../original/index.html   (the website file, never modified)
+Input : ../source/index.html   (corrected website file; ../original/index.html is the untouched backup)
 Output: ../app/src/main/assets/www/  (index.html + css/ + fonts/ + webfonts/ + error.html)
 
 What changes in index.html (everything else is byte-identical):
@@ -18,7 +18,7 @@ import os, re, shutil, subprocess, sys, hashlib
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-SRC = os.path.join(ROOT, 'original', 'index.html')
+SRC = os.path.join(ROOT, 'source', 'index.html')   # corrected site (original/ is the untouched backup)
 WWW = os.path.join(ROOT, 'app', 'src', 'main', 'assets', 'www')
 NODE = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, 'node')
 
@@ -87,6 +87,22 @@ cut(r'<meta name="viewport" content="width=device-width, initial-scale=1\.0">',
 ANDROID = open(os.path.join(HERE, 'android_head.html'), encoding='utf8').read()
 cut(r'(<meta name="theme-color"[^>]*>)', lambda m: m.group(1) + '\n' + ANDROID)
 
+html = html.replace('</head>', '<link rel="icon" href="data:,">\n</head>', 1)  # no /favicon.ico request
+# ---------- 4b. performance fixes (app bundle only; see qa/perf_report.md) ----------
+def rep(old, new):
+    global html
+    assert html.count(old) == 1, old
+    html = html.replace(old, new)
+# parallax vars were written on <html> every frame -> whole-document style recalc. Write them only on the two consumers.
+rep("var R=document.documentElement,tx=0",
+    "var R={style:{setProperty:function(a,b){var t=document.getElementById('obj3d'),l=document.getElementById('liquidBg');if(t)t.style.setProperty(a,b);if(l)l.style.setProperty(a,b)}}},tx=0")
+# no animation loop on low-end phones, and pause it while the app is in the background
+rep("function loop(now){\n    var idle=", "function loop(now){\n    if(document.hidden){running=0;return}\n    var idle=")
+rep("if(!matchMedia('(prefers-reduced-motion:reduce)').matches)requestAnimationFrame(loop);",
+    "var running=0,go=!matchMedia('(prefers-reduced-motion:reduce)').matches&&!document.documentElement.classList.contains('lite');\n  function start(){if(go&&!running){running=1;requestAnimationFrame(loop)}}\n  document.addEventListener('visibilitychange',start);start();")
+# bug found by QA: if the timer hits 0 while the "Submit?" popup is open, the popup stayed on top of the results
+rep("                    clearInterval(timerInterval);\n                    autoSubmitQuiz();",
+    "                    clearInterval(timerInterval);\n                    closeSubmitModal();\n                    autoSubmitQuiz();")
 assert 'cdn.tailwindcss.com' not in html and 'googleapis' not in html and 'cloudflare' not in html and 'netlify/scripts' not in html
 open(os.path.join(WWW, 'index.html'), 'w', encoding='utf8').write(html)
 shutil.copy(os.path.join(HERE, 'error.html'), os.path.join(WWW, 'error.html'))
