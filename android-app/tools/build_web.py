@@ -236,6 +236,14 @@ NOANIM = ('<style id="android-noanim">'
   'html.lite body .fade-in,html.lite body .grid>*,html.lite body #view-quiz,html.lite body #view-results,html.lite body #view-select,html.lite body #view-home{transform:none!important}'
   '</style>')
 html = html.replace('</body>', NOANIM + '</body>')
+# --- tap feedback: a light "press" (tiny shrink + slight dim) on everything you can tap, like other apps. Transform/opacity only = cheap.
+PRESS = ('<style id="android-press">'
+  'html.lite body :is(button,[role=button],a[href],a[onclick],.act,summary,label[for],.guest,.btn){-webkit-tap-highlight-color:rgba(0,0,0,0)!important;transition:transform .12s ease-out,opacity .12s ease-out!important;touch-action:manipulation}'
+  'html.lite body :is(button,[role=button],a[href],a[onclick],.act,summary,label[for],.guest,.btn):active{transform:scale(.95)!important;opacity:.86!important}'
+  'html.lite body :is(#options-container [role=button],#test-grid>button,#pma-grid>button,#fa-grid>button,#hk-grid>button,#sec-menu .grid>button,.dash .act,#review-list-container button,#hk-grid button):active{transform:scale(.975)!important;opacity:.9!important}'
+  'html.lite body :is(#question-palette button,#palette button):active{transform:scale(.9)!important}'
+  '</style><script>document.addEventListener("touchstart",function(){},{passive:true});</script>')
+html = html.replace('</body>', PRESS + '</body>')
 assert 'cdn.tailwindcss.com' not in html and 'googleapis' not in html and 'cloudflare' not in html and 'netlify/scripts' not in html
 open(os.path.join(WWW, 'index.html'), 'w', encoding='utf8').write(html)
 shutil.copy(os.path.join(HERE, 'error.html'), os.path.join(WWW, 'error.html'))

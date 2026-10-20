@@ -79,3 +79,6 @@ See the end of this file for the final table.
 - Android 15+: the page is now drawn behind the status bar, so the page's own background (login gradient, header white / indigo, day or night) reaches the very top - no separate coloured strip. The app passes the bar height to the page as CSS `--sat`; header, theme button, login brand/card and search box start below it. Status-bar icons switch light/dark with the page colour.
 - Older Android (14 and below): the bar is still painted with the page's top colour (previous behaviour).
 - Checked in a desktop browser with a 28 px bar; native part compiled, not seen on a phone.
+
+## v1.0.11 - tap feedback back
+- Every tappable thing (buttons, option cards, test cards, category tiles, palette numbers, login buttons) gives a light press effect: shrinks slightly (2.5% for big cards, 5% for buttons) and dims a little for 0.12 s while pressed. Transform/opacity only, so it stays smooth. Checked in a desktop browser on 7 element types.
