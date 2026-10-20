@@ -47,6 +47,23 @@ if os.path.exists(os.path.join(_p165, 'm_r1.py')):
             _seen165[_key] = len(Q)
             Q.append((_t[1], _t[2], _t[3], _t[4], _t[5], _t[6]))
 
+# friends' PMA 159 write-ups of October 2026 (pma166/): items.json holds how many write-ups asked each question;
+# a MATCH raises the repeat count of the existing MCQ by that number, NEW MCQs are appended (they fill the last part to 50, then start new parts of 50)
+_p166 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma166')
+if os.path.exists(os.path.join(_p166, 'items.json')):
+    import glob as _gl, json as _js, runpy as _rp4
+    _cnt166 = {_i['id']: _i['count'] for _i in _js.load(open(os.path.join(_p166, 'items.json'), encoding='utf8'))}
+    _drop166 = set()
+    _dp = os.path.join(_p166, 'drop.json')
+    if os.path.exists(_dp): _drop166 = set(_js.load(open(_dp)))
+    for _f in sorted(_gl.glob(os.path.join(_p166, 'm_s*.py'))):
+        _m = _rp4.run_path(_f)
+        for _n, _idx in _m['MATCH']:
+            _t = list(Q[_idx]); _t[5] = _t[5] + _cnt166[_n]; Q[_idx] = tuple(_t)
+        for _t in _m['NEW']:
+            if _t[0] in _drop166: continue
+            Q.append((_t[1], _t[2], _t[3], _t[4], _t[5], _t[6]))
+
 src, out = sys.argv[1], sys.argv[2]
 s = open(src, encoding='utf8').read()
 
