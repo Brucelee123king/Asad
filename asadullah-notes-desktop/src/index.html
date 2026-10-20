@@ -1,0 +1,1660 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=3c8124bb-0212-41c3-984a-79e89f7d5797
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4f46e5">
+    <meta name="description" content="A focused 100-question MCQ practice assessment with timer, progress tracking and answer review.">
+    <title>Asadullah Notes – MCQ Tests 1 to 1000</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="vendor/tailwind.js"></script>
+    <!-- Google Fonts Inter -->
+    <link rel="icon" href="icon.png">
+    <link href="vendor/fonts.css" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="vendor/fa/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        .fade-in {
+            animation: fadeIn 0.3s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        html { scroll-behavior: smooth; }
+        body { min-height: 100vh; }
+        button, [role="button"] { -webkit-tap-highlight-color: transparent; }
+        button:focus-visible, [role="button"]:focus-visible {
+            outline: 3px solid #818cf8; outline-offset: 3px;
+        }
+        .option-card { min-height: 58px; }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+        }
+    </style>
+    <style>
+        @media (max-width: 1023px) {
+            #quiz-nav { position: sticky; bottom: 0; background: #fff; z-index: 20; margin-left: -1rem; margin-right: -1rem; padding: .75rem 1rem; border-top: 1px solid #f1f5f9; box-shadow: 0 -6px 12px -8px rgba(0,0,0,.18); }
+        }
+        @media (min-width: 640px) and (max-width: 1023px) {
+            #quiz-nav { margin-left: -2rem; margin-right: -2rem; padding-left: 2rem; padding-right: 2rem; }
+        }
+    </style>
+    <style>
+            background:radial-gradient(circle at 50% 20%,#2a2a2a 0%,#000000 65%);overflow:hidden;transition:opacity .7s ease,visibility .7s}
+        @keyframes floaty{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(30px,25px) scale(1.15)}}
+        @keyframes pop{from{transform:scale(.2) rotate(-25deg);opacity:0}to{transform:scale(1) rotate(0);opacity:1}}
+        @keyframes glow{0%,100%{box-shadow:0 0 0 rgba(197,167,90,0)}50%{box-shadow:0 0 34px rgba(197,167,90,.55)}}
+        @keyframes rise{to{opacity:1;transform:none}}
+        @keyframes write{to{clip-path:inset(0 0 0 0)}}
+        @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans h-full flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
+
+    <!-- Top Navigation Header -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-indigo-600 flex items-center justify-center text-white shadow-md shadow-indigo-200">
+                    <i class="fa-solid fa-graduation-cap text-lg"></i>
+                </div>
+                <div>
+                    <h1 class="font-bold text-slate-900 text-base sm:text-lg tracking-tight">Asadullah Notes</h1>
+                    <p class="text-xs text-slate-500 hidden sm:block">Advanced Competitive Exam Preparation Assessment</p>
+                </div>
+            </div>
+            <div id="header-timer-container" class="hidden items-center space-x-2 bg-amber-50 border border-amber-200 px-3 py-1.5 rounded-full text-amber-700 font-medium text-sm">
+                <i class="fa-solid fa-clock animate-pulse"></i>
+                <span id="timer-display">20:00</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Application Container -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 flex flex-col">
+
+        <!-- VIEW 0: TEST SELECTION -->
+        <div id="view-select" class="fade-in max-w-5xl mx-auto w-full">
+            <div class="bg-gradient-to-r from-indigo-600 to-violet-600 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mb-6 shadow-xl">
+                <span class="inline-block bg-white/20 text-indigo-100 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">20 Tests &bull; 1000 MCQs</span>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Choose Your Test</h2>
+                <p class="text-indigo-100 text-sm sm:text-base">Original questions 1 to 1000, in 20 tests of 50 MCQs each, all questions included.</p>
+            </div>
+            <div id="test-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            <div class="bg-gradient-to-r from-emerald-700 to-teal-600 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
+                <span class="inline-block bg-white/20 text-emerald-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">7 Tests &bull; 339 MCQs</span>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">PMA 159 Long Course &ndash; Initial Test Practice</h2>
+                <p class="text-emerald-50 text-sm sm:text-base">Built from PMA 159 test experiences. Questions marked (Repeated in N tests) were reported in several experiences. Every answer comes with a reason.</p>
+            </div>
+            <div id="pma-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            <div class="bg-gradient-to-r from-amber-700 to-orange-600 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
+                <span class="inline-block bg-white/20 text-amber-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">16 Tests &bull; 771 MCQs</span>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Forces Academy Lahore &ndash; Intelligence and Academic Practice</h2>
+                <p class="text-amber-50 text-sm sm:text-base">Forces Academy intelligence tests 1 to 20 (verbal) and academic questions, in blocks of 50. Every answer shows a reason and a related fact.</p>
+            </div>
+            <div id="fa-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            <div class="bg-gradient-to-r from-sky-700 to-cyan-500 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
+                <span class="inline-block bg-white/20 text-sky-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">132 Tests &bull; 6423 MCQs</span>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Hakeem Force Academy</h2>
+                <p class="text-sky-50 text-sm sm:text-base">Choose PMA All Experiences (PMA 149 to 157), Most Repeated MCQs, the Constitution of Pakistan or the 100 Most Repeated Questions. Every question is written only once. The number in brackets shows how many times that question was repeated. Every answer has a reason and a related fact, and current-affairs answers are updated to today.</p>
+            </div>
+            <div id="hk-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            <div class="bg-gradient-to-r from-violet-700 to-fuchsia-600 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
+                <span class="inline-block bg-white/20 text-violet-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">5 Tests &bull; 205 MCQs</span>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">PMA 158 Long Course</h2>
+                <p class="text-violet-50 text-sm sm:text-base">MCQs from the PMA 158 Long Course test experiences, in tests of 50 MCQs. Every answer shows a reason and a related fact, and current-affairs answers are updated to today.</p>
+            </div>
+            <div id="lc-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+        </div>
+
+        <!-- VIEW 1: HOME / DASHBOARD -->
+        <div id="view-home" class="hidden fade-in max-w-3xl mx-auto w-full my-auto bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden">
+            <div class="bg-gradient-to-r from-indigo-600 to-violet-600 px-6 py-8 sm:p-10 text-white text-center relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
+                <span class="inline-block bg-white/20 text-indigo-100 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3" id="home-badge">50 Hard MCQs</span>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Master Your Knowledge Assessment</h2>
+                <p id="home-desc" class="text-indigo-100 text-sm sm:text-base max-w-xl mx-auto">Challenge yourself with 50 hard MCQs.</p>
+            </div>
+            
+            <div class="p-6 sm:p-8 space-y-6">
+                <!-- Exam Details Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div class="bg-slate-50 border border-slate-200/80 rounded-xl p-4 text-center">
+                        <div class="text-indigo-600 text-xl mb-1"><i class="fa-solid fa-list-check"></i></div>
+                        <div class="text-xs text-slate-500 font-medium">Total Questions</div>
+                        <div id="info-total" class="text-lg font-bold text-slate-900">50 MCQs</div>
+                    </div>
+                    <div class="bg-slate-50 border border-slate-200/80 rounded-xl p-4 text-center">
+                        <div class="text-amber-600 text-xl mb-1"><i class="fa-solid fa-stopwatch"></i></div>
+                        <div class="text-xs text-slate-500 font-medium">Time Limit</div>
+                        <div id="info-time" class="text-lg font-bold text-slate-900">25 Minutes</div>
+                    </div>
+                    <div class="bg-slate-50 border border-slate-200/80 rounded-xl p-4 text-center">
+                        <div class="text-emerald-600 text-xl mb-1"><i class="fa-solid fa-layer-group"></i></div>
+                        <div class="text-xs text-slate-500 font-medium">Evaluation</div>
+                        <div class="text-lg font-bold text-slate-900">Instant Results</div>
+                    </div>
+                </div>
+
+                <!-- Instructions Notice -->
+                <div class="bg-slate-50 border-l-4 border-indigo-500 p-4 rounded-r-xl text-xs sm:text-sm text-slate-600 space-y-1">
+                    <p class="font-semibold text-slate-700"><i class="fa-solid fa-circle-info text-indigo-500 mr-1.5"></i> Important Instructions:</p>
+                    <p>• You can navigate between questions using the question palette or Previous/Next buttons.</p>
+                    <p>• Unanswered questions will be marked as incorrect upon submission.</p>
+                    <p id="info-timer-note">• The quiz will auto-submit when the 25-minute timer expires.</p>
+                </div>
+
+                <button type="button" onclick="showSelect()" class="w-full border border-slate-300 hover:bg-slate-100 text-slate-700 font-semibold py-2.5 px-6 rounded-xl text-sm transition"><i class="fa-solid fa-arrow-left mr-1.5"></i> All Tests</button>
+                <button id="start-quiz-btn" type="button" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3.5 px-6 rounded-xl transition duration-200 shadow-lg shadow-indigo-200 flex items-center justify-center space-x-2 text-base">
+                    <span>Start Quiz Now</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- VIEW 2: QUIZ INTERACTIVE INTERFACE -->
+        <div id="view-quiz" class="hidden fade-in flex-grow flex flex-col lg:grid lg:grid-cols-12 lg:gap-8">
+            
+            <!-- Left/Main Question Area -->
+            <div class="lg:col-span-8 flex flex-col space-y-6">
+                <div class="bg-white p-4 sm:p-5 rounded-2xl shadow-sm border border-slate-200/80 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
+                    <div class="flex items-center space-x-3">
+                        <span id="active-category-badge" class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">General Knowledge</span>
+                        <span class="text-xs font-medium text-slate-400">Question <span id="current-q-num" class="font-bold text-slate-700">1</span> of <span id="q-total">100</span></span>
+                    </div>
+                    <div class="w-full sm:w-40 bg-slate-100 h-2 rounded-full overflow-hidden">
+                        <div id="progress-bar-fill" class="bg-indigo-600 h-full transition-all duration-300" style="width: 2%;"></div>
+                    </div>
+                </div>
+
+                <!-- Question Card -->
+                <div class="bg-white p-4 sm:p-8 rounded-2xl shadow-sm border border-slate-200/85 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h2 id="question-text" class="text-lg sm:text-xl font-bold text-slate-900 leading-snug mb-4 sm:mb-6">
+                            Loading question...
+                        </h2>
+                        <div id="options-container" class="space-y-2 sm:space-y-3" role="group" aria-label="Answer options">
+                            <!-- Options populated via JS -->
+                        </div>
+                    </div>
+
+                    <div id="quiz-nav" class="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-slate-100 flex items-center justify-between gap-4">
+                        <button onclick="prevQuestion()" id="btn-prev" class="px-4 py-2.5 rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-50 font-medium text-sm transition flex items-center space-x-2 disabled:opacity-40 disabled:cursor-not-allowed">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <span>Previous</span>
+                        </button>
+
+                        <div class="flex items-center space-x-3">
+                            <button onclick="clearSelection()" style="display:none" class="text-xs text-slate-500 hover:text-rose-600 font-medium px-3 py-2 transition">
+                                <i class="fa-solid fa-rotate-left mr-1"></i> Clear Choice
+                            </button>
+                            <button onclick="nextQuestion()" id="btn-next" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-6 py-2.5 rounded-xl text-sm transition shadow-md shadow-indigo-100 flex items-center space-x-2">
+                                <span id="btn-next-text">Next</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Sidebar: Question Palette & Controls -->
+            <div class="lg:col-span-4 mt-6 lg:mt-0 flex flex-col space-y-6">
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex items-center justify-between">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-hourglass-half"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-500 font-medium">Time Remaining</div>
+                            <div id="sidebar-timer" class="text-xl font-bold text-slate-900">10:00</div>
+                        </div>
+                    </div>
+                    <button onclick="confirmSubmitQuiz()" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition shadow-sm">
+                        Submit Quiz
+                    </button>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200/80 flex-grow flex flex-col">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="font-bold text-sm text-slate-900">Question Palette</h3>
+                        <div class="flex items-center space-x-3 text-[11px] text-slate-500 font-medium">
+                            <span class="flex items-center"><span class="w-2.5 h-2.5 rounded-full bg-indigo-600 inline-block mr-1"></span> Answered</span>
+                            <span class="flex items-center"><span class="w-2.5 h-2.5 rounded-full bg-slate-200 inline-block mr-1"></span> Unanswered</span>
+                        </div>
+                    </div>
+                    <div id="palette-grid" class="grid grid-cols-5 gap-2.5 max-h-[360px] overflow-y-auto p-1" aria-label="Question navigation">
+                        <!-- Palette Buttons -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIEW 3: RESULTS SUMMARY DASHBOARD -->
+        <div id="view-results" class="hidden fade-in max-w-4xl mx-auto w-full my-auto space-y-6">
+            <div class="bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden">
+                <div class="bg-gradient-to-r from-slate-900 to-indigo-900 p-8 text-white text-center relative">
+                    <div class="w-16 h-16 bg-emerald-500/20 text-emerald-400 rounded-2xl border border-emerald-500/30 flex items-center justify-center text-3xl mx-auto mb-4 shadow-lg">
+                        <i id="result-trophy-icon" class="fa-solid fa-trophy"></i>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-1">Assessment Completed!</h2>
+                    <p class="text-slate-300 text-sm">Here is your comprehensive performance breakdown</p>
+                    
+                    <div class="mt-6 inline-flex items-center bg-white/10 backdrop-blur-md px-6 py-2.5 rounded-full border border-white/10">
+                        <span class="text-xs text-slate-300 mr-2 uppercase tracking-wider">Final Score:</span>
+                        <span id="result-score-text" class="text-xl font-bold text-emerald-400">0 / 100</span>
+                        <span id="result-percentage-text" class="ml-3 text-xs bg-emerald-500 text-white font-bold px-2.5 py-1 rounded-md">0%</span>
+                    </div>
+                    <div id="result-pass-status" class="mt-4 inline-flex items-center rounded-full px-6 py-2 text-lg font-extrabold tracking-widest bg-rose-500 text-white shadow-lg">FAIL</div>
+                </div>
+
+                <div class="p-6 sm:p-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-b border-slate-100">
+                    <div class="bg-emerald-50 border border-emerald-100 rounded-xl p-4 flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500 text-white flex items-center justify-center text-xl shadow-md shadow-emerald-200">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-emerald-700 font-medium">Correct Answers</div>
+                            <div id="stat-correct" class="text-2xl font-bold text-emerald-900">0</div>
+                        </div>
+                    </div>
+                    <div class="bg-rose-50 border border-rose-100 rounded-xl p-4 flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-rose-500 text-white flex items-center justify-center text-xl shadow-md shadow-rose-200">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-rose-700 font-medium">Incorrect / Unanswered</div>
+                            <div id="stat-incorrect" class="text-2xl font-bold text-rose-900">0</div>
+                        </div>
+                    </div>
+                    <div class="bg-indigo-50 border border-indigo-100 rounded-xl p-4 flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-500 text-white flex items-center justify-center text-xl shadow-md shadow-indigo-200">
+                            <i class="fa-solid fa-stopwatch"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-indigo-700 font-medium">Time Taken</div>
+                            <div id="stat-time" class="text-2xl font-bold text-indigo-900">00:00</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 sm:p-8 bg-slate-50 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <button onclick="showSelect()" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-sm transition"><i class="fa-solid fa-list mr-1.5"></i> All Tests</button>
+                    <button onclick="restartQuiz()" class="w-full sm:w-auto px-6 py-3 rounded-xl border border-slate-300 hover:bg-slate-100 text-slate-700 font-semibold text-sm transition flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-arrow-rotate-left"></i>
+                        <span>Retake Assessment</span>
+                    </button>
+                    <button onclick="openReviewModal()" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-xl text-sm transition shadow-lg shadow-indigo-100 flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-book-open"></i>
+                        <span>Review All Answers & Explanations</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Review Section -->
+            <div id="review-section" class="bg-white rounded-2xl shadow-xl border border-slate-100 p-6 sm:p-8 space-y-6">
+                <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900">Detailed Answer Review</h3>
+                        <p class="text-xs text-slate-500">Examine correct answers and review notes for all questions.</p>
+                    </div>
+                    <div class="flex space-x-2">
+                        <button onclick="filterReview('all')" id="rev-filter-all" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-600 text-white transition">All</button>
+                        <button onclick="filterReview('incorrect')" id="rev-filter-incorrect" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200 transition">Incorrect Only</button>
+                    </div>
+                </div>
+                <div id="review-list-container" class="space-y-4">
+                    <!-- Review items populated dynamically -->
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Custom Confirmation Modal -->
+    <div id="modal-submit-confirm" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-100 fade-in space-y-4">
+            <div class="w-12 h-12 rounded-full bg-amber-50 text-amber-600 flex items-center justify-center text-xl mx-auto font-bold">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <div class="text-center space-y-1">
+                <h3 class="text-lg font-bold text-slate-900">Ready to Submit Quiz?</h3>
+                <p id="submit-confirm-msg" class="text-xs sm:text-sm text-slate-500">Are you sure you want to finish?</p>
+            </div>
+            <div class="flex space-x-3 pt-2">
+                <button onclick="closeSubmitModal()" class="flex-1 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold py-2.5 rounded-xl text-sm transition">Continue Quiz</button>
+                <button onclick="executeSubmitQuiz()" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2.5 rounded-xl text-sm transition shadow-md shadow-emerald-100">Yes, Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Credit Line -->
+    <footer class="bg-white border-t border-slate-200 py-4 px-4 text-center">
+        <p class="text-xs sm:text-sm font-semibold text-slate-600 mb-1">This test belongs to <span class="text-indigo-600 font-bold">Asadullah Notes</span> &copy; All rights reserved</p>
+        <span class="creator-credit">Software Created by Admin Asadullah</span>
+    </footer>
+    <style>
+        .creator-credit { display:inline-block; font-size:13px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; background:linear-gradient(90deg,#6366f1,#ec4899,#f59e0b,#6366f1); background-size:300% auto; color:transparent; -webkit-background-clip:text; background-clip:text; animation:creditShine 3s linear infinite; }
+        @keyframes creditShine { to { background-position:300% center; } }
+        @media (prefers-reduced-motion: reduce) { .creator-credit { animation:none; } }
+    </style>
+
+    <!-- JavaScript Application Logic with 50 Custom MCQs -->
+<script src="data.js"></script>
+    <script>
+
+        let currentQuestionIndex = 0;
+        let userAnswers = new Array(quizData.length).fill(null);
+        let timerInterval = null;
+        let timeRemaining = 1200;
+        let quizActive = false;
+        let reviewFilterState = 'all';
+
+        const viewHome = document.getElementById('view-home');
+        const viewQuiz = document.getElementById('view-quiz');
+        const viewResults = document.getElementById('view-results');
+        const headerTimerContainer = document.getElementById('header-timer-container');
+        const timerDisplay = document.getElementById('timer-display');
+        const sidebarTimer = document.getElementById('sidebar-timer');
+        const progressBarFill = document.getElementById('progress-bar-fill');
+        const currentQNum = document.getElementById('current-q-num');
+        const questionText = document.getElementById('question-text');
+        const optionsContainer = document.getElementById('options-container');
+        const btnPrev = document.getElementById('btn-prev');
+        const btnNext = document.getElementById('btn-next');
+        const btnNextText = document.getElementById('btn-next-text');
+        const paletteGrid = document.getElementById('palette-grid');
+        const modalSubmitConfirm = document.getElementById('modal-submit-confirm');
+        const submitConfirmMsg = document.getElementById('submit-confirm-msg');
+        const reviewSection = document.getElementById('review-section');
+
+        function initApp() {
+            renderPalette();
+        }
+
+        function startQuiz() {
+            if (quizActive) return;
+            if (timerInterval) clearInterval(timerInterval);
+            userAnswers = new Array(quizData.length).fill(null);
+            renderPalette();
+            viewHome.classList.add('hidden');
+            viewQuiz.classList.remove('hidden');
+            headerTimerContainer.classList.remove('hidden');
+            headerTimerContainer.classList.add('flex');
+            
+            quizActive = true;
+            currentQuestionIndex = 0;
+            
+            loadQuestion(currentQuestionIndex);
+            startTimer();
+        }
+
+        function startTimer() {
+            timeRemaining = TEST_SECS;
+            updateTimerDisplays();
+            
+            timerInterval = setInterval(() => {
+                timeRemaining--;
+                updateTimerDisplays();
+                
+                if (timeRemaining <= 0) {
+                    clearInterval(timerInterval);
+                    autoSubmitQuiz();
+                }
+            }, 1000);
+        }
+
+        function updateTimerDisplays() {
+            const minutes = Math.floor(timeRemaining / 60);
+            const seconds = timeRemaining % 60;
+            const formatted = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+            timerDisplay.textContent = formatted;
+            sidebarTimer.textContent = formatted;
+            
+            if (timeRemaining < 120) {
+                headerTimerContainer.classList.remove('bg-amber-50', 'border-amber-200', 'text-amber-700');
+                headerTimerContainer.classList.add('bg-rose-50', 'border-rose-200', 'text-rose-700');
+            }
+        }
+
+        function loadQuestion(index) {
+            const q = quizData[index];
+            currentQNum.textContent = index + 1;
+            questionText.textContent = q.question;
+            
+            const progressPct = ((index + 1) / quizData.length) * 100;
+            progressBarFill.style.width = `${progressPct}%`;
+
+            optionsContainer.innerHTML = '';
+            q.options.forEach((opt, optIndex) => {
+                const isSelected = userAnswers[index] === optIndex;
+                const answered = userAnswers[index] !== null;
+                const isCorrectOpt = optIndex === q.correct;
+                let stateCls;
+                if (answered && isCorrectOpt) stateCls = 'bg-emerald-50 border-emerald-500 text-emerald-900 shadow-sm';
+                else if (answered && isSelected) stateCls = 'bg-rose-50 border-rose-500 text-rose-900 shadow-sm';
+                else if (answered) stateCls = 'bg-white border-slate-200 text-slate-400 opacity-70';
+                else stateCls = 'bg-white border-slate-200 hover:border-slate-300 text-slate-700 hover:bg-slate-50';
+                const optionCard = document.createElement('div');
+                optionCard.className = `p-3 sm:p-4 rounded-xl border transition ${answered ? 'cursor-default' : 'cursor-pointer'} flex items-center space-x-3 ${stateCls}`;
+                optionCard.setAttribute("role", "button");
+                optionCard.setAttribute("tabindex", "0");
+                optionCard.setAttribute("aria-pressed", String(isSelected));
+                optionCard.onkeydown = (event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); selectOption(index, optIndex); } };
+                optionCard.onclick = () => selectOption(index, optIndex);
+
+                optionCard.innerHTML = `
+                    <div class="w-6 h-6 rounded-full border flex items-center justify-center text-xs font-bold transition ${
+                        answered && isCorrectOpt ? 'bg-emerald-600 border-emerald-600 text-white'
+                        : answered && isSelected ? 'bg-rose-600 border-rose-600 text-white'
+                        : 'border-slate-300 text-slate-500'
+                    }">
+                        ${String.fromCharCode(65 + optIndex)}
+                    </div>
+                    <div class="flex-grow text-sm sm:text-base font-medium">${opt}</div>
+                    ${answered && isCorrectOpt ? '<i class="fa-solid fa-circle-check text-emerald-600"></i>' : (answered && isSelected ? '<i class="fa-solid fa-circle-xmark text-rose-600"></i>' : '')}
+                `;
+                optionsContainer.appendChild(optionCard);
+            });
+
+            if (userAnswers[index] !== null) {
+                const ok = userAnswers[index] === q.correct;
+                const fb = document.createElement('div');
+                fb.className = `mt-1 p-3 rounded-xl text-sm font-semibold ${ok ? 'bg-emerald-100 text-emerald-800' : 'bg-rose-100 text-rose-800'}`;
+                fb.textContent = ok ? '✓ Correct answer!' : `✗ Wrong answer. Correct answer: ${String.fromCharCode(65 + q.correct)}) ${q.options[q.correct]}`;
+                optionsContainer.appendChild(fb);
+                if (q.pma && !ok) { const wy = document.createElement('div'); wy.className = 'mt-2 p-3 rounded-xl text-sm bg-rose-50 text-rose-800'; wy.innerHTML = '<b>Why your choice is wrong:</b> '; wy.appendChild(document.createTextNode('You chose ' + String.fromCharCode(65 + userAnswers[index]) + ') ' + q.options[userAnswers[index]] + '. That option does not answer this question correctly.')); optionsContainer.appendChild(wy); }
+                if (q.facts) { const ff = document.createElement('div'); ff.className = q.pma ? 'mt-2 p-3 rounded-xl text-sm bg-emerald-50 text-emerald-900' : 'mt-2 p-3 rounded-xl text-xs sm:text-sm bg-slate-100 text-slate-600'; ff.innerHTML = q.pma ? '<b>Why ' + String.fromCharCode(65 + q.correct) + ') ' + q.options[q.correct] + ' is correct:</b> ' : '<b class="text-slate-700">Related facts:</b> '; ff.appendChild(document.createTextNode(q.facts)); optionsContainer.appendChild(ff); }
+                if (q.rel) { const rf = document.createElement('div'); rf.className = 'mt-2 p-3 rounded-xl text-xs sm:text-sm bg-slate-100 text-slate-700'; rf.innerHTML = '<b>Related fact:</b> '; rf.appendChild(document.createTextNode(q.rel)); optionsContainer.appendChild(rf); }
+            }
+
+            btnPrev.disabled = index === 0;
+            if (index === quizData.length - 1) {
+                btnNextText.textContent = "Finish & Submit";
+            } else {
+                btnNextText.textContent = "Next";
+            }
+
+            updatePaletteUI();
+        }
+
+        function selectOption(qIndex, optIndex) {
+            if (userAnswers[qIndex] !== null) return; // answer locked after first click
+            userAnswers[qIndex] = optIndex;
+            loadQuestion(qIndex);
+            updatePaletteUI();
+        }
+
+        function clearSelection() {
+            return; // disabled: answers are checked instantly and locked
+            userAnswers[currentQuestionIndex] = null;
+            loadQuestion(currentQuestionIndex);
+            updatePaletteUI();
+        }
+
+        function nextQuestion() {
+            if (currentQuestionIndex < quizData.length - 1) {
+                currentQuestionIndex++;
+                loadQuestion(currentQuestionIndex);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else {
+                confirmSubmitQuiz();
+            }
+        }
+
+        function prevQuestion() {
+            if (currentQuestionIndex > 0) {
+                currentQuestionIndex--;
+                loadQuestion(currentQuestionIndex);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        function jumpToQuestion(index) {
+            currentQuestionIndex = index;
+            loadQuestion(currentQuestionIndex);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function renderPalette() {
+            paletteGrid.innerHTML = '';
+            quizData.forEach((_, idx) => {
+                const btn = document.createElement('button');
+                btn.id = `palette-btn-${idx}`;
+                btn.className = `h-9 rounded-lg text-xs font-bold transition border flex items-center justify-center ${
+                    userAnswers[idx] !== null 
+                        ? 'bg-indigo-600 text-white border-indigo-600 shadow-sm' 
+                        : 'bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200'
+                }`;
+                btn.textContent = idx + 1;
+                btn.onclick = () => jumpToQuestion(idx);
+                paletteGrid.appendChild(btn);
+            });
+        }
+
+        function updatePaletteUI() {
+            quizData.forEach((_, idx) => {
+                const btn = document.getElementById(`palette-btn-${idx}`);
+                if (!btn) return;
+                
+                const isCurrent = idx === currentQuestionIndex;
+                const isAnswered = userAnswers[idx] !== null;
+
+                if (isCurrent) {
+                    btn.className = `h-9 rounded-lg text-xs font-bold transition border ring-2 ring-indigo-400 flex items-center justify-center ${
+                        isAnswered ? 'bg-indigo-700 text-white border-indigo-700' : 'bg-indigo-50 text-indigo-700 border-indigo-300'
+                    }`;
+                } else if (isAnswered) {
+                    btn.className = 'h-9 rounded-lg text-xs font-bold transition border bg-indigo-600 text-white border-indigo-600';
+                } else {
+                    btn.className = 'h-9 rounded-lg text-xs font-bold transition border bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200';
+                }
+                if (isAnswered) {
+                    const good = userAnswers[idx] === quizData[idx].correct;
+                    btn.className = `h-9 rounded-lg text-xs font-bold transition border flex items-center justify-center text-white ${good ? 'bg-emerald-600 border-emerald-600' : 'bg-rose-600 border-rose-600'}${isCurrent ? ' ring-2 ring-indigo-400' : ''}`;
+                }
+            });
+        }
+
+        function confirmSubmitQuiz() {
+            const answeredCount = userAnswers.filter(ans => ans !== null).length;
+            submitConfirmMsg.textContent = `You have answered ${answeredCount} out of ${quizData.length} questions. Are you sure you want to finish and view your results?`;
+            modalSubmitConfirm.classList.remove('hidden');
+        }
+
+        function closeSubmitModal() {
+            modalSubmitConfirm.classList.add('hidden');
+        }
+
+        function executeSubmitQuiz() {
+            closeSubmitModal();
+            if (timerInterval) clearInterval(timerInterval);
+            quizActive = false;
+            headerTimerContainer.classList.add('hidden');
+            viewQuiz.classList.add('hidden');
+            viewResults.classList.remove('hidden');
+            
+            computeAndDisplayResults();
+        }
+
+        function autoSubmitQuiz() {
+            quizActive = false;
+            headerTimerContainer.classList.add('hidden');
+            viewQuiz.classList.add('hidden');
+            viewResults.classList.remove('hidden');
+            
+            computeAndDisplayResults();
+        }
+
+        function computeAndDisplayResults() {
+            let correctCount = 0;
+            quizData.forEach((q, idx) => {
+                if (userAnswers[idx] === q.correct) correctCount++;
+            });
+
+            const incorrectCount = quizData.length - correctCount;
+            const percentage = Math.round((correctCount / quizData.length) * 100);
+            try { const bk = 'mc_best_' + currentTestKey; const old = parseInt(localStorage.getItem(bk) || '-1', 10); if (percentage > old) localStorage.setItem(bk, String(percentage)); } catch (e) {}
+
+            document.getElementById('result-score-text').textContent = `${correctCount} / ${quizData.length}`;
+            document.getElementById('result-percentage-text').textContent = `${percentage}%`;
+            const passStatus = document.getElementById('result-pass-status');
+            const passed = correctCount >= 25;
+            passStatus.textContent = passed ? 'PASS' : 'FAIL';
+            passStatus.className = `mt-4 inline-flex items-center rounded-full px-6 py-2 text-lg font-extrabold tracking-widest shadow-lg ${passed ? 'bg-emerald-500 text-white' : 'bg-rose-500 text-white'}`;
+            document.getElementById('stat-correct').textContent = correctCount;
+            document.getElementById('stat-incorrect').textContent = incorrectCount;
+
+            const elapsedSeconds = TEST_SECS - timeRemaining;
+            const mins = Math.floor(elapsedSeconds / 60);
+            const secs = elapsedSeconds % 60;
+            document.getElementById('stat-time').textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+
+            renderReviewList('all');
+        }
+
+        function renderReviewList(filter) {
+            const reviewContainer = document.getElementById('review-list-container');
+            reviewContainer.innerHTML = '';
+
+            quizData.forEach((q, idx) => {
+                const userAns = userAnswers[idx];
+                const isCorrect = userAns === q.correct;
+
+                if (filter === 'incorrect' && isCorrect) return;
+
+                const card = document.createElement('div');
+                card.className = `p-5 rounded-xl border ${isCorrect ? 'bg-emerald-50/40 border-emerald-200' : 'bg-rose-50/40 border-rose-200'} space-y-3`;
+                
+                let optionsHtml = '';
+                q.options.forEach((opt, optIdx) => {
+                    let badgeClass = 'border border-slate-200 bg-white text-slate-700';
+                    let iconHtml = '';
+
+                    if (optIdx === q.correct) {
+                        badgeClass = 'bg-emerald-100 border-emerald-400 text-emerald-900 font-semibold';
+                        iconHtml = '<i class="fa-solid fa-check text-emerald-600 ml-auto"></i>';
+                    } else if (optIdx === userAns && !isCorrect) {
+                        badgeClass = 'bg-rose-100 border-rose-400 text-rose-900 font-semibold';
+                        iconHtml = '<i class="fa-solid fa-xmark text-rose-600 ml-auto"></i>';
+                    }
+
+                    optionsHtml += `
+                        <div class="p-2.5 rounded-lg text-xs sm:text-sm flex items-center space-x-2 ${badgeClass}">
+                            <span class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold bg-slate-200/80 text-slate-700">${String.fromCharCode(65 + optIdx)}</span>
+                            <span>${opt}</span>
+                            ${iconHtml}
+                        </div>
+                    `;
+                });
+
+                card.innerHTML = `
+                    <div class="flex items-start justify-between gap-2">
+                        <span class="text-xs font-bold px-2 py-0.5 rounded bg-slate-200 text-slate-700">Q${idx + 1}</span>
+                        <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full ${isCorrect ? 'bg-emerald-100 text-emerald-800' : 'bg-rose-100 text-rose-800'}">
+                            ${isCorrect ? 'Correct' : (userAns === null ? 'Unanswered' : 'Incorrect')}
+                        </span>
+                    </div>
+                    <div class="font-bold text-slate-900 text-sm sm:text-base">${q.question}</div>
+                    <div class="space-y-1.5 pt-1">${optionsHtml}</div>
+                    ${q.pma ? '<div class="p-3 rounded-lg text-xs sm:text-sm bg-emerald-50 text-emerald-900"><b>Reason:</b> ' + q.facts + '</div>' : ''}
+                    ${q.rel ? '<div class="p-3 rounded-lg text-xs sm:text-sm bg-slate-100 text-slate-700"><b>Related fact:</b> ' + q.rel + '</div>' : ''}
+                `;
+                reviewContainer.appendChild(card);
+            });
+        }
+
+        function filterReview(filter) {
+            reviewFilterState = filter;
+            const btnAll = document.getElementById('rev-filter-all');
+            const btnInc = document.getElementById('rev-filter-incorrect');
+
+            if (filter === 'all') {
+                btnAll.className = 'px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-600 text-white transition';
+                btnInc.className = 'px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200 transition';
+            } else {
+                btnInc.className = 'px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-600 text-white transition';
+                btnAll.className = 'px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600 hover:bg-slate-200 transition';
+            }
+
+            renderReviewList(filter);
+        }
+
+        function openReviewModal() {
+            reviewSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function restartQuiz() {
+            userAnswers = new Array(quizData.length).fill(null);
+            viewResults.classList.add('hidden');
+            viewHome.classList.remove('hidden');
+            renderPalette();
+        }
+
+        function renderSelect() {
+            const grid = document.getElementById('test-grid');
+            grid.innerHTML = Object.keys(ALL).filter(k => !isExtra(k)).map((k, i) => {
+                let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
+                const label = k.replace('-', ' – ');
+                return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-indigo-400 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full">Test ${i + 1}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
+                    <div class="text-xl font-bold text-slate-900">Questions ${label}</div>
+                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * SEC_PER_MCQ) / 60))} Minutes &bull; Instant feedback</div>
+                    <div class="text-sm font-semibold text-indigo-600">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+            }).join('');
+        }
+        function renderPMA() {
+            const g = document.getElementById('pma-grid');
+            g.innerHTML = Object.keys(ALL).filter(isPMA).map((k, i) => {
+                let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
+                const secs = [...new Set(ALL[k].map(q => q.sec))].join(' &bull; ');
+                return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-emerald-500 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full">PMA Test ${i + 1}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
+                    <div class="text-xl font-bold text-slate-900">PMA 159 &ndash; Part ${i + 1}</div>
+                    <div class="text-xs text-slate-500">${secs}</div>
+                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * SEC_PER_MCQ) / 60))} Minutes &bull; Instant feedback</div>
+                    <div class="text-sm font-semibold text-emerald-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+            }).join('');
+        }
+        function renderFA() {
+            const g = document.getElementById('fa-grid');
+            g.innerHTML = Object.keys(ALL).filter(isFA).map((k, i) => {
+                let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
+                const secs = [...new Set(ALL[k].map(q => q.sec.replace('Forces Academy ', '')))].join(' &bull; ');
+                return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-amber-500 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full">FA Test ${i + 1}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
+                    <div class="text-xl font-bold text-slate-900">Forces Academy &ndash; Part ${i + 1}</div>
+                    <div class="text-xs text-slate-500">${secs}</div>
+                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * SEC_PER_MCQ) / 60))} Minutes &bull; Instant feedback</div>
+                    <div class="text-sm font-semibold text-amber-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+            }).join('');
+        }
+        function renderLC() {
+            const g = document.getElementById('lc-grid'); if (!g) return;
+            g.innerHTML = Object.keys(ALL).filter(isLC).map((k, i) => {
+                let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
+                const secs = [...new Set(ALL[k].map(q => q.sec))].join(' &bull; ');
+                return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-violet-500 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="bg-violet-100 text-violet-800 text-xs font-bold px-3 py-1 rounded-full">PMA 158 &bull; Test ${i + 1}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
+                    <div class="text-xl font-bold text-slate-900">PMA 158 Long Course &ndash; Part ${i + 1}</div>
+                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * SEC_PER_MCQ) / 60))} Minutes &bull; Instant feedback</div>
+                    <div class="text-sm font-semibold text-violet-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+            }).join('');
+        }
+        let hkSub = null;
+        function openHkSub(p) { hkSub = p; renderHK(); window.scrollTo(0, 0); }
+        function renderHK() {
+            const g = document.getElementById('hk-grid');
+            const ks = Object.keys(ALL).filter(isHK);
+            const bk = (to, label, title) => '<div class="col-span-full"><button type="button" onclick="openHkSub(' + to + ')" class="inline-flex items-center gap-2 bg-white border border-slate-200 hover:border-sky-400 text-slate-700 text-sm font-semibold px-4 py-2 rounded-full shadow-sm"><i class="fa-solid fa-arrow-left"></i> ' + label + '</button><div class="text-lg font-bold text-slate-900 mt-3">' + title + '</div></div>';
+            if (hkSub === null) {
+                const nAll = ks.reduce((t, k) => t + ALL[k].length, 0), mk = Object.keys(ALL).filter(isMR);
+                g.innerHTML = `<button type="button" onclick="openHkSub('all')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-sky-500 hover:shadow-lg transition p-6 flex flex-col gap-3">
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-medal text-2xl text-sky-600"></i><span class="text-xl font-bold text-slate-900">PMA All Experiences</span></div>
+                        <div class="text-xs text-slate-500">PMA 149 to 157 &bull; ${ks.length} Tests &bull; ${nAll} MCQs</div>
+                        <div class="text-sm font-semibold text-sky-700">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>
+                    <button type="button" onclick="openHkSub('rep')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-sky-500 hover:shadow-lg transition p-6 flex flex-col gap-3">
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-fire text-2xl text-sky-600"></i><span class="text-xl font-bold text-slate-900">Most Repeated MCQs</span></div>
+                        <div class="text-xs text-slate-500">${mk.length} Tests &bull; 500+ down to 5 repeats</div>
+                        <div class="text-sm font-semibold text-sky-700">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`
+                    + (Object.keys(ALL).some(isCN) ? `<button type="button" onclick="openHkSub('con')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-sky-500 hover:shadow-lg transition p-6 flex flex-col gap-3">
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-scale-balanced text-2xl text-sky-600"></i><span class="text-xl font-bold text-slate-900">Constitution of Pakistan</span></div>
+                        <div class="text-xs text-slate-500">1956, 1962 and 1973 &bull; ${Object.keys(ALL).filter(isCN).reduce((t, k) => t + ALL[k].length, 0)} MCQs in one test</div>
+                        <div class="text-sm font-semibold text-sky-700">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>` : '')
+                    + (Object.keys(ALL).some(isIV) ? `<button type="button" onclick="openHkSub('imp')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-sky-500 hover:shadow-lg transition p-6 flex flex-col gap-3">
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-star text-2xl text-sky-600"></i><span class="text-xl font-bold text-slate-900">100 Most Repeated Questions</span></div>
+                        <div class="text-xs text-slate-500">Most important verbal questions &bull; ${Object.keys(ALL).filter(isIV).reduce((t, k) => t + ALL[k].length, 0)} MCQs in one test</div>
+                        <div class="text-sm font-semibold text-sky-700">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>` : '');
+                return;
+            }
+            if (hkSub === 'all') {
+                g.innerHTML = bk('null', 'Hakeem Force Academy', 'PMA All Experiences') + [149, 150, 151, 152, 153, 154, 155, 156, 157].map(p => {
+                    const pk = ks.filter(k => HK_META[k].pma === p), n = pk.reduce((t, k) => t + ALL[k].length, 0);
+                    return `<button type="button" onclick="openHkSub(${p})" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-sky-500 hover:shadow-lg transition p-6 flex flex-col gap-3">
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-medal text-2xl text-sky-600"></i><span class="text-xl font-bold text-slate-900">PMA ${p} Experience</span></div>
+                        <div class="text-xs text-slate-500">${pk.length} Tests &bull; ${n} MCQs</div>
+                        <div class="text-sm font-semibold text-sky-700">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+                }).join('');
+                return;
+            }
+            if (hkSub === 'imp') {
+                g.innerHTML = bk('null', 'Hakeem Force Academy', '100 Most Repeated Questions') + Object.keys(ALL).filter(isIV).map(k => {
+                    let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
+                    const n = ALL[k].length, mins = Math.ceil(Math.max(60, n * SEC_PER_MCQ) / 60), nr = ALL[k].filter(q => (q.rep || 1) > 1).length;
+                    return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-sky-500 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="bg-sky-100 text-sky-800 text-xs font-bold px-3 py-1 rounded-full">100 Most Repeated</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
+                    <div class="text-xl font-bold text-slate-900">100 Most Repeated Verbal Questions</div>
+                    <div class="text-xs text-slate-500">${nr} MCQs show in brackets how many times they were repeated in the earlier tests</div>
+                    <div class="text-xs text-slate-500">${n} MCQs &bull; ${mins} Minutes (${SEC_PER_MCQ} seconds each) &bull; Instant feedback</div>
+                    <div class="text-sm font-semibold text-sky-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+                }).join('');
+                return;
+            }
+            if (hkSub === 'con') {
+                g.innerHTML = bk('null', 'Hakeem Force Academy', 'Constitution of Pakistan (1956, 1962, 1973)') + Object.keys(ALL).filter(isCN).map(k => {
+                    let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
+                    const n = ALL[k].length, mins = Math.ceil(Math.max(60, n * SEC_PER_MCQ) / 60), nr = ALL[k].filter(q => (q.rep || 1) > 1).length;
+                    return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-sky-500 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="bg-sky-100 text-sky-800 text-xs font-bold px-3 py-1 rounded-full">Constitution &bull; All MCQs</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
+                    <div class="text-xl font-bold text-slate-900">Constitution of Pakistan &ndash; 1956, 1962, 1973</div>
+                    <div class="text-xs text-slate-500">${nr} MCQs show a repeat number in brackets (asked before in the PMA experiences)</div>
+                    <div class="text-xs text-slate-500">${n} MCQs &bull; ${mins} Minutes (${SEC_PER_MCQ} seconds each) &bull; Instant feedback</div>
+                    <div class="text-sm font-semibold text-sky-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+                }).join('');
+                return;
+            }
+            if (hkSub === 'rep') {
+                g.innerHTML = bk('null', 'Hakeem Force Academy', 'Most Repeated MCQs') + Object.keys(ALL).filter(isMR).map(k => {
+                    let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
+                    const t = HK_META[k].thr, h = HK_META[k].hi, rng = h ? (t + ' to ' + h) : (t + '+'), n = ALL[k].length, mins = Math.ceil(n * SEC_PER_MCQ / 60);
+                    return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-sky-500 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="bg-sky-100 text-sky-800 text-xs font-bold px-3 py-1 rounded-full">Most Repeated &bull; ${rng}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
+                    <div class="text-xl font-bold text-slate-900">Repeated ${rng} times</div>
+                    <div class="text-xs text-slate-500">${n} MCQs &bull; ${mins} Minutes (${SEC_PER_MCQ} seconds each) &bull; Instant feedback</div>
+                    <div class="text-sm font-semibold text-sky-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+                }).join('');
+                return;
+            }
+            const bar = bk("'all'", 'PMA All Experiences', 'PMA ' + hkSub + ' Experience');
+            g.innerHTML = bar + ks.filter(k => HK_META[k].pma === hkSub).map(k => {
+                let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
+                const part = HK_META[k].part;
+                const reps = ALL[k].map(q => q.rep || 1), hi = Math.max.apply(null, reps), lo = Math.min.apply(null, reps);
+                const rtxt = hi > 1 ? ('Repeated ' + hi + (lo !== hi ? ' to ' + lo : '') + ' times') : 'Asked once each';
+                return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-sky-500 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="bg-sky-100 text-sky-800 text-xs font-bold px-3 py-1 rounded-full">PMA ${hkSub} &bull; Test ${part}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
+                    <div class="text-xl font-bold text-slate-900">PMA ${hkSub} Experience &ndash; Part ${part}</div>
+                    <div class="text-xs text-slate-500">${rtxt}</div>
+                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * SEC_PER_MCQ) / 60))} Minutes &bull; Instant feedback</div>
+                    <div class="text-sm font-semibold text-sky-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+            }).join('');
+        }
+        function selectTest(k) {
+            currentTestKey = k; quizData = ALL[k];
+            userAnswers = new Array(quizData.length).fill(null);
+            const label = k.replace('-', '–');
+            const nQ = quizData.length;
+            TEST_SECS = Math.max(60, nQ * SEC_PER_MCQ);
+            const nMin = Math.ceil(TEST_SECS / 60);
+            document.getElementById('q-total').textContent = nQ;
+            document.getElementById('home-badge').textContent = isExtra(k) ? (nQ + (isLC(k) ? ' MCQs (PMA 158 Long Course – Part ' + k.slice(3) + ')' : isIV(k) ? ' MCQs (100 Most Repeated Verbal Questions)' : isCN(k) ? ' MCQs (Constitution of Pakistan – 1956, 1962, 1973)' : isMR(k) ? ' MCQs (Most Repeated – ' + (HK_META[k].hi ? HK_META[k].thr + ' to ' + HK_META[k].hi : HK_META[k].thr + '+') + ' times)' : isHK(k) ? ' MCQs (Hakeem Force Academy – PMA ' + HK_META[k].pma + ' Part ' + HK_META[k].part + ')' : isFA(k) ? ' MCQs (Forces Academy Lahore – Part ' + k.slice(3) + ')' : ' MCQs (PMA 159 Long Course – Part ' + k.slice(4) + ')')) : (nQ + ' MCQs (Original Questions ' + label + ')');
+            document.getElementById('home-desc').textContent = isExtra(k) ? ('Practice ' + nQ + (isLC(k) ? ' MCQs from the PMA 158 Long Course test experiences. Every answer shows a reason and a related fact.' : isIV(k) ? ' of the most important verbal intelligence questions. The number in brackets is how many times the question was repeated in the earlier tests. Every answer shows a reason and a related fact.' : isCN(k) ? ' MCQs on the Constitutions of Pakistan of 1956, 1962 and 1973. The number in brackets is how many times the question was repeated in the PMA experiences. Every answer shows a reason and a related fact.' : isMR(k) ? ' MCQs repeated ' + (HK_META[k].hi ? HK_META[k].thr + ' to ' + HK_META[k].hi : HK_META[k].thr + ' or more') + ' times in the Hakeem Force Academy experiences. The number in brackets is how many times the question was repeated. Every answer shows a reason and a related fact.' : isHK(k) ? ' MCQs from PMA ' + HK_META[k].pma + ' test experiences. The number in brackets is how many times the question was repeated. Every answer shows a reason and a related fact.' : isFA(k) ? ' MCQs from Forces Academy Lahore tests and academic lists. Every answer shows a reason and a related fact.' : ' MCQs from PMA 159 test experiences. Every answer shows a reason.')) : ('Challenge yourself with ' + nQ + ' MCQs from original questions ' + label + '.');
+            document.getElementById('info-total').textContent = nQ + ' MCQs';
+            document.getElementById('info-time').textContent = nMin + ' Minutes';
+            document.getElementById('info-timer-note').textContent = '• The quiz will auto-submit when the ' + nMin + '-minute timer expires.';
+            document.getElementById('view-select').classList.add('hidden');
+            viewResults.classList.add('hidden'); viewQuiz.classList.add('hidden');
+            viewHome.classList.remove('hidden'); renderPalette(); window.scrollTo(0, 0);
+        }
+        function showSelect() {
+            if (quizActive && !confirm('Is test ko chhor dein? Aap ka progress ja sakta hai.')) return;
+            if (timerInterval) clearInterval(timerInterval);
+            quizActive = false;
+            viewHome.classList.add('hidden'); viewQuiz.classList.add('hidden'); viewResults.classList.add('hidden');
+            headerTimerContainer.classList.add('hidden'); headerTimerContainer.classList.remove('flex');
+            document.getElementById('view-select').classList.remove('hidden');
+            renderSelect(); renderPMA(); renderFA(); renderHK(); renderLC(); applySec(); window.scrollTo(0, 0);
+        }
+
+        let curSec = null, menuReady = false;
+        const SECS = [
+            {id: 'o', name: '1000 MCQs', sub: 'Original questions 1 to 1000', grad: 'from-indigo-600 to-violet-600', icon: 'fa-book', test: k => !isExtra(k)},
+            {id: 'pma', name: 'PMA 159 MCQs', sub: 'PMA 159 Long Course test experiences', grad: 'from-emerald-700 to-teal-600', icon: 'fa-shield-halved', test: k => isPMA(k)},
+            {id: 'fa', name: 'Forces Academy Lahore MCQs', sub: 'Intelligence tests and academic practice', grad: 'from-amber-700 to-orange-600', icon: 'fa-brain', test: k => isFA(k)},
+            {id: 'hk', name: 'Hakeem Force Academy MCQs', sub: 'PMA All Experiences, Most Repeated MCQs, Constitution of Pakistan and 100 Most Repeated Questions', grad: 'from-sky-700 to-cyan-500', icon: 'fa-medal', test: k => isHK(k)},
+            {id: 'lc', name: 'PMA 158 Long Course MCQs', sub: 'PMA 158 Long Course test experiences', grad: 'from-violet-700 to-fuchsia-600', icon: 'fa-flag', test: k => isLC(k)}
+        ];
+        function initMenu() {
+            if (menuReady) return; menuReady = true;
+            const v = document.getElementById('view-select');
+            const kids = Array.from(v.children);
+            SECS.forEach((sc, i) => {
+                const a = kids[2 * i], b = kids[2 * i + 1];
+                a.dataset.sec = sc.id; b.dataset.sec = sc.id;
+                const bar = document.createElement('div');
+                bar.dataset.sec = sc.id; bar.className = 'mb-4';
+                bar.innerHTML = '<button type="button" onclick="openSec(null)" class="inline-flex items-center gap-2 bg-white border border-slate-200 hover:border-indigo-400 text-slate-700 text-sm font-semibold px-4 py-2 rounded-full shadow-sm"><i class="fa-solid fa-arrow-left"></i> All categories</button>';
+                v.insertBefore(bar, a);
+                a.classList.remove('mt-10');
+            });
+            const m = document.createElement('div'); m.id = 'sec-menu'; v.insertBefore(m, v.firstChild);
+        }
+        function renderMenu() {
+            const keys = Object.keys(ALL);
+            document.getElementById('sec-menu').innerHTML = '<div class="text-center mb-6"><h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">Choose a Category</h2><p class="text-slate-500 text-sm mt-1">Tap a category to see its tests</p></div><div class="grid grid-cols-1 sm:grid-cols-2 gap-4">' + SECS.map(sc => {
+                const ks = keys.filter(sc.test), n = ks.reduce((t, k) => t + ALL[k].length, 0);
+                return `<button type="button" onclick="openSec('${sc.id}')" class="text-left bg-gradient-to-r ${sc.grad} text-white rounded-2xl shadow-xl hover:shadow-2xl hover:scale-[1.01] transition p-6 flex flex-col gap-2">
+                    <div class="flex items-center gap-3"><i class="fa-solid ${sc.icon} text-2xl"></i><span class="text-xl sm:text-2xl font-bold">${sc.name}</span></div>
+                    <div class="text-white/90 text-sm">${sc.sub}</div>
+                    <div class="text-white/80 text-xs font-semibold">${ks.length} Tests &bull; ${n} MCQs</div>
+                    <div class="text-sm font-bold mt-1">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+            }).join('') + '</div>';
+        }
+        function applySec() {
+            initMenu(); renderMenu();
+            const v = document.getElementById('view-select');
+            Array.from(v.children).forEach(e => {
+                if (e.id === 'sec-menu') e.classList.toggle('hidden', curSec !== null);
+                else e.classList.toggle('hidden', e.dataset.sec !== curSec);
+            });
+        }
+        function openSec(id) { if (id === 'hk' && curSec !== 'hk' && typeof hkSub !== 'undefined') { hkSub = null; renderHK(); } curSec = id; applySec(); window.scrollTo(0, 0); }
+        function bootQuizApp() {
+            renderSelect(); renderPMA(); renderFA(); renderHK(); renderLC(); applySec();
+            
+            const startButton = document.getElementById('start-quiz-btn');
+            if (startButton) {
+                startButton.addEventListener('click', () => {
+                    try { startQuiz(); }
+                    catch (error) {
+                        console.error('Quiz could not start:', error);
+                        alert('Test start nahi ho saka. Page ko refresh karke dobara koshish karein.');
+                    }
+                });
+            }
+        }
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', bootQuizApp, { once: true });
+        } else {
+            bootQuizApp();
+        }
+    </script>
+<style>
+html.dark body{background:#0b1220!important;color:#e2e8f0}
+html.dark .bg-white{background-color:#131c2e!important}
+html.dark .bg-slate-50{background-color:#0f172a!important}
+html.dark .bg-slate-100,html.dark .bg-slate-200,html.dark .bg-slate-200\/80{background-color:#1e293b!important}
+html.dark .bg-slate-900\/60{background-color:rgba(2,6,23,.75)!important}
+html.dark .text-slate-900,html.dark .text-slate-800{color:#f1f5f9!important}
+html.dark .text-slate-700{color:#e2e8f0!important}
+html.dark .text-slate-600{color:#cbd5e1!important}
+html.dark .text-slate-500{color:#94a3b8!important}
+html.dark .text-slate-400{color:#7c8ba1!important}
+html.dark .border-slate-100,html.dark .border-slate-200,html.dark .border-slate-200\/80,html.dark .border-slate-200\/85,html.dark .border-slate-300{border-color:#2a3650!important}
+html.dark .bg-indigo-50,html.dark .bg-indigo-100{background-color:rgba(99,102,241,.18)!important}
+html.dark .bg-emerald-50,html.dark .bg-emerald-50\/40,html.dark .bg-emerald-100{background-color:rgba(16,185,129,.16)!important}
+html.dark .bg-rose-50,html.dark .bg-rose-50\/40,html.dark .bg-rose-100{background-color:rgba(244,63,94,.16)!important}
+html.dark .bg-amber-50,html.dark .bg-amber-100{background-color:rgba(245,158,11,.16)!important}
+html.dark .text-indigo-900,html.dark .text-indigo-800,html.dark .text-indigo-700{color:#a5b4fc!important}
+html.dark .text-indigo-600,html.dark .text-indigo-500{color:#818cf8!important}
+html.dark .text-emerald-900,html.dark .text-emerald-800,html.dark .text-emerald-700{color:#6ee7b7!important}
+html.dark .text-emerald-600{color:#34d399!important}
+html.dark .text-rose-900,html.dark .text-rose-800,html.dark .text-rose-700{color:#fda4af!important}
+html.dark .text-rose-600{color:#fb7185!important}
+html.dark .text-amber-800,html.dark .text-amber-700{color:#fcd34d!important}
+html.dark .text-amber-600{color:#fbbf24!important}
+html.dark .border-emerald-100,html.dark .border-emerald-200{border-color:rgba(16,185,129,.35)!important}
+html.dark .border-rose-100,html.dark .border-rose-200{border-color:rgba(244,63,94,.35)!important}
+html.dark .border-amber-200{border-color:rgba(245,158,11,.35)!important}
+html.dark .border-indigo-100,html.dark .border-indigo-300{border-color:rgba(129,140,248,.35)!important}
+html.dark header{background-color:rgba(15,23,42,.92)!important;border-color:#1e293b!important}
+html.dark input,html.dark select,html.dark textarea{background-color:#0f172a;color:#e2e8f0;border-color:#2a3650}
+html.dark .shadow-xl,html.dark .shadow-lg,html.dark .shadow-sm{box-shadow:0 10px 30px rgba(0,0,0,.45)!important}
+html.dark #quiz-nav{background:#131c2e!important;border-top-color:#2a3650!important}
+html.dark .hover\:bg-slate-50:hover{background-color:#1e293b!important}
+html.dark #authUser{background:rgba(30,41,59,.95)}
+/* login screen: day look */
+#themeBtn{position:fixed;bottom:12px;left:12px;z-index:9995;width:42px;height:42px;border-radius:999px;display:flex;align-items:center;justify-content:center;cursor:pointer;
+  border:1px solid rgba(148,163,184,.4);background:rgba(255,255,255,.85);color:#0f172a;box-shadow:0 6px 18px rgba(0,0,0,.18);backdrop-filter:blur(8px);font-size:18px;transition:background .3s,color .3s,transform .2s}
+#themeBtn:active{transform:scale(.92)}
+html.dark #themeBtn{background:rgba(15,23,42,.85);color:#fde68a;border-color:rgba(148,163,184,.3)}
+body{transition:background-color .3s ease}
+</style>
+<button id="themeBtn" type="button" aria-label="Switch day / night mode" title="Day / Night mode" onclick="toggleTheme()"></button>
+<script>
+(function(){
+  var root=document.documentElement,btn=document.getElementById('themeBtn'),saved=null;
+  try{saved=localStorage.getItem('an_theme')}catch(e){}
+  var dark=saved?saved==='dark':(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches);
+  function apply(){root.classList.toggle('dark',dark);btn.textContent=dark?'☀️':'\u{1F319}';btn.title=dark?'Day mode':'Night mode'}
+  window.toggleTheme=function(){dark=!dark;try{localStorage.setItem('an_theme',dark?'dark':'light')}catch(e){}apply()};
+  apply();
+})();
+</script>
+<style>
+#auth{--tx:#1d1647;--mu:#5f5694;--gl:rgba(255,255,255,.42);--gbd:rgba(255,255,255,.85);--fb:rgba(255,255,255,.55);--fbd:rgba(120,95,210,.28);--ph:#9a90c8;--lk:#6d3fd6;--gh:rgba(255,255,255,.5);--ac:#8b5cf6;
+  position:fixed;inset:0;z-index:9990;overflow:auto;font-family:'Plus Jakarta Sans','Roboto','Inter',system-ui,sans-serif;color:var(--tx);background:linear-gradient(160deg,#fde8d4,#efe3ff 45%,#d6ecff);transition:opacity .6s ease,visibility .6s}
+html.dark #auth{--tx:#f3efff;--mu:#bdb3e6;--gl:rgba(24,18,66,.42);--gbd:rgba(190,170,255,.32);--fb:rgba(10,8,38,.45);--fbd:rgba(190,170,255,.3);--ph:#8d82bd;--lk:#b79bff;--gh:rgba(255,255,255,.08);background:linear-gradient(160deg,#0b0a2a,#1b1250 50%,#0b2347)}
+#auth.hide{opacity:0;visibility:hidden}
+#auth .sky{position:fixed;inset:0;overflow:hidden;pointer-events:none}
+#auth .lyr{position:absolute;inset:-4%;transform:translate3d(calc(var(--px,0)*var(--d,0)*1px),calc(var(--py,0)*var(--d,0)*1px),0);transition:transform .35s ease-out;will-change:transform}
+/* liquid blobs */
+#auth .bl{position:absolute;border-radius:46% 54% 60% 40%/50% 42% 58% 50%;filter:blur(2px);animation:auBlob 60s ease-in-out infinite alternate}
+#auth .bl.b1{left:-8%;top:-10%;width:52vmax;height:46vmax;background:radial-gradient(circle at 35% 30%,#fff8,#b79bff 55%,#8b6cf0);opacity:.7}
+#auth .bl.b2{right:-12%;top:12%;width:46vmax;height:42vmax;background:radial-gradient(circle at 35% 30%,#fff8,#7fd0ff 55%,#4aa8f5);opacity:.6;animation-duration:75s;animation-delay:-14s}
+#auth .bl.b3{left:18%;bottom:-22%;width:44vmax;height:36vmax;background:radial-gradient(circle at 35% 30%,#fff8,#ffc8a0 55%,#ff9ec0);opacity:.55;animation-duration:85s;animation-delay:-30s}
+html.dark #auth .bl{opacity:.38}
+@keyframes auBlob{0%{transform:translate(0,0) rotate(0) scale(1)}100%{transform:translate(4vw,3vh) rotate(25deg) scale(1.1)}}
+/* floating study icons + sparkles */
+#auth .fi{position:absolute;filter:drop-shadow(0 10px 12px rgba(70,50,180,.3));animation:auFloat 22s ease-in-out infinite}
+#auth .fi svg{width:100%;height:100%;display:block}
+#auth .fi.i1{left:8%;top:22%;width:64px;height:64px}#auth .fi.i2{right:9%;top:62%;width:58px;height:58px;animation-delay:-7s}#auth .fi.i3{left:12%;bottom:12%;width:54px;height:54px;animation-delay:-12s}#auth .fi.i4{right:14%;top:12%;width:50px;height:50px;animation-delay:-4s}
+@keyframes auFloat{0%,100%{translate:0 0;rotate:-5deg}50%{translate:8px -16px;rotate:6deg}}
+#auth .sp{position:absolute;width:26px;height:26px;animation:auTw 5s ease-in-out infinite}
+#auth .sp:before,#auth .sp:after{content:"";position:absolute;left:50%;top:50%;background:radial-gradient(closest-side,#fff,transparent);transform:translate(-50%,-50%)}
+#auth .sp:before{width:26px;height:2px}#auth .sp:after{width:2px;height:26px}
+#auth .sp.a{left:30%;top:18%}#auth .sp.b{right:28%;top:30%;animation-delay:-2s}#auth .sp.c{left:22%;top:70%;animation-delay:-3s}#auth .sp.d{right:20%;bottom:16%;animation-delay:-1s}
+@keyframes auTw{0%,100%{opacity:1;scale:1}50%{opacity:.3;scale:.6}}
+#auth .brand{position:absolute;left:28px;top:22px;z-index:3;display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;color:var(--tx)}
+#auth .brand i{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(135deg,#8b5cf6,#38bdf8);box-shadow:0 8px 20px rgba(139,92,246,.45);font-style:normal;font-size:18px}
+#auth .brand small{display:block;font-size:9px;letter-spacing:5px;font-weight:600;color:var(--mu);margin-top:-2px}
+/* glass card */
+#auth .side{position:relative;z-index:2;min-height:100%;display:flex;align-items:center;justify-content:center;padding:64px 16px 32px;box-sizing:border-box;perspective:1100px}
+#auth .wrap{position:relative;overflow:hidden;width:100%;max-width:400px;padding:0 28px 22px;border-radius:30px;background:linear-gradient(145deg,rgba(255,255,255,.5),var(--gl) 40%,rgba(255,255,255,.14));border:1px solid var(--gbd);backdrop-filter:blur(26px) saturate(170%);-webkit-backdrop-filter:blur(26px) saturate(170%);
+  box-shadow:0 34px 70px -24px rgba(60,40,160,.55),inset 0 2px 2px rgba(255,255,255,.9),inset 0 -18px 30px rgba(120,100,220,.12);
+  transform:rotateY(calc(var(--px,0)*4deg)) rotateX(calc(var(--py,0)*-3deg));transition:transform .4s ease-out}
+html.dark #auth .wrap{background:linear-gradient(145deg,rgba(255,255,255,.14),var(--gl) 40%,rgba(255,255,255,.04));box-shadow:0 34px 70px -24px rgba(0,0,0,.7),inset 0 1px 1px rgba(255,255,255,.3),0 0 40px -10px rgba(120,100,255,.3)}
+#auth .wrap:after{content:"";position:absolute;top:-30%;left:-60%;width:40%;height:160%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:rotate(12deg);animation:auShine 9s ease-in-out infinite;pointer-events:none}
+html.dark #auth .wrap:after{background:linear-gradient(100deg,transparent,rgba(255,255,255,.16),transparent)}
+@keyframes auShine{0%,55%{left:-60%}100%{left:130%}}
+/* cap hero */
+#auth .hero{position:relative;width:200px;height:150px;margin:18px auto 0;transform-style:preserve-3d;transform:translate3d(calc(var(--px,0)*8px),calc(var(--py,0)*6px),0) rotateY(calc(var(--px,0)*14deg)) rotateX(calc(var(--py,0)*-10deg));transition:transform .3s ease-out;animation:auHero 9s ease-in-out infinite;filter:drop-shadow(0 18px 14px rgba(60,40,140,.35))}
+@keyframes auHero{0%,100%{translate:0 0}50%{translate:0 -9px}}
+#auth .hero svg{width:100%;height:100%;overflow:visible}
+#auth .tas{transform-origin:170px 60px;animation:auSwing 5s ease-in-out infinite alternate}
+@keyframes auSwing{from{transform:rotate(-7deg)}to{transform:rotate(7deg)}}
+#auth h2{font-size:25px;font-weight:800;letter-spacing:-.3px;text-align:center;margin:6px 0 4px}
+#auth .sub{font-size:13.5px;color:var(--mu);margin:0 0 14px;text-align:center}
+#auth .fld{position:relative;margin-top:11px}
+#auth .fld label{display:block;font-size:12.5px;font-weight:600;color:var(--mu);margin:0 0 5px 3px}
+#auth input.in{width:100%;box-sizing:border-box;height:50px;padding:0 46px 0 16px;border-radius:16px;border:1px solid var(--fbd);background:var(--fb);color:var(--tx);font-size:15px;font-family:inherit;outline:none;box-shadow:inset 0 2px 6px rgba(80,60,170,.12),inset 0 1px 0 rgba(255,255,255,.5);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:border .2s,box-shadow .2s}
+#auth input.in::placeholder{color:var(--ph)}
+#auth input.in:focus{border-color:var(--ac);box-shadow:0 0 0 3px rgba(139,92,246,.3),inset 0 2px 6px rgba(80,60,170,.1)}
+#auth .eye{position:absolute;right:12px;bottom:13px;background:none;border:0;color:var(--ph);cursor:pointer;padding:2px;z-index:2}
+#auth .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+#auth .opts{display:flex;justify-content:space-between;align-items:center;margin:14px 0 16px;font-size:13px;color:var(--mu)}
+#auth .opts a,#auth .foot a{color:var(--lk);text-decoration:none;font-weight:700;cursor:pointer}
+#auth .chk{display:flex;align-items:center;gap:8px;cursor:pointer}
+#auth .chk input{accent-color:#8b5cf6;width:16px;height:16px}
+#auth .btn{position:relative;overflow:hidden;width:100%;height:52px;border:0;border-radius:16px;font-weight:800;font-size:16px;color:#fff;cursor:pointer;background:linear-gradient(135deg,#8b5cf6,#5b4ae6 55%,#3b9be0);box-shadow:0 7px 0 rgba(50,30,140,.35),0 18px 28px -10px rgba(99,70,229,.7),inset 0 2px 2px rgba(255,255,255,.55),inset 0 -10px 16px rgba(0,0,0,.14);transition:transform .12s,box-shadow .12s}
+#auth .btn:before{content:"";position:absolute;left:8%;right:8%;top:3px;height:44%;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,.5),rgba(255,255,255,0))}
+#auth .btn:active{transform:translateY(5px);box-shadow:0 2px 0 rgba(50,30,140,.35),0 6px 12px -6px rgba(99,70,229,.6),inset 0 2px 2px rgba(255,255,255,.5)}
+#auth .guest{width:100%;margin-top:14px;height:48px;border-radius:16px;font-weight:700;font-size:14.5px;cursor:pointer;color:var(--tx);background:var(--gh);border:1px solid var(--fbd);box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 8px 16px -10px rgba(70,50,180,.4);transition:background .2s,transform .15s}
+#auth .guest:hover{background:rgba(139,92,246,.2);transform:translateY(-1px)}
+#auth .orr{display:flex;align-items:center;gap:12px;margin:14px 0 0;font-size:11px;font-weight:700;letter-spacing:2px;color:var(--mu)}
+#auth .orr:before,#auth .orr:after{content:"";flex:1;height:1px;background:var(--fbd)}
+#auth .foot{text-align:center;font-size:14px;margin-top:14px;color:var(--mu)}
+#auth .err{min-height:16px;font-size:12.5px;color:#d6334a;margin-top:10px;text-align:center}
+#auth .err.ok{color:#14905a}
+html.dark #auth .err{color:#ff8fa3}html.dark #auth .err.ok{color:#7ff0b8}
+#auth .copy{text-align:center;font-size:9.5px;letter-spacing:1.4px;text-transform:uppercase;color:var(--mu);opacity:.6;margin-top:14px}
+#auth .pane{transition:opacity .35s ease,filter .35s ease,transform .35s ease}
+#auth .pane.out{opacity:0;filter:blur(8px);transform:translateY(10px);pointer-events:none}
+#auth .pane[hidden]{display:none}
+#auth .logo{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .35s;z-index:5}
+#auth .logo.on{opacity:1}
+#auth .logo .ring{position:absolute;width:200px;height:200px;border-radius:50%;border:2px solid rgba(167,139,250,.5);box-shadow:0 0 60px rgba(139,92,246,.5),inset 0 0 40px rgba(139,92,246,.3)}
+#auth .logo.on .ring{animation:authRing .9s ease-out}
+#auth .logo .mk{position:relative;font-size:56px}
+#auth .logo.on .mk{animation:authPop .9s ease}
+@keyframes authRing{0%{transform:scale(.4);opacity:0}60%{opacity:1}100%{transform:scale(1.15);opacity:0}}
+@keyframes authPop{0%{transform:scale(.6) rotate(-20deg);opacity:0}50%{transform:scale(1.08) rotate(0);opacity:1}100%{transform:scale(1)}}
+#authUser{position:fixed;right:12px;bottom:12px;z-index:60;display:none;align-items:center;gap:8px;padding:7px 12px;border-radius:999px;font-size:12px;font-weight:600;background:rgba(15,23,42,.88);color:#e2e8f0}
+#authUser button{background:none;border:1px solid rgba(255,255,255,.25);color:#cbd5e1;border-radius:999px;padding:3px 9px;font-size:11px;cursor:pointer}
+@media (max-width:520px){#auth .wrap{padding:0 20px 18px;border-radius:26px}#auth .hero{width:170px;height:128px}#auth .row2{grid-template-columns:1fr}#auth .fi.i2,#auth .fi.i3,#auth .fi.i4{display:none}#auth .brand{left:18px;top:16px}}
+@media (prefers-reduced-motion:reduce){#auth *{animation:none!important}}
+</style>
+<div id="auth" role="dialog" aria-label="Student Login">
+  <div class="sky">
+    <div class="lyr" data-d="10"><i class="bl b1"></i><i class="bl b2"></i><i class="bl b3"></i></div>
+    <div class="lyr" data-d="26"><i class="sp a"></i><i class="sp b"></i><i class="sp c"></i><i class="sp d"></i></div>
+    <div class="lyr" data-d="40">
+      <div class="fi i1"><svg viewBox="0 0 64 64"><defs><linearGradient id="aB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#5b3fd6"/></linearGradient></defs><path d="M6 14c8-3 18-3 26 3v37c-8-6-18-6-26-3z" fill="url(#aB)"/><path d="M58 14c-8-3-18-3-26 3v37c8-6 18-6 26-3z" fill="url(#aB)" opacity=".8"/><path d="M12 22c6-1.5 12-1 16 2M12 30c6-1.5 12-1 16 2M52 22c-6-1.5-12-1-16 2M52 30c-6-1.5-12-1-16 2" stroke="#fff" stroke-width="2.4" stroke-linecap="round" fill="none" opacity=".85"/></svg></div>
+      <div class="fi i2"><svg viewBox="0 0 64 64"><defs><linearGradient id="aP" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fde68a"/><stop offset="1" stop-color="#f59e0b"/></linearGradient></defs><g transform="rotate(40 32 32)"><rect x="25" y="4" width="14" height="40" rx="3" fill="url(#aP)"/><rect x="25" y="4" width="14" height="7" rx="3" fill="#f9a8d4"/><path d="M25 44h14l-7 15z" fill="#fde7c3"/><path d="M29.500 53h5l-2.500 6z" fill="#334155"/><path d="M29 12v32" stroke="#fff" stroke-width="2" opacity=".6"/></g></svg></div>
+      <div class="fi i3"><svg viewBox="0 0 64 64"><defs><linearGradient id="aL" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fef08a"/><stop offset="1" stop-color="#f59e0b"/></linearGradient></defs><path d="M32 5c-10 0-18 7.500-18 17 0 6.500 3.500 10.500 7 14.500 2 2.300 3 4 3 7h16c0-3 1-4.700 3-7 3.500-4 7-8 7-14.500C50 12.500 42 5 32 5z" fill="url(#aL)"/><rect x="23" y="46" width="18" height="5" rx="2.500" fill="#94a3b8"/><rect x="25" y="53" width="14" height="5" rx="2.500" fill="#64748b"/><path d="M26 22c1-4 4-6 8-6" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none" opacity=".8"/></svg></div>
+      <div class="fi i4"><svg viewBox="0 0 64 64"><defs><linearGradient id="aC" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f0abfc"/><stop offset="1" stop-color="#c026d3"/></linearGradient></defs><circle cx="32" cy="34" r="22" fill="url(#aC)"/><circle cx="32" cy="34" r="17" fill="#fff" opacity=".92"/><path d="M32 34V23M32 34l8 5" stroke="#6d28d9" stroke-width="3.200" stroke-linecap="round"/><path d="M22 8l-6 6M42 8l6 6" stroke="#c026d3" stroke-width="5" stroke-linecap="round"/></svg></div>
+    </div>
+  </div>
+  <div class="brand"><i>&#127891;</i><div>Asadullah<small>NOTES</small></div></div>
+  <div class="logo" id="authLogo"><span class="ring"></span><span class="mk">&#127891;</span></div>
+  <div class="side"><div class="wrap">
+      <div class="hero" aria-hidden="true"><svg viewBox="0 0 200 150"><defs>
+        <linearGradient id="hcB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a4a5e"/><stop offset=".5" stop-color="#17171f"/><stop offset="1" stop-color="#2a2a3a"/></linearGradient>
+        <linearGradient id="hcS" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b2b38"/><stop offset="1" stop-color="#0c0c12"/></linearGradient>
+        <linearGradient id="hcG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe9a0"/><stop offset="1" stop-color="#e9a521"/></linearGradient>
+        <linearGradient id="hcP" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff6dc"/><stop offset="1" stop-color="#e8d19b"/></linearGradient>
+        <radialGradient id="hcR" cx=".35" cy=".3"><stop offset="0" stop-color="#ffc46b"/><stop offset="1" stop-color="#e2681b"/></radialGradient></defs>
+        <path d="M44 66v36c0 14 25 24 56 24s56-10 56-24V66L100 84z" fill="url(#hcS)"/>
+        <path d="M52 78v22c0 9 22 17 48 17" stroke="rgba(255,255,255,.18)" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <rect x="6" y="88" width="82" height="22" rx="11" fill="url(#hcP)" transform="rotate(-18 47 99)"/>
+        <circle cx="14" cy="104" r="11" fill="#e8d19b" stroke="#d1b878" stroke-width="2" transform="rotate(-18 47 99)"/>
+        <path d="M14 98a6 6 0 1 1-5 6" stroke="#c9ad6b" stroke-width="2" fill="none" transform="rotate(-18 47 99)"/>
+        <path d="M52 112l-10 22 11-6 7 10 4-24z" fill="#c9302c"/><path d="M60 112l8 22 5-10 11 5-8-21z" fill="#a82220"/>
+        <circle cx="62" cy="108" r="12" fill="url(#hcR)" stroke="#f08a2c" stroke-width="2"/><circle cx="62" cy="108" r="6" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.5"/>
+        <polygon points="100,14 194,50 100,86 6,50" fill="url(#hcB)"/>
+        <polygon points="100,14 194,50 100,86 6,50" fill="none" stroke="rgba(255,255,255,.22)" stroke-width="1.5" stroke-linejoin="round"/>
+        <polygon points="100,20 150,40 100,52 48,40" fill="rgba(255,255,255,.12)"/>
+        <ellipse cx="100" cy="50" rx="8" ry="4.500" fill="url(#hcG)"/>
+        <path d="M100 50L168 58" stroke="#f0b72f" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <g class="tas"><path d="M168 58v34" stroke="#f0b72f" stroke-width="3" stroke-linecap="round"/><rect x="163" y="90" width="10" height="9" rx="3" fill="#d9951a"/><path d="M162 99h12l2 24h-16z" fill="url(#hcG)"/><path d="M165 101v20M169 101v20M173 101v20" stroke="rgba(160,100,10,.35)" stroke-width="1"/></g>
+      </svg></div>
+      <form class="pane" id="paneIn" autocomplete="on" onsubmit="return authSignIn(event)">
+        <h2>Student Login</h2>
+        <p class="sub">Welcome back! Login to continue.</p>
+        <div class="fld"><label for="inEmail">Email</label><input class="in" id="inEmail" type="email" placeholder="yourname@gmail.com" autocomplete="email" required></div>
+        <div class="fld"><label for="inPass">Password</label><input class="in" id="inPass" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" autocomplete="current-password" required>
+          <button type="button" class="eye" onclick="authEye('inPass')" aria-label="Show password"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+        <div class="opts"><label class="chk"><input type="checkbox" id="inRemember" checked> Remember Me</label><a onclick="authForgot()">Forgot password?</a></div>
+        <button class="btn" type="submit">Log In</button>
+        <div class="orr">OR</div>
+        <button class="guest" type="button" onclick="authGuest()">Continue as Guest &rarr;</button>
+        <div class="err" id="inErr"></div>
+        <div class="foot">Don't have an account? <a onclick="authSwitch('up')">Sign up</a></div>
+      </form>
+      <form class="pane out" id="paneUp" hidden autocomplete="on" onsubmit="return authSignUp(event)">
+        <h2>Create Account</h2>
+        <p class="sub">Sign up free to save your progress.</p>
+        <div class="fld"><label for="upName">Full Name</label><input class="in" id="upName" type="text" placeholder="Your name" autocomplete="name" required></div>
+        <div class="fld"><label for="upEmail">Email</label><input class="in" id="upEmail" type="email" placeholder="yourname@gmail.com" autocomplete="email" required></div>
+        <div class="row2"><div class="fld"><label for="upPass">Password</label><input class="in" id="upPass" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" autocomplete="new-password" required minlength="6">
+          <button type="button" class="eye" onclick="authEye('upPass')" aria-label="Show password"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div><div class="fld"><label for="upPass2">Confirm</label><input class="in" id="upPass2" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" autocomplete="new-password" required minlength="6">
+          <button type="button" class="eye" onclick="authEye('upPass2')" aria-label="Show password"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div></div>
+        <div class="opts"><label class="chk"><input type="checkbox" id="upAgree" checked> I agree to the Terms &amp; Privacy</label></div>
+        <button class="btn" type="submit">Create Account</button>
+        <div class="orr">OR</div>
+        <button class="guest" type="button" onclick="authGuest()">Continue as Guest &rarr;</button>
+        <div class="err" id="upErr"></div>
+        <div class="foot">Already have an account? <a onclick="authSwitch('in')">Login</a></div>
+      </form>
+      <div class="copy">&copy; Asadullah Notes</div>
+  </div></div>
+</div>
+<script>
+(function(){
+  var a=document.getElementById('auth');if(!a)return;
+  [].forEach.call(a.querySelectorAll('.lyr'),function(l){l.style.setProperty('--d',l.getAttribute('data-d')||0)});
+  function set(x,y){a.style.setProperty('--px',Math.max(-1,Math.min(1,x)).toFixed(3));a.style.setProperty('--py',Math.max(-1,Math.min(1,y)).toFixed(3))}
+  window.addEventListener('mousemove',function(e){set(e.clientX/innerWidth*2-1,e.clientY/innerHeight*2-1)});
+  var base=null,on=false;
+  function ori(e){if(e.gamma==null)return;if(!base)base={b:e.beta,g:e.gamma};set((e.gamma-base.g)/25,(e.beta-base.b)/25)}
+  function start(){if(on)return;on=true;window.addEventListener('deviceorientation',ori)}
+  function ask(){
+    if(typeof DeviceOrientationEvent!=='undefined'&&typeof DeviceOrientationEvent.requestPermission==='function'){
+      DeviceOrientationEvent.requestPermission().then(function(r){if(r==='granted')start()}).catch(function(){});
+    }else start();
+  }
+  a.addEventListener('touchstart',function(){ask()},{once:true,passive:true});
+  a.addEventListener('click',function(){ask()},{once:true});
+  if(typeof DeviceOrientationEvent!=='undefined'&&typeof DeviceOrientationEvent.requestPermission!=='function')start();
+  a.addEventListener('touchmove',function(e){var t=e.touches[0];if(t&&!base)set(t.clientX/innerWidth*2-1,t.clientY/innerHeight*2-1)},{passive:true});
+})();
+</script>
+<div id="authUser"><span id="authUserName"></span><button onclick="authLogout()">Log out</button></div>
+<script>
+(function(){
+  var LS={get:function(k){try{return JSON.parse(localStorage.getItem(k))}catch(e){return null}},set:function(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}},del:function(k){try{localStorage.removeItem(k)}catch(e){}}};
+  var S=null; try{S=JSON.parse(sessionStorage.getItem('an_session_tmp'))}catch(e){}
+  function hash(s){var h=5381;for(var i=0;i<s.length;i++){h=((h<<5)+h+s.charCodeAt(i))|0}return 'h'+(h>>>0).toString(36)+'_'+s.length}
+  function $(id){return document.getElementById(id)}
+  function showUser(u){var b=$('authUser');if(!u){b.style.display='none';return}$('authUserName').textContent=(u.guest?'Guest':'\u{1F464} '+u.name);b.style.display='flex'}
+  function enter(u,remember){if(remember)LS.set('an_session',u);else{LS.del('an_session');try{sessionStorage.setItem('an_session_tmp',JSON.stringify(u))}catch(e){}}
+    var a=$('auth');a.classList.add('hide');showUser(u)}
+  window.authEye=function(id){var i=$(id);i.type=i.type==='password'?'text':'password'};
+  window.authSwitch=function(to){var from=to==='up'?$('paneIn'):$('paneUp'),nx=to==='up'?$('paneUp'):$('paneIn'),lg=$('authLogo');
+    $('inErr').textContent='';$('upErr').textContent='';from.classList.add('out');
+    setTimeout(function(){from.hidden=true;lg.classList.add('on')},300);
+    setTimeout(function(){lg.classList.remove('on');nx.hidden=false;void nx.offsetWidth;nx.classList.remove('out')},1150)};
+  window.authGuest=function(){enter({guest:true,name:'Guest'},false)};
+  window.authSocial=function(n){var e=$('paneIn').hidden?$('upErr'):$('inErr');e.className='err';e.textContent=n+' sign-in is not available yet. Please use email, or Continue as Guest.'};
+  window.authForgot=function(){var e=$('inErr');e.className='err';e.textContent='Accounts are saved on this device only. If you forgot the password, create a new account or Continue as Guest.'};
+  window.authSignUp=function(ev){ev.preventDefault();var n=$('upName').value.trim(),m=$('upEmail').value.trim().toLowerCase(),p=$('upPass').value,p2=$('upPass2').value,e=$('upErr');e.className='err';
+    if(p.length<6){e.textContent='Password must be at least 6 characters.';return false}
+    if(p!==p2){e.textContent='Passwords do not match.';return false}
+    if(!$('upAgree').checked){e.textContent='Please agree to the Terms & Privacy Policy.';return false}
+    var us=LS.get('an_users')||{};if(us[m]){e.textContent='An account with this email already exists. Please sign in.';return false}
+    us[m]={name:n,h:hash(m+'|'+p)};LS.set('an_users',us);e.className='err ok';e.textContent='Account created. Welcome, '+n+'!';
+    setTimeout(function(){enter({name:n,email:m},true)},700);return false};
+  window.authSignIn=function(ev){ev.preventDefault();var m=$('inEmail').value.trim().toLowerCase(),p=$('inPass').value,e=$('inErr');e.className='err';
+    var us=LS.get('an_users')||{},u=us[m];
+    if(!u){e.textContent='No account found with this email on this device. Please Sign Up first.';return false}
+    if(u.h!==hash(m+'|'+p)){e.textContent='Wrong password. Please try again.';return false}
+    enter({name:u.name,email:m},$('inRemember').checked);return false};
+  window.authLogout=function(){LS.del('an_session');try{sessionStorage.removeItem('an_session_tmp')}catch(e){}showUser(null);var pi=$('paneIn'),pu=$('paneUp');pu.hidden=true;pu.classList.add('out');pi.hidden=false;pi.classList.remove('out');$('inErr').textContent='';$('upErr').textContent='';var a=$('auth');a.classList.remove('hide');window.scrollTo(0,0)};
+  var cur=LS.get('an_session')||S;if(cur){$('auth').classList.add('hide');showUser(cur)}
+})();
+</script>
+<style>
+/* each section keeps its own colour inside the test (start page, questions, results) */
+body[data-sec="pma"]{--c1:#047857;--c2:#0d9488;--cs:#059669;--ch:#047857;--cl:#ecfdf5;--ct:#065f46;--cb:#10b981;--cr:#34d399}
+body[data-sec="fa"]{--c1:#b45309;--c2:#ea580c;--cs:#d97706;--ch:#b45309;--cl:#fffbeb;--ct:#92400e;--cb:#f59e0b;--cr:#fbbf24}
+body[data-sec="hk"]{--c1:#0369a1;--c2:#06b6d4;--cs:#0284c7;--ch:#0369a1;--cl:#f0f9ff;--ct:#075985;--cb:#38bdf8;--cr:#7dd3fc}
+body[data-sec="lc"]{--c1:#6d28d9;--c2:#c026d3;--cs:#7c3aed;--ch:#6d28d9;--cl:#f5f3ff;--ct:#5b21b6;--cb:#a78bfa;--cr:#c4b5fd}
+body[data-sec] :is(#view-home,#view-quiz,#view-results) .from-indigo-600{--tw-gradient-from:var(--c1) var(--tw-gradient-from-position)!important;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)!important}
+body[data-sec] :is(#view-home,#view-quiz,#view-results) .to-violet-600,body[data-sec] :is(#view-home,#view-quiz,#view-results) .to-indigo-900{--tw-gradient-to:var(--c2) var(--tw-gradient-to-position)!important}
+body[data-sec] :is(#view-home,#view-quiz,#view-results) .bg-indigo-600{background-color:var(--cs)!important}
+body[data-sec] :is(#view-home,#view-quiz,#view-results) .bg-indigo-700,body[data-sec] :is(#view-home,#view-quiz,#view-results) .hover\:bg-indigo-700:hover{background-color:var(--ch)!important}
+body[data-sec] :is(#view-home,#view-quiz,#view-results) .bg-indigo-50,body[data-sec] :is(#view-home,#view-quiz,#view-results) .bg-indigo-100{background-color:var(--cl)!important}
+body[data-sec] :is(#view-home,#view-quiz,#view-results) :is(.text-indigo-500,.text-indigo-600,.text-indigo-700,.text-indigo-800){color:var(--ct)!important}
+body[data-sec] :is(#view-home,#view-quiz,#view-results) :is(.border-indigo-300,.border-indigo-500,.border-indigo-600,.border-indigo-700){border-color:var(--cb)!important}
+body[data-sec] :is(#view-home,#view-quiz,#view-results) .ring-indigo-400{--tw-ring-color:var(--cr)!important}
+body[data-sec] #header-timer-container{border-color:var(--cb)}
+html.dark body[data-sec] :is(#view-home,#view-quiz,#view-results) :is(.bg-indigo-50,.bg-indigo-100){background-color:color-mix(in srgb,var(--cs) 22%,transparent)!important}
+html.dark body[data-sec] :is(#view-home,#view-quiz,#view-results) :is(.text-indigo-500,.text-indigo-600,.text-indigo-700,.text-indigo-800){color:var(--cr)!important}
+button[onclick^="confirmSubmitQuiz"],button[onclick^="executeSubmitQuiz"]{background:#4f46e5!important;box-shadow:0 10px 22px -8px rgba(79,70,229,.55)!important}
+button[onclick^="confirmSubmitQuiz"]:hover,button[onclick^="executeSubmitQuiz"]:hover{background:#4338ca!important}
+body[data-sec] button[onclick^="confirmSubmitQuiz"],body[data-sec] button[onclick^="executeSubmitQuiz"]{background:linear-gradient(135deg,var(--c1),var(--c2))!important;box-shadow:0 10px 22px -8px var(--cs)!important}
+body[data-sec] button[onclick^="confirmSubmitQuiz"]:hover,body[data-sec] button[onclick^="executeSubmitQuiz"]:hover{filter:brightness(1.08)}
+#view-home .text-emerald-600{color:#4f46e5!important}
+body[data-sec] #view-home .text-emerald-600{color:var(--cs)!important}
+</style>
+<script>
+(function(){
+  if(typeof selectTest!=='function')return;
+  var _sel=selectTest,_show=showSelect;
+  window.selectTest=selectTest=function(k){var c=(isHK(k)||isMR(k)||isCN(k)||isIV(k))?'hk':isLC(k)?'lc':isFA(k)?'fa':isPMA(k)?'pma':'';if(c)document.body.dataset.sec=c;else delete document.body.dataset.sec;return _sel.apply(this,arguments)};
+  window.showSelect=showSelect=function(){var r=_show.apply(this,arguments);if(!quizActive)delete document.body.dataset.sec;return r};
+})();
+</script>
+
+
+<style>
+/* ---------- premium / cinematic look ---------- */
+body{font-family:'Plus Jakarta Sans','Inter',system-ui,sans-serif!important;background:#eef2f8!important;position:relative}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(900px 600px at 8% -10%,rgba(99,102,241,.16),transparent 60%),
+             radial-gradient(800px 600px at 105% 10%,rgba(56,189,248,.14),transparent 60%),
+             radial-gradient(900px 700px at 50% 120%,rgba(168,85,247,.10),transparent 60%),#eef2f8}
+html.dark body{background:#060a14!important}
+html.dark body::before{background:radial-gradient(900px 600px at 8% -10%,rgba(79,70,229,.28),transparent 60%),
+             radial-gradient(800px 600px at 105% 10%,rgba(14,165,233,.18),transparent 60%),
+             radial-gradient(900px 700px at 50% 120%,rgba(147,51,234,.16),transparent 60%),#060a14}
+header{background:rgba(255,255,255,.72)!important;backdrop-filter:blur(16px) saturate(160%);-webkit-backdrop-filter:blur(16px) saturate(160%);border-bottom:1px solid rgba(148,163,184,.25)!important;box-shadow:0 8px 30px rgba(15,23,42,.06)!important}
+html.dark header{background:rgba(8,12,24,.72)!important;border-bottom-color:rgba(148,163,184,.12)!important}
+header h1{-webkit-text-fill-color:transparent;letter-spacing:.2px;font-weight:800!important;background:linear-gradient(90deg,#1e1b4b,#4f46e5);-webkit-background-clip:text;background-clip:text;color:transparent!important}
+html.dark header h1{background:linear-gradient(90deg,#e0e7ff,#a5b4fc);-webkit-background-clip:text;background-clip:text}
+header .bg-indigo-600{background:linear-gradient(135deg,#6366f1,#8b5cf6)!important;box-shadow:0 8px 20px rgba(99,102,241,.35)!important}
+header>div{padding-right:64px!important}
+#view-home.hidden,#view-quiz.hidden,#view-results.hidden,#view-select.hidden{display:none!important}
+/* glass cards */
+main .bg-white{background:rgba(255,255,255,.78)!important;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-color:rgba(148,163,184,.22)!important}
+html.dark main .bg-white{background:rgba(17,24,39,.72)!important;border-color:rgba(148,163,184,.14)!important}
+main .rounded-2xl{border-radius:20px!important}
+main .shadow-xl{box-shadow:0 20px 50px -12px rgba(15,23,42,.18)!important}
+html.dark main .shadow-xl{box-shadow:0 24px 60px -12px rgba(0,0,0,.6)!important}
+/* category menu */
+#sec-menu h2{-webkit-text-fill-color:transparent;font-size:clamp(26px,5vw,36px)!important;font-weight:800;letter-spacing:-.5px;background:linear-gradient(90deg,#0f172a,#4f46e5 60%,#0ea5e9);-webkit-background-clip:text;background-clip:text;color:transparent!important}
+html.dark #sec-menu h2{background:linear-gradient(90deg,#f8fafc,#a5b4fc 60%,#7dd3fc);-webkit-background-clip:text;background-clip:text}
+#sec-menu .grid>button{position:relative;overflow:hidden;border-radius:22px!important;transform:translateZ(0);transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s!important;box-shadow:0 18px 40px -14px rgba(15,23,42,.45)!important;border:1px solid rgba(255,255,255,.18)}
+#sec-menu .grid>button::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.28),transparent);transform:skewX(-20deg);transition:left .8s ease}
+#sec-menu .grid>button:hover{transform:translateY(-4px) scale(1.01)!important;box-shadow:0 28px 60px -16px rgba(15,23,42,.55)!important}
+#sec-menu .grid>button:hover::after{left:130%}
+#sec-menu .grid>button::before{content:"";position:absolute;right:-40px;top:-40px;width:160px;height:160px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.22),transparent 70%)}
+/* test cards */
+#test-grid>button,#pma-grid>button,#fa-grid>button,#hk-grid>button{border-radius:18px!important;transition:transform .25s ease,box-shadow .25s ease,border-color .25s!important}
+#test-grid>button:hover,#pma-grid>button:hover,#fa-grid>button:hover,#hk-grid>button:hover{transform:translateY(-3px);box-shadow:0 16px 34px -14px rgba(15,23,42,.35)!important}
+/* question options */
+#options-container>*{border-radius:14px!important;transition:transform .18s ease,box-shadow .2s ease,border-color .2s!important}
+#options-container>*:hover{transform:translateX(3px)}
+#question-text,#view-quiz h2,#view-quiz h3{letter-spacing:-.2px}
+/* page transitions */
+.fade-in{animation:cineIn .5s cubic-bezier(.2,.8,.2,1) forwards!important}
+@keyframes cineIn{from{opacity:0;transform:translateY(10px) scale(.995);filter:blur(4px)}to{opacity:1;transform:none;filter:none}}
+/* buttons */
+main button.bg-indigo-600,main button.bg-emerald-600{box-shadow:0 10px 24px -8px rgba(79,70,229,.55)!important}
+::selection{background:#6366f1;color:#fff}
+/* header user avatar */
+#hdrUser{display:none;align-items:center;gap:6px;margin-left:10px}
+#hdrUser .av{width:34px;height:34px;border-radius:999px;display:grid;place-items:center;font-weight:800;font-size:14px;color:#fff;background:linear-gradient(135deg,#6366f1,#0ea5e9);box-shadow:0 6px 16px rgba(99,102,241,.35);cursor:pointer;border:2px solid rgba(255,255,255,.7)}
+html.dark #hdrUser .av{border-color:rgba(255,255,255,.2)}
+#authUser{display:none!important}
+#themeBtn{top:12px!important;right:12px!important;bottom:auto!important;left:auto!important;width:40px!important;height:40px!important}
+</style>
+<script>
+(function(){
+  var hdr=document.querySelector('header>div');if(!hdr)return;
+  var box=document.createElement('div');box.id='hdrUser';box.innerHTML='<span class="av" title="Account"></span>';
+  var timer=document.getElementById('header-timer-container');
+  var right=document.createElement('div');right.style.cssText='display:flex;align-items:center';
+  timer.parentNode.insertBefore(right,timer);right.appendChild(timer);right.appendChild(box);
+  var av=box.querySelector('.av');
+  function sync(){var src=document.getElementById('authUser'),nm=(document.getElementById('authUserName')||{}).textContent||'';
+    var on=src&&src.style.display==='flex';box.style.display=on?'flex':'none';
+    var n=nm.replace(/^\W+\s*/,'').trim()||'Guest';av.textContent=n.charAt(0).toUpperCase();av.title=n+' — tap to log out'}
+  av.onclick=function(){if(confirm('Log out of Asadullah Notes?'))authLogout();sync()};
+  new MutationObserver(sync).observe(document.getElementById('authUser'),{attributes:true,childList:true,subtree:true});sync();
+})();
+</script>
+<style>
+#backBtn{display:none;align-items:center;justify-content:center;gap:6px;height:40px;min-width:40px;padding:0 12px 0 10px;margin-right:12px;border-radius:999px;cursor:pointer;
+  font-weight:700;font-size:13px;border:1px solid rgba(148,163,184,.35);background:rgba(255,255,255,.85);color:#1e1b4b;box-shadow:0 6px 16px rgba(15,23,42,.12);transition:transform .15s,background .2s}
+#backBtn:active{transform:scale(.94)}
+#backBtn.show{display:inline-flex}
+html.dark #backBtn{background:rgba(15,23,42,.85);color:#e0e7ff;border-color:rgba(148,163,184,.25)}
+#backBtn svg{width:18px;height:18px}
+@media (max-width:420px){#backBtn span{display:none}#backBtn{padding:0 10px;margin-right:8px}}
+</style>
+<script>
+(function(){
+  var row=document.querySelector('header>div>div');if(!row)return;
+  var b=document.createElement('button');b.id='backBtn';b.type='button';b.setAttribute('aria-label','Go back');
+  b.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg><span>Back</span>';
+  row.insertBefore(b,row.firstChild);
+  function vis(id){var e=document.getElementById(id);return !!e&&!e.classList.contains('hidden')}
+  function atMenu(){return vis('view-select')&&typeof curSec!=='undefined'&&curSec===null}
+  function sync(){b.classList.toggle('show',!atMenu())}
+  function performBack(){
+    if(vis('view-home')||vis('view-quiz')||vis('view-results')){
+      if(vis('view-quiz')&&typeof quizActive!=='undefined'&&quizActive){
+        if(!confirm('Leave this test? Your progress will be lost.')){history.pushState({n:1},'');return}
+        quizActive=false;
+      }
+      showSelect();
+    }else if(vis('view-select')&&curSec!==null){if(curSec==='hk'&&typeof hkSub!=='undefined'&&hkSub!==null)openHkSub(typeof hkSub==='number'?'all':null);else openSec(null)}
+    sync();window.scrollTo(0,0);
+  }
+  b.addEventListener('click',function(){if(history.state&&history.state.n)history.back();else performBack()});
+  window.addEventListener('popstate',function(){performBack()});
+  function wrap(name,push){var f=window[name];if(typeof f!=='function')return;
+    window[name]=function(){var r=f.apply(this,arguments);if(push.apply(null,arguments))history.pushState({n:1},'');sync();return r}}
+  wrap('openSec',function(id){return id!==null&&id!==undefined});
+  wrap('openHkSub',function(p){return p!==null&&p!==undefined});
+  wrap('selectTest',function(){return true});
+  wrap('showSelect',function(){return false});
+  new MutationObserver(sync).observe(document.querySelector('main'),{attributes:true,subtree:true,attributeFilter:['class']});
+  sync();
+})();
+</script>
+<style>
+.dash{margin:0 0 22px;display:grid;gap:14px}
+.dash .hi{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.dash .hi h3{font-size:clamp(18px,4.6vw,24px);font-weight:800;letter-spacing:-.3px;margin:0}
+.dash .hi p{margin:2px 0 0;font-size:13px;color:#64748b}
+.dash .streak{display:flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;font-weight:800;font-size:14px;color:#9a3412;background:linear-gradient(135deg,#ffedd5,#fed7aa);box-shadow:0 8px 20px -10px rgba(234,88,12,.6)}
+.dash .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.dash .st{padding:12px 8px;border-radius:16px;text-align:center;background:rgba(255,255,255,.78);border:1px solid rgba(148,163,184,.25);backdrop-filter:blur(8px)}
+.dash .st b{display:block;font-size:clamp(17px,4.4vw,24px);font-weight:800;color:#312e81}
+.dash .st span{font-size:10.5px;letter-spacing:.4px;text-transform:uppercase;color:#64748b;font-weight:600}
+.dash .week{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:10px 14px;border-radius:16px;background:rgba(255,255,255,.78);border:1px solid rgba(148,163,184,.25)}
+.dash .week .d{display:flex;flex-direction:column;align-items:center;gap:5px;font-size:10.5px;color:#64748b;font-weight:600}
+.dash .week .d i{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:#e2e8f0;color:#fff;font-style:normal;font-size:12px}
+.dash .week .d.on i{background:linear-gradient(135deg,#34d399,#059669);box-shadow:0 4px 10px rgba(5,150,105,.45)}
+.dash .week .d.today span{color:#4f46e5;font-weight:800}
+.dash .acts{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media (min-width:700px){.dash .acts{grid-template-columns:repeat(4,1fr)}}
+.dash .act{display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:16px;cursor:pointer;text-align:left;border:1px solid rgba(148,163,184,.25);background:rgba(255,255,255,.82);color:#0f172a;transition:transform .2s,box-shadow .2s;box-shadow:0 8px 20px -14px rgba(15,23,42,.5)}
+.dash .act:hover{transform:translateY(-2px);box-shadow:0 14px 28px -14px rgba(15,23,42,.5)}
+.dash .act .ic{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;font-size:17px;flex:none}
+.dash .act b{display:block;font-size:13.5px;font-weight:800}
+.dash .act small{font-size:11px;color:#64748b}
+.dash .act.daily .ic{background:linear-gradient(135deg,#fbbf24,#f97316);color:#fff}
+.dash .act.saved .ic{background:linear-gradient(135deg,#fde047,#f59e0b);color:#fff}
+.dash .act.mist .ic{background:linear-gradient(135deg,#fb7185,#e11d48);color:#fff}
+.dash .act.srch .ic{background:linear-gradient(135deg,#38bdf8,#4f46e5);color:#fff}
+.dash .act.done{opacity:.75}
+html.dark .dash .hi p,html.dark .dash .st span,html.dark .dash .week .d,html.dark .dash .act small{color:#94a3b8}
+html.dark .dash .st,html.dark .dash .week,html.dark .dash .act{background:rgba(17,24,39,.72);border-color:rgba(148,163,184,.16);color:#e2e8f0}
+html.dark .dash .st b{color:#c7d2fe}
+html.dark .dash .week .d i{background:#1e293b}
+html.dark .dash .week .d.today span{color:#a5b4fc}
+html.dark .dash .streak{color:#fed7aa;background:linear-gradient(135deg,rgba(194,65,12,.45),rgba(154,52,18,.45))}
+body[data-sec="cus"]{--c1:#0f766e;--c2:#0284c7;--cs:#0d9488;--ch:#0f766e;--cl:#f0fdfa;--ct:#115e59;--cb:#14b8a6;--cr:#5eead4}
+/* bookmark star in a question */
+#qStar{position:absolute;top:10px;right:10px;width:38px;height:38px;border-radius:12px;border:1px solid rgba(148,163,184,.35);background:rgba(255,255,255,.85);color:#94a3b8;font-size:18px;cursor:pointer;display:grid;place-items:center;transition:transform .15s,color .2s;z-index:3}
+#qStar:active{transform:scale(.88)}
+#qStar.on{color:#f59e0b;background:#fffbeb;border-color:#fbbf24}
+html.dark #qStar{background:rgba(15,23,42,.85);border-color:rgba(148,163,184,.25)}
+html.dark #qStar.on{background:rgba(120,53,15,.5)}
+.qwrap{position:relative}
+.qwrap #question-text{padding-right:48px}
+/* search modal */
+#srchModal{position:fixed;inset:0;z-index:9996;display:none;align-items:flex-start;justify-content:center;padding:16px;background:rgba(2,6,23,.55);backdrop-filter:blur(6px);overflow:auto}
+#srchModal.open{display:flex}
+#srchModal .box{width:min(720px,100%);margin:auto;margin-top:6vh;border-radius:22px;padding:16px;background:#fff;color:#0f172a;box-shadow:0 30px 80px rgba(0,0,0,.45)}
+html.dark #srchModal .box{background:#0f172a;color:#e2e8f0;border:1px solid rgba(148,163,184,.18)}
+#srchModal .top{display:flex;gap:8px;align-items:center}
+#srchModal input{flex:1;padding:13px 14px;border-radius:12px;border:1px solid rgba(148,163,184,.4);font-size:15px;outline:none;background:transparent;color:inherit}
+#srchModal input:focus{border-color:#6366f1;box-shadow:0 0 0 3px rgba(99,102,241,.2)}
+#srchModal .x{border:0;background:rgba(148,163,184,.2);width:40px;height:40px;border-radius:12px;cursor:pointer;font-size:16px;color:inherit}
+#srchModal .res{margin-top:12px;display:grid;gap:10px;max-height:62vh;overflow:auto}
+#srchModal .it{padding:12px 14px;border-radius:14px;border:1px solid rgba(148,163,184,.25);font-size:14px;line-height:1.5}
+#srchModal .it .q{font-weight:700;margin-bottom:6px}
+#srchModal .it .a{color:#047857;font-weight:700;font-size:13px}
+html.dark #srchModal .it .a{color:#6ee7b7}
+#srchModal .it .w{font-size:12.5px;color:#64748b;margin-top:4px}
+#srchModal .hint{font-size:12.5px;color:#64748b;padding:6px 2px}
+#srchModal mark{background:#fde68a;color:#111;border-radius:3px;padding:0 2px}
+#srchModal .bm{float:right;border:0;background:none;font-size:18px;cursor:pointer;color:#94a3b8}
+#srchModal .bm.on{color:#f59e0b}
+/* result extras */
+#resExtra{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:16px 0 4px}
+#resExtra button{padding:11px 18px;border-radius:12px;font-weight:700;font-size:13.5px;cursor:pointer;border:1px solid rgba(255,255,255,.35);color:#fff;background:rgba(255,255,255,.18);backdrop-filter:blur(6px)}
+#resExtra button:hover{background:rgba(255,255,255,.3)}
+#toastX{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);opacity:0;z-index:9997;padding:11px 18px;border-radius:999px;background:#0f172a;color:#fff;font-size:13px;font-weight:600;transition:all .3s;pointer-events:none;box-shadow:0 12px 30px rgba(0,0,0,.4)}
+#toastX.on{opacity:1;transform:translateX(-50%) translateY(0)}
+.kbd{display:none}
+@media (min-width:900px){.kbd{display:block;text-align:center;font-size:11.5px;color:#94a3b8;margin-top:10px}}
+</style>
+<div id="srchModal" role="dialog" aria-label="Search questions"><div class="box">
+  <div class="top"><input id="srchIn" type="search" placeholder="Search any question or answer (e.g. Mangla Dam, Tashkent, 90%)" autocomplete="off"><button class="x" onclick="closeSearch()" aria-label="Close">&#10005;</button></div>
+  <div class="hint" id="srchHint">Type at least 2 letters. Searches all sections.</div>
+  <div class="res" id="srchRes"></div>
+</div></div>
+<div id="toastX"></div>
+<script>
+(function(){
+  var $=function(id){return document.getElementById(id)};
+  function ld(k,d){try{var v=JSON.parse(localStorage.getItem(k));return v==null?d:v}catch(e){return d}}
+  function sv(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+  function today(d){d=d||new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
+  function toast(m){var t=$('toastX');t.textContent=m;t.classList.add('on');clearTimeout(toast.h);toast.h=setTimeout(function(){t.classList.remove('on')},2200)}
+  function esc(s){return String(s).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})}
+  function clean(q){return JSON.parse(JSON.stringify(q))}
+  /* ---------- storage ---------- */
+  function bms(){return ld('an_bm',{})}
+  function wrs(){return ld('an_wr',{})}
+  function stats(){return ld('an_st',{tests:0,right:0,total:0,days:{}})}
+  function streak(){var s=stats(),n=0,d=new Date();if(!s.days[today(d)])d.setDate(d.getDate()-1);while(s.days[today(d)]){n++;d.setDate(d.getDate()-1)}return n}
+  /* ---------- all questions ---------- */
+  var flat=null;
+  function allQ(){if(flat)return flat;var seen={};flat=[];Object.keys(ALL).forEach(function(k){ALL[k].forEach(function(q){if(!seen[q.question]){seen[q.question]=1;flat.push(q)}})});return flat}
+  function rng(seed){var a=seed>>>0;return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+  function seedOf(s){var h=2166136261;for(var i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return h>>>0}
+  function pick(arr,n,r){var a=arr.slice(),o=[];for(var i=0;i<n&&a.length;i++){var j=Math.floor(r()*a.length);o.push(a.splice(j,1)[0])}return o}
+  /* ---------- launching a custom practice set ---------- */
+  var custom=0;
+  function launch(key,title,desc,qs){
+    if(!qs.length){toast('Nothing here yet');return}
+    ALL[key]=qs.map(function(q,i){var c=clean(q);c.id=i+1;return c});
+    selectTest(key);document.body.dataset.sec='cus';
+    $('home-badge').textContent=title;$('home-desc').textContent=desc;
+    var nMin=Math.ceil(TEST_SECS/60);
+  }
+  window.startDaily=function(){var t=today(),r=rng(seedOf('asadullah-'+t));launch('CUS-daily',"Today's Daily Challenge",'10 fresh MCQs picked for '+t+'. Finish it to keep your streak going.',pick(allQ(),10,r))};
+  window.startSaved=function(){var q=Object.keys(bms()).map(function(k){return bms()[k]});launch('CUS-saved','Saved Questions ('+q.length+')','Your starred questions in one test.',q)};
+  window.startMistakes=function(){var w=wrs(),q=Object.keys(w).map(function(k){return w[k]}).slice(-50);launch('CUS-mist','Mistakes Practice ('+q.length+')','Questions you answered wrong before. Answer them correctly to remove them from this list.',q)};
+  /* ---------- search ---------- */
+  window.openSearch=function(){$('srchModal').classList.add('open');setTimeout(function(){$('srchIn').focus()},50)};
+  window.closeSearch=function(){$('srchModal').classList.remove('open')};
+  function hl(t,ws){var s=esc(t);ws.forEach(function(w){if(w.length>1)s=s.replace(new RegExp('('+w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','ig'),'<mark>$1</mark>')});return s}
+  var th;
+  $('srchIn').addEventListener('input',function(){clearTimeout(th);th=setTimeout(function(){
+    var v=$('srchIn').value.trim().toLowerCase(),res=$('srchRes');
+    if(v.length<2){res.innerHTML='';$('srchHint').textContent='Type at least 2 letters. Searches all sections.';return}
+    var ws=v.split(/\s+/),out=[],b=bms();
+    var A=allQ();for(var i=0;i<A.length&&out.length<40;i++){var q=A[i],hay=(q.question+' '+q.options.join(' ')).toLowerCase();if(ws.every(function(w){return hay.indexOf(w)>-1}))out.push(q)}
+    $('srchHint').textContent=out.length?(out.length>=40?'Showing first 40 matches':out.length+' match'+(out.length>1?'es':'')):'No match. Try another word.';
+    res.innerHTML=out.map(function(q,i){var why=q.facts||q.rel||'';return '<div class="it"><button class="bm'+(b[q.question]?' on':'')+'" data-i="'+i+'" title="Save">&#9733;</button><div class="q">'+hl(q.question,ws)+'</div><div class="a">&#10003; '+hl(q.options[q.correct],ws)+'</div>'+(why?'<div class="w">'+esc(String(why).slice(0,220))+'</div>':'')+'</div>'}).join('');
+    res.querySelectorAll('.bm').forEach(function(bt){bt.onclick=function(){toggleBm(out[+bt.dataset.i]);bt.classList.toggle('on')}});
+  },160)});
+  $('srchModal').addEventListener('click',function(e){if(e.target===this)closeSearch()});
+  /* ---------- bookmarks ---------- */
+  function toggleBm(q){var b=bms();if(b[q.question]){delete b[q.question];toast('Removed from Saved')}else{b[q.question]=clean(q);toast('Saved \u2605')}sv('an_bm',b)}
+  var star=document.createElement('button');star.id='qStar';star.type='button';star.setAttribute('aria-label','Save question');star.innerHTML='&#9733;';
+  var qt=$('question-text');if(qt&&qt.parentElement){qt.parentElement.classList.add('qwrap');qt.parentElement.insertBefore(star,qt)}
+  star.onclick=function(){var q=quizData[currentQuestionIndex];if(!q)return;toggleBm(q);star.classList.toggle('on',!!bms()[q.question])};
+  var _lq=loadQuestion;window.loadQuestion=loadQuestion=function(i){var r=_lq.apply(this,arguments);var q=quizData[i];star.classList.toggle('on',!!(q&&bms()[q.question]));return r};
+  /* ---------- mistakes bank: record every answer ---------- */
+  var _so=selectOption;window.selectOption=selectOption=function(qi,oi){var had=userAnswers[qi];var r=_so.apply(this,arguments);
+    if(had===null&&userAnswers[qi]!==null){var q=quizData[qi],w=wrs();if(userAnswers[qi]===q.correct){if(w[q.question]){delete w[q.question];sv('an_wr',w)}}else{w[q.question]=clean(q);var ks=Object.keys(w);if(ks.length>500)delete w[ks[0]];sv('an_wr',w)}}
+    return r};
+  /* ---------- results: stats + extra buttons ---------- */
+  var _cr=computeAndDisplayResults;window.computeAndDisplayResults=computeAndDisplayResults=function(){var r=_cr.apply(this,arguments);
+    var c=0;quizData.forEach(function(q,i){if(userAnswers[i]===q.correct)c++});var n=quizData.length,s=stats();
+    s.tests++;s.right+=c;s.total+=n;s.days[today()]=1;sv('an_st',s);
+    if(currentTestKey==='CUS-daily')sv('an_daily',today());
+    var host=$('result-pass-status').parentElement;var ex=$('resExtra');if(!ex){ex=document.createElement('div');ex.id='resExtra';host.appendChild(ex)}
+    var pct=Math.round(c*100/n);
+    ex.innerHTML='<button id="rxShare">\u{1F4E4} Share score</button><button id="rxMist">\u{1F501} Practice my mistakes</button>';
+    $('rxShare').onclick=function(){var t='I scored '+c+'/'+n+' ('+pct+'%) in a test on Asadullah Notes! Streak: '+streak()+' day(s). Try it yourself.';
+      if(navigator.share){navigator.share({text:t}).catch(function(){})}else{try{navigator.clipboard.writeText(t);toast('Score copied \u2014 paste it anywhere')}catch(e){toast(t)}}};
+    $('rxMist').onclick=function(){if(typeof showSelect==='function'){quizActive=false;showSelect()}startMistakes()};
+    return r};
+  /* ---------- dashboard on the category menu ---------- */
+  function render(){
+    var s=stats(),st=streak(),b=Object.keys(bms()).length,w=Object.keys(wrs()).length,done=ld('an_daily','')===today();
+    var nm=($('authUserName')&&$('authUserName').textContent||'').replace(/^\W+\s*/,'').trim();var who=nm&&nm!=='Guest'?nm:'there';
+    var acc=s.total?Math.round(s.right*100/s.total):0,days='';var D=['S','M','T','W','T','F','S'];
+    for(var i=6;i>=0;i--){var d=new Date();d.setDate(d.getDate()-i);var on=s.days[today(d)];days+='<div class="d'+(on?' on':'')+(i===0?' today':'')+'"><i>'+(on?'\u2713':'')+'</i><span>'+D[d.getDay()]+'</span></div>'}
+    return '<div class="dash"><div class="hi"><div><h3>Assalam o Alaikum, '+esc(who)+' \u{1F44B}</h3><p>'+(st?'Keep it up \u2014 you are on a '+st+'-day streak.':'Solve a test today to start your streak.')+'</p></div><div class="streak">\u{1F525} '+st+' day'+(st===1?'':'s')+'</div></div>'+
+     '<div class="stats"><div class="st"><b>'+s.tests+'</b><span>Tests</span></div><div class="st"><b>'+s.total+'</b><span>Solved</span></div><div class="st"><b>'+acc+'%</b><span>Accuracy</span></div><div class="st"><b>'+w+'</b><span>To revise</span></div></div>'+
+     '<div class="week">'+days+'</div>'+
+     '<div class="acts"><button class="act daily'+(done?' done':'')+'" onclick="startDaily()"><span class="ic">\u26A1</span><span><b>Daily Challenge</b><small>'+(done?'Done today \u2713 \u2014 play again':'10 MCQs \u2022 new every day')+'</small></span></button>'+
+     '<button class="act saved" onclick="startSaved()"><span class="ic">\u2605</span><span><b>Saved</b><small>'+b+' question'+(b===1?'':'s')+'</small></span></button>'+
+     '<button class="act mist" onclick="startMistakes()"><span class="ic">\u{1F501}</span><span><b>Mistakes</b><small>'+w+' to practise</small></span></button>'+
+     '<button class="act srch" onclick="openSearch()"><span class="ic">\u{1F50D}</span><span><b>Search</b><small>Find any MCQ</small></span></button></div></div>'}
+  var _rm=renderMenu;window.renderMenu=renderMenu=function(){_rm.apply(this,arguments);var m=$('sec-menu');if(m)m.insertAdjacentHTML('afterbegin',render())};
+  if(typeof applySec==='function')applySec();
+  /* ---------- keyboard shortcuts (computer) ---------- */
+  document.addEventListener('keydown',function(e){
+    if(e.target&&/INPUT|TEXTAREA/.test(e.target.tagName))return;if(e.ctrlKey||e.metaKey||e.altKey)return;
+    var vq=$('view-quiz');if(!vq||vq.classList.contains('hidden'))return;var k=e.key.toLowerCase(),m={a:0,b:1,c:2,d:3,'1':0,'2':1,'3':2,'4':3};
+    if(k in m){if(quizData[currentQuestionIndex]&&m[k]<quizData[currentQuestionIndex].options.length)selectOption(currentQuestionIndex,m[k])}
+    else if(k==='n'||k==='arrowright'){nextQuestion()}else if(k==='p'||k==='arrowleft'){prevQuestion()}else if(k==='s'){star.click()}
+  });
+  var nav=$('quiz-nav');if(nav){var h=document.createElement('div');h.className='kbd';h.textContent='Keyboard: A\u2013D choose \u2022 N next \u2022 P previous \u2022 S save';nav.parentElement.appendChild(h)}
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeSearch()});
+})();
+</script>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="14" result="b"/><feColorMatrix in="b" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -9"/></filter></defs></svg>
+<div id="liquidBg" aria-hidden="true">
+  <div class="goo"><i class="lb b1"></i><i class="lb b2"></i><i class="lb b3"></i><i class="lb b4"></i><i class="lb b5"></i></div>
+</div>
+<style>
+/* ======== LIQUID GLASS ======== */
+:root{--gl-bg:linear-gradient(135deg,rgba(255,255,255,.62),rgba(255,255,255,.28));--gl-bd:rgba(255,255,255,.75);
+ --gl-sh:0 14px 40px -12px rgba(88,80,180,.28),inset 0 1.5px 1px rgba(255,255,255,.95),inset 0 -1.5px 1px rgba(255,255,255,.35),inset 0 0 22px rgba(255,255,255,.35)}
+html.dark{--gl-bg:linear-gradient(135deg,rgba(255,255,255,.11),rgba(255,255,255,.03));--gl-bd:rgba(255,255,255,.16);
+ --gl-sh:0 18px 50px -14px rgba(0,0,0,.65),inset 0 1.5px 1px rgba(255,255,255,.22),inset 0 -1.5px 1px rgba(255,255,255,.05),inset 0 0 26px rgba(150,130,255,.07)}
+#liquidBg{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+#liquidBg .goo{position:absolute;inset:0;filter:url(#goo);opacity:.9}
+.lb{position:absolute;border-radius:50%;animation:lbMove 102s ease-in-out infinite alternate}
+.lb.b1{width:42vmax;height:42vmax;left:-12vmax;top:-10vmax;background:#c9b8ff}
+.lb.b2{width:34vmax;height:34vmax;right:-10vmax;top:6vmax;background:#9fe3ff;animation-duration:119s;animation-delay:-8s}
+.lb.b3{width:30vmax;height:30vmax;left:24vw;bottom:-14vmax;background:#ffc9e4;animation-duration:107s;animation-delay:-14s}
+.lb.b4{width:20vmax;height:20vmax;right:14vw;bottom:8vh;background:#ffe2b8;animation-duration:88s;animation-delay:-4s}
+.lb.b5{width:18vmax;height:18vmax;left:8vw;top:48vh;background:#b9f0d8;animation-duration:131s;animation-delay:-20s}
+html.dark .lb.b1{background:#4c2fd1}html.dark .lb.b2{background:#0e7fb8}html.dark .lb.b3{background:#a1226f}html.dark .lb.b4{background:#b4540f}html.dark .lb.b5{background:#0d8a64}
+html.dark #liquidBg .goo{opacity:.5}
+@keyframes lbMove{0%{transform:translate(0,0) scale(1) rotate(0)}50%{transform:translate(3vw,2vh) scale(1.08) rotate(8deg)}100%{transform:translate(-2vw,4vh) scale(.96) rotate(-6deg)}}
+body::before{opacity:.55}
+/* header */
+header{background:var(--gl-bg)!important;backdrop-filter:blur(22px) saturate(190%)!important;-webkit-backdrop-filter:blur(22px) saturate(190%)!important;border-bottom:1px solid var(--gl-bd)!important;box-shadow:0 10px 34px -16px rgba(88,80,180,.35),inset 0 -1.5px 1px rgba(255,255,255,.5)!important}
+html.dark header{box-shadow:0 10px 34px -16px rgba(0,0,0,.7),inset 0 -1px 1px rgba(255,255,255,.08)!important}
+/* big glass panels */
+main .bg-white,main .bg-slate-50,.dash .st,.dash .week,.dash .act{background:var(--gl-bg)!important;border:1px solid var(--gl-bd)!important;box-shadow:var(--gl-sh)!important;backdrop-filter:blur(20px) saturate(185%)!important;-webkit-backdrop-filter:blur(20px) saturate(185%)!important;position:relative}
+main .bg-white::before,.dash .st::before,.dash .act::before,.dash .week::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:0;opacity:0;transition:opacity .35s;
+ background:radial-gradient(240px circle at var(--mx,50%) var(--my,0%),rgba(255,255,255,.7),rgba(190,170,255,.18) 45%,transparent 70%)}
+html.dark main .bg-white::before,html.dark .dash .st::before,html.dark .dash .act::before,html.dark .dash .week::before{background:radial-gradient(240px circle at var(--mx,50%) var(--my,0%),rgba(190,180,255,.28),rgba(120,100,255,.08) 45%,transparent 70%)}
+main .bg-white:hover::before,.dash .st:hover::before,.dash .act:hover::before,.dash .week:hover::before{opacity:1}
+main .bg-white::after{content:"";position:absolute;left:8%;right:8%;top:0;height:1px;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(255,255,255,.95),transparent)}
+html.dark main .bg-white::after{background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent)}
+/* lots of small items: glass but no heavy blur */
+#test-grid>button,#pma-grid>button,#fa-grid>button,#hk-grid>button,#options-container>*,#question-palette button,#palette button{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;box-shadow:var(--gl-sh)!important}
+#test-grid>button:hover,#pma-grid>button:hover,#fa-grid>button:hover,#hk-grid>button:hover,#options-container>*:hover{box-shadow:0 18px 38px -14px rgba(110,90,230,.45),inset 0 1.5px 1px #fff,inset 0 0 28px rgba(190,170,255,.25)!important}
+html.dark #test-grid>button:hover,html.dark #pma-grid>button:hover,html.dark #fa-grid>button:hover,html.dark #hk-grid>button:hover,html.dark #options-container>*:hover{box-shadow:0 18px 38px -14px rgba(0,0,0,.8),inset 0 1.5px 1px rgba(255,255,255,.3),inset 0 0 28px rgba(140,120,255,.18)!important}
+/* category menu tiles: wet-glass shine */
+#sec-menu .grid>button{box-shadow:0 22px 46px -16px rgba(30,20,90,.55),inset 0 2px 2px rgba(255,255,255,.55),inset 0 -14px 28px rgba(0,0,0,.14)!important}
+/* glossy liquid buttons */
+main button.bg-indigo-600,main button.bg-emerald-600,button[onclick^="confirmSubmitQuiz"],button[onclick^="executeSubmitQuiz"],#resExtra button,.dash .streak{
+ box-shadow:0 12px 26px -10px rgba(70,60,200,.65),inset 0 2px 2px rgba(255,255,255,.55),inset 0 -10px 16px rgba(0,0,0,.14)!important;border:1px solid rgba(255,255,255,.35)!important;position:relative;overflow:hidden}
+main button.bg-indigo-600:before,main button.bg-emerald-600:before,button[onclick^="confirmSubmitQuiz"]:before{content:"";position:absolute;left:6%;right:6%;top:2px;height:46%;border-radius:999px;pointer-events:none;background:linear-gradient(180deg,rgba(255,255,255,.55),rgba(255,255,255,0))}
+/* inputs / palette keep readable */
+.dash .st b,.dash .act b{position:relative;z-index:1}
+@media (prefers-reduced-motion:reduce){.lb{animation:none}}
+@media (max-width:600px){main .bg-white,.dash .st,.dash .act,.dash .week{backdrop-filter:blur(12px) saturate(170%)!important}}
+</style>
+<script>
+(function(){
+  var raf=0,lx=0,ly=0,lt=null;
+  var SEL='main .bg-white,.dash .st,.dash .act,.dash .week';
+  document.addEventListener('pointermove',function(e){lx=e.clientX;ly=e.clientY;lt=e.target;if(raf)return;
+    raf=requestAnimationFrame(function(){raf=0;var el=lt&&lt.closest&&lt.closest(SEL);if(!el)return;var r=el.getBoundingClientRect();
+      el.style.setProperty('--mx',(lx-r.left)+'px');el.style.setProperty('--my',(ly-r.top)+'px')})},{passive:true});
+})();
+</script>
+<div id="obj3d" aria-hidden="true">
+  <div class="o3 st sBook"><svg viewBox="0 0 64 64" class="si"><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#5b3fd6"/></linearGradient></defs><path d="M6 14c8-3 18-3 26 3v37c-8-6-18-6-26-3z" fill="url(#g1)"/><path d="M58 14c-8-3-18-3-26 3v37c8-6 18-6 26-3z" fill="url(#g1)" opacity=".8"/><path d="M12 22c6-1.5 12-1 16 2M12 30c6-1.5 12-1 16 2M52 22c-6-1.5-12-1-16 2M52 30c-6-1.5-12-1-16 2" stroke="#fff" stroke-width="2.4" stroke-linecap="round" fill="none" opacity=".85"/></svg></div>
+  <div class="o3 st sPen"><svg viewBox="0 0 64 64" class="si"><defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fde68a"/><stop offset="1" stop-color="#f59e0b"/></linearGradient></defs><g transform="rotate(40 32 32)"><rect x="25" y="4" width="14" height="40" rx="3" fill="url(#g2)"/><rect x="25" y="4" width="14" height="7" rx="3" fill="#f9a8d4"/><path d="M25 44h14l-7 15z" fill="#fde7c3"/><path d="M29.5 53h5l-2.5 6z" fill="#334155"/><path d="M29 12v32" stroke="#fff" stroke-width="2" opacity=".6"/></g></svg></div>
+  <div class="o3 st sCap"><svg viewBox="0 0 64 64" class="si"><defs><linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#4338ca"/></linearGradient></defs><path d="M32 10 2 25l30 15 30-15z" fill="url(#g3)"/><path d="M14 33v13c0 5 8 9 18 9s18-4 18-9V33l-18 9z" fill="url(#g3)" opacity=".85"/><path d="M58 27v18" stroke="#fde68a" stroke-width="2.6" stroke-linecap="round"/><circle cx="58" cy="47" r="3" fill="#fde68a"/></svg></div>
+  <div class="o3 st sBulb"><svg viewBox="0 0 64 64" class="si"><defs><linearGradient id="g4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fef08a"/><stop offset="1" stop-color="#f59e0b"/></linearGradient></defs><path d="M32 5c-10 0-18 7.5-18 17 0 6.5 3.5 10.500 7 14.500 2 2.300 3 4 3 7h16c0-3 1-4.700 3-7 3.500-4 7-8 7-14.500C50 12.500 42 5 32 5z" fill="url(#g4)"/><rect x="23" y="46" width="18" height="5" rx="2.500" fill="#94a3b8"/><rect x="25" y="53" width="14" height="5" rx="2.500" fill="#64748b"/><path d="M26 22c1-4 4-6 8-6" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none" opacity=".8"/></svg></div>
+  <div class="o3 st sClock"><svg viewBox="0 0 64 64" class="si"><defs><linearGradient id="g5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f0abfc"/><stop offset="1" stop-color="#c026d3"/></linearGradient></defs><circle cx="32" cy="34" r="22" fill="url(#g5)"/><circle cx="32" cy="34" r="17" fill="#fff" opacity=".92"/><path d="M32 34V23M32 34l8 5" stroke="#6d28d9" stroke-width="3.200" stroke-linecap="round"/><path d="M22 8l-6 6M42 8l6 6" stroke="#c026d3" stroke-width="5" stroke-linecap="round"/></svg></div>
+  <div class="o3 st sGlobe"><svg viewBox="0 0 64 64" class="si"><defs><linearGradient id="g6" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7dd3fc"/><stop offset="1" stop-color="#2563eb"/></linearGradient></defs><circle cx="32" cy="30" r="22" fill="url(#g6)"/><path d="M14 24c6-6 12-2 14 4s-4 8-2 14c-6 0-12-6-12-18zM38 12c6 2 10 8 10 14-5 0-9 3-10 7-3-4-4-12 0-21z" fill="#86efac" opacity=".9"/><ellipse cx="25" cy="20" rx="8" ry="4" fill="#fff" opacity=".35" transform="rotate(-30 25 20)"/><rect x="29" y="52" width="6" height="6" fill="#64748b"/><rect x="20" y="57" width="24" height="4" rx="2" fill="#475569"/></svg></div>
+  <div class="o3 st sTrophy"><svg viewBox="0 0 64 64" class="si"><defs><linearGradient id="g7" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fde68a"/><stop offset="1" stop-color="#f59e0b"/></linearGradient></defs><path d="M18 8h28v16c0 10-6 17-14 17S18 34 18 24z" fill="url(#g7)"/><path d="M18 12H8c0 10 4 15 11 16M46 12h10c0 10-4 15-11 16" stroke="#f59e0b" stroke-width="4" fill="none" stroke-linecap="round"/><rect x="28" y="41" width="8" height="9" fill="#d97706"/><rect x="20" y="50" width="24" height="8" rx="3" fill="#92400e"/><path d="M25 14v12" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".6"/></svg></div>
+  <div class="o3 st sCalc"><svg viewBox="0 0 64 64" class="si"><defs><linearGradient id="g8" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#94a3b8"/><stop offset="1" stop-color="#334155"/></linearGradient></defs><rect x="10" y="4" width="44" height="56" rx="8" fill="url(#g8)"/><rect x="16" y="10" width="32" height="14" rx="3" fill="#bbf7d0"/><g fill="#fff" opacity=".9"><circle cx="21" cy="34" r="3.500"/><circle cx="32" cy="34" r="3.500"/><circle cx="43" cy="34" r="3.500"/><circle cx="21" cy="44" r="3.500"/><circle cx="32" cy="44" r="3.500"/><circle cx="43" cy="44" r="3.500" fill="#fb923c"/><circle cx="21" cy="53" r="3.500"/><circle cx="32" cy="53" r="3.500"/><circle cx="43" cy="53" r="3.500" fill="#fb923c"/></g></svg></div>
+  <div class="o3 st sAtom"><svg viewBox="0 0 64 64" class="si"><defs><linearGradient id="g9" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c4b5fd"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs><g fill="none" stroke="url(#g9)" stroke-width="3.500"><ellipse cx="32" cy="32" rx="26" ry="10"/><ellipse cx="32" cy="32" rx="26" ry="10" transform="rotate(60 32 32)"/><ellipse cx="32" cy="32" rx="26" ry="10" transform="rotate(120 32 32)"/></g><circle cx="32" cy="32" r="6" fill="#f472b6"/><circle cx="32" cy="32" r="2.500" fill="#fff" opacity=".7"/></svg></div>
+  <div class="o3 st sNote"><svg viewBox="0 0 64 64" class="si"><defs><linearGradient id="g10" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fda4af"/><stop offset="1" stop-color="#e11d48"/></linearGradient></defs><rect x="12" y="6" width="40" height="52" rx="6" fill="url(#g10)"/><rect x="8" y="12" width="8" height="5" rx="2.500" fill="#fecdd3"/><rect x="8" y="24" width="8" height="5" rx="2.500" fill="#fecdd3"/><rect x="8" y="36" width="8" height="5" rx="2.500" fill="#fecdd3"/><rect x="8" y="48" width="8" height="5" rx="2.500" fill="#fecdd3"/><path d="M24 18h22M24 28h22M24 38h14" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".85"/></svg></div>
+</div>
+<style>
+/* ======== 3D MIX: floating glass objects, tilt cards, clay buttons ======== */
+#obj3d{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;perspective:900px;transform-style:preserve-3d}
+.o3{position:absolute;transform-style:preserve-3d;transform:translate3d(calc(var(--gx,0)*var(--k,20)*.7px),calc(var(--gy,0)*var(--k,20)*.7px + var(--sy,0)*var(--s,-.12)*.4px),0) rotateY(calc(var(--gx,0)*6deg)) rotateX(calc(var(--gy,0)*-5deg))}
+.st{width:84px;height:84px;filter:drop-shadow(0 14px 14px rgba(60,40,170,.35));animation:bob 26s ease-in-out infinite}
+.si{width:100%;height:100%;display:block;animation:sway 34s ease-in-out infinite alternate}
+.sBook{--k:34;--s:-.18;right:2vw;top:56vh;width:96px;height:96px}
+.sPen{--k:-22;--s:-.2;left:1.5vw;bottom:7vh;width:76px;height:76px;animation-delay:-6s}
+.sCap{--k:18;--s:-.2;right:3vw;top:74px;width:110px;height:110px;opacity:.9;animation-delay:-11s}
+.sBulb{--k:-40;--s:-.25;right:1vw;bottom:4vh;width:80px;height:80px;animation-delay:-3s}
+.sClock{--k:28;--s:-.15;left:1vw;top:44vh;width:66px;height:66px;animation-delay:-15s}
+.sGlobe{--k:-26;--s:-.14;left:3vw;top:30vh;width:72px;height:72px;animation-delay:-9s}
+.sTrophy{--k:30;--s:-.16;right:3vw;top:34vh;width:72px;height:72px;animation-delay:-18s}
+.sCalc{--k:-18;--s:-.1;left:44vw;top:48vh;width:60px;height:60px;animation-delay:-5s;opacity:.85}
+.sAtom{--k:24;--s:-.22;right:30vw;bottom:6vh;width:70px;height:70px;animation-delay:-13s}
+.sNote{--k:-30;--s:-.18;left:24vw;bottom:3vh;width:62px;height:62px;animation-delay:-21s}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes sway{from{transform:rotate(-7deg)}to{transform:rotate(7deg)}}
+html.dark .st{filter:drop-shadow(0 0 16px rgba(130,110,255,.5))}
+@media (max-width:700px){.sBook{width:62px;height:62px;top:60vh}.sPen,.sClock,.sCalc,.sNote{display:none}.sGlobe{width:48px;height:48px;top:56vh;left:0}.sTrophy{width:52px;height:52px;top:38vh}.sAtom{width:52px;height:52px;right:24vw}.sBulb{width:60px;height:60px}.sCap{width:70px;height:70px;top:70px}}
+/* background depth: blobs and droplets drift with pointer / tilt / scroll */
+#liquidBg .goo{transform:translate3d(calc(var(--gx,0)*-14px),calc(var(--gy,0)*-10px + var(--sy,0)*-.02px),0) scale(1.08)}
+#obj3d .o3{will-change:transform}
+/* tilt cards */
+.tilt3{transition:transform .25s ease-out,box-shadow .3s!important;transform-style:preserve-3d;will-change:transform}
+#sec-menu .grid>button:hover,#sec-menu .grid>button.tilting{transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(-6px) scale(1.025)!important;box-shadow:0 34px 60px -20px rgba(30,20,100,.7),inset 0 2px 2px rgba(255,255,255,.6),inset 0 -14px 28px rgba(0,0,0,.14)!important}
+#test-grid>button:hover,#pma-grid>button:hover,#fa-grid>button:hover,#hk-grid>button:hover,.dash .act:hover{transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(-5px) scale(1.02)}
+/* clay / 3D-press buttons */
+main button.bg-indigo-600,main button.bg-emerald-600,button[onclick^="confirmSubmitQuiz"],button[onclick^="executeSubmitQuiz"],#resExtra button{
+ box-shadow:0 6px 0 rgba(20,15,80,.35),0 16px 26px -8px rgba(70,60,200,.6),inset 0 2px 2px rgba(255,255,255,.6),inset 0 -10px 16px rgba(0,0,0,.14)!important;transition:transform .12s,box-shadow .12s}
+main button.bg-indigo-600:active,main button.bg-emerald-600:active,button[onclick^="confirmSubmitQuiz"]:active,#resExtra button:active{transform:translateY(5px)!important;box-shadow:0 1px 0 rgba(20,15,80,.35),0 6px 12px -6px rgba(70,60,200,.6),inset 0 2px 2px rgba(255,255,255,.5)!important}
+#options-container>*:active{transform:scale(.985) translateY(2px)!important}
+/* neon edge in night mode */
+html.dark main .bg-white{border-color:rgba(130,150,255,.28)!important;box-shadow:var(--gl-sh),0 0 0 1px rgba(110,130,255,.08),0 0 34px -6px rgba(90,110,255,.22)!important}
+/* embossed 3D headings */
+#sec-menu h2,.dash .hi h3{filter:drop-shadow(0 2px 0 rgba(255,255,255,.7)) drop-shadow(0 8px 10px rgba(80,60,200,.22))}
+html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(130,110,255,.35))}
+/* depth page-in + staggered cards */
+.fade-in{animation:d3In .65s cubic-bezier(.2,.8,.2,1) forwards!important}
+@keyframes d3In{from{opacity:0;transform:perspective(1200px) rotateX(9deg) translateY(26px) scale(.97);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
+#sec-menu .grid>button,#test-grid>button,#pma-grid>button,#fa-grid>button,#hk-grid>button,.dash .st,.dash .act{animation:cardIn .6s cubic-bezier(.2,.8,.2,1) backwards}
+@keyframes cardIn{from{opacity:0;transform:perspective(800px) translateY(30px) rotateX(-14deg) scale(.96)}to{opacity:1}}
+.grid>*:nth-child(2),.dash .st:nth-child(2){animation-delay:.07s}.grid>*:nth-child(3),.dash .st:nth-child(3){animation-delay:.14s}.grid>*:nth-child(4),.dash .st:nth-child(4){animation-delay:.21s}.grid>*:nth-child(5){animation-delay:.28s}.grid>*:nth-child(6){animation-delay:.35s}.grid>*:nth-child(n+7){animation-delay:.4s}
+@media (prefers-reduced-motion:reduce){.st,.si{animation:none}}
+</style>
+<script>
+(function(){
+  var R=document.documentElement,tx=0,ty=0,cx=0,cy=0,t0=performance.now(),hasIn=0,b0=null;
+  window.addEventListener('mousemove',function(e){tx=e.clientX/innerWidth*2-1;ty=e.clientY/innerHeight*2-1;hasIn=performance.now()},{passive:true});
+  window.addEventListener('deviceorientation',function(e){if(e.gamma==null)return;if(!b0)b0={b:e.beta,g:e.gamma};tx=Math.max(-1,Math.min(1,(e.gamma-b0.g)/20));ty=Math.max(-1,Math.min(1,(e.beta-b0.b)/20));hasIn=performance.now()},{passive:true});
+  window.addEventListener('touchmove',function(e){var t=e.touches[0];if(t){tx=t.clientX/innerWidth*2-1;hasIn=performance.now()}},{passive:true});
+  function loop(now){
+    var idle=now-hasIn>2500,k=(now-t0)/1000;
+    var gx=idle?Math.sin(k*.09)*.35:tx,gy=idle?Math.cos(k*.07)*.3:ty;
+    cx+=(gx-cx)*.012;cy+=(gy-cy)*.012;
+    R.style.setProperty('--gx',cx.toFixed(4));R.style.setProperty('--gy',cy.toFixed(4));
+    R.style.setProperty('--sy',(window.scrollY||0).toFixed(0));
+    requestAnimationFrame(loop)}
+  if(!matchMedia('(prefers-reduced-motion:reduce)').matches)requestAnimationFrame(loop);
+})();
+</script>
+<script>
+(function(){
+  var SEL='#sec-menu .grid>button,#test-grid>button,#pma-grid>button,#fa-grid>button,#hk-grid>button,.dash .act';
+  var raf=0,px=0,py=0,pt=null;
+  document.addEventListener('pointermove',function(e){if(e.pointerType==='touch')return;px=e.clientX;py=e.clientY;pt=e.target;if(raf)return;
+    raf=requestAnimationFrame(function(){raf=0;var el=pt&&pt.closest&&pt.closest(SEL);if(!el)return;var r=el.getBoundingClientRect();
+      var x=(px-r.left)/r.width-.5,y=(py-r.top)/r.height-.5;el.style.setProperty('--ry',(x*12).toFixed(2)+'deg');el.style.setProperty('--rx',(-y*12).toFixed(2)+'deg')})},{passive:true});
+  document.addEventListener('pointerout',function(e){var el=e.target.closest&&e.target.closest(SEL);if(el&&!el.contains(e.relatedTarget)){el.style.setProperty('--rx','0deg');el.style.setProperty('--ry','0deg')}},true);
+})();
+</script>
+
+<script>function closeSplash(){}</script>
+</body>
+</html>
