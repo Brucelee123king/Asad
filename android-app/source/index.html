@@ -1361,6 +1361,7 @@ html.dark #backBtn{background:rgba(15,23,42,.85);color:#e0e7ff;border-color:rgba
   function atMenu(){return vis('view-select')&&typeof curSec!=='undefined'&&curSec===null}
   function sync(){b.classList.toggle('show',!atMenu())}
   function performBack(){
+    if(window.__aiBackHook&&window.__aiBackHook())return;
     if(vis('view-home')||vis('view-quiz')||vis('view-results')){
       if(vis('view-quiz')&&typeof quizActive!=='undefined'&&quizActive){
         if(!confirm('Leave this test? Your progress will be lost.')){history.pushState({n:1},'');return}
@@ -1742,6 +1743,7 @@ html.dark #aiMsgs .a{background:#141b34}
     <button class="ib" id="aiClr" title="Clear chat">&#128465;</button>
     <button class="ib" id="aiX" title="Close">&#10005;</button>
   </div>
+  <div id="aiSet" style="display:none;padding:8px 12px;border-bottom:1px solid rgba(148,163,184,.25);font-size:12px"><div style="margin-bottom:4px">Online server address (your Netlify site + /.netlify/functions/ask). Leave empty on the website itself.</div><div style="display:flex;gap:6px"><input id="aiSrv" type="url" placeholder="https://mysite.netlify.app/.netlify/functions/ask" style="flex:1;padding:9px;border-radius:10px;border:1px solid rgba(148,163,184,.4);background:transparent;color:inherit;font-size:13px"><button class="ib" id="aiSrvOk">Save</button></div></div>
   <div id="aiMsgs"></div>
   <div id="aiChip"></div>
   <div id="aiAtt"></div>
@@ -1779,7 +1781,7 @@ html.dark #aiMsgs .a{background:#141b34}
     return idx;
   }
   function search(q,max){
-    var qt=toks(q); if(!qt.length)return [];
+    var qt=toks(q).filter(function(w,i,x){return x.indexOf(w)===i}).slice(0,30); if(!qt.length)return [];
     var qs={};qt.forEach(function(w){qs[w]=1});
     var res=[];
     build().forEach(function(r){
@@ -1788,7 +1790,7 @@ html.dark #aiMsgs .a{background:#141b34}
       r.at.forEach(function(w){if(qs[w]&&!m[w]){s+=2;m[w]=1}});
       r.ft.forEach(function(w){if(qs[w]&&!m[w]){s+=1;m[w]=1}});
       var cov=Object.keys(m).length/qt.length;
-      if(cov>=0.5)res.push({r:r,s:s*cov})
+      if(cov>=(qt.length>=3?0.67:0.5))res.push({r:r,s:s*cov})
     });
     res.sort(function(a,b){return b.s-a.s});return res.slice(0,max);
   }
@@ -1805,7 +1807,7 @@ html.dark #aiMsgs .a{background:#141b34}
     var c=cur(), generic=/\b(explain|why|reason|samjh|this question|this mcq|is question)\b/i.test(q);
     var r=search(q,3);
     if(c&&generic&&(!r.length||r[0].s<6)){add('a','Explaining the question you are on:'+card(c,1));return}
-    if(!r.length){add('a','I could not find this in your MCQs.<br><span class="sm">Offline mode only knows the MCQs inside this app. Try other keywords, or switch to <b>Online</b> for any question.</span>');return}
+    if(!r.length){add('a','I could not find this in your MCQs.<br><span class="sm">Offline mode only knows the MCQs inside this app (English keywords). Try other keywords, or switch to <b>Online</b> for any question.</span>');return}
     add('a','Found '+r.length+' related MCQ'+(r.length>1?'s':'')+' in your data:'+r.map(function(x){return card(x.r.e,x.r.n)}).join(''));
   }
   function server(){var s=(LS.get('ai_server')||'').trim();return s||'/.netlify/functions/ask'}
@@ -1813,25 +1815,25 @@ html.dark #aiMsgs .a{background:#141b34}
     if(navigator.onLine===false){add('a','No internet right now. Use <b>Offline</b> mode, or connect and try again.');return}
     var c=cur(), ctx='';
     if(c)ctx='The student is currently on this MCQ: '+strip(c.question)+' Options: '+c.options.join(' | ')+' Correct: '+c.options[c.correct]+(c.facts?' Reason in app: '+c.facts:'');
-    var msgs=hist.slice(-8);
+    if(!(LS.get('ai_server')||'').trim()&&(location.hostname==='appassets.androidplatform.net'||location.protocol==='file:')){add('a','Online server not set up yet. Tap the &#9881; gear, enter your server address and Save. Offline mode still works.');return}
+    var msgs=hist.slice(-7);while(msgs.length&&msgs[0].role==='model')msgs.shift();msgs.push({role:'user',text:q});
     var body={messages:msgs,context:ctx,date:new Date().toISOString().slice(0,10)};
     if(att)body.attachment={mime:att.mime,data:att.data,name:att.name,text:att.text};
     busy=true;var w=add('a','Thinking...');var ctl=new AbortController();var t=setTimeout(function(){ctl.abort()},60000);
     fetch(server(),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body),signal:ctl.signal})
       .then(function(r){return r.text().then(function(tx){var j;try{j=JSON.parse(tx)}catch(e){j=null}
         if(!r.ok||!j)throw new Error(j&&j.error?j.error:(r.status===404?'NOSERVER':'HTTP '+r.status));return j})})
-      .then(function(j){w.innerHTML=md(j.reply||'(empty reply)');hist.push({role:'model',text:j.reply||''});
+      .then(function(j){w.innerHTML=md(j.reply||'(empty reply)');hist.push({role:'user',text:q},{role:'model',text:j.reply||''});att=null;showAtt();
         if(j.sources&&j.sources.length)w.innerHTML+='<div class="sm" style="margin-top:6px">Sources: '+j.sources.slice(0,4).map(function(s){return esc(s)}).join(', ')+'</div>'})
       .catch(function(e){var m=String(e.message||e);
-        w.innerHTML=m==='NOSERVER'?'Online server not set up yet. Open &#9881; settings and enter your server address (see the setup note). Offline mode still works.':(e.name==='AbortError'?'Took too long. Try again.':'Online error: '+esc(m)+'<br><span class="sm">Offline mode still works.</span>')})
-      .then(function(){clearTimeout(t);busy=false;att=null;showAtt()});
+        w.innerHTML=m==='NOSERVER'?'Online server not set up yet. Open &#9881; settings and enter your server address (see the setup note). Offline mode still works.':(e.name==='AbortError'?'Took too long. Try again.':e.name==='TypeError'?'Cannot reach the server. Check internet or the server address (gear).':'Online error: '+esc(m)+'<br><span class="sm">Offline mode still works.</span>')})
+      .then(function(){clearTimeout(t);busy=false});
   }
   function showAtt(){var a=$('aiAtt');if(att){a.style.display='block';a.innerHTML='Attached: '+esc(att.name)+' <button class="ib" id="aiRm" style="height:26px">remove</button>';$('aiRm').onclick=function(){att=null;showAtt()}}else{a.style.display='none';a.innerHTML=''}}
-  function send(quiet){
-    if(busy)return; var q=$('aiIn').value.trim(); if(!q&&!att)return; if(!q)q='Explain this.';
+  function send(quiet,text){
+    if(busy)return; var q=text!==undefined?text:$('aiIn').value.trim(); if(!q&&!att)return; if(!q)q='Explain this.';
     var h=att&&att.preview?'<img src="'+att.preview+'">':(att?'&#128206; '+esc(att.name)+'<br>':'');
-    if(quiet!==true)add('u',h+esc(q)); $('aiIn').value='';$('aiIn').style.height='';
-    hist.push({role:'user',text:q});
+    if(quiet!==true)add('u',h+esc(q)); if(text===undefined){$('aiIn').value='';$('aiIn').style.height=''}
     if(mode==='off'){if(att){add('a','Offline mode cannot read images or files. Switch to <b>Online</b>.');att=null;showAtt();return}offline(q)}else online(q);
   }
   function setMode(m){mode=m;$('aiOff').className=m==='off'?'on':'';$('aiOn').className=m==='on'?'on':'';LS.set('ai_mode',m);
@@ -1857,11 +1859,12 @@ html.dark #aiMsgs .a{background:#141b34}
     if(busy)return;
     add('u',esc(ACTS[i][0]));
     if(mode==='off'){actOff(i,c);return}
-    $('aiIn').value=ACTS[i][1];send(true);
+    send(true,ACTS[i][1]);
   }
   function chips(){var c=$('aiChip');c.innerHTML='';if(cur()){ACTS.forEach(function(a,i){var b=document.createElement('button');b.textContent=a[0];b.onclick=function(){run(i)};c.appendChild(b)})}}
-  function open(){$('aiPanel').classList.add('open');chips();if(!$('aiMsgs').children.length)add('a','Hi! I am your study helper.<br><b>Offline</b>: searches all MCQs inside the app (no internet).<br><b>Online</b>: answers anything, reads images and files (needs internet and a server).');setTimeout(function(){$('aiIn').focus()},50)}
-  function close(){$('aiPanel').classList.remove('open')}
+  var pushed=false,swallow=false;
+  function open(){if(!$('aiPanel').classList.contains('open')){try{history.pushState({n:1},'');pushed=true}catch(e){}}$('aiPanel').classList.add('open');chips();if(!$('aiMsgs').children.length)add('a','Hi! I am your study helper.<br><b>Offline</b>: searches all MCQs inside the app (no internet).<br><b>Online</b>: answers anything, reads images and files (needs internet and a server).');setTimeout(function(){$('aiIn').focus()},50)}
+  function close(){if(!$('aiPanel').classList.contains('open'))return;$('aiPanel').classList.remove('open');if(pushed){pushed=false;swallow=true;try{history.back()}catch(e){swallow=false}}}
   function pick(f){
     if(!f)return; if(f.size>4*1024*1024){add('a','File is too big (max 4 MB).');return}
     var fr=new FileReader();
@@ -1874,7 +1877,8 @@ html.dark #aiMsgs .a{background:#141b34}
   $('aiFab').onclick=open;$('aiX').onclick=close;
   $('aiOff').onclick=function(){setMode('off')};$('aiOn').onclick=function(){setMode('on')};
   $('aiClr').onclick=function(){$('aiMsgs').innerHTML='';hist=[];att=null;showAtt();open()};
-  $('aiGear').onclick=function(){var v=prompt('Online server address (your Netlify site + /.netlify/functions/ask).\nExample: https://mysite.netlify.app/.netlify/functions/ask\nLeave empty to use this site\'s own server.',LS.get('ai_server')||'');if(v!==null)LS.set('ai_server',v.trim())};
+  $('aiGear').onclick=function(){var d=$('aiSet');var o=d.style.display==='none';d.style.display=o?'block':'none';if(o)$('aiSrv').value=LS.get('ai_server')||''};
+  $('aiSrvOk').onclick=function(){LS.set('ai_server',$('aiSrv').value.trim());$('aiSet').style.display='none';add('a','Server address saved.')};
   $('aiClip').onclick=function(){if(mode==='off')setMode('on');$('aiFile').click()};
   $('aiFile').onchange=function(){pick(this.files[0]);this.value=''};
   $('aiSend').onclick=function(){send()};
@@ -1883,10 +1887,11 @@ html.dark #aiMsgs .a{background:#141b34}
   document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
   var m=LS.get('ai_mode');if(m==='on')setMode('on');
   // keep the button off the login screen, lift it above the quiz Next button while a quiz runs
-  function pos(){var a=$('auth'),hide=a&&!a.classList.contains('hidden')&&getComputedStyle(a).display!=='none';
+  function pos(){var a=$('auth'),cs=a?getComputedStyle(a):null,hide=!!cs&&cs.display!=='none'&&cs.visibility!=='hidden'&&!a.classList.contains('hidden')&&!a.classList.contains('hide');
     $('aiFab').style.display=hide?'none':'flex';$('aiFab').style.bottom=(quizActive?'calc(86px + env(safe-area-inset-bottom,0px))':'')}
   setInterval(pos,700);pos();
   window.__aiOpen=open;
+  window.__aiBackHook=function(){if(swallow){swallow=false;return true}if($('aiPanel').classList.contains('open')){pushed=false;$('aiPanel').classList.remove('open');return true}return false};
 })();
 </script>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>

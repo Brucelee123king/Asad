@@ -15,7 +15,9 @@ exports.handler = async (event) => {
   if (!key) return reply(500, { error: 'Server has no GEMINI_API_KEY set.' });
   let b;
   try { b = JSON.parse(event.body || '{}'); } catch (e) { return reply(400, { error: 'Bad request' }); }
-  const msgs = Array.isArray(b.messages) ? b.messages.slice(-8) : [];
+  if (!b || typeof b !== 'object') return reply(400, { error: 'Bad request' });
+  const msgs = (Array.isArray(b.messages) ? b.messages : []).filter((m) => m && typeof m === 'object').slice(-8);
+  while (msgs.length > 1 && msgs[0].role === 'model') msgs.shift();
   if (!msgs.length) return reply(400, { error: 'Empty question' });
 
   const contents = msgs.map((m) => ({
@@ -25,7 +27,9 @@ exports.handler = async (event) => {
   const last = contents[contents.length - 1];
   const a = b.attachment;
   if (a && last.role === 'user') {
-    if (a.data && /^(image\/(jpeg|png|webp)|application\/pdf)$/.test(a.mime || '') && a.data.length < 5.5e6)
+    if (a.data && !(/^(image\/(jpeg|png|webp)|application\/pdf)$/.test(a.mime || '') && a.data.length < 5.5e6))
+      return reply(413, { error: 'Attachment not supported or too large (use JPG/PNG/WEBP/PDF under 4 MB).' });
+    if (a.data)
       last.parts.push({ inline_data: { mime_type: a.mime, data: a.data } });
     else if (a.text) last.parts.push({ text: 'Attached file "' + String(a.name || '') + '":\n' + String(a.text).slice(0, 20000) });
   }
@@ -45,17 +49,18 @@ exports.handler = async (event) => {
           system_instruction: { parts: [{ text: system }] },
           contents,
           tools: [{ google_search: {} }],
-          generationConfig: { temperature: 0.4, maxOutputTokens: 1500 },
+          generationConfig: { temperature: 0.4, maxOutputTokens: 4096 },
         }),
       }
     );
     const j = await r.json();
     if (!r.ok) return reply(502, { error: (j.error && j.error.message) || 'AI service error ' + r.status });
     const cand = (j.candidates || [])[0] || {};
+    const why = (j.promptFeedback && j.promptFeedback.blockReason) || cand.finishReason || '';
     const text = ((cand.content && cand.content.parts) || []).map((p) => p.text || '').join('').trim();
     const chunks = (cand.groundingMetadata && cand.groundingMetadata.groundingChunks) || [];
     const sources = [...new Set(chunks.map((c) => c.web && c.web.title).filter(Boolean))];
-    return reply(200, { reply: text || 'No answer. Try rephrasing.', sources });
+    return reply(200, { reply: text || 'No answer (' + why + '). Try rephrasing.', sources });
   } catch (e) {
     return reply(502, { error: 'Could not reach the AI service.' });
   }
