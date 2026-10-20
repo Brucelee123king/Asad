@@ -54,6 +54,7 @@ class MainActivity : Activity() {
     private var lastBackPress = 0L
     private var night = false
     private var topColor = 0   // 0 = not reported yet (brand colour)
+    private var topInsetPx = 0 // status-bar height on Android 15+, where the page is drawn behind it
     private var pageShown = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -105,12 +106,24 @@ class MainActivity : Activity() {
             column.setOnApplyWindowInsetsListener { _, insets ->
                 val bars = insets.getInsets(WindowInsets.Type.systemBars() or WindowInsets.Type.displayCutout())
                 val ime = insets.getInsets(WindowInsets.Type.ime())
-                topBar.layoutParams = topBar.layoutParams.apply { height = bars.top }
+                // the page itself is drawn behind the status bar (so its background reaches the very top);
+                // the page gets the bar height as the CSS variable --sat and pads its header with it
+                topInsetPx = bars.top
+                topBar.layoutParams = topBar.layoutParams.apply { height = 0 }
+                applyInsetToPage()
                 bottomBar.layoutParams = bottomBar.layoutParams.apply { height = maxOf(bars.bottom, ime.bottom) }
                 column.setPadding(bars.left, 0, bars.right, 0)
                 WindowInsets.CONSUMED
             }
         }
+    }
+
+    /** Tell the page how tall the status bar is (CSS pixels), so fixed/sticky top elements start below it. */
+    private fun applyInsetToPage() {
+        if (!::webView.isInitialized) return
+        val css = topInsetPx / resources.displayMetrics.density
+        webView.evaluateJavascript(
+            "document.documentElement.style.setProperty('--sat','" + String.format(java.util.Locale.US, "%.1f", css) + "px')", null)
     }
 
     private fun dp(v: Int) = (v * resources.displayMetrics.density + 0.5f).toInt()
@@ -217,7 +230,10 @@ class MainActivity : Activity() {
             override fun shouldOverrideUrlLoading(view: WebView, request: WebResourceRequest): Boolean =
                 !isAppUrl(request.url)                    // anything outside the app is blocked
 
+            override fun onPageCommitVisible(view: WebView, url: String) { applyInsetToPage() }
+
             override fun onPageFinished(view: WebView, url: String) {
+                applyInsetToPage()
                 if (!pageShown) {
                     pageShown = true
                     view.visibility = View.VISIBLE

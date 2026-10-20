@@ -12,6 +12,13 @@ html.lite *,html.lite *::before,html.lite *::after{animation-duration:.01ms!impo
 /* long review lists: only lay out/paint cards that are on screen */
 #review-list-container>div{content-visibility:auto;contain-intrinsic-size:auto 260px}
 ::view-transition-old(root),::view-transition-new(root){animation-duration:.32s;animation-timing-function:ease-in-out;mix-blend-mode:normal}
+/* page is drawn behind the status bar (Android 15+): --sat = status-bar height, set by the app; 0 elsewhere */
+html{--sat:0px}
+header{padding-top:var(--sat)!important}
+#themeBtn{top:calc(12px + var(--sat))!important}
+#auth .brand{top:calc(16px + var(--sat))!important}
+#auth .side{padding-top:calc(64px + var(--sat))!important}
+#srchModal{padding-top:calc(16px + var(--sat))!important}
 </style>
 <script>
 (function () {

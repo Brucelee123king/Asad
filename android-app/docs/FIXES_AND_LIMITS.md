@@ -74,3 +74,8 @@ See the end of this file for the final table.
 - 7 more MCQs fixed (8 entries): 161 (Chief Justice selection, now 27th Amendment rule), 686 (largest city: Jakarta, UN 2025), 749 + 852 (Fatima Jinnah, 1934), 911 (squash: 14 World Open titles), 3923 (namaz made obligatory on the night of Mi'raj), 1349 (snake crawls). 88 + 8 = 96 changed entries in total; still 196 tests / 11,208 entries; nothing deleted.
 - Still unresolved (left as they were): about 11 items, see verify_all/final_check_report.md section C.
 - Day / night switch (v1.0.8 used a black-out fade and was removed): v1.0.9 uses the browser's View Transitions, which keep a picture of the old screen and cross-fade it into the new theme in about 0.3 s - the screen never goes blank. On a very old WebView it simply switches at once.
+
+## v1.0.10 - status bar matches the page exactly
+- Android 15+: the page is now drawn behind the status bar, so the page's own background (login gradient, header white / indigo, day or night) reaches the very top - no separate coloured strip. The app passes the bar height to the page as CSS `--sat`; header, theme button, login brand/card and search box start below it. Status-bar icons switch light/dark with the page colour.
+- Older Android (14 and below): the bar is still painted with the page's top colour (previous behaviour).
+- Checked in a desktop browser with a 28 px bar; native part compiled, not seen on a phone.
