@@ -29,6 +29,21 @@ if os.path.exists(_p163):
         if _t[0] in _dup163: continue
         _extra = sum(1 for _d, _k in _dup163.items() if _k == _t[0])
         Q.append((_t[1], _t[2], _t[3], _t[4], _t[5], _t[6] + _extra))
+# Pro Genius solved academic experience (pma165/): same procedure (repeats raise the count, new MCQs appended)
+_p165 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma165')
+if os.path.exists(os.path.join(_p165, 'm_r1.py')):
+    import runpy as _rp3
+    _seen165 = {}
+    for _f in ('m_r1.py', 'm_r2.py', 'm_r3.py'):
+        _m = _rp3.run_path(os.path.join(_p165, _f))
+        for _n, _idx in _m['MATCH']:
+            _t = list(Q[_idx]); _t[5] = _t[5] + 1; Q[_idx] = tuple(_t)
+        for _t in _m['NEW']:
+            _key = re.sub(r'[^a-z0-9]+', ' ', _t[2].lower()).strip()
+            if _key in _seen165:
+                _j = _seen165[_key]; _u = list(Q[_j]); _u[5] += 1; Q[_j] = tuple(_u); continue
+            _seen165[_key] = len(Q)
+            Q.append((_t[1], _t[2], _t[3], _t[4], _t[5], _t[6]))
 
 src, out = sys.argv[1], sys.argv[2]
 s = open(src, encoding='utf8').read()
