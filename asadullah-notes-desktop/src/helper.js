@@ -94,22 +94,34 @@
     if (tab === 'on') add('sys', navigator.onLine ? 'Online helper: ask in English, Urdu or Roman Urdu. Attach a screenshot, PDF or text file with the paperclip (or paste with Ctrl+V). Answers use web search; please double-check important current-affairs facts.' : 'You are offline. Use the Offline tab, or connect to the internet.');
     else add('sys', 'Offline helper: searches all ' + (function () { build(); return flat.length; })() + ' questions and their explanations on this computer. No internet needed. For general or current questions, use the Online tab.');
   }
-  function chips() {
-    var c = $('anChips'); c.textContent = '';
-    var b = el('button', null, 'Explain this question'); b.type = 'button'; b.onclick = explainCurrent; c.appendChild(b);
-    if (tab === 'on') [['Explain in simple words'], ['Give more detail'], ['Give an example']].forEach(function (x) { var k = el('button', null, x[0]); k.type = 'button'; k.onclick = function () { $('anText').value = x[0]; send(); }; c.appendChild(k); });
-  }
+  function qBlock(q) { return 'Question: ' + q.question + '\n' + q.options.map(function (o, i) { return 'ABCDE'[i] + ') ' + o; }).join('\n') + '\nCorrect answer (from the app): ' + 'ABCDE'[q.correct] + ') ' + q.options[q.correct] + (q.facts ? '\nApp note: ' + q.facts : '') + (q.rel ? '\nRelated fact: ' + q.rel : ''); }
   function currentQ() {
     try { if (typeof quizData !== 'undefined' && quizData.length && !document.getElementById('view-quiz').classList.contains('hidden')) { var q = quizData[currentQuestionIndex]; if (userAnswers[currentQuestionIndex] === null) return { locked: true }; return { q: q }; } } catch (e) {}
     return null;
   }
-  function explainCurrent() {
+  /* quick actions for the question on screen: off = offline answer, on = prompt sent to the AI */
+  var ACTIONS = [
+    { label: 'Explain this question', off: function (q, m) { m.appendChild(hitNode(q)); }, on: 'Explain this MCQ step by step and say why the correct option is right.' },
+    { label: 'Explain in simple words', off: function (q, m) { m.appendChild(el('div', 'ex', 'In short: the answer is "' + q.options[q.correct] + '".' + (q.facts ? ' ' + q.facts : ''))); }, on: 'Explain this MCQ in very simple words, like I am a beginner.' },
+    { label: 'Explain in detail', off: null, on: 'Explain this MCQ in detail: the concept, background, and everything a student should know about this topic.' },
+    { label: 'Why are the others wrong?', off: function (q, m) { q.options.forEach(function (o, i) { m.appendChild(el('div', 'ex', ('ABCDE'[i]) + ') ' + o + (i === q.correct ? '  ✔ correct' : '  ✘ not the answer'))); }); if (q.facts) m.appendChild(el('div', 'ex', 'Reason: ' + q.facts)); }, on: 'Explain why each wrong option is wrong, one by one.' },
+    { label: 'Memory trick', off: null, on: 'Give me an easy memory trick or mnemonic to remember this answer.' },
+    { label: 'Related facts', off: function (q, m) { m.appendChild(el('div', 'ex', q.rel || q.facts || 'No extra facts are stored for this question.')); }, on: 'Give related facts and background about this topic that could be asked in the exam.' },
+    { label: 'Similar questions', off: function (q, m) { var r = search(tokens(q.question).concat(tokens(q.options[q.correct])).slice(0, 8).join(' ')).filter(function (x) { return x.question !== q.question; }); if (!r.length) m.appendChild(el('div', 'ex', 'No similar questions found.')); r.forEach(function (x) { m.appendChild(hitNode(x)); }); }, on: 'Write 3 new practice MCQs on the same topic with answers and short explanations.' },
+    { label: 'Urdu mein samjhao', off: null, on: 'Is MCQ ko Urdu (Roman Urdu) mein asaan alfaz mein samjhao.' }
+  ];
+  function runAction(a) {
     var c = currentQ();
     if (!c) { add('sys', 'Open a question during a test first, then tap this.'); return; }
     if (c.locked) { add('sys', 'Answer the question first, then ask for the explanation.'); return; }
-    var q = c.q;
-    if (tab === 'on') { var t = 'Explain this MCQ step by step in simple words and say why each wrong option is wrong.\nQuestion: ' + q.question + '\n' + q.options.map(function (o, i) { return 'ABCDE'[i] + ') ' + o; }).join('\n') + '\nCorrect answer (from the app): ' + 'ABCDE'[q.correct] + ') ' + q.options[q.correct] + (q.facts ? '\nApp note: ' + q.facts : ''); $('anText').value = t; send('Explain this question'); }
-    else { add('u', 'Explain this question'); var m = add('a', ''); m.appendChild(hitNode(q)); }
+    if (tab === 'on') { if (!hasKey) { showSettings(false); return; } $('anText').value = a.on + '\n\n' + qBlock(c.q); send(a.label); }
+    else if (a.off) { add('u', a.label); var m = add('a', ''); a.off(c.q, m); }
+    else add('sys', '"' + a.label + '" needs the Online tab (internet + API key).');
+  }
+  function chips() {
+    var c = $('anChips'); c.textContent = '';
+    if (currentQ()) { var t = el('div', null, 'This question:'); t.style.cssText = 'width:100%;font-size:11.5px;opacity:.7'; c.appendChild(t); ACTIONS.forEach(function (a) { var b = el('button', null, a.label); b.type = 'button'; if (tab === 'off' && !a.off) b.style.opacity = '.5'; b.onclick = function () { runAction(a); }; c.appendChild(b); }); }
+    else if (tab === 'on') ['Explain in simple words', 'Give more detail', 'Give an example'].forEach(function (x) { var k = el('button', null, x); k.type = 'button'; k.onclick = function () { $('anText').value = x; send(); }; c.appendChild(k); });
   }
   function showSettings(force) {
     var s = $('anSet'); s.textContent = ''; $('anChips').textContent = ''; $('anMsgs').style.display = 'none'; $('anIn').style.display = 'none'; s.style.display = '';
@@ -155,6 +167,10 @@
       if (r.sources && r.sources.length) { var s = el('span', 'src'); s.appendChild(document.createTextNode('Sources: ')); r.sources.forEach(function (x, i) { var a = el('a', null, (x.title || x.url).slice(0, 50)); a.href = x.url; a.target = '_blank'; a.rel = 'noopener'; if (i) s.appendChild(document.createTextNode(' · ')); s.appendChild(a); }); m.appendChild(s); }
     }).catch(function () { wait.remove(); busy = false; $('anSend').disabled = false; history.pop(); add('err', 'Something went wrong. Please try again.'); });
   }
-  function start() { mount(); }
+  function watch() {
+    var upd = function () { if ($('anHelp') && $('anHelp').classList.contains('open') && $('anSet').style.display === 'none') chips(); };
+    ['question-text', 'view-quiz'].forEach(function (id) { var n = document.getElementById(id); if (n) new MutationObserver(upd).observe(n, { childList: true, characterData: true, subtree: true, attributes: true, attributeFilter: ['class'] }); });
+  }
+  function start() { mount(); watch(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
 })();
