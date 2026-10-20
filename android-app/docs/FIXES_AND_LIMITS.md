@@ -4,9 +4,10 @@
 - Every unique MCQ was solved blind (marked answer hidden) by an independent agent: 8,931 of 8,931 answered.
 - Matches marked answer with high/medium confidence: 8,678. Low-confidence match: 84. Disagree: 48. Flawed/unclear (X): 121.
 - 360 flagged or time-sensitive items were re-judged (7 answer changes, 78 rewrites suggested, rest KEEP).
-- Applied: 70 MCQs fixed (75 occurrences): 29 answers changed, 41 same answer but option/question/reason text repaired (duplicate or junk options, wrong wording, outdated counts such as constitution amendments, KP governor's rule 11 Oct 2026). Plus 4 formatting fixes (Surah An-Naml x2, Ionian Sea x2).
-- No MCQ was deleted. Test count (196) and entry count (11,208) are unchanged; exactly 79 entries differ from the earlier site.
-- NOT resolved (left exactly as they were): 22 MCQs (see verify_all/final_lists.json): ambiguous or unverifiable (e.g. number of OIC countries in Asia, Fatima Jinnah joining year, "What is Pakistaniat", KP district count, largest city by population).
+- Applied: 79 MCQs fixed (84 occurrences; the last 9 after a second web-verification round): 30 answers changed, 49 same answer but option/question/reason text repaired (duplicate or junk options, wrong wording, outdated counts such as constitution amendments, KP governor's rule 11 Oct 2026). Plus 4 formatting fixes (Surah An-Naml x2, Ionian Sea x2).
+- No MCQ was deleted. Test count (196) and entry count (11,208) are unchanged; 88 entries differ from the original site.
+- Second round (19 agents, web search): 187 items re-checked; 135 confirmed, 34 could not be verified because search was refused, 9 clearly supported fixes applied (e.g. Liaquat's 1950 USA visit, Rawalpindi interim capital 1959, a junk-option cleanup). Unapplied suggestions (low confidence or disputed) include: largest city (Jakarta vs Tokyo), KP district count, 'Hero's Award', salah count.
+- NOT resolved (left exactly as they were): about 22 MCQs plus the 34 unverifiable ones (see verify_all/final_lists.json): ambiguous or unverifiable (e.g. number of OIC countries in Asia, Fatima Jinnah joining year, "What is Pakistaniat", KP district count, largest city by population).
 - Limits: the shared web-search budget ran out during the check, so many time-sensitive items (office holders, rankings, 2025-26 events) were answered from model knowledge and are NOT web-verified. About 360 such items were re-judged but mostly also without search. Please spot-check current-affairs MCQs.
 - Garbled OCR text in the "reason" of the first 1000 MCQs (about 400 flagged) and small option typos were reported but not mass-edited (only 4 certain fixes applied) to avoid damaging content.
 

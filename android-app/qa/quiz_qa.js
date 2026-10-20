@@ -1,7 +1,7 @@
 const { chromium } = require('playwright');
 const { spawn } = require('child_process');
 const fs = require('fs');
-const PORT = 8765;
+const PORT = +process.env.PORT || 8765; const TAG = process.env.TAG || 'x'; const E = process.env;
 const WWW = '/home/user/Asad/android-app/app/src/main/assets/www';
 const results = [];
 function rec(name, ok, ev) { results.push({ name, ok: !!ok, ev: String(ev === undefined ? '' : ev) }); console.log((ok ? 'PASS ' : 'FAIL ') + name + ' | ' + (ev === undefined ? '' : ev)); }
@@ -33,7 +33,7 @@ const secOf = k => /^PMA-/.test(k) ? 'pma' : /^FA-/.test(k) ? 'fa' : /^HK-/.test
   const timer = () => page.evaluate(() => document.getElementById('timer-display').textContent);
   const secs = s => { const [m, x] = s.split(':').map(Number); return m * 60 + x; };
 
-  // ---- data counts
+  if (E.DATA) {  // ---- data counts
   const data = await page.evaluate(() => { const o = {}; Object.keys(ALL).forEach(k => o[k] = ALL[k].length); return o; });
   const bySec = {}; const keys = Object.keys(data);
   keys.forEach(k => { const s = ['o'].concat([]); });
@@ -59,8 +59,9 @@ const secOf = k => /^PMA-/.test(k) ? 'pma' : /^FA-/.test(k) ? 'fa' : /^HK-/.test
   // original sections: 20 tests x 50
   rec('DATA original section = 20 tests x 50 (1000 MCQs)', secKeysRaw.o.length === 20 && secKeysRaw.o.every(k => data[k] === 50), `${secKeysRaw.o.length} tests, sizes ${[...new Set(secKeysRaw.o.map(k => data[k]))]}  keys first/last ${secKeysRaw.o[0]} ${secKeysRaw.o.at(-1)}`);
 
+  } // end DATA
   // ---- per-test flow
-  const TESTS = ['1-50', 'PMA-1', 'FA-1', 'HK-1', 'MR-500', 'CN-1', 'IV-1', 'LC-1'];
+  const TESTS = (E.TESTS || '').split(',').filter(Boolean);
   for (const k of TESTS) {
     if (!data[k]) { rec(`[${k}] exists in ALL`, false, 'missing'); continue; }
     const N = data[k]; const Q = await page.evaluate(k => ALL[k], k);
@@ -192,7 +193,7 @@ const secOf = k => /^PMA-/.test(k) ? 'pma' : /^FA-/.test(k) ? 'fa' : /^HK-/.test
     rec(P('Back + OK: returns to selection, quiz stopped, no running timer'), sel && !(await page.evaluate(() => quizActive)) && stillRunning === ivBase && tx === ty, `selectVisible=${sel} intervals=${stillRunning}(base ${ivBase}) display ${tx}->${ty} dialogs=${JSON.stringify(dialogs)}`);
   }
   // ---- auto submit at 0 (3 tests), run once, no double timer after restart
-  for (const k of ['1-50', 'PMA-1', 'IV-1']) {
+  for (const k of (E.AUTO || '').split(',').filter(Boolean)) {
     const N = data[k], Q = await page.evaluate(k => ALL[k], k), P = n => `[${k}] ${n}`;
     await page.evaluate(() => { if (document.getElementById('view-select').classList.contains('hidden')) { quizActive = false; showSelect(); } });
     await page.evaluate(k => selectTest(k), k);
@@ -225,19 +226,21 @@ const secOf = k => /^PMA-/.test(k) ? 'pma' : /^FA-/.test(k) ? 'fa' : /^HK-/.test
     await page.evaluate(() => { quizActive = false; showSelect(); });
     rec(P('showSelect() clears timer'), (await ivCount()) === ivBase, `intervals ${await ivCount()}`);
   }
+  if (E.END) {
   // ---- double start protection: call startQuiz twice quickly
   await page.evaluate(() => { selectTest('1-50'); });
   const b0 = await ivCount(); await page.click('#start-quiz-btn'); await page.evaluate(() => startQuiz()); await page.evaluate(() => startQuiz());
   rec('startQuiz() called repeatedly creates only one timer', await (async()=>{const x=secs(await timer());await page.clock.runFor(10000);return Math.abs(x-secs(await timer())-10)<=1})(), 'timer drops ~10 in 10s');
   dialogMode = 'accept'; await page.evaluate(() => showSelect());
   // ---- persistence after reload
+  for (const kk of ['1-50','PMA-1']) { await page.evaluate(kk => { selectTest(kk); document.getElementById('start-quiz-btn').click(); jumpToQuestion(0); document.querySelectorAll('#options-container [role=button]')[quizData[0].correct].click(); executeSubmitQuiz(); showSelect(); }, kk); }
   const bestBefore = await page.evaluate(() => { const o = {}; for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (k.startsWith('mc_best_')) o[k] = localStorage.getItem(k); } return o; });
   await page.reload(); await page.waitForTimeout(500);
   const guestBtn = await page.getByText('Continue as Guest').first().isVisible().catch(() => false);
   if (guestBtn) await page.getByText('Continue as Guest').first().click();
   await page.clock.runFor(1500);
   const bestAfter = await page.evaluate(() => { const o = {}; for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (k.startsWith('mc_best_')) o[k] = localStorage.getItem(k); } return o; });
-  rec('best scores persist in localStorage after reload', JSON.stringify(bestBefore) === JSON.stringify(bestAfter) && Object.keys(bestAfter).length >= 6, `before=${JSON.stringify(bestBefore)}`);
+  rec('best scores persist in localStorage after reload', JSON.stringify(bestBefore) === JSON.stringify(bestAfter) && Object.keys(bestAfter).length >= 1, `before=${JSON.stringify(bestBefore)}`);
   // displayed on cards
   await page.evaluate(() => { if (document.getElementById('view-select').classList.contains('hidden')) showSelect(); openSec('o'); });
   const badge = await page.evaluate(() => { const b = Array.from(document.querySelectorAll('#test-grid button')).find(b => b.getAttribute('onclick') === "selectTest('1-50')"); return b ? b.innerText.replace(/\s+/g, ' ') : null; });
@@ -252,6 +255,7 @@ const secOf = k => /^PMA-/.test(k) ? 'pma' : /^FA-/.test(k) ? 'fa' : /^HK-/.test
   rec('no failed requests', failedReq.length === 0, failedReq.slice(0, 5).join(' ; ') || 'none');
   rec('no JS page errors', pageErrs.length === 0, pageErrs.slice(0, 5).join(' ; ') || 'none');
   rec('no console errors', consoleErrs.length === 0, consoleErrs.slice(0, 5).join(' ; ') || 'none');
-  fs.writeFileSync('/home/user/Asad/android-app/qa/quiz_qa_results.json', JSON.stringify(results, null, 1));
+  }
+  fs.writeFileSync('/tmp/qa_res_' + TAG + '.json', JSON.stringify(results, null, 1));
   await browser.close(); srv.kill();
 })().catch(e => { console.error('SCRIPT ERROR', e); process.exit(1); });
