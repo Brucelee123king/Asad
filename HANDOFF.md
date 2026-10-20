@@ -184,3 +184,6 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - AI Helper: round button bottom-right (pma159/ai_block.html). Offline = keyword search over all MCQs; Online = POST to Netlify function netlify/functions/ask.js (Gemini, key in env GEMINI_API_KEY; setup in netlify/SETUP_AI_ONLINE.md). Quick-action chips for the current question. Image/PDF/text attach (online).
 - APK now has INTERNET permission (Online mode only) and a file chooser; server address set via gear box.
 - Known: some original 1-50/51-100 MCQs have wrong or missing reason text (e.g. 1-50 Q1 shows FIFA text). Not edited (data rule).
+
+## v1.0.16 (versionCode 17)
+- Reason text fixed for 109 original MCQs (28 had none, 81 had unrelated text) via corrections.json (facts only; no question/option/answer changed). Written by 5 agents mostly from knowledge (only slice 4 and part of slice 2 used web search). 901-950 id 31 (Noah's ark 6 months) is tradition-based and noted as such in the text.
