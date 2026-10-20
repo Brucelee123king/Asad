@@ -1704,6 +1704,191 @@ html.dark #rngModal .go.alt{color:#a5b4fc;border-color:#a5b4fc}
   try{inject()}catch(e){}
 })();
 </script>
+<style>
+/* ======== AI HELPER: round button bottom-right, offline (own MCQs) + online (server) chat ======== */
+#aiFab{position:fixed;right:16px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:9990;width:54px;height:54px;border-radius:50%;border:0;cursor:pointer;color:#fff;font-size:22px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#6366f1,#ec4899);box-shadow:0 10px 24px -6px rgba(0,0,0,.45)}
+#aiFab:active{transform:scale(.92)}
+#aiPanel{position:fixed;left:0;top:0;right:0;bottom:0;z-index:9998;display:none;flex-direction:column;background:#f8fafc;color:#0f172a;padding-top:var(--sat,0px)}
+#aiPanel.open{display:flex}
+html.dark #aiPanel{background:#0b1020;color:#e2e8f0}
+#aiPanel .hd{display:flex;align-items:center;gap:8px;padding:10px 12px;border-bottom:1px solid rgba(148,163,184,.25)}
+#aiPanel .hd b{font-size:16px;flex:1}
+#aiPanel .ib{border:0;background:rgba(148,163,184,.2);color:inherit;height:38px;min-width:38px;border-radius:11px;cursor:pointer;font-size:14px;padding:0 10px}
+#aiPanel .seg{display:flex;border-radius:11px;overflow:hidden;border:1px solid rgba(148,163,184,.35)}
+#aiPanel .seg button{border:0;background:transparent;color:inherit;padding:8px 12px;font-size:13px;font-weight:700;cursor:pointer}
+#aiPanel .seg button.on{background:#6366f1;color:#fff}
+#aiMsgs{flex:1;overflow:auto;padding:12px;display:flex;flex-direction:column;gap:10px}
+#aiMsgs .m{max-width:92%;padding:10px 12px;border-radius:14px;font-size:14px;line-height:1.5;word-wrap:break-word;overflow-wrap:anywhere}
+#aiMsgs .u{align-self:flex-end;background:#6366f1;color:#fff;border-bottom-right-radius:4px}
+#aiMsgs .a{align-self:flex-start;background:#fff;border:1px solid rgba(148,163,184,.3);border-bottom-left-radius:4px}
+html.dark #aiMsgs .a{background:#141b34}
+#aiMsgs .m img{max-width:100%;border-radius:8px;display:block;margin-bottom:6px}
+#aiMsgs .hit{margin:6px 0;padding:8px;border-radius:10px;background:rgba(99,102,241,.08);border:1px solid rgba(99,102,241,.25)}
+#aiMsgs .ok{color:#16a34a;font-weight:700}
+#aiMsgs .sm{font-size:12px;opacity:.7}
+#aiBar{display:flex;gap:8px;align-items:flex-end;padding:8px 10px calc(8px + env(safe-area-inset-bottom,0px));border-top:1px solid rgba(148,163,184,.25)}
+#aiBar textarea{flex:1;resize:none;max-height:110px;min-height:42px;padding:10px 12px;border-radius:12px;border:1px solid rgba(148,163,184,.4);background:transparent;color:inherit;font:inherit;font-size:15px}
+#aiSend{background:#6366f1;color:#fff;font-weight:700}
+#aiChip{display:flex;gap:6px;flex-wrap:wrap;padding:6px 12px 0}
+#aiChip button{border:1px solid rgba(99,102,241,.5);background:transparent;color:inherit;border-radius:999px;padding:6px 11px;font-size:12px;cursor:pointer}
+#aiAtt{padding:4px 12px;font-size:12px;display:none}
+</style>
+<button id="aiFab" aria-label="AI Helper" title="AI Helper"><i class="fas fa-robot"></i></button>
+<div id="aiPanel" role="dialog" aria-modal="true" aria-label="AI Helper">
+  <div class="hd">
+    <b>AI Helper</b>
+    <div class="seg"><button id="aiOff" class="on">Offline</button><button id="aiOn">Online</button></div>
+    <button class="ib" id="aiGear" title="Settings">&#9881;</button>
+    <button class="ib" id="aiClr" title="Clear chat">&#128465;</button>
+    <button class="ib" id="aiX" title="Close">&#10005;</button>
+  </div>
+  <div id="aiMsgs"></div>
+  <div id="aiChip"></div>
+  <div id="aiAtt"></div>
+  <div id="aiBar">
+    <button class="ib" id="aiClip" title="Attach image or file">&#128206;</button>
+    <input type="file" id="aiFile" accept="image/*,.pdf,.txt" style="display:none">
+    <textarea id="aiIn" rows="1" placeholder="Ask anything about an MCQ..."></textarea>
+    <button class="ib" id="aiSend">Send</button>
+  </div>
+</div>
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  var mode='off', hist=[], att=null, busy=false, idx=null;
+  var LS={get:function(k){try{return localStorage.getItem(k)}catch(e){return null}},set:function(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+  var STOP={};'what which who whom whose is are was were the of a an in on at to for and or do does did how why when where me my i you it this that tell about please explain give show can could with as by be from'.split(' ').forEach(function(w){STOP[w]=1});
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function md(s){var h=esc(s).replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>').replace(/`([^`]+)`/g,'<code>$1</code>');
+    return h.split('\n').map(function(l){return /^\s*[-*•]\s+/.test(l)?'&bull; '+l.replace(/^\s*[-*•]\s+/,''):l}).join('<br>')}
+  function strip(q){return String(q||'').replace(/^\s*\((?:Original MCQ #\d+|[^)]*·[^)]*)\)\s*/i,'').replace(/\s*\((?:Repeated in )?\d+(?: tests)?\)\s*$/i,'').trim()}
+  function toks(s){return String(s||'').toLowerCase().replace(/%/g,' percent ').split(/[^a-z0-9؀-ۿऀ-ॿ]+/).filter(function(w){return w&&!STOP[w]&&(w.length>1||/\d/.test(w))})}
+  function add(cls,html){var d=document.createElement('div');d.className='m '+cls;d.innerHTML=html;$('aiMsgs').appendChild(d);$('aiMsgs').scrollTop=1e9;return d}
+  function build(){
+    if(idx)return idx; var map={};
+    try{Object.keys(ALL).forEach(function(k){
+      if(/^(CUS-)/.test(k))return;
+      (ALL[k]||[]).forEach(function(e){
+        if(!e||!e.question||!e.options)return;
+        var core=strip(e.question), key=toks(core).sort().join(' ')+'|'+String(e.options[e.correct]).toLowerCase();
+        var o=map[key]; var tx=(e.facts||'')+(e.rel||'');
+        if(!o){map[key]=o={e:e,core:core,n:1,len:tx.length}}else{o.n++;if(tx.length>o.len){o.e=e;o.len=tx.length}}
+      })})}catch(err){}
+    idx=Object.keys(map).map(function(k){var o=map[k],e=o.e;
+      return {core:o.core,e:e,n:o.n,qt:toks(o.core),at:toks(e.options.join(' ')),ft:toks((e.facts||'')+' '+(e.rel||''))}});
+    return idx;
+  }
+  function search(q,max){
+    var qt=toks(q); if(!qt.length)return [];
+    var qs={};qt.forEach(function(w){qs[w]=1});
+    var res=[];
+    build().forEach(function(r){
+      var s=0,m={};
+      r.qt.forEach(function(w){if(qs[w]&&!m[w]){s+=3;m[w]=1}});
+      r.at.forEach(function(w){if(qs[w]&&!m[w]){s+=2;m[w]=1}});
+      r.ft.forEach(function(w){if(qs[w]&&!m[w]){s+=1;m[w]=1}});
+      var cov=Object.keys(m).length/qt.length;
+      if(cov>=0.5)res.push({r:r,s:s*cov})
+    });
+    res.sort(function(a,b){return b.s-a.s});return res.slice(0,max);
+  }
+  function cur(){try{if(quizActive&&ALL[currentTestKey])return ALL[currentTestKey][currentQuestionIndex]}catch(e){}return null}
+  function card(e,n){
+    var L='ABCDE',h='<div class="hit"><b>'+esc(strip(e.question))+'</b>';
+    e.options.forEach(function(o,i){h+='<div'+(i===e.correct?' class="ok"':'')+'>'+L[i]+'. '+esc(o)+(i===e.correct?' &#10003;':'')+'</div>'});
+    if(e.facts)h+='<div style="margin-top:6px"><b>Reason:</b> '+esc(e.facts)+'</div>';
+    if(e.rel)h+='<div style="margin-top:4px"><b>Related facts:</b> '+esc(e.rel)+'</div>';
+    if(n>1)h+='<div class="sm">Asked about '+n+' times in your data</div>';
+    return h+'</div>';
+  }
+  function offline(q){
+    var c=cur(), generic=/\b(explain|why|reason|samjh|this question|this mcq|is question)\b/i.test(q);
+    var r=search(q,3);
+    if(c&&generic&&(!r.length||r[0].s<6)){add('a','Explaining the question you are on:'+card(c,1));return}
+    if(!r.length){add('a','I could not find this in your MCQs.<br><span class="sm">Offline mode only knows the MCQs inside this app. Try other keywords, or switch to <b>Online</b> for any question.</span>');return}
+    add('a','Found '+r.length+' related MCQ'+(r.length>1?'s':'')+' in your data:'+r.map(function(x){return card(x.r.e,x.r.n)}).join(''));
+  }
+  function server(){var s=(LS.get('ai_server')||'').trim();return s||'/.netlify/functions/ask'}
+  function online(q){
+    if(navigator.onLine===false){add('a','No internet right now. Use <b>Offline</b> mode, or connect and try again.');return}
+    var c=cur(), ctx='';
+    if(c)ctx='The student is currently on this MCQ: '+strip(c.question)+' Options: '+c.options.join(' | ')+' Correct: '+c.options[c.correct]+(c.facts?' Reason in app: '+c.facts:'');
+    var msgs=hist.slice(-8);
+    var body={messages:msgs,context:ctx,date:new Date().toISOString().slice(0,10)};
+    if(att)body.attachment={mime:att.mime,data:att.data,name:att.name,text:att.text};
+    busy=true;var w=add('a','Thinking...');var ctl=new AbortController();var t=setTimeout(function(){ctl.abort()},60000);
+    fetch(server(),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body),signal:ctl.signal})
+      .then(function(r){return r.text().then(function(tx){var j;try{j=JSON.parse(tx)}catch(e){j=null}
+        if(!r.ok||!j)throw new Error(j&&j.error?j.error:(r.status===404?'NOSERVER':'HTTP '+r.status));return j})})
+      .then(function(j){w.innerHTML=md(j.reply||'(empty reply)');hist.push({role:'model',text:j.reply||''});
+        if(j.sources&&j.sources.length)w.innerHTML+='<div class="sm" style="margin-top:6px">Sources: '+j.sources.slice(0,4).map(function(s){return esc(s)}).join(', ')+'</div>'})
+      .catch(function(e){var m=String(e.message||e);
+        w.innerHTML=m==='NOSERVER'?'Online server not set up yet. Open &#9881; settings and enter your server address (see the setup note). Offline mode still works.':(e.name==='AbortError'?'Took too long. Try again.':'Online error: '+esc(m)+'<br><span class="sm">Offline mode still works.</span>')})
+      .then(function(){clearTimeout(t);busy=false;att=null;showAtt()});
+  }
+  function showAtt(){var a=$('aiAtt');if(att){a.style.display='block';a.innerHTML='Attached: '+esc(att.name)+' <button class="ib" id="aiRm" style="height:26px">remove</button>';$('aiRm').onclick=function(){att=null;showAtt()}}else{a.style.display='none';a.innerHTML=''}}
+  function send(quiet){
+    if(busy)return; var q=$('aiIn').value.trim(); if(!q&&!att)return; if(!q)q='Explain this.';
+    var h=att&&att.preview?'<img src="'+att.preview+'">':(att?'&#128206; '+esc(att.name)+'<br>':'');
+    if(quiet!==true)add('u',h+esc(q)); $('aiIn').value='';$('aiIn').style.height='';
+    hist.push({role:'user',text:q});
+    if(mode==='off'){if(att){add('a','Offline mode cannot read images or files. Switch to <b>Online</b>.');att=null;showAtt();return}offline(q)}else online(q);
+  }
+  function setMode(m){mode=m;$('aiOff').className=m==='off'?'on':'';$('aiOn').className=m==='on'?'on':'';LS.set('ai_mode',m);
+    $('aiIn').placeholder=m==='off'?'Ask anything about an MCQ...':'Ask anything (needs internet)...';chips()}
+  var ACTS=[['Explain this question','Explain this MCQ clearly: why the correct answer is right.'],
+    ['Explain in simple words','Explain this MCQ in very simple words, like to a beginner.'],
+    ['Explain in detail','Explain this MCQ in full detail with background and context.'],
+    ['Why are other options wrong?','Explain why each wrong option is wrong.'],
+    ['Related facts','Give related facts and other exam points about this topic.'],
+    ['Memory trick','Give an easy memory trick to remember this answer.']];
+  function actOff(i,c){
+    var L='ABCDE';
+    if(i===3){var h='Correct answer: <b>'+L[c.correct]+'. '+esc(c.options[c.correct])+'</b><br>';
+      c.options.forEach(function(o,k){if(k!==c.correct)h+='<div>'+L[k]+'. '+esc(o)+' &mdash; not correct for this question.</div>'});
+      if(c.facts)h+='<div style="margin-top:6px"><b>Reason:</b> '+esc(c.facts)+'</div>';
+      add('a',h+'<div class="sm">Offline mode has no detailed reason for each wrong option. Use Online for that.</div>');return}
+    if(i===4){add('a',(c.rel?'<b>Related facts:</b> '+esc(c.rel):'No related facts saved for this MCQ.')+'<div class="sm">Use Online for more.</div>');return}
+    if(i===5){add('a','Remember: <b>'+esc(c.options[c.correct])+'</b> is the answer.'+(c.facts?'<br>Key point: '+esc(c.facts):'')+'<div class="sm">Offline mode cannot make a new trick. Use Online for that.</div>');return}
+    add('a',card(c,1)+(i===0?'':'<div class="sm">Offline mode shows the saved reason. Use Online for a '+(i===1?'simpler':'longer')+' explanation.</div>'));
+  }
+  function run(i){
+    var c=cur(); if(!c){add('a','Open a question first.');return}
+    if(busy)return;
+    add('u',esc(ACTS[i][0]));
+    if(mode==='off'){actOff(i,c);return}
+    $('aiIn').value=ACTS[i][1];send(true);
+  }
+  function chips(){var c=$('aiChip');c.innerHTML='';if(cur()){ACTS.forEach(function(a,i){var b=document.createElement('button');b.textContent=a[0];b.onclick=function(){run(i)};c.appendChild(b)})}}
+  function open(){$('aiPanel').classList.add('open');chips();if(!$('aiMsgs').children.length)add('a','Hi! I am your study helper.<br><b>Offline</b>: searches all MCQs inside the app (no internet).<br><b>Online</b>: answers anything, reads images and files (needs internet and a server).');setTimeout(function(){$('aiIn').focus()},50)}
+  function close(){$('aiPanel').classList.remove('open')}
+  function pick(f){
+    if(!f)return; if(f.size>4*1024*1024){add('a','File is too big (max 4 MB).');return}
+    var fr=new FileReader();
+    if(/^image\//.test(f.type)){
+      fr.onload=function(){var im=new Image();im.onload=function(){var s=Math.min(1,1280/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=Math.round(im.width*s);c.height=Math.round(im.height*s);c.getContext('2d').drawImage(im,0,0,c.width,c.height);var u=c.toDataURL('image/jpeg',.85);att={mime:'image/jpeg',data:u.split(',')[1],name:f.name,preview:u};showAtt()};im.onerror=function(){add('a','Could not read this image.')};im.src=fr.result};fr.readAsDataURL(f);
+    }else if(f.type==='application/pdf'||/\.pdf$/i.test(f.name)){
+      fr.onload=function(){att={mime:'application/pdf',data:String(fr.result).split(',')[1],name:f.name};showAtt()};fr.readAsDataURL(f);
+    }else{fr.onload=function(){att={mime:'text/plain',text:String(fr.result).slice(0,20000),name:f.name};showAtt()};fr.readAsText(f)}
+  }
+  $('aiFab').onclick=open;$('aiX').onclick=close;
+  $('aiOff').onclick=function(){setMode('off')};$('aiOn').onclick=function(){setMode('on')};
+  $('aiClr').onclick=function(){$('aiMsgs').innerHTML='';hist=[];att=null;showAtt();open()};
+  $('aiGear').onclick=function(){var v=prompt('Online server address (your Netlify site + /.netlify/functions/ask).\nExample: https://mysite.netlify.app/.netlify/functions/ask\nLeave empty to use this site\'s own server.',LS.get('ai_server')||'');if(v!==null)LS.set('ai_server',v.trim())};
+  $('aiClip').onclick=function(){if(mode==='off')setMode('on');$('aiFile').click()};
+  $('aiFile').onchange=function(){pick(this.files[0]);this.value=''};
+  $('aiSend').onclick=function(){send()};
+  $('aiIn').addEventListener('keydown',function(e){if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();send()}});
+  $('aiIn').addEventListener('input',function(){this.style.height='auto';this.style.height=Math.min(110,this.scrollHeight)+'px'});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+  var m=LS.get('ai_mode');if(m==='on')setMode('on');
+  // keep the button off the login screen, lift it above the quiz Next button while a quiz runs
+  function pos(){var a=$('auth'),hide=a&&!a.classList.contains('hidden')&&getComputedStyle(a).display!=='none';
+    $('aiFab').style.display=hide?'none':'flex';$('aiFab').style.bottom=(quizActive?'calc(86px + env(safe-area-inset-bottom,0px))':'')}
+  setInterval(pos,700);pos();
+  window.__aiOpen=open;
+})();
+</script>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
 <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="14" result="b"/><feColorMatrix in="b" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -9"/></filter></defs></svg>
 <div id="liquidBg" aria-hidden="true">
