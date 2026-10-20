@@ -17,6 +17,7 @@ html.dark #backBtn{background:rgba(15,23,42,.85);color:#e0e7ff;border-color:rgba
   function atMenu(){return vis('view-select')&&typeof curSec!=='undefined'&&curSec===null}
   function sync(){b.classList.toggle('show',!atMenu())}
   function performBack(){
+    if(window.__aiBackHook&&window.__aiBackHook())return;
     if(vis('view-home')||vis('view-quiz')||vis('view-results')){
       if(vis('view-quiz')&&typeof quizActive!=='undefined'&&quizActive){
         if(!confirm('Leave this test? Your progress will be lost.')){history.pushState({n:1},'');return}

@@ -36,6 +36,7 @@ html.dark #aiMsgs .a{background:#141b34}
     <button class="ib" id="aiClr" title="Clear chat">&#128465;</button>
     <button class="ib" id="aiX" title="Close">&#10005;</button>
   </div>
+  <div id="aiSet" style="display:none;padding:8px 12px;border-bottom:1px solid rgba(148,163,184,.25);font-size:12px"><div style="margin-bottom:4px">Online server address (your Netlify site + /.netlify/functions/ask). Leave empty on the website itself.</div><div style="display:flex;gap:6px"><input id="aiSrv" type="url" placeholder="https://mysite.netlify.app/.netlify/functions/ask" style="flex:1;padding:9px;border-radius:10px;border:1px solid rgba(148,163,184,.4);background:transparent;color:inherit;font-size:13px"><button class="ib" id="aiSrvOk">Save</button></div></div>
   <div id="aiMsgs"></div>
   <div id="aiChip"></div>
   <div id="aiAtt"></div>
@@ -107,6 +108,7 @@ html.dark #aiMsgs .a{background:#141b34}
     if(navigator.onLine===false){add('a','No internet right now. Use <b>Offline</b> mode, or connect and try again.');return}
     var c=cur(), ctx='';
     if(c)ctx='The student is currently on this MCQ: '+strip(c.question)+' Options: '+c.options.join(' | ')+' Correct: '+c.options[c.correct]+(c.facts?' Reason in app: '+c.facts:'');
+    if(!(LS.get('ai_server')||'').trim()&&location.hostname==='appassets.androidplatform.net'){add('a','Online server not set up yet. Tap the &#9881; gear, enter your server address and Save. Offline mode still works.');return}
     var msgs=hist.slice(-8);
     var body={messages:msgs,context:ctx,date:new Date().toISOString().slice(0,10)};
     if(att)body.attachment={mime:att.mime,data:att.data,name:att.name,text:att.text};
@@ -154,8 +156,9 @@ html.dark #aiMsgs .a{background:#141b34}
     $('aiIn').value=ACTS[i][1];send(true);
   }
   function chips(){var c=$('aiChip');c.innerHTML='';if(cur()){ACTS.forEach(function(a,i){var b=document.createElement('button');b.textContent=a[0];b.onclick=function(){run(i)};c.appendChild(b)})}}
-  function open(){$('aiPanel').classList.add('open');chips();if(!$('aiMsgs').children.length)add('a','Hi! I am your study helper.<br><b>Offline</b>: searches all MCQs inside the app (no internet).<br><b>Online</b>: answers anything, reads images and files (needs internet and a server).');setTimeout(function(){$('aiIn').focus()},50)}
-  function close(){$('aiPanel').classList.remove('open')}
+  var pushed=false,swallow=false;
+  function open(){if(!$('aiPanel').classList.contains('open')){try{history.pushState({n:1},'');pushed=true}catch(e){}}$('aiPanel').classList.add('open');chips();if(!$('aiMsgs').children.length)add('a','Hi! I am your study helper.<br><b>Offline</b>: searches all MCQs inside the app (no internet).<br><b>Online</b>: answers anything, reads images and files (needs internet and a server).');setTimeout(function(){$('aiIn').focus()},50)}
+  function close(){if(!$('aiPanel').classList.contains('open'))return;$('aiPanel').classList.remove('open');if(pushed){pushed=false;swallow=true;try{history.back()}catch(e){swallow=false}}}
   function pick(f){
     if(!f)return; if(f.size>4*1024*1024){add('a','File is too big (max 4 MB).');return}
     var fr=new FileReader();
@@ -168,7 +171,8 @@ html.dark #aiMsgs .a{background:#141b34}
   $('aiFab').onclick=open;$('aiX').onclick=close;
   $('aiOff').onclick=function(){setMode('off')};$('aiOn').onclick=function(){setMode('on')};
   $('aiClr').onclick=function(){$('aiMsgs').innerHTML='';hist=[];att=null;showAtt();open()};
-  $('aiGear').onclick=function(){var v=prompt('Online server address (your Netlify site + /.netlify/functions/ask).\nExample: https://mysite.netlify.app/.netlify/functions/ask\nLeave empty to use this site\'s own server.',LS.get('ai_server')||'');if(v!==null)LS.set('ai_server',v.trim())};
+  $('aiGear').onclick=function(){var d=$('aiSet');var o=d.style.display==='none';d.style.display=o?'block':'none';if(o)$('aiSrv').value=LS.get('ai_server')||''};
+  $('aiSrvOk').onclick=function(){LS.set('ai_server',$('aiSrv').value.trim());$('aiSet').style.display='none';add('a','Server address saved.')};
   $('aiClip').onclick=function(){if(mode==='off')setMode('on');$('aiFile').click()};
   $('aiFile').onchange=function(){pick(this.files[0]);this.value=''};
   $('aiSend').onclick=function(){send()};
@@ -181,5 +185,6 @@ html.dark #aiMsgs .a{background:#141b34}
     $('aiFab').style.display=hide?'none':'flex';$('aiFab').style.bottom=(quizActive?'calc(86px + env(safe-area-inset-bottom,0px))':'')}
   setInterval(pos,700);pos();
   window.__aiOpen=open;
+  window.__aiBackHook=function(){if(swallow){swallow=false;return true}if($('aiPanel').classList.contains('open')){pushed=false;$('aiPanel').classList.remove('open');return true}return false};
 })();
 </script>

@@ -2,7 +2,9 @@ package com.asadullahnotes.mcq
 
 import android.app.Activity
 import android.app.AlertDialog
+import android.content.Intent
 import android.content.res.Configuration
+import android.webkit.ValueCallback
 import android.graphics.Color
 import android.widget.TextView
 import android.util.TypedValue
@@ -58,6 +60,8 @@ class MainActivity : Activity() {
     private var pageShown = false
     private var crashCount = 0
     private var openDialog: AlertDialog? = null
+    private var fileCb: ValueCallback<Array<Uri>>? = null
+    private val REQ_FILE = 71
     private var pendingResult: JsResult? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -275,6 +279,16 @@ class MainActivity : Activity() {
 
             override fun onJsBeforeUnload(view: WebView, url: String?, message: String?, result: JsResult): Boolean { result.confirm(); return true }
 
+            override fun onShowFileChooser(v: WebView, cb: ValueCallback<Array<Uri>>, p: FileChooserParams): Boolean {
+                fileCb?.onReceiveValue(null); fileCb = cb
+                val i = Intent(Intent.ACTION_OPEN_DOCUMENT).apply {
+                    addCategory(Intent.CATEGORY_OPENABLE)
+                    type = "*/*"
+                    putExtra(Intent.EXTRA_MIME_TYPES, arrayOf("image/*", "application/pdf", "text/plain"))
+                }
+                return try { startActivityForResult(i, REQ_FILE); true } catch (e: Exception) { fileCb = null; cb.onReceiveValue(null); false }
+            }
+
             override fun onJsPrompt(view: WebView, url: String?, message: String?, defaultValue: String?, result: JsPromptResult): Boolean {
                 result.cancel(); return true
             }
@@ -392,7 +406,17 @@ class MainActivity : Activity() {
         super.onConfigurationChanged(newConfig)           // declared in the manifest: the page is not recreated on rotation/font change
     }
 
+    @Deprecated("Deprecated in Java")
+    override fun onActivityResult(rc: Int, res: Int, data: Intent?) {
+        if (rc == REQ_FILE) {
+            val u = data?.data
+            fileCb?.onReceiveValue(if (res == RESULT_OK && u != null) arrayOf(u) else null)
+            fileCb = null
+        } else super.onActivityResult(rc, res, data)
+    }
+
     override fun onDestroy() {
+        fileCb?.onReceiveValue(null); fileCb = null
         try { pendingResult?.cancel() } catch (e: Exception) {}
         pendingResult = null
         try { openDialog?.dismiss() } catch (e: Exception) {}
