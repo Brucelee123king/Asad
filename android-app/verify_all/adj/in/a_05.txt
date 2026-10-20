@@ -1,0 +1,246 @@
+#1394: (Forces Academy Test 1 · Q54) Which is different in the following: Ounce, Pound, Ton, Maund?
+   A. Ounce
+   B. Pound
+   C. Ton
+   D. Maund
+   MARKED: D
+   BLIND CHECKER: X (low) all are units of weight; no clear odd one
+   REASON SHOWN: Ounce, pound and ton belong to the same Western (imperial) system, while the maund is a traditional South Asian unit.
+   RELATED: Tip: a maund is about 40 kg in Pakistan today (37.3 kg in the older system).
+
+#1399: (Forces Academy Test 1 · Q61) Tomorrow is to Yesterday as Thursday is to?
+   A. Tuesday
+   B. Wednesday
+   C. Friday
+   D. Monday
+   MARKED: A
+   BLIND CHECKER: B (low) ambiguous analogy
+   REASON SHOWN: Yesterday is two days before tomorrow, so the matching day is two days before Thursday, which is Tuesday.
+   RELATED: Tip: count the day gap in the first pair and apply it to the second.
+
+#1450: (Forces Academy Test 3 · Q3) Which one is different from the rest? Cow, Hen, Duck, Bull, Mare
+   A. Cow
+   B. Hen
+   C. Duck
+   D. Bull
+   E. Mare
+   MARKED: D
+   BLIND CHECKER: X (low) ambiguous: Bull is only male, but Duck/Hen are birds and others mammals
+   REASON SHOWN: Cow, hen and mare are female animals, while bull is the only male.
+   RELATED: Tip: in odd-one-out questions, find the property shared by most words and pick the one that breaks it.
+
+#1470: (Forces Academy Test 3 · Q24) Which one is different from the rest? Oxygen, Sulphur, Silver, Zinc, Protenium
+   A. Oxygen
+   B. Sulphur
+   C. Silver
+   D. Zinc
+   E. Protenium
+   MARKED: A
+   BLIND CHECKER: E (low) Protenium not a real element name (web checked, only protium isotope); ambiguous grouping
+   REASON SHOWN: Oxygen is a gas at room temperature, while sulphur, silver and zinc are solids (the printed Protenium is not a standard element name). The answer key also gives Oxygen.
+   RELATED: Tip: if one item is a gas and the rest are solids, the gas is the odd one.
+
+#1471: (Forces Academy Test 3 · Q25) A grandfather is always ____ than his daughter.
+   A. Experienced
+   B. Taller
+   C. Wiser
+   D. Heavier
+   MARKED: A
+   BLIND CHECKER: A (low) only experienced is certain-ish; wording weak
+   REASON SHOWN: A grandfather is older than his daughter, which means he has lived longer and is more experienced. Taller, wiser and heavier are not always true.
+   RELATED: Tip: choose the quality that must hold in every case, not one that merely may hold.
+
+#1491: (Forces Academy Test 4 · Q17) Which one of the following is different from others?
+   A. Salmon
+   B. Fish
+   C. Crab
+   D. Shark
+   E. Whale
+   MARKED: B
+   BLIND CHECKER: X (low) ambiguous: Fish is generic term, Whale is mammal, Crab not a vertebrate
+   REASON SHOWN: Salmon, crab, shark and whale are all specific sea animals, while Fish is the general category name. This follows the answer key (whale is also not a true fish).
+   RELATED: Tip: in odd-one-out questions, find the property shared by most words and pick the one that breaks it.
+
+#1516: (Forces Academy Test 5 · Q12) How many letters in the word GENERAL are also found in the word REGULAR?
+   A. 4
+   B. 5
+   C. 6
+   D. 3
+   MARKED: B
+   BLIND CHECKER: X (medium) 5 distinct letters (G,E,R,A,L) vs 6 if repeated E counted; ambiguous
+   REASON SHOWN: The letters G, E, R, A and L of GENERAL appear in REGULAR, while N does not. That gives 5 letters.
+   RELATED: Tip: count each distinct letter once unless told to count repeats.
+
+#1539: (Forces Academy Test 6 · Q5) What is different from the others?
+   A. Stream
+   B. Sea
+   C. River
+   D. Lake
+   E. Canal
+   MARKED: E
+   BLIND CHECKER: B (high) 
+   REASON SHOWN: Stream, sea, river and lake are natural water bodies. A canal is man-made.
+   RELATED: Tip: in odd-one-out questions, find the property shared by most words and pick the one that breaks it.
+
+#1564: (Forces Academy Test 6 · Q30) LEGS are to RUNNING as TEETH are to:
+   A. Talking
+   B. Walking
+   C. Eating
+   D. Biting
+   MARKED: D
+   BLIND CHECKER: C (low) Eating vs Biting both plausible
+   REASON SHOWN: Legs are the body part used for running, and teeth are used for biting. This matches the answer key (eating is a close second).
+   RELATED: Tip: pick the action most directly performed by the body part.
+
+#1576: (Forces Academy Test 7 · Q13) Which letter comes next in the following series: D, H, M, P, U, ?
+   A. Z
+   B. X
+   C. W
+   D. V
+   MARKED: C
+   BLIND CHECKER: B (low) gaps +4,+5,+3,+5 not a clean rule; X (+3 after +5) is best fit
+   REASON SHOWN: Split the series into two: D, M, U (gaps +9, +8) and H, P, then W (gaps +8, +7). The next letter is W.
+   RELATED: Tip: in alternating letter series, separate the odd and even positions into two sequences.
+
+#1588: (Forces Academy Test 7 · Q25) What is different from the rest?
+   A. SWIM
+   B. WALK
+   C. RUN
+   D. GYMNASTIC
+   E. GAME
+   MARKED: E
+   BLIND CHECKER: X (low) no clear odd one out (swim/walk/run/gymnastic/game)
+   REASON SHOWN: Swim, walk, run and gymnastic are physical exercises or movements, while game is a general term for a competitive activity.
+   RELATED: Tip: look for the item that is a broader category than the rest.
+
+#1624: (Forces Academy Test 9 · Q1) Which letter comes next in the following series: B, E, G, J, L, ?
+   A. M
+   B. N
+   C. O
+   D. P
+   MARKED: C
+   BLIND CHECKER: B (high) 
+   REASON SHOWN: The gaps alternate +3, +2: B to E is 3, E to G is 2, G to J is 3, J to L is 2, so L + 3 = O.
+   RELATED: Tip: alternating gaps of 3 and 2 repeat; add the next gap in turn.
+
+#1651: (Forces Academy Test 9 · Q28) INFANCY is to CHILDHOOD as ADOLESCENCE is to:
+   A. ADULTERY
+   B. MATURITY
+   C. SINCERE
+   D. INTELLIGENCE
+   E. YOUTH
+   MARKED: E
+   BLIND CHECKER: B (medium) YOUTH is a synonym, MATURITY is the next stage; slightly ambiguous
+   REASON SHOWN: Stages of life follow in order: infancy, childhood, adolescence, then youth.
+   RELATED: Tip: the sequence of human life stages is infancy, childhood, adolescence, adulthood, old age.
+
+#1657: (Forces Academy Test 10 · Q4) TRIP is to DAY as CALENDAR is to:
+   A. YEAR
+   B. WEEK END
+   C. MARCH
+   D. CENTURY
+   MARKED: A
+   BLIND CHECKER: A (low) question is garbled (TRIP:DAY); likely duplicate of Q1658, answer YEAR
+   REASON SHOWN: A trip is measured in days, and a calendar is measured in a year.
+   RELATED: Tip: this is a unit-of-measure analogy; match the unit that the object covers.
+
+#1665: (Forces Academy Test 10 · Q12) People buy food because:
+   A. They have money
+   B. They want to entertain others
+   C. They are hungry
+   D. They need to eat it
+   MARKED: D
+   BLIND CHECKER: C (medium) 
+   REASON SHOWN: Food is a basic need of the body, so people buy it because they need to eat it, whether or not they feel hungry at the moment.
+   RELATED: Tip: when options overlap, the key answer is the most general and necessary reason.
+
+#1666: (Forces Academy Test 10 · Q13) Which letter comes next in the following series: B, E, F, J, K, ?
+   A. N
+   B. O
+   C. P
+   D. Q
+   MARKED: C
+   BLIND CHECKER: B (high) 
+   REASON SHOWN: The gaps are +3, +1, +4, +1, +5, so the next gap pattern gives K + 5 = P.
+   RELATED: Tip: letter gaps that interleave +1 with growing gaps (3, 4, 5) are a common pattern.
+
+#1669: (Forces Academy Test 10 · Q16) TRIANGLE is to PRISM as CIRCLE is to:
+   A. CIRCUMFERENCE
+   B. SPHERE
+   C. RADIUS
+   D. CYLINDER
+   MARKED: D
+   BLIND CHECKER: B (high) 
+   REASON SHOWN: A prism is a triangle extended into three dimensions with the same cross-section, and a cylinder is a circle extended the same way.
+   RELATED: Tip: the key sheet gives sphere here, but a prism has constant triangular cross-sections just as a cylinder has circular ones.
+
+#1683: (Forces Academy Test 10 · Q30) BAIT is to FISH as GUN is to:
+   A. HUNT
+   B. TRIGGER
+   C. SHOT
+   D. BULLET
+   MARKED: D
+   BLIND CHECKER: A (low) analogy ambiguous (HUNT vs BULLET/SHOT)
+   REASON SHOWN: Bait is the thing used to catch a fish, and a bullet is the thing fired from a gun to hit a target.
+   RELATED: Tip: this analogy links a tool to what it is used to capture.
+
+#1688: (Forces Academy Test 11 · Q5) If 12 is divided by 3, what will be the half of the remainder (taking the result of the division as intended by the paper)?
+   A. 4
+   B. 1
+   C. 0
+   D. 2
+   MARKED: D
+   BLIND CHECKER: X (medium) remainder of 12/3 is 0 so half is 0, but wording suggests paper intended quotient 4 so 2; ambiguous
+   REASON SHOWN: 12 divided by 3 gives 4, and half of 4 is 2 (this is the answer given in the paper key).
+   RELATED: Tip: strictly, 12 divided by 3 leaves remainder 0, but such papers use the word remainder for the result of the division.
+
+#1690: (Forces Academy Test 11 · Q7) TRANSPARENT is the opposite of:
+   A. CLEAR
+   B. UGLY
+   C. HAZY
+   D. LIGHT
+   MARKED: C
+   BLIND CHECKER: C (low) true opposite OPAQUE absent; HAZY is the closest
+   REASON SHOWN: TRANSPARENT means you can see through it clearly. The opposite, not clear to see through, is HAZY.
+   RELATED: Tip: eliminate options that are synonyms first, as CLEAR is here.
+
+#1727: (Forces Academy Test 12 · Q14) We go to the cinema because:
+   A. It is the fashion
+   B. Films are interesting
+   C. We want to see films
+   D. Cinema halls are good to look at
+   MARKED: C
+   BLIND CHECKER: X (low) B and C both plausible
+   REASON SHOWN: The direct purpose of going to the cinema is to see films.
+   RELATED: Tip: the best answer states the main purpose, not a side reason.
+
+#1731: (Forces Academy Test 12 · Q18) Which letter comes next: B, D, G, L, ?
+   A. T
+   B. S
+   C. U
+   D. V
+   MARKED: C
+   BLIND CHECKER: A (medium) differences 2,3,5,8
+   REASON SHOWN: Positions are 2, 4, 7, 12 with differences 2, 3, 5, and each difference is one more than a power of 2 (2^0+1, 2^1+1 and so on: 2, 3, 5, 9). Next difference is 9: 12 + 9 = 21, which is U. Another reading of the gaps (2, 3, 5, 8) would give T, but the paper's answer key is U.
+   RELATED: Tip: if differences are not simple, subtract a constant from them and look for powers of 2.
+
+#1762: (Forces Academy Test 13 · Q21) Which letter comes next: B, D, G, L, ?
+   A. T
+   B. S
+   C. U
+   D. V
+   MARKED: C
+   BLIND CHECKER: A (medium) same series as 1731
+   REASON SHOWN: Positions are 2, 4, 7, 12 with differences 2, 3, 5. Each difference is one more than a power of 2 (2, 3, 5, 9), so next is +9: 12 + 9 = 21, which is U. Another reading of the gaps (2, 3, 5, 8) would give T, but the paper's answer key is U.
+   RELATED: Tip: if differences are not simple, subtract a constant from them and look for powers of 2.
+
+#1784: (Forces Academy Test 14 · Q16) Which one is different from the rest? 24, 48, 510, 611, 1130
+   A. 24
+   B. 48
+   C. 510
+   D. 611
+   E. 1130
+   MARKED: D
+   BLIND CHECKER: X (low) no clear single odd one out
+   REASON SHOWN: 24, 48, 510 and 1130 are all even numbers. 611 is the only odd number.
+   RELATED: Tip: check even or odd and divisibility first when numbers are listed.
