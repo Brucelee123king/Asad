@@ -1,0 +1,40 @@
+{
+  "name": "asadullah-notes",
+  "productName": "Asadullah Notes",
+  "version": "1.0.0",
+  "description": "Asadullah Notes - offline MCQ practice tests for Windows",
+  "author": "Asadullah Notes",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "prepare-src": "node scripts/build-src.js",
+    "dist": "npm run prepare-src && electron-builder --win nsis portable --x64"
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.asadullahnotes.desktop",
+    "productName": "Asadullah Notes",
+    "copyright": "Asadullah Notes",
+    "directories": { "output": "dist", "buildResources": "build" },
+    "files": ["main.js", "preload.js", "src/**/*", "package.json"],
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [{ "target": "nsis", "arch": ["x64"] }, { "target": "portable", "arch": ["x64"] }]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Asadullah Notes",
+      "deleteAppDataOnUninstall": false,
+      "artifactName": "AsadullahNotes-Setup.exe"
+    },
+    "portable": { "artifactName": "AsadullahNotes-Portable.exe" }
+  }
+}
