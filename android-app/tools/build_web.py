@@ -182,12 +182,43 @@ HOVER_OFF = """<script id="android-nohover">
 })();
 </script>"""
 TAIL3 = ('<style id="android-perf4">'
-         'html.lite body #obj3d,html.lite body #liquidBg{display:none!important}'
          'html.lite,html.lite body,html.lite body *{-webkit-tap-highlight-color:rgba(0,0,0,0)!important;-webkit-touch-callout:none}'
          'html.lite body{-webkit-user-select:none;user-select:none}'
          'html.lite body input,html.lite body textarea{-webkit-user-select:text;user-select:text}'
          '</style>')
 html = html.replace('</body>', TAIL3 + HOVER_OFF + '</body>')
+# --- FLAT LOOK for the app: the glass look (translucent cards over fixed blurred layers) renders wrongly on some phone GPUs
+#     (solid purple blocks, white strips, square corners). Use a plain soft-colour page background and near-opaque cards, same layout.
+FLAT = ('<style id="android-flat">'
+ 'html.lite body{background:#eef2f8!important}'
+ 'html.lite.dark body{background:#060a14!important}'
+ 'html.lite body #liquidBg .goo{filter:none!important;-webkit-filter:none!important;opacity:1!important}'
+ 'html.lite body .lb{animation:none!important;opacity:.95}'
+ 'html.lite body .lb.b1{background:radial-gradient(circle,#c9b8ff 0%,#c9b8ff 42%,rgba(201,184,255,0) 70%)!important}'
+ 'html.lite body .lb.b2{background:radial-gradient(circle,#9fe3ff 0%,#9fe3ff 42%,rgba(159,227,255,0) 70%)!important}'
+ 'html.lite body .lb.b3{background:radial-gradient(circle,#ffc9e4 0%,#ffc9e4 42%,rgba(255,201,228,0) 70%)!important}'
+ 'html.lite body .lb.b4{background:radial-gradient(circle,#ffe2b8 0%,#ffe2b8 42%,rgba(255,226,184,0) 70%)!important}'
+ 'html.lite body .lb.b5{background:radial-gradient(circle,#b9f0d8 0%,#b9f0d8 42%,rgba(185,240,216,0) 70%)!important}'
+ 'html.lite.dark body .lb.b1{background:radial-gradient(circle,#4c2fd1 0%,#4c2fd1 42%,rgba(76,47,209,0) 70%)!important}'
+ 'html.lite.dark body .lb.b2{background:radial-gradient(circle,#0e7fb8 0%,#0e7fb8 42%,rgba(14,127,184,0) 70%)!important}'
+ 'html.lite.dark body .lb.b3{background:radial-gradient(circle,#a1226f 0%,#a1226f 42%,rgba(161,34,111,0) 70%)!important}'
+ 'html.lite.dark body .lb.b4{background:radial-gradient(circle,#b4540f 0%,#b4540f 42%,rgba(180,84,15,0) 70%)!important}'
+ 'html.lite.dark body .lb.b5{background:radial-gradient(circle,#0d8a64 0%,#0d8a64 42%,rgba(13,138,100,0) 70%)!important}'
+ 'html.lite.dark body #liquidBg{opacity:.55}'
+ 'html.lite body::before,html.lite body::after{display:none!important}'
+ 'html.lite body header{background:rgba(255,255,255,.88)!important;box-shadow:0 2px 10px rgba(88,80,180,.14)!important;border-bottom:1px solid #e2e8f0!important}'
+ 'html.lite.dark body header{background:rgba(15,12,45,.88)!important;border-bottom:1px solid rgba(148,163,184,.2)!important;box-shadow:0 2px 10px rgba(0,0,0,.4)!important}'
+ 'html.lite body main .bg-white,html.lite body main .bg-slate-50,html.lite body .dash .st,html.lite body .dash .week,html.lite body .dash .act{'
+   'background:rgba(255,255,255,.82)!important;border:1px solid rgba(255,255,255,.9)!important;box-shadow:0 2px 12px rgba(88,80,180,.12)!important;overflow:hidden}'
+ 'html.lite.dark body main .bg-white,html.lite.dark body main .bg-slate-50,html.lite.dark body .dash .st,html.lite.dark body .dash .week,html.lite.dark body .dash .act{'
+   'background:rgba(24,20,70,.80)!important;border:1px solid rgba(148,163,184,.22)!important;box-shadow:0 2px 12px rgba(0,0,0,.45)!important}'
+ 'html.lite body main .bg-white::before,html.lite body main .bg-white::after,html.lite body .dash .st::before,html.lite body .dash .act::before,html.lite body .dash .week::before{display:none!important}'
+ 'html.lite body #test-grid>button,html.lite body #pma-grid>button,html.lite body #fa-grid>button,html.lite body #hk-grid>button,html.lite body #options-container>*,html.lite body #question-palette button,html.lite body #palette button{box-shadow:0 1px 4px rgba(88,80,180,.14)!important}'
+ 'html.lite body #sec-menu .grid>button{box-shadow:0 4px 14px rgba(30,20,90,.28)!important}'
+ 'html.lite body main button.bg-indigo-600,html.lite body main button.bg-emerald-600,html.lite body button[onclick^="confirmSubmitQuiz"],html.lite body button[onclick^="executeSubmitQuiz"],html.lite body #resExtra button,html.lite body .dash .streak{box-shadow:0 3px 10px rgba(70,60,200,.4)!important}'
+ 'html.lite body main button.bg-indigo-600:before,html.lite body main button.bg-emerald-600:before,html.lite body button[onclick^="confirmSubmitQuiz"]:before{display:none!important}'
+ '</style>')
+html = html.replace('</body>', FLAT + '</body>')
 assert 'cdn.tailwindcss.com' not in html and 'googleapis' not in html and 'cloudflare' not in html and 'netlify/scripts' not in html
 open(os.path.join(WWW, 'index.html'), 'w', encoding='utf8').write(html)
 shutil.copy(os.path.join(HERE, 'error.html'), os.path.join(WWW, 'error.html'))

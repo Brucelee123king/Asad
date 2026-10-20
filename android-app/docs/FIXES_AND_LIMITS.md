@@ -57,3 +57,7 @@ See the end of this file for the final table.
 - Tap blink: sticky :hover styles removed (0 hover rules left), two full-screen decorative layers (blurred blobs, 3D icons) hidden, tap highlight / text selection flash disabled.
 - Full walk-through (201 steps: login, theme, search, 5 sections, 7 Hakeem pages, 8 quiz types incl. 835-question test: start, answer, next, jump, submit, review, retake, back) with CPU slowed 4x: 0 errors; only theme toggle (about 0.3 s) and result screens (0.15-0.25 s) show a short pause.
 - Still not measured on the phone itself.
+
+## v1.0.3 - look fix after a real-phone screenshot
+- The "goo" SVG filter on the coloured background blobs rendered as solid purple blocks on the phone GPU. Replaced with filter-free soft radial gradients (same colours), study icons kept (static), page colour #eef2f8, cards slightly see-through, corners clipped. No blur, no animation.
+- Measured (CPU slowed 6x): scroll frame 172 ms -> 16 ms, idle 10 -> 60 fps. 201-step walk-through: 0 errors.
