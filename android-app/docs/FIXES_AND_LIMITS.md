@@ -49,3 +49,11 @@ See the end of this file for the final table.
 - Cause found: the glass styles put a heavy blur (backdrop-filter) on the header, every card and hundreds of list buttons; the app also ran decorative animations on phones with 6-8 cores.
 - Fix (app only): blur/backdrop/drop-shadow filters and continuous animations are always off in the app; pointer tracking skipped on touch; data tables loaded with JSON.parse. Look is almost identical.
 - Measured (Chromium, CPU slowed 6x, software drawing): idle 8 fps -> 60 fps, scroll frame time 197 ms -> 29 ms, start-up a little faster. Question data identical (11,208 entries). Still NOT measured on a real phone.
+
+## v1.0.2 - login drag, Next button and tap-blink fixes (reported on a Samsung Galaxy A07)
+- Login page: touch / gyro / mouse parallax rewrote CSS variables on every move (3D card re-transformed while dragging) -> parallax removed, page is static.
+- Next / Previous: long smooth-scroll animation (1-2 s) replaced by an instant scroll; question palette no longer rewrites unchanged classes.
+- Option tap: the 4 option cards are now updated in place (no full rebuild); result checked identical to the old behaviour on 36 taps in 6 test types.
+- Tap blink: sticky :hover styles removed (0 hover rules left), two full-screen decorative layers (blurred blobs, 3D icons) hidden, tap highlight / text selection flash disabled.
+- Full walk-through (201 steps: login, theme, search, 5 sections, 7 Hakeem pages, 8 quiz types incl. 835-question test: start, answer, next, jump, submit, review, retake, back) with CPU slowed 4x: 0 errors; only theme toggle (about 0.3 s) and result screens (0.15-0.25 s) show a short pause.
+- Still not measured on the phone itself.

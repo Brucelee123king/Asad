@@ -122,6 +122,72 @@ for _n in ('PMA_DATA', 'FA_DATA', 'HK_DATA', 'MR_DATA', 'CN_DATA', 'IV_DATA', 'L
     _i = html.index(_a) + len(_a)
     _val, _end = _json.JSONDecoder().raw_decode(html, _i)   # literal is pure JSON (written with json.dumps)
     html = html[:_i] + 'JSON.parse(' + _json.dumps(_json.dumps(_val, ensure_ascii=False, separators=(',', ':'))) + ')' + html[_end:]
+# --- second smoothness round (login drag, Next button) ---
+# login page: touch/gyro/mouse parallax rewrote CSS variables on #auth for every touch move / sensor tick -> 3D card + layers re-transformed. Make it static.
+rep("function set(x,y){a.style", "function set(x,y){return;a.style")
+rep("on=true;window.addEventListener('deviceorientation',ori)", "on=true")
+TAIL2 = ('<style id="android-perf2">'
+         'html.lite body #auth .lyr,html.lite body #auth .wrap,html.lite body #auth .hero{transform:none!important;transition:none!important;will-change:auto!important}'
+         'html.lite body #auth .side{perspective:none!important}'
+         '</style>')
+html = html.replace('</body>', TAIL2 + '</body>')
+# Next / Previous / jump: window.scrollTo({behavior:'smooth'}) animated a long scroll for 1-2 s while the new question was drawn -> instant scroll
+assert html.count("behavior: 'smooth'") >= 4, html.count("behavior: 'smooth'")
+html = html.replace("behavior: 'smooth'", "behavior: 'auto'")
+# question palette: do not rewrite className when it did not change (36-835 buttons per question, each write fires the page's MutationObservers)
+rep("const btn = document.getElementById(`palette-btn-${idx}`);\n                if (!btn) return;",
+    "const _pb = document.getElementById(`palette-btn-${idx}`);\n                if (!_pb) return;\n                const btn = { set className(v) { if (_pb.className !== v) _pb.className = v; } };")
+# --- option tap: do not rebuild the whole question (flash/blink); update the 4 option cards in place and add the feedback boxes ---
+_i = html.index("            if (userAnswers[index] !== null) {\n                const ok = ")
+_j = html.index("            btnPrev.disabled = index === 0;", _i)
+FB = html[_i:_j]
+assert FB.count('optionsContainer.appendChild') >= 3
+INPLACE = """        function answerInPlace(index) {
+            const q = quizData[index], sel = userAnswers[index], cards = optionsContainer.children;
+            if (cards.length < q.options.length) { loadQuestion(index); updatePaletteUI(); return; }
+            for (let optIndex = 0; optIndex < q.options.length; optIndex++) {
+                const card = cards[optIndex], isSelected = sel === optIndex, isCorrectOpt = optIndex === q.correct;
+                let stateCls;
+                if (isCorrectOpt) stateCls = 'bg-emerald-50 border-emerald-500 text-emerald-900 shadow-sm';
+                else if (isSelected) stateCls = 'bg-rose-50 border-rose-500 text-rose-900 shadow-sm';
+                else stateCls = 'bg-white border-slate-200 text-slate-400 opacity-70';
+                card.className = 'p-3 sm:p-4 rounded-xl border transition cursor-default flex items-center space-x-3 ' + stateCls;
+                card.setAttribute('aria-pressed', String(isSelected));
+                const badge = card.children[0];
+                if (badge) badge.className = 'w-6 h-6 rounded-full border flex items-center justify-center text-xs font-bold transition ' + (isCorrectOpt ? 'bg-emerald-600 border-emerald-600 text-white' : isSelected ? 'bg-rose-600 border-rose-600 text-white' : 'border-slate-300 text-slate-500');
+                if (isCorrectOpt) card.insertAdjacentHTML('beforeend', '<i class="fa-solid fa-circle-check text-emerald-600"></i>');
+                else if (isSelected) card.insertAdjacentHTML('beforeend', '<i class="fa-solid fa-circle-xmark text-rose-600"></i>');
+            }
+            while (optionsContainer.children.length > q.options.length) optionsContainer.lastChild.remove();
+""" + FB + """            updatePaletteUI();
+        }
+
+"""
+rep("        function selectOption(qIndex, optIndex) {", INPLACE + "        function selectOption(qIndex, optIndex) {")
+rep("userAnswers[qIndex] = optIndex;\n            loadQuestion(qIndex);\n            updatePaletteUI();", "userAnswers[qIndex] = optIndex;\n            answerInPlace(qIndex);")
+html = html.replace('</body>', '<style id="android-perf3">#options-container [role=button]{outline:none!important;-webkit-tap-highlight-color:transparent}</style></body>')
+# --- tap "blink" on a phone: (1) :hover styles stick after a tap on touch screens and restyle/repaint the card (shadow, tilt, colours),
+#     (2) two full-screen decorative layers (blurred blobs + 3D icons) behind everything are re-composited on every change,
+#     (3) tap highlight / text selection flashes. App only.
+HOVER_OFF = """<script id="android-nohover">
+(function(){
+  function strip(list){ for (var i = list.length - 1; i >= 0; i--) { var r = list[i];
+      if (r.cssRules && r.type !== 1) { strip(r.cssRules); continue; }
+      if (r.selectorText && r.selectorText.indexOf(':hover') > -1) {
+        var keep = r.selectorText.split(',').filter(function(x){ return x.indexOf(':hover') < 0; });
+        try { if (keep.length) r.selectorText = keep.join(','); else (r.parentRule || r.parentStyleSheet).deleteRule(i); } catch (e) {}
+      } } }
+  function run(){ for (var k = 0; k < document.styleSheets.length; k++) { try { strip(document.styleSheets[k].cssRules); } catch (e) {} } }
+  if (document.readyState === 'complete') run(); else window.addEventListener('load', run);
+})();
+</script>"""
+TAIL3 = ('<style id="android-perf4">'
+         'html.lite body #obj3d,html.lite body #liquidBg{display:none!important}'
+         'html.lite,html.lite body,html.lite body *{-webkit-tap-highlight-color:rgba(0,0,0,0)!important;-webkit-touch-callout:none}'
+         'html.lite body{-webkit-user-select:none;user-select:none}'
+         'html.lite body input,html.lite body textarea{-webkit-user-select:text;user-select:text}'
+         '</style>')
+html = html.replace('</body>', TAIL3 + HOVER_OFF + '</body>')
 assert 'cdn.tailwindcss.com' not in html and 'googleapis' not in html and 'cloudflare' not in html and 'netlify/scripts' not in html
 open(os.path.join(WWW, 'index.html'), 'w', encoding='utf8').write(html)
 shutil.copy(os.path.join(HERE, 'error.html'), os.path.join(WWW, 'error.html'))

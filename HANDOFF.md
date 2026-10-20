@@ -160,3 +160,4 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - Not tested on a real device or emulator.
 
 - v1.0.1 (versionCode 2): smoothness fix in `android-app/tools/build_web.py` + `tools/android_head.html` (always 'lite': no backdrop-filter/blur/animations; JSON.parse data). Netlify site unchanged. APK: `android-app/release/AsadullahNotes-1.0.1.apk`.
+- v1.0.2 (versionCode 3): login parallax off, instant scroll on Next, in-place option update (`answerInPlace` patched in build_web.py), :hover rules stripped, decorative layers hidden in app. APK: `android-app/release/AsadullahNotes-1.0.2.apk`. User's phone: Samsung Galaxy A07 (budget).

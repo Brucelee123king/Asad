@@ -571,11 +571,41 @@ html.lite *,html.lite *::before,html.lite *::after{animation-duration:.01ms!impo
             updatePaletteUI();
         }
 
+        function answerInPlace(index) {
+            const q = quizData[index], sel = userAnswers[index], cards = optionsContainer.children;
+            if (cards.length < q.options.length) { loadQuestion(index); updatePaletteUI(); return; }
+            for (let optIndex = 0; optIndex < q.options.length; optIndex++) {
+                const card = cards[optIndex], isSelected = sel === optIndex, isCorrectOpt = optIndex === q.correct;
+                let stateCls;
+                if (isCorrectOpt) stateCls = 'bg-emerald-50 border-emerald-500 text-emerald-900 shadow-sm';
+                else if (isSelected) stateCls = 'bg-rose-50 border-rose-500 text-rose-900 shadow-sm';
+                else stateCls = 'bg-white border-slate-200 text-slate-400 opacity-70';
+                card.className = 'p-3 sm:p-4 rounded-xl border transition cursor-default flex items-center space-x-3 ' + stateCls;
+                card.setAttribute('aria-pressed', String(isSelected));
+                const badge = card.children[0];
+                if (badge) badge.className = 'w-6 h-6 rounded-full border flex items-center justify-center text-xs font-bold transition ' + (isCorrectOpt ? 'bg-emerald-600 border-emerald-600 text-white' : isSelected ? 'bg-rose-600 border-rose-600 text-white' : 'border-slate-300 text-slate-500');
+                if (isCorrectOpt) card.insertAdjacentHTML('beforeend', '<i class="fa-solid fa-circle-check text-emerald-600"></i>');
+                else if (isSelected) card.insertAdjacentHTML('beforeend', '<i class="fa-solid fa-circle-xmark text-rose-600"></i>');
+            }
+            while (optionsContainer.children.length > q.options.length) optionsContainer.lastChild.remove();
+            if (userAnswers[index] !== null) {
+                const ok = userAnswers[index] === q.correct;
+                const fb = document.createElement('div');
+                fb.className = `mt-1 p-3 rounded-xl text-sm font-semibold ${ok ? 'bg-emerald-100 text-emerald-800' : 'bg-rose-100 text-rose-800'}`;
+                fb.textContent = ok ? '✓ Correct answer!' : `✗ Wrong answer. Correct answer: ${String.fromCharCode(65 + q.correct)}) ${q.options[q.correct]}`;
+                optionsContainer.appendChild(fb);
+                if (q.pma && !ok) { const wy = document.createElement('div'); wy.className = 'mt-2 p-3 rounded-xl text-sm bg-rose-50 text-rose-800'; wy.innerHTML = '<b>Why your choice is wrong:</b> '; wy.appendChild(document.createTextNode('You chose ' + String.fromCharCode(65 + userAnswers[index]) + ') ' + q.options[userAnswers[index]] + '. That option does not answer this question correctly.')); optionsContainer.appendChild(wy); }
+                if (q.facts) { const ff = document.createElement('div'); ff.className = q.pma ? 'mt-2 p-3 rounded-xl text-sm bg-emerald-50 text-emerald-900' : 'mt-2 p-3 rounded-xl text-xs sm:text-sm bg-slate-100 text-slate-600'; ff.innerHTML = q.pma ? '<b>Why ' + String.fromCharCode(65 + q.correct) + ') ' + q.options[q.correct] + ' is correct:</b> ' : '<b class="text-slate-700">Related facts:</b> '; ff.appendChild(document.createTextNode(q.facts)); optionsContainer.appendChild(ff); }
+                if (q.rel) { const rf = document.createElement('div'); rf.className = 'mt-2 p-3 rounded-xl text-xs sm:text-sm bg-slate-100 text-slate-700'; rf.innerHTML = '<b>Related fact:</b> '; rf.appendChild(document.createTextNode(q.rel)); optionsContainer.appendChild(rf); }
+            }
+
+            updatePaletteUI();
+        }
+
         function selectOption(qIndex, optIndex) {
             if (userAnswers[qIndex] !== null) return; // answer locked after first click
             userAnswers[qIndex] = optIndex;
-            loadQuestion(qIndex);
-            updatePaletteUI();
+            answerInPlace(qIndex);
         }
 
         function clearSelection() {
@@ -589,7 +619,7 @@ html.lite *,html.lite *::before,html.lite *::after{animation-duration:.01ms!impo
             if (currentQuestionIndex < quizData.length - 1) {
                 currentQuestionIndex++;
                 loadQuestion(currentQuestionIndex);
-                window.scrollTo({ top: 0, behavior: 'smooth' });
+                window.scrollTo({ top: 0, behavior: 'auto' });
             } else {
                 confirmSubmitQuiz();
             }
@@ -599,14 +629,14 @@ html.lite *,html.lite *::before,html.lite *::after{animation-duration:.01ms!impo
             if (currentQuestionIndex > 0) {
                 currentQuestionIndex--;
                 loadQuestion(currentQuestionIndex);
-                window.scrollTo({ top: 0, behavior: 'smooth' });
+                window.scrollTo({ top: 0, behavior: 'auto' });
             }
         }
 
         function jumpToQuestion(index) {
             currentQuestionIndex = index;
             loadQuestion(currentQuestionIndex);
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.scrollTo({ top: 0, behavior: 'auto' });
         }
 
         function renderPalette() {
@@ -627,8 +657,9 @@ html.lite *,html.lite *::before,html.lite *::after{animation-duration:.01ms!impo
 
         function updatePaletteUI() {
             quizData.forEach((_, idx) => {
-                const btn = document.getElementById(`palette-btn-${idx}`);
-                if (!btn) return;
+                const _pb = document.getElementById(`palette-btn-${idx}`);
+                if (!_pb) return;
+                const btn = { set className(v) { if (_pb.className !== v) _pb.className = v; } };
                 
                 const isCurrent = idx === currentQuestionIndex;
                 const isAnswered = userAnswers[idx] !== null;
@@ -774,7 +805,7 @@ html.lite *,html.lite *::before,html.lite *::after{animation-duration:.01ms!impo
         }
 
         function openReviewModal() {
-            reviewSection.scrollIntoView({ behavior: 'smooth' });
+            reviewSection.scrollIntoView({ behavior: 'auto' });
         }
 
         function restartQuiz() {
@@ -1216,11 +1247,11 @@ html.dark #auth .err{color:#ff8fa3}html.dark #auth .err.ok{color:#7ff0b8}
 (function(){
   var a=document.getElementById('auth');if(!a)return;
   [].forEach.call(a.querySelectorAll('.lyr'),function(l){l.style.setProperty('--d',l.getAttribute('data-d')||0)});
-  function set(x,y){a.style.setProperty('--px',Math.max(-1,Math.min(1,x)).toFixed(3));a.style.setProperty('--py',Math.max(-1,Math.min(1,y)).toFixed(3))}
+  function set(x,y){return;a.style.setProperty('--px',Math.max(-1,Math.min(1,x)).toFixed(3));a.style.setProperty('--py',Math.max(-1,Math.min(1,y)).toFixed(3))}
   window.addEventListener('mousemove',function(e){set(e.clientX/innerWidth*2-1,e.clientY/innerHeight*2-1)});
   var base=null,on=false;
   function ori(e){if(e.gamma==null)return;if(!base)base={b:e.beta,g:e.gamma};set((e.gamma-base.g)/25,(e.beta-base.b)/25)}
-  function start(){if(on)return;on=true;window.addEventListener('deviceorientation',ori)}
+  function start(){if(on)return;on=true}
   function ask(){
     if(typeof DeviceOrientationEvent!=='undefined'&&typeof DeviceOrientationEvent.requestPermission==='function'){
       DeviceOrientationEvent.requestPermission().then(function(r){if(r==='granted')start()}).catch(function(){});
@@ -1723,5 +1754,16 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
 </script>
 
 <script>function closeSplash(){}</script>
-<style id="android-perf">html.lite body *,html.lite body *::before,html.lite body *::after{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}html.lite body .st,html.lite body .fi,html.lite body .o3,html.lite body #auth .bl{filter:none!important}html.lite body *{-webkit-tap-highlight-color:transparent}</style></body>
+<style id="android-perf">html.lite body *,html.lite body *::before,html.lite body *::after{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}html.lite body .st,html.lite body .fi,html.lite body .o3,html.lite body #auth .bl{filter:none!important}html.lite body *{-webkit-tap-highlight-color:transparent}</style><style id="android-perf2">html.lite body #auth .lyr,html.lite body #auth .wrap,html.lite body #auth .hero{transform:none!important;transition:none!important;will-change:auto!important}html.lite body #auth .side{perspective:none!important}</style><style id="android-perf3">#options-container [role=button]{outline:none!important;-webkit-tap-highlight-color:transparent}</style><style id="android-perf4">html.lite body #obj3d,html.lite body #liquidBg{display:none!important}html.lite,html.lite body,html.lite body *{-webkit-tap-highlight-color:rgba(0,0,0,0)!important;-webkit-touch-callout:none}html.lite body{-webkit-user-select:none;user-select:none}html.lite body input,html.lite body textarea{-webkit-user-select:text;user-select:text}</style><script id="android-nohover">
+(function(){
+  function strip(list){ for (var i = list.length - 1; i >= 0; i--) { var r = list[i];
+      if (r.cssRules && r.type !== 1) { strip(r.cssRules); continue; }
+      if (r.selectorText && r.selectorText.indexOf(':hover') > -1) {
+        var keep = r.selectorText.split(',').filter(function(x){ return x.indexOf(':hover') < 0; });
+        try { if (keep.length) r.selectorText = keep.join(','); else (r.parentRule || r.parentStyleSheet).deleteRule(i); } catch (e) {}
+      } } }
+  function run(){ for (var k = 0; k < document.styleSheets.length; k++) { try { strip(document.styleSheets[k].cssRules); } catch (e) {} } }
+  if (document.readyState === 'complete') run(); else window.addEventListener('load', run);
+})();
+</script></body>
 </html>
