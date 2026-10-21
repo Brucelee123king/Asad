@@ -82,6 +82,25 @@ if os.path.exists(os.path.join(_p167, 'items.json')):
             _why = _fx167.get(str(_t[0]), _t[5])
             Q.append((_t[1], _t[2], _t[3], _t[4], _why, _t[6]))
 
+# batch 2 (pma168/)
+_p168 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma168')
+if os.path.exists(os.path.join(_p168, 'items.json')):
+    import glob as _gl8, json as _js8, runpy as _rp8
+    _cnt168 = {_i['id']: _i['count'] for _i in _js8.load(open(os.path.join(_p168, 'items.json'), encoding='utf8'))}
+    _fy168 = _js8.load(open(os.path.join(_p168, 'fix_reason.json'), encoding='utf8')) if os.path.exists(os.path.join(_p168, 'fix_reason.json')) else {}
+    _drop168 = set()
+    _dp8 = os.path.join(_p168, 'drop.json')
+    if os.path.exists(_dp8): _drop168 = set(_js8.load(open(_dp8)))
+    for _f in sorted(_gl8.glob(os.path.join(_p168, 'm_s*.py'))):
+        _m = _rp8.run_path(_f)
+        for _n, _idx in _m['MATCH']:
+            _t = list(Q[_idx]); _t[5] = _t[5] + _cnt168[_n]; Q[_idx] = tuple(_t)
+        for _t in _m['NEW']:
+            if _t[0] in _drop168: continue
+            _why = _fy168.get(str(_t[0]), _t[5])
+            Q.append((_t[1], _t[2], _t[3], _t[4], _why, _t[6]))
+
+
 if os.environ.get('DUMPQ'):
     with open(os.environ['DUMPQ'], 'w', encoding='utf8') as _df:
         for _i, _t in enumerate(Q): _df.write('%d\t%s  => %s\n' % (_i, _t[1], _t[2]))
