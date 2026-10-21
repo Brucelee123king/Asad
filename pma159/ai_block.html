@@ -67,7 +67,7 @@ html.dark #aiMsgs .a{background:#141b34}
   function build(){
     if(idx)return idx; var map={};
     try{Object.keys(ALL).forEach(function(k){
-      if(/^(CUS-)/.test(k))return;
+      if(/^(CUS-|NV-)/.test(k))return;
       (ALL[k]||[]).forEach(function(e){
         if(!e||!e.question||!e.options)return;
         var core=strip(e.question), key=toks(core).sort().join(' ')+'|'+String(e.options[e.correct]).toLowerCase();

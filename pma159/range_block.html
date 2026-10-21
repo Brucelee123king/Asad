@@ -47,7 +47,7 @@ html.dark #rngModal .go.alt{color:#a5b4fc;border-color:#a5b4fc}
 <script>
 (function(){
   var $=function(id){return document.getElementById(id)};
-  var SKIP=/^(MR|IV|CN)-/;           /* these tests only repeat Hakeem MCQs: never count them twice */
+  var SKIP=/^(MR|IV|CN|NV)-/;           /* these tests only repeat Hakeem MCQs: never count them twice */
   var idx=null,CAT='ALL';
   var CATS=[['ALL','All sections'],['O','1000 MCQs'],['PMA','PMA 159'],['HK','Hakeem'],['FA','Forces Academy'],['LC','PMA 158'],['PG','Pro Genius']];
   function catOf(k){var p=k.split('-')[0];return p==='PG'||p==='PF'?'PG':(p==='PMA'||p==='HK'||p==='FA'||p==='LC')?p:'O'}

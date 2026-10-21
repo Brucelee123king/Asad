@@ -1,0 +1,68 @@
+<style>
+.nvstem{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:10px 0 12px}
+.nvstem .g{display:flex;gap:6px;align-items:center;padding:4px;border:1px dashed rgba(148,163,184,.7);border-radius:10px}
+.nvstem .f{width:62px;height:62px;background:#fff;border-radius:6px}
+.nvstem .f svg,#options-container [data-nv] svg{display:block;width:100%;height:100%}
+.nvstem .qm{width:62px;height:62px;border:2px solid #111;border-radius:6px;background:#fff;color:#111;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:700}
+#options-container [data-nv] .nvo{width:78px;height:78px;background:#fff;border-radius:8px;flex:0 0 auto}
+.nvnote{margin-top:8px;padding:10px 12px;border-radius:12px;font-size:13px;line-height:1.5}
+.nvsol{background:rgba(79,70,229,.10);color:inherit}.nvtrk{background:rgba(245,158,11,.14);color:inherit}
+@media (max-width:360px){.nvstem .f,.nvstem .qm{width:52px;height:52px}}
+#review-list-container .nvo svg,#review-list-container .f svg{width:100%;height:100%;display:block}
+#review-list-container .nvstem .f,#review-list-container .nvstem .qm{width:48px;height:48px;font-size:22px}
+</style>
+<script>
+(function(){
+  function cur(){try{if(quizActive&&quizData&&quizData[currentQuestionIndex])return quizData[currentQuestionIndex]}catch(e){}return null}
+  function esc(s){return String(s==null?'':s).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})}
+  function patch(){
+    var q=cur();if(!q||!q.nv)return;
+    var qt=document.getElementById('question-text');if(!qt)return;
+    var st=document.getElementById('nvStem');
+    if(!st){st=document.createElement('div');st.id='nvStem';qt.parentNode.insertBefore(st,qt.nextSibling)}
+    var h='';
+    if(q.stem&&q.stem.length){h='<div class="nvstem">'+q.stem.map(function(g){return '<div class="g">'+g.map(function(s){return '<div class="f">'+s+'</div>'}).join('')+'</div>'}).join('')+'<div class="qm">?</div></div>'}
+    if(st.getAttribute('data-q')!==String(currentQuestionIndex)||st.getAttribute('data-t')!==currentTestKey){st.innerHTML=h;st.setAttribute('data-q',String(currentQuestionIndex));st.setAttribute('data-t',currentTestKey)}
+    var oc=document.getElementById('options-container');if(!oc)return;
+    var cards=oc.querySelectorAll('[role=button]');
+    cards.forEach(function(c,i){
+      c.setAttribute('data-nv','1');
+      var badge=c.children[0];if(badge)badge.textContent=String(i+1);
+      var body=c.children[1];if(body&&!body.querySelector('.nvo')&&q.options[i]){body.innerHTML='<div class="nvo">'+q.options[i]+'</div>'}
+    });
+    Array.prototype.slice.call(oc.children).forEach(function(el){
+      if(el.getAttribute('role')==='button'||el.id)return;
+      var t=el.textContent||'';
+      if(el.getAttribute('data-nvfix'))return;
+      if(/Wrong answer/.test(t)){el.textContent='✗ Wrong answer. Correct answer: '+(q.correct+1);el.setAttribute('data-nvfix','1')}
+      else if(/Correct answer!/.test(t)){el.setAttribute('data-nvfix','1')}
+      else if(/Related facts|Reason/.test(t)||el.className.indexOf('bg-slate-100')>-1){el.parentNode.removeChild(el)}
+    });
+    if(userAnswers[currentQuestionIndex]!==null&&userAnswers[currentQuestionIndex]!==undefined&&!oc.querySelector('.nvsol')){
+      var a=document.createElement('div');a.className='nvnote nvsol';a.innerHTML='<b>Solution:</b> '+esc(q.facts||'');oc.appendChild(a);
+      if(q.rel){var b=document.createElement('div');b.className='nvnote nvtrk';b.innerHTML='<b>Trick:</b> '+esc(q.rel);oc.appendChild(b)}
+    }
+  }
+  function wrap(n){var f=window[n];if(typeof f!=='function')return;window[n]=function(){var r=f.apply(this,arguments);try{patch()}catch(e){}return r}}
+  wrap('loadQuestion');wrap('selectOption');
+  /* review page after the test: pictures, stem, solution and trick for the picture questions */
+  var _rr=window.renderReviewList;
+  if(typeof _rr==='function')window.renderReviewList=function(filter){
+    var r=_rr.apply(this,arguments);
+    try{
+      var cont=document.getElementById('review-list-container');if(!cont)return r;
+      var idxs=[];quizData.forEach(function(q,i){var ok=userAnswers[i]===q.correct;if(filter==='incorrect'&&ok)return;idxs.push(i)});
+      Array.prototype.slice.call(cont.children).forEach(function(card,k){
+        var q=quizData[idxs[k]];if(!q||!q.nv)return;
+        var qd=card.querySelector('.font-bold.text-slate-900');
+        if(qd&&q.stem&&q.stem.length){var d=document.createElement('div');d.className='nvstem';d.innerHTML=q.stem.map(function(g){return '<div class="g">'+g.map(function(s){return '<div class="f">'+s+'</div>'}).join('')+'</div>'}).join('')+'<div class="qm">?</div>';qd.parentNode.insertBefore(d,qd.nextSibling)}
+        card.querySelectorAll('.space-y-1\\.5 > div').forEach(function(row,i){var sp=row.children[0];if(sp)sp.textContent=String(i+1);var o=row.children[1];if(o&&q.options[i])o.innerHTML='<div class="nvo" style="width:64px;height:64px;background:#fff;border-radius:6px">'+q.options[i]+'</div>'});
+        var a=document.createElement('div');a.className='nvnote nvsol';a.innerHTML='<b>Solution:</b> '+esc(q.facts||'');card.appendChild(a);
+        if(q.rel){var b=document.createElement('div');b.className='nvnote nvtrk';b.innerHTML='<b>Trick:</b> '+esc(q.rel);card.appendChild(b)}
+      });
+    }catch(e){}
+    return r;
+  };
+  window.__nvPatch=patch;
+})();
+</script>
