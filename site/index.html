@@ -139,6 +139,12 @@
                 <p class="text-cyan-50 text-sm sm:text-base">MCQs from Pro Genius Academy, in tests of 50 MCQs. A repeated question is written once and the number in brackets shows how many times it came. Every answer has a reason and a related fact.</p>
             </div>
             <div id="pg-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            <div class="bg-gradient-to-r from-amber-600 to-orange-500 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
+                <span class="inline-block bg-white/20 text-amber-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">1 Tests &bull; 13 MCQs</span>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Non Verbal PMA Test</h2>
+                <p class="text-amber-50 text-sm sm:text-base">Picture questions (series and odd one out) for the PMA non verbal test. Every question has a solution and an exam trick.</p>
+            </div>
+            <div id="nv-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
         </div>
 
         <!-- VIEW 1: HOME / DASHBOARD -->
@@ -812,13 +818,24 @@
                     <div class="text-sm font-semibold text-amber-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
             }).join('');
         }
+        function renderNV() {
+            const g = document.getElementById('nv-grid'); if (!g) return;
+            g.innerHTML = Object.keys(ALL).filter(isNV).map((k, i) => {
+                let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
+                return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-amber-500 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full">Non Verbal &bull; Test ${i + 1}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
+                    <div class="text-xl font-bold text-slate-900">Non Verbal PMA Test &ndash; Part ${i + 1}</div>
+                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * 30) / 60))} Minutes &bull; Solution and trick for every question</div>
+                    <div class="text-sm font-semibold text-amber-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+            }).join('');
+        }
         let pgSub = null;
         function openPgSub(p) { pgSub = p; renderPG(); window.scrollTo(0, 0); }
         function renderPG() {
             const g = document.getElementById('pg-grid'); if (!g) return;
-            const GR = {f: {name: 'Famous 1000 MCQs', sub: 'Pro Genius most famous MCQs', test: isPF, tag: 'Famous 1000'}, p: {name: 'PMA 159 Pro Genius MCQs', sub: 'PMA 159 initial test, Pro Genius', test: isPG, tag: 'PMA 159 Pro Genius'}, n: {name: 'Non Verbal PMA Test', sub: 'Diagram questions with solution and trick', test: isNV, tag: 'Non Verbal'}};
+            const GR = {f: {name: 'Famous 1000 MCQs', sub: 'Pro Genius most famous MCQs', test: isPF, tag: 'Famous 1000'}, p: {name: 'PMA 159 Pro Genius MCQs', sub: 'PMA 159 initial test, Pro Genius', test: isPG, tag: 'PMA 159 Pro Genius'}};
             if (pgSub === null) {
-                g.innerHTML = ['f', 'p', 'n'].map(id => {
+                g.innerHTML = ['f', 'p'].map(id => {
                     const ks = Object.keys(ALL).filter(GR[id].test), n = ks.reduce((t, k) => t + ALL[k].length, 0);
                     return ks.length ? `<button type="button" onclick="openPgSub('${id}')" class="text-left bg-gradient-to-r from-cyan-700 to-blue-600 text-white rounded-2xl shadow-xl p-6 flex flex-col gap-2 col-span-full sm:col-span-1"><div class="text-xl font-bold">${GR[id].name}</div><div class="text-white/90 text-sm">${GR[id].sub}</div><div class="text-white/80 text-xs font-semibold">${ks.length} Tests &bull; ${n} MCQs</div><div class="text-sm font-bold mt-1">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`
                         : `<div class="text-left bg-slate-200 text-slate-600 rounded-2xl p-6 flex flex-col gap-2 col-span-full sm:col-span-1"><div class="text-xl font-bold">${GR[id].name}</div><div class="text-sm">${GR[id].sub}</div><div class="text-xs font-semibold">Coming soon</div></div>`;
@@ -959,7 +976,7 @@
             viewHome.classList.add('hidden'); viewQuiz.classList.add('hidden'); viewResults.classList.add('hidden');
             headerTimerContainer.classList.add('hidden'); headerTimerContainer.classList.remove('flex');
             document.getElementById('view-select').classList.remove('hidden');
-            renderSelect(); renderPMA(); renderFA(); renderHK(); renderLC(); renderPG(); applySec(); window.scrollTo(0, 0);
+            renderSelect(); renderPMA(); renderFA(); renderHK(); renderLC(); renderPG(); renderNV(); applySec(); window.scrollTo(0, 0);
         }
 
         let curSec = null, menuReady = false;
@@ -969,7 +986,8 @@
             {id: 'fa', name: 'Forces Academy Lahore MCQs', sub: 'Intelligence tests and academic practice', grad: 'from-amber-700 to-orange-600', icon: 'fa-brain', test: k => isFA(k)},
             {id: 'hk', name: 'Hakeem Force Academy MCQs', sub: 'PMA All Experiences, Most Repeated MCQs, Constitution of Pakistan and 100 Most Repeated Questions', grad: 'from-sky-700 to-cyan-500', icon: 'fa-medal', test: k => isHK(k)},
             {id: 'lc', name: 'PMA 158 Long Course MCQs', sub: 'PMA 158 Long Course test experiences', grad: 'from-violet-700 to-fuchsia-600', icon: 'fa-flag', test: k => isLC(k)},
-            {id: 'pg', name: 'Pro Genius Academy MCQs', sub: 'Famous 1000 MCQs, PMA 159 Pro Genius MCQs and Non Verbal PMA Test', grad: 'from-cyan-700 to-blue-600', icon: 'fa-graduation-cap', test: k => isPG(k) || isPF(k) || isNV(k)}
+            {id: 'pg', name: 'Pro Genius Academy MCQs', sub: 'Famous 1000 MCQs and PMA 159 Pro Genius MCQs', grad: 'from-cyan-700 to-blue-600', icon: 'fa-graduation-cap', test: k => isPG(k) || isPF(k)},
+            {id: 'nv', name: 'Non Verbal PMA Test', sub: 'Picture questions with solution and trick', grad: 'from-amber-600 to-orange-500', icon: 'fa-shapes', test: k => isNV(k)}
         ];
         function initMenu() {
             if (menuReady) return; menuReady = true;
@@ -1007,7 +1025,7 @@
         }
         function openSec(id) { if (id === 'pg' && curSec !== 'pg') { pgSub = null; renderPG(); } if (id === 'hk' && curSec !== 'hk' && typeof hkSub !== 'undefined') { hkSub = null; renderHK(); } curSec = id; applySec(); window.scrollTo(0, 0); }
         function bootQuizApp() {
-            renderSelect(); renderPMA(); renderFA(); renderHK(); renderLC(); renderPG(); applySec();
+            renderSelect(); renderPMA(); renderFA(); renderHK(); renderLC(); renderPG(); renderNV(); applySec();
             
             const startButton = document.getElementById('start-quiz-btn');
             if (startButton) {
@@ -1285,6 +1303,7 @@ html.dark #auth .err{color:#ff8fa3}html.dark #auth .err.ok{color:#7ff0b8}
 body[data-sec="pma"]{--c1:#047857;--c2:#0d9488;--cs:#059669;--ch:#047857;--cl:#ecfdf5;--ct:#065f46;--cb:#10b981;--cr:#34d399}
 body[data-sec="fa"]{--c1:#b45309;--c2:#ea580c;--cs:#d97706;--ch:#b45309;--cl:#fffbeb;--ct:#92400e;--cb:#f59e0b;--cr:#fbbf24}
 body[data-sec="hk"]{--c1:#0369a1;--c2:#06b6d4;--cs:#0284c7;--ch:#0369a1;--cl:#f0f9ff;--ct:#075985;--cb:#38bdf8;--cr:#7dd3fc}
+body[data-sec="nv"]{--c1:#b45309;--c2:#f59e0b;--cs:#d97706;--ch:#b45309;--cl:#fffbeb;--ct:#92400e;--cb:#fcd34d;--cr:#fde68a}
 body[data-sec="pg"]{--c1:#0e7490;--c2:#2563eb;--cs:#0891b2;--ch:#0e7490;--cl:#ecfeff;--ct:#155e75;--cb:#67e8f9;--cr:#a5f3fc}
 body[data-sec="lc"]{--c1:#6d28d9;--c2:#c026d3;--cs:#7c3aed;--ch:#6d28d9;--cl:#f5f3ff;--ct:#5b21b6;--cb:#a78bfa;--cr:#c4b5fd}
 body[data-sec] :is(#view-home,#view-quiz,#view-results) .from-indigo-600{--tw-gradient-from:var(--c1) var(--tw-gradient-from-position)!important;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)!important}
@@ -1309,7 +1328,7 @@ body[data-sec] #view-home .text-emerald-600{color:var(--cs)!important}
 (function(){
   if(typeof selectTest!=='function')return;
   var _sel=selectTest,_show=showSelect;
-  window.selectTest=selectTest=function(k){var c=(isHK(k)||isMR(k)||isCN(k)||isIV(k))?'hk':(isPG(k)||isPF(k)||isNV(k))?'pg':isLC(k)?'lc':isFA(k)?'fa':isPMA(k)?'pma':'';if(c)document.body.dataset.sec=c;else delete document.body.dataset.sec;return _sel.apply(this,arguments)};
+  window.selectTest=selectTest=function(k){var c=(isHK(k)||isMR(k)||isCN(k)||isIV(k))?'hk':isNV(k)?'nv':(isPG(k)||isPF(k))?'pg':isLC(k)?'lc':isFA(k)?'fa':isPMA(k)?'pma':'';if(c)document.body.dataset.sec=c;else delete document.body.dataset.sec;return _sel.apply(this,arguments)};
   window.showSelect=showSelect=function(){var r=_show.apply(this,arguments);if(!quizActive)delete document.body.dataset.sec;return r};
 })();
 </script>

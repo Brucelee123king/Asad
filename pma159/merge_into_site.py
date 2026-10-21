@@ -362,17 +362,35 @@ sub('<div id="fa-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap
                 <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Pro Genius Academy MCQs</h2>
                 <p class="text-cyan-50 text-sm sm:text-base">MCQs from Pro Genius Academy, in tests of 50 MCQs. A repeated question is written once and the number in brackets shows how many times it came. Every answer has a reason and a related fact.</p>
             </div>
-            <div id="pg-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>''')
+            <div id="pg-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            <div class="bg-gradient-to-r from-amber-600 to-orange-500 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
+                <span class="inline-block bg-white/20 text-amber-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">@@NV_COUNT@@</span>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Non Verbal PMA Test</h2>
+                <p class="text-amber-50 text-sm sm:text-base">Picture questions (series and odd one out) for the PMA non verbal test. Every question has a solution and an exam trick.</p>
+            </div>
+            <div id="nv-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>''')
+s = s.replace('@@NV_COUNT@@', '%d Tests &bull; %d MCQs' % (len(NV), _nv_n))
 s = s.replace('@@PG_COUNT@@', '%d Tests &bull; %d MCQs' % (len(PG) + len(PF), _pg_n + _pf_n))
 s = s.replace('@@LC_COUNT@@', '%d Tests &bull; %d MCQs' % (len(LC), _lc_n))
 s = s.replace('@@HK_COUNT@@', '%d Tests &bull; %d MCQs' % _hk_count)
-sub("function selectTest(k) {", """let pgSub = null;
+sub("function selectTest(k) {", """function renderNV() {
+            const g = document.getElementById('nv-grid'); if (!g) return;
+            g.innerHTML = Object.keys(ALL).filter(isNV).map((k, i) => {
+                let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
+                return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-amber-500 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full">Non Verbal &bull; Test ${i + 1}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
+                    <div class="text-xl font-bold text-slate-900">Non Verbal PMA Test &ndash; Part ${i + 1}</div>
+                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * 30) / 60))} Minutes &bull; Solution and trick for every question</div>
+                    <div class="text-sm font-semibold text-amber-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+            }).join('');
+        }
+        let pgSub = null;
         function openPgSub(p) { pgSub = p; renderPG(); window.scrollTo(0, 0); }
         function renderPG() {
             const g = document.getElementById('pg-grid'); if (!g) return;
-            const GR = {f: {name: 'Famous 1000 MCQs', sub: 'Pro Genius most famous MCQs', test: isPF, tag: 'Famous 1000'}, p: {name: 'PMA 159 Pro Genius MCQs', sub: 'PMA 159 initial test, Pro Genius', test: isPG, tag: 'PMA 159 Pro Genius'}, n: {name: 'Non Verbal PMA Test', sub: 'Diagram questions with solution and trick', test: isNV, tag: 'Non Verbal'}};
+            const GR = {f: {name: 'Famous 1000 MCQs', sub: 'Pro Genius most famous MCQs', test: isPF, tag: 'Famous 1000'}, p: {name: 'PMA 159 Pro Genius MCQs', sub: 'PMA 159 initial test, Pro Genius', test: isPG, tag: 'PMA 159 Pro Genius'}};
             if (pgSub === null) {
-                g.innerHTML = ['f', 'p', 'n'].map(id => {
+                g.innerHTML = ['f', 'p'].map(id => {
                     const ks = Object.keys(ALL).filter(GR[id].test), n = ks.reduce((t, k) => t + ALL[k].length, 0);
                     return ks.length ? `<button type="button" onclick="openPgSub('${id}')" class="text-left bg-gradient-to-r from-cyan-700 to-blue-600 text-white rounded-2xl shadow-xl p-6 flex flex-col gap-2 col-span-full sm:col-span-1"><div class="text-xl font-bold">${GR[id].name}</div><div class="text-white/90 text-sm">${GR[id].sub}</div><div class="text-white/80 text-xs font-semibold">${ks.length} Tests &bull; ${n} MCQs</div><div class="text-sm font-bold mt-1">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`
                         : `<div class="text-left bg-slate-200 text-slate-600 rounded-2xl p-6 flex flex-col gap-2 col-span-full sm:col-span-1"><div class="text-xl font-bold">${GR[id].name}</div><div class="text-sm">${GR[id].sub}</div><div class="text-xs font-semibold">Coming soon</div></div>`;
@@ -504,7 +522,8 @@ MENU_JS = """let curSec = null, menuReady = false;
             {id: 'fa', name: 'Forces Academy Lahore MCQs', sub: 'Intelligence tests and academic practice', grad: 'from-amber-700 to-orange-600', icon: 'fa-brain', test: k => isFA(k)},
             {id: 'hk', name: 'Hakeem Force Academy MCQs', sub: 'PMA All Experiences, Most Repeated MCQs, Constitution of Pakistan and 100 Most Repeated Questions', grad: 'from-sky-700 to-cyan-500', icon: 'fa-medal', test: k => isHK(k)},
             {id: 'lc', name: 'PMA 158 Long Course MCQs', sub: 'PMA 158 Long Course test experiences', grad: 'from-violet-700 to-fuchsia-600', icon: 'fa-flag', test: k => isLC(k)},
-            {id: 'pg', name: 'Pro Genius Academy MCQs', sub: 'Famous 1000 MCQs, PMA 159 Pro Genius MCQs and Non Verbal PMA Test', grad: 'from-cyan-700 to-blue-600', icon: 'fa-graduation-cap', test: k => isPG(k) || isPF(k) || isNV(k)}
+            {id: 'pg', name: 'Pro Genius Academy MCQs', sub: 'Famous 1000 MCQs and PMA 159 Pro Genius MCQs', grad: 'from-cyan-700 to-blue-600', icon: 'fa-graduation-cap', test: k => isPG(k) || isPF(k)},
+            {id: 'nv', name: 'Non Verbal PMA Test', sub: 'Picture questions with solution and trick', grad: 'from-amber-600 to-orange-500', icon: 'fa-shapes', test: k => isNV(k)}
         ];
         function initMenu() {
             if (menuReady) return; menuReady = true;
@@ -543,9 +562,9 @@ MENU_JS = """let curSec = null, menuReady = false;
         function openSec(id) { if (id === 'pg' && curSec !== 'pg') { pgSub = null; renderPG(); } if (id === 'hk' && curSec !== 'hk' && typeof hkSub !== 'undefined') { hkSub = null; renderHK(); } curSec = id; applySec(); window.scrollTo(0, 0); }
         function bootQuizApp() {"""
 sub("function bootQuizApp() {", MENU_JS)
-sub("renderSelect(); renderPMA(); renderFA(); renderHK(); window.scrollTo(0, 0);", "renderSelect(); renderPMA(); renderFA(); renderHK(); renderLC(); renderPG(); applySec(); window.scrollTo(0, 0);")
+sub("renderSelect(); renderPMA(); renderFA(); renderHK(); window.scrollTo(0, 0);", "renderSelect(); renderPMA(); renderFA(); renderHK(); renderLC(); renderPG(); renderNV(); applySec(); window.scrollTo(0, 0);")
 sub("const passed = correctCount >= 25;", "const passed = correctCount * 2 >= quizData.length;")
-sub("function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA(); renderHK();", "function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA(); renderHK(); renderLC(); renderPG(); applySec();")
+sub("function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA(); renderHK();", "function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA(); renderHK(); renderLC(); renderPG(); renderNV(); applySec();")
 
 # login screen (glassy sign in / create account / continue as guest) and day-night mode
 _d = os.path.dirname(os.path.abspath(__file__))
