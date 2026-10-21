@@ -1,0 +1,440 @@
+[
+ {
+  "src": "A",
+  "num": 13,
+  "question": "Who developed the theory of relativity?",
+  "options": [
+   "Isaac Newton",
+   "Albert Einstein",
+   "Niels Bohr",
+   "Galileo Galilei"
+  ],
+  "correct": 1,
+  "why": "Albert Einstein developed the theory of relativity.",
+  "rel": "Special relativity was published in 1905. General relativity reached its final form in 1915."
+ },
+ {
+  "src": "A",
+  "num": 35,
+  "question": "Who joined the Muslim League in 1913?",
+  "options": [
+   "Allama Iqbal",
+   "Liaquat Ali Khan",
+   "Sir Syed Ahmad Khan",
+   "Muhammad Ali Jinnah"
+  ],
+  "correct": 3,
+  "why": "Jinnah joined the All-India Muslim League in 1913.",
+  "rel": "He had earlier worked with the Indian National Congress. He later led the Pakistan Movement."
+ },
+ {
+  "src": "A",
+  "num": 50,
+  "question": "Where is the Asian Development Bank headquartered?",
+  "options": [
+   "Mandaluyong, Philippines",
+   "Bangkok, Thailand",
+   "Tokyo, Japan",
+   "Singapore"
+  ],
+  "correct": 0,
+  "why": "The Asian Development Bank is headquartered in Mandaluyong, Metro Manila, Philippines.",
+  "rel": "ADB was established in 1966. It focuses on development in Asia and the Pacific."
+ },
+ {
+  "src": "A",
+  "num": 65,
+  "question": "What does the crescent and star on Pakistan’s flag represent?",
+  "options": [
+   "Crescent: peace; star: unity",
+   "Crescent: Islam; star: the Quran",
+   "Crescent: progress; star: light and knowledge",
+   "Crescent: faith; star: discipline"
+  ],
+  "correct": 2,
+  "why": "By the usual explanation, the crescent stands for progress and the star for light and knowledge.",
+  "rel": "The flag was adopted on 11 August 1947. Green stands for the Muslim majority and white for minorities.",
+  "problem": "Symbol meanings are conventional explanations, not official legal text."
+ },
+ {
+  "src": "A",
+  "num": 80,
+  "question": "Which city is sometimes called the City of Gold in Pakistan?",
+  "options": [
+   "Lahore",
+   "Karachi",
+   "Multan",
+   "Peshawar"
+  ],
+  "correct": 2,
+  "why": "Multan is sometimes given as the answer in quiz material, but it is usually called the City of Saints.",
+  "rel": "Multan is famous for shrines, mangoes and blue pottery. Karachi is called the City of Lights.",
+  "problem": "Question is ambiguous: 'City of Gold' is not a standard official nickname. Multan is the most common quiz answer."
+ },
+ {
+  "src": "A",
+  "num": 94,
+  "question": "Which prophet is called Safiullah?",
+  "options": [
+   "Adam (AS)",
+   "Nuh (AS)",
+   "Ibrahim (AS)",
+   "Musa (AS)"
+  ],
+  "correct": 0,
+  "why": "Adam (AS) is commonly given the title Safiullah, meaning the chosen one of Allah.",
+  "rel": "Nuh (AS) is Najiyullah, Ibrahim (AS) is Khalilullah, Musa (AS) is Kalimullah."
+ },
+ {
+  "src": "A",
+  "num": 106,
+  "question": "What is the world’s largest tropical rainforest?",
+  "options": [
+   "The Congo rainforest",
+   "The Daintree rainforest",
+   "The Valdivian rainforest",
+   "The Amazon rainforest"
+  ],
+  "correct": 3,
+  "why": "The Amazon is the world's largest tropical rainforest, mostly in Brazil.",
+  "rel": "It spans several South American countries. The Congo basin is the second largest."
+ },
+ {
+  "src": "A",
+  "num": 119,
+  "question": "What is Pakistan’s national bird?",
+  "options": [
+   "Houbara bustard",
+   "Chukar partridge (Chakor)",
+   "Shaheen falcon",
+   "Bulbul"
+  ],
+  "correct": 1,
+  "why": "Pakistan's national bird is the chukar partridge (Chakor).",
+  "rel": "The chukar is a partridge species. Pakistan's national animal is the markhor."
+ },
+ {
+  "src": "A",
+  "num": 132,
+  "question": "Where is the Economic Cooperation Organization (ECO) headquartered?",
+  "options": [
+   "Tehran, Iran",
+   "Islamabad, Pakistan",
+   "Ankara, Turkey",
+   "Tashkent, Uzbekistan"
+  ],
+  "correct": 0,
+  "why": "The ECO Secretariat is in Tehran, Iran.",
+  "rel": "ECO succeeded the Regional Cooperation for Development in 1985. Members are from West, Central and South Asia."
+ },
+ {
+  "src": "B",
+  "num": 6,
+  "question": "When were Pakistan's first general elections held on the basis of adult franchise?",
+  "options": [
+   "7 March 1977",
+   "7 December 1971",
+   "7 December 1970",
+   "16 November 1988"
+  ],
+  "correct": 2,
+  "why": "Pakistan's first direct general elections on adult franchise were held on 7 December 1970.",
+  "rel": "The Awami League won a majority of seats, mostly in East Pakistan."
+ },
+ {
+  "src": "B",
+  "num": 16,
+  "question": "Since when has Pakistan observed Defence Day on 6 September?",
+  "options": [
+   "1965",
+   "1966",
+   "1967",
+   "1971"
+  ],
+  "correct": 1,
+  "why": "Defence Day has been observed since 1966, the first anniversary of the 1965 war.",
+  "rel": "It honours the defence of Pakistan in the 1965 war. It is observed every year on 6 September."
+ },
+ {
+  "src": "B",
+  "num": 26,
+  "question": "If yesterday was Friday, what day will it be the day after tomorrow?",
+  "options": [
+   "Sunday",
+   "Tuesday",
+   "Wednesday",
+   "Monday"
+  ],
+  "correct": 3,
+  "why": "If yesterday was Friday, today is Saturday. Tomorrow is Sunday, so the day after tomorrow is Monday.",
+  "rel": "Day after tomorrow means two days from today. Always find today first."
+ },
+ {
+  "src": "B",
+  "num": 36,
+  "question": "When was the China-Pakistan boundary agreement signed?",
+  "options": [
+   "2 March 1963",
+   "2 March 1965",
+   "21 March 1963",
+   "2 March 1961"
+  ],
+  "correct": 0,
+  "why": "The China-Pakistan boundary agreement was signed on 2 March 1963.",
+  "rel": "It delimited the northern boundary. The Karakoram Highway later improved links between the two countries."
+ },
+ {
+  "src": "B",
+  "num": 46,
+  "question": "What is the longest river in Asia?",
+  "options": [
+   "Yellow River",
+   "Ganges",
+   "Yangtze",
+   "Mekong"
+  ],
+  "correct": 2,
+  "why": "The Yangtze in China is the longest river in Asia, about 6,300 km.",
+  "rel": "It flows into the East China Sea near Shanghai. The Yellow River is the second longest in China."
+ },
+ {
+  "src": "B",
+  "num": 56,
+  "question": "What is 90% of 90?",
+  "options": [
+   "79",
+   "89",
+   "99",
+   "81"
+  ],
+  "correct": 3,
+  "why": "10% of 90 is 9, so 90% is 9 x 9 = 81.",
+  "rel": "Percentage means per hundred. 90% of 90 = 0.9 x 90."
+ },
+ {
+  "src": "B",
+  "num": 67,
+  "question": "When was the Conquest of Makkah?",
+  "options": [
+   "6 AH (628 CE)",
+   "8 AH (630 CE)",
+   "10 AH (632 CE)",
+   "2 AH (624 CE)"
+  ],
+  "correct": 1,
+  "why": "Makkah was conquered in Ramadan 8 AH (630 CE).",
+  "rel": "It followed the breaking of the Treaty of Hudaybiyyah. Badr was in 2 AH and Uhud in 3 AH."
+ },
+ {
+  "src": "B",
+  "num": 77,
+  "question": "What does “Badr” refer to, and what does the word mean?",
+  "options": [
+   "A mountain near Makkah; means light",
+   "A well in Makkah; means sword",
+   "A place near Madinah; means full moon",
+   "A valley near Taif; means victory"
+  ],
+  "correct": 2,
+  "why": "Badr is a settlement southwest of Madinah where the Battle of Badr took place. The word is glossed as full moon.",
+  "rel": "The battle was in 2 AH (624 CE). Muslims numbered about 313."
+ },
+ {
+  "src": "B",
+  "num": 87,
+  "question": "Which city is often described as one of Pakistan's oldest continuously inhabited cities?",
+  "options": [
+   "Multan",
+   "Karachi",
+   "Islamabad",
+   "Gwadar"
+  ],
+  "correct": 0,
+  "why": "Multan is often described as one of Pakistan's oldest continuously inhabited cities.",
+  "rel": "Multan is the City of Saints because of its Sufi shrines. Mohenjo-daro is older but not continuously inhabited.",
+  "problem": "The claim of being the single oldest depends on definition; Multan is the standard answer."
+ },
+ {
+  "src": "B",
+  "num": 97,
+  "question": "How many idols were reportedly kept in the Kaaba before the Conquest of Makkah?",
+  "options": [
+   "300",
+   "313",
+   "400",
+   "360"
+  ],
+  "correct": 3,
+  "why": "Traditional Islamic accounts say 360 idols were kept in the Kaaba.",
+  "rel": "They were removed after the Conquest of Makkah in 8 AH. The Kaaba is in Masjid al-Haram."
+ },
+ {
+  "src": "B",
+  "num": 107,
+  "question": "What is the capital of Mongolia?",
+  "options": [
+   "Astana",
+   "Ulaanbaatar",
+   "Bishkek",
+   "Hanoi"
+  ],
+  "correct": 1,
+  "why": "Ulaanbaatar is the capital of Mongolia.",
+  "rel": "Mongolia is landlocked between Russia and China. It is also spelled Ulan Bator."
+ },
+ {
+  "src": "B",
+  "num": 117,
+  "question": "Which international organization did Pakistan join as a full member in 2017?",
+  "options": [
+   "BRICS",
+   "ASEAN",
+   "Shanghai Cooperation Organisation (SCO)",
+   "G20"
+  ],
+  "correct": 2,
+  "why": "Pakistan became a full SCO member in June 2017 at the Astana summit.",
+  "rel": "Pakistan had been an SCO observer since 2005."
+ },
+ {
+  "src": "B",
+  "num": 127,
+  "question": "Which prophet is mentioned most often by name in the Quran?",
+  "options": [
+   "Musa (AS)",
+   "Ibrahim (AS)",
+   "Nuh (AS)",
+   "Isa (AS)"
+  ],
+  "correct": 0,
+  "why": "Prophet Musa (AS) is named most often in the Quran, about 136 times.",
+  "rel": "His story appears in Al-Baqarah, Al-A'raf and Ta-Ha. Counts vary by method.",
+  "problem": "Exact count depends on counting method, but Musa is the standard answer."
+ },
+ {
+  "src": "B",
+  "num": 137,
+  "question": "What is Earth's circumference?",
+  "options": [
+   "About 36,075 km",
+   "About 40,075 km",
+   "About 42,000 km",
+   "About 20,037 km"
+  ],
+  "correct": 1,
+  "why": "Earth's equatorial circumference is about 40,075 km.",
+  "rel": "The polar circumference is about 40,008 km. Earth is an oblate spheroid."
+ },
+ {
+  "src": "B",
+  "num": 147,
+  "question": "What minerals does the Saindak project produce?",
+  "options": [
+   "Coal and iron ore",
+   "Chromite and manganese",
+   "Lead and zinc",
+   "Copper and gold"
+  ],
+  "correct": 3,
+  "why": "Saindak is a copper-gold project, with silver also recovered.",
+  "rel": "It is in Chagai District, Balochistan. The lease was extended to 2037 for the Chinese company MCC."
+ },
+ {
+  "src": "B",
+  "num": 157,
+  "question": "How many Muslims were martyred at the Battle of Uhud?",
+  "options": [
+   "About 70",
+   "About 40",
+   "About 85",
+   "About 100"
+  ],
+  "correct": 0,
+  "why": "About 70 Muslims were martyred at Uhud.",
+  "rel": "Uhud was in 3 AH (625 CE). Hamza (RA) was among the martyrs."
+ },
+ {
+  "src": "B",
+  "num": 167,
+  "question": "What does IMF stand for?",
+  "options": [
+   "International Monetary Federation",
+   "International Mercantile Fund",
+   "International Monetary Fund",
+   "Industrial Monetary Fund"
+  ],
+  "correct": 2,
+  "why": "IMF stands for International Monetary Fund.",
+  "rel": "It was set up at Bretton Woods in 1944. Its headquarters are in Washington, D.C."
+ },
+ {
+  "src": "B",
+  "num": 177,
+  "question": "What is the literal meaning of Islam?",
+  "options": [
+   "Prayer to Allah",
+   "Submission to Allah",
+   "Gratitude to Allah",
+   "Knowledge of Allah"
+  ],
+  "correct": 1,
+  "why": "The literal meaning of Islam is submission or surrender to Allah.",
+  "rel": "The root is s-l-m, linked with peace and submission. A Muslim is one who submits to Allah."
+ },
+ {
+  "src": "B",
+  "num": 187,
+  "question": "They are three brothers. Ali is ___ of the three.",
+  "options": [
+   "the cleverer",
+   "more clever",
+   "clever",
+   "the cleverest"
+  ],
+  "correct": 3,
+  "why": "For three or more people the superlative is used, so 'the cleverest'.",
+  "rel": "Cleverer is comparative (two). Cleverest is superlative (three or more)."
+ },
+ {
+  "src": "B",
+  "num": 197,
+  "question": "On which river is Diamer-Bhasha Dam being built?",
+  "options": [
+   "Indus River",
+   "Jhelum River",
+   "Chenab River",
+   "Kabul River"
+  ],
+  "correct": 0,
+  "why": "Diamer-Bhasha Dam is being built on the Indus River.",
+  "rel": "It lies in the Gilgit-Baltistan/KP region. It is for storage, irrigation and hydropower."
+ },
+ {
+  "src": "B",
+  "num": 207,
+  "question": "On which river is Mangla Dam built?",
+  "options": [
+   "Indus River",
+   "Chenab River",
+   "Jhelum River",
+   "Ravi River"
+  ],
+  "correct": 2,
+  "why": "Mangla Dam is built on the Jhelum River.",
+  "rel": "It is near Mirpur, AJK, and was completed in 1967. Tarbela is on the Indus."
+ },
+ {
+  "src": "B",
+  "num": 217,
+  "question": "A train travels at 120 miles per hour. How far does it travel in 12 minutes?",
+  "options": [
+   "12 miles",
+   "20 miles",
+   "28 miles",
+   "24 miles"
+  ],
+  "correct": 3,
+  "why": "12 minutes is 0.2 hour, so distance = 120 x 0.2 = 24 miles.",
+  "rel": "24 miles is about 38.6 km."
+ }
+]
