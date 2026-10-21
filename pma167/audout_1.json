@@ -1,0 +1,392 @@
+[
+ {
+  "item": 1,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 5,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 7,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 9,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 11,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 14,
+  "ok": true,
+  "better_idx": null,
+  "note": "Existing answer Sunday looks wrong (4th and 24th are same weekday = Monday); same fact so match ok, existing MCQ needs checking"
+ },
+ {
+  "item": 16,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 18,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 20,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 23,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 25,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 27,
+  "ok": true,
+  "better_idx": null,
+  "note": "Remembered option TWSWT vs existing TWMWT; same question"
+ },
+ {
+  "item": 30,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 32,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 34,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 37,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 39,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 41,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 43,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 46,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 51,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 54,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 60,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 65,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 71,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 73,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 76,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 79,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 85,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 100,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 108,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 120,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 123,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 130,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 150,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 152,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 154,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 156,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 158,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 160,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 163,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 165,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 167,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 170,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 175,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 183,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 193,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 198,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 204,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 213,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 222,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 230,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 245,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 249,
+  "ok": true,
+  "better_idx": null,
+  "note": "Remembered text garbled (Usman is the husband); same fact"
+ },
+ {
+  "item": 263,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 275,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 300,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 317,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 328,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 330,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 335,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 341,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 352,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 354,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ },
+ {
+  "item": 358,
+  "ok": true,
+  "better_idx": null,
+  "note": "Same fact"
+ }
+]

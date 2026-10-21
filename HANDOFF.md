@@ -214,3 +214,6 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 
 ## v1.0.24 (versionCode 25)
 - AI Helper (round robot button) REMOVED at the user's request: pma159/ai_block.html and the netlify/ folder deleted (still in git history), INTERNET permission removed again (app has no permissions). The unused file-chooser code in MainActivity.kt stays (harmless).
+
+## v1.0.25 (versionCode 26) - Phase 24: more PMA 159 write-ups (pma167/)
+- 52 more friends' PMA 159 test experiences (raw.txt, WU numbers; already-counted ones WU31/33/34/48 removed; copies counted once). 375 distinct remembered items (sum of counts 570): 129 MATCH (repeat counts raised, audited by 2 agents: 1 wrong match removed), 165 NEW MCQs written and blind-checked by 4 agents with web search (1 dropped, 3 reasons fixed), 81 skipped as ambiguous/incomplete (see m_s*.py SKIPPED). PMA 159 is now 559 MCQs in 12 tests (11x50 + 9). Merge hook: pma159/merge_into_site.py (pma167 block; drop.json, fix_reason.json, m_s99.py = manual extra).

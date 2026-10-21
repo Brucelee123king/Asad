@@ -1,4 +1,4 @@
-MATCH = [(328, 362), (329, 266), (330, 303), (334, 179), (335, 109), (337, 128), (341, 300), (349, 129)]
+MATCH = [(328, 362), (330, 303), (334, 179), (335, 109), (337, 128), (341, 300), (349, 129)]
 NEW = [
 (326, "Verbal: Maths & Reasoning", "If the 1st day of a month is Monday, what day will the 12th be?", "Friday", ["Thursday", "Saturday", "Wednesday"], "The 1st, 8th and 15th are Mondays. The 12th is 4 days after the 8th, so it is Friday.", 0),
 (331, "Islamiat", "What was the relationship of Hazrat Hamza (RA) with Prophet Muhammad (PBUH)?", "Paternal uncle (and foster brother)", ["Maternal uncle", "Cousin", "Father-in-law"], "Hazrat Hamza was a son of Abdul Muttalib, so he was the Prophet's paternal uncle. Both were also nursed by Thuwaibah, so he was a foster brother too. He is called Sayyid-ush-Shuhada.", 0),

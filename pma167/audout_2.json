@@ -1,0 +1,386 @@
+[
+ {
+  "item": 3,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 6,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 8,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 10,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 12,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 15,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 17,
+  "ok": true,
+  "better_idx": null,
+  "note": "present=80; absent variant would differ"
+ },
+ {
+  "item": 19,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 21,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 24,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 26,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 28,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 31,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 33,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 35,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 38,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 40,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 42,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 44,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 50,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 52,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 59,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 62,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 67,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 72,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 74,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 78,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 84,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 91,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 101,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 116,
+  "ok": true,
+  "better_idx": null,
+  "note": "same numbers; number of females 10 vs percentage 33.33 may differ"
+ },
+ {
+  "item": 122,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 126,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 147,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 151,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 153,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 155,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 157,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 159,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 162,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 164,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 166,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 169,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 173,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 182,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 189,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 195,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 203,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 209,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 220,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 223,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 232,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 247,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 262,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 265,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 276,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 307,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 325,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 329,
+  "ok": false,
+  "better_idx": null,
+  "note": "existing asks year (1958); remembered asks from which country (Oman); no MCQ fits"
+ },
+ {
+  "item": 334,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 337,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 349,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 353,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ },
+ {
+  "item": 357,
+  "ok": true,
+  "better_idx": null,
+  "note": "same fact"
+ }
+]

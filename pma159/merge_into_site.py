@@ -72,6 +72,7 @@ if os.environ.get('DUMPQ'):
 if os.path.exists(os.path.join(_p167, 'items.json')):
     import glob as _gl7, json as _js7, runpy as _rp7
     _cnt167 = {_i['id']: _i['count'] for _i in _js7.load(open(os.path.join(_p167, 'items.json'), encoding='utf8'))}
+    _fx167 = _js7.load(open(os.path.join(_p167, 'fix_reason.json'), encoding='utf8')) if os.path.exists(os.path.join(_p167, 'fix_reason.json')) else {}
     _drop167 = set()
     _dp7 = os.path.join(_p167, 'drop.json')
     if os.path.exists(_dp7): _drop167 = set(_js7.load(open(_dp7)))
@@ -81,7 +82,8 @@ if os.path.exists(os.path.join(_p167, 'items.json')):
             _t = list(Q[_idx]); _t[5] = _t[5] + _cnt167[_n]; Q[_idx] = tuple(_t)
         for _t in _m['NEW']:
             if _t[0] in _drop167: continue
-            Q.append((_t[1], _t[2], _t[3], _t[4], _t[5], _t[6]))
+            _why = _fx167.get(str(_t[0]), _t[5])
+            Q.append((_t[1], _t[2], _t[3], _t[4], _why, _t[6]))
 
 src, out = sys.argv[1], sys.argv[2]
 s = open(src, encoding='utf8').read()
