@@ -1,0 +1,526 @@
+[
+ {
+  "id": 0,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 3,
+  "pick": 0,
+  "confidence": "medium",
+  "note": "FIFA founded in Paris 1904; Switzerland is HQ only"
+ },
+ {
+  "id": 6,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 9,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 12,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 15,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 18,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 21,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 24,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 27,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 30,
+  "pick": 1,
+  "confidence": "medium",
+  "note": "Third largest is US or China depending on measure; China only plausible option"
+ },
+ {
+  "id": 33,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 36,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 39,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 42,
+  "pick": 1,
+  "confidence": "medium",
+  "note": "Musa was C-in-C; Ayub was President"
+ },
+ {
+  "id": 45,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 48,
+  "pick": 0,
+  "confidence": "low",
+  "note": "No known standard 'City of Gold'; guess"
+ },
+ {
+  "id": 51,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 54,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 57,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 60,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 63,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 66,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 69,
+  "pick": 0,
+  "confidence": "medium",
+  "note": "Ottoman Empire is the predecessor state, loosely 'old name'"
+ },
+ {
+  "id": 72,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 75,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 78,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 81,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 84,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 87,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 90,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 93,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 96,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 99,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 102,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 105,
+  "pick": 3,
+  "confidence": "medium",
+  "note": "Durand Line ~2,640 km"
+ },
+ {
+  "id": 108,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 111,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 114,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 117,
+  "pick": 3,
+  "confidence": "medium",
+  "note": "Hanif Abbasi minister as of early 2026; not confirmed for Oct 2026"
+ },
+ {
+  "id": 120,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 123,
+  "pick": 0,
+  "confidence": "medium",
+  "note": "Signed 2 March 1963"
+ },
+ {
+  "id": 126,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 129,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 132,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 135,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 138,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 141,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 144,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 147,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 150,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 153,
+  "pick": 0,
+  "confidence": "medium",
+  "note": "Hamza (RA) is also called Asadullah; Ali is the more common answer"
+ },
+ {
+  "id": 156,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 159,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 162,
+  "pick": 1,
+  "confidence": "low",
+  "note": "Iran/China/India all arguable"
+ },
+ {
+  "id": 165,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 168,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 171,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 174,
+  "pick": 2,
+  "confidence": "medium",
+  "note": "Namira Salim flew 2024? uncertain; Pakistani astronaut on Tiangong not yet flown (planned Nov 2026)"
+ },
+ {
+  "id": 177,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 180,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 183,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 186,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 189,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 192,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 195,
+  "pick": 1,
+  "confidence": "medium",
+  "note": "Peace 2014 shared; option 2 best"
+ },
+ {
+  "id": 198,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 201,
+  "pick": 1,
+  "confidence": "medium",
+  "note": "Iran commonly cited; Turkey also claimed"
+ },
+ {
+  "id": 204,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 207,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 210,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 213,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 216,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 219,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 222,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 225,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 228,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 231,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 234,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 237,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 240,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 243,
+  "pick": 1,
+  "confidence": "low",
+  "note": "Published 1859 (written 1858); none exact, 1858 closest"
+ },
+ {
+  "id": 246,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 249,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 252,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 255,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 258,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 261,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 264,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 267,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 270,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 273,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 276,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 279,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 282,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 285,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 288,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 291,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 294,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 297,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 300,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 303,
+  "pick": 0,
+  "confidence": "high"
+ }
+]
