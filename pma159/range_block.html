@@ -75,10 +75,10 @@ html.dark #rngModal .go.alt{color:#a5b4fc;border-color:#a5b4fc}
         var e=map[nk];
         if(!e){e=map[nk]={total:0,core:p.core,best:q,score:-1,secs:{},cats:{},bestc:{},scc:{}};}
         var c=catOf(k);e.cats[c]=(e.cats[c]||0)+p.w;
-        if(c!=='PG')e.total+=p.w;                       /* Pro Genius is kept separate: not counted in "All sections" */
+        e.total+=p.w;                                    /* Pro Genius counts in "All sections" too */
         e.secs[k.split('-')[0]]=1;
         var sc=(q.facts?String(q.facts).length:0)+(q.rel?String(q.rel).length:0);
-        if(c!=='PG'&&sc>e.score){e.score=sc;e.best=q;e.core=p.core}
+        if(sc>e.score){e.score=sc;e.best=q;e.core=p.core}
         if(!e.bestc[c]||sc>e.scc[c]){e.bestc[c]=q;e.scc[c]=sc}
       });
     });
