@@ -1,0 +1,1456 @@
+[
+ {
+  "num": 571,
+  "page": 61,
+  "question": "Who is the Federal Minister for Defence of Pakistan?",
+  "options": [
+   "Khawaja Muhammad Asif",
+   "Anwar Ali Hyder",
+   "Ishaq Dar",
+   "Ahsan Iqbal"
+  ],
+  "correct": 0,
+  "why": "As of Oct 2026, Khawaja Asif has been Defence Minister since March 2024.",
+  "rel": "Anwar Ali Hyder was only the caretaker defence minister in 2023-24. Pervez Khattak was defence minister 2018-2022.",
+  "problem": "Source answer (Anwar Ali Haider) is outdated; he was a caretaker minister. Corrected to Khawaja Asif (checked by web search)."
+ },
+ {
+  "num": 572,
+  "page": 61,
+  "question": "How many articles did the 1962 Constitution of Pakistan have?",
+  "options": [
+   "280",
+   "234",
+   "250",
+   "200"
+  ],
+  "correct": 2,
+  "why": "The 1962 Constitution had 250 articles, 12 schedules and 5 parts.",
+  "rel": "The 1973 Constitution has 280 articles. The 1956 Constitution had 234 articles.",
+  "problem": "Question printed as '162 constitution'; reconstructed as 1962 Constitution (250 articles)."
+ },
+ {
+  "num": 573,
+  "page": 61,
+  "question": "Which is the longest river of Pakistan?",
+  "options": [
+   "Jhelum River",
+   "Chenab River",
+   "Ravi River",
+   "Indus River"
+  ],
+  "correct": 3,
+  "why": "The Indus is about 3,180 km long and is the longest river in Pakistan.",
+  "rel": "The Indus rises near Mount Kailash in Tibet. It falls into the Arabian Sea near Karachi."
+ },
+ {
+  "num": 574,
+  "page": 61,
+  "question": "Harappa, the Indus Valley site, is located about 20 km from which city?",
+  "options": [
+   "Multan",
+   "Sahiwal",
+   "Lahore",
+   "Sargodha"
+  ],
+  "correct": 1,
+  "why": "Harappa is in Punjab, about 20 km west of Sahiwal city.",
+  "rel": "Harappa was discovered in 1920-21. Mohenjo-daro in Sindh is the other major Indus Valley site."
+ },
+ {
+  "num": 575,
+  "page": 61,
+  "question": "The German-Pakistani doctor Ruth Pfau devoted her life in Pakistan to treating which disease?",
+  "options": [
+   "Tuberculosis",
+   "Polio",
+   "Malaria",
+   "Leprosy"
+  ],
+  "correct": 3,
+  "why": "Dr. Ruth Pfau worked for leprosy patients in Karachi from 1960 and set up the Marie Adelaide Leprosy Centre.",
+  "rel": "She got a state funeral in Pakistan in 2017. Pakistan was declared leprosy-controlled by WHO in 1996."
+ },
+ {
+  "num": 576,
+  "page": 61,
+  "question": "What is the tenure (term) of a member of the National Assembly of Pakistan?",
+  "options": [
+   "4 years",
+   "3 years",
+   "5 years",
+   "6 years"
+  ],
+  "correct": 2,
+  "why": "An NA member is elected for five years unless the Assembly is dissolved earlier.",
+  "rel": "Senate members serve 6 years. The President is elected for 5 years."
+ },
+ {
+  "num": 577,
+  "page": 61,
+  "question": "Who acts as the President of Pakistan in his absence?",
+  "options": [
+   "Speaker of the National Assembly",
+   "Prime Minister",
+   "Chairman of the Senate",
+   "Chief Justice of Pakistan"
+  ],
+  "correct": 2,
+  "why": "Under Article 49 of the Constitution, the Chairman Senate acts as President when the President is absent or unable to work.",
+  "rel": "If the Chairman Senate is also unavailable, the Speaker of the National Assembly acts."
+ },
+ {
+  "num": 578,
+  "page": 61,
+  "question": "The Regional Cooperation for Development (RCD) was renamed as which organization?",
+  "options": [
+   "ECO (Economic Cooperation Organization)",
+   "SAARC",
+   "OIC",
+   "ASEAN"
+  ],
+  "correct": 0,
+  "why": "RCD (Pakistan, Iran, Turkey) was revived and renamed ECO in 1985.",
+  "rel": "ECO headquarters is in Tehran. ECO now has 10 member states."
+ },
+ {
+  "num": 579,
+  "page": 62,
+  "question": "In which province is the proposed Kalabagh Dam site?",
+  "options": [
+   "Sindh",
+   "Khyber Pakhtunkhwa",
+   "Balochistan",
+   "Punjab"
+  ],
+  "correct": 3,
+  "why": "The Kalabagh dam site is on the Indus near Kalabagh in Mianwali district, Punjab.",
+  "rel": "The dam has not been built because of political disagreement among provinces. It is near the border with KP.",
+  "problem": "Dam is only proposed (not built); site is in Punjab, close to KP border."
+ },
+ {
+  "num": 580,
+  "page": 62,
+  "question": "In which year did Pakistan win the Cricket World Cup?",
+  "options": [
+   "1996",
+   "1992",
+   "1987",
+   "1999"
+  ],
+  "correct": 1,
+  "why": "Pakistan under Imran Khan beat England in the 1992 final at Melbourne.",
+  "rel": "Pakistan also won the 2009 T20 World Cup. The 2017 Champions Trophy was won at The Oval."
+ },
+ {
+  "num": 581,
+  "page": 62,
+  "question": "What is the capital of Somalia?",
+  "options": [
+   "Hargeisa",
+   "Nairobi",
+   "Djibouti",
+   "Mogadishu"
+  ],
+  "correct": 3,
+  "why": "Mogadishu is the capital and largest city of Somalia.",
+  "rel": "Somalia is in the Horn of Africa. Hargeisa is the capital of Somaliland, not recognised widely."
+ },
+ {
+  "num": 582,
+  "page": 62,
+  "question": "What is the currency of Saudi Arabia?",
+  "options": [
+   "Dinar",
+   "Riyal",
+   "Dirham",
+   "Rial Omani"
+  ],
+  "correct": 1,
+  "why": "The Saudi riyal (SAR) is the official currency.",
+  "rel": "The UAE uses the dirham. Kuwait uses the dinar."
+ },
+ {
+  "num": 583,
+  "page": 62,
+  "question": "What is the capital of Indonesia?",
+  "options": [
+   "Jakarta",
+   "Surabaya",
+   "Bandung",
+   "Nusantara"
+  ],
+  "correct": 0,
+  "why": "As of Oct 2026, Jakarta is still the legal capital because no presidential decree has moved the status.",
+  "rel": "Nusantara on Borneo is being built as the new capital and is planned as political capital around 2028.",
+  "problem": "Indonesia is moving its capital to Nusantara, but as of Oct 2026 Jakarta keeps capital status (web search)."
+ },
+ {
+  "num": 584,
+  "page": 62,
+  "question": "Who is the Chief Minister of Khyber Pakhtunkhwa?",
+  "options": [
+   "Arshad Hussain Shah",
+   "Ali Amin Gandapur",
+   "Sohail Afridi",
+   "Mahmood Khan"
+  ],
+  "correct": 2,
+  "why": "As of Oct 2026, Sohail Afridi (PTI) has been KP Chief Minister since 15 Oct 2025.",
+  "rel": "Ali Amin Gandapur was CM from March 2024 to Oct 2025. Arshad Hussain Shah was only a caretaker CM.",
+  "problem": "Source answer (Arshad Hussain) was a caretaker CM and is outdated. Web results mostly support Sohail Afridi; one page showed the post vacant, so verify."
+ },
+ {
+  "num": 585,
+  "page": 62,
+  "question": "Who is the Chief Minister of Punjab (Pakistan)?",
+  "options": [
+   "Mohsin Raza Naqvi",
+   "Maryam Nawaz Sharif",
+   "Usman Buzdar",
+   "Hamza Shahbaz"
+  ],
+  "correct": 1,
+  "why": "As of Oct 2026, Maryam Nawaz has been CM Punjab since 26 Feb 2024.",
+  "rel": "She is the first woman Chief Minister of any Pakistani province. Mohsin Naqvi was caretaker CM in 2023-24.",
+  "problem": "Source answer (Mohsin Raza Naqvi) was the caretaker CM of 2023-24; corrected."
+ },
+ {
+  "num": 586,
+  "page": 62,
+  "question": "How many districts does Khyber Pakhtunkhwa have?",
+  "options": [
+   "36",
+   "32",
+   "28",
+   "40"
+  ],
+  "correct": 3,
+  "why": "As of late 2025 listings, KP has 40 districts in seven divisions.",
+  "rel": "KP had about 35-36 districts before recent new districts were created. Peshawar is the capital.",
+  "problem": "Source says 36 which is an older count; recent listing (Wikipedia, Oct 2025) says 40. Counts vary by source."
+ },
+ {
+  "num": 587,
+  "page": 62,
+  "question": "What is the national bird of Pakistan?",
+  "options": [
+   "Shaheen (Falcon)",
+   "Peacock",
+   "Sparrow",
+   "Chukar (Chakor)"
+  ],
+  "correct": 3,
+  "why": "The chukar partridge is Pakistan's national bird.",
+  "rel": "The national animal is the markhor. The national flower is jasmine."
+ },
+ {
+  "num": 588,
+  "page": 63,
+  "question": "Who wrote the novel 'Raja Gidh'?",
+  "options": [
+   "Bano Qudsia",
+   "Ashfaq Ahmed",
+   "Mumtaz Mufti",
+   "Qurratulain Hyder"
+  ],
+  "correct": 0,
+  "why": "Raja Gidh (1981) is the famous Urdu novel by Bano Qudsia.",
+  "rel": "Her husband Ashfaq Ahmed was also a writer. She received Sitara-e-Imtiaz and Hilal-e-Imtiaz."
+ },
+ {
+  "num": 589,
+  "page": 63,
+  "question": "The shrine of Shah Rukn-e-Alam is in which city?",
+  "options": [
+   "Multan",
+   "Lahore",
+   "Uch Sharif",
+   "Pakpattan"
+  ],
+  "correct": 0,
+  "why": "Shah Rukn-e-Alam's tomb is in Multan and is a Tughlaq-era monument.",
+  "rel": "Multan is called the City of Saints. Baba Farid's shrine is in Pakpattan."
+ },
+ {
+  "num": 590,
+  "page": 63,
+  "question": "The Constitution of 1962 was approved during the rule of which leader?",
+  "options": [
+   "Yahya Khan",
+   "Zia-ul-Haq",
+   "Iskander Mirza",
+   "Ayub Khan"
+  ],
+  "correct": 3,
+  "why": "Field Marshal Ayub Khan gave the 1962 Constitution, which had a presidential system.",
+  "rel": "It came into force on 8 June 1962. It was abrogated in 1969."
+ },
+ {
+  "num": 591,
+  "page": 63,
+  "question": "Tarbela Dam construction began during the rule of which leader?",
+  "options": [
+   "Zulfikar Ali Bhutto",
+   "Ayub Khan",
+   "Zia-ul-Haq",
+   "Yahya Khan"
+  ],
+  "correct": 1,
+  "why": "Work on Tarbela started in 1968 under Ayub Khan after the Indus Waters Treaty.",
+  "rel": "It was completed in 1974 under Bhutto. It is on the Indus in Haripur district, KP.",
+  "problem": "Dam was started under Ayub (1968) and finished under Bhutto (1974); standard answer is Ayub Khan."
+ },
+ {
+  "num": 592,
+  "page": 63,
+  "question": "In which year did the Chauri Chaura incident take place?",
+  "options": [
+   "1919",
+   "1920",
+   "1922",
+   "1930"
+  ],
+  "correct": 2,
+  "why": "A mob burned a police station at Chauri Chaura in February 1922.",
+  "rel": "Gandhi suspended the Non-Cooperation Movement after it. Chauri Chaura is in Uttar Pradesh."
+ },
+ {
+  "num": 593,
+  "page": 63,
+  "question": "Humayun was the son of which Mughal emperor?",
+  "options": [
+   "Babur",
+   "Akbar",
+   "Sher Shah Suri",
+   "Jahangir"
+  ],
+  "correct": 0,
+  "why": "Humayun, second Mughal emperor, was the eldest son of Babur.",
+  "rel": "Humayun's son was Akbar. Sher Shah Suri defeated Humayun in 1540."
+ },
+ {
+  "num": 594,
+  "page": 63,
+  "question": "At which port city did the British first land/settle in the Indian sub-continent?",
+  "options": [
+   "Surat",
+   "Calcutta",
+   "Madras",
+   "Bombay"
+  ],
+  "correct": 0,
+  "why": "The English East India Company first set up a trading post at Surat; Captain Hawkins arrived in 1608.",
+  "rel": "The Company was formed in 1600. Calcutta was founded by Job Charnock in 1690."
+ },
+ {
+  "num": 595,
+  "page": 63,
+  "question": "The Indian sub-continent lies in which continent?",
+  "options": [
+   "Africa",
+   "Asia",
+   "Europe",
+   "Australia"
+  ],
+  "correct": 1,
+  "why": "The sub-continent (Pakistan, India, Bangladesh, etc.) lies in South Asia, part of Asia.",
+  "rel": "Countries include Pakistan, India, Bangladesh, Nepal, Bhutan, Sri Lanka.",
+  "problem": "Source answer was an incomplete list of countries; question reframed to continent."
+ },
+ {
+  "num": 596,
+  "page": 64,
+  "question": "Who discovered the rotation of the Earth (and the heliocentric theory)?",
+  "options": [
+   "Galileo Galilei",
+   "Johannes Kepler",
+   "Isaac Newton",
+   "Nicolaus Copernicus"
+  ],
+  "correct": 3,
+  "why": "Copernicus proposed that the Earth rotates daily and goes around the Sun.",
+  "rel": "Galileo supported it with a telescope. Kepler gave the laws of planetary motion.",
+  "problem": "Source gave only 'Nicholas'; taken as Nicolaus Copernicus (standard answer)."
+ },
+ {
+  "num": 597,
+  "page": 64,
+  "question": "Who made the first electric motor?",
+  "options": [
+   "Thomas Edison",
+   "Michael Faraday",
+   "Alexander Graham Bell",
+   "James Watt"
+  ],
+  "correct": 1,
+  "why": "Faraday built the first simple electric motor in 1821.",
+  "rel": "Faraday also discovered electromagnetic induction. Tesla later developed the AC induction motor.",
+  "problem": "Credit is sometimes given to others (Jedlik, Davenport); exam answer is Faraday."
+ },
+ {
+  "num": 598,
+  "page": 64,
+  "question": "What is the SI unit of electric current?",
+  "options": [
+   "Volt",
+   "Ohm",
+   "Ampere",
+   "Watt"
+  ],
+  "correct": 2,
+  "why": "Electric current is measured in amperes (A).",
+  "rel": "Voltage is in volts. Resistance is in ohms."
+ },
+ {
+  "num": 599,
+  "page": 64,
+  "question": "Which of these quantities has no unit?",
+  "options": [
+   "Stress",
+   "Pressure",
+   "Force",
+   "Strain"
+  ],
+  "correct": 3,
+  "why": "Strain is a ratio of change in length to original length, so it has no unit.",
+  "rel": "Stress is measured in pascals. Refractive index also has no unit."
+ },
+ {
+  "num": 600,
+  "page": 64,
+  "question": "Which animal is commonly called the 'desert fox'?",
+  "options": [
+   "Red fox",
+   "Arctic fox",
+   "Fennec fox",
+   "Bat-eared fox"
+  ],
+  "correct": 2,
+  "why": "The fennec fox is a small desert fox of North Africa with big ears.",
+  "rel": "German general Erwin Rommel was also nicknamed the 'Desert Fox'.",
+  "problem": "Question can also mean Rommel (nickname); animal answer kept as per source."
+ },
+ {
+  "num": 601,
+  "page": 64,
+  "question": "Which sport is called the 'gentleman's game'?",
+  "options": [
+   "Football",
+   "Cricket",
+   "Hockey",
+   "Golf"
+  ],
+  "correct": 1,
+  "why": "Cricket is known as the gentleman's game for its spirit and etiquette.",
+  "rel": "The Spirit of Cricket is written in the MCC Laws. Cricket began in England."
+ },
+ {
+  "num": 602,
+  "page": 64,
+  "question": "The G-20 summit of 2023 was held in which country?",
+  "options": [
+   "Indonesia",
+   "Brazil",
+   "India",
+   "Italy"
+  ],
+  "correct": 2,
+  "why": "The 2023 G20 summit was held in New Delhi, India in September 2023.",
+  "rel": "Indonesia hosted in 2022 and Brazil in 2024. The African Union became a permanent member in 2023."
+ },
+ {
+  "num": 603,
+  "page": 64,
+  "question": "Habba Khatoon was a poet of which language?",
+  "options": [
+   "Kashmiri",
+   "Punjabi",
+   "Sindhi",
+   "Pashto"
+  ],
+  "correct": 0,
+  "why": "Habba Khatoon (Zoon) was a 16th-century Kashmiri poet known as the 'Nightingale of Kashmir'.",
+  "rel": "She was the wife of Yusuf Shah Chak.",
+  "problem": "Name spelt 'Hiba Khatoon' in source; question reworded to ask language."
+ },
+ {
+  "num": 604,
+  "page": 64,
+  "question": "In which year did America invade Iraq?",
+  "options": [
+   "1991",
+   "2003",
+   "2001",
+   "2005"
+  ],
+  "correct": 1,
+  "why": "The US-led invasion of Iraq began in March 2003.",
+  "rel": "The Gulf War was in 1991. Saddam Hussein was captured in December 2003."
+ },
+ {
+  "num": 605,
+  "page": 65,
+  "question": "Who is the President of France?",
+  "options": [
+   "Francois Hollande",
+   "Nicolas Sarkozy",
+   "Emmanuel Macron",
+   "Marine Le Pen"
+  ],
+  "correct": 2,
+  "why": "As of Oct 2026, Macron is still President (term to 2027).",
+  "rel": "He was first elected in 2017 and re-elected in 2022.",
+  "problem": "Checked by web search (still in office in Sep 2026)."
+ },
+ {
+  "num": 606,
+  "page": 65,
+  "question": "What mainly causes earthquakes in the ocean?",
+  "options": [
+   "Strong ocean winds",
+   "Ocean tides",
+   "Collision or movement of tectonic plates",
+   "Melting of icebergs"
+  ],
+  "correct": 2,
+  "why": "Sea-floor earthquakes occur when tectonic plates collide or slip past each other.",
+  "rel": "Such quakes can cause tsunamis. The Pacific Ring of Fire has most quakes."
+ },
+ {
+  "num": 607,
+  "page": 65,
+  "question": "Which equation gives a straight line?",
+  "options": [
+   "y = ax² + bx + c",
+   "x² + y² = r²",
+   "y = a/x",
+   "y = mx + b"
+  ],
+  "correct": 3,
+  "why": "y = mx + b is the slope-intercept form where m is slope and b is y-intercept.",
+  "rel": "Slope m = (y2 - y1)/(x2 - x1). A parabola has x squared."
+ },
+ {
+  "num": 608,
+  "page": 65,
+  "question": "The upper part of the River Indus flows through which major city of Gilgit-Baltistan?",
+  "options": [
+   "Skardu",
+   "Gilgit",
+   "Chitral",
+   "Muzaffarabad"
+  ],
+  "correct": 0,
+  "why": "The Indus enters Pakistan from Ladakh and flows by Skardu in Baltistan.",
+  "rel": "Indus passes Kalabagh, Sukkur and Kotri later. Its length is about 3,180 km.",
+  "problem": "Question is vague; Skardu is the standard answer from source."
+ },
+ {
+  "num": 609,
+  "page": 65,
+  "question": "Which blind dolphin is found in the river of Pakistan?",
+  "options": [
+   "Ganges river dolphin",
+   "Irrawaddy dolphin",
+   "Indus river dolphin (Bhulan)",
+   "Bottlenose dolphin"
+  ],
+  "correct": 2,
+  "why": "The Indus river dolphin is almost blind and finds its way by sound.",
+  "rel": "It is Pakistan's national aquatic mammal. It lives between Guddu and Sukkur barrages mostly."
+ },
+ {
+  "num": 610,
+  "page": 65,
+  "question": "What is the result when any number is multiplied by 0?",
+  "options": [
+   "0",
+   "1",
+   "The number itself",
+   "Undefined"
+  ],
+  "correct": 0,
+  "why": "Any number multiplied by zero equals zero.",
+  "rel": "Any number divided by zero is undefined. Zero is the additive identity."
+ },
+ {
+  "num": 611,
+  "page": 65,
+  "question": "What is Pakistan's rank in the world by population?",
+  "options": [
+   "3rd",
+   "4th",
+   "7th",
+   "5th"
+  ],
+  "correct": 3,
+  "why": "Pakistan is the fifth most populous country (about 240 million, 2023 census).",
+  "rel": "India, China, USA and Indonesia are ahead of it (India 1st).",
+  "problem": "Rank 5 per 2023 census and UN data; ranks can change slowly."
+ },
+ {
+  "num": 612,
+  "page": 65,
+  "question": "Rohtas Fort is located in which district?",
+  "options": [
+   "Rawalpindi",
+   "Attock",
+   "Jhelum",
+   "Gujrat"
+  ],
+  "correct": 2,
+  "why": "Rohtas Fort was built by Sher Shah Suri near Dina in Jhelum district.",
+  "rel": "It is a UNESCO World Heritage Site since 1997."
+ },
+ {
+  "num": 613,
+  "page": 66,
+  "question": "Who wrote the book 'India of My Dreams'?",
+  "options": [
+   "Mahatma Gandhi",
+   "Jawaharlal Nehru",
+   "Rabindranath Tagore",
+   "Sardar Patel"
+  ],
+  "correct": 0,
+  "why": "'India of My Dreams' is a collection of Gandhi's writings on his vision of India.",
+  "rel": "Gandhi's autobiography is 'My Experiments with Truth'.",
+  "problem": "Title in source reads 'India is my dream'; corrected to the usual title."
+ },
+ {
+  "num": 614,
+  "page": 66,
+  "question": "Which is the highest battlefield in the world?",
+  "options": [
+   "Siachen Glacier",
+   "Kargil",
+   "Rann of Kutch",
+   "Wakhan Corridor"
+  ],
+  "correct": 0,
+  "why": "Siachen Glacier in the Karakoram, at about 5,400 m, is the highest battlefield.",
+  "rel": "The Pakistan-India conflict there began in 1984. Temperatures drop below minus 50 C."
+ },
+ {
+  "num": 615,
+  "page": 66,
+  "question": "What is the highest peak of Pakistan?",
+  "options": [
+   "Nanga Parbat",
+   "Broad Peak",
+   "K2",
+   "Tirich Mir"
+  ],
+  "correct": 2,
+  "why": "K2 (8,611 m) is the highest peak of Pakistan and second highest in the world.",
+  "rel": "Nanga Parbat is the 9th highest in the world. Tirich Mir is the highest in the Hindu Kush."
+ },
+ {
+  "num": 616,
+  "page": 66,
+  "question": "The River Indus and the River Kabul join near which place?",
+  "options": [
+   "Kalabagh",
+   "Sukkur",
+   "Taunsa",
+   "Attock"
+  ],
+  "correct": 3,
+  "why": "The Kabul River meets the Indus near Attock (Khairabad).",
+  "rel": "The Attock Fort was built by Akbar. Panjnad is where the five rivers join."
+ },
+ {
+  "num": 617,
+  "page": 66,
+  "question": "Who is the Chief Justice of Pakistan?",
+  "options": [
+   "Qazi Faez Isa",
+   "Umar Ata Bandial",
+   "Mansoor Ali Shah",
+   "Yahya Afridi"
+  ],
+  "correct": 3,
+  "why": "As of Oct 2026, Yahya Afridi is the 30th Chief Justice of Pakistan (sworn in October 2024, term to Oct 2027).",
+  "rel": "He was appointed under the 26th Constitutional Amendment.",
+  "problem": "Source answer (Qazi Faez Isa) is outdated; he retired in Oct 2024."
+ },
+ {
+  "num": 618,
+  "page": 66,
+  "question": "The 14 Points of Quaid-e-Azam (1929) were in response to which document?",
+  "options": [
+   "Nehru Report",
+   "Cripps Mission",
+   "Simon Commission report",
+   "Cabinet Mission Plan"
+  ],
+  "correct": 0,
+  "why": "Jinnah gave his 14 Points in March 1929 after the Nehru Report (1928) ignored Muslim demands.",
+  "rel": "The Delhi Muslim Proposals were from 1927. The Lahore Resolution was 1940.",
+  "problem": "Source says 'Nehru', meaning the Nehru Report."
+ },
+ {
+  "num": 619,
+  "page": 66,
+  "question": "Which pass connects Parachinar with Afghanistan?",
+  "options": [
+   "Khyber Pass",
+   "Bolan Pass",
+   "Gomal Pass",
+   "Kurram Pass"
+  ],
+  "correct": 3,
+  "why": "Parachinar lies in the Kurram valley, which leads to Afghanistan via the Kurram (Peiwar Kotal) route.",
+  "rel": "The Khyber Pass connects Peshawar with Jalalabad. Bolan is near Quetta."
+ },
+ {
+  "num": 620,
+  "page": 66,
+  "question": "Where is the headquarters of the OIC located?",
+  "options": [
+   "Jeddah, Saudi Arabia",
+   "Riyadh",
+   "Cairo",
+   "Istanbul"
+  ],
+  "correct": 0,
+  "why": "The OIC secretariat is in Jeddah.",
+  "rel": "OIC was founded in 1969 in Rabat. It was named Organisation of Islamic Cooperation in 2011."
+ },
+ {
+  "num": 621,
+  "page": 66,
+  "question": "Which is the capital of Austria?",
+  "options": [
+   "Salzburg",
+   "Prague",
+   "Budapest",
+   "Vienna"
+  ],
+  "correct": 3,
+  "why": "Vienna is the capital and largest city of Austria.",
+  "rel": "Austria's currency is the euro. German is its official language."
+ },
+ {
+  "num": 622,
+  "page": 67,
+  "question": "What is the currency of Denmark?",
+  "options": [
+   "Euro",
+   "Swedish krona",
+   "Danish krone",
+   "Norwegian krone"
+  ],
+  "correct": 2,
+  "why": "Denmark uses the Danish krone (DKK) and not the euro.",
+  "rel": "Sweden uses the krona and Norway uses its own krone."
+ },
+ {
+  "num": 623,
+  "page": 67,
+  "question": "Which article of the 1973 Constitution declares Islam as the state religion?",
+  "options": [
+   "Article 1",
+   "Article 227",
+   "Article 31",
+   "Article 2"
+  ],
+  "correct": 3,
+  "why": "Article 2 states that Islam shall be the State religion of Pakistan.",
+  "rel": "Article 1 describes Pakistan as a Federal Republic. Article 227 says laws must follow the Quran and Sunnah."
+ },
+ {
+  "num": 624,
+  "page": 67,
+  "question": "In which year did Allama Iqbal deliver his Allahabad address?",
+  "options": [
+   "1940",
+   "1926",
+   "1930",
+   "1935"
+  ],
+  "correct": 2,
+  "why": "Iqbal gave the presidential address at the Muslim League session at Allahabad in December 1930.",
+  "rel": "He proposed a separate Muslim state in North-West India. The Lahore Resolution was passed in 1940.",
+  "problem": "Source wrote 'Khutba of Ala bad' meaning Allahabad address."
+ },
+ {
+  "num": 625,
+  "page": 67,
+  "question": "Who was the first Field Marshal of Pakistan?",
+  "options": [
+   "Yahya Khan",
+   "Zia-ul-Haq",
+   "Ayub Khan",
+   "Asim Munir"
+  ],
+  "correct": 2,
+  "why": "Ayub Khan promoted himself to Field Marshal in 1959.",
+  "rel": "Asim Munir was promoted Field Marshal in May 2025, the second in Pakistan's history."
+ },
+ {
+  "num": 626,
+  "page": 67,
+  "question": "Syed Ahmad Shaheed carried forward the reform movement of which earlier scholar?",
+  "options": [
+   "Mujaddid Alf Sani",
+   "Shah Waliullah",
+   "Sir Syed Ahmad Khan",
+   "Haji Shariatullah"
+  ],
+  "correct": 1,
+  "why": "Syed Ahmad Barelvi continued the ideas of Shah Waliullah's family through the Jihad movement; he was a disciple of Shah Abdul Aziz.",
+  "rel": "He was born in Rai Bareilly in 1786. He was killed at Balakot in 1831.",
+  "problem": "Source answer was unclear (mentioned Rai Bareilly); chose the standard exam answer."
+ },
+ {
+  "num": 627,
+  "page": 67,
+  "question": "What is the capital of Turkey?",
+  "options": [
+   "Istanbul",
+   "Ankara",
+   "Izmir",
+   "Bursa"
+  ],
+  "correct": 1,
+  "why": "Ankara became the capital in 1923 under Ataturk.",
+  "rel": "Istanbul is the largest city but not the capital."
+ },
+ {
+  "num": 628,
+  "page": 67,
+  "question": "In which year was the Olympic Games cancelled because of World War I?",
+  "options": [
+   "1916",
+   "1914",
+   "1920",
+   "1912"
+  ],
+  "correct": 0,
+  "why": "The 1916 Berlin Olympics were cancelled due to World War I.",
+  "rel": "Games were also cancelled in 1940 and 1944 due to World War II."
+ },
+ {
+  "num": 629,
+  "page": 67,
+  "question": "What is the capital of Somalia?",
+  "options": [
+   "Hargeisa",
+   "Kismayo",
+   "Mogadishu",
+   "Berbera"
+  ],
+  "correct": 2,
+  "why": "Mogadishu is the capital of Somalia.",
+  "rel": "It is on the Indian Ocean coast. Somalia's currency is the Somali shilling."
+ },
+ {
+  "num": 630,
+  "page": 68,
+  "question": "The Bolan Pass connects Quetta with which place?",
+  "options": [
+   "Zhob",
+   "Loralai",
+   "Sibi",
+   "Gwadar"
+  ],
+  "correct": 2,
+  "why": "The Bolan Pass links Quetta to Sibi through the Bolan range.",
+  "rel": "It was an old route between Central Asia and the subcontinent."
+ },
+ {
+  "num": 631,
+  "page": 68,
+  "question": "Who is the President of China?",
+  "options": [
+   "Xi Jinping",
+   "Li Qiang",
+   "Hu Jintao",
+   "Wang Yi"
+  ],
+  "correct": 0,
+  "why": "As of Oct 2026, Xi Jinping is President (since 2013), and also CCP General Secretary.",
+  "rel": "Li Qiang is the Premier. Hu Jintao was President before Xi.",
+  "problem": "Checked by web search."
+ },
+ {
+  "num": 632,
+  "page": 68,
+  "question": "Which is the largest desert of Pakistan?",
+  "options": [
+   "Cholistan Desert",
+   "Kharan Desert",
+   "Thar Desert",
+   "Thal Desert"
+  ],
+  "correct": 2,
+  "why": "The Thar is the largest desert in Pakistan, in Sindh, and shared with India.",
+  "rel": "Cholistan is in Punjab. Kharan is in Balochistan.",
+  "problem": "Thar as a whole is shared with India; the standard exam answer is Thar."
+ },
+ {
+  "num": 633,
+  "page": 68,
+  "question": "How many member states does the OIC have?",
+  "options": [
+   "47",
+   "52",
+   "60",
+   "57"
+  ],
+  "correct": 3,
+  "why": "The OIC has 57 member states (as of 2025-26).",
+  "rel": "It is the second largest intergovernmental body after the UN."
+ },
+ {
+  "num": 634,
+  "page": 68,
+  "question": "Where is the OIC headquarters?",
+  "options": [
+   "Mecca",
+   "Doha",
+   "Jeddah, Saudi Arabia",
+   "Abu Dhabi"
+  ],
+  "correct": 2,
+  "why": "The OIC headquarters is in Jeddah.",
+  "rel": "It was formed after the 1969 Al-Aqsa arson incident."
+ },
+ {
+  "num": 635,
+  "page": 68,
+  "question": "Where is the NATO headquarters?",
+  "options": [
+   "Paris",
+   "Geneva",
+   "London",
+   "Brussels, Belgium"
+  ],
+  "correct": 3,
+  "why": "NATO's headquarters is in Brussels.",
+  "rel": "NATO was formed in 1949. It has 32 members."
+ },
+ {
+  "num": 636,
+  "page": 68,
+  "question": "The Khunjerab Pass connects Pakistan with which country?",
+  "options": [
+   "Afghanistan",
+   "India",
+   "China",
+   "Iran"
+  ],
+  "correct": 2,
+  "why": "Khunjerab Pass links Gilgit-Baltistan with Xinjiang, China.",
+  "rel": "It is on the Karakoram Highway. It is among the highest paved border crossings."
+ },
+ {
+  "num": 637,
+  "page": 68,
+  "question": "What is the range of the Hatf-I missile?",
+  "options": [
+   "70 km",
+   "180 km",
+   "290 km",
+   "700 km"
+  ],
+  "correct": 0,
+  "why": "Hatf-I is a short-range ballistic rocket with about 70-100 km range.",
+  "rel": "Hatf-III Ghaznavi has about 290 km range. Ghauri is Hatf-V."
+ },
+ {
+  "num": 638,
+  "page": 69,
+  "question": "Who received the Nishan-e-Haider in 1999?",
+  "options": [
+   "Major Tufail Muhammad",
+   "Havildar Lalak Jan Shaheed",
+   "Major Muhammad Akram",
+   "Major Aziz Bhatti"
+  ],
+  "correct": 1,
+  "why": "Lalak Jan was awarded Nishan-e-Haider for bravery in the Kargil conflict of 1999.",
+  "rel": "Captain Karnal Sher Khan also received it for Kargil, in 1999.",
+  "problem": "Lalak Jan and Karnal Sher Khan both got Nishan-e-Haider for Kargil; Lalak Jan is the source answer, and Karnal Sher Khan is not listed as an option."
+ },
+ {
+  "num": 639,
+  "page": 69,
+  "question": "In which year did India perform its second (Pokhran-II) atomic tests?",
+  "options": [
+   "1974",
+   "1999",
+   "1998",
+   "1988"
+  ],
+  "correct": 2,
+  "why": "India carried out the Pokhran-II tests in May 1998.",
+  "rel": "Pakistan responded with Chagai tests on 28 May 1998. India's first test was in 1974.",
+  "problem": "Question was vague; India tested in 1974 and 1998. Chose 1998 as the source says."
+ },
+ {
+  "num": 640,
+  "page": 69,
+  "question": "The 1956 Constitution of Pakistan was of which form?",
+  "options": [
+   "Presidential",
+   "Unitary",
+   "Parliamentary",
+   "Monarchy"
+  ],
+  "correct": 2,
+  "why": "The 1956 Constitution created a federal parliamentary Islamic Republic.",
+  "rel": "It came into force on 23 March 1956. Ayub Khan abrogated it in 1958."
+ },
+ {
+  "num": 641,
+  "page": 69,
+  "question": "Which sea separates Greece from Italy?",
+  "options": [
+   "Ionian Sea",
+   "Aegean Sea",
+   "Adriatic Sea",
+   "Black Sea"
+  ],
+  "correct": 0,
+  "why": "The Ionian Sea lies between southern Italy and western Greece.",
+  "rel": "The Aegean Sea is east of Greece. The Adriatic is between Italy and the Balkans.",
+  "problem": "Source spelt 'onion Sea'."
+ },
+ {
+  "num": 642,
+  "page": 69,
+  "question": "Which sport is called the gentleman's game?",
+  "options": [
+   "Tennis",
+   "Golf",
+   "Cricket",
+   "Polo"
+  ],
+  "correct": 2,
+  "why": "Cricket is called the gentleman's game.",
+  "rel": "ICC is headquartered in Dubai."
+ },
+ {
+  "num": 643,
+  "page": 69,
+  "question": "Who is the current President of Iran?",
+  "options": [
+   "Masoud Pezeshkian",
+   "Ebrahim Raisi",
+   "Hassan Rouhani",
+   "Ali Khamenei"
+  ],
+  "correct": 0,
+  "why": "Pezeshkian became President in July 2024 and is in office as of Oct 2026 per latest reports found.",
+  "rel": "Iran has no Prime Minister; the post was abolished in 1989. Raisi died in a 2024 helicopter crash.",
+  "problem": "Iran has no Prime Minister; the head of government is the President. Web search could not show a 2026 report, so verify no change."
+ },
+ {
+  "num": 644,
+  "page": 69,
+  "question": "Who was the first Commander-in-Chief of the Pakistan Army?",
+  "options": [
+   "General Douglas Gracey",
+   "Ayub Khan",
+   "General Sir Frank Messervy",
+   "General Muhammad Musa"
+  ],
+  "correct": 2,
+  "why": "Gen. Messervy was the first C-in-C of the Pakistan Army, from August 1947.",
+  "rel": "Gen. Gracey was the second C-in-C. Ayub Khan was the first Pakistani C-in-C (1951)."
+ },
+ {
+  "num": 645,
+  "page": 69,
+  "question": "K2 is also known as?",
+  "options": [
+   "Mount Godwin-Austen",
+   "Mount Everest",
+   "Dapsang",
+   "Mount Kanchenjunga"
+  ],
+  "correct": 0,
+  "why": "K2 is named Godwin-Austen after the British surveyor Henry Godwin-Austen.",
+  "rel": "K2 was first climbed by an Italian team in 1954. It is also called Chogori."
+ },
+ {
+  "num": 646,
+  "page": 69,
+  "question": "Which scientist won Nobel Prizes in both Chemistry and Peace?",
+  "options": [
+   "Linus Pauling",
+   "Albert Einstein",
+   "Niels Bohr",
+   "Ernest Rutherford"
+  ],
+  "correct": 0,
+  "why": "Pauling won the Chemistry prize in 1954 and the Peace prize in 1962.",
+  "rel": "Marie Curie won two Nobels, in Physics and Chemistry. John Bardeen won two in Physics.",
+  "problem": "Source question was incomplete ('2 noble prize holder'); reconstructed as Chemistry and Peace."
+ },
+ {
+  "num": 647,
+  "page": 70,
+  "question": "What is the capital of Somalia?",
+  "options": [
+   "Hargeisa",
+   "Kampala",
+   "Addis Ababa",
+   "Mogadishu"
+  ],
+  "correct": 3,
+  "why": "Mogadishu is Somalia's capital.",
+  "rel": "Somalia is in East Africa. It has the longest coastline in mainland Africa."
+ },
+ {
+  "num": 648,
+  "page": 70,
+  "question": "Who wrote 'Heer Ranjha'?",
+  "options": [
+   "Waris Shah",
+   "Bulleh Shah",
+   "Shah Hussain",
+   "Sultan Bahu"
+  ],
+  "correct": 0,
+  "why": "Waris Shah wrote the Punjabi epic Heer in 1766.",
+  "rel": "He was from Jandiala Sher Khan. Bulleh Shah was a Sufi poet of Kasur.",
+  "problem": "Heer-Ranjha is a love story; Waris Shah's version is the best known."
+ },
+ {
+  "num": 649,
+  "page": 70,
+  "question": "The Panama Canal connects which two oceans?",
+  "options": [
+   "Atlantic and Indian",
+   "Atlantic and Pacific",
+   "Pacific and Indian",
+   "Arctic and Atlantic"
+  ],
+  "correct": 1,
+  "why": "The Panama Canal links the Atlantic Ocean and the Pacific Ocean.",
+  "rel": "It opened in 1914. The Suez Canal links the Mediterranean and the Red Sea."
+ },
+ {
+  "num": 650,
+  "page": 70,
+  "question": "In which year did Quaid-e-Azam join the Muslim League?",
+  "options": [
+   "1906",
+   "1913",
+   "1916",
+   "1920"
+  ],
+  "correct": 1,
+  "why": "Jinnah joined the All India Muslim League in 1913.",
+  "rel": "The League was founded in Dhaka in 1906. The Lucknow Pact was in 1916."
+ },
+ {
+  "num": 651,
+  "page": 70,
+  "question": "The boundary line between India and Pakistan is called?",
+  "options": [
+   "McMahon Line",
+   "Radcliffe Line",
+   "Durand Line",
+   "Line of Control"
+  ],
+  "correct": 1,
+  "why": "The Radcliffe Line was drawn by Sir Cyril Radcliffe in 1947.",
+  "rel": "The Durand Line is Pakistan-Afghanistan. The LoC divides Kashmir.",
+  "problem": "Source wrote 'India Pak board' (border)."
+ },
+ {
+  "num": 652,
+  "page": 70,
+  "question": "The boundary line between China and India is called?",
+  "options": [
+   "McMahon Line",
+   "Radcliffe Line",
+   "Durand Line",
+   "Maginot Line"
+  ],
+  "correct": 0,
+  "why": "The McMahon Line was proposed in 1914 at the Simla Convention.",
+  "rel": "China does not accept it. The real situation is the Line of Actual Control.",
+  "problem": "India and China use the Line of Actual Control in practice; McMahon is the standard exam answer."
+ },
+ {
+  "num": 653,
+  "page": 70,
+  "question": "Who is the Chief Minister of Sindh?",
+  "options": [
+   "Maqbool Baqar",
+   "Qaim Ali Shah",
+   "Ghulam Mustafa Jatoi",
+   "Syed Murad Ali Shah"
+  ],
+  "correct": 3,
+  "why": "As of Oct 2026, Murad Ali Shah (PPP) is the Chief Minister of Sindh, in office since 2016 and re-elected in 2024.",
+  "rel": "Maqbool Baqar was caretaker CM only in Aug 2023-Feb 2024.",
+  "problem": "Source answer (Maqbool Baqar) was a caretaker CM from 2023-24; no caretaker now."
+ },
+ {
+  "num": 654,
+  "page": 70,
+  "question": "What is the national flower of Pakistan?",
+  "options": [
+   "Jasmine",
+   "Rose",
+   "Tulip",
+   "Lotus"
+  ],
+  "correct": 0,
+  "why": "Jasmine (Chambeli) is Pakistan's national flower.",
+  "rel": "Pakistan's national tree is the Deodar."
+ },
+ {
+  "num": 655,
+  "page": 71,
+  "question": "In which Ghazwa was Abu Jahl killed?",
+  "options": [
+   "Ghazwa Badr",
+   "Ghazwa Uhud",
+   "Ghazwa Khandaq",
+   "Ghazwa Hunain"
+  ],
+  "correct": 0,
+  "why": "Abu Jahl was killed in the Battle of Badr in 2 AH (624 CE).",
+  "rel": "Badr had 313 Muslims. It is called Yaum al-Furqan."
+ },
+ {
+  "num": 656,
+  "page": 71,
+  "question": "From which country did Pakistan purchase Gwadar?",
+  "options": [
+   "Iran",
+   "UAE",
+   "Oman",
+   "Saudi Arabia"
+  ],
+  "correct": 2,
+  "why": "Pakistan bought Gwadar from the Sultan of Oman in 1958.",
+  "rel": "It was formally handed over on 8 September 1958. Gwadar port is run by China under CPEC."
+ },
+ {
+  "num": 657,
+  "page": 71,
+  "question": "Where is the headquarters of the WHO?",
+  "options": [
+   "New York, USA",
+   "Paris, France",
+   "Vienna, Austria",
+   "Geneva, Switzerland"
+  ],
+  "correct": 3,
+  "why": "WHO is headquartered in Geneva.",
+  "rel": "WHO was founded on 7 April 1948."
+ },
+ {
+  "num": 658,
+  "page": 71,
+  "question": "What is the national vegetable of Pakistan?",
+  "options": [
+   "Potato",
+   "Lady finger (okra)",
+   "Tomato",
+   "Onion"
+  ],
+  "correct": 1,
+  "why": "Lady finger (okra, bhindi) is commonly taken as the national vegetable.",
+  "rel": "India's national vegetable is the pumpkin.",
+  "problem": "Not clearly official; standard quiz answer kept."
+ },
+ {
+  "num": 659,
+  "page": 71,
+  "question": "What is the national bird of Pakistan?",
+  "options": [
+   "Chukar (Chakor)",
+   "Peacock",
+   "Hoopoe",
+   "Shaheen"
+  ],
+  "correct": 0,
+  "why": "The chukar partridge is Pakistan's national bird.",
+  "rel": "It is found in hilly areas."
+ },
+ {
+  "num": 660,
+  "page": 71,
+  "question": "Which is the fastest bird?",
+  "options": [
+   "Peregrine falcon",
+   "Golden eagle",
+   "Ostrich",
+   "Swift"
+  ],
+  "correct": 0,
+  "why": "The peregrine falcon dives at over 300 km/h.",
+  "rel": "The ostrich is the fastest bird on land. The swift is among the fastest in level flight.",
+  "problem": "Source says 'falcon'; peregrine falcon is the fastest in a dive."
+ },
+ {
+  "num": 661,
+  "page": 71,
+  "question": "The 'Hero' medal (Hero of the Soviet Union/Russian Federation) belongs to which country?",
+  "options": [
+   "China",
+   "Turkey",
+   "Germany",
+   "Russia"
+  ],
+  "correct": 3,
+  "why": "'Hero of the Russian Federation' is Russia's highest title, following the old Soviet one.",
+  "rel": "Pakistan's highest award is Nishan-e-Haider.",
+  "problem": "Question was unclear; reconstructed from the answer 'Russian'."
+ },
+ {
+  "num": 662,
+  "page": 71,
+  "question": "In which year was the Montagu-Chelmsford Reform introduced?",
+  "options": [
+   "1919",
+   "1909",
+   "1935",
+   "1892"
+  ],
+  "correct": 0,
+  "why": "The Government of India Act 1919 brought the Montagu-Chelmsford Reforms with dyarchy in the provinces.",
+  "rel": "Morley-Minto reforms were in 1909 and separate electorates came then."
+ },
+ {
+  "num": 663,
+  "page": 71,
+  "question": "In which year was the Government of India Act passed?",
+  "options": [
+   "1919",
+   "1935",
+   "1909",
+   "1947"
+  ],
+  "correct": 1,
+  "why": "The big Government of India Act was passed in 1935 giving provincial autonomy.",
+  "rel": "It was the base for the later constitutions. Burma and Aden were separated.",
+  "problem": "Several Acts exist (1919, 1935); the 1935 Act is the standard answer."
+ },
+ {
+  "num": 664,
+  "page": 72,
+  "question": "In which year did the Cripps Mission come to India?",
+  "options": [
+   "1940",
+   "1946",
+   "1935",
+   "1942"
+  ],
+  "correct": 3,
+  "why": "Sir Stafford Cripps came to India in March 1942 with a proposal for dominion status after the war.",
+  "rel": "The Congress and the League rejected it. The Cabinet Mission was in 1946."
+ },
+ {
+  "num": 665,
+  "page": 72,
+  "question": "Which city is known as the 'City of Saints'?",
+  "options": [
+   "Lahore",
+   "Peshawar",
+   "Multan",
+   "Bahawalpur"
+  ],
+  "correct": 2,
+  "why": "Multan has many shrines of Sufi saints.",
+  "rel": "It is also called the City of Mangoes."
+ },
+ {
+  "num": 666,
+  "page": 72,
+  "question": "Which Pakistani city is called the 'Manchester of Pakistan'?",
+  "options": [
+   "Karachi",
+   "Faisalabad",
+   "Sialkot",
+   "Gujranwala"
+  ],
+  "correct": 1,
+  "why": "Faisalabad is known for its textile industry.",
+  "rel": "Its old name was Lyallpur. Sialkot is known for sports goods."
+ },
+ {
+  "num": 667,
+  "page": 72,
+  "question": "Which Pakistani was the first to climb K2?",
+  "options": [
+   "Ashraf Aman",
+   "Hassan Sadpara",
+   "Muhammad Ali Sadpara",
+   "Nazir Sabir"
+  ],
+  "correct": 0,
+  "why": "Ashraf Aman summited K2 in 1977.",
+  "rel": "Nazir Sabir was the first Pakistani to climb Everest (2000)."
+ },
+ {
+  "num": "667a",
+  "page": 72,
+  "question": "Who was given the title 'Saifullah' (Sword of Allah)?",
+  "options": [
+   "Hazrat Ali",
+   "Hazrat Hamza",
+   "Hazrat Khalid bin Waleed",
+   "Hazrat Umar"
+  ],
+  "correct": 2,
+  "why": "The Prophet gave Khalid bin Waleed the title Saifullah.",
+  "rel": "He commanded in the Battle of Yarmouk. Hazrat Hamza is called Asadullah.",
+  "problem": "Unnumbered in source (between 667 and 668)."
+ },
+ {
+  "num": "667b",
+  "page": 72,
+  "question": "Where are the United Nations headquarters?",
+  "options": [
+   "Geneva",
+   "Paris",
+   "Vienna",
+   "New York City"
+  ],
+  "correct": 3,
+  "why": "The UN headquarters is in New York City, USA.",
+  "rel": "UN was formed on 24 October 1945. It has major offices at Geneva, Vienna and Nairobi.",
+  "problem": "Unnumbered in source (between 667 and 668)."
+ },
+ {
+  "num": 668,
+  "page": 72,
+  "question": "Which city is the legislative capital of South Africa?",
+  "options": [
+   "Pretoria",
+   "Cape Town",
+   "Johannesburg",
+   "Durban"
+  ],
+  "correct": 1,
+  "why": "South Africa's Parliament sits in Cape Town.",
+  "rel": "Pretoria is the executive capital. Bloemfontein is the judicial capital.",
+  "problem": "South Africa has 3 capitals; question asked 'capital' so reworded to legislative capital."
+ },
+ {
+  "num": 669,
+  "page": 72,
+  "question": "Who is the current President of China?",
+  "options": [
+   "Li Keqiang",
+   "Jiang Zemin",
+   "Xi Jinping",
+   "Hu Jintao"
+  ],
+  "correct": 2,
+  "why": "As of Oct 2026, Xi Jinping is President of China.",
+  "rel": "He is also head of the Communist Party and the military. Li Qiang is Premier.",
+  "problem": "Checked by web search; duplicate of Q631."
+ }
+]

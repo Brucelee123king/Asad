@@ -1,0 +1,1427 @@
+[
+ {
+  "num": 369,
+  "page": 37,
+  "question": "Which Chinese city lies close to the Pakistan border (near the Khunjerab Pass route)?",
+  "options": [
+   "Kashgar",
+   "Shanghai",
+   "Chengdu",
+   "Lhasa"
+  ],
+  "correct": 0,
+  "why": "Kashgar in Xinjiang is the Chinese city nearest to the Pakistan border and the Karakoram Highway.",
+  "rel": "The Karakoram Highway links Kashgar (China) with Hasan Abdal (Pakistan). Khunjerab Pass (4,693 m) is the border crossing.",
+  "problem": "Source answer 'Xinjiang' is a region, not a city; Kashgar (in Xinjiang) used."
+ },
+ {
+  "num": 370,
+  "page": 37,
+  "question": "Which language did Sher Shah Suri speak?",
+  "options": [
+   "Punjabi",
+   "Balochi",
+   "Pashto",
+   "Sindhi"
+  ],
+  "correct": 2,
+  "why": "Sher Shah Suri was a Pashtun (Sur tribe) and Pashto was his mother tongue.",
+  "rel": "He defeated Humayun in 1540 and built the Grand Trunk Road. He also used Persian for administration.",
+  "problem": "He also used Persian and Hindavi; standard exam answer is Pashto."
+ },
+ {
+  "num": 371,
+  "page": 37,
+  "question": "The Thar Desert in Pakistan is located in which province?",
+  "options": [
+   "Punjab",
+   "Balochistan",
+   "Sindh",
+   "Khyber Pakhtunkhwa"
+  ],
+  "correct": 2,
+  "why": "Pakistan's part of the Thar Desert lies in southeastern Sindh (Tharparkar district).",
+  "rel": "Cholistan is the desert in Punjab. Thar is among the largest subtropical deserts."
+ },
+ {
+  "num": 372,
+  "page": 37,
+  "question": "Who is the founder of Facebook?",
+  "options": [
+   "Larry Page",
+   "Elon Musk",
+   "Mark Zuckerberg",
+   "Jack Dorsey"
+  ],
+  "correct": 2,
+  "why": "Mark Zuckerberg founded Facebook in 2004 with college friends at Harvard.",
+  "rel": "Facebook's parent company was renamed Meta in 2021."
+ },
+ {
+  "num": 373,
+  "page": 37,
+  "question": "Thomas Edison invented which of these?",
+  "options": [
+   "Telephone",
+   "Steam engine",
+   "Radio",
+   "Electric bulb (practical incandescent lamp)"
+  ],
+  "correct": 3,
+  "why": "Thomas Edison developed the first commercially practical incandescent light bulb in 1879.",
+  "rel": "Alexander Graham Bell invented the telephone. Edison also invented the phonograph."
+ },
+ {
+  "num": 374,
+  "page": 37,
+  "question": "How many rectangular side faces does a hexagonal prism have?",
+  "options": [
+   "4",
+   "12",
+   "8",
+   "6"
+  ],
+  "correct": 3,
+  "why": "A hexagonal prism has a hexagon base, so it has 6 rectangular side faces (8 faces in total).",
+  "rel": "A triangular prism has 3 side faces and 5 faces in total.",
+  "problem": "Original question 'plain prism sides' is vague; assumed hexagonal prism (answer 6)."
+ },
+ {
+  "num": 375,
+  "page": 37,
+  "question": "The Khyber Pass connects Peshawar with which Afghan city/capital direction?",
+  "options": [
+   "Tehran",
+   "Kabul",
+   "Kandahar",
+   "Herat"
+  ],
+  "correct": 1,
+  "why": "The Khyber Pass links Peshawar (Pakistan) through Torkham to Jalalabad and on to Kabul in Afghanistan.",
+  "rel": "Torkham is the main border crossing at Khyber. The Khyber Pass is about 53 km long."
+ },
+ {
+  "num": 376,
+  "page": 37,
+  "question": "Who are the current Chief Ministers of Punjab and Sindh (Pakistan)?",
+  "options": [
+   "Maryam Nawaz and Murad Ali Shah",
+   "Shehbaz Sharif and Murad Ali Shah",
+   "Mohsin Naqvi and Maqbool Baqar",
+   "Usman Buzdar and Syed Qaim Ali Shah"
+  ],
+  "correct": 0,
+  "why": "As of Oct 2026, Maryam Nawaz is Punjab CM (since Feb 2024) and Murad Ali Shah is Sindh CM.",
+  "rel": "Maryam Nawaz is the first female CM of Punjab. Murad Ali Shah (PPP) has been Sindh CM since 2016.",
+  "problem": "Source answer wrong: Mohsin Naqvi is Interior Minister and Maqbool Baqar was a caretaker Sindh CM in 2023-24."
+ },
+ {
+  "num": 377,
+  "page": 37,
+  "question": "Who wrote the Punjabi romance 'Sohni Mahiwal'?",
+  "options": [
+   "Fazal Shah Sayyad",
+   "Waris Shah",
+   "Hashim Shah",
+   "Bulleh Shah"
+  ],
+  "correct": 0,
+  "why": "The popular Punjabi version of Sohni Mahiwal was written by Fazal Shah Sayyad.",
+  "rel": "Waris Shah wrote Heer Ranjha. Sohni Mahiwal is one of the Punjabi/Sindhi folk romances."
+ },
+ {
+  "num": 378,
+  "page": 38,
+  "question": "World War II began on which date?",
+  "options": [
+   "1 September 1914",
+   "7 December 1941",
+   "3 September 1941",
+   "1 September 1939"
+  ],
+  "correct": 3,
+  "why": "WWII began when Germany invaded Poland on 1 September 1939.",
+  "rel": "Britain and France declared war on Germany on 3 September 1939. WWII ended in 1945."
+ },
+ {
+  "num": 379,
+  "page": 38,
+  "question": "Olympic Airlines (Olympic Airways) was the national airline of which country?",
+  "options": [
+   "Italy",
+   "Turkey",
+   "Greece",
+   "Switzerland"
+  ],
+  "correct": 2,
+  "why": "Olympic Airways was the flag carrier of Greece, founded in 1957 by Aristotle Onassis.",
+  "rel": "It was replaced by Olympic Air in 2009. Aegean is now Greece's largest airline."
+ },
+ {
+  "num": 380,
+  "page": 38,
+  "question": "A black horse is a sign of what in common saying?",
+  "options": [
+   "Good luck",
+   "Loyalty",
+   "Defeat",
+   "Peace"
+  ],
+  "correct": 0,
+  "why": "In common belief, as in the source, a black horse is taken as a sign of good luck and strength.",
+  "rel": "In some traditions (the Bible, Revelation) a black horse stands for famine.",
+  "problem": "Symbol meaning depends on culture; source answer 'good luck' kept."
+ },
+ {
+  "num": 381,
+  "page": 38,
+  "question": "India conducted its first nuclear test (Smiling Buddha) on which date?",
+  "options": [
+   "18 May 1984",
+   "18 May 1974",
+   "11 May 1998",
+   "26 May 1974"
+  ],
+  "correct": 1,
+  "why": "India's first nuclear test, code-named Smiling Buddha, was at Pokhran on 18 May 1974.",
+  "rel": "India's second tests (Pokhran-II) were in May 1998; Pakistan tested on 28 May 1998."
+ },
+ {
+  "num": 382,
+  "page": 38,
+  "question": "Which is the hottest planet in the solar system?",
+  "options": [
+   "Mercury",
+   "Jupiter",
+   "Mars",
+   "Venus"
+  ],
+  "correct": 3,
+  "why": "Venus has a thick CO2 atmosphere causing a runaway greenhouse effect, with about 465 C surface temperature.",
+  "rel": "Mercury is the closest to the Sun but cooler than Venus."
+ },
+ {
+  "num": 383,
+  "page": 38,
+  "question": "The process in which a gas changes directly into a liquid is called?",
+  "options": [
+   "Evaporation",
+   "Condensation",
+   "Freezing",
+   "Sublimation"
+  ],
+  "correct": 1,
+  "why": "Condensation is the change of gas/vapour to liquid by cooling.",
+  "rel": "Direct solid to gas is sublimation. Gas directly to solid is deposition."
+ },
+ {
+  "num": 384,
+  "page": 38,
+  "question": "Who is credited with inventing the first electric motor (1821 demonstration)?",
+  "options": [
+   "Thomas Edison",
+   "Nikola Tesla",
+   "Alexander Volta",
+   "Michael Faraday"
+  ],
+  "correct": 3,
+  "why": "Faraday demonstrated the first electromagnetic rotation device in 1821, the basis of the electric motor.",
+  "rel": "Tesla invented the practical AC induction motor in 1887.",
+  "problem": "Others (Jedlik, Davenport) are also credited; Faraday is the standard exam answer."
+ },
+ {
+  "num": 385,
+  "page": 38,
+  "question": "The process by which plants release water vapour into the atmosphere is called?",
+  "options": [
+   "Photosynthesis",
+   "Transpiration",
+   "Germination",
+   "Respiration"
+  ],
+  "correct": 1,
+  "why": "Transpiration is loss of water vapour through the stomata of leaves.",
+  "rel": "Stomata are opened and closed by guard cells."
+ },
+ {
+  "num": 386,
+  "page": 39,
+  "question": "The Babusar Pass connects which two areas?",
+  "options": [
+   "Kaghan Valley and Gilgit-Baltistan (Chilas)",
+   "Murree and Muzaffarabad",
+   "Swat and Chitral",
+   "Quetta and Zhob"
+  ],
+  "correct": 0,
+  "why": "Babusar Pass (4,173 m) links the Kaghan Valley (Mansehra) with Chilas in Gilgit-Baltistan.",
+  "rel": "It is a shorter route to Gilgit than the Karakoram Highway from Abbottabad.",
+  "problem": "Source said 'Abbottabad and Gilgit'; Kaghan Valley is the accurate end."
+ },
+ {
+  "num": 387,
+  "page": 39,
+  "question": "Which is the largest dam in the world by installed power capacity?",
+  "options": [
+   "Tarbela Dam (Pakistan)",
+   "Aswan High Dam (Egypt)",
+   "Hoover Dam (USA)",
+   "Three Gorges Dam (China)"
+  ],
+  "correct": 3,
+  "why": "Three Gorges Dam on the Yangtze River has the highest installed capacity, about 22,500 MW.",
+  "rel": "Tarbela is the largest earth-filled dam in the world.",
+  "problem": "'Largest' depends on measure (capacity vs volume); capacity used."
+ },
+ {
+  "num": 388,
+  "page": 39,
+  "question": "The 2023 G20 summit was held in which city?",
+  "options": [
+   "Bali",
+   "Tokyo",
+   "Rome",
+   "New Delhi"
+  ],
+  "correct": 3,
+  "why": "The 18th G20 summit was held at Bharat Mandapam, New Delhi, on 9-10 September 2023.",
+  "rel": "The 2022 summit was in Bali; the African Union became a permanent G20 member in 2023."
+ },
+ {
+  "num": 389,
+  "page": 39,
+  "question": "What is the length of Pakistan's coastline?",
+  "options": [
+   "1,046 km",
+   "650 km",
+   "1,500 km",
+   "2,100 km"
+  ],
+  "correct": 0,
+  "why": "Pakistan's coastline on the Arabian Sea is about 1,046 km (Sindh about 270 km and Balochistan about 770 km).",
+  "rel": "Gwadar and Karachi are the main ports."
+ },
+ {
+  "num": 390,
+  "page": 39,
+  "question": "Choose the correct word: 'There ____ a computer on the table.'",
+  "options": [
+   "were",
+   "are",
+   "have",
+   "is"
+  ],
+  "correct": 3,
+  "why": "'Computer' is singular, so the singular verb 'is' is used with 'There'.",
+  "rel": "Use 'there are' with plural nouns."
+ },
+ {
+  "num": 391,
+  "page": 39,
+  "question": "What is the border line between Pakistan and Afghanistan called?",
+  "options": [
+   "Line of Control",
+   "McMahon Line",
+   "Radcliffe Line",
+   "Durand Line"
+  ],
+  "correct": 3,
+  "why": "The Durand Line is the 2,640 km border between Pakistan and Afghanistan, drawn in 1893.",
+  "rel": "The Radcliffe Line separates Pakistan and India; the McMahon Line is India-China."
+ },
+ {
+  "num": 392,
+  "page": 39,
+  "question": "K2 is in which mountain range?",
+  "options": [
+   "Himalaya",
+   "Hindu Kush",
+   "Pamir",
+   "Karakoram"
+  ],
+  "correct": 3,
+  "why": "K2 lies in the Karakoram Range on the Pakistan-China border.",
+  "rel": "K2 is the second highest mountain in the world."
+ },
+ {
+  "num": 393,
+  "page": 39,
+  "question": "The Salt Range (with the Khewra salt mine) is located in which province of Pakistan?",
+  "options": [
+   "Punjab",
+   "Khyber Pakhtunkhwa",
+   "Balochistan",
+   "Sindh"
+  ],
+  "correct": 0,
+  "why": "The Salt Range lies in northern Punjab, famous for the Khewra Salt Mine in Jhelum district.",
+  "rel": "Khewra is among the world's oldest and largest salt mines.",
+  "problem": "Source gave 'Khewra' (a place); province Punjab used."
+ },
+ {
+  "num": 394,
+  "page": 39,
+  "question": "Bulleh Shah was a poet of which language?",
+  "options": [
+   "Pashto",
+   "Urdu",
+   "Sindhi",
+   "Punjabi"
+  ],
+  "correct": 3,
+  "why": "Bulleh Shah (1680-1757) was a Sufi poet who wrote in Punjabi (kafis).",
+  "rel": "His shrine is in Kasur."
+ },
+ {
+  "num": 395,
+  "page": 40,
+  "question": "Rehman Baba wrote poetry in which language?",
+  "options": [
+   "Pashto",
+   "Punjabi",
+   "Sindhi",
+   "Persian"
+  ],
+  "correct": 0,
+  "why": "Rehman Baba (1650-1715) was a Sufi poet of Pashto, buried near Peshawar.",
+  "rel": "He is known as the Nightingale of Pashto."
+ },
+ {
+  "num": 396,
+  "page": 40,
+  "question": "NATO was established in which year?",
+  "options": [
+   "1949",
+   "1939",
+   "1945",
+   "1955"
+  ],
+  "correct": 0,
+  "why": "NATO was formed on 4 April 1949 by the Washington Treaty.",
+  "rel": "The Warsaw Pact (1955) was the Soviet bloc's response.",
+  "problem": "Source answer 1939 is wrong; correct year is 1949."
+ },
+ {
+  "num": 397,
+  "page": 40,
+  "question": "What is the range of Pakistan's Shaheen-III missile?",
+  "options": [
+   "350 km",
+   "2,750 km",
+   "1,500 km",
+   "750 km"
+  ],
+  "correct": 1,
+  "why": "Shaheen-III is a medium-range ballistic missile with a range of about 2,750 km.",
+  "rel": "Shaheen-I is about 750 km and Shaheen-II about 1,500 km."
+ },
+ {
+  "num": 398,
+  "page": 40,
+  "question": "Who was the first captain of the Pakistan cricket team?",
+  "options": [
+   "Imran Khan",
+   "Hanif Mohammad",
+   "Fazal Mahmood",
+   "Abdul Hafeez Kardar"
+  ],
+  "correct": 3,
+  "why": "A. H. Kardar captained Pakistan in its first Test in 1952.",
+  "rel": "Pakistan's first Test win was at The Oval in 1954 under Kardar."
+ },
+ {
+  "num": 399,
+  "page": 40,
+  "question": "What is the capital of Nepal?",
+  "options": [
+   "Dhaka",
+   "Thimphu",
+   "Pokhara",
+   "Kathmandu"
+  ],
+  "correct": 3,
+  "why": "Kathmandu is the capital and largest city of Nepal.",
+  "rel": "Mount Everest lies on the Nepal-China border."
+ },
+ {
+  "num": 400,
+  "page": 40,
+  "question": "Pakistan played its first ever Test cricket match against which country?",
+  "options": [
+   "India",
+   "Australia",
+   "West Indies",
+   "England"
+  ],
+  "correct": 0,
+  "why": "Pakistan's first Test was against India in Delhi in October 1952.",
+  "rel": "Pakistan became a Test nation in 1952."
+ },
+ {
+  "num": 401,
+  "page": 40,
+  "question": "Who became the first woman judge of the Supreme Court of Pakistan?",
+  "options": [
+   "Ayesha A. Malik",
+   "Justice Majida Rizvi",
+   "Nasira Iqbal",
+   "Asma Jahangir"
+  ],
+  "correct": 0,
+  "why": "Justice Ayesha Malik was elevated to the Supreme Court in January 2022 as its first woman judge.",
+  "rel": "She earlier served on the Lahore High Court.",
+  "problem": "Source adds '2023'; she was appointed in 2022."
+ },
+ {
+  "num": 402,
+  "page": 40,
+  "question": "In which year did the Chauri Chaura incident take place?",
+  "options": [
+   "1930",
+   "1922",
+   "1942",
+   "1919"
+  ],
+  "correct": 1,
+  "why": "The Chauri Chaura incident occurred on 4 February 1922, after which Gandhi ended the Non-Cooperation Movement.",
+  "rel": "Gandhi suspended the movement on 12 February 1922."
+ },
+ {
+  "num": 403,
+  "page": 41,
+  "question": "On which cities was the atom bomb first used in history?",
+  "options": [
+   "Hiroshima and Nagasaki",
+   "Tokyo and Osaka",
+   "Pearl Harbor and Manila",
+   "Berlin and Dresden"
+  ],
+  "correct": 0,
+  "why": "The USA dropped atomic bombs on Hiroshima (6 Aug 1945) and Nagasaki (9 Aug 1945).",
+  "rel": "Japan surrendered on 15 August 1945."
+ },
+ {
+  "num": 404,
+  "page": 41,
+  "question": "In which city is the Wazir Khan Mosque located?",
+  "options": [
+   "Lahore",
+   "Multan",
+   "Peshawar",
+   "Delhi"
+  ],
+  "correct": 0,
+  "why": "Wazir Khan Mosque, famous for Mughal tilework, is in the walled city of Lahore, built in 1634-35.",
+  "rel": "It was built under Shah Jahan."
+ },
+ {
+  "num": 405,
+  "page": 41,
+  "question": "What is the real name of Imam Bukhari?",
+  "options": [
+   "Muslim ibn al-Hajjaj",
+   "Abu Hanifa Numan ibn Thabit",
+   "Abu Abdullah Muhammad ibn Ismail",
+   "Abu Abdullah Muhammad ibn Idris"
+  ],
+  "correct": 2,
+  "why": "Imam Bukhari's full name was Abu Abdullah Muhammad ibn Ismail al-Bukhari.",
+  "rel": "His collection is Sahih al-Bukhari."
+ },
+ {
+  "num": 406,
+  "page": 41,
+  "question": "Which city is known as the 'City of Gardens' in Pakistan?",
+  "options": [
+   "Karachi",
+   "Quetta",
+   "Lahore",
+   "Islamabad"
+  ],
+  "correct": 2,
+  "why": "Lahore is called the City of Gardens because of its Mughal and colonial gardens such as Shalimar Bagh.",
+  "rel": "Lahore is also known as the cultural capital of Pakistan."
+ },
+ {
+  "num": 407,
+  "page": 41,
+  "question": "What is the capital of Malaysia?",
+  "options": [
+   "Putrajaya",
+   "Kuala Lumpur",
+   "Jakarta",
+   "Bangkok"
+  ],
+  "correct": 1,
+  "why": "Kuala Lumpur is the national capital of Malaysia.",
+  "rel": "Putrajaya is the administrative capital."
+ },
+ {
+  "num": 408,
+  "page": 41,
+  "question": "Who is the President of Pakistan (head of Parliament)?",
+  "options": [
+   "Shehbaz Sharif",
+   "Asif Ali Zardari",
+   "Arif Alvi",
+   "Mamnoon Hussain"
+  ],
+  "correct": 1,
+  "why": "As of Oct 2026, Asif Ali Zardari is the 14th President of Pakistan (since March 2024).",
+  "rel": "The President is part of Parliament along with the National Assembly and Senate."
+ },
+ {
+  "num": 409,
+  "page": 41,
+  "question": "What is the SI unit of temperature?",
+  "options": [
+   "Fahrenheit",
+   "Celsius",
+   "Joule",
+   "Kelvin"
+  ],
+  "correct": 3,
+  "why": "The kelvin (K) is the SI base unit of temperature.",
+  "rel": "0 K is absolute zero, about -273.15 C."
+ },
+ {
+  "num": 410,
+  "page": 41,
+  "question": "In which district is Rohtas Fort located?",
+  "options": [
+   "Lahore",
+   "Jhelum",
+   "Rawalpindi",
+   "Gujranwala"
+  ],
+  "correct": 1,
+  "why": "Rohtas Fort was built by Sher Shah Suri near Jhelum, Punjab.",
+  "rel": "It is a UNESCO World Heritage site (1997)."
+ },
+ {
+  "num": 411,
+  "page": 42,
+  "question": "Who received an honorary British knighthood in 1988?",
+  "options": [
+   "Henry Kissinger",
+   "Caspar Weinberger (USA)",
+   "George Shultz",
+   "Colin Powell"
+  ],
+  "correct": 1,
+  "why": "Caspar Weinberger, former US Defence Secretary, was given an honorary knighthood by Queen Elizabeth II (honorary GBE).",
+  "rel": "He served as US Secretary of Defense from 1981 to 1987.",
+  "problem": "Knighthood confirmed; the 1988 year found only in one source."
+ },
+ {
+  "num": 412,
+  "page": 42,
+  "question": "How many rectangular side faces does a hexagonal prism have?",
+  "options": [
+   "8",
+   "5",
+   "6",
+   "10"
+  ],
+  "correct": 2,
+  "why": "A hexagonal prism has 6 rectangular lateral faces.",
+  "rel": "Total faces = 8 (6 sides + 2 hexagonal bases).",
+  "problem": "Original question 'sides of prism' is vague; assumed hexagonal prism."
+ },
+ {
+  "num": 413,
+  "page": 42,
+  "question": "Who is the President of China?",
+  "options": [
+   "Jiang Zemin",
+   "Xi Jinping",
+   "Hu Jintao",
+   "Li Qiang"
+  ],
+  "correct": 1,
+  "why": "As of Oct 2026, Xi Jinping is the President of China (since 2013).",
+  "rel": "Li Qiang is the Premier."
+ },
+ {
+  "num": 414,
+  "page": 42,
+  "question": "The 'Hero' award is the highest military honour of which country?",
+  "options": [
+   "Japan",
+   "North Korea",
+   "Turkey",
+   "Brazil"
+  ],
+  "correct": 1,
+  "why": "'Hero of the DPRK' is North Korea's highest title for heroic military and national service.",
+  "rel": "Pakistan's highest gallantry award is Nishan-e-Haider.",
+  "problem": "Vague question; similar 'Hero' titles exist in Russia and others. Source answer North Korea used."
+ },
+ {
+  "num": 415,
+  "page": 42,
+  "question": "What is the height of K2?",
+  "options": [
+   "8,611 m",
+   "8,848 m",
+   "8,126 m",
+   "7,986 m"
+  ],
+  "correct": 0,
+  "why": "K2 stands 8,611 m (28,251 ft) above sea level, the second highest peak in the world.",
+  "rel": "Mount Everest is 8,848 m. Nanga Parbat is 8,126 m."
+ },
+ {
+  "num": 416,
+  "page": 42,
+  "question": "In which battle did Abu Jahl die?",
+  "options": [
+   "Battle of Khandaq",
+   "Battle of Hunain",
+   "Battle of Uhud",
+   "Battle of Badr"
+  ],
+  "correct": 3,
+  "why": "Abu Jahl was killed at the Battle of Badr in 2 AH (624 CE).",
+  "rel": "Badr was the first major battle between Muslims and the Quraish."
+ },
+ {
+  "num": 417,
+  "page": 42,
+  "question": "Where is the headquarters of the International Court of Justice?",
+  "options": [
+   "New York",
+   "Geneva",
+   "The Hague",
+   "Brussels"
+  ],
+  "correct": 2,
+  "why": "The ICJ sits in the Peace Palace at The Hague, Netherlands.",
+  "rel": "It is the principal judicial organ of the UN."
+ },
+ {
+  "num": 418,
+  "page": 42,
+  "question": "In which year did the Kargil War take place?",
+  "options": [
+   "1971",
+   "1965",
+   "1999",
+   "2001"
+  ],
+  "correct": 2,
+  "why": "The Kargil conflict between India and Pakistan was fought in May-July 1999.",
+  "rel": "It took place in Kargil, Ladakh."
+ },
+ {
+  "num": 419,
+  "page": 42,
+  "question": "Where is the headquarters of the UN human rights office (OHCHR / Human Rights Council)?",
+  "options": [
+   "Vienna, Austria",
+   "Geneva, Switzerland",
+   "New York, USA",
+   "The Hague, Netherlands"
+  ],
+  "correct": 1,
+  "why": "The UN Human Rights Council and OHCHR are based in Geneva.",
+  "rel": "UN headquarters itself is in New York."
+ },
+ {
+  "num": 420,
+  "page": 43,
+  "question": "In which year did Major Aziz Bhatti receive the Nishan-e-Haider?",
+  "options": [
+   "1999",
+   "1971",
+   "1948",
+   "1965"
+  ],
+  "correct": 3,
+  "why": "Major Raja Aziz Bhatti was martyred at the Burki sector (Lahore front) in the 1965 war and awarded the Nishan-e-Haider.",
+  "rel": "Pakistan's first Nishan-e-Haider recipient was Captain Raja Muhammad Sarwar (1948).",
+  "problem": "Award is posthumous; 1965 is the war and award year per source."
+ },
+ {
+  "num": 421,
+  "page": 43,
+  "question": "The Suez Canal is located in which country?",
+  "options": [
+   "Jordan",
+   "Turkey",
+   "Saudi Arabia",
+   "Egypt"
+  ],
+  "correct": 3,
+  "why": "The Suez Canal in Egypt links the Mediterranean Sea with the Red Sea.",
+  "rel": "It opened in 1869."
+ },
+ {
+  "num": 422,
+  "page": 43,
+  "question": "Which country is the largest tea producer in the world?",
+  "options": [
+   "Sri Lanka",
+   "India",
+   "Kenya",
+   "China"
+  ],
+  "correct": 3,
+  "why": "China produces the most tea, followed by India.",
+  "rel": "Kenya is a major tea exporter."
+ },
+ {
+  "num": 423,
+  "page": 43,
+  "question": "What does the white colour in Pakistan's flag represent?",
+  "options": [
+   "Religious minorities",
+   "Peace of Muslims",
+   "Martyrs",
+   "Agriculture"
+  ],
+  "correct": 0,
+  "why": "The white stripe stands for religious minorities; the green is for the Muslim majority.",
+  "rel": "The crescent shows progress and the star light and knowledge."
+ },
+ {
+  "num": 424,
+  "page": 43,
+  "question": "Which is the biggest bird in the world by size?",
+  "options": [
+   "Emu",
+   "Eagle",
+   "Albatross",
+   "Ostrich"
+  ],
+  "correct": 3,
+  "why": "The ostrich is the largest living bird, up to 2.7 m tall.",
+  "rel": "Ostrich eggs are the largest of any living bird."
+ },
+ {
+  "num": 425,
+  "page": 43,
+  "question": "How many permanent members does the UN Security Council have?",
+  "options": [
+   "7",
+   "5",
+   "15",
+   "10"
+  ],
+  "correct": 1,
+  "why": "The permanent members are the USA, UK, France, Russia and China.",
+  "rel": "Each has veto power; there are 10 non-permanent members."
+ },
+ {
+  "num": 426,
+  "page": 43,
+  "question": "In which battle was Hazrat Hamza (RA) martyred?",
+  "options": [
+   "Battle of Tabuk",
+   "Battle of Khyber",
+   "Battle of Uhud",
+   "Battle of Badr"
+  ],
+  "correct": 2,
+  "why": "Hazrat Hamza was martyred at Uhud in 3 AH (625 CE).",
+  "rel": "He is known as Asadullah (Lion of Allah)."
+ },
+ {
+  "num": 427,
+  "page": 43,
+  "question": "How many bones are there in the adult human body?",
+  "options": [
+   "206",
+   "212",
+   "300",
+   "180"
+  ],
+  "correct": 0,
+  "why": "An adult human body has 206 bones.",
+  "rel": "A baby is born with about 300 bones, many of which fuse."
+ },
+ {
+  "num": 428,
+  "page": 44,
+  "question": "Which is the first group of the periodic table?",
+  "options": [
+   "Halogens",
+   "Noble gases",
+   "Alkali metals",
+   "Alkaline earth metals"
+  ],
+  "correct": 2,
+  "why": "Group 1 (Li, Na, K, Rb, Cs, Fr) are the alkali metals.",
+  "rel": "Group 17 is halogens; Group 18 is noble gases."
+ },
+ {
+  "num": 429,
+  "page": 44,
+  "question": "Who was the first Pakistani to reach the summit of K2?",
+  "options": [
+   "Ashraf Aman",
+   "Muhammad Ali Sadpara",
+   "Nazir Sabir",
+   "Hassan Sadpara"
+  ],
+  "correct": 0,
+  "why": "Ashraf Aman summited K2 in 1977 as part of a Japanese-Pakistani expedition.",
+  "rel": "Nazir Sabir was the first Pakistani to climb Everest (2000).",
+  "problem": "Source gives only 'Ashraf'."
+ },
+ {
+  "num": 430,
+  "page": 44,
+  "question": "In which district is Rohtas Fort located?",
+  "options": [
+   "Lahore",
+   "Multan",
+   "Sialkot",
+   "Jhelum"
+  ],
+  "correct": 3,
+  "why": "Rohtas Fort is near Dina in Jhelum district.",
+  "rel": "It was built by Sher Shah Suri in the 16th century."
+ },
+ {
+  "num": 431,
+  "page": 44,
+  "question": "Which Pakistani player has taken the most Test wickets?",
+  "options": [
+   "Imran Khan",
+   "Waqar Younis",
+   "Shoaib Akhtar",
+   "Wasim Akram"
+  ],
+  "correct": 3,
+  "why": "Wasim Akram took 414 Test wickets, the most for Pakistan.",
+  "rel": "He also holds many ODI records for Pakistan."
+ },
+ {
+  "num": 432,
+  "page": 44,
+  "question": "Which is the largest river of Pakistan?",
+  "options": [
+   "Indus River",
+   "Ravi",
+   "Chenab",
+   "Jhelum"
+  ],
+  "correct": 0,
+  "why": "The Indus is the longest and largest river in Pakistan, about 3,180 km long.",
+  "rel": "It ends in the Arabian Sea near Thatta."
+ },
+ {
+  "num": 433,
+  "page": 44,
+  "question": "Mohenjo-daro is located in which district of Sindh?",
+  "options": [
+   "Larkana",
+   "Thatta",
+   "Sukkur",
+   "Hyderabad"
+  ],
+  "correct": 0,
+  "why": "Mohenjo-daro is in Larkana district, on the Indus River.",
+  "rel": "It is a UNESCO World Heritage site (1980)."
+ },
+ {
+  "num": 434,
+  "page": 44,
+  "question": "Who wrote the famous book 'Friends Not Masters'?",
+  "options": [
+   "Liaquat Ali Khan",
+   "Ayub Khan",
+   "Yahya Khan",
+   "Zulfikar Ali Bhutto"
+  ],
+  "correct": 1,
+  "why": "Field Marshal Ayub Khan wrote 'Friends Not Masters' (1967).",
+  "rel": "Bhutto wrote 'The Myth of Independence'."
+ },
+ {
+  "num": 435,
+  "page": 44,
+  "question": "Who wrote 'Sohni Mahiwal' in its famous Punjabi version?",
+  "options": [
+   "Hafiz Barkhurdar",
+   "Bulleh Shah",
+   "Waris Shah",
+   "Fazal Shah"
+  ],
+  "correct": 3,
+  "why": "Fazal Shah Sayyad is known for the Punjabi poem Sohni Mahiwal.",
+  "rel": "Waris Shah wrote Heer."
+ },
+ {
+  "num": 436,
+  "page": 45,
+  "question": "Olympic Airlines was the national airline of which country?",
+  "options": [
+   "Portugal",
+   "Greece",
+   "Cyprus",
+   "Spain"
+  ],
+  "correct": 1,
+  "why": "Olympic Airways (Olympic Airlines) was Greece's flag carrier.",
+  "rel": "It was founded by Aristotle Onassis in 1957."
+ },
+ {
+  "num": 437,
+  "page": 45,
+  "question": "Which is the smallest country in the world?",
+  "options": [
+   "Monaco",
+   "Liechtenstein",
+   "Vatican City",
+   "San Marino"
+  ],
+  "correct": 2,
+  "why": "Vatican City covers about 0.44 sq km.",
+  "rel": "Monaco is the second smallest."
+ },
+ {
+  "num": 438,
+  "page": 45,
+  "question": "In which year did Pakistan's Parliament declare Ahmadis non-Muslim through a constitutional amendment?",
+  "options": [
+   "1974",
+   "1956",
+   "1962",
+   "1985"
+  ],
+  "correct": 0,
+  "why": "The Second Amendment to the 1973 Constitution (7 September 1974) declared Ahmadis non-Muslim.",
+  "rel": "It was passed under PM Zulfikar Ali Bhutto.",
+  "problem": "Question reworded: source answer is 1974 (2nd amendment to the 1973 Constitution)."
+ },
+ {
+  "num": 439,
+  "page": 45,
+  "question": "What was Fatima Jinnah's profession?",
+  "options": [
+   "Teacher",
+   "Lawyer",
+   "Dentist",
+   "Doctor"
+  ],
+  "correct": 2,
+  "why": "Fatima Jinnah trained and practised as a dentist in Calcutta.",
+  "rel": "She is known as Madar-e-Millat."
+ },
+ {
+  "num": 440,
+  "page": 45,
+  "question": "In which year did Pakistan win the Cricket World Cup?",
+  "options": [
+   "1999",
+   "1987",
+   "1992",
+   "1996"
+  ],
+  "correct": 2,
+  "why": "Pakistan won the 1992 World Cup under Imran Khan, beating England in Melbourne.",
+  "rel": "Pakistan also won the 2009 T20 World Cup."
+ },
+ {
+  "num": 441,
+  "page": 45,
+  "question": "Who coined the name 'Pakistan'?",
+  "options": [
+   "Muhammad Ali Jauhar",
+   "Chaudhry Rahmat Ali",
+   "Allama Iqbal",
+   "Sir Syed Ahmad Khan"
+  ],
+  "correct": 1,
+  "why": "Chaudhry Rahmat Ali coined 'Pakistan' in the 1933 pamphlet 'Now or Never'.",
+  "rel": "He studied at Cambridge."
+ },
+ {
+  "num": 442,
+  "page": 45,
+  "question": "On which date was the Pakistan-China border agreement signed?",
+  "options": [
+   "2 March 1953",
+   "2 March 1963",
+   "16 June 1973",
+   "21 May 1951"
+  ],
+  "correct": 1,
+  "why": "The border agreement between Pakistan and China was signed on 2 March 1963.",
+  "rel": "Pakistan recognised China in 1950; diplomatic ties were set up in 1951."
+ },
+ {
+  "num": 443,
+  "page": 45,
+  "question": "Which is the fastest bird?",
+  "options": [
+   "Ostrich",
+   "Swift",
+   "Peregrine falcon",
+   "Golden eagle"
+  ],
+  "correct": 2,
+  "why": "The peregrine falcon reaches over 320 km/h in a dive.",
+  "rel": "It is the fastest animal on Earth."
+ },
+ {
+  "num": 444,
+  "page": 45,
+  "question": "Which country is the second largest gold producer in the world (as of 2025)?",
+  "options": [
+   "South Africa",
+   "Russia",
+   "USA",
+   "Australia"
+  ],
+  "correct": 1,
+  "why": "Russia ranks second after China in 2025 gold mine output.",
+  "rel": "China is first; Australia is third.",
+  "problem": "Source answer 'Australia' is outdated; Australia was second in earlier years, but Russia is second as of 2025."
+ },
+ {
+  "num": 445,
+  "page": 46,
+  "question": "How many Pakistanis have won a Nobel Prize?",
+  "options": [
+   "4",
+   "1",
+   "3",
+   "2"
+  ],
+  "correct": 3,
+  "why": "Abdul Salam (Physics, 1979) and Malala Yousafzai (Peace, 2014) are the two Nobel laureates of Pakistan.",
+  "rel": "Malala is the youngest Nobel laureate.",
+  "problem": "As of Oct 2026 (two laureates, to our knowledge)."
+ },
+ {
+  "num": 446,
+  "page": 46,
+  "question": "Who received the first Nobel Peace Prize (1901)?",
+  "options": [
+   "Woodrow Wilson",
+   "Albert Schweitzer",
+   "Jean Henri Dunant",
+   "Alfred Nobel"
+  ],
+  "correct": 2,
+  "why": "Henry Dunant (with Frederic Passy) won the first Nobel Peace Prize in 1901.",
+  "rel": "Dunant founded the Red Cross.",
+  "problem": "The first Nobel Prize in Physics (1901) went to Rontgen; question assumes the Peace Prize."
+ },
+ {
+  "num": 447,
+  "page": 46,
+  "question": "For what did Malala Yousafzai win the Nobel Prize?",
+  "options": [
+   "Chemistry",
+   "Physics",
+   "Peace",
+   "Literature"
+  ],
+  "correct": 2,
+  "why": "Malala shared the 2014 Nobel Peace Prize for her struggle for girls' education.",
+  "rel": "She shared it with Kailash Satyarthi."
+ },
+ {
+  "num": 448,
+  "page": 46,
+  "question": "Which pass connects Pakistan with Afghanistan?",
+  "options": [
+   "Lowari Pass",
+   "Babusar Pass",
+   "Khunjerab Pass",
+   "Khyber Pass"
+  ],
+  "correct": 3,
+  "why": "The Khyber Pass connects Peshawar in Pakistan with Afghanistan.",
+  "rel": "Khunjerab connects Pakistan with China."
+ },
+ {
+  "num": 449,
+  "page": 46,
+  "question": "What is the capital of Turkey?",
+  "options": [
+   "Ankara",
+   "Istanbul",
+   "Izmir",
+   "Bursa"
+  ],
+  "correct": 0,
+  "why": "Ankara has been Turkey's capital since 1923.",
+  "rel": "Istanbul is the largest city."
+ },
+ {
+  "num": 450,
+  "page": 46,
+  "question": "Where were the 2016 Olympic Games held?",
+  "options": [
+   "Rio de Janeiro",
+   "London",
+   "Tokyo",
+   "Beijing"
+  ],
+  "correct": 0,
+  "why": "The 2016 Summer Olympics were held in Rio de Janeiro, Brazil.",
+  "rel": "London hosted in 2012; Tokyo in 2021."
+ },
+ {
+  "num": 451,
+  "page": 46,
+  "question": "Which latitude and longitude passes through the central point of Pakistan (approx)?",
+  "options": [
+   "10 N and 40 E",
+   "30 N and 70 E",
+   "20 N and 60 E",
+   "50 N and 90 E"
+  ],
+  "correct": 1,
+  "why": "Pakistan lies roughly between 24-37 N latitude and 61-75 E longitude, so its centre is about 30 N 70 E.",
+  "rel": "Pakistan lies in the northern and eastern hemispheres.",
+  "problem": "Source answer '30.3 N and 69.3 E' is Pakistan's approximate geographic centre; question reworded."
+ },
+ {
+  "num": 452,
+  "page": 46,
+  "question": "Who is the Defence Minister of Pakistan?",
+  "options": [
+   "Chaudhry Nisar",
+   "Ahsan Iqbal",
+   "Ishaq Dar",
+   "Khawaja Asif"
+  ],
+  "correct": 3,
+  "why": "As of Oct 2026, Khawaja Asif is Pakistan's Defence Minister (since March 2024).",
+  "rel": "He represents Sialkot."
+ },
+ {
+  "num": 453,
+  "page": 47,
+  "question": "What is the range of Pakistan's Ababeel missile?",
+  "options": [
+   "750 km",
+   "1,500 km",
+   "2,750 km",
+   "2,200 km"
+  ],
+  "correct": 3,
+  "why": "Ababeel is a MIRV-capable ballistic missile with a range of about 2,200 km.",
+  "rel": "It was first tested in January 2017."
+ },
+ {
+  "num": 454,
+  "page": 47,
+  "question": "Which is the lowest place on land on Earth?",
+  "options": [
+   "Lake Baikal",
+   "Death Valley",
+   "Dead Sea shore",
+   "Caspian Sea"
+  ],
+  "correct": 2,
+  "why": "The Dead Sea shore is about 430 m below sea level.",
+  "rel": "Death Valley is the lowest in North America.",
+  "problem": "Dead Sea shore is the lowest land elevation."
+ },
+ {
+  "num": 455,
+  "page": 47,
+  "question": "Who wrote 'Kashf-ul-Mahjoob'?",
+  "options": [
+   "Rumi",
+   "Bulleh Shah",
+   "Data Ali Hajveri",
+   "Baba Farid"
+  ],
+  "correct": 2,
+  "why": "Hazrat Ali Hajveri (Data Ganj Bakhsh) wrote this Persian Sufi text in the 11th century.",
+  "rel": "His shrine is in Lahore."
+ },
+ {
+  "num": 456,
+  "page": 47,
+  "question": "Who wrote the book 'Friends Not Masters'?",
+  "options": [
+   "Z.A. Bhutto",
+   "Ayub Khan",
+   "Liaquat Ali Khan",
+   "Zia-ul-Haq"
+  ],
+  "correct": 1,
+  "why": "Ayub Khan wrote it as his political autobiography in 1967.",
+  "rel": "Ayub Khan ruled Pakistan 1958-1969."
+ },
+ {
+  "num": 457,
+  "page": 47,
+  "question": "Which country has a sea border with Pakistan but no land border?",
+  "options": [
+   "India",
+   "Afghanistan",
+   "Oman",
+   "Iran"
+  ],
+  "correct": 2,
+  "why": "Pakistan and Oman share a maritime boundary in the Arabian Sea only.",
+  "rel": "Pakistan's land neighbours: India, Afghanistan, Iran and China."
+ },
+ {
+  "num": 458,
+  "page": 47,
+  "question": "In which year did Pakistan win the ICC Champions Trophy?",
+  "options": [
+   "2013",
+   "2017",
+   "2009",
+   "2021"
+  ],
+  "correct": 1,
+  "why": "Pakistan beat India in the 2017 final at The Oval.",
+  "rel": "Sarfaraz Ahmed was captain."
+ },
+ {
+  "num": 459,
+  "page": 47,
+  "question": "In which year was the Durand Line agreed?",
+  "options": [
+   "1893",
+   "1905",
+   "1919",
+   "1947"
+  ],
+  "correct": 0,
+  "why": "Sir Mortimer Durand and Amir Abdur Rahman signed the agreement in 1893.",
+  "rel": "It is about 2,640 km long."
+ },
+ {
+  "num": 460,
+  "page": 47,
+  "question": "Who is the author of the book 'Pakistan: The Heart of Asia'?",
+  "options": [
+   "Allama Iqbal",
+   "Chaudhry Muhammad Ali",
+   "Ayub Khan",
+   "Liaquat Ali Khan"
+  ],
+  "correct": 3,
+  "why": "It is a collection of speeches by Liaquat Ali Khan (1950).",
+  "rel": "Liaquat was Pakistan's first Prime Minister."
+ },
+ {
+  "num": 461,
+  "page": 48,
+  "question": "As Prime Minister, Liaquat Ali Khan made a historic 1950 visit to which country?",
+  "options": [
+   "USA",
+   "Soviet Union",
+   "China",
+   "Saudi Arabia"
+  ],
+  "correct": 0,
+  "why": "Liaquat Ali Khan visited the USA in May 1950 on an invitation from President Truman.",
+  "rel": "He never visited Moscow despite an invitation.",
+  "problem": "Question reworded; 'first visit' is disputed (an Iran trip in 1949 is reported), USA kept as exam answer."
+ },
+ {
+  "num": 462,
+  "page": 48,
+  "question": "What is the currency of Japan?",
+  "options": [
+   "Yuan",
+   "Japanese yen",
+   "Won",
+   "Ringgit"
+  ],
+  "correct": 1,
+  "why": "The currency of Japan is the yen.",
+  "rel": "The yuan is China's currency."
+ },
+ {
+  "num": 463,
+  "page": 48,
+  "question": "What is the capital of Australia?",
+  "options": [
+   "Sydney",
+   "Melbourne",
+   "Perth",
+   "Canberra"
+  ],
+  "correct": 3,
+  "why": "Canberra is the capital of Australia.",
+  "rel": "Sydney is the largest city."
+ },
+ {
+  "num": 464,
+  "page": 48,
+  "question": "In which year was Dr Abdus Salam awarded the Nobel Prize?",
+  "options": [
+   "1984",
+   "1979",
+   "1974",
+   "1969"
+  ],
+  "correct": 1,
+  "why": "Dr Abdus Salam shared the 1979 Nobel Prize in Physics.",
+  "rel": "He shared it with Glashow and Weinberg for electroweak theory."
+ },
+ {
+  "num": 465,
+  "page": 48,
+  "question": "When did Pakistan join the United Nations?",
+  "options": [
+   "30 September 1950",
+   "14 August 1947",
+   "15 October 1948",
+   "30 September 1947"
+  ],
+  "correct": 3,
+  "why": "Pakistan became a UN member on 30 September 1947.",
+  "rel": "Pakistan was the 56th member.",
+  "problem": "Source says 'September 1947'; exact date 30 September."
+ },
+ {
+  "num": 466,
+  "page": 48,
+  "question": "What is the national vegetable of Pakistan?",
+  "options": [
+   "Potato",
+   "Okra (lady finger / bhindi)",
+   "Onion",
+   "Cauliflower"
+  ],
+  "correct": 1,
+  "why": "Okra is listed as Pakistan's national vegetable in common exam lists.",
+  "rel": "The national fruit is the mango; national flower is jasmine.",
+  "problem": "Not officially fixed; exam answer okra."
+ },
+ {
+  "num": 467,
+  "page": 48,
+  "question": "Sher Shah Suri belonged to which ethnic group?",
+  "options": [
+   "Pashtun",
+   "Baloch",
+   "Rajput",
+   "Turk"
+  ],
+  "correct": 0,
+  "why": "Sher Shah Suri was a Pashtun from the Sur tribe.",
+  "rel": "He founded the Sur Empire."
+ },
+ {
+  "num": 468,
+  "page": 48,
+  "question": "NASA is the space agency of which country?",
+  "options": [
+   "India",
+   "USA",
+   "China",
+   "Russia"
+  ],
+  "correct": 1,
+  "why": "NASA is the National Aeronautics and Space Administration of the USA.",
+  "rel": "Russia has Roscosmos; India has ISRO."
+ }
+]
