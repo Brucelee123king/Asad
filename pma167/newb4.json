@@ -1,0 +1,535 @@
+[
+{
+"item": 49,
+"section": "Pakistan Studies",
+"question": "Who wrote the book Friends Not Masters?",
+"answer": "Field Marshal Ayub Khan",
+"wrong": [
+"Zulfikar Ali Bhutto",
+"Liaquat Ali Khan",
+"Chaudhry Muhammad Ali"
+],
+"reason": "Friends Not Masters (1967, Oxford University Press) is the political autobiography of President Muhammad Ayub Khan.",
+"rep": 0
+},
+{
+"item": 69,
+"section": "General Knowledge",
+"question": "Adolf Hitler was the dictator of which country during the Second World War?",
+"answer": "Germany",
+"wrong": [
+"Italy",
+"Austria",
+"Japan"
+],
+"reason": "Hitler led the Nazi Party and ruled Germany as Chancellor and Fuhrer from 1933 until his death in 1945. He started the war by invading Poland in 1939.",
+"rep": 1
+},
+{
+"item": 83,
+"section": "Pakistan Studies",
+"question": "According to the 1956 Constitution, the President of Pakistan was elected by:",
+"answer": "An electoral college of members of the National and Provincial Assemblies",
+"wrong": [
+"Direct vote of the people",
+"Basic Democrats",
+"The National Assembly only"
+],
+"reason": "The 1956 Constitution had a President elected for 5 years by members of the National and Provincial Assemblies; Basic Democrats were used in the 1962 Constitution.",
+"rep": 0
+},
+{
+"item": 92,
+"section": "Pakistan Studies",
+"question": "Who was the ruler of Sindh when Muhammad bin Qasim conquered it in 712 AD?",
+"answer": "Raja Dahir",
+"wrong": [
+"Raja Jaipal",
+"Raja Porus",
+"Mahmud of Ghazni"
+],
+"reason": "Raja Dahir of the Chach dynasty was defeated and killed at the Battle of Aror (Rohri) by Muhammad bin Qasim.",
+"rep": 0
+},
+{
+"item": 97,
+"section": "Current Affairs",
+"question": "Who is the current Chief of the Naval Staff of Pakistan?",
+"answer": "Admiral Naveed Ashraf",
+"wrong": [
+"Admiral Zafar Mahmood Abbasi",
+"Admiral Muhammad Amjad Khan Niazi",
+"Admiral Asif Sandila"
+],
+"reason": "Admiral Naveed Ashraf has been Chief of the Naval Staff since 7 October 2023 and was still serving in 2026.",
+"rep": 1
+},
+{
+"item": 103,
+"section": "Pakistan Studies",
+"question": "Who introduced the Basic Democracies System in Pakistan in 1959?",
+"answer": "Field Marshal Ayub Khan",
+"wrong": [
+"Iskander Mirza",
+"General Yahya Khan",
+"Zulfikar Ali Bhutto"
+],
+"reason": "President Ayub Khan introduced the Basic Democracies Order in October 1959. Union councils elected Basic Democrats who later formed an electoral college.",
+"rep": 0
+},
+{
+"item": 109,
+"section": "Pakistan Studies",
+"question": "Which tree is the national tree of Pakistan?",
+"answer": "Deodar",
+"wrong": [
+"Banyan",
+"Neem",
+"Shisham"
+],
+"reason": "The deodar (Cedrus deodara), a cedar of the northern mountains, is the national tree of Pakistan.",
+"rep": 0
+},
+{
+"item": 114,
+"section": "General Knowledge",
+"question": "Where is the headquarters of Amnesty International located?",
+"answer": "London",
+"wrong": [
+"Geneva",
+"New York",
+"Paris"
+],
+"reason": "Amnesty International was founded in London in 1961 and its International Secretariat is based in London.",
+"rep": 0
+},
+{
+"item": 121,
+"section": "Pakistan Studies",
+"question": "In which year did the Khilafat Movement begin?",
+"answer": "1919",
+"wrong": [
+"1906",
+"1911",
+"1930"
+],
+"reason": "The Khilafat Movement began in 1919 under the Ali brothers and others to protect the Ottoman Caliphate after World War I.",
+"rep": 2
+},
+{
+"item": 129,
+"section": "Pakistan Studies",
+"question": "How many nuclear tests did Pakistan conduct on 28 May 1998 (Chagai-I)?",
+"answer": "Five",
+"wrong": [
+"Three",
+"Six",
+"Seven"
+],
+"reason": "Chagai-I was five simultaneous underground tests at the Ras Koh Hills, Balochistan, on 28 May 1998. A further test (Chagai-II) followed on 30 May.",
+"rep": 0
+},
+{
+"item": 134,
+"section": "Verbal: English",
+"question": "When the actual words of the speaker are reported exactly as spoken, inside quotation marks, it is called:",
+"answer": "Direct speech",
+"wrong": [
+"Indirect speech",
+"Passive voice",
+"Reported clause"
+],
+"reason": "In direct speech (direct narration) the exact words are quoted. In indirect speech they are reported in the reporter's own words.",
+"rep": 0
+},
+{
+"item": 140,
+"section": "Islamiat",
+"question": "In which year did the Hijrat (migration) of the Prophet ﷺ from Makkah to Madinah take place?",
+"answer": "622 AD",
+"wrong": [
+"570 AD",
+"610 AD",
+"632 AD"
+],
+"reason": "The Prophet ﷺ migrated from Makkah to Madinah in 622 AD, which is year 1 of the Islamic Hijri calendar.",
+"rep": 1
+},
+{
+"item": 144,
+"section": "Pakistan Studies",
+"question": "In which year was the 1962 Constitution of Pakistan abrogated?",
+"answer": "1969",
+"wrong": [
+"1958",
+"1965",
+"1971"
+],
+"reason": "General Yahya Khan imposed martial law and abrogated the 1962 Constitution on 25 March 1969 after Ayub Khan resigned.",
+"rep": 0
+},
+{
+"item": 161,
+"section": "Pakistan Studies",
+"question": "On which date did Pakistan become a member of the United Nations?",
+"answer": "30 September 1947",
+"wrong": [
+"14 August 1947",
+"15 October 1947",
+"24 October 1945"
+],
+"reason": "The UN General Assembly admitted Pakistan (with Yemen) on 30 September 1947 by resolution 108 (II).",
+"rep": 0
+},
+{
+"item": 179,
+"section": "Pakistan Studies",
+"question": "Which agreement ended the 1965 Pakistan-India war?",
+"answer": "Tashkent Declaration",
+"wrong": [
+"Simla Agreement",
+"Indus Waters Treaty",
+"Liaquat-Nehru Pact"
+],
+"reason": "The Tashkent Declaration was signed on 10 January 1966 by Ayub Khan and Lal Bahadur Shastri, with Soviet Premier Kosygin mediating.",
+"rep": 0
+},
+{
+"item": 187,
+"section": "General Knowledge",
+"question": "On which date did the United States declare its independence?",
+"answer": "4 July 1776",
+"wrong": [
+"4 July 1789",
+"14 July 1776",
+"1 January 1783"
+],
+"reason": "The Declaration of Independence was adopted on 4 July 1776, celebrated as Independence Day in the USA.",
+"rep": 1
+},
+{
+"item": 192,
+"section": "Pakistan Studies",
+"question": "In which year was the War of Independence (against the British East India Company) fought?",
+"answer": "1857",
+"wrong": [
+"1757",
+"1835",
+"1906"
+],
+"reason": "The War of Independence of 1857 was the major uprising against British rule in the subcontinent, ending Mughal rule.",
+"rep": 0
+},
+{
+"item": 199,
+"section": "Pakistan Studies",
+"question": "Who was called the Ambassador of Hindu-Muslim Unity by Sarojini Naidu?",
+"answer": "Muhammad Ali Jinnah",
+"wrong": [
+"Allama Iqbal",
+"Liaquat Ali Khan",
+"Maulana Muhammad Ali Jauhar"
+],
+"reason": "Sarojini Naidu gave Jinnah this title for his role in the 1916 Lucknow Pact between Congress and the Muslim League.",
+"rep": 0
+},
+{
+"item": 205,
+"section": "Current Affairs",
+"question": "Who is the President of China (as of October 2026)?",
+"answer": "Xi Jinping",
+"wrong": [
+"Li Qiang",
+"Hu Jintao",
+"Wang Yi"
+],
+"reason": "Xi Jinping is President of the People's Republic of China (and General Secretary of the Communist Party). Li Qiang is the Premier.",
+"rep": 1
+},
+{
+"item": 212,
+"section": "General Knowledge",
+"question": "What is the capital of Bhutan?",
+"answer": "Thimphu",
+"wrong": [
+"Paro",
+"Punakha",
+"Kathmandu"
+],
+"reason": "Thimphu is the capital and largest city of Bhutan; Punakha was the old capital until 1955.",
+"rep": 0
+},
+{
+"item": 221,
+"section": "Verbal: Maths & Reasoning",
+"question": "Ahmad is 5 years old and his sister is three times his age. How old will the sister be when Ahmad is 10 years old?",
+"answer": "20 years",
+"wrong": [
+"15 years",
+"25 years",
+"30 years"
+],
+"reason": "Sister is 3 x 5 = 15 now. Ahmad needs 5 more years to reach 10, so the sister will be 15 + 5 = 20.",
+"rep": 1
+},
+{
+"item": 228,
+"section": "General Knowledge",
+"question": "In which year did the Al-Khalid main battle tank enter service with the Pakistan Army?",
+"answer": "2001",
+"wrong": [
+"1990",
+"1996",
+"2008"
+],
+"reason": "Al-Khalid (MBT-2000) was developed jointly by Pakistan and China, and the first batch entered Pakistan Army service in 2001. The improved Al-Khalid-I was inducted in 2020.",
+"rep": 2
+},
+{
+"item": 237,
+"section": "Islamiat",
+"question": "What was the relation of Abu Talib with Prophet Muhammad (PBUH)?",
+"answer": "Paternal uncle",
+"wrong": [
+"Maternal uncle",
+"Grandfather",
+"Cousin"
+],
+"reason": "Abu Talib was a son of Abd al-Muttalib and so the paternal uncle of the Prophet; he took care of him after the death of his grandfather.",
+"rep": 0
+},
+{
+"item": 250,
+"section": "Pakistan Studies",
+"question": "Who wrote the lyrics of the National Anthem (Qaumi Tarana) of Pakistan?",
+"answer": "Hafeez Jalandhari",
+"wrong": [
+"Allama Iqbal",
+"Ahmad Ghulam Ali Chagla",
+"Faiz Ahmad Faiz"
+],
+"reason": "The lyrics were written by Abu al-Asar Hafeez Jalandhari, while the music was composed by Ahmad Ghulam Ali Chagla. It was officially adopted in 1954.",
+"rep": 0
+},
+{
+"item": 257,
+"section": "General Knowledge",
+"question": "What is the capital of Iran?",
+"answer": "Tehran",
+"wrong": [
+"Isfahan",
+"Tabriz",
+"Baghdad"
+],
+"reason": "Tehran is the capital and largest city of Iran.",
+"rep": 0
+},
+{
+"item": 268,
+"section": "Pakistan Studies",
+"question": "Who was the Viceroy of India at the time of the partition in August 1947?",
+"answer": "Lord Mountbatten",
+"wrong": [
+"Lord Wavell",
+"Lord Linlithgow",
+"Lord Irwin"
+],
+"reason": "Lord Mountbatten was the last Viceroy of India (1947) and oversaw the partition. Lord Wavell was his predecessor.",
+"rep": 0
+},
+{
+"item": 274,
+"section": "Islamiat",
+"question": "Zabihullah (the one offered for sacrifice) is the title of which Prophet?",
+"answer": "Hazrat Ismail (A.S.)",
+"wrong": [
+"Hazrat Ishaq (A.S.)",
+"Hazrat Yaqub (A.S.)",
+"Hazrat Yusuf (A.S.)"
+],
+"reason": "Hazrat Ismail (A.S.) is known as Zabihullah, the son Hazrat Ibrahim (A.S.) was ready to sacrifice at Allah's command.",
+"rep": 0
+},
+{
+"item": 285,
+"section": "Pakistan Studies",
+"question": "In which year was the One Unit scheme implemented in Pakistan?",
+"answer": "1955",
+"wrong": [
+"1947",
+"1956",
+"1962"
+],
+"reason": "The One Unit scheme merged the western provinces into West Pakistan in 1955 (Act passed 30 September 1955, in force 14 October 1955) and was ended in 1970.",
+"rep": 0
+},
+{
+"item": 291,
+"section": "Pakistan Studies",
+"question": "In 2020, Kashmir Highway in Islamabad was renamed as:",
+"answer": "Srinagar Highway",
+"wrong": [
+"Muzaffarabad Highway",
+"Jinnah Avenue",
+"Kargil Highway"
+],
+"reason": "In August 2020 Kashmir Highway was renamed Srinagar Highway to show solidarity with Kashmiris on the first Youm-e-Istehsal.",
+"rep": 0
+},
+{
+"item": 296,
+"section": "Pakistan Studies",
+"question": "In which city is the Pakistan Navy Headquarters (Naval Headquarters) located?",
+"answer": "Islamabad",
+"wrong": [
+"Karachi",
+"Lahore",
+"Gwadar"
+],
+"reason": "Naval Headquarters was shifted from Karachi to Islamabad in 1975 and is in Sector E-9, Islamabad.",
+"rep": 0
+},
+{
+"item": 304,
+"section": "Verbal: Maths & Reasoning",
+"question": "Cow is to milk as dog is to ?",
+"answer": "Bark",
+"wrong": [
+"Fur",
+"Tail",
+"Bone"
+],
+"reason": "A cow gives milk and a dog gives a bark, the thing it produces.",
+"rep": 0
+},
+{
+"item": 310,
+"section": "Pakistan Studies",
+"question": "Who started the Faraizi movement in Bengal?",
+"answer": "Haji Shariatullah",
+"wrong": [
+"Syed Ahmad Barelvi",
+"Titu Mir",
+"Sir Syed Ahmad Khan"
+],
+"reason": "Haji Shariatullah founded the Faraizi movement in 1818 to make Bengali Muslims follow the obligatory duties (faraiz) of Islam. His son Dudu Miyan later led it.",
+"rep": 0
+},
+{
+"item": 315,
+"section": "General Knowledge",
+"question": "Which is the national bird of Pakistan?",
+"answer": "Chukar (Chakor)",
+"wrong": [
+"Peacock",
+"Sparrow",
+"Shaheen"
+],
+"reason": "The chukar partridge (chakor) is the national bird of Pakistan.",
+"rep": 0
+},
+{
+"item": 323,
+"section": "Verbal: Maths & Reasoning",
+"question": "Find the next letter in the series: A, C, F, ?",
+"answer": "J",
+"wrong": [
+"I",
+"K",
+"H"
+],
+"reason": "Positions are 1, 3, 6, 10: gaps of 2, 3, 4. Next is 10, which is J.",
+"rep": 0
+},
+{
+"item": 333,
+"section": "Islamiat",
+"question": "According to a hadith in Sahih Muslim, which voluntary (nafl) prayer is the best after the obligatory prayers?",
+"answer": "Tahajjud (night prayer)",
+"wrong": [
+"Ishraq",
+"Chasht (Duha)",
+"Awwabin"
+],
+"reason": "The Prophet (PBUH) said the best prayer after the obligatory prayers is the night prayer, which is Tahajjud (Sahih Muslim).",
+"rep": 0
+},
+{
+"item": 343,
+"section": "General Knowledge",
+"question": "Which continent is the coldest on Earth?",
+"answer": "Antarctica",
+"wrong": [
+"Arctic (North Pole region)",
+"Europe",
+"Asia"
+],
+"reason": "Antarctica has the lowest recorded temperature on Earth, minus 89.2 degrees C at Vostok Station on 21 July 1983.",
+"rep": 0
+},
+{
+"item": 351,
+"section": "Islamiat",
+"question": "How many sons did Prophet Muhammad (SAW) have?",
+"answer": "Three",
+"wrong": [
+"Two",
+"Four",
+"Five"
+],
+"reason": "The Prophet (SAW) had three sons: Qasim, Abdullah (also called Tayyib and Tahir) and Ibrahim. All of them died in childhood.",
+"rep": 0
+},
+{
+"item": 362,
+"section": "Pakistan Studies",
+"question": "Who led the Salt March (Dandi March) of 1930?",
+"answer": "Mahatma Gandhi",
+"wrong": [
+"Subhas Chandra Bose",
+"Maulana Muhammad Ali Jauhar",
+"Sardar Patel"
+],
+"reason": "Gandhi led 78 followers about 387 km from Sabarmati Ashram to Dandi, starting on 12 March 1930.",
+"rep": 0
+},
+{
+"item": 366,
+"section": "Pakistan Studies",
+"question": "In which year did the Swadeshi Movement begin?",
+"answer": "1905",
+"wrong": [
+"1885",
+"1911",
+"1919"
+],
+"reason": "The partition of Bengal took effect on 16 October 1905 and the boycott of British goods was resolved on 7 August 1905.",
+"rep": 0
+},
+{
+"item": 370,
+"section": "Pakistan Studies",
+"question": "In which year was the Home Rule Movement launched in India?",
+"answer": "1916",
+"wrong": [
+"1905",
+"1911",
+"1920"
+],
+"reason": "Both Home Rule Leagues, of Tilak and of Annie Besant, were founded in 1916.",
+"rep": 0
+},
+{
+"item": 374,
+"section": "General Knowledge",
+"question": "Who led the anti-apartheid struggle in South Africa?",
+"answer": "Nelson Mandela",
+"wrong": [
+"Martin Luther King Jr.",
+"Desmond Tutu alone",
+"Robert Mugabe"
+],
+"reason": "Nelson Mandela spent 27 years in prison for resisting apartheid and became South Africa's first democratically elected president in 1994.",
+"rep": 0
+}
+]

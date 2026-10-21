@@ -1,0 +1,2147 @@
+[
+{
+"item": 2,
+"section": "Verbal: Maths & Reasoning",
+"question": "What is 5% of 80?",
+"answer": "4",
+"wrong": [
+"2",
+"5",
+"8"
+],
+"reason": "5% of 80 = (5 / 100) x 80 = 4.",
+"rep": 0
+},
+{
+"item": 29,
+"section": "Verbal: Maths & Reasoning",
+"question": "Solve using the DMAS rule: 2 + 2 / 2 = ?",
+"answer": "3",
+"wrong": [
+"2",
+"4",
+"1"
+],
+"reason": "Division comes before addition (DMAS), so 2 / 2 = 1 and then 2 + 1 = 3.",
+"rep": 8
+},
+{
+"item": 47,
+"section": "Verbal: Maths & Reasoning",
+"question": "If the 1st day of a month is Sunday, what day is the 17th?",
+"answer": "Monday",
+"wrong": [
+"Sunday",
+"Tuesday",
+"Saturday"
+],
+"reason": "17 - 1 = 16 days later; 16 = 14 + 2, so two days after Sunday is Monday.",
+"rep": 0
+},
+{
+"item": 49,
+"section": "Pakistan Studies",
+"question": "Who wrote the book Friends Not Masters?",
+"answer": "Field Marshal Ayub Khan",
+"wrong": [
+"Zulfikar Ali Bhutto",
+"Liaquat Ali Khan",
+"Chaudhry Muhammad Ali"
+],
+"reason": "Friends Not Masters (1967, Oxford University Press) is the political autobiography of President Muhammad Ayub Khan.",
+"rep": 0
+},
+{
+"item": 53,
+"section": "Islamiat",
+"question": "Which was the first major battle fought between the Muslims and the Quraysh of Makkah?",
+"answer": "Battle of Badr",
+"wrong": [
+"Battle of Uhud",
+"Battle of the Trench (Khandaq)",
+"Battle of Hunayn"
+],
+"reason": "The Battle of Badr, fought on 17 Ramadan 2 AH, was the first large-scale battle between the Muslims and the Quraysh. Earlier expeditions such as Abwa were only raids without fighting.",
+"rep": 2
+},
+{
+"item": 55,
+"section": "Current Affairs",
+"question": "Who was elected President of Azad Jammu and Kashmir (AJK) in September 2026?",
+"answer": "Dr Najeeb Naqi Khan",
+"wrong": [
+"Chaudhry Latif Akbar",
+"Sultan Mehmood Chaudhry",
+"Raja Farooq Haider"
+],
+"reason": "Dr Najeeb Naqi Khan of PML-N was elected the 25th President of AJK on 24 September 2026, winning 32 votes against 13 for PPP's Latif Akbar. The post had been vacant since the death of Sultan Mehmood Chaudhry on 31 January 2026.",
+"rep": 0
+},
+{
+"item": 64,
+"section": "Pakistan Studies",
+"question": "Who moved the Lahore (Pakistan) Resolution on 23 March 1940?",
+"answer": "A. K. Fazlul Haq",
+"wrong": [
+"Choudhry Khaliquzzaman",
+"Sir Sikandar Hayat Khan",
+"Liaquat Ali Khan"
+],
+"reason": "A. K. Fazlul Haq, Chief Minister of Bengal, moved the resolution at the Lahore session of the All India Muslim League and Choudhry Khaliquzzaman seconded it. Quaid-e-Azam Muhammad Ali Jinnah presided.",
+"rep": 1
+},
+{
+"item": 69,
+"section": "General Knowledge",
+"question": "Adolf Hitler was the dictator of which country during the Second World War?",
+"answer": "Germany",
+"wrong": [
+"Italy",
+"Austria",
+"Japan"
+],
+"reason": "Hitler led the Nazi Party and ruled Germany as Chancellor and Fuhrer from 1933 until his death in 1945. He started the war by invading Poland in 1939.",
+"rep": 1
+},
+{
+"item": 80,
+"section": "Pakistan Studies",
+"question": "Which is the highest peak of Pakistan?",
+"answer": "K2",
+"wrong": [
+"Nanga Parbat",
+"Broad Peak",
+"Tirich Mir"
+],
+"reason": "K2 (8,611 m) in the Karakoram is the highest peak of Pakistan and second highest in the world.",
+"rep": 0
+},
+{
+"item": 81,
+"section": "Verbal: English",
+"question": "Choose the synonym of WILD.",
+"answer": "Untamed",
+"wrong": [
+"Tame",
+"Domesticated",
+"Gentle"
+],
+"reason": "Wild means living in natural state, not tamed, so Untamed is the synonym; Tame is the opposite.",
+"rep": 0
+},
+{
+"item": 82,
+"section": "General Knowledge",
+"question": "What is the rank of Pakistan in the world by population (2026)?",
+"answer": "5th",
+"wrong": [
+"4th",
+"6th",
+"7th"
+],
+"reason": "After India, China, the United States and Indonesia, Pakistan is the 5th most populous country (about 255 to 260 million).",
+"rep": 0
+},
+{
+"item": 83,
+"section": "Pakistan Studies",
+"question": "According to the 1956 Constitution, the President of Pakistan was elected by:",
+"answer": "An electoral college of members of the National and Provincial Assemblies",
+"wrong": [
+"Direct vote of the people",
+"Basic Democrats",
+"The National Assembly only"
+],
+"reason": "The 1956 Constitution had a President elected for 5 years by members of the National and Provincial Assemblies; Basic Democrats were used in the 1962 Constitution.",
+"rep": 0
+},
+{
+"item": 87,
+"section": "Pakistan Studies",
+"question": "Who was the British Prime Minister at the time of the partition of India in 1947?",
+"answer": "Clement Attlee",
+"wrong": [
+"Winston Churchill",
+"Neville Chamberlain",
+"Harold Macmillan"
+],
+"reason": "Labour leader Clement Attlee was Prime Minister (1945-51) when the Indian Independence Act 1947 was passed.",
+"rep": 1
+},
+{
+"item": 88,
+"section": "Islamiat",
+"question": "How many Khulafa-e-Rashideen (Rightly Guided Caliphs) were there?",
+"answer": "4",
+"wrong": [
+"3",
+"5",
+"6"
+],
+"reason": "They were Abu Bakr, Umar, Uthman and Ali (may Allah be pleased with them).",
+"rep": 1
+},
+{
+"item": 90,
+"section": "Islamiat",
+"question": "The nisab of zakat on silver is:",
+"answer": "52.5 tola (612.36 grams)",
+"wrong": [
+"7.5 tola (87.48 grams)",
+"40 tola",
+"100 tola"
+],
+"reason": "Nisab of silver is 52.5 tola (about 612.36 g); 7.5 tola (87.48 g) is the nisab of gold.",
+"rep": 0
+},
+{
+"item": 92,
+"section": "Pakistan Studies",
+"question": "Who was the ruler of Sindh when Muhammad bin Qasim conquered it in 712 AD?",
+"answer": "Raja Dahir",
+"wrong": [
+"Raja Jaipal",
+"Raja Porus",
+"Mahmud of Ghazni"
+],
+"reason": "Raja Dahir of the Chach dynasty was defeated and killed at the Battle of Aror (Rohri) by Muhammad bin Qasim.",
+"rep": 0
+},
+{
+"item": 93,
+"section": "Pakistan Studies",
+"question": "In which year was the Sui gas field discovered?",
+"answer": "1952",
+"wrong": [
+"1947",
+"1955",
+"1960"
+],
+"reason": "Sui gas field in Balochistan was discovered in 1952; commercial supply to Karachi began in 1955.",
+"rep": 0
+},
+{
+"item": 94,
+"section": "Pakistan Studies",
+"question": "In which year was the film Jinnah (starring Christopher Lee) released?",
+"answer": "1998",
+"wrong": [
+"1988",
+"1995",
+"2005"
+],
+"reason": "Jinnah, directed by Jamil Dehlavi, was released in 1998.",
+"rep": 1
+},
+{
+"item": 96,
+"section": "Islamiat",
+"question": "In which Ghazwa (battle) was Abu Jahl killed?",
+"answer": "Ghazwa Badr",
+"wrong": [
+"Ghazwa Uhud",
+"Ghazwa Khandaq",
+"Ghazwa Khaibar"
+],
+"reason": "Abu Jahl, chief of the Quraysh, was killed at Badr in 2 AH (624 CE).",
+"rep": 1
+},
+{
+"item": 97,
+"section": "Current Affairs",
+"question": "Who is the current Chief of the Naval Staff of Pakistan?",
+"answer": "Admiral Naveed Ashraf",
+"wrong": [
+"Admiral Zafar Mahmood Abbasi",
+"Admiral Muhammad Amjad Khan Niazi",
+"Admiral Asif Sandila"
+],
+"reason": "Admiral Naveed Ashraf has been Chief of the Naval Staff since 7 October 2023 and was still serving in 2026.",
+"rep": 1
+},
+{
+"item": 98,
+"section": "Current Affairs",
+"question": "Which national airline did Pakistan privatize in December 2025 (won by Arif Habib consortium)?",
+"answer": "Pakistan International Airlines (PIA)",
+"wrong": [
+"Pakistan Steel Mills",
+"Pakistan Railways",
+"Pakistan State Oil"
+],
+"reason": "On 23 December 2025 the Arif Habib-led consortium won 75 percent of PIA with a bid of Rs135 billion.",
+"rep": 0
+},
+{
+"item": 99,
+"section": "General Knowledge",
+"question": "In which year were the first Nobel Prizes awarded?",
+"answer": "1901",
+"wrong": [
+"1895",
+"1905",
+"1910"
+],
+"reason": "The first Nobel Prizes were awarded on 10 December 1901, five years after Alfred Nobel died.",
+"rep": 0
+},
+{
+"item": 102,
+"section": "General Knowledge",
+"question": "Approximately what percentage of Pakistan's total area is covered by Balochistan?",
+"answer": "About 44 percent (43.6 percent)",
+"wrong": [
+"About 25 percent",
+"About 33 percent",
+"About 55 percent"
+],
+"reason": "Balochistan covers 347,190 square km, which is about 43.6 percent (nearly 44 percent) of Pakistan's total area, making it the largest province by area.",
+"rep": 0
+},
+{
+"item": 103,
+"section": "Pakistan Studies",
+"question": "Who introduced the Basic Democracies System in Pakistan in 1959?",
+"answer": "Field Marshal Ayub Khan",
+"wrong": [
+"Iskander Mirza",
+"General Yahya Khan",
+"Zulfikar Ali Bhutto"
+],
+"reason": "President Ayub Khan introduced the Basic Democracies Order in October 1959. Union councils elected Basic Democrats who later formed an electoral college.",
+"rep": 0
+},
+{
+"item": 104,
+"section": "Pakistan Studies",
+"question": "What was the official designation of Muhammad Ali Bogra (1953 to 1955)?",
+"answer": "Prime Minister of Pakistan",
+"wrong": [
+"Governor General of Pakistan",
+"President of Pakistan",
+"Chief Justice of Pakistan"
+],
+"reason": "Muhammad Ali Bogra was the third Prime Minister of Pakistan, from 17 April 1953 to 12 August 1955, appointed by Governor General Ghulam Muhammad.",
+"rep": 0
+},
+{
+"item": 105,
+"section": "General Knowledge",
+"question": "Nelson Mandela was the leader of which country?",
+"answer": "South Africa",
+"wrong": [
+"Nigeria",
+"Kenya",
+"Zimbabwe"
+],
+"reason": "Nelson Mandela led the anti-apartheid struggle and became the first democratically elected President of South Africa in 1994.",
+"rep": 0
+},
+{
+"item": 106,
+"section": "Verbal: Maths & Reasoning",
+"question": "If the 2nd day of a month is Tuesday, what day will the 25th be?",
+"answer": "Thursday",
+"wrong": [
+"Wednesday",
+"Tuesday",
+"Friday"
+],
+"reason": "From the 2nd to the 25th is 23 days. 23 = 3 weeks + 2 days, so Tuesday + 2 days = Thursday.",
+"rep": 1
+},
+{
+"item": 109,
+"section": "Pakistan Studies",
+"question": "Which tree is the national tree of Pakistan?",
+"answer": "Deodar",
+"wrong": [
+"Banyan",
+"Neem",
+"Shisham"
+],
+"reason": "The deodar (Cedrus deodara), a cedar of the northern mountains, is the national tree of Pakistan.",
+"rep": 0
+},
+{
+"item": 110,
+"section": "Pakistan Studies",
+"question": "Which narrow strip of Afghan territory separates Pakistan from Central Asia (Tajikistan)?",
+"answer": "Wakhan Corridor",
+"wrong": [
+"Khyber Pass",
+"Bolan Pass",
+"Kurram Valley"
+],
+"reason": "The Wakhan Corridor in Afghanistan's Badakhshan province lies between Tajikistan to the north and Pakistan to the south.",
+"rep": 0
+},
+{
+"item": 111,
+"section": "Maths & Science",
+"question": "How many traditional (basic) senses does a human being have?",
+"answer": "Five",
+"wrong": [
+"Three",
+"Four",
+"Six"
+],
+"reason": "The five traditional senses are sight, hearing, smell, taste and touch.",
+"rep": 0
+},
+{
+"item": 113,
+"section": "Pakistan Studies",
+"question": "In which year did Pakistan and China sign the border (boundary) agreement?",
+"answer": "1963",
+"wrong": [
+"1951",
+"1959",
+"1971"
+],
+"reason": "The Sino-Pakistan boundary agreement was signed on 2 March 1963 in Peking by Zulfikar Ali Bhutto and Chen Yi.",
+"rep": 4
+},
+{
+"item": 114,
+"section": "General Knowledge",
+"question": "Where is the headquarters of Amnesty International located?",
+"answer": "London",
+"wrong": [
+"Geneva",
+"New York",
+"Paris"
+],
+"reason": "Amnesty International was founded in London in 1961 and its International Secretariat is based in London.",
+"rep": 0
+},
+{
+"item": 115,
+"section": "Maths & Science",
+"question": "What is the derivative of cos(theta) with respect to theta?",
+"answer": "-sin(theta)",
+"wrong": [
+"sin(theta)",
+"-cos(theta)",
+"tan(theta)"
+],
+"reason": "The derivative of cos(theta) is -sin(theta); the derivative of sin(theta) is cos(theta).",
+"rep": 0
+},
+{
+"item": 118,
+"section": "Islamiat",
+"question": "How many Muslims took part in the Battle of Badr?",
+"answer": "313",
+"wrong": [
+"300",
+"700",
+"1000"
+],
+"reason": "The Muslim army at Badr (2 AH) had about 313 men, against roughly 1000 of the Quraysh.",
+"rep": 1
+},
+{
+"item": 119,
+"section": "Islamiat",
+"question": "Abdullah bin Ubayy was the leader of which group in Madinah?",
+"answer": "The Munafiqeen (hypocrites)",
+"wrong": [
+"The Ansar",
+"The Muhajireen",
+"The Banu Quraiza"
+],
+"reason": "Abdullah bin Ubayy was the chief of the hypocrites (Munafiqeen) of Madinah, who pretended to be Muslims while opposing the Prophet (PBUH).",
+"rep": 0
+},
+{
+"item": 121,
+"section": "Pakistan Studies",
+"question": "In which year did the Khilafat Movement begin?",
+"answer": "1919",
+"wrong": [
+"1906",
+"1911",
+"1930"
+],
+"reason": "The Khilafat Movement began in 1919 under the Ali brothers and others to protect the Ottoman Caliphate after World War I.",
+"rep": 2
+},
+{
+"item": 124,
+"section": "General Knowledge",
+"question": "In which year did the Soviet Union (Russia) invade Afghanistan?",
+"answer": "1979",
+"wrong": [
+"1971",
+"1985",
+"1989"
+],
+"reason": "Soviet troops entered Afghanistan in late December 1979 and withdrew in February 1989.",
+"rep": 0
+},
+{
+"item": 127,
+"section": "Pakistan Studies",
+"question": "The border between Pakistan and Afghanistan is called the:",
+"answer": "Durand Line",
+"wrong": [
+"Radcliffe Line",
+"McMahon Line",
+"Line of Control"
+],
+"reason": "The Durand Line (1893) is the international border between Pakistan and Afghanistan, about 2640 km long. The Radcliffe Line is the India-Pakistan border.",
+"rep": 1
+},
+{
+"item": 128,
+"section": "Islamiat",
+"question": "Hazrat Hafsa (R.A.), a wife of the Prophet ﷺ, is called Ummul Momineen. What does this title mean?",
+"answer": "Mother of the Believers",
+"wrong": [
+"Mother of the Prophet",
+"Mother of the Caliphs",
+"Mother of the Companions"
+],
+"reason": "Ummul Momineen means Mother of the Believers and is the title of all wives of the Prophet ﷺ. Hazrat Hafsa was the daughter of Hazrat Umar (R.A.).",
+"rep": 0
+},
+{
+"item": 129,
+"section": "Pakistan Studies",
+"question": "How many nuclear tests did Pakistan conduct on 28 May 1998 (Chagai-I)?",
+"answer": "Five",
+"wrong": [
+"Three",
+"Six",
+"Seven"
+],
+"reason": "Chagai-I was five simultaneous underground tests at the Ras Koh Hills, Balochistan, on 28 May 1998. A further test (Chagai-II) followed on 30 May.",
+"rep": 0
+},
+{
+"item": 131,
+"section": "Maths & Science",
+"question": "Global warming increases mainly due to the rise of which gas in the atmosphere?",
+"answer": "Carbon dioxide",
+"wrong": [
+"Oxygen",
+"Nitrogen",
+"Argon"
+],
+"reason": "Carbon dioxide is the main greenhouse gas released by burning fossil fuels. It traps heat in the atmosphere and raises the earth temperature.",
+"rep": 0
+},
+{
+"item": 132,
+"section": "Pakistan Studies",
+"question": "On which date was the Lahore (Pakistan) Resolution passed?",
+"answer": "23 March 1940",
+"wrong": [
+"14 August 1947",
+"23 March 1956",
+"30 December 1906"
+],
+"reason": "The Lahore Resolution was passed at Minar-e-Pakistan (Iqbal Park), Lahore, on 23 March 1940 at the All India Muslim League session. It is remembered as Pakistan Day.",
+"rep": 0
+},
+{
+"item": 133,
+"section": "Verbal: English",
+"question": "Choose the synonym of CANDID.",
+"answer": "Frank",
+"wrong": [
+"Secretive",
+"Deceitful",
+"Shy"
+],
+"reason": "Candid means honest and straightforward in speech, so its synonym is frank.",
+"rep": 0
+},
+{
+"item": 134,
+"section": "Verbal: English",
+"question": "When the actual words of the speaker are reported exactly as spoken, inside quotation marks, it is called:",
+"answer": "Direct speech",
+"wrong": [
+"Indirect speech",
+"Passive voice",
+"Reported clause"
+],
+"reason": "In direct speech (direct narration) the exact words are quoted. In indirect speech they are reported in the reporter's own words.",
+"rep": 0
+},
+{
+"item": 135,
+"section": "Verbal: English",
+"question": "Fill in the blank with the correct preposition: Aslam looks forward ___ meeting Ali.",
+"answer": "to",
+"wrong": [
+"for",
+"at",
+"on"
+],
+"reason": "The phrasal verb is look forward to, meaning to wait with pleasure for something.",
+"rep": 0
+},
+{
+"item": 136,
+"section": "Islamiat",
+"question": "Who led an army with elephants to demolish the Kaaba in the Year of the Elephant?",
+"answer": "Abraha",
+"wrong": [
+"Abu Jahl",
+"Abu Lahab",
+"Abdul Muttalib"
+],
+"reason": "Abraha, the Abyssinian governor of Yemen, marched on Makkah with elephants and his army was destroyed (Surah Al-Fil, 105). Abdul Muttalib was the Prophet's grandfather.",
+"rep": 0
+},
+{
+"item": 139,
+"section": "Pakistan Studies",
+"question": "In which year did Choudhry Rahmat Ali first use the word Pakistan (pamphlet Now or Never)?",
+"answer": "1933",
+"wrong": [
+"1930",
+"1940",
+"1947"
+],
+"reason": "Rahmat Ali coined the name Pakistan in the pamphlet Now or Never, published on 28 January 1933 at Cambridge.",
+"rep": 0
+},
+{
+"item": 140,
+"section": "Islamiat",
+"question": "In which year did the Hijrat (migration) of the Prophet ﷺ from Makkah to Madinah take place?",
+"answer": "622 AD",
+"wrong": [
+"570 AD",
+"610 AD",
+"632 AD"
+],
+"reason": "The Prophet ﷺ migrated from Makkah to Madinah in 622 AD, which is year 1 of the Islamic Hijri calendar.",
+"rep": 1
+},
+{
+"item": 141,
+"section": "Pakistan Studies",
+"question": "Which is the third largest city of Pakistan by population?",
+"answer": "Faisalabad",
+"wrong": [
+"Rawalpindi",
+"Multan",
+"Peshawar"
+],
+"reason": "In the 2023 census Karachi, Lahore and Faisalabad (about 3.69 million) are the three largest cities. Rawalpindi is fourth.",
+"rep": 0
+},
+{
+"item": 142,
+"section": "Pakistan Studies",
+"question": "Lyallpur is the old name of which Pakistani city?",
+"answer": "Faisalabad",
+"wrong": [
+"Sargodha",
+"Sahiwal",
+"Gujranwala"
+],
+"reason": "Lyallpur was named after Sir James Lyall and renamed Faisalabad in 1977 in honour of King Faisal of Saudi Arabia.",
+"rep": 0
+},
+{
+"item": 143,
+"section": "Islamiat",
+"question": "According to the Quran, Allah created the human being (Adam A.S.) from:",
+"answer": "Clay (soil)",
+"wrong": [
+"Light",
+"Fire",
+"Air"
+],
+"reason": "The Quran says man was created from clay (Surah Al-Mu'minun 23:12). Angels were made of light and jinn of smokeless fire.",
+"rep": 0
+},
+{
+"item": 144,
+"section": "Pakistan Studies",
+"question": "In which year was the 1962 Constitution of Pakistan abrogated?",
+"answer": "1969",
+"wrong": [
+"1958",
+"1965",
+"1971"
+],
+"reason": "General Yahya Khan imposed martial law and abrogated the 1962 Constitution on 25 March 1969 after Ayub Khan resigned.",
+"rep": 0
+},
+{
+"item": 145,
+"section": "Pakistan Studies",
+"question": "Which Article of the 1973 Constitution declares Islam as the State religion of Pakistan?",
+"answer": "Article 2",
+"wrong": [
+"Article 1",
+"Article 6",
+"Article 227"
+],
+"reason": "Article 2 of the 1973 Constitution states that Islam shall be the State religion of Pakistan.",
+"rep": 0
+},
+{
+"item": 148,
+"section": "General Knowledge",
+"question": "Where is the headquarters of Interpol located?",
+"answer": "Lyon, France",
+"wrong": [
+"Paris, France",
+"Geneva, Switzerland",
+"Brussels, Belgium"
+],
+"reason": "Interpol (International Criminal Police Organization) has its General Secretariat in Lyon, France.",
+"rep": 0
+},
+{
+"item": 149,
+"section": "Maths & Science",
+"question": "Which is the largest bone of the human body?",
+"answer": "Femur",
+"wrong": [
+"Humerus",
+"Tibia",
+"Skull"
+],
+"reason": "The femur (thigh bone) is the longest, largest and strongest bone in the human body.",
+"rep": 0
+},
+{
+"item": 161,
+"section": "Pakistan Studies",
+"question": "On which date did Pakistan become a member of the United Nations?",
+"answer": "30 September 1947",
+"wrong": [
+"14 August 1947",
+"15 October 1947",
+"24 October 1945"
+],
+"reason": "The UN General Assembly admitted Pakistan (with Yemen) on 30 September 1947 by resolution 108 (II).",
+"rep": 0
+},
+{
+"item": 168,
+"section": "Pakistan Studies",
+"question": "Which Mughal emperor built the Badshahi Mosque in Lahore?",
+"answer": "Aurangzeb Alamgir",
+"wrong": [
+"Shah Jahan",
+"Akbar",
+"Jahangir"
+],
+"reason": "The Badshahi Mosque was built by Aurangzeb between 1671 and 1673.",
+"rep": 0
+},
+{
+"item": 176,
+"section": "Pakistan Studies",
+"question": "General Qamar Javed Bajwa, former Chief of Army Staff, passed out from the Pakistan Military Academy with which Long Course?",
+"answer": "62nd PMA Long Course",
+"wrong": [
+"60th PMA Long Course",
+"64th PMA Long Course",
+"66th PMA Long Course"
+],
+"reason": "Bajwa was commissioned on 24 October 1980 in the 16th Baloch Regiment after passing out with the 62nd PMA Long Course. He was the 10th Army Chief (2016 to 2022).",
+"rep": 0
+},
+{
+"item": 178,
+"section": "Islamiat",
+"question": "In which Hijri year was Ghazwa Tabuk fought?",
+"answer": "9 AH",
+"wrong": [
+"7 AH",
+"8 AH",
+"10 AH"
+],
+"reason": "Ghazwa Tabuk took place in Rajab 9 AH (about October 630 CE) against the threat of a Byzantine attack. It was the last and largest expedition led by the Prophet (PBUH).",
+"rep": 0
+},
+{
+"item": 179,
+"section": "Pakistan Studies",
+"question": "Which agreement ended the 1965 Pakistan-India war?",
+"answer": "Tashkent Declaration",
+"wrong": [
+"Simla Agreement",
+"Indus Waters Treaty",
+"Liaquat-Nehru Pact"
+],
+"reason": "The Tashkent Declaration was signed on 10 January 1966 by Ayub Khan and Lal Bahadur Shastri, with Soviet Premier Kosygin mediating.",
+"rep": 0
+},
+{
+"item": 180,
+"section": "General Knowledge",
+"question": "Who was the leader (Fuhrer) of Germany during World War 2?",
+"answer": "Adolf Hitler",
+"wrong": [
+"Otto von Bismarck",
+"Benito Mussolini",
+"Joseph Stalin"
+],
+"reason": "Adolf Hitler led Nazi Germany from 1933 until his death in 1945. Mussolini led Italy and Stalin led the Soviet Union.",
+"rep": 0
+},
+{
+"item": 181,
+"section": "General Knowledge",
+"question": "What is the capital of Pakistan?",
+"answer": "Islamabad",
+"wrong": [
+"Karachi",
+"Lahore",
+"Rawalpindi"
+],
+"reason": "Islamabad is the capital of Pakistan. Karachi was the first capital and Rawalpindi served as the temporary capital in the 1960s.",
+"rep": 0
+},
+{
+"item": 184,
+"section": "General Knowledge",
+"question": "On which date was the United Nations officially founded?",
+"answer": "24 October 1945",
+"wrong": [
+"26 June 1945",
+"10 December 1948",
+"1 January 1942"
+],
+"reason": "The UN Charter came into force on 24 October 1945, which is celebrated as UN Day. The Charter was signed earlier on 26 June 1945 in San Francisco.",
+"rep": 0
+},
+{
+"item": 187,
+"section": "General Knowledge",
+"question": "On which date did the United States declare its independence?",
+"answer": "4 July 1776",
+"wrong": [
+"4 July 1789",
+"14 July 1776",
+"1 January 1783"
+],
+"reason": "The Declaration of Independence was adopted on 4 July 1776, celebrated as Independence Day in the USA.",
+"rep": 1
+},
+{
+"item": 188,
+"section": "Current Affairs",
+"question": "Who is the current Chairman of the National Accountability Bureau (NAB) of Pakistan?",
+"answer": "Lt Gen (retd) Nazir Ahmad Butt",
+"wrong": [
+"Aftab Sultan",
+"Javed Iqbal",
+"Qamar Zaman Chaudhry"
+],
+"reason": "Nazir Ahmad Butt became NAB chairman on 4 March 2023 and received a three-year extension notified from 6 March 2026.",
+"rep": 0
+},
+{
+"item": 190,
+"section": "Islamiat",
+"question": "In which year (Hijri) did the Battle of Karbala take place?",
+"answer": "61 AH",
+"wrong": [
+"40 AH",
+"50 AH",
+"72 AH"
+],
+"reason": "The Battle of Karbala was fought on 10 Muharram 61 AH (10 October 680 CE), where Hazrat Imam Hussain (RA) was martyred.",
+"rep": 0
+},
+{
+"item": 191,
+"section": "Pakistan Studies",
+"question": "Who coined the name Pakistan?",
+"answer": "Choudhry Rahmat Ali",
+"wrong": [
+"Allama Iqbal",
+"Muhammad Ali Jinnah",
+"Sir Syed Ahmad Khan"
+],
+"reason": "Choudhry Rahmat Ali coined the name in his pamphlet Now or Never, published on 28 January 1933.",
+"rep": 0
+},
+{
+"item": 192,
+"section": "Pakistan Studies",
+"question": "In which year was the War of Independence (against the British East India Company) fought?",
+"answer": "1857",
+"wrong": [
+"1757",
+"1835",
+"1906"
+],
+"reason": "The War of Independence of 1857 was the major uprising against British rule in the subcontinent, ending Mughal rule.",
+"rep": 0
+},
+{
+"item": 194,
+"section": "Islamiat",
+"question": "Which prophets raised the foundations of the Kaaba (as stated in Surah Al-Baqarah, verse 127)?",
+"answer": "Hazrat Ibrahim (AS) and Hazrat Ismail (AS)",
+"wrong": [
+"Hazrat Nuh (AS) and Hazrat Hud (AS)",
+"Hazrat Musa (AS) and Hazrat Harun (AS)",
+"Hazrat Yaqub (AS) and Hazrat Yusuf (AS)"
+],
+"reason": "The Quran says Ibrahim and Ismail raised the foundations of the House (Kaaba) in Makkah.",
+"rep": 0
+},
+{
+"item": 196,
+"section": "Islamiat",
+"question": "Before the change of qibla in 2 AH, towards which place did Muslims pray?",
+"answer": "Bait ul Maqdis (Masjid al-Aqsa), Jerusalem",
+"wrong": [
+"Masjid al-Haram only",
+"Masjid an-Nabawi",
+"Masjid Quba"
+],
+"reason": "Muslims first prayed toward Bait ul Maqdis in Jerusalem, then the qibla was changed to the Kaaba in Makkah.",
+"rep": 0
+},
+{
+"item": 197,
+"section": "Verbal: Maths & Reasoning",
+"question": "What is one third of one fourth of 120?",
+"answer": "10",
+"wrong": [
+"30",
+"40",
+"12"
+],
+"reason": "One fourth of 120 = 30, and one third of 30 = 10.",
+"rep": 1
+},
+{
+"item": 199,
+"section": "Pakistan Studies",
+"question": "Who was called the Ambassador of Hindu-Muslim Unity by Sarojini Naidu?",
+"answer": "Muhammad Ali Jinnah",
+"wrong": [
+"Allama Iqbal",
+"Liaquat Ali Khan",
+"Maulana Muhammad Ali Jauhar"
+],
+"reason": "Sarojini Naidu gave Jinnah this title for his role in the 1916 Lucknow Pact between Congress and the Muslim League.",
+"rep": 0
+},
+{
+"item": 200,
+"section": "General Knowledge",
+"question": "What is the capital of Cuba?",
+"answer": "Havana",
+"wrong": [
+"Santiago de Cuba",
+"Kingston",
+"Santo Domingo"
+],
+"reason": "Havana is the capital and largest city of Cuba.",
+"rep": 1
+},
+{
+"item": 201,
+"section": "Islamiat",
+"question": "How many archers did the Prophet (peace be upon him) place on the hill (Jabal Rumat) in the Battle of Uhud?",
+"answer": "50",
+"wrong": [
+"40",
+"70",
+"100"
+],
+"reason": "The Prophet placed 50 archers under Abdullah bin Jubayr on the hill to guard the rear of the Muslim army.",
+"rep": 0
+},
+{
+"item": 202,
+"section": "Islamiat",
+"question": "Hazrat Umm Kulthum (R.A.) was related to the Prophet Muhammad (peace be upon him) as his:",
+"answer": "Daughter",
+"wrong": [
+"Wife",
+"Aunt",
+"Sister"
+],
+"reason": "Umm Kulthum was the Prophet's daughter and married Hazrat Uthman (R.A.) after the death of her sister Ruqayyah; he is called Dhun-Nurayn.",
+"rep": 0
+},
+{
+"item": 205,
+"section": "Current Affairs",
+"question": "Who is the President of China (as of October 2026)?",
+"answer": "Xi Jinping",
+"wrong": [
+"Li Qiang",
+"Hu Jintao",
+"Wang Yi"
+],
+"reason": "Xi Jinping is President of the People's Republic of China (and General Secretary of the Communist Party). Li Qiang is the Premier.",
+"rep": 1
+},
+{
+"item": 206,
+"section": "Verbal: Maths & Reasoning",
+"question": "A train runs at twice the speed of a car. The car covers 60 km in 30 minutes. How many km will the train cover in 30 minutes?",
+"answer": "120 km",
+"wrong": [
+"60 km",
+"90 km",
+"240 km"
+],
+"reason": "In 30 minutes the car covers 60 km, so the train covers twice that distance in the same time: 2 x 60 = 120 km.",
+"rep": 0
+},
+{
+"item": 207,
+"section": "Verbal: Maths & Reasoning",
+"question": "Ali is 4 years old and his sister is three times his age. How old will the sister be when Ali is 10 years old?",
+"answer": "18 years",
+"wrong": [
+"12 years",
+"16 years",
+"30 years"
+],
+"reason": "Sister is 3 x 4 = 12 now. Ali needs 6 more years to reach 10, so the sister will be 12 + 6 = 18.",
+"rep": 0
+},
+{
+"item": 208,
+"section": "Pakistan Studies",
+"question": "In which year was Liaquat Ali Khan, the first Prime Minister of Pakistan, assassinated?",
+"answer": "1951",
+"wrong": [
+"1948",
+"1949",
+"1953"
+],
+"reason": "He was shot on 16 October 1951 at Company Bagh (later Liaquat Bagh), Rawalpindi.",
+"rep": 0
+},
+{
+"item": 212,
+"section": "General Knowledge",
+"question": "What is the capital of Bhutan?",
+"answer": "Thimphu",
+"wrong": [
+"Paro",
+"Punakha",
+"Kathmandu"
+],
+"reason": "Thimphu is the capital and largest city of Bhutan; Punakha was the old capital until 1955.",
+"rep": 0
+},
+{
+"item": 214,
+"section": "General Knowledge",
+"question": "The kiwi, a flightless bird, is the national symbol of which country?",
+"answer": "New Zealand",
+"wrong": [
+"Australia",
+"South Africa",
+"Fiji"
+],
+"reason": "The kiwi is New Zealand's national bird, and New Zealanders are nicknamed Kiwis.",
+"rep": 1
+},
+{
+"item": 217,
+"section": "Verbal: English",
+"question": "What is the meaning of the word idleness?",
+"answer": "Laziness",
+"wrong": [
+"Eagerness",
+"Honesty",
+"Bravery"
+],
+"reason": "Idleness means the state of doing no work or being lazy; its synonym is laziness.",
+"rep": 0
+},
+{
+"item": 219,
+"section": "Islamiat",
+"question": "In which city is Baitul Muqaddas (Masjid Al-Aqsa, the first Qibla of Muslims) located?",
+"answer": "Jerusalem",
+"wrong": [
+"Makkah",
+"Madinah",
+"Damascus"
+],
+"reason": "Baitul Muqaddas (Al-Aqsa Mosque) is in Jerusalem (Al-Quds), Palestine; it was the first Qibla of Muslims.",
+"rep": 0
+},
+{
+"item": 221,
+"section": "Verbal: Maths & Reasoning",
+"question": "Ahmad is 5 years old and his sister is three times his age. How old will the sister be when Ahmad is 10 years old?",
+"answer": "20 years",
+"wrong": [
+"15 years",
+"25 years",
+"30 years"
+],
+"reason": "Sister is 3 x 5 = 15 now. Ahmad needs 5 more years to reach 10, so the sister will be 15 + 5 = 20.",
+"rep": 1
+},
+{
+"item": 224,
+"section": "Islamiat",
+"question": "Which Prophet (A.S.) opposed the tyrant king Nimrod (Namrud)?",
+"answer": "Hazrat Ibrahim (A.S.)",
+"wrong": [
+"Hazrat Musa (A.S.)",
+"Hazrat Nuh (A.S.)",
+"Hazrat Isa (A.S.)"
+],
+"reason": "Hazrat Ibrahim (A.S.) debated Nimrod (Quran 2:258) and was thrown into the fire, which Allah made cool and safe.",
+"rep": 0
+},
+{
+"item": 225,
+"section": "Islamiat",
+"question": "How many times is the name Muhammad mentioned in the Holy Quran?",
+"answer": "4 times",
+"wrong": [
+"2 times",
+"5 times",
+"7 times"
+],
+"reason": "The name Muhammad appears four times: 3:144, 33:40, 47:2 and 48:29 (Ahmad appears once, 61:6).",
+"rep": 0
+},
+{
+"item": 227,
+"section": "General Knowledge",
+"question": "What is the officially announced range of Pakistan's Ababeel ballistic missile?",
+"answer": "2,200 km",
+"wrong": [
+"750 km",
+"1,500 km",
+"2,750 km"
+],
+"reason": "ISPR announced the first flight test of the surface-to-surface missile Ababeel in January 2017 with a range of 2,200 km. It is capable of carrying multiple warheads (MIRV).",
+"rep": 0
+},
+{
+"item": 228,
+"section": "General Knowledge",
+"question": "In which year did the Al-Khalid main battle tank enter service with the Pakistan Army?",
+"answer": "2001",
+"wrong": [
+"1990",
+"1996",
+"2008"
+],
+"reason": "Al-Khalid (MBT-2000) was developed jointly by Pakistan and China, and the first batch entered Pakistan Army service in 2001. The improved Al-Khalid-I was inducted in 2020.",
+"rep": 2
+},
+{
+"item": 229,
+"section": "General Knowledge",
+"question": "Which country hosted the FIFA World Cup 2022?",
+"answer": "Qatar",
+"wrong": [
+"Russia",
+"Saudi Arabia",
+"United Arab Emirates"
+],
+"reason": "The 2022 FIFA World Cup was held in Qatar, the first Arab country to host it; the final was played at Lusail Stadium on 18 December 2022.",
+"rep": 0
+},
+{
+"item": 233,
+"section": "General Knowledge",
+"question": "Which country won the FIFA World Cup 2022?",
+"answer": "Argentina",
+"wrong": [
+"France",
+"Croatia",
+"Brazil"
+],
+"reason": "Argentina beat France 4-2 on penalties after a 3-3 draw in the final, winning its third World Cup.",
+"rep": 0
+},
+{
+"item": 236,
+"section": "Pakistan Studies",
+"question": "In which year was the first census of Pakistan held?",
+"answer": "1951",
+"wrong": [
+"1947",
+"1961",
+"1972"
+],
+"reason": "The first census of Pakistan was held in February 1951; later censuses were in 1961, 1972, 1981, 1998, 2017 and 2023.",
+"rep": 0
+},
+{
+"item": 237,
+"section": "Islamiat",
+"question": "What was the relation of Abu Talib with Prophet Muhammad (PBUH)?",
+"answer": "Paternal uncle",
+"wrong": [
+"Maternal uncle",
+"Grandfather",
+"Cousin"
+],
+"reason": "Abu Talib was a son of Abd al-Muttalib and so the paternal uncle of the Prophet; he took care of him after the death of his grandfather.",
+"rep": 0
+},
+{
+"item": 238,
+"section": "Islamiat",
+"question": "Hazrat Musa (AS) was the son of which person?",
+"answer": "Imran",
+"wrong": [
+"Harun",
+"Yaqub",
+"Ibrahim"
+],
+"reason": "Islamic tradition names Imran (Amram) as the father of Hazrat Musa (AS) and Hazrat Harun (AS).",
+"rep": 0
+},
+{
+"item": 241,
+"section": "Islamiat",
+"question": "What is the life between death and the Day of Judgment called in Islam?",
+"answer": "Barzakh",
+"wrong": [
+"Mahshar",
+"Qiyamah",
+"Sirat"
+],
+"reason": "Barzakh is the intermediate stage between death and resurrection, based on Surah Al-Muminun, verse 100.",
+"rep": 0
+},
+{
+"item": 246,
+"section": "Verbal: Maths & Reasoning",
+"question": "If the 2nd day of a month is Monday, what day will the 18th be?",
+"answer": "Wednesday",
+"wrong": [
+"Monday",
+"Tuesday",
+"Thursday"
+],
+"reason": "From the 2nd to the 18th is 16 days. 16 divided by 7 leaves remainder 2, so Monday + 2 days = Wednesday.",
+"rep": 0
+},
+{
+"item": 250,
+"section": "Pakistan Studies",
+"question": "Who wrote the lyrics of the National Anthem (Qaumi Tarana) of Pakistan?",
+"answer": "Hafeez Jalandhari",
+"wrong": [
+"Allama Iqbal",
+"Ahmad Ghulam Ali Chagla",
+"Faiz Ahmad Faiz"
+],
+"reason": "The lyrics were written by Abu al-Asar Hafeez Jalandhari, while the music was composed by Ahmad Ghulam Ali Chagla. It was officially adopted in 1954.",
+"rep": 0
+},
+{
+"item": 251,
+"section": "Islamiat",
+"question": "Hazrat Bilal (R.A.) was the slave of whom before he was freed?",
+"answer": "Umayya bin Khalaf",
+"wrong": [
+"Abu Jahl",
+"Abu Lahab",
+"Utbah bin Rabia"
+],
+"reason": "Bilal bin Rabah (R.A.) was a slave of Umayya bin Khalaf, who tortured him for accepting Islam. Hazrat Abu Bakr (R.A.) bought and freed him.",
+"rep": 0
+},
+{
+"item": 252,
+"section": "General Knowledge",
+"question": "What is the full name of the PSL, the Pakistani cricket league?",
+"answer": "Pakistan Super League",
+"wrong": [
+"Pakistan Sports League",
+"Pakistan Standard League",
+"Premier Super League"
+],
+"reason": "PSL stands for Pakistan Super League, the professional Twenty20 cricket league of Pakistan, started in 2016.",
+"rep": 0
+},
+{
+"item": 255,
+"section": "General Knowledge",
+"question": "Where is the headquarters of the International Monetary Fund (IMF)?",
+"answer": "Washington, D.C.",
+"wrong": [
+"New York",
+"Geneva",
+"London"
+],
+"reason": "The IMF headquarters is at 700 19th Street NW, Washington, D.C., USA.",
+"rep": 0
+},
+{
+"item": 257,
+"section": "General Knowledge",
+"question": "What is the capital of Iran?",
+"answer": "Tehran",
+"wrong": [
+"Isfahan",
+"Tabriz",
+"Baghdad"
+],
+"reason": "Tehran is the capital and largest city of Iran.",
+"rep": 0
+},
+{
+"item": 259,
+"section": "Verbal: Maths & Reasoning",
+"question": "What is 90% of 70?",
+"answer": "63",
+"wrong": [
+"60",
+"65",
+"7"
+],
+"reason": "90% of 70 = 0.9 x 70 = 63.",
+"rep": 0
+},
+{
+"item": 266,
+"section": "Verbal: Maths & Reasoning",
+"question": "If the 26th day of a month is Sunday, what day will the 4th day of that month be?",
+"answer": "Saturday",
+"wrong": [
+"Friday",
+"Sunday",
+"Monday"
+],
+"reason": "From the 4th to the 26th is 22 days; 22 = 3 weeks + 1 day, so the 4th is one day before Sunday, which is Saturday.",
+"rep": 0
+},
+{
+"item": 267,
+"section": "Verbal: Maths & Reasoning",
+"question": "What is one quarter of 120?",
+"answer": "30",
+"wrong": [
+"20",
+"40",
+"24"
+],
+"reason": "120 divided by 4 = 30.",
+"rep": 0
+},
+{
+"item": 268,
+"section": "Pakistan Studies",
+"question": "Who was the Viceroy of India at the time of the partition in August 1947?",
+"answer": "Lord Mountbatten",
+"wrong": [
+"Lord Wavell",
+"Lord Linlithgow",
+"Lord Irwin"
+],
+"reason": "Lord Mountbatten was the last Viceroy of India (1947) and oversaw the partition. Lord Wavell was his predecessor.",
+"rep": 0
+},
+{
+"item": 269,
+"section": "Islamiat",
+"question": "Who was the first child to embrace Islam?",
+"answer": "Hazrat Ali (R.A.)",
+"wrong": [
+"Hazrat Zaid bin Haritha (R.A.)",
+"Hazrat Abdullah bin Abbas (R.A.)",
+"Hazrat Hasan (R.A.)"
+],
+"reason": "Hazrat Ali (R.A.), the young cousin of the Prophet (PBUH), is the first child to accept Islam.",
+"rep": 0
+},
+{
+"item": 270,
+"section": "Pakistan Studies",
+"question": "In which year did Fatima Jinnah, the Mother of the Nation (Madar-e-Millat), die?",
+"answer": "1967",
+"wrong": [
+"1964",
+"1965",
+"1971"
+],
+"reason": "Fatima Jinnah died in Karachi on 9 July 1967.",
+"rep": 0
+},
+{
+"item": 272,
+"section": "Verbal: Maths & Reasoning",
+"question": "What is the LCM of 4 and 8?",
+"answer": "8",
+"wrong": [
+"4",
+"16",
+"32"
+],
+"reason": "8 is a multiple of 4 and the smallest common multiple of both numbers is 8.",
+"rep": 0
+},
+{
+"item": 274,
+"section": "Islamiat",
+"question": "Zabihullah (the one offered for sacrifice) is the title of which Prophet?",
+"answer": "Hazrat Ismail (A.S.)",
+"wrong": [
+"Hazrat Ishaq (A.S.)",
+"Hazrat Yaqub (A.S.)",
+"Hazrat Yusuf (A.S.)"
+],
+"reason": "Hazrat Ismail (A.S.) is known as Zabihullah, the son Hazrat Ibrahim (A.S.) was ready to sacrifice at Allah's command.",
+"rep": 0
+},
+{
+"item": 277,
+"section": "Islamiat",
+"question": "On which night was the five daily prayers (Salah) made obligatory for Muslims?",
+"answer": "Night of Miraj (Shab-e-Miraj)",
+"wrong": [
+"Laylat-ul-Qadr",
+"Shab-e-Barat",
+"Night of Hijrat"
+],
+"reason": "The five daily prayers were prescribed during the Isra and Miraj journey of the Prophet (PBUH), when 50 prayers were reduced to five.",
+"rep": 0
+},
+{
+"item": 278,
+"section": "Pakistan Studies",
+"question": "Who was the head of state under the 1962 Constitution of Pakistan?",
+"answer": "The President",
+"wrong": [
+"The Prime Minister",
+"The Governor General",
+"The Chief Justice"
+],
+"reason": "The 1962 Constitution gave Pakistan a presidential system in which the President was both head of state and head of government; the post of Prime Minister was abolished.",
+"rep": 0
+},
+{
+"item": 281,
+"section": "General Knowledge",
+"question": "What is the currency of Russia?",
+"answer": "Ruble",
+"wrong": [
+"Rupee",
+"Dinar",
+"Lira"
+],
+"reason": "The official currency of Russia is the Russian ruble (code RUB), issued by the Central Bank of Russia.",
+"rep": 0
+},
+{
+"item": 285,
+"section": "Pakistan Studies",
+"question": "In which year was the One Unit scheme implemented in Pakistan?",
+"answer": "1955",
+"wrong": [
+"1947",
+"1956",
+"1962"
+],
+"reason": "The One Unit scheme merged the western provinces into West Pakistan in 1955 (Act passed 30 September 1955, in force 14 October 1955) and was ended in 1970.",
+"rep": 0
+},
+{
+"item": 286,
+"section": "Current Affairs",
+"question": "On which date is the International Day to Combat Islamophobia observed?",
+"answer": "15 March",
+"wrong": [
+"5 February",
+"5 August",
+"14 August"
+],
+"reason": "The UN General Assembly declared 15 March as the International Day to Combat Islamophobia in 2022, on a resolution moved by Pakistan and the OIC.",
+"rep": 0
+},
+{
+"item": 289,
+"section": "Current Affairs",
+"question": "Who is the Prime Minister of France (as of October 2026)?",
+"answer": "Sebastien Lecornu",
+"wrong": [
+"Francois Bayrou",
+"Gabriel Attal",
+"Michel Barnier"
+],
+"reason": "Sebastien Lecornu has been Prime Minister of France since 9 September 2025 and was still in office in October 2026.",
+"rep": 0
+},
+{
+"item": 290,
+"section": "Verbal: Maths & Reasoning",
+"question": "If the 5th day of a month is Friday, what day will the 28th be?",
+"answer": "Sunday",
+"wrong": [
+"Saturday",
+"Friday",
+"Monday"
+],
+"reason": "From the 5th to the 28th is 23 days; 23 = 3 weeks + 2 days, so Friday + 2 = Sunday.",
+"rep": 0
+},
+{
+"item": 291,
+"section": "Pakistan Studies",
+"question": "In 2020, Kashmir Highway in Islamabad was renamed as:",
+"answer": "Srinagar Highway",
+"wrong": [
+"Muzaffarabad Highway",
+"Jinnah Avenue",
+"Kargil Highway"
+],
+"reason": "In August 2020 Kashmir Highway was renamed Srinagar Highway to show solidarity with Kashmiris on the first Youm-e-Istehsal.",
+"rep": 0
+},
+{
+"item": 292,
+"section": "Verbal: Maths & Reasoning",
+"question": "If the 1st day of a month is Monday, what day will the 15th be?",
+"answer": "Monday",
+"wrong": [
+"Sunday",
+"Tuesday",
+"Saturday"
+],
+"reason": "From the 1st to the 15th is 14 days, exactly two weeks, so the day is the same: Monday.",
+"rep": 0
+},
+{
+"item": 293,
+"section": "Pakistan Studies",
+"question": "In which district of Punjab is Rohtas Fort located?",
+"answer": "Jhelum",
+"wrong": [
+"Rawalpindi",
+"Lahore",
+"Attock"
+],
+"reason": "Rohtas Fort was built by Sher Shah Suri near Dina in Jhelum district and is a UNESCO World Heritage Site since 1997.",
+"rep": 0
+},
+{
+"item": 295,
+"section": "Pakistan Studies",
+"question": "Who signed the Indus Waters Treaty (1960) on behalf of Pakistan?",
+"answer": "Field Marshal Ayub Khan",
+"wrong": [
+"Liaquat Ali Khan",
+"Zulfikar Ali Bhutto",
+"Iskander Mirza"
+],
+"reason": "The treaty was signed in Karachi on 19 September 1960 by President Ayub Khan of Pakistan and Prime Minister Nehru of India, with the World Bank also signing.",
+"rep": 0
+},
+{
+"item": 296,
+"section": "Pakistan Studies",
+"question": "In which city is the Pakistan Navy Headquarters (Naval Headquarters) located?",
+"answer": "Islamabad",
+"wrong": [
+"Karachi",
+"Lahore",
+"Gwadar"
+],
+"reason": "Naval Headquarters was shifted from Karachi to Islamabad in 1975 and is in Sector E-9, Islamabad.",
+"rep": 0
+},
+{
+"item": 298,
+"section": "Verbal: Maths & Reasoning",
+"question": "What is 40% of 60?",
+"answer": "24",
+"wrong": [
+"20",
+"22",
+"26"
+],
+"reason": "40% of 60 = 40/100 x 60 = 24.",
+"rep": 0
+},
+{
+"item": 301,
+"section": "Verbal: Maths & Reasoning",
+"question": "If the 3rd day of a month is Sunday, what day will the 15th day of that month be?",
+"answer": "Friday",
+"wrong": [
+"Thursday",
+"Saturday",
+"Sunday"
+],
+"reason": "From the 3rd to the 15th is 12 days; 12 = 1 week + 5 days, so Sunday + 5 days = Friday.",
+"rep": 0
+},
+{
+"item": 302,
+"section": "Verbal: Maths & Reasoning",
+"question": "Complete the series: 1A, 2D, 3H, ?",
+"answer": "4M",
+"wrong": [
+"4L",
+"4N",
+"5M"
+],
+"reason": "Numbers go 1, 2, 3, 4. Letters A, D, H, M move forward by 3, 4, 5, so the next letter is M.",
+"rep": 0
+},
+{
+"item": 304,
+"section": "Verbal: Maths & Reasoning",
+"question": "Cow is to milk as dog is to ?",
+"answer": "Bark",
+"wrong": [
+"Fur",
+"Tail",
+"Bone"
+],
+"reason": "A cow gives milk and a dog gives a bark, the thing it produces.",
+"rep": 0
+},
+{
+"item": 306,
+"section": "Verbal: Maths & Reasoning",
+"question": "Train A runs at 60 km/h and train B is twice as fast. How many km does train B cover in 30 minutes?",
+"answer": "60 km",
+"wrong": [
+"30 km",
+"120 km",
+"90 km"
+],
+"reason": "Speed of B = 120 km/h. In 30 minutes (half an hour) it covers 120 x 1/2 = 60 km.",
+"rep": 0
+},
+{
+"item": 308,
+"section": "Islamiat",
+"question": "In which city did the Quraish tribe live?",
+"answer": "Makkah",
+"wrong": [
+"Madinah",
+"Taif",
+"Jeddah"
+],
+"reason": "The Quraish were the ruling tribe of Makkah and guardians of the Kaaba.",
+"rep": 0
+},
+{
+"item": 309,
+"section": "Pakistan Studies",
+"question": "In which year was the first Round Table Conference held in London?",
+"answer": "1930",
+"wrong": [
+"1929",
+"1931",
+"1932"
+],
+"reason": "The first Round Table Conference began on 12 November 1930 in London. The Congress did not attend.",
+"rep": 0
+},
+{
+"item": 310,
+"section": "Pakistan Studies",
+"question": "Who started the Faraizi movement in Bengal?",
+"answer": "Haji Shariatullah",
+"wrong": [
+"Syed Ahmad Barelvi",
+"Titu Mir",
+"Sir Syed Ahmad Khan"
+],
+"reason": "Haji Shariatullah founded the Faraizi movement in 1818 to make Bengali Muslims follow the obligatory duties (faraiz) of Islam. His son Dudu Miyan later led it.",
+"rep": 0
+},
+{
+"item": 312,
+"section": "Islamiat",
+"question": "Which companion served the Prophet Muhammad (PBUH) for ten years?",
+"answer": "Hazrat Anas bin Malik (R.A.)",
+"wrong": [
+"Hazrat Abu Hurairah (R.A.)",
+"Hazrat Bilal (R.A.)",
+"Hazrat Zaid bin Thabit (R.A.)"
+],
+"reason": "Hazrat Anas bin Malik (R.A.) served the Prophet (PBUH) for ten years in Madinah, starting as a boy.",
+"rep": 0
+},
+{
+"item": 313,
+"section": "Pakistan Studies",
+"question": "Iran, Turkey and Pakistan formed which organization in 1964?",
+"answer": "Regional Cooperation for Development (RCD)",
+"wrong": [
+"Economic Cooperation Organization (ECO)",
+"SEATO",
+"Baghdad Pact"
+],
+"reason": "RCD was founded in July 1964 by Iran, Pakistan and Turkey for economic and social development. It was replaced by ECO in 1985.",
+"rep": 0
+},
+{
+"item": 314,
+"section": "General Knowledge",
+"question": "In which year did the UN General Assembly adopt the Universal Declaration of Human Rights?",
+"answer": "1948",
+"wrong": [
+"1945",
+"1950",
+"1956"
+],
+"reason": "The Declaration was adopted on 10 December 1948 as resolution 217 A (III) in Paris.",
+"rep": 0
+},
+{
+"item": 315,
+"section": "General Knowledge",
+"question": "Which is the national bird of Pakistan?",
+"answer": "Chukar (Chakor)",
+"wrong": [
+"Peacock",
+"Sparrow",
+"Shaheen"
+],
+"reason": "The chukar partridge (chakor) is the national bird of Pakistan.",
+"rep": 0
+},
+{
+"item": 318,
+"section": "Verbal: English",
+"question": "Choose the synonym of JUBILANT.",
+"answer": "Joyful",
+"wrong": [
+"Sorrowful",
+"Angry",
+"Fearful"
+],
+"reason": "Jubilant means feeling or showing great joy, so joyful is the closest meaning.",
+"rep": 0
+},
+{
+"item": 319,
+"section": "Verbal: English",
+"question": "Choose the antonym of GLORY.",
+"answer": "Disgrace",
+"wrong": [
+"Honour",
+"Fame",
+"Triumph"
+],
+"reason": "Glory means great honour and fame; its opposite is disgrace or shame.",
+"rep": 0
+},
+{
+"item": 321,
+"section": "Pakistan Studies",
+"question": "In which year did Quaid-e-Azam Muhammad Ali Jinnah leave the Indian National Congress?",
+"answer": "1920",
+"wrong": [
+"1913",
+"1916",
+"1928"
+],
+"reason": "Jinnah resigned from the Congress at its Nagpur session in December 1920 because he opposed Gandhi's non-cooperation movement.",
+"rep": 0
+},
+{
+"item": 323,
+"section": "Verbal: Maths & Reasoning",
+"question": "Find the next letter in the series: A, C, F, ?",
+"answer": "J",
+"wrong": [
+"I",
+"K",
+"H"
+],
+"reason": "Positions are 1, 3, 6, 10: gaps of 2, 3, 4. Next is 10, which is J.",
+"rep": 0
+},
+{
+"item": 324,
+"section": "Verbal: Maths & Reasoning",
+"question": "What is 90% of 80?",
+"answer": "72",
+"wrong": [
+"70",
+"76",
+"8"
+],
+"reason": "90% of 80 = 0.9 x 80 = 72.",
+"rep": 0
+},
+{
+"item": 326,
+"section": "Verbal: Maths & Reasoning",
+"question": "If the 1st day of a month is Monday, what day will the 12th be?",
+"answer": "Friday",
+"wrong": [
+"Thursday",
+"Saturday",
+"Wednesday"
+],
+"reason": "The 1st, 8th and 15th are Mondays. The 12th is 4 days after the 8th, so it is Friday.",
+"rep": 0
+},
+{
+"item": 331,
+"section": "Islamiat",
+"question": "What was the relationship of Hazrat Hamza (RA) with Prophet Muhammad (PBUH)?",
+"answer": "Paternal uncle (and foster brother)",
+"wrong": [
+"Maternal uncle",
+"Cousin",
+"Father-in-law"
+],
+"reason": "Hazrat Hamza was a son of Abdul Muttalib, so he was the Prophet's paternal uncle. Both were also nursed by Thuwaibah, so he was a foster brother too. He is called Sayyid-ush-Shuhada.",
+"rep": 0
+},
+{
+"item": 333,
+"section": "Islamiat",
+"question": "According to a hadith in Sahih Muslim, which voluntary (nafl) prayer is the best after the obligatory prayers?",
+"answer": "Tahajjud (night prayer)",
+"wrong": [
+"Ishraq",
+"Chasht (Duha)",
+"Awwabin"
+],
+"reason": "The Prophet (PBUH) said the best prayer after the obligatory prayers is the night prayer, which is Tahajjud (Sahih Muslim).",
+"rep": 0
+},
+{
+"item": 336,
+"section": "Pakistan Studies",
+"question": "Who conquered Sindh in 711-712 AD?",
+"answer": "Muhammad bin Qasim",
+"wrong": [
+"Mahmud of Ghazni",
+"Tariq bin Ziyad",
+"Qutb-ud-Din Aibak"
+],
+"reason": "The Umayyad general Muhammad bin Qasim, nephew of Hajjaj bin Yusuf, defeated Raja Dahir and conquered Sindh.",
+"rep": 0
+},
+{
+"item": 340,
+"section": "Islamiat",
+"question": "In which Ghazwa were about 70 Companions martyred, the largest number in any Ghazwa?",
+"answer": "Ghazwa Uhud",
+"wrong": [
+"Ghazwa Badr",
+"Ghazwa Khandaq",
+"Ghazwa Khaibar"
+],
+"reason": "About 70 Muslims were martyred at Uhud (3 AH), including Hazrat Hamza (RA). Far fewer were martyred at Badr (14) and Khandaq (about 6).",
+"rep": 0
+},
+{
+"item": 342,
+"section": "General Knowledge",
+"question": "Which country is known as the Land of the Rising Sun?",
+"answer": "Japan",
+"wrong": [
+"China",
+"South Korea",
+"Thailand"
+],
+"reason": "Japan's name Nippon or Nihon means sun origin, so it is called the Land of the Rising Sun.",
+"rep": 0
+},
+{
+"item": 343,
+"section": "General Knowledge",
+"question": "Which continent is the coldest on Earth?",
+"answer": "Antarctica",
+"wrong": [
+"Arctic (North Pole region)",
+"Europe",
+"Asia"
+],
+"reason": "Antarctica has the lowest recorded temperature on Earth, minus 89.2 degrees C at Vostok Station on 21 July 1983.",
+"rep": 0
+},
+{
+"item": 346,
+"section": "Pakistan Studies",
+"question": "On which date is Pakistan Air Force Day observed every year?",
+"answer": "7 September",
+"wrong": [
+"6 September",
+"14 August",
+"23 March"
+],
+"reason": "PAF Day on 7 September commemorates the role of the PAF in the 1965 war. Defence Day is 6 September.",
+"rep": 0
+},
+{
+"item": 348,
+"section": "Islamiat",
+"question": "On which Prophet was the Injeel (Gospel) revealed?",
+"answer": "Hazrat Isa (AS)",
+"wrong": [
+"Hazrat Musa (AS)",
+"Hazrat Dawood (AS)",
+"Hazrat Ibrahim (AS)"
+],
+"reason": "Tawrat was revealed on Musa, Zabur on Dawood, Injeel on Isa (Jesus) and the Quran on Prophet Muhammad (PBUH).",
+"rep": 0
+},
+{
+"item": 350,
+"section": "Pakistan Studies",
+"question": "How many general (directly elected) seats are there in the National Assembly of Pakistan?",
+"answer": "266",
+"wrong": [
+"272",
+"336",
+"342"
+],
+"reason": "Of the 336 seats, 266 are general seats, 60 are reserved for women and 10 for non-Muslims. Before the 2022 delimitation it was 272 general out of 342.",
+"rep": 0
+},
+{
+"item": 351,
+"section": "Islamiat",
+"question": "How many sons did Prophet Muhammad (SAW) have?",
+"answer": "Three",
+"wrong": [
+"Two",
+"Four",
+"Five"
+],
+"reason": "The Prophet (SAW) had three sons: Qasim, Abdullah (also called Tayyib and Tahir) and Ibrahim. All of them died in childhood.",
+"rep": 0
+},
+{
+"item": 359,
+"section": "Pakistan Studies",
+"question": "Who started the Civil Disobedience Movement in British India?",
+"answer": "Mahatma Gandhi",
+"wrong": [
+"Muhammad Ali Jinnah",
+"Bal Gangadhar Tilak",
+"Jawaharlal Nehru"
+],
+"reason": "Gandhi began the Civil Disobedience Movement in 1930 with the Salt March.",
+"rep": 0
+},
+{
+"item": 360,
+"section": "Pakistan Studies",
+"question": "In which year did the Civil Disobedience Movement begin?",
+"answer": "1930",
+"wrong": [
+"1920",
+"1922",
+"1942"
+],
+"reason": "The movement began on 12 March 1930 when Gandhi started the Salt March.",
+"rep": 0
+},
+{
+"item": 361,
+"section": "Pakistan Studies",
+"question": "What was the main event that opened the Civil Disobedience Movement?",
+"answer": "The Salt March",
+"wrong": [
+"The Jallianwala Bagh protest",
+"The Chauri Chaura incident",
+"The Lucknow Pact"
+],
+"reason": "Gandhi marched from Sabarmati Ashram to Dandi in 1930 to defy the British salt tax and salt monopoly.",
+"rep": 0
+},
+{
+"item": 362,
+"section": "Pakistan Studies",
+"question": "Who led the Salt March (Dandi March) of 1930?",
+"answer": "Mahatma Gandhi",
+"wrong": [
+"Subhas Chandra Bose",
+"Maulana Muhammad Ali Jauhar",
+"Sardar Patel"
+],
+"reason": "Gandhi led 78 followers about 387 km from Sabarmati Ashram to Dandi, starting on 12 March 1930.",
+"rep": 0
+},
+{
+"item": 363,
+"section": "Pakistan Studies",
+"question": "In which year did the Non-Cooperation Movement begin in India?",
+"answer": "1920",
+"wrong": [
+"1905",
+"1916",
+"1930"
+],
+"reason": "Gandhi launched the Non-Cooperation Movement in 1920 and called it off in February 1922 after the Chauri Chaura incident.",
+"rep": 0
+},
+{
+"item": 364,
+"section": "Pakistan Studies",
+"question": "Who launched the Non-Cooperation Movement?",
+"answer": "Mahatma Gandhi",
+"wrong": [
+"Annie Besant",
+"Lala Lajpat Rai",
+"Muhammad Ali Jinnah"
+],
+"reason": "Gandhi launched it in 1920 so that Indians would withdraw cooperation from British institutions.",
+"rep": 0
+},
+{
+"item": 365,
+"section": "Pakistan Studies",
+"question": "The Swadeshi Movement began as a protest against which British decision?",
+"answer": "The Partition of Bengal",
+"wrong": [
+"The Rowlatt Act",
+"The Salt Tax",
+"The Simon Commission"
+],
+"reason": "The Swadeshi Movement (boycott of British goods) started in 1905 against Lord Curzon's Partition of Bengal.",
+"rep": 0
+},
+{
+"item": 366,
+"section": "Pakistan Studies",
+"question": "In which year did the Swadeshi Movement begin?",
+"answer": "1905",
+"wrong": [
+"1885",
+"1911",
+"1919"
+],
+"reason": "The partition of Bengal took effect on 16 October 1905 and the boycott of British goods was resolved on 7 August 1905.",
+"rep": 0
+},
+{
+"item": 367,
+"section": "Pakistan Studies",
+"question": "Which brothers were the leading figures of the Khilafat Movement?",
+"answer": "Maulana Muhammad Ali Jauhar and Maulana Shaukat Ali",
+"wrong": [
+"Maulana Abul Kalam Azad and Maulana Hasrat Mohani",
+"Hakim Ajmal Khan and Dr Ansari",
+"Liaquat Ali Khan and Ghulam Muhammad"
+],
+"reason": "The Ali brothers, Muhammad Ali Jauhar and Shaukat Ali, were the central leaders of the Khilafat Movement (1919-1924).",
+"rep": 0
+},
+{
+"item": 368,
+"section": "Pakistan Studies",
+"question": "The Khilafat Movement was launched by Indian Muslims to support which institution?",
+"answer": "The Ottoman Caliphate",
+"wrong": [
+"The Mughal Empire",
+"The Abbasid Caliphate in Baghdad",
+"The Safavid dynasty"
+],
+"reason": "After World War I, Indian Muslims tried to protect the Ottoman Caliph and the Ottoman Empire's territory from being broken up.",
+"rep": 0
+},
+{
+"item": 369,
+"section": "Pakistan Studies",
+"question": "Which two leaders led the Home Rule Movement in India?",
+"answer": "Annie Besant and Bal Gangadhar Tilak",
+"wrong": [
+"Gandhi and Nehru",
+"Jinnah and Iqbal",
+"Gokhale and Lajpat Rai"
+],
+"reason": "Tilak founded his Home Rule League in April 1916 at Poona and Annie Besant founded hers in September 1916 at Madras.",
+"rep": 0
+},
+{
+"item": 370,
+"section": "Pakistan Studies",
+"question": "In which year was the Home Rule Movement launched in India?",
+"answer": "1916",
+"wrong": [
+"1905",
+"1911",
+"1920"
+],
+"reason": "Both Home Rule Leagues, of Tilak and of Annie Besant, were founded in 1916.",
+"rep": 0
+},
+{
+"item": 371,
+"section": "General Knowledge",
+"question": "Martin Luther King Jr. is associated with which movement?",
+"answer": "The Civil Rights Movement",
+"wrong": [
+"The Suffragette Movement",
+"The Anti-apartheid Movement",
+"The Quit India Movement"
+],
+"reason": "King led the nonviolent American Civil Rights Movement in the 1950s and 1960s and gave the 'I Have a Dream' speech in 1963.",
+"rep": 0
+},
+{
+"item": 372,
+"section": "General Knowledge",
+"question": "Who led the Civil Rights Movement in the USA?",
+"answer": "Martin Luther King Jr.",
+"wrong": [
+"Nelson Mandela",
+"Malcolm X",
+"Abraham Lincoln"
+],
+"reason": "Martin Luther King Jr. was the best known leader of the nonviolent Civil Rights Movement in the USA.",
+"rep": 0
+},
+{
+"item": 373,
+"section": "General Knowledge",
+"question": "What did the American Civil Rights Movement mainly demand?",
+"answer": "Racial equality",
+"wrong": [
+"Women's right to vote",
+"Independence from Britain",
+"Workers' wages"
+],
+"reason": "The movement fought racial segregation and discrimination against African Americans and sought equal civil rights.",
+"rep": 0
+},
+{
+"item": 374,
+"section": "General Knowledge",
+"question": "Who led the anti-apartheid struggle in South Africa?",
+"answer": "Nelson Mandela",
+"wrong": [
+"Martin Luther King Jr.",
+"Desmond Tutu alone",
+"Robert Mugabe"
+],
+"reason": "Nelson Mandela spent 27 years in prison for resisting apartheid and became South Africa's first democratically elected president in 1994.",
+"rep": 0
+},
+{
+"item": 375,
+"section": "General Knowledge",
+"question": "What did the Suffragette Movement demand?",
+"answer": "The right to vote for women",
+"wrong": [
+"Independence for India",
+"Abolition of slavery",
+"An end to racial segregation"
+],
+"reason": "The suffragettes, led in Britain by Emmeline Pankhurst, campaigned for women's suffrage (the vote).",
+"rep": 0
+}
+]
