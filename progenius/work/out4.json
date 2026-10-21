@@ -1,0 +1,455 @@
+[
+ {
+  "src": "A",
+  "num": 5,
+  "question": "In which country was FIFA founded?",
+  "options": [
+   "France",
+   "Switzerland",
+   "England",
+   "Germany"
+  ],
+  "correct": 0,
+  "why": "FIFA was founded in Paris, France, on 21 May 1904.",
+  "rel": "FIFA headquarters is in Zurich, Switzerland. FIFA stands for Federation Internationale de Football Association."
+ },
+ {
+  "src": "A",
+  "num": 20,
+  "question": "When did Humayun rule?",
+  "options": [
+   "1526-1530 and 1556-1560",
+   "1540-1545 and 1555-1556",
+   "1530-1556 without a break",
+   "1530-1540 and 1555-1556"
+  ],
+  "correct": 3,
+  "why": "Humayun ruled 1530-1540, lost to Sher Shah Suri, and regained Delhi in 1555.",
+  "rel": "He died in 1556 and was followed by Akbar. Sher Shah Suri displaced him in 1540."
+ },
+ {
+  "src": "A",
+  "num": 42,
+  "question": "Which country is the world’s largest tea producer?",
+  "options": [
+   "India",
+   "Kenya",
+   "China",
+   "Sri Lanka"
+  ],
+  "correct": 2,
+  "why": "China is the world's largest tea producer.",
+  "rel": "India is second. Kenya is a major black tea exporter."
+ },
+ {
+  "src": "A",
+  "num": 57,
+  "question": "What does NATO stand for?",
+  "options": [
+   "North Atlantic Trade Organization",
+   "North Atlantic Treaty Organization",
+   "Northern Allied Treaty Organization",
+   "National Atlantic Treaty Organization"
+  ],
+  "correct": 1,
+  "why": "NATO stands for North Atlantic Treaty Organization, a collective-defence alliance.",
+  "rel": "Its founding treaty was signed in Washington, D.C. in 1949."
+ },
+ {
+  "src": "A",
+  "num": 73,
+  "question": "Who received Nishan-e-Haider for the 1965 war?",
+  "options": [
+   "Major Tufail Muhammad",
+   "Major Raja Aziz Bhatti",
+   "Major Muhammad Akram",
+   "Major Shabbir Sharif"
+  ],
+  "correct": 1,
+  "why": "Major Raja Aziz Bhatti was awarded Nishan-e-Haider for defending the Lahore front (BRB canal) in September 1965.",
+  "rel": "Nishan-e-Haider is Pakistan's highest military gallantry award."
+ },
+ {
+  "src": "A",
+  "num": 87,
+  "question": "Who was Pakistan’s first Prime Minister?",
+  "options": [
+   "Liaquat Ali Khan",
+   "Khawaja Nazimuddin",
+   "Huseyn Shaheed Suhrawardy",
+   "Chaudhry Muhammad Ali"
+  ],
+  "correct": 0,
+  "why": "Liaquat Ali Khan was Pakistan's first Prime Minister, serving 1947-1951.",
+  "rel": "Khawaja Nazimuddin succeeded him."
+ },
+ {
+  "src": "A",
+  "num": 101,
+  "question": "Who is the Chief Minister of Balochistan?",
+  "options": [
+   "Abdul Malik Baloch",
+   "Jam Kamal Khan",
+   "Nawab Sanaullah Zehri",
+   "Mir Sarfraz Bugti"
+  ],
+  "correct": 3,
+  "why": "As of Oct 2026, Mir Sarfraz Bugti (PPP) is Chief Minister of Balochistan, in office since March 2024.",
+  "rel": "Quetta is the provincial capital.",
+  "problem": "Verified by search: Bugti still CM as of mid-2026."
+ },
+ {
+  "src": "A",
+  "num": 112,
+  "question": "What is Türkiye’s currency?",
+  "options": [
+   "Turkish dinar",
+   "Euro",
+   "Turkish lira",
+   "Turkish dirham"
+  ],
+  "correct": 2,
+  "why": "Turkiye's currency is the Turkish lira (TRY).",
+  "rel": "Turkiye's central bank is in Ankara."
+ },
+ {
+  "src": "A",
+  "num": 125,
+  "question": "What is the world’s fastest bird?",
+  "options": [
+   "Golden eagle",
+   "Common swift",
+   "Peregrine falcon",
+   "Bald eagle"
+  ],
+  "correct": 2,
+  "why": "The peregrine falcon is the fastest bird, exceeding 300 km/h in its hunting dive (stoop).",
+  "rel": "It is not the fastest in level flight."
+ },
+ {
+  "src": "B",
+  "num": 1,
+  "question": "Who passed the Objectives Resolution?",
+  "options": [
+   "Muhammad Ali Jinnah",
+   "Liaquat Ali Khan",
+   "Khawaja Nazimuddin",
+   "Sardar Abdur Rab Nishtar"
+  ],
+  "correct": 1,
+  "why": "Prime Minister Liaquat Ali Khan moved the Objectives Resolution, and the Constituent Assembly passed it on 12 March 1949.",
+  "rel": "It was presented on 7 March 1949. It later became a preamble to Pakistan's constitutions."
+ },
+ {
+  "src": "B",
+  "num": 11,
+  "question": "When did Khalid ibn al-Walid accept Islam?",
+  "options": [
+   "8 AH (628 CE)",
+   "2 AH (624 CE)",
+   "5 AH (627 CE)",
+   "10 AH (632 CE)"
+  ],
+  "correct": 0,
+  "why": "Khalid ibn al-Walid accepted Islam around 8 AH, before the Conquest of Makkah.",
+  "rel": "He was known as Sayfullah (Sword of Allah)."
+ },
+ {
+  "src": "B",
+  "num": 21,
+  "question": "How many agencies did the former FATA consist of?",
+  "options": [
+   "Five",
+   "Six",
+   "Nine",
+   "Seven"
+  ],
+  "correct": 3,
+  "why": "Former FATA had seven tribal agencies: Bajaur, Khyber, Kurram, Mohmand, Orakzai, North and South Waziristan.",
+  "rel": "FATA merged into Khyber Pakhtunkhwa in 2018 (25th Amendment)."
+ },
+ {
+  "src": "B",
+  "num": 31,
+  "question": "Who is the Governor of Sindh?",
+  "options": [
+   "Kamran Khan Tessori",
+   "Imran Ismail",
+   "Muhammad Zubair",
+   "Syed Muhammad Nehal Hashmi"
+  ],
+  "correct": 3,
+  "why": "As of Oct 2026, Nehal Hashmi (PML-N) is Governor of Sindh, sworn in on 13 March 2026, replacing Kamran Tessori.",
+  "rel": "The Governor is the constitutional head of the province; the Chief Minister leads the government.",
+  "problem": "Verified by search: Nehal Hashmi sworn in 13 March 2026."
+ },
+ {
+  "src": "B",
+  "num": 41,
+  "question": "What is Pakistan's highest civil award?",
+  "options": [
+   "Hilal-e-Imtiaz",
+   "Sitara-e-Pakistan",
+   "Nishan-e-Pakistan",
+   "Nishan-e-Haider"
+  ],
+  "correct": 2,
+  "why": "Nishan-e-Pakistan is Pakistan's highest civil award.",
+  "rel": "Nishan-e-Haider is the highest military gallantry award, not civil."
+ },
+ {
+  "src": "B",
+  "num": 51,
+  "question": "Which words can be synonyms of “prescribe”?",
+  "options": [
+   "Forbid",
+   "Direct",
+   "Ignore",
+   "Cancel"
+  ],
+  "correct": 1,
+  "why": "Prescribe means to order or direct; it can also mean to authorize a medicine.",
+  "rel": "Prescribe means order; proscribe means forbid.",
+  "problem": "Several words fit 'prescribe'; Direct chosen. Question is ambiguous."
+ },
+ {
+  "src": "B",
+  "num": 62,
+  "question": "Who was Pakistan's first Foreign Minister?",
+  "options": [
+   "Sir Muhammad Zafrullah Khan",
+   "Liaquat Ali Khan",
+   "Sir Aga Khan",
+   "Agha Shahi"
+  ],
+  "correct": 0,
+  "why": "Sir Muhammad Zafrullah Khan was Pakistan's first Foreign Minister.",
+  "rel": "He later became President of the UN General Assembly and a judge of the ICJ."
+ },
+ {
+  "src": "B",
+  "num": 72,
+  "question": "Which continent has historically been called the “Dark Continent”?",
+  "options": [
+   "Africa",
+   "Asia",
+   "South America",
+   "Australia"
+  ],
+  "correct": 0,
+  "why": "Africa was called the Dark Continent in European colonial-era writing (a dated label).",
+  "rel": "Africa is the second-largest continent by area and population."
+ },
+ {
+  "src": "B",
+  "num": 82,
+  "question": "What is the name of the Pakistan-Afghanistan border?",
+  "options": [
+   "The Radcliffe Line",
+   "The McMahon Line",
+   "The Line of Control",
+   "The Durand Line"
+  ],
+  "correct": 3,
+  "why": "The Durand Line is the Pakistan-Afghanistan border, agreed in 1893.",
+  "rel": "Afghanistan disputes it."
+ },
+ {
+  "src": "B",
+  "num": 92,
+  "question": "Who was the first Governor-General of Pakistan?",
+  "options": [
+   "Liaquat Ali Khan",
+   "Khawaja Nazimuddin",
+   "Muhammad Ali Jinnah",
+   "Ghulam Muhammad"
+  ],
+  "correct": 2,
+  "why": "Jinnah was the first Governor-General, from 14 August 1947 until his death on 11 September 1948.",
+  "rel": "Khawaja Nazimuddin succeeded him as Governor-General."
+ },
+ {
+  "src": "B",
+  "num": 102,
+  "question": "Who is associated with the title “Atiq”?",
+  "options": [
+   "Hazrat Umar (RA)",
+   "Hazrat Abu Bakr (RA)",
+   "Hazrat Usman (RA)",
+   "Hazrat Ali (RA)"
+  ],
+  "correct": 1,
+  "why": "Abu Bakr (RA) is traditionally given the title Atiq; he is best known as Al-Siddiq.",
+  "rel": "He was the first Caliph after the Prophet (PBUH)."
+ },
+ {
+  "src": "B",
+  "num": 112,
+  "question": "For what did Malala Yousafzai receive the Nobel Prize?",
+  "options": [
+   "Literature (2014)",
+   "Peace (2014), for children's right to education",
+   "Peace (2012), for women's rights",
+   "Peace (2014), for nuclear disarmament"
+  ],
+  "correct": 1,
+  "why": "Malala won the 2014 Nobel Peace Prize for her struggle for the right of all children to education.",
+  "rel": "She shared it with Kailash Satyarthi and is the youngest Nobel laureate."
+ },
+ {
+  "src": "B",
+  "num": 122,
+  "question": "What percentage of Pakistan's land area is classified as forest?",
+  "options": [
+   "About 4.7%",
+   "About 1.9%",
+   "About 9.5%",
+   "About 14%"
+  ],
+  "correct": 0,
+  "why": "The World Bank indicator gives Pakistan about 4.7% forest area for 2023.",
+  "rel": "Forest figures differ by source (FAO about 2.2%, national about 5%). Pakistan has one of the lowest forest covers in South Asia.",
+  "problem": "Source says 4.6%; World Bank mirror shows 4.7% (2023). Figures vary by source, so question is ambiguous."
+ },
+ {
+  "src": "B",
+  "num": 132,
+  "question": "Which planet is nearest to Earth?",
+  "options": [
+   "Mars",
+   "Mercury",
+   "Jupiter",
+   "Venus"
+  ],
+  "correct": 3,
+  "why": "Venus comes closest to Earth at its closest approach, the usual school answer.",
+  "rel": "Mercury is the nearest planet on average over time.",
+  "problem": "Venus vs Mercury depends on definition; Venus is the usual exam answer."
+ },
+ {
+  "src": "B",
+  "num": 142,
+  "question": "Who was the first woman Chief Justice of a High Court in Pakistan?",
+  "options": [
+   "Justice Ayesha Malik",
+   "Justice Majida Rizvi",
+   "Justice Syeda Tahira Safdar",
+   "Justice Nasira Iqbal"
+  ],
+  "correct": 2,
+  "why": "Syeda Tahira Safdar became Chief Justice of the Balochistan High Court in 2018, the first woman to head a Pakistani High Court.",
+  "rel": "Ayesha Malik later became the first woman judge of the Supreme Court (2022)."
+ },
+ {
+  "src": "B",
+  "num": 152,
+  "question": "What is a major immediate energy source for an athlete?",
+  "options": [
+   "Vitamins",
+   "Minerals",
+   "Carbohydrates",
+   "Water"
+  ],
+  "correct": 2,
+  "why": "Carbohydrates are a readily available energy source, stored as glycogen in muscles and liver.",
+  "rel": "Fat and protein also contribute to energy."
+ },
+ {
+  "src": "B",
+  "num": 162,
+  "question": "On what date was the Objectives Resolution introduced in the Constituent Assembly?",
+  "options": [
+   "12 March 1949",
+   "7 March 1949",
+   "14 August 1947",
+   "23 March 1956"
+  ],
+  "correct": 1,
+  "why": "The Objectives Resolution was introduced on 7 March 1949 and passed on 12 March 1949.",
+  "rel": "Liaquat Ali Khan moved it."
+ },
+ {
+  "src": "B",
+  "num": 172,
+  "question": "What was France's currency before the euro?",
+  "options": [
+   "The French franc",
+   "The lira",
+   "The peseta",
+   "The Deutsche mark"
+  ],
+  "correct": 0,
+  "why": "France used the franc before the euro.",
+  "rel": "One euro equals 6.55957 francs. Euro notes and coins began in 2002."
+ },
+ {
+  "src": "B",
+  "num": 182,
+  "question": "Who is associated with the residency at Ziarat?",
+  "options": [
+   "Allama Iqbal",
+   "Liaquat Ali Khan",
+   "Sir Syed Ahmad Khan",
+   "Quaid-e-Azam Muhammad Ali Jinnah"
+  ],
+  "correct": 3,
+  "why": "The Ziarat Residency is linked to Jinnah, who stayed there in 1948 during his final illness.",
+  "rel": "It is in Ziarat, Balochistan."
+ },
+ {
+  "src": "B",
+  "num": 192,
+  "question": "When was the Jinnah Antarctic Research Station established?",
+  "options": [
+   "18 January 1981",
+   "14 August 1991",
+   "23 March 1992",
+   "18 January 1991"
+  ],
+  "correct": 3,
+  "why": "Jinnah Antarctic Station was established on 18 January 1991.",
+  "rel": "Pakistan became an associate member of SCAR in 1992."
+ },
+ {
+  "src": "B",
+  "num": 202,
+  "question": "Who said of the Prophet (PBUH), “His character was the Quran”?",
+  "options": [
+   "Hazrat Khadijah (RA)",
+   "Hazrat Fatima (RA)",
+   "Hazrat Aisha (RA)",
+   "Hazrat Hafsa (RA)"
+  ],
+  "correct": 2,
+  "why": "Hazrat Aisha (RA) said this when asked about the Prophet's (PBUH) character (Sahih Muslim).",
+  "rel": "It means his character embodied the Quran."
+ },
+ {
+  "src": "B",
+  "num": 212,
+  "question": "Which well-known body of water is famous for its very high salinity?",
+  "options": [
+   "The Red Sea",
+   "The Dead Sea",
+   "The Black Sea",
+   "The Caspian Sea"
+  ],
+  "correct": 1,
+  "why": "The Dead Sea is famous for very high salinity; it is technically a hypersaline lake.",
+  "rel": "It lies between Jordan and Israel/West Bank and has the lowest land elevation on Earth."
+ },
+ {
+  "src": "B",
+  "num": 222,
+  "question": "Amjad and Ahmed have 24 balloons in total. If Amjad has three times as many as Ahmed, how many does Amjad have?",
+  "options": [
+   "18",
+   "12",
+   "16",
+   "20"
+  ],
+  "correct": 0,
+  "why": "If Ahmed has x, Amjad has 3x, so 4x = 24 and x = 6. Amjad has 18.",
+  "rel": "Ahmed has 6 balloons."
+ }
+]

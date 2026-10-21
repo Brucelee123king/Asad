@@ -1,0 +1,219 @@
+[
+ {
+  "src": "A",
+  "num": 11,
+  "question": "Who was the first President of the United States?",
+  "answer": "George Washington; inaugurated on 30 April 1789.",
+  "facts": "• He served two terms, from 1789 to 1797. • The US Constitution established the presidency."
+ },
+ {
+  "src": "A",
+  "num": 33,
+  "question": "Fill in the blank: “She is afraid ___ the dark.”",
+  "answer": "of — “She is afraid of the dark.”",
+  "facts": "• “Afraid of” is the standard adjective-preposition pattern. • Example: afraid of heights; afraid of the dark."
+ },
+ {
+  "src": "A",
+  "num": 48,
+  "question": "What is the radius of a unit circle?",
+  "answer": "1 unit.",
+  "facts": "• A unit circle is centred at the origin in standard coordinate geometry. • Its equation is x² + y² = 1."
+ },
+ {
+  "src": "A",
+  "num": 64,
+  "question": "What is the third pillar of Islam?",
+  "answer": "Zakat.",
+  "facts": "• The five pillars are Shahadah, Salah, Zakat, Sawm and Hajj. • Zakat is obligatory almsgiving subject to conditions."
+ },
+ {
+  "src": "A",
+  "num": 79,
+  "question": "Where is the Golden Gate Bridge?",
+  "answer": "San Francisco Bay, California, USA.",
+  "facts": "• It connects San Francisco with Marin County. • The bridge opened in 1937."
+ },
+ {
+  "src": "A",
+  "num": 92,
+  "question": "The set of points on a line is called what?",
+  "answer": "The question is incomplete; points on a coordinate plane are described by coordinates, but a set of points on a line is not itself simply “coordinates.”",
+  "facts": "• A point in a Cartesian plane is represented by an ordered pair (x, y). • A line can be represented by a linear equation."
+ },
+ {
+  "src": "A",
+  "num": 105,
+  "question": "Which is the largest forest in Pakistan?",
+  "answer": "Changa Manga is a famous man-made/planted forest, but “largest forest” depends on whether natural forests or plantations are compared.",
+  "facts": "• Changa Manga lies in Punjab near Lahore/Kasur region. • The northern mountain regions contain extensive natural forests."
+ },
+ {
+  "src": "A",
+  "num": 118,
+  "question": "What is Pakistan’s national flower?",
+  "answer": "Jasmine.",
+  "facts": "• The national flower is commonly identified as jasmine (chambeli). • Pakistan’s national tree is commonly listed as deodar."
+ },
+ {
+  "src": "A",
+  "num": 131,
+  "question": "How long did Prophet Yunus remain in the fish?",
+  "answer": "The Qur’an does not specify an exact duration; reports such as 3–40 days are not a universally established Qur’anic fact.",
+  "facts": "• Avoid treating a disputed duration as a verified fact. • His supplication is mentioned in Qur’an 21:87."
+ },
+ {
+  "src": "B",
+  "num": 5,
+  "question": "Which Surah is named after an ant?",
+  "answer": "Surah An-Naml (Surah 27).",
+  "facts": "• “An-Naml” means “The Ant”. • The ant is mentioned in the account of Prophet Sulayman (Solomon), peace be upon him."
+ },
+ {
+  "src": "B",
+  "num": 15,
+  "question": "Simplify sin(180° − x).",
+  "answer": "sin(180° − x) = sin x.",
+  "facts": "• Sine is positive in the second quadrant. • The identity uses degrees; in radians, sin(π − x) = sin x."
+ },
+ {
+  "src": "B",
+  "num": 25,
+  "question": "What is the third letter when “MANAGEMENT” is arranged alphabetically?",
+  "answer": "E (the letters sort as A, A, E, E, G, M, M, N, N, T).",
+  "facts": "• The original answer “G” is incorrect: G is the fifth letter in the sorted sequence. • Always sort repeated letters too; do not remove duplicates."
+ },
+ {
+  "src": "B",
+  "num": 35,
+  "question": "Who wrote “The Loyal Muhammadans of India”?",
+  "answer": "Sir Syed Ahmad Khan.",
+  "facts": "• Sir Syed wrote it after the 1857 uprising to document Muslims who remained loyal to the British. • He founded the Muhammadan Anglo-Oriental College at Aligarh in 1875."
+ },
+ {
+  "src": "B",
+  "num": 45,
+  "question": "When did the Chauri Chaura incident occur?",
+  "answer": "4 February 1922 (some exam keys give 5 February; the commonly recorded date is 4 February).",
+  "facts": "• The incident occurred in the Gorakhpur district of the United Provinces, British India. • Mahatma Gandhi suspended the Non-Cooperation Movement after the violence."
+ },
+ {
+  "src": "B",
+  "num": 55,
+  "question": "Who is the Speaker of Pakistan's National Assembly?",
+  "answer": "Sardar Ayaz Sadiq (as listed by the National Assembly on 14 October 2026).",
+  "facts": "• He was elected Speaker on 1 March 2024. • Asad Qaiser was a former Speaker, serving from 2018 to 2022."
+ },
+ {
+  "src": "B",
+  "num": 66,
+  "question": "When did Muhammad Ali Jinnah leave the Indian National Congress?",
+  "answer": "He broke with Congress in 1920, around the Nagpur session in December.",
+  "facts": "• Jinnah opposed Gandhi's mass non-cooperation approach. • He had joined the All-India Muslim League in 1913."
+ },
+ {
+  "src": "B",
+  "num": 76,
+  "question": "What is the length of Pakistan's coastline?",
+  "answer": "About 1,046 km, according to Pakistan's Board of Investment.",
+  "facts": "• Pakistan's coast lies along the Arabian Sea. • Major coastal areas include Karachi, the Makran coast and Gwadar."
+ },
+ {
+  "src": "B",
+  "num": 86,
+  "question": "What was the name of Hazrat Uthman ibn Affan's father?",
+  "answer": "Affan ibn Abi al-As.",
+  "facts": "• Hazrat Uthman (RA) was the third Rightly Guided Caliph. • He married two daughters of Prophet Muhammad (PBUH) at different times, earning the honorific Dhun-Nurayn in Islamic tradition."
+ },
+ {
+  "src": "B",
+  "num": 96,
+  "question": "What is commonly listed as Pakistan's longest national highway?",
+  "answer": "N-5 (National Highway 5).",
+  "facts": "• It runs from Karachi through major cities toward Torkham. • The Karakoram Highway is internationally known for its high-altitude route, but it is not Pakistan's longest national highway."
+ },
+ {
+  "src": "B",
+  "num": 106,
+  "question": "Which angel brought revelation to the Prophets?",
+  "answer": "Angel Jibril (Gabriel), peace be upon him.",
+  "facts": "• Jibril conveyed the Quranic revelation to Prophet Muhammad (PBUH). • The Quran also refers to him as Ruh al-Amin and Ruh al-Qudus in relevant contexts."
+ },
+ {
+  "src": "B",
+  "num": 116,
+  "question": "What is Sahifa al-Sadiqa?",
+  "answer": "An early written collection of hadith associated with Abdullah ibn Amr ibn al-As; it is often called Sahifa al-Sadiqa.",
+  "facts": "• It is sometimes described in general-knowledge books as the first hadith book, but “first” depends on how one defines a book or written collection. • Early hadith material was written down during the first Islamic centuries."
+ },
+ {
+  "src": "B",
+  "num": 126,
+  "question": "How many daughters did Prophet Muhammad (PBUH) have?",
+  "answer": "Four: Zaynab, Ruqayyah, Umm Kulthum and Fatimah (may Allah be pleased with them).",
+  "facts": "• They are commonly identified as the daughters of the Prophet and Khadijah (RA). • Fatimah (RA) was the youngest daughter in the traditional account."
+ },
+ {
+  "src": "B",
+  "num": 136,
+  "question": "What are ambassadors of Commonwealth countries to one another commonly called?",
+  "answer": "High Commissioners.",
+  "facts": "• A High Commissioner heads a diplomatic mission between Commonwealth member countries. • The mission is called a High Commission rather than an embassy."
+ },
+ {
+  "src": "B",
+  "num": 146,
+  "question": "In which country was the 1955 Bandung Conference held, which helped inspire the Non-Aligned Movement?",
+  "answer": "Indonesia.",
+  "facts": "• The conference was held in Bandung in April 1955. • The Non-Aligned Movement was formally established at Belgrade in 1961."
+ },
+ {
+  "src": "B",
+  "num": 156,
+  "question": "Evaluate 2 + 2 ÷ 2.",
+  "answer": "3.",
+  "facts": "• Apply division before addition: 2 + (2 ÷ 2) = 2 + 1. • This is an order-of-operations question."
+ },
+ {
+  "src": "B",
+  "num": 166,
+  "question": "How many types of articles are there in English grammar?",
+  "answer": "Two types: definite (the) and indefinite (a/an). There are three common forms: a, an and the.",
+  "facts": "• Use “a” before a consonant sound and “an” before a vowel sound. • “The” is used when the noun is specific or identifiable."
+ },
+ {
+  "src": "B",
+  "num": 176,
+  "question": "Where do articles usually appear in an English noun phrase?",
+  "answer": "Before a noun or noun phrase, often before any adjective: “a book”, “the old house”.",
+  "facts": "• The articles are a, an and the. • Some noun phrases do not use an article, such as many proper names and plural/uncountable nouns in general statements."
+ },
+ {
+  "src": "B",
+  "num": 186,
+  "question": "According to a commonly cited hadith, what is the jihad of women?",
+  "answer": "A righteous Hajj is described in a hadith as the best or equivalent form of jihad for women; “Hijab” is not the standard answer to this specific question.",
+  "facts": "• The exact wording and interpretation depend on the hadith report and context. • This is a religious-text question, so use the wording in the prescribed syllabus or reliable hadith reference."
+ },
+ {
+  "src": "B",
+  "num": 196,
+  "question": "What does OPEC stand for?",
+  "answer": "Organization of the Petroleum Exporting Countries.",
+  "facts": "• OPEC was founded in Baghdad in 1960. • Its headquarters are in Vienna, Austria."
+ },
+ {
+  "src": "B",
+  "num": 206,
+  "question": "What is the approximate length of the Line of Control (LoC) in Kashmir?",
+  "answer": "About 740 km, according to a commonly cited estimate.",
+  "facts": "• The LoC separates areas administered by India and Pakistan in the former princely state of Jammu and Kashmir. • It is not an internationally recognized final border settlement."
+ },
+ {
+  "src": "B",
+  "num": 216,
+  "question": "In which mountain range is Siachen Glacier located?",
+  "answer": "The eastern Karakoram Range.",
+  "facts": "• Siachen lies in the eastern Karakoram in the broader Kashmir region. • It is often described as the longest glacier outside the polar regions, depending on classification."
+ }
+]

@@ -1,0 +1,456 @@
+[
+ {
+  "src": "A",
+  "num": 2,
+  "question": "Who was the first Muslim female Prime Minister?",
+  "options": [
+   "Benazir Bhutto",
+   "Indira Gandhi",
+   "Khaleda Zia",
+   "Sheikh Hasina"
+  ],
+  "correct": 0,
+  "why": "Benazir Bhutto became Prime Minister of Pakistan in December 1988, the first woman to lead a government in a Muslim-majority country.",
+  "rel": "Her first term began in December 1988. She was the daughter of Zulfikar Ali Bhutto."
+ },
+ {
+  "src": "A",
+  "num": 17,
+  "question": "Kot Diji is in which province?",
+  "options": [
+   "Punjab",
+   "Balochistan",
+   "Khyber Pakhtunkhwa",
+   "Sindh"
+  ],
+  "correct": 3,
+  "why": "Kot Diji is in Sindh, near Khairpur, with a historic fort and a pre-Harappan site.",
+  "rel": "The site shows early Indus Valley cultural phases. Khairpur is a district of Sindh."
+ },
+ {
+  "src": "A",
+  "num": 39,
+  "question": "What was Sindh’s population in the 2023 census?",
+  "options": [
+   "47.9 million",
+   "61.3 million",
+   "55.7 million",
+   "43.0 million"
+  ],
+  "correct": 2,
+  "why": "The 2023 census counted about 55.7 million people in Sindh (55,696,147).",
+  "rel": "The 2023 census was Pakistan's first digital census. Preliminary figure in May 2023 was about 57.9 million."
+ },
+ {
+  "src": "A",
+  "num": 54,
+  "question": "What is the capital of Türkiye (Turkey)?",
+  "options": [
+   "Istanbul",
+   "Ankara",
+   "Izmir",
+   "Bursa"
+  ],
+  "correct": 1,
+  "why": "Ankara is the capital of Turkiye; Istanbul is the largest city but not the capital.",
+  "rel": "The Republic of Turkiye was proclaimed in 1923. Ataturk was its first president."
+ },
+ {
+  "src": "A",
+  "num": 70,
+  "question": "In which sport did Pakistan win Olympic gold medals?",
+  "options": [
+   "Cricket",
+   "Field hockey",
+   "Squash",
+   "Boxing"
+  ],
+  "correct": 1,
+  "why": "Pakistan won Olympic hockey gold in 1960, 1968 and 1984.",
+  "rel": "Arshad Nadeem won Pakistan's first individual Olympic gold in javelin in 2024. Pakistan won hockey gold at Rome 1960, Mexico 1968 and Los Angeles 1984.",
+  "problem": "Pakistan also won individual gold in athletics (javelin) in 2024, so wording is loose; field hockey is the standard answer. Source note that Pakistan won no gold in 2024 is wrong: Arshad Nadeem won javelin gold in Paris 2024."
+ },
+ {
+  "src": "A",
+  "num": 85,
+  "question": "Who coined the word “robot” in 1920/1921?",
+  "options": [
+   "Karel Capek",
+   "Isaac Asimov",
+   "Josef Capek",
+   "Nikola Tesla"
+  ],
+  "correct": 0,
+  "why": "Karel Capek popularized the word robot in his 1920 play R.U.R.; his brother Josef is often credited with suggesting it.",
+  "rel": "The play is Rossum's Universal Robots. Unimate, the first industrial robot, came later (George Devol, Joseph Engelberger).",
+  "problem": "Credit is shared: Karel popularized the word, Josef suggested it. Josef Capek is listed as a wrong option; standard exam answer is Karel Capek."
+ },
+ {
+  "src": "A",
+  "num": 98,
+  "question": "Who is the Chief Minister of Punjab?",
+  "options": [
+   "Usman Buzdar",
+   "Hamza Shehbaz",
+   "Chaudhry Pervaiz Elahi",
+   "Maryam Nawaz"
+  ],
+  "correct": 3,
+  "why": "As of Oct 2026, Maryam Nawaz is the Chief Minister of Punjab, in office since February 2024.",
+  "rel": "She is the first woman Chief Minister of Punjab. She is the daughter of Nawaz Sharif.",
+  "problem": "Search confirmed her as incumbent only from Wikipedia and early-2026 government items; no Oct 2026 dated report found. Re-verify near test date."
+ },
+ {
+  "src": "A",
+  "num": 109,
+  "question": "Which language is used in Pakistan’s national anthem?",
+  "options": [
+   "Punjabi",
+   "Arabic",
+   "Persianized Urdu",
+   "Pashto"
+  ],
+  "correct": 2,
+  "why": "The anthem is written in highly Persianized Urdu with many Persian and Arabic-derived words.",
+  "rel": "Lyrics were written by Hafeez Jalandhari. Music was composed by Ahmad G. Chagla."
+ },
+ {
+  "src": "A",
+  "num": 122,
+  "question": "What is Pakistan’s national sport?",
+  "options": [
+   "Cricket",
+   "Kabaddi",
+   "Field hockey",
+   "Squash"
+  ],
+  "correct": 2,
+  "why": "Field hockey is commonly cited as Pakistan's national sport.",
+  "rel": "Pakistan has won Olympic gold in men's hockey. Cricket is the most popular sport but not the commonly cited national sport.",
+  "problem": "Official status is debated; some sources cite no official national sport. Field hockey is the standard exam answer."
+ },
+ {
+  "src": "A",
+  "num": 137,
+  "question": "Who developed the first practical visible LED?",
+  "options": [
+   "Shuji Nakamura",
+   "Nick Holonyak Jr.",
+   "Oleg Losev",
+   "Isamu Akasaki"
+  ],
+  "correct": 1,
+  "why": "Nick Holonyak Jr. demonstrated the first practical visible-spectrum (red) LED in 1962.",
+  "rel": "Shuji Nakamura, Akasaki and Amano won the 2014 Nobel Prize for blue LEDs. Oleg Losev observed LED effect in the 1920s."
+ },
+ {
+  "src": "B",
+  "num": 9,
+  "question": "When did the Cabinet Mission come to India?",
+  "options": [
+   "1946",
+   "1942",
+   "1945",
+   "1947"
+  ],
+  "correct": 0,
+  "why": "The British Cabinet Mission came to India in 1946.",
+  "rel": "It had three members: Pethick-Lawrence, Stafford Cripps and A.V. Alexander. It proposed a three-tier federation."
+ },
+ {
+  "src": "B",
+  "num": 19,
+  "question": "When was the Geneva Accords/Pact on Afghanistan signed?",
+  "options": [
+   "15 February 1989",
+   "14 April 1989",
+   "25 December 1979",
+   "14 April 1988"
+  ],
+  "correct": 3,
+  "why": "The Geneva Accords on Afghanistan were signed on 14 April 1988.",
+  "rel": "Soviet troop withdrawal finished by 15 February 1989. Pakistan, Afghanistan, USA and USSR were signatories."
+ },
+ {
+  "src": "B",
+  "num": 29,
+  "question": "A book is bought for Rs 30 and sold for Rs 40. What is the profit percentage?",
+  "options": [
+   "25%",
+   "30%",
+   "10%",
+   "33 1/3%"
+  ],
+  "correct": 3,
+  "why": "Profit is Rs 10 on cost Rs 30, so 10/30 x 100 = 33 1/3%.",
+  "rel": "Profit % = profit / cost price x 100. Loss % is also based on cost price."
+ },
+ {
+  "src": "B",
+  "num": 39,
+  "question": "Basel is a city in which country?",
+  "options": [
+   "Germany",
+   "France",
+   "Switzerland",
+   "Austria"
+  ],
+  "correct": 2,
+  "why": "Basel is a Swiss city on the Rhine, near the German and French borders.",
+  "rel": "Bern is the capital of Switzerland. Zurich is the largest Swiss city."
+ },
+ {
+  "src": "B",
+  "num": 49,
+  "question": "On what date did the 1857 uprising begin at Meerut?",
+  "options": [
+   "11 May 1857",
+   "10 May 1857",
+   "29 March 1857",
+   "23 June 1857"
+  ],
+  "correct": 1,
+  "why": "The 1857 uprising began at Meerut on 10 May 1857.",
+  "rel": "Mangal Pandey's revolt at Barrackpore was in March 1857. Rebels then marched to Delhi."
+ },
+ {
+  "src": "B",
+  "num": 60,
+  "question": "Which region lies between Pakistan and Tajikistan?",
+  "options": [
+   "Wakhan Corridor",
+   "Khyber Pass",
+   "Karakoram Corridor",
+   "Dorah Pass"
+  ],
+  "correct": 0,
+  "why": "The Wakhan Corridor of Afghanistan separates Pakistan and Tajikistan, so they share no border.",
+  "rel": "The corridor is a narrow strip in Badakhshan. It was created as a buffer between British India and Russia.",
+  "problem": "Question is loosely worded; answer is the Wakhan Corridor (Afghanistan)."
+ },
+ {
+  "src": "B",
+  "num": 70,
+  "question": "When was Quaid-e-Azam Muhammad Ali Jinnah born?",
+  "options": [
+   "25 December 1876",
+   "14 August 1876",
+   "11 September 1876",
+   "25 December 1875"
+  ],
+  "correct": 0,
+  "why": "Quaid-e-Azam Muhammad Ali Jinnah was born on 25 December 1876 in Karachi.",
+  "rel": "He died on 11 September 1948. He became Pakistan's first Governor-General."
+ },
+ {
+  "src": "B",
+  "num": 80,
+  "question": "In which year did Abdus Salam receive the Nobel Prize?",
+  "options": [
+   "1974",
+   "1983",
+   "1968",
+   "1979"
+  ],
+  "correct": 3,
+  "why": "Abdus Salam shared the 1979 Nobel Prize in Physics.",
+  "rel": "He was the first Pakistani Nobel laureate. He shared it with Glashow and Weinberg for electroweak theory."
+ },
+ {
+  "src": "B",
+  "num": 90,
+  "question": "Who was the first Caliph of Islam?",
+  "options": [
+   "Hazrat Umar (RA)",
+   "Hazrat Uthman (RA)",
+   "Hazrat Abu Bakr al-Siddiq (RA)",
+   "Hazrat Ali (RA)"
+  ],
+  "correct": 2,
+  "why": "Hazrat Abu Bakr (RA) became the first Caliph after the Prophet (PBUH) in 632 CE.",
+  "rel": "The four Rightly Guided Caliphs were Abu Bakr, Umar, Uthman and Ali. Abu Bakr ruled about two years."
+ },
+ {
+  "src": "B",
+  "num": 100,
+  "question": "When did Pakistan become a member of the United Nations?",
+  "options": [
+   "14 August 1947",
+   "30 September 1947",
+   "24 October 1945",
+   "15 October 1947"
+  ],
+  "correct": 1,
+  "why": "Pakistan became a UN member on 30 September 1947.",
+  "rel": "It was the 56th member. The UN was founded on 24 October 1945."
+ },
+ {
+  "src": "B",
+  "num": 110,
+  "question": "There are 48 heads and 140 legs among hens and cows. How many hens are there?",
+  "options": [
+   "22",
+   "26",
+   "24",
+   "28"
+  ],
+  "correct": 1,
+  "why": "Let hens be h and cows c: h+c=48 and 2h+4c=140, so c=22 and h=26.",
+  "rel": "Hens have 2 legs and cows 4. Check: 52+88=140."
+ },
+ {
+  "src": "B",
+  "num": 120,
+  "question": "Which key opens spell check in Microsoft Word?",
+  "options": [
+   "F7",
+   "F5",
+   "F1",
+   "F12"
+  ],
+  "correct": 0,
+  "why": "F7 opens spelling and grammar check in Microsoft Word.",
+  "rel": "F12 opens Save As. F1 opens Help."
+ },
+ {
+  "src": "B",
+  "num": 130,
+  "question": "Which pass connects Chitral with Afghanistan?",
+  "options": [
+   "Khunjerab Pass",
+   "Khyber Pass",
+   "Lowari Pass",
+   "Dorah Pass"
+  ],
+  "correct": 3,
+  "why": "Dorah Pass connects Chitral with Badakhshan in Afghanistan.",
+  "rel": "Lowari Pass connects Dir and Chitral. Khunjerab connects Pakistan and China."
+ },
+ {
+  "src": "B",
+  "num": 140,
+  "question": "What is the capital of Sierra Leone?",
+  "options": [
+   "Monrovia",
+   "Conakry",
+   "Freetown",
+   "Accra"
+  ],
+  "correct": 2,
+  "why": "Freetown is the capital of Sierra Leone.",
+  "rel": "Monrovia is Liberia's capital. Sierra Leone is in West Africa."
+ },
+ {
+  "src": "B",
+  "num": 150,
+  "question": "What is the purpose of the World Trade Organization (WTO)?",
+  "options": [
+   "To give loans to poor countries",
+   "To fix world currency exchange rates",
+   "To administer trade agreements and settle trade disputes",
+   "To maintain world peace"
+  ],
+  "correct": 2,
+  "why": "The WTO administers trade agreements, hosts trade negotiations, settles disputes and reviews trade policies.",
+  "rel": "The WTO is headquartered in Geneva. It replaced GATT in 1995."
+ },
+ {
+  "src": "B",
+  "num": 160,
+  "question": "How many Muslims are traditionally reported to have been martyred at the Battle of Yamama?",
+  "options": [
+   "About 7",
+   "About 70",
+   "About 700",
+   "About 1,200"
+  ],
+  "correct": 1,
+  "why": "About 70 Quran reciters are commonly reported martyred at Yamama (632 CE), which led to compiling the Quran.",
+  "rel": "Yamama was fought against the false prophet Musaylimah in Caliph Abu Bakr's time.",
+  "problem": "Accounts differ: some say about 700 reciters and total Muslim casualties were higher (about 1,200). Standard textbook answer is about 70 huffaz."
+ },
+ {
+  "src": "B",
+  "num": 170,
+  "question": "Mount Olympus is in which country?",
+  "options": [
+   "Greece",
+   "Italy",
+   "Turkey",
+   "Bulgaria"
+  ],
+  "correct": 0,
+  "why": "Mount Olympus, the highest mountain in Greece, is in Greece.",
+  "rel": "It is about 2,917 m high. In myth it was the home of the Greek gods."
+ },
+ {
+  "src": "B",
+  "num": 180,
+  "question": "What does Akhuwat/Mawakhat mean?",
+  "options": [
+   "Migration",
+   "Charity",
+   "Peace treaty",
+   "Brotherhood"
+  ],
+  "correct": 3,
+  "why": "Akhuwat/Mawakhat means brotherhood; the Prophet (PBUH) paired Muhajirun and Ansar in Madinah.",
+  "rel": "The Muhajirun were migrants from Makkah and the Ansar were helpers of Madinah."
+ },
+ {
+  "src": "B",
+  "num": 190,
+  "question": "When was the Conquest of Khaybar?",
+  "options": [
+   "2 AH (624 CE)",
+   "6 AH (628 CE)",
+   "8 AH (630 CE)",
+   "7 AH (628 CE)"
+  ],
+  "correct": 3,
+  "why": "The conquest of Khaybar took place in 7 AH (628 CE).",
+  "rel": "Treaty of Hudaybiyyah was in 6 AH. Fath Makkah was in 8 AH."
+ },
+ {
+  "src": "B",
+  "num": 200,
+  "question": "Who is the only Companion of Prophet Muhammad (PBUH) mentioned by name in the Quran?",
+  "options": [
+   "Abu Bakr (RA)",
+   "Bilal ibn Rabah (RA)",
+   "Zayd ibn Harithah (RA)",
+   "Salman al-Farsi (RA)"
+  ],
+  "correct": 2,
+  "why": "Zayd ibn Harithah (RA) is the only Companion named in the Quran (Surah Al-Ahzab 33:37).",
+  "rel": "He was the adopted son of the Prophet (PBUH). He was martyred at Mu'tah."
+ },
+ {
+  "src": "B",
+  "num": 210,
+  "question": "Which Surahs are called Al-Mu'awwidhatayn?",
+  "options": [
+   "Al-Ikhlas and Al-Falaq",
+   "Al-Falaq and An-Nas",
+   "Al-Kafirun and Al-Ikhlas",
+   "An-Nas and Al-Masad"
+  ],
+  "correct": 1,
+  "why": "Al-Mu'awwidhatayn are the last two surahs, Al-Falaq (113) and An-Nas (114), used for seeking refuge.",
+  "rel": "Surah Al-Ikhlas is 112. An-Nas is the last surah of the Quran."
+ },
+ {
+  "src": "B",
+  "num": 220,
+  "question": "A class has 500 students, of whom 360 are boys. What percentage are girls?",
+  "options": [
+   "28%",
+   "36%",
+   "72%",
+   "32%"
+  ],
+  "correct": 0,
+  "why": "Girls = 500-360 = 140; 140/500 x 100 = 28%.",
+  "rel": "Boys are 72%. Percentage = part / whole x 100."
+ }
+]

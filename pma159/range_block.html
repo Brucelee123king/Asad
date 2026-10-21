@@ -43,7 +43,7 @@ html.dark #rngModal .go.alt{color:#a5b4fc;border-color:#a5b4fc}
 <script>
 (function(){
   var $=function(id){return document.getElementById(id)};
-  var SKIP=/^(MR|IV|CN)-/;           /* these tests only repeat Hakeem MCQs: never count them twice */
+  var SKIP=/^(MR|IV|CN|PG|PF)-/;           /* these tests only repeat Hakeem MCQs: never count them twice */
   var idx=null;
   function strip(q){
     var s=String(q).replace(/^\s*\((?:Original MCQ #\d+|[^)]*\u00B7[^)]*)\)\s*/i,'');

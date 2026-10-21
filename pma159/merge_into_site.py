@@ -183,6 +183,18 @@ if os.path.exists(_lcp):
         LC['LC-%d' % (_n + 1)] = [{"id": k + 1, "question": q + (' (%d)' % rep if rep > 1 else ''), "options": o, "correct": a, "facts": why, "rel": rel,
                                    "pma": True, "sec": sec, "rep": rep} for k, (sec, q, o, a, why, rel, rep) in enumerate(_lc[_n * 50:(_n + 1) * 50])]
 
+PG = {}; PF = {}
+_pg_n = 0; _pf_n = 0
+for _fn, _D, _pre in (('pg_final.json', PG, 'PG'), ('pf_final.json', PF, 'PF')):
+    _pp = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'progenius', _fn)
+    if os.path.exists(_pp):
+        _l = json.load(open(_pp, encoding='utf8'))
+        if _pre == 'PG': _pg_n = len(_l)
+        else: _pf_n = len(_l)
+        for _n in range((len(_l) + 49) // 50):
+            _D['%s-%d' % (_pre, _n + 1)] = [{"id": k + 1, "question": q + (' (%d)' % rep if rep > 1 else ''), "options": o, "correct": a, "facts": why, "rel": rel,
+                                             "pma": True, "sec": sec, "rep": rep} for k, (sec, q, o, a, why, rel, rep) in enumerate(_l[_n * 50:(_n + 1) * 50])]
+
 def sub(a, b, count=1):
     global s
     assert s.count(a) == count, (s.count(a), a[:80])
@@ -204,7 +216,7 @@ SPLIT_JS = '''(function () {
 m = re.search(r'const ALL = ', s)
 eol = s.index('\n', m.start())
 assert s[:eol].rstrip().endswith(';')
-s = s[:eol] + '\n        const PMA_DATA = ' + json.dumps(PMA, ensure_ascii=False) + ';\n        ' + SPLIT_JS + 'Object.assign(ALL, PMA_DATA);\n        const FA_DATA = ' + json.dumps(FA, ensure_ascii=False) + ';\n        Object.assign(ALL, FA_DATA);\n        const HK_DATA = ' + json.dumps(HK, ensure_ascii=False) + ';\n        Object.assign(ALL, HK_DATA);\n        const MR_DATA = ' + json.dumps(MR, ensure_ascii=False) + ';\n        Object.assign(ALL, MR_DATA);\n        const CN_DATA = ' + json.dumps(CN, ensure_ascii=False) + ';\n        Object.assign(ALL, CN_DATA);\n        const IV_DATA = ' + json.dumps(IV, ensure_ascii=False) + ';\n        Object.assign(ALL, IV_DATA);\n        const LC_DATA = ' + json.dumps(LC, ensure_ascii=False) + ';\n        Object.assign(ALL, LC_DATA);\n        const HK_META = ' + json.dumps(HK_META) + ';\n        let TEST_SECS = 1200;\n        const isPMA = k => String(k).indexOf("PMA-") === 0;\n        const isFA = k => String(k).indexOf("FA-") === 0;\n        const isHK = k => String(k).indexOf("HK-") === 0;\n        const isMR = k => String(k).indexOf("MR-") === 0;\n        const isCN = k => String(k).indexOf("CN-") === 0;\n        const isIV = k => String(k).indexOf("IV-") === 0;\n        const isLC = k => String(k).indexOf("LC-") === 0;\n        const isExtra = k => isPMA(k) || isFA(k) || isHK(k) || isMR(k) || isCN(k) || isIV(k) || isLC(k);\n        /* answer audit corrections (Oct 2026): patched by test key + question id, nothing is removed */\n        const CORR = ' + json.dumps(json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'corrections.json'), encoding='utf8')), ensure_ascii=False) + ';\n        Object.keys(CORR).forEach(function (k) { var arr = ALL[k]; if (!arr) return; arr.forEach(function (q) { var c = CORR[k][String(q.id)]; if (c) Object.assign(q, c); }); });' + s[eol:]
+s = s[:eol] + '\n        const PMA_DATA = ' + json.dumps(PMA, ensure_ascii=False) + ';\n        ' + SPLIT_JS + 'Object.assign(ALL, PMA_DATA);\n        const FA_DATA = ' + json.dumps(FA, ensure_ascii=False) + ';\n        Object.assign(ALL, FA_DATA);\n        const HK_DATA = ' + json.dumps(HK, ensure_ascii=False) + ';\n        Object.assign(ALL, HK_DATA);\n        const MR_DATA = ' + json.dumps(MR, ensure_ascii=False) + ';\n        Object.assign(ALL, MR_DATA);\n        const CN_DATA = ' + json.dumps(CN, ensure_ascii=False) + ';\n        Object.assign(ALL, CN_DATA);\n        const IV_DATA = ' + json.dumps(IV, ensure_ascii=False) + ';\n        Object.assign(ALL, IV_DATA);\n        const LC_DATA = ' + json.dumps(LC, ensure_ascii=False) + ';\n        Object.assign(ALL, LC_DATA);\n        const PG_DATA = ' + json.dumps(PG, ensure_ascii=False) + ';\n        Object.assign(ALL, PG_DATA);\n        const PF_DATA = ' + json.dumps(PF, ensure_ascii=False) + ';\n        Object.assign(ALL, PF_DATA);\n        const HK_META = ' + json.dumps(HK_META) + ';\n        let TEST_SECS = 1200;\n        const isPMA = k => String(k).indexOf("PMA-") === 0;\n        const isFA = k => String(k).indexOf("FA-") === 0;\n        const isHK = k => String(k).indexOf("HK-") === 0;\n        const isMR = k => String(k).indexOf("MR-") === 0;\n        const isCN = k => String(k).indexOf("CN-") === 0;\n        const isIV = k => String(k).indexOf("IV-") === 0;\n        const isLC = k => String(k).indexOf("LC-") === 0;\n        const isPG = k => String(k).indexOf("PG-") === 0;\n        const isPF = k => String(k).indexOf("PF-") === 0;\n        const isExtra = k => isPMA(k) || isFA(k) || isHK(k) || isMR(k) || isCN(k) || isIV(k) || isLC(k) || isPG(k) || isPF(k);\n        /* answer audit corrections (Oct 2026): patched by test key + question id, nothing is removed */\n        const CORR = ' + json.dumps(json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'corrections.json'), encoding='utf8')), ensure_ascii=False) + ';\n        Object.keys(CORR).forEach(function (k) { var arr = ALL[k]; if (!arr) return; arr.forEach(function (q) { var c = CORR[k][String(q.id)]; if (c) Object.assign(q, c); }); });' + s[eol:]
 
 # ---- 2. second section on the selection page ----
 sub('<div id="test-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>',
@@ -337,10 +349,40 @@ sub('<div id="fa-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap
                 <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">PMA 158 Long Course</h2>
                 <p class="text-violet-50 text-sm sm:text-base">MCQs from the PMA 158 Long Course test experiences, in tests of 50 MCQs. Every answer shows a reason and a related fact, and current-affairs answers are updated to today.</p>
             </div>
-            <div id="lc-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>''')
+            <div id="lc-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            <div class="bg-gradient-to-r from-cyan-700 to-blue-600 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
+                <span class="inline-block bg-white/20 text-cyan-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">@@PG_COUNT@@</span>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Pro Genius Academy MCQs</h2>
+                <p class="text-cyan-50 text-sm sm:text-base">MCQs from Pro Genius Academy, in tests of 50 MCQs. A repeated question is written once and the number in brackets shows how many times it came. Every answer has a reason and a related fact.</p>
+            </div>
+            <div id="pg-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>''')
+s = s.replace('@@PG_COUNT@@', '%d Tests &bull; %d MCQs' % (len(PG) + len(PF), _pg_n + _pf_n))
 s = s.replace('@@LC_COUNT@@', '%d Tests &bull; %d MCQs' % (len(LC), _lc_n))
 s = s.replace('@@HK_COUNT@@', '%d Tests &bull; %d MCQs' % _hk_count)
-sub("function selectTest(k) {", """function renderLC() {
+sub("function selectTest(k) {", """let pgSub = null;
+        function openPgSub(p) { pgSub = p; renderPG(); window.scrollTo(0, 0); }
+        function renderPG() {
+            const g = document.getElementById('pg-grid'); if (!g) return;
+            const GR = {f: {name: 'Famous 1000 MCQs', sub: 'Pro Genius most famous MCQs', test: isPF, tag: 'Famous 1000'}, p: {name: 'PMA 159 Pro Genius MCQs', sub: 'PMA 159 initial test, Pro Genius', test: isPG, tag: 'PMA 159 Pro Genius'}};
+            if (pgSub === null) {
+                g.innerHTML = ['f', 'p'].map(id => {
+                    const ks = Object.keys(ALL).filter(GR[id].test), n = ks.reduce((t, k) => t + ALL[k].length, 0);
+                    return ks.length ? `<button type="button" onclick="openPgSub('${id}')" class="text-left bg-gradient-to-r from-cyan-700 to-blue-600 text-white rounded-2xl shadow-xl p-6 flex flex-col gap-2 col-span-full sm:col-span-1"><div class="text-xl font-bold">${GR[id].name}</div><div class="text-white/90 text-sm">${GR[id].sub}</div><div class="text-white/80 text-xs font-semibold">${ks.length} Tests &bull; ${n} MCQs</div><div class="text-sm font-bold mt-1">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`
+                        : `<div class="text-left bg-slate-200 text-slate-600 rounded-2xl p-6 flex flex-col gap-2 col-span-full sm:col-span-1"><div class="text-xl font-bold">${GR[id].name}</div><div class="text-sm">${GR[id].sub}</div><div class="text-xs font-semibold">Coming soon</div></div>`;
+                }).join('');
+                return;
+            }
+            const gr = GR[pgSub], ks = Object.keys(ALL).filter(gr.test);
+            g.innerHTML = '<div class="col-span-full"><button type="button" onclick="openPgSub(null)" class="inline-flex items-center gap-2 bg-white border border-slate-200 hover:border-cyan-400 text-slate-700 text-sm font-semibold px-4 py-2 rounded-full shadow-sm"><i class="fa-solid fa-arrow-left"></i> Pro Genius Academy</button><div class="text-lg font-bold text-slate-900 mt-3">' + gr.name + '</div></div>' + ks.map((k, i) => {
+                let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
+                return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-cyan-500 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="bg-cyan-100 text-cyan-800 text-xs font-bold px-3 py-1 rounded-full">${gr.tag} &bull; Test ${i + 1}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
+                    <div class="text-xl font-bold text-slate-900">${gr.name.replace(' MCQs', '')} &ndash; Part ${i + 1}</div>
+                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * 30) / 60))} Minutes &bull; Instant feedback</div>
+                    <div class="text-sm font-semibold text-cyan-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+            }).join('');
+        }
+        function renderLC() {
             const g = document.getElementById('lc-grid'); if (!g) return;
             g.innerHTML = Object.keys(ALL).filter(isLC).map((k, i) => {
                 let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
@@ -445,6 +487,8 @@ sub("renderSelect(); renderPMA(); renderFA(); window.scrollTo(0, 0);", "renderSe
 sub("function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA();", "function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA(); renderHK();")
 sub("(isFA(k) ? ' MCQs (Forces Academy Lahore – Part ' + k.slice(3) + ')' : ' MCQs (PMA 159 Long Course – Part ' + k.slice(4) + ')')", "(isLC(k) ? ' MCQs (PMA 158 Long Course – Part ' + k.slice(3) + ')' : isIV(k) ? ' MCQs (100 Most Repeated Verbal Questions)' : isCN(k) ? ' MCQs (Constitution of Pakistan – 1956, 1962, 1973)' : isMR(k) ? ' MCQs (Most Repeated – ' + (HK_META[k].hi ? HK_META[k].thr + ' to ' + HK_META[k].hi : HK_META[k].thr + '+') + ' times)' : isHK(k) ? ' MCQs (Hakeem Force Academy – PMA ' + HK_META[k].pma + ' Part ' + HK_META[k].part + ')' : isFA(k) ? ' MCQs (Forces Academy Lahore – Part ' + k.slice(3) + ')' : ' MCQs (PMA 159 Long Course – Part ' + k.slice(4) + ')')")
 sub("(isFA(k) ? ' MCQs from Forces Academy Lahore tests and academic lists. Every answer shows a reason and a related fact.' : ' MCQs from PMA 159 test experiences. Every answer shows a reason.')", "(isLC(k) ? ' MCQs from the PMA 158 Long Course test experiences. Every answer shows a reason and a related fact.' : isIV(k) ? ' of the most important verbal intelligence questions. The number in brackets is how many times the question was repeated in the earlier tests. Every answer shows a reason and a related fact.' : isCN(k) ? ' MCQs on the Constitutions of Pakistan of 1956, 1962 and 1973. The number in brackets is how many times the question was repeated in the PMA experiences. Every answer shows a reason and a related fact.' : isMR(k) ? ' MCQs repeated ' + (HK_META[k].hi ? HK_META[k].thr + ' to ' + HK_META[k].hi : HK_META[k].thr + ' or more') + ' times in the Hakeem Force Academy experiences. The number in brackets is how many times the question was repeated. Every answer shows a reason and a related fact.' : isHK(k) ? ' MCQs from PMA ' + HK_META[k].pma + ' test experiences. The number in brackets is how many times the question was repeated. Every answer shows a reason and a related fact.' : isFA(k) ? ' MCQs from Forces Academy Lahore tests and academic lists. Every answer shows a reason and a related fact.' : ' MCQs from PMA 159 test experiences. Every answer shows a reason.')")
+sub("(isLC(k) ? ' MCQs (PMA 158 Long Course", "(isPG(k) ? ' MCQs (PMA 159 Pro Genius – Part ' + k.slice(3) + ')' : isPF(k) ? ' MCQs (Famous 1000 – Part ' + k.slice(3) + ')' : isLC(k) ? ' MCQs (PMA 158 Long Course")
+sub("(isLC(k) ? ' MCQs from the PMA 158 Lon", "(isPG(k) ? ' MCQs from Pro Genius Academy PMA 159 tests. Every answer shows a reason and a related fact.' : isPF(k) ? ' of the most famous MCQs from Pro Genius Academy. Every answer shows a reason and a related fact.' : isLC(k) ? ' MCQs from the PMA 158 Lon")
 
 MENU_JS = """let curSec = null, menuReady = false;
         const SECS = [
@@ -452,7 +496,8 @@ MENU_JS = """let curSec = null, menuReady = false;
             {id: 'pma', name: 'PMA 159 MCQs', sub: 'PMA 159 Long Course test experiences', grad: 'from-emerald-700 to-teal-600', icon: 'fa-shield-halved', test: k => isPMA(k)},
             {id: 'fa', name: 'Forces Academy Lahore MCQs', sub: 'Intelligence tests and academic practice', grad: 'from-amber-700 to-orange-600', icon: 'fa-brain', test: k => isFA(k)},
             {id: 'hk', name: 'Hakeem Force Academy MCQs', sub: 'PMA All Experiences, Most Repeated MCQs, Constitution of Pakistan and 100 Most Repeated Questions', grad: 'from-sky-700 to-cyan-500', icon: 'fa-medal', test: k => isHK(k)},
-            {id: 'lc', name: 'PMA 158 Long Course MCQs', sub: 'PMA 158 Long Course test experiences', grad: 'from-violet-700 to-fuchsia-600', icon: 'fa-flag', test: k => isLC(k)}
+            {id: 'lc', name: 'PMA 158 Long Course MCQs', sub: 'PMA 158 Long Course test experiences', grad: 'from-violet-700 to-fuchsia-600', icon: 'fa-flag', test: k => isLC(k)},
+            {id: 'pg', name: 'Pro Genius Academy MCQs', sub: 'Famous 1000 MCQs and PMA 159 Pro Genius MCQs', grad: 'from-cyan-700 to-blue-600', icon: 'fa-graduation-cap', test: k => isPG(k) || isPF(k)}
         ];
         function initMenu() {
             if (menuReady) return; menuReady = true;
@@ -488,11 +533,11 @@ MENU_JS = """let curSec = null, menuReady = false;
                 else e.classList.toggle('hidden', e.dataset.sec !== curSec);
             });
         }
-        function openSec(id) { if (id === 'hk' && curSec !== 'hk' && typeof hkSub !== 'undefined') { hkSub = null; renderHK(); } curSec = id; applySec(); window.scrollTo(0, 0); }
+        function openSec(id) { if (id === 'pg' && curSec !== 'pg') { pgSub = null; renderPG(); } if (id === 'hk' && curSec !== 'hk' && typeof hkSub !== 'undefined') { hkSub = null; renderHK(); } curSec = id; applySec(); window.scrollTo(0, 0); }
         function bootQuizApp() {"""
 sub("function bootQuizApp() {", MENU_JS)
-sub("renderSelect(); renderPMA(); renderFA(); renderHK(); window.scrollTo(0, 0);", "renderSelect(); renderPMA(); renderFA(); renderHK(); renderLC(); applySec(); window.scrollTo(0, 0);")
-sub("function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA(); renderHK();", "function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA(); renderHK(); renderLC(); applySec();")
+sub("renderSelect(); renderPMA(); renderFA(); renderHK(); window.scrollTo(0, 0);", "renderSelect(); renderPMA(); renderFA(); renderHK(); renderLC(); renderPG(); applySec(); window.scrollTo(0, 0);")
+sub("function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA(); renderHK();", "function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA(); renderHK(); renderLC(); renderPG(); applySec();")
 
 # login screen (glassy sign in / create account / continue as guest) and day-night mode
 _d = os.path.dirname(os.path.abspath(__file__))
