@@ -66,9 +66,6 @@ if os.path.exists(os.path.join(_p166, 'items.json')):
 
 # more PMA 159 write-ups (pma167/): same procedure as pma166
 _p167 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma167')
-if os.environ.get('DUMPQ'):
-    with open(os.environ['DUMPQ'], 'w', encoding='utf8') as _df:
-        for _i, _t in enumerate(Q): _df.write('%d\t%s  => %s\n' % (_i, _t[1], _t[2]))
 if os.path.exists(os.path.join(_p167, 'items.json')):
     import glob as _gl7, json as _js7, runpy as _rp7
     _cnt167 = {_i['id']: _i['count'] for _i in _js7.load(open(os.path.join(_p167, 'items.json'), encoding='utf8'))}
@@ -84,6 +81,10 @@ if os.path.exists(os.path.join(_p167, 'items.json')):
             if _t[0] in _drop167: continue
             _why = _fx167.get(str(_t[0]), _t[5])
             Q.append((_t[1], _t[2], _t[3], _t[4], _why, _t[6]))
+
+if os.environ.get('DUMPQ'):
+    with open(os.environ['DUMPQ'], 'w', encoding='utf8') as _df:
+        for _i, _t in enumerate(Q): _df.write('%d\t%s  => %s\n' % (_i, _t[1], _t[2]))
 
 src, out = sys.argv[1], sys.argv[2]
 s = open(src, encoding='utf8').read()
