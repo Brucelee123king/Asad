@@ -1,0 +1,2 @@
+[{"num":15,"pick":2,"confidence":"low","rule":"Oval sits on the edge of the box. Figures 4 and 5 are identical (right-middle), 1 and 3 are bottom corners; 2 is the only one on the left-middle edge. No clean rule found.","alt":[1,3,5]},
+{"num":16,"pick":2,"confidence":"low","rule":"Each box has a thick and a thin tick at a corner. In 1, 3, 4, 5 the two ticks point in different directions (a V shape); in 2 they look parallel.","alt":[1,5]}]

@@ -544,6 +544,7 @@ MENU_JS = """let curSec = null, menuReady = false;
         function bootQuizApp() {"""
 sub("function bootQuizApp() {", MENU_JS)
 sub("renderSelect(); renderPMA(); renderFA(); renderHK(); window.scrollTo(0, 0);", "renderSelect(); renderPMA(); renderFA(); renderHK(); renderLC(); renderPG(); applySec(); window.scrollTo(0, 0);")
+sub("const passed = correctCount >= 25;", "const passed = correctCount * 2 >= quizData.length;")
 sub("function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA(); renderHK();", "function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA(); renderHK(); renderLC(); renderPG(); applySec();")
 
 # login screen (glassy sign in / create account / continue as guest) and day-night mode

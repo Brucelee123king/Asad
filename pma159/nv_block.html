@@ -33,7 +33,9 @@
     Array.prototype.slice.call(oc.children).forEach(function(el){
       if(el.getAttribute('role')==='button'||el.id)return;
       var t=el.textContent||'';
+      if(el.classList&&el.classList.contains('fb')){el.parentNode.removeChild(el);return}
       if(el.getAttribute('data-nvfix'))return;
+      if(/Why your choice is wrong|^\s*Why [A-E]\)\s+is correct/.test(t)||el.className.indexOf('bg-rose-50')>-1&&/Why/.test(t)||el.className.indexOf('bg-emerald-50')>-1&&/Why/.test(t)){el.parentNode.removeChild(el);return}
       if(/Wrong answer/.test(t)){el.textContent='✗ Wrong answer. Correct answer: '+(q.correct+1);el.setAttribute('data-nvfix','1')}
       else if(/Correct answer!/.test(t)){el.setAttribute('data-nvfix','1')}
       else if(/Related facts|Reason/.test(t)||el.className.indexOf('bg-slate-100')>-1){el.parentNode.removeChild(el)}
@@ -63,6 +65,10 @@
     }catch(e){}
     return r;
   };
+  var busy=false;
+  function obs(){var oc=document.getElementById('options-container');if(!oc||oc.__nvo)return;oc.__nvo=1;
+    new MutationObserver(function(){if(busy)return;var q=cur();if(!q||!q.nv)return;busy=true;try{patch()}catch(e){}busy=false}).observe(oc,{childList:true})}
+  obs();setInterval(obs,1500);
   window.__nvPatch=patch;
 })();
 </script>
