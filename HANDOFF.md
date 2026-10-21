@@ -205,3 +205,6 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 
 ## v1.0.21 (versionCode 22)
 - Non Verbal PMA Test moved OUT of Pro Genius into its own main category (7th card, id 'nv'). 19 puzzles (PDF Q1-6,8-14,17-22). Votes (first solver + second blind solver + 3 solvers on the original PDF) for the 9 disputed ones: Q1,2,10,17,18,19 got a clear majority and were added (Q2,10,17,19 carry a 'please check with your key' note); Q7, Q15, Q16 stayed ambiguous (no option is a true mirror in Q7; Q15 has two mirror images; Q16 has two near-identical figures) and are left out until the user supplies an answer key. Build: DROP=7,15,16 python3 progenius/nv/build_nv.py.
+
+## v1.0.22 (versionCode 23)
+- User supplied the true answers for two Non Verbal puzzles: PDF Q2 = option 5, PDF Q17 = option 3 (both were wrong in the agents' solutions, so the other agent-solved puzzles are still unverified against a real key: Q1,3,4,5,6,8,9,10,11,12,13,14,18,19,20,21,22). Asked the user for the full key (also for Q7, Q15, Q16 which are not shipped).
