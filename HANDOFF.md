@@ -208,3 +208,6 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 
 ## v1.0.22 (versionCode 23)
 - User supplied the true answers for two Non Verbal puzzles: PDF Q2 = option 5, PDF Q17 = option 3 (both were wrong in the agents' solutions, so the other agent-solved puzzles are still unverified against a real key: Q1,3,4,5,6,8,9,10,11,12,13,14,18,19,20,21,22). Asked the user for the full key (also for Q7, Q15, Q16 which are not shipped).
+
+## v1.0.23 (versionCode 24)
+- Hakeem Force Academy: the "Most Repeated MCQs" card (MR-n tests) removed at the user's request; Hakeem now has 3 cards: PMA All Experiences, Constitution of Pakistan, 100 Most Repeated Questions. (MR data still in the file but not shown; the Custom Range Test category chips cover it.)
