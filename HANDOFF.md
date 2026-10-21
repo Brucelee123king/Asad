@@ -198,3 +198,7 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 
 ## v1.0.19 (versionCode 20)
 - Currency check of all 1117 Pro Genius MCQs (7 agents, ~87 verified by web search, the rest static). 3 dropped (KP CM, Pak-Afghan border length, first Pakistani woman on K2: sources disagree), ~23 got an updated explanation with 'As of Oct 2026' notes (27th Amendment, hydel share, KP governor's rule 11 Oct 2026, etc.), PG158 and PF39 explanations/question fixed. PF now 815 MCQs (17 tests), PG 299 (6 tests).
+
+## v1.0.20 (versionCode 21)
+- "Non Verbal PMA Test" (NV-1) as 3rd option inside Pro Genius Academy: picture MCQs redrawn as SVG by agents from progenius/nv/Non_Verbal_04.pdf (22 puzzles). The PDF has no answer key: each puzzle was solved by 2 independent blind solvers; only the 13 where both agreed shipped (PDF Q3,4,5,6,8,9,11,12,13,14,20,21,22); 9 disagreed and were dropped (Q1,2,7,10,15,16,17,18,19) - waiting for the user's answer key. Q3, Q8, Q9 carry a "check with your key" note. Each question has a Solution and a Trick text. Code: pma159/nv_block.html, data progenius/nv_final.json (build: progenius/nv/build_nv.py with DROP env).
+- Fixed: short tests could never PASS (needed 25 correct); now >= 50%.
