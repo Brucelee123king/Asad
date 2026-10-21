@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- INTERNET is used only by the optional Online mode of the AI Helper. Everything else works offline. -->
-    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Fully offline app: no permissions at all (not even INTERNET). -->
 
     <application
         android:allowBackup="true"

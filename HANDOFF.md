@@ -211,3 +211,6 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 
 ## v1.0.23 (versionCode 24)
 - Hakeem Force Academy: the "Most Repeated MCQs" card (MR-n tests) removed at the user's request; Hakeem now has 3 cards: PMA All Experiences, Constitution of Pakistan, 100 Most Repeated Questions. (MR data still in the file but not shown; the Custom Range Test category chips cover it.)
+
+## v1.0.24 (versionCode 25)
+- AI Helper (round robot button) REMOVED at the user's request: pma159/ai_block.html and the netlify/ folder deleted (still in git history), INTERNET permission removed again (app has no permissions). The unused file-chooser code in MainActivity.kt stays (harmless).
