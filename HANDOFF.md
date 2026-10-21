@@ -195,3 +195,6 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 ## v1.0.18 (versionCode 19)
 - Pro Genius "Famous 1000 MCQs" (PF-n): 818 unique MCQs in 17 tests (sum of repeat counts 1102; 1110 entries read from the scanned PDF progenius/Al Famous Thousand...pdf, 132 pages, read by 11 vision agents; 6 dedupe agents; 6 blind-check agents; 7 ambiguous items dropped, 3 fixed). Data: progenius/pf_final.json (raw: pf_final_raw.json, work2/).
 - Range test "All sections" now ALSO counts Pro Genius (user request); Pro Genius is also its own category chip.
+
+## v1.0.19 (versionCode 20)
+- Currency check of all 1117 Pro Genius MCQs (7 agents, ~87 verified by web search, the rest static). 3 dropped (KP CM, Pak-Afghan border length, first Pakistani woman on K2: sources disagree), ~23 got an updated explanation with 'As of Oct 2026' notes (27th Amendment, hydel share, KP governor's rule 11 Oct 2026, etc.), PG158 and PF39 explanations/question fixed. PF now 815 MCQs (17 tests), PG 299 (6 tests).
