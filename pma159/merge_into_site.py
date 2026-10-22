@@ -120,6 +120,25 @@ if os.path.exists(os.path.join(_p169, 'items.json')):
             Q.append((_t[1], _t[2], _t[3], _t[4], _why, _t[6]))
 
 
+# batch 4 (PDF PMA ALL Centers Academic) (pma170/)
+_p170 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma170')
+if os.path.exists(os.path.join(_p170, 'items.json')):
+    import glob as _gl10, json as _js10, runpy as _rp10
+    _cnt170 = {_i['id']: _i['count'] for _i in _js10.load(open(os.path.join(_p170, 'items.json'), encoding='utf8'))}
+    _fy170 = _js10.load(open(os.path.join(_p170, 'fix_reason.json'), encoding='utf8')) if os.path.exists(os.path.join(_p170, 'fix_reason.json')) else {}
+    _drop170 = set()
+    _dp10 = os.path.join(_p170, 'drop.json')
+    if os.path.exists(_dp10): _drop170 = set(_js10.load(open(_dp10)))
+    for _f in sorted(_gl10.glob(os.path.join(_p170, 'm_s*.py'))):
+        _m = _rp10.run_path(_f)
+        for _n, _idx in _m['MATCH']:
+            _t = list(Q[_idx]); _t[5] = _t[5] + _cnt170[_n]; Q[_idx] = tuple(_t)
+        for _t in _m['NEW']:
+            if _t[0] in _drop170: continue
+            _why = _fy170.get(str(_t[0]), _t[5])
+            Q.append((_t[1], _t[2], _t[3], _t[4], _why, _t[6]))
+
+
 if os.environ.get('DUMPQ'):
     with open(os.environ['DUMPQ'], 'w', encoding='utf8') as _df:
         for _i, _t in enumerate(Q): _df.write('%d\t%s  => %s\n' % (_i, _t[1], _t[2]))
