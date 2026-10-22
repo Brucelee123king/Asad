@@ -2242,8 +2242,8 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
     var done=function(){busy=false};
     if(!user){done();leave();showLogin();return Promise.resolve()}
     var email=(user.email||'').toLowerCase();
-    if(!user.emailVerified){done();showVerify(user);return Promise.resolve()}
     var admin=email===ADMIN;
+    if(admin&&!user.emailVerified){done();showVerify(user);return Promise.resolve()}
     return FB.getDoc(FB.doc(fs,'users',user.uid)).then(function(d){
       if(admin){done();return enter(user,ALLCATS)}
       if(!d.exists()){return FB.setDoc(FB.doc(fs,'users',user.uid),{email:email,name:nm(user),status:'pending',cats:[],requested:FB.serverTimestamp()}).then(function(){done();leave();showPending(user)})}
@@ -2276,7 +2276,7 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
     if(!$('upAgree').checked){e.textContent='Please agree to the Terms & Privacy Policy.';return false}
     if(!auth){e.textContent='No internet. Please connect and try again.';return false}
     e.textContent='Please wait...';ls('ac_name',n);
-    FB.createUserWithEmailAndPassword(auth,m,p).then(function(c){return FB.sendEmailVerification(c.user)}).then(function(){e.textContent=''}).catch(function(x){e.textContent=errMsg(x)});return false};
+    FB.createUserWithEmailAndPassword(auth,m,p).then(function(c){return c}).then(function(){e.textContent=''}).catch(function(x){e.textContent=errMsg(x)});return false};
   if(!webview&&auth){[paneIn,paneUp].forEach(function(p){var g=document.createElement('button');g.type='button';g.className='gbtn';g.textContent='Sign in with Google';
     g.onclick=function(){FB.signInWithPopup(auth,new FB.GoogleAuthProvider()).catch(function(x){var e=p.querySelector('.err');if(e)e.textContent=errMsg(x)})};
     var b=p.querySelector('.btn');b.parentNode.insertBefore(g,b.nextSibling)})}
