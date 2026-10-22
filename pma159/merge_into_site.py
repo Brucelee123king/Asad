@@ -101,6 +101,25 @@ if os.path.exists(os.path.join(_p168, 'items.json')):
             Q.append((_t[1], _t[2], _t[3], _t[4], _why, _t[6]))
 
 
+# batch 3 (pma169/)
+_p169 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma169')
+if os.path.exists(os.path.join(_p169, 'items.json')):
+    import glob as _gl9, json as _js9, runpy as _rp9
+    _cnt169 = {_i['id']: _i['count'] for _i in _js9.load(open(os.path.join(_p169, 'items.json'), encoding='utf8'))}
+    _fy169 = _js9.load(open(os.path.join(_p169, 'fix_reason.json'), encoding='utf8')) if os.path.exists(os.path.join(_p169, 'fix_reason.json')) else {}
+    _drop169 = set()
+    _dp9 = os.path.join(_p169, 'drop.json')
+    if os.path.exists(_dp9): _drop169 = set(_js9.load(open(_dp9)))
+    for _f in sorted(_gl9.glob(os.path.join(_p169, 'm_s*.py'))):
+        _m = _rp9.run_path(_f)
+        for _n, _idx in _m['MATCH']:
+            _t = list(Q[_idx]); _t[5] = _t[5] + _cnt169[_n]; Q[_idx] = tuple(_t)
+        for _t in _m['NEW']:
+            if _t[0] in _drop169: continue
+            _why = _fy169.get(str(_t[0]), _t[5])
+            Q.append((_t[1], _t[2], _t[3], _t[4], _why, _t[6]))
+
+
 if os.environ.get('DUMPQ'):
     with open(os.environ['DUMPQ'], 'w', encoding='utf8') as _df:
         for _i, _t in enumerate(Q): _df.write('%d\t%s  => %s\n' % (_i, _t[1], _t[2]))
