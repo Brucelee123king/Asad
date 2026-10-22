@@ -245,3 +245,4 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 
 ## Batch 3 of PMA 159 write-ups (pma169/, Oct 22 2026)
 - 7 write-ups (numbers 60-66 on the WhatsApp posts, 20-22 Oct): 109 items, 44 MATCH after audit (2 wrong matches removed: series 2,6,12,20 and vague 1973 constitution line), 38 NEW (all rep 0), 27 skipped as ambiguous (Sir Syed date, Hajj year, Muwakhat year, Asadullah laqab, mission names, etc). PMA 159 = 623 MCQs. Merge hook in pma159/merge_into_site.py (pma169 block). Published online (no APK change needed). Weak spots: items 32,47,50,55,84,86,88,89 had thin web checks; Sindh CM match (index 228) not re-verified.
+- v1.0.31: loading text now 'Checking your internet connection.' APK: android-app/release/AsadullahNotes-v1031.apk
