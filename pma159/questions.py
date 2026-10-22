@@ -247,7 +247,7 @@ Q = [
 (CA, "Who is the current Chief Minister of Balochistan? (current affairs)", "Mir Sarfraz Bugti", ["Abdul Malik Baloch", "Jam Kamal Khan", "Qudus Bizenjo"], "Sarfraz Bugti became CM in March 2024. Verify latest.", 1),
 (CA, "Who is the current Prime Minister of Pakistan? (current affairs)", "Shehbaz Sharif", ["Imran Khan", "Nawaz Sharif", "Bilawal Bhutto"], "Shehbaz Sharif became PM in March 2024. Verify latest.", 1),
 (CA, "Who is the Deputy Prime Minister of Pakistan? (current affairs)", "Ishaq Dar", ["Ahsan Iqbal", "Khawaja Asif", "Bilawal Bhutto"], "Ishaq Dar has been Deputy PM since 2024. Verify latest.", 2),
-(CA, "Who is the Governor of Sindh? (current affairs)", "Kamran Khan Tessori", ["Ishratul Ibad", "Imran Ismail", "Muhammad Zubair"], "Tessori was appointed Governor of Sindh in 2023. Verify latest.", 2),
+(CA, "Who is the Governor of Sindh? (current affairs)", "Nehal Hashmi", ["Kamran Khan Tessori", "Ishratul Ibad", "Imran Ismail"], "Nehal Hashmi (PML-N) took oath as Governor of Sindh on 13 March 2026, succeeding Kamran Tessori (MQM-P).", 2),
 (CA, "Who is the Governor of Khyber Pakhtunkhwa? (current affairs)", "Faisal Karim Kundi", ["Haji Ghulam Ali", "Shaukat Ullah", "Ali Amin Gandapur"], "Kundi became KP Governor in 2024. Verify latest.", 1),
 (CA, "Who is the Chairman of the Senate of Pakistan? (current affairs)", "Syed Yousaf Raza Gilani", ["Sadiq Sanjrani", "Ayaz Sadiq", "Raja Pervaiz Ashraf"], "Gilani was elected Senate Chairman in April 2024. Verify latest.", 1),
 (CA, "Who is the President of Turkey? (current affairs)", "Recep Tayyip Erdogan", ["Abdullah Gul", "Ahmet Davutoglu", "Binali Yildirim"], "Erdogan has been President since 2014.", 1),
