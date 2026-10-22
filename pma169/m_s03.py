@@ -1,0 +1,14 @@
+MATCH = [(77,341),(79,397),(82,260),(83,194),(90,109),(92,435),(93,118),(94,327),(95,359),(96,493),(97,302),(98,206),(99,173),(100,145),(101,159),(102,579),(103,224),(104,514),(105,500),(107,524),(108,492)]
+NEW = [
+(76,"Pakistan Studies","In which province of Pakistan is the ancient site of Mohenjo-daro located?","Sindh",["Punjab","Balochistan","Khyber Pakhtunkhwa"],"Mohenjo-daro, a major Indus Valley Civilization city, lies in Larkana district of Sindh.",0),
+(78,"Pakistan Studies","In which year did the social worker Abdul Sattar Edhi die?","2016",["2014","2015","2017"],"Abdul Sattar Edhi died in Karachi on 8 July 2016.",0),
+(80,"General Knowledge","Which is the largest source of fresh water on Earth?","Glaciers and ice caps",["Rivers","Lakes","Groundwater"],"About 68.7 percent of Earth's fresh water is locked in glaciers, ice caps and permanent snow.",0),
+(81,"Maths & Science","Which force opposes the motion of a moving body?","Friction",["Gravity","Magnetic force","Buoyancy"],"Friction acts between surfaces in contact and opposes relative motion.",0),
+(84,"General Knowledge","In which sport did Pakistan win its first Olympic gold medal (Rome, 1960)?","Hockey",["Wrestling","Boxing","Cricket"],"Pakistan beat India 1-0 in the men's hockey final at the 1960 Rome Olympics.",0),
+(85,"General Knowledge","The legendary boxer Muhammad Ali belonged to which country?","United States of America",["United Kingdom","Pakistan","Canada"],"Muhammad Ali (Cassius Clay) was an American heavyweight boxer from Louisville, Kentucky.",0),
+(86,"Islamiat","The family tree of Prophet Muhammad PBUH goes back to which Prophet?","Hazrat Ismail (A.S.)",["Hazrat Ishaq (A.S.)","Hazrat Yaqub (A.S.)","Hazrat Musa (A.S.)"],"The Prophet PBUH descended from Hazrat Ismail (A.S.), son of Hazrat Ibrahim (A.S.), through Adnan.",0),
+(88,"Islamiat","Hazrat Yaqub (A.S.) was the son of which Prophet?","Hazrat Ishaq (A.S.)",["Hazrat Ismail (A.S.)","Hazrat Yusuf (A.S.)","Hazrat Musa (A.S.)"],"Hazrat Yaqub (A.S.) was the son of Hazrat Ishaq (A.S.) and the grandson of Hazrat Ibrahim (A.S.).",0),
+(89,"Pakistan Studies","According to Article 41 of the 1973 Constitution, what is the minimum age to be elected President of Pakistan?","45 years",["35 years","40 years","50 years"],"Article 41 requires the President to be a Muslim, at least 45 years old and qualified to be a member of the National Assembly.",0),
+(106,"Verbal: English","Change into passive voice: Ali wrote a letter.","A letter was written by Ali.",["A letter is written by Ali.","A letter has been written by Ali.","Ali was written by a letter."],"Simple past active becomes was/were plus past participle: A letter was written by Ali.",0),
+]
+SKIPPED = {87:"Age at last revelation unclear/disputed (63 only inferred from death)",91:"Question unspecified in write-up",109:"Not a question, general advice"}
