@@ -119,6 +119,7 @@ rep("document.addEventListener('pointermove',function(e){lx=e.clientX", "documen
 import json as _json
 for _n in ('PMA_DATA', 'FA_DATA', 'HK_DATA', 'MR_DATA', 'CN_DATA', 'IV_DATA', 'LC_DATA'):
     _a = 'const %s = ' % _n
+    if _a not in html: continue   # locked build: the data is encrypted ciphertext inside the page instead
     _i = html.index(_a) + len(_a)
     _val, _end = _json.JSONDecoder().raw_decode(html, _i)   # literal is pure JSON (written with json.dumps)
     html = html[:_i] + 'JSON.parse(' + _json.dumps(_json.dumps(_val, ensure_ascii=False, separators=(',', ':'))) + ')' + html[_end:]

@@ -49,6 +49,8 @@ html.dark #rngModal .go.alt{color:#a5b4fc;border-color:#a5b4fc}
   var $=function(id){return document.getElementById(id)};
   var SKIP=/^(MR|IV|CN|NV)-/;           /* these tests only repeat Hakeem MCQs: never count them twice */
   var idx=null,CAT='ALL';
+  window.__rngReset=function(){idx=null};
+  var CATLOCK={O:'o',PMA:'pma',HK:'hk',FA:'fa',LC:'lc',PG:'pg'};
   var CATS=[['ALL','All sections'],['O','1000 MCQs'],['PMA','PMA 159'],['HK','Hakeem'],['FA','Forces Academy'],['LC','PMA 158'],['PG','Pro Genius']];
   function catOf(k){var p=k.split('-')[0];return p==='PG'||p==='PF'?'PG':(p==='PMA'||p==='HK'||p==='FA'||p==='LC')?p:'O'}
   function strip(q){
@@ -89,8 +91,9 @@ html.dark #rngModal .go.alt{color:#a5b4fc;border-color:#a5b4fc}
   function secLabel(e){var o=Object.keys(e.secs).map(function(s){return SECN[s]||'1000 MCQs'});return o.join(', ')}
   function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
   function catName(){for(var i=0;i<CATS.length;i++)if(CATS[i][0]===CAT)return CATS[i][0]==='ALL'?'all sections':CATS[i][1];return ''}
-  function drawCats(){var el=$('rngCats');el.innerHTML=CATS.map(function(c){return '<button type="button" class="cat'+(c[0]===CAT?' on':'')+'" data-c="'+c[0]+'">'+c[1]+'</button>'}).join('')}
-  document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('#rngCats .cat');if(!b)return;CAT=b.getAttribute('data-c');drawCats();find()});
+  function isLk(c){return !!(window.__isLocked&&CATLOCK[c]&&window.__isLocked(CATLOCK[c]))}
+  function drawCats(){var el=$('rngCats');el.innerHTML=CATS.map(function(c){return '<button type="button" class="cat'+(c[0]===CAT?' on':'')+'" data-c="'+c[0]+'">'+(isLk(c[0])?'&#128274; ':'')+c[1]+'</button>'}).join('')}
+  document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('#rngCats .cat');if(!b)return;var c=b.getAttribute('data-c');if(isLk(c)){window.__openLock(CATLOCK[c],function(){if(window.__rngReset)window.__rngReset();CAT=c;drawCats();find()});return}CAT=c;drawCats();find()});
   var cur=[];
   function find(){
     var a=parseInt($('rngFrom').value,10),b=parseInt($('rngTo').value,10),info=$('rngInfo'),list=$('rngList'),acts=$('rngActs');
@@ -99,6 +102,7 @@ html.dark #rngModal .go.alt{color:#a5b4fc;border-color:#a5b4fc}
     a=Math.max(1,Math.floor(a));b=Math.max(1,Math.floor(b));
     if(a>b){var t=a;a=b;b=t}
     var all=build();
+    if(!all.length&&window.__isLocked&&Object.keys(CATLOCK).every(function(c){return window.__isLocked(CATLOCK[c])})){info.textContent='All categories are locked. Tap a category above (with the lock) and enter its password.';return}
     all.forEach(function(e){e.val=CAT==='ALL'?e.total:(e.cats[CAT]||0)});
     cur=all.filter(function(e){return e.val>=1&&e.val>=a&&e.val<=b}).sort(function(x,y){return y.val-x.val||(x.core<y.core?-1:1)});
     var n=cur.length;
