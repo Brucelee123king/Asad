@@ -1876,7 +1876,7 @@ html.dark #rngModal .go.alt{color:#a5b4fc;border-color:#a5b4fc}
   function cur(){try{if(quizActive&&quizData&&quizData[currentQuestionIndex])return quizData[currentQuestionIndex]}catch(e){}return null}
   function esc(s){return String(s==null?'':s).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})}
   function patch(){
-    var q=cur();if(!q||!q.nv)return;
+    var q=cur();if(!q||!q.nv){var o=document.getElementById('nvStem');if(o&&o.parentNode)o.parentNode.removeChild(o);return}
     var qt=document.getElementById('question-text');if(!qt)return;
     var st=document.getElementById('nvStem');
     if(!st){st=document.createElement('div');st.id='nvStem';qt.parentNode.insertBefore(st,qt.nextSibling)}
