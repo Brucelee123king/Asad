@@ -58,6 +58,10 @@ _d3 = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'd3_block.ht
 _tail = _d3[-80:]
 assert html.count(_tail) == 1
 m = html.index(_tail) + len(_tail)
-html = html[:m] + '\n' + block + html[m:]
+cfg = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'firebase_config.json'), encoding='utf8').read()
+access = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'access_block.html'), encoding='utf8').read().replace('__FBCFG__', json.dumps(json.loads(cfg)))
+html = html[:m] + '\n' + block + '\n' + access + html[m:]
 open(os.path.join(outdir, 'index.html'), 'w', encoding='utf8').write(html)
+adm = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'admin.html'), encoding='utf8').read().replace('__FBCFG__', json.dumps(json.loads(cfg)))
+open(os.path.join(outdir, 'admin.html'), 'w', encoding='utf8').write(adm)
 print('written', outdir, 'shell', len(html), 'bytes; reused unchanged:', reused, '; versions', versions)

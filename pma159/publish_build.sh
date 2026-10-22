@@ -10,5 +10,5 @@ cp ../site/index.html ../android-app/source/index.html
 (cd ../android-app && python3 tools/build_web.py /tmp/tw >/dev/null)
 rm -rf /tmp/publish; mkdir -p /tmp/publish
 cp -r ../android-app/app/src/main/assets/www/. /tmp/publish/
-cp -r "$DIST/data" /tmp/publish/data; cp "$DIST/lock.json" /tmp/publish/lock.json; touch /tmp/publish/.nojekyll
+cp -r "$DIST/data" /tmp/publish/data; cp "$DIST/lock.json" /tmp/publish/lock.json; cp "$DIST/admin.html" /tmp/publish/admin.html; touch /tmp/publish/.nojekyll
 echo "publish folder ready: /tmp/publish"; du -sh /tmp/publish

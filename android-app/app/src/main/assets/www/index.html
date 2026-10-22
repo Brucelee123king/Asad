@@ -2077,47 +2077,28 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
 })();
 </script>
 <style>
-#lkModal{position:fixed;left:0;top:0;right:0;bottom:0;z-index:9999;display:none;align-items:center;justify-content:center;padding:16px;background:rgba(2,6,23,.6)}
-#lkModal.open{display:flex}
-#lkModal .box{width:min(380px,100%);border-radius:22px;padding:20px;background:#fff;color:#0f172a;box-shadow:0 30px 70px -20px rgba(0,0,0,.5)}
-html.dark #lkModal .box{background:#0f172a;color:#e2e8f0;border:1px solid rgba(148,163,184,.2)}
-#lkModal h3{margin:0 0 4px;font-size:19px;font-weight:800}
-#lkModal p{margin:0 0 12px;font-size:13px;opacity:.75;line-height:1.45}
-#lkModal input{width:100%;padding:13px 12px;border-radius:12px;border:1px solid rgba(148,163,184,.55);font-size:18px;letter-spacing:.12em;text-transform:uppercase;text-align:center;background:transparent;color:inherit;box-sizing:border-box}
-#lkModal .err{min-height:20px;margin:8px 0 0;font-size:13px;font-weight:700;color:#dc2626}
-#lkModal .row{display:flex;gap:8px;margin-top:10px}
-#lkModal button{flex:1;border:0;border-radius:14px;padding:13px;font-size:15px;font-weight:700;cursor:pointer}
-#lkModal .ok{background:#4f46e5;color:#fff}#lkModal .no{background:rgba(148,163,184,.25);color:inherit}
-#lkModal button[disabled]{opacity:.5}
 #lkAll{display:none;margin:6px auto 0;border:1px solid rgba(148,163,184,.5);background:transparent;color:inherit;border-radius:999px;padding:6px 14px;font-size:12px;cursor:pointer}
 #lkToast{position:fixed;left:12px;right:12px;bottom:18px;z-index:9999;display:none;padding:12px 14px;border-radius:14px;background:#0f172a;color:#fff;font-size:13px;line-height:1.4;box-shadow:0 10px 30px rgba(0,0,0,.4)}
 </style>
-<div id="lkModal" role="dialog" aria-modal="true" aria-label="Unlock category"><div class="box">
-  <h3 id="lkTitle">Unlock</h3><p id="lkSub">Enter the password for this category.</p>
-  <input id="lkPw" type="text" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="PASSWORD">
-  <div class="err" id="lkErr"></div>
-  <div class="row"><button class="no" id="lkNo" type="button">Cancel</button><button class="ok" id="lkGo" type="button">Unlock</button></div>
-</div></div>
 <div id="lkToast"></div>
 <script>
 (function(){
   var L=window.__LOCK;if(!L)return;
   var $=function(i){return document.getElementById(i)};
   var NAMES={o:'1000 MCQs',pma:'PMA 159 MCQs',fa:'Forces Academy Lahore MCQs',hk:'Hakeem Force Academy MCQs',lc:'PMA 158 Long Course MCQs',pg:'Pro Genius Academy MCQs',nv:'Non Verbal PMA Test'};
-  var DAY=86400000,EXP=(L.expiryDays||7)*DAY,ids=Object.keys(L.cats),ST={},busy=false;
+  var DAY=86400000,EXP=(L.expiryDays||7)*DAY,ids=Object.keys(L.cats),ST={},busy=false,ALLOWED=null,GETKEY=null;
   var subtle=window.crypto&&window.crypto.subtle,okEnv=!!subtle&&typeof DecompressionStream!=='undefined';
   function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);if(v===null)localStorage.removeItem(k);else localStorage.setItem(k,v)}catch(e){return null}}
-  function toast(m){var t=$('lkToast');t.textContent=m;t.style.display='block';clearTimeout(toast._t);toast._t=setTimeout(function(){t.style.display='none'},7000)}
+  function toast(m){var t=$('lkToast');t.textContent=m;t.style.display='block';clearTimeout(toast._t);toast._t=setTimeout(function(){t.style.display='none'},8000)}
+  window.__lkToast=toast;
   function b64(s){var b=atob(s),u=new Uint8Array(b.length);for(var i=0;i<b.length;i++)u[i]=b.charCodeAt(i);return u}
   function hex(u){var s='';for(var i=0;i<u.length;i++)s+=('0'+u[i].toString(16)).slice(-2);return s}
   function unhex(h){var u=new Uint8Array(h.length/2);for(var i=0;i<u.length;i++)u[i]=parseInt(h.substr(i*2,2),16);return u}
-  /* ---- tiny IndexedDB cache for the (still encrypted) data files ---- */
   var _db=null;
   function db(){return _db||(_db=new Promise(function(res,rej){try{var r=indexedDB.open('lkdb',1);r.onupgradeneeded=function(){r.result.createObjectStore('ct')};r.onsuccess=function(){res(r.result)};r.onerror=function(){rej(r.error)}}catch(e){rej(e)}}))}
   function idbGet(k){return db().then(function(d){return new Promise(function(res){var q=d.transaction('ct').objectStore('ct').get(k);q.onsuccess=function(){res(q.result||null)};q.onerror=function(){res(null)}})}).catch(function(){return null})}
   function idbSet(k,v){return db().then(function(d){return new Promise(function(res){var t=d.transaction('ct','readwrite');t.objectStore('ct').put(v,k);t.oncomplete=function(){res()};t.onerror=function(){res()}})}).catch(function(){})}
   function idbDel(k){return db().then(function(d){return new Promise(function(res){var t=d.transaction('ct','readwrite');t.objectStore('ct').delete(k);t.oncomplete=function(){res()};t.onerror=function(){res()}})}).catch(function(){})}
-  /* ---- crypto ---- */
   function decryptWith(file,rawKey){
     return subtle.importKey('raw',rawKey,'AES-GCM',false,['decrypt']).then(function(k){return subtle.decrypt({name:'AES-GCM',iv:b64(file.iv)},k,b64(file.ct))}).then(function(buf){
       return new Response(new Blob([buf]).stream().pipeThrough(new DecompressionStream('gzip'))).text()}).then(function(t){return JSON.parse(t)});
@@ -2126,11 +2107,9 @@ html.dark #lkModal .box{background:#0f172a;color:#e2e8f0;border:1px solid rgba(1
     return subtle.importKey('raw',new TextEncoder().encode(pw),'PBKDF2',false,['deriveBits']).then(function(k){
       return subtle.deriveBits({name:'PBKDF2',salt:b64(file.salt),iterations:file.iter,hash:'SHA-256'},k,256)}).then(function(b){return new Uint8Array(b)});
   }
-  /* ---- network ---- */
   function getJSON(path){return fetch(L.base+path,{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error('http '+r.status);return r.json()})}
   var fetchLock=function(){return getJSON('lock.json?t='+Date.now())};
   var fetchCat=function(id,v){return getJSON('data/'+id+'.json?v='+encodeURIComponent(v||Date.now()))};
-  /* ---- state ---- */
   window.__isLocked=function(id){return !!L.cats[id]&&!ST[id]};
   function refreshAll(){
     try{if(window.__flatReset)window.__flatReset();if(window.__rngReset)window.__rngReset()}catch(e){}
@@ -2139,76 +2118,178 @@ html.dark #lkModal .box{background:#0f172a;color:#e2e8f0;border:1px solid rgba(1
   function applyData(id,data){Object.keys(data).forEach(function(k){ALL[k]=data[k]});ST[id]=1}
   function relock(id){var st=window.__mkStubs(id);Object.keys(st).forEach(function(k){ALL[k]=st[k]});delete ST[id]}
   function forget(id){ls('lk_k_'+id,null);ls('lk_v_'+id,null);ls('lk_t_'+id,null);return idbDel(id)}
-  /* ---- password window ---- */
-  var pending=null;
-  function openLock(id,cb){
-    if(!okEnv){alert('This app needs a newer Android System WebView to unlock categories. Please update it in Play Store.');return}
-    pending={id:id,cb:cb};$('lkTitle').textContent='Unlock '+(NAMES[id]||'category');$('lkSub').textContent='Enter the password for this category. Ask the admin if you do not have it. Internet is needed the first time.';
-    $('lkPw').value='';$('lkErr').textContent='';$('lkGo').disabled=false;$('lkModal').classList.add('open');setTimeout(function(){$('lkPw').focus()},60);
-  }
-  window.__openLock=openLock;
-  function closeLock(){$('lkModal').classList.remove('open');pending=null}
-  function tryUnlock(){
-    if(!pending)return;var id=pending.id,cb=pending.cb;
-    var pw=$('lkPw').value.toUpperCase().replace(/[^A-Z0-9]/g,'');if(!pw){$('lkErr').textContent='Type the password.';return}
-    $('lkGo').disabled=true;$('lkErr').textContent='Checking...';
-    fetchCat(id).then(function(file){
+  /* open a category with its password (the app gets the password from the server for approved people; nobody types it) */
+  function unlockWith(id,pw){
+    pw=String(pw).toUpperCase().replace(/[^A-Z0-9]/g,'');
+    return fetchCat(id).then(function(file){
       return deriveKey(file,pw).then(function(raw){return decryptWith(file,raw).then(function(data){return {file:file,raw:raw,data:data}})}).catch(function(){var e=new Error('pw');e.pw=1;throw e});
     }).then(function(r){
       applyData(id,r.data);ls('lk_k_'+id,hex(r.raw));ls('lk_v_'+id,r.file.v);ls('lk_t_'+id,String(Date.now()));
-      return idbSet(id,r.file).then(function(){closeLock();refreshAll();if(cb)cb();else try{openSec(id)}catch(e){}});
-    }).catch(function(e){$('lkErr').textContent=e&&e.pw?'Wrong password. Try again.':'Could not download. Check your internet and try again.';$('lkGo').disabled=false;if(e&&e.pw)$('lkPw').select()});
+      return idbSet(id,r.file)});
   }
-  $('lkGo').onclick=tryUnlock;$('lkNo').onclick=closeLock;
-  $('lkPw').addEventListener('keydown',function(e){if(e.key==='Enter')tryUnlock()});
-  $('lkModal').addEventListener('click',function(e){if(e.target===this)closeLock()});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&$('lkModal').classList.contains('open'))closeLock()});
+  window.__openLock=function(id,cb){toast('This category is not enabled for your account. Ask the admin to enable it.')};
   var _os=window.openSec;
-  window.openSec=function(id){if(id&&window.__isLocked(id)){openLock(id);return}return _os.apply(this,arguments)};
+  window.openSec=function(id){if(id&&window.__isLocked(id)){toast('This category is not enabled for your account. Ask the admin to enable it.');return}return _os.apply(this,arguments)};
   function decorate(){
     var m=$('sec-menu');if(!m)return;
     m.querySelectorAll('button[onclick^="openSec("]').forEach(function(b){
       var mm=/openSec\('([a-z]+)'\)/.exec(b.getAttribute('onclick')||'');if(!mm)return;
       var lk=window.__isLocked(mm[1]);var sm=b.querySelector('.text-white\\/80');
-      if(sm){if(lk&&!sm.getAttribute('data-lk')){sm.setAttribute('data-lk',sm.textContent);sm.textContent='🔒 Locked - tap and enter the password'}}
+      if(sm){if(lk&&!sm.getAttribute('data-lk')){sm.setAttribute('data-lk','1');sm.textContent='🔒 Not enabled for you - ask the admin'}}
     });
-    var any=ids.some(function(i){return !window.__isLocked(i)});
-    var a=$('lkAll');if(!a){a=document.createElement('button');a.id='lkAll';a.type='button';a.textContent='🔒 Lock all categories';
-      a.onclick=function(){Promise.all(ids.map(forget)).then(function(){location.reload()})};
-      var h=m.firstChild;if(h&&h.firstChild)h.firstChild.appendChild(a)}
-    if(a)a.style.display=any?'block':'none';
   }
   var _rm=window.renderMenu;if(typeof _rm==='function')window.renderMenu=function(){var r=_rm.apply(this,arguments);try{decorate()}catch(e){}return r};
-  /* ---- launch: open from the saved copy, then check the server (password changed? new data? expired?) ---- */
+  /* ---- saved copy, server check (new data / password changed / category removed), 7-day expiry ---- */
   function loadSaved(id){
     var h=ls('lk_k_'+id);if(!h||!okEnv)return Promise.resolve(false);
-    var t=parseInt(ls('lk_t_'+id)||'0',10);if(Date.now()-t>EXP||t>Date.now()+DAY)return Promise.resolve(false);   /* expired: must check online first */
+    var t=parseInt(ls('lk_t_'+id)||'0',10);if(Date.now()-t>EXP||t>Date.now()+DAY)return Promise.resolve(false);
     return idbGet(id).then(function(file){if(!file)return false;return decryptWith(file,unhex(h)).then(function(d){applyData(id,d);return true}).catch(function(){return false})});
   }
+  function fromServerKey(id){
+    if(!GETKEY||!navigator.onLine)return Promise.resolve();
+    return GETKEY(id).then(function(pw){return unlockWith(id,pw)}).catch(function(e){if(e&&e.pw)toast('"'+(NAMES[id]||id)+'" is being updated by the admin. Try again a little later.')})
+  }
   function syncOne(id,lock){
-    var h=ls('lk_k_'+id);if(!h)return Promise.resolve();
+    var h=ls('lk_k_'+id);
     var sv=lock.v&&lock.v[id],have=ls('lk_v_'+id);
-    if(!sv){return forget(id).then(function(){relock(id);toast((NAMES[id]||'Category')+' was removed by the admin.')})}
+    if(!h){return ST[id]?Promise.resolve():fromServerKey(id)}
+    if(!sv){return forget(id).then(function(){relock(id)})}
     var need=sv!==have||!ST[id];
     if(!need){ls('lk_t_'+id,String(Date.now()));return Promise.resolve()}
     return fetchCat(id,sv).then(function(file){
       return decryptWith(file,unhex(h)).then(function(d){applyData(id,d);ls('lk_v_'+id,file.v);ls('lk_t_'+id,String(Date.now()));return idbSet(id,file)},function(){
-        return forget(id).then(function(){relock(id);toast('The password of "'+(NAMES[id]||'a category')+'" was changed. Enter the new password to open it.')})});
+        return forget(id).then(function(){relock(id);return fromServerKey(id)})});
     }).catch(function(){});
   }
   function sync(){
-    if(busy||!okEnv||!navigator.onLine)return Promise.resolve();
+    if(busy||!okEnv||!navigator.onLine||!ALLOWED)return Promise.resolve();
     if(typeof quizActive!=='undefined'&&quizActive)return Promise.resolve();
     busy=true;
-    return fetchLock().then(function(lock){return Promise.all(ids.map(function(id){return syncOne(id,lock)}))}).catch(function(){}).then(function(){busy=false;ls('lk_sync',String(Date.now()));refreshAll()});
+    return fetchLock().then(function(lock){return Promise.all(ids.filter(function(i){return ALLOWED[i]}).map(function(id){return syncOne(id,lock)}))}).catch(function(){}).then(function(){busy=false;ls('lk_sync',String(Date.now()));refreshAll()});
   }
   window.__lkSync=sync;
-  Promise.all(ids.map(loadSaved)).then(function(){refreshAll();return sync()}).then(function(){
-    /* saved key but the saved copy was missing or expired and we are offline: tell the user */
-    var exp=ids.filter(function(id){return ls('lk_k_'+id)&&!ST[id]});
-    if(exp.length&&!navigator.onLine)toast('Connect to the internet once to re-open your unlocked categories.')});
-  document.addEventListener('visibilitychange',function(){if(!document.hidden&&Date.now()-parseInt(ls('lk_sync')||'0',10)>1800000)sync()});
+  /* called by the login part: which categories this person may open + how to get a category password from the server */
+  window.__lkSetAllowed=function(cats,getKey){
+    ALLOWED={};(cats||[]).forEach(function(c){if(L.cats[c])ALLOWED[c]=1});GETKEY=getKey||null;
+    var jobs=ids.map(function(id){
+      if(!ALLOWED[id]){return forget(id).then(function(){if(ST[id])relock(id)})}
+      return loadSaved(id)});
+    return Promise.all(jobs).then(function(){refreshAll();return sync()}).then(function(){refreshAll()});
+  };
+  window.__lkForgetAll=function(){ALLOWED={};return Promise.all(ids.map(function(id){return forget(id).then(function(){if(ST[id])relock(id)})})).then(refreshAll)};
+  window.__lkAllowed=function(){return ALLOWED};
+  document.addEventListener('visibilitychange',function(){if(!document.hidden&&Date.now()-parseInt(ls('lk_sync')||'0',10)>1800000){if(window.__acRecheck)window.__acRecheck();else sync()}});
   try{decorate()}catch(e){}
+})();
+</script>
+
+<script src="fb.js"></script>
+<style>
+#auth .guest,#auth .orr{display:none!important}
+#auth .gbtn{width:100%;margin-top:12px;height:48px;border-radius:16px;font-weight:700;font-size:14.5px;cursor:pointer;color:var(--tx);background:var(--gh);border:1px solid var(--fbd)}
+#auth .stb{width:100%;margin-top:10px;height:48px;border-radius:16px;font-weight:700;font-size:14.5px;cursor:pointer;color:var(--tx);background:var(--gh);border:1px solid var(--fbd)}
+#auth .stmsg{font-size:14px;line-height:1.5;text-align:center;margin:6px 0 12px;color:var(--tx)}
+</style>
+<script>
+(function(){
+  var CFG={"apiKey": "AIzaSyAmvsyy3lNoqZi7vLHnfY-2wScyxir2SpU", "authDomain": "asadullah-notes.firebaseapp.com", "projectId": "asadullah-notes", "storageBucket": "asadullah-notes.firebasestorage.app", "messagingSenderId": "497117042188", "appId": "1:497117042188:web:9ea92e54e4e70a216b8029"},ADMIN='asadullah75t@gmail.com',EXP=7*864e5,ALLCATS=['o','pma','fa','hk','lc','pg','nv'];
+  var $=function(i){return document.getElementById(i)},A=$('auth');if(!A)return;
+  function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);if(v===null)localStorage.removeItem(k);else localStorage.setItem(k,v)}catch(e){return null}}
+  var FB=window.FB,app=null,auth=null,fs=null,cur=null,busy=false,webview=!!window.AsadApp||/; wv\)/.test(navigator.userAgent);
+  try{
+    if(FB){app=FB.initializeApp(CFG);auth=FB.getAuth(app);fs=FB.getFirestore(app);
+      if(location.hostname==='localhost'&&/[?&]emu=1/.test(location.search)){FB.connectAuthEmulator(auth,'http://127.0.0.1:9099',{disableWarnings:true});FB.connectFirestoreEmulator(fs,'127.0.0.1',8080)}}
+  }catch(e){app=null}
+  /* ---- screens ---- */
+  var wrap=A.querySelector('.wrap'),copy=A.querySelector('.copy');
+  var st=document.createElement('div');st.className='pane';st.id='paneSt';st.hidden=true;
+  st.innerHTML='<h2 id="stT"></h2><p class="stmsg" id="stP"></p><div id="stBtns"></div><div class="err" id="stE"></div>';
+  wrap.insertBefore(st,copy);
+  var paneIn=$('paneIn'),paneUp=$('paneUp');
+  function hideAll(){paneIn.hidden=true;paneUp.hidden=true;st.hidden=true}
+  function showLogin(){A.classList.remove('hide');hideAll();paneIn.hidden=false;paneIn.classList.remove('out');$('authUser').style.display='none';
+    var s=paneIn.querySelector('.sub');if(s)s.textContent='Login with your email. Your account needs approval from the admin.';
+    var su=paneUp.querySelector('.sub');if(su)su.textContent='Sign up, verify your email, then wait for the admin to approve you.'}
+  function showStatus(title,msg,btns,err){A.classList.remove('hide');hideAll();st.hidden=false;st.classList.remove('out');$('stT').textContent=title;$('stP').textContent=msg||'';$('stE').textContent=err||'';
+    var b=$('stBtns');b.innerHTML='';(btns||[]).forEach(function(x,i){var e=document.createElement('button');e.type='button';e.className=i===0?'btn':'stb';e.textContent=x[0];e.onclick=x[1];b.appendChild(e)})}
+  function showUser(name){$('authUserName').textContent='👤 '+(name||'');$('authUser').style.display='flex'}
+  function nm(u){return ls('ac_name')||(u&&u.displayName)||(u&&u.email)||''}
+  function errMsg(e){var c=(e&&e.code)||'';
+    if(/invalid-credential|user-not-found|wrong-password|invalid-login/.test(c))return 'Wrong email or password.';
+    if(/email-already-in-use/.test(c))return 'This email already has an account. Please login.';
+    if(/weak-password/.test(c))return 'Password is too weak (at least 6 characters).';
+    if(/invalid-email/.test(c))return 'This email is not valid.';
+    if(/too-many-requests/.test(c))return 'Too many tries. Wait a few minutes and try again.';
+    if(/network|unavailable/.test(c))return 'No internet. Please connect and try again.';
+    if(/popup-closed|cancelled/.test(c))return 'Sign-in was cancelled.';
+    return 'Something went wrong. Please try again.'}
+  /* ---- entering the app ---- */
+  function getKey(id){return FB.getDoc(FB.doc(fs,'catKeys',id)).then(function(d){if(!d.exists())throw new Error('nokey');return d.data().pw})}
+  function enter(user,cats,offline){
+    if(!offline)ls('ac_state',JSON.stringify({uid:user&&user.uid,name:nm(user),cats:cats,status:'approved',t:Date.now()}));
+    A.classList.add('hide');showUser(nm(user)||'');
+    return window.__lkSetAllowed(cats,offline||!fs?null:getKey);
+  }
+  function leave(){ls('ac_state',null);if(window.__lkForgetAll)window.__lkForgetAll()}
+  function cached(user){
+    var s=null;try{s=JSON.parse(ls('ac_state'))}catch(e){}
+    if(s&&s.status==='approved'&&(!user||s.uid===user.uid)&&Date.now()-s.t<EXP&&s.t<=Date.now()+864e5)return enter(user,s.cats||[],true);
+    A.classList.remove('hide');
+    showStatus('Internet needed','Connect to the internet to check your account, then open the app again.',[['Try again',function(){if(cur)handle(cur);else location.reload()}]]);
+  }
+  function handle(user){
+    if(busy)return Promise.resolve();busy=true;cur=user;
+    var done=function(){busy=false};
+    if(!user){done();leave();showLogin();return Promise.resolve()}
+    var email=(user.email||'').toLowerCase();
+    if(!user.emailVerified){done();showVerify(user);return Promise.resolve()}
+    var admin=email===ADMIN;
+    return FB.getDoc(FB.doc(fs,'users',user.uid)).then(function(d){
+      if(admin){done();return enter(user,ALLCATS)}
+      if(!d.exists()){return FB.setDoc(FB.doc(fs,'users',user.uid),{email:email,name:nm(user),status:'pending',cats:[],requested:FB.serverTimestamp()}).then(function(){done();leave();showPending(user)})}
+      var u=d.data();
+      if(u.status==='approved'){done();return enter(user,u.cats||[])}
+      done();leave();if(u.status==='blocked')showBlocked();else showPending(user);
+    }).catch(function(e){done();var c=(e&&e.code)||'';if(/permission/.test(c)){leave();showStatus('No access','This account cannot use the app. Please contact the admin.',[['Logout',logout]]);return}return cached(user)});
+  }
+  function showVerify(user){showStatus('Verify your email','We sent a link to '+user.email+'. Open your email, tap the link, then press the button below.',[
+    ['I have verified',function(){$('stE').textContent='Checking...';user.reload().then(function(){return auth.currentUser.getIdToken(true)}).then(function(){handle(auth.currentUser)}).catch(function(e){$('stE').textContent=errMsg(e)})}],
+    ['Send the link again',function(){FB.sendEmailVerification(user).then(function(){$('stE').textContent='Link sent again. Check your email (also Spam).'}).catch(function(e){$('stE').textContent=errMsg(e)})}],
+    ['Logout',logout]])}
+  function showPending(user){showStatus('Waiting for approval','Your request is sent to the admin ('+user.email+'). When he approves you, press Check again.',[['Check again',function(){handle(auth.currentUser)}],['Logout',logout]])}
+  function showBlocked(){showStatus('Access stopped','Your access was stopped by the admin. Please contact him.',[['Logout',logout]])}
+  function logout(){var p=auth?FB.signOut(auth):Promise.resolve();return p.catch(function(){}).then(function(){cur=null;leave();showLogin()})}
+  /* ---- the forms of the old login page now talk to Firebase ---- */
+  window.authGuest=function(){};
+  window.authLogout=logout;
+  window.authSocial=function(){};
+  window.authForgot=function(){var m=$('inEmail').value.trim(),e=$('inErr');e.className='err';
+    if(!m){e.textContent='Type your email above first, then press Forgot password.';return}
+    if(!auth){e.textContent='No internet.';return}
+    FB.sendPasswordResetEmail(auth,m).then(function(){e.className='err ok';e.textContent='Password reset link sent to '+m+'. Check your email (also Spam).'}).catch(function(x){e.textContent=errMsg(x)})};
+  window.authSignIn=function(ev){ev.preventDefault();var m=$('inEmail').value.trim().toLowerCase(),p=$('inPass').value,e=$('inErr');e.className='err';
+    if(!auth){e.textContent='No internet. Please connect and try again.';return false}
+    e.textContent='Please wait...';FB.signInWithEmailAndPassword(auth,m,p).then(function(){e.textContent=''}).catch(function(x){e.textContent=errMsg(x)});return false};
+  window.authSignUp=function(ev){ev.preventDefault();var n=$('upName').value.trim(),m=$('upEmail').value.trim().toLowerCase(),p=$('upPass').value,p2=$('upPass2').value,e=$('upErr');e.className='err';
+    if(p.length<6){e.textContent='Password must be at least 6 characters.';return false}
+    if(p!==p2){e.textContent='Passwords do not match.';return false}
+    if(!$('upAgree').checked){e.textContent='Please agree to the Terms & Privacy Policy.';return false}
+    if(!auth){e.textContent='No internet. Please connect and try again.';return false}
+    e.textContent='Please wait...';ls('ac_name',n);
+    FB.createUserWithEmailAndPassword(auth,m,p).then(function(c){return FB.sendEmailVerification(c.user)}).then(function(){e.textContent=''}).catch(function(x){e.textContent=errMsg(x)});return false};
+  if(!webview&&auth){[paneIn,paneUp].forEach(function(p){var g=document.createElement('button');g.type='button';g.className='gbtn';g.textContent='Sign in with Google';
+    g.onclick=function(){FB.signInWithPopup(auth,new FB.GoogleAuthProvider()).catch(function(x){var e=p.querySelector('.err');if(e)e.textContent=errMsg(x)})};
+    var b=p.querySelector('.btn');b.parentNode.insertBefore(g,b.nextSibling)})}
+  window.__acRecheck=function(){if(cur&&!busy)handle(cur)};
+  window.__acUser=function(){return cur};window.__acBusy=function(){return busy};
+  /* ---- start ---- */
+  A.classList.remove('hide');showStatus('Please wait...','Checking your account.',[]);
+  if(!auth){cached(null)}
+  else{
+    var first=true;
+    FB.onAuthStateChanged(auth,function(u){first=false;handle(u)},function(){cached(null)});
+    setTimeout(function(){if(first)cached(auth.currentUser)},9000);
+  }
 })();
 </script>
 

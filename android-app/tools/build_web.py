@@ -248,6 +248,7 @@ html = html.replace('</body>', PRESS + '</body>')
 assert 'cdn.tailwindcss.com' not in html and 'googleapis' not in html and 'cloudflare' not in html and 'netlify/scripts' not in html
 open(os.path.join(WWW, 'index.html'), 'w', encoding='utf8').write(html)
 shutil.copy(os.path.join(HERE, 'error.html'), os.path.join(WWW, 'error.html'))
+shutil.copy(os.path.join(HERE, 'fb.js'), os.path.join(WWW, 'fb.js'))   # Firebase login + database (bundled, works offline)
 print('index.html %d -> %d bytes' % (orig_len, len(html)))
 for root, _, files in os.walk(WWW):
     for f in sorted(files):
