@@ -15,7 +15,7 @@ PW = json.load(open(pwf, encoding='utf8'))
 ITER, EXPIRY_DAYS = 100000, int(os.environ.get('EXPIRY_DAYS', '7'))
 def cat(k):
     p = k.split('-')[0]
-    return {'PMA': 'pma', 'FA': 'fa', 'HK': 'hk', 'MR': 'hk', 'CN': 'hk', 'IV': 'hk', 'LC': 'lc', 'PG': 'pg', 'PF': 'pg', 'NV': 'nv'}.get(p, 'o')
+    return {'PMA': 'pma', 'FA': 'fa', 'HK': 'hk', 'MR': 'hk', 'CN': 'cn', 'IV': 'iv', 'LC': 'lc', 'PG': 'pg', 'PF': 'pg', 'NV': 'nv'}.get(p, 'o')
 groups = {}
 for k, v in ALL.items(): groups.setdefault(cat(k), {})[k] = v
 assert set(groups) == set(PW), (set(groups), set(PW))

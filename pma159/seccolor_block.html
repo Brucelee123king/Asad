@@ -4,6 +4,8 @@ body[data-sec="pma"]{--c1:#047857;--c2:#0d9488;--cs:#059669;--ch:#047857;--cl:#e
 body[data-sec="fa"]{--c1:#b45309;--c2:#ea580c;--cs:#d97706;--ch:#b45309;--cl:#fffbeb;--ct:#92400e;--cb:#f59e0b;--cr:#fbbf24}
 body[data-sec="hk"]{--c1:#0369a1;--c2:#06b6d4;--cs:#0284c7;--ch:#0369a1;--cl:#f0f9ff;--ct:#075985;--cb:#38bdf8;--cr:#7dd3fc}
 body[data-sec="nv"]{--c1:#b45309;--c2:#f59e0b;--cs:#d97706;--ch:#b45309;--cl:#fffbeb;--ct:#92400e;--cb:#fcd34d;--cr:#fde68a}
+body[data-sec="cn"]{--c1:#166534;--c2:#65a30d;--cs:#16a34a;--ch:#166534;--cl:#f0fdf4;--ct:#14532d;--cb:#86efac;--cr:#bbf7d0}
+body[data-sec="iv"]{--c1:#be123c;--c2:#ec4899;--cs:#e11d48;--ch:#be123c;--cl:#fff1f2;--ct:#9f1239;--cb:#fda4af;--cr:#fecdd3}
 body[data-sec="pg"]{--c1:#0e7490;--c2:#2563eb;--cs:#0891b2;--ch:#0e7490;--cl:#ecfeff;--ct:#155e75;--cb:#67e8f9;--cr:#a5f3fc}
 body[data-sec="lc"]{--c1:#6d28d9;--c2:#c026d3;--cs:#7c3aed;--ch:#6d28d9;--cl:#f5f3ff;--ct:#5b21b6;--cb:#a78bfa;--cr:#c4b5fd}
 body[data-sec] :is(#view-home,#view-quiz,#view-results) .from-indigo-600{--tw-gradient-from:var(--c1) var(--tw-gradient-from-position)!important;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)!important}
@@ -28,7 +30,7 @@ body[data-sec] #view-home .text-emerald-600{color:var(--cs)!important}
 (function(){
   if(typeof selectTest!=='function')return;
   var _sel=selectTest,_show=showSelect;
-  window.selectTest=selectTest=function(k){var c=(isHK(k)||isMR(k)||isCN(k)||isIV(k))?'hk':isNV(k)?'nv':(isPG(k)||isPF(k))?'pg':isLC(k)?'lc':isFA(k)?'fa':isPMA(k)?'pma':'';if(c)document.body.dataset.sec=c;else delete document.body.dataset.sec;return _sel.apply(this,arguments)};
+  window.selectTest=selectTest=function(k){var c=(isHK(k)||isMR(k))?'hk':isCN(k)?'cn':isIV(k)?'iv':isNV(k)?'nv':(isPG(k)||isPF(k))?'pg':isLC(k)?'lc':isFA(k)?'fa':isPMA(k)?'pma':'';if(c)document.body.dataset.sec=c;else delete document.body.dataset.sec;return _sel.apply(this,arguments)};
   window.showSelect=showSelect=function(){var r=_show.apply(this,arguments);if(!quizActive)delete document.body.dataset.sec;return r};
 })();
 </script>
