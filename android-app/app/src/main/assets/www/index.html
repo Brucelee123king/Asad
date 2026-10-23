@@ -1760,12 +1760,12 @@ html.dark #rngModal .go.alt{color:#a5b4fc;border-color:#a5b4fc}
 <script>
 (function(){
   var $=function(id){return document.getElementById(id)};
-  var SKIP=/^(MR|IV|CN|NV)-/;           /* these tests only repeat Hakeem MCQs: never count them twice */
+  var SKIP=/^(MR|NV)-/;                /* MR tests only repeat Hakeem MCQs: never count them twice; CN and IV only count inside their own chip, not in All sections */
   var idx=null,CAT='ALL';
   window.__rngReset=function(){idx=null};
-  var CATLOCK={O:'o',PMA:'pma',HK:'hk',FA:'fa',LC:'lc',PG:'pg'};
-  var CATS=[['ALL','All sections'],['O','1000 MCQs'],['PMA','PMA 159'],['HK','Hakeem'],['FA','Forces Academy'],['LC','PMA 158'],['PG','Pro Genius']];
-  function catOf(k){var p=k.split('-')[0];return p==='PG'||p==='PF'?'PG':(p==='PMA'||p==='HK'||p==='FA'||p==='LC')?p:'O'}
+  var CATLOCK={O:'o',PMA:'pma',HK:'hk',FA:'fa',LC:'lc',PG:'pg',CN:'cn',IV:'iv'};
+  var CATS=[['ALL','All sections'],['O','1000 MCQs'],['PMA','PMA 159'],['HK','Hakeem'],['FA','Forces Academy'],['LC','PMA 158'],['PG','Pro Genius'],['CN','Constitution'],['IV','100 Most Repeated']];
+  function catOf(k){var p=k.split('-')[0];return p==='PG'||p==='PF'?'PG':(p==='PMA'||p==='HK'||p==='FA'||p==='LC'||p==='CN'||p==='IV')?p:'O'}
   function strip(q){
     var s=String(q).replace(/^\s*\((?:Original MCQ #\d+|[^)]*\u00B7[^)]*)\)\s*/i,'');
     var w=1,m=/\s*\((?:Repeated in\s+)?(\d+)(?:\s+tests?)?\)\s*$/i.exec(s);
@@ -1790,7 +1790,7 @@ html.dark #rngModal .go.alt{color:#a5b4fc;border-color:#a5b4fc}
         var e=map[nk];
         if(!e){e=map[nk]={total:0,core:p.core,best:q,score:-1,secs:{},cats:{},bestc:{},scc:{}};}
         var c=catOf(k);e.cats[c]=(e.cats[c]||0)+p.w;
-        e.total+=p.w;                                    /* Pro Genius counts in "All sections" too */
+        if(c!=='CN'&&c!=='IV')e.total+=p.w;              /* Pro Genius counts in "All sections"; Constitution and 100 Most Repeated only inside their own chip */
         e.secs[k.split('-')[0]]=1;
         var sc=(q.facts?String(q.facts).length:0)+(q.rel?String(q.rel).length:0);
         if(sc>e.score){e.score=sc;e.best=q;e.core=p.core}
@@ -1800,7 +1800,7 @@ html.dark #rngModal .go.alt{color:#a5b4fc;border-color:#a5b4fc}
     idx=Object.keys(map).map(function(k){return map[k]});
     return idx;
   }
-  var SECN={PMA:'PMA 159',FA:'Forces Academy',HK:'Hakeem',LC:'PMA 158',PG:'Pro Genius',PF:'Pro Genius'};
+  var SECN={PMA:'PMA 159',FA:'Forces Academy',HK:'Hakeem',LC:'PMA 158',PG:'Pro Genius',PF:'Pro Genius',CN:'Constitution',IV:'100 Most Repeated'};
   function secLabel(e){var o=Object.keys(e.secs).map(function(s){return SECN[s]||'1000 MCQs'});return o.join(', ')}
   function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
   function catName(){for(var i=0;i<CATS.length;i++)if(CATS[i][0]===CAT)return CATS[i][0]==='ALL'?'all sections':CATS[i][1];return ''}
