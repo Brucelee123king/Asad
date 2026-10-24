@@ -40,6 +40,8 @@ return fetch(B+'shell.html?'+j.v,{cache:'no-store'}).then(function(r){return r.t
 })();</script>""" % (v, base, json.dumps(jwk, separators=(',', ':')))
 i = html.index('<head>') + len('<head>')
 out = html[:i] + LOADER + html[i:]
+# the page is written into the still running start page: this tail makes the browser swallow the rest of the old page as plain text (display:none), so only one copy of the app runs
+out = out.rstrip() + '<plaintext style="display:none"></plaintext>'
 sig = key.sign(out.encode('utf8'), ec.ECDSA(hashes.SHA256()))
 r, s_ = utils.decode_dss_signature(sig)
 raw = r.to_bytes(32, 'big') + s_.to_bytes(32, 'big')          # WebCrypto expects r||s

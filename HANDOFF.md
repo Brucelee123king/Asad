@@ -260,3 +260,9 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - App: waiting screen box + a "Contact admin" card on the main page for approved people (not shown to the admin), all in pma159/access_block.html. Admin page card shows the messages (newest first, max 12).
 - Pages shell.html/shell.json (signed) carry the new app page; phones fetch it after a launch and use it from the next launch.
 - NOTE: after ANY change of pma159/firestore.rules the user must paste it in the Firebase console (Firestore, Rules, Develop and Test, Publish).
+
+## Oct 24 2026 evening: self-update bug fixed (double page) + round chat icon
+- BUG (v1.0.35 start loader): the loader writes the stored page into the still-parsing bundled page with document.write; the REST of the old page then ran as well, so the app had two copies (duplicate #inEmail etc.): login button/eye icon dead, login lost after restart. Update version 202610240529 was the broken one.
+- FIX (no APK): sign_shell.py now ends every shell with `<plaintext style="display:none"></plaintext>` so the browser swallows the old page's rest as plain text. Published as signed update 202610240623. A phone stuck on the broken page downloads the fix by itself (6 s after load) and uses it from the next start. Tests: /home/user/fbbuild/heal_test.js (fresh phone with the real v1.0.35 loader + phone stuck on the broken page), eye_test.js. ALWAYS test a self-update with a real login AND the real old loader (extract it from release/AsadullahNotes-v1035.apk), not just that the login screen appears.
+- Chat icon: round teal button bottom right (approved people and admin; admin gets an info panel), panel with today's messages as bubbles + box, 3 per day. Code: pma159/access_block.html (cm*).
+- RULE FROM USER: never build a new APK; only updates through ./admin_publish.sh (signed self-update).
