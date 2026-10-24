@@ -20,6 +20,7 @@ textarea{min-height:110px}.badge{background:var(--no);color:#fff;border-radius:9
 <div id="emuForm" style="display:none"><p class="mu">Test mode</p><input type="text" id="emuE" placeholder="email"><input type="text" id="emuP" placeholder="password" style="margin-top:6px"><div class="row"><button id="emuB">Test login</button></div></div></div>
 <div id="app" style="display:none">
  <div class="row"><button id="tReq">Requests<span class="badge" id="nReq">0</span></button><button class="g" id="tUsr">People<span class="badge" id="nUsr">0</span></button><button class="g" id="tKey">Passwords</button><button class="g" id="bOut">Logout</button><button class="g" id="bRef">Refresh</button></div>
+ <input type="text" id="srch" placeholder="Search email or name..." autocomplete="off" autocapitalize="off" spellcheck="false" style="margin-top:10px"><div class="mu" id="srchN"></div>
  <div id="pReq"></div><div id="pUsr" style="display:none"></div>
  <div id="pKey" style="display:none">
   <h2>Category passwords</h2><div class="mu">These passwords unlock the data files. The app gets them from here for approved people; nobody types them. Paste the whole list once, or change one password after I tell you a new one.</div>
@@ -52,13 +53,15 @@ var USERS=[];
 function load(){return FB.getDocs(FB.collection(fs,'users')).then(function(s){USERS=[];s.forEach(function(d){var x=d.data();x.id=d.id;USERS.push(x)});draw()}).catch(function(e){say('Could not load: '+(e.code||e.message),1)})}
 function ts(x){try{return x.requested.toDate().toLocaleString()}catch(e){return ''}}
 function chips(u){return '<div class="chips">'+CATS.map(function(c){return '<label><input type="checkbox" data-c="'+c[0]+'"'+((u.cats||[]).indexOf(c[0])>-1?' checked':'')+'> '+c[1]+'</label>'}).join('')+'</div>'}
-function card(u){return '<div class="card" data-id="'+u.id+'"><b>'+esc(u.email)+'</b> <span class="tag '+u.status+'">'+u.status+'</span><div class="mu">'+esc(u.name||'')+' '+esc(ts(u))+'</div>'+chips(u)+
+function card(u){return '<div class="card" data-id="'+u.id+'" data-s="'+esc(((u.email||'')+' '+(u.name||'')).toLowerCase())+'"><b>'+esc(u.email)+'</b> <span class="tag '+u.status+'">'+u.status+'</span><div class="mu">'+esc(u.name||'')+' '+esc(ts(u))+'</div>'+chips(u)+
  '<div class="row"><button class="k" data-a="ok">'+(u.status==='approved'?'Save':'Approve')+'</button>'+(u.status==='blocked'?'':'<button class="r" data-a="block">Block</button>')+'<button class="g" data-a="del">Delete</button></div></div>'}
+function filt(){var q=($('srch').value||'').trim().toLowerCase(),n=0,t=0;[].forEach.call(document.querySelectorAll('#pReq .card[data-s],#pUsr .card[data-s]'),function(c){t++;var ok=!q||c.getAttribute('data-s').indexOf(q)>-1;c.style.display=ok?'':'none';if(ok)n++});$('srchN').textContent=q?(n+' of '+t+' people match'):''}
+$('srch').addEventListener('input',filt);
 function draw(){
   var p=USERS.filter(function(u){return u.status==='pending'}),o=USERS.filter(function(u){return u.status!=='pending'});
   $('nReq').textContent=p.length;$('nUsr').textContent=o.length;
   $('pReq').innerHTML='<h2>People waiting for approval</h2>'+(p.length?p.map(card).join(''):'<div class="mu">Nobody is waiting.</div>');
-  $('pUsr').innerHTML='<h2>Approved and blocked people</h2>'+(o.length?o.map(card).join(''):'<div class="mu">No one yet.</div>')}
+  $('pUsr').innerHTML='<h2>Approved and blocked people</h2>'+(o.length?o.map(card).join(''):'<div class="mu">No one yet.</div>');filt()}
 document.addEventListener('click',function(e){var b=e.target.closest('button[data-a]');if(!b)return;var c=b.closest('.card'),id=c.getAttribute('data-id'),a=b.getAttribute('data-a');
   var cats=[].slice.call(c.querySelectorAll('input[data-c]')).filter(function(i){return i.checked}).map(function(i){return i.getAttribute('data-c')});
   var ref=FB.doc(fs,'users',id),job;
