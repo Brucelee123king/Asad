@@ -49,11 +49,15 @@ FB.onAuthStateChanged(auth,function(u){
   $('who').textContent=u.email+(ok?' (admin)':' - NOT the admin account');
   if(!ok){$('login').style.display='block';$('app').style.display='none';say('This account is not the admin. Logout and use '+ADMIN,1);return}
   $('login').style.display='none';$('app').style.display='block';load()});
-var USERS=[],MSGS={};
-function load(){return Promise.all([FB.getDocs(FB.collection(fs,'users')),FB.getDocs(FB.collection(fs,'msgs')).catch(function(){return null})]).then(function(r){var s=r[0];USERS=[];s.forEach(function(d){var x=d.data();x.id=d.id;USERS.push(x)});MSGS={};if(r[1])r[1].forEach(function(d){MSGS[d.id]=d.data()});draw()}).catch(function(e){say('Could not load: '+(e.code||e.message),1)})}
+var USERS=[],MSGS={},DAYS={};
+function load(){return Promise.all([FB.getDocs(FB.collection(fs,'users')),FB.getDocs(FB.collection(fs,'msgs')).catch(function(){return null}),FB.getDocs(FB.collectionGroup(fs,'days')).catch(function(){return null})]).then(function(r){var s=r[0];USERS=[];s.forEach(function(d){var x=d.data();x.id=d.id;USERS.push(x)});MSGS={};if(r[1])r[1].forEach(function(d){MSGS[d.id]=d.data()});DAYS={};if(r[2])r[2].forEach(function(d){var uid=d.ref.parent.parent.id;(DAYS[uid]=DAYS[uid]||[]).push({day:d.id,d:d.data()})});draw()}).catch(function(e){say('Could not load: '+(e.code||e.message),1)})}
 function ts(x){try{return x.requested.toDate().toLocaleString()}catch(e){return ''}}
 function chips(u){return '<div class="chips">'+CATS.map(function(c){return '<label><input type="checkbox" data-c="'+c[0]+'"'+((u.cats||[]).indexOf(c[0])>-1?' checked':'')+'> '+c[1]+'</label>'}).join('')+'</div>'}
-function msgs(u){var m=MSGS[u.id];if(!m||!m.n)return '';var h='';for(var i=1;i<=m.n;i++){if(!m['m'+i])continue;var t='';try{t=m['t'+i].toDate().toLocaleString()}catch(e){}h+='<div class="mq"><div class="mu">Message '+i+' of 3'+(t?' - '+esc(t):'')+'</div>'+esc(m['m'+i])+'</div>'}return h}
+function msgs(u){var out=[],m=MSGS[u.id],ds=(DAYS[u.id]||[]).slice().sort(function(x,y){return x.day<y.day?1:-1});
+  ds.forEach(function(x){for(var i=(x.d.n||0);i>=1;i--){if(!x.d['m'+i])continue;var t='';try{t=x.d['t'+i].toDate().toLocaleString()}catch(e){}out.push({t:t,m:x.d['m'+i],n:i,k:'today'})}});
+  if(m&&m.n){for(var j=m.n;j>=1;j--){if(!m['m'+j])continue;var t2='';try{t2=m['t'+j].toDate().toLocaleString()}catch(e){}out.push({t:t2,m:m['m'+j],n:j,k:'first'})}}
+  if(!out.length)return '';var more=out.length>12?out.length-12:0;
+  return out.slice(0,12).map(function(o){return '<div class="mq"><div class="mu">'+(o.t?esc(o.t):'Message')+'</div>'+esc(o.m)+'</div>'}).join('')+(more?'<div class="mu" style="margin-top:6px">... and '+more+' older messages</div>':'')}
 function card(u){return '<div class="card" data-id="'+u.id+'" data-s="'+esc(((u.email||'')+' '+(u.name||'')).toLowerCase())+'"><b>'+esc(u.email)+'</b> <span class="tag '+u.status+'">'+u.status+'</span><div class="mu">'+esc(u.name||'')+' '+esc(ts(u))+'</div>'+msgs(u)+chips(u)+
  '<div class="row"><button class="k" data-a="ok">'+(u.status==='approved'?'Save':'Approve')+'</button>'+(u.status==='blocked'?'':'<button class="r" data-a="block">Block</button>')+'<button class="g" data-a="del">Delete</button></div></div>'}
 function filt(){var q=($('srch').value||'').trim().toLowerCase(),n=0,t=0;[].forEach.call(document.querySelectorAll('#pReq .card[data-s],#pUsr .card[data-s]'),function(c){t++;var ok=!q||c.getAttribute('data-s').indexOf(q)>-1;c.style.display=ok?'':'none';if(ok)n++});$('srchN').textContent=q?(n+' of '+t+' people match'):''}

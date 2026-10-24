@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head><script>/*SHELLUPD*/(function(){var V=202610240455,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
+<head><script>/*SHELLUPD*/(function(){var V=202610240529,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
 try{var sv=+L.getItem('shell_v')||0,h=L.getItem('shell_html'),t=+L.getItem('shell_try')||0;
 if(h&&sv>V&&!window.__shellW){if(t>=2){L.removeItem('shell_html');L.removeItem('shell_v');L.removeItem('shell_try')}
 else{L.setItem('shell_try',String(t+1));window.__shellW=1;document.open();document.write(h);document.close();return}}}catch(e){}
@@ -2226,6 +2226,12 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
 #auth .mbox{margin:4px 0 6px;text-align:left}#auth .mbox label{display:block;font-size:12.5px;font-weight:600;color:var(--mu);margin:0 0 5px 3px}
 #auth .mbox textarea{width:100%;box-sizing:border-box;height:92px;padding:12px 14px;border-radius:16px;border:1px solid var(--fbd);background:var(--fb);color:var(--tx);font-size:15px;font-family:inherit;outline:none;resize:none}
 #auth .mbox .cnt{font-size:12.5px;margin:6px 3px 0;color:var(--mu)}#auth .mbox .ok{color:#16a34a;font-weight:600}
+#cmBox{position:fixed;inset:0;z-index:2147483000;background:rgba(15,23,42,.6);display:flex;align-items:center;justify-content:center;padding:18px}#cmBox[hidden]{display:none}
+#cmBox .cmp{background:#fff;color:#111827;border-radius:22px;padding:20px;width:100%;max-width:380px;box-sizing:border-box}
+#cmBox .cmh{display:flex;justify-content:space-between;align-items:center;font-size:21px}#cmBox .cmh button{background:#eef2ff;border:0;border-radius:12px;padding:6px 12px;font-size:16px;cursor:pointer}
+#cmBox p{font-size:14px;color:#475569;margin:8px 0}#cmBox textarea{width:100%;box-sizing:border-box;height:104px;border-radius:14px;border:2px solid #14b8a6;padding:10px;font-size:15px;font-family:inherit;resize:none;color:#111827;background:#fff}
+#cmBox .cnt{font-size:12.5px;color:#64748b;margin:6px 2px}#cmBox .cnt.ok{color:#16a34a;font-weight:600}#cmBox .err{font-size:13px;color:#dc2626;min-height:16px}
+#cmBox .btn{width:100%;height:48px;border:0;border-radius:14px;font-weight:700;font-size:15px;color:#fff;background:linear-gradient(90deg,#7c5cf5,#3a7bf5);cursor:pointer}#cmBox .btn:disabled{opacity:.5}
 #auth .stmsg{font-size:14px;line-height:1.5;text-align:center;margin:6px 0 12px;color:var(--tx)}
 </style>
 <script>
@@ -2241,7 +2247,7 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
   /* ---- screens ---- */
   var wrap=A.querySelector('.wrap'),copy=A.querySelector('.copy');
   var st=document.createElement('div');st.className='pane';st.id='paneSt';st.hidden=true;
-  st.innerHTML='<h2 id="stT"></h2><p class="stmsg" id="stP"></p><div class="mbox" id="stMsg" hidden><label for="msgTx">Message to admin (limit: 3 messages)</label><textarea id="msgTx" maxlength="300" placeholder="Example: Hi, I am Ali. I know you from the PMA group. Please approve me for PMA 159."></textarea><div class="cnt" id="msgCnt"></div></div><div id="stBtns"></div><div class="err" id="stE"></div>';
+  st.innerHTML='<h2 id="stT"></h2><p class="stmsg" id="stP"></p><div class="mbox" id="stMsg" hidden><label for="msgTx">Tell the admin what you need: write the category and which MCQs you want. (3 messages every day)</label><textarea id="msgTx" maxlength="300" placeholder="Example: Hi, I am Ali. Please enable PMA 159 MCQs for me."></textarea><div class="cnt" id="msgCnt"></div></div><div id="stBtns"></div><div class="err" id="stE"></div>';
   wrap.insertBefore(st,copy);
   var paneIn=$('paneIn'),paneUp=$('paneUp');
   function hideAll(){paneIn.hidden=true;paneUp.hidden=true;st.hidden=true}
@@ -2265,10 +2271,10 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
   function getKey(id){return FB.getDoc(FB.doc(fs,'catKeys',id)).then(function(d){if(!d.exists())throw new Error('nokey');return d.data().pw})}
   function enter(user,cats,offline){
     if(!offline)ls('ac_state',JSON.stringify({uid:user&&user.uid,name:nm(user),cats:cats,status:'approved',t:Date.now()}));
-    document.documentElement.classList.add('acok');A.classList.add('hide');showUser(nm(user)||'');
+    document.documentElement.classList.add('acok');A.classList.add('hide');showUser(nm(user)||'');try{cmSetup(user,(user.email||'').toLowerCase()===ADMIN)}catch(e){}
     return window.__lkSetAllowed(cats,offline||!fs?null:getKey);
   }
-  function leave(){ls('ac_state',null);if(window.__lkForgetAll)window.__lkForgetAll()}
+  function leave(){cmUser=null;try{cmInject()}catch(e){}ls('ac_state',null);if(window.__lkForgetAll)window.__lkForgetAll()}
   function cached(user){
     var s=null;try{s=JSON.parse(ls('ac_state'))}catch(e){}
     if(s&&s.status==='approved'&&(!user||s.uid===user.uid)&&Date.now()-s.t<EXP&&s.t<=Date.now()+864e5)return enter(user,s.cats||[],true);
@@ -2294,21 +2300,42 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
     ['I have verified',function(){$('stE').textContent='Checking...';user.reload().then(function(){return auth.currentUser.getIdToken(true)}).then(function(){handle(auth.currentUser)}).catch(function(e){$('stE').textContent=errMsg(e)})}],
     ['Send the link again',function(){FB.sendEmailVerification(user).then(function(){$('stE').textContent='Link sent again. Check your email (also Spam).'}).catch(function(e){$('stE').textContent=errMsg(e)})}],
     ['Logout',logout]])}
-  var MAXM=3;
-  function msgCount(user){return FB.getDoc(FB.doc(fs,'msgs',user.uid)).then(function(d){return d.exists()?(d.data().n||0):0}).catch(function(){return 0})}
+  /* ---- messages to the admin: 3 per day (day changes at midnight Pakistan time), also checked by the Firebase rules ---- */
+  var MAXM=3,cmUser=null;
+  function dayKey(){var d=new Date(Date.now()+5*36e5);return String(d.getUTCFullYear()*10000+(d.getUTCMonth()+1)*100+d.getUTCDate())}
+  function dref(uid){return FB.doc(fs,'msgs',uid,'days',dayKey())}
+  function msgCount(user){return FB.getDoc(dref(user.uid)).then(function(d){return d.exists()?(d.data().n||0):0}).catch(function(){return 0})}
+  function postMsg(user,t){return FB.getDoc(dref(user.uid)).then(function(d){var n=d.exists()?(d.data().n||0):0;if(n>=MAXM)return {n:n,full:true};
+    var k=n+1,o={};o.n=k;o['m'+k]=t.slice(0,300);o['t'+k]=FB.serverTimestamp();
+    return (n===0?FB.setDoc(dref(user.uid),o):FB.updateDoc(dref(user.uid),o)).then(function(){return {n:k}})})}
+  function cntText(n,ok){return (ok?'Message sent. ':'')+'Messages sent today: '+n+' of '+MAXM+(n>=MAXM?'. The limit for today is reached. You can write again tomorrow.':'. You can send '+MAXM+' messages every day.')}
   function showPending(user){
     showStatus('Waiting for approval','Your request is sent to the admin ('+user.email+'). When he approves you, press Check again.',[['Send message',function(){sendMsg(user)}],['Check again',function(){handle(auth.currentUser)}],['Logout',logout]]);
     $('stMsg').hidden=false;$('msgTx').value='';
     msgCount(user).then(function(n){drawCnt(n)})}
   function drawCnt(n,ok){var c=$('msgCnt'),b=$('stBtns').querySelector('button'),full=n>=MAXM;
-    c.className='cnt'+(ok?' ok':'');c.textContent=(ok?'Message sent. ':'')+'Messages sent: '+n+' of '+MAXM+(full?'. The limit is reached, you cannot send more.':'.');
-    $('msgTx').disabled=full;if(b)b.disabled=full}
+    c.className='cnt'+(ok?' ok':'');c.textContent=cntText(n,ok);$('msgTx').disabled=full;if(b)b.disabled=full}
   function sendMsg(user){var t=($('msgTx').value||'').trim();if(!t){$('stE').textContent='Please write your message first.';return}
     $('stE').textContent='Sending...';
-    FB.getDoc(FB.doc(fs,'msgs',user.uid)).then(function(d){var n=d.exists()?(d.data().n||0):0;if(n>=MAXM){drawCnt(n);$('stE').textContent='';return}
-      var k=n+1,o={};o.n=k;o['m'+k]=t.slice(0,300);o['t'+k]=FB.serverTimestamp();
-      var job=n===0?(o.email=(user.email||'').toLowerCase(),FB.setDoc(FB.doc(fs,'msgs',user.uid),o)):FB.updateDoc(FB.doc(fs,'msgs',user.uid),o);
-      return job.then(function(){$('msgTx').value='';$('stE').textContent='';drawCnt(k,true)})}).catch(function(e){$('stE').textContent='Could not send. Check your internet and try again.'})}
+    postMsg(user,t).then(function(r){if(r.full){drawCnt(r.n);$('stE').textContent='';return}$('msgTx').value='';$('stE').textContent='';drawCnt(r.n,true)}).catch(function(){$('stE').textContent='Could not send. Check your internet and the date and time of your phone, then try again.'})}
+  /* ---- "Contact admin" card on the main page for approved people ---- */
+  function cmBuild(){if($('cmBox'))return;var d=document.createElement('div');d.id='cmBox';d.hidden=true;
+    d.innerHTML='<div class="cmp"><div class="cmh"><b>Contact admin</b><button type="button" id="cmX" aria-label="Close">&#10005;</button></div><p>Tell the admin what you need: write the category and which MCQs you want.</p><textarea id="cmTx" maxlength="300" placeholder="Example: Please enable Hakeem MCQs for me."></textarea><div class="cnt" id="cmCnt"></div><div class="err" id="cmErr"></div><button type="button" id="cmGo" class="btn">Send message</button></div>';
+    document.body.appendChild(d);
+    $('cmX').onclick=function(){d.hidden=true};d.addEventListener('click',function(e){if(e.target===d)d.hidden=true});
+    $('cmGo').onclick=function(){var t=($('cmTx').value||'').trim();if(!cmUser)return;if(!t){$('cmErr').textContent='Please write your message first.';return}
+      $('cmErr').textContent='Sending...';postMsg(cmUser,t).then(function(r){$('cmErr').textContent='';cmDraw(r.n,!r.full)&&0;if(!r.full)$('cmTx').value=''}).catch(function(){$('cmErr').textContent='Could not send. Check your internet and the date and time of your phone, then try again.'})}}
+  function cmDraw(n,ok){var full=n>=MAXM;$('cmCnt').className='cnt'+(ok?' ok':'');$('cmCnt').textContent=cntText(n,ok);$('cmTx').disabled=full;$('cmGo').disabled=full}
+  function cmOpen(){cmBuild();$('cmErr').textContent='';$('cmBox').hidden=false;$('cmCnt').textContent='';if(cmUser)msgCount(cmUser).then(function(n){cmDraw(n)})}
+  function cmInject(){var old=$('cmCard');if(!cmUser){if(old)old.remove();return}
+    var m=$('sec-menu');if(!m||m.querySelector('#cmCard'))return;var g=m.querySelector('.grid')||m.lastElementChild;if(!g)return;
+    var b=document.createElement('button');b.type='button';b.id='cmCard';b.onclick=cmOpen;
+    b.style.cssText='text-align:left;background:linear-gradient(90deg,#0f766e,#14b8a6);color:#fff;border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:6px;box-shadow:0 10px 25px rgba(0,0,0,.2)';
+    b.innerHTML='<div style="display:flex;gap:10px;align-items:center"><i class="fa-solid fa-envelope" style="font-size:22px"></i><span style="font-size:20px;font-weight:700">Contact admin</span></div><div style="opacity:.92;font-size:14px">Ask for more categories or MCQs. 3 messages every day.</div><div style="font-weight:700;font-size:14px">Write a message &rarr;</div>';
+    g.insertBefore(b,g.firstChild)}
+  function cmSetup(user,isAdmin){cmUser=isAdmin?null:user;
+    if(!window.__acCM&&typeof renderMenu==='function'){window.__acCM=1;var _r=renderMenu;renderMenu=window.renderMenu=function(){var r=_r.apply(this,arguments);try{cmInject()}catch(e){}return r}}
+    try{cmInject()}catch(e){}}
   function showBlocked(){showStatus('Access stopped','Your access was stopped by the admin. Please contact him.',[['Logout',logout]])}
   function logout(){var p=auth?FB.signOut(auth):Promise.resolve();return p.catch(function(){}).then(function(){cur=null;leave();showLogin()})}
   /* ---- the forms of the old login page now talk to Firebase ---- */
