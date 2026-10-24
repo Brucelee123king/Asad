@@ -45,7 +45,7 @@
   function getKey(id){return FB.getDoc(FB.doc(fs,'catKeys',id)).then(function(d){if(!d.exists())throw new Error('nokey');return d.data().pw})}
   function enter(user,cats,offline){
     if(!offline)ls('ac_state',JSON.stringify({uid:user&&user.uid,name:nm(user),cats:cats,status:'approved',t:Date.now()}));
-    A.classList.add('hide');showUser(nm(user)||'');
+    document.documentElement.classList.add('acok');A.classList.add('hide');showUser(nm(user)||'');
     return window.__lkSetAllowed(cats,offline||!fs?null:getKey);
   }
   function leave(){ls('ac_state',null);if(window.__lkForgetAll)window.__lkForgetAll()}

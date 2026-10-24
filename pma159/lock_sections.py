@@ -61,6 +61,10 @@ m = html.index(_tail) + len(_tail)
 cfg = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'firebase_config.json'), encoding='utf8').read()
 access = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'access_block.html'), encoding='utf8').read().replace('__FBCFG__', json.dumps(json.loads(cfg)))
 html = html[:m] + '\n' + block + '\n' + access + html[m:]
+PRE = ('<style id="acPre">html:not(.acok) body{background:#ddd6fe!important}'
+       'html:not(.acok) body>header,html:not(.acok) body>main,html:not(.acok) body>footer,html:not(.acok) #modal-submit-confirm,html:not(.acok) #obj3d,html:not(.acok) #liquidBg,html:not(.acok) #srchModal,html:not(.acok) #rngModal{display:none!important}</style>')
+assert html.count('</head>') == 1
+html = html.replace('</head>', PRE + '</head>', 1)
 open(os.path.join(outdir, 'index.html'), 'w', encoding='utf8').write(html)
 adm = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'admin.html'), encoding='utf8').read().replace('__FBCFG__', json.dumps(json.loads(cfg)))
 open(os.path.join(outdir, 'admin.html'), 'w', encoding='utf8').write(adm)
