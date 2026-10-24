@@ -266,3 +266,12 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - FIX (no APK): sign_shell.py now ends every shell with `<plaintext style="display:none"></plaintext>` so the browser swallows the old page's rest as plain text. Published as signed update 202610240623. A phone stuck on the broken page downloads the fix by itself (6 s after load) and uses it from the next start. Tests: /home/user/fbbuild/heal_test.js (fresh phone with the real v1.0.35 loader + phone stuck on the broken page), eye_test.js. ALWAYS test a self-update with a real login AND the real old loader (extract it from release/AsadullahNotes-v1035.apk), not just that the login screen appears.
 - Chat icon: round teal button bottom right (approved people and admin; admin gets an info panel), panel with today's messages as bubbles + box, 3 per day. Code: pma159/access_block.html (cm*).
 - RULE FROM USER: never build a new APK; only updates through ./admin_publish.sh (signed self-update).
+
+## Oct 24 2026: security update (signed self-update, no APK)
+- One phone per account: devices/{uid} {r (random 32-hex id kept in localStorage ac_dev), t}. First phone that signs in registers; other phones see "Account locked to another phone" and their saved keys are cleared. Admin page People card: "Phone: locked to one phone" + "Reset phone" (deletes the record; next phone that logs in becomes the phone). Clear data / reinstall = new phone id -> admin must reset. Client-side check (a technical user with dev tools could copy the id).
+- Offline access 2 days (EXPIRY_DAYS default 2 in lock_sections.py, EXP in access_block.html).
+- Admin page: auto logout after 30 min idle; catKeys writes need a sign-in younger than 15 min (rules: request.auth.token.auth_time).
+- users create: name <= 60, email <= 100 letters.
+- These rules parts work only after the user pastes pma159/firestore.rules in the console. Before that the phone lock is simply off (getDoc denied -> 'unknown' -> allowed).
+- Tests: /home/user/fbbuild/dev_test.js (phone lock), plus all earlier tests.
+- Signing key backup was sent to the user (shell_sign_priv.pem). Keep a copy outside this container.

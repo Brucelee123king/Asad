@@ -16,8 +16,21 @@ service cloud.firestore {
         && request.resource.data.status == 'pending'
         && request.resource.data.cats.size() == 0
         && request.resource.data.email == request.auth.token.email
-        && request.resource.data.keys().hasOnly(['email','name','status','cats','requested']);
+        && request.resource.data.keys().hasOnly(['email','name','status','cats','requested'])
+        && request.resource.data.name is string
+        && request.resource.data.name.size() <= 60
+        && request.resource.data.email.size() <= 100;
       allow update, delete: if isAdmin();
+    }
+    match /devices/{uid} {
+      allow read: if isAdmin() || (request.auth != null && request.auth.uid == uid);
+      allow create: if request.auth != null
+        && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['r','t'])
+        && request.resource.data.r is string
+        && request.resource.data.r.size() == 32
+        && request.resource.data.t == request.time;
+      allow delete: if isAdmin();
     }
     match /msgs/{uid} {
       allow read: if isAdmin() || (request.auth != null && request.auth.uid == uid);
@@ -95,7 +108,8 @@ service cloud.firestore {
             && exists(/databases/$(database)/documents/users/$(request.auth.uid))
             && me().status == 'approved'
             && cat in me().cats);
-      allow write: if isAdmin();
+      allow write: if isAdmin()
+        && request.time < timestamp.value(request.auth.token.auth_time * 1000) + duration.value(15, 'm');
     }
   }
 }

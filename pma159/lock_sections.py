@@ -12,7 +12,7 @@ if not base.endswith('/'): base += '/'
 html = open(plain, encoding='utf8').read()
 ALL = json.load(open(dump, encoding='utf8'))
 PW = json.load(open(pwf, encoding='utf8'))
-ITER, EXPIRY_DAYS = 100000, int(os.environ.get('EXPIRY_DAYS', '7'))
+ITER, EXPIRY_DAYS = 100000, int(os.environ.get('EXPIRY_DAYS', '2'))
 def cat(k):
     p = k.split('-')[0]
     return {'PMA': 'pma', 'FA': 'fa', 'HK': 'hk', 'MR': 'hk', 'CN': 'cn', 'IV': 'iv', 'LC': 'lc', 'PG': 'pg', 'PF': 'pg', 'NV': 'nv'}.get(p, 'o')

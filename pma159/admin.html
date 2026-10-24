@@ -49,8 +49,10 @@ FB.onAuthStateChanged(auth,function(u){
   $('who').textContent=u.email+(ok?' (admin)':' - NOT the admin account');
   if(!ok){$('login').style.display='block';$('app').style.display='none';say('This account is not the admin. Logout and use '+ADMIN,1);return}
   $('login').style.display='none';$('app').style.display='block';load()});
-var USERS=[],MSGS={},DAYS={};
-function load(){return Promise.all([FB.getDocs(FB.collection(fs,'users')),FB.getDocs(FB.collection(fs,'msgs')).catch(function(){return null}),FB.getDocs(FB.collectionGroup(fs,'days')).catch(function(){return null})]).then(function(r){var s=r[0];USERS=[];s.forEach(function(d){var x=d.data();x.id=d.id;USERS.push(x)});MSGS={};if(r[1])r[1].forEach(function(d){MSGS[d.id]=d.data()});DAYS={};if(r[2])r[2].forEach(function(d){var uid=d.ref.parent.parent.id;(DAYS[uid]=DAYS[uid]||[]).push({day:d.id,d:d.data()})});draw()}).catch(function(e){say('Could not load: '+(e.code||e.message),1)})}
+var IDLE=30*60*1000,lastAct=Date.now();['click','keydown','touchstart','scroll'].forEach(function(e){document.addEventListener(e,function(){lastAct=Date.now()},{passive:true})});
+setInterval(function(){if(auth.currentUser&&Date.now()-lastAct>IDLE){FB.signOut(auth);say('You were logged out after 30 minutes without use. Sign in again.',1)}},30000);
+var USERS=[],MSGS={},DAYS={},DEVS={};
+function load(){return Promise.all([FB.getDocs(FB.collection(fs,'users')),FB.getDocs(FB.collection(fs,'msgs')).catch(function(){return null}),FB.getDocs(FB.collectionGroup(fs,'days')).catch(function(){return null}),FB.getDocs(FB.collection(fs,'devices')).catch(function(){return null})]).then(function(r){var s=r[0];USERS=[];s.forEach(function(d){var x=d.data();x.id=d.id;USERS.push(x)});MSGS={};if(r[1])r[1].forEach(function(d){MSGS[d.id]=d.data()});DEVS={};if(r[3])r[3].forEach(function(d){DEVS[d.id]=d.data()});DAYS={};if(r[2])r[2].forEach(function(d){var uid=d.ref.parent.parent.id;(DAYS[uid]=DAYS[uid]||[]).push({day:d.id,d:d.data()})});draw()}).catch(function(e){say('Could not load: '+(e.code||e.message),1)})}
 function ts(x){try{return x.requested.toDate().toLocaleString()}catch(e){return ''}}
 function chips(u){return '<div class="chips">'+CATS.map(function(c){return '<label><input type="checkbox" data-c="'+c[0]+'"'+((u.cats||[]).indexOf(c[0])>-1?' checked':'')+'> '+c[1]+'</label>'}).join('')+'</div>'}
 function msgs(u){var out=[],m=MSGS[u.id],ds=(DAYS[u.id]||[]).slice().sort(function(x,y){return x.day<y.day?1:-1});
@@ -58,8 +60,9 @@ function msgs(u){var out=[],m=MSGS[u.id],ds=(DAYS[u.id]||[]).slice().sort(functi
   if(m&&m.n){for(var j=m.n;j>=1;j--){if(!m['m'+j])continue;var t2='';try{t2=m['t'+j].toDate().toLocaleString()}catch(e){}out.push({t:t2,m:m['m'+j],n:j,k:'first'})}}
   if(!out.length)return '';var more=out.length>12?out.length-12:0;
   return out.slice(0,12).map(function(o){return '<div class="mq"><div class="mu">'+(o.t?esc(o.t):'Message')+'</div>'+esc(o.m)+'</div>'}).join('')+(more?'<div class="mu" style="margin-top:6px">... and '+more+' older messages</div>':'')}
-function card(u){return '<div class="card" data-id="'+u.id+'" data-s="'+esc(((u.email||'')+' '+(u.name||'')).toLowerCase())+'"><b>'+esc(u.email)+'</b> <span class="tag '+u.status+'">'+u.status+'</span><div class="mu">'+esc(u.name||'')+' '+esc(ts(u))+'</div>'+msgs(u)+chips(u)+
- '<div class="row"><button class="k" data-a="ok">'+(u.status==='approved'?'Save':'Approve')+'</button>'+(u.status==='blocked'?'':'<button class="r" data-a="block">Block</button>')+'<button class="g" data-a="del">Delete</button></div></div>'}
+function devLine(u){var d=DEVS[u.id];if(!d)return '<div class="mu">Phone: not used yet</div>';var t='';try{t=d.t.toDate().toLocaleString()}catch(e){}return '<div class="mu">Phone: locked to one phone'+(t?' (since '+esc(t)+')':'')+'</div>'}
+function card(u){return '<div class="card" data-id="'+u.id+'" data-s="'+esc(((u.email||'')+' '+(u.name||'')).toLowerCase())+'"><b>'+esc(u.email)+'</b> <span class="tag '+u.status+'">'+u.status+'</span><div class="mu">'+esc(u.name||'')+' '+esc(ts(u))+'</div>'+devLine(u)+msgs(u)+chips(u)+
+ '<div class="row"><button class="k" data-a="ok">'+(u.status==='approved'?'Save':'Approve')+'</button>'+(u.status==='blocked'?'':'<button class="r" data-a="block">Block</button>')+'<button class="g" data-a="del">Delete</button>'+(DEVS[u.id]?'<button class="g" data-a="dev">Reset phone</button>':'')+'</div></div>'}
 function filt(){var q=($('srch').value||'').trim().toLowerCase(),n=0,t=0;[].forEach.call(document.querySelectorAll('#pReq .card[data-s],#pUsr .card[data-s]'),function(c){t++;var ok=!q||c.getAttribute('data-s').indexOf(q)>-1;c.style.display=ok?'':'none';if(ok)n++});$('srchN').textContent=q?(n+' of '+t+' people match'):''}
 $('srch').addEventListener('input',filt);
 function draw(){
@@ -72,6 +75,7 @@ document.addEventListener('click',function(e){var b=e.target.closest('button[dat
   var ref=FB.doc(fs,'users',id),job;
   if(a==='ok'){if(!cats.length&&!confirm('No category ticked. Approve anyway? (He will see nothing)'))return;job=FB.updateDoc(ref,{status:'approved',cats:cats})}
   else if(a==='block'){if(!confirm('Block this person?'))return;job=FB.updateDoc(ref,{status:'blocked',cats:[]})}
+  else if(a==='dev'){if(!confirm('Reset the phone of this person? The next phone where he logs in becomes his phone.'))return;job=FB.deleteDoc(FB.doc(fs,'devices',id))}
   else if(a==='del'){if(!confirm('Delete this person completely? He can ask again.'))return;job=FB.deleteDoc(ref)}
   job.then(function(){say(a==='ok'?'Saved. This person is in the People tab: open it any time to tick or untick categories.':'Done');return load()}).catch(function(x){say('Failed: '+(x.code||x.message),1)})});
 function keyBoxes(vals){$('keyBoxes').innerHTML=CATS.map(function(c){return '<div class="card"><b>'+c[1]+'</b><input type="text" id="k_'+c[0]+'" autocomplete="off" autocapitalize="characters" value="'+esc(vals[c[0]]||'')+'" placeholder="XXXX-XXXX"></div>'}).join('')}
@@ -80,7 +84,7 @@ $('bFill').onclick=function(){var t=$('paste').value,vals={};var map={o:/1000\s*
   t.split(/\n/).forEach(function(l){var m=/([A-Z0-9]{4}-[A-Z0-9]{4})\s*$/i.exec(l.trim());if(!m)return;for(var k of ['pg','nv','cn','iv','o','pma','fa','hk','lc']){if(map[k].test(l)){vals[k]=m[1].toUpperCase();break}}});
   keyBoxes(vals);say('Filled '+Object.keys(vals).length+' of 9. Check them, then press Save all passwords.')};
 $('bSaveKeys').onclick=function(){var jobs=[],n=0;CATS.forEach(function(c){var el=$('k_'+c[0]);if(!el)return;var v=el.value.trim().toUpperCase();if(!v)return;n++;jobs.push(FB.setDoc(FB.doc(fs,'catKeys',c[0]),{pw:v}))});
-  if(!n){say('Nothing to save',1);return}Promise.all(jobs).then(function(){say('Saved '+n+' passwords')}).catch(function(x){say('Failed: '+(x.code||x.message),1)})};
+  if(!n){say('Nothing to save',1);return}Promise.all(jobs).then(function(){say('Saved '+n+' passwords')}).catch(function(x){var c=x.code||x.message||'';say(/permission/.test(c)?'For safety, passwords can be saved only within 15 minutes after signing in. Tap Logout, sign in again with Google, then save.':'Failed: '+c,1)})};
 keyBoxes({});
 })();
 </script></body></html>

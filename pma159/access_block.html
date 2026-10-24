@@ -17,7 +17,7 @@
 </style>
 <script>
 (function(){
-  var CFG=__FBCFG__,ADMIN='asadullah75t@gmail.com',EXP=7*864e5,ALLCATS=['o','pma','fa','hk','lc','pg','nv','cn','iv'];
+  var CFG=__FBCFG__,ADMIN='asadullah75t@gmail.com',EXP=2*864e5,ALLCATS=['o','pma','fa','hk','lc','pg','nv','cn','iv'];
   var $=function(i){return document.getElementById(i)},A=$('auth');if(!A)return;
   function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);if(v===null)localStorage.removeItem(k);else localStorage.setItem(k,v)}catch(e){return null}}
   var FB=window.FB,app=null,auth=null,fs=null,cur=null,busy=false,webview=!!window.AsadApp||/; wv\)/.test(navigator.userAgent);
@@ -69,13 +69,14 @@
     var email=(user.email||'').toLowerCase();
     var admin=email===ADMIN;
     if(admin&&!user.emailVerified){done();showVerify(user);return Promise.resolve()}
+    return (admin?Promise.resolve('ok'):devCheck(user)).then(function(ds){if(ds==='locked'){done();leave();showDevLocked();return}
     return FB.getDoc(FB.doc(fs,'users',user.uid)).then(function(d){
       if(admin){done();return enter(user,ALLCATS)}
       if(!d.exists()){return FB.setDoc(FB.doc(fs,'users',user.uid),{email:email,name:nm(user),status:'pending',cats:[],requested:FB.serverTimestamp()}).then(function(){done();leave();showPending(user)})}
       var u=d.data();
       if(u.status==='approved'){done();return enter(user,u.cats||[])}
       done();leave();if(u.status==='blocked')showBlocked();else showPending(user);
-    }).catch(function(e){done();var c=(e&&e.code)||'';if(/permission/.test(c)){leave();showStatus('No access','This account cannot use the app. Please contact the admin.',[['Logout',logout]]);return}return cached(user)});
+    }).catch(function(e){done();var c=(e&&e.code)||'';if(/permission/.test(c)){leave();showStatus('No access','This account cannot use the app. Please contact the admin.',[['Logout',logout]]);return}return cached(user)});})
   }
   function showVerify(user){showStatus('Verify your email','We sent a link to '+user.email+'. Open your email, tap the link, then press the button below.',[
     ['I have verified',function(){$('stE').textContent='Checking...';user.reload().then(function(){return auth.currentUser.getIdToken(true)}).then(function(){handle(auth.currentUser)}).catch(function(e){$('stE').textContent=errMsg(e)})}],
@@ -119,6 +120,12 @@
     $('cmHelp').hidden=false;$('cmTx').hidden=false;$('cmGo').hidden=false;$('cmCnt').textContent='';cmLoad(false)}
   function cmSetup(user,isAdmin){cmUser=isAdmin?null:user;cmAdmin=!!isAdmin;cmOn=true;try{cmBuild()}catch(e){}}
   function cmOff(){cmOn=false;cmUser=null;var b=$('cmBox'),f=$('cmFab');if(b)b.hidden=true;if(f)f.style.display='none'}
+  /* ---- one phone per account: the account works only on the phone where it was first used (the admin can reset it) ---- */
+  function devId(){var r=ls('ac_dev');if(!r||r.length!==32){var a=new Uint8Array(16);crypto.getRandomValues(a);r=Array.prototype.map.call(a,function(x){return ('0'+x.toString(16)).slice(-2)}).join('');ls('ac_dev',r)}return r}
+  function devCheck(user){var ref=FB.doc(fs,'devices',user.uid),me=devId();
+    return FB.getDoc(ref).then(function(d){if(d.exists())return d.data().r===me?'ok':'locked';
+      return FB.setDoc(ref,{r:me,t:FB.serverTimestamp()}).then(function(){return 'ok'},function(e){return /permission/.test((e&&e.code)||'')?'locked':'unknown'})}).catch(function(){return 'unknown'})}
+  function showDevLocked(){showStatus('Account locked to another phone','This account is already used on another phone. One account works on one phone only. If this is your new phone, ask the admin to reset your phone, then log in again.',[['Check again',function(){handle(auth.currentUser)}],['Logout',logout]])}
   function showBlocked(){showStatus('Access stopped','Your access was stopped by the admin. Please contact him.',[['Logout',logout]])}
   function logout(){var p=auth?FB.signOut(auth):Promise.resolve();return p.catch(function(){}).then(function(){cur=null;leave();showLogin()})}
   /* ---- the forms of the old login page now talk to Firebase ---- */
