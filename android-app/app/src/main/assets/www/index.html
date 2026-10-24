@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head><script>/*SHELLUPD*/(function(){var V=202610240721,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
+<head><script>/*SHELLUPD*/(function(){var V=202610240733,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
 try{var sv=+L.getItem('shell_v')||0,h=L.getItem('shell_html'),t=+L.getItem('shell_try')||0;
 if(h&&sv>V&&!window.__shellW){if(t>=2){L.removeItem('shell_html');L.removeItem('shell_v');L.removeItem('shell_try')}
 else{L.setItem('shell_try',String(t+1));window.__shellW=1;document.open();document.write(h);document.close();return}}}catch(e){}
@@ -2254,7 +2254,7 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
   function hideAll(){paneIn.hidden=true;paneUp.hidden=true;st.hidden=true}
   function showLogin(){A.classList.remove('hide');hideAll();paneIn.hidden=false;paneIn.classList.remove('out');$('authUser').style.display='none';
     var s=paneIn.querySelector('.sub');if(s)s.textContent='Login with your email. Your account needs approval from the admin.';
-    var su=paneUp.querySelector('.sub');if(su)su.textContent='Sign up, verify your email, then wait for the admin to approve you.'}
+    var su=paneUp.querySelector('.sub');if(su)su.textContent='Fill in your name, email and a password. Then the admin approves your account.'}
   function showStatus(title,msg,btns,err){A.classList.remove('hide');hideAll();st.hidden=false;st.classList.remove('out');$('stMsg').hidden=true;$('stT').textContent=title;$('stP').textContent=msg||'';$('stE').textContent=err||'';
     var b=$('stBtns');b.innerHTML='';(btns||[]).forEach(function(x,i){var e=document.createElement('button');e.type='button';e.className=i===0?'btn':'stb';e.textContent=x[0];e.onclick=x[1];b.appendChild(e)})}
   function showUser(name){$('authUserName').textContent='👤 '+(name||'');$('authUser').style.display='flex'}

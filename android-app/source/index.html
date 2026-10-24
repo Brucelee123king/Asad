@@ -2128,7 +2128,7 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
   function hideAll(){paneIn.hidden=true;paneUp.hidden=true;st.hidden=true}
   function showLogin(){A.classList.remove('hide');hideAll();paneIn.hidden=false;paneIn.classList.remove('out');$('authUser').style.display='none';
     var s=paneIn.querySelector('.sub');if(s)s.textContent='Login with your email. Your account needs approval from the admin.';
-    var su=paneUp.querySelector('.sub');if(su)su.textContent='Sign up, verify your email, then wait for the admin to approve you.'}
+    var su=paneUp.querySelector('.sub');if(su)su.textContent='Fill in your name, email and a password. Then the admin approves your account.'}
   function showStatus(title,msg,btns,err){A.classList.remove('hide');hideAll();st.hidden=false;st.classList.remove('out');$('stMsg').hidden=true;$('stT').textContent=title;$('stP').textContent=msg||'';$('stE').textContent=err||'';
     var b=$('stBtns');b.innerHTML='';(btns||[]).forEach(function(x,i){var e=document.createElement('button');e.type='button';e.className=i===0?'btn':'stb';e.textContent=x[0];e.onclick=x[1];b.appendChild(e)})}
   function showUser(name){$('authUserName').textContent='👤 '+(name||'');$('authUser').style.display='flex'}
