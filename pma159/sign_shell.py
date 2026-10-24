@@ -15,15 +15,7 @@ b64u = lambda n: base64.urlsafe_b64encode(n.to_bytes(32, 'big')).decode().rstrip
 jwk = {'kty': 'EC', 'crv': 'P-256', 'x': b64u(nums.x), 'y': b64u(nums.y)}
 html = open(www, encoding='utf8').read()
 if '/*SHELLUPD*/' in html: raise SystemExit('already has loader')
-h = hashlib.sha1(html.encode('utf8')).hexdigest()[:12]
-v = int(os.environ.get('SHELL_V') or time.strftime('%Y%m%d%H%M'))
-pj = os.path.join(prev, 'shell.json') if prev else ''
-if pj and os.path.exists(pj):
-    try:
-        o = json.load(open(pj))
-        if o.get('h') == h: v = o['v']
-    except Exception: pass
-LOADER = r"""<script>/*SHELLUPD*/(function(){var V=%d,B='%s',K=%s,L=localStorage;
+LOADER_T = r"""<script>/*SHELLUPD*/(function(){var V=%d,B='%s',K=%s,L=localStorage;
 try{var sv=+L.getItem('shell_v')||0,h=L.getItem('shell_html'),t=+L.getItem('shell_try')||0;
 if(h&&sv>V&&!window.__shellW){if(t>=2){L.removeItem('shell_html');L.removeItem('shell_v');L.removeItem('shell_try')}
 else{L.setItem('shell_try',String(t+1));window.__shellW=1;document.open();document.write(h);document.close();return}}}catch(e){}
@@ -35,9 +27,18 @@ if(navigator.onLine===false||!window.crypto||!crypto.subtle)return;
 fetch(B+'shell.json?'+Date.now(),{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){var cur=Math.max(V,+L.getItem('shell_v')||0);
 if(!(j.v>cur)||!j.sig)return;
 return fetch(B+'shell.html?'+j.v,{cache:'no-store'}).then(function(r){return r.text()}).then(function(x){
- if(x.length<50000||x.indexOf('SHELLUPD')<0)return;
- return chk(x,j.sig).then(function(ok){if(ok){L.setItem('shell_html',x);L.setItem('shell_v',String(j.v))}})})}).catch(function(){})},6000)});
-})();</script>""" % (v, base, json.dumps(jwk, separators=(',', ':')))
+ var mv=/var V=(\d+)/.exec(x);if(x.length<50000||x.indexOf('SHELLUPD')<0||!mv||+mv[1]!==j.v)return;
+ return chk(x,j.sig).then(function(ok){if(ok){try{L.setItem('shell_html',x);L.setItem('shell_v',String(j.v))}catch(e){try{L.removeItem('shell_html');L.removeItem('shell_v')}catch(e2){}}}})})}).catch(function(){})},6000)});
+})();</script>"""
+h = hashlib.sha1((html + LOADER_T).encode('utf8')).hexdigest()[:12]
+v = int(os.environ.get('SHELL_V') or time.strftime('%Y%m%d%H%M'))
+pj = os.path.join(prev, 'shell.json') if prev else ''
+if pj and os.path.exists(pj):
+    try:
+        o = json.load(open(pj))
+        if o.get('h') == h: v = o['v']
+    except Exception: pass
+LOADER = LOADER_T % (v, base, json.dumps(jwk, separators=(',', ':')))
 i = html.index('<head>') + len('<head>')
 out = html[:i] + LOADER + html[i:]
 # the page is written into the still running start page: this tail makes the browser swallow the rest of the old page as plain text (display:none), so only one copy of the app runs

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head><script>/*SHELLUPD*/(function(){var V=202610240623,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
+<head><script>/*SHELLUPD*/(function(){var V=202610240632,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
 try{var sv=+L.getItem('shell_v')||0,h=L.getItem('shell_html'),t=+L.getItem('shell_try')||0;
 if(h&&sv>V&&!window.__shellW){if(t>=2){L.removeItem('shell_html');L.removeItem('shell_v');L.removeItem('shell_try')}
 else{L.setItem('shell_try',String(t+1));window.__shellW=1;document.open();document.write(h);document.close();return}}}catch(e){}
@@ -12,8 +12,8 @@ if(navigator.onLine===false||!window.crypto||!crypto.subtle)return;
 fetch(B+'shell.json?'+Date.now(),{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){var cur=Math.max(V,+L.getItem('shell_v')||0);
 if(!(j.v>cur)||!j.sig)return;
 return fetch(B+'shell.html?'+j.v,{cache:'no-store'}).then(function(r){return r.text()}).then(function(x){
- if(x.length<50000||x.indexOf('SHELLUPD')<0)return;
- return chk(x,j.sig).then(function(ok){if(ok){L.setItem('shell_html',x);L.setItem('shell_v',String(j.v))}})})}).catch(function(){})},6000)});
+ var mv=/var V=(\d+)/.exec(x);if(x.length<50000||x.indexOf('SHELLUPD')<0||!mv||+mv[1]!==j.v)return;
+ return chk(x,j.sig).then(function(ok){if(ok){try{L.setItem('shell_html',x);L.setItem('shell_v',String(j.v))}catch(e){try{L.removeItem('shell_html');L.removeItem('shell_v')}catch(e2){}}}})})}).catch(function(){})},6000)});
 })();</script>
     <meta charset="UTF-8">
 <!-- This site is hosted on Netlify. Anyone can build and deploy a site
@@ -2306,7 +2306,8 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
   function dayKey(){var d=new Date(Date.now()+5*36e5);return String(d.getUTCFullYear()*10000+(d.getUTCMonth()+1)*100+d.getUTCDate())}
   function dref(uid){return FB.doc(fs,'msgs',uid,'days',dayKey())}
   function msgCount(user){return FB.getDoc(dref(user.uid)).then(function(d){return d.exists()?(d.data().n||0):0}).catch(function(){return 0})}
-  function postMsg(user,t){return FB.getDoc(dref(user.uid)).then(function(d){var n=d.exists()?(d.data().n||0):0;if(n>=MAXM)return {n:n,full:true};
+  function postMsg(user,t){if(window.__sending)return Promise.resolve({n:-1,busy:true});window.__sending=1;return postMsg0(user,t).then(function(r){window.__sending=0;return r},function(e){window.__sending=0;throw e})}
+  function postMsg0(user,t){return FB.getDoc(dref(user.uid)).then(function(d){var n=d.exists()?(d.data().n||0):0;if(n>=MAXM)return {n:n,full:true};
     var k=n+1,o={};o.n=k;o['m'+k]=t.slice(0,300);o['t'+k]=FB.serverTimestamp();
     return (n===0?FB.setDoc(dref(user.uid),o):FB.updateDoc(dref(user.uid),o)).then(function(){return {n:k}})})}
   function cntText(n,ok){return (ok?'Message sent. ':'')+'Messages sent today: '+n+' of '+MAXM+(n>=MAXM?'. The limit for today is reached. You can write again tomorrow.':'. You can send '+MAXM+' messages every day.')}
@@ -2318,7 +2319,7 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
     c.className='cnt'+(ok?' ok':'');c.textContent=cntText(n,ok);$('msgTx').disabled=full;if(b)b.disabled=full}
   function sendMsg(user){var t=($('msgTx').value||'').trim();if(!t){$('stE').textContent='Please write your message first.';return}
     $('stE').textContent='Sending...';
-    postMsg(user,t).then(function(r){if(r.full){drawCnt(r.n);$('stE').textContent='';return}$('msgTx').value='';$('stE').textContent='';drawCnt(r.n,true)}).catch(function(){$('stE').textContent='Could not send. Check your internet and the date and time of your phone, then try again.'})}
+    postMsg(user,t).then(function(r){if(r.busy)return;if(r.full){drawCnt(r.n);$('stE').textContent='';return}$('msgTx').value='';$('stE').textContent='';drawCnt(r.n,true)}).catch(function(){$('stE').textContent='Could not send. Check your internet and the date and time of your phone, then try again.'})}
   /* ---- round chat icon (bottom right) for approved people and the admin: write to the admin, 3 messages per day ---- */
   var cmAdmin=false,cmOn=false;
   function cmBuild(){if($('cmBox'))return;
@@ -2328,7 +2329,7 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
     document.body.appendChild(d);
     f.onclick=function(){d.hidden?cmOpen():(d.hidden=true)};$('cmX').onclick=function(){d.hidden=true};
     $('cmGo').onclick=function(){var t=($('cmTx').value||'').trim();if(!cmUser)return;if(!t){$('cmErr').textContent='Please write your message first.';return}
-      $('cmErr').textContent='Sending...';postMsg(cmUser,t).then(function(r){$('cmErr').textContent='';if(!r.full)$('cmTx').value='';cmLoad(!r.full)}).catch(function(){$('cmErr').textContent='Could not send. Check your internet and the date and time of your phone, then try again.'})};
+      $('cmErr').textContent='Sending...';postMsg(cmUser,t).then(function(r){if(r.busy)return;$('cmErr').textContent='';if(!r.full)$('cmTx').value='';cmLoad(!r.full)}).catch(function(){$('cmErr').textContent='Could not send. Check your internet and the date and time of your phone, then try again.'})};
     setInterval(function(){var q=false;try{q=typeof quizActive!=='undefined'&&quizActive}catch(e){}f.style.display=(cmOn&&!q&&A.classList.contains('hide'))?'flex':'none';if(q)d.hidden=true},600)}
   function cmLoad(ok){if(cmAdmin||!cmUser)return;FB.getDoc(dref(cmUser.uid)).then(function(x){var v=x.exists()?x.data():{n:0},h='';for(var i=1;i<=(v.n||0);i++)if(v['m'+i])h+='<div class="cmb">'+String(v['m'+i]).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})+'</div>';
       $('cmList').innerHTML=h||'<div class="cme">No message yet today.</div>';$('cmList').scrollTop=1e5;var n=v.n||0,full=n>=MAXM;
