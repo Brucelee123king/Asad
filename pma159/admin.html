@@ -8,7 +8,7 @@ h1{font-size:20px;margin:6px 0 2px}h2{font-size:16px;margin:18px 0 8px}.mu{color
 .card{background:var(--cd);border:1px solid var(--bd);border-radius:14px;padding:12px;margin:10px 0}
 button{border:0;border-radius:10px;padding:10px 14px;font-size:14px;font-weight:700;cursor:pointer;background:var(--ac);color:#fff}
 button.g{background:transparent;color:var(--tx);border:1px solid var(--bd)}button.r{background:var(--no)}button.k{background:var(--ok)}
-.row{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.row{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}.mq{background:rgba(129,140,248,.14);border-radius:10px;padding:9px 11px;margin-top:8px;font-size:15px;white-space:pre-wrap;word-break:break-word}.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
 .chips label{border:1px solid var(--bd);border-radius:999px;padding:6px 10px;font-size:13px;display:flex;gap:6px;align-items:center}
 .tag{display:inline-block;border-radius:999px;padding:2px 9px;font-size:12px;font-weight:700}.pending{background:#fef3c7;color:#92400e}.approved{background:#dcfce7;color:#166534}.blocked{background:#fee2e2;color:#991b1b}
 input[type=text],textarea{width:100%;padding:10px;border-radius:10px;border:1px solid var(--bd);background:transparent;color:var(--tx);font-size:15px}
@@ -49,11 +49,12 @@ FB.onAuthStateChanged(auth,function(u){
   $('who').textContent=u.email+(ok?' (admin)':' - NOT the admin account');
   if(!ok){$('login').style.display='block';$('app').style.display='none';say('This account is not the admin. Logout and use '+ADMIN,1);return}
   $('login').style.display='none';$('app').style.display='block';load()});
-var USERS=[];
-function load(){return FB.getDocs(FB.collection(fs,'users')).then(function(s){USERS=[];s.forEach(function(d){var x=d.data();x.id=d.id;USERS.push(x)});draw()}).catch(function(e){say('Could not load: '+(e.code||e.message),1)})}
+var USERS=[],MSGS={};
+function load(){return Promise.all([FB.getDocs(FB.collection(fs,'users')),FB.getDocs(FB.collection(fs,'msgs')).catch(function(){return null})]).then(function(r){var s=r[0];USERS=[];s.forEach(function(d){var x=d.data();x.id=d.id;USERS.push(x)});MSGS={};if(r[1])r[1].forEach(function(d){MSGS[d.id]=d.data()});draw()}).catch(function(e){say('Could not load: '+(e.code||e.message),1)})}
 function ts(x){try{return x.requested.toDate().toLocaleString()}catch(e){return ''}}
 function chips(u){return '<div class="chips">'+CATS.map(function(c){return '<label><input type="checkbox" data-c="'+c[0]+'"'+((u.cats||[]).indexOf(c[0])>-1?' checked':'')+'> '+c[1]+'</label>'}).join('')+'</div>'}
-function card(u){return '<div class="card" data-id="'+u.id+'" data-s="'+esc(((u.email||'')+' '+(u.name||'')).toLowerCase())+'"><b>'+esc(u.email)+'</b> <span class="tag '+u.status+'">'+u.status+'</span><div class="mu">'+esc(u.name||'')+' '+esc(ts(u))+'</div>'+chips(u)+
+function msgs(u){var m=MSGS[u.id];if(!m||!m.n)return '';var h='';for(var i=1;i<=m.n;i++){if(!m['m'+i])continue;var t='';try{t=m['t'+i].toDate().toLocaleString()}catch(e){}h+='<div class="mq"><div class="mu">Message '+i+' of 3'+(t?' - '+esc(t):'')+'</div>'+esc(m['m'+i])+'</div>'}return h}
+function card(u){return '<div class="card" data-id="'+u.id+'" data-s="'+esc(((u.email||'')+' '+(u.name||'')).toLowerCase())+'"><b>'+esc(u.email)+'</b> <span class="tag '+u.status+'">'+u.status+'</span><div class="mu">'+esc(u.name||'')+' '+esc(ts(u))+'</div>'+msgs(u)+chips(u)+
  '<div class="row"><button class="k" data-a="ok">'+(u.status==='approved'?'Save':'Approve')+'</button>'+(u.status==='blocked'?'':'<button class="r" data-a="block">Block</button>')+'<button class="g" data-a="del">Delete</button></div></div>'}
 function filt(){var q=($('srch').value||'').trim().toLowerCase(),n=0,t=0;[].forEach.call(document.querySelectorAll('#pReq .card[data-s],#pUsr .card[data-s]'),function(c){t++;var ok=!q||c.getAttribute('data-s').indexOf(q)>-1;c.style.display=ok?'':'none';if(ok)n++});$('srchN').textContent=q?(n+' of '+t+' people match'):''}
 $('srch').addEventListener('input',filt);

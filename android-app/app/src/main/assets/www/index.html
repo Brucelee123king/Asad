@@ -2209,6 +2209,9 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
 #auth .guest,#auth .orr{display:none!important}
 #auth .gbtn{width:100%;margin-top:12px;height:48px;border-radius:16px;font-weight:700;font-size:14.5px;cursor:pointer;color:var(--tx);background:var(--gh);border:1px solid var(--fbd)}
 #auth .stb{width:100%;margin-top:10px;height:48px;border-radius:16px;font-weight:700;font-size:14.5px;cursor:pointer;color:var(--tx);background:var(--gh);border:1px solid var(--fbd)}
+#auth .mbox{margin:4px 0 6px;text-align:left}#auth .mbox label{display:block;font-size:12.5px;font-weight:600;color:var(--mu);margin:0 0 5px 3px}
+#auth .mbox textarea{width:100%;box-sizing:border-box;height:92px;padding:12px 14px;border-radius:16px;border:1px solid var(--fbd);background:var(--fb);color:var(--tx);font-size:15px;font-family:inherit;outline:none;resize:none}
+#auth .mbox .cnt{font-size:12.5px;margin:6px 3px 0;color:var(--mu)}#auth .mbox .ok{color:#16a34a;font-weight:600}
 #auth .stmsg{font-size:14px;line-height:1.5;text-align:center;margin:6px 0 12px;color:var(--tx)}
 </style>
 <script>
@@ -2224,14 +2227,14 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
   /* ---- screens ---- */
   var wrap=A.querySelector('.wrap'),copy=A.querySelector('.copy');
   var st=document.createElement('div');st.className='pane';st.id='paneSt';st.hidden=true;
-  st.innerHTML='<h2 id="stT"></h2><p class="stmsg" id="stP"></p><div id="stBtns"></div><div class="err" id="stE"></div>';
+  st.innerHTML='<h2 id="stT"></h2><p class="stmsg" id="stP"></p><div class="mbox" id="stMsg" hidden><label for="msgTx">Message to admin (limit: 3 messages)</label><textarea id="msgTx" maxlength="300" placeholder="Example: Hi, I am Ali. I know you from the PMA group. Please approve me for PMA 159."></textarea><div class="cnt" id="msgCnt"></div></div><div id="stBtns"></div><div class="err" id="stE"></div>';
   wrap.insertBefore(st,copy);
   var paneIn=$('paneIn'),paneUp=$('paneUp');
   function hideAll(){paneIn.hidden=true;paneUp.hidden=true;st.hidden=true}
   function showLogin(){A.classList.remove('hide');hideAll();paneIn.hidden=false;paneIn.classList.remove('out');$('authUser').style.display='none';
     var s=paneIn.querySelector('.sub');if(s)s.textContent='Login with your email. Your account needs approval from the admin.';
     var su=paneUp.querySelector('.sub');if(su)su.textContent='Sign up, verify your email, then wait for the admin to approve you.'}
-  function showStatus(title,msg,btns,err){A.classList.remove('hide');hideAll();st.hidden=false;st.classList.remove('out');$('stT').textContent=title;$('stP').textContent=msg||'';$('stE').textContent=err||'';
+  function showStatus(title,msg,btns,err){A.classList.remove('hide');hideAll();st.hidden=false;st.classList.remove('out');$('stMsg').hidden=true;$('stT').textContent=title;$('stP').textContent=msg||'';$('stE').textContent=err||'';
     var b=$('stBtns');b.innerHTML='';(btns||[]).forEach(function(x,i){var e=document.createElement('button');e.type='button';e.className=i===0?'btn':'stb';e.textContent=x[0];e.onclick=x[1];b.appendChild(e)})}
   function showUser(name){$('authUserName').textContent='👤 '+(name||'');$('authUser').style.display='flex'}
   function nm(u){return ls('ac_name')||(u&&u.displayName)||(u&&u.email)||''}
@@ -2277,7 +2280,21 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
     ['I have verified',function(){$('stE').textContent='Checking...';user.reload().then(function(){return auth.currentUser.getIdToken(true)}).then(function(){handle(auth.currentUser)}).catch(function(e){$('stE').textContent=errMsg(e)})}],
     ['Send the link again',function(){FB.sendEmailVerification(user).then(function(){$('stE').textContent='Link sent again. Check your email (also Spam).'}).catch(function(e){$('stE').textContent=errMsg(e)})}],
     ['Logout',logout]])}
-  function showPending(user){showStatus('Waiting for approval','Your request is sent to the admin ('+user.email+'). When he approves you, press Check again.',[['Check again',function(){handle(auth.currentUser)}],['Logout',logout]])}
+  var MAXM=3;
+  function msgCount(user){return FB.getDoc(FB.doc(fs,'msgs',user.uid)).then(function(d){return d.exists()?(d.data().n||0):0}).catch(function(){return 0})}
+  function showPending(user){
+    showStatus('Waiting for approval','Your request is sent to the admin ('+user.email+'). When he approves you, press Check again.',[['Send message',function(){sendMsg(user)}],['Check again',function(){handle(auth.currentUser)}],['Logout',logout]]);
+    $('stMsg').hidden=false;$('msgTx').value='';
+    msgCount(user).then(function(n){drawCnt(n)})}
+  function drawCnt(n,ok){var c=$('msgCnt'),b=$('stBtns').querySelector('button'),full=n>=MAXM;
+    c.className='cnt'+(ok?' ok':'');c.textContent=(ok?'Message sent. ':'')+'Messages sent: '+n+' of '+MAXM+(full?'. The limit is reached, you cannot send more.':'.');
+    $('msgTx').disabled=full;if(b)b.disabled=full}
+  function sendMsg(user){var t=($('msgTx').value||'').trim();if(!t){$('stE').textContent='Please write your message first.';return}
+    $('stE').textContent='Sending...';
+    FB.getDoc(FB.doc(fs,'msgs',user.uid)).then(function(d){var n=d.exists()?(d.data().n||0):0;if(n>=MAXM){drawCnt(n);$('stE').textContent='';return}
+      var k=n+1,o={};o.n=k;o['m'+k]=t.slice(0,300);o['t'+k]=FB.serverTimestamp();
+      var job=n===0?(o.email=(user.email||'').toLowerCase(),FB.setDoc(FB.doc(fs,'msgs',user.uid),o)):FB.updateDoc(FB.doc(fs,'msgs',user.uid),o);
+      return job.then(function(){$('msgTx').value='';$('stE').textContent='';drawCnt(k,true)})}).catch(function(e){$('stE').textContent='Could not send. Check your internet and try again.'})}
   function showBlocked(){showStatus('Access stopped','Your access was stopped by the admin. Please contact him.',[['Logout',logout]])}
   function logout(){var p=auth?FB.signOut(auth):Promise.resolve();return p.catch(function(){}).then(function(){cur=null;leave();showLogin()})}
   /* ---- the forms of the old login page now talk to Firebase ---- */

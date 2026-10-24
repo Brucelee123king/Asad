@@ -19,6 +19,37 @@ service cloud.firestore {
         && request.resource.data.keys().hasOnly(['email','name','status','cats','requested']);
       allow update, delete: if isAdmin();
     }
+    match /msgs/{uid} {
+      allow read: if isAdmin() || (request.auth != null && request.auth.uid == uid);
+      allow create: if request.auth != null
+        && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['email','n','m1','t1'])
+        && request.resource.data.n == 1
+        && request.resource.data.email == request.auth.token.email
+        && request.resource.data.m1 is string
+        && request.resource.data.m1.size() > 0
+        && request.resource.data.m1.size() <= 300
+        && request.resource.data.t1 == request.time;
+      allow update: if request.auth != null
+        && request.auth.uid == uid
+        && request.resource.data.n == resource.data.n + 1
+        && (
+          (resource.data.n == 1
+            && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['n','m2','t2'])
+            && request.resource.data.m2 is string
+            && request.resource.data.m2.size() > 0
+            && request.resource.data.m2.size() <= 300
+            && request.resource.data.t2 == request.time)
+          ||
+          (resource.data.n == 2
+            && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['n','m3','t3'])
+            && request.resource.data.m3 is string
+            && request.resource.data.m3.size() > 0
+            && request.resource.data.m3.size() <= 300
+            && request.resource.data.t3 == request.time)
+        );
+      allow delete: if isAdmin();
+    }
     match /catKeys/{cat} {
       allow read: if isAdmin()
         || (request.auth != null
