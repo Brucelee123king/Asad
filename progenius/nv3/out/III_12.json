@@ -1,0 +1,25 @@
+{
+ "type": "III",
+ "num": 12,
+ "kind": "series",
+ "pdf_page": 23,
+ "stem_groups": [
+  [
+   "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><rect width=\"100\" height=\"100\" fill=\"#fff\"/><rect x=\"2\" y=\"38\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.2\"/><g transform=\"translate(2,38) scale(.24)\"><g transform=\"rotate(0 40 30)\"><path d=\"M31,30A9,9 0 0 1 49,30\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/></g></g><text x=\"14\" y=\"71\" font-size=\"7\" font-family=\"Arial\" text-anchor=\"middle\">A</text><rect x=\"26\" y=\"38\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.2\"/><g transform=\"translate(26,38) scale(.24)\"><g transform=\"rotate(90 70 55)\"><path d=\"M61,55A9,9 0 0 1 79,55\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/><path d=\"M56,55A14,14 0 0 1 84,55\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/></g></g><text x=\"38\" y=\"71\" font-size=\"7\" font-family=\"Arial\" text-anchor=\"middle\">B</text><rect x=\"50\" y=\"38\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.2\"/><text x=\"62\" y=\"56\" font-size=\"16\" font-family=\"Arial\" font-weight=\"bold\" text-anchor=\"middle\">?</text><text x=\"62\" y=\"71\" font-size=\"7\" font-family=\"Arial\" text-anchor=\"middle\">C</text><rect x=\"74\" y=\"38\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.2\"/><g transform=\"translate(74,38) scale(.24)\"><g transform=\"rotate(-90 36 45)\"><path d=\"M27,45A9,9 0 0 1 45,45\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/><path d=\"M22,45A14,14 0 0 1 50,45\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/><path d=\"M17,45A19,19 0 0 1 55,45\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/><path d=\"M12,45A24,24 0 0 1 60,45\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/></g></g><text x=\"86\" y=\"71\" font-size=\"7\" font-family=\"Arial\" text-anchor=\"middle\">D</text></svg>"
+  ]
+ ],
+ "noq": true,
+ "options": [
+  "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><rect width=\"100\" height=\"100\" fill=\"#fff\"/><rect x=\"4\" y=\"4\" width=\"92\" height=\"92\" fill=\"none\" stroke=\"#111\" stroke-width=\"2\"/><g transform=\"rotate(-90 32 58)\"><path d=\"M22,58A10,10 0 0 1 42,58\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/><path d=\"M17,58A15,15 0 0 1 47,58\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/><path d=\"M12,58A20,20 0 0 1 52,58\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/></g></svg>",
+  "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><rect width=\"100\" height=\"100\" fill=\"#fff\"/><rect x=\"4\" y=\"4\" width=\"92\" height=\"92\" fill=\"none\" stroke=\"#111\" stroke-width=\"2\"/><g transform=\"rotate(90 64 52)\"><path d=\"M54,52A10,10 0 0 1 74,52\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/><path d=\"M49,52A15,15 0 0 1 79,52\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/><path d=\"M44,52A20,20 0 0 1 84,52\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/></g></svg>",
+  "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><rect width=\"100\" height=\"100\" fill=\"#fff\"/><rect x=\"4\" y=\"4\" width=\"92\" height=\"92\" fill=\"none\" stroke=\"#111\" stroke-width=\"2\"/><g transform=\"rotate(180 50 64)\"><path d=\"M40,64A10,10 0 0 1 60,64\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/><path d=\"M35,64A15,15 0 0 1 65,64\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/></g></svg>",
+  "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><rect width=\"100\" height=\"100\" fill=\"#fff\"/><rect x=\"4\" y=\"4\" width=\"92\" height=\"92\" fill=\"none\" stroke=\"#111\" stroke-width=\"2\"/><g transform=\"rotate(-90 80 44)\"><path d=\"M70,44A10,10 0 0 1 90,44\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/><path d=\"M65,44A15,15 0 0 1 95,44\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/></g></svg>",
+  "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><rect width=\"100\" height=\"100\" fill=\"#fff\"/><rect x=\"4\" y=\"4\" width=\"92\" height=\"92\" fill=\"none\" stroke=\"#111\" stroke-width=\"2\"/><g transform=\"rotate(180 50 52)\"><path d=\"M40,52A10,10 0 0 1 60,52\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/><path d=\"M35,52A15,15 0 0 1 65,52\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/><path d=\"M30,52A20,20 0 0 1 70,52\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/></g></svg>"
+ ],
+ "correct": 4,
+ "book_answer": 5,
+ "why": "The arcs move clockwise around the box: top in A, right in B, bottom in C, left in D. At the same time the number of arcs grows by one: 1, 2, 3, 4. So C must have 3 arcs at the bottom, opening upwards: option 5. Option 3 is at the bottom but has only 2 arcs, and option 2 has 3 arcs but on the wrong side.",
+ "trick": "Check two things together: where the shape goes (position) and how many there are (count).",
+ "confidence": "high",
+ "note": "Whole row A, B, ?, D drawn as one SVG because D comes after the ?."
+}

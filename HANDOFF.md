@@ -278,3 +278,8 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 
 ## Oct 25 2026: Non Verbal batch 2 (progenius/nv2/)
 - PDF "Non-verbal Pro Genius Students" (27 pages): pages 1-13 = 13 analogy questions, pages 15-27 = answers (shaded button + explanation). 13 agents redrew each question as SVG (nv2/SPEC.md, out/q1..13.json). Answers taken from the PDF (answer_key.json, read by pixel brightness; all 13 agents agreed). nv2/build2.py = nv_final_19.json + 13 new -> progenius/nv_final.json (32). Published as data update (no APK).
+
+## Oct 25 2026: Non Verbal batch 3 (progenius/nv3/, Forces Academy picture tests)
+- Scanned book, 3 types x 30 questions; scan misses Type I Q3, Q4 and Type II Q25, Q26 (86 drawn by 14 agents, 7 at a time). Answer keys in nv3/answer_key.json (book). build3.py = nv_final_32.json + nv3/out (minus nv3/drop.json) + fit_rows.js (trims whole-row/grid stems). nv_block: q.noq (no extra "?" box, big stem picture) and the quiz badge shows q.sec.
+- 14 doubtful questions held back in drop.json (I_01, I_07, I_21, II_01, II_03, II_04, II_09, II_10, II_13, II_15, III_10, III_13, III_21, III_28): book key impossible or seems wrong. Sheets sent to the user; when the user gives the answers, set "correct"/"book_answer" in out/<file>.json (II_03/II_04 FIX map in build3.py), remove from drop.json, rerun build3.py and ./admin_publish.sh.
+- Non Verbal live: 104 questions = tests of 50, 50, 4.
