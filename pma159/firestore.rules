@@ -102,6 +102,19 @@ service cloud.firestore {
     match /{path=**}/days/{d} {
       allow read: if isAdmin();
     }
+    match /online/{d} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null && d == 'now'
+        && request.resource.data.keys().hasOnly([request.auth.uid])
+        && request.resource.data[request.auth.uid] == request.time;
+      allow update: if request.auth != null && d == 'now'
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly([request.auth.uid])
+        && request.resource.data[request.auth.uid] == request.time;
+    }
+    match /stats/{d} {
+      allow read: if request.auth != null;
+      allow write: if isAdmin();
+    }
     match /catKeys/{cat} {
       allow read: if isAdmin()
         || (request.auth != null

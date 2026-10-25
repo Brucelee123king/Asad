@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head><script>/*SHELLUPD*/(function(){var V=202610250901,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
+<head><script>/*SHELLUPD*/(function(){var V=202610251033,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
 try{var sv=+L.getItem('shell_v')||0,h=L.getItem('shell_html'),t=+L.getItem('shell_try')||0;
 if(h&&sv>V&&!window.__shellW){if(t>=2){L.removeItem('shell_html');L.removeItem('shell_v');L.removeItem('shell_try')}
 else{L.setItem('shell_try',String(t+1));window.__shellW=1;document.open();document.write(h);document.close();return}}}catch(e){}
@@ -2295,10 +2295,10 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
   function getKey(id){return FB.getDoc(FB.doc(fs,'catKeys',id)).then(function(d){if(!d.exists())throw new Error('nokey');return d.data().pw})}
   function enter(user,cats,offline){
     if(!offline)ls('ac_state',JSON.stringify({uid:user&&user.uid,name:nm(user),cats:cats,status:'approved',t:Date.now()}));
-    document.documentElement.classList.add('acok');A.classList.add('hide');showUser(nm(user)||'');try{cmSetup(user,(user.email||'').toLowerCase()===ADMIN)}catch(e){}
+    document.documentElement.classList.add('acok');A.classList.add('hide');showUser(nm(user)||'');try{cmSetup(user,(user.email||'').toLowerCase()===ADMIN)}catch(e){}try{onSetup(user)}catch(e){}
     return window.__lkSetAllowed(cats,offline||!fs?null:getKey);
   }
-  function leave(){try{cmOff()}catch(e){}ls('ac_state',null);if(window.__lkForgetAll)window.__lkForgetAll()}
+  function leave(){try{cmOff()}catch(e){}try{onOff()}catch(e){}ls('ac_state',null);if(window.__lkForgetAll)window.__lkForgetAll()}
   function cached(user){
     var s=null;try{s=JSON.parse(ls('ac_state'))}catch(e){}
     if(s&&s.status==='approved'&&(!user||s.uid===user.uid)&&Date.now()-s.t<EXP&&s.t<=Date.now()+864e5)return enter(user,s.cats||[],true);
@@ -2362,6 +2362,33 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
     if(cmAdmin){$('cmList').innerHTML='<div class="cme">You are the admin. Messages from people appear on your Admin page, inside each person card.</div>';$('cmHelp').hidden=true;$('cmTx').hidden=true;$('cmGo').hidden=true;$('cmCnt').textContent='';return}
     $('cmHelp').hidden=false;$('cmTx').hidden=false;$('cmGo').hidden=false;$('cmCnt').textContent='';cmLoad(false)}
   function cmSetup(user,isAdmin){cmUser=isAdmin?null:user;cmAdmin=!!isAdmin;cmOn=true;try{cmBuild()}catch(e){}}
+  /* ---- people icon next to the moon: total students + online now. One shared doc online/now = {uid: last seen}; total = approved count the admin page saves in stats/public ---- */
+  var onT=null,onUser=null;
+  function onBuild(){if($('onBtn'))return;
+    var st=document.createElement('style');st.textContent='#onBtn{position:fixed;top:12px;right:60px;z-index:9995;width:40px;height:40px;border-radius:999px;display:none;align-items:center;justify-content:center;background:#fff;color:#4f46e5;border:1px solid #e2e8f0;box-shadow:0 4px 14px rgba(15,23,42,.12);font-size:17px;cursor:pointer;padding:0}'+
+      'html.onon #onBtn{display:flex}html.onon #hdrUser{margin-right:48px}html.dark #onBtn{background:rgba(15,23,42,.85);color:#a5b4fc;border-color:rgba(148,163,184,.3)}'+
+      '#onBtn .dot{position:absolute;top:-5px;right:-7px;min-width:20px;height:20px;padding:0 5px;border-radius:999px;background:#16a34a;color:#fff;font:700 11px/16px system-ui,sans-serif;text-align:center;border:2px solid #fff;box-sizing:border-box}'+
+      '#onBox{position:fixed;z-index:9997;top:62px;right:12px;width:230px;background:#fff;border-radius:16px;box-shadow:0 12px 32px rgba(15,23,42,.2);padding:6px 16px;font:14px system-ui,sans-serif;color:#0f172a;border:1px solid #e2e8f0}'+
+      '#onBox .row{display:flex;align-items:center;gap:10px;padding:8px 0}#onBox .row+.row{border-top:1px solid #f1f5f9}#onBox .ic{width:32px;height:32px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex:0 0 auto}'+
+      '#onBox b{font-size:20px;display:block;line-height:1.1}#onBox small{color:#64748b;font-size:12px}html.dark #onBox{background:#0f172a;color:#e2e8f0;border-color:#334155}html.dark #onBox small{color:#94a3b8}html.dark #onBox .row+.row{border-color:#1e293b}';
+    document.head.appendChild(st);
+    var b=document.createElement('button');b.type='button';b.id='onBtn';b.setAttribute('aria-label','Students online');b.innerHTML='<i class="fa-solid fa-users"></i><span class="dot" id="onDot">1</span>';document.body.appendChild(b);
+    var x=document.createElement('div');x.id='onBox';x.hidden=true;
+    x.innerHTML='<div class="row"><div class="ic" style="background:#eef2ff;color:#4f46e5"><i class="fa-solid fa-users"></i></div><div><b id="onTot">-</b><small>Total students using the app</small></div></div><div class="row"><div class="ic" style="background:#dcfce7;color:#16a34a"><i class="fa-solid fa-circle" style="font-size:10px"></i></div><div><b id="onOn">-</b><small>Online now</small></div></div>';
+    document.body.appendChild(x);
+    b.onclick=function(e){e.stopPropagation();x.hidden=!x.hidden;if(!x.hidden)onRead()};
+    document.addEventListener('click',function(e){if(!x.hidden&&!x.contains(e.target))x.hidden=true});
+    setInterval(function(){var q=false;try{q=typeof quizActive!=='undefined'&&quizActive}catch(e){}var show=!!onUser&&!q&&A.classList.contains('hide');document.documentElement.classList.toggle('onon',show);if(!show)x.hidden=true},600)}
+  function onBeat(){if(!onUser||document.hidden)return;var o={};o[onUser.uid]=FB.serverTimestamp();FB.setDoc(FB.doc(fs,'online','now'),o,{merge:true}).then(onRead,onRead)}
+  function onRead(){if(!onUser)return;Promise.all([FB.getDoc(FB.doc(fs,'online','now')),FB.getDoc(FB.doc(fs,'stats','public')).catch(function(){return null})]).then(function(r){
+    var m=r[0].exists()?r[0].data():{},t=[],k;for(k in m){try{t.push(m[k].toMillis())}catch(e){}}
+    var mx=Math.max.apply(null,t.concat([0])),on=Math.max(1,t.filter(function(v){return v>=mx-300000}).length);  /* online = seen in the last 5 minutes (server time, so a wrong phone clock does not matter) */
+    var tot=Math.max((r[1]&&r[1].exists()&&r[1].data().approved)||0,t.length,on);
+    $('onDot').textContent=on;$('onOn').textContent=on;$('onTot').textContent=tot}).catch(function(){})}
+  function onSetup(user){if(!fs||!user)return;onUser=user;try{onBuild()}catch(e){}clearInterval(onT);onBeat();var n=0;
+    onT=setInterval(function(){if(document.hidden)return;n++;if(n%2)onRead();else onBeat()},60000)}
+  function onOff(){onUser=null;clearInterval(onT);document.documentElement.classList.remove('onon');var x=$('onBox');if(x)x.hidden=true}
+  document.addEventListener('visibilitychange',function(){if(!document.hidden&&onUser)onBeat()});
   function cmOff(){cmOn=false;cmUser=null;var b=$('cmBox'),f=$('cmFab');if(b)b.hidden=true;if(f)f.style.display='none'}
   /* ---- one phone per account: the account works only on the phone where it was first used (the admin can reset it) ---- */
   function devId(){var r=ls('ac_dev');if(!r||r.length!==32){var a=new Uint8Array(16);crypto.getRandomValues(a);r=Array.prototype.map.call(a,function(x){return ('0'+x.toString(16)).slice(-2)}).join('');ls('ac_dev',r)}return r}
