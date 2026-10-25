@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head><script>/*SHELLUPD*/(function(){var V=202610251135,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
+<head><script>/*SHELLUPD*/(function(){var V=202610251202,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
 try{var sv=+L.getItem('shell_v')||0,h=L.getItem('shell_html'),t=+L.getItem('shell_try')||0;
 if(h&&sv>V&&!window.__shellW){if(t>=2){L.removeItem('shell_html');L.removeItem('shell_v');L.removeItem('shell_try')}
 else{L.setItem('shell_try',String(t+1));window.__shellW=1;document.open();document.write(h);document.close();return}}}catch(e){}
@@ -1718,8 +1718,12 @@ html.dark #srchModal .it .a{color:#6ee7b7}
     if(sc==='Pakistan Studies'||k.indexOf('CN-')===0||RX.pak.test(t))return 'Pakistan Studies';
     if(/Science/.test(sc)||RX.sci.test(t))return 'Science';
     return 'General Knowledge'}
-  function dailySet(r){var B={},seen={};
-    Object.keys(ALL).forEach(function(k){if(k.indexOf('CUS-')===0)return;(ALL[k]||[]).forEach(function(q){if(!q||!q.question||!q.options)return;var id=q.question+'|'+q.options.length;if(seen[id])return;seen[id]=1;var b=subj(k,q);(B[b]=B[b]||[]).push(q)})});
+  var DB=null,DBK='';  /* subject lists are made once and kept until the data changes (the Daily Challenge opens at once) */
+  function buckets(){var ks=Object.keys(ALL).filter(function(k){return k.indexOf('CUS-')!==0}),sig=ks.length+':'+ks.reduce(function(t,k){return t+((ALL[k]||[]).length)},0);
+    if(DB&&DBK===sig)return DB;var B={},seen={};
+    ks.forEach(function(k){(ALL[k]||[]).forEach(function(q){if(!q||!q.question||!q.options)return;var id=q.question+'|'+q.options.length;if(seen[id])return;seen[id]=1;var b=subj(k,q);(B[b]=B[b]||[]).push(q)})});
+    DB=B;DBK=sig;return B}
+  function dailySet(r){var B0=buckets(),B={};Object.keys(B0).forEach(function(b){B[b]=B0[b].slice()});
     var out=[],left=0;DQ.forEach(function(d){var got=pick(B[d[0]]||[],d[1],r);left+=d[1]-got.length;out=out.concat(got);B[d[0]]=(B[d[0]]||[]).filter(function(q){return got.indexOf(q)<0})});
     if(left>0){var rest=[];Object.keys(B).forEach(function(b){rest=rest.concat(B[b])});out=out.concat(pick(rest,left,r))}  /* a subject that is locked for this person: fill with other subjects */
     return pick(out,out.length,r)}  /* mix the order */
@@ -2311,6 +2315,11 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
   }catch(e){app=null}
   /* ---- screens ---- */
   var wrap=A.querySelector('.wrap'),copy=A.querySelector('.copy');
+  /* waiting screen: the gold tassel swings and the 3 dots blink one after the other (allowed even in the phone's 'lite' mode, which stops other animations) */
+  (function(){var c=document.createElement('style');c.textContent='#stT .wdots i{font-style:normal;display:inline-block;animation:wDot 1.2s linear infinite both}#stT .wdots i:nth-child(2){animation-delay:.4s}#stT .wdots i:nth-child(3){animation-delay:.8s}'+
+   '@keyframes wDot{0%,100%{opacity:.15}15%,45%{opacity:1}60%{opacity:.15}}'+
+   'html.lite #stT .wdots i{animation-duration:1.2s!important;animation-iteration-count:infinite!important}'+
+   'html.lite #auth .tas,#auth .tas{animation:auSwing 1.4s ease-in-out infinite alternate!important;animation-duration:1.4s!important;animation-iteration-count:infinite!important;will-change:transform}';document.head.appendChild(c)})();
   var st=document.createElement('div');st.className='pane';st.id='paneSt';st.hidden=true;
   st.innerHTML='<h2 id="stT"></h2><p class="stmsg" id="stP"></p><div class="mbox" id="stMsg" hidden><label for="msgTx">Tell the admin what you need: write the category and which MCQs you want. (3 messages every day)</label><textarea id="msgTx" maxlength="300" placeholder="Example: Hi, I am Ali. Please enable PMA 159 MCQs for me."></textarea><div class="cnt" id="msgCnt"></div></div><div id="stBtns"></div><div class="err" id="stE"></div>';
   wrap.insertBefore(st,copy);
@@ -2319,7 +2328,7 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
   function showLogin(){A.classList.remove('hide');hideAll();paneIn.hidden=false;paneIn.classList.remove('out');$('authUser').style.display='none';
     var s=paneIn.querySelector('.sub');if(s)s.textContent='Login with your email. Your account needs approval from the admin.';
     var su=paneUp.querySelector('.sub');if(su)su.textContent='Fill in your name, email and a password. Then the admin approves your account.'}
-  function showStatus(title,msg,btns,err){A.classList.remove('hide');hideAll();st.hidden=false;st.classList.remove('out');$('stMsg').hidden=true;$('stT').textContent=title;$('stP').textContent=msg||'';$('stE').textContent=err||'';
+  function showStatus(title,msg,btns,err){A.classList.remove('hide');hideAll();st.hidden=false;st.classList.remove('out');$('stMsg').hidden=true;$('stT').textContent=title;if(/\.\.\.$/.test(title)){$('stT').textContent=title.slice(0,-3);var wd=document.createElement('span');wd.className='wdots';wd.innerHTML='<i>.</i><i>.</i><i>.</i>';$('stT').appendChild(wd)}$('stP').textContent=msg||'';$('stE').textContent=err||'';
     var b=$('stBtns');b.innerHTML='';(btns||[]).forEach(function(x,i){var e=document.createElement('button');e.type='button';e.className=i===0?'btn':'stb';e.textContent=x[0];e.onclick=x[1];b.appendChild(e)})}
   function showUser(name){$('authUserName').textContent='👤 '+(name||'');$('authUser').style.display='flex'}
   function nm(u){return ls('ac_name')||(u&&u.displayName)||(u&&u.email)||''}
@@ -2353,9 +2362,11 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
     var email=(user.email||'').toLowerCase();
     var admin=email===ADMIN;
     if(admin&&!user.emailVerified){done();showVerify(user);return Promise.resolve()}
-    return (admin?Promise.resolve('ok'):devCheck(user)).then(function(ds){if(ds==='locked'){done();leave();showDevLocked();return}
-    return FB.getDoc(FB.doc(fs,'users',user.uid)).then(function(d){
-      if(admin){done();return enter(user,ALLCATS)}
+    if(admin){done();return enter(user,ALLCATS)}
+    /* the phone check and the account check go to the server at the same time (faster start on a slow network) */
+    var ud=FB.getDoc(FB.doc(fs,'users',user.uid));ud.catch(function(){});
+    return devCheck(user).then(function(ds){if(ds==='locked'){done();leave();showDevLocked();return}
+    return ud.then(function(d){
       if(!d.exists()){return FB.setDoc(FB.doc(fs,'users',user.uid),{email:email,name:nm(user),status:'pending',cats:[],requested:FB.serverTimestamp()}).then(function(){done();leave();showPending(user)})}
       var u=d.data();
       if(u.status==='approved'){done();return enter(user,u.cats||[])}
