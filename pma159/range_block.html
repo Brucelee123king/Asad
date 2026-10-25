@@ -47,7 +47,7 @@ html.dark #rngModal .go.alt{color:#a5b4fc;border-color:#a5b4fc}
 <script>
 (function(){
   var $=function(id){return document.getElementById(id)};
-  var SKIP=/^(MR|NV)-/;                /* MR tests only repeat Hakeem MCQs: never count them twice; CN and IV only count inside their own chip, not in All sections */
+  var SKIP=/^(MR|NV|VB)-/;                /* MR tests only repeat Hakeem MCQs: never count them twice; CN and IV only count inside their own chip, not in All sections */
   var idx=null,CAT='ALL';
   window.__rngReset=function(){idx=null};
   var CATLOCK={O:'o',PMA:'pma',HK:'hk',FA:'fa',LC:'lc',PG:'pg',CN:'cn',IV:'iv'};
