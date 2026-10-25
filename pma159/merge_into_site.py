@@ -139,6 +139,25 @@ if os.path.exists(os.path.join(_p170, 'items.json')):
             Q.append((_t[1], _t[2], _t[3], _t[4], _why, _t[6]))
 
 
+# batch 5 (write-ups N67-N76, 21-25 Oct 2026) (pma171/)
+_p171 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma171')
+if os.path.exists(os.path.join(_p171, 'items.json')) and os.environ.get('NO171') is None:
+    import glob as _gl11, json as _js11, runpy as _rp11
+    _cnt171 = {_i['id']: _i['count'] for _i in _js11.load(open(os.path.join(_p171, 'items.json'), encoding='utf8'))}
+    _fy171 = _js11.load(open(os.path.join(_p171, 'fix_reason.json'), encoding='utf8')) if os.path.exists(os.path.join(_p171, 'fix_reason.json')) else {}
+    _drop171 = set(_js11.load(open(os.path.join(_p171, 'drop.json')))) if os.path.exists(os.path.join(_p171, 'drop.json')) else set()
+    _fix171 = _js11.load(open(os.path.join(_p171, 'fix_existing.json'), encoding='utf8')) if os.path.exists(os.path.join(_p171, 'fix_existing.json')) else {}
+    _n0_171 = len(Q)
+    for _f in sorted(_gl11.glob(os.path.join(_p171, 'm_s*.py'))):
+        _m = _rp11.run_path(_f)
+        for _n, _idx in _m['MATCH']:
+            _t = list(Q[_idx]); _t[5] = _t[5] + _cnt171[_n]; Q[_idx] = tuple(_t)
+        for _t in _m['NEW']:
+            if _t[0] in _drop171: continue
+            Q.append((_t[1], _t[2], _t[3], _t[4], _fy171.get(str(_t[0]), _t[5]), _t[6]))
+    for _k, _v in _fix171.items():   # existing MCQs whose answer was wrong/outdated: {"index": [question, correct, [3 wrong], reason]}
+        _t = list(Q[int(_k)]); _t[1], _t[2], _t[3], _t[4] = _v[0], _v[1], _v[2], _v[3]; Q[int(_k)] = tuple(_t)
+
 if os.environ.get('DUMPQ'):
     with open(os.environ['DUMPQ'], 'w', encoding='utf8') as _df:
         for _i, _t in enumerate(Q): _df.write('%d\t%s  => %s\n' % (_i, _t[1], _t[2]))
