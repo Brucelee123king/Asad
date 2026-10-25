@@ -1,0 +1,688 @@
+[
+ {
+  "question": "How many Surahs are there in the Holy Quran?",
+  "options": [
+   "114",
+   "120",
+   "110",
+   "124"
+  ],
+  "correct": 0,
+  "why": "A) is right: The Holy Quran has 114 Surahs. B) 120 is wrong; there are only 114 Surahs. C) 110 is not the count; Surah An-Nasr is the 110th Surah. D) 124 is wrong; it is close to the number of Surahs that start with Bismillah (113).",
+  "rel": "The Quran has 30 Paras (Juz) and 6236 Ayats.",
+  "topic": "Holy Quran",
+  "note": ""
+ },
+ {
+  "question": "How many Paras (Juz) are there in the Holy Quran?",
+  "options": [
+   "114",
+   "40",
+   "30",
+   "28"
+  ],
+  "correct": 2,
+  "why": "C) is right: The Holy Quran is divided into 30 Paras so it can be read in a month. A) 114 is the number of Surahs, not Paras. B) 40 is wrong; there are 30 Paras. D) 28 is the number of Madani Surahs, not Paras.",
+  "rel": "The Quran has 114 Surahs and 14 Sajdas (prostrations of recitation).",
+  "topic": "Holy Quran",
+  "note": ""
+ },
+ {
+  "question": "How many Ayats (verses) are there in the Holy Quran?",
+  "options": [
+   "6348",
+   "6666",
+   "6236",
+   "6000"
+  ],
+  "correct": 2,
+  "why": "C) is right: The commonly accepted count of Ayats in the Holy Quran is 6236. A) 6348 is wrong; it is not the accepted count. B) 6666 is a popular but wrong number. D) 6000 is wrong; it is only a round figure.",
+  "rel": "Longest Surah Al-Baqarah has 286 Ayats; shortest Surah Al-Kausar has 3 Ayats.",
+  "topic": "Holy Quran",
+  "note": ""
+ },
+ {
+  "question": "How many Sajdas (prostrations of recitation) are there in the Holy Quran?",
+  "options": [
+   "15",
+   "12",
+   "30",
+   "14"
+  ],
+  "correct": 3,
+  "why": "D) is right: There are 14 Sajdas of recitation in the Holy Quran (Hanafi view). A) 15 is the count of some other schools, not the common (Hanafi) count used in Pakistan. B) 12 is wrong; there are 14 Sajdas. C) 30 is the number of Paras, not Sajdas.",
+  "rel": "The Quran has 30 Paras and 114 Surahs.",
+  "topic": "Holy Quran",
+  "note": "Answer per the Hanafi count (14) followed in Pakistan."
+ },
+ {
+  "question": "Which is the longest Surah of the Holy Quran?",
+  "options": [
+   "Surah Al-Imran",
+   "Surah Yaseen",
+   "Surah Al-Baqarah",
+   "Surah An-Nisa"
+  ],
+  "correct": 2,
+  "why": "C) is right: Surah Al-Baqarah is the longest Surah with 286 Ayats. A) Surah Al-Imran is the third Surah and shorter (200 Ayats). B) Surah Yaseen is called the heart of the Quran, not the longest. D) Surah An-Nisa is long (176 Ayats) but not the longest.",
+  "rel": "The shortest Surah is Al-Kausar.",
+  "topic": "Holy Quran",
+  "note": ""
+ },
+ {
+  "question": "Which is the shortest Surah of the Holy Quran?",
+  "options": [
+   "Surah Al-Ikhlas",
+   "Surah An-Nas",
+   "Surah Al-Fatiha",
+   "Surah Al-Kausar"
+  ],
+  "correct": 3,
+  "why": "D) is right: Surah Al-Kausar is the shortest Surah with only 3 Ayats. A) Surah Al-Ikhlas is short (4 Ayats) but not the shortest. B) Surah An-Nas is the last Surah (6 Ayats), not the shortest. C) Surah Al-Fatiha has 7 Ayats; it is the opening Surah.",
+  "rel": "The longest Surah is Al-Baqarah.",
+  "topic": "Holy Quran",
+  "note": ""
+ },
+ {
+  "question": "How many Makki Surahs are there in the Holy Quran?",
+  "options": [
+   "28",
+   "114",
+   "90",
+   "86"
+  ],
+  "correct": 3,
+  "why": "D) is right: There are 86 Makki Surahs (revealed before Hijrat). A) 28 is the number of Madani Surahs. B) 114 is the total number of Surahs. C) 90 is wrong; the count is 86.",
+  "rel": "Makki 86 plus Madani 28 equals 114 Surahs.",
+  "topic": "Holy Quran",
+  "note": ""
+ },
+ {
+  "question": "How many Madani Surahs are there in the Holy Quran?",
+  "options": [
+   "28",
+   "86",
+   "14",
+   "30"
+  ],
+  "correct": 0,
+  "why": "A) is right: There are 28 Madani Surahs (revealed after Hijrat). B) 86 is the number of Makki Surahs. C) 14 is the number of Sajdas. D) 30 is the number of Paras.",
+  "rel": "Makki 86 plus Madani 28 equals 114 Surahs.",
+  "topic": "Holy Quran",
+  "note": ""
+ },
+ {
+  "question": "How many Surahs of the Holy Quran are named after Prophets?",
+  "options": [
+   "8",
+   "6",
+   "25",
+   "4"
+  ],
+  "correct": 1,
+  "why": "B) is right: Six Surahs are named after Prophets: Yousaf, Hood, Younis, Ibrahim, Nooh and Muhammad. A) 8 is wrong; only six Surahs carry a Prophet's name. C) 25 is the number of Prophets mentioned by name in the Quran. D) 4 is wrong; there are six such Surahs.",
+  "rel": "25 Prophets are mentioned by name in the Quran.",
+  "topic": "Holy Quran",
+  "note": ""
+ },
+ {
+  "question": "Which of the following Surahs is NOT named after a Prophet?",
+  "options": [
+   "Surah Maryam",
+   "Surah Younis",
+   "Surah Hood",
+   "Surah Ibrahim"
+  ],
+  "correct": 0,
+  "why": "A) is right: Hazrat Maryam was a pious lady, not a Prophet, so Surah Maryam is not named after a Prophet. B) Surah Younis is named after Hazrat Younis (AS), a Prophet. C) Surah Hood is named after Hazrat Hood (AS), a Prophet. D) Surah Ibrahim is named after Hazrat Ibrahim (AS), a Prophet.",
+  "rel": "The 6 Surahs named after Prophets: Yousaf, Hood, Younis, Ibrahim, Nooh, Muhammad.",
+  "topic": "Holy Quran",
+  "note": ""
+ },
+ {
+  "question": "How many Prophets are mentioned by name in the Holy Quran?",
+  "options": [
+   "6",
+   "25",
+   "313",
+   "124000"
+  ],
+  "correct": 1,
+  "why": "B) is right: 25 Prophets are mentioned by name in the Holy Quran. A) 6 is the number of Surahs named after Prophets. C) 313 is the number of Rasools (messengers) narrated, and also of Muslims at Badr. D) About 124000 is the total number of Prophets narrated, not those named in the Quran.",
+  "rel": "Six Surahs are named after Prophets.",
+  "topic": "Holy Quran",
+  "note": ""
+ },
+ {
+  "question": "How many times does the word \"Islam\" occur in the Holy Quran?",
+  "options": [
+   "92 times",
+   "25 times",
+   "14 times",
+   "6 times"
+  ],
+  "correct": 3,
+  "why": "D) is right: The word \"Islam\" occurs 6 times in the Holy Quran. A) 92 is wrong; the word Islam occurs only 6 times. B) 25 is the number of Prophets named in the Quran. C) 14 is the number of Sajdas in the Quran.",
+  "rel": "\"Inna ad-deena indallahil Islam\" - Surah Al-Imran, Ayat 19.",
+  "topic": "Holy Quran",
+  "note": "Notes say 92 times; corrected to 6 times as per SPEC."
+ },
+ {
+  "question": "Which was the first revelation (Wahi) of the Holy Quran?",
+  "options": [
+   "Surah Al-Fatiha",
+   "First Ayats of Surah Al-Alaq",
+   "Surah Al-Baqarah",
+   "Surah Al-Muddassir"
+  ],
+  "correct": 1,
+  "why": "B) is right: The first revelation was the first five Ayats of Surah Al-Alaq (Iqra). A) Al-Fatiha is the first Surah in order of the Mushaf, not the first revealed. C) Al-Baqarah is a Madani Surah revealed much later. D) Al-Muddassir came after the gap in revelation, not first.",
+  "rel": "It was revealed in Cave Hira on Jabal-e-Noor near Makkah.",
+  "topic": "Holy Quran",
+  "note": ""
+ },
+ {
+  "question": "The first revelation came to the Holy Prophet PBUH in which cave?",
+  "options": [
+   "Cave Hira",
+   "Cave of Uhud",
+   "Cave Saur",
+   "Cave of Ashab-e-Kahf"
+  ],
+  "correct": 0,
+  "why": "A) is right: The first revelation came in Cave Hira on Jabal-e-Noor. B) There is no such revelation cave; Uhud is a mountain of a battle. C) Cave Saur is where the Holy Prophet PBUH hid during Hijrat. D) That is the cave of the sleepers in Surah Al-Kahf.",
+  "rel": "The first revelation was Surah Al-Alaq.",
+  "topic": "Holy Quran",
+  "note": ""
+ },
+ {
+  "question": "Cave Hira is located on which mountain?",
+  "options": [
+   "Jabal-e-Noor",
+   "Jabal-e-Uhud",
+   "Jabal-e-Rehmat",
+   "Jabal-e-Saur"
+  ],
+  "correct": 0,
+  "why": "A) is right: Cave Hira is on Jabal-e-Noor (Mountain of Light) near Makkah. B) Jabal-e-Uhud is near Madina, site of Ghazwa Uhud. C) Jabal-e-Rehmat is in Arafat, where the Last Sermon was given. D) Jabal-e-Saur has Cave Saur, used during Hijrat.",
+  "rel": "The first revelation was Surah Al-Alaq in Cave Hira.",
+  "topic": "Holy Quran",
+  "note": ""
+ },
+ {
+  "question": "In how much time was the Holy Quran completely revealed?",
+  "options": [
+   "22 years, 5 months, 14 days",
+   "40 years",
+   "13 years",
+   "10 years"
+  ],
+  "correct": 0,
+  "why": "A) is right: The revelation was completed in about 22 years, 5 months and 14 days (about 23 years). B) 40 years was the age of the Holy Prophet PBUH at the first revelation. C) 13 years is the Makki period only. D) 10 years is the Madani period only.",
+  "rel": "Makki period about 13 years, Madani period about 10 years.",
+  "topic": "Holy Quran",
+  "note": ""
+ },
+ {
+  "question": "Which Surah is called the \"Heart of the Quran\"?",
+  "options": [
+   "Surah Al-Ikhlas",
+   "Surah Al-Fatiha",
+   "Surah Rahman",
+   "Surah Yaseen"
+  ],
+  "correct": 3,
+  "why": "D) is right: Hadith calls Surah Yaseen the heart of the Quran. A) Al-Ikhlas is equal to one-third of the Quran. B) Al-Fatiha is called Umm-ul-Kitab (Mother of the Book). C) Surah Rahman is called the bride (Uroos) of the Quran.",
+  "rel": "Surah Al-Fatiha is Umm-ul-Quran.",
+  "topic": "Holy Quran",
+  "note": ""
+ },
+ {
+  "question": "In which Surah does Bismillah occur twice?",
+  "options": [
+   "Surah An-Naml",
+   "Surah Al-Baqarah",
+   "Surah At-Tauba",
+   "Surah Al-Fatiha"
+  ],
+  "correct": 0,
+  "why": "A) is right: In Surah An-Naml, Bismillah comes at the start and also inside, in the letter of Hazrat Sulaiman (AS) to Queen Bilqees. B) Al-Baqarah has Bismillah only at the start. C) Surah At-Tauba has no Bismillah at its start. D) Al-Fatiha has Bismillah only once.",
+  "rel": "Surah Tauba is the only Surah without Bismillah at its start.",
+  "topic": "Holy Quran",
+  "note": ""
+ },
+ {
+  "question": "Which Surah does not begin with Bismillah?",
+  "options": [
+   "Surah Al-Anfal",
+   "Surah At-Tauba",
+   "Surah An-Naml",
+   "Surah Al-Kausar"
+  ],
+  "correct": 1,
+  "why": "B) is right: Surah At-Tauba (Bara'at) is the only Surah that does not start with Bismillah. A) Surah Al-Anfal starts with Bismillah. C) Surah An-Naml has Bismillah twice. D) Surah Al-Kausar starts with Bismillah.",
+  "rel": "Bismillah occurs twice in Surah An-Naml.",
+  "topic": "Holy Quran",
+  "note": ""
+ },
+ {
+  "question": "Which companion of the Holy Prophet PBUH is mentioned by name in the Holy Quran?",
+  "options": [
+   "Hazrat Abu Bakr (RA)",
+   "Hazrat Umar (RA)",
+   "Hazrat Ali (RA)",
+   "Hazrat Zaid bin Haris (RA)"
+  ],
+  "correct": 3,
+  "why": "D) is right: Hazrat Zaid (RA) is the only companion named in the Quran (Surah Al-Ahzab). A) Hazrat Abu Bakr (RA) is referred to (companion in the cave) but not by name. B) Hazrat Umar (RA) is not named in the Quran. C) Hazrat Ali (RA) is not named in the Quran.",
+  "rel": "Hazrat Maryam is the only woman named in the Quran.",
+  "topic": "Holy Quran",
+  "note": ""
+ },
+ {
+  "question": "The orders of Wudu, Ghusl and Tayammum are given in which Surah?",
+  "options": [
+   "Surah Al-Baqarah",
+   "Surah Yaseen",
+   "Surah Al-Maida",
+   "Surah Al-Imran"
+  ],
+  "correct": 2,
+  "why": "C) is right: Surah Al-Maida (Ayat 6) gives the orders of Wudu, Ghusl and Tayammum. A) Al-Baqarah has orders of fasting, not the Wudu Ayat. B) Surah Yaseen is the heart of the Quran; no Wudu orders. D) Al-Imran has the order of Hajj.",
+  "rel": "Order of Hajj is in Surah Al-Imran.",
+  "topic": "Holy Quran",
+  "note": ""
+ },
+ {
+  "question": "Masjid-e-Quba is mentioned in which Surah?",
+  "options": [
+   "Surah Al-Fatiha",
+   "Surah Al-Kausar",
+   "Surah At-Tauba",
+   "Surah An-Naml"
+  ],
+  "correct": 2,
+  "why": "C) is right: Surah At-Tauba (Ayat 108) refers to Masjid-e-Quba, the mosque founded on Taqwa. A) Al-Fatiha mentions no mosque. B) Al-Kausar is about the fountain of Kausar. D) An-Naml is about Hazrat Sulaiman (AS) and the ant.",
+  "rel": "Masjid-e-Quba is the first mosque of Islam.",
+  "topic": "Holy Quran",
+  "note": ""
+ },
+ {
+  "question": "Which angels question the dead in the grave?",
+  "options": [
+   "Munkar and Nakeer",
+   "Harut and Marut",
+   "Kiraman Katibeen",
+   "Israfeel and Mikail"
+  ],
+  "correct": 0,
+  "why": "A) is right: Munkar and Nakeer question the dead in the grave. B) Harut and Marut were angels sent to Babylon (Surah Al-Baqarah). C) Kiraman Katibeen write our deeds. D) Israfeel blows the trumpet and Mikail brings rain.",
+  "rel": "Israfeel (AS) will blow the trumpet on the Day of Judgement.",
+  "topic": "Angels and Duties",
+  "note": ""
+ },
+ {
+  "question": "Which angel will blow the trumpet (Soor) on the Day of Judgement?",
+  "options": [
+   "Hazrat Izrail (AS)",
+   "Hazrat Mikail (AS)",
+   "Hazrat Israfeel (AS)",
+   "Hazrat Jibrail (AS)"
+  ],
+  "correct": 2,
+  "why": "C) is right: Hazrat Israfeel (AS) will blow the trumpet. A) Izrail (AS) takes the souls. B) Mikail (AS) brings rain and sustenance. D) Jibrail (AS) brought revelation.",
+  "rel": "Munkar and Nakeer question in the grave.",
+  "topic": "Angels and Duties",
+  "note": ""
+ },
+ {
+  "question": "Which angel takes the souls (Malak-ul-Maut)?",
+  "options": [
+   "Hazrat Israfeel (AS)",
+   "Hazrat Mikail (AS)",
+   "Hazrat Izrail (AS)",
+   "Hazrat Jibrail (AS)"
+  ],
+  "correct": 2,
+  "why": "C) is right: Hazrat Izrail (AS), the angel of death, takes the souls. A) Israfeel (AS) blows the trumpet. B) Mikail (AS) brings rain and sustenance. D) Jibrail (AS) brought revelation.",
+  "rel": "Jibrail (AS) is also called Ruh-ul-Amin.",
+  "topic": "Angels and Duties",
+  "note": ""
+ },
+ {
+  "question": "Which angel brought the revelation (Wahi) to the Prophets?",
+  "options": [
+   "Hazrat Izrail (AS)",
+   "Hazrat Mikail (AS)",
+   "Hazrat Jibrail (AS)",
+   "Hazrat Israfeel (AS)"
+  ],
+  "correct": 2,
+  "why": "C) is right: Hazrat Jibrail (AS) brought revelation to the Prophets. A) Izrail (AS) takes the souls. B) Mikail (AS) brings rain and sustenance. D) Israfeel (AS) blows the trumpet.",
+  "rel": "First revelation came through Jibrail (AS) in Cave Hira.",
+  "topic": "Angels and Duties",
+  "note": ""
+ },
+ {
+  "question": "Which angel is in charge of rain and sustenance (Rizq)?",
+  "options": [
+   "Hazrat Izrail (AS)",
+   "Hazrat Mikail (AS)",
+   "Hazrat Israfeel (AS)",
+   "Hazrat Jibrail (AS)"
+  ],
+  "correct": 1,
+  "why": "B) is right: Hazrat Mikail (AS) is in charge of rain and sustenance. A) Izrail (AS) takes the souls. C) Israfeel (AS) blows the trumpet. D) Jibrail (AS) brought revelation.",
+  "rel": "Izrail (AS) is the angel of death.",
+  "topic": "Angels and Duties",
+  "note": ""
+ },
+ {
+  "question": "Salat-ul-Kusuf is offered at the time of:",
+  "options": [
+   "Solar eclipse",
+   "Lunar eclipse",
+   "Drought",
+   "Earthquake"
+  ],
+  "correct": 0,
+  "why": "A) is right: Kusuf means solar eclipse; Salat-ul-Kusuf is offered then. B) Lunar eclipse is Khusuf; its prayer is Salat-ul-Khusuf. C) For drought, Salat-ul-Istisqa is offered. D) There is no prayer called Kusuf for earthquake.",
+  "rel": "Khusuf means lunar eclipse.",
+  "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
+  "note": ""
+ },
+ {
+  "question": "Salat-ul-Khusuf is offered at the time of:",
+  "options": [
+   "Solar eclipse",
+   "Lunar eclipse",
+   "Fear in war",
+   "Rain request"
+  ],
+  "correct": 1,
+  "why": "B) is right: Khusuf means lunar eclipse; Salat-ul-Khusuf is offered then. A) Solar eclipse is Kusuf. C) Prayer in war is Salat-ul-Khauf. D) Prayer for rain is Salat-ul-Istisqa.",
+  "rel": "Kusuf means solar eclipse.",
+  "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
+  "note": ""
+ },
+ {
+  "question": "Fasting (Roza) of Ramadan was made compulsory in which year?",
+  "options": [
+   "9 AH",
+   "5 AH",
+   "Before Hijrat",
+   "2 AH"
+  ],
+  "correct": 3,
+  "why": "D) is right: Fasting in Ramadan was made Farz in 2 AH. A) 9 AH is the year Hajj was made Farz. B) 5 AH is wrong for fasting. C) Namaz was made Farz before Hijrat (Meraj), not fasting.",
+  "rel": "Zakat was also made compulsory in 2 AH.",
+  "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
+  "note": ""
+ },
+ {
+  "question": "Zakat was made compulsory in which year?",
+  "options": [
+   "8 AH",
+   "6 AH",
+   "9 AH",
+   "2 AH"
+  ],
+  "correct": 3,
+  "why": "D) is right: Zakat was made compulsory in 2 AH (per Pakistani syllabus books). A) 8 AH is the year of Conquest of Makkah. B) 6 AH is the year of Treaty of Hudaibiya. C) 9 AH is the year Hajj was made Farz.",
+  "rel": "Fasting was also made Farz in 2 AH.",
+  "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
+  "note": ""
+ },
+ {
+  "question": "What is the Nisab of Zakat for gold?",
+  "options": [
+   "10 tola",
+   "52.5 tola",
+   "5 tola",
+   "7.5 tola"
+  ],
+  "correct": 3,
+  "why": "D) is right: The Nisab for gold is 7.5 tola. A) 10 tola is wrong. B) 52.5 tola is the Nisab for silver. C) 5 tola is wrong.",
+  "rel": "Nisab of silver is 52.5 tola; rate of Zakat is 2.5 percent.",
+  "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
+  "note": ""
+ },
+ {
+  "question": "What is the Nisab of Zakat for silver?",
+  "options": [
+   "40 tola",
+   "7.5 tola",
+   "52.5 tola",
+   "62.5 tola"
+  ],
+  "correct": 2,
+  "why": "C) is right: The Nisab for silver is 52.5 tola. A) 40 tola is wrong. B) 7.5 tola is the Nisab for gold. D) 62.5 tola is wrong.",
+  "rel": "Nisab of gold is 7.5 tola.",
+  "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
+  "note": ""
+ },
+ {
+  "question": "What is the minimum number of camels on which Zakat becomes due?",
+  "options": [
+   "10",
+   "40",
+   "30",
+   "5"
+  ],
+  "correct": 3,
+  "why": "D) is right: Zakat on camels starts at 5 camels. A) 10 is wrong. B) 40 is the Nisab for goats. C) 30 is the Nisab for cows/buffaloes.",
+  "rel": "Nisab: 40 goats, 30 cows/buffaloes.",
+  "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
+  "note": ""
+ },
+ {
+  "question": "What is the minimum number of goats on which Zakat becomes due?",
+  "options": [
+   "20",
+   "40",
+   "30",
+   "5"
+  ],
+  "correct": 1,
+  "why": "B) is right: Zakat on goats starts at 40 goats. A) 20 is wrong. C) 30 is the Nisab for cows/buffaloes. D) 5 is the Nisab for camels.",
+  "rel": "Nisab: 5 camels, 30 cows/buffaloes.",
+  "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
+  "note": ""
+ },
+ {
+  "question": "What is the minimum number of cows/buffaloes on which Zakat becomes due?",
+  "options": [
+   "5",
+   "10",
+   "30",
+   "40"
+  ],
+  "correct": 2,
+  "why": "C) is right: Zakat on cows and buffaloes starts at 30. A) 5 is the Nisab for camels. B) 10 is wrong. D) 40 is the Nisab for goats.",
+  "rel": "Nisab: 5 camels, 40 goats.",
+  "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
+  "note": "Notes say 3 cows/buffaloes; corrected to 30 as per SPEC."
+ },
+ {
+  "question": "What is the rate of Ushr on land watered by rain?",
+  "options": [
+   "1/20",
+   "1/10",
+   "1/40",
+   "1/5"
+  ],
+  "correct": 1,
+  "why": "B) is right: Ushr on rain-watered land is 1/10 of the produce. A) 1/20 is for land watered by irrigation (wells/tubewells). C) 1/40 (2.5 percent) is the rate of Zakat on wealth. D) 1/5 is Khums.",
+  "rel": "Khums is 1/5.",
+  "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
+  "note": "Notes just say Ushr 1/10; SPEC clarifies it is for rain-watered land."
+ },
+ {
+  "question": "What is the rate of Ushr on land watered by irrigation (wells/tubewells)?",
+  "options": [
+   "1/20",
+   "1/40",
+   "1/10",
+   "1/5"
+  ],
+  "correct": 0,
+  "why": "A) is right: On irrigated land Ushr is half, i.e. 1/20 of the produce. B) 1/40 is the rate of Zakat on wealth. C) 1/10 is for rain-watered land. D) 1/5 is Khums.",
+  "rel": "Ushr on rain-watered land is 1/10.",
+  "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
+  "note": ""
+ },
+ {
+  "question": "What is the rate of Khums?",
+  "options": [
+   "1/5",
+   "1/40",
+   "1/20",
+   "1/10"
+  ],
+  "correct": 0,
+  "why": "A) is right: Khums means one-fifth (1/5). B) 1/40 is Zakat on wealth. C) 1/20 is Ushr on irrigated land. D) 1/10 is Ushr on rain-watered land.",
+  "rel": "Ushr: 1/10 rain land, 1/20 irrigated land.",
+  "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
+  "note": ""
+ },
+ {
+  "question": "Hajj was made compulsory in which year?",
+  "options": [
+   "2 AH",
+   "9 AH",
+   "10 AH",
+   "8 AH"
+  ],
+  "correct": 1,
+  "why": "B) is right: Hajj was made Farz in 9 AH. A) 2 AH is the year of fasting and Zakat. C) 10 AH is the year of Hajjat-ul-Wida (Last Hajj). D) 8 AH is the year of Conquest of Makkah.",
+  "rel": "The order of Hajj is in Surah Al-Imran (Ayat 97).",
+  "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
+  "note": ""
+ },
+ {
+  "question": "The order of Hajj is given in which Surah?",
+  "options": [
+   "Surah Yaseen",
+   "Surah At-Tauba",
+   "Surah Al-Maida",
+   "Surah Al-Imran"
+  ],
+  "correct": 3,
+  "why": "D) is right: Surah Al-Imran (Ayat 97) makes Hajj Farz on those who can afford it. A) Surah Yaseen is the heart of the Quran. B) At-Tauba mentions Masjid-e-Quba. C) Al-Maida gives orders of Wudu, Ghusl and Tayammum.",
+  "rel": "Hajj was made compulsory in 9 AH.",
+  "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
+  "note": ""
+ },
+ {
+  "question": "Which of the following is one of the 3 Farz of Hajj?",
+  "options": [
+   "Rami of Jamarat",
+   "Saee of Safa Marwah",
+   "Tawaf-e-Ziarat",
+   "Tawaf-e-Wida"
+  ],
+  "correct": 2,
+  "why": "C) is right: The 3 Farz of Hajj are Ihram, Wuquf-e-Arafat and Tawaf-e-Ziarat. A) Rami is Wajib, not Farz. B) Saee is Wajib, not Farz. D) Tawaf-e-Wida (farewell) is Wajib, not Farz.",
+  "rel": "Rukn-e-Azam of Hajj is Wuquf-e-Arafat.",
+  "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
+  "note": "Notes say \"Tawaf Kaaba\"; correct name is Tawaf-e-Ziarat as per SPEC."
+ },
+ {
+  "question": "What is the Rukn-e-Azam (greatest pillar) of Hajj?",
+  "options": [
+   "Rami at Mina",
+   "Saee of Safa Marwah",
+   "Wuquf-e-Arafat",
+   "Stay at Muzdalifa"
+  ],
+  "correct": 2,
+  "why": "C) is right: Wuquf-e-Arafat on 9th Zil Hajj is the greatest pillar; without it Hajj is not valid. A) Rami is Wajib, not the greatest pillar. B) Saee is Wajib. D) Stay at Muzdalifa is Wajib.",
+  "rel": "Farz of Hajj: Ihram, Wuquf-e-Arafat, Tawaf-e-Ziarat.",
+  "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
+  "note": ""
+ },
+ {
+  "question": "Wuquf-e-Arafat takes place on which date?",
+  "options": [
+   "9th Zil Hajj",
+   "8th Zil Hajj",
+   "12th Zil Hajj",
+   "10th Zil Hajj"
+  ],
+  "correct": 0,
+  "why": "A) is right: Wuquf-e-Arafat is on 9th Zil Hajj. B) On 8th Zil Hajj pilgrims go to Mina. C) 12th Zil Hajj is a day of Rami at Mina. D) 10th Zil Hajj is Eid-ul-Adha (Rami, sacrifice, Tawaf-e-Ziarat).",
+  "rel": "Tawaf-e-Ziarat is done on 10th Zil Hajj.",
+  "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
+  "note": ""
+ },
+ {
+  "question": "Rami of Jamarat (stoning) is done at which place?",
+  "options": [
+   "Muzdalifa",
+   "Safa Marwah",
+   "Arafat",
+   "Mina"
+  ],
+  "correct": 3,
+  "why": "D) is right: Rami of Jamarat is done at Mina. A) Pebbles are collected at Muzdalifa, but Rami is at Mina. B) Safa Marwah is for Saee. C) Arafat is for Wuquf on 9th Zil Hajj.",
+  "rel": "Saee between Safa and Marwah is done 7 times.",
+  "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
+  "note": ""
+ },
+ {
+  "question": "How many rounds of Saee are done between Safa and Marwah?",
+  "options": [
+   "3",
+   "7",
+   "9",
+   "5"
+  ],
+  "correct": 1,
+  "why": "B) is right: Saee between Safa and Marwah has 7 rounds. A) 3 is the number of Farz of Hajj. C) 9 is wrong. D) 5 is wrong.",
+  "rel": "Tawaf of the Kaaba also has 7 rounds.",
+  "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
+  "note": ""
+ },
+ {
+  "question": "Tawaf-e-Ziarat is normally performed on which date?",
+  "options": [
+   "8th Zil Hajj",
+   "10th Zil Hajj",
+   "1st Zil Hajj",
+   "9th Zil Hajj"
+  ],
+  "correct": 1,
+  "why": "B) is right: Tawaf-e-Ziarat is performed on 10th Zil Hajj (can be done till 12th). A) 8th is the day of going to Mina. C) 1st Zil Hajj is the start of the month, no Hajj rite. D) 9th is the day of Wuquf-e-Arafat.",
+  "rel": "Talbiyah stops at the first Rami on 10th Zil Hajj.",
+  "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
+  "note": ""
+ },
+ {
+  "question": "When does the pilgrim stop reciting Talbiyah?",
+  "options": [
+   "At Wuquf-e-Arafat",
+   "At the first Rami (10th Zil Hajj)",
+   "On entering Ihram",
+   "After Tawaf-e-Wida"
+  ],
+  "correct": 1,
+  "why": "B) is right: Talbiyah stops when the pilgrim starts the first Rami of Jamrat-ul-Aqabah on 10th Zil Hajj. A) Talbiyah continues during Arafat. C) Talbiyah starts on entering Ihram; it does not stop then. D) Talbiyah has already stopped long before Tawaf-e-Wida.",
+  "rel": "Rami is done at Mina.",
+  "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
+  "note": ""
+ },
+ {
+  "question": "How many basic pillars (foundations) of Islam are there?",
+  "options": [
+   "5",
+   "4",
+   "6",
+   "3"
+  ],
+  "correct": 0,
+  "why": "A) is right: Islam has 5 pillars: Kalma, Namaz, Fasting, Zakat and Hajj. B) 4 is wrong; there are 5. C) 6 is the number of articles of faith (Iman-e-Mufassal). D) 3 is the number of Farz of Hajj.",
+  "rel": "Kalma is the first pillar; Hajj is Farz once in life for those who can afford it.",
+  "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
+  "note": ""
+ }
+]
