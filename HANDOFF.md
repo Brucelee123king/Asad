@@ -283,3 +283,9 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - Scanned book, 3 types x 30 questions; scan misses Type I Q3, Q4 and Type II Q25, Q26 (86 drawn by 14 agents, 7 at a time). Answer keys in nv3/answer_key.json (book). build3.py = nv_final_32.json + nv3/out (minus nv3/drop.json) + fit_rows.js (trims whole-row/grid stems). nv_block: q.noq (no extra "?" box, big stem picture) and the quiz badge shows q.sec.
 - 14 doubtful questions held back in drop.json (I_01, I_07, I_21, II_01, II_03, II_04, II_09, II_10, II_13, II_15, III_10, III_13, III_21, III_28): book key impossible or seems wrong. Sheets sent to the user; when the user gives the answers, set "correct"/"book_answer" in out/<file>.json (II_03/II_04 FIX map in build3.py), remove from drop.json, rerun build3.py and ./admin_publish.sh.
 - Non Verbal live: 104 questions = tests of 50, 50, 4.
+
+## Oct 25 2026: Verbal tests + English PMA MCQs category (published, shell 202610250844, no APK)
+- Verbal: pma159/vb_build.py (called by lock_sections.py) copies verbal MCQs from all categories except Hakeem, written once with a count, mixed into VB- tests of 50, shown inside the Non Verbal card (same 'nv' lock).
+- English: new main category 'en' (EN- tests of 50, mixed). Sources: english/syn_ant.pdf + english/every_corner.pdf -> parsed.json -> agents checked keys (english/out/*.json, SPEC.md, SPEC_SA.md) -> agents added 'why' (why correct + why each other option is wrong) and 'rel' (1-2 related facts) in english/out2/*.json (SPEC_WHY.md) -> english/build_en.py -> en_final.json (390 MCQs) -> merge_into_site.py (EN dict, renderEN, SECS 'en').
+- Password for 'en' is in /home/user/keystore/section_passwords.json (told to the user). The admin page has an 'English' box/tick.
+- Rule from the user: every MCQ needs a reason saying why the answer is right AND why the other options are wrong, plus 1-2 related facts in 'rel'.

@@ -1,0 +1,1442 @@
+[
+ {
+  "src": "sa-1",
+  "question": "Choose the antonym of COMPLEX.",
+  "options": [
+   "Intricate",
+   "Complicated",
+   "Uncomplicated",
+   "Puzzling"
+  ],
+  "correct": 2,
+  "reason": "Complex means complicated; its opposite is uncomplicated (simple).",
+  "count": 1,
+  "note": "",
+  "why": "Complex means having many parts and hard to understand, so its opposite is Uncomplicated (simple, easy). A) Intricate, B) Complicated and D) Puzzling are wrong: they all mean the same as complex, so they are synonyms, not antonyms.",
+  "rel": "Other antonyms of complex: simple, easy, plain, straightforward. Synonyms: complicated, intricate, involved."
+ },
+ {
+  "src": "sa-2",
+  "question": "Choose the antonym of ACTIVITY.",
+  "options": [
+   "Energy",
+   "Inactivity",
+   "Movement",
+   "Action"
+  ],
+  "correct": 1,
+  "reason": "Activity means being busy or active; its opposite is inactivity.",
+  "count": 1,
+  "note": "",
+  "why": "Activity means being busy or moving and doing things; its opposite is Inactivity (doing nothing). A) Energy, C) Movement and D) Action are wrong: they are all close in meaning to activity, not opposite.",
+  "rel": "Other antonyms: idleness, inertia, rest. The prefix in- makes many opposites: active - inactive, efficient - inefficient."
+ },
+ {
+  "src": "sa-3",
+  "question": "Choose the antonym of LACK.",
+  "options": [
+   "Deficiency",
+   "Absence",
+   "Abundance",
+   "Shortage"
+  ],
+  "correct": 2,
+  "reason": "Lack means shortage; its opposite is abundance (plenty).",
+  "count": 1,
+  "note": "",
+  "why": "Lack means not having enough of something; its opposite is Abundance (a lot, more than enough). A) Deficiency, B) Absence and D) Shortage are wrong: they all mean the same as lack.",
+  "rel": "Other antonyms of lack: plenty, sufficiency, surplus. Synonyms: want, dearth, scarcity."
+ },
+ {
+  "src": "sa-4",
+  "question": "Choose the antonym of MISLEAD.",
+  "options": [
+   "Confuse",
+   "Deceive",
+   "Guide",
+   "Misdirect"
+  ],
+  "correct": 2,
+  "reason": "Mislead means to lead in the wrong direction; its opposite is guide.",
+  "count": 1,
+  "note": "",
+  "why": "Mislead means to lead someone the wrong way or give a wrong idea; its opposite is Guide (show the right way). A) Confuse, B) Deceive and D) Misdirect are wrong: they all have the same meaning as mislead.",
+  "rel": "The prefix mis- means wrongly: misguide, misinform, misunderstand. Antonyms of mislead also include direct and inform correctly."
+ },
+ {
+  "src": "sa-5",
+  "question": "Choose the antonym of PUNCTUAL.",
+  "options": [
+   "Regular",
+   "Prompt",
+   "Unpunctual",
+   "Careful"
+  ],
+  "correct": 2,
+  "reason": "Punctual means on time; its opposite is unpunctual (late).",
+  "count": 1,
+  "note": "Fixed: source had 'Unpunched'.",
+  "why": "Punctual means arriving on time; its opposite is Unpunctual (late, not on time). A) Regular and D) Careful are wrong: they are not opposites of punctual. B) Prompt is wrong: it is a synonym (on time).",
+  "rel": "Other antonyms: late, tardy, delayed. Synonyms of punctual: prompt, timely."
+ },
+ {
+  "src": "sa-6",
+  "question": "Choose the antonym of MERRY.",
+  "options": [
+   "Sad",
+   "Cheerful",
+   "Jolly",
+   "Lively"
+  ],
+  "correct": 0,
+  "reason": "Merry means happy and cheerful; its opposite is sad.",
+  "count": 1,
+  "note": "",
+  "why": "Merry means happy and cheerful; its opposite is Sad. B) Cheerful, C) Jolly and D) Lively are wrong: they all mean happy or full of fun, so they are synonyms.",
+  "rel": "Other antonyms of merry: gloomy, sorrowful, glum. Synonyms: joyful, gay, jovial."
+ },
+ {
+  "src": "sa-7",
+  "question": "Choose the antonym of HUMBLE.",
+  "options": [
+   "Vain",
+   "Modest",
+   "Simple",
+   "Meek"
+  ],
+  "correct": 0,
+  "reason": "Humble means modest; its opposite is vain (proud, conceited).",
+  "count": 1,
+  "note": "",
+  "why": "Humble means modest, not proud; its opposite is Vain (proud of oneself). B) Modest, C) Simple and D) Meek are wrong: they are all close in meaning to humble.",
+  "rel": "Other antonyms of humble: proud, arrogant, haughty. Note that sa-73 uses Meek as a synonym of humble."
+ },
+ {
+  "src": "sa-8",
+  "question": "Choose the antonym of FLEXIBLE.",
+  "options": [
+   "Pliable",
+   "Supple",
+   "Rigid",
+   "Elastic"
+  ],
+  "correct": 2,
+  "reason": "Flexible means easily bent or adjusted; its opposite is rigid (stiff).",
+  "count": 1,
+  "note": "Fixed: source had 'Unplant' (likely 'unpliant'); used standard antonym 'Rigid'.",
+  "why": "Flexible means easy to bend or change; its opposite is Rigid (stiff, cannot bend). A) Pliable, B) Supple and D) Elastic are wrong: they all mean bendable, so they are synonyms.",
+  "rel": "Other antonyms of flexible: stiff, inflexible, unbending. Synonyms: pliant, bendable."
+ },
+ {
+  "src": "sa-9",
+  "question": "Choose the antonym of IMAGINARY.",
+  "options": [
+   "Real",
+   "Fanciful",
+   "Fictional",
+   "Unreal"
+  ],
+  "correct": 0,
+  "reason": "Imaginary means existing only in the mind; its opposite is real.",
+  "count": 1,
+  "note": "",
+  "why": "Imaginary means existing only in the mind; its opposite is Real. B) Fanciful, C) Fictional and D) Unreal are wrong: they all mean not real, the same as imaginary.",
+  "rel": "Other antonyms: actual, factual, existing. Do not confuse imaginary (not real) with imaginative (creative)."
+ },
+ {
+  "src": "sa-10",
+  "question": "Choose the antonym of SUPPORT.",
+  "options": [
+   "Help",
+   "Abandon",
+   "Assist",
+   "Uphold"
+  ],
+  "correct": 1,
+  "reason": "Support means to help or stand by; its opposite is abandon (desert).",
+  "count": 1,
+  "note": "",
+  "why": "Support means to help or hold up; its opposite is Abandon (leave and stop helping). A) Help, C) Assist and D) Uphold are wrong: they all mean the same as support.",
+  "rel": "Other antonyms of support: oppose, desert, undermine. Synonyms: back, aid, sustain."
+ },
+ {
+  "src": "sa-11",
+  "question": "Choose the antonym of NERVOUS.",
+  "options": [
+   "Anxious",
+   "Restless",
+   "Timid",
+   "Bold"
+  ],
+  "correct": 3,
+  "reason": "Nervous means anxious or fearful; its opposite is bold (confident).",
+  "count": 1,
+  "note": "",
+  "why": "Nervous means worried and afraid; its opposite is Bold (brave, confident). A) Anxious and B) Restless are wrong: they mean worried or uneasy, like nervous. C) Timid is wrong: it means shy and fearful, also close to nervous.",
+  "rel": "Other antonyms of nervous: calm, confident, composed. In sa-74, Timorous is a synonym of nervous."
+ },
+ {
+  "src": "sa-12",
+  "question": "Choose the antonym of MAJORITY.",
+  "options": [
+   "Plurality",
+   "Minority",
+   "Bulk",
+   "Mass"
+  ],
+  "correct": 1,
+  "reason": "Majority means the greater number; its opposite is minority.",
+  "count": 1,
+  "note": "",
+  "why": "Majority means the larger part or number; its opposite is Minority (the smaller part). A) Plurality, C) Bulk and D) Mass are wrong: they all refer to the larger part or a big amount.",
+  "rel": "Same pattern: major - minor, majority - minority. Majority means more than half."
+ },
+ {
+  "src": "sa-13",
+  "question": "Choose the antonym of ATTRACT.",
+  "options": [
+   "Charm",
+   "Repel",
+   "Allure",
+   "Draw"
+  ],
+  "correct": 1,
+  "reason": "Attract means to pull towards; its opposite is repel (push away).",
+  "count": 1,
+  "note": "",
+  "why": "Attract means to pull towards; its opposite is Repel (push away). A) Charm, C) Allure and D) Draw are wrong: they all mean to attract or pull in.",
+  "rel": "In magnets, like poles repel and unlike poles attract. Noun pair: attraction - repulsion (see sa-25)."
+ },
+ {
+  "src": "sa-14",
+  "question": "Choose the antonym of TENDENCY.",
+  "options": [
+   "Disinclination",
+   "Habit",
+   "Leaning",
+   "Inclination"
+  ],
+  "correct": 0,
+  "reason": "Tendency means an inclination towards something; its opposite is disinclination.",
+  "count": 1,
+  "note": "",
+  "why": "Tendency means a natural leaning to do something; its opposite is Disinclination (unwillingness). B) Habit, C) Leaning and D) Inclination are wrong: they are all close in meaning to tendency.",
+  "rel": "Other antonyms: aversion, reluctance, unwillingness. Inclination and disinclination are an opposite pair made with dis-."
+ },
+ {
+  "src": "sa-15",
+  "question": "Choose the antonym of FREEDOM.",
+  "options": [
+   "Liberty",
+   "Slavery",
+   "Release",
+   "Independence"
+  ],
+  "correct": 1,
+  "reason": "Freedom means liberty; its opposite is slavery.",
+  "count": 1,
+  "note": "",
+  "why": "Freedom means being free; its opposite is Slavery (being owned or controlled). A) Liberty, C) Release and D) Independence are wrong: they all mean freedom.",
+  "rel": "Other antonyms of freedom: bondage, captivity, servitude. Synonyms: liberty, independence, autonomy."
+ },
+ {
+  "src": "sa-16",
+  "question": "Choose the antonym of TROUBLE.",
+  "options": [
+   "Disturb",
+   "Annoy",
+   "Worry",
+   "Appease"
+  ],
+  "correct": 3,
+  "reason": "Trouble means to disturb or worry; its opposite is appease (calm, pacify).",
+  "count": 1,
+  "note": "",
+  "why": "Here trouble is a verb meaning to disturb or worry someone; its opposite is Appease (calm or soothe). A) Disturb, B) Annoy and C) Worry are wrong: they all mean the same as trouble.",
+  "rel": "Other antonyms of trouble: calm, soothe, comfort, pacify. Appease means to calm someone by giving what they want."
+ },
+ {
+  "src": "sa-17",
+  "question": "Choose the antonym of QUESTIONABLE.",
+  "options": [
+   "Doubtful",
+   "Unquestionable",
+   "Dubious",
+   "Uncertain"
+  ],
+  "correct": 1,
+  "reason": "Questionable means doubtful; its opposite is unquestionable (certain).",
+  "count": 1,
+  "note": "",
+  "why": "Questionable means doubtful, not certain; its opposite is Unquestionable (certain, beyond doubt). A) Doubtful, C) Dubious and D) Uncertain are wrong: they all mean the same as questionable.",
+  "rel": "Other antonyms: certain, sure, undeniable, indisputable. Prefix un- makes the opposite: questionable - unquestionable."
+ },
+ {
+  "src": "sa-18",
+  "question": "Choose the antonym of COMFORT.",
+  "options": [
+   "Relief",
+   "Ease",
+   "Solace",
+   "Oppression"
+  ],
+  "correct": 3,
+  "reason": "Comfort means ease and relief; its opposite here is oppression (hardship, distress).",
+  "count": 1,
+  "note": "",
+  "why": "Comfort means ease and relief from pain or worry; its opposite is Oppression (hard and cruel treatment, burden). A) Relief, B) Ease and C) Solace are wrong: they all mean comfort.",
+  "rel": "Other antonyms of comfort: distress, discomfort, misery. Solace means comfort in sadness."
+ },
+ {
+  "src": "sa-19",
+  "question": "Choose the antonym of APPROVAL.",
+  "options": [
+   "Sanction",
+   "Assent",
+   "Consent",
+   "Disapproval"
+  ],
+  "correct": 3,
+  "reason": "Approval means agreeing or accepting; its opposite is disapproval.",
+  "count": 1,
+  "note": "",
+  "why": "Approval means agreeing that something is good or allowed; its opposite is Disapproval. A) Sanction, B) Assent and C) Consent are wrong: they all mean approval or permission.",
+  "rel": "Other antonyms: rejection, refusal, disapprobation. In sa-64, Consent is a synonym of approval."
+ },
+ {
+  "src": "sa-20",
+  "question": "Choose the antonym of ACCUSATION.",
+  "options": [
+   "Defence",
+   "Allegation",
+   "Charge",
+   "Blame"
+  ],
+  "correct": 0,
+  "reason": "Accusation means a charge against someone; its opposite is defence.",
+  "count": 1,
+  "note": "",
+  "why": "An accusation is a charge that someone did wrong; its opposite is Defence (speaking to protect oneself against the charge). B) Allegation, C) Charge and D) Blame are wrong: they all mean the same as accusation.",
+  "rel": "Accuse (verb) - defend (verb). Other related words: vindication, exoneration (being cleared of blame)."
+ },
+ {
+  "src": "sa-21",
+  "question": "Choose the antonym of ACHIEVEMENT.",
+  "options": [
+   "Accomplishment",
+   "Attainment",
+   "Success",
+   "Failure"
+  ],
+  "correct": 3,
+  "reason": "Achievement means success in doing something; its opposite is failure.",
+  "count": 1,
+  "note": "Fixed spelling: 'Archievement' to 'Achievement'.",
+  "why": "Achievement means success in doing something; its opposite is Failure. A) Accomplishment, B) Attainment and C) Success are wrong: they all mean achievement.",
+  "rel": "Other antonyms: defeat, loss. In sa-60, Accomplishment is a synonym of achievement."
+ },
+ {
+  "src": "sa-22",
+  "question": "Choose the antonym of RAMBLING.",
+  "options": [
+   "Disorganized",
+   "Methodical",
+   "Lengthy",
+   "Wandering"
+  ],
+  "correct": 1,
+  "reason": "Rambling means wandering without order; its opposite is methodical (orderly).",
+  "count": 1,
+  "note": "",
+  "why": "Rambling means talking or writing in a long, wandering, unorganized way; its opposite is Methodical (orderly, organized). A) Disorganized, C) Lengthy and D) Wandering are wrong: they all describe rambling.",
+  "rel": "Other antonyms: concise, organized, systematic, to the point. Synonyms: digressive, long-winded."
+ },
+ {
+  "src": "sa-23",
+  "question": "Choose the antonym of WILD.",
+  "options": [
+   "Fierce",
+   "Untamed",
+   "Savage",
+   "Civilized"
+  ],
+  "correct": 3,
+  "reason": "Wild means untamed or savage; its opposite is civilized.",
+  "count": 1,
+  "note": "",
+  "why": "Wild means not tamed, savage; its opposite is Civilized. A) Fierce, B) Untamed and C) Savage are wrong: they all mean the same as wild.",
+  "rel": "Other antonyms of wild: tame, gentle, domesticated. In sa-58, Savage is a synonym of wild."
+ },
+ {
+  "src": "sa-24",
+  "question": "Choose the antonym of WICKED.",
+  "options": [
+   "Cruel",
+   "Evil",
+   "Virtuous",
+   "Sinful"
+  ],
+  "correct": 2,
+  "reason": "Wicked means evil; its opposite is virtuous (good, moral).",
+  "count": 1,
+  "note": "",
+  "why": "Wicked means evil or very bad; its opposite is Virtuous (good, moral). A) Cruel, B) Evil and D) Sinful are wrong: they all mean bad, like wicked.",
+  "rel": "Other antonyms: righteous, noble, good. In sa-57, Evil is a synonym of wicked."
+ },
+ {
+  "src": "sa-25",
+  "question": "Choose the antonym of ATTRACTION.",
+  "options": [
+   "Repulsion",
+   "Appeal",
+   "Allure",
+   "Charm"
+  ],
+  "correct": 0,
+  "reason": "Attraction means a pulling force or appeal; its opposite is repulsion.",
+  "count": 1,
+  "note": "",
+  "why": "Attraction means a pull towards something; its opposite is Repulsion (pushing away, strong dislike). B) Appeal, C) Allure and D) Charm are wrong: they all mean attraction.",
+  "rel": "Verb pair: attract - repel (see sa-13). Other antonyms: aversion, revulsion."
+ },
+ {
+  "src": "sa-26",
+  "question": "Choose the antonym of DANGER.",
+  "options": [
+   "Hazard",
+   "Safety",
+   "Risk",
+   "Peril"
+  ],
+  "correct": 1,
+  "reason": "Danger means risk of harm; its opposite is safety.",
+  "count": 1,
+  "note": "Fixed spelling: 'Sefety' to 'Safety'.",
+  "why": "Danger means the chance of harm; its opposite is Safety. A) Hazard, C) Risk and D) Peril are wrong: they all mean danger.",
+  "rel": "Other antonyms: security, protection, shelter. In sa-61, Risk is a synonym of danger."
+ },
+ {
+  "src": "sa-27",
+  "question": "Choose the antonym of EFFICIENCY.",
+  "options": [
+   "Skill",
+   "Competence",
+   "Capability",
+   "Inefficiency"
+  ],
+  "correct": 3,
+  "reason": "Efficiency means working well without waste; its opposite is inefficiency.",
+  "count": 1,
+  "note": "",
+  "why": "Efficiency means doing work well without waste; its opposite is Inefficiency. A) Skill, B) Competence and C) Capability are wrong: they are close in meaning to efficiency.",
+  "rel": "Prefix in- makes the opposite: efficient - inefficient, capable - incapable, competent - incompetent."
+ },
+ {
+  "src": "sa-28",
+  "question": "Choose the antonym of EXCESS.",
+  "options": [
+   "Surplus",
+   "Abundance",
+   "Scarcity",
+   "Plenty"
+  ],
+  "correct": 2,
+  "reason": "Excess means more than needed; its opposite is scarcity (shortage).",
+  "count": 1,
+  "note": "",
+  "why": "Excess means more than needed; its opposite is Scarcity (too little). A) Surplus, B) Abundance and D) Plenty are wrong: they all mean a large amount, like excess.",
+  "rel": "Other antonyms of excess: shortage, deficiency, lack. Synonyms: surplus, glut."
+ },
+ {
+  "src": "sa-29",
+  "question": "Choose the antonym of ABILITY.",
+  "options": [
+   "Capability",
+   "Skill",
+   "Talent",
+   "Incapability"
+  ],
+  "correct": 3,
+  "reason": "Ability means the power to do something; its opposite is incapability.",
+  "count": 1,
+  "note": "",
+  "why": "Ability means power or skill to do something; its opposite is Incapability (not being able). A) Capability, B) Skill and C) Talent are wrong: they all mean ability.",
+  "rel": "Other antonyms: inability, incapacity, incompetence. In sa-43, Capability is a synonym of ability."
+ },
+ {
+  "src": "sa-30",
+  "question": "Choose the antonym of COMPULSORY.",
+  "options": [
+   "Optional",
+   "Mandatory",
+   "Necessary",
+   "Obligatory"
+  ],
+  "correct": 0,
+  "reason": "Compulsory means required by rule; its opposite is optional.",
+  "count": 1,
+  "note": "",
+  "why": "Compulsory means something you must do; its opposite is Optional (you may choose). B) Mandatory, C) Necessary and D) Obligatory are wrong: they all mean must-do, like compulsory.",
+  "rel": "Other antonyms: voluntary, elective, discretionary. Synonyms: required, binding."
+ },
+ {
+  "src": "sa-31",
+  "question": "Choose the antonym of ABUSE.",
+  "options": [
+   "Insult",
+   "Reproach",
+   "Commendation",
+   "Criticism"
+  ],
+  "correct": 2,
+  "reason": "Abuse means insulting or harsh words; its opposite is commendation (praise).",
+  "count": 1,
+  "note": "",
+  "why": "Abuse means insulting or harsh words; its opposite is Commendation (praise). A) Insult, B) Reproach and D) Criticism are wrong: they are all close in meaning to abuse.",
+  "rel": "Other antonyms: praise, respect, honour. In sa-66, Reproach is a synonym of abuse."
+ },
+ {
+  "src": "sa-32",
+  "question": "Choose the antonym of WANT.",
+  "options": [
+   "Need",
+   "Shortage",
+   "Prosperity",
+   "Poverty"
+  ],
+  "correct": 2,
+  "reason": "Want here means poverty or need; its opposite is prosperity.",
+  "count": 1,
+  "note": "",
+  "why": "Here want means poverty or lack of things; its opposite is Prosperity (wealth, having plenty). A) Need, B) Shortage and D) Poverty are wrong: they all mean the same as want.",
+  "rel": "Other antonyms: plenty, wealth, abundance. Phrase: to live in want means to live in poverty."
+ },
+ {
+  "src": "sa-33",
+  "question": "Choose the antonym of AGREE.",
+  "options": [
+   "Disagree",
+   "Consent",
+   "Approve",
+   "Accept"
+  ],
+  "correct": 0,
+  "reason": "Agree means to have the same opinion; its opposite is disagree.",
+  "count": 1,
+  "note": "",
+  "why": "Agree means to have the same opinion; its opposite is Disagree. B) Consent, C) Approve and D) Accept are wrong: they all mean to agree.",
+  "rel": "Prefix dis- makes the opposite: agree - disagree, approve - disapprove, like - dislike."
+ },
+ {
+  "src": "sa-34",
+  "question": "Choose the antonym of RECOVER.",
+  "options": [
+   "Regain",
+   "Retrieve",
+   "Lose",
+   "Restore"
+  ],
+  "correct": 2,
+  "reason": "Recover means to get back; its opposite is lose.",
+  "count": 1,
+  "note": "",
+  "why": "Recover means to get back something lost; its opposite is Lose. A) Regain, B) Retrieve and D) Restore are wrong: they all mean getting something back, like recover.",
+  "rel": "Recover also means to get well after illness; its opposite then is worsen or deteriorate. Synonyms: reclaim, recoup."
+ },
+ {
+  "src": "sa-35",
+  "question": "Choose the antonym of OWN.",
+  "options": [
+   "Admit",
+   "Accept",
+   "Disclaim",
+   "Acknowledge"
+  ],
+  "correct": 2,
+  "reason": "Own here means to admit or acknowledge; its opposite is disclaim (deny).",
+  "count": 1,
+  "note": "",
+  "why": "Here own means to admit or accept something; its opposite is Disclaim (refuse to accept or deny). A) Admit, B) Accept and D) Acknowledge are wrong: they all mean the same as own.",
+  "rel": "Other antonyms: deny, disown, reject. In sa-77, Acknowledge is a synonym of own."
+ },
+ {
+  "src": "sa-36",
+  "question": "Choose the antonym of EQUAL.",
+  "options": [
+   "Same",
+   "Uniform",
+   "Uneven",
+   "Identical"
+  ],
+  "correct": 2,
+  "reason": "Equal means the same in amount or value; its opposite is uneven (unequal).",
+  "count": 1,
+  "note": "",
+  "why": "Equal means the same in size, amount or level; its opposite is Uneven (not the same). A) Same, B) Uniform and D) Identical are wrong: they all mean alike, like equal.",
+  "rel": "Other antonyms: unequal, different, unlike. In sa-76, Uniform is a synonym of equal."
+ },
+ {
+  "src": "sa-37",
+  "question": "Choose the antonym of SIN.",
+  "options": [
+   "Crime",
+   "Virtue",
+   "Evil",
+   "Wrongdoing"
+  ],
+  "correct": 1,
+  "reason": "Sin means a wrong or immoral act; its opposite is virtue.",
+  "count": 1,
+  "note": "",
+  "why": "Sin means a wrong or evil act; its opposite is Virtue (goodness). A) Crime, C) Evil and D) Wrongdoing are wrong: they all mean the same as sin.",
+  "rel": "Other antonyms: goodness, merit, righteousness. In sa-48, Crime is a synonym of sin."
+ },
+ {
+  "src": "sa-38",
+  "question": "Choose the antonym of PROVE.",
+  "options": [
+   "Establish",
+   "Confirm",
+   "Disprove",
+   "Verify"
+  ],
+  "correct": 2,
+  "reason": "Prove means to show something is true; its opposite is disprove.",
+  "count": 1,
+  "note": "",
+  "why": "Prove means to show something is true; its opposite is Disprove (show it is false). A) Establish, B) Confirm and D) Verify are wrong: they all mean to prove.",
+  "rel": "Prefix dis- gives the opposite: prove - disprove, approve - disapprove. Other antonyms: refute, rebut."
+ },
+ {
+  "src": "sa-39",
+  "question": "Choose the antonym of PROGRESS.",
+  "options": [
+   "Develop",
+   "Retrogress",
+   "Proceed",
+   "Advance"
+  ],
+  "correct": 1,
+  "reason": "Progress means to move forward; its opposite is retrogress (move backward).",
+  "count": 1,
+  "note": "",
+  "why": "Progress means moving forward; its opposite is Retrogress (go backward). A) Develop, C) Proceed and D) Advance are wrong: they all mean moving forward, like progress.",
+  "rel": "Other antonyms: regress, decline, deteriorate. In sa-71, Advance is a synonym of progress."
+ },
+ {
+  "src": "sa-40",
+  "question": "Choose the antonym of FREE.",
+  "options": [
+   "Loosen",
+   "Liberate",
+   "Bind",
+   "Release"
+  ],
+  "correct": 2,
+  "reason": "Free means to release; its opposite is bind (tie up).",
+  "count": 1,
+  "note": "",
+  "why": "Free (verb) means to let go; its opposite is Bind (tie up). A) Loosen, B) Liberate and D) Release are wrong: they all mean to set free.",
+  "rel": "Other antonyms: confine, imprison, fetter, restrain. Bind - bound - bound are its verb forms."
+ },
+ {
+  "src": "sa-41",
+  "question": "Choose the antonym of PRAISE.",
+  "options": [
+   "Censure",
+   "Admire",
+   "Laud",
+   "Applaud"
+  ],
+  "correct": 0,
+  "reason": "Praise means to speak well of; its opposite is censure (strong criticism).",
+  "count": 1,
+  "note": "",
+  "why": "Praise means to say good things about someone; its opposite is Censure (strong criticism). B) Admire, C) Laud and D) Applaud are wrong: they all mean to praise or show approval.",
+  "rel": "Other antonyms: blame, condemn, criticize. In sa-86, Laud is a synonym of praise."
+ },
+ {
+  "src": "sa-42",
+  "question": "Choose the antonym of JUSTICE.",
+  "options": [
+   "Honesty",
+   "Inequity",
+   "Equity",
+   "Fairness"
+  ],
+  "correct": 1,
+  "reason": "Justice means fairness; its opposite is inequity (injustice, unfairness).",
+  "count": 1,
+  "note": "",
+  "why": "Justice means fairness; its opposite is Inequity (unfairness). A) Honesty, C) Equity and D) Fairness are wrong: they are close in meaning to justice.",
+  "rel": "Do not confuse inequity (unfairness) with iniquity (wickedness). Other antonyms of justice: injustice, unfairness."
+ },
+ {
+  "src": "sa-43",
+  "question": "Choose the synonym of ABILITY.",
+  "options": [
+   "Capability",
+   "Weakness",
+   "Inability",
+   "Failure"
+  ],
+  "correct": 0,
+  "reason": "Ability means the power or skill to do something, the same as capability.",
+  "count": 1,
+  "note": "",
+  "why": "Ability means power or skill to do something; its synonym is Capability. B) Weakness, C) Inability and D) Failure are wrong: they are opposite in meaning to ability.",
+  "rel": "Other synonyms: skill, talent, competence, capacity. Antonym: inability (see sa-29)."
+ },
+ {
+  "src": "sa-44",
+  "question": "Choose the synonym of BLAME.",
+  "options": [
+   "Approve",
+   "Pardon",
+   "Praise",
+   "Censure"
+  ],
+  "correct": 3,
+  "reason": "Blame means to hold someone responsible for a fault, similar to censure.",
+  "count": 1,
+  "note": "",
+  "why": "Blame means to say someone is responsible for a wrong; its synonym is Censure (criticize strongly). A) Approve, B) Pardon and C) Praise are wrong: they are opposite in meaning to blame.",
+  "rel": "Other synonyms: condemn, criticize, reproach. Censure is also the antonym of praise (see sa-41)."
+ },
+ {
+  "src": "sa-45",
+  "question": "Choose the synonym of EFFICIENCY.",
+  "options": [
+   "Potency",
+   "Weakness",
+   "Waste",
+   "Laziness"
+  ],
+  "correct": 0,
+  "reason": "Efficiency means effectiveness or power to produce results, similar to potency.",
+  "count": 1,
+  "note": "",
+  "why": "Efficiency means power to do work well; Potency (power, effectiveness) is the closest synonym. B) Weakness, C) Waste and D) Laziness are wrong: they are opposite in meaning.",
+  "rel": "Other synonyms: effectiveness, competence, capability (see sa-63). Antonym: inefficiency."
+ },
+ {
+  "src": "sa-46",
+  "question": "Choose the synonym of COMPLEX.",
+  "options": [
+   "Easy",
+   "Plain",
+   "Simple",
+   "Complicated"
+  ],
+  "correct": 3,
+  "reason": "Complex means having many connected parts, i.e. complicated.",
+  "count": 1,
+  "note": "",
+  "why": "Complex means having many parts and hard to understand; its synonym is Complicated. A) Easy, B) Plain and C) Simple are wrong: they are opposite in meaning to complex.",
+  "rel": "Other synonyms: intricate, involved, elaborate. Antonym: uncomplicated (see sa-1)."
+ },
+ {
+  "src": "sa-47",
+  "question": "Choose the synonym of LACK.",
+  "options": [
+   "Abundance",
+   "Deficiency",
+   "Excess",
+   "Plenty"
+  ],
+  "correct": 1,
+  "reason": "Lack means not having enough, i.e. deficiency.",
+  "count": 1,
+  "note": "",
+  "why": "Lack means not having enough; its synonym is Deficiency. A) Abundance, C) Excess and D) Plenty are wrong: they mean a lot, the opposite of lack.",
+  "rel": "Other synonyms: shortage, want, dearth, scarcity. Antonym: abundance (see sa-3)."
+ },
+ {
+  "src": "sa-48",
+  "question": "Choose the synonym of SIN.",
+  "options": [
+   "Crime",
+   "Goodness",
+   "Virtue",
+   "Merit"
+  ],
+  "correct": 0,
+  "reason": "Sin means a wrong or immoral act, similar to crime.",
+  "count": 1,
+  "note": "",
+  "why": "Sin means a wrong or evil act; Crime (a wrong act) is the closest synonym. B) Goodness, C) Virtue and D) Merit are wrong: they mean good qualities, the opposite of sin.",
+  "rel": "Other synonyms: wrongdoing, evil, offence, misdeed. Antonym: virtue (see sa-37)."
+ },
+ {
+  "src": "sa-49",
+  "question": "Choose the synonym of SILLY.",
+  "options": [
+   "Clever",
+   "Foolish",
+   "Wise",
+   "Sensible"
+  ],
+  "correct": 1,
+  "reason": "Silly means lacking good sense, i.e. foolish.",
+  "count": 1,
+  "note": "Fixed: source had 'Peace' (wrong); used 'Foolish'.",
+  "why": "Silly means not sensible; its synonym is Foolish. A) Clever, C) Wise and D) Sensible are wrong: they are opposite in meaning to silly.",
+  "rel": "Other synonyms: stupid, absurd, senseless. Antonyms: wise, sensible, intelligent."
+ },
+ {
+  "src": "sa-50",
+  "question": "Choose the synonym of AGREEABLE.",
+  "options": [
+   "Opposed",
+   "Hostile",
+   "Conformable",
+   "Contrary"
+  ],
+  "correct": 2,
+  "reason": "Agreeable means willing to agree or fit in, similar to conformable.",
+  "count": 1,
+  "note": "",
+  "why": "Agreeable means willing to agree or go along; Conformable (fitting in, in agreement) is the synonym. A) Opposed, B) Hostile and D) Contrary are wrong: they mean against, the opposite.",
+  "rel": "Agreeable also means pleasant (an agreeable person). Other synonyms: compliant, willing, pleasing."
+ },
+ {
+  "src": "sa-51",
+  "question": "Choose the synonym of DECIDE.",
+  "options": [
+   "Hesitate",
+   "Waver",
+   "Doubt",
+   "Determine"
+  ],
+  "correct": 3,
+  "reason": "Decide means to make up one's mind, i.e. determine.",
+  "count": 1,
+  "note": "",
+  "why": "Decide means to make up one's mind; its synonym is Determine. A) Hesitate, B) Waver and C) Doubt are wrong: they all mean being unable to decide.",
+  "rel": "Other synonyms: resolve, settle, conclude. Noun forms: decision, determination."
+ },
+ {
+  "src": "sa-52",
+  "question": "Choose the synonym of REASON.",
+  "options": [
+   "Argue",
+   "Ignore",
+   "Accede",
+   "Obey"
+  ],
+  "correct": 0,
+  "reason": "Reason (verb) means to think logically or put forward arguments, i.e. argue.",
+  "count": 1,
+  "note": "",
+  "why": "As a verb, reason means to think and discuss logically, to argue a point; so Argue is the synonym. B) Ignore is wrong: it means to pay no attention. C) Accede is wrong: it means to agree to a demand. D) Obey is wrong: it means to follow orders.",
+  "rel": "Phrase: to reason with someone means to try to persuade them by argument. Other synonyms: deduce, infer, think."
+ },
+ {
+  "src": "sa-53",
+  "question": "Choose the synonym of URGE.",
+  "options": [
+   "Discourage",
+   "Deter",
+   "Restrain",
+   "Incite"
+  ],
+  "correct": 3,
+  "reason": "Urge means to push someone strongly to act, similar to incite.",
+  "count": 1,
+  "note": "",
+  "why": "Urge means to push or strongly encourage; its synonym is Incite (stir up, provoke to action). A) Discourage, B) Deter and C) Restrain are wrong: they mean to stop or hold back, the opposite.",
+  "rel": "Other synonyms: prompt, spur, press, impel. Antonyms: deter, dissuade."
+ },
+ {
+  "src": "sa-54",
+  "question": "Choose the synonym of SCOLD.",
+  "options": [
+   "Praise",
+   "Commend",
+   "Reprove",
+   "Flatter"
+  ],
+  "correct": 2,
+  "reason": "Scold means to speak angrily to someone for a fault, i.e. reprove.",
+  "count": 1,
+  "note": "",
+  "why": "Scold means to speak angrily to someone for doing wrong; its synonym is Reprove. A) Praise, B) Commend and D) Flatter are wrong: they all mean saying good things, the opposite.",
+  "rel": "Other synonyms: rebuke, reprimand, chide, admonish. Antonyms: praise, commend."
+ },
+ {
+  "src": "sa-55",
+  "question": "Choose the synonym of DILIGENT.",
+  "options": [
+   "Industrious",
+   "Idle",
+   "Lazy",
+   "Careless"
+  ],
+  "correct": 0,
+  "reason": "Diligent means hard-working and careful, i.e. industrious.",
+  "count": 1,
+  "note": "",
+  "why": "Diligent means hard-working and careful; its synonym is Industrious. B) Idle, C) Lazy and D) Careless are wrong: they are opposite in meaning.",
+  "rel": "Other synonyms: hard-working, assiduous, sedulous. Do not confuse industrious (hard-working) with industrial (of industry)."
+ },
+ {
+  "src": "sa-56",
+  "question": "Choose the synonym of EMPTY.",
+  "options": [
+   "Crowded",
+   "Full",
+   "Occupied",
+   "Vacant"
+  ],
+  "correct": 3,
+  "reason": "Empty means containing nothing, i.e. vacant.",
+  "count": 1,
+  "note": "",
+  "why": "Empty means containing nothing; its synonym is Vacant. A) Crowded, B) Full and C) Occupied are wrong: they mean filled, the opposite.",
+  "rel": "Other synonyms: void, blank, unoccupied, hollow. Antonyms: full, occupied."
+ },
+ {
+  "src": "sa-57",
+  "question": "Choose the synonym of WICKED.",
+  "options": [
+   "Virtuous",
+   "Evil",
+   "Kind",
+   "Noble"
+  ],
+  "correct": 1,
+  "reason": "Wicked means morally bad, i.e. evil.",
+  "count": 1,
+  "note": "",
+  "why": "Wicked means very bad; its synonym is Evil. A) Virtuous, C) Kind and D) Noble are wrong: they mean good, the opposite.",
+  "rel": "Other synonyms: sinful, vicious, cruel. Antonym: virtuous (see sa-24)."
+ },
+ {
+  "src": "sa-58",
+  "question": "Choose the synonym of WILD.",
+  "options": [
+   "Savage",
+   "Gentle",
+   "Civilized",
+   "Tame"
+  ],
+  "correct": 0,
+  "reason": "Wild means untamed and fierce, i.e. savage.",
+  "count": 1,
+  "note": "",
+  "why": "Wild means untamed and fierce; its synonym is Savage. B) Gentle, C) Civilized and D) Tame are wrong: they are opposite in meaning.",
+  "rel": "Other synonyms: untamed, fierce, ferocious. Antonym: civilized (see sa-23)."
+ },
+ {
+  "src": "sa-59",
+  "question": "Choose the synonym of TENDENCY.",
+  "options": [
+   "Dislike",
+   "Leaning",
+   "Reluctance",
+   "Aversion"
+  ],
+  "correct": 1,
+  "reason": "Tendency means a natural inclination, i.e. leaning.",
+  "count": 1,
+  "note": "",
+  "why": "Tendency means a natural leaning toward something; its synonym is Leaning. A) Dislike, C) Reluctance and D) Aversion are wrong: they mean not wanting, the opposite.",
+  "rel": "Other synonyms: inclination, propensity, bent, trend. Antonym: disinclination (see sa-14)."
+ },
+ {
+  "src": "sa-60",
+  "question": "Choose the synonym of ACHIEVEMENT.",
+  "options": [
+   "Defeat",
+   "Failure",
+   "Loss",
+   "Accomplishment"
+  ],
+  "correct": 3,
+  "reason": "Achievement means something done successfully, i.e. accomplishment.",
+  "count": 1,
+  "note": "",
+  "why": "Achievement means something done successfully; its synonym is Accomplishment. A) Defeat, B) Failure and C) Loss are wrong: they are opposite in meaning.",
+  "rel": "Other synonyms: attainment, success, feat. Antonym: failure (see sa-21)."
+ },
+ {
+  "src": "sa-61",
+  "question": "Choose the synonym of DANGER.",
+  "options": [
+   "Shelter",
+   "Safety",
+   "Risk",
+   "Security"
+  ],
+  "correct": 2,
+  "reason": "Danger means the possibility of harm, i.e. risk.",
+  "count": 1,
+  "note": "",
+  "why": "Danger means the chance of harm; its synonym is Risk. A) Shelter, B) Safety and D) Security are wrong: they mean being protected, the opposite.",
+  "rel": "Other synonyms: hazard, peril, threat. Antonym: safety (see sa-26)."
+ },
+ {
+  "src": "sa-62",
+  "question": "Choose the synonym of DETERMINATION.",
+  "options": [
+   "Weakness",
+   "Hesitation",
+   "Doubt",
+   "Resolution"
+  ],
+  "correct": 3,
+  "reason": "Determination means firmness of purpose, i.e. resolution.",
+  "count": 1,
+  "note": "",
+  "why": "Determination means firm decision to do something; its synonym is Resolution. A) Weakness, B) Hesitation and C) Doubt are wrong: they show lack of firmness, the opposite.",
+  "rel": "Other synonyms: resolve, firmness, willpower. A New Year resolution is a firm decision to do something."
+ },
+ {
+  "src": "sa-63",
+  "question": "Choose the synonym of EFFICIENCY.",
+  "options": [
+   "Capability",
+   "Inability",
+   "Idleness",
+   "Weakness"
+  ],
+  "correct": 0,
+  "reason": "Efficiency means the ability to work well, i.e. capability.",
+  "count": 1,
+  "note": "Fixed: source line 'Efficiency, capability' (comma instead of full stop).",
+  "why": "Efficiency means ability to do work well; its synonym is Capability. B) Inability, C) Idleness and D) Weakness are wrong: they are opposite in meaning.",
+  "rel": "Other synonyms: competence, effectiveness, potency (see sa-45). Antonym: inefficiency."
+ },
+ {
+  "src": "sa-64",
+  "question": "Choose the synonym of APPROVAL.",
+  "options": [
+   "Consent",
+   "Rejection",
+   "Denial",
+   "Refusal"
+  ],
+  "correct": 0,
+  "reason": "Approval means agreeing to something, i.e. consent.",
+  "count": 1,
+  "note": "",
+  "why": "Approval means agreeing or giving permission; its synonym is Consent. B) Rejection, C) Denial and D) Refusal are wrong: they mean saying no, the opposite.",
+  "rel": "Other synonyms: assent, sanction, permission. Antonym: disapproval (see sa-19)."
+ },
+ {
+  "src": "sa-65",
+  "question": "Choose the synonym of AFFECTION.",
+  "options": [
+   "Anger",
+   "Dislike",
+   "Hatred",
+   "Love"
+  ],
+  "correct": 3,
+  "reason": "Affection means a feeling of fondness, i.e. love.",
+  "count": 1,
+  "note": "",
+  "why": "Affection means a feeling of liking and care; its synonym is Love. A) Anger, B) Dislike and C) Hatred are wrong: they are negative feelings, opposite to affection.",
+  "rel": "Other synonyms: fondness, warmth, tenderness. Do not confuse affection (love) with affectation (showing off)."
+ },
+ {
+  "src": "sa-66",
+  "question": "Choose the synonym of ABUSE.",
+  "options": [
+   "Respect",
+   "Praise",
+   "Honour",
+   "Reproach"
+  ],
+  "correct": 3,
+  "reason": "Abuse means insulting or harsh words, similar to reproach.",
+  "count": 1,
+  "note": "",
+  "why": "Abuse means harsh insulting words; its synonym is Reproach (blame, disgrace). A) Respect, B) Praise and C) Honour are wrong: they are opposite in meaning.",
+  "rel": "Other synonyms: insult, censure, scolding. Antonym: commendation (see sa-31)."
+ },
+ {
+  "src": "sa-67",
+  "question": "Choose the synonym of DISCLOSE.",
+  "options": [
+   "Reveal",
+   "Hide",
+   "Cover",
+   "Conceal"
+  ],
+  "correct": 0,
+  "reason": "Disclose means to make known, i.e. reveal.",
+  "count": 1,
+  "note": "",
+  "why": "Disclose means to make known a secret; its synonym is Reveal. B) Hide, C) Cover and D) Conceal are wrong: they mean keep secret, the opposite.",
+  "rel": "Other synonyms: expose, divulge, uncover. Antonyms: conceal, hide."
+ },
+ {
+  "src": "sa-68",
+  "question": "Choose the synonym of NEED.",
+  "options": [
+   "Want",
+   "Surplus",
+   "Luxury",
+   "Plenty"
+  ],
+  "correct": 0,
+  "reason": "Need means a lack of something necessary, i.e. want.",
+  "count": 1,
+  "note": "",
+  "why": "Need means lack of something necessary; its synonym is Want. B) Surplus, C) Luxury and D) Plenty are wrong: they mean having more than enough, the opposite.",
+  "rel": "Other synonyms: requirement, necessity, lack. Want also means need in sa-70."
+ },
+ {
+  "src": "sa-69",
+  "question": "Choose the synonym of LOWER.",
+  "options": [
+   "Debase",
+   "Elevate",
+   "Raise",
+   "Uplift"
+  ],
+  "correct": 0,
+  "reason": "Lower means to reduce in value or dignity, i.e. debase.",
+  "count": 1,
+  "note": "",
+  "why": "Lower means to bring down in level or value; its synonym is Debase (lower in quality or worth). B) Elevate, C) Raise and D) Uplift are wrong: they mean to make higher, the opposite.",
+  "rel": "Other synonyms: degrade, reduce, diminish. Antonyms: raise, elevate."
+ },
+ {
+  "src": "sa-70",
+  "question": "Choose the synonym of WANT.",
+  "options": [
+   "Wealth",
+   "Comfort",
+   "Excess",
+   "Need"
+  ],
+  "correct": 3,
+  "reason": "Want means lack of something required, i.e. need.",
+  "count": 1,
+  "note": "",
+  "why": "Want means lack or need of something; its synonym is Need. A) Wealth, B) Comfort and C) Excess are wrong: they mean having plenty, the opposite.",
+  "rel": "Other synonyms: lack, poverty, shortage. Antonym: prosperity (see sa-32)."
+ },
+ {
+  "src": "sa-71",
+  "question": "Choose the synonym of PROGRESS.",
+  "options": [
+   "Advance",
+   "Regress",
+   "Decline",
+   "Retreat"
+  ],
+  "correct": 0,
+  "reason": "Progress means forward movement, i.e. advance.",
+  "count": 1,
+  "note": "",
+  "why": "Progress means moving forward; its synonym is Advance. B) Regress, C) Decline and D) Retreat are wrong: they mean going back or getting worse, the opposite.",
+  "rel": "Other synonyms: develop, proceed, improve. Antonym: retrogress (see sa-39)."
+ },
+ {
+  "src": "sa-72",
+  "question": "Choose the synonym of SHY.",
+  "options": [
+   "Confident",
+   "Bashful",
+   "Outgoing",
+   "Bold"
+  ],
+  "correct": 1,
+  "reason": "Shy means timid in front of others, i.e. bashful.",
+  "count": 1,
+  "note": "",
+  "why": "Shy means nervous with other people; its synonym is Bashful. A) Confident, C) Outgoing and D) Bold are wrong: they are opposite in meaning.",
+  "rel": "Other synonyms: timid, reserved, coy. Antonyms: bold, confident."
+ },
+ {
+  "src": "sa-73",
+  "question": "Choose the synonym of HUMBLE.",
+  "options": [
+   "Proud",
+   "Vain",
+   "Arrogant",
+   "Meek"
+  ],
+  "correct": 3,
+  "reason": "Humble means modest and not proud, similar to meek.",
+  "count": 1,
+  "note": "",
+  "why": "Humble means modest, not proud; its synonym is Meek (quiet and gentle). A) Proud, B) Vain and C) Arrogant are wrong: they are opposite in meaning.",
+  "rel": "Other synonyms: modest, unassuming, simple. Antonym: vain (see sa-7)."
+ },
+ {
+  "src": "sa-74",
+  "question": "Choose the synonym of NERVOUS.",
+  "options": [
+   "Bold",
+   "Calm",
+   "Timorous",
+   "Brave"
+  ],
+  "correct": 2,
+  "reason": "Nervous means easily frightened or anxious, similar to timorous.",
+  "count": 1,
+  "note": "",
+  "why": "Nervous means fearful and worried; its synonym is Timorous (full of fear). A) Bold, B) Calm and D) Brave are wrong: they are opposite in meaning.",
+  "rel": "Other synonyms: anxious, timid, uneasy. Antonym: bold (see sa-11)."
+ },
+ {
+  "src": "sa-75",
+  "question": "Choose the synonym of TROTH.",
+  "options": [
+   "Doubt",
+   "Betrayal",
+   "Faith",
+   "Treachery"
+  ],
+  "correct": 2,
+  "reason": "Troth is an old word for a pledge of loyalty, i.e. faith.",
+  "count": 1,
+  "note": "",
+  "why": "Troth is an old word meaning faith, loyalty or a promise; so Faith is the synonym. A) Doubt, B) Betrayal and D) Treachery are wrong: they mean distrust or disloyalty, the opposite.",
+  "rel": "Betroth (to promise in marriage) comes from troth. Other synonyms: fidelity, loyalty, pledge."
+ },
+ {
+  "src": "sa-76",
+  "question": "Choose the synonym of EQUAL.",
+  "options": [
+   "Uniform",
+   "Different",
+   "Unequal",
+   "Uneven"
+  ],
+  "correct": 0,
+  "reason": "Equal means the same in amount or quality, similar to uniform.",
+  "count": 1,
+  "note": "",
+  "why": "Equal means the same in amount or level; Uniform (the same throughout) is the synonym. B) Different, C) Unequal and D) Uneven are wrong: they are opposite in meaning.",
+  "rel": "Other synonyms: same, identical, even. Antonym: uneven (see sa-36)."
+ },
+ {
+  "src": "sa-77",
+  "question": "Choose the synonym of OWN.",
+  "options": [
+   "Disclaim",
+   "Reject",
+   "Acknowledge",
+   "Deny"
+  ],
+  "correct": 2,
+  "reason": "Own (verb) means to admit something, i.e. acknowledge.",
+  "count": 1,
+  "note": "Fixed form: 'Acknowledged' to 'Acknowledge'.",
+  "why": "Here own means to admit; its synonym is Acknowledge. A) Disclaim, B) Reject and D) Deny are wrong: they mean refusing to accept, the opposite.",
+  "rel": "Other synonyms: admit, confess, accept. Antonym: disclaim (see sa-35)."
+ },
+ {
+  "src": "sa-78",
+  "question": "Choose the synonym of NEGLECT.",
+  "options": [
+   "Care",
+   "Attention",
+   "Negligence",
+   "Diligence"
+  ],
+  "correct": 2,
+  "reason": "Neglect means failure to give proper care, i.e. negligence.",
+  "count": 1,
+  "note": "",
+  "why": "Neglect means not giving proper care; its synonym is Negligence. A) Care, B) Attention and D) Diligence are wrong: they are opposite in meaning.",
+  "rel": "Other synonyms: carelessness, disregard. Do not confuse negligent (careless) with negligible (very small)."
+ },
+ {
+  "src": "sa-79",
+  "question": "Choose the synonym of GODLY.",
+  "options": [
+   "Pious",
+   "Wicked",
+   "Irreligious",
+   "Sinful"
+  ],
+  "correct": 0,
+  "reason": "Godly means devoted to God, i.e. pious.",
+  "count": 1,
+  "note": "",
+  "why": "Godly means religious and devoted to God; its synonym is Pious. B) Wicked, C) Irreligious and D) Sinful are wrong: they are opposite in meaning.",
+  "rel": "Other synonyms: devout, religious, saintly. Antonyms: ungodly, impious."
+ },
+ {
+  "src": "sa-80",
+  "question": "Choose the synonym of MOB.",
+  "options": [
+   "Crowd",
+   "Loner",
+   "Few",
+   "Individual"
+  ],
+  "correct": 0,
+  "reason": "Mob means a large disorderly group of people, i.e. crowd.",
+  "count": 1,
+  "note": "",
+  "why": "A mob is a large, often disorderly, group of people; its synonym is Crowd. B) Loner, C) Few and D) Individual are wrong: they mean one or a small number of people.",
+  "rel": "Other synonyms: throng, horde, multitude, rabble. Mob rule means rule by crowds, not by law."
+ },
+ {
+  "src": "sa-81",
+  "question": "Choose the synonym of MOAT.",
+  "options": [
+   "Ditch",
+   "Hill",
+   "Mound",
+   "Wall"
+  ],
+  "correct": 0,
+  "reason": "A moat is a deep water-filled trench around a castle, i.e. a ditch.",
+  "count": 1,
+  "note": "",
+  "why": "A moat is a deep ditch, usually filled with water, around a castle or fort; its synonym is Ditch. B) Hill and C) Mound are wrong: they are raised land, not dug land. D) Wall is wrong: a wall is built up, though a moat is often near one.",
+  "rel": "Other synonyms: trench, channel. Do not confuse moat with mote (a tiny particle of dust)."
+ },
+ {
+  "src": "sa-82",
+  "question": "Choose the synonym of DISPERSE.",
+  "options": [
+   "Collect",
+   "Scatter",
+   "Assemble",
+   "Gather"
+  ],
+  "correct": 1,
+  "reason": "Disperse means to spread in different directions, i.e. scatter.",
+  "count": 1,
+  "note": "",
+  "why": "Disperse means to spread or send in different directions; its synonym is Scatter. A) Collect, C) Assemble and D) Gather are wrong: they mean bring together, the opposite.",
+  "rel": "Other synonyms: spread, dissipate, disband. Police disperse a crowd. Antonyms: gather, collect."
+ },
+ {
+  "src": "sa-83",
+  "question": "Choose the synonym of INCREMENT.",
+  "options": [
+   "Decrease",
+   "Decline",
+   "Reduction",
+   "Increase"
+  ],
+  "correct": 3,
+  "reason": "Increment means an increase or addition, i.e. increase.",
+  "count": 1,
+  "note": "",
+  "why": "Increment means an increase or addition, as in a salary increment; its synonym is Increase. A) Decrease, B) Decline and C) Reduction are wrong: they mean going down, the opposite.",
+  "rel": "Other synonyms: addition, rise, gain. Antonym: decrement (a decrease)."
+ },
+ {
+  "src": "sa-84",
+  "question": "Choose the synonym of RESCIND.",
+  "options": [
+   "Cancel",
+   "Enact",
+   "Approve",
+   "Confirm"
+  ],
+  "correct": 0,
+  "reason": "Rescind means to take back or annul, i.e. cancel.",
+  "count": 1,
+  "note": "",
+  "why": "Rescind means to cancel a law, order or agreement; its synonym is Cancel. B) Enact, C) Approve and D) Confirm are wrong: they mean make or keep valid, the opposite.",
+  "rel": "Other synonyms: revoke, repeal, annul, withdraw. Antonyms: enact, validate."
+ },
+ {
+  "src": "sa-85",
+  "question": "Choose the synonym of QUIT.",
+  "options": [
+   "Stay",
+   "Leave",
+   "Join",
+   "Remain"
+  ],
+  "correct": 1,
+  "reason": "Quit means to go away from or give up, i.e. leave.",
+  "count": 1,
+  "note": "",
+  "why": "Quit means to go away from or stop; its synonym is Leave. A) Stay, C) Join and D) Remain are wrong: they mean to continue or come in, the opposite.",
+  "rel": "Other synonyms: depart, abandon, resign, give up. Quit India Movement means asking the British to leave India."
+ },
+ {
+  "src": "sa-86",
+  "question": "Choose the synonym of LAUD.",
+  "options": [
+   "Praise",
+   "Blame",
+   "Condemn",
+   "Criticize"
+  ],
+  "correct": 0,
+  "reason": "Laud means to praise highly.",
+  "count": 1,
+  "note": "",
+  "why": "Laud means to praise highly; its synonym is Praise. B) Blame, C) Condemn and D) Criticize are wrong: they are opposite in meaning.",
+  "rel": "Other synonyms: extol, acclaim, applaud. Laudable means worthy of praise."
+ },
+ {
+  "src": "sa-87",
+  "question": "Choose the synonym of LUCK.",
+  "options": [
+   "Effort",
+   "Plan",
+   "Lot",
+   "Labour"
+  ],
+  "correct": 2,
+  "reason": "Luck means fortune or chance, similar to lot (one's fate).",
+  "count": 1,
+  "note": "",
+  "why": "Luck means what happens to a person by chance; Lot (fate, one's fortune in life) is the synonym. A) Effort, B) Plan and D) Labour are wrong: they mean things done on purpose by hard work, not chance.",
+  "rel": "Other synonyms: fortune, fate, destiny, chance. Phrase: to be content with one's lot."
+ },
+ {
+  "src": "sa-88",
+  "question": "Choose the synonym of COLLAPSE.",
+  "options": [
+   "Build up",
+   "Recover",
+   "Break down",
+   "Rise"
+  ],
+  "correct": 2,
+  "reason": "Collapse means to fall down or fail suddenly, i.e. break down.",
+  "count": 1,
+  "note": "",
+  "why": "Collapse means to fall down suddenly or fail; its synonym is Break down. A) Build up, B) Recover and D) Rise are wrong: they mean getting stronger or higher, the opposite.",
+  "rel": "Other synonyms: fall, cave in, crumble, fail. A building or a system can collapse."
+ },
+ {
+  "src": "sa-89",
+  "question": "Choose the synonym of CURB.",
+  "options": [
+   "Release",
+   "Encourage",
+   "Restrain",
+   "Free"
+  ],
+  "correct": 2,
+  "reason": "Curb means to control or limit, i.e. restrain.",
+  "count": 1,
+  "note": "",
+  "why": "Curb means to control or hold back; its synonym is Restrain. A) Release, B) Encourage and D) Free are wrong: they mean let go or push forward, the opposite.",
+  "rel": "Other synonyms: check, control, limit, suppress. Example: curb your anger. Do not confuse with kerb (edge of a road)."
+ },
+ {
+  "src": "sa-90",
+  "question": "Choose the synonym of FERVOUR.",
+  "options": [
+   "Indifference",
+   "Coldness",
+   "Zeal",
+   "Apathy"
+  ],
+  "correct": 2,
+  "reason": "Fervour means intense passion, i.e. zeal.",
+  "count": 1,
+  "note": "",
+  "why": "Fervour means strong, warm feeling or enthusiasm; its synonym is Zeal. A) Indifference, B) Coldness and D) Apathy are wrong: they mean lack of interest, the opposite.",
+  "rel": "Other synonyms: passion, ardour, enthusiasm. Adjectives: fervent, zealous."
+ }
+]

@@ -1,0 +1,1352 @@
+[
+ {
+  "src": "t2-76",
+  "question": "\"The train passed ___ the tunnel.\"",
+  "options": [
+   "through",
+   "across",
+   "over",
+   "beside"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Through\" means entering and moving within an enclosed space.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Through' is used for moving inside something from one end to the other, like a tunnel, pipe or forest. The train went in one end and came out the other. B) 'across' is for moving from one side of a flat surface to the other, like a road or river. C) 'over' means above, but a train goes inside a tunnel, not above it. D) 'beside' means next to, which is not movement inside.",
+  "rel": "Other examples: walk through the forest, look through the window, read through the book. Compare: walk across the road, fly over the city."
+ },
+ {
+  "src": "t2-77",
+  "question": "\"The cat jumped ___ the wall.\"",
+  "options": [
+   "over",
+   "at",
+   "since",
+   "between"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Over\" expresses movement above and across.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Over' shows movement above something and to the other side, which is what a jump across a wall does. B) 'jump at' means to attack or grab something quickly, not to cross it. C) 'since' is about time (since Monday), not place. D) 'between' needs two things (between two walls), so it does not fit 'the wall'.",
+  "rel": "Similar: the horse jumped over the fence; the plane flew over the mountains. 'Above' shows position only, while 'over' can also show movement across."
+ },
+ {
+  "src": "t2-78",
+  "question": "\"He arrived ___ the airport on time.\"",
+  "options": [
+   "in",
+   "at",
+   "on",
+   "by"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"At\" is used for a specific point/place such as an airport.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "We use 'arrive at' for a specific place or building like an airport, station or school. A) 'arrive in' is used for a city or country (arrive in Lahore). C) 'arrive on' is not used for places; 'on' is for days (arrive on Monday). D) 'arrive by' shows the means or a deadline (arrive by train, by 5 pm), not the place.",
+  "rel": "Remember: arrive at the station/office, arrive in Karachi/Pakistan. 'Reach' takes no preposition: He reached the airport."
+ },
+ {
+  "src": "t2-79",
+  "question": "\"She insisted ___ paying the bill.\"",
+  "options": [
+   "to",
+   "on",
+   "at",
+   "for"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The standard pattern is \"insist on + -ing\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "The fixed phrase is 'insist on' + noun or -ing form: insisted on paying. A) 'insist to' is a common mistake; 'insist' does not take 'to'. C) 'insist at' is not used in English. D) 'insist for' is also wrong; only 'on' (or 'upon') follows 'insist'.",
+  "rel": "Similar verb + on pairs: depend on, rely on, focus on, concentrate on. Also: He insisted upon going (more formal)."
+ },
+ {
+  "src": "t2-80",
+  "question": "\"The decision depends ___ the weather.\"",
+  "options": [
+   "in",
+   "on",
+   "at",
+   "for"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The standard collocation is \"depend on\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "The fixed phrase is 'depend on' (or 'depend upon'). A) 'depend in' is not used. C) 'depend at' is not used. D) 'depend for' is not correct here; we never say the decision depends for the weather.",
+  "rel": "Similar: rely on, count on, insist on. Noun form: dependent on (adjective), e.g. Children are dependent on their parents."
+ },
+ {
+  "src": "t2-81",
+  "question": "Change to passive: \"The officer signed the document.\"",
+  "options": [
+   "The document signed the officer.",
+   "The document was signed by the officer.",
+   "The document is signed by the officer yesterday.",
+   "The officer was signed by the document."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Simple past passive is was/were + past participle.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "The active sentence is simple past, so the passive uses 'was/were + past participle': The document was signed by the officer. A) is wrong: without 'was' it means the document did the signing. C) is wrong: 'is signed' is present tense and does not match 'yesterday' or the past tense. D) is wrong: it swaps the doer and the object, so the meaning becomes nonsense.",
+  "rel": "Same rule: She wrote a poem becomes A poem was written by her. Plural object: He bought two books becomes Two books were bought by him."
+ },
+ {
+  "src": "t2-82",
+  "question": "Passive of \"They are building a bridge\" is:",
+  "options": [
+   "A bridge is being built by them.",
+   "A bridge was built by them.",
+   "A bridge has been built by them.",
+   "A bridge is built them."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Present continuous passive is am/is/are being + past participle.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Present continuous active (are building) becomes 'is/are being + past participle' in passive: A bridge is being built by them. B) 'was built' is simple past, wrong tense. C) 'has been built' is present perfect, wrong tense. D) 'is built them' misses 'being' and the word 'by', and is the wrong tense.",
+  "rel": "Same rule: She is cooking food becomes Food is being cooked by her. Past continuous: was/were being + past participle."
+ },
+ {
+  "src": "t2-83",
+  "question": "Passive of \"She has completed the task\" is:",
+  "options": [
+   "The task has completed.",
+   "The task has been completed by her.",
+   "The task was completed by her.",
+   "The task is completing by her."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Present perfect passive is has/have been + past participle.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Present perfect active (has completed) becomes 'has/have been + past participle': The task has been completed by her. A) misses 'been', so it sounds like the task did the completing. C) 'was completed' is simple past, wrong tense. D) 'is completing' is active continuous, not passive.",
+  "rel": "Same rule: They have sold the house becomes The house has been sold by them. Past perfect: had been + past participle."
+ },
+ {
+  "src": "t2-84",
+  "question": "Active form of \"The gate was opened by the guard\" is:",
+  "options": [
+   "The guard opened the gate.",
+   "The guard opens the gate.",
+   "The gate opened the guard.",
+   "The guard was opening by the gate."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "The doer becomes the subject and simple past is retained.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "In the passive, 'was opened' is simple past, so the active is simple past: The guard opened the gate. B) 'opens' is present tense, wrong tense. C) swaps doer and object, so the gate opens the guard, which is nonsense. D) is wrong: 'was opening by' is not a correct active form and the meaning is reversed.",
+  "rel": "Rule: the 'by' person becomes the subject in active. The letter was written by Sara becomes Sara wrote the letter."
+ },
+ {
+  "src": "t2-85",
+  "question": "Passive of \"They will announce the result tomorrow\" is:",
+  "options": [
+   "The result will announce tomorrow.",
+   "The result will be announced tomorrow.",
+   "The result is announced tomorrow.",
+   "The result has announced tomorrow."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Future passive is will be + past participle.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Future simple active (will announce) becomes 'will be + past participle': The result will be announced tomorrow. A) misses 'be', so it is not passive and sounds like the result announces something. C) 'is announced' is present tense, not future. D) 'has announced' is present perfect active, not passive.",
+  "rel": "Same rule with other modals: can be done, should be done, must be done. Example: They will open the shop becomes The shop will be opened."
+ },
+ {
+  "src": "t2-86",
+  "question": "Which sentence cannot normally be changed into passive voice?",
+  "options": [
+   "He wrote a letter.",
+   "They repaired the road.",
+   "The baby slept.",
+   "She completed the form."
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Intransitive \"slept\" has no object to become the passive subject.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Only verbs with an object (transitive verbs) can be made passive. 'Sleep' has no object, so 'The baby slept' cannot be changed. A) 'wrote a letter' has an object, so: A letter was written by him. B) 'repaired the road' has an object: The road was repaired. D) 'completed the form' has an object: The form was completed by her.",
+  "rel": "Other intransitive verbs with no passive: go, come, die, arrive, sleep, laugh (without 'at'). Example: He died cannot be passive."
+ },
+ {
+  "src": "t2-87",
+  "question": "Passive of \"Open the door\" is best expressed as:",
+  "options": [
+   "Let the door be opened.",
+   "The door open.",
+   "Door is opened you.",
+   "Let open the door by you."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Imperative passive can use \"Let + object + be + past participle\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Imperative sentences (orders) become passive with 'Let + object + be + past participle': Let the door be opened. B) 'The door open' has no 'be' and no passive form. C) 'Door is opened you' is broken grammar with no 'by'. D) 'Let open the door by you' has wrong word order and no 'be'.",
+  "rel": "Same rule: Close the window becomes Let the window be closed. For requests you can also say: You are requested to close the window."
+ },
+ {
+  "src": "t2-88",
+  "question": "Passive of \"Someone has stolen my bag\" is:",
+  "options": [
+   "My bag has been stolen.",
+   "My bag had stolen.",
+   "My bag is stealing.",
+   "My bag was stole."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "The unknown agent can be omitted in passive voice.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Present perfect passive is 'has been + past participle'. 'Someone' is an unknown doer, so we drop 'by someone': My bag has been stolen. B) 'had stolen' is past perfect active and has no 'been'. C) 'is stealing' is active continuous, meaning the bag is doing the stealing. D) 'was stole' uses the wrong verb form; the past participle is 'stolen'.",
+  "rel": "Rule: drop the agent when it is someone, people, they, nobody known. Verb forms: steal, stole, stolen; break, broke, broken."
+ },
+ {
+  "src": "t2-89",
+  "question": "Passive of \"The teacher is checking the papers\" is:",
+  "options": [
+   "The papers are checked.",
+   "The papers are being checked by the teacher.",
+   "The papers were being checked.",
+   "The papers have checked."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Present continuous passive requires \"are being checked\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Present continuous passive is 'is/are being + past participle': The papers are being checked by the teacher. A) 'are checked' is simple present, and misses 'being'. C) 'were being checked' is past continuous, wrong tense. D) 'have checked' is present perfect active, so the papers would be doing the checking.",
+  "rel": "Same rule: He is writing a letter becomes A letter is being written by him. Plural subject takes 'are being'."
+ },
+ {
+  "src": "t2-90",
+  "question": "Passive of \"You must obey the rules\" is:",
+  "options": [
+   "The rules must obey.",
+   "The rules must be obeyed.",
+   "The rules are must obeyed.",
+   "The rules have to obey you."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Modal passive is modal + be + past participle.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Modal passive is 'modal + be + past participle': The rules must be obeyed. A) misses 'be', so the rules would be obeying something. C) 'are must obeyed' is wrong; a modal is never put after 'are'. D) 'have to obey you' changes the meaning and is active.",
+  "rel": "Same rule: You should help the poor becomes The poor should be helped. Can, may, must, should, will all take 'be' + past participle."
+ },
+ {
+  "src": "t2-91",
+  "question": "Active of \"English is spoken in many countries\" is:",
+  "options": [
+   "People speak English in many countries.",
+   "People spoke English in many countries only.",
+   "English speaks people.",
+   "Many countries are speaking English people."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "An indefinite agent such as \"people\" is natural in active voice.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Is spoken' is simple present passive with no agent, so the active uses a general subject in simple present: People speak English in many countries. B) 'spoke' is past tense and 'only' adds a new meaning. C) 'English speaks people' reverses the meaning. D) is wrong tense (continuous) and broken word order.",
+  "rel": "When no agent is given, use people, someone or they as subject. Example: Rice is grown in Punjab becomes People grow rice in Punjab."
+ },
+ {
+  "src": "t2-92",
+  "question": "Passive of \"They had finished the work\" is:",
+  "options": [
+   "The work had been finished.",
+   "The work has been finished.",
+   "The work was finishing.",
+   "The work had finished them."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Past perfect passive is had been + past participle.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Past perfect active (had finished) becomes 'had been + past participle': The work had been finished. B) 'has been finished' is present perfect, wrong tense. C) 'was finishing' is past continuous active. D) 'had finished them' is active and reverses the meaning.",
+  "rel": "Same rule: She had cooked dinner becomes Dinner had been cooked by her. Tense must stay the same when changing voice."
+ },
+ {
+  "src": "t2-93",
+  "question": "Passive of \"Who wrote this letter?\" is:",
+  "options": [
+   "By whom was this letter written?",
+   "By who this letter wrote?",
+   "Whom wrote this letter?",
+   "This letter was wrote by whom?"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Formal passive interrogative: \"By whom was ... written?\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A 'who' question in passive starts with 'By whom' + was + subject + past participle: By whom was this letter written? B) uses 'who' instead of 'whom' after 'by' and has no 'was'. C) 'Whom wrote' is wrong; 'whom' cannot be the subject. D) uses 'wrote' instead of the past participle 'written'.",
+  "rel": "Same rule: Who broke the glass? becomes By whom was the glass broken? Also: Who is calling you? becomes By whom are you being called?"
+ },
+ {
+  "src": "t2-94",
+  "question": "Which is a correct passive sentence?",
+  "options": [
+   "The road is repairing.",
+   "The road is being repaired.",
+   "The road being repaired is.",
+   "The road has repairing."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Present continuous passive uses \"is being repaired\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A passive needs 'be' + past participle; 'is being repaired' is correct present continuous passive. A) 'is repairing' is active, meaning the road repairs something. C) has wrong word order. D) 'has repairing' is not a correct verb form; it should be 'has been repaired'.",
+  "rel": "Similar: The house is being painted. The bridge was being built. The room has been cleaned."
+ },
+ {
+  "src": "t2-95",
+  "question": "Passive of \"The storm damaged several houses\" is:",
+  "options": [
+   "Several houses were damaged by the storm.",
+   "Several houses damaged the storm.",
+   "Several houses are damage by storm.",
+   "The storm was damaged by several houses."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Simple past passive uses were + past participle.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Simple past active (damaged) becomes 'was/were + past participle'; plural 'houses' takes 'were': Several houses were damaged by the storm. B) has no 'were', so the houses damage the storm. C) uses present 'are' and base form 'damage' instead of 'damaged'. D) reverses the doer and the object.",
+  "rel": "Rule: the verb agrees with the new subject. The flood destroyed a bridge becomes A bridge was destroyed by the flood (singular, 'was')."
+ },
+ {
+  "src": "t2-96",
+  "question": "Passive of \"They make cars here\" is:",
+  "options": [
+   "Cars are made here.",
+   "Cars were made here yesterday.",
+   "Cars make here.",
+   "Cars are making here."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Simple present passive is am/is/are + past participle.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Simple present active (make) becomes 'am/is/are + past participle': Cars are made here. 'They' is a general subject so it is dropped. B) 'were made yesterday' is past tense and adds new time. C) 'Cars make here' is active and has no 'be'. D) 'are making' is active continuous, meaning cars are making something.",
+  "rel": "Same rule: They grow cotton in Sindh becomes Cotton is grown in Sindh. Make, made, made; grow, grew, grown."
+ },
+ {
+  "src": "t2-97",
+  "question": "Passive of \"The committee may approve the plan\" is:",
+  "options": [
+   "The plan may be approved by the committee.",
+   "The plan may approved.",
+   "The plan is may approve.",
+   "The plan may been approved."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Modal passive uses may + be + past participle.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Modal passive is 'may + be + past participle': The plan may be approved by the committee. B) misses 'be'. C) 'is may approve' puts two helping verbs wrongly and is not passive. D) 'may been' is wrong; after a modal we use 'be', and 'been' needs 'have' (may have been).",
+  "rel": "Same rule: They can solve the problem becomes The problem can be solved. Past modal passive: may have been approved."
+ },
+ {
+  "src": "t2-98",
+  "question": "Active of \"The message was sent by Ali\" is:",
+  "options": [
+   "Ali sent the message.",
+   "Ali sends the message now necessarily.",
+   "The message sent Ali.",
+   "Ali was sent the message by it."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "The passive subject becomes the object and the agent becomes subject.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Was sent' is simple past passive, so the active is simple past with Ali as subject: Ali sent the message. B) 'sends' is present tense and adds extra words. C) reverses the meaning: the message sent Ali. D) is still passive and adds a new meaning.",
+  "rel": "Rule: the 'by' agent becomes the subject. The cake was baked by Mother becomes Mother baked the cake."
+ },
+ {
+  "src": "t2-99",
+  "question": "Passive of \"They were watching the match\" is:",
+  "options": [
+   "The match was watched.",
+   "The match was being watched by them.",
+   "The match is being watched.",
+   "The match has been watched."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Past continuous passive is was/were being + past participle.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Past continuous active (were watching) becomes 'was/were being + past participle': The match was being watched by them. A) 'was watched' is simple past, it loses 'being'. C) 'is being watched' is present continuous, wrong tense. D) 'has been watched' is present perfect, wrong tense.",
+  "rel": "Same rule: She was cooking food becomes Food was being cooked by her. Present continuous version: is/are being + past participle."
+ },
+ {
+  "src": "t2-100",
+  "question": "In passive voice, the main verb is normally in the:",
+  "options": [
+   "base form only",
+   "past participle form",
+   "present participle only",
+   "infinitive without be"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Passive constructions require a form of be plus the past participle.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Every passive uses a form of 'be' + the past participle (third form): written, done, built. A) the base form (write) is not used after 'be' in passive. C) the present participle (-ing) is used for active continuous, not passive. D) 'infinitive without be' is not a passive form at all.",
+  "rel": "Examples of past participles: go-gone, eat-eaten, take-taken, make-made. Passive: The food was eaten; The work is done."
+ },
+ {
+  "src": "t2-101",
+  "question": "Change to indirect speech: He said, \"I am tired.\"",
+  "options": [
+   "He said that I am tired.",
+   "He said that he was tired.",
+   "He says that he was tired.",
+   "He said that he is tired yesterday."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "With a past reporting verb like \"said\", \"am\" changes to \"was\". The pronoun \"I\" changes to \"he\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "When the reporting verb is past (said), present tense changes to past and 'I' changes to match the speaker: He said that he was tired. A) keeps 'I' and present 'am', which is wrong. C) changes 'said' to 'says', the reporting verb must stay as given. D) keeps 'is' and adds 'yesterday', which was not in the original.",
+  "rel": "Same rule: She said, 'I am happy' becomes She said that she was happy. Am/is becomes was; are becomes were."
+ },
+ {
+  "src": "t2-102",
+  "question": "She said, \"I have finished my work.\"",
+  "options": [
+   "She said that she had finished her work.",
+   "She said that she has finished my work.",
+   "She said she finished her work tomorrow.",
+   "She told that she had finish work."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Present perfect normally backshifts to past perfect.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Present perfect (have finished) becomes past perfect (had finished), and 'I/my' change to 'she/her': She said that she had finished her work. B) keeps 'has' and 'my', which is wrong. C) changes the meaning with 'finished' and adds 'tomorrow'. D) 'told that' needs an object (told me that), and 'finish' should be 'finished'.",
+  "rel": "Same rule: He said, 'I have eaten' becomes He said that he had eaten. Have/has becomes had."
+ },
+ {
+  "src": "t2-103",
+  "question": "He said to me, \"You are late.\"",
+  "options": [
+   "He said me that I was late.",
+   "He told me that I was late.",
+   "He told that you were late.",
+   "He said to I that I was late."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Said to\" commonly becomes \"told + object\"; \"you\" becomes \"I\" by context.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "When there is a listener (said to me), we use 'told me': He told me that I was late. 'You' changes to 'I' and 'are' to 'was'. A) 'said me' is wrong; we say 'said to me' or 'told me'. C) 'told that' needs an object, and 'you' should change to 'I'. D) 'said to I' is wrong; after 'to' we use 'me'.",
+  "rel": "Rule: say + that, but tell + person + that. Example: She told her friend that she was busy."
+ },
+ {
+  "src": "t2-104",
+  "question": "Ali said, \"I will come tomorrow.\"",
+  "options": [
+   "Ali said that he would come the next day.",
+   "Ali said that I will come tomorrow.",
+   "Ali says that he would come yesterday.",
+   "Ali told he would came next day."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Will\" backshifts to \"would\" and \"tomorrow\" to \"the next day\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Will' changes to 'would', 'I' to 'he', and 'tomorrow' to 'the next day': Ali said that he would come the next day. B) keeps 'I', 'will' and 'tomorrow'. C) uses 'says' and 'yesterday', which changes the meaning. D) 'told he' needs an object, and 'would came' is wrong; after 'would' use the base form 'come'.",
+  "rel": "Other time changes: today becomes that day, yesterday becomes the previous day, next week becomes the following week."
+ },
+ {
+  "src": "t2-105",
+  "question": "She said, \"I can swim.\"",
+  "options": [
+   "She said that she could swim.",
+   "She said that she can swam.",
+   "She told that I could swim.",
+   "She said she could swam."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Can\" normally changes to \"could\" in reported speech.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Can' changes to 'could', and 'I' changes to 'she': She said that she could swim. B) keeps 'can' and uses 'swam'; after a modal use the base form 'swim'. C) 'told that' needs an object and keeps 'I'. D) 'could swam' is wrong; after 'could' use 'swim'.",
+  "rel": "Other modal changes: may becomes might, shall becomes should, will becomes would. Must often stays must or becomes had to."
+ },
+ {
+  "src": "t2-106",
+  "question": "He said, \"I saw him yesterday.\"",
+  "options": [
+   "He said that he had seen him the previous day.",
+   "He said that he saw him tomorrow.",
+   "He said he sees him yesterday.",
+   "He told that he had saw him."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Simple past may backshift to past perfect; \"yesterday\" becomes \"the previous day\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Simple past (saw) changes to past perfect (had seen), and 'yesterday' changes to 'the previous day': He said that he had seen him the previous day. B) uses 'saw' and 'tomorrow', which changes the meaning. C) uses present 'sees' with 'yesterday', which do not match. D) 'told that' needs an object, and 'had saw' is wrong; the participle is 'seen'.",
+  "rel": "Same rule: She said, 'I met him last week' becomes She said that she had met him the previous week. See, saw, seen."
+ },
+ {
+  "src": "t2-107",
+  "question": "The teacher said, \"The earth revolves around the sun.\"",
+  "options": [
+   "The teacher said that the earth revolved around the sun only.",
+   "The teacher said that the earth revolves around the sun.",
+   "The teacher told that the earth has revolved.",
+   "The teacher said earth revolving."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Universal truths usually remain in the present tense.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A universal truth (a fact that is always true) does not change its tense: The teacher said that the earth revolves around the sun. A) changes to 'revolved' and adds 'only'. C) 'told that' needs an object and 'has revolved' changes the meaning. D) 'earth revolving' is not a complete clause.",
+  "rel": "Other truths keep present tense: He said that water boils at 100 degrees. She said that honesty is the best policy."
+ },
+ {
+  "src": "t2-108",
+  "question": "He said to me, \"Do you know the answer?\"",
+  "options": [
+   "He asked me if I knew the answer.",
+   "He told me do I know the answer.",
+   "He asked that I know answer.",
+   "He said me whether do I knew."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Yes/no questions use asked + if/whether + statement word order.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A yes/no question is reported with 'asked' + 'if/whether' + statement order, with tense shifted: He asked me if I knew the answer. B) uses 'told' and keeps question order 'do I know'. C) 'asked that' is wrong for a question, and 'know' should change to 'knew'. D) 'said me' is wrong and 'whether do I knew' keeps question order.",
+  "rel": "Same rule: She said, 'Are you ready?' becomes She asked if I was ready. Use 'if' or 'whether', never 'that', for yes/no questions."
+ },
+ {
+  "src": "t2-109",
+  "question": "She said, \"Where are you going?\"",
+  "options": [
+   "She asked where was I going.",
+   "She asked where I was going.",
+   "She said where I am going.",
+   "She asked that where I went."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Wh-question keeps the question word but uses statement word order.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A wh-question keeps the wh-word but uses statement order (subject before verb): She asked where I was going. A) keeps question order 'was I'. C) uses 'said' and present 'am', with no tense change. D) 'asked that where' is wrong; do not add 'that', and 'went' changes the tense wrongly.",
+  "rel": "Same rule: He said, 'What is your name?' becomes He asked what my name was. Subject comes before the verb in reported questions."
+ },
+ {
+  "src": "t2-110",
+  "question": "The officer said, \"Stand at ease.\"",
+  "options": [
+   "The officer requested them standing.",
+   "The officer ordered them to stand at ease.",
+   "The officer said that stand at ease.",
+   "The officer asked they standed."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Commands are commonly reported with ordered/told + object + to-infinitive.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "An order (imperative) is reported with 'ordered/told' + object + 'to' + verb: The officer ordered them to stand at ease. A) 'requested them standing' is wrong form and wrong tone for a command. C) 'said that stand' is wrong; imperatives use 'to' + verb, not 'that'. D) 'asked they standed' is wrong; use 'them', and 'standed' is not a word (stand, stood, stood).",
+  "rel": "Same rule: He said, 'Sit down' becomes He told me to sit down. Negative order: He ordered me not to go."
+ },
+ {
+  "src": "t2-111",
+  "question": "He said, \"Please help me.\"",
+  "options": [
+   "He requested me to help him.",
+   "He ordered me help him.",
+   "He said me please to help.",
+   "He asked that I helped him yesterday."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Polite requests are reported with requested/asked + object + to-infinitive.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A request with 'please' is reported with 'requested' + object + 'to' + verb, and 'me' changes to 'him': He requested me to help him. B) 'ordered' is wrong for 'please', and 'to' is missing. C) 'said me' is wrong, and 'please' is not kept in reported speech. D) 'asked that I helped him yesterday' uses the wrong structure and adds 'yesterday'.",
+  "rel": "Same rule: She said, 'Please open the door' becomes She requested me to open the door. Also used: begged, asked."
+ },
+ {
+  "src": "t2-112",
+  "question": "Mother said, \"Do not waste time.\"",
+  "options": [
+   "Mother advised me not to waste time.",
+   "Mother said me do not waste time.",
+   "Mother told that not waste time.",
+   "Mother advised not wasting me."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Negative commands/advice use not to + verb.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Advice or a negative imperative is reported with 'advised' + object + 'not to' + verb: Mother advised me not to waste time. B) 'said me' is wrong and keeps 'do not'. C) 'told that' needs an object and 'that' is wrong for imperatives. D) 'advised not wasting me' has wrong word order and form.",
+  "rel": "Same rule: Teacher said, 'Do not talk' becomes Teacher told us not to talk. Use 'not to', never 'to not' or 'do not'."
+ },
+ {
+  "src": "t2-113",
+  "question": "He said, \"Alas! I have failed.\"",
+  "options": [
+   "He exclaimed with sorrow that he had failed.",
+   "He said alas that he fails.",
+   "He exclaimed with joy that he had failed.",
+   "He asked whether he failed."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Alas\" shows sorrow, so we use \"exclaimed with sorrow\". Present perfect \"have failed\" changes to \"had failed\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Alas' shows sadness, so we use 'exclaimed with sorrow', and present perfect changes to past perfect: He exclaimed with sorrow that he had failed. B) keeps 'alas' and uses present 'fails'. C) 'with joy' gives the wrong feeling. D) 'asked whether' is for questions, not exclamations.",
+  "rel": "Other words: Hurrah shows joy, Bravo shows praise (applauded), Oh/Alas show sorrow. Example: He exclaimed with regret that he had lost."
+ },
+ {
+  "src": "t2-114",
+  "question": "She said, \"Hurrah! We have won.\"",
+  "options": [
+   "She exclaimed with joy that they had won.",
+   "She exclaimed with sorrow that they won.",
+   "She said hurrah we have won.",
+   "She ordered that they had won."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Hurrah\" shows joy, so we use \"exclaimed with joy\". \"We have won\" changes to \"they had won\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Hurrah' shows happiness, so we use 'exclaimed with joy', and 'we have won' becomes 'they had won': She exclaimed with joy that they had won. B) 'with sorrow' is the wrong feeling and 'won' should be 'had won'. C) keeps the exact words, which is direct, not indirect speech. D) 'ordered' is for commands, not exclamations.",
+  "rel": "Similar: He said, 'Bravo! Well done' becomes He applauded me, saying that I had done well. 'Alas' takes 'with sorrow'."
+ },
+ {
+  "src": "t2-115",
+  "question": "He said, \"May you succeed!\"",
+  "options": [
+   "He prayed that I might succeed.",
+   "He said that I may succeeded.",
+   "He asked me to succeeding.",
+   "He ordered success."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Wishes/prayers are often reported with prayed/wished + might.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A wish or prayer (May you...) is reported with 'prayed/wished that' + 'might': He prayed that I might succeed. B) keeps 'may' and uses 'succeeded'; after a modal use the base form. C) 'asked me to succeeding' is wrong form and wrong verb. D) 'ordered success' changes the meaning; a prayer is not an order.",
+  "rel": "Same rule: She said, 'May God bless you' becomes She prayed that God might bless me. 'May' becomes 'might'."
+ },
+ {
+  "src": "t2-116",
+  "question": "\"This\" generally changes to ___ in reported speech when distance shifts.",
+  "options": [
+   "these",
+   "that",
+   "here",
+   "now"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "In reported speech, \"this\" commonly changes to \"that\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "In reported speech, 'this' (near) usually changes to 'that' (far). A) 'these' is the plural of 'this'; 'these' itself changes to 'those'. C) 'here' is a place word, not a match for 'this'. D) 'now' is a time word, not a match for 'this'.",
+  "rel": "Other changes: these becomes those, here becomes there, now becomes then, today becomes that day."
+ },
+ {
+  "src": "t2-117",
+  "question": "\"Now\" commonly changes to:",
+  "options": [
+   "then",
+   "tomorrow",
+   "there",
+   "before only"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Now\" commonly becomes \"then\" when the reporting perspective shifts.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "In reported speech, 'now' usually changes to 'then'. B) 'tomorrow' becomes 'the next day'; it is not a change for 'now'. C) 'there' is the change for 'here', a place word. D) 'before' is the change for 'ago', not for 'now'.",
+  "rel": "Other changes: ago becomes before, tonight becomes that night, here becomes there."
+ },
+ {
+  "src": "t2-118",
+  "question": "\"Here\" commonly changes to:",
+  "options": [
+   "there",
+   "then",
+   "that",
+   "before"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Here\" commonly becomes \"there\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "In reported speech, 'here' (this place) usually changes to 'there' (that place). B) 'then' is the change for 'now', a time word. C) 'that' is the change for 'this'. D) 'before' is the change for 'ago'.",
+  "rel": "Related: this becomes that, these becomes those, come may change to go when the place changes."
+ },
+ {
+  "src": "t2-119",
+  "question": "Which reporting verb is most suitable for a question?",
+  "options": [
+   "asked",
+   "ordered",
+   "exclaimed",
+   "promised always"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Questions are generally reported with \"asked\" or \"inquired\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Questions are reported with 'asked' (also inquired, wanted to know). B) 'ordered' is for commands. C) 'exclaimed' is for exclamations like Alas or Hurrah. D) 'promised' is for promises, and 'always' makes no sense here.",
+  "rel": "Matching verbs: statements use said/told, requests use requested, advice uses advised, wishes use prayed/wished."
+ },
+ {
+  "src": "t2-120",
+  "question": "In reported questions, the word order is generally:",
+  "options": [
+   "question order",
+   "statement order",
+   "inverted twice",
+   "verb only"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Reported questions do not normally retain subject-auxiliary inversion.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "In reported questions we use statement order (subject + verb), not question order: He asked where she lived, not where did she live. A) question order is used only in direct speech. C) 'inverted twice' is not a grammar rule. D) 'verb only' is wrong; the clause needs a subject too.",
+  "rel": "Example: 'Is he coming?' becomes She asked if he was coming. 'Why are you sad?' becomes He asked why I was sad."
+ },
+ {
+  "src": "t2-121",
+  "question": "Choose the synonym of \"abandon\".",
+  "options": [
+   "leave",
+   "collect",
+   "repair",
+   "praise"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Abandon\" means to leave or give up.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Abandon' means to leave something or someone completely and not come back, so 'leave' is the synonym. B) 'collect' means to gather, which is the opposite idea. C) 'repair' means to fix. D) 'praise' means to say good things about someone.",
+  "rel": "Other synonyms of abandon: desert, quit, give up, forsake. Antonyms: keep, retain, support."
+ },
+ {
+  "src": "t2-122",
+  "question": "Choose the antonym of \"scarce\".",
+  "options": [
+   "rare",
+   "limited",
+   "abundant",
+   "small"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Scarce\" means insufficient; \"abundant\" means plentiful.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Scarce' means not enough or hard to find, so the antonym is 'abundant' (more than enough). A) 'rare' is a synonym, not an antonym. B) 'limited' also means not much, a synonym. D) 'small' is about size and is close in meaning, not opposite.",
+  "rel": "Other antonyms: plentiful, ample. Noun: scarcity (shortage), abundance (plenty)."
+ },
+ {
+  "src": "t2-123",
+  "question": "Synonym of \"brave\" is:",
+  "options": [
+   "cowardly",
+   "courageous",
+   "weak",
+   "silent"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Courageous\" is a direct synonym of \"brave\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Brave' means not afraid of danger, so 'courageous' is the synonym. A) 'cowardly' is the opposite (antonym). C) 'weak' means lacking strength, not the same. D) 'silent' means quiet and has no link to bravery.",
+  "rel": "Other synonyms: bold, fearless, daring, valiant, gallant. Antonyms: cowardly, timid, fearful."
+ },
+ {
+  "src": "t2-124",
+  "question": "Antonym of \"ancient\" is:",
+  "options": [
+   "old",
+   "historic",
+   "modern",
+   "former"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Modern\" contrasts with \"ancient\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Ancient' means very old, from long ago, so the antonym is 'modern' (new, of present times). A) 'old' is a synonym. B) 'historic' is about the past, close in meaning. D) 'former' means earlier, also close in meaning, not opposite.",
+  "rel": "Other antonyms: new, recent, contemporary. Synonyms of ancient: antique, archaic, primeval."
+ },
+ {
+  "src": "t2-125",
+  "question": "Synonym of \"rapid\" is:",
+  "options": [
+   "slow",
+   "swift",
+   "late",
+   "weak"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Rapid\" means fast or swift.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Rapid' means very fast, so 'swift' is the synonym. A) 'slow' is the opposite. C) 'late' means after the right time, not speed. D) 'weak' means lacking strength.",
+  "rel": "Other synonyms: quick, speedy, fast, hasty. Antonyms: slow, sluggish."
+ },
+ {
+  "src": "t2-126",
+  "question": "Antonym of \"expand\" is:",
+  "options": [
+   "increase",
+   "enlarge",
+   "contract",
+   "extend"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Contract\" means to become smaller.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Expand' means to become bigger, so the antonym is 'contract' (to become smaller). A) 'increase' is a synonym. B) 'enlarge' is a synonym. D) 'extend' is also a synonym.",
+  "rel": "Other antonyms: shrink, reduce, compress. Metals expand when heated and contract when cooled."
+ },
+ {
+  "src": "t2-127",
+  "question": "Synonym of \"assist\" is:",
+  "options": [
+   "help",
+   "oppose",
+   "delay",
+   "refuse"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Assist\" means to help.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Assist' means to help someone do something, so 'help' is the synonym. B) 'oppose' means to be against, the opposite idea. C) 'delay' means to make late. D) 'refuse' means to say no.",
+  "rel": "Other synonyms: aid, support, back. Noun: assistance; person: assistant."
+ },
+ {
+  "src": "t2-128",
+  "question": "Antonym of \"hostile\" is:",
+  "options": [
+   "unfriendly",
+   "aggressive",
+   "friendly",
+   "angry"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Friendly\" is the opposite of hostile.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Hostile' means unfriendly and showing enmity, so the antonym is 'friendly'. A) 'unfriendly' is a synonym. B) 'aggressive' is close to hostile, not opposite. D) 'angry' is also close, not opposite.",
+  "rel": "Other antonyms: kind, amiable, cordial. Synonyms: inimical, antagonistic. Noun: hostility."
+ },
+ {
+  "src": "t2-129",
+  "question": "Synonym of \"accurate\" is:",
+  "options": [
+   "precise",
+   "careless",
+   "vague",
+   "rough"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Precise\" closely matches \"accurate\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Accurate' means exactly correct with no mistakes, so 'precise' is the synonym. B) 'careless' means without care, often causing mistakes. C) 'vague' means not clear. D) 'rough' here means not exact (a rough guess).",
+  "rel": "Other synonyms: exact, correct. Antonyms: inaccurate, wrong. Noun: accuracy."
+ },
+ {
+  "src": "t2-130",
+  "question": "Antonym of \"optimistic\" is:",
+  "options": [
+   "hopeful",
+   "positive",
+   "pessimistic",
+   "cheerful"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Pessimistic\" is the opposite in outlook.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Optimistic' means hopeful about the future, so the antonym is 'pessimistic' (expecting bad things). A) 'hopeful' is a synonym. B) 'positive' is a synonym. D) 'cheerful' is close in meaning, not opposite.",
+  "rel": "Nouns: optimist, pessimist; optimism, pessimism. Similar pair: confident vs. doubtful."
+ },
+ {
+  "src": "t2-131",
+  "question": "Synonym of \"commence\" is:",
+  "options": [
+   "end",
+   "begin",
+   "avoid",
+   "reduce"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Commence\" means begin.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Commence' is a formal word meaning to start, so 'begin' is the synonym. A) 'end' is the opposite. C) 'avoid' means to keep away from. D) 'reduce' means to make less.",
+  "rel": "Other synonyms: start, initiate, launch. Antonyms: end, conclude, terminate. Noun: commencement."
+ },
+ {
+  "src": "t2-132",
+  "question": "Antonym of \"conceal\" is:",
+  "options": [
+   "hide",
+   "cover",
+   "reveal",
+   "protect"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Reveal\" means make known or visible.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Conceal' means to hide, so the antonym is 'reveal' (to show or make known). A) 'hide' is a synonym. B) 'cover' is close to hide. D) 'protect' means to keep safe, not the opposite.",
+  "rel": "Other antonyms: disclose, expose, show. Synonyms: hide, mask, cover up."
+ },
+ {
+  "src": "t2-133",
+  "question": "Synonym of \"vital\" is:",
+  "options": [
+   "essential",
+   "minor",
+   "optional",
+   "weak"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Vital\" can mean essential or critically important.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Vital' means very important or necessary, so 'essential' is the synonym. B) 'minor' means small and unimportant, the opposite. C) 'optional' means not required, also the opposite idea. D) 'weak' means lacking strength.",
+  "rel": "Other synonyms: crucial, necessary, indispensable. Vital also means related to life: vital signs (heartbeat, breathing)."
+ },
+ {
+  "src": "t2-134",
+  "question": "Antonym of \"permanent\" is:",
+  "options": [
+   "lasting",
+   "fixed",
+   "temporary",
+   "stable"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Temporary\" is not permanent.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Permanent' means lasting forever or for a long time, so the antonym is 'temporary' (for a short time only). A) 'lasting' is a synonym. B) 'fixed' is close to permanent. D) 'stable' is also close in meaning.",
+  "rel": "Other antonyms: transient, short-lived, momentary. Synonyms: everlasting, enduring, eternal."
+ },
+ {
+  "src": "t2-135",
+  "question": "Synonym of \"diligent\" is:",
+  "options": [
+   "lazy",
+   "hardworking",
+   "careless",
+   "reckless"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Diligent\" means hardworking and careful.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Diligent' means careful and hardworking, so 'hardworking' is the synonym. A) 'lazy' is the opposite. C) 'careless' is also opposite in meaning. D) 'reckless' means not caring about danger.",
+  "rel": "Other synonyms: industrious, sincere, painstaking. Antonyms: lazy, idle, negligent. Noun: diligence."
+ },
+ {
+  "src": "t2-136",
+  "question": "Antonym of \"superior\" is:",
+  "options": [
+   "higher",
+   "better",
+   "inferior",
+   "excellent"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Inferior\" is the direct opposite.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Superior' means higher in rank or better in quality, so the antonym is 'inferior' (lower or worse). A) 'higher' is a synonym. B) 'better' is a synonym. D) 'excellent' is close in meaning.",
+  "rel": "Both take 'to', not 'than': superior to, inferior to. Similar pair: senior to vs. junior to."
+ },
+ {
+  "src": "t2-137",
+  "question": "Synonym of \"obstacle\" is:",
+  "options": [
+   "hindrance",
+   "benefit",
+   "reward",
+   "solution"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "An obstacle is a hindrance or barrier.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Obstacle' means something that blocks your way, so 'hindrance' is the synonym. B) 'benefit' means an advantage, the opposite idea. C) 'reward' is something given for good work. D) 'solution' is the answer to a problem.",
+  "rel": "Other synonyms: barrier, hurdle, impediment, obstruction. Antonyms: help, aid, advantage."
+ },
+ {
+  "src": "t2-138",
+  "question": "Antonym of \"rigid\" is:",
+  "options": [
+   "stiff",
+   "flexible",
+   "strict",
+   "hard"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Flexible\" is the opposite of rigid.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Rigid' means stiff and not able to bend or change, so the antonym is 'flexible'. A) 'stiff' is a synonym. C) 'strict' is close to rigid (rigid rules). D) 'hard' is also close in meaning.",
+  "rel": "Other antonyms: elastic, pliable, adaptable. Synonyms: inflexible, firm, unbending."
+ },
+ {
+  "src": "t2-139",
+  "question": "Synonym of \"terminate\" is:",
+  "options": [
+   "continue",
+   "end",
+   "begin",
+   "expand"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Terminate\" means bring to an end.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Terminate' means to bring to an end, so 'end' is the synonym. A) 'continue' is the opposite. C) 'begin' is the opposite. D) 'expand' means to grow bigger.",
+  "rel": "Other synonyms: finish, stop, conclude, cease. Antonyms: begin, start, commence. Noun: termination."
+ },
+ {
+  "src": "t2-140",
+  "question": "Antonym of \"victory\" is:",
+  "options": [
+   "success",
+   "triumph",
+   "defeat",
+   "achievement"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Defeat\" is the opposite of victory.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Victory' means winning, so the antonym is 'defeat' (losing). A) 'success' is a synonym. B) 'triumph' is a synonym. D) 'achievement' is close in meaning.",
+  "rel": "Other antonyms: loss, failure. Synonyms: win, conquest. Adjective: victorious."
+ },
+ {
+  "src": "t2-141",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "He do not know me.",
+   "He does not knows me.",
+   "He does not know me.",
+   "He not does know me."
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "After \"does not,\" use the base form \"know\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "With 'does not', the main verb stays in the base form: He does not know me. A) 'He do not' is wrong; 'he' takes 'does', not 'do'. B) 'does not knows' is wrong; after 'does' do not add -s. D) 'not does know' has wrong word order.",
+  "rel": "Same rule: She does not like tea. Did not also takes base form: He did not go (not 'did not went')."
+ },
+ {
+  "src": "t2-142",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "She is senior than me.",
+   "She is senior to me.",
+   "She is senior from me.",
+   "She is more senior than me always."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The conventional construction is \"senior to\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Latin comparatives like senior, junior, superior, inferior, prior take 'to', not 'than': She is senior to me. A) 'senior than' is a common mistake. C) 'senior from' is wrong. D) 'more senior than' is wrong here, and 'always' adds extra meaning.",
+  "rel": "Similar: He is junior to me. This is superior to that. Also: prefer to, prior to."
+ },
+ {
+  "src": "t2-143",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "Neither of the boys are absent.",
+   "Neither of the boys is absent.",
+   "Neither boys is absent.",
+   "Neither of boys are absent."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Neither\" is singular in standard formal usage here.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Neither of' + plural noun takes a singular verb: Neither of the boys is absent. A) 'are' is the plural verb, wrong here. C) 'Neither boys' is wrong; without 'of', neither takes a singular noun (neither boy). D) misses 'the' and uses plural 'are'.",
+  "rel": "Same rule with either, each, every one: Either of the answers is correct. Each of them is ready."
+ },
+ {
+  "src": "t2-144",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "Each of the players have a kit.",
+   "Each of the players has a kit.",
+   "Each players has kit.",
+   "Each of players have a kit."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Each\" takes a singular verb.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Each of' + plural noun takes a singular verb: Each of the players has a kit. A) 'have' is plural, wrong here. C) 'Each players' is wrong; without 'of', 'each' takes a singular noun, and 'a' is missing. D) misses 'the' and uses plural 'have'.",
+  "rel": "Same rule: Every student has a book. Each of the girls is talented."
+ },
+ {
+  "src": "t2-145",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "He has been living here since five years.",
+   "He has been living here for five years.",
+   "He is living here for five years ago.",
+   "He lived here since five years."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Use \"for\" with a duration.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Use 'for' with a period of time (five years) and 'since' with a point of time (2020): He has been living here for five years. A) 'since five years' is a common mistake. C) mixes present 'is living' with 'ago'. D) simple past 'lived' does not go with 'since'.",
+  "rel": "Examples: since Monday, since 2019, since morning; for two hours, for a week, for ten years."
+ },
+ {
+  "src": "t2-146",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "I prefer tea than coffee.",
+   "I prefer tea to coffee.",
+   "I prefer tea over than coffee.",
+   "I prefer tea from coffee."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The standard construction is \"prefer X to Y\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Prefer' takes 'to', not 'than': I prefer tea to coffee. A) 'prefer than' is a common mistake. C) 'over than' mixes two forms and is wrong. D) 'prefer from' is wrong.",
+  "rel": "With verbs: I prefer walking to driving. With 'would rather' we use 'than': I would rather walk than drive."
+ },
+ {
+  "src": "t2-147",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "One of my friend is here.",
+   "One of my friends is here.",
+   "One of my friends are here.",
+   "One my friends is here."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "After \"one of,\" use a plural noun and singular verb.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'One of' is followed by a plural noun, and the verb is singular because the subject is 'one': One of my friends is here. A) 'friend' must be plural after 'one of'. C) 'are' is wrong; the subject 'one' is singular. D) misses 'of'.",
+  "rel": "Same rule: One of the students is absent. One of the best players has left."
+ },
+ {
+  "src": "t2-148",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "The news are good.",
+   "The news is good.",
+   "The news were good always.",
+   "News are a good."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"News\" is grammatically singular.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'News' looks plural but is uncountable and takes a singular verb: The news is good. A) 'are' is plural, wrong. C) 'were' is plural, and 'always' adds extra meaning. D) 'are a good' is broken grammar.",
+  "rel": "Other singular words ending in s: mathematics, physics, economics. Example: Mathematics is my favourite subject."
+ },
+ {
+  "src": "t2-149",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "He is good in English.",
+   "He is good at English.",
+   "He is good on English.",
+   "He is good for English."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The usual collocation is \"good at\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "The fixed phrase is 'good at' a subject or skill: He is good at English. A) 'good in' is a common mistake in Pakistani English. C) 'good on' is wrong. D) 'good for' means helpful to (Milk is good for health), a different meaning.",
+  "rel": "Similar: bad at, clever at, expert at; but we say weak in a subject. Example: She is good at drawing."
+ },
+ {
+  "src": "t2-150",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "She discussed about the issue.",
+   "She discussed the issue.",
+   "She discussed on the issue.",
+   "She was discussed the issue."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Discuss\" is transitive; it does not require \"about\" before the object.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Discuss' is a transitive verb and takes a direct object with no preposition: She discussed the issue. A) 'discussed about' is a common mistake. C) 'discussed on' is also wrong. D) 'was discussed' is passive and makes no sense with 'the issue' after it.",
+  "rel": "Other verbs with no preposition: reach (not reach at), enter (not enter into a room), describe (not describe about). But the noun takes 'about': a discussion about the issue."
+ }
+]

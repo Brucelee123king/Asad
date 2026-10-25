@@ -1,0 +1,1262 @@
+[
+ {
+  "src": "sa-1",
+  "question": "Choose the antonym of COMPLEX.",
+  "options": [
+   "Intricate",
+   "Complicated",
+   "Uncomplicated",
+   "Puzzling"
+  ],
+  "correct": 2,
+  "reason": "Complex means complicated; its opposite is uncomplicated (simple).",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-2",
+  "question": "Choose the antonym of ACTIVITY.",
+  "options": [
+   "Energy",
+   "Inactivity",
+   "Movement",
+   "Action"
+  ],
+  "correct": 1,
+  "reason": "Activity means being busy or active; its opposite is inactivity.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-3",
+  "question": "Choose the antonym of LACK.",
+  "options": [
+   "Deficiency",
+   "Absence",
+   "Abundance",
+   "Shortage"
+  ],
+  "correct": 2,
+  "reason": "Lack means shortage; its opposite is abundance (plenty).",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-4",
+  "question": "Choose the antonym of MISLEAD.",
+  "options": [
+   "Confuse",
+   "Deceive",
+   "Guide",
+   "Misdirect"
+  ],
+  "correct": 2,
+  "reason": "Mislead means to lead in the wrong direction; its opposite is guide.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-5",
+  "question": "Choose the antonym of PUNCTUAL.",
+  "options": [
+   "Regular",
+   "Prompt",
+   "Unpunctual",
+   "Careful"
+  ],
+  "correct": 2,
+  "reason": "Punctual means on time; its opposite is unpunctual (late).",
+  "count": 1,
+  "note": "Fixed: source had 'Unpunched'."
+ },
+ {
+  "src": "sa-6",
+  "question": "Choose the antonym of MERRY.",
+  "options": [
+   "Sad",
+   "Cheerful",
+   "Jolly",
+   "Lively"
+  ],
+  "correct": 0,
+  "reason": "Merry means happy and cheerful; its opposite is sad.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-7",
+  "question": "Choose the antonym of HUMBLE.",
+  "options": [
+   "Vain",
+   "Modest",
+   "Simple",
+   "Meek"
+  ],
+  "correct": 0,
+  "reason": "Humble means modest; its opposite is vain (proud, conceited).",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-8",
+  "question": "Choose the antonym of FLEXIBLE.",
+  "options": [
+   "Pliable",
+   "Supple",
+   "Rigid",
+   "Elastic"
+  ],
+  "correct": 2,
+  "reason": "Flexible means easily bent or adjusted; its opposite is rigid (stiff).",
+  "count": 1,
+  "note": "Fixed: source had 'Unplant' (likely 'unpliant'); used standard antonym 'Rigid'."
+ },
+ {
+  "src": "sa-9",
+  "question": "Choose the antonym of IMAGINARY.",
+  "options": [
+   "Real",
+   "Fanciful",
+   "Fictional",
+   "Unreal"
+  ],
+  "correct": 0,
+  "reason": "Imaginary means existing only in the mind; its opposite is real.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-10",
+  "question": "Choose the antonym of SUPPORT.",
+  "options": [
+   "Help",
+   "Abandon",
+   "Assist",
+   "Uphold"
+  ],
+  "correct": 1,
+  "reason": "Support means to help or stand by; its opposite is abandon (desert).",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-11",
+  "question": "Choose the antonym of NERVOUS.",
+  "options": [
+   "Anxious",
+   "Restless",
+   "Timid",
+   "Bold"
+  ],
+  "correct": 3,
+  "reason": "Nervous means anxious or fearful; its opposite is bold (confident).",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-12",
+  "question": "Choose the antonym of MAJORITY.",
+  "options": [
+   "Plurality",
+   "Minority",
+   "Bulk",
+   "Mass"
+  ],
+  "correct": 1,
+  "reason": "Majority means the greater number; its opposite is minority.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-13",
+  "question": "Choose the antonym of ATTRACT.",
+  "options": [
+   "Charm",
+   "Repel",
+   "Allure",
+   "Draw"
+  ],
+  "correct": 1,
+  "reason": "Attract means to pull towards; its opposite is repel (push away).",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-14",
+  "question": "Choose the antonym of TENDENCY.",
+  "options": [
+   "Disinclination",
+   "Habit",
+   "Leaning",
+   "Inclination"
+  ],
+  "correct": 0,
+  "reason": "Tendency means an inclination towards something; its opposite is disinclination.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-15",
+  "question": "Choose the antonym of FREEDOM.",
+  "options": [
+   "Liberty",
+   "Slavery",
+   "Release",
+   "Independence"
+  ],
+  "correct": 1,
+  "reason": "Freedom means liberty; its opposite is slavery.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-16",
+  "question": "Choose the antonym of TROUBLE.",
+  "options": [
+   "Disturb",
+   "Annoy",
+   "Worry",
+   "Appease"
+  ],
+  "correct": 3,
+  "reason": "Trouble means to disturb or worry; its opposite is appease (calm, pacify).",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-17",
+  "question": "Choose the antonym of QUESTIONABLE.",
+  "options": [
+   "Doubtful",
+   "Unquestionable",
+   "Dubious",
+   "Uncertain"
+  ],
+  "correct": 1,
+  "reason": "Questionable means doubtful; its opposite is unquestionable (certain).",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-18",
+  "question": "Choose the antonym of COMFORT.",
+  "options": [
+   "Relief",
+   "Ease",
+   "Solace",
+   "Oppression"
+  ],
+  "correct": 3,
+  "reason": "Comfort means ease and relief; its opposite here is oppression (hardship, distress).",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-19",
+  "question": "Choose the antonym of APPROVAL.",
+  "options": [
+   "Sanction",
+   "Assent",
+   "Consent",
+   "Disapproval"
+  ],
+  "correct": 3,
+  "reason": "Approval means agreeing or accepting; its opposite is disapproval.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-20",
+  "question": "Choose the antonym of ACCUSATION.",
+  "options": [
+   "Defence",
+   "Allegation",
+   "Charge",
+   "Blame"
+  ],
+  "correct": 0,
+  "reason": "Accusation means a charge against someone; its opposite is defence.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-21",
+  "question": "Choose the antonym of ACHIEVEMENT.",
+  "options": [
+   "Accomplishment",
+   "Attainment",
+   "Success",
+   "Failure"
+  ],
+  "correct": 3,
+  "reason": "Achievement means success in doing something; its opposite is failure.",
+  "count": 1,
+  "note": "Fixed spelling: 'Archievement' to 'Achievement'."
+ },
+ {
+  "src": "sa-22",
+  "question": "Choose the antonym of RAMBLING.",
+  "options": [
+   "Disorganized",
+   "Methodical",
+   "Lengthy",
+   "Wandering"
+  ],
+  "correct": 1,
+  "reason": "Rambling means wandering without order; its opposite is methodical (orderly).",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-23",
+  "question": "Choose the antonym of WILD.",
+  "options": [
+   "Fierce",
+   "Untamed",
+   "Savage",
+   "Civilized"
+  ],
+  "correct": 3,
+  "reason": "Wild means untamed or savage; its opposite is civilized.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-24",
+  "question": "Choose the antonym of WICKED.",
+  "options": [
+   "Cruel",
+   "Evil",
+   "Virtuous",
+   "Sinful"
+  ],
+  "correct": 2,
+  "reason": "Wicked means evil; its opposite is virtuous (good, moral).",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-25",
+  "question": "Choose the antonym of ATTRACTION.",
+  "options": [
+   "Repulsion",
+   "Appeal",
+   "Allure",
+   "Charm"
+  ],
+  "correct": 0,
+  "reason": "Attraction means a pulling force or appeal; its opposite is repulsion.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-26",
+  "question": "Choose the antonym of DANGER.",
+  "options": [
+   "Hazard",
+   "Safety",
+   "Risk",
+   "Peril"
+  ],
+  "correct": 1,
+  "reason": "Danger means risk of harm; its opposite is safety.",
+  "count": 1,
+  "note": "Fixed spelling: 'Sefety' to 'Safety'."
+ },
+ {
+  "src": "sa-27",
+  "question": "Choose the antonym of EFFICIENCY.",
+  "options": [
+   "Skill",
+   "Competence",
+   "Capability",
+   "Inefficiency"
+  ],
+  "correct": 3,
+  "reason": "Efficiency means working well without waste; its opposite is inefficiency.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-28",
+  "question": "Choose the antonym of EXCESS.",
+  "options": [
+   "Surplus",
+   "Abundance",
+   "Scarcity",
+   "Plenty"
+  ],
+  "correct": 2,
+  "reason": "Excess means more than needed; its opposite is scarcity (shortage).",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-29",
+  "question": "Choose the antonym of ABILITY.",
+  "options": [
+   "Capability",
+   "Skill",
+   "Talent",
+   "Incapability"
+  ],
+  "correct": 3,
+  "reason": "Ability means the power to do something; its opposite is incapability.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-30",
+  "question": "Choose the antonym of COMPULSORY.",
+  "options": [
+   "Optional",
+   "Mandatory",
+   "Necessary",
+   "Obligatory"
+  ],
+  "correct": 0,
+  "reason": "Compulsory means required by rule; its opposite is optional.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-31",
+  "question": "Choose the antonym of ABUSE.",
+  "options": [
+   "Insult",
+   "Reproach",
+   "Commendation",
+   "Criticism"
+  ],
+  "correct": 2,
+  "reason": "Abuse means insulting or harsh words; its opposite is commendation (praise).",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-32",
+  "question": "Choose the antonym of WANT.",
+  "options": [
+   "Need",
+   "Shortage",
+   "Prosperity",
+   "Poverty"
+  ],
+  "correct": 2,
+  "reason": "Want here means poverty or need; its opposite is prosperity.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-33",
+  "question": "Choose the antonym of AGREE.",
+  "options": [
+   "Disagree",
+   "Consent",
+   "Approve",
+   "Accept"
+  ],
+  "correct": 0,
+  "reason": "Agree means to have the same opinion; its opposite is disagree.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-34",
+  "question": "Choose the antonym of RECOVER.",
+  "options": [
+   "Regain",
+   "Retrieve",
+   "Lose",
+   "Restore"
+  ],
+  "correct": 2,
+  "reason": "Recover means to get back; its opposite is lose.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-35",
+  "question": "Choose the antonym of OWN.",
+  "options": [
+   "Admit",
+   "Accept",
+   "Disclaim",
+   "Acknowledge"
+  ],
+  "correct": 2,
+  "reason": "Own here means to admit or acknowledge; its opposite is disclaim (deny).",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-36",
+  "question": "Choose the antonym of EQUAL.",
+  "options": [
+   "Same",
+   "Uniform",
+   "Uneven",
+   "Identical"
+  ],
+  "correct": 2,
+  "reason": "Equal means the same in amount or value; its opposite is uneven (unequal).",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-37",
+  "question": "Choose the antonym of SIN.",
+  "options": [
+   "Crime",
+   "Virtue",
+   "Evil",
+   "Wrongdoing"
+  ],
+  "correct": 1,
+  "reason": "Sin means a wrong or immoral act; its opposite is virtue.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-38",
+  "question": "Choose the antonym of PROVE.",
+  "options": [
+   "Establish",
+   "Confirm",
+   "Disprove",
+   "Verify"
+  ],
+  "correct": 2,
+  "reason": "Prove means to show something is true; its opposite is disprove.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-39",
+  "question": "Choose the antonym of PROGRESS.",
+  "options": [
+   "Develop",
+   "Retrogress",
+   "Proceed",
+   "Advance"
+  ],
+  "correct": 1,
+  "reason": "Progress means to move forward; its opposite is retrogress (move backward).",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-40",
+  "question": "Choose the antonym of FREE.",
+  "options": [
+   "Loosen",
+   "Liberate",
+   "Bind",
+   "Release"
+  ],
+  "correct": 2,
+  "reason": "Free means to release; its opposite is bind (tie up).",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-41",
+  "question": "Choose the antonym of PRAISE.",
+  "options": [
+   "Censure",
+   "Admire",
+   "Laud",
+   "Applaud"
+  ],
+  "correct": 0,
+  "reason": "Praise means to speak well of; its opposite is censure (strong criticism).",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-42",
+  "question": "Choose the antonym of JUSTICE.",
+  "options": [
+   "Honesty",
+   "Inequity",
+   "Equity",
+   "Fairness"
+  ],
+  "correct": 1,
+  "reason": "Justice means fairness; its opposite is inequity (injustice, unfairness).",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-43",
+  "question": "Choose the synonym of ABILITY.",
+  "options": [
+   "Capability",
+   "Weakness",
+   "Inability",
+   "Failure"
+  ],
+  "correct": 0,
+  "reason": "Ability means the power or skill to do something, the same as capability.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-44",
+  "question": "Choose the synonym of BLAME.",
+  "options": [
+   "Approve",
+   "Pardon",
+   "Praise",
+   "Censure"
+  ],
+  "correct": 3,
+  "reason": "Blame means to hold someone responsible for a fault, similar to censure.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-45",
+  "question": "Choose the synonym of EFFICIENCY.",
+  "options": [
+   "Potency",
+   "Weakness",
+   "Waste",
+   "Laziness"
+  ],
+  "correct": 0,
+  "reason": "Efficiency means effectiveness or power to produce results, similar to potency.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-46",
+  "question": "Choose the synonym of COMPLEX.",
+  "options": [
+   "Easy",
+   "Plain",
+   "Simple",
+   "Complicated"
+  ],
+  "correct": 3,
+  "reason": "Complex means having many connected parts, i.e. complicated.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-47",
+  "question": "Choose the synonym of LACK.",
+  "options": [
+   "Abundance",
+   "Deficiency",
+   "Excess",
+   "Plenty"
+  ],
+  "correct": 1,
+  "reason": "Lack means not having enough, i.e. deficiency.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-48",
+  "question": "Choose the synonym of SIN.",
+  "options": [
+   "Crime",
+   "Goodness",
+   "Virtue",
+   "Merit"
+  ],
+  "correct": 0,
+  "reason": "Sin means a wrong or immoral act, similar to crime.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-49",
+  "question": "Choose the synonym of SILLY.",
+  "options": [
+   "Clever",
+   "Foolish",
+   "Wise",
+   "Sensible"
+  ],
+  "correct": 1,
+  "reason": "Silly means lacking good sense, i.e. foolish.",
+  "count": 1,
+  "note": "Fixed: source had 'Peace' (wrong); used 'Foolish'."
+ },
+ {
+  "src": "sa-50",
+  "question": "Choose the synonym of AGREEABLE.",
+  "options": [
+   "Opposed",
+   "Hostile",
+   "Conformable",
+   "Contrary"
+  ],
+  "correct": 2,
+  "reason": "Agreeable means willing to agree or fit in, similar to conformable.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-51",
+  "question": "Choose the synonym of DECIDE.",
+  "options": [
+   "Hesitate",
+   "Waver",
+   "Doubt",
+   "Determine"
+  ],
+  "correct": 3,
+  "reason": "Decide means to make up one's mind, i.e. determine.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-52",
+  "question": "Choose the synonym of REASON.",
+  "options": [
+   "Argue",
+   "Ignore",
+   "Accede",
+   "Obey"
+  ],
+  "correct": 0,
+  "reason": "Reason (verb) means to think logically or put forward arguments, i.e. argue.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-53",
+  "question": "Choose the synonym of URGE.",
+  "options": [
+   "Discourage",
+   "Deter",
+   "Restrain",
+   "Incite"
+  ],
+  "correct": 3,
+  "reason": "Urge means to push someone strongly to act, similar to incite.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-54",
+  "question": "Choose the synonym of SCOLD.",
+  "options": [
+   "Praise",
+   "Commend",
+   "Reprove",
+   "Flatter"
+  ],
+  "correct": 2,
+  "reason": "Scold means to speak angrily to someone for a fault, i.e. reprove.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-55",
+  "question": "Choose the synonym of DILIGENT.",
+  "options": [
+   "Industrious",
+   "Idle",
+   "Lazy",
+   "Careless"
+  ],
+  "correct": 0,
+  "reason": "Diligent means hard-working and careful, i.e. industrious.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-56",
+  "question": "Choose the synonym of EMPTY.",
+  "options": [
+   "Crowded",
+   "Full",
+   "Occupied",
+   "Vacant"
+  ],
+  "correct": 3,
+  "reason": "Empty means containing nothing, i.e. vacant.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-57",
+  "question": "Choose the synonym of WICKED.",
+  "options": [
+   "Virtuous",
+   "Evil",
+   "Kind",
+   "Noble"
+  ],
+  "correct": 1,
+  "reason": "Wicked means morally bad, i.e. evil.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-58",
+  "question": "Choose the synonym of WILD.",
+  "options": [
+   "Savage",
+   "Gentle",
+   "Civilized",
+   "Tame"
+  ],
+  "correct": 0,
+  "reason": "Wild means untamed and fierce, i.e. savage.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-59",
+  "question": "Choose the synonym of TENDENCY.",
+  "options": [
+   "Dislike",
+   "Leaning",
+   "Reluctance",
+   "Aversion"
+  ],
+  "correct": 1,
+  "reason": "Tendency means a natural inclination, i.e. leaning.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-60",
+  "question": "Choose the synonym of ACHIEVEMENT.",
+  "options": [
+   "Defeat",
+   "Failure",
+   "Loss",
+   "Accomplishment"
+  ],
+  "correct": 3,
+  "reason": "Achievement means something done successfully, i.e. accomplishment.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-61",
+  "question": "Choose the synonym of DANGER.",
+  "options": [
+   "Shelter",
+   "Safety",
+   "Risk",
+   "Security"
+  ],
+  "correct": 2,
+  "reason": "Danger means the possibility of harm, i.e. risk.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-62",
+  "question": "Choose the synonym of DETERMINATION.",
+  "options": [
+   "Weakness",
+   "Hesitation",
+   "Doubt",
+   "Resolution"
+  ],
+  "correct": 3,
+  "reason": "Determination means firmness of purpose, i.e. resolution.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-63",
+  "question": "Choose the synonym of EFFICIENCY.",
+  "options": [
+   "Capability",
+   "Inability",
+   "Idleness",
+   "Weakness"
+  ],
+  "correct": 0,
+  "reason": "Efficiency means the ability to work well, i.e. capability.",
+  "count": 1,
+  "note": "Fixed: source line 'Efficiency, capability' (comma instead of full stop)."
+ },
+ {
+  "src": "sa-64",
+  "question": "Choose the synonym of APPROVAL.",
+  "options": [
+   "Consent",
+   "Rejection",
+   "Denial",
+   "Refusal"
+  ],
+  "correct": 0,
+  "reason": "Approval means agreeing to something, i.e. consent.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-65",
+  "question": "Choose the synonym of AFFECTION.",
+  "options": [
+   "Anger",
+   "Dislike",
+   "Hatred",
+   "Love"
+  ],
+  "correct": 3,
+  "reason": "Affection means a feeling of fondness, i.e. love.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-66",
+  "question": "Choose the synonym of ABUSE.",
+  "options": [
+   "Respect",
+   "Praise",
+   "Honour",
+   "Reproach"
+  ],
+  "correct": 3,
+  "reason": "Abuse means insulting or harsh words, similar to reproach.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-67",
+  "question": "Choose the synonym of DISCLOSE.",
+  "options": [
+   "Reveal",
+   "Hide",
+   "Cover",
+   "Conceal"
+  ],
+  "correct": 0,
+  "reason": "Disclose means to make known, i.e. reveal.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-68",
+  "question": "Choose the synonym of NEED.",
+  "options": [
+   "Want",
+   "Surplus",
+   "Luxury",
+   "Plenty"
+  ],
+  "correct": 0,
+  "reason": "Need means a lack of something necessary, i.e. want.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-69",
+  "question": "Choose the synonym of LOWER.",
+  "options": [
+   "Debase",
+   "Elevate",
+   "Raise",
+   "Uplift"
+  ],
+  "correct": 0,
+  "reason": "Lower means to reduce in value or dignity, i.e. debase.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-70",
+  "question": "Choose the synonym of WANT.",
+  "options": [
+   "Wealth",
+   "Comfort",
+   "Excess",
+   "Need"
+  ],
+  "correct": 3,
+  "reason": "Want means lack of something required, i.e. need.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-71",
+  "question": "Choose the synonym of PROGRESS.",
+  "options": [
+   "Advance",
+   "Regress",
+   "Decline",
+   "Retreat"
+  ],
+  "correct": 0,
+  "reason": "Progress means forward movement, i.e. advance.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-72",
+  "question": "Choose the synonym of SHY.",
+  "options": [
+   "Confident",
+   "Bashful",
+   "Outgoing",
+   "Bold"
+  ],
+  "correct": 1,
+  "reason": "Shy means timid in front of others, i.e. bashful.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-73",
+  "question": "Choose the synonym of HUMBLE.",
+  "options": [
+   "Proud",
+   "Vain",
+   "Arrogant",
+   "Meek"
+  ],
+  "correct": 3,
+  "reason": "Humble means modest and not proud, similar to meek.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-74",
+  "question": "Choose the synonym of NERVOUS.",
+  "options": [
+   "Bold",
+   "Calm",
+   "Timorous",
+   "Brave"
+  ],
+  "correct": 2,
+  "reason": "Nervous means easily frightened or anxious, similar to timorous.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-75",
+  "question": "Choose the synonym of TROTH.",
+  "options": [
+   "Doubt",
+   "Betrayal",
+   "Faith",
+   "Treachery"
+  ],
+  "correct": 2,
+  "reason": "Troth is an old word for a pledge of loyalty, i.e. faith.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-76",
+  "question": "Choose the synonym of EQUAL.",
+  "options": [
+   "Uniform",
+   "Different",
+   "Unequal",
+   "Uneven"
+  ],
+  "correct": 0,
+  "reason": "Equal means the same in amount or quality, similar to uniform.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-77",
+  "question": "Choose the synonym of OWN.",
+  "options": [
+   "Disclaim",
+   "Reject",
+   "Acknowledge",
+   "Deny"
+  ],
+  "correct": 2,
+  "reason": "Own (verb) means to admit something, i.e. acknowledge.",
+  "count": 1,
+  "note": "Fixed form: 'Acknowledged' to 'Acknowledge'."
+ },
+ {
+  "src": "sa-78",
+  "question": "Choose the synonym of NEGLECT.",
+  "options": [
+   "Care",
+   "Attention",
+   "Negligence",
+   "Diligence"
+  ],
+  "correct": 2,
+  "reason": "Neglect means failure to give proper care, i.e. negligence.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-79",
+  "question": "Choose the synonym of GODLY.",
+  "options": [
+   "Pious",
+   "Wicked",
+   "Irreligious",
+   "Sinful"
+  ],
+  "correct": 0,
+  "reason": "Godly means devoted to God, i.e. pious.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-80",
+  "question": "Choose the synonym of MOB.",
+  "options": [
+   "Crowd",
+   "Loner",
+   "Few",
+   "Individual"
+  ],
+  "correct": 0,
+  "reason": "Mob means a large disorderly group of people, i.e. crowd.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-81",
+  "question": "Choose the synonym of MOAT.",
+  "options": [
+   "Ditch",
+   "Hill",
+   "Mound",
+   "Wall"
+  ],
+  "correct": 0,
+  "reason": "A moat is a deep water-filled trench around a castle, i.e. a ditch.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-82",
+  "question": "Choose the synonym of DISPERSE.",
+  "options": [
+   "Collect",
+   "Scatter",
+   "Assemble",
+   "Gather"
+  ],
+  "correct": 1,
+  "reason": "Disperse means to spread in different directions, i.e. scatter.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-83",
+  "question": "Choose the synonym of INCREMENT.",
+  "options": [
+   "Decrease",
+   "Decline",
+   "Reduction",
+   "Increase"
+  ],
+  "correct": 3,
+  "reason": "Increment means an increase or addition, i.e. increase.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-84",
+  "question": "Choose the synonym of RESCIND.",
+  "options": [
+   "Cancel",
+   "Enact",
+   "Approve",
+   "Confirm"
+  ],
+  "correct": 0,
+  "reason": "Rescind means to take back or annul, i.e. cancel.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-85",
+  "question": "Choose the synonym of QUIT.",
+  "options": [
+   "Stay",
+   "Leave",
+   "Join",
+   "Remain"
+  ],
+  "correct": 1,
+  "reason": "Quit means to go away from or give up, i.e. leave.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-86",
+  "question": "Choose the synonym of LAUD.",
+  "options": [
+   "Praise",
+   "Blame",
+   "Condemn",
+   "Criticize"
+  ],
+  "correct": 0,
+  "reason": "Laud means to praise highly.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-87",
+  "question": "Choose the synonym of LUCK.",
+  "options": [
+   "Effort",
+   "Plan",
+   "Lot",
+   "Labour"
+  ],
+  "correct": 2,
+  "reason": "Luck means fortune or chance, similar to lot (one's fate).",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-88",
+  "question": "Choose the synonym of COLLAPSE.",
+  "options": [
+   "Build up",
+   "Recover",
+   "Break down",
+   "Rise"
+  ],
+  "correct": 2,
+  "reason": "Collapse means to fall down or fail suddenly, i.e. break down.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-89",
+  "question": "Choose the synonym of CURB.",
+  "options": [
+   "Release",
+   "Encourage",
+   "Restrain",
+   "Free"
+  ],
+  "correct": 2,
+  "reason": "Curb means to control or limit, i.e. restrain.",
+  "count": 1,
+  "note": ""
+ },
+ {
+  "src": "sa-90",
+  "question": "Choose the synonym of FERVOUR.",
+  "options": [
+   "Indifference",
+   "Coldness",
+   "Zeal",
+   "Apathy"
+  ],
+  "correct": 2,
+  "reason": "Fervour means intense passion, i.e. zeal.",
+  "count": 1,
+  "note": ""
+ }
+]
