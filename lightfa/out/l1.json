@@ -1,0 +1,737 @@
+[
+ {
+  "question": "Tarbela Dam is built on the River Indus in which district of Khyber Pakhtunkhwa?",
+  "options": [
+   "Haripur",
+   "Swabi",
+   "Mansehra",
+   "Kohat"
+  ],
+  "correct": 0,
+  "why": "Tarbela Dam is on the River Indus in Haripur District, KP. Swabi lies across the river and Kohat has the small Tanda Dam, while Mansehra has no big dam.",
+  "rel": "Tarbela is the largest earth-filled dam in the world, completed in 1976. Mangla Dam is on the River Jhelum in Azad Kashmir.",
+  "rep": 0,
+  "src": "lc100 2",
+  "note": ""
+ },
+ {
+  "question": "Mangla Dam is built on which river?",
+  "options": [
+   "River Indus",
+   "River Jhelum",
+   "River Chenab",
+   "River Ravi"
+  ],
+  "correct": 1,
+  "why": "Mangla Dam is on the River Jhelum in Mirpur, Azad Kashmir. The Indus has Tarbela, the Chenab and Ravi have no big storage dam in Pakistan.",
+  "rel": "Mangla Dam was completed in 1967. Tarbela Dam is on the River Indus.",
+  "rep": 0,
+  "src": "lc100 3",
+  "note": ""
+ },
+ {
+  "question": "Which is the largest (longest) river of Pakistan?",
+  "options": [
+   "Jhelum River",
+   "Chenab River",
+   "Indus River",
+   "Kabul River"
+  ],
+  "correct": 2,
+  "why": "The Indus is about 3,180 km long and flows through all of Pakistan to the Arabian Sea. Jhelum, Chenab and Kabul are its smaller tributaries.",
+  "rel": "The Indus starts in Tibet near Lake Mansarovar. It falls into the Arabian Sea near Thatta, Sindh.",
+  "rep": 0,
+  "src": "lc100 4",
+  "note": ""
+ },
+ {
+  "question": "Which is the longest river of Asia?",
+  "options": [
+   "Ganges",
+   "Indus",
+   "Mekong",
+   "Yangtze"
+  ],
+  "correct": 3,
+  "why": "The Yangtze in China is about 6,300 km long, the longest in Asia and third in the world. The Ganges, Indus and Mekong are all much shorter.",
+  "rel": "The Nile is the longest river in the world. The Three Gorges Dam is on the Yangtze.",
+  "rep": 0,
+  "src": "lc100 5",
+  "note": ""
+ },
+ {
+  "question": "Which river is commonly called the shortest river of the world?",
+  "options": [
+   "Roe River",
+   "Danube River",
+   "Thames River",
+   "Volga River"
+  ],
+  "correct": 0,
+  "why": "The Roe River in Montana, USA, is only about 61 m long and is known as the shortest river. The Danube, Thames and Volga are long rivers of Europe.",
+  "rel": "The Roe River flows into the Missouri River. The Volga is the longest river of Europe.",
+  "rep": 0,
+  "src": "lc100 6",
+  "note": ""
+ },
+ {
+  "question": "Which is the largest ocean of the world?",
+  "options": [
+   "Atlantic Ocean",
+   "Pacific Ocean",
+   "Indian Ocean",
+   "Arctic Ocean"
+  ],
+  "correct": 1,
+  "why": "The Pacific is the largest ocean, covering about one third of the Earth. The Atlantic is second, the Indian third and the Arctic is the smallest.",
+  "rel": "The Pacific is also the deepest ocean. The Mariana Trench is in the Pacific.",
+  "rep": 0,
+  "src": "lc100 7",
+  "note": ""
+ },
+ {
+  "question": "Which is the smallest ocean of the world?",
+  "options": [
+   "Indian Ocean",
+   "Southern Ocean",
+   "Arctic Ocean",
+   "Atlantic Ocean"
+  ],
+  "correct": 2,
+  "why": "The Arctic Ocean around the North Pole is the smallest and shallowest ocean. The Indian, Southern and Atlantic Oceans are all bigger.",
+  "rel": "The Pacific is the largest ocean. The Arctic Ocean is covered by ice for most of the year.",
+  "rep": 0,
+  "src": "lc100 8",
+  "note": ""
+ },
+ {
+  "question": "Which is the deepest ocean of the world?",
+  "options": [
+   "Atlantic Ocean",
+   "Indian Ocean",
+   "Arctic Ocean",
+   "Pacific Ocean"
+  ],
+  "correct": 3,
+  "why": "The Pacific is the deepest ocean; its Mariana Trench (Challenger Deep) is about 11,000 m deep. The Atlantic, Indian and Arctic are shallower.",
+  "rel": "Challenger Deep in the Mariana Trench is the deepest point on Earth. The Arctic is the shallowest ocean.",
+  "rep": 0,
+  "src": "lc100 9",
+  "note": ""
+ },
+ {
+  "question": "Which is the smallest country of the world?",
+  "options": [
+   "Vatican City",
+   "Monaco",
+   "Nauru",
+   "San Marino"
+  ],
+  "correct": 0,
+  "why": "Vatican City in Rome is only about 0.44 sq km, the smallest country. Monaco is second smallest, and Nauru and San Marino are bigger.",
+  "rel": "Vatican City is the home of the Pope. Russia is the largest country by area.",
+  "rep": 0,
+  "src": "lc100 10",
+  "note": ""
+ },
+ {
+  "question": "Which country has no official capital city?",
+  "options": [
+   "Monaco",
+   "Nauru",
+   "Tuvalu",
+   "Maldives"
+  ],
+  "correct": 1,
+  "why": "Nauru, a small island country in the Pacific, has no official capital; government offices are in Yaren District. Tuvalu's capital is Funafuti, the Maldives' is Male, and Monaco is a city-state.",
+  "rel": "Nauru is the third smallest country by area. Yaren is called its de facto capital.",
+  "rep": 0,
+  "src": "lc100 11",
+  "note": ""
+ },
+ {
+  "question": "Which country is called the Land of the Rising Sun?",
+  "options": [
+   "China",
+   "South Korea",
+   "Japan",
+   "Thailand"
+  ],
+  "correct": 2,
+  "why": "Japan is called the Land of the Rising Sun because it is in the far east, where the sun rises first. China, South Korea and Thailand have other titles.",
+  "rel": "Thailand is called the Land of White Elephants. Norway is called the Land of the Midnight Sun.",
+  "rep": 0,
+  "src": "lc100 12",
+  "note": ""
+ },
+ {
+  "question": "Which country has the largest number of satellites in space?",
+  "options": [
+   "Russia",
+   "China",
+   "India",
+   "United States"
+  ],
+  "correct": 3,
+  "why": "The United States has by far the most active satellites, mostly due to SpaceX Starlink. China is second, while Russia and India have far fewer.",
+  "rel": "The first artificial satellite, Sputnik 1, was launched by the USSR in 1957. Pakistan's first satellite was Badr-1 in 1990.",
+  "rep": 0,
+  "src": "lc100 13",
+  "note": ""
+ },
+ {
+  "question": "Who is the Chief Minister of Sindh (October 2026)?",
+  "options": [
+   "Syed Murad Ali Shah",
+   "Qaim Ali Shah",
+   "Sharjeel Inam Memon",
+   "Kamran Tessori"
+  ],
+  "correct": 0,
+  "why": "Syed Murad Ali Shah of PPP became CM Sindh for a third time in February 2024 and still holds the post. Qaim Ali Shah is a former CM, Sharjeel Memon is a Sindh minister and Kamran Tessori is the Governor.",
+  "rel": "Kamran Tessori is the Governor of Sindh. Karachi is the capital of Sindh.",
+  "rep": 0,
+  "src": "lc100 14",
+  "note": ""
+ },
+ {
+  "question": "Since 11 October 2026, Khyber Pakhtunkhwa has been under Governor's Rule. Who is running the province as Governor?",
+  "options": [
+   "Ali Amin Gandapur",
+   "Faisal Karim Kundi",
+   "Sohail Afridi",
+   "Haji Ghulam Ali"
+  ],
+  "correct": 1,
+  "why": "On 11 October 2026 the President imposed emergency and Governor's Rule in KP, and Governor Faisal Karim Kundi took over the provincial government. Ali Amin Gandapur resigned as CM in October 2025, Sohail Afridi was CM until 11 October 2026, and Haji Ghulam Ali is a former Governor.",
+  "rel": "Governor's Rule was imposed under Articles 232 and 234 of the Constitution. Sohail Afridi was CM KP from 15 October 2025 to 11 October 2026.",
+  "rep": 0,
+  "src": "lc100 15",
+  "note": "PDF said CM KPK is Ali Amin Gandapur; outdated. He resigned in Oct 2025, Sohail Afridi became CM, and since 11 Oct 2026 KP is under Governor's Rule (Governor Faisal Karim Kundi)."
+ },
+ {
+  "question": "Who is the Chief Minister of Punjab (October 2026)?",
+  "options": [
+   "Hamza Shehbaz",
+   "Usman Buzdar",
+   "Maryam Nawaz Sharif",
+   "Mohsin Naqvi"
+  ],
+  "correct": 2,
+  "why": "Maryam Nawaz Sharif of PML-N became CM Punjab in February 2024 and is the first woman CM of any province. Hamza Shehbaz and Usman Buzdar are former CMs, and Mohsin Naqvi was caretaker CM.",
+  "rel": "Sardar Saleem Haider Khan is the Governor of Punjab. Lahore is the capital of Punjab.",
+  "rep": 0,
+  "src": "lc100 16",
+  "note": ""
+ },
+ {
+  "question": "Who is the Chief Minister of Balochistan (October 2026)?",
+  "options": [
+   "Abdul Qudus Bizenjo",
+   "Jam Kamal Khan",
+   "Ali Mardan Domki",
+   "Mir Sarfraz Bugti"
+  ],
+  "correct": 3,
+  "why": "Mir Sarfraz Bugti of PPP was elected CM Balochistan unopposed in March 2024 and still holds the post. Bizenjo and Jam Kamal are former CMs and Ali Mardan Domki was caretaker CM in 2023-24.",
+  "rel": "Jaffar Khan Mandokhail is the Governor of Balochistan. Quetta is the capital of Balochistan.",
+  "rep": 0,
+  "src": "lc100 17",
+  "note": ""
+ },
+ {
+  "question": "The Rann of Kutch lies on the border of India and which province of Pakistan?",
+  "options": [
+   "Sindh",
+   "Punjab",
+   "Balochistan",
+   "Khyber Pakhtunkhwa"
+  ],
+  "correct": 0,
+  "why": "The Rann of Kutch is a salt marsh between Sindh (Pakistan) and Gujarat (India). Punjab, Balochistan and KP do not touch it.",
+  "rel": "Pakistan and India fought over the Rann of Kutch in 1965; a tribunal settled it in 1968. Sir Creek is also on the Sindh-Gujarat border.",
+  "rep": 0,
+  "src": "lc100 18",
+  "note": ""
+ },
+ {
+  "question": "What is the name of the border line between Pakistan and India?",
+  "options": [
+   "Durand Line",
+   "Radcliffe Line",
+   "McMahon Line",
+   "Line of Actual Control"
+  ],
+  "correct": 1,
+  "why": "The Radcliffe Line was drawn by Sir Cyril Radcliffe in 1947 to divide Punjab and Bengal. The Durand Line is the Pak-Afghan border, the McMahon Line is India-China, and the LAC is also India-China.",
+  "rel": "The Line of Control (LOC) divides Kashmir between Pakistan and India. The Radcliffe Award was announced on 17 August 1947.",
+  "rep": 0,
+  "src": "lc100 19",
+  "note": ""
+ },
+ {
+  "question": "What is the name of the border line between India and China?",
+  "options": [
+   "Radcliffe Line",
+   "Durand Line",
+   "McMahon Line",
+   "Oder-Neisse Line"
+  ],
+  "correct": 2,
+  "why": "The McMahon Line was drawn in 1914 at the Simla Conference and is the India-China border in the east. The Radcliffe Line is Pak-India, the Durand Line is Pak-Afghan, and the Oder-Neisse Line is Germany-Poland.",
+  "rel": "The Durand Line was drawn in 1893. The McMahon Line is named after Sir Henry McMahon.",
+  "rep": 0,
+  "src": "lc100 20",
+  "note": ""
+ },
+ {
+  "question": "What is the name of the border line between Pakistan and Afghanistan?",
+  "options": [
+   "Radcliffe Line",
+   "McMahon Line",
+   "Maginot Line",
+   "Durand Line"
+  ],
+  "correct": 3,
+  "why": "The Durand Line was drawn in 1893 by Sir Mortimer Durand and is about 2,640 km long. The Radcliffe Line is Pak-India, the McMahon Line is India-China, and the Maginot Line was a French defence line.",
+  "rel": "The Durand Line agreement was signed with Amir Abdur Rahman Khan. Torkham and Chaman are major crossings on it.",
+  "rep": 0,
+  "src": "lc100 21",
+  "note": ""
+ },
+ {
+  "question": "What is the real cube root of unity?",
+  "options": [
+   "1",
+   "0",
+   "-1",
+   "2"
+  ],
+  "correct": 0,
+  "why": "The cube roots of unity are 1, omega and omega squared; only 1 is real, because 1 x 1 x 1 = 1. 0 and 2 cubed are not 1, and -1 cubed is -1.",
+  "rel": "The sum of the three cube roots of unity is 0. Their product is 1.",
+  "rep": 0,
+  "src": "lc100 22",
+  "note": "PDF entry 'Cube root of unity: 1' was unclear; framed as the real cube root of unity."
+ },
+ {
+  "question": "Who wrote the famous book Kitab-ul-Umm?",
+  "options": [
+   "Imam Abu Hanifa",
+   "Imam Shafi'i",
+   "Imam Malik",
+   "Imam Ghazali"
+  ],
+  "correct": 1,
+  "why": "Kitab-ul-Umm is the main fiqh book of Imam Muhammad bin Idris al-Shafi'i. Imam Malik wrote Al-Muwatta, Imam Ghazali wrote Ihya Ulum al-Din, and Abu Hanifa left no such book.",
+  "rel": "Imam Shafi'i also wrote Al-Risala on usul al-fiqh. Imam Malik wrote Al-Muwatta.",
+  "rep": 0,
+  "src": "lc100 23",
+  "note": ""
+ },
+ {
+  "question": "Who wrote Zabur-e-Ajam?",
+  "options": [
+   "Mirza Ghalib",
+   "Altaf Hussain Hali",
+   "Allama Iqbal",
+   "Faiz Ahmed Faiz"
+  ],
+  "correct": 2,
+  "why": "Zabur-e-Ajam (1927) is a Persian poetry book of Allama Muhammad Iqbal. Ghalib, Hali and Faiz wrote other works.",
+  "rel": "Iqbal's first Urdu book was Bang-e-Dra (1924). His first Persian book was Asrar-e-Khudi (1915).",
+  "rep": 0,
+  "src": "lc100 24",
+  "note": ""
+ },
+ {
+  "question": "Who wrote Hayat-e-Javed, the biography of Sir Syed Ahmad Khan?",
+  "options": [
+   "Shibli Nomani",
+   "Deputy Nazir Ahmad",
+   "Allama Iqbal",
+   "Altaf Hussain Hali"
+  ],
+  "correct": 3,
+  "why": "Hayat-e-Javed (1901) is Maulana Altaf Hussain Hali's biography of Sir Syed. Shibli wrote Seerat-un-Nabi, Nazir Ahmad wrote Mirat-ul-Uroos, and Iqbal wrote poetry.",
+  "rel": "Hali also wrote Musaddas-e-Hali and Yadgar-e-Ghalib. Hayat-e-Saadi is also by Hali.",
+  "rep": 0,
+  "src": "lc100 25",
+  "note": ""
+ },
+ {
+  "question": "Which country hosted the first Asian Games?",
+  "options": [
+   "India",
+   "Japan",
+   "Pakistan",
+   "Philippines"
+  ],
+  "correct": 0,
+  "why": "The first Asian Games were held in New Delhi, India, in 1951. Manila (Philippines) hosted the second in 1954 and Tokyo (Japan) the third in 1958; Pakistan has never hosted them.",
+  "rel": "The first Asian Games were held in March 1951. The Asian Games are held every four years.",
+  "rep": 0,
+  "src": "lc100 26",
+  "note": ""
+ },
+ {
+  "question": "In which year were the first Asian Games held?",
+  "options": [
+   "1948",
+   "1951",
+   "1954",
+   "1962"
+  ],
+  "correct": 1,
+  "why": "The first Asian Games were held in New Delhi in March 1951. 1954 was the second Games in Manila, 1962 was in Jakarta, and 1948 was the London Olympics year.",
+  "rel": "The idea of the Asian Games was given by Guru Dutt Sondhi of India. The 2026 Asian Games are in Aichi-Nagoya, Japan.",
+  "rep": 0,
+  "src": "lc100 27",
+  "note": ""
+ },
+ {
+  "question": "The Leaning Tower of Pisa is in which country?",
+  "options": [
+   "France",
+   "Spain",
+   "Italy",
+   "Greece"
+  ],
+  "correct": 2,
+  "why": "The Leaning Tower of Pisa is in the city of Pisa, Italy; it is the bell tower of Pisa Cathedral. France, Spain and Greece have other famous landmarks.",
+  "rel": "The Eiffel Tower is in Paris, France. The Colosseum is in Rome, Italy.",
+  "rep": 0,
+  "src": "lc100 28",
+  "note": ""
+ },
+ {
+  "question": "Where was Hazrat Muhammad (SAW) born?",
+  "options": [
+   "Madinah",
+   "Taif",
+   "Jerusalem",
+   "Makkah"
+  ],
+  "correct": 3,
+  "why": "The Holy Prophet (SAW) was born in Makkah in 571 CE, the Year of the Elephant. He migrated to Madinah in 622 CE, visited Taif to preach, and Jerusalem is linked to the Miraj.",
+  "rel": "He was born in Banu Hashim of the Quraysh. He passed away in Madinah in 632 CE.",
+  "rep": 0,
+  "src": "lc100 29",
+  "note": ""
+ },
+ {
+  "question": "Who looked after Hazrat Muhammad (SAW) in his childhood as his foster mother?",
+  "options": [
+   "Hazrat Halima Sadia",
+   "Hazrat Amina",
+   "Hazrat Khadija",
+   "Hazrat Fatima"
+  ],
+  "correct": 0,
+  "why": "Hazrat Halima Sadia of Banu Saad nursed and raised him in the desert as a child. Hazrat Amina was his own mother, Khadija his first wife and Fatima his daughter.",
+  "rel": "Hazrat Amina passed away at Abwa when he was six. Umm Ayman (Barakah) also cared for him.",
+  "rep": 0,
+  "src": "lc100 30",
+  "note": ""
+ },
+ {
+  "question": "Who was the first wife of Hazrat Muhammad (SAW)?",
+  "options": [
+   "Hazrat Aisha",
+   "Hazrat Khadija",
+   "Hazrat Sauda",
+   "Hazrat Hafsa"
+  ],
+  "correct": 1,
+  "why": "He married Hazrat Khadija (RA) at age 25 when she was 40; she was also the first person to accept Islam. Sauda, Aisha and Hafsa were married later.",
+  "rel": "Hazrat Khadija passed away in the Year of Sorrow (Aam-ul-Huzn). Hazrat Sauda was his second wife.",
+  "rep": 0,
+  "src": "lc100 31",
+  "note": ""
+ },
+ {
+  "question": "What is the height of K2, the second highest mountain of the world?",
+  "options": [
+   "8,848 metres",
+   "8,126 metres",
+   "8,611 metres",
+   "7,708 metres"
+  ],
+  "correct": 2,
+  "why": "K2 is 8,611 m high and is the highest peak in Pakistan. 8,848 m is Mount Everest, 8,126 m is Nanga Parbat, and 7,708 m is Tirich Mir.",
+  "rel": "K2 is in the Karakoram Range in Gilgit-Baltistan. It is also called Mount Godwin-Austen.",
+  "rep": 0,
+  "src": "lc100 32",
+  "note": ""
+ },
+ {
+  "question": "What is another name of K2?",
+  "options": [
+   "Killer Mountain",
+   "Mount Everest",
+   "Rakaposhi",
+   "Mount Godwin-Austen"
+  ],
+  "correct": 3,
+  "why": "K2 is also called Mount Godwin-Austen, after the British surveyor Henry Godwin-Austen; locally it is Chhogori. Killer Mountain is Nanga Parbat, Everest is in Nepal, and Rakaposhi is another peak.",
+  "rel": "Nanga Parbat is called the Killer Mountain. K2 is also called the Savage Mountain.",
+  "rep": 0,
+  "src": "lc100 33",
+  "note": ""
+ },
+ {
+  "question": "What is the value of log 1 (logarithm of unity)?",
+  "options": [
+   "0",
+   "1",
+   "10",
+   "Undefined"
+  ],
+  "correct": 0,
+  "why": "Log of 1 is 0 in any base, because any base raised to power 0 equals 1. Log 10 to base 10 is 1, and log 0 is undefined.",
+  "rel": "log of the base itself is 1 (for example log10 of 10 = 1). Log of zero is undefined.",
+  "rep": 0,
+  "src": "lc100 34",
+  "note": ""
+ },
+ {
+  "question": "In which year was the first countrywide Martial Law imposed in Pakistan?",
+  "options": [
+   "1956",
+   "1958",
+   "1969",
+   "1977"
+  ],
+  "correct": 1,
+  "why": "On 7 October 1958 President Iskander Mirza imposed Martial Law and made General Ayub Khan Chief Martial Law Administrator. 1969 (Yahya Khan) and 1977 (Zia-ul-Haq) were later martial laws, and 1956 was the year of the first Constitution.",
+  "rel": "Ayub Khan removed Iskander Mirza on 27 October 1958. A limited martial law was imposed in Lahore in 1953.",
+  "rep": 0,
+  "src": "lc100 35",
+  "note": ""
+ },
+ {
+  "question": "Which is the biggest bird of the world?",
+  "options": [
+   "Emu",
+   "Albatross",
+   "Ostrich",
+   "Condor"
+  ],
+  "correct": 2,
+  "why": "The ostrich is the largest and heaviest living bird and cannot fly. The emu is second tallest, and the albatross and condor are big flying birds.",
+  "rel": "The ostrich also lays the largest egg. The wandering albatross has the largest wingspan.",
+  "rep": 0,
+  "src": "lc100 36",
+  "note": ""
+ },
+ {
+  "question": "Which is the smallest bird of the world?",
+  "options": [
+   "Sparrow",
+   "Kiwi",
+   "Swift",
+   "Hummingbird"
+  ],
+  "correct": 3,
+  "why": "The bee hummingbird of Cuba is the smallest bird, about 5 cm long. Sparrows, kiwis and swifts are all much bigger.",
+  "rel": "Hummingbirds can fly backwards. The ostrich is the largest bird.",
+  "rep": 0,
+  "src": "lc100 37",
+  "note": ""
+ },
+ {
+  "question": "Which is the fastest bird of the world?",
+  "options": [
+   "Peregrine Falcon",
+   "Ostrich",
+   "Golden Eagle",
+   "Hummingbird"
+  ],
+  "correct": 0,
+  "why": "The peregrine falcon dives at over 320 km/h and is the fastest bird (and animal). The ostrich is the fastest runner but cannot fly; the golden eagle is fast but slower; the hummingbird is tiny.",
+  "rel": "The swift is among the fastest in level flight. The cheetah is the fastest land animal.",
+  "rep": 0,
+  "src": "lc100 38",
+  "note": "PDF said Swift; the standard answer is Peregrine Falcon (fastest in a dive). Swifts are only among the fastest in level flight."
+ },
+ {
+  "question": "The kiwi bird is found in which country?",
+  "options": [
+   "Australia",
+   "New Zealand",
+   "South Africa",
+   "Brazil"
+  ],
+  "correct": 1,
+  "why": "The kiwi is a flightless bird found only in New Zealand and is its national symbol. Australia has the emu, and South Africa and Brazil have no kiwis.",
+  "rel": "New Zealanders are nicknamed Kiwis. The emu is the national bird of Australia.",
+  "rep": 0,
+  "src": "lc100 39",
+  "note": ""
+ },
+ {
+  "question": "In which year did the Khilafat Movement start?",
+  "options": [
+   "1906",
+   "1916",
+   "1919",
+   "1924"
+  ],
+  "correct": 2,
+  "why": "The Khilafat Movement was started in 1919 by Indian Muslims, led by the Ali Brothers, to protect the Ottoman Caliphate. 1906 is the founding of the Muslim League, 1916 the Lucknow Pact, and 1924 the end of the Caliphate.",
+  "rel": "Mustafa Kemal Ataturk abolished the Caliphate in 1924. The Hijrat Movement of 1920 was linked to the Khilafat Movement.",
+  "rep": 0,
+  "src": "lc100 40",
+  "note": ""
+ },
+ {
+  "question": "In which year was the Deoband Movement (Darul Uloom Deoband) started?",
+  "options": [
+   "1857",
+   "1875",
+   "1885",
+   "1866"
+  ],
+  "correct": 3,
+  "why": "Darul Uloom Deoband was founded on 30 May 1866 by Maulana Qasim Nanotvi and Rashid Ahmad Gangohi. 1857 is the War of Independence, 1875 the founding of MAO School Aligarh, and 1885 of the Indian National Congress.",
+  "rel": "The Nadwat-ul-Ulama was founded in Lucknow in 1894. Sir Syed founded the MAO School in 1875.",
+  "rep": 0,
+  "src": "lc100 41",
+  "note": ""
+ },
+ {
+  "question": "When did Gandhi launch the Quit India Movement?",
+  "options": [
+   "8 August 1942",
+   "23 March 1940",
+   "12 March 1930",
+   "3 June 1947"
+  ],
+  "correct": 0,
+  "why": "Congress launched the Quit India Movement on 8 August 1942 in Bombay to demand an end to British rule. 23 March 1940 is the Lahore Resolution, 12 March 1930 the start of the Salt March, and 3 June 1947 the partition plan.",
+  "rel": "Gandhi gave the slogan 'Do or Die' for Quit India. The Cripps Mission came in 1942 too.",
+  "rep": 0,
+  "src": "lc100 42",
+  "note": ""
+ },
+ {
+  "question": "Who started the Faraizi Movement in Bengal?",
+  "options": [
+   "Syed Ahmad Shaheed",
+   "Haji Shariatullah",
+   "Titu Mir",
+   "Shah Waliullah"
+  ],
+  "correct": 1,
+  "why": "Haji Shariatullah started the Faraizi Movement in Bengal in the early 1800s to make Muslims follow the obligatory duties (faraiz). Syed Ahmad Shaheed led the Jihad Movement, Titu Mir fought in Bengal, and Shah Waliullah was an earlier reformer of Delhi.",
+  "rel": "His son Dudu Mian led the Faraizi Movement after him. Shah Waliullah translated the Quran into Persian.",
+  "rep": 0,
+  "src": "lc100 43",
+  "note": ""
+ },
+ {
+  "question": "Who started the Civil Disobedience Movement in 1930?",
+  "options": [
+   "Jawaharlal Nehru",
+   "Subhas Chandra Bose",
+   "Mahatma Gandhi",
+   "Bal Gangadhar Tilak"
+  ],
+  "correct": 2,
+  "why": "Gandhi started the Civil Disobedience Movement in 1930 with the Salt March (Dandi March). Nehru and Bose were Congress leaders but did not launch it, and Tilak died in 1920.",
+  "rel": "The Salt March began on 12 March 1930. The Gandhi-Irwin Pact of 1931 ended this phase.",
+  "rep": 0,
+  "src": "lc100 44",
+  "note": ""
+ },
+ {
+  "question": "In which year was the First Round Table Conference held?",
+  "options": [
+   "1928",
+   "1931",
+   "1932",
+   "1930"
+  ],
+  "correct": 3,
+  "why": "The First Round Table Conference was held in London from November 1930 to January 1931; Congress boycotted it. 1931 was the Second and 1932 the Third conference, and 1928 was the Nehru Report.",
+  "rel": "Quaid-e-Azam attended the First Round Table Conference. Allama Iqbal gave the Allahabad Address in 1930.",
+  "rep": 0,
+  "src": "lc100 45",
+  "note": ""
+ },
+ {
+  "question": "In which year was the Second Round Table Conference held?",
+  "options": [
+   "1931",
+   "1930",
+   "1932",
+   "1935"
+  ],
+  "correct": 0,
+  "why": "The Second Round Table Conference was held in London in 1931, and Gandhi attended it for Congress. 1930 was the First, 1932 the Third, and 1935 the Government of India Act.",
+  "rel": "Allama Iqbal attended the Second and Third conferences. The Communal Award came in 1932.",
+  "rep": 0,
+  "src": "lc100 46",
+  "note": ""
+ },
+ {
+  "question": "In which year was the Third Round Table Conference held?",
+  "options": [
+   "1930",
+   "1932",
+   "1931",
+   "1933"
+  ],
+  "correct": 1,
+  "why": "The Third Round Table Conference was held in London in November-December 1932. 1930 and 1931 were the First and Second, and in 1933 Choudhry Rahmat Ali's pamphlet 'Now or Never' came out.",
+  "rel": "Congress did not attend the Third conference. Its work led to the Government of India Act 1935.",
+  "rep": 0,
+  "src": "lc100 47",
+  "note": ""
+ },
+ {
+  "question": "What is the capital of Malaysia?",
+  "options": [
+   "Putrajaya",
+   "Jakarta",
+   "Kuala Lumpur",
+   "Singapore"
+  ],
+  "correct": 2,
+  "why": "Kuala Lumpur is the official national capital of Malaysia. Putrajaya is only the administrative centre, Jakarta is the capital of Indonesia, and Singapore is a separate country.",
+  "rel": "Malaysia's currency is the Ringgit. The Petronas Twin Towers are in Kuala Lumpur.",
+  "rep": 0,
+  "src": "lc100 48",
+  "note": ""
+ },
+ {
+  "question": "What is the currency of Malaysia?",
+  "options": [
+   "Rupiah",
+   "Baht",
+   "Peso",
+   "Ringgit"
+  ],
+  "correct": 3,
+  "why": "The Malaysian Ringgit (MYR) is the currency of Malaysia. The Rupiah is Indonesia's, the Baht is Thailand's, and the Peso is the Philippines'.",
+  "rel": "Kuala Lumpur is the capital of Malaysia. Singapore uses the Singapore Dollar.",
+  "rep": 0,
+  "src": "lc100 49",
+  "note": ""
+ },
+ {
+  "question": "Which mountain pass connects Pakistan with China?",
+  "options": [
+   "Khunjerab Pass",
+   "Khyber Pass",
+   "Bolan Pass",
+   "Lowari Pass"
+  ],
+  "correct": 0,
+  "why": "The Khunjerab Pass (about 4,693 m) in Gilgit-Baltistan links Pakistan and China on the Karakoram Highway. The Khyber Pass leads to Afghanistan, the Bolan Pass is in Balochistan, and the Lowari Pass links Dir and Chitral.",
+  "rel": "The Karakoram Highway runs through the Khunjerab Pass. The Khyber Pass connects Peshawar with Afghanistan.",
+  "rep": 0,
+  "src": "lc100 50",
+  "note": ""
+ }
+]
