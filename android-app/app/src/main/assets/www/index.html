@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head><script>/*SHELLUPD*/(function(){var V=202610251202,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
+<head><script>/*SHELLUPD*/(function(){var V=202610251231,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
 try{var sv=+L.getItem('shell_v')||0,h=L.getItem('shell_html'),t=+L.getItem('shell_try')||0;
 if(h&&sv>V&&!window.__shellW){if(t>=2){L.removeItem('shell_html');L.removeItem('shell_v');L.removeItem('shell_try')}
 else{L.setItem('shell_try',String(t+1));window.__shellW=1;document.open();document.write(h);document.close();return}}}catch(e){}
@@ -1571,10 +1571,12 @@ html.dark #backBtn{background:rgba(15,23,42,.85);color:#e0e7ff;border-color:rgba
   b.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg><span>Back</span>';
   row.insertBefore(b,row.firstChild);
   function vis(id){var e=document.getElementById(id);return !!e&&!e.classList.contains('hidden')}
-  function atMenu(){return vis('view-select')&&typeof curSec!=='undefined'&&curSec===null}
+  function atMenu(){return vis('view-select')&&typeof curSec!=='undefined'&&curSec===null&&(!window.__landAtHome||window.__landAtHome())}
   function sync(){b.classList.toggle('show',!atMenu())}
+  window.__backSync=sync;
   function performBack(){
     if(window.__aiBackHook&&window.__aiBackHook())return;
+    if(window.__landBack&&window.__landBack()){sync();window.scrollTo(0,0);return}
     if(vis('view-home')||vis('view-quiz')||vis('view-results')){
       if(vis('view-quiz')&&typeof quizActive!=='undefined'&&quizActive){
         if(!confirm('Leave this test? Your progress will be lost.')){history.pushState({n:1},'');return}
@@ -1595,6 +1597,75 @@ html.dark #backBtn{background:rgba(15,23,42,.85);color:#e0e7ff;border-color:rgba
   wrap('showSelect',function(){return false});
   new MutationObserver(sync).observe(document.querySelector('main'),{attributes:true,subtree:true,attributeFilter:['class']});
   sync();
+})();
+</script>
+<style>
+/* main page with the 3 big preparations (colours 95 Shiny Gold, 97 Champagne, 99 Copper of design/palette100.json) */
+#mainLand{display:none;padding-bottom:24px}
+html.landon #mainLand{display:block}
+html.landon #sec-menu{display:none!important}
+#mainLand .lh{text-align:center;margin:4px 0 22px}
+#mainLand .emb{width:64px;height:64px;margin:0 auto 10px;border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:28px;color:#3b2a05;background:linear-gradient(135deg,#b8860b,#ffe9a0 50%,#d4a017);box-shadow:0 10px 24px -8px rgba(184,134,11,.65),inset 0 1px 0 rgba(255,255,255,.7)}
+#mainLand .kick{font-size:12px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:#a16207;margin-bottom:6px}
+#mainLand .rule{width:64px;height:3px;border-radius:3px;margin:12px auto 0;background:linear-gradient(90deg,transparent,#d4a017,transparent)}
+#mainLand .lh h2{font-size:28px;font-weight:800;color:#1e1b4b;margin:0;letter-spacing:-.01em}
+#mainLand .lh p{color:#64748b;margin:6px 0 0;font-size:15px}
+html.dark #mainLand .lh h2{color:#e0e7ff}html.dark #mainLand .lh p{color:#94a3b8}
+.lcard{display:block;width:100%;text-align:left;border:1px solid rgba(255,255,255,.55);border-radius:26px;padding:22px 22px 20px;margin:0 0 18px;cursor:pointer;box-shadow:0 22px 40px -18px rgba(15,23,42,.55),inset 0 1px 0 rgba(255,255,255,.6);position:relative;overflow:hidden;transition:transform .15s}
+.lcard::before{content:'';position:absolute;inset:0;background:radial-gradient(120% 70% at 0% 0%,rgba(255,255,255,.45),transparent 55%);pointer-events:none}
+.lcard::after{content:'';position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-18deg);animation:lSheen 4.5s ease-in-out infinite;pointer-events:none;will-change:transform}
+.lcard.lg2::after{animation-delay:1.5s}.lcard.lg3::after{animation-delay:3s}
+@keyframes lSheen{0%,70%{transform:translateX(0) skewX(-18deg)}100%{transform:translateX(420%) skewX(-18deg)}}
+html.lite .lcard::after{animation-duration:4.5s!important;animation-iteration-count:infinite!important}
+.lcard .bg{position:absolute;right:-10px;bottom:-18px;font-size:120px;opacity:.13;pointer-events:none}
+.lcard .no{position:absolute;top:16px;right:18px;font-size:13px;font-weight:800;letter-spacing:.12em;opacity:.7}
+.lcard .ar{position:absolute;right:18px;bottom:18px;width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.5);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.lg3 .ar{background:rgba(255,255,255,.22)}
+.lcard:active{transform:scale(.985)}
+.lcard .ti{display:flex;align-items:center;gap:12px;font-size:23px;font-weight:800;line-height:1.2}
+.lcard .ti i{font-size:26px;width:46px;height:46px;border-radius:14px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.35);flex:0 0 auto}
+.lcard .su{margin-top:10px;font-size:15px;opacity:.92}
+.lcard .go{margin-top:12px;font-weight:800;font-size:16px}
+.lcard .tag{display:inline-block;margin-top:10px;font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.45)}
+.lg1{background:linear-gradient(120deg,#b8860b,#ffe9a0 50%,#d4a017);color:#3b2a05}
+.lg2{background:linear-gradient(120deg,#d6c08f,#fff8e7 50%,#e8d9b5);color:#3b2f14}
+.lg3{background:linear-gradient(120deg,#7c2d12,#e08a5a 50%,#b45309);color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.35)}
+.lg3 .ti i{background:rgba(255,255,255,.2)}
+#landSoon .box{border-radius:24px;padding:30px 22px;text-align:center;box-shadow:0 16px 30px -14px rgba(15,23,42,.5)}
+#landSoon .box i.big{font-size:44px;display:block;margin-bottom:12px}
+#landSoon .box h3{font-size:24px;font-weight:800;margin:0 0 8px}
+#landSoon .box p{font-size:16px;margin:6px 0 0;opacity:.95}
+.lback{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e2e8f0;color:#334155;font-weight:700;font-size:14px;padding:8px 16px;border-radius:999px;box-shadow:0 2px 6px rgba(15,23,42,.08);cursor:pointer;margin:0 0 14px}
+html.dark .lback{background:#0f172a;color:#e2e8f0;border-color:#334155}
+#landBack{display:none}
+html.pmaon #landBack{display:inline-flex}
+</style>
+<script>
+(function(){function init(){
+  var v=document.getElementById('view-select'),m=document.getElementById('sec-menu');if(!v||!m)return;
+  var L=document.createElement('div');L.id='mainLand';v.insertBefore(L,m);
+  var bk=document.createElement('button');bk.type='button';bk.id='landBack';bk.className='lback';bk.innerHTML='<i class="fa-solid fa-arrow-left"></i> Main page';v.insertBefore(bk,m);
+  var ST='home';  /* home | pma | int | issb */
+  var SOON={int:['lg2','fa-user-tie','Initial Interview Preparation','Interview questions and model answers for the initial interview.'],
+            issb:['lg3','fa-medal','ISSB Preparation','Psychological tests, GTO tasks and the ISSB interview.']};
+  function card(k,cls,ic,no,title,sub,soon){return '<button type="button" class="lcard '+cls+'" data-go="'+k+'"><i class="fa-solid '+ic+' bg"></i><span class="no">'+no+'</span><div class="ti"><i class="fa-solid '+ic+'"></i>'+title+'</div><div class="su">'+sub+'</div>'+(soon?'<span class="tag">Coming soon</span>':'<div class="go">Open</div>')+'<span class="ar"><i class="fa-solid fa-arrow-right"></i></span></button>'}
+  function home(){L.innerHTML='<div class="lh"><div class="emb"><i class="fa-solid fa-shield-halved"></i></div><div class="kick">Asadullah Notes</div><h2>Assalam o Alaikum</h2><p>Choose your preparation</p><div class="rule"></div></div>'+
+    card('pma','lg1','fa-graduation-cap','01','Initial PMA Preparation','All categories: 1000 MCQs, PMA 159, Hakeem, Forces Academy, Pro Genius, Verbal and Non Verbal, Academic and more.')+
+    card('int','lg2','fa-user-tie','02','Initial Interview Preparation','Interview questions and model answers.',1)+
+    card('issb','lg3','fa-medal','03','ISSB Preparation','Psychological tests, GTO tasks and the ISSB interview.',1)}
+  function soon(k){var s=SOON[k];L.innerHTML='<button type="button" class="lback" data-go="home"><i class="fa-solid fa-arrow-left"></i> Main page</button><div id="landSoon"><div class="box '+s[0]+'"><i class="fa-solid '+s[1]+' big"></i><h3>'+s[2]+'</h3><p>'+s[3]+'</p><p><b>Coming soon.</b> The data will be uploaded here very soon. Stay tuned!</p></div></div>'}
+  function atMenu(){return !v.classList.contains('hidden')&&typeof curSec!=='undefined'&&curSec===null}
+  function show(){document.documentElement.classList.toggle('landon',ST!=='pma');document.documentElement.classList.toggle('pmaon',ST==='pma'&&atMenu())}
+  function go(k,push){ST=k;if(k==='home')home();else if(k!=='pma')soon(k);show();try{window.__backSync&&window.__backSync()}catch(e){}if(push)try{history.pushState({n:1},'')}catch(e){}window.scrollTo(0,0)}
+  L.addEventListener('click',function(e){var t=e.target.closest('[data-go]');if(!t)return;var k=t.getAttribute('data-go');if(k==='home'){if(history.state&&history.state.n)history.back();else go('home')}else go(k,true)});
+  bk.addEventListener('click',function(){if(history.state&&history.state.n)history.back();else go('home')});
+  /* phone Back button / header Back: from the categories or a 'coming soon' page go back to the main page */
+  window.__landBack=function(){if(atMenu()&&ST!=='home'){go('home');return true}return false};
+  window.__landAtHome=function(){return ST==='home'};
+  setInterval(show,400);
+  go('home');
+}
+var tries=0;(function wait(){if(document.getElementById('view-select')&&document.getElementById('sec-menu'))init();else if(tries++<200)setTimeout(wait,50)})();  /* the page can be written in later by the update loader */
 })();
 </script>
 <style>
