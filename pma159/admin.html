@@ -21,6 +21,7 @@ textarea{min-height:110px}.badge{background:var(--no);color:#fff;border-radius:9
 <div id="app" style="display:none">
  <div class="row"><button id="tReq">Requests<span class="badge" id="nReq">0</span></button><button class="g" id="tUsr">People<span class="badge" id="nUsr">0</span></button><button class="g" id="tKey">Passwords</button><button class="g" id="bOut">Logout</button><button class="g" id="bRef">Refresh</button></div>
  <input type="text" id="srch" placeholder="Search email or name..." autocomplete="off" autocapitalize="off" spellcheck="false" style="margin-top:10px"><div class="mu" id="srchN"></div>
+ <div id="onNow" class="card" style="margin-top:10px"></div>
  <div id="pReq"></div><div id="pUsr" style="display:none"></div>
  <div id="pKey" style="display:none">
   <h2>Category passwords</h2><div class="mu">These passwords unlock the data files. The app gets them from here for approved people; nobody types them. Paste the whole list once, or change one password after I tell you a new one.</div>
@@ -65,11 +66,16 @@ function card(u){return '<div class="card" data-id="'+u.id+'" data-s="'+esc(((u.
  '<div class="row"><button class="k" data-a="ok">'+(u.status==='approved'?'Save':'Approve')+'</button>'+(u.status==='blocked'?'':'<button class="r" data-a="block">Block</button>')+'<button class="g" data-a="del">Delete</button>'+(DEVS[u.id]?'<button class="g" data-a="dev">Reset phone</button>':'')+'</div></div>'}
 function filt(){var q=($('srch').value||'').trim().toLowerCase(),n=0,t=0;[].forEach.call(document.querySelectorAll('#pReq .card[data-s],#pUsr .card[data-s]'),function(c){t++;var ok=!q||c.getAttribute('data-s').indexOf(q)>-1;c.style.display=ok?'':'none';if(ok)n++});$('srchN').textContent=q?(n+' of '+t+' people match'):''}
 $('srch').addEventListener('input',filt);
+function onNow(){FB.getDoc(FB.doc(fs,'online','now')).then(function(d){var m=d.exists()?d.data():{},a=[],k,v,t,mx=0;
+  for(k in m){v=m[k];t=0;try{t=v&&v.toMillis?v.toMillis():(v&&v.t&&v.t.toMillis?v.t.toMillis():0)}catch(e){}a.push({uid:k,t:t,on:!(v&&v.on===false)});if(t>mx)mx=t}
+  mx=Date.now();var on=a.filter(function(x){return x.on&&x.t>=mx-210000}).map(function(x){var u=USERS.filter(function(z){return z.id===x.uid})[0];return u?(u.name||u.email):(x.uid===(auth.currentUser&&auth.currentUser.uid)?'You (admin)':'Unknown')});
+  $('onNow').innerHTML='<b>Online now: '+on.length+'</b><div class="mu">'+(on.length?on.map(function(s){return String(s).replace(/</g,'&lt;')}).join(', '):'Nobody right now.')+'</div><div class="mu">Updates every 20 seconds.</div>'}).catch(function(e){$('onNow').innerHTML='<span class="mu">Online list: '+(e.code||e.message)+'</span>'})}
+setInterval(function(){if(USERS&&USERS.length!==undefined&&$('app').style.display!=='none')onNow()},20000);
 function draw(){
   var p=USERS.filter(function(u){return u.status==='pending'}),o=USERS.filter(function(u){return u.status!=='pending'});
   $('nReq').textContent=p.length;$('nUsr').textContent=o.length;
   $('pReq').innerHTML='<h2>People waiting for approval</h2>'+(p.length?p.map(card).join(''):'<div class="mu">Nobody is waiting.</div>');
-  $('pUsr').innerHTML='<h2>Approved and blocked people</h2>'+(o.length?o.map(card).join(''):'<div class="mu">No one yet.</div>');filt()}
+  $('pUsr').innerHTML='<h2>Approved and blocked people</h2>'+(o.length?o.map(card).join(''):'<div class="mu">No one yet.</div>');filt();try{onNow()}catch(e){}}
 document.addEventListener('click',function(e){var b=e.target.closest('button[data-a]');if(!b)return;var c=b.closest('.card'),id=c.getAttribute('data-id'),a=b.getAttribute('data-a');
   var cats=[].slice.call(c.querySelectorAll('input[data-c]')).filter(function(i){return i.checked}).map(function(i){return i.getAttribute('data-c')});
   var ref=FB.doc(fs,'users',id),job;

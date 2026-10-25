@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head><script>/*SHELLUPD*/(function(){var V=202610251121,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
+<head><script>/*SHELLUPD*/(function(){var V=202610251135,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
 try{var sv=+L.getItem('shell_v')||0,h=L.getItem('shell_html'),t=+L.getItem('shell_try')||0;
 if(h&&sv>V&&!window.__shellW){if(t>=2){L.removeItem('shell_html');L.removeItem('shell_v');L.removeItem('shell_try')}
 else{L.setItem('shell_try',String(t+1));window.__shellW=1;document.open();document.write(h);document.close();return}}}catch(e){}
@@ -2427,9 +2427,9 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
   function onPlace(){var t=$('themeBtn'),b=$('onBtn'),x=$('onBox');if(!t||!b)return;var r=t.getBoundingClientRect();if(!r.width)return;
     b.style.top=r.top+'px';b.style.left=(r.left-r.width-8)+'px';b.style.right='auto';b.style.width=r.width+'px';b.style.height=r.height+'px';if(x)x.style.top=(r.bottom+10)+'px'}
   /* online/now = {uid:{t:server time, on:true/false}}: on:true every 90 s while the app is open, on:false the moment it is closed or hidden */
-  var ONW=210000,onStat=null;
+  var ONW=210000,onStat=null,onWasShown=document.visibilityState==='visible';
   function onSave(on){if(!onUser)return Promise.resolve();var o={};o[onUser.uid]={t:FB.serverTimestamp(),on:on};return FB.setDoc(FB.doc(fs,'online','now'),o,{merge:true}).catch(function(){})}
-  function onBeat(){if(!onUser||document.hidden)return;onSave(true).then(function(){onRead()})}
+  function onBeat(){if(!onUser)return;onSave(true).then(function(){onRead()})}
   function onRead(withStats){if(!onUser)return;
     var ps=[FB.getDoc(FB.doc(fs,'online','now'))];if(withStats||onStat===null)ps.push(FB.getDoc(FB.doc(fs,'stats','public')).then(function(d){onStat=d.exists()?(d.data().approved||0):0},function(){}));
     Promise.all(ps).then(function(r){
@@ -2443,9 +2443,9 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
   function onAdminCount(){FB.getDocs(FB.collection(fs,'users')).then(function(s){var n=0;s.forEach(function(d){if(d.data().status==='approved')n++});onStat=n;return FB.setDoc(FB.doc(fs,'stats','public'),{approved:n,t:FB.serverTimestamp()})}).catch(function(){})}
   function onSetup(user){if(!fs||!user)return;onUser=user;try{onBuild()}catch(e){}clearInterval(onT);
     if((user.email||'').toLowerCase()===ADMIN)onAdminCount();onBeat();var n=0;
-    onT=setInterval(function(){if(document.hidden)return;n++;var open=$('onBox')&&!$('onBox').hidden;if(n%9===0)onBeat();else if(open||n%2===0)onRead()},10000)}  /* number every 20 s, every 10 s while the box is open; 'I am here' every 90 s */
+    onT=setInterval(function(){n++;var open=$('onBox')&&!$('onBox').hidden;if(n%9===0)onBeat();else if(open||n%2===0)onRead()},10000)}  /* number every 20 s, every 10 s while the box is open; 'I am here' every 90 s */
   function onOff(){onUser=null;clearInterval(onT);document.documentElement.classList.remove('onon');var x=$('onBox');if(x)x.hidden=true}
-  document.addEventListener('visibilitychange',function(){if(!onUser)return;if(document.hidden)onSave(false);else onBeat()});
+  document.addEventListener('visibilitychange',function(){if(!onUser)return;if(document.visibilityState==='hidden'&&onWasShown)onSave(false);else if(document.visibilityState==='visible'){onWasShown=true;onBeat()}});  /* the phone app starts invisible: only a hide after the page was shown means the app was closed */
   window.addEventListener('pagehide',function(){if(onUser)onSave(false)});
   function cmOff(){cmOn=false;cmUser=null;var b=$('cmBox'),f=$('cmFab');if(b)b.hidden=true;if(f)f.style.display='none'}
   /* ---- one phone per account: the account works only on the phone where it was first used (the admin can reset it) ---- */
