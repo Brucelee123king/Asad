@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head><script>/*SHELLUPD*/(function(){var V=202610250844,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
+<head><script>/*SHELLUPD*/(function(){var V=202610250853,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
 try{var sv=+L.getItem('shell_v')||0,h=L.getItem('shell_html'),t=+L.getItem('shell_try')||0;
 if(h&&sv>V&&!window.__shellW){if(t>=2){L.removeItem('shell_html');L.removeItem('shell_v');L.removeItem('shell_try')}
 else{L.setItem('shell_try',String(t+1));window.__shellW=1;document.open();document.write(h);document.close();return}}}catch(e){}
@@ -249,7 +249,7 @@ html body #auth .side{padding-top:calc(64px + var(--sat))!important}
                 <p class="text-rose-50 text-sm sm:text-base">The most important verbal intelligence questions. The number in brackets shows how many times the question was repeated. Every answer has a reason and a related fact.</p>
             </div>
             <div id="iv-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
-            <div class="bg-gradient-to-r from-stone-700 to-amber-700 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
+            <div class="bg-gradient-to-r engrad rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
                 <span class="inline-block bg-white/20 text-amber-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">8 Tests &bull; 390 MCQs</span>
                 <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">English PMA MCQs</h2>
                 <p class="text-amber-50 text-sm sm:text-base">Grammar, tenses, voice, narration, prepositions, vocabulary, synonyms, antonyms and reading passages, all mixed, in tests of 50. Every answer has a reason.</p>
@@ -1115,7 +1115,7 @@ html body #auth .side{padding-top:calc(64px + var(--sat))!important}
             {id: 'nv', name: 'Verbal and Non Verbal Test', sub: 'Verbal MCQs and picture questions', grad: 'from-amber-600 to-orange-500', icon: 'fa-shapes', test: k => isNV(k) || isVB(k)},
             {id: 'cn', name: 'Constitution of Pakistan', sub: '1956, 1962 and 1973 Constitutions', grad: 'from-green-800 to-lime-600', icon: 'fa-scale-balanced', test: k => isCN(k)},
             {id: 'iv', name: '100 Most Repeated Questions', sub: 'Most important verbal questions', grad: 'from-rose-700 to-pink-500', icon: 'fa-star', test: k => isIV(k)},
-            {id: 'en', name: 'English PMA MCQs', sub: 'Grammar, vocabulary, synonyms, antonyms and passages', grad: 'from-stone-700 to-amber-700', icon: 'fa-language', test: k => isEN(k)}
+            {id: 'en', name: 'English PMA MCQs', sub: 'Grammar, vocabulary, synonyms, antonyms and passages', grad: 'engrad', icon: 'fa-language', test: k => isEN(k)}
         ];
         function initMenu() {
             if (menuReady) return; menuReady = true;
@@ -1434,7 +1434,10 @@ body[data-sec="hk"]{--c1:#0369a1;--c2:#06b6d4;--cs:#0284c7;--ch:#0369a1;--cl:#f0
 body[data-sec="nv"]{--c1:#b45309;--c2:#f59e0b;--cs:#d97706;--ch:#b45309;--cl:#fffbeb;--ct:#92400e;--cb:#fcd34d;--cr:#fde68a}
 body[data-sec="cn"]{--c1:#166534;--c2:#65a30d;--cs:#16a34a;--ch:#166534;--cl:#f0fdf4;--ct:#14532d;--cb:#86efac;--cr:#bbf7d0}
 body[data-sec="iv"]{--c1:#be123c;--c2:#ec4899;--cs:#e11d48;--ch:#be123c;--cl:#fff1f2;--ct:#9f1239;--cb:#fda4af;--cr:#fecdd3}
-body[data-sec="en"]{--c1:#44403c;--c2:#b45309;--cs:#92400e;--ch:#44403c;--cl:#fafaf9;--ct:#44403c;--cb:#d6d3d1;--cr:#e7e5e4}
+body[data-sec="en"]{--c1:#111827;--c2:#4b5563;--cs:#1f2937;--ch:#111827;--cl:#f3f4f6;--ct:#1f2937;--cb:#9ca3af;--cr:#d1d5db}
+/* English card + banner: dark black/grey mix (own CSS so it works with the CSS already inside the APK) */
+.engrad{background-image:linear-gradient(to right,#0b0f19,#374151 60%,#6b7280)!important;color:#fff}
+#en-grid .bg-amber-100{background:#e5e7eb!important;color:#111827!important}
 body[data-sec="pg"]{--c1:#0e7490;--c2:#2563eb;--cs:#0891b2;--ch:#0e7490;--cl:#ecfeff;--ct:#155e75;--cb:#67e8f9;--cr:#a5f3fc}
 body[data-sec="lc"]{--c1:#6d28d9;--c2:#c026d3;--cs:#7c3aed;--ch:#6d28d9;--cl:#f5f3ff;--ct:#5b21b6;--cb:#a78bfa;--cr:#c4b5fd}
 body[data-sec] :is(#view-home,#view-quiz,#view-results) .from-indigo-600{--tw-gradient-from:var(--c1) var(--tw-gradient-from-position)!important;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)!important}
