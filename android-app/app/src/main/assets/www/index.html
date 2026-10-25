@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head><script>/*SHELLUPD*/(function(){var V=202610251033,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
+<head><script>/*SHELLUPD*/(function(){var V=202610251052,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
 try{var sv=+L.getItem('shell_v')||0,h=L.getItem('shell_html'),t=+L.getItem('shell_try')||0;
 if(h&&sv>V&&!window.__shellW){if(t>=2){L.removeItem('shell_html');L.removeItem('shell_v');L.removeItem('shell_try')}
 else{L.setItem('shell_try',String(t+1));window.__shellW=1;document.open();document.write(h);document.close();return}}}catch(e){}
@@ -1682,7 +1682,27 @@ html.dark #srchModal .it .a{color:#6ee7b7}
     $('home-badge').textContent=title;$('home-desc').textContent=desc;
     var nMin=Math.ceil(TEST_SECS/60);
   }
-  window.startDaily=function(){var t=today(),r=rng(seedOf('asadullah-'+t));launch('CUS-daily',"Today's Daily Challenge",'10 fresh MCQs picked for '+t+'. Finish it to keep your streak going.',pick(allQ(),10,r))};
+  /* Daily Challenge: 25 MCQs mixed from every subject the person has unlocked; the same set for everyone on the same day */
+  var DQ=[['Verbal',3],['Non Verbal',3],['English',4],['Islamiat',4],['Pakistan Studies',4],['Science',2],['Current Affairs',2],['General Knowledge',3]];
+  var RX={isl:/\b(allah|quran|qur'an|holy prophet|prophet|hazrat|surah?|surat|islam|islamic|hadith|hadees|sahab[ai]|caliph|khalifa|zakat|hajj|umrah|namaz|salah|salat|ramadan|ramzan|makkah|mecca|madina|medina|ghazwa|badr|uhud|khandaq|kaaba|ka'aba|wahi|nabi|rasool|ayat|ayah|juz|sunnah|fiqh|shariah|eid|muslim ummah|hijrah|hijri|sahih)\b/i,
+    pak:/\b(pakistan|quaid|jinnah|iqbal|liaquat|lahore resolution|muslim league|kashmir|partition|karachi|islamabad|lahore|punjab|sindh|balochistan|khyber|kpk|gilgit|constitution|ayub|bhutto|simla|tashkent|objectives resolution|two.nation|indus|tarbela|mangla|k2|nanga parbat|siachen)\b/i,
+    sci:/\b(science|scientist|chemical|element|atom|planet|vitamin|blood|cell|gas|acid|formula|speed of|light|sound|energy|oxygen|hydrogen|carbon|nitrogen|disease|organ|bone|virus|bacteria|metal|electric|magnet|gravity|temperature|unit of|calorie|heart|brain|kidney|liver)\b/i,
+    ca:/\b(202[3-6]|current|recently|newly)\b/i};
+  function subj(k,q){var t=String(q.question||''),sc=String(q.sec||'');
+    if(q.nv||k.indexOf('NV-')===0)return 'Non Verbal';
+    if(k.indexOf('VB-')===0||/^Verbal: Maths/.test(sc))return 'Verbal';
+    if(k.indexOf('EN-')===0||/English/.test(sc))return 'English';
+    if(sc==='Islamiat'||RX.isl.test(t))return 'Islamiat';
+    if(sc==='Current Affairs'||RX.ca.test(t))return 'Current Affairs';
+    if(sc==='Pakistan Studies'||k.indexOf('CN-')===0||RX.pak.test(t))return 'Pakistan Studies';
+    if(/Science/.test(sc)||RX.sci.test(t))return 'Science';
+    return 'General Knowledge'}
+  function dailySet(r){var B={},seen={};
+    Object.keys(ALL).forEach(function(k){if(k.indexOf('CUS-')===0)return;(ALL[k]||[]).forEach(function(q){if(!q||!q.question||!q.options)return;var id=q.question+'|'+q.options.length;if(seen[id])return;seen[id]=1;var b=subj(k,q);(B[b]=B[b]||[]).push(q)})});
+    var out=[],left=0;DQ.forEach(function(d){var got=pick(B[d[0]]||[],d[1],r);left+=d[1]-got.length;out=out.concat(got);B[d[0]]=(B[d[0]]||[]).filter(function(q){return got.indexOf(q)<0})});
+    if(left>0){var rest=[];Object.keys(B).forEach(function(b){rest=rest.concat(B[b])});out=out.concat(pick(rest,left,r))}  /* a subject that is locked for this person: fill with other subjects */
+    return pick(out,out.length,r)}  /* mix the order */
+  window.startDaily=function(){var t=today(),r=rng(seedOf('asadullah-'+t));launch('CUS-daily',"Today's Daily Challenge",'25 fresh MCQs for '+t+', mixed from every subject: Verbal, Non Verbal, English, Islamiat, Pakistan Studies, Science, Current Affairs and General Knowledge. Finish it to keep your streak going.',dailySet(r))};
   window.startSaved=function(){var q=Object.keys(bms()).map(function(k){return bms()[k]});launch('CUS-saved','Saved Questions ('+q.length+')','Your starred questions in one test.',q)};
   window.startMistakes=function(){var w=wrs(),q=Object.keys(w).map(function(k){return w[k]}).slice(-50);launch('CUS-mist','Mistakes Practice ('+q.length+')','Questions you answered wrong before. Answer them correctly to remove them from this list.',q)};
   /* ---------- search ---------- */
@@ -1731,7 +1751,7 @@ html.dark #srchModal .it .a{color:#6ee7b7}
     return '<div class="dash"><div class="hi"><div><h3>Assalam o Alaikum, '+esc(who)+' \u{1F44B}</h3><p>'+(st?'Keep it up \u2014 you are on a '+st+'-day streak.':'Solve a test today to start your streak.')+'</p></div><div class="streak">\u{1F525} '+st+' day'+(st===1?'':'s')+'</div></div>'+
      '<div class="stats"><div class="st"><b>'+s.tests+'</b><span>Tests</span></div><div class="st"><b>'+s.total+'</b><span>Solved</span></div><div class="st"><b>'+acc+'%</b><span>Accuracy</span></div><div class="st"><b>'+w+'</b><span>To revise</span></div></div>'+
      '<div class="week">'+days+'</div>'+
-     '<div class="acts"><button class="act daily'+(done?' done':'')+'" onclick="startDaily()"><span class="ic">\u26A1</span><span><b>Daily Challenge</b><small>'+(done?'Done today \u2713 \u2014 play again':'10 MCQs \u2022 new every day')+'</small></span></button>'+
+     '<div class="acts"><button class="act daily'+(done?' done':'')+'" onclick="startDaily()"><span class="ic">\u26A1</span><span><b>Daily Challenge</b><small>'+(done?'Done today \u2713 \u2014 play again':'25 MCQs \u2022 new every day')+'</small></span></button>'+
      '<button class="act saved" onclick="startSaved()"><span class="ic">\u2605</span><span><b>Saved</b><small>'+b+' question'+(b===1?'':'s')+'</small></span></button>'+
      '<button class="act mist" onclick="startMistakes()"><span class="ic">\u{1F501}</span><span><b>Mistakes</b><small>'+w+' to practise</small></span></button>'+
      '<button class="act srch" onclick="openSearch()"><span class="ic">\u{1F50D}</span><span><b>Search</b><small>Find any MCQ</small></span></button></div></div>'}
@@ -2376,19 +2396,36 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
     var x=document.createElement('div');x.id='onBox';x.hidden=true;
     x.innerHTML='<div class="row"><div class="ic" style="background:#eef2ff;color:#4f46e5"><i class="fa-solid fa-users"></i></div><div><b id="onTot">-</b><small>Total students using the app</small></div></div><div class="row"><div class="ic" style="background:#dcfce7;color:#16a34a"><i class="fa-solid fa-circle" style="font-size:10px"></i></div><div><b id="onOn">-</b><small>Online now</small></div></div>';
     document.body.appendChild(x);
-    b.onclick=function(e){e.stopPropagation();x.hidden=!x.hidden;if(!x.hidden)onRead()};
-    document.addEventListener('click',function(e){if(!x.hidden&&!x.contains(e.target))x.hidden=true});
-    setInterval(function(){var q=false;try{q=typeof quizActive!=='undefined'&&quizActive}catch(e){}var show=!!onUser&&!q&&A.classList.contains('hide');document.documentElement.classList.toggle('onon',show);if(!show)x.hidden=true},600)}
-  function onBeat(){if(!onUser||document.hidden)return;var o={};o[onUser.uid]=FB.serverTimestamp();FB.setDoc(FB.doc(fs,'online','now'),o,{merge:true}).then(onRead,onRead)}
-  function onRead(){if(!onUser)return;Promise.all([FB.getDoc(FB.doc(fs,'online','now')),FB.getDoc(FB.doc(fs,'stats','public')).catch(function(){return null})]).then(function(r){
-    var m=r[0].exists()?r[0].data():{},t=[],k;for(k in m){try{t.push(m[k].toMillis())}catch(e){}}
-    var mx=Math.max.apply(null,t.concat([0])),on=Math.max(1,t.filter(function(v){return v>=mx-300000}).length);  /* online = seen in the last 5 minutes (server time, so a wrong phone clock does not matter) */
-    var tot=Math.max((r[1]&&r[1].exists()&&r[1].data().approved)||0,t.length,on);
+    b.onclick=function(e){e.stopPropagation();x.hidden=!x.hidden;if(!x.hidden){onPlace();onRead(true)}};
+    /* the box closes when the person touches anywhere else or scrolls */
+    var shut=function(e){if(!x.hidden&&!x.contains(e.target)&&!b.contains(e.target))x.hidden=true};
+    document.addEventListener('pointerdown',shut,true);document.addEventListener('touchstart',shut,{capture:true,passive:true});
+    window.addEventListener('scroll',function(){x.hidden=true},{passive:true});
+    setInterval(function(){var q=false;try{q=typeof quizActive!=='undefined'&&quizActive}catch(e){}var show=!!onUser&&!q&&A.classList.contains('hide');document.documentElement.classList.toggle('onon',show);if(!show)x.hidden=true;else onPlace()},500)}
+  /* keep the icon in the same line as the moon button (the phone app moves the moon below the status bar) */
+  function onPlace(){var t=$('themeBtn'),b=$('onBtn'),x=$('onBox');if(!t||!b)return;var r=t.getBoundingClientRect();if(!r.width)return;
+    b.style.top=r.top+'px';b.style.left=(r.left-r.width-8)+'px';b.style.right='auto';b.style.width=r.width+'px';b.style.height=r.height+'px';if(x)x.style.top=(r.bottom+10)+'px'}
+  /* online/now = {uid:{t:server time, on:true/false}}: on:true every 90 s while the app is open, on:false the moment it is closed or hidden */
+  var ONW=210000,onStat=null;
+  function onSave(on){if(!onUser)return Promise.resolve();var o={};o[onUser.uid]={t:FB.serverTimestamp(),on:on};return FB.setDoc(FB.doc(fs,'online','now'),o,{merge:true}).catch(function(){})}
+  function onBeat(){if(!onUser||document.hidden)return;onSave(true).then(function(){onRead()})}
+  function onRead(withStats){if(!onUser)return;
+    var ps=[FB.getDoc(FB.doc(fs,'online','now'))];if(withStats||onStat===null)ps.push(FB.getDoc(FB.doc(fs,'stats','public')).then(function(d){onStat=d.exists()?(d.data().approved||0):0},function(){}));
+    Promise.all(ps).then(function(r){
+    var m=r[0].exists()?r[0].data():{},all=[],k,v,ms;
+    for(k in m){v=m[k];try{if(v&&v.toMillis)all.push({t:v.toMillis(),on:true});else if(v&&v.t&&v.t.toMillis)all.push({t:v.t.toMillis(),on:v.on!==false})}catch(e){}}
+    var mx=Math.max.apply(null,all.map(function(a){return a.t}).concat([0]));  /* newest server time in the doc, so a wrong phone clock does not matter */
+    var on=Math.max(1,all.filter(function(a){return a.on&&a.t>=mx-ONW}).length);
+    var tot=Math.max(onStat||0,on);if(!onStat)tot=Math.max(tot,all.length);
     $('onDot').textContent=on;$('onOn').textContent=on;$('onTot').textContent=tot}).catch(function(){})}
-  function onSetup(user){if(!fs||!user)return;onUser=user;try{onBuild()}catch(e){}clearInterval(onT);onBeat();var n=0;
-    onT=setInterval(function(){if(document.hidden)return;n++;if(n%2)onRead();else onBeat()},60000)}
+  /* the admin's own app also saves the number of approved students, so the total is right even before the admin page is opened */
+  function onAdminCount(){FB.getDocs(FB.collection(fs,'users')).then(function(s){var n=0;s.forEach(function(d){if(d.data().status==='approved')n++});onStat=n;return FB.setDoc(FB.doc(fs,'stats','public'),{approved:n,t:FB.serverTimestamp()})}).catch(function(){})}
+  function onSetup(user){if(!fs||!user)return;onUser=user;try{onBuild()}catch(e){}clearInterval(onT);
+    if((user.email||'').toLowerCase()===ADMIN)onAdminCount();onBeat();var n=0;
+    onT=setInterval(function(){if(document.hidden)return;n++;var open=$('onBox')&&!$('onBox').hidden;if(n%9===0)onBeat();else if(open||n%2===0)onRead()},10000)}  /* number every 20 s, every 10 s while the box is open; 'I am here' every 90 s */
   function onOff(){onUser=null;clearInterval(onT);document.documentElement.classList.remove('onon');var x=$('onBox');if(x)x.hidden=true}
-  document.addEventListener('visibilitychange',function(){if(!document.hidden&&onUser)onBeat()});
+  document.addEventListener('visibilitychange',function(){if(!onUser)return;if(document.hidden)onSave(false);else onBeat()});
+  window.addEventListener('pagehide',function(){if(onUser)onSave(false)});
   function cmOff(){cmOn=false;cmUser=null;var b=$('cmBox'),f=$('cmFab');if(b)b.hidden=true;if(f)f.style.display='none'}
   /* ---- one phone per account: the account works only on the phone where it was first used (the admin can reset it) ---- */
   function devId(){var r=ls('ac_dev');if(!r||r.length!==32){var a=new Uint8Array(16);crypto.getRandomValues(a);r=Array.prototype.map.call(a,function(x){return ('0'+x.toString(16)).slice(-2)}).join('');ls('ac_dev',r)}return r}

@@ -106,10 +106,14 @@ service cloud.firestore {
       allow read: if request.auth != null;
       allow create: if request.auth != null && d == 'now'
         && request.resource.data.keys().hasOnly([request.auth.uid])
-        && request.resource.data[request.auth.uid] == request.time;
+        && request.resource.data[request.auth.uid].keys().hasOnly(['t','on'])
+        && request.resource.data[request.auth.uid].t == request.time
+        && request.resource.data[request.auth.uid].on is bool;
       allow update: if request.auth != null && d == 'now'
         && request.resource.data.diff(resource.data).affectedKeys().hasOnly([request.auth.uid])
-        && request.resource.data[request.auth.uid] == request.time;
+        && request.resource.data[request.auth.uid].keys().hasOnly(['t','on'])
+        && request.resource.data[request.auth.uid].t == request.time
+        && request.resource.data[request.auth.uid].on is bool;
     }
     match /stats/{d} {
       allow read: if request.auth != null;

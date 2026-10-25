@@ -104,7 +104,27 @@ html.dark #srchModal .it .a{color:#6ee7b7}
     $('home-badge').textContent=title;$('home-desc').textContent=desc;
     var nMin=Math.ceil(TEST_SECS/60);
   }
-  window.startDaily=function(){var t=today(),r=rng(seedOf('asadullah-'+t));launch('CUS-daily',"Today's Daily Challenge",'10 fresh MCQs picked for '+t+'. Finish it to keep your streak going.',pick(allQ(),10,r))};
+  /* Daily Challenge: 25 MCQs mixed from every subject the person has unlocked; the same set for everyone on the same day */
+  var DQ=[['Verbal',3],['Non Verbal',3],['English',4],['Islamiat',4],['Pakistan Studies',4],['Science',2],['Current Affairs',2],['General Knowledge',3]];
+  var RX={isl:/\b(allah|quran|qur'an|holy prophet|prophet|hazrat|surah?|surat|islam|islamic|hadith|hadees|sahab[ai]|caliph|khalifa|zakat|hajj|umrah|namaz|salah|salat|ramadan|ramzan|makkah|mecca|madina|medina|ghazwa|badr|uhud|khandaq|kaaba|ka'aba|wahi|nabi|rasool|ayat|ayah|juz|sunnah|fiqh|shariah|eid|muslim ummah|hijrah|hijri|sahih)\b/i,
+    pak:/\b(pakistan|quaid|jinnah|iqbal|liaquat|lahore resolution|muslim league|kashmir|partition|karachi|islamabad|lahore|punjab|sindh|balochistan|khyber|kpk|gilgit|constitution|ayub|bhutto|simla|tashkent|objectives resolution|two.nation|indus|tarbela|mangla|k2|nanga parbat|siachen)\b/i,
+    sci:/\b(science|scientist|chemical|element|atom|planet|vitamin|blood|cell|gas|acid|formula|speed of|light|sound|energy|oxygen|hydrogen|carbon|nitrogen|disease|organ|bone|virus|bacteria|metal|electric|magnet|gravity|temperature|unit of|calorie|heart|brain|kidney|liver)\b/i,
+    ca:/\b(202[3-6]|current|recently|newly)\b/i};
+  function subj(k,q){var t=String(q.question||''),sc=String(q.sec||'');
+    if(q.nv||k.indexOf('NV-')===0)return 'Non Verbal';
+    if(k.indexOf('VB-')===0||/^Verbal: Maths/.test(sc))return 'Verbal';
+    if(k.indexOf('EN-')===0||/English/.test(sc))return 'English';
+    if(sc==='Islamiat'||RX.isl.test(t))return 'Islamiat';
+    if(sc==='Current Affairs'||RX.ca.test(t))return 'Current Affairs';
+    if(sc==='Pakistan Studies'||k.indexOf('CN-')===0||RX.pak.test(t))return 'Pakistan Studies';
+    if(/Science/.test(sc)||RX.sci.test(t))return 'Science';
+    return 'General Knowledge'}
+  function dailySet(r){var B={},seen={};
+    Object.keys(ALL).forEach(function(k){if(k.indexOf('CUS-')===0)return;(ALL[k]||[]).forEach(function(q){if(!q||!q.question||!q.options)return;var id=q.question+'|'+q.options.length;if(seen[id])return;seen[id]=1;var b=subj(k,q);(B[b]=B[b]||[]).push(q)})});
+    var out=[],left=0;DQ.forEach(function(d){var got=pick(B[d[0]]||[],d[1],r);left+=d[1]-got.length;out=out.concat(got);B[d[0]]=(B[d[0]]||[]).filter(function(q){return got.indexOf(q)<0})});
+    if(left>0){var rest=[];Object.keys(B).forEach(function(b){rest=rest.concat(B[b])});out=out.concat(pick(rest,left,r))}  /* a subject that is locked for this person: fill with other subjects */
+    return pick(out,out.length,r)}  /* mix the order */
+  window.startDaily=function(){var t=today(),r=rng(seedOf('asadullah-'+t));launch('CUS-daily',"Today's Daily Challenge",'25 fresh MCQs for '+t+', mixed from every subject: Verbal, Non Verbal, English, Islamiat, Pakistan Studies, Science, Current Affairs and General Knowledge. Finish it to keep your streak going.',dailySet(r))};
   window.startSaved=function(){var q=Object.keys(bms()).map(function(k){return bms()[k]});launch('CUS-saved','Saved Questions ('+q.length+')','Your starred questions in one test.',q)};
   window.startMistakes=function(){var w=wrs(),q=Object.keys(w).map(function(k){return w[k]}).slice(-50);launch('CUS-mist','Mistakes Practice ('+q.length+')','Questions you answered wrong before. Answer them correctly to remove them from this list.',q)};
   /* ---------- search ---------- */
@@ -153,7 +173,7 @@ html.dark #srchModal .it .a{color:#6ee7b7}
     return '<div class="dash"><div class="hi"><div><h3>Assalam o Alaikum, '+esc(who)+' \u{1F44B}</h3><p>'+(st?'Keep it up \u2014 you are on a '+st+'-day streak.':'Solve a test today to start your streak.')+'</p></div><div class="streak">\u{1F525} '+st+' day'+(st===1?'':'s')+'</div></div>'+
      '<div class="stats"><div class="st"><b>'+s.tests+'</b><span>Tests</span></div><div class="st"><b>'+s.total+'</b><span>Solved</span></div><div class="st"><b>'+acc+'%</b><span>Accuracy</span></div><div class="st"><b>'+w+'</b><span>To revise</span></div></div>'+
      '<div class="week">'+days+'</div>'+
-     '<div class="acts"><button class="act daily'+(done?' done':'')+'" onclick="startDaily()"><span class="ic">\u26A1</span><span><b>Daily Challenge</b><small>'+(done?'Done today \u2713 \u2014 play again':'10 MCQs \u2022 new every day')+'</small></span></button>'+
+     '<div class="acts"><button class="act daily'+(done?' done':'')+'" onclick="startDaily()"><span class="ic">\u26A1</span><span><b>Daily Challenge</b><small>'+(done?'Done today \u2713 \u2014 play again':'25 MCQs \u2022 new every day')+'</small></span></button>'+
      '<button class="act saved" onclick="startSaved()"><span class="ic">\u2605</span><span><b>Saved</b><small>'+b+' question'+(b===1?'':'s')+'</small></span></button>'+
      '<button class="act mist" onclick="startMistakes()"><span class="ic">\u{1F501}</span><span><b>Mistakes</b><small>'+w+' to practise</small></span></button>'+
      '<button class="act srch" onclick="openSearch()"><span class="ic">\u{1F50D}</span><span><b>Search</b><small>Find any MCQ</small></span></button></div></div>'}
