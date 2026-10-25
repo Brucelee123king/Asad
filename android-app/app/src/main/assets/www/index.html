@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head><script>/*SHELLUPD*/(function(){var V=202610251231,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
+<head><script>/*SHELLUPD*/(function(){var V=202610251243,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
 try{var sv=+L.getItem('shell_v')||0,h=L.getItem('shell_html'),t=+L.getItem('shell_try')||0;
 if(h&&sv>V&&!window.__shellW){if(t>=2){L.removeItem('shell_html');L.removeItem('shell_v');L.removeItem('shell_try')}
 else{L.setItem('shell_try',String(t+1));window.__shellW=1;document.open();document.write(h);document.close();return}}}catch(e){}
@@ -1637,6 +1637,15 @@ html.lite .lcard::after{animation-duration:4.5s!important;animation-iteration-co
 #landSoon .box p{font-size:16px;margin:6px 0 0;opacity:.95}
 .lback{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e2e8f0;color:#334155;font-weight:700;font-size:14px;padding:8px 16px;border-radius:999px;box-shadow:0 2px 6px rgba(15,23,42,.08);cursor:pointer;margin:0 0 14px}
 html.dark .lback{background:#0f172a;color:#e2e8f0;border-color:#334155}
+/* dark mode 'Black Gold' (user's choice): black with a soft gold glow, no colour blobs */
+html.dark body.bg-slate-50.font-sans{background:radial-gradient(520px 340px at 50% 0%,rgba(234,179,8,.26),transparent 70%),radial-gradient(420px 380px at 100% 75%,rgba(180,83,9,.18),transparent 70%),radial-gradient(380px 320px at 0% 45%,rgba(232,217,181,.08),transparent 70%),#09090b!important}
+html.dark body.bg-slate-50::before{display:none!important}
+html.dark #liquidBg{display:none!important}
+html.dark body.bg-slate-50.font-sans>header.bg-white{background:rgba(9,9,11,.88)!important;border-color:rgba(212,160,23,.22)!important}
+html.dark body.bg-slate-50.font-sans>footer.bg-white{background:#0b0b0e!important;border-color:rgba(212,160,23,.15)!important}
+.lcard .ti svg.hand{width:30px;height:30px}
+.lcard svg.bg{position:absolute;right:-6px;bottom:-14px;width:120px;height:120px;opacity:.14;pointer-events:none}
+#landSoon .box svg.big{width:56px;height:56px;display:block;margin:0 auto 12px}
 #landBack{display:none}
 html.pmaon #landBack{display:inline-flex}
 </style>
@@ -1647,13 +1656,15 @@ html.pmaon #landBack{display:inline-flex}
   var bk=document.createElement('button');bk.type='button';bk.id='landBack';bk.className='lback';bk.innerHTML='<i class="fa-solid fa-arrow-left"></i> Main page';v.insertBefore(bk,m);
   var ST='home';  /* home | pma | int | issb */
   var SOON={int:['lg2','fa-user-tie','Initial Interview Preparation','Interview questions and model answers for the initial interview.'],
-            issb:['lg3','fa-medal','ISSB Preparation','Psychological tests, GTO tasks and the ISSB interview.']};
-  function card(k,cls,ic,no,title,sub,soon){return '<button type="button" class="lcard '+cls+'" data-go="'+k+'"><i class="fa-solid '+ic+' bg"></i><span class="no">'+no+'</span><div class="ti"><i class="fa-solid '+ic+'"></i>'+title+'</div><div class="su">'+sub+'</div>'+(soon?'<span class="tag">Coming soon</span>':'<div class="go">Open</div>')+'<span class="ar"><i class="fa-solid fa-arrow-right"></i></span></button>'}
+            issb:['lg3','trophy','ISSB Preparation','Psychological tests, GTO tasks and the ISSB interview.']};
+  function trophy(c){return '<svg class="'+c+'" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true"><g transform="translate(3 5) scale(.9) rotate(-18 32 30)"> <path d="M13 1h38l-2 10c-2 10-8.5 16-17 16S17 21 15 11z"/> <path d="M14 4C4 4 4 19 17 19M50 4c10 0 10 15-3 15" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/> <path d="M32 6.5l2.2 4.4 4.9.7-3.5 3.4.8 4.9-4.4-2.3-4.4 2.3.8-4.9-3.5-3.4 4.9-.7z" fill="rgba(0,0,0,.28)"/> <rect x="29" y="26" width="6" height="7"/> <path d="M44 31a5 5 0 0 1 5 5v10a8 8 0 0 1-8 8H27a5 5 0 0 1-5-5V31z"/> <rect x="15.5" y="31.2" width="15" height="5" rx="2.5"/> <rect x="14.8" y="36.6" width="15.7" height="5" rx="2.5"/> <rect x="15.2" y="42" width="15.3" height="5" rx="2.5"/> <rect x="16.6" y="47.4" width="13.9" height="4.6" rx="2.3"/> <path d="M18 36.4h11M17.5 41.8h12M18 47.2h11.5" stroke="rgba(0,0,0,.28)" stroke-width="1.2" stroke-linecap="round"/> <path d="M29 33c3-4 13-4.5 15 .5" fill="none" stroke="rgba(0,0,0,.28)" stroke-width="1.3" stroke-linecap="round"/> <path d="M31 51c2 5 3 9 4 15h17c-2-7-5-13-8-17z"/> </g></svg>'}  /* a fist raising a trophy (ISSB) */
+  function ico(ic,c){return ic==='trophy'?trophy(c):'<i class="fa-solid '+ic+(c?' '+c:'')+'"></i>'}
+  function card(k,cls,ic,no,title,sub,soon){return '<button type="button" class="lcard '+cls+'" data-go="'+k+'">'+ico(ic,'bg')+'<span class="no">'+no+'</span><div class="ti">'+(ic==='trophy'?'<i>'+trophy('hand')+'</i>':'<i class="fa-solid '+ic+'"></i>')+title+'</div><div class="su">'+sub+'</div>'+(soon?'<span class="tag">Coming soon</span>':'<div class="go">Open</div>')+'<span class="ar"><i class="fa-solid fa-arrow-right"></i></span></button>'}
   function home(){L.innerHTML='<div class="lh"><div class="emb"><i class="fa-solid fa-shield-halved"></i></div><div class="kick">Asadullah Notes</div><h2>Assalam o Alaikum</h2><p>Choose your preparation</p><div class="rule"></div></div>'+
     card('pma','lg1','fa-graduation-cap','01','Initial PMA Preparation','All categories: 1000 MCQs, PMA 159, Hakeem, Forces Academy, Pro Genius, Verbal and Non Verbal, Academic and more.')+
     card('int','lg2','fa-user-tie','02','Initial Interview Preparation','Interview questions and model answers.',1)+
-    card('issb','lg3','fa-medal','03','ISSB Preparation','Psychological tests, GTO tasks and the ISSB interview.',1)}
-  function soon(k){var s=SOON[k];L.innerHTML='<button type="button" class="lback" data-go="home"><i class="fa-solid fa-arrow-left"></i> Main page</button><div id="landSoon"><div class="box '+s[0]+'"><i class="fa-solid '+s[1]+' big"></i><h3>'+s[2]+'</h3><p>'+s[3]+'</p><p><b>Coming soon.</b> The data will be uploaded here very soon. Stay tuned!</p></div></div>'}
+    card('issb','lg3','trophy','03','ISSB Preparation','Psychological tests, GTO tasks and the ISSB interview.',1)}
+  function soon(k){var s=SOON[k];L.innerHTML='<button type="button" class="lback" data-go="home"><i class="fa-solid fa-arrow-left"></i> Main page</button><div id="landSoon"><div class="box '+s[0]+'">'+ico(s[1],'big')+'<h3>'+s[2]+'</h3><p>'+s[3]+'</p><p><b>Coming soon.</b> The data will be uploaded here very soon. Stay tuned!</p></div></div>'}
   function atMenu(){return !v.classList.contains('hidden')&&typeof curSec!=='undefined'&&curSec===null}
   function show(){document.documentElement.classList.toggle('landon',ST!=='pma');document.documentElement.classList.toggle('pmaon',ST==='pma'&&atMenu())}
   function go(k,push){ST=k;if(k==='home')home();else if(k!=='pma')soon(k);show();try{window.__backSync&&window.__backSync()}catch(e){}if(push)try{history.pushState({n:1},'')}catch(e){}window.scrollTo(0,0)}
