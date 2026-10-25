@@ -467,7 +467,7 @@ sub('<div id="fa-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap
                 <p class="text-rose-50 text-sm sm:text-base">The most important verbal intelligence questions. The number in brackets shows how many times the question was repeated. Every answer has a reason and a related fact.</p>
             </div>
             <div id="iv-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
-            <div class="bg-gradient-to-r from-stone-700 to-amber-700 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
+            <div class="bg-gradient-to-r engrad rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
                 <span class="inline-block bg-white/20 text-amber-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">@@EN_COUNT@@</span>
                 <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">English PMA MCQs</h2>
                 <p class="text-amber-50 text-sm sm:text-base">Grammar, tenses, voice, narration, prepositions, vocabulary, synonyms, antonyms and reading passages, all mixed, in tests of 50. Every answer has a reason.</p>
@@ -647,7 +647,7 @@ MENU_JS = """let curSec = null, menuReady = false;
             {id: 'nv', name: 'Verbal and Non Verbal Test', sub: 'Verbal MCQs and picture questions', grad: 'from-amber-600 to-orange-500', icon: 'fa-shapes', test: k => isNV(k) || isVB(k)},
             {id: 'cn', name: 'Constitution of Pakistan', sub: '1956, 1962 and 1973 Constitutions', grad: 'from-green-800 to-lime-600', icon: 'fa-scale-balanced', test: k => isCN(k)},
             {id: 'iv', name: '100 Most Repeated Questions', sub: 'Most important verbal questions', grad: 'from-rose-700 to-pink-500', icon: 'fa-star', test: k => isIV(k)},
-            {id: 'en', name: 'English PMA MCQs', sub: 'Grammar, vocabulary, synonyms, antonyms and passages', grad: 'from-stone-700 to-amber-700', icon: 'fa-language', test: k => isEN(k)}
+            {id: 'en', name: 'English PMA MCQs', sub: 'Grammar, vocabulary, synonyms, antonyms and passages', grad: 'engrad', icon: 'fa-language', test: k => isEN(k)}
         ];
         function initMenu() {
             if (menuReady) return; menuReady = true;
