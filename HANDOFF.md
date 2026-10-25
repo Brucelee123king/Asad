@@ -275,3 +275,6 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - These rules parts work only after the user pastes pma159/firestore.rules in the console. Before that the phone lock is simply off (getDoc denied -> 'unknown' -> allowed).
 - Tests: /home/user/fbbuild/dev_test.js (phone lock), plus all earlier tests.
 - Signing key backup was sent to the user (shell_sign_priv.pem). Keep a copy outside this container.
+
+## Oct 25 2026: Non Verbal batch 2 (progenius/nv2/)
+- PDF "Non-verbal Pro Genius Students" (27 pages): pages 1-13 = 13 analogy questions, pages 15-27 = answers (shaded button + explanation). 13 agents redrew each question as SVG (nv2/SPEC.md, out/q1..13.json). Answers taken from the PDF (answer_key.json, read by pixel brightness; all 13 agents agreed). nv2/build2.py = nv_final_19.json + 13 new -> progenius/nv_final.json (32). Published as data update (no APK).
