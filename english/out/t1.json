@@ -1,0 +1,1202 @@
+[
+ {
+  "src": "t1-1",
+  "question": "In the sentence \"The young cadet answered confidently,\" the word \"confidently\" is a:",
+  "options": [
+   "noun",
+   "adjective",
+   "adverb",
+   "preposition"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "It modifies the verb \"answered\" and tells how the action was performed.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-2",
+  "question": "Which word is a pronoun in \"They completed the obstacle course\"?",
+  "options": [
+   "They",
+   "completed",
+   "obstacle",
+   "course"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"They\" stands in place of a noun.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-3",
+  "question": "In \"Honesty is essential for leadership,\" the word \"Honesty\" is a:",
+  "options": [
+   "verb",
+   "abstract noun",
+   "adjective",
+   "conjunction"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "It names an abstract quality.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-4",
+  "question": "Which word is an adjective in \"She gave a brief answer\"?",
+  "options": [
+   "She",
+   "gave",
+   "brief",
+   "answer"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Brief\" describes the noun \"answer\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-5",
+  "question": "In \"The candidates waited outside,\" \"outside\" functions as a:",
+  "options": [
+   "adverb",
+   "article",
+   "pronoun",
+   "conjunction"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "It tells where they waited.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-6",
+  "question": "Which of the following is a conjunction?",
+  "options": [
+   "under",
+   "because",
+   "quickly",
+   "brave"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Because\" joins clauses and introduces a reason.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-7",
+  "question": "In \"The book is on the desk,\" \"on\" is a:",
+  "options": [
+   "preposition",
+   "adverb",
+   "interjection",
+   "pronoun"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "It shows the relationship between \"book\" and \"desk\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-8",
+  "question": "Which word is an interjection?",
+  "options": [
+   "Alas!",
+   "although",
+   "their",
+   "smoothly"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "An interjection expresses sudden feeling or emotion.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-9",
+  "question": "In \"Ali and Hamza trained together,\" \"and\" is a:",
+  "options": [
+   "coordinating conjunction",
+   "preposition",
+   "adjective",
+   "adverb"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "It joins two coordinate nouns.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-10",
+  "question": "Which word is a common noun?",
+  "options": [
+   "Pakistan",
+   "Islamabad",
+   "river",
+   "Indus"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"River\" names a class, not a unique proper name.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-11",
+  "question": "In \"He can swim well,\" \"can\" is a:",
+  "options": [
+   "main verb",
+   "modal auxiliary",
+   "noun",
+   "preposition"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Can\" is a modal auxiliary expressing ability.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-12",
+  "question": "Which option contains a possessive pronoun?",
+  "options": [
+   "my",
+   "mine",
+   "me",
+   "I"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Mine\" stands alone as a possessive pronoun; \"my\" is a possessive determiner.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-13",
+  "question": "In \"The wounded soldier recovered,\" \"wounded\" is functioning as a:",
+  "options": [
+   "noun",
+   "adjective",
+   "adverb",
+   "conjunction"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "It describes the noun \"soldier\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-14",
+  "question": "The word \"but\" in \"He was tired but continued\" is a:",
+  "options": [
+   "subordinating conjunction",
+   "coordinating conjunction",
+   "preposition",
+   "interjection"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"But\" is a coordinating conjunction showing contrast.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-15",
+  "question": "In \"Running improves stamina,\" \"Running\" is a:",
+  "options": [
+   "gerund functioning as a noun",
+   "finite verb",
+   "adjective",
+   "preposition"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "The -ing form names an activity and serves as the subject.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-16",
+  "question": "Which sentence contains an adverb of frequency?",
+  "options": [
+   "He arrived yesterday.",
+   "He often exercises.",
+   "He works here.",
+   "He speaks softly."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Often\" tells how frequently the action occurs.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-17",
+  "question": "In \"This is the man who helped us,\" \"who\" is a:",
+  "options": [
+   "relative pronoun",
+   "article",
+   "preposition",
+   "interjection"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "It introduces a relative clause and refers to \"man\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-18",
+  "question": "Which word is a determiner/article in \"An officer entered the room\"?",
+  "options": [
+   "officer",
+   "entered",
+   "An",
+   "room"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"An\" is the indefinite article modifying \"officer\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-19",
+  "question": "In \"He is extremely careful,\" \"extremely\" modifies:",
+  "options": [
+   "He",
+   "is",
+   "careful",
+   "the whole sentence only"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "It intensifies the adjective \"careful\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-20",
+  "question": "Which pair consists entirely of prepositions?",
+  "options": [
+   "in, on",
+   "and, but",
+   "very, quite",
+   "he, they"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Both \"in\" and \"on\" express relationships of place/time.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-21",
+  "question": "Choose the correct form: \"He ___ to the academy every morning.\"",
+  "options": [
+   "go",
+   "goes",
+   "went",
+   "going"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "A habitual action with a third-person singular subject takes \"goes\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-22",
+  "question": "\"They ___ the task before the instructor arrived.\"",
+  "options": [
+   "complete",
+   "had completed",
+   "have completed",
+   "were completing"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Past perfect marks the earlier of two past actions.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-23",
+  "question": "\"I ___ this book since Monday.\"",
+  "options": [
+   "read",
+   "am reading",
+   "have been reading",
+   "had read"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Since Monday\" with an ongoing action calls for present perfect continuous.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-24",
+  "question": "\"At 8 p.m. yesterday, we ___ for the test.\"",
+  "options": [
+   "studied",
+   "were studying",
+   "have studied",
+   "study"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "An action in progress at a specific past time uses past continuous.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-25",
+  "question": "\"By next June, she ___ her degree.\"",
+  "options": [
+   "completes",
+   "completed",
+   "will have completed",
+   "is completing"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Future perfect shows completion before a future point.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-26",
+  "question": "Choose the simple past sentence.",
+  "options": [
+   "He trains daily.",
+   "He trained yesterday.",
+   "He has trained.",
+   "He will train."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Trained\" with a finished past time is simple past.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-27",
+  "question": "\"The bus ___ before we reached the stop.\"",
+  "options": [
+   "left",
+   "has left",
+   "had left",
+   "leaves"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "The bus departure happened before another past event.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-28",
+  "question": "\"Listen! Someone ___ at the door.\"",
+  "options": [
+   "knocks",
+   "knocked",
+   "is knocking",
+   "has knocked"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Listen!\" signals an action happening now.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-29",
+  "question": "\"She ___ in Rawalpindi for five years.\" (She still lives there.)",
+  "options": [
+   "lived",
+   "has lived",
+   "had lived",
+   "will live"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Present perfect links a past beginning to the present.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-30",
+  "question": "\"When I was a child, I ___ cricket every evening.\"",
+  "options": [
+   "play",
+   "played",
+   "have played",
+   "am playing"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "A completed past habit takes simple past.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-31",
+  "question": "\"This time tomorrow, we ___ the written test.\"",
+  "options": [
+   "take",
+   "took",
+   "will be taking",
+   "have taken"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Future continuous describes an action in progress at a future time.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-32",
+  "question": "Which sentence is in present perfect tense?",
+  "options": [
+   "I finish the work.",
+   "I finished the work.",
+   "I have finished the work.",
+   "I had finished the work."
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Present perfect uses have/has + past participle.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-33",
+  "question": "\"If he studies hard, he ___ the test.\"",
+  "options": [
+   "passes",
+   "passed",
+   "will pass",
+   "would pass"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "First conditional: if + present simple, will + base verb.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-34",
+  "question": "\"He ___ for two hours before the rain stopped.\"",
+  "options": [
+   "ran",
+   "had been running",
+   "has been running",
+   "is running"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Past perfect continuous emphasizes duration before another past event.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-35",
+  "question": "\"The sun ___ in the east.\"",
+  "options": [
+   "rose",
+   "rises",
+   "is rising always",
+   "has risen daily"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Universal truths normally use simple present.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-36",
+  "question": "\"We ___ dinner when the phone rang.\"",
+  "options": [
+   "had",
+   "were having",
+   "have had",
+   "will have"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "A longer background action interrupted in the past uses past continuous.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-37",
+  "question": "\"She ___ already ___ the form.\"",
+  "options": [
+   "has / submitted",
+   "had / submit",
+   "is / submitted",
+   "was / submit"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Present perfect is has + past participle.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-38",
+  "question": "\"By the time you arrive, I ___ the report.\"",
+  "options": [
+   "finish",
+   "finished",
+   "will have finished",
+   "am finishing yesterday"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Completion before a future arrival takes future perfect.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-39",
+  "question": "Which is grammatically correct?",
+  "options": [
+   "I am knowing him.",
+   "I know him.",
+   "I have knowing him.",
+   "I was know him."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Stative verb \"know\" is normally not used in the continuous form.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-40",
+  "question": "\"He ___ to Lahore last week.\"",
+  "options": [
+   "has gone",
+   "goes",
+   "went",
+   "had go"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "A definite finished time \"last week\" requires simple past.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-41",
+  "question": "Choose the correct article: \"He is ___ honest man.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Honest\" begins with a vowel sound because the h is silent.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-42",
+  "question": "\"She wants to become ___ engineer.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Engineer\" begins with a vowel sound.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-43",
+  "question": "\"___ sun rises in the east.\"",
+  "options": [
+   "A",
+   "An",
+   "The",
+   "No article"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Unique objects such as the sun normally take \"the\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-44",
+  "question": "\"He is ___ university student.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"University\" begins with the consonant sound /ju:/.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-45",
+  "question": "\"We crossed ___ Indus River.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Names of rivers take the definite article.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-46",
+  "question": "Which sentence is correct?",
+  "options": [
+   "He plays the cricket.",
+   "He plays cricket.",
+   "He plays a cricket.",
+   "He plays an cricket."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Sports generally take no article when used generically.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-47",
+  "question": "\"She is ___ best candidate in the group.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Superlatives normally take \"the\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-48",
+  "question": "\"I saw ___ one-eyed man.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"One\" begins with a /w/ consonant sound.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-49",
+  "question": "\"He waited for ___ hour.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Hour\" begins with a vowel sound because h is silent.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-50",
+  "question": "\"___ Himalayas lie north of Pakistan.\"",
+  "options": [
+   "A",
+   "An",
+   "The",
+   "No article"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Plural mountain ranges take \"the\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-51",
+  "question": "Which phrase normally takes no article?",
+  "options": [
+   "the United States",
+   "the Netherlands",
+   "Mount Everest",
+   "the Arabian Sea"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Individual mountain peaks normally do not take an article.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-52",
+  "question": "\"He went to ___ school to attend his class.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 3,
+  "book_key": "D",
+  "reason": "Institutional use of \"school\" for its primary purpose often takes no article.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-53",
+  "question": "\"His father went to ___ school to meet the principal.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Here the school is a specific building/institution, not merely the activity of schooling.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-54",
+  "question": "\"She bought ___ umbrella and ___ raincoat.\"",
+  "options": [
+   "a / a",
+   "an / a",
+   "the / an",
+   "an / an"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Umbrella\" begins with a vowel sound; \"raincoat\" with a consonant sound.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-55",
+  "question": "\"___ Quran is the holy book of Islam.\"",
+  "options": [
+   "A",
+   "An",
+   "The",
+   "No article"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Names of well-known sacred texts are conventionally used with \"the\" in this construction.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-56",
+  "question": "Choose the correct phrase.",
+  "options": [
+   "an European country",
+   "a European country",
+   "the European country always",
+   "European an country"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"European\" begins with /j/, a consonant sound.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-57",
+  "question": "\"Pakistan is in ___ Asia.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 3,
+  "book_key": "D",
+  "reason": "Names of continents normally take no article.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-58",
+  "question": "\"He is ___ MBA graduate.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The letter M is pronounced /em/, beginning with a vowel sound.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-59",
+  "question": "\"This is ___ same book that I borrowed.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"The same\" is the standard expression.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-60",
+  "question": "\"She speaks ___ Urdu fluently.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 3,
+  "book_key": "D",
+  "reason": "Names of languages normally take no article.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-61",
+  "question": "\"He is good ___ mathematics.\"",
+  "options": [
+   "in",
+   "at",
+   "on",
+   "for"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The standard collocation is \"good at\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-62",
+  "question": "\"She is interested ___ military history.\"",
+  "options": [
+   "on",
+   "at",
+   "in",
+   "for"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "The standard collocation is \"interested in\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-63",
+  "question": "\"The test begins ___ 8:00 a.m.\"",
+  "options": [
+   "in",
+   "on",
+   "at",
+   "by"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Use \"at\" for exact clock times.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-64",
+  "question": "\"We will meet ___ Monday.\"",
+  "options": [
+   "in",
+   "on",
+   "at",
+   "from"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Use \"on\" for days and dates.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-65",
+  "question": "\"Pakistan became independent ___ 1947.\"",
+  "options": [
+   "in",
+   "on",
+   "at",
+   "since"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Use \"in\" for years.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-66",
+  "question": "\"The cadets marched ___ the bridge.\"",
+  "options": [
+   "across",
+   "between",
+   "during",
+   "since"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Across\" expresses movement from one side to the other.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-67",
+  "question": "\"He has lived here ___ 2022.\"",
+  "options": [
+   "for",
+   "since",
+   "from only",
+   "during"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Since\" marks the starting point of an action continuing to the present.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-68",
+  "question": "\"He has lived here ___ four years.\"",
+  "options": [
+   "since",
+   "for",
+   "at",
+   "by"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"For\" expresses a duration.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-69",
+  "question": "\"Divide the sweets ___ the two boys.\"",
+  "options": [
+   "among",
+   "between",
+   "into",
+   "beside"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Between\" is standard for two distinct parties.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-70",
+  "question": "\"The teacher distributed books ___ the students.\"",
+  "options": [
+   "between",
+   "among",
+   "through",
+   "onto"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Among\" is used for a group of more than two.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-71",
+  "question": "\"He was accused ___ theft.\"",
+  "options": [
+   "for",
+   "of",
+   "with",
+   "by"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The standard collocation is \"accused of\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-72",
+  "question": "\"This book belongs ___ me.\"",
+  "options": [
+   "with",
+   "for",
+   "to",
+   "at"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Belong to\" is the correct construction.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-73",
+  "question": "\"She is afraid ___ dogs.\"",
+  "options": [
+   "from",
+   "of",
+   "with",
+   "at"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The standard collocation is \"afraid of\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-74",
+  "question": "\"The plane flew ___ the clouds.\"",
+  "options": [
+   "above",
+   "between only",
+   "beside",
+   "since"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Above\" indicates a higher position.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t1-75",
+  "question": "\"He sat ___ me during the lecture.\"",
+  "options": [
+   "besides",
+   "beside",
+   "among",
+   "across"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Beside\" means next to; \"besides\" means in addition to.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ }
+]

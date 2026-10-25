@@ -32,7 +32,7 @@ textarea{min-height:110px}.badge{background:var(--no);color:#fff;border-radius:9
 <script>
 (function(){
 var ADMIN='asadullah75t@gmail.com',CFG=__FBCFG__;
-var CATS=[['o','1000 MCQs'],['pma','PMA 159'],['fa','Forces Academy'],['hk','Hakeem'],['lc','PMA 158'],['pg','Pro Genius'],['nv','Non Verbal'],['cn','Constitution of Pakistan'],['iv','100 Most Repeated']];
+var CATS=[['o','1000 MCQs'],['pma','PMA 159'],['fa','Forces Academy'],['hk','Hakeem'],['lc','PMA 158'],['pg','Pro Genius'],['nv','Non Verbal'],['cn','Constitution of Pakistan'],['iv','100 Most Repeated'],['en','English']];
 var $=function(i){return document.getElementById(i)},FB=window.FB,app=FB.initializeApp(CFG),auth=FB.getAuth(app),fs=FB.getFirestore(app);
 var emu=location.hostname==='localhost'&&/[?&]emu=1/.test(location.search);
 if(emu){FB.connectAuthEmulator(auth,'http://127.0.0.1:9099',{disableWarnings:true});FB.connectFirestoreEmulator(fs,'127.0.0.1',8080);$('emuForm').style.display='block'}
@@ -80,9 +80,9 @@ document.addEventListener('click',function(e){var b=e.target.closest('button[dat
   job.then(function(){say(a==='ok'?'Saved. This person is in the People tab: open it any time to tick or untick categories.':'Done');return load()}).catch(function(x){say('Failed: '+(x.code||x.message),1)})});
 function keyBoxes(vals){$('keyBoxes').innerHTML=CATS.map(function(c){return '<div class="card"><b>'+c[1]+'</b><input type="text" id="k_'+c[0]+'" autocomplete="off" autocapitalize="characters" value="'+esc(vals[c[0]]||'')+'" placeholder="XXXX-XXXX"></div>'}).join('')}
 function loadKeys(){var vals={};Promise.all(CATS.map(function(c){return FB.getDoc(FB.doc(fs,'catKeys',c[0])).then(function(d){if(d.exists())vals[c[0]]=d.data().pw}).catch(function(){})})).then(function(){keyBoxes(vals)})}
-$('bFill').onclick=function(){var t=$('paste').value,vals={};var map={o:/1000\s*MCQs/i,pma:/PMA\s*159/i,fa:/Forces\s*Academy/i,hk:/Hakeem/i,lc:/PMA\s*158/i,pg:/Pro\s*Genius/i,nv:/Non\s*Verbal/i,cn:/Constitution/i,iv:/Most\s*Repeated/i};
-  t.split(/\n/).forEach(function(l){var m=/([A-Z0-9]{4}-[A-Z0-9]{4})\s*$/i.exec(l.trim());if(!m)return;for(var k of ['pg','nv','cn','iv','o','pma','fa','hk','lc']){if(map[k].test(l)){vals[k]=m[1].toUpperCase();break}}});
-  keyBoxes(vals);say('Filled '+Object.keys(vals).length+' of 9. Check them, then press Save all passwords.')};
+$('bFill').onclick=function(){var t=$('paste').value,vals={};var map={o:/1000\s*MCQs/i,pma:/PMA\s*159/i,fa:/Forces\s*Academy/i,hk:/Hakeem/i,lc:/PMA\s*158/i,pg:/Pro\s*Genius/i,nv:/Non\s*Verbal/i,cn:/Constitution/i,iv:/Most\s*Repeated/i,en:/English/i};
+  t.split(/\n/).forEach(function(l){var m=/([A-Z0-9]{4}-[A-Z0-9]{4})\s*$/i.exec(l.trim());if(!m)return;for(var k of ['pg','nv','cn','iv','en','o','pma','fa','hk','lc']){if(map[k].test(l)){vals[k]=m[1].toUpperCase();break}}});
+  keyBoxes(vals);say('Filled '+Object.keys(vals).length+' of 10. Check them, then press Save all passwords.')};
 $('bSaveKeys').onclick=function(){var jobs=[],n=0;CATS.forEach(function(c){var el=$('k_'+c[0]);if(!el)return;var v=el.value.trim().toUpperCase();if(!v)return;n++;jobs.push(FB.setDoc(FB.doc(fs,'catKeys',c[0]),{pw:v}))});
   if(!n){say('Nothing to save',1);return}Promise.all(jobs).then(function(){say('Saved '+n+' passwords')}).catch(function(x){var c=x.code||x.message||'';say(/permission/.test(c)?'For safety, passwords can be saved only within 15 minutes after signing in. Tap Logout, sign in again with Google, then save.':'Failed: '+c,1)})};
 keyBoxes({});

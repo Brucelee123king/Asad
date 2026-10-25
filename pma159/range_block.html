@@ -50,9 +50,9 @@ html.dark #rngModal .go.alt{color:#a5b4fc;border-color:#a5b4fc}
   var SKIP=/^(MR|NV|VB)-/;                /* MR tests only repeat Hakeem MCQs: never count them twice; CN and IV only count inside their own chip, not in All sections */
   var idx=null,CAT='ALL';
   window.__rngReset=function(){idx=null};
-  var CATLOCK={O:'o',PMA:'pma',HK:'hk',FA:'fa',LC:'lc',PG:'pg',CN:'cn',IV:'iv'};
-  var CATS=[['ALL','All sections'],['O','1000 MCQs'],['PMA','PMA 159'],['HK','Hakeem'],['FA','Forces Academy'],['LC','PMA 158'],['PG','Pro Genius'],['CN','Constitution'],['IV','100 Most Repeated']];
-  function catOf(k){var p=k.split('-')[0];return p==='PG'||p==='PF'?'PG':(p==='PMA'||p==='HK'||p==='FA'||p==='LC'||p==='CN'||p==='IV')?p:'O'}
+  var CATLOCK={O:'o',PMA:'pma',HK:'hk',FA:'fa',LC:'lc',PG:'pg',CN:'cn',IV:'iv',EN:'en'};
+  var CATS=[['ALL','All sections'],['O','1000 MCQs'],['PMA','PMA 159'],['HK','Hakeem'],['FA','Forces Academy'],['LC','PMA 158'],['PG','Pro Genius'],['CN','Constitution'],['IV','100 Most Repeated'],['EN','English']];
+  function catOf(k){var p=k.split('-')[0];return p==='PG'||p==='PF'?'PG':(p==='PMA'||p==='HK'||p==='FA'||p==='LC'||p==='CN'||p==='IV'||p==='EN')?p:'O'}
   function strip(q){
     var s=String(q).replace(/^\s*\((?:Original MCQ #\d+|[^)]*\u00B7[^)]*)\)\s*/i,'');
     var w=1,m=/\s*\((?:Repeated in\s+)?(\d+)(?:\s+tests?)?\)\s*$/i.exec(s);
@@ -87,7 +87,7 @@ html.dark #rngModal .go.alt{color:#a5b4fc;border-color:#a5b4fc}
     idx=Object.keys(map).map(function(k){return map[k]});
     return idx;
   }
-  var SECN={PMA:'PMA 159',FA:'Forces Academy',HK:'Hakeem',LC:'PMA 158',PG:'Pro Genius',PF:'Pro Genius',CN:'Constitution',IV:'100 Most Repeated'};
+  var SECN={PMA:'PMA 159',FA:'Forces Academy',HK:'Hakeem',LC:'PMA 158',PG:'Pro Genius',PF:'Pro Genius',CN:'Constitution',IV:'100 Most Repeated',EN:'English'};
   function secLabel(e){var o=Object.keys(e.secs).map(function(s){return SECN[s]||'1000 MCQs'});return o.join(', ')}
   function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
   function catName(){for(var i=0;i<CATS.length;i++)if(CATS[i][0]===CAT)return CATS[i][0]==='ALL'?'all sections':CATS[i][1];return ''}
