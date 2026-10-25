@@ -25,8 +25,8 @@
   "correct": 1,
   "why": "Mangla Dam is on the River Jhelum in Mirpur, Azad Kashmir. The Indus has Tarbela, the Chenab and Ravi have no big storage dam in Pakistan.",
   "rel": "Mangla Dam was completed in 1967. Tarbela Dam is on the River Indus.",
-  "rep": 0,
-  "src": "lc100 3",
+  "rep": 1,
+  "src": "lc100 3 + exp",
   "note": ""
  },
  {
@@ -40,8 +40,8 @@
   "correct": 2,
   "why": "The Indus is about 3,180 km long and flows through all of Pakistan to the Arabian Sea. Jhelum, Chenab and Kabul are its smaller tributaries.",
   "rel": "The Indus starts in Tibet near Lake Mansarovar. It falls into the Arabian Sea near Thatta, Sindh.",
-  "rep": 0,
-  "src": "lc100 4",
+  "rep": 1,
+  "src": "lc100 4 + exp",
   "note": ""
  },
  {
@@ -85,8 +85,8 @@
   "correct": 1,
   "why": "The Pacific is the largest ocean, covering about one third of the Earth. The Atlantic is second, the Indian third and the Arctic is the smallest.",
   "rel": "The Pacific is also the deepest ocean. The Mariana Trench is in the Pacific.",
-  "rep": 0,
-  "src": "lc100 7",
+  "rep": 1,
+  "src": "lc100 7 + exp",
   "note": ""
  },
  {
@@ -188,8 +188,8 @@
    "Kamran Tessori"
   ],
   "correct": 0,
-  "why": "Syed Murad Ali Shah of PPP became CM Sindh for a third time in February 2024 and still holds the post. Qaim Ali Shah is a former CM, Sharjeel Memon is a Sindh minister and Kamran Tessori is the Governor.",
-  "rel": "Kamran Tessori is the Governor of Sindh. Karachi is the capital of Sindh.",
+  "why": "Syed Murad Ali Shah of PPP became CM Sindh for a third time in February 2024 and still holds the post. Qaim Ali Shah is a former CM, Sharjeel Memon is a Sindh minister and Kamran Tessori is a former Governor (until March 2026).",
+  "rel": "Nehal Hashmi (PML-N) has been the Governor of Sindh since 13 March 2026. Karachi is the capital of Sindh.",
   "rep": 0,
   "src": "lc100 14",
   "note": ""
@@ -384,7 +384,7 @@
   ],
   "correct": 1,
   "why": "The first Asian Games were held in New Delhi in March 1951. 1954 was the second Games in Manila, 1962 was in Jakarta, and 1948 was the London Olympics year.",
-  "rel": "The idea of the Asian Games was given by Guru Dutt Sondhi of India. The 2026 Asian Games are in Aichi-Nagoya, Japan.",
+  "rel": "The idea of the Asian Games was given by Guru Dutt Sondhi of India. The 2026 Asian Games were held in Aichi-Nagoya, Japan.",
   "rep": 0,
   "src": "lc100 27",
   "note": ""
@@ -594,7 +594,7 @@
   ],
   "correct": 3,
   "why": "Darul Uloom Deoband was founded on 30 May 1866 by Maulana Qasim Nanotvi and Rashid Ahmad Gangohi. 1857 is the War of Independence, 1875 the founding of MAO School Aligarh, and 1885 of the Indian National Congress.",
-  "rel": "The Nadwat-ul-Ulama was founded in Lucknow in 1894. Sir Syed founded the MAO School in 1875.",
+  "rel": "The Nadwat-ul-Ulama was founded in 1894 and later based in Lucknow. Sir Syed founded the MAO School in 1875.",
   "rep": 0,
   "src": "lc100 41",
   "note": ""
