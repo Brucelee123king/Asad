@@ -12,7 +12,8 @@ for T in ('I','II','III'):
         f=os.path.join(d,'out','%s_%02d.json'%(T,k))
         if not os.path.exists(f) or '%s_%02d'%(T,k) in drop: continue
         q=json.load(open(f))
-        FIX={'II_03':3,'II_04':5}   # book key prints (8) and (7) but these questions have only 5 and 6 figures: answer worked out from the figures
+        FIX={'II_03':3,'II_04':5,   # book key prints (8) and (7) but these questions have only 5 and 6 figures: answer worked out from the figures
+             'II_09':1,'II_13':1,'III_13':5,'III_21':3,'II_01':7,'II_10':6}   # II_01/II_10: two figures are flipped, last option 'Both ..' added; others: book key does not fit the figures (see 'note' in out/<id>.json); user said: use the answer that fits
         want=FIX.get('%s_%02d'%(T,k),key[T][str(k)])
         assert q['correct']==want-1,(T,k,q['correct'],want)
         assert 2<=len(q['options'])<=8 and all(s.startswith('<svg') for s in q['options'])
