@@ -114,7 +114,7 @@ html.dark #srchModal .it .a{color:#6ee7b7}
     if(q.nv||k.indexOf('NV-')===0)return 'Non Verbal';
     if(k.indexOf('VB-')===0||/^Verbal: Maths/.test(sc))return 'Verbal';
     if(k.indexOf('EN-')===0||/English/.test(sc))return 'English';
-    if(sc==='Islamiat'||RX.isl.test(t))return 'Islamiat';
+    if(k.indexOf('IS-')===0||sc==='Islamiat'||RX.isl.test(t))return 'Islamiat';
     if(sc==='Current Affairs'||RX.ca.test(t))return 'Current Affairs';
     if(sc==='Pakistan Studies'||k.indexOf('CN-')===0||RX.pak.test(t))return 'Pakistan Studies';
     if(/Science/.test(sc)||RX.sci.test(t))return 'Science';
