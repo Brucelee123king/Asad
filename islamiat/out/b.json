@@ -8,7 +8,7 @@
    "124"
   ],
   "correct": 0,
-  "why": "A) is right: The Holy Quran has 114 Surahs. B) 120 is wrong; there are only 114 Surahs. C) 110 is not the count; Surah An-Nasr is the 110th Surah. D) 124 is wrong; it is close to the number of Surahs that start with Bismillah (113).",
+  "why": "A) is right: The Holy Quran has 114 Surahs. B) 120 is wrong; there are only 114 Surahs. C) 110 is not the count; Surah An-Nasr is the 110th Surah. D) 124 is wrong; there are only 114 Surahs.",
   "rel": "The Quran has 30 Paras (Juz) and 6236 Ayats.",
   "topic": "Holy Quran",
   "note": ""
@@ -196,20 +196,6 @@
   "note": ""
  },
  {
-  "question": "Cave Hira is located on which mountain?",
-  "options": [
-   "Jabal-e-Noor",
-   "Jabal-e-Uhud",
-   "Jabal-e-Rehmat",
-   "Jabal-e-Saur"
-  ],
-  "correct": 0,
-  "why": "A) is right: Cave Hira is on Jabal-e-Noor (Mountain of Light) near Makkah. B) Jabal-e-Uhud is near Madina, site of Ghazwa Uhud. C) Jabal-e-Rehmat is in Arafat, where the Last Sermon was given. D) Jabal-e-Saur has Cave Saur, used during Hijrat.",
-  "rel": "The first revelation was Surah Al-Alaq in Cave Hira.",
-  "topic": "Holy Quran",
-  "note": ""
- },
- {
   "question": "In how much time was the Holy Quran completely revealed?",
   "options": [
    "22 years, 5 months, 14 days",
@@ -386,7 +372,7 @@
    "Earthquake"
   ],
   "correct": 0,
-  "why": "A) is right: Kusuf means solar eclipse; Salat-ul-Kusuf is offered then. B) Lunar eclipse is Khusuf; its prayer is Salat-ul-Khusuf. C) For drought, Salat-ul-Istisqa is offered. D) There is no prayer called Kusuf for earthquake.",
+  "why": "A) is right: Kusuf means solar eclipse; Salat-ul-Kusuf is offered then. B) Lunar eclipse is Khusuf; its prayer is Salat-ul-Khusuf. C) For drought, Salat-ul-Istisqa is offered. D) Earthquake is wrong: Kusuf means solar eclipse, not earthquake.",
   "rel": "Khusuf means lunar eclipse.",
   "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
   "note": ""
@@ -402,34 +388,6 @@
   "correct": 1,
   "why": "B) is right: Khusuf means lunar eclipse; Salat-ul-Khusuf is offered then. A) Solar eclipse is Kusuf. C) Prayer in war is Salat-ul-Khauf. D) Prayer for rain is Salat-ul-Istisqa.",
   "rel": "Kusuf means solar eclipse.",
-  "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
-  "note": ""
- },
- {
-  "question": "Fasting (Roza) of Ramadan was made compulsory in which year?",
-  "options": [
-   "9 AH",
-   "5 AH",
-   "Before Hijrat",
-   "2 AH"
-  ],
-  "correct": 3,
-  "why": "D) is right: Fasting in Ramadan was made Farz in 2 AH. A) 9 AH is the year Hajj was made Farz. B) 5 AH is wrong for fasting. C) Namaz was made Farz before Hijrat (Meraj), not fasting.",
-  "rel": "Zakat was also made compulsory in 2 AH.",
-  "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
-  "note": ""
- },
- {
-  "question": "Zakat was made compulsory in which year?",
-  "options": [
-   "8 AH",
-   "6 AH",
-   "9 AH",
-   "2 AH"
-  ],
-  "correct": 3,
-  "why": "D) is right: Zakat was made compulsory in 2 AH (per Pakistani syllabus books). A) 8 AH is the year of Conquest of Makkah. B) 6 AH is the year of Treaty of Hudaibiya. C) 9 AH is the year Hajj was made Farz.",
-  "rel": "Fasting was also made Farz in 2 AH.",
   "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
   "note": ""
  },
@@ -626,20 +584,6 @@
   "correct": 3,
   "why": "D) is right: Rami of Jamarat is done at Mina. A) Pebbles are collected at Muzdalifa, but Rami is at Mina. B) Safa Marwah is for Saee. C) Arafat is for Wuquf on 9th Zil Hajj.",
   "rel": "Saee between Safa and Marwah is done 7 times.",
-  "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
-  "note": ""
- },
- {
-  "question": "How many rounds of Saee are done between Safa and Marwah?",
-  "options": [
-   "3",
-   "7",
-   "9",
-   "5"
-  ],
-  "correct": 1,
-  "why": "B) is right: Saee between Safa and Marwah has 7 rounds. A) 3 is the number of Farz of Hajj. C) 9 is wrong. D) 5 is wrong.",
-  "rel": "Tawaf of the Kaaba also has 7 rounds.",
   "topic": "Worship: Namaz, Fasting, Zakat, Hajj",
   "note": ""
  },
