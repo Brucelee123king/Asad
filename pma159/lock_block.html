@@ -7,7 +7,7 @@
 (function(){
   var L=window.__LOCK;if(!L)return;
   var $=function(i){return document.getElementById(i)};
-  var NAMES={o:'1000 MCQs',pma:'PMA 159 MCQs',fa:'Forces Academy Lahore MCQs',hk:'Hakeem Force Academy MCQs',lc:'PMA 158 Long Course MCQs',pg:'Pro Genius Academy MCQs',nv:'Non Verbal PMA Test',cn:'Constitution of Pakistan',iv:'100 Most Repeated Questions',en:'Academic PMA MCQs'};
+  var NAMES={o:'1000 MCQs',pma:'PMA 159 MCQs',fa:'Forces Academy Lahore MCQs',hk:'Hakeem Force Academy MCQs',lc:'PMA 158 Long Course MCQs',pg:'Pro Genius Academy MCQs',nv:'Non Verbal PMA Test',cn:'Constitution of Pakistan',iv:'100 Most Repeated Questions',en:'Academic PMA MCQs',lf:'Light Forces Academy MCQs'};
   var DAY=86400000,EXP=(L.expiryDays||7)*DAY,ids=Object.keys(L.cats),ST={},busy=false,ALLOWED=null,GETKEY=null;
   var subtle=window.crypto&&window.crypto.subtle,okEnv=!!subtle&&typeof DecompressionStream!=='undefined';
   function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);if(v===null)localStorage.removeItem(k);else localStorage.setItem(k,v)}catch(e){return null}}
