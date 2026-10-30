@@ -55,7 +55,7 @@
     return 'Something went wrong. Please try again.'}
   /* ---- entering the app ---- */
   function getKey(id){return FB.getDoc(FB.doc(fs,'catKeys',id)).then(function(d){if(!d.exists())throw new Error('nokey');return d.data().pw})}
-  function enter(user,cats,offline){
+  function enter(user,cats,offline){window.__acCats=(cats||[]).slice();window.__acAdmin=!!(user&&(user.email||'').toLowerCase()===ADMIN);
     if(!offline)ls('ac_state',JSON.stringify({uid:user&&user.uid,name:nm(user),cats:cats,status:'approved',t:Date.now()}));
     document.documentElement.classList.add('acok');A.classList.add('hide');showUser(nm(user)||'');try{cmSetup(user,(user.email||'').toLowerCase()===ADMIN)}catch(e){}try{onSetup(user)}catch(e){}
     return window.__lkSetAllowed(cats,offline||!fs?null:getKey);
