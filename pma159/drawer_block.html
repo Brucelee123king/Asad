@@ -2,6 +2,11 @@
 /* ☰ side menu: My Profile, Favourites, Terms & Conditions, Privacy Policy, Logout */
 #hbBtn{width:40px;height:40px;border-radius:12px;display:inline-flex;align-items:center;justify-content:center;margin-right:10px;border:1px solid rgba(148,163,184,.35);background:rgba(255,255,255,.9);color:#1e1b4b;font-size:18px;box-shadow:0 6px 16px rgba(15,23,42,.12);cursor:pointer;flex:0 0 auto}
 html:not(.acok) #hbBtn{display:none}
+/* smooth slide in / out (also allowed in the phone's 'lite' mode, which stops other animations) */
+#drBack{opacity:0;transition:opacity .3s ease}#drBack.open{opacity:1}
+#drawer{transform:translateX(-105%);transition:transform .32s cubic-bezier(.22,.8,.24,1);will-change:transform}#drawer.open{transform:none}
+html.lite #drawer,html.lite #drBack{transition-duration:.32s!important}
+@media (prefers-reduced-motion:reduce){#drawer,#drBack,html.lite #drawer,html.lite #drBack{transition-duration:.01ms!important}}
 html.dark #hbBtn{background:rgba(15,23,42,.85);color:#e0e7ff;border-color:rgba(148,163,184,.25)}
 #drBack{position:fixed;inset:0;background:rgba(2,6,23,.55);z-index:2147483000}
 #drawer{position:fixed;top:0;bottom:0;left:0;width:300px;max-width:84vw;background:#fff;color:#1e1b4b;z-index:2147483001;box-shadow:12px 0 40px rgba(0,0,0,.35);display:flex;flex-direction:column;font-family:'Plus Jakarta Sans',system-ui,sans-serif;padding-bottom:env(safe-area-inset-bottom,0px);overflow-y:auto}
@@ -60,6 +65,7 @@ html.dark #drawer{background:#111316;color:#e5e7eb}html.dark #drawer .it,html.da
   function page(h){dr.innerHTML='<div class="pv">'+BACK+h+'</div>'}
   function open(){if(dr)return;bk=document.createElement('div');bk.id='drBack';dr=document.createElement('div');dr.id='drawer';dr.setAttribute('role','dialog');dr.setAttribute('aria-label','Menu');
     document.body.appendChild(bk);document.body.appendChild(dr);main();
+    void dr.offsetWidth;requestAnimationFrame(function(){if(bk)bk.classList.add('open');if(dr)dr.classList.add('open')});
     bk.onclick=function(){if(pushed&&history.state&&history.state.dr)history.back();else close()};
     dr.onclick=function(e){var b=e.target.closest('[data-k]');if(!b)return;var k=b.getAttribute('data-k');
       if(k==='menu')main();else if(k==='prof')prof();else if(k==='terms')page(TERMS);else if(k==='priv')page(PRIV);
@@ -67,7 +73,7 @@ html.dark #drawer{background:#111316;color:#e5e7eb}html.dark #drawer .it,html.da
         closeAll();try{window.startSaved()}catch(x){}}
       else if(k==='out'){closeAll();try{window.authLogout()}catch(x){}}};
     try{history.pushState({n:1,dr:1},'');pushed=true}catch(e){}}
-  function close(){if(!dr)return;dr.remove();bk.remove();dr=bk=null;pushed=false}
+  function close(){if(!dr)return;var d=dr,b=bk;dr=bk=null;pushed=false;d.classList.remove('open');b.classList.remove('open');b.style.pointerEvents='none';setTimeout(function(){d.remove();b.remove()},340)}
   function closeAll(){var p=pushed;close();if(p&&history.state&&history.state.dr)try{history.back()}catch(e){}}
   window.__drawerBack=function(){if(dr){close();return true}return false};
   hb.onclick=function(){dr?closeAll():open()};
