@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head><script>/*SHELLUPD*/(function(){var V=202610301450,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
+<head><script>/*SHELLUPD*/(function(){var V=202610301506,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
 try{var sv=+L.getItem('shell_v')||0,h=L.getItem('shell_html'),t=+L.getItem('shell_try')||0;
 if(h&&sv>V&&!window.__shellW){if(t>=2){L.removeItem('shell_html');L.removeItem('shell_v');L.removeItem('shell_try')}
 else{L.setItem('shell_try',String(t+1));window.__shellW=1;document.open();document.write(h);document.close();return}}}catch(e){}
@@ -2450,14 +2450,14 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
    'html.lite #stT .wdots i{animation-duration:1.2s!important;animation-iteration-count:infinite!important}'+
    'html.lite #auth .tas,#auth .tas{animation:auSwing 1.4s ease-in-out infinite alternate!important;animation-duration:1.4s!important;animation-iteration-count:infinite!important;will-change:transform}';document.head.appendChild(c)})();
   var st=document.createElement('div');st.className='pane';st.id='paneSt';st.hidden=true;
-  st.innerHTML='<h2 id="stT"></h2><p class="stmsg" id="stP"></p><div class="mbox" id="stMsg" hidden><label for="msgTx">Tell the admin what you need: Initial PMA Preparation, Interview or ISSB. (3 messages every day)</label><textarea id="msgTx" maxlength="300" placeholder="Example: Hi, I am Ali. Please enable Initial PMA Preparation for me."></textarea><div class="cnt" id="msgCnt"></div></div><div id="stBtns"></div><div class="err" id="stE"></div>';
+  st.innerHTML='<h2 id="stT"></h2><p class="stmsg" id="stP"></p><div class="mbox" id="stMsg" hidden><label for="msgTx">Tell the admin what you need: Initial PMA Preparation, Interview or ISSB. (3 messages every day)</label><textarea id="msgTx" maxlength="300" placeholder="Example: Hi, I am Ali. Please enable Initial PMA Preparation for me."></textarea><div class="cnt" id="msgCnt"></div></div><div id="stBtns"></div><div class="err" id="stE"></div><div id="waBox" hidden></div>';
   wrap.insertBefore(st,copy);
   var paneIn=$('paneIn'),paneUp=$('paneUp');
   function hideAll(){paneIn.hidden=true;paneUp.hidden=true;st.hidden=true}
   function showLogin(){A.classList.remove('hide');hideAll();paneIn.hidden=false;paneIn.classList.remove('out');$('authUser').style.display='none';
     var s=paneIn.querySelector('.sub');if(s)s.textContent='Login with your email. Your account needs approval from the admin.';
     var su=paneUp.querySelector('.sub');if(su)su.textContent='Fill in your name, email and a password. Then the admin approves your account.'}
-  function showStatus(title,msg,btns,err){A.classList.remove('hide');hideAll();st.hidden=false;st.classList.remove('out');$('stMsg').hidden=true;$('stT').textContent=title;if(/\.\.\.$/.test(title)){$('stT').textContent=title.slice(0,-3);var wd=document.createElement('span');wd.className='wdots';wd.innerHTML='<i>.</i><i>.</i><i>.</i>';$('stT').appendChild(wd)}$('stP').textContent=msg||'';$('stE').textContent=err||'';
+  function showStatus(title,msg,btns,err){A.classList.remove('hide');hideAll();st.hidden=false;try{$('waBox').hidden=true}catch(e){}st.classList.remove('out');$('stMsg').hidden=true;$('stT').textContent=title;if(/\.\.\.$/.test(title)){$('stT').textContent=title.slice(0,-3);var wd=document.createElement('span');wd.className='wdots';wd.innerHTML='<i>.</i><i>.</i><i>.</i>';$('stT').appendChild(wd)}$('stP').textContent=msg||'';$('stE').textContent=err||'';
     var b=$('stBtns');b.innerHTML='';(btns||[]).forEach(function(x,i){var e=document.createElement('button');e.type='button';e.className=i===0?'btn':'stb';e.textContent=x[0];e.onclick=x[1];b.appendChild(e)})}
   function showUser(name){$('authUserName').textContent='👤 '+(name||'');$('authUser').style.display='flex'}
   function nm(u){return ls('ac_name')||(u&&u.displayName)||(u&&u.email)||''}
@@ -2516,10 +2516,22 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
     var k=n+1,o={};o.n=k;o['m'+k]=t.slice(0,300);o['t'+k]=FB.serverTimestamp();
     return (n===0?FB.setDoc(dref(user.uid),o):FB.updateDoc(dref(user.uid),o)).then(function(){return {n:k}})})}
   function cntText(n,ok){return (ok?'Message sent. ':'')+'Messages sent today: '+n+' of '+MAXM+(n>=MAXM?'. The limit for today is reached. You can write again tomorrow.':'. You can send '+MAXM+' messages every day.')}
+  /* WhatsApp Channel / Group on the waiting page. The phone app blocks outside links, so a tap COPIES the link (the student pastes it in WhatsApp). Empty link = button not shown. */
+  var WA={channel:'https://whatsapp.com/channel/0029Vb9RIMgF6smxoGj3tb1U',group:'https://chat.whatsapp.com/E6flhu5fGhmCfNjQTEhT6H'};
+  var WAICON='<svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#fff" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-3.9-.5-5.6-1.5l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6z"/><path fill="#fff" d="M22.1 18.9c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2l-1 1.3c-.2.2-.4.3-.7.1-1.9-.9-3.3-2.2-4.3-4-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.6l-1-2.5c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.9 5.2 2.2.9 3 1 4.1.8.7-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.3-.6-.4z"/></svg>';
+  function waCopy(t,btn){var ok=false;try{var ta=document.createElement('textarea');ta.value=t;ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();ok=document.execCommand('copy');document.body.removeChild(ta)}catch(e){}
+    try{if(navigator.clipboard)navigator.clipboard.writeText(t).catch(function(){})}catch(e){}
+    var n=btn.querySelector('.wan');if(n){n.textContent='Link copied! Open WhatsApp and paste it';setTimeout(function(){n.textContent='Tap to copy the link'},4000)}}
+  function waRender(){var b=$('waBox');if(!b)return;var items=[['channel','WhatsApp Channel','JOURNEY TO PMA: daily updates, MCQs and tips'],['group','WhatsApp Group','Ask questions and talk to other students']].filter(function(x){return WA[x[0]]});
+    if(!items.length){b.hidden=true;b.innerHTML='';return}
+    if(!$('waCss')){var c=document.createElement('style');c.id='waCss';c.textContent='#waBox{margin-top:14px}#waBox .wah{font-weight:800;font-size:14px;margin:0 0 8px;opacity:.85}.wab{display:flex;align-items:center;gap:12px;width:100%;text-align:left;border:0;border-radius:16px;padding:12px 14px;margin:0 0 10px;cursor:pointer;color:#fff;background:linear-gradient(120deg,#128c4a,#25d366);box-shadow:0 8px 18px -8px rgba(18,140,74,.7)}.wab.g2{background:linear-gradient(120deg,#075e54,#1faa8a)}.wab svg{width:34px;height:34px;flex:0 0 auto}.wab b{display:block;font-size:16px}.wab small{display:block;font-size:12px;opacity:.9}.wab .wan{display:block;font-size:12px;font-weight:700;margin-top:3px;opacity:.95}.wab i.cp{margin-left:auto;font-size:18px;opacity:.9}';document.head.appendChild(c)}
+    b.innerHTML='<div class="wah">Join us on WhatsApp</div>'+items.map(function(x,i){return '<button type="button" class="wab'+(i?' g2':'')+'" data-wa="'+x[0]+'">'+WAICON+'<span><b>'+x[1]+'</b><small>'+x[2]+'</small><span class="wan">Tap to copy the link</span></span><i class="fa-regular fa-copy cp"></i></button>'}).join('');
+    b.querySelectorAll('.wab').forEach(function(bt){bt.onclick=function(){waCopy(WA[bt.getAttribute('data-wa')],bt)}});b.hidden=false}
+  window.__waPreview=function(o){WA=o||WA;waRender()};
   function showPending(user){
     showStatus('Waiting for approval','Your request is sent to the admin ('+user.email+'). When he approves you, press Check again.',[['Send message',function(){sendMsg(user)}],['Check again',function(){handle(auth.currentUser)}],['Logout',logout]]);
     $('stMsg').hidden=false;$('msgTx').value='';
-    msgCount(user).then(function(n){drawCnt(n)})}
+    msgCount(user).then(function(n){drawCnt(n)});try{waRender()}catch(e){}}
   function drawCnt(n,ok){var c=$('msgCnt'),b=$('stBtns').querySelector('button'),full=n>=MAXM;
     c.className='cnt'+(ok?' ok':'');c.textContent=cntText(n,ok);$('msgTx').disabled=full;if(b)b.disabled=full}
   function sendMsg(user){var t=($('msgTx').value||'').trim();if(!t){$('stE').textContent='Please write your message first.';return}
