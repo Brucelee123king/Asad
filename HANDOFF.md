@@ -318,3 +318,11 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 
 ## Oct 30 2026 (4)
 - Side menu (drawer_block.html) now slides in/out smoothly (CSS transform transition, `open` class; close waits 340 ms before removing). Works in lite mode too. Published via admin_publish.sh.
+
+## Oct 30 2026 (5)
+- Header: logo, app name and round letter button hidden; shows "Hi, <name>" (#hiName, name from profile, else sign-up name).
+- Side menu redesigned: full height, rounded right corners, white in light / dark in dark mode, outline icons.
+- My Profile = full "Edit Profile" page (slides in from right): photo (256px JPEG data URL, <100KB), first/last name, phone +92 (10 digits), address, province, city, gender, DOB, zip. Saved to Firestore `profiles/{uid}` (also cached in localStorage `ac_prof_<uid>`).
+- firestore.rules: new `profiles` block (user writes own, admin reads). User must paste the rules in the Firebase console.
+- admin.html: "User details" tab (photo, name, number; tap for all details).
+- access_block exposes window.__acDb() = {FB, fs}.
