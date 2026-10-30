@@ -85,7 +85,7 @@ html.pmaon #landBack{display:inline-flex}
   bk.addEventListener('click',function(){if(history.state&&history.state.n)history.back();else go('home')});
   /* phone Back button / header Back: from the categories or a 'coming soon' page go back to the main page */
   window.__landBack=function(){if(atMenu()&&ST!=='home'){go('home');return true}return false};
-  window.__landAtHome=function(){return ST==='home'};
+  window.__landAtHome=function(){return ST==='home'};window.__landHome=function(){go('home')};
   setInterval(show,400);
   go('home');
 }

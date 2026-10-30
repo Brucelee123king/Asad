@@ -20,6 +20,7 @@ html.dark #backBtn{background:rgba(15,23,42,.85);color:#e0e7ff;border-color:rgba
   function performBack(){
     if(window.__aiBackHook&&window.__aiBackHook())return;
     if(window.__drawerBack&&window.__drawerBack()){sync();return}
+    if(window.__nbBack&&window.__nbBack()){sync();return}
     if(window.__landBack&&window.__landBack()){sync();window.scrollTo(0,0);return}
     if(vis('view-home')||vis('view-quiz')||vis('view-results')){
       if(vis('view-quiz')&&typeof quizActive!=='undefined'&&quizActive){
