@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head><script>/*SHELLUPD*/(function(){var V=202610301441,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
+<head><script>/*SHELLUPD*/(function(){var V=202610301450,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
 try{var sv=+L.getItem('shell_v')||0,h=L.getItem('shell_html'),t=+L.getItem('shell_try')||0;
 if(h&&sv>V&&!window.__shellW){if(t>=2){L.removeItem('shell_html');L.removeItem('shell_v');L.removeItem('shell_try')}
 else{L.setItem('shell_try',String(t+1));window.__shellW=1;document.open();document.write(h);document.close();return}}}catch(e){}
@@ -2450,7 +2450,7 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
    'html.lite #stT .wdots i{animation-duration:1.2s!important;animation-iteration-count:infinite!important}'+
    'html.lite #auth .tas,#auth .tas{animation:auSwing 1.4s ease-in-out infinite alternate!important;animation-duration:1.4s!important;animation-iteration-count:infinite!important;will-change:transform}';document.head.appendChild(c)})();
   var st=document.createElement('div');st.className='pane';st.id='paneSt';st.hidden=true;
-  st.innerHTML='<h2 id="stT"></h2><p class="stmsg" id="stP"></p><div class="mbox" id="stMsg" hidden><label for="msgTx">Tell the admin what you need: write the category and which MCQs you want. (3 messages every day)</label><textarea id="msgTx" maxlength="300" placeholder="Example: Hi, I am Ali. Please enable PMA 159 MCQs for me."></textarea><div class="cnt" id="msgCnt"></div></div><div id="stBtns"></div><div class="err" id="stE"></div>';
+  st.innerHTML='<h2 id="stT"></h2><p class="stmsg" id="stP"></p><div class="mbox" id="stMsg" hidden><label for="msgTx">Tell the admin what you need: Initial PMA Preparation, Interview or ISSB. (3 messages every day)</label><textarea id="msgTx" maxlength="300" placeholder="Example: Hi, I am Ali. Please enable Initial PMA Preparation for me."></textarea><div class="cnt" id="msgCnt"></div></div><div id="stBtns"></div><div class="err" id="stE"></div>';
   wrap.insertBefore(st,copy);
   var paneIn=$('paneIn'),paneUp=$('paneUp');
   function hideAll(){paneIn.hidden=true;paneUp.hidden=true;st.hidden=true}
@@ -2530,7 +2530,7 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
   function cmBuild(){if($('cmBox'))return;
     var f=document.createElement('button');f.type='button';f.id='cmFab';f.hidden=true;f.setAttribute('aria-label','Contact admin');f.innerHTML='<i class="fa-solid fa-comments"></i>';document.body.appendChild(f);
     var d=document.createElement('div');d.id='cmBox';d.hidden=true;
-    d.innerHTML='<div class="cmh"><b>Contact admin</b><button type="button" id="cmX" aria-label="Close">&#10005;</button></div><div class="cml" id="cmList"></div><p id="cmHelp">Tell the admin what you need: write the category and which MCQs you want.</p><textarea id="cmTx" maxlength="300" placeholder="Example: Please enable Hakeem MCQs for me."></textarea><div class="cnt" id="cmCnt"></div><div class="err" id="cmErr"></div><button type="button" id="cmGo" class="btn">Send message</button>';
+    d.innerHTML='<div class="cmh"><b>Contact admin</b><button type="button" id="cmX" aria-label="Close">&#10005;</button></div><div class="cml" id="cmList"></div><p id="cmHelp">Tell the admin what you need: Initial PMA Preparation, Interview or ISSB.</p><textarea id="cmTx" maxlength="300" placeholder="Example: Please enable Hakeem MCQs for me."></textarea><div class="cnt" id="cmCnt"></div><div class="err" id="cmErr"></div><button type="button" id="cmGo" class="btn">Send message</button>';
     document.body.appendChild(d);
     f.onclick=function(){d.hidden?cmOpen():(d.hidden=true)};$('cmX').onclick=function(){d.hidden=true};
     $('cmGo').onclick=function(){var t=($('cmTx').value||'').trim();if(!cmUser)return;if(!t){$('cmErr').textContent='Please write your message first.';return}

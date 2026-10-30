@@ -2324,7 +2324,7 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
    'html.lite #stT .wdots i{animation-duration:1.2s!important;animation-iteration-count:infinite!important}'+
    'html.lite #auth .tas,#auth .tas{animation:auSwing 1.4s ease-in-out infinite alternate!important;animation-duration:1.4s!important;animation-iteration-count:infinite!important;will-change:transform}';document.head.appendChild(c)})();
   var st=document.createElement('div');st.className='pane';st.id='paneSt';st.hidden=true;
-  st.innerHTML='<h2 id="stT"></h2><p class="stmsg" id="stP"></p><div class="mbox" id="stMsg" hidden><label for="msgTx">Tell the admin what you need: write the category and which MCQs you want. (3 messages every day)</label><textarea id="msgTx" maxlength="300" placeholder="Example: Hi, I am Ali. Please enable PMA 159 MCQs for me."></textarea><div class="cnt" id="msgCnt"></div></div><div id="stBtns"></div><div class="err" id="stE"></div>';
+  st.innerHTML='<h2 id="stT"></h2><p class="stmsg" id="stP"></p><div class="mbox" id="stMsg" hidden><label for="msgTx">Tell the admin what you need: Initial PMA Preparation, Interview or ISSB. (3 messages every day)</label><textarea id="msgTx" maxlength="300" placeholder="Example: Hi, I am Ali. Please enable Initial PMA Preparation for me."></textarea><div class="cnt" id="msgCnt"></div></div><div id="stBtns"></div><div class="err" id="stE"></div>';
   wrap.insertBefore(st,copy);
   var paneIn=$('paneIn'),paneUp=$('paneUp');
   function hideAll(){paneIn.hidden=true;paneUp.hidden=true;st.hidden=true}
@@ -2404,7 +2404,7 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
   function cmBuild(){if($('cmBox'))return;
     var f=document.createElement('button');f.type='button';f.id='cmFab';f.hidden=true;f.setAttribute('aria-label','Contact admin');f.innerHTML='<i class="fa-solid fa-comments"></i>';document.body.appendChild(f);
     var d=document.createElement('div');d.id='cmBox';d.hidden=true;
-    d.innerHTML='<div class="cmh"><b>Contact admin</b><button type="button" id="cmX" aria-label="Close">&#10005;</button></div><div class="cml" id="cmList"></div><p id="cmHelp">Tell the admin what you need: write the category and which MCQs you want.</p><textarea id="cmTx" maxlength="300" placeholder="Example: Please enable Hakeem MCQs for me."></textarea><div class="cnt" id="cmCnt"></div><div class="err" id="cmErr"></div><button type="button" id="cmGo" class="btn">Send message</button>';
+    d.innerHTML='<div class="cmh"><b>Contact admin</b><button type="button" id="cmX" aria-label="Close">&#10005;</button></div><div class="cml" id="cmList"></div><p id="cmHelp">Tell the admin what you need: Initial PMA Preparation, Interview or ISSB.</p><textarea id="cmTx" maxlength="300" placeholder="Example: Please enable Hakeem MCQs for me."></textarea><div class="cnt" id="cmCnt"></div><div class="err" id="cmErr"></div><button type="button" id="cmGo" class="btn">Send message</button>';
     document.body.appendChild(d);
     f.onclick=function(){d.hidden?cmOpen():(d.hidden=true)};$('cmX').onclick=function(){d.hidden=true};
     $('cmGo').onclick=function(){var t=($('cmTx').value||'').trim();if(!cmUser)return;if(!t){$('cmErr').textContent='Please write your message first.';return}
