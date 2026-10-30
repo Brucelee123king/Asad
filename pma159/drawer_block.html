@@ -1,0 +1,77 @@
+<style>
+/* ☰ side menu: My Profile, Favourites, Terms & Conditions, Privacy Policy, Logout */
+#hbBtn{width:40px;height:40px;border-radius:12px;display:inline-flex;align-items:center;justify-content:center;margin-right:10px;border:1px solid rgba(148,163,184,.35);background:rgba(255,255,255,.9);color:#1e1b4b;font-size:18px;box-shadow:0 6px 16px rgba(15,23,42,.12);cursor:pointer;flex:0 0 auto}
+html:not(.acok) #hbBtn{display:none}
+html.dark #hbBtn{background:rgba(15,23,42,.85);color:#e0e7ff;border-color:rgba(148,163,184,.25)}
+#drBack{position:fixed;inset:0;background:rgba(2,6,23,.55);z-index:2147483000}
+#drawer{position:fixed;top:0;bottom:0;left:0;width:300px;max-width:84vw;background:#fff;color:#1e1b4b;z-index:2147483001;box-shadow:12px 0 40px rgba(0,0,0,.35);display:flex;flex-direction:column;font-family:'Plus Jakarta Sans',system-ui,sans-serif;padding-bottom:env(safe-area-inset-bottom,0px);overflow-y:auto}
+#drawer .dh{padding:calc(24px + env(safe-area-inset-top,0px)) 20px 20px;background:linear-gradient(120deg,#b8860b,#ffe9a0 50%,#d4a017);color:#3b2a05}
+#drawer .av{width:58px;height:58px;border-radius:50%;background:#1e1b4b;color:#ffe9a0;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:24px;margin-bottom:10px;box-shadow:0 6px 16px rgba(0,0,0,.25)}
+#drawer .nm{font-weight:800;font-size:18px;word-break:break-word}#drawer .em{font-size:13px;opacity:.85;margin-top:2px;word-break:break-all}
+#drawer .it{display:flex;align-items:center;gap:14px;padding:15px 20px;font-weight:700;font-size:16px;color:inherit;border:0;border-bottom:1px solid #f1f5f9;background:none;width:100%;text-align:left;cursor:pointer;font-family:inherit}
+#drawer .it i{width:22px;text-align:center;color:#b8860b;font-size:18px}#drawer .it .ct{margin-left:auto;background:#fee2e2;color:#be123c;font-size:12px;font-weight:800;border-radius:999px;padding:2px 9px}
+#drawer .it.out{color:#dc2626;margin-top:auto;border-top:1px solid #f1f5f9}#drawer .it.out i{color:#dc2626}
+#drawer .ft{padding:12px 20px 18px;font-size:11px;color:#94a3b8;letter-spacing:.08em}
+#drawer .pv{padding:16px 20px 24px;font-size:14.5px;line-height:1.6}
+#drawer .pv h3{font-size:19px;margin:6px 0 10px;font-weight:800}#drawer .pv h4{font-size:15px;margin:14px 0 4px;font-weight:800}#drawer .pv p{margin:0 0 8px}
+#drawer .pvb{display:inline-flex;align-items:center;gap:8px;border:1px solid #e2e8f0;background:#fff;color:#334155;font-weight:700;font-size:14px;padding:8px 14px;border-radius:999px;cursor:pointer;font-family:inherit}
+#drawer .row2{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid #f1f5f9}#drawer .row2 b{font-weight:800}
+#drawer .ok{color:#15803d;font-weight:800}#drawer .no{color:#94a3b8;font-weight:700}
+#drawer .note{margin:10px 20px;padding:10px 12px;border-radius:12px;background:#fff7ed;color:#9a3412;font-size:13.5px;font-weight:600}
+html.dark #drawer{background:#111316;color:#e5e7eb}html.dark #drawer .it,html.dark #drawer .row2{border-color:#24262b}html.dark #drawer .pvb{background:#1b1d22;color:#e5e7eb;border-color:#2b2e35}html.dark #drawer .it.out{border-color:#24262b}
+</style>
+<script>
+(function(){function init(){
+  var row=document.querySelector('header>div>div');if(!row||document.getElementById('hbBtn'))return;
+  var hb=document.createElement('button');hb.type='button';hb.id='hbBtn';hb.setAttribute('aria-label','Menu');hb.innerHTML='<i class="fa-solid fa-bars"></i>';row.insertBefore(hb,row.firstChild);
+  var dr=null,bk=null,pushed=false;
+  function esc(s){return String(s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function who(){var u=window.__acUser?window.__acUser():null,n=window.__acName||'';try{if(!n)n=localStorage.getItem('ac_name')||''}catch(e){}
+    try{var s=JSON.parse(localStorage.getItem('ac_state')||'null');if(!n&&s&&s.name)n=s.name}catch(e){}
+    var em=(u&&u.email)||'';if(!n)n=(u&&u.displayName)||em.split('@')[0]||'Student';return {name:n,email:em}}
+  function favN(){try{return Object.keys(JSON.parse(localStorage.getItem('an_bm')||'{}')||{}).length}catch(e){return 0}}
+  function access(){var adm=!!window.__acAdmin,c=window.__acCats||[],pma=false;try{pma=adm||Object.keys(window.__lkAllowed?window.__lkAllowed():{}).length>0}catch(e){}
+    return [['Initial PMA Preparation',pma],['Initial Interview Preparation',adm||c.indexOf('int')>-1],['ISSB Preparation',adm||c.indexOf('issb')>-1]]}
+  function main(){var w=who(),n=favN();
+    dr.innerHTML='<div class="dh"><div class="av">'+esc((w.name[0]||'S').toUpperCase())+'</div><div class="nm">'+esc(w.name)+'</div><div class="em">'+esc(w.email)+'</div></div>'+
+      '<button type="button" class="it" data-k="prof"><i class="fa-solid fa-user"></i>My Profile</button>'+
+      '<button type="button" class="it" data-k="fav"><i class="fa-solid fa-heart"></i>Favourites'+(n?'<span class="ct">'+n+'</span>':'')+'</button>'+
+      '<button type="button" class="it" data-k="terms"><i class="fa-solid fa-file-contract"></i>Terms &amp; Conditions</button>'+
+      '<button type="button" class="it" data-k="priv"><i class="fa-solid fa-shield-halved"></i>Privacy Policy</button>'+
+      '<div id="drNote"></div>'+
+      '<button type="button" class="it out" data-k="out"><i class="fa-solid fa-right-from-bracket"></i>Logout</button><div class="ft">PMA PREPARATION</div>'}
+  var BACK='<button type="button" class="pvb" data-k="menu"><i class="fa-solid fa-arrow-left"></i> Menu</button>';
+  var TERMS='<h3>Terms &amp; Conditions</h3><p>PMA Preparation is a study app for the PMA Long Course initial test, interview and ISSB preparation.</p>'+
+    '<h4>Your account</h4><p>One account is for one person and works on one phone. Do not share your account or password. The admin can stop an account that is shared or misused.</p>'+
+    '<h4>Access</h4><p>The admin decides which preparations are opened for each account and can change or stop access at any time.</p>'+
+    '<h4>Content</h4><p>All MCQs, notes and explanations belong to PMA Preparation. Do not copy, sell or share them outside the app.</p>'+
+    '<h4>Answers</h4><p>We check every answer carefully, but mistakes can happen. If you find one, tell the admin so it can be fixed. The app is a study help and does not promise success in any test.</p>'+
+    '<h4>Changes</h4><p>These terms can be updated. Using the app means you accept the latest terms.</p>';
+  var PRIV='<h3>Privacy Policy</h3><p>We keep only what the app needs to work.</p>'+
+    '<h4>What we keep</h4><p>Your name, your email, which preparations are opened for you, the messages you send to the admin, a code for your phone (one account, one phone), and the time you were last online (for the online count).</p>'+
+    '<h4>What stays on your phone</h4><p>Your test scores, saved questions (Favourites), mistakes and streak are kept only on your phone.</p>'+
+    '<h4>Who can see it</h4><p>Only the admin can see your account details and messages. Other students see only the number of people online, never your name or email.</p>'+
+    '<h4>Sharing</h4><p>We never sell or share your data. The app uses Google Firebase to keep accounts safe.</p>'+
+    '<h4>Delete</h4><p>To delete your account and data, send a message to the admin.</p>';
+  function prof(){var w=who();dr.innerHTML='<div class="pv">'+BACK+'<h3>My Profile</h3>'+
+    '<div class="row2"><span>Name</span><b>'+esc(w.name)+'</b></div><div class="row2"><span>Email</span><b style="word-break:break-all;text-align:right">'+esc(w.email)+'</b></div>'+
+    '<h4>My preparations</h4>'+access().map(function(a){return '<div class="row2"><span>'+a[0]+'</span>'+(a[1]?'<span class="ok"><i class="fa-solid fa-circle-check"></i> Open</span>':'<span class="no"><i class="fa-solid fa-lock"></i> Locked</span>')+'</div>'}).join('')+
+    '<p style="margin-top:12px;font-size:13px;opacity:.75">To open a locked preparation, ask the admin.</p></div>'}
+  function page(h){dr.innerHTML='<div class="pv">'+BACK+h+'</div>'}
+  function open(){if(dr)return;bk=document.createElement('div');bk.id='drBack';dr=document.createElement('div');dr.id='drawer';dr.setAttribute('role','dialog');dr.setAttribute('aria-label','Menu');
+    document.body.appendChild(bk);document.body.appendChild(dr);main();
+    bk.onclick=function(){if(pushed&&history.state&&history.state.dr)history.back();else close()};
+    dr.onclick=function(e){var b=e.target.closest('[data-k]');if(!b)return;var k=b.getAttribute('data-k');
+      if(k==='menu')main();else if(k==='prof')prof();else if(k==='terms')page(TERMS);else if(k==='priv')page(PRIV);
+      else if(k==='fav'){if(!favN()){var n=document.getElementById('drNote');if(n)n.innerHTML='<div class="note">No favourites yet. Tap the star on any question to save it here.</div>';return}
+        closeAll();try{window.startSaved()}catch(x){}}
+      else if(k==='out'){closeAll();try{window.authLogout()}catch(x){}}};
+    try{history.pushState({n:1,dr:1},'');pushed=true}catch(e){}}
+  function close(){if(!dr)return;dr.remove();bk.remove();dr=bk=null;pushed=false}
+  function closeAll(){var p=pushed;close();if(p&&history.state&&history.state.dr)try{history.back()}catch(e){}}
+  window.__drawerBack=function(){if(dr){close();return true}return false};
+  hb.onclick=function(){dr?closeAll():open()};
+}
+var tries=0;(function wait(){if(document.querySelector('header>div>div')&&document.getElementById('backBtn'))init();else if(tries++<200)setTimeout(wait,50)})();
+})();
+</script>

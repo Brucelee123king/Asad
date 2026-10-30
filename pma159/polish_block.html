@@ -63,7 +63,7 @@ html.dark #hdrUser .av{border-color:rgba(255,255,255,.2)}
   function sync(){var src=document.getElementById('authUser'),nm=(document.getElementById('authUserName')||{}).textContent||'';
     var on=src&&src.style.display==='flex';box.style.display=on?'flex':'none';
     var n=nm.replace(/^\W+\s*/,'').trim()||'Guest';av.textContent=n.charAt(0).toUpperCase();av.title=n+' — tap to log out'}
-  av.onclick=function(){if(confirm('Log out of Asadullah Notes?'))authLogout();sync()};
+  av.onclick=function(){if(confirm('Log out of PMA Preparation?'))authLogout();sync()};
   new MutationObserver(sync).observe(document.getElementById('authUser'),{attributes:true,childList:true,subtree:true});sync();
 })();
 </script>

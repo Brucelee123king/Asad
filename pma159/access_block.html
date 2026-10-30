@@ -81,7 +81,7 @@
     return ud.then(function(d){
       if(!d.exists()){return FB.setDoc(FB.doc(fs,'users',user.uid),{email:email,name:nm(user),status:'pending',cats:[],requested:FB.serverTimestamp()}).then(function(){done();leave();showPending(user)})}
       var u=d.data();
-      if(u.status==='approved'){done();return enter(user,u.cats||[])}
+      if(u.status==='approved'){done();if(u.name){window.__acName=u.name;if(!ls('ac_name'))ls('ac_name',u.name)}return enter(user,u.cats||[])}
       done();leave();if(u.status==='blocked')showBlocked();else showPending(user);
     }).catch(function(e){done();var c=(e&&e.code)||'';if(/permission/.test(c)){leave();showStatus('No access','This account cannot use the app. Please contact the admin.',[['Logout',logout]]);return}return cached(user)});})
   }

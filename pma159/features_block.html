@@ -164,7 +164,7 @@ html.dark #srchModal .it .a{color:#6ee7b7}
     var host=$('result-pass-status').parentElement;var ex=$('resExtra');if(!ex){ex=document.createElement('div');ex.id='resExtra';host.appendChild(ex)}
     var pct=Math.round(c*100/n);
     ex.innerHTML='<button id="rxShare">\u{1F4E4} Share score</button><button id="rxMist">\u{1F501} Practice my mistakes</button>';
-    $('rxShare').onclick=function(){var t='I scored '+c+'/'+n+' ('+pct+'%) in a test on Asadullah Notes! Streak: '+streak()+' day(s). Try it yourself.';
+    $('rxShare').onclick=function(){var t='I scored '+c+'/'+n+' ('+pct+'%) in a test on PMA Preparation! Streak: '+streak()+' day(s). Try it yourself.';
       if(navigator.share){navigator.share({text:t}).catch(function(){})}else{try{navigator.clipboard.writeText(t);toast('Score copied \u2014 paste it anywhere')}catch(e){toast(t)}}};
     $('rxMist').onclick=function(){if(typeof showSelect==='function'){quizActive=false;showSelect()}startMistakes()};
     return r};

@@ -434,12 +434,12 @@ sub('auto-submit when the 20-minute timer expires.</p>', 'auto-submit when the 1
 
 # ---- 6. branding: Asadullah Notes, Asad signature ----
 import base64, os
-sub('<title>Mission Commission Academy – MCQ Tests 1 to 1000</title>', '<title>Asadullah Notes – MCQ Tests 1 to 1000</title>')
-sub('tracking-tight">Mission Commission Academy</h1>', 'tracking-tight">Asadullah Notes</h1>')
-sub('This test belongs to <span class="text-indigo-600 font-bold">Mission Commission Academy</span>', 'This test belongs to <span class="text-indigo-600 font-bold">Asadullah Notes</span>')
+sub('<title>Mission Commission Academy – MCQ Tests 1 to 1000</title>', '<title>PMA Preparation – MCQ Tests</title>')
+sub('tracking-tight">Mission Commission Academy</h1>', 'tracking-tight">PMA Preparation</h1>')
+sub('This test belongs to <span class="text-indigo-600 font-bold">Mission Commission Academy</span>', 'This test belongs to <span class="text-indigo-600 font-bold">PMA Preparation</span>')
 sub('Software Created by Admin Mubasher', 'Software Created by Admin Asadullah')
 sub('<h1 class="ln">MISSION <span>COMMISSION</span></h1>', '<h1 class="ln">ASADULLAH <span>NOTES</span></h1>')
-sub('This test is provided by Mission Commission for all of you.', 'This test is provided by Asadullah Notes for all of you.')
+sub('This test is provided by Mission Commission for all of you.', 'This test is provided by PMA Preparation for all of you.')
 sub('Special thanks to Sir Safeer and his admins.', 'Special thanks to Asadullah and his admins.')
 sig = base64.b64encode(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'asad_signature.jpg'), 'rb').read()).decode()
 s, n = re.subn(r'(<div class="sig"><img alt="Signature" src=")[^"]+(")', lambda m: m.group(1) + 'data:image/jpeg;base64,' + sig + m.group(2), s)
@@ -774,7 +774,7 @@ sub("function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA
 
 # login screen (glassy sign in / create account / continue as guest) and day-night mode
 _d = os.path.dirname(os.path.abspath(__file__))
-_blk = open(os.path.join(_d, 'theme_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'auth_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'seccolor_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'polish_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'backnav_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'land_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'features_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'range_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'nv_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'glass_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'd3_block.html'), encoding='utf8').read()
+_blk = open(os.path.join(_d, 'theme_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'auth_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'seccolor_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'polish_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'backnav_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'land_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'drawer_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'features_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'range_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'nv_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'glass_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'd3_block.html'), encoding='utf8').read()
 import json as _j
 _imgs=_j.load(open(os.path.join(_d,'space_imgs.json')))
 for _k,_v in _imgs.items(): _blk=_blk.replace('{{IMG_'+_k+'}}','data:image/webp;base64,'+_v)
