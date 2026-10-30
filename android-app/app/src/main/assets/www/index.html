@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head><script>/*SHELLUPD*/(function(){var V=202610301626,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
+<head><script>/*SHELLUPD*/(function(){var V=202610301628,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
 try{var sv=+L.getItem('shell_v')||0,h=L.getItem('shell_html'),t=+L.getItem('shell_try')||0;
 if(h&&sv>V&&!window.__shellW){if(t>=2){L.removeItem('shell_html');L.removeItem('shell_v');L.removeItem('shell_try')}
 else{L.setItem('shell_try',String(t+1));window.__shellW=1;document.open();document.write(h);document.close();return}}}catch(e){}
@@ -1957,7 +1957,7 @@ html.acok #hiName{display:block}html.dark #hiName{color:#f5f5f4}
 var tries=0;(function wait(){if(document.querySelector('header>div>div')&&document.getElementById('backBtn'))init();else if(tries++<200)setTimeout(wait,50)})();
 })();
 
-/* top strip (time, battery): follows the page that is open, about 20% darker in light mode / a little lighter in dark mode */
+/* top strip (time, battery): plain white in light mode, plain black in dark mode */
 (function(){var d=document.documentElement;
   function hx(r,g,b){return '#'+[r,g,b].map(function(n){n=Math.max(0,Math.min(255,Math.round(n)));return (n<16?'0':'')+n.toString(16)}).join('')}
   function parse(c){var m=/rgba?\(([^)]+)\)/.exec(c||'');if(m){var p=m[1].split(',').map(parseFloat);return {r:p[0],g:p[1],b:p[2],a:p.length>3?p[3]:1}}m=/^#([0-9a-f]{6})$/i.exec(c||'');if(m){var n=parseInt(m[1],16);return {r:n>>16,g:(n>>8)&255,b:n&255,a:1}}return null}
@@ -1968,7 +1968,7 @@ var tries=0;(function wait(){if(document.querySelector('header>div>div')&&docume
     if(document.querySelector('#drawer:not([data-gone])'))return dark?'#2b2620':'#fdfbf5';
     var h=document.querySelector('header'),p=h&&parse(getComputedStyle(h).backgroundColor);
     if(p&&p.a>.85)return hx(p.r,p.g,p.b);return dark?'#0e0b2a':'#fdfdfe'}
-  window.__topShade=function(){if(!d.classList.contains('acok'))return null;var a=document.getElementById('auth');if(a&&!a.classList.contains('hide'))return null;return shade(base())};
+  window.__topShade=function(){if(!d.classList.contains('acok'))return null;var a=document.getElementById('auth');if(a&&!a.classList.contains('hide'))return null;return d.classList.contains('dark')?'#000000':'#ffffff'};
   var bar=null;function upd(){if(!bar){bar=document.createElement('div');bar.id='satBar';document.body.appendChild(bar)}var c=window.__topShade();bar.style.backgroundColor=c||'transparent'}
   window.__topSync=function(){upd();d.classList.toggle('ovl',!!document.querySelector('#drawer:not([data-gone]),#pfPage:not([data-gone])'))};
   new MutationObserver(function(){upd()}).observe(d,{attributes:true,attributeFilter:['class']});
