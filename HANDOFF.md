@@ -326,3 +326,9 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - firestore.rules: new `profiles` block (user writes own, admin reads). User must paste the rules in the Firebase console.
 - admin.html: "User details" tab (photo, name, number; tap for all details).
 - access_block exposes window.__acDb() = {FB, fs}.
+
+## Oct 30 2026 (6) - published
+- Side menu + profile page + pickers use colour 14 "Pearl / Milk White": light #fdfbf5/#f3eee2, dark #2b2620/#1b1814, gold icons. Arrow tab (.dtab) on the menu edge closes it.
+- Gender/Province: app-styled bottom sheets (#pfSh). Other Options: Change Password (reset email), Change Language (English; Urdu "coming soon"), Delete Account (type DELETE; only within 5 min of sign-in; deletes profiles + users doc + auth user).
+- Rules: users and profiles can be deleted by their owner (user must paste firestore.rules).
+- Menu, profile and sheets start below the status bar (--sat). #satBar strip + window.__topShade (also used by android_head topColor) colour the status-bar area like the open page, ~18% darker in light / 10% lighter in dark.

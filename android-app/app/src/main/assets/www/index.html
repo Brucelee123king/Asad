@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head><script>/*SHELLUPD*/(function(){var V=202610301556,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
+<head><script>/*SHELLUPD*/(function(){var V=202610301626,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
 try{var sv=+L.getItem('shell_v')||0,h=L.getItem('shell_html'),t=+L.getItem('shell_try')||0;
 if(h&&sv>V&&!window.__shellW){if(t>=2){L.removeItem('shell_html');L.removeItem('shell_v');L.removeItem('shell_try')}
 else{L.setItem('shell_try',String(t+1));window.__shellW=1;document.open();document.write(h);document.close();return}}}catch(e){}
@@ -58,6 +58,7 @@ html body #auth .side{padding-top:calc(64px + var(--sat))!important}
   function hex(n) { n = Math.max(0, Math.min(255, Math.round(n))); return (n < 16 ? '0' : '') + n.toString(16); }
   function rgba(s) { var m = /rgba?\(([^)]+)\)/.exec(s || ''); if (!m) return null; var p = m[1].split(',').map(parseFloat); return { r: p[0], g: p[1], b: p[2], a: p.length > 3 ? p[3] : 1 }; }
   function topColor() {
+    try { if (window.__topShade) { var x = window.__topShade(); if (x) return x; } } catch (e) {}
     var dark = d.classList.contains('dark');
     var auth = document.getElementById('auth');
     if (auth && !auth.classList.contains('hide') && getComputedStyle(auth).display !== 'none' && getComputedStyle(auth).visibility !== 'hidden') return dark ? '#0e0b30' : '#e4dcfc';
@@ -1738,29 +1739,32 @@ html:not(.acok) #hbBtn{display:none}
 html.lite #drawer,html.lite #drBack{transition-duration:.32s!important}
 @media (prefers-reduced-motion:reduce){#drawer,#drBack,html.lite #drawer,html.lite #drBack{transition-duration:.01ms!important}}
 html.dark #hbBtn{background:rgba(15,23,42,.85);color:#e0e7ff;border-color:rgba(148,163,184,.25)}
-#drBack{position:fixed;inset:0;background:rgba(2,6,23,.5);z-index:2147483000}
-#drawer{--dbg:#fff;--dtx:#1f2937;--dmu:#6b7280;--dln:#e5e7eb;--dic:#374151;position:fixed;top:0;bottom:0;left:0;width:300px;max-width:82vw;background:var(--dbg);color:var(--dtx);z-index:2147483001;border-radius:0 26px 26px 0;box-shadow:14px 0 44px rgba(0,0,0,.28);display:flex;flex-direction:column;font-family:'Plus Jakarta Sans',system-ui,sans-serif;padding-bottom:env(safe-area-inset-bottom,0px);overflow-y:auto;overflow-x:hidden}
-html.dark #drawer{--dbg:#15171c;--dtx:#e5e7eb;--dmu:#9ca3af;--dln:#2a2d34;--dic:#d1d5db;box-shadow:14px 0 44px rgba(0,0,0,.6)}
-#drawer .dh{display:flex;align-items:center;gap:14px;padding:calc(30px + env(safe-area-inset-top,0px)) 20px 22px;border-bottom:1px solid var(--dln)}
+#drBack{position:fixed;inset:0;top:var(--sat,0px);background:rgba(2,6,23,.5);z-index:2147483000}
+#drawer{top:var(--sat,0px)!important;--dbg:linear-gradient(180deg,#fdfbf5 0%,#f3eee2 100%);--dtx:#2b2416;--dmu:#8a7a5a;--dln:#e7dfcc;--dic:#a07a2c;--dtb:#faf6ec;position:fixed;top:0;bottom:0;left:0;width:300px;max-width:80vw;background:var(--dbg);color:var(--dtx);z-index:2147483001;border-radius:0 26px 26px 0;box-shadow:14px 0 44px rgba(0,0,0,.22);font-family:'Plus Jakarta Sans',system-ui,sans-serif;overflow:visible}
+#drawer .dsc{height:100%;display:flex;flex-direction:column;overflow-y:auto;overflow-x:hidden;padding-bottom:env(safe-area-inset-bottom,0px);border-radius:inherit}
+#drawer .dtab{position:absolute;right:-21px;top:46px;width:44px;height:56px;border:0;border-radius:0 28px 28px 0;background:var(--dtb);color:var(--dic);font-size:20px;display:flex;align-items:center;justify-content:flex-end;padding-right:9px;cursor:pointer;box-shadow:6px 0 14px rgba(0,0,0,.18);z-index:2}
+
+html.dark #drawer{--dbg:linear-gradient(180deg,#2b2620 0%,#1b1814 100%);--dtx:#f3eee2;--dmu:#b9ab8c;--dln:rgba(243,238,226,.12);--dic:#d9b36a;--dtb:#2b2620;box-shadow:14px 0 44px rgba(0,0,0,.6)}
+#drawer .dh{display:flex;align-items:center;gap:14px;padding:30px 26px 22px 20px;border-bottom:1px solid var(--dln);margin:0 18px 8px 0}
 #drawer .av,#pfPage .pav{border-radius:50%;background:#1f2a44;color:#e5e7eb;display:flex;align-items:center;justify-content:center;overflow:hidden;flex:0 0 auto}
-#drawer .av{width:60px;height:60px;font-size:24px}#drawer .av img,#pfPage .pav img{width:100%;height:100%;object-fit:cover}
-#drawer .nm{font-weight:800;font-size:18px;word-break:break-word}#drawer .em{font-size:12.5px;color:var(--dmu);margin-top:3px;word-break:break-all}
+#drawer .av{width:68px;height:68px;font-size:26px;border:3px solid #fff;box-shadow:0 6px 16px rgba(0,0,0,.25);background:#e9dfc6;color:#7a5a1e}#drawer .av img,#pfPage .pav img{width:100%;height:100%;object-fit:cover}
+#drawer .nm{font-weight:800;font-size:21px;word-break:break-word}#drawer .em{font-size:12.5px;color:var(--dmu);margin-top:3px;word-break:break-all}
 #drawer .it{display:flex;align-items:center;gap:16px;padding:17px 22px;font-weight:600;font-size:16px;color:var(--dtx);border:0;background:none;width:100%;text-align:left;cursor:pointer;font-family:inherit;letter-spacing:.01em}
-#drawer .it:active{background:rgba(148,163,184,.14)}
+#drawer .it:active{background:rgba(160,122,44,.12)}
 #drawer .it i{width:22px;text-align:center;color:var(--dic);font-size:19px}#drawer .it .ct{margin-left:auto;background:#fee2e2;color:#be123c;font-size:12px;font-weight:800;border-radius:999px;padding:2px 9px}
 #drawer .sep{height:1px;background:var(--dln);margin:4px 0}
-#drawer .it.out,#drawer .it.out i{color:#dc2626}
+#drawer .it.out{margin-top:auto;border-top:1px solid var(--dln)}
 #drawer .ft{padding:14px 20px 22px;font-size:12px;color:var(--dmu);text-align:center;letter-spacing:.04em}
-#drawer .pv{padding:calc(18px + env(safe-area-inset-top,0px)) 20px 24px;font-size:14.5px;line-height:1.6}
+#drawer .pv{padding:18px 20px 24px;font-size:14.5px;line-height:1.6}
 #drawer .pv h3{font-size:19px;margin:12px 0 10px;font-weight:800}#drawer .pv h4{font-size:15px;margin:14px 0 4px;font-weight:800}#drawer .pv p{margin:0 0 8px}
 #drawer .pvb{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--dln);background:none;color:var(--dtx);font-weight:700;font-size:14px;padding:8px 14px;border-radius:999px;cursor:pointer;font-family:inherit}
 #drawer .note{margin:6px 20px;padding:10px 12px;border-radius:12px;background:#fff7ed;color:#9a3412;font-size:13.5px;font-weight:600}
 /* My Profile page: slides in from the right */
-#pfPage{--pbg:#fff;--ptx:#1f2937;--pmu:#6b7280;--pln:#d1d5db;--pcd:#fff;position:fixed;inset:0;z-index:2147483002;background:var(--pbg);color:var(--ptx);font-family:'Plus Jakarta Sans',system-ui,sans-serif;overflow-y:auto;transform:translateX(100%);transition:transform .32s cubic-bezier(.22,.8,.24,1);will-change:transform}
+#pfPage{top:var(--sat,0px)!important;--pbg:#fbf8f0;--ptx:#2b2416;--pmu:#8a7a5a;--pln:#e1d8c4;--pcd:#fffdf8;position:fixed;inset:0;z-index:2147483002;background:var(--pbg);color:var(--ptx);font-family:'Plus Jakarta Sans',system-ui,sans-serif;overflow-y:auto;transform:translateX(100%);transition:transform .32s cubic-bezier(.22,.8,.24,1);will-change:transform}
 #pfPage.open{transform:none}html.lite #pfPage{transition-duration:.32s!important}
 @media (prefers-reduced-motion:reduce){#pfPage,html.lite #pfPage{transition-duration:.01ms!important}}
-html.dark #pfPage{--pbg:#0f1115;--ptx:#e5e7eb;--pmu:#9ca3af;--pln:#343843;--pcd:#16191f}
-#pfPage .ph{position:sticky;top:0;z-index:2;display:flex;align-items:center;gap:14px;padding:calc(12px + env(safe-area-inset-top,0px)) 16px 12px;background:var(--pbg)}
+html.dark #pfPage{--pbg:#1b1814;--ptx:#f3eee2;--pmu:#b9ab8c;--pln:#3d362c;--pcd:#24201b}
+#pfPage .ph{position:sticky;top:0;z-index:2;display:flex;align-items:center;gap:14px;padding:12px 16px 12px;background:var(--pbg)}
 #pfPage .ph button{width:40px;height:40px;border:0;background:none;color:var(--ptx);font-size:20px;cursor:pointer;border-radius:50%}
 #pfPage .ph b{font-size:20px;font-weight:700}
 #pfPage .bd{padding:6px 18px calc(28px + env(safe-area-inset-bottom,0px));max-width:560px;margin:0 auto}
@@ -1782,6 +1786,29 @@ html.dark #pfPage{--pbg:#0f1115;--ptx:#e5e7eb;--pmu:#9ca3af;--pln:#343843;--pcd:
 #pfPage .sv{width:100%;height:56px;border:0;border-radius:16px;margin-top:6px;background:linear-gradient(120deg,#b8860b,#e9c75a 50%,#c99a17);color:#2b1d02;font:800 17px 'Plus Jakarta Sans',system-ui,sans-serif;cursor:pointer;box-shadow:0 10px 24px rgba(184,134,11,.3)}
 #pfPage .sv:disabled{opacity:.6}
 #pfPage .pm{min-height:22px;margin:10px 2px 0;font-size:14px;font-weight:700;text-align:center}#pfPage .pm.bad{color:#dc2626}#pfPage .pm.ok{color:#15803d}
+#pfPage .f .pk{width:100%;height:56px;border:1.5px solid var(--pln);border-radius:14px;background:transparent;color:var(--ptx);font:500 16px 'Plus Jakarta Sans',system-ui,sans-serif;padding:0 44px 0 16px;text-align:left;cursor:pointer;position:relative}
+#pfPage .f .pk.ph0{color:var(--pmu)}#pfPage .f .pk:after{content:'';position:absolute;right:20px;top:22px;width:8px;height:8px;border-right:2px solid var(--pmu);border-bottom:2px solid var(--pmu);transform:rotate(45deg)}
+#pfPage .oh{font-size:16px;font-weight:700;margin:26px 2px 12px}
+#pfPage .oo{display:flex;align-items:center;gap:16px;width:100%;height:60px;border:1px solid var(--pln);border-radius:16px;background:var(--pcd);color:var(--ptx);font:600 16px 'Plus Jakarta Sans',system-ui,sans-serif;padding:0 18px;margin-bottom:12px;cursor:pointer;text-align:left}
+#pfPage .oo i:first-child{width:22px;text-align:center;font-size:18px;color:var(--pmu)}#pfPage .oo .ch{margin-left:auto;font-size:14px;color:var(--pmu)}
+#pfPage .oo.del,#pfPage .oo.del i:first-child{color:#dc2626}
+#pfPage .sv{margin-top:14px}
+/* app-styled pickers and boxes (instead of the phone's plain white list) */
+#pfSh{top:var(--sat,0px)!important;--pbg:#fdfbf5;--ptx:#2b2416;--pmu:#8a7a5a;--pln:#e7dfcc;position:fixed;inset:0;z-index:2147483003;background:rgba(2,6,23,.5);opacity:0;transition:opacity .25s ease;font-family:'Plus Jakarta Sans',system-ui,sans-serif}
+html.dark #pfSh{--pbg:#24201b;--ptx:#f3eee2;--pmu:#b9ab8c;--pln:#3d362c}
+#pfSh.open{opacity:1}#pfSh .sp{position:absolute;left:0;right:0;bottom:0;max-height:78vh;overflow-y:auto;background:var(--pbg);color:var(--ptx);border-radius:26px 26px 0 0;padding:10px 18px calc(20px + env(safe-area-inset-bottom,0px));transform:translateY(100%);transition:transform .3s cubic-bezier(.22,.8,.24,1);box-shadow:0 -12px 40px rgba(0,0,0,.25)}
+#pfSh.open .sp{transform:none}html.lite #pfSh,html.lite #pfSh .sp{transition-duration:.3s!important}
+#pfSh .gr{width:44px;height:5px;border-radius:9px;background:var(--pln);margin:4px auto 14px}
+#pfSh h3{font-size:18px;font-weight:800;margin:0 4px 12px}#pfSh p{color:var(--pmu);font-size:14.5px;line-height:1.55;margin:0 4px 14px}
+#pfSh .op{display:flex;align-items:center;width:100%;min-height:54px;border:0;border-radius:14px;background:none;color:var(--ptx);font:600 16px 'Plus Jakarta Sans',system-ui,sans-serif;padding:0 14px;cursor:pointer;text-align:left}
+#pfSh .op+.op{margin-top:4px}#pfSh .op.on{background:rgba(184,134,11,.13);color:#a16207}html.dark #pfSh .op.on{color:#facc15}
+#pfSh .op .rd{margin-left:auto;width:22px;height:22px;border-radius:50%;border:2px solid var(--pln);flex:0 0 auto;box-sizing:border-box}#pfSh .op.on .rd{border:7px solid #c99a17}
+#pfSh .op:disabled{opacity:.5;cursor:default}#pfSh .op small{color:var(--pmu);font-weight:600;margin-left:8px;font-size:12.5px}
+#pfSh .bt{display:flex;gap:10px;margin-top:6px}#pfSh .bt button{flex:1;height:52px;border-radius:14px;border:1px solid var(--pln);background:none;color:var(--ptx);font:800 16px 'Plus Jakarta Sans',system-ui,sans-serif;cursor:pointer}
+#pfSh .bt .go{border:0;background:linear-gradient(120deg,#b8860b,#e9c75a 50%,#c99a17);color:#2b1d02}#pfSh .bt .rd2{border:0;background:#dc2626;color:#fff}
+#pfSh input{width:100%;box-sizing:border-box;height:52px;border:1.5px solid var(--pln);border-radius:14px;background:transparent;color:var(--ptx);font:600 16px 'Plus Jakarta Sans',system-ui,sans-serif;padding:0 14px;margin:0 0 12px;outline:none}
+#pfSh .sm{min-height:20px;font-size:14px;font-weight:700;margin:0 4px 10px}#pfSh .sm.bad{color:#dc2626}#pfSh .sm.ok{color:#15803d}
+#satBar{position:fixed;top:0;left:0;right:0;height:var(--sat,0px);z-index:2147483004;pointer-events:none;transition:background-color .3s ease}html:not(.acok) #satBar{display:none}
 /* header: "Hi, name" instead of the logo, the app name and the round letter button */
 header>div>div>div.w-10.h-10,header h1,header h1+p,#hdrUser{display:none!important}
 #hiName{display:none;font-weight:800;font-size:17px;color:#1e1b4b;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:calc(100vw - 230px);font-family:'Plus Jakarta Sans',system-ui,sans-serif}
@@ -1809,13 +1836,13 @@ html.acok #hiName{display:block}html.dark #hiName{color:#f5f5f4}
   function getProf(){try{return JSON.parse(localStorage.getItem(profKey())||'null')||{}}catch(e){return {}}}
   function avatar(p,name){return p&&p.photo&&/^data:image\/jpeg;base64,/.test(p.photo)?'<img alt="" src="'+p.photo+'">':'<i class="fa-solid fa-user"></i>'}
   function main(){var w=who(),n=favN(),p=getProf(),nm=(p.fn?(p.fn+' '+(p.ln||'')).trim():w.name);
-    dr.innerHTML='<div class="dh"><div class="av">'+avatar(p)+'</div><div style="min-width:0"><div class="nm">'+esc(nm)+'</div><div class="em">'+esc(w.email)+'</div></div></div>'+
-      '<button type="button" class="it" data-k="prof"><i class="fa-regular fa-user"></i>My Profile</button>'+
-      '<button type="button" class="it" data-k="fav"><i class="fa-regular fa-heart"></i>Favourites'+(n?'<span class="ct">'+n+'</span>':'')+'</button>'+
-      '<button type="button" class="it" data-k="terms"><i class="fa-regular fa-file-lines"></i>Terms &amp; Conditions</button>'+
+    setDr('<div class="dh"><div class="av">'+avatar(p)+'</div><div style="min-width:0"><div class="nm">'+esc(nm)+'</div><div class="em">'+esc(w.email)+'</div></div></div>'+
+      '<button type="button" class="it" data-k="prof"><i class="fa-solid fa-user"></i>My Profile</button>'+
+      '<button type="button" class="it" data-k="fav"><i class="fa-solid fa-heart"></i>Favourites'+(n?'<span class="ct">'+n+'</span>':'')+'</button>'+
+      '<button type="button" class="it" data-k="terms"><i class="fa-solid fa-file-lines"></i>Terms &amp; Conditions</button>'+
       '<button type="button" class="it" data-k="priv"><i class="fa-solid fa-shield-halved"></i>Privacy Policy</button>'+
-      '<div id="drNote"></div><div class="sep"></div>'+
-      '<button type="button" class="it out" data-k="out"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</button><div class="sep"></div><div class="ft">PMA Preparation</div>'}
+      '<div id="drNote"></div>'+
+      '<button type="button" class="it out" data-k="out"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</button><div class="ft">PMA Preparation</div>')}
   var BACK='<button type="button" class="pvb" data-k="menu"><i class="fa-solid fa-arrow-left"></i> Menu</button>';
   var TERMS='<h3>Terms &amp; Conditions</h3><p>PMA Preparation is a study app for the PMA Long Course initial test, interview and ISSB preparation.</p>'+
     '<h4>Your account</h4><p>One account is for one person and works on one phone. Do not share your account or password. The admin can stop an account that is shared or misused.</p>'+
@@ -1829,7 +1856,8 @@ html.acok #hiName{display:block}html.dark #hiName{color:#f5f5f4}
     '<h4>Who can see it</h4><p>Only the admin can see your account details and messages. Other students see only the number of people online, never your name or email.</p>'+
     '<h4>Sharing</h4><p>We never sell or share your data. The app uses Google Firebase to keep accounts safe.</p>'+
     '<h4>Delete</h4><p>To delete your account and data, send a message to the admin.</p>';
-  function page(h){dr.innerHTML='<div class="pv">'+BACK+h+'</div>'}
+  function page(h){setDr('<div class="pv">'+BACK+h+'</div>')}
+  function setDr(h){dr.innerHTML='<button type="button" class="dtab" data-k="close" aria-label="Close menu"><i class="fa-solid fa-chevron-left"></i></button><div class="dsc">'+h+'</div>'}
   var PROV=['Punjab','Sindh','Khyber Pakhtunkhwa','Balochistan','Islamabad Capital Territory','Gilgit-Baltistan','Azad Jammu and Kashmir'];
   var CITY=['Lahore','Karachi','Islamabad','Rawalpindi','Faisalabad','Multan','Peshawar','Quetta','Hyderabad','Gujranwala','Sialkot','Sargodha','Bahawalpur','Sukkur','Abbottabad','Mardan','Bhakkar','Mianwali','Dera Ismail Khan','Dera Ghazi Khan','Jhang','Sahiwal','Okara','Kasur','Sheikhupura','Gujrat','Jhelum','Chakwal','Attock','Muzaffarabad','Mirpur','Gilgit','Skardu','Larkana','Nawabshah','Swat','Kohat','Bannu','Layyah','Khushab','Rahim Yar Khan','Vehari','Khanewal','Muzaffargarh','Narowal','Hafizabad','Mandi Bahauddin','Turbat','Gwadar','Khuzdar'];
   var pf=null,pfData=null,pfDirty=false;
@@ -1842,11 +1870,15 @@ html.acok #hiName{display:block}html.dark #hiName{color:#f5f5f4}
       fld('pf_ln','Last Name','<input id="pf_ln" maxlength="40" autocomplete="family-name" value="'+esc(p.ln||'')+'"><i class="fa-regular fa-user ic"></i>')+
       '<div class="f"><label for="pf_ph">Phone Number</label><div class="phn"><span>🇵🇰 +92</span><input id="pf_ph" inputmode="numeric" maxlength="11" placeholder="3001234567" value="'+esc(p.ph||'')+'"></div></div>'+
       fld('pf_ad','Address','<input id="pf_ad" maxlength="150" autocomplete="street-address" value="'+esc(p.addr||'')+'"><i class="fa-solid fa-location-dot ic"></i>')+
-      fld('pf_pr','Province','<select id="pf_pr">'+opts(PROV,p.prov,'Select province')+'</select>')+
+      fld('pf_pr','Province',pick('pf_pr',p.prov,'Select province','prov'))+
       fld('pf_ct','City','<input id="pf_ct" maxlength="40" list="pfCities" value="'+esc(p.city||'')+'"><datalist id="pfCities">'+CITY.map(function(c){return '<option value="'+c+'">'}).join('')+'</datalist><i class="fa-solid fa-city ic"></i>')+
-      fld('pf_gn','Gender','<select id="pf_gn">'+opts(['Male','Female'],p.gen,'Select gender')+'</select>')+
+      fld('pf_gn','Gender',pick('pf_gn',p.gen,'Select gender','gen'))+
       fld('pf_db','Date of Birth','<input id="pf_db" type="date" min="1960-01-01" max="2015-12-31" value="'+esc(p.dob||'')+'">')+
       fld('pf_zp','Zip Code','<input id="pf_zp" inputmode="numeric" maxlength="6" value="'+esc(p.zip||'')+'">')+
+      '<div class="oh">Other Options</div>'+
+      '<button type="button" class="oo" data-k="pw"><i class="fa-solid fa-lock"></i>Change Password<i class="fa-solid fa-chevron-right ch"></i></button>'+
+      '<button type="button" class="oo" data-k="lang"><i class="fa-solid fa-language"></i>Change Language<i class="fa-solid fa-chevron-right ch"></i></button>'+
+      '<button type="button" class="oo del" data-k="del"><i class="fa-solid fa-trash-can"></i>Delete Account<i class="fa-solid fa-chevron-right ch"></i></button>'+
       '<button type="button" class="sv" id="pfSave">Update Profile</button><div class="pm" id="pfMsg" role="status"></div></div>';
     document.getElementById('pf_ph').oninput=function(){this.value=this.value.replace(/\D/g,'').replace(/^0+/,'').slice(0,10)};
     document.getElementById('pf_zp').oninput=function(){this.value=this.value.replace(/\D/g,'').slice(0,6)};
@@ -1858,7 +1890,37 @@ html.acok #hiName{display:block}html.dark #hiName{color:#f5f5f4}
       x.fillStyle='#fff';x.fillRect(0,0,S,S);x.drawImage(im,(im.width-m)/2,(im.height-m)/2,m,m,0,0,S,S);var q=.82,d=c.toDataURL('image/jpeg',q);while(d.length>90000&&q>.4){q-=.1;d=c.toDataURL('image/jpeg',q)}
       pfData.photo=d;document.getElementById('pfAv').innerHTML='<img alt="" src="'+d+'">';msg('Photo ready. Press Update Profile to save it.')};
       im.onerror=function(){msg('Could not open this picture. Try another one.','bad')};im.src=r.result};r.readAsDataURL(f)}
-  function val(id){var e=document.getElementById(id);return e?e.value.trim():''}
+  function val(id){var e=document.getElementById(id);if(!e)return '';if(e.hasAttribute('data-v'))return e.getAttribute('data-v');return e.value.trim()}
+  function pick(id,v,ph,kind){return '<button type="button" class="pk'+(v?'':' ph0')+'" id="'+id+'" data-k="pick" data-kind="'+kind+'" data-ph="'+ph+'" data-v="'+esc(v||'')+'">'+esc(v||ph)+'</button>'}
+  var sh=null;
+  function shOpen(h){shClose(true);sh=document.createElement('div');sh.id='pfSh';sh.innerHTML='<div class="sp" role="dialog"><div class="gr"></div>'+h+'</div>';document.body.appendChild(sh);
+    void sh.offsetWidth;requestAnimationFrame(function(){if(sh)sh.classList.add('open')});
+    sh.addEventListener('click',function(e){if(e.target===sh)shClose()});return sh}
+  function shClose(now){if(!sh)return;var x=sh;sh=null;if(now){x.remove();return}x.classList.remove('open');x.style.pointerEvents='none';setTimeout(function(){x.remove()},300)}
+  function shMsg(t,c){var m=sh&&sh.querySelector('.sm');if(m){m.className='sm '+(c||'');m.textContent=t}}
+  function choose(btn){var kind=btn.getAttribute('data-kind'),list=kind==='prov'?PROV:['Male','Female'],cur=btn.getAttribute('data-v');
+    var x=shOpen('<h3>'+(kind==='prov'?'Select province':'Select gender')+'</h3>'+list.map(function(o){return '<button type="button" class="op'+(o===cur?' on':'')+'" data-o="'+esc(o)+'">'+esc(o)+'<span class="rd"></span></button>'}).join(''));
+    x.querySelector('.sp').addEventListener('click',function(e){var o=e.target.closest('[data-o]');if(!o)return;var v=o.getAttribute('data-o');
+      [].forEach.call(x.querySelectorAll('.op'),function(b){b.classList.toggle('on',b===o)});
+      btn.setAttribute('data-v',v);btn.textContent=v;btn.classList.remove('ph0');pfDirty=true;setTimeout(function(){shClose()},140)})}
+  function doPw(){var u=window.__acUser?window.__acUser():null,db=window.__acDb?window.__acDb():null,em=u&&u.email||'';
+    var x=shOpen('<h3>Change Password</h3><p>We will send a link to <b>'+esc(em)+'</b>. Open it and choose your new password. (If you sign in with Google, you do not need a password.)</p><div class="sm"></div><div class="bt"><button type="button" data-a="no">Cancel</button><button type="button" class="go" data-a="send">Send link</button></div>');
+    x.querySelector('[data-a=no]').onclick=function(){shClose()};
+    x.querySelector('[data-a=send]').onclick=function(){var b=this;if(!db||!em){shMsg('Please check your internet and try again.','bad');return}b.disabled=true;shMsg('Sending...');
+      db.FB.sendPasswordResetEmail(db.auth,em).then(function(){shMsg('Link sent. Check your email (also the Spam folder).','ok');b.textContent='Sent'},function(){b.disabled=false;shMsg('Could not send. Check your internet and try again.','bad')})}}
+  function doLang(){var x=shOpen('<h3>Change Language</h3><button type="button" class="op on">English<span class="rd"></span></button><button type="button" class="op" disabled>اردو Urdu<small>Coming soon</small><span class="rd"></span></button>');
+    x.querySelector('.op.on').onclick=function(){shClose()}}
+  function doDel(){var u=window.__acUser?window.__acUser():null,db=window.__acDb?window.__acDb():null;
+    var x=shOpen('<h3>Delete Account</h3><p>Your account, profile and photo will be deleted forever. Your preparations will be locked, and you will need to sign up and ask the admin again. To confirm, type <b>DELETE</b> below.</p><input id="pfDelIn" autocomplete="off" autocapitalize="characters" placeholder="DELETE"><div class="sm"></div><div class="bt"><button type="button" data-a="no">Cancel</button><button type="button" class="rd2" data-a="del">Delete</button></div>');
+    x.querySelector('[data-a=no]').onclick=function(){shClose()};
+    x.querySelector('[data-a=del]').onclick=function(){var b=this;if((x.querySelector('#pfDelIn').value||'').trim().toUpperCase()!=='DELETE'){shMsg('Type DELETE to confirm.','bad');return}
+      if(!u||!db){shMsg('Please check your internet and try again.','bad');return}
+      var last=Date.parse(u.metadata&&u.metadata.lastSignInTime||'')||0;if(Date.now()-last>5*60*1000){shMsg('For safety, please Log Out, sign in again, and then delete within 5 minutes.','bad');return}
+      b.disabled=true;shMsg('Deleting...');var uid=u.uid;
+      db.FB.deleteDoc(db.FB.doc(db.fs,'profiles',uid)).catch(function(){}).then(function(){return db.FB.deleteDoc(db.FB.doc(db.fs,'users',uid))}).then(function(){return u.delete()}).then(function(){
+        try{localStorage.removeItem('ac_prof_'+uid);localStorage.removeItem('ac_name')}catch(e){}shMsg('Your account is deleted.','ok');
+        setTimeout(function(){shClose(true);pfClose();try{if(history.state&&history.state.pf)history.back()}catch(e){}try{window.authLogout()}catch(e){}},1200)},
+        function(e){b.disabled=false;shMsg(/recent/.test(e&&e.code||'')?'For safety, please Log Out, sign in again, and then delete.':'Could not delete. Check your internet and try again.','bad')})}}
   function pfSave(){var u=window.__acUser?window.__acUser():null,db=window.__acDb?window.__acDb():null;if(!u||!db){msg('Please check your internet and try again.','bad');return}
     var d={fn:val('pf_fn'),ln:val('pf_ln'),ph:val('pf_ph'),addr:val('pf_ad'),prov:val('pf_pr'),city:val('pf_ct'),gen:val('pf_gn'),dob:val('pf_db'),zip:val('pf_zp'),photo:pfData.photo||'',email:u.email||''};
     if(!d.fn){msg('Please write your first name.','bad');return}
@@ -1869,30 +1931,48 @@ html.acok #hiName{display:block}html.dark #hiName{color:#f5f5f4}
     db.FB.setDoc(db.FB.doc(db.fs,'profiles',u.uid),out).then(function(){pfData=d;try{localStorage.setItem(profKey(),JSON.stringify(d))}catch(e){}
       var t=document.getElementById('pfTn');if(t)t.textContent=(d.fn+' '+d.ln).trim();hiSync();msg('Profile saved.','ok')},
       function(e){msg('Could not save. Check your internet and try again.','bad')}).then(function(){b.disabled=false})}
-  function pfOpen(){if(pf)return;pfData=getProf();pf=document.createElement('div');pf.id='pfPage';pf.setAttribute('role','dialog');pf.setAttribute('aria-label','Edit Profile');document.body.appendChild(pf);pfDirty=false;pfDraw(pfData);pf.addEventListener('input',function(){pfDirty=true});pf.addEventListener('change',function(){pfDirty=true});
+  function pfOpen(){if(pf)return;pfData=getProf();pf=document.createElement('div');pf.id='pfPage';pf.setAttribute('role','dialog');pf.setAttribute('aria-label','Edit Profile');document.body.appendChild(pf);try{window.__topSync()}catch(x){}pfDirty=false;pfDraw(pfData);pf.addEventListener('input',function(){pfDirty=true});pf.addEventListener('change',function(){pfDirty=true});
     void pf.offsetWidth;requestAnimationFrame(function(){if(pf)pf.classList.add('open')});
-    pf.addEventListener('click',function(e){if(e.target.closest('[data-k="pfback"]')){if(history.state&&history.state.pf)history.back();else pfClose()}});
+    pf.addEventListener('click',function(e){if(e.target.closest('[data-k="pfback"]')){if(history.state&&history.state.pf)history.back();else pfClose();return}var t=e.target.closest('[data-k]');if(!t)return;var k=t.getAttribute('data-k');if(k==='pick')choose(t);else if(k==='pw')doPw();else if(k==='lang')doLang();else if(k==='del')doDel()});
     var u=window.__acUser?window.__acUser():null,db=window.__acDb?window.__acDb():null;
     if(u&&db)db.FB.getDoc(db.FB.doc(db.fs,'profiles',u.uid)).then(function(s){if(!s.exists()||!pf)return;var x=s.data();delete x.t;try{localStorage.setItem(profKey(),JSON.stringify(x))}catch(e){}hiSync();
       if(!pfDirty){pfData=x;pfDraw(x)}}).catch(function(){})}
-  function pfClose(){if(!pf)return;var p=pf;pf=null;p.classList.remove('open');p.style.pointerEvents='none';setTimeout(function(){p.remove()},340)}
+  function pfClose(){shClose(true);if(!pf)return;var p=pf;pf=null;p.setAttribute('data-gone','1');try{window.__topSync()}catch(x){}p.classList.remove('open');p.style.pointerEvents='none';setTimeout(function(){p.remove()},340)}
   function open(){if(dr)return;bk=document.createElement('div');bk.id='drBack';dr=document.createElement('div');dr.id='drawer';dr.setAttribute('role','dialog');dr.setAttribute('aria-label','Menu');
-    document.body.appendChild(bk);document.body.appendChild(dr);main();
+    document.body.appendChild(bk);document.body.appendChild(dr);main();try{window.__topSync()}catch(x){}
     void dr.offsetWidth;requestAnimationFrame(function(){if(bk)bk.classList.add('open');if(dr)dr.classList.add('open')});
     bk.onclick=function(){if(pushed&&history.state&&history.state.dr)history.back();else close()};
     dr.onclick=function(e){var b=e.target.closest('[data-k]');if(!b)return;var k=b.getAttribute('data-k');
-      if(k==='menu')main();else if(k==='prof'){var hp=pushed;close();try{if(hp&&history.state&&history.state.dr)history.replaceState({n:1,pf:1},'');else history.pushState({n:1,pf:1},'')}catch(x){}pfOpen()}else if(k==='terms')page(TERMS);else if(k==='priv')page(PRIV);
+      if(k==='close'){if(pushed&&history.state&&history.state.dr)history.back();else close();return}if(k==='menu')main();else if(k==='prof'){var hp=pushed;close();try{if(hp&&history.state&&history.state.dr)history.replaceState({n:1,pf:1},'');else history.pushState({n:1,pf:1},'')}catch(x){}pfOpen()}else if(k==='terms')page(TERMS);else if(k==='priv')page(PRIV);
       else if(k==='fav'){if(!favN()){var n=document.getElementById('drNote');if(n)n.innerHTML='<div class="note">No favourites yet. Tap the star on any question to save it here.</div>';return}
         closeAll();try{window.startSaved()}catch(x){}}
       else if(k==='out'){closeAll();try{window.authLogout()}catch(x){}}};
     try{history.pushState({n:1,dr:1},'');pushed=true}catch(e){}}
-  function close(){if(!dr)return;var d=dr,b=bk;dr=bk=null;pushed=false;d.classList.remove('open');b.classList.remove('open');b.style.pointerEvents='none';setTimeout(function(){d.remove();b.remove()},340)}
+  function close(){if(!dr)return;var d=dr,b=bk;dr=bk=null;d.setAttribute('data-gone','1');try{window.__topSync()}catch(x){}pushed=false;d.classList.remove('open');b.classList.remove('open');b.style.pointerEvents='none';setTimeout(function(){d.remove();b.remove()},340)}
   function closeAll(){var p=pushed;close();if(p&&history.state&&history.state.dr)try{history.back()}catch(e){}}
-  window.__drawerBack=function(){if(pf){pfClose();return true}if(dr){close();return true}return false};
+  window.__drawerBack=function(){if(sh){shClose();try{history.pushState({n:1,pf:1},'')}catch(e){}return true}if(pf){pfClose();return true}if(dr){close();return true}return false};
   hb.onclick=function(){dr?closeAll():open()};
   hiSync();
 }
 var tries=0;(function wait(){if(document.querySelector('header>div>div')&&document.getElementById('backBtn'))init();else if(tries++<200)setTimeout(wait,50)})();
+})();
+
+/* top strip (time, battery): follows the page that is open, about 20% darker in light mode / a little lighter in dark mode */
+(function(){var d=document.documentElement;
+  function hx(r,g,b){return '#'+[r,g,b].map(function(n){n=Math.max(0,Math.min(255,Math.round(n)));return (n<16?'0':'')+n.toString(16)}).join('')}
+  function parse(c){var m=/rgba?\(([^)]+)\)/.exec(c||'');if(m){var p=m[1].split(',').map(parseFloat);return {r:p[0],g:p[1],b:p[2],a:p.length>3?p[3]:1}}m=/^#([0-9a-f]{6})$/i.exec(c||'');if(m){var n=parseInt(m[1],16);return {r:n>>16,g:(n>>8)&255,b:n&255,a:1}}return null}
+  function shade(c){var p=parse(c);if(!p)return null;var l=(.299*p.r+.587*p.g+.114*p.b)/255;
+    return l>.5?hx(p.r*.82,p.g*.82,p.b*.82):hx(p.r+(255-p.r)*.1,p.g+(255-p.g)*.1,p.b+(255-p.b)*.1)}
+  function base(){var dark=d.classList.contains('dark');
+    if(document.querySelector('#pfPage:not([data-gone])'))return dark?'#1b1814':'#fbf8f0';
+    if(document.querySelector('#drawer:not([data-gone])'))return dark?'#2b2620':'#fdfbf5';
+    var h=document.querySelector('header'),p=h&&parse(getComputedStyle(h).backgroundColor);
+    if(p&&p.a>.85)return hx(p.r,p.g,p.b);return dark?'#0e0b2a':'#fdfdfe'}
+  window.__topShade=function(){if(!d.classList.contains('acok'))return null;var a=document.getElementById('auth');if(a&&!a.classList.contains('hide'))return null;return shade(base())};
+  var bar=null;function upd(){if(!bar){bar=document.createElement('div');bar.id='satBar';document.body.appendChild(bar)}var c=window.__topShade();bar.style.backgroundColor=c||'transparent'}
+  window.__topSync=function(){upd();d.classList.toggle('ovl',!!document.querySelector('#drawer:not([data-gone]),#pfPage:not([data-gone])'))};
+  new MutationObserver(function(){upd()}).observe(d,{attributes:true,attributeFilter:['class']});
+  var t=0;(function w(){if(document.body){upd()}else if(t++<100)setTimeout(w,50)})();
 })();
 </script>
 <style>
@@ -2801,7 +2881,7 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
     g.onclick=function(){FB.signInWithPopup(auth,new FB.GoogleAuthProvider()).catch(function(x){var e=p.querySelector('.err');if(e)e.textContent=errMsg(x)})};
     var b=p.querySelector('.btn');b.parentNode.insertBefore(g,b.nextSibling)})}
   window.__acRecheck=function(){if(cur&&!busy)handle(cur)};
-  window.__acUser=function(){return cur};window.__acDb=function(){return fs?{FB:FB,fs:fs}:null};window.__acBusy=function(){return busy};
+  window.__acUser=function(){return cur};window.__acDb=function(){return fs?{FB:FB,fs:fs,auth:auth}:null};window.__acBusy=function(){return busy};
   /* ---- start ---- */
   A.classList.remove('hide');showStatus('Please wait...','Checking your internet connection.',[]);
   if(!auth){cached(null)}
