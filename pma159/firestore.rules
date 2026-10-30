@@ -20,7 +20,8 @@ service cloud.firestore {
         && request.resource.data.name is string
         && request.resource.data.name.size() <= 60
         && request.resource.data.email.size() <= 100;
-      allow update, delete: if isAdmin();
+      allow update: if isAdmin();
+      allow delete: if isAdmin() || (request.auth != null && request.auth.uid == uid);
     }
     match /profiles/{uid} {
       function okStr(k, n) {
@@ -35,7 +36,7 @@ service cloud.firestore {
         && okStr('zip', 6) && okStr('photo', 100000)
         && request.resource.data.email == request.auth.token.email
         && request.resource.data.t == request.time;
-      allow delete: if isAdmin();
+      allow delete: if isAdmin() || (request.auth != null && request.auth.uid == uid);
     }
     match /devices/{uid} {
       allow read: if isAdmin() || (request.auth != null && request.auth.uid == uid);
