@@ -137,6 +137,8 @@
   function cmOpen(){cmBuild();$('cmErr').textContent='';$('cmBox').hidden=false;
     if(cmAdmin){$('cmList').innerHTML='<div class="cme">You are the admin. Messages from people appear on your Admin page, inside each person card.</div>';$('cmHelp').hidden=true;$('cmTx').hidden=true;$('cmGo').hidden=true;$('cmCnt').textContent='';return}
     $('cmHelp').hidden=false;$('cmTx').hidden=false;$('cmGo').hidden=false;$('cmCnt').textContent='';cmLoad(false)}
+  /* the round chat button (bottom right) is turned off at the user's request (Oct 2026); the waiting page keeps its message box */
+  (function(){var c=document.createElement('style');c.textContent='#cmFab,#cmBox{display:none!important}';document.head.appendChild(c)})();
   function cmSetup(user,isAdmin){cmUser=isAdmin?null:user;cmAdmin=!!isAdmin;cmOn=true;try{cmBuild()}catch(e){}}
   /* ---- people icon next to the moon: total students + online now. One shared doc online/now = {uid: last seen}; total = approved count the admin page saves in stats/public ---- */
   var onT=null,onUser=null;

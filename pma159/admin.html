@@ -23,10 +23,11 @@ textarea{min-height:110px}.badge{background:var(--no);color:#fff;border-radius:9
  <input type="text" id="srch" placeholder="Search email or name..." autocomplete="off" autocapitalize="off" spellcheck="false" style="margin-top:10px"><div class="mu" id="srchN"></div>
  <div id="onNow" class="card" style="margin-top:10px"></div>
  <div id="pReq"></div><div id="pUsr" style="display:none"></div>
+ <div id="pReset" class="card" style="display:none;margin-top:14px"><b>Lock everyone again</b><div class="mu">Every approved person goes back to "Waiting for approval" with nothing ticked. They see the waiting page (message box and WhatsApp buttons) at their next app opening, write to you again, and you approve them again. Blocked people stay blocked.</div><div class="row"><button class="r" id="bReset">Lock everyone again</button></div></div>
  <div id="pKey" style="display:none">
-  <h2>Password</h2><div class="mu">One password opens all categories of Initial PMA Preparation. The app gets it from here for approved people; nobody types it. Type the password I gave you, then press Save.</div>
+  <h2>Password</h2><div class="mu">One password for each preparation. The Initial PMA Preparation password opens all its categories. The app gets them from here for approved people; nobody types them. Type the passwords I gave you, then press Save.</div>
   <div class="card" hidden><textarea id="paste"></textarea><div class="row"><button id="bFill">Fill the boxes</button></div></div>
-  <div id="keyBoxes"></div><div class="row"><button class="k" id="bSaveKeys">Save password</button></div>
+  <div id="keyBoxes"></div><div class="row"><button class="k" id="bSaveKeys">Save passwords</button></div>
  </div>
 </div>
 <script src="fb.js"></script>
@@ -39,7 +40,7 @@ var emu=location.hostname==='localhost'&&/[?&]emu=1/.test(location.search);
 if(emu){FB.connectAuthEmulator(auth,'http://127.0.0.1:9099',{disableWarnings:true});FB.connectFirestoreEmulator(fs,'127.0.0.1',8080);$('emuForm').style.display='block'}
 function say(m,bad){var d=document.createElement('div');d.className='msg';if(bad)d.style.background='#991b1b';d.textContent=m;$('msg').innerHTML='';$('msg').appendChild(d);setTimeout(function(){if(d.parentNode)d.remove()},6000)}
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
-function tab(t){['Req','Usr','Key'].forEach(function(x){$('p'+x).style.display=x===t?'block':'none';$('t'+x).className=x===t?'':'g'})}
+function tab(t){['Req','Usr','Key'].forEach(function(x){$('p'+x).style.display=x===t?'block':'none';$('t'+x).className=x===t?'':'g'});$('pReset').style.display=t==='Usr'?'block':'none'}
 $('tReq').onclick=function(){tab('Req')};$('tUsr').onclick=function(){tab('Usr')};$('tKey').onclick=function(){tab('Key');loadKeys()};
 $('gbtn').onclick=function(){FB.signInWithPopup(auth,new FB.GoogleAuthProvider()).catch(function(e){say('Sign-in failed: '+(e.code||e.message),1)})};
 $('emuB').onclick=function(){FB.signInWithEmailAndPassword(auth,$('emuE').value,$('emuP').value).catch(function(e){say('Test login failed: '+e.code,1)})};
@@ -76,6 +77,11 @@ function onNow(){FB.getDoc(FB.doc(fs,'online','now')).then(function(d){var m=d.e
   mx=Date.now();var on=a.filter(function(x){return x.on&&x.t>=mx-210000}).map(function(x){var u=USERS.filter(function(z){return z.id===x.uid})[0];return u?(u.name||u.email):(x.uid===(auth.currentUser&&auth.currentUser.uid)?'You (admin)':'Unknown')});
   $('onNow').innerHTML='<b>Online now: '+on.length+'</b><div class="mu">'+(on.length?on.map(function(s){return String(s).replace(/</g,'&lt;')}).join(', '):'Nobody right now.')+'</div><div class="mu">Updates every 20 seconds.</div>'}).catch(function(e){$('onNow').innerHTML='<span class="mu">Online list: '+(e.code||e.message)+'</span>'})}
 setInterval(function(){if(USERS&&USERS.length!==undefined&&$('app').style.display!=='none')onNow()},20000);
+/* lock all approved people again (the user's choice, Oct 2026): status back to pending, no ticks */
+document.addEventListener('click',function(e){if(!e.target.closest||!e.target.closest('#bReset'))return;
+  var ap=USERS.filter(function(u){return u.status==='approved'});if(!ap.length){say('Nobody is approved now.');return}
+  var t=prompt('This locks '+ap.length+' approved people. They must ask again. Type LOCK to continue.');if(String(t||'').trim().toUpperCase()!=='LOCK'){say('Cancelled. Nothing changed.');return}
+  say('Locking '+ap.length+' people...');Promise.all(ap.map(function(u){return FB.updateDoc(FB.doc(fs,'users',u.id),{status:'pending',cats:[]})})).then(function(){say('Done: '+ap.length+' people are waiting for approval again (Requests tab).');return load()}).catch(function(x){say('Failed: '+(x.code||x.message),1);load()})});
 function draw(){
   var p=USERS.filter(function(u){return u.status==='pending'}),o=USERS.filter(function(u){return u.status!=='pending'});
   $('nReq').textContent=p.length;$('nUsr').textContent=o.length;
@@ -90,13 +96,14 @@ document.addEventListener('click',function(e){var b=e.target.closest('button[dat
   else if(a==='del'){if(!confirm('Delete this person completely? He can ask again.'))return;job=FB.deleteDoc(ref)}
   job.then(function(){say(a==='ok'?'Saved. This person is in the People tab: open it any time to tick or untick.':'Done');return load()}).catch(function(x){say('Failed: '+(x.code||x.message),1)})});
 /* one password for the whole Initial PMA Preparation: saved into every category's key */
-function keyBoxes(vals){var v=vals.o||'',same=CATS.every(function(c){return (vals[c[0]]||'')===v});$('keyBoxes').innerHTML='<div class="card"><b>Initial PMA Preparation (all categories)</b><input type="text" id="k_ipma" autocomplete="off" autocapitalize="characters" value="'+esc(same?v:'')+'" placeholder="XXXX-XXXX"></div>'}
-function loadKeys(){var vals={};Promise.all(CATS.map(function(c){return FB.getDoc(FB.doc(fs,'catKeys',c[0])).then(function(d){if(d.exists())vals[c[0]]=d.data().pw}).catch(function(){})})).then(function(){keyBoxes(vals)})}
+function keyBoxes(vals){var v=vals.o||'',same=CATS.every(function(c){return (vals[c[0]]||'')===v});var box=function(id,name,val){return '<div class="card"><b>'+name+'</b><input type="text" id="k_'+id+'" autocomplete="off" autocapitalize="characters" value="'+esc(val||'')+'" placeholder="XXXX-XXXX"></div>'};
+  $('keyBoxes').innerHTML=box('ipma','Initial PMA Preparation (all categories)',same?v:'')+box('int','Initial Interview Preparation',vals.int)+box('issb','ISSB Preparation',vals.issb)}
+function loadKeys(){var vals={};Promise.all(CATS.concat([['int'],['issb']]).map(function(c){return FB.getDoc(FB.doc(fs,'catKeys',c[0])).then(function(d){if(d.exists())vals[c[0]]=d.data().pw}).catch(function(){})})).then(function(){keyBoxes(vals)})}
 $('bFill').onclick=function(){var t=$('paste').value,vals={};var map={o:/1000\s*MCQs/i,pma:/PMA\s*159/i,fa:/Forces\s*Academy/i,hk:/Hakeem/i,lc:/PMA\s*158/i,pg:/Pro\s*Genius/i,nv:/Non\s*Verbal/i,cn:/Constitution/i,iv:/Most\s*Repeated/i,en:/Academic|English/i,lf:/Light\s*Forces/i};
   t.split(/\n/).forEach(function(l){var m=/([A-Z0-9]{4}-[A-Z0-9]{4})\s*$/i.exec(l.trim());if(!m)return;for(var k of ['lf','pg','nv','cn','iv','en','o','pma','fa','hk','lc']){if(map[k].test(l)){vals[k]=m[1].toUpperCase();break}}});
   keyBoxes(vals);say('Filled '+Object.keys(vals).length+' of 11. Check them, then press Save all passwords.')};
-$('bSaveKeys').onclick=function(){var jobs=[],n=0,v=($('k_ipma')&&$('k_ipma').value||'').trim().toUpperCase();if(v)CATS.forEach(function(c){n++;jobs.push(FB.setDoc(FB.doc(fs,'catKeys',c[0]),{pw:v}))});
-  if(!n){say('Nothing to save',1);return}Promise.all(jobs).then(function(){say('Saved. The Initial PMA Preparation password is set for all '+n+' categories.')}).catch(function(x){var c=x.code||x.message||'';say(/permission/.test(c)?'For safety, passwords can be saved only within 15 minutes after signing in. Tap Logout, sign in again with Google, then save.':'Failed: '+c,1)})};
+$('bSaveKeys').onclick=function(){var jobs=[],n=0,v=($('k_ipma')&&$('k_ipma').value||'').trim().toUpperCase();if(v)CATS.forEach(function(c){n++;jobs.push(FB.setDoc(FB.doc(fs,'catKeys',c[0]),{pw:v}))});['int','issb'].forEach(function(k){var w=($('k_'+k)&&$('k_'+k).value||'').trim().toUpperCase();if(w){n++;jobs.push(FB.setDoc(FB.doc(fs,'catKeys',k),{pw:w}))}});
+  if(!n){say('Nothing to save',1);return}Promise.all(jobs).then(function(){say('Saved.')}).catch(function(x){var c=x.code||x.message||'';say(/permission/.test(c)?'For safety, passwords can be saved only within 15 minutes after signing in. Tap Logout, sign in again with Google, then save.':'Failed: '+c,1)})};
 keyBoxes({});
 })();
 </script></body></html>
