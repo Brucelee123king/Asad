@@ -215,7 +215,7 @@
     g.onclick=function(){FB.signInWithPopup(auth,new FB.GoogleAuthProvider()).catch(function(x){var e=p.querySelector('.err');if(e)e.textContent=errMsg(x)})};
     var b=p.querySelector('.btn');b.parentNode.insertBefore(g,b.nextSibling)})}
   window.__acRecheck=function(){if(cur&&!busy)handle(cur)};
-  window.__acUser=function(){return cur};window.__acBusy=function(){return busy};
+  window.__acUser=function(){return cur};window.__acDb=function(){return fs?{FB:FB,fs:fs}:null};window.__acBusy=function(){return busy};
   /* ---- start ---- */
   A.classList.remove('hide');showStatus('Please wait...','Checking your internet connection.',[]);
   if(!auth){cached(null)}

@@ -22,6 +22,21 @@ service cloud.firestore {
         && request.resource.data.email.size() <= 100;
       allow update, delete: if isAdmin();
     }
+    match /profiles/{uid} {
+      function okStr(k, n) {
+        return request.resource.data[k] is string && request.resource.data[k].size() <= n;
+      }
+      allow read: if isAdmin() || (request.auth != null && request.auth.uid == uid);
+      allow create, update: if request.auth != null
+        && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['fn','ln','ph','addr','prov','city','gen','dob','zip','photo','email','t'])
+        && okStr('fn', 40) && okStr('ln', 40) && okStr('ph', 10) && okStr('addr', 150)
+        && okStr('prov', 40) && okStr('city', 40) && okStr('gen', 10) && okStr('dob', 10)
+        && okStr('zip', 6) && okStr('photo', 100000)
+        && request.resource.data.email == request.auth.token.email
+        && request.resource.data.t == request.time;
+      allow delete: if isAdmin();
+    }
     match /devices/{uid} {
       allow read: if isAdmin() || (request.auth != null && request.auth.uid == uid);
       allow create: if request.auth != null
