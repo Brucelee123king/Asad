@@ -384,3 +384,7 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 
 ## Oct 31 2026 (11) - published
 - Pro Genius: new first sub-card "105 Verbal by PGS" (prefix PV-, progenius/pv_final.json built by progenius/v105/build_pv.py from the PDF 105_verbal_By_ProGeniusStudents). 115 MCQs (105 numbered + 10 unnumbered extras) in 3 tests (50/50/15). PDF had no options: written by hand with reasons + facts. PDF errors fixed: Q26=21, Q46=S, Q55=Friday, Q93=D; Q72 had no answer (60 km). PV wired in merge_into_site (isPV, GR 'v', counts), lock_sections ('PV':'pg'), range_block, seccolor_block.
+
+## Oct 31 2026 (12) - published
+- sign_shell.py loader: update check now 2 s after load (was 6 s; the shell_try reset stays at 6 s) and shows a green "New update ready. Close the app and open it again." note after a new signed shell is saved. Tested: old page -> downloads newer signed shell -> note -> next open runs the new shell.
+- Phones on APKs older than v1.0.35 have no self-update loader and cannot be reached; they must install the existing v1.0.35 APK once (android-app/release/AsadullahNotes-v1035.apk). Live shell checked: https://brucelee123king.github.io/asad-data/shell.json
