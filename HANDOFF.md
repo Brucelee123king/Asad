@@ -375,3 +375,9 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 
 ## Oct 31 2026 (9) - published
 - Roadmap levels: tap -> preview sheet (#rmPk, summary from RMS) with Explore / Done; Explore -> full page (#rmSh) built from RMP (user's own content for all 11 pages: lists, tables, notes, official links with Copy link). A level is ticked only by Done / "I have done this step". Outside photos and dated 159-course line left out.
+
+## Oct 31 2026 (10) - published
+- Bottom-bar pages (Roadmap/BMI/Admin Exp./Social): window scrolled to top and locked (html.nbopen) while open; #nbPage sits right under the header and does not chain-scroll the page behind.
+- Score circle (.tring) on every test card from mc_best_<key>; green >=70, orange >=40, red below; "–" not tried.
+- Header round back arrow (#backBtn) hidden after login (in-page back buttons + phone Back remain).
+- Roadmap: glow + YOU on the highest level marked done (rm_done holds 0..k); Done on level k completes all before it; light burst once.

@@ -1,4 +1,7 @@
 <style>
+/* while a bottom-bar page is open, the page behind it must not move */
+html.nbopen,html.nbopen body{overflow:hidden!important;overscroll-behavior:none}
+#nbPage{overscroll-behavior:contain}
 /* the round back arrow next to "Hi, name" is not needed: every page has its own back button, and the phone Back works */
 html.acok #backBtn{display:none!important}
 /* best score circle on every test card */
@@ -155,7 +158,7 @@ html.dark #nbPage{--pbg:#1b1814;--ptx:#f3eee2;--pmu:#b9ab8c;--pln:#3d362c;--pcd:
   function vis(id){var e=document.getElementById(id);return !!e&&!e.classList.contains('hidden')}
   function tap(k){if(k==='home'){pgClose();goHome()}else{if(cur===k&&pg)return;open(k)}cur=k;mark()}
   function goHome(){try{if(vis('view-quiz')&&typeof quizActive!=='undefined'&&quizActive)return;if(vis('view-home')||vis('view-results')||vis('view-quiz'))showSelect();if(typeof curSec!=='undefined'&&curSec!==null&&typeof openSec==='function')openSec(null);window.__landHome&&window.__landHome();window.scrollTo(0,0);window.__backSync&&window.__backSync()}catch(e){}}
-  function top(){var h=document.querySelector('header');return h?Math.max(0,h.getBoundingClientRect().bottom):0}
+  function top(){var h=document.querySelector('header');if(!h)return 0;var r=h.getBoundingClientRect();return Math.max(0,r.top>=-1?r.bottom:h.offsetHeight)}
   /* PMA Roadmap: 11 levels on a zig-zag gold line, top (START) to bottom (PMA Kakul); progress is kept on this phone */
   var RM=[['fa-book-open','What is PMA?','','The Pakistan Military Academy (PMA) at Kakul, Abbottabad trains Gentleman Cadets to become officers of the Pakistan Army. The PMA Long Course is the main way to join after FA / FSc.'],
     ['fa-list-check','Eligibility & Criteria','','Check the age limit, education and minimum marks, height, marital status and nationality given in the latest PMA Long Course advertisement.'],
@@ -230,12 +233,12 @@ html.dark #nbPage{--pbg:#1b1814;--ptx:#f3eee2;--pmu:#b9ab8c;--pln:#3d362c;--pcd:
   function rmShut(now){if(!rsh)return;var s=rsh;rsh=null;if(now){s.remove();return}s.classList.remove('open');s.style.pointerEvents='none';setTimeout(function(){s.remove()},280)}
   function rmDraw(){if(!pg||!pg.classList.contains('road'))return;var y=pg.scrollTop;pg.innerHTML=rmHtml();pg.scrollTop=y;var f=pg.querySelector('.rfx');rmFx=-1;if(f){var el=pg.querySelector('.rnd.cur');if(el&&el.scrollIntoView)setTimeout(function(){try{el.scrollIntoView({block:'center',behavior:'smooth'})}catch(e){}},60);setTimeout(function(){if(f.parentNode)f.remove()},1600)}}
   function rmWire(){pg.onclick=function(e){var b=e.target.closest('[data-lv]');if(b){rmPeek(+b.getAttribute('data-lv'));try{history.pushState({n:1,nb:1,rm:1},'')}catch(x){}}}}
-  function open(k){var first=!pg;if(!pg){pg=document.createElement('div');pg.id='nbPage';document.body.appendChild(pg)}
+  function open(k){var first=!pg;if(!pg){try{window.scrollTo(0,0)}catch(e){}d.classList.add('nbopen');pg=document.createElement('div');pg.id='nbPage';document.body.appendChild(pg)}
     pg.style.top=top()+'px';pg.classList.toggle('road',k==='road');pg.onclick=null;rmShut(true);rmPkShut(true);if(k==='road'){pg.innerHTML=rmHtml();rmWire();pg.scrollTop=0}else pg.innerHTML='<div class="in">'+(k==='road'?soon('fa-route','linear-gradient(135deg,#0891b2,#22d3ee)','PMA Roadmap','A step by step plan for the PMA Long Course: what to study, when to apply, the initial test, the interview and ISSB.'):
       k==='adm'?soon('fa-user-shield','linear-gradient(135deg,#7c3aed,#c084fc)','Admin Experience','The admin\'s own PMA journey, tips and lessons.'):k==='bmi'?bmi():social())+'</div>';pg.scrollTop=0;
     if(first){void pg.offsetWidth;requestAnimationFrame(function(){if(pg)pg.classList.add('open')});try{history.pushState({n:1,nb:1},'')}catch(e){}}
     if(k==='bmi')bmiWire();if(k==='soc')socWire()}
-  function pgClose(){rmShut(true);rmPkShut(true);if(!pg)return;var p=pg;pg=null;p.classList.remove('open');p.style.pointerEvents='none';setTimeout(function(){p.remove()},280)}
+  function pgClose(){rmShut(true);rmPkShut(true);d.classList.remove('nbopen');if(!pg)return;var p=pg;pg=null;p.classList.remove('open');p.style.pointerEvents='none';setTimeout(function(){p.remove()},280)}
   window.__nbBack=function(){if(rpk){rmPkShut();return true}if(rsh){rmShut();return true}if(pg){pgClose();cur='home';mark();return true}return false};
   function soon(ic,bg,t,s){return '<div class="soon"><div class="ic" style="background:'+bg+'"><i class="fa-solid '+ic+'"></i></div><h3>'+t+'</h3><p>'+s+'</p><span class="pill">COMING SOON</span></div>'}
   /* BMI = weight (kg) / height (m)^2; adult groups (WHO): under 18.5 underweight, 18.5-24.9 normal, 25-29.9 overweight, 30+ obese */
