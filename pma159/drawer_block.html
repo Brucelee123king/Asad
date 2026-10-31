@@ -93,6 +93,12 @@ html.dark #pfPage .dic{background:linear-gradient(180deg,#3b342b,#2a251f);color:
 #pfPage.doc table{width:100%;border-collapse:collapse;font-size:13.5px;margin:6px 0 12px}#pfPage.doc th,#pfPage.doc td{border:1px solid var(--pln);padding:8px;text-align:left;vertical-align:top}#pfPage.doc th{background:var(--pcd);font-weight:800}
 #pfPage .warn{border:1px solid #f59e0b;background:rgba(245,158,11,.1);border-radius:14px;padding:12px;margin:8px 0}
 #pfPage .dend{text-align:center;color:var(--pmu);font-size:12.5px;margin:20px 0 6px}
+/* Dark Mode switch inside the menu (the round sun/moon button is not shown after login) */
+html.acok #themeBtn{display:none!important}
+#drawer .it.tg .sw{margin-left:auto;position:relative;width:50px;height:28px;border-radius:999px;background:var(--dln);border:1px solid var(--dln);transition:background .25s;flex:0 0 auto}
+#drawer .it.tg .sw span{position:absolute;top:2px;left:2px;width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.25);transition:transform .25s}
+#drawer .it.tg[aria-checked="true"] .sw{background:var(--dic);border-color:var(--dic)}#drawer .it.tg[aria-checked="true"] .sw span{transform:translateX(22px)}
+html.lite #drawer .it.tg .sw,html.lite #drawer .it.tg .sw span{transition-duration:.25s!important}
 /* header: "Hi, name" instead of the logo, the app name and the round letter button */
 header>div>div>div.w-10.h-10,header h1,header h1+p,#hdrUser{display:none!important}
 #hiName{display:none;font-weight:800;font-size:17px;color:#1e1b4b;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:calc(100vw - 230px);font-family:'Plus Jakarta Sans',system-ui,sans-serif}
@@ -125,6 +131,7 @@ html.acok #hiName{display:block}html.dark #hiName{color:#f5f5f4}
       '<button type="button" class="it" data-k="fav"><i class="fa-solid fa-heart"></i>Favourites'+(n?'<span class="ct">'+n+'</span>':'')+'</button>'+
       '<button type="button" class="it" data-k="terms"><i class="fa-solid fa-file-lines"></i>Terms &amp; Conditions</button>'+
       '<button type="button" class="it" data-k="priv"><i class="fa-solid fa-shield-halved"></i>Privacy Policy</button>'+
+      '<button type="button" class="it tg" data-k="theme" role="switch" aria-checked="'+(document.documentElement.classList.contains('dark')?'true':'false')+'"><i class="fa-solid fa-moon"></i>Dark Mode<span class="sw"><span></span></span></button>'+
       '<div id="drNote"></div>'+
       '<button type="button" class="it out" data-k="out"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</button><div class="ft">PMA Preparation</div>')}
   var BACK='<button type="button" class="pvb" data-k="menu"><i class="fa-solid fa-arrow-left"></i> Menu</button>';
@@ -222,7 +229,7 @@ html.acok #hiName{display:block}html.dark #hiName{color:#f5f5f4}
     void dr.offsetWidth;requestAnimationFrame(function(){if(bk)bk.classList.add('open');if(dr)dr.classList.add('open')});
     bk.onclick=function(){if(pushed&&history.state&&history.state.dr)history.back();else close()};
     dr.onclick=function(e){var b=e.target.closest('[data-k]');if(!b)return;var k=b.getAttribute('data-k');
-      if(k==='close'){if(pushed&&history.state&&history.state.dr)history.back();else close();return}if(k==='menu')main();else if(k==='prof'){var hp=pushed;close();try{if(hp&&history.state&&history.state.dr)history.replaceState({n:1,pf:1},'');else history.pushState({n:1,pf:1},'')}catch(x){}pfOpen();pfFromDr=true}else if(k==='terms'||k==='priv'){var hp2=pushed;close();try{if(hp2&&history.state&&history.state.dr)history.replaceState({n:1,pf:1},'');else history.pushState({n:1,pf:1},'')}catch(x){}docOpen(k);pfFromDr=true}
+      if(k==='theme'){try{window.toggleTheme()}catch(x){}setTimeout(function(){var d=document.documentElement.classList.contains('dark');b.setAttribute('aria-checked',d?'true':'false')},60);return}if(k==='close'){if(pushed&&history.state&&history.state.dr)history.back();else close();return}if(k==='menu')main();else if(k==='prof'){var hp=pushed;close();try{if(hp&&history.state&&history.state.dr)history.replaceState({n:1,pf:1},'');else history.pushState({n:1,pf:1},'')}catch(x){}pfOpen();pfFromDr=true}else if(k==='terms'||k==='priv'){var hp2=pushed;close();try{if(hp2&&history.state&&history.state.dr)history.replaceState({n:1,pf:1},'');else history.pushState({n:1,pf:1},'')}catch(x){}docOpen(k);pfFromDr=true}
       else if(k==='fav'){if(!favN()){var n=document.getElementById('drNote');if(n)n.innerHTML='<div class="note">No favourites yet. Tap the star on any question to save it here.</div>';return}
         closeAll();try{window.startSaved()}catch(x){}}
       else if(k==='out'){closeAll();try{window.authLogout()}catch(x){}}};
