@@ -402,3 +402,4 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - pma159/vb_build.py rewritten + pma159/vb_types.py: Verbal = copies of verbal questions from EVERY category (verbal sections taken whole; others incl. Hakeem/MR/1000/Pro Genius/PMA 158/Light Forces only when a strict type rule matches; EN/IS/CN skipped), deduped with counts, ONE test per type (VB-n, n = index in vb_types.TYPES; tests can be >50): Series, Coding, Mirror, Direction, Blood, Age, Calendar, Clock, Ranking, Alphabet, Analogy, Odd one, Percentage, Speed/Work, Profit/Dozen, English, Logical, Basic Maths, Mixed. 1944 copies -> 1677 distinct.
 - Non Verbal now also has copies of the Paid Non Verbal Booklet (PB) as NV-4..7 (315 picture questions total).
 - renderNV shows type names (VBN list must match vb_types.TYPES order).
+- Non Verbal also by type now (vb_build NV_TYPES: odd, analogy, series, matrix, mirror; PB items carry 'kind').

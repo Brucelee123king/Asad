@@ -19,6 +19,16 @@ def norm(s):
 def ans(q):
     try: return re.sub(r'[^a-z0-9]+', ' ', str(q['options'][q['correct']]).lower()).strip()
     except Exception: return ''
+NV_TYPES = [('odd', 'Odd One Out'), ('analogy', 'Analogy'), ('series', 'Complete the Series'), ('matrix', 'Missing Figure and Matrix'), ('mirror', 'Mirror Images')]
+def nv_type(q):
+    k = q.get('kind') or ''
+    if k in ('odd', 'analogy', 'series', 'matrix', 'mirror'): return k
+    s = str(q.get('question', '')).lower()
+    if 'mirror' in s: return 'mirror'
+    if 'different' in s or 'odd' in s: return 'odd'
+    if 'is to' in s or 'changes in some way' in s: return 'analogy'
+    if 'series' in s or 'sequence' in s or 'comes next' in s: return 'series'
+    return 'matrix'
 SKIP = {'NV', 'PB', 'VB', 'EN', 'IS', 'CN'}
 def make(ALL, base_dir):
     refs = set()
@@ -50,9 +60,14 @@ def make(ALL, base_dir):
     for i, (tid, name) in enumerate(vb_types.TYPES):
         lst = sorted(by.get(tid, []), key=lambda q: hashlib.md5(q['question'].encode('utf8')).hexdigest())
         if lst: tests['VB-%d' % (i + 1)] = [dict(e, id=j + 1) for j, e in enumerate(lst)]
-    # Non Verbal: copies of the Paid Non Verbal Booklet picture questions
-    nvn = len([k for k in ALL if k.startswith('NV-')]); pb = []
-    for k in sorted([k for k in ALL if k.startswith('PB-')], key=lambda x: int(x.split('-')[1])): pb += ALL[k]
-    for n in range((len(pb) + 49) // 50):
-        tests['NV-%d' % (nvn + n + 1)] = [dict(e, id=j + 1) for j, e in enumerate(pb[n * 50:(n + 1) * 50])]
+    # Non Verbal: all picture questions (Non Verbal + copies of the Paid Non Verbal Booklet), one test per type (NV-n, n = position in NV_TYPES)
+    pics = []
+    for k in sorted([k for k in ALL if k.startswith('NV-')], key=lambda x: int(x.split('-')[1])): pics += ALL[k]
+    for k in sorted([k for k in ALL if k.startswith('PB-')], key=lambda x: int(x.split('-')[1])): pics += ALL[k]
+    nvb = {}
+    for q in pics:
+        t = nv_type(q); nvb.setdefault(t, []).append(q)
+    for i, (tid, name) in enumerate(NV_TYPES):
+        lst = nvb.get(tid, [])
+        if lst: tests['NV-%d' % (i + 1)] = [dict(e, id=j + 1, sec='Non Verbal: ' + name) for j, e in enumerate(lst)]
     return tests, npick, sum(len(v) for k, v in tests.items() if k.startswith('VB-'))

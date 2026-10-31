@@ -14,7 +14,7 @@ for f in glob.glob(os.path.join(H, 'out', 'S*_*.json')):
     q = re.sub(r'\s*\((odd man out|odd one out)\)', '', (e.get('question') or '').strip(), flags=re.I) or 'Choose the correct figure.'
     items.append((ORDER.index(m.group(1)), int(m.group(2)), {
         'question': '%s (%s, Problem %d)' % (q.rstrip('.'), NAME[m.group(1)], int(m.group(2))),
-        'options': o, 'correct': c, 'facts': e.get('why', ''), 'rel': e.get('trick', ''), 'nv': True,
+        'options': o, 'correct': c, 'facts': e.get('why', ''), 'rel': e.get('trick', ''), 'nv': True, 'kind': e.get('kind', ''),
         'stem': e.get('stem_groups') or [], 'noq': bool(e.get('noq')) or (len(e.get('stem_groups') or []) == 1 and len((e.get('stem_groups') or [[]])[0]) == 1 and (e.get('kind') == 'matrix' or '>?<' in e['stem_groups'][0][0])), 'pma': True, 'sec': 'Paid Non Verbal Booklet: ' + NAME[m.group(1)], 'rep': 1}))
 items.sort(key=lambda x: (x[0], x[1]))
 out = [x[2] for x in items]
