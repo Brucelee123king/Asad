@@ -364,3 +364,7 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 
 ## Oct 31 2026 (6) - published
 - Light/dark: round #themeBtn hidden after login (html.acok); sun/moon pill switch (.thsw, calls window.toggleTheme) at the bottom of the side menu above Log Out, aligned left.
+
+## Oct 31 2026 (7) - published
+- Theme switch smoother: html.thx turns off all transitions while switching (the html.lite '*' rule made every element start a colour transition: ~300 ms -> ~10 ms of script on a 6x-slow CPU). The menu pill moves first, the theme changes 300 ms later.
+- Admin people icon (#onBtn) pinned top-right (it used to sit next to #themeBtn, which is now hidden).

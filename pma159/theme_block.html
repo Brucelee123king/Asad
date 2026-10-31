@@ -38,6 +38,8 @@ html.dark #authUser{background:rgba(30,41,59,.95)}
 #themeBtn:active{transform:scale(.92)}
 html.dark #themeBtn{background:rgba(15,23,42,.85);color:#fde68a;border-color:rgba(148,163,184,.3)}
 body{transition:background-color .3s ease}
+/* while switching day/night no element starts its own colour transition (that made the switch hang on slow phones) */
+html.thx *,html.thx *::before,html.thx *::after,html.thx body{transition:none!important}
 </style>
 <button id="themeBtn" type="button" aria-label="Switch day / night mode" title="Day / Night mode" onclick="toggleTheme()"></button>
 <script>
@@ -46,7 +48,7 @@ body{transition:background-color .3s ease}
   try{saved=localStorage.getItem('an_theme')}catch(e){}
   var dark=saved?saved==='dark':(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches);
   function apply(){root.classList.toggle('dark',dark);btn.textContent=dark?'☀️':'\u{1F319}';btn.title=dark?'Day mode':'Night mode'}
-  window.toggleTheme=function(){dark=!dark;try{localStorage.setItem('an_theme',dark?'dark':'light')}catch(e){}apply()};
+  window.toggleTheme=function(){dark=!dark;try{localStorage.setItem('an_theme',dark?'dark':'light')}catch(e){}root.classList.add('thx');apply();requestAnimationFrame(function(){requestAnimationFrame(function(){setTimeout(function(){root.classList.remove('thx')},80)})})};
   apply();
 })();
 </script>
