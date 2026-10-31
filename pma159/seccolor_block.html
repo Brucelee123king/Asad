@@ -13,6 +13,8 @@ body[data-sec="en"]{--c1:#111827;--c2:#4b5563;--cs:#1f2937;--ch:#111827;--cl:#f3
 /* Light Forces Academy: colour 30 'Navy Red' of design/palette100.json */
 .lfgrad{background-image:linear-gradient(120deg,#172554,#b91c1c)!important;color:#fff}
 .lftag{background:#fee2e2;color:#7f1d1d}
+.hfgrad{background-image:linear-gradient(120deg,#064e3b,#0f766e)!important;color:#fff}
+body[data-sec="hf"]{--c1:#064e3b;--c2:#0f766e;--cs:#065f46;--ch:#064e3b;--cl:#ecfdf5;--ct:#065f46;--cb:#6ee7b7;--cr:#a7f3d0}
 body[data-sec="lf"]{--c1:#172554;--c2:#b91c1c;--cs:#1e3a8a;--ch:#172554;--cl:#eff6ff;--ct:#7f1d1d;--cb:#fca5a5;--cr:#fecaca}
 body[data-sec="pg"]{--c1:#0e7490;--c2:#2563eb;--cs:#0891b2;--ch:#0e7490;--cl:#ecfeff;--ct:#155e75;--cb:#67e8f9;--cr:#a5f3fc}
 body[data-sec="lc"]{--c1:#6d28d9;--c2:#c026d3;--cs:#7c3aed;--ch:#6d28d9;--cl:#f5f3ff;--ct:#5b21b6;--cb:#a78bfa;--cr:#c4b5fd}
@@ -38,7 +40,7 @@ body[data-sec] #view-home .text-emerald-600{color:var(--cs)!important}
 (function(){
   if(typeof selectTest!=='function')return;
   var _sel=selectTest,_show=showSelect;
-  window.selectTest=selectTest=function(k){var c=(isHK(k)||isMR(k))?'hk':(typeof isLF==='function'&&isLF(k))?'lf':(typeof isEN==='function'&&(isEN(k)||(typeof isIS==='function'&&isIS(k))))?'en':isCN(k)?'cn':isIV(k)?'iv':(isNV(k)||(typeof isVB==='function'&&isVB(k)))?'nv':(isPG(k)||isPF(k)||(typeof isPV==='function'&&isPV(k))||(typeof isPB==='function'&&isPB(k)))?'pg':isLC(k)?'lc':isFA(k)?'fa':isPMA(k)?'pma':'';if(c)document.body.dataset.sec=c;else delete document.body.dataset.sec;return _sel.apply(this,arguments)};
+  window.selectTest=selectTest=function(k){var c=(isHK(k)||isMR(k))?'hk':(typeof isLF==='function'&&isLF(k))?'lf':(typeof isHF==='function'&&isHF(k))?'hf':(typeof isEN==='function'&&(isEN(k)||(typeof isIS==='function'&&isIS(k))))?'en':isCN(k)?'cn':isIV(k)?'iv':(isNV(k)||(typeof isVB==='function'&&isVB(k)))?'nv':(isPG(k)||isPF(k)||(typeof isPV==='function'&&isPV(k))||(typeof isPB==='function'&&isPB(k)))?'pg':isLC(k)?'lc':isFA(k)?'fa':isPMA(k)?'pma':'';if(c)document.body.dataset.sec=c;else delete document.body.dataset.sec;return _sel.apply(this,arguments)};
   window.showSelect=showSelect=function(){var r=_show.apply(this,arguments);if(!quizActive)delete document.body.dataset.sec;return r};
 })();
 </script>

@@ -46,7 +46,7 @@ textarea{min-height:110px}.badge{background:var(--no);color:#fff;border-radius:9
 <script>
 (function(){
 var ADMIN='asadullah75t@gmail.com',CFG=__FBCFG__;
-var CATS=[['o','1000 MCQs'],['pma','PMA 159'],['fa','Forces Academy'],['hk','Hakeem'],['lc','PMA 158'],['pg','Pro Genius'],['nv','Non Verbal'],['cn','Constitution of Pakistan'],['iv','100 Most Repeated'],['en','Academic (English, Islamiat)'],['lf','Light Forces Academy']];
+var CATS=[['o','1000 MCQs'],['pma','PMA 159'],['fa','Forces Academy'],['hk','Hakeem'],['lc','PMA 158'],['pg','Pro Genius'],['nv','Non Verbal'],['cn','Constitution of Pakistan'],['iv','100 Most Repeated'],['en','Academic (English, Islamiat)'],['lf','Light Forces Academy'],['hf','Haroon Force Academy']];
 var $=function(i){return document.getElementById(i)},FB=window.FB,app=FB.initializeApp(CFG),auth=FB.getAuth(app),fs=FB.getFirestore(app);
 var emu=location.hostname==='localhost'&&/[?&]emu=1/.test(location.search);
 if(emu){FB.connectAuthEmulator(auth,'http://127.0.0.1:9099',{disableWarnings:true});FB.connectFirestoreEmulator(fs,'127.0.0.1',8080);$('emuForm').style.display='block'}
