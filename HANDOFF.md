@@ -392,3 +392,8 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 ## Oct 31 2026 (13) - published: instant updates
 - sign_shell.py loader: checks shell.json 0.6 s after load, every 2 min while open, on becoming visible and on coming online. A verified new shell is saved and applied at once (small "Updating..." pill + location.reload, the APK loader then writes the stored shell) when safe(): not in a running quiz, no open form/menu/sheet (#obWz,#pfPage,#rmSh,#rmPk,#pfSh,#wzSh,#crOv,#drawer), no focused input; otherwise retried every 5 s. Tested: switch in ~1.3 s; waits while a form is open.
 - Limit: a phone's very first opening after installing the APK uses the APK's own old loader (6 s, next launch). After that every update is near-instant.
+
+## Oct 31 2026 (14) - published: Paid Non Verbal Booklet
+- Pro Genius sub-card "Paid Non Verbal Booklet" (prefix PB-, 4 tests: 50/50/50/47 = 197 picture questions) from progenius/nvb/src.pdf (97 scanned pages). 7 agents redrew every figure as SVG (progenius/nvb/out/S1..S6_NN.json, SPEC.md). Book keys in nvb/answer_key.json (S1 odd 30, S2 analogy 28 - Problem 8 is not printed, S5 sequence 80, S6 direction 35 - book prints 31 twice, extra = S6_35). S3 mirror (4) and S4 difference/matrix (23) have no key: solved by the agent. Dropped (book flawed, 2 equal answers): S4_02, S4_03, S4_07 (nvb/drop.json).
+- Doubtful book answers kept as printed (notes in the json): S2_21, S2_24, S6_30, S5_21, S5_32 (+ S5_13/26/39 ambiguous).
+- Build: python3 progenius/nvb/build_pb.py -> progenius/pb_final.json; merge_into_site loads PB like NV (q.nv render).

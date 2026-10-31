@@ -11,11 +11,11 @@ for f in glob.glob(os.path.join(H, 'out', 'S*_*.json')):
     if key in DROP: continue
     o = e['options']; c = int(e['correct'])
     if not (2 <= len(o) <= 8 and 0 <= c < len(o) and all(str(x).startswith('<svg') for x in o)): print('skip bad', key); continue
-    q = (e.get('question') or '').strip() or 'Choose the correct figure.'
+    q = re.sub(r'\s*\((odd man out|odd one out)\)', '', (e.get('question') or '').strip(), flags=re.I) or 'Choose the correct figure.'
     items.append((ORDER.index(m.group(1)), int(m.group(2)), {
         'question': '%s (%s, Problem %d)' % (q.rstrip('.'), NAME[m.group(1)], int(m.group(2))),
         'options': o, 'correct': c, 'facts': e.get('why', ''), 'rel': e.get('trick', ''), 'nv': True,
-        'stem': e.get('stem_groups') or [], 'noq': bool(e.get('noq')), 'pma': True, 'sec': 'Paid Non Verbal Booklet: ' + NAME[m.group(1)], 'rep': 1}))
+        'stem': e.get('stem_groups') or [], 'noq': bool(e.get('noq')) or (len(e.get('stem_groups') or []) == 1 and len((e.get('stem_groups') or [[]])[0]) == 1 and (e.get('kind') == 'matrix' or '>?<' in e['stem_groups'][0][0])), 'pma': True, 'sec': 'Paid Non Verbal Booklet: ' + NAME[m.group(1)], 'rep': 1}))
 items.sort(key=lambda x: (x[0], x[1]))
 out = [x[2] for x in items]
 json.dump(out, open(os.path.join(H, '..', 'pb_final.json'), 'w'), ensure_ascii=False)
