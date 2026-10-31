@@ -1,4 +1,12 @@
 <style>
+/* the round back arrow next to "Hi, name" is not needed: every page has its own back button, and the phone Back works */
+html.acok #backBtn{display:none!important}
+/* best score circle on every test card */
+.tring{position:relative;width:48px;height:48px;flex:0 0 auto}.tring svg{width:48px;height:48px;transform:rotate(-90deg)}.tring circle{fill:none;stroke-width:4.5}
+.tring .tk{stroke:rgba(148,163,184,.3)}.tring .ar{stroke-linecap:round;transition:stroke-dashoffset .6s ease}
+.tring b{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;font:800 12.5px 'Plus Jakarta Sans',system-ui,sans-serif;color:#1e293b;line-height:1}.tring b small{font-size:8px;font-weight:800;opacity:.7;margin-top:1px}
+html.dark .tring b{color:#f1f5f9}.tring.none b{color:#94a3b8;font-size:16px}
+.thide{display:none!important}
 /* PMA Roadmap page */
 #nbPage.road{--rbg:linear-gradient(180deg,#0b1a33 0%,#10284a 40%,#1f3a1f 80%,#16301a 100%);--rtx:#fff;--rmu:#c9d3e6;--rcd:rgba(255,255,255,.06);--rln:rgba(233,199,90,.3);--rlb:rgba(11,26,51,.92);--rin:radial-gradient(circle at 40% 30%,#24467f,#0b1a33);--rring:#13284a;background:var(--rbg);color:var(--rtx)}
 html:not(.dark) #nbPage.road{--rbg:linear-gradient(180deg,#f7f5ee 0%,#eef1e6 60%,#e6ead9 100%);--rtx:#0f1f3d;--rmu:#55607a;--rcd:rgba(255,255,255,.88);--rln:#d8d2bd;--rlb:rgba(255,255,255,.96);--rin:radial-gradient(circle at 40% 30%,#1d3a6e,#0f1f3d);--rring:#fff}
@@ -263,5 +271,19 @@ html.dark #nbPage{--pbg:#1b1814;--ptx:#f3eee2;--pmu:#b9ab8c;--pln:#3d362c;--pcd:
       new MutationObserver(quiz).observe(document.getElementById('view-quiz'),{attributes:true,attributeFilter:['class']});
       new MutationObserver(function(){setTimeout(mark,50)}).observe(d,{attributes:true,attributeFilter:['class']})}
     else if(tries++<200)setTimeout(wait,50)})();
+})();
+
+/* best score circle on every test card (from the saved best %, mc_best_<test>) */
+(function(){var C=2*Math.PI*19;
+  function col(v){return v>=70?'#16a34a':v>=40?'#f59e0b':'#ef4444'}
+  function ring(v){var has=v!==null&&!isNaN(v),o=has?C*(1-Math.max(0,Math.min(100,v))/100):C;
+    return '<svg viewBox="0 0 48 48" aria-hidden="true"><circle class="tk" cx="24" cy="24" r="19"/><circle class="ar" cx="24" cy="24" r="19" stroke="'+(has?col(v):'transparent')+'" stroke-dasharray="'+C.toFixed(1)+'" stroke-dashoffset="'+o.toFixed(1)+'"/></svg><b>'+(has?v+'<small>%</small>':'–')+'</b>'}
+  function best(k){try{var x=localStorage.getItem('mc_best_'+k);return x===null?null:parseInt(x,10)}catch(e){return null}}
+  function deco(){var v=document.getElementById('view-select');if(!v)return;
+    v.querySelectorAll('button[onclick^="selectTest("]').forEach(function(b){var m=/selectTest\('([^']+)'\)/.exec(b.getAttribute('onclick')||'');if(!m)return;var k=m[1],val=best(k),r=b.querySelector('.tring');
+      if(!r){var row=b.querySelector('.flex.items-center.justify-between');if(!row)return;var last=row.lastElementChild;if(last&&row.children.length>1)last.classList.add('thide');r=document.createElement('span');r.className='tring';row.appendChild(r)}
+      var key=String(val);if(r.getAttribute('data-v')!==key){r.setAttribute('data-v',key);r.classList.toggle('none',val===null);r.innerHTML=ring(val);r.setAttribute('aria-label',val===null?'Not attempted':'Best score '+val+' percent')}})}
+  var t=0;function soon(){clearTimeout(t);t=setTimeout(deco,60)}
+  var n=0;(function w(){var v=document.getElementById('view-select');if(v){deco();new MutationObserver(function(ms){for(var i=0;i<ms.length;i++){if(ms[i].target.closest&&ms[i].target.closest('.tring'))continue;soon();return}}).observe(v,{childList:true,subtree:true,attributes:true,attributeFilter:['class']})}else if(n++<200)setTimeout(w,50)})();
 })();
 </script>
