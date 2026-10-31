@@ -30,11 +30,10 @@ textarea{min-height:110px}.badge{background:var(--no);color:#fff;border-radius:9
 <div id="login" class="card"><p>Sign in with the admin Google account.</p><div class="row"><button id="gbtn">Sign in with Google</button></div>
 <div id="emuForm" style="display:none"><p class="mu">Test mode</p><input type="text" id="emuE" placeholder="email"><input type="text" id="emuP" placeholder="password" style="margin-top:6px"><div class="row"><button id="emuB">Test login</button></div></div></div>
 <div id="app" style="display:none">
- <div class="row"><button id="tReq">Requests<span class="badge" id="nReq">0</span></button><button class="g" id="tUsr">People<span class="badge" id="nUsr">0</span></button><button class="g" id="tPro">User details<span class="badge" id="nPro">0</span></button><button class="g" id="tKey">Passwords</button><button class="g" id="bOut">Logout</button><button class="g" id="bRef">Refresh</button></div>
+ <div class="row"><button id="tReq">Requests<span class="badge" id="nReq">0</span></button><button class="g" id="tUsr">People<span class="badge" id="nUsr">0</span></button><button class="g" id="tPro">User details<span class="badge" id="nPro">0</span></button><button class="g" id="tAcc">Courses</button><button class="g" id="tKey">Passwords</button><button class="g" id="bOut">Logout</button><button class="g" id="bRef">Refresh</button></div>
  <input type="text" id="srch" placeholder="Search email or name..." autocomplete="off" autocapitalize="off" spellcheck="false" style="margin-top:10px"><div class="mu" id="srchN"></div>
  <div id="onNow" class="card" style="margin-top:10px"></div>
- <div id="accBox" class="card"></div>
- <div id="pReq"></div><div id="pUsr" style="display:none"></div><div id="pPro" style="display:none"></div>
+ <div id="pAcc" style="display:none"><div id="accBox" class="card"></div></div><div id="pReq"></div><div id="pUsr" style="display:none"></div><div id="pPro" style="display:none"></div>
  <div id="pGive" class="card" style="margin-top:14px"><b>Give Initial PMA to everyone</b><div class="mu">Ticks Initial PMA Preparation (all categories) for every person in Requests and People. Their Interview and ISSB ticks stay as they are. Blocked people stay blocked. They get it at their next app opening.</div><div class="row"><button class="k" id="bGive">Give Initial PMA to everyone</button></div></div>
  <div id="pReset" class="card" style="display:none;margin-top:14px"><b>Lock everyone again</b><div class="mu">Every approved person goes back to the Requests tab with nothing ticked. They can still open the app, but Initial PMA, Interview and ISSB stay locked until you tick them again. Blocked people stay blocked.</div><div class="row"><button class="r" id="bReset">Lock everyone again</button></div></div>
  <div id="pKey" style="display:none">
@@ -53,8 +52,8 @@ var emu=location.hostname==='localhost'&&/[?&]emu=1/.test(location.search);
 if(emu){FB.connectAuthEmulator(auth,'http://127.0.0.1:9099',{disableWarnings:true});FB.connectFirestoreEmulator(fs,'127.0.0.1',8080);$('emuForm').style.display='block'}
 function say(m,bad){var d=document.createElement('div');d.className='msg';if(bad)d.style.background='#991b1b';d.textContent=m;$('msg').innerHTML='';$('msg').appendChild(d);setTimeout(function(){if(d.parentNode)d.remove()},6000)}
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
-function tab(t){['Req','Usr','Pro','Key'].forEach(function(x){$('p'+x).style.display=x===t?'block':'none';$('t'+x).className=x===t?'':'g'});$('pReset').style.display=t==='Usr'?'block':'none';$('pGive').style.display=(t==='Usr'||t==='Req')?'block':'none'}
-$('tReq').onclick=function(){tab('Req')};$('tUsr').onclick=function(){tab('Usr')};$('tKey').onclick=function(){tab('Key');loadKeys()};$('tPro').onclick=function(){tab('Pro')};
+function tab(t){['Req','Usr','Pro','Acc','Key'].forEach(function(x){$('p'+x).style.display=x===t?'block':'none';$('t'+x).className=x===t?'':'g'});$('pReset').style.display=t==='Usr'?'block':'none';$('pGive').style.display=(t==='Usr'||t==='Req')?'block':'none'}
+$('tReq').onclick=function(){tab('Req')};$('tUsr').onclick=function(){tab('Usr')};$('tKey').onclick=function(){tab('Key');loadKeys()};$('tPro').onclick=function(){tab('Pro')};['tReq','tUsr','tPro','tKey'].forEach(function(id){$(id).addEventListener('click',function(){if(ACCF){ACCF='';accDraw();filt()}})});$('tAcc').onclick=function(){tab('Acc')};
 $('gbtn').onclick=function(){FB.signInWithPopup(auth,new FB.GoogleAuthProvider()).catch(function(e){say('Sign-in failed: '+(e.code||e.message),1)})};
 $('emuB').onclick=function(){FB.signInWithEmailAndPassword(auth,$('emuE').value,$('emuP').value).catch(function(e){say('Test login failed: '+e.code,1)})};
 $('bOut').onclick=function(){FB.signOut(auth)};$('bRef').onclick=function(){load()};
