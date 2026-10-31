@@ -397,3 +397,8 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - Pro Genius sub-card "Paid Non Verbal Booklet" (prefix PB-, 4 tests: 50/50/50/47 = 197 picture questions) from progenius/nvb/src.pdf (97 scanned pages). 7 agents redrew every figure as SVG (progenius/nvb/out/S1..S6_NN.json, SPEC.md). Book keys in nvb/answer_key.json (S1 odd 30, S2 analogy 28 - Problem 8 is not printed, S5 sequence 80, S6 direction 35 - book prints 31 twice, extra = S6_35). S3 mirror (4) and S4 difference/matrix (23) have no key: solved by the agent. Dropped (book flawed, 2 equal answers): S4_02, S4_03, S4_07 (nvb/drop.json).
 - Doubtful book answers kept as printed (notes in the json): S2_21, S2_24, S6_30, S5_21, S5_32 (+ S5_13/26/39 ambiguous).
 - Build: python3 progenius/nvb/build_pb.py -> progenius/pb_final.json; merge_into_site loads PB like NV (q.nv render).
+
+## Oct 31 2026 (15) - published: Verbal by type
+- pma159/vb_build.py rewritten + pma159/vb_types.py: Verbal = copies of verbal questions from EVERY category (verbal sections taken whole; others incl. Hakeem/MR/1000/Pro Genius/PMA 158/Light Forces only when a strict type rule matches; EN/IS/CN skipped), deduped with counts, ONE test per type (VB-n, n = index in vb_types.TYPES; tests can be >50): Series, Coding, Mirror, Direction, Blood, Age, Calendar, Clock, Ranking, Alphabet, Analogy, Odd one, Percentage, Speed/Work, Profit/Dozen, English, Logical, Basic Maths, Mixed. 1944 copies -> 1677 distinct.
+- Non Verbal now also has copies of the Paid Non Verbal Booklet (PB) as NV-4..7 (315 picture questions total).
+- renderNV shows type names (VBN list must match vb_types.TYPES order).
