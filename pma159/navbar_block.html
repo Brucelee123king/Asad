@@ -27,6 +27,10 @@ html:not(.dark) #nbPage .rhd h2{background:linear-gradient(180deg,#d4a017,#8a651
 #nbPage .rfin{position:absolute;left:0;right:0;text-align:center;z-index:2}#nbPage .rfic{width:86px;height:86px;margin:0 auto;border-radius:50%;background:linear-gradient(145deg,#fff6cc,#e9c75a 40%,#a07a10 85%);display:flex;align-items:center;justify-content:center;font-size:37px;color:#0f1f3d;box-shadow:0 8px 0 #7a5a0a,0 0 0 10px rgba(233,199,90,.2),0 0 60px rgba(233,199,90,.85)}
 #nbPage .rfc{display:inline-block;margin-top:18px;padding:10px 20px;border-radius:18px;background:linear-gradient(135deg,#2e4a1e,#1f3a14);border:1.5px solid #e9c75a;color:#fff}#nbPage .rfc small{display:block;font-size:10.5px;letter-spacing:.16em;color:#e9c75a;font-weight:800}#nbPage .rfc b{display:block;font-size:18px}#nbPage .rfc span{font-size:12px;font-weight:700;opacity:.9}
 #nbPage .rnote{margin:0 18px;font-size:12px;line-height:1.5;color:var(--rmu);text-align:center}
+#nbPage .rfx{position:absolute;width:120px;height:120px;border-radius:50%;z-index:1;pointer-events:none;background:radial-gradient(circle,rgba(34,197,94,.55),rgba(34,197,94,0) 65%);animation:rmFx 1.4s ease-out 2 both}
+@keyframes rmFx{0%{transform:scale(.4);opacity:0}30%{opacity:1}100%{transform:scale(1.6);opacity:0}}html.lite #nbPage .rfx{animation-duration:1.4s!important;animation-iteration-count:2!important}
+#nbPage .rnd.cur{animation:rmPulse 2.4s ease-in-out infinite}@keyframes rmPulse{0%,100%{box-shadow:0 8px 0 #7a5a0a,0 0 0 8px rgba(34,197,94,.28),0 0 22px rgba(34,197,94,.55)}50%{box-shadow:0 8px 0 #7a5a0a,0 0 0 14px rgba(34,197,94,.12),0 0 34px rgba(34,197,94,.75)}}
+html.lite #nbPage .rnd.cur{animation-duration:2.4s!important;animation-iteration-count:infinite!important}
 #rmPk{position:fixed;inset:0;top:var(--sat,0px);z-index:2147482997;background:rgba(2,6,23,.5);opacity:0;transition:opacity .25s;font-family:'Plus Jakarta Sans',system-ui,sans-serif;--rin:radial-gradient(circle at 40% 30%,#1d3a6e,#0f1f3d)}#rmPk.open{opacity:1}
 #rmPk .rpp{position:absolute;left:0;right:0;bottom:0;background:#fffdf8;color:#0f1f3d;border-radius:26px 26px 0 0;padding:12px 20px calc(20px + env(safe-area-inset-bottom,0px));transform:translateY(100%);transition:transform .3s cubic-bezier(.22,.8,.24,1);max-width:620px;margin:0 auto}#rmPk.open .rpp{transform:none}
 html.dark #rmPk .rpp{background:#13203a;color:#fff}html.lite #rmPk,html.lite #rmPk .rpp{transition-duration:.3s!important}
@@ -158,19 +162,22 @@ html.dark #nbPage{--pbg:#1b1814;--ptx:#f3eee2;--pmu:#b9ab8c;--pln:#3d362c;--pcd:
     ['fa-building-columns','Training at','PMA Kakul','Military and academic training at PMA Kakul before you are commissioned as an officer.']];
   function rmGet(){try{var a=JSON.parse(localStorage.getItem('rm_done')||'[]');return Array.isArray(a)?a:[]}catch(e){return []}}
   function rmSet(a){try{localStorage.setItem('rm_done',JSON.stringify(a))}catch(e){}}
+  function rmTop(){var d=rmGet();return d.length?Math.max.apply(null,d):-1}
+  function rmDone(i){return i<=rmTop()}
+  function rmMark(i,on){var k=on?i:i-1,a=[];for(var j=0;j<=k;j++)a.push(j);rmSet(a);rmFx=on?i:-1}
+  var rmFx=-1;
   function rmIcon(ic){return ic==='brain'?'<span class="rb2"><i class="fa-solid fa-brain"></i><i class="fa-solid fa-file-lines sb"></i></span>':'<i class="fa-solid '+ic+'"></i>'}
-  function rmHtml(){var w=Math.min(pg.clientWidth||360,560),n=RM.length,gap=120,t0=84,xL=Math.round(w*.24),xR=Math.round(w*.76),dn=rmGet(),cur=-1,i;
-    for(i=0;i<n;i++)if(dn.indexOf(i)<0){cur=i;break}
+  function rmHtml(){var w=Math.min(pg.clientWidth||360,560),n=RM.length,gap=120,t0=84,xL=Math.round(w*.24),xR=Math.round(w*.76),dn=rmGet(),top=dn.length?Math.max.apply(null,dn):-1,cur=top<0?0:top,i;
     var P=[];for(i=0;i<n;i++)P.push([i%2?xR:xL,t0+i*gap]);var ey=t0+n*gap+30,mid=Math.round(w/2);
     var d='M '+mid+' '+(t0-62)+P.map(function(p){return ' L '+p[0]+' '+p[1]}).join('')+' L '+mid+' '+ey;
-    var nodes=P.map(function(p,i){var L=i%2===0,st=dn.indexOf(i)>-1?'done':(i===cur?'cur':'todo'),r=RM[i];
-      return '<button type="button" class="rnd '+st+'" data-lv="'+i+'" style="left:'+(p[0]-33)+'px;top:'+(p[1]-33)+'px" aria-label="Level '+(i+1)+': '+r[1]+' '+r[2]+'"><span class="rin">'+rmIcon(r[0])+'</span><span class="rno">'+(i+1)+'</span></button>'+
+    var nodes=P.map(function(p,i){var L=i%2===0,st=i===cur?'cur':(i<=top?'done':'todo'),r=RM[i];
+      return (i===rmFx?'<div class="rfx" style="left:'+(p[0]-60)+'px;top:'+(p[1]-60)+'px"></div>':'')+'<button type="button" class="rnd '+st+'" data-lv="'+i+'" style="left:'+(p[0]-33)+'px;top:'+(p[1]-33)+'px" aria-label="Level '+(i+1)+': '+r[1]+' '+r[2]+'"><span class="rin">'+rmIcon(r[0])+'</span><span class="rno">'+(i+1)+'</span></button>'+
         (st==='cur'?'<div class="ryou" style="left:'+(p[0]-26)+'px;top:'+(p[1]-62)+'px">YOU</div>':'')+
         '<button type="button" class="rtt" data-lv="'+i+'" style="'+(L?'left:'+(p[0]+42):'right:'+(w-p[0]+42))+'px;top:'+(p[1]-24)+'px;text-align:'+(L?'left':'right')+';width:'+Math.max(100,Math.min(150,(L?w-p[0]-54:p[0]-54)))+'px"><small>LEVEL '+(i+1)+'</small><b>'+r[1]+'</b>'+(r[2]?'<span class="s2">'+r[2]+'</span>':'')+
-        (st==='done'?'<span class="rst">★★★</span>':st==='cur'?'<span class="rnow">You are here</span>':'<span class="rtap">Tap to read</span>')+'</button>'}).join('');
-    var c=dn.length,pc=Math.round(c/n*100);
+        (st==='done'?'<span class="rst">★★★</span>':st==='cur'?(top<0?'<span class="rnow">Start here</span>':'<span class="rst">★★★</span><span class="rnow">You are here</span>'):'<span class="rtap">Tap to read</span>')+'</button>'}).join('');
+    var c=top+1,pc=Math.round(c/n*100);
     return '<div class="rmw" style="max-width:'+w+'px"><div class="rhd"><div class="remb"><i class="fa-solid fa-shield-halved"></i></div><h2>PMA ROADMAP</h2><p>Complete Journey from Registration to<br>Pakistan Military Academy</p></div>'+
-      '<div class="rrep"><div class="rring" style="background:conic-gradient(#e9c75a 0 '+pc+'%,var(--rln) '+pc+'% 100%)"><span>'+pc+'%</span></div><div><small>MY PROGRESS</small><b>'+c+' of '+n+' levels cleared</b><div class="rrb"><span>★ Done '+c+'</span><span>● Now: '+(cur<0?'Finished':'Level '+(cur+1))+'</span><span>○ Left '+(n-c)+'</span></div></div></div>'+
+      '<div class="rrep"><div class="rring" style="background:conic-gradient(#e9c75a 0 '+pc+'%,var(--rln) '+pc+'% 100%)"><span>'+pc+'%</span></div><div><small>MY PROGRESS</small><b>'+c+' of '+n+' levels cleared</b><div class="rrb"><span>★ Done '+c+'</span><span>● Now: '+(top<0?'Start':top===n-1?'Finished':'Level '+(top+1))+'</span><span>○ Left '+(n-c)+'</span></div></div></div>'+
       '<div class="rmap" style="height:'+(ey+215)+'px"><svg class="rbg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 92 L12 84 L22 89 L35 79 L48 88 L60 81 L74 89 L88 83 L100 87 L100 100 L0 100Z"/></svg>'+
       '<svg class="rln" width="'+w+'" height="'+(ey+10)+'" aria-hidden="true"><defs><linearGradient id="rgd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff2b8"/><stop offset=".5" stop-color="#e9c75a"/><stop offset="1" stop-color="#b8860b"/></linearGradient></defs><path d="'+d+'" stroke="rgba(233,199,90,.28)" stroke-width="16" fill="none" stroke-linejoin="round"/><path d="'+d+'" stroke="url(#rgd)" stroke-width="6" fill="none" stroke-linejoin="round" /><path d="'+d+'" stroke="#fff8dc" stroke-width="1.8" fill="none" stroke-dasharray="2 12" stroke-linecap="round" class="rrun"/></svg>'+
       '<div class="rstart" style="left:'+(mid-40)+'px;top:'+(t0-70)+'px"><i class="fa-solid fa-location-dot"></i> START</div>'+nodes+
@@ -187,16 +194,16 @@ html.dark #nbPage{--pbg:#1b1814;--ptx:#f3eee2;--pmu:#b9ab8c;--pln:#3d362c;--pcd:
     return '<div class="rsc'+(x.h?'':' cont')+'">'+h+'</div>'}
   var RMS=["PMA Kakul, Abbottabad trains officer cadets of the Pakistan Army. The PMA Long Course takes about two years and ends with a commission as a Second Lieutenant.", "Who can apply: nationality, gender, marital status, age limits (17\u201322 for FA/FSc), marks (60%), height (5 ft 4 in) and who is not eligible.", "Step-by-step online registration on joinpakarmy.gov.pk, the information you need, and the documents to keep ready.", "A written MCQ test: intelligence, English, Mathematics, Pakistan Studies, Islamiat and General Knowledge, with preparation tips.", "Running, push-ups, sit-ups and chin-ups. See the example standards and how to prepare.", "A first check of your height, weight, BMI, eyesight, hearing and general health.", "An interview at the Army Selection and Recruitment Centre: what they ask, sample questions and essay tips.", "Four days of psychological tests, GTO tasks, interview and conference. What ISSB looks for and how to prepare.", "A detailed medical examination at CMH after ISSB recommendation, the documents to bring and possible outcomes.", "GHQ makes the final selection on merit and vacancies. How to check your status safely.", "Physical, military, academic, leadership and character training at PMA Kakul, up to the passing out parade."],rpk=null;
   /* tap a level: a small preview first (Explore = full page, Done = tick); the level is ticked only by the Done button */
-  function rmPeek(i){rmShut(true);rmPkShut(true);var r=RM[i],done=rmGet().indexOf(i)>-1;rpk=document.createElement('div');rpk.id='rmPk';
+  function rmPeek(i){rmShut(true);rmPkShut(true);var r=RM[i],done=rmDone(i);rpk=document.createElement('div');rpk.id='rmPk';
     rpk.innerHTML='<div class="rpp" role="dialog" aria-label="'+rmE(r[1]+' '+r[2])+'"><div class="rgr"></div><div class="rph"><span class="rnd sm '+(done?'done':'cur')+'"><span class="rin">'+rmIcon(r[0])+'</span><span class="rno">'+(i+1)+'</span></span><div><small>LEVEL '+(i+1)+' OF '+RM.length+'</small><h3>'+rmE(r[1]+(r[2]?' '+r[2]:''))+'</h3>'+(done?'<span class="rdn"><i class="fa-solid fa-circle-check"></i> Done</span>':'')+'</div></div>'+
       '<p>'+rmE(RMS[i])+'</p><div class="rpb"><button type="button" class="rex" data-a="ex"><i class="fa-solid fa-book-open-reader"></i> Explore</button><button type="button" class="rdo'+(done?' un':'')+'" data-a="mk">'+(done?'<i class="fa-solid fa-rotate-left"></i> Undo':'<i class="fa-solid fa-check"></i> Done')+'</button></div></div>';
     document.body.appendChild(rpk);void rpk.offsetWidth;requestAnimationFrame(function(){if(rpk)rpk.classList.add('open')});
     rpk.onclick=function(e){if(e.target===rpk){rmBack();return}var b=e.target.closest('[data-a]');if(!b)return;var a=b.getAttribute('data-a');
       if(a==='ex'){rmPkShut(true);rmSheet(i);try{history.replaceState({n:1,nb:1,rm:1},'')}catch(x){}}
-      else if(a==='mk'){var x=rmGet(),k=x.indexOf(i);if(k>-1)x.splice(k,1);else x.push(i);rmSet(x);rmDraw();if(k<0)rmBack();else rmPeek(i)}}}
+      else if(a==='mk'){var was=rmDone(i);rmMark(i,!was);rmDraw();if(!was)rmBack();else rmPeek(i)}}}
   function rmPkShut(now){if(!rpk)return;var s=rpk;rpk=null;if(now){s.remove();return}s.classList.remove('open');s.style.pointerEvents='none';setTimeout(function(){s.remove()},260)}
   function rmBack(){if(history.state&&history.state.rm)history.back();else{rmPkShut();rmShut()}}
-  function rmSheet(i){rmShut(true);var r=RM[i],d=RMP[i],dn=rmGet(),done=dn.indexOf(i)>-1,n=RM.length;rsh=document.createElement('div');rsh.id='rmSh';rsh.setAttribute('role','dialog');rsh.setAttribute('aria-label',r[1]+' '+r[2]);
+  function rmSheet(i){rmShut(true);var r=RM[i],d=RMP[i],done=rmDone(i),n=RM.length;rsh=document.createElement('div');rsh.id='rmSh';rsh.setAttribute('role','dialog');rsh.setAttribute('aria-label',r[1]+' '+r[2]);
     rsh.innerHTML='<div class="rtop"><button type="button" data-a="x" aria-label="Back"><i class="fa-solid fa-chevron-left"></i></button><span>Level '+(i+1)+' of '+n+'</span></div><div class="rbody">'+
       '<div class="rhero"><span class="rnd big '+(done?'done':'cur')+'"><span class="rin">'+rmIcon(r[0])+'</span><span class="rno">'+(i+1)+'</span></span><small>LEVEL '+(i+1)+'</small><h3>'+rmE(r[1]+(r[2]?' '+r[2]:''))+'</h3><p>'+rmE(d.t)+'</p></div>'+
       (d.f?'<div class="rfx">'+d.f.map(function(f){return '<div><i class="fa-solid '+f[0]+'"></i><small>'+rmE(f[1])+'</small><b>'+rmE(f[2])+'</b></div>'}).join('')+'</div>':'')+
@@ -210,10 +217,10 @@ html.dark #nbPage{--pbg:#1b1814;--ptx:#f3eee2;--pmu:#b9ab8c;--pln:#3d362c;--pcd:
         try{if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(u).then(ok,function(){fb(u);ok()});return}}catch(x){}fb(u);ok();return}
       var b=e.target.closest('[data-a]');if(!b)return;var a=b.getAttribute('data-a');
       if(a==='x'){rmBack();return}
-      if(a==='mk'){var x=rmGet(),k=x.indexOf(i);if(k>-1)x.splice(k,1);else x.push(i);rmSet(x);rmDraw();if(k<0){rmBack();return}var y=rsh.querySelector('.rbody').scrollTop;rmSheet(i);rsh.classList.add('open');rsh.querySelector('.rbody').scrollTop=y}
+      if(a==='mk'){var was=rmDone(i);rmMark(i,!was);rmDraw();if(!was){rmBack();return}var y=rsh.querySelector('.rbody').scrollTop;rmSheet(i);rsh.classList.add('open');rsh.querySelector('.rbody').scrollTop=y}
       else if(a==='prev'&&i>0){rmSheet(i-1);rsh.classList.add('open')}else if(a==='next'&&i<n-1){rmSheet(i+1);rsh.classList.add('open')}}}
   function rmShut(now){if(!rsh)return;var s=rsh;rsh=null;if(now){s.remove();return}s.classList.remove('open');s.style.pointerEvents='none';setTimeout(function(){s.remove()},280)}
-  function rmDraw(){if(!pg||!pg.classList.contains('road'))return;var y=pg.scrollTop;pg.innerHTML=rmHtml();pg.scrollTop=y}
+  function rmDraw(){if(!pg||!pg.classList.contains('road'))return;var y=pg.scrollTop;pg.innerHTML=rmHtml();pg.scrollTop=y;var f=pg.querySelector('.rfx');rmFx=-1;if(f){var el=pg.querySelector('.rnd.cur');if(el&&el.scrollIntoView)setTimeout(function(){try{el.scrollIntoView({block:'center',behavior:'smooth'})}catch(e){}},60);setTimeout(function(){if(f.parentNode)f.remove()},1600)}}
   function rmWire(){pg.onclick=function(e){var b=e.target.closest('[data-lv]');if(b){rmPeek(+b.getAttribute('data-lv'));try{history.pushState({n:1,nb:1,rm:1},'')}catch(x){}}}}
   function open(k){var first=!pg;if(!pg){pg=document.createElement('div');pg.id='nbPage';document.body.appendChild(pg)}
     pg.style.top=top()+'px';pg.classList.toggle('road',k==='road');pg.onclick=null;rmShut(true);rmPkShut(true);if(k==='road'){pg.innerHTML=rmHtml();rmWire();pg.scrollTop=0}else pg.innerHTML='<div class="in">'+(k==='road'?soon('fa-route','linear-gradient(135deg,#0891b2,#22d3ee)','PMA Roadmap','A step by step plan for the PMA Long Course: what to study, when to apply, the initial test, the interview and ISSB.'):
