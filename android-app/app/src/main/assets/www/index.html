@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head><script>/*SHELLUPD*/(function(){var V=202610310209,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
+<head><script>/*SHELLUPD*/(function(){var V=202610310219,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
 try{var sv=+L.getItem('shell_v')||0,h=L.getItem('shell_html'),t=+L.getItem('shell_try')||0;
 if(h&&sv>V&&!window.__shellW){if(t>=2){L.removeItem('shell_html');L.removeItem('shell_v');L.removeItem('shell_try')}
 else{L.setItem('shell_try',String(t+1));window.__shellW=1;document.open();document.write(h);document.close();return}}}catch(e){}
@@ -1865,7 +1865,7 @@ html.acok #hiName{display:block}html.dark #hiName{color:#f5f5f4}
   function setDr(h){dr.innerHTML='<button type="button" class="dtab" data-k="close" aria-label="Close menu"><i class="fa-solid fa-chevron-left"></i></button><div class="dsc">'+h+'</div>'}
   var PROV=['Punjab','Sindh','Khyber Pakhtunkhwa','Balochistan','Islamabad Capital Territory','Gilgit-Baltistan','Azad Jammu and Kashmir'];
   var CITY=['Lahore','Karachi','Islamabad','Rawalpindi','Faisalabad','Multan','Peshawar','Quetta','Hyderabad','Gujranwala','Sialkot','Sargodha','Bahawalpur','Sukkur','Abbottabad','Mardan','Bhakkar','Mianwali','Dera Ismail Khan','Dera Ghazi Khan','Jhang','Sahiwal','Okara','Kasur','Sheikhupura','Gujrat','Jhelum','Chakwal','Attock','Muzaffarabad','Mirpur','Gilgit','Skardu','Larkana','Nawabshah','Swat','Kohat','Bannu','Layyah','Khushab','Rahim Yar Khan','Vehari','Khanewal','Muzaffargarh','Narowal','Hafizabad','Mandi Bahauddin','Turbat','Gwadar','Khuzdar'];
-  var pf=null,pfData=null,pfDirty=false;
+  var pf=null,pfData=null,pfDirty=false,pfFromDr=false;
   function fld(id,lab,h){return '<div class="f"><label for="'+id+'">'+lab+'</label>'+h+'</div>'}
   function opts(list,v,ph){return '<option value="">'+ph+'</option>'+list.map(function(x){return '<option'+(x===v?' selected':'')+'>'+esc(x)+'</option>'}).join('')}
   function pfDraw(p){var w=who(),nm=(p.fn?(p.fn+' '+(p.ln||'')).trim():w.name);
@@ -1890,11 +1890,8 @@ html.acok #hiName{display:block}html.dark #hiName{color:#f5f5f4}
     document.getElementById('pfFile').onchange=function(){var f=this.files&&this.files[0];if(f)pickPhoto(f);this.value=''};
     document.getElementById('pfSave').onclick=pfSave}
   function msg(t,c){var m=document.getElementById('pfMsg');if(m){m.className='pm '+(c||'');m.textContent=t}}
-  function pickPhoto(f){if(!/^image\//.test(f.type||'image/')){msg('Please choose a picture.','bad');return}
-    var r=new FileReader();r.onload=function(){var im=new Image();im.onload=function(){var S=256,c=document.createElement('canvas');c.width=c.height=S;var x=c.getContext('2d'),m=Math.min(im.width,im.height);
-      x.fillStyle='#fff';x.fillRect(0,0,S,S);x.drawImage(im,(im.width-m)/2,(im.height-m)/2,m,m,0,0,S,S);var q=.82,d=c.toDataURL('image/jpeg',q);while(d.length>90000&&q>.4){q-=.1;d=c.toDataURL('image/jpeg',q)}
-      pfData.photo=d;document.getElementById('pfAv').innerHTML='<img alt="" src="'+d+'">';msg('Photo ready. Press Update Profile to save it.')};
-      im.onerror=function(){msg('Could not open this picture. Try another one.','bad')};im.src=r.result};r.readAsDataURL(f)}
+  function pickPhoto(f){window.__cropPhoto(f,function(d,why){if(!d){if(why&&why!=='cancel')msg(why==='type'?'Please choose a picture.':'Could not open this picture. Try another one.','bad');return}
+    pfData.photo=d;pfDirty=true;var av=document.getElementById('pfAv');if(av)av.innerHTML='<img alt="" src="'+d+'">';msg('Photo ready. Press Update Profile to save it.')})}
   function val(id){var e=document.getElementById(id);if(!e)return '';if(e.hasAttribute('data-v'))return e.getAttribute('data-v');return e.value.trim()}
   function pick(id,v,ph,kind){return '<button type="button" class="pk'+(v?'':' ph0')+'" id="'+id+'" data-k="pick" data-kind="'+kind+'" data-ph="'+ph+'" data-v="'+esc(v||'')+'">'+esc(v||ph)+'</button>'}
   var sh=null;
@@ -1957,14 +1954,14 @@ html.acok #hiName{display:block}html.dark #hiName{color:#f5f5f4}
     void dr.offsetWidth;requestAnimationFrame(function(){if(bk)bk.classList.add('open');if(dr)dr.classList.add('open')});
     bk.onclick=function(){if(pushed&&history.state&&history.state.dr)history.back();else close()};
     dr.onclick=function(e){var b=e.target.closest('[data-k]');if(!b)return;var k=b.getAttribute('data-k');
-      if(k==='close'){if(pushed&&history.state&&history.state.dr)history.back();else close();return}if(k==='menu')main();else if(k==='prof'){var hp=pushed;close();try{if(hp&&history.state&&history.state.dr)history.replaceState({n:1,pf:1},'');else history.pushState({n:1,pf:1},'')}catch(x){}pfOpen()}else if(k==='terms'||k==='priv'){var hp2=pushed;close();try{if(hp2&&history.state&&history.state.dr)history.replaceState({n:1,pf:1},'');else history.pushState({n:1,pf:1},'')}catch(x){}docOpen(k)}
+      if(k==='close'){if(pushed&&history.state&&history.state.dr)history.back();else close();return}if(k==='menu')main();else if(k==='prof'){var hp=pushed;close();try{if(hp&&history.state&&history.state.dr)history.replaceState({n:1,pf:1},'');else history.pushState({n:1,pf:1},'')}catch(x){}pfOpen();pfFromDr=true}else if(k==='terms'||k==='priv'){var hp2=pushed;close();try{if(hp2&&history.state&&history.state.dr)history.replaceState({n:1,pf:1},'');else history.pushState({n:1,pf:1},'')}catch(x){}docOpen(k);pfFromDr=true}
       else if(k==='fav'){if(!favN()){var n=document.getElementById('drNote');if(n)n.innerHTML='<div class="note">No favourites yet. Tap the star on any question to save it here.</div>';return}
         closeAll();try{window.startSaved()}catch(x){}}
       else if(k==='out'){closeAll();try{window.authLogout()}catch(x){}}};
     try{history.pushState({n:1,dr:1},'');pushed=true}catch(e){}}
   function close(){if(!dr)return;var d=dr,b=bk;dr=bk=null;d.setAttribute('data-gone','1');try{window.__topSync()}catch(x){}pushed=false;d.classList.remove('open');b.classList.remove('open');b.style.pointerEvents='none';setTimeout(function(){d.remove();b.remove()},340)}
   function closeAll(){var p=pushed;close();if(p&&history.state&&history.state.dr)try{history.back()}catch(e){}}
-  window.__drawerBack=function(){if(sh){shClose();try{history.pushState({n:1,pf:1},'')}catch(e){}return true}if(pf){pfClose();return true}if(dr){close();return true}return false};
+  window.__drawerBack=function(){if(sh){shClose();try{history.pushState({n:1,pf:1},'')}catch(e){}return true}if(pf){var rd=pfFromDr;pfFromDr=false;pfClose();if(rd)setTimeout(open,40);return true}if(dr){close();return true}return false};
   hb.onclick=function(){dr?closeAll():open()};
   hiSync();
 }
@@ -1988,8 +1985,46 @@ var tries=0;(function wait(){if(document.querySelector('header>div>div')&&docume
   new MutationObserver(function(){upd()}).observe(d,{attributes:true,attributeFilter:['class']});
   var t=0;(function w(){if(document.body){upd()}else if(t++<100)setTimeout(w,50)})();
 })();
+
+/* photo adjust screen (like Instagram): drag to move, pinch or slide to zoom inside the circle, then Done */
+(function(){
+  var css='#crOv{position:fixed;inset:0;z-index:2147483650;background:#0b0b0c;color:#fff;display:flex;flex-direction:column;align-items:center;font-family:"Plus Jakarta Sans",system-ui,sans-serif;padding-top:var(--sat,0px);touch-action:none}'+
+    '#crOv .ct{width:100%;display:flex;align-items:center;justify-content:space-between;padding:14px 16px;box-sizing:border-box}#crOv .ct b{font-size:18px}'+
+    '#crOv .ct button{border:0;background:none;color:#fff;font:700 16px "Plus Jakarta Sans",system-ui,sans-serif;padding:10px 6px;cursor:pointer}#crOv .ct .dn{color:#e9c75a;font-weight:800}'+
+    '#crOv .st{position:relative;overflow:hidden;margin-top:24px;touch-action:none;cursor:grab;background:#222}#crOv .st img{position:absolute;left:0;top:0;transform-origin:0 0;user-select:none;-webkit-user-drag:none;max-width:none}'+
+    '#crOv .mk{position:absolute;inset:0;border-radius:50%;box-shadow:0 0 0 999px rgba(0,0,0,.62);border:2px solid rgba(255,255,255,.85);pointer-events:none}'+
+    '#crOv .zm{display:flex;align-items:center;gap:14px;width:min(360px,86vw);margin-top:28px}#crOv .zm i{opacity:.8}#crOv input[type=range]{flex:1;accent-color:#e9c75a;height:30px}'+
+    '#crOv .hn{margin-top:14px;font-size:13.5px;color:#b5b5b5;text-align:center;padding:0 20px}';
+  window.__cropPhoto=function(file,cb){if(!file||!/^image\//.test(file.type||'image/')){cb(null,'type');return}
+    var r=new FileReader();r.onerror=function(){cb(null,'read')};r.onload=function(){var im=new Image();im.onerror=function(){cb(null,'read')};im.onload=function(){open(im)};im.src=r.result};r.readAsDataURL(file);
+    function open(im){if(!document.getElementById('crCss')){var c=document.createElement('style');c.id='crCss';c.textContent=css;document.head.appendChild(c)}
+      var o=document.createElement('div');o.id='crOv';var S=Math.min(window.innerWidth-40,360);
+      o.innerHTML='<div class="ct"><button type="button" data-c="no">Cancel</button><b>Move and zoom</b><button type="button" class="dn" data-c="ok">Done</button></div>'+
+        '<div class="st" style="width:'+S+'px;height:'+S+'px"></div><div class="zm"><i class="fa-solid fa-image" style="font-size:13px"></i><input type="range" min="1" max="4" step="0.01" value="1" aria-label="Zoom"><i class="fa-solid fa-image" style="font-size:20px"></i></div>'+
+        '<div class="hn">Drag the photo to move it. Pinch or use the slider to zoom.</div>';
+      document.body.appendChild(o);var st=o.querySelector('.st'),rg=o.querySelector('input');st.appendChild(im);var mk=document.createElement('div');mk.className='mk';st.appendChild(mk);
+      var w=im.naturalWidth,h=im.naturalHeight,base=Math.max(S/w,S/h),sc=base,x=(S-w*sc)/2,y=(S-h*sc)/2;
+      function cl(){x=Math.min(0,Math.max(S-w*sc,x));y=Math.min(0,Math.max(S-h*sc,y))}
+      function draw(){cl();im.style.transform='translate('+x+'px,'+y+'px) scale('+sc+')';rg.value=(sc/base).toFixed(2)}
+      function zoomTo(ns,cx,cy){ns=Math.max(base,Math.min(base*4,ns));x=cx-(cx-x)*(ns/sc);y=cy-(cy-y)*(ns/sc);sc=ns;draw()}
+      draw();var P={},pd=0,ps=0;
+      function pts(){return Object.keys(P).map(function(k){return P[k]})}
+      st.addEventListener('pointerdown',function(e){st.setPointerCapture(e.pointerId);P[e.pointerId]={x:e.clientX,y:e.clientY};var q=pts();if(q.length===2){pd=Math.hypot(q[0].x-q[1].x,q[0].y-q[1].y);ps=sc}});
+      st.addEventListener('pointermove',function(e){var o0=P[e.pointerId];if(!o0)return;var q=pts();
+        if(q.length===1){x+=e.clientX-o0.x;y+=e.clientY-o0.y;P[e.pointerId]={x:e.clientX,y:e.clientY};draw()}
+        else{P[e.pointerId]={x:e.clientX,y:e.clientY};q=pts();var d=Math.hypot(q[0].x-q[1].x,q[0].y-q[1].y),b=st.getBoundingClientRect();if(pd)zoomTo(ps*d/pd,(q[0].x+q[1].x)/2-b.left,(q[0].y+q[1].y)/2-b.top)}});
+      function up(e){delete P[e.pointerId];pd=0}st.addEventListener('pointerup',up);st.addEventListener('pointercancel',up);
+      st.addEventListener('wheel',function(e){e.preventDefault();var b=st.getBoundingClientRect();zoomTo(sc*(e.deltaY<0?1.08:.93),e.clientX-b.left,e.clientY-b.top)},{passive:false});
+      rg.oninput=function(){zoomTo(base*parseFloat(rg.value),S/2,S/2)};
+      o.addEventListener('click',function(e){var b=e.target.closest('[data-c]');if(!b)return;
+        if(b.getAttribute('data-c')==='ok'){var O=256,c=document.createElement('canvas');c.width=c.height=O;var g=c.getContext('2d');g.fillStyle='#fff';g.fillRect(0,0,O,O);
+          g.drawImage(im,-x/sc,-y/sc,S/sc,S/sc,0,0,O,O);var q=.85,d=c.toDataURL('image/jpeg',q);while(d.length>90000&&q>.4){q-=.1;d=c.toDataURL('image/jpeg',q)}o.remove();cb(d)}
+        else{o.remove();cb(null,'cancel')}})}};
+})();
 </script>
 <style>
+/* the online people icon is only for the admin; students do not see it (their phones still count as online for the admin) */
+html:not(.acadmin) #onBtn,html:not(.acadmin) #onBox{display:none!important}
 /* buttons in colour 14 (Pearl / Milk White): pearl in light mode, dark brown in dark mode (no gold) */
 html{--pb-bg:linear-gradient(180deg,#fbf6ea,#ece2cb);--pb-tx:#3b2f1a;--pb-bd:#d9cba9;--pb-sh:0 8px 20px rgba(120,95,40,.16);--pb-on:rgba(160,122,44,.12);--pb-ac:#8a6a2a}
 html.dark{--pb-bg:linear-gradient(180deg,#3b342b,#2a251f);--pb-tx:#f3eee2;--pb-bd:#4b4338;--pb-sh:0 8px 20px rgba(0,0,0,.4);--pb-on:rgba(243,238,226,.08);--pb-ac:#e2d3b0}
@@ -2867,7 +2902,7 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
   function getKey(id){return FB.getDoc(FB.doc(fs,'catKeys',id)).then(function(d){if(!d.exists())throw new Error('nokey');return d.data().pw})}
   function enter(user,cats,offline){window.__acCats=(cats||[]).slice();window.__acAdmin=!!(user&&(user.email||'').toLowerCase()===ADMIN);
     if(!offline)ls('ac_state',JSON.stringify({uid:user&&user.uid,name:nm(user),cats:cats,status:'approved',t:Date.now()}));
-    document.documentElement.classList.add('acok');A.classList.add('hide');showUser(nm(user)||'');try{cmSetup(user,(user.email||'').toLowerCase()===ADMIN)}catch(e){}try{onSetup(user)}catch(e){}
+    document.documentElement.classList.add('acok');document.documentElement.classList.toggle('acadmin',!!window.__acAdmin);A.classList.add('hide');showUser(nm(user)||'');try{cmSetup(user,(user.email||'').toLowerCase()===ADMIN)}catch(e){}try{onSetup(user)}catch(e){}
     return window.__lkSetAllowed(cats,offline||!fs?null:getKey);
   }
   function leave(){try{cmOff()}catch(e){}try{onOff()}catch(e){}ls('ac_state',null);if(window.__lkForgetAll)window.__lkForgetAll()}
@@ -2877,10 +2912,110 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
     A.classList.remove('hide');
     showStatus('Internet needed','Connect to the internet to check your account, then open the app again.',[['Try again',function(){if(cur)handle(cur);else location.reload()}]]);
   }
+  /* ---- step-by-step sign-up (one question per page, like Instagram); no waiting page: everyone enters the app, the 3 preparations stay locked until the admin ticks them ---- */
+  var WZ=null,wzEl=null,wzOn=false;
+  var PROV=['Punjab','Sindh','Khyber Pakhtunkhwa','Balochistan','Islamabad Capital Territory','Gilgit-Baltistan','Azad Jammu and Kashmir'];
+  var MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  function wzEsc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function wzCss(){if($('wzCss'))return;var c=document.createElement('style');c.id='wzCss';c.textContent=
+   '#obWz{--bg:#fbf8f0;--tx:#2b2416;--mu:#8a7a5a;--ln:#e1d8c4;--cd:#fffdf8;--bb:linear-gradient(180deg,#fbf6ea,#ece2cb);--bt:#3b2f1a;--bd:#d9cba9;--ac:#8a6a2a;position:fixed;inset:0;z-index:2147483600;background:var(--bg);color:var(--tx);display:flex;flex-direction:column;font-family:"Plus Jakarta Sans",system-ui,sans-serif;padding-top:var(--sat,0px)}'+
+   'html.dark #obWz{--bg:#1b1814;--tx:#f3eee2;--mu:#b9ab8c;--ln:#3d362c;--cd:#24201b;--bb:linear-gradient(180deg,#3b342b,#2a251f);--bt:#f3eee2;--bd:#4b4338;--ac:#e2d3b0}'+
+   '#obWz .wt{display:flex;align-items:center;gap:12px;padding:16px 18px 6px}#obWz .wt button{width:40px;height:40px;border:0;background:none;color:var(--tx);font-size:19px;border-radius:50%;cursor:pointer}#obWz .wt button[hidden]{display:block;visibility:hidden}'+
+   '#obWz .pg{flex:1;display:flex;gap:4px}#obWz .pg i{flex:1;height:4px;border-radius:4px;background:var(--ln)}#obWz .pg i.on{background:var(--ac)}#obWz .sn{font-size:11.5px;color:var(--mu);font-weight:700;white-space:nowrap}'+
+   '#obWz .wb{flex:1;overflow-y:auto;padding:14px 22px;max-width:520px;width:100%;margin:0 auto;box-sizing:border-box}#obWz .wb.anim{animation:wzIn .28s ease both}@keyframes wzIn{from{opacity:0;transform:translateX(24px)}to{opacity:1;transform:none}}'+
+   'html.lite #obWz .wb.anim{animation-duration:.28s!important;animation-iteration-count:1!important}'+
+   '#obWz h1{font-size:26px;line-height:1.2;margin:8px 0 8px;font-weight:800}#obWz p.s{color:var(--mu);font-size:14.5px;line-height:1.5;margin:0 0 22px}'+
+   '#obWz .f{position:relative;margin:0 0 16px}#obWz .f>label{position:absolute;left:12px;top:-8px;padding:0 6px;background:var(--bg);font-size:12px;color:var(--mu);font-weight:700;z-index:1}'+
+   '#obWz input,#obWz .pk{width:100%;box-sizing:border-box;height:54px;border:1.5px solid var(--ln);border-radius:14px;background:transparent;color:var(--tx);font:600 16px "Plus Jakarta Sans",system-ui,sans-serif;padding:0 14px;outline:none;text-align:left;cursor:pointer}'+
+   '#obWz input{cursor:text}#obWz input:focus{border-color:var(--ac)}#obWz .pk.e{color:var(--mu)}#obWz .eye{position:absolute;right:6px;top:7px;width:40px;height:40px;border:0;background:none;color:var(--mu);font-size:17px;cursor:pointer}'+
+   '#obWz .phn{display:flex;align-items:center;border:1.5px solid var(--ln);border-radius:14px;height:54px;padding-left:12px}#obWz .phn:focus-within{border-color:var(--ac)}#obWz .phn span{font-weight:700;padding-right:10px;border-right:1px solid var(--ln);white-space:nowrap}#obWz .phn input{border:0;height:50px}'+
+   '#obWz .dob{display:flex;gap:8px}#obWz .dob .pk{text-align:center;padding:0 6px}#obWz .dob small{display:block;text-align:center;color:var(--mu);font-weight:700;font-size:11.5px;margin-bottom:6px}#obWz .dob>div{flex:1}'+
+   '#obWz .age{margin-top:14px;text-align:center;color:var(--mu);font-size:14.5px}#obWz .age b{color:var(--tx)}'+
+   '#obWz .seg{display:flex;gap:8px;margin-bottom:18px}#obWz .seg button{flex:1;height:52px;border-radius:14px;border:1.5px solid var(--ln);background:none;color:var(--tx);font:700 15.5px "Plus Jakarta Sans",system-ui,sans-serif;cursor:pointer}#obWz .seg button.on{border-color:var(--bd);background:rgba(160,122,44,.12);color:var(--ac)}'+
+   '#obWz .lb{font-size:12.5px;color:var(--mu);font-weight:700;margin:0 2px 6px}'+
+   '#obWz .ph0{display:flex;justify-content:center;margin-top:24px}#obWz .circ{width:156px;height:156px;border-radius:50%;background:var(--cd);border:2px dashed var(--bd);display:flex;align-items:center;justify-content:center;font-size:58px;color:var(--mu);position:relative;cursor:pointer;overflow:visible}#obWz .circ img{width:100%;height:100%;border-radius:50%;object-fit:cover}'+
+   '#obWz .cam{position:absolute;right:6px;bottom:6px;width:44px;height:44px;border-radius:50%;background:var(--bb);border:1px solid var(--bd);color:var(--bt);font-size:16px;display:flex;align-items:center;justify-content:center}'+
+   '#obWz .tick{width:86px;height:86px;border-radius:50%;margin:12px auto 22px;background:#16a34a;color:#fff;font-size:38px;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 26px rgba(22,163,74,.3)}'+
+   '#obWz .li{display:flex;gap:12px;align-items:flex-start;border:1px solid var(--ln);background:var(--cd);border-radius:16px;padding:14px;margin-bottom:10px;font-size:14.5px;line-height:1.5;font-weight:600}#obWz .li i{color:var(--ac);margin-top:3px}'+
+   '#obWz .wf{padding:8px 22px calc(22px + env(safe-area-inset-bottom,0px));max-width:520px;width:100%;margin:0 auto;box-sizing:border-box}#obWz .er{min-height:20px;color:#dc2626;font-weight:700;font-size:14px;text-align:center;margin-bottom:8px}'+
+   '#obWz .go{width:100%;height:56px;border-radius:16px;border:1px solid var(--bd);background:var(--bb);color:var(--bt);font:800 17px "Plus Jakarta Sans",system-ui,sans-serif;box-shadow:0 8px 20px rgba(120,95,40,.16);cursor:pointer}#obWz .go:disabled{opacity:.6}'+
+   '#obWz .sk{width:100%;height:46px;border:0;background:none;color:var(--mu);font:700 15px "Plus Jakarta Sans",system-ui,sans-serif;margin-top:6px;cursor:pointer}#obWz .lg{text-align:center;color:var(--mu);font-size:14px;margin-top:12px}#obWz .lg a{color:var(--tx);font-weight:800;cursor:pointer}'+
+   '#wzSh{position:fixed;inset:0;z-index:2147483601;background:rgba(2,6,23,.5);font-family:"Plus Jakarta Sans",system-ui,sans-serif}#wzSh .sp{position:absolute;left:0;right:0;bottom:0;max-height:70vh;overflow-y:auto;background:var(--bg,#fbf8f0);color:var(--tx,#2b2416);border-radius:24px 24px 0 0;padding:12px 16px calc(18px + env(safe-area-inset-bottom,0px));animation:wzUp .25s ease both}'+
+   'html.lite #wzSh .sp{animation-duration:.25s!important;animation-iteration-count:1!important}@keyframes wzUp{from{transform:translateY(100%)}to{transform:none}}#wzSh h3{margin:6px 6px 10px;font-size:18px}'+
+   '#wzSh .op{display:block;width:100%;min-height:50px;border:0;border-radius:12px;background:none;color:inherit;font:600 16px "Plus Jakarta Sans",system-ui,sans-serif;text-align:left;padding:0 14px;cursor:pointer}#wzSh .op.on{background:rgba(160,122,44,.14);font-weight:800}';
+   document.head.appendChild(c)}
+  function wzAge(d){var m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(d||'');if(!m)return null;var n=new Date(),a=n.getFullYear()-m[1];if(n.getMonth()+1<+m[2]||(n.getMonth()+1==+m[2]&&n.getDate()<+m[3]))a--;return a}
+  function wzSheet(title,list,cur,cb){var o=document.createElement('div');o.id='wzSh';var v=getComputedStyle(wzEl);o.style.setProperty('--bg',v.getPropertyValue('--bg'));o.style.setProperty('--tx',v.getPropertyValue('--tx'));
+    o.innerHTML='<div class="sp"><h3>'+title+'</h3>'+list.map(function(x){return '<button type="button" class="op'+(String(x[0])===String(cur)?' on':'')+'" data-v="'+wzEsc(x[0])+'">'+wzEsc(x[1])+'</button>'}).join('')+'</div>';
+    document.body.appendChild(o);var on=o.querySelector('.op.on');if(on)on.scrollIntoView({block:'center'});
+    o.onclick=function(e){var b=e.target.closest('[data-v]');if(b)cb(b.getAttribute('data-v'));if(b||e.target===o)o.remove()}}
+  /* steps: 1 email, 2 password (before the account exists), 3 name, 4 date of birth, 5 mobile, 6 gender/province/city, 7 photo, 8 welcome */
+  function wzStart(pre,user,then){wzCss();WZ={pre:pre,user:user,then:then,step:pre?1:3,d:WZ&&WZ.d||{}};
+    if(user){var n=(window.__acName||ls('ac_name')||user.displayName||'').trim().split(/\s+/);if(!WZ.d.fn&&n[0]&&!/@/.test(n[0])){WZ.d.fn=n[0];WZ.d.ln=n.slice(1).join(' ')}}
+    if(!wzEl){wzEl=document.createElement('div');wzEl.id='obWz';document.body.appendChild(wzEl)}wzOn=true;wzDraw()}
+  function wzClose(){wzOn=false;if(wzEl){wzEl.remove();wzEl=null}var s=$('wzSh');if(s)s.remove()}
+  function wzDraw(){var s=WZ.step,d=WZ.d,h='',btn='Next',extra='';
+    if(s===1){h='<h1>What\'s your email?</h1><p class="s">Use an email you can open. You will log in with it.</p><div class="f"><label for="wzE">Email</label><input id="wzE" type="email" inputmode="email" autocomplete="email" autocapitalize="off" value="'+wzEsc(d.em)+'"></div>';extra='<div class="lg">Already have an account? <a data-a="login">Log in</a></div>'}
+    else if(s===2){h='<h1>Create a password</h1><p class="s">At least 6 letters or numbers. Do not share it with anyone.</p><div class="f"><label for="wzP">Password</label><input id="wzP" type="password" autocomplete="new-password" value="'+wzEsc(d.pw)+'"><button type="button" class="eye" data-a="eye" aria-label="Show password"><i class="fa-regular fa-eye"></i></button></div>'}
+    else if(s===3){h='<h1>What\'s your name?</h1><p class="s">This name shows on your profile and to the admin.</p><div class="f"><label for="wzF">First name</label><input id="wzF" maxlength="40" autocomplete="given-name" value="'+wzEsc(d.fn)+'"></div><div class="f"><label for="wzL">Last name</label><input id="wzL" maxlength="40" autocomplete="family-name" value="'+wzEsc(d.ln)+'"></div>';if(WZ.pre)btn='Create account'}
+    else if(s===4){var p=/^(\d{4})-(\d{2})-(\d{2})$/.exec(d.dob||'')||[0,'','',''];h='<h1>What\'s your date of birth?</h1><p class="s">Used for the PMA age limit. Only you and the admin can see it.</p><div class="dob">'+
+      '<div><small>Day</small><button type="button" class="pk'+(p[3]?'':' e')+'" data-a="dd">'+(p[3]?+p[3]:'Day')+'</button></div><div><small>Month</small><button type="button" class="pk'+(p[2]?'':' e')+'" data-a="mm">'+(p[2]?MON[p[2]-1]:'Month')+'</button></div><div><small>Year</small><button type="button" class="pk'+(p[1]?'':' e')+'" data-a="yy">'+(p[1]||'Year')+'</button></div></div>'+
+      (wzAge(d.dob)!=null?'<div class="age">You are <b>'+wzAge(d.dob)+' years</b> old</div>':'')}
+    else if(s===5){h='<h1>What\'s your mobile number?</h1><p class="s">The admin may contact you on WhatsApp on this number.</p><div class="f"><label for="wzM">Mobile number</label><div class="phn"><span>🇵🇰 +92</span><input id="wzM" inputmode="numeric" maxlength="11" placeholder="3001234567" value="'+wzEsc(d.ph)+'"></div></div>'}
+    else if(s===6){h='<h1>A little about you</h1><p class="s">Your gender, province and city.</p><div class="lb">Gender</div><div class="seg"><button type="button" data-g="Male" class="'+(d.gen==='Male'?'on':'')+'">Male</button><button type="button" data-g="Female" class="'+(d.gen==='Female'?'on':'')+'">Female</button></div>'+
+      '<div class="f"><label>Province</label><button type="button" class="pk'+(d.prov?'':' e')+'" data-a="prov">'+wzEsc(d.prov||'Select province')+'</button></div><div class="f"><label for="wzC">City</label><input id="wzC" maxlength="40" value="'+wzEsc(d.city)+'"></div>'}
+    else if(s===7){h='<h1>Add a profile photo</h1><p class="s">Optional. You can add or change it later in My Profile.</p><div class="ph0"><label class="circ">'+(d.photo?'<img alt="" src="'+d.photo+'">':'<i class="fa-solid fa-user"></i>')+'<span class="cam"><i class="fa-solid fa-camera"></i></span><input type="file" id="wzPh" accept="image/*" hidden></label></div>';btn=d.photo?'Save and continue':'Add photo';extra='<button type="button" class="sk" data-a="skip">'+(d.photo?'Remove photo':'Skip')+'</button>'}
+    else{h='<h1>Welcome, '+wzEsc(d.fn||'')+'!</h1><p class="s">Your account is ready.</p><div class="tick"><i class="fa-solid fa-check"></i></div><div class="li"><i class="fa-solid fa-heart-pulse"></i><span>BMI, Roadmap, Admin Experience and Social are open for you.</span></div><div class="li"><i class="fa-solid fa-lock"></i><span>Initial PMA, Interview and ISSB open when the admin enables them. Message the admin on WhatsApp (Social tab).</span></div>';btn='Enter the app'}
+    var back=s>1&&s<8&&!(!WZ.pre&&s===3)&&!(WZ.pre===false&&s===4&&WZ.made);
+    wzEl.innerHTML='<div class="wt"><button type="button" data-a="back" aria-label="Back"'+(back||s===1?'':' hidden')+'><i class="fa-solid fa-chevron-left"></i></button><div class="pg">'+(s<8?[1,2,3,4,5,6,7].map(function(k){return '<i class="'+(k<=s?'on':'')+'"></i>'}).join(''):'')+'</div><span class="sn">'+(s<8?'Step '+s+' of 7':'')+'</span></div>'+
+      '<div class="wb anim">'+h+'</div><div class="wf"><div class="er" id="wzEr"></div><button type="button" class="go" data-a="next">'+btn+'</button>'+extra+'</div>';
+    var i=wzEl.querySelector('.wb input:not([type=file])');if(i&&s!==6)setTimeout(function(){try{i.focus()}catch(e){}},300);
+    wzEl.onclick=wzClick;var m=$('wzM');if(m)m.oninput=function(){this.value=this.value.replace(/\D/g,'').replace(/^0+/,'').slice(0,10)};
+    var f=$('wzPh');if(f)f.onchange=function(){var x=this.files&&this.files[0];if(x)wzPhoto(x)};
+    wzEl.onkeydown=function(e){if(e.key==='Enter'&&e.target.tagName==='INPUT'){e.preventDefault();wzNext()}}}
+  function wzErr(t){var e=$('wzEr');if(e)e.textContent=t||''}
+  function wzSave(){var d=WZ.d,v=function(id){var e=$(id);return e?e.value.trim():null},x;
+    if((x=v('wzE'))!==null)d.em=x.toLowerCase();if((x=v('wzP'))!==null)d.pw=$('wzP').value;if((x=v('wzF'))!==null)d.fn=x;if((x=v('wzL'))!==null)d.ln=x;if((x=v('wzM'))!==null)d.ph=x;if((x=v('wzC'))!==null)d.city=x}
+  function wzClick(e){var t=e.target.closest('[data-a],[data-g]');if(!t)return;var a=t.getAttribute('data-a'),d=WZ.d;wzSave();
+    if(t.hasAttribute('data-g')){d.gen=t.getAttribute('data-g');wzDraw();return}
+    if(a==='next')wzNext();else if(a==='back'){if(WZ.step===1){wzClose();showLogin();return}WZ.step--;wzDraw()}
+    else if(a==='login'){wzClose();showLogin()}
+    else if(a==='eye'){var p=$('wzP');p.type=p.type==='password'?'text':'password'}
+    else if(a==='skip'){if(d.photo){d.photo='';wzDraw()}else{WZ.step=7;wzFinish()}}
+    else if(a==='prov')wzSheet('Select province',PROV.map(function(p){return [p,p]}),d.prov,function(v){d.prov=v;wzDraw()});
+    else if(a==='dd'||a==='mm'||a==='yy'){var p=/^(\d{4})-(\d{2})-(\d{2})$/.exec(d.dob||'')||[0,'','',''],Y=p[1],M=p[2],D=p[3],now=new Date().getFullYear(),list;
+      if(a==='yy'){list=[];for(var y=now-12;y>=now-45;y--)list.push([y,y])}else if(a==='mm')list=MON.map(function(m,i){return [('0'+(i+1)).slice(-2),m]});else{list=[];for(var k=1;k<=31;k++)list.push([('0'+k).slice(-2),k])}
+      wzSheet(a==='yy'?'Year':a==='mm'?'Month':'Day',list,a==='yy'?Y:a==='mm'?M:D,function(v){if(a==='yy')Y=v;else if(a==='mm')M=v;else D=v;d.dob=(Y||'0000')+'-'+(M||'00')+'-'+(D||'00');d.dobP=[Y,M,D];
+        if(Y&&M&&D){var last=new Date(+Y,+M,0).getDate();if(+D>last){D=('0'+last).slice(-2);d.dob=Y+'-'+M+'-'+D}}wzDraw()})}}
+  function wzNext(){var s=WZ.step,d=WZ.d;wzErr('');
+    if(s===1){if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(d.em||'')){wzErr('Please write a correct email, like ali@gmail.com');return}}
+    else if(s===2){if((d.pw||'').length<6){wzErr('Password must be at least 6 characters.');return}}
+    else if(s===3){if(!d.fn){wzErr('Please write your first name.');return}
+      if(WZ.pre&&!WZ.made){if(!auth){wzErr('No internet. Please connect and try again.');return}var b=wzEl.querySelector('.go');b.disabled=true;wzErr('Creating your account...');ls('ac_name',(d.fn+' '+(d.ln||'')).trim());
+        FB.createUserWithEmailAndPassword(auth,d.em,d.pw).then(function(){WZ.made=true;WZ.pre=false;d.pw='';wzErr('')}).catch(function(x){b.disabled=false;var c=(x&&x.code)||'';if(/email-already-in-use|invalid-email/.test(c)){WZ.step=1;wzDraw();wzErr(errMsg(x))}else wzErr(errMsg(x))});return}}
+    else if(s===4){var p=/^(\d{4})-(\d{2})-(\d{2})$/.exec(d.dob||'');if(!p||p[1]==='0000'||p[2]==='00'||p[3]==='00'){wzErr('Please choose your day, month and year of birth.');return}}
+    else if(s===5){if(!/^3\d{9}$/.test(d.ph||'')){wzErr('Write 10 digits after +92, like 3001234567.');return}}
+    else if(s===6){if(!d.gen){wzErr('Please choose your gender.');return}if(!d.prov){wzErr('Please choose your province.');return}if(!d.city){wzErr('Please write your city.');return}}
+    else if(s===7){if(!d.photo){var f=$('wzPh');if(f)f.click();return}wzFinish();return}
+    else if(s===8){var go=WZ.then;wzClose();if(go)go();return}
+    WZ.step++;wzDraw()}
+  /* called by handle() when the account exists: continue from step 4 after a new sign-up, else start at step 3 */
+  function wzPost(user,then){if(WZ&&WZ.made&&wzOn){WZ.user=user;WZ.then=then;WZ.step=4;wzDraw();return}wzStart(false,user,then)}
+  function wzPhoto(f){if(window.__cropPhoto){window.__cropPhoto(f,function(d,why){if(d){WZ.d.photo=d;wzDraw()}else if(why&&why!=='cancel')wzErr('Could not open this picture. Try another one.')});return}
+    var r=new FileReader();r.onload=function(){var im=new Image();im.onload=function(){var S=256,c=document.createElement('canvas');c.width=c.height=S;var x=c.getContext('2d'),m=Math.min(im.width,im.height);
+      x.fillStyle='#fff';x.fillRect(0,0,S,S);x.drawImage(im,(im.width-m)/2,(im.height-m)/2,m,m,0,0,S,S);WZ.d.photo=c.toDataURL('image/jpeg',.8);wzDraw()};im.src=r.result};r.readAsDataURL(f)}
+  function wzFinish(){var u=WZ.user||auth.currentUser,d=WZ.d,b=wzEl.querySelector('.go');if(!u){wzErr('Please log in again.');return}b.disabled=true;wzErr('Saving...');
+    var o={fn:d.fn||'',ln:d.ln||'',ph:d.ph||'',addr:'',prov:d.prov||'',city:d.city||'',gen:d.gen||'',dob:d.dob||'',zip:'',photo:d.photo||'',email:u.email||'',t:FB.serverTimestamp()};
+    FB.setDoc(FB.doc(fs,'profiles',u.uid),o).then(function(){var c={};for(var k in o)if(k!=='t')c[k]=o[k];ls('ac_prof_'+u.uid,JSON.stringify(c));ls('ac_name',(d.fn+' '+(d.ln||'')).trim());window.__acName=(d.fn+' '+(d.ln||'')).trim();WZ.step=8;wzDraw()},
+      function(){b.disabled=false;wzErr('Could not save. Check your internet and try again.')})}
+  /* after the account check: ask the sign-up questions once if this account has no profile yet, then enter the app */
+  function afterUser(user,cats){if(!fs)return enter(user,cats);
+    return FB.getDoc(FB.doc(fs,'profiles',user.uid)).then(function(p){if(p.exists()){wzClose();return enter(user,cats)}
+      A.classList.remove('hide');hideAll();wzPost(user,function(){enter(user,cats)})},function(){wzClose();return enter(user,cats)})}
   function handle(user){
     if(busy)return Promise.resolve();busy=true;cur=user;
     var done=function(){busy=false};
-    if(!user){done();leave();showLogin();return Promise.resolve()}
+    if(!user){done();leave();if(!(wzOn&&WZ&&WZ.pre))showLogin();return Promise.resolve()}
     var email=(user.email||'').toLowerCase();
     var admin=email===ADMIN;
     if(admin&&!user.emailVerified){done();showVerify(user);return Promise.resolve()}
@@ -2889,10 +3024,11 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
     var ud=FB.getDoc(FB.doc(fs,'users',user.uid));ud.catch(function(){});
     return devCheck(user).then(function(ds){if(ds==='locked'){done();leave();showDevLocked();return}
     return ud.then(function(d){
-      if(!d.exists()){return FB.setDoc(FB.doc(fs,'users',user.uid),{email:email,name:nm(user),status:'pending',cats:[],requested:FB.serverTimestamp()}).then(function(){done();leave();showPending(user)})}
+      if(!d.exists()){return FB.setDoc(FB.doc(fs,'users',user.uid),{email:email,name:nm(user),status:'pending',cats:[],requested:FB.serverTimestamp()}).then(function(){done();return afterUser(user,[])})}
       var u=d.data();
-      if(u.status==='approved'){done();if(u.name){window.__acName=u.name;if(!ls('ac_name'))ls('ac_name',u.name)}return enter(user,u.cats||[])}
-      done();leave();if(u.status==='blocked')showBlocked();else showPending(user);
+      if(u.name){window.__acName=u.name;if(!ls('ac_name'))ls('ac_name',u.name)}
+      if(u.status==='blocked'){done();wzClose();leave();showBlocked();return}
+      done();return afterUser(user,u.status==='approved'?(u.cats||[]):[]);
     }).catch(function(e){done();var c=(e&&e.code)||'';if(/permission/.test(c)){leave();showStatus('No access','This account cannot use the app. Please contact the admin.',[['Logout',logout]]);return}return cached(user)});})
   }
   function showVerify(user){showStatus('Verify your email','We sent a link to '+user.email+'. Open your email, tap the link, then press the button below.',[
@@ -3024,6 +3160,7 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
   if(!webview&&auth){[paneIn,paneUp].forEach(function(p){var g=document.createElement('button');g.type='button';g.className='gbtn';g.textContent='Sign in with Google';
     g.onclick=function(){FB.signInWithPopup(auth,new FB.GoogleAuthProvider()).catch(function(x){var e=p.querySelector('.err');if(e)e.textContent=errMsg(x)})};
     var b=p.querySelector('.btn');b.parentNode.insertBefore(g,b.nextSibling)})}
+  (function(){var t=0;(function w(){var f=window.authSwitch;if(typeof f==='function'&&!f.__wz){var g=function(to){if(to==='up'){wzStart(true,null,null);return}return f.apply(this,arguments)};g.__wz=1;window.authSwitch=g}else if(t++<100)setTimeout(w,100)})()})();
   window.__acRecheck=function(){if(cur&&!busy)handle(cur)};
   window.__acUser=function(){return cur};window.__acDb=function(){return fs?{FB:FB,fs:fs,auth:auth}:null};window.__acBusy=function(){return busy};
   /* ---- start ---- */

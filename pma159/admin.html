@@ -25,7 +25,8 @@ textarea{min-height:110px}.badge{background:var(--no);color:#fff;border-radius:9
  <input type="text" id="srch" placeholder="Search email or name..." autocomplete="off" autocapitalize="off" spellcheck="false" style="margin-top:10px"><div class="mu" id="srchN"></div>
  <div id="onNow" class="card" style="margin-top:10px"></div>
  <div id="pReq"></div><div id="pUsr" style="display:none"></div><div id="pPro" style="display:none"></div>
- <div id="pReset" class="card" style="display:none;margin-top:14px"><b>Lock everyone again</b><div class="mu">Every approved person goes back to "Waiting for approval" with nothing ticked. They see the waiting page (message box and WhatsApp buttons) at their next app opening, write to you again, and you approve them again. Blocked people stay blocked.</div><div class="row"><button class="r" id="bReset">Lock everyone again</button></div></div>
+ <div id="pGive" class="card" style="margin-top:14px"><b>Give Initial PMA to everyone</b><div class="mu">Ticks Initial PMA Preparation (all categories) for every person in Requests and People. Their Interview and ISSB ticks stay as they are. Blocked people stay blocked. They get it at their next app opening.</div><div class="row"><button class="k" id="bGive">Give Initial PMA to everyone</button></div></div>
+ <div id="pReset" class="card" style="display:none;margin-top:14px"><b>Lock everyone again</b><div class="mu">Every approved person goes back to the Requests tab with nothing ticked. They can still open the app, but Initial PMA, Interview and ISSB stay locked until you tick them again. Blocked people stay blocked.</div><div class="row"><button class="r" id="bReset">Lock everyone again</button></div></div>
  <div id="pKey" style="display:none">
   <h2>Password</h2><div class="mu">One password for each preparation. The Initial PMA Preparation password opens all its categories. The app gets them from here for approved people; nobody types them. Type the passwords I gave you, then press Save.</div>
   <div class="card" hidden><textarea id="paste"></textarea><div class="row"><button id="bFill">Fill the boxes</button></div></div>
@@ -42,7 +43,7 @@ var emu=location.hostname==='localhost'&&/[?&]emu=1/.test(location.search);
 if(emu){FB.connectAuthEmulator(auth,'http://127.0.0.1:9099',{disableWarnings:true});FB.connectFirestoreEmulator(fs,'127.0.0.1',8080);$('emuForm').style.display='block'}
 function say(m,bad){var d=document.createElement('div');d.className='msg';if(bad)d.style.background='#991b1b';d.textContent=m;$('msg').innerHTML='';$('msg').appendChild(d);setTimeout(function(){if(d.parentNode)d.remove()},6000)}
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
-function tab(t){['Req','Usr','Pro','Key'].forEach(function(x){$('p'+x).style.display=x===t?'block':'none';$('t'+x).className=x===t?'':'g'});$('pReset').style.display=t==='Usr'?'block':'none'}
+function tab(t){['Req','Usr','Pro','Key'].forEach(function(x){$('p'+x).style.display=x===t?'block':'none';$('t'+x).className=x===t?'':'g'});$('pReset').style.display=t==='Usr'?'block':'none';$('pGive').style.display=(t==='Usr'||t==='Req')?'block':'none'}
 $('tReq').onclick=function(){tab('Req')};$('tUsr').onclick=function(){tab('Usr')};$('tKey').onclick=function(){tab('Key');loadKeys()};$('tPro').onclick=function(){tab('Pro')};
 $('gbtn').onclick=function(){FB.signInWithPopup(auth,new FB.GoogleAuthProvider()).catch(function(e){say('Sign-in failed: '+(e.code||e.message),1)})};
 $('emuB').onclick=function(){FB.signInWithEmailAndPassword(auth,$('emuE').value,$('emuP').value).catch(function(e){say('Test login failed: '+e.code,1)})};
@@ -87,6 +88,10 @@ function onNow(){FB.getDoc(FB.doc(fs,'online','now')).then(function(d){var m=d.e
   $('onNow').innerHTML='<b>Online now: '+on.length+'</b><div class="mu">'+(on.length?on.map(function(s){return String(s).replace(/</g,'&lt;')}).join(', '):'Nobody right now.')+'</div><div class="mu">Updates every 20 seconds.</div>'}).catch(function(e){$('onNow').innerHTML='<span class="mu">Online list: '+(e.code||e.message)+'</span>'})}
 setInterval(function(){if(USERS&&USERS.length!==undefined&&$('app').style.display!=='none')onNow()},20000);
 /* lock all approved people again (the user's choice, Oct 2026): status back to pending, no ticks */
+document.addEventListener('click',function(e){if(!e.target.closest||!e.target.closest('#bGive'))return;
+  var ids=CATS.map(function(c){return c[0]}),ps=USERS.filter(function(u){return u.status!=='blocked'&&(u.email||'').toLowerCase()!==ADMIN});if(!ps.length){say('Nobody to give.');return}
+  var t=prompt('This gives Initial PMA Preparation to '+ps.length+' people. Type GIVE to continue.');if(String(t||'').trim().toUpperCase()!=='GIVE'){say('Cancelled. Nothing changed.');return}
+  say('Giving Initial PMA to '+ps.length+' people...');Promise.all(ps.map(function(u){var c=(u.cats||[]).slice();ids.forEach(function(x){if(c.indexOf(x)<0)c.push(x)});return FB.updateDoc(FB.doc(fs,'users',u.id),{status:'approved',cats:c})})).then(function(){say('Done: '+ps.length+' people now have Initial PMA Preparation.');return load()}).catch(function(x){say('Failed: '+(x.code||x.message),1);load()})});
 document.addEventListener('click',function(e){if(!e.target.closest||!e.target.closest('#bReset'))return;
   var ap=USERS.filter(function(u){return u.status==='approved'});if(!ap.length){say('Nobody is approved now.');return}
   var t=prompt('This locks '+ap.length+' approved people. They must ask again. Type LOCK to continue.');if(String(t||'').trim().toUpperCase()!=='LOCK'){say('Cancelled. Nothing changed.');return}

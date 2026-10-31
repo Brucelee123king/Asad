@@ -350,3 +350,11 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - Profile sticky heading z-index above field labels.
 - Dark-mode bottom bar = #0f172a (same as the APK's nav strip).
 - NEXT (designed, approved to build): step-by-step sign-up (email, password, name, DOB, mobile, gender/province/city, photo, welcome) and no waiting page; pending users enter the app with the 3 preparations locked.
+
+## Oct 31 2026 (4) - published
+- Sign-up is a step-by-step wizard (#obWz in access_block): email, password, name (account made here), DOB, mobile, gender/province/city, photo (optional), welcome. Saves profiles/{uid}.
+- No waiting page any more: pending users enter the app with cats [] (3 preparations locked). Any account without a profile sees the wizard from step 3 once (existing users too). Blocked users still see "Access stopped".
+- Photo adjust screen window.__cropPhoto (drag, pinch, slider) used by My Profile and the wizard.
+- Back from My Profile / Terms / Privacy returns to the open side menu (pfFromDr).
+- Online people icon (#onBtn/#onBox) shown only to the admin (html.acadmin).
+- Admin page: "Give Initial PMA to everyone" button (Requests and People tabs, type GIVE): all non-blocked users -> approved + all 11 categories, other ticks kept.

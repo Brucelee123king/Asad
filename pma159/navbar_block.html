@@ -1,4 +1,6 @@
 <style>
+/* the online people icon is only for the admin; students do not see it (their phones still count as online for the admin) */
+html:not(.acadmin) #onBtn,html:not(.acadmin) #onBox{display:none!important}
 /* buttons in colour 14 (Pearl / Milk White): pearl in light mode, dark brown in dark mode (no gold) */
 html{--pb-bg:linear-gradient(180deg,#fbf6ea,#ece2cb);--pb-tx:#3b2f1a;--pb-bd:#d9cba9;--pb-sh:0 8px 20px rgba(120,95,40,.16);--pb-on:rgba(160,122,44,.12);--pb-ac:#8a6a2a}
 html.dark{--pb-bg:linear-gradient(180deg,#3b342b,#2a251f);--pb-tx:#f3eee2;--pb-bd:#4b4338;--pb-sh:0 8px 20px rgba(0,0,0,.4);--pb-on:rgba(243,238,226,.08);--pb-ac:#e2d3b0}
