@@ -1648,5 +1648,770 @@
   "rel": "General Ayub Khan was the first Pakistani Commander-in-Chief (from January 1951).",
   "status": "ok",
   "note": ""
+ },
+ {
+  "id": "T1-M-323",
+  "question": "Who was the first Pakistani Commander-in-Chief of the Pakistan Army?",
+  "options": [
+   "General Akbar Khan",
+   "General Yahya Khan",
+   "General Muhammad Ayub Khan",
+   "General Muhammad Musa"
+  ],
+  "correct": 2,
+  "why": "General Ayub Khan took command on 17 January 1951, taking over from General Sir Douglas Gracey.",
+  "rel": "General Muhammad Musa succeeded Ayub Khan as Commander-in-Chief in 1958.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-324",
+  "question": "Who was the Chief of Army Staff of Pakistan from 1988 to 1991?",
+  "options": [
+   "General Asif Nawaz Janjua",
+   "General Abdul Waheed Kakar",
+   "General Jehangir Karamat",
+   "General Mirza Aslam Beg"
+  ],
+  "correct": 3,
+  "why": "General Mirza Aslam Beg became COAS after General Zia-ul-Haq died in the Bahawalpur air crash in August 1988.",
+  "rel": "General Zia-ul-Haq was killed in the C-130 crash on 17 August 1988.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-325",
+  "question": "Who was the Chief of Army Staff of Pakistan from 1991 to 1993?",
+  "options": [
+   "General Pervez Musharraf",
+   "General Asif Nawaz Janjua",
+   "General Abdul Waheed Kakar",
+   "General Mirza Aslam Beg"
+  ],
+  "correct": 1,
+  "why": "General Asif Nawaz Janjua served as COAS from August 1991 until his sudden death in January 1993.",
+  "rel": "General Abdul Waheed Kakar became COAS after him in 1993.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-326",
+  "question": "How many member states does the United Nations have?",
+  "options": [
+   "195",
+   "193",
+   "200",
+   "191"
+  ],
+  "correct": 1,
+  "why": "The UN has 193 member states; South Sudan became the 193rd member in July 2011.",
+  "rel": "The UN was founded on 24 October 1945 with 51 members.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-327",
+  "question": "What is the currency of Saudi Arabia?",
+  "options": [
+   "Saudi Pound",
+   "Saudi Dirham",
+   "Saudi Riyal",
+   "Saudi Dinar"
+  ],
+  "correct": 2,
+  "why": "Saudi Arabia's currency is the Riyal, fixed at about 3.75 Riyals to one US Dollar.",
+  "rel": "The UAE uses the Dirham and Kuwait uses the Dinar.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-328",
+  "question": "In which country is the Suez Canal located?",
+  "options": [
+   "Jordan",
+   "Israel",
+   "Egypt",
+   "Sudan"
+  ],
+  "correct": 2,
+  "why": "The Suez Canal cuts through the Isthmus of Suez in Egypt.",
+  "rel": "Egypt's President Gamal Abdel Nasser nationalised the canal in 1956.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-329",
+  "question": "How many total seats are there in the Provincial Assembly of Punjab?",
+  "options": [
+   "168",
+   "371",
+   "145",
+   "336"
+  ],
+  "correct": 1,
+  "why": "The Punjab Assembly has 371 seats: 297 general, 66 for women and 8 for non-Muslims. 336 is the National Assembly.",
+  "rel": "The Sindh Assembly has 168 seats.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-330",
+  "question": "Which titles were given to the Holy Prophet (PBUH) in Makkah for his honesty?",
+  "options": [
+   "Al-Farooq and Al-Siddiq",
+   "Ghani and Haider",
+   "Al-Sadiq and Al-Amin",
+   "Saifullah and Asadullah"
+  ],
+  "correct": 2,
+  "why": "The people of Makkah called him Al-Sadiq (the Truthful) and Al-Amin (the Trustworthy), and even his enemies kept their valuables with him.",
+  "rel": "Al-Farooq was the title of Hazrat Umar (R.A) and Al-Siddiq of Hazrat Abu Bakr (R.A).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-331",
+  "question": "Which is the smallest planet and the one closest to the Sun?",
+  "options": [
+   "Mars",
+   "Venus",
+   "Pluto",
+   "Mercury"
+  ],
+  "correct": 3,
+  "why": "Mercury is the smallest planet and the nearest to the Sun; it goes round the Sun in 88 days and has no moons. Pluto is no longer a planet.",
+  "rel": "Venus is the hottest planet even though Mercury is closer to the Sun.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-332",
+  "question": "What was the line dividing Pakistan and India in 1947 called?",
+  "options": [
+   "Radcliffe Line",
+   "Durand Line",
+   "McMahon Line",
+   "Line of Control"
+  ],
+  "correct": 0,
+  "why": "The Radcliffe Line was drawn by Sir Cyril Radcliffe, chairman of the Boundary Commissions. The Durand Line is the Pak-Afghan border.",
+  "rel": "The McMahon Line is the border line between India and China (Tibet).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-333",
+  "question": "Which companion is known by the title 'Asadullah' (Lion of Allah)?",
+  "options": [
+   "Hazrat Umar (R.A)",
+   "Hazrat Ali (R.A)",
+   "Hazrat Khalid bin Waleed (R.A)",
+   "Hazrat Abu Ubaidah (R.A)"
+  ],
+  "correct": 1,
+  "why": "Hazrat Ali (R.A) is called Asadullah and Haider-e-Karrar for his bravery, especially at Khaybar. Saifullah is Khalid bin Waleed's title.",
+  "rel": "Hazrat Ali (R.A) was the fourth Rightly Guided Caliph.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-334",
+  "question": "Who wrote the Punjabi epic 'Heer Ranjha' (1766)?",
+  "options": [
+   "Sultan Bahu",
+   "Waris Shah",
+   "Bulleh Shah",
+   "Mian Muhammad Bakhsh"
+  ],
+  "correct": 1,
+  "why": "Sufi poet Waris Shah wrote 'Heer' in Punjabi in 1766. Mian Muhammad Bakhsh wrote 'Saiful Malook'.",
+  "rel": "Waris Shah's tomb is in Jandiala Sher Khan, Sheikhupura.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-335",
+  "question": "Vienna is the capital of which country?",
+  "options": [
+   "Switzerland",
+   "Hungary",
+   "Germany",
+   "Austria"
+  ],
+  "correct": 3,
+  "why": "Vienna is the capital of Austria. Berlin is Germany's capital, Bern is Switzerland's and Budapest is Hungary's.",
+  "rel": "Vienna is famous for musicians like Mozart and Beethoven.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-336",
+  "question": "Who wrote the book 'India of My Dreams'?",
+  "options": [
+   "Mahatma Gandhi",
+   "Abul Kalam Azad",
+   "Rabindranath Tagore",
+   "Jawaharlal Nehru"
+  ],
+  "correct": 0,
+  "why": "'India of My Dreams' is a collection of Gandhi's writings about his vision of free India. Nehru wrote 'The Discovery of India'.",
+  "rel": "Gandhi's autobiography is 'The Story of My Experiments with Truth'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-337",
+  "question": "Where did the Jallianwala Bagh massacre take place in 1919?",
+  "options": [
+   "Lucknow",
+   "Amritsar",
+   "Lahore",
+   "Delhi"
+  ],
+  "correct": 1,
+  "why": "On 13 April 1919, British troops under General Dyer fired on an unarmed crowd at Jallianwala Bagh, Amritsar.",
+  "rel": "The protest was against the Rowlatt Act of 1919.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-338",
+  "question": "When did India carry out its first nuclear test, 'Smiling Buddha'?",
+  "options": [
+   "28 May 1998",
+   "18 May 1974",
+   "16 October 1964",
+   "11 May 1998"
+  ],
+  "correct": 1,
+  "why": "India's first nuclear test was on 18 May 1974 at Pokhran, Rajasthan. 11 May 1998 was its second set of tests.",
+  "rel": "Pakistan answered India's 1998 tests with its own tests at Chagai on 28 May 1998.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-339",
+  "question": "Which is the smallest country in the world?",
+  "options": [
+   "Nauru",
+   "San Marino",
+   "Vatican City",
+   "Monaco"
+  ],
+  "correct": 2,
+  "why": "Vatican City, about 0.49 sq km and inside Rome, is the smallest country. Monaco is second.",
+  "rel": "Vatican City is the centre of the Roman Catholic Church and home of the Pope.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-340",
+  "question": "Which river carries the largest volume of water in the world?",
+  "options": [
+   "Yangtze",
+   "Congo",
+   "Amazon",
+   "Nile"
+  ],
+  "correct": 2,
+  "why": "The Amazon in South America carries more water than any other river. The Nile is the longest but carries much less water.",
+  "rel": "The Congo is the second-largest river by water flow.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-341",
+  "question": "In which sport is 147 the maximum break?",
+  "options": [
+   "Snooker",
+   "Darts",
+   "Billiards",
+   "Bowling"
+  ],
+  "correct": 0,
+  "why": "In snooker, a 147 maximum break means potting all 15 reds with 15 blacks and then all six colours.",
+  "rel": "Pakistan's Muhammad Yousuf won the IBSF World Amateur Snooker Championship in 1994.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-342",
+  "question": "In which province of Pakistan is most of the Thar Desert?",
+  "options": [
+   "Balochistan",
+   "Khyber Pakhtunkhwa",
+   "Sindh",
+   "Punjab"
+  ],
+  "correct": 2,
+  "why": "Most of Pakistan's Thar Desert is in south-eastern Sindh (Tharparkar), on the border with Rajasthan, India.",
+  "rel": "The Thar coalfield in Tharparkar holds one of the world's largest coal reserves.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-343",
+  "question": "What is the capital city of Belarus?",
+  "options": [
+   "Riga",
+   "Minsk",
+   "Vilnius",
+   "Kyiv"
+  ],
+  "correct": 1,
+  "why": "Minsk is the capital of Belarus. Kyiv is Ukraine's capital and Vilnius is Lithuania's.",
+  "rel": "Belarus's currency is the Belarusian ruble.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-344",
+  "question": "Where was the highest air temperature on Earth recorded?",
+  "options": [
+   "Al Aziziyah, Libya",
+   "Sahara Desert, Algeria",
+   "Jacobabad, Pakistan",
+   "Death Valley, USA"
+  ],
+  "correct": 3,
+  "why": "Death Valley, California, recorded 56.7 C (134 F) in 1913, the official world record. The old Al Aziziyah record was cancelled in 2012.",
+  "rel": "Pakistan's highest recorded temperature is 53.7 C at Turbat (2017).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-345",
+  "question": "What is the currency of Armenia?",
+  "options": [
+   "Manat",
+   "Dram",
+   "Som",
+   "Lari"
+  ],
+  "correct": 1,
+  "why": "Armenia's currency is the Dram, introduced in 1993. The Manat is Azerbaijan's and the Lari is Georgia's.",
+  "rel": "The capital of Armenia is Yerevan.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-346",
+  "question": "Who was Chairman of NAB from 2017 to 2022?",
+  "options": [
+   "Justice (R) Javed Iqbal",
+   "Lt Gen (R) Nazir Ahmed Butt",
+   "Aftab Sultan",
+   "Qamar Zaman Chaudhry"
+  ],
+  "correct": 0,
+  "why": "Former Supreme Court judge Justice (R) Javed Iqbal headed NAB from October 2017 to 2022. Qamar Zaman Chaudhry was before him.",
+  "rel": "NAB (National Accountability Bureau) was set up in 1999.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-347",
+  "question": "What is the capital city of Bhutan?",
+  "options": [
+   "Kathmandu",
+   "Thimphu",
+   "Paro",
+   "Dhaka"
+  ],
+  "correct": 1,
+  "why": "Thimphu is the capital of Bhutan. Kathmandu is Nepal's capital; Paro is a Bhutanese town with its only international airport.",
+  "rel": "Bhutan measures progress through 'Gross National Happiness'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-348",
+  "question": "Which is the national sport of Pakistan?",
+  "options": [
+   "Kabaddi",
+   "Squash",
+   "Hockey",
+   "Cricket"
+  ],
+  "correct": 2,
+  "why": "Field hockey is Pakistan's national game; Pakistan has won 3 Olympic golds and 4 World Cups in it. Cricket is more popular but is not the national game.",
+  "rel": "Jahangir Khan and Jansher Khan made Pakistan famous in squash.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-349",
+  "question": "Who wrote the words of Pakistan's National Anthem?",
+  "options": [
+   "Ahmed Chagla",
+   "Allama Muhammad Iqbal",
+   "Faiz Ahmed Faiz",
+   "Hafeez Jalandhari"
+  ],
+  "correct": 3,
+  "why": "Hafeez Jalandhari wrote the National Anthem in Persianised Urdu in 1952. Ahmed Ghulamali Chagla composed its music.",
+  "rel": "The anthem was officially approved in August 1954.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-350",
+  "question": "How many members are there in the National Assembly of Pakistan?",
+  "options": [
+   "371",
+   "336",
+   "96",
+   "342"
+  ],
+  "correct": 1,
+  "why": "The National Assembly has 336 members: 266 general seats, 60 for women and 10 for minorities. 342 was the total before the FATA merger.",
+  "rel": "The Senate of Pakistan has 96 members.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-351",
+  "question": "What are the two houses of Pakistan's Parliament (Majlis-e-Shoora)?",
+  "options": [
+   "Senate and Supreme Court",
+   "Senate and Provincial Assembly",
+   "National Assembly and Cabinet",
+   "Senate and National Assembly"
+  ],
+  "correct": 3,
+  "why": "Under the 1973 Constitution, the Parliament has two houses: the Senate (upper house) and the National Assembly (lower house).",
+  "rel": "The Chairman of the Senate acts as President when the President is absent.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-352",
+  "question": "What is the capital city of Kuwait?",
+  "options": [
+   "Muscat",
+   "Manama",
+   "Kuwait City",
+   "Doha"
+  ],
+  "correct": 2,
+  "why": "Kuwait City, on the Persian Gulf, is the capital of Kuwait. Doha is Qatar's capital, Manama is Bahrain's and Muscat is Oman's.",
+  "rel": "Iraq invaded Kuwait in 1990, which led to the Gulf War of 1991.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-353",
+  "question": "Who designed the national flag of Pakistan?",
+  "options": [
+   "Abdur Rehman Chughtai",
+   "Sadequain",
+   "Hafeez Jalandhari",
+   "Syed Amir-ud-Din Kidwai"
+  ],
+  "correct": 3,
+  "why": "Amir-ud-Din Kidwai designed the flag based on the Muslim League flag, with a crescent and five-pointed star.",
+  "rel": "The white part of the flag stands for minorities and the green for the Muslim majority.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-354",
+  "question": "In which year was SAARC founded?",
+  "options": [
+   "1990",
+   "1980",
+   "1975",
+   "1985"
+  ],
+  "correct": 3,
+  "why": "SAARC was founded in December 1985 in Dhaka with 7 members; Afghanistan joined in 2007 as the 8th.",
+  "rel": "Pakistan hosted the 12th SAARC summit in Islamabad in 2004.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-355",
+  "question": "Which line marks much of the border between the USA and Canada?",
+  "options": [
+   "Mason-Dixon Line",
+   "38th Parallel",
+   "17th Parallel",
+   "49th Parallel"
+  ],
+  "correct": 3,
+  "why": "The 49th Parallel North forms most of the western USA-Canada border. The 38th Parallel divides North and South Korea.",
+  "rel": "The USA-Canada border is the world's longest international land border.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-356",
+  "question": "Which five countries have veto power in the UN Security Council?",
+  "options": [
+   "USA, UK, Russia, China and Germany",
+   "USA, UK, France, Japan and China",
+   "USA, Russia, China, India and France",
+   "USA, UK, Russia, China and France"
+  ],
+  "correct": 3,
+  "why": "The five permanent members (P5) with veto power are the USA, UK, Russia, China and France.",
+  "rel": "Germany, Japan, India and Brazil (the G4) are seeking permanent seats.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-357",
+  "question": "What does the Arabic word 'Badr' mean?",
+  "options": [
+   "Victory",
+   "Full moon",
+   "Water well",
+   "Valley"
+  ],
+  "correct": 1,
+  "why": "'Badr' means full moon. The battle is named after the well and village of Badr, south-west of Madinah.",
+  "rel": "The Battle of Badr took place on 17 Ramadan, 2 AH.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-358",
+  "question": "Which city is known as the hottest place in Pakistan?",
+  "options": [
+   "Jacobabad",
+   "Skardu",
+   "Murree",
+   "Quetta"
+  ],
+  "correct": 0,
+  "why": "Jacobabad in Sindh often crosses 50 C in summer and is famous as Pakistan's hottest city.",
+  "rel": "The highest temperature in Pakistan, 53.7 C, was recorded at Turbat in 2017.",
+  "status": "ok",
+  "note": "Notes said 'Turbat / Jacobabad'; MCQ uses Jacobabad and leaves Turbat out of the options."
+ },
+ {
+  "id": "T1-M-359",
+  "question": "About how many languages are spoken in Pakistan?",
+  "options": [
+   "About 10",
+   "More than 300",
+   "More than 70",
+   "About 25"
+  ],
+  "correct": 2,
+  "why": "More than 70 languages are spoken in Pakistan. Urdu is the national language; Punjabi, Pashto, Sindhi, Saraiki and Balochi are major ones.",
+  "rel": "Punjabi is the mother tongue of the largest number of Pakistanis.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-360",
+  "question": "What is the approximate length of the Pakistan-Iran border?",
+  "options": [
+   "About 2,430 km",
+   "About 909 km",
+   "About 3,323 km",
+   "About 596 km"
+  ],
+  "correct": 1,
+  "why": "The Pakistan-Iran border is about 909 km long (some sources say up to 959 km), from Koh-i-Malik Salih to Gwadar Bay. 2,430 km is the Pak-Afghan border.",
+  "rel": "The Pakistan-China border is about 596 km long.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-361",
+  "question": "Which dam is built on the Kabul River near Peshawar?",
+  "options": [
+   "Warsak Dam",
+   "Khanpur Dam",
+   "Tarbela Dam",
+   "Mangla Dam"
+  ],
+  "correct": 0,
+  "why": "Warsak Dam on the Kabul River near Peshawar was completed in 1960 with Canadian help. Tarbela is on the Indus and Mangla on the Jhelum.",
+  "rel": "Khanpur Dam is on the Haro River.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-362",
+  "question": "In which countries is the Hindu Kush mountain range located?",
+  "options": [
+   "China and Nepal",
+   "Afghanistan and Pakistan",
+   "Iran and Turkmenistan",
+   "Pakistan and India"
+  ],
+  "correct": 1,
+  "why": "The Hindu Kush runs mainly through Afghanistan and northern Pakistan, south-west from the Pamir Knot.",
+  "rel": "Tirich Mir (7,708 m) in Chitral is the highest peak of the Hindu Kush.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-363",
+  "question": "What is the currency of Bangladesh?",
+  "options": [
+   "Kyat",
+   "Rupee",
+   "Taka",
+   "Ngultrum"
+  ],
+  "correct": 2,
+  "why": "Bangladesh's currency is the Taka. The Ngultrum is Bhutan's and the Kyat is Myanmar's.",
+  "rel": "The Taka is divided into 100 poisha.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-364",
+  "question": "In which year did Quaid-e-Azam join the All-India Muslim League?",
+  "options": [
+   "1906",
+   "1913",
+   "1916",
+   "1920"
+  ],
+  "correct": 1,
+  "why": "Jinnah joined the Muslim League in 1913 while still a Congress member. The League was founded in 1906.",
+  "rel": "Jinnah left the Congress in 1920.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-365",
+  "question": "What is the capital city of Azerbaijan?",
+  "options": [
+   "Ashgabat",
+   "Tbilisi",
+   "Baku",
+   "Yerevan"
+  ],
+  "correct": 2,
+  "why": "Baku, on the west shore of the Caspian Sea, is the capital of Azerbaijan. Tbilisi is Georgia's and Yerevan is Armenia's.",
+  "rel": "Azerbaijan's currency is the Manat.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-366",
+  "question": "Which Maldivian served as President of the 76th UN General Assembly?",
+  "options": [
+   "Mohamed Nasheed",
+   "Abdulla Yameen",
+   "Ibrahim Mohamed Solih",
+   "Abdulla Shahid"
+  ],
+  "correct": 3,
+  "why": "Maldives Foreign Minister Abdulla Shahid was President of the 76th UNGA from September 2021 to September 2022.",
+  "rel": "Pakistan's Sir Zafarullah Khan was President of the 17th UN General Assembly (1962).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-367",
+  "question": "Which is the largest natural lake in Afghanistan?",
+  "options": [
+   "Band-e-Amir",
+   "Lake Shewa",
+   "Ab-e-Istada",
+   "Lake Zorkul"
+  ],
+  "correct": 0,
+  "why": "The notes give Band-e-Amir, a chain of six deep blue lakes in the Hindu Kush (Bamyan).",
+  "rel": "Band-e-Amir became Afghanistan's first national park in 2009.",
+  "status": "unsure",
+  "note": "Notes gave 'Band-e-Amir (or Hamun-e-Helmand)'; the seasonal Hamun lakes are larger in area, so the answer depends on the source. Kept Band-e-Amir; Hamun left out of the options."
+ },
+ {
+  "id": "T1-M-368",
+  "question": "Which country helped build the Warsak Dam?",
+  "options": [
+   "Canada",
+   "Japan",
+   "USA",
+   "China"
+  ],
+  "correct": 0,
+  "why": "Canada gave money and engineering help for Warsak Dam under the Colombo Plan.",
+  "rel": "The World Bank helped arrange the Indus Waters Treaty of 1960.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-369",
+  "question": "Who was the first Prime Minister of Pakistan?",
+  "options": [
+   "Muhammad Ali Bogra",
+   "Liaquat Ali Khan",
+   "Khawaja Nazimuddin",
+   "Sir Feroz Khan Noon"
+  ],
+  "correct": 1,
+  "why": "Liaquat Ali Khan was PM from 14 August 1947 until he was assassinated in Rawalpindi on 16 October 1951.",
+  "rel": "He is called 'Quaid-e-Millat'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-370",
+  "question": "Who was the last Governor-General and the first President of Pakistan?",
+  "options": [
+   "Ayub Khan",
+   "Khawaja Nazimuddin",
+   "Iskander Mirza",
+   "Malik Ghulam Muhammad"
+  ],
+  "correct": 2,
+  "why": "Iskander Mirza was Governor-General (1955-56) and became the first President under the 1956 Constitution (1956-58).",
+  "rel": "Iskander Mirza imposed martial law on 7 October 1958.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-371",
+  "question": "About how many times is Salah (prayer) mentioned in the Holy Quran?",
+  "options": [
+   "About 700 times",
+   "About 1,500 times",
+   "About 30 times",
+   "About 70 times"
+  ],
+  "correct": 0,
+  "why": "The notes say Salah is mentioned (or commanded) about 700 times in the Quran.",
+  "rel": "Salah is the second pillar of Islam, and was made obligatory on the night of Miraj.",
+  "status": "unsure",
+  "note": "Notes say 'over 700 times'. Counts differ by source and method; word counts of 'Salah' are much lower. Kept the notes' answer."
+ },
+ {
+  "id": "T1-M-372",
+  "question": "What is the approximate road distance between Peshawar and Rawalpindi?",
+  "options": [
+   "About 380 km",
+   "About 60 km",
+   "About 170-190 km",
+   "About 500 km"
+  ],
+  "correct": 2,
+  "why": "Peshawar and Rawalpindi are about 170-190 km apart by the GT Road or the M-1 Motorway.",
+  "rel": "The M-1 Motorway links Islamabad and Peshawar.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-373",
+  "question": "Which mountain pass connects Pakistan with China?",
+  "options": [
+   "Khyber Pass",
+   "Bolan Pass",
+   "Kohat Pass",
+   "Khunjerab Pass"
+  ],
+  "correct": 3,
+  "why": "Khunjerab Pass (4,693 m) in the Karakoram joins Pakistan and China. Khyber Pass connects Pakistan with Afghanistan.",
+  "rel": "The Bolan Pass links Quetta with Sibi in Balochistan.",
+  "status": "ok",
+  "note": ""
  }
 ]
