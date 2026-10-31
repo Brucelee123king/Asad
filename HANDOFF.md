@@ -343,3 +343,10 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - Profile field labels sit above the border (z-index).
 - Bottom bar docked at the very bottom (round top corners only); main gets padding so nothing hides behind it; #nbPage ends above the bar.
 - Phone navigation strip colour (nav_night #0F172A / nav_day #F1F5F9) is fixed in the APK; cannot change without a new APK.
+
+## Oct 31 2026 (3) - published
+- Terms & Conditions / Privacy Policy: full-screen pages (#pfPage.doc, docOpen) with contents list; text in LEGAL json inside drawer_block (written for PMA Preparation; contact = WhatsApp group/channel; "not connected to Pakistan Army/PMA/ISSB").
+- Gold buttons replaced by pearl/dark-brown (--pb-* vars in navbar_block).
+- Profile sticky heading z-index above field labels.
+- Dark-mode bottom bar = #0f172a (same as the APK's nav strip).
+- NEXT (designed, approved to build): step-by-step sign-up (email, password, name, DOB, mobile, gender/province/city, photo, welcome) and no waiting page; pending users enter the app with the 3 preparations locked.
