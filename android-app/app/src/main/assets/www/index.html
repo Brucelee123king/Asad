@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head><script>/*SHELLUPD*/(function(){var V=202610311134,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
+<head><script>/*SHELLUPD*/(function(){var V=202610311139,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
 try{var sv=+L.getItem('shell_v')||0,h=L.getItem('shell_html'),t=+L.getItem('shell_try')||0;
 if(h&&sv>V&&!window.__shellW){if(t>=2){L.removeItem('shell_html');L.removeItem('shell_v');L.removeItem('shell_try')}
 else{L.setItem('shell_try',String(t+1));window.__shellW=1;document.open();document.write(h);document.close();return}}}catch(e){}
@@ -2043,6 +2043,11 @@ var tries=0;(function wait(){if(document.querySelector('header>div>div')&&docume
 })();
 </script>
 <style>
+#cpBox{position:fixed;inset:0;z-index:2147483300;background:rgba(2,6,23,.55);display:flex;align-items:center;justify-content:center;padding:20px;font-family:'Plus Jakarta Sans',system-ui,sans-serif}
+#cpBox .cpc{width:100%;max-width:380px;background:#fffdf8;color:#2b2416;border-radius:22px;padding:20px 20px 16px;box-shadow:0 20px 50px rgba(0,0,0,.35)}html.dark #cpBox .cpc{background:#1f1b16;color:#f3eee2}
+#cpBox .cpt{font-size:20px;font-weight:800;color:#16a34a}#cpBox .cpn{font-size:13.5px;font-weight:700;opacity:.7;margin:2px 0 10px}
+#cpBox ol{margin:0;padding-left:22px;font-size:15.5px;line-height:1.7}#cpBox .cpo{margin-top:10px;font-size:13.5px;opacity:.75}
+#cpBox button{width:100%;height:48px;margin-top:14px;border:0;border-radius:14px;background:#16a34a;color:#fff;font:800 16px 'Plus Jakarta Sans',system-ui,sans-serif;cursor:pointer}
 /* category pages: the top block shows only the category name (no count line, no long text) */
 #view-select .bg-gradient-to-r.rounded-2xl.text-white.text-center{padding:22px 20px!important}
 #view-select .bg-gradient-to-r.rounded-2xl.text-white.text-center>span,#view-select .bg-gradient-to-r.rounded-2xl.text-white.text-center>p{display:none!important}
@@ -2312,8 +2317,15 @@ html.dark #nbPage{--pbg:#1b1814;--ptx:#f3eee2;--pmu:#b9ab8c;--pln:#3d362c;--pcd:
   function social(){return '<h2>Follow us</h2><p class="sub">Join PMA Preparation on social media for daily updates, tips and new tests.</p>'+
     '<div class="adm"><i class="fa-brands fa-instagram"></i><span>To get access or ask anything, <b>message the admin on Instagram @journeytopma</b>.</span></div><div class="how">Tap <b>Copy link</b>, then open Chrome and paste it in the address bar (or paste it in WhatsApp and tap it).</div>'+
     SOC.map(function(s,i){return '<div class="soc"><div class="lg" style="background:'+s[2]+'">'+s[1]+'</div><div class="t"><b>'+s[0]+'</b><small>'+(s[3]?(s[4]||'PMA Preparation'):'Coming soon')+'</small></div>'+(s[3]?'<button type="button" data-i="'+i+'">Copy link</button>':'')+'</div>'}).join('')}
+  /* after copying: a clear box with the steps to open the link (the APK cannot open outside links itself) */
+  function cpBox(it){var o=document.getElementById('cpBox');if(o)o.remove();o=document.createElement('div');o.id='cpBox';
+    var app=/WhatsApp/.test(it[0])?'WhatsApp':/Instagram/.test(it[0])?'Instagram':'TikTok';
+    o.innerHTML='<div class="cpc" role="dialog" aria-label="Link copied"><div class="cpt"><i class="fa-solid fa-circle-check"></i> Link copied!</div><div class="cpn">'+it[0]+'</div>'+
+      '<ol><li>Open <b>Chrome</b> on your phone.</li><li>Tap the <b>address bar</b> at the top.</li><li><b>Hold</b> your finger there and tap <b>Paste</b>.</li><li>Press <b>Go</b>. '+app+' opens.</li></ol>'+
+      '<div class="cpo">Or paste the link in any WhatsApp chat and tap it.</div><button type="button">OK</button></div>';
+    document.body.appendChild(o);o.onclick=function(e){if(e.target===o||e.target.tagName==='BUTTON')o.remove()}}
   function socWire(){pg.querySelector('.in').onclick=function(e){var b=e.target.closest('[data-i]');if(!b)return;var u=SOC[+b.getAttribute('data-i')][3];
-    function done(){b.textContent='Copied ✓';b.classList.add('ok');setTimeout(function(){b.textContent='Copy link';b.classList.remove('ok')},2000)}
+    function done(){b.textContent='Copied ✓';b.classList.add('ok');setTimeout(function(){b.textContent='Copy link';b.classList.remove('ok')},2000);cpBox(SOC[+b.getAttribute('data-i')])}
     try{if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(u).then(done,function(){fb(u);done()});return}}catch(x){}fb(u);done()}}
   function fb(u){try{var t=document.createElement('textarea');t.value=u;t.style.cssText='position:fixed;opacity:0';document.body.appendChild(t);t.select();document.execCommand('copy');t.remove()}catch(e){}}
   /* hide the bar while a test is running */
