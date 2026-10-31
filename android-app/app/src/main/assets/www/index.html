@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head><script>/*SHELLUPD*/(function(){var V=202610310615,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
+<head><script>/*SHELLUPD*/(function(){var V=202610311016,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
 try{var sv=+L.getItem('shell_v')||0,h=L.getItem('shell_html'),t=+L.getItem('shell_try')||0;
 if(h&&sv>V&&!window.__shellW){if(t>=2){L.removeItem('shell_html');L.removeItem('shell_v');L.removeItem('shell_try')}
 else{L.setItem('shell_try',String(t+1));window.__shellW=1;document.open();document.write(h);document.close();return}}}catch(e){}
 function u8(s){s=s.replace(/-/g,'+').replace(/_/g,'/');var b=atob(s),a=new Uint8Array(b.length);for(var i=0;i<b.length;i++)a[i]=b.charCodeAt(i);return a}
 function chk(x,sig){return crypto.subtle.importKey('jwk',K,{name:'ECDSA',namedCurve:'P-256'},false,['verify']).then(function(k){
  return crypto.subtle.verify({name:'ECDSA',hash:'SHA-256'},k,u8(sig),new TextEncoder().encode(x))})}
-window.addEventListener('load',function(){setTimeout(function(){try{if(window.FB&&document.getElementById('auth'))L.setItem('shell_try','0')}catch(e){}},6000);setTimeout(function(){
-if(navigator.onLine===false||!window.crypto||!crypto.subtle)return;
+var busy=0,ready=0;
+function safe(){try{if(document.hidden)return true;var q=document.getElementById('view-quiz');if(q&&!q.classList.contains('hidden')&&typeof quizActive!=='undefined'&&quizActive)return false;
+ if(document.querySelector('#obWz,#pfPage,#rmSh,#rmPk,#pfSh,#wzSh,#crOv,#drawer:not([data-gone])'))return false;var a=document.activeElement;if(a&&/^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName))return false}catch(e){}return true}
+function apply(){if(!safe()){setTimeout(apply,5000);return}try{var n=document.createElement('div');n.textContent='Updating...';n.setAttribute('style','position:fixed;left:50%;top:calc(14px + var(--sat,0px));transform:translateX(-50%);z-index:2147483647;background:#16a34a;color:#fff;font:700 13px system-ui,sans-serif;padding:8px 16px;border-radius:999px;box-shadow:0 8px 20px rgba(0,0,0,.25)');document.body.appendChild(n)}catch(e){}
+ setTimeout(function(){location.reload()},350)}
+function check(){if(busy||ready||navigator.onLine===false||!window.crypto||!crypto.subtle)return;busy=1;
 fetch(B+'shell.json?'+Date.now(),{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){var cur=Math.max(V,+L.getItem('shell_v')||0);
 if(!(j.v>cur)||!j.sig)return;
 return fetch(B+'shell.html?'+j.v,{cache:'no-store'}).then(function(r){return r.text()}).then(function(x){
  var mv=/var V=(\d+)/.exec(x);if(x.length<50000||x.indexOf('SHELLUPD')<0||!mv||+mv[1]!==j.v)return;
- return chk(x,j.sig).then(function(ok){if(ok){try{L.setItem('shell_html',x);L.setItem('shell_v',String(j.v));var n=document.createElement('div');n.textContent='New update ready. Close the app and open it again.';n.setAttribute('style','position:fixed;left:16px;right:16px;bottom:calc(84px + env(safe-area-inset-bottom,0px));z-index:2147483647;background:#16a34a;color:#fff;font:700 14px system-ui,sans-serif;padding:12px 14px;border-radius:14px;box-shadow:0 10px 26px rgba(0,0,0,.3);text-align:center');document.body.appendChild(n);setTimeout(function(){if(n.parentNode)n.remove()},9000)}catch(e){try{L.removeItem('shell_html');L.removeItem('shell_v')}catch(e2){}}}})})}).catch(function(){})},2000)});
+ return chk(x,j.sig).then(function(ok){if(ok){try{L.setItem('shell_html',x);L.setItem('shell_v',String(j.v));L.setItem('shell_try','0');ready=1;apply()}catch(e){try{L.removeItem('shell_html');L.removeItem('shell_v')}catch(e2){}}}})})}).catch(function(){}).then(function(){busy=0},function(){busy=0})}
+window.addEventListener('load',function(){setTimeout(function(){try{if(window.FB&&document.getElementById('auth'))L.setItem('shell_try','0')}catch(e){}},6000);
+ setTimeout(check,600);setInterval(check,120000);document.addEventListener('visibilitychange',function(){if(!document.hidden)check()});window.addEventListener('online',check)});
 })();</script>
     <meta charset="UTF-8">
 <!-- This site is hosted on Netlify. Anyone can build and deploy a site

@@ -388,3 +388,7 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 ## Oct 31 2026 (12) - published
 - sign_shell.py loader: update check now 2 s after load (was 6 s; the shell_try reset stays at 6 s) and shows a green "New update ready. Close the app and open it again." note after a new signed shell is saved. Tested: old page -> downloads newer signed shell -> note -> next open runs the new shell.
 - Phones on APKs older than v1.0.35 have no self-update loader and cannot be reached; they must install the existing v1.0.35 APK once (android-app/release/AsadullahNotes-v1035.apk). Live shell checked: https://brucelee123king.github.io/asad-data/shell.json
+
+## Oct 31 2026 (13) - published: instant updates
+- sign_shell.py loader: checks shell.json 0.6 s after load, every 2 min while open, on becoming visible and on coming online. A verified new shell is saved and applied at once (small "Updating..." pill + location.reload, the APK loader then writes the stored shell) when safe(): not in a running quiz, no open form/menu/sheet (#obWz,#pfPage,#rmSh,#rmPk,#pfSh,#wzSh,#crOv,#drawer), no focused input; otherwise retried every 5 s. Tested: switch in ~1.3 s; waits while a form is open.
+- Limit: a phone's very first opening after installing the APK uses the APK's own old loader (6 s, next launch). After that every update is near-instant.
