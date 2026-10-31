@@ -1,4 +1,12 @@
 <style>
+/* buttons in colour 14 (Pearl / Milk White): pearl in light mode, dark brown in dark mode (no gold) */
+html{--pb-bg:linear-gradient(180deg,#fbf6ea,#ece2cb);--pb-tx:#3b2f1a;--pb-bd:#d9cba9;--pb-sh:0 8px 20px rgba(120,95,40,.16);--pb-on:rgba(160,122,44,.12);--pb-ac:#8a6a2a}
+html.dark{--pb-bg:linear-gradient(180deg,#3b342b,#2a251f);--pb-tx:#f3eee2;--pb-bd:#4b4338;--pb-sh:0 8px 20px rgba(0,0,0,.4);--pb-on:rgba(243,238,226,.08);--pb-ac:#e2d3b0}
+#nbPage .pill,#nbPage .go,#nbPage .soc button:not(.ok),#pfPage .sv,#pfSh .bt .go,#pfPage .cam{background:var(--pb-bg)!important;color:var(--pb-tx)!important;border:1px solid var(--pb-bd)!important;box-shadow:var(--pb-sh)!important}
+#pfPage .cam{border:3px solid var(--pcd)!important}
+#nbPage .seg button.on,#pfSh .op.on{background:var(--pb-on)!important;border-color:var(--pb-bd)!important;color:var(--pb-ac)!important}
+#pfSh .op.on .rd{border-color:var(--pb-ac)!important}
+#pfPage .f input:focus,#pfPage .f select:focus,#pfPage .phn:focus-within,#nbPage input:focus{border-color:var(--pb-ac)!important}
 /* no credit footer under any page */
 body>footer{display:none!important}
 /* test lists: two tests side by side in every category */
@@ -10,7 +18,7 @@ body>footer{display:none!important}
 #view-select [id$="-grid"]:not(#palette-grid)>* .flex.items-center.justify-between{flex-wrap:wrap;gap:4px}
 /* bottom navigation bar: Home, PMA Roadmap, BMI Calculator, Admin Experience, Social; a light moves over the chosen icon */
 #nbBar{--nb-bg:#fdfbf5;--nb-ic:#9a8b6a;--nb-bd:#e7dfcc;position:fixed;left:0;right:0;bottom:0;height:calc(66px + env(safe-area-inset-bottom,0px));padding-bottom:env(safe-area-inset-bottom,0px);box-sizing:border-box;border-radius:22px 22px 0 0;border-bottom:0!important;background:var(--nb-bg);border:1px solid var(--nb-bd);box-shadow:0 -6px 24px rgba(0,0,0,.12);z-index:2147482990;display:none;overflow:hidden;font-family:'Plus Jakarta Sans',system-ui,sans-serif}
-html.dark #nbBar{--nb-bg:#121212;--nb-ic:#8b8b8b;--nb-bd:#232323;box-shadow:0 -6px 24px rgba(0,0,0,.5)}
+html.dark #nbBar{--nb-bg:#0f172a;--nb-ic:#8b93a7;--nb-bd:#0f172a;box-shadow:0 -6px 24px rgba(0,0,0,.5)}
 html.acok #nbBar{display:flex}html.nbhide #nbBar{display:none!important}
 /* the page ends above the bar, so nothing is hidden behind it */
 html.acok:not(.nbhide) body{padding-bottom:0!important}html.acok:not(.nbhide) main{padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))!important}
