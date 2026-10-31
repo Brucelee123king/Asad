@@ -2413,5 +2413,770 @@
   "rel": "The Bolan Pass links Quetta with Sibi in Balochistan.",
   "status": "ok",
   "note": ""
+ },
+ {
+  "id": "T1-M-374",
+  "question": "What is the total area of Punjab province?",
+  "options": [
+   "About 205,344 sq km",
+   "About 140,914 sq km",
+   "About 101,741 sq km",
+   "About 347,190 sq km"
+  ],
+  "correct": 0,
+  "why": "Punjab covers about 205,344 sq km, roughly 26% of Pakistan's area. 347,190 sq km is Balochistan, the largest province.",
+  "rel": "Sindh covers about 140,914 sq km and Khyber Pakhtunkhwa about 101,741 sq km.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-375",
+  "question": "What is the capital city of Bulgaria?",
+  "options": [
+   "Belgrade",
+   "Sofia",
+   "Bucharest",
+   "Athens"
+  ],
+  "correct": 1,
+  "why": "Sofia, at the foot of Vitosha Mountain, is Bulgaria's capital. Bucharest is Romania's and Belgrade is Serbia's.",
+  "rel": "Bulgaria adopted the Euro on 1 January 2026, replacing the Lev.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-376",
+  "question": "In which city was leg-spinner Abdul Qadir born?",
+  "options": [
+   "Sialkot",
+   "Lahore",
+   "Karachi",
+   "Multan"
+  ],
+  "correct": 1,
+  "why": "Abdul Qadir was born in Lahore in 1955; he brought leg-spin back into modern cricket in the 1970s-80s.",
+  "rel": "His best Test bowling was 9 wickets for 56 runs against England in 1987.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-377",
+  "question": "What is a synonym of 'Cease'?",
+  "options": [
+   "Stop",
+   "Grow",
+   "Begin",
+   "Continue"
+  ],
+  "correct": 0,
+  "why": "'Cease' means to stop or come to an end. 'Begin' and 'Continue' are its opposites.",
+  "rel": "A 'ceasefire' is an agreement to stop fighting.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-378",
+  "question": "Which is the largest continent by both area and population?",
+  "options": [
+   "Asia",
+   "North America",
+   "Africa",
+   "Europe"
+  ],
+  "correct": 0,
+  "why": "Asia covers about 44.6 million sq km and has about 60% of the world's people. Africa is second in both.",
+  "rel": "Australia is the smallest continent.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-379",
+  "question": "Which Prophet was swallowed by a big fish?",
+  "options": [
+   "Hazrat Yusuf (A.S)",
+   "Hazrat Nooh (A.S)",
+   "Hazrat Yunus (A.S)",
+   "Hazrat Ayyub (A.S)"
+  ],
+  "correct": 2,
+  "why": "Hazrat Yunus (A.S) was swallowed by a fish and prayed 'La ilaha illa Anta Subhanaka inni kuntu minaz-zalimeen'.",
+  "rel": "Hazrat Yunus (A.S) is called 'Zun-Noon' (the one of the fish) in the Quran.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-380",
+  "question": "What is the currency of France?",
+  "options": [
+   "Franc",
+   "Euro",
+   "Pound",
+   "Mark"
+  ],
+  "correct": 1,
+  "why": "France uses the Euro; it replaced the French Franc (cash Euro came in 2002).",
+  "rel": "The European Central Bank, which manages the Euro, is in Frankfurt, Germany.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-381",
+  "question": "Which capital city does the River Thames flow through?",
+  "options": [
+   "London",
+   "Paris",
+   "Edinburgh",
+   "Dublin"
+  ],
+  "correct": 0,
+  "why": "The Thames flows about 346 km through southern England and passes through London into the North Sea. The Seine flows through Paris.",
+  "rel": "Tower Bridge over the Thames is a famous London landmark.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-382",
+  "question": "Who is Robert King?",
+  "options": [
+   "A Canadian astronaut",
+   "A British Prime Minister",
+   "An American TV writer and producer",
+   "An Australian cricketer"
+  ],
+  "correct": 2,
+  "why": "Robert King is an American screenwriter and producer who co-created the TV legal drama 'The Good Wife' with his wife Michelle King.",
+  "rel": "The Kings also created the follow-up series 'The Good Fight'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-383",
+  "question": "About how many Muslims marched in the expedition of Tabuk?",
+  "options": [
+   "30,000",
+   "3,000",
+   "10,000",
+   "313"
+  ],
+  "correct": 0,
+  "why": "About 30,000 Muslims joined the Tabuk expedition in 9 AH, the largest army led by the Holy Prophet (PBUH). 10,000 marched for the Conquest of Makkah.",
+  "rel": "The Tabuk expedition was against the Byzantines, and no battle was fought.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-384",
+  "question": "How many countries are members of the United Nations today?",
+  "options": [
+   "192",
+   "195",
+   "193",
+   "185"
+  ],
+  "correct": 2,
+  "why": "There are 193 UN member states; South Sudan was the latest to join, in 2011.",
+  "rel": "Palestine and the Holy See are non-member observer states.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-385",
+  "question": "Who was the first Governor-General of Bengal?",
+  "options": [
+   "Warren Hastings",
+   "Lord Cornwallis",
+   "Lord William Bentinck",
+   "Lord Clive"
+  ],
+  "correct": 0,
+  "why": "Warren Hastings became the first Governor-General of Bengal under the Regulating Act of 1773 and served till 1785. Lord William Bentinck was the first Governor-General of India.",
+  "rel": "Lord Canning was the first Viceroy of India (1858).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-386",
+  "question": "In 1950, Prime Minister Liaquat Ali Khan made a famous official visit to which country?",
+  "options": [
+   "United States",
+   "Soviet Union",
+   "China",
+   "United Kingdom"
+  ],
+  "correct": 0,
+  "why": "Liaquat Ali Khan visited the USA in May 1950 on President Truman's invitation, instead of the Soviet Union.",
+  "rel": "His speeches on that tour were published as the book 'Pakistan: The Heart of Asia'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-387",
+  "question": "What is a synonym of 'Bragging'?",
+  "options": [
+   "Boasting",
+   "Whispering",
+   "Begging",
+   "Complaining"
+  ],
+  "correct": 0,
+  "why": "'Bragging' means boasting, or talking too proudly about oneself.",
+  "rel": "A person who brags is called a 'braggart'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-388",
+  "question": "What is a synonym of 'Splendid'?",
+  "options": [
+   "Magnificent",
+   "Dull",
+   "Simple",
+   "Ordinary"
+  ],
+  "correct": 0,
+  "why": "'Splendid' means magnificent, grand or very impressive. 'Ordinary' and 'Dull' are its opposites.",
+  "rel": "The noun form is 'splendour'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-389",
+  "question": "Which archangel is in charge of rain and sustenance?",
+  "options": [
+   "Hazrat Jibrail (A.S)",
+   "Hazrat Mikail (A.S)",
+   "Hazrat Izrail (A.S)",
+   "Hazrat Israfil (A.S)"
+  ],
+  "correct": 1,
+  "why": "Hazrat Mikail (A.S) is in charge of rain, clouds and provisions. Jibrail brought revelation, Israfil will blow the trumpet and Izrail takes souls.",
+  "rel": "Hazrat Jibrail (A.S) is called 'Ruh-ul-Amin' in the Quran.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-390",
+  "question": "In which year did Quaid-e-Azam present his Fourteen Points?",
+  "options": [
+   "1928",
+   "1940",
+   "1930",
+   "1929"
+  ],
+  "correct": 3,
+  "why": "Jinnah presented the Fourteen Points in March 1929 in Delhi in reply to the Nehru Report (1928).",
+  "rel": "Allama Iqbal gave his Allahabad Address in 1930.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-391",
+  "question": "In which year were the first general elections held under the 1973 Constitution?",
+  "options": [
+   "1977",
+   "1985",
+   "1975",
+   "1973"
+  ],
+  "correct": 0,
+  "why": "The first elections under the 1973 Constitution were held in March 1977; protests over rigging led to General Zia's takeover in July 1977.",
+  "rel": "The 1977 opposition alliance was the Pakistan National Alliance (PNA).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-392",
+  "question": "What is the capital city of Russia?",
+  "options": [
+   "Kazan",
+   "Novosibirsk",
+   "Saint Petersburg",
+   "Moscow"
+  ],
+  "correct": 3,
+  "why": "Moscow is the capital of Russia and one of Europe's largest cities. Saint Petersburg was the capital before 1918.",
+  "rel": "The Kremlin in Moscow is the official home of the Russian President.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-393",
+  "question": "With which Indian Prime Minister did Ayub Khan sign the Indus Waters Treaty in 1960?",
+  "options": [
+   "Indira Gandhi",
+   "Jawaharlal Nehru",
+   "Lal Bahadur Shastri",
+   "Gulzarilal Nanda"
+  ],
+  "correct": 1,
+  "why": "Ayub Khan and Nehru signed the Indus Waters Treaty in Karachi on 19 September 1960, with the World Bank's help. Ayub signed the Tashkent Declaration with Shastri.",
+  "rel": "Under the treaty, Pakistan got the western rivers (Indus, Jhelum, Chenab) and India the eastern rivers (Ravi, Beas, Sutlej).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-394",
+  "question": "When and where was Sir Syed Ahmad Khan born?",
+  "options": [
+   "17 October 1817, Aligarh",
+   "9 November 1877, Sialkot",
+   "25 December 1876, Karachi",
+   "17 October 1817, Delhi"
+  ],
+  "correct": 3,
+  "why": "Sir Syed Ahmad Khan was born in Delhi on 17 October 1817. Aligarh is where he founded his college.",
+  "rel": "He wrote 'Asbab-e-Baghawat-e-Hind' (Causes of the Indian Revolt) about the 1857 war.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-395",
+  "question": "What was the title of Allama Iqbal's doctoral thesis, published as his first book in English?",
+  "options": [
+   "The Reconstruction of Religious Thought in Islam",
+   "Bang-e-Dra",
+   "The Development of Metaphysics in Persia",
+   "Asrar-e-Khudi"
+  ],
+  "correct": 2,
+  "why": "Iqbal's PhD thesis 'The Development of Metaphysics in Persia' (1908) was submitted to Munich University. 'Reconstruction' is his later lectures (1930).",
+  "rel": "Iqbal's first Urdu poetry collection was 'Bang-e-Dra' (1924).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-396",
+  "question": "Which two seas are joined by the Suez Canal?",
+  "options": [
+   "Red Sea and Arabian Sea",
+   "Mediterranean Sea and Black Sea",
+   "Mediterranean Sea and Red Sea",
+   "Red Sea and Dead Sea"
+  ],
+  "correct": 2,
+  "why": "The Suez Canal links the Mediterranean Sea with the Red Sea, giving the shortest sea route between Europe and Asia.",
+  "rel": "The Panama Canal joins the Atlantic and Pacific Oceans.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-397",
+  "question": "For how long did Liaquat Ali Khan serve as Prime Minister?",
+  "options": [
+   "1947 to 1951",
+   "1947 to 1948",
+   "1948 to 1953",
+   "1951 to 1953"
+  ],
+  "correct": 0,
+  "why": "Liaquat Ali Khan was PM from August 1947 until his assassination on 16 October 1951, about 4 years.",
+  "rel": "He was shot at Company Bagh, Rawalpindi, now called Liaquat Bagh.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-398",
+  "question": "How many pillars of Islam are there?",
+  "options": [
+   "4",
+   "6",
+   "7",
+   "5"
+  ],
+  "correct": 3,
+  "why": "The five pillars are Shahada, Salah, Zakat, Sawm (fasting) and Hajj.",
+  "rel": "The articles of faith (Iman-e-Mufassal) are seven.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-399",
+  "question": "Which Prophet was ordered by Allah to build the Ark?",
+  "options": [
+   "Hazrat Ibrahim (A.S)",
+   "Hazrat Musa (A.S)",
+   "Hazrat Nooh (A.S)",
+   "Hazrat Yunus (A.S)"
+  ],
+  "correct": 2,
+  "why": "Hazrat Nooh (A.S) built the Ark on Allah's command to save the believers from the Great Flood.",
+  "rel": "The Ark came to rest on Mount Judi, as stated in Surah Hud.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-400",
+  "question": "Hajj is which pillar of Islam?",
+  "options": [
+   "Fifth",
+   "Fourth",
+   "Third",
+   "Second"
+  ],
+  "correct": 0,
+  "why": "Hajj is the fifth pillar, compulsory once in life for every Muslim who can afford it and is physically able.",
+  "rel": "Zakat is the third pillar and fasting is the fourth.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-401",
+  "question": "Who was Prime Minister of Iraq from 2020 to 2022?",
+  "options": [
+   "Mohammed Shia Al-Sudani",
+   "Haider Al-Abadi",
+   "Mustafa Al-Kadhimi",
+   "Adil Abdul-Mahdi"
+  ],
+  "correct": 2,
+  "why": "Mustafa Al-Kadhimi, former intelligence chief, was Iraq's PM from May 2020 to October 2022. Al-Sudani came after him.",
+  "rel": "Mohammed Shia Al-Sudani became PM of Iraq in October 2022.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-402",
+  "question": "Who published the world's first printed weekly newspaper in 1605?",
+  "options": [
+   "Daniel Defoe",
+   "William Caxton",
+   "Johann Carolus",
+   "Johannes Gutenberg"
+  ],
+  "correct": 2,
+  "why": "Johann Carolus published the 'Relation' in Strasbourg in 1605, seen as the first printed newspaper. Gutenberg invented the printing press about 150 years earlier.",
+  "rel": "William Caxton brought the printing press to England in 1476.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-403",
+  "question": "Who elects the President of Pakistan?",
+  "options": [
+   "The National Assembly only",
+   "An electoral college of the Senate, National Assembly and four Provincial Assemblies",
+   "The people by direct vote",
+   "The Senate only"
+  ],
+  "correct": 1,
+  "why": "Under Article 41 of the Constitution, the President is elected by an electoral college of both houses of Parliament and all four provincial assemblies.",
+  "rel": "The President's term is 5 years.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-404",
+  "question": "Who elects the Prime Minister of Pakistan?",
+  "options": [
+   "The electoral college",
+   "The National Assembly",
+   "The Senate",
+   "The Chief Justice"
+  ],
+  "correct": 1,
+  "why": "The Prime Minister is elected by a majority vote of the members of the National Assembly.",
+  "rel": "A Prime Minister can be removed by a vote of no-confidence in the National Assembly.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-405",
+  "question": "Who developed the first effective polio vaccine in 1953?",
+  "options": [
+   "Edward Jenner",
+   "Louis Pasteur",
+   "Dr. Jonas Salk",
+   "Dr. Albert Sabin"
+  ],
+  "correct": 2,
+  "why": "Dr. Jonas Salk of the USA developed the injected (inactivated) polio vaccine in 1953. Sabin later made the oral vaccine.",
+  "rel": "Edward Jenner made the first vaccine, against smallpox, in 1796.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-406",
+  "question": "Which is the largest and widest river flowing through Bangladesh?",
+  "options": [
+   "Teesta",
+   "Jamuna (Brahmaputra)",
+   "Surma",
+   "Karnaphuli"
+  ],
+  "correct": 1,
+  "why": "The Brahmaputra, called the Jamuna in Bangladesh, is the widest river there; it rises in Tibet as the Yarlung Tsangpo.",
+  "rel": "The Padma (Ganges) and Jamuna join and then meet the Meghna before reaching the Bay of Bengal.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-407",
+  "question": "In which country did General Wojciech Jaruzelski impose martial law in 1981?",
+  "options": [
+   "Poland",
+   "Czechoslovakia",
+   "Hungary",
+   "Romania"
+  ],
+  "correct": 0,
+  "why": "Jaruzelski imposed martial law in Poland on 13 December 1981 to crush the Solidarity movement.",
+  "rel": "Solidarity was led by Lech Walesa, who later became President of Poland.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-408",
+  "question": "During whose government was Tarbela Dam completed?",
+  "options": [
+   "Zulfikar Ali Bhutto",
+   "Yahya Khan",
+   "Ayub Khan",
+   "Zia-ul-Haq"
+  ],
+  "correct": 0,
+  "why": "Tarbela Dam on the Indus was completed in 1976 under Bhutto's government. Mangla Dam was completed under Ayub Khan.",
+  "rel": "Tarbela is the world's largest earth-filled dam.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-409",
+  "question": "Where and when were the first Commonwealth Games held?",
+  "options": [
+   "London, UK, 1934",
+   "Auckland, New Zealand, 1950",
+   "Hamilton, Canada, 1930",
+   "Sydney, Australia, 1938"
+  ],
+  "correct": 2,
+  "why": "The first Commonwealth Games, then called the British Empire Games, were held in Hamilton, Canada, in 1930.",
+  "rel": "The Commonwealth Games are held every four years.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-410",
+  "question": "On which date did Gandhi launch the Quit India Movement?",
+  "options": [
+   "26 January 1930",
+   "15 August 1947",
+   "23 March 1940",
+   "8 August 1942"
+  ],
+  "correct": 3,
+  "why": "The Congress launched the Quit India Movement at its Bombay session on 8 August 1942, with the slogan 'Do or Die'.",
+  "rel": "The Muslim League replied with the slogan 'Divide and Quit'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-411",
+  "question": "When was the Pakistan-China Boundary Agreement signed?",
+  "options": [
+   "2 March 1963",
+   "19 September 1960",
+   "8 September 1958",
+   "21 May 1951"
+  ],
+  "correct": 0,
+  "why": "The boundary agreement was signed in Beijing on 2 March 1963 by Z.A. Bhutto and Chinese Foreign Minister Chen Yi.",
+  "rel": "Pakistan and China established diplomatic relations on 21 May 1951.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-412",
+  "question": "What is a synonym of 'Stationary'?",
+  "options": [
+   "Temporary",
+   "Motionless",
+   "Writing material",
+   "Moving"
+  ],
+  "correct": 1,
+  "why": "'Stationary' means not moving. Do not confuse it with 'stationery', which means writing materials.",
+  "rel": "'Stationery' (with 'e') means paper, pens and other office supplies.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-413",
+  "question": "For about how long did Hazrat Nooh's (A.S) Ark float during the Great Flood?",
+  "options": [
+   "About 150 days",
+   "About 7 days",
+   "About 40 days",
+   "About 1 year"
+  ],
+  "correct": 0,
+  "why": "The notes say the Ark floated about 150 days (5 to 6 months) before resting on Mount Judi.",
+  "rel": "Mount Judi is mentioned in Surah Hud, verse 44.",
+  "status": "unsure",
+  "note": "Notes say about 150 days; the Quran gives no number and other sources say 40 days of rain or about 6 months. Kept the notes' answer."
+ },
+ {
+  "id": "T1-M-414",
+  "question": "What is the term of the President of the UN General Assembly?",
+  "options": [
+   "One year",
+   "Two years",
+   "Six months",
+   "Five years"
+  ],
+  "correct": 0,
+  "why": "The President of the UN General Assembly is elected for one year (one session). The UN Secretary-General serves 5-year terms.",
+  "rel": "The presidency rotates among the five regional groups of the UN.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-415",
+  "question": "Who built 'Masjid-e-Zirar'?",
+  "options": [
+   "The hypocrites (Munafiqeen), urged by Abu Amir",
+   "The Jews of Banu Qainuqa",
+   "The Quraish of Makkah",
+   "The Christians of Najran"
+  ],
+  "correct": 0,
+  "why": "Hypocrites built Masjid-e-Zirar at the urging of Abu Amir the monk, to divide Muslims; it was demolished on the Prophet's order after Tabuk.",
+  "rel": "Masjid-e-Zirar is mentioned in Surah At-Tawbah, verse 107.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-416",
+  "question": "When was Pakistan's first Constitution enforced?",
+  "options": [
+   "8 June 1962",
+   "23 March 1956",
+   "12 March 1949",
+   "14 August 1973"
+  ],
+  "correct": 1,
+  "why": "Pakistan's first Constitution came into force on 23 March 1956 and made Pakistan an Islamic Republic. 12 March 1949 is the Objectives Resolution.",
+  "rel": "It was abrogated on 7 October 1958 by Iskander Mirza.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-417",
+  "question": "Who was the first human to travel into space in 1961?",
+  "options": [
+   "Valentina Tereshkova",
+   "Neil Armstrong",
+   "Yuri Gagarin",
+   "Alan Shepard"
+  ],
+  "correct": 2,
+  "why": "Soviet cosmonaut Yuri Gagarin orbited the Earth in Vostok 1 on 12 April 1961. Armstrong was the first man on the Moon (1969).",
+  "rel": "Valentina Tereshkova was the first woman in space (1963).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-418",
+  "question": "In the order of the Holy Quran (Mushaf), which is the third Surah?",
+  "options": [
+   "Surah Aal-e-Imran",
+   "Surah An-Nisa",
+   "Surah Al-Baqarah",
+   "Surah Al-Ma'idah"
+  ],
+  "correct": 0,
+  "why": "In the Mushaf order, Aal-e-Imran comes after Al-Fatihah and Al-Baqarah, so it is the third Surah. An-Nisa is fourth.",
+  "rel": "Surah Aal-e-Imran has 200 verses.",
+  "status": "fixed",
+  "note": "Notes asked about 'chronological order', but Aal-e-Imran is third only in the Mushaf (written) order, not in order of revelation. Question reworded."
+ },
+ {
+  "id": "T1-M-419",
+  "question": "Who was the 13th President of Pakistan (2018-2024)?",
+  "options": [
+   "Dr. Arif Alvi",
+   "Mamnoon Hussain",
+   "Asif Ali Zardari",
+   "Sadiq Sanjrani"
+  ],
+  "correct": 0,
+  "why": "Dr. Arif Alvi of PTI was President from 9 September 2018 to March 2024. Mamnoon Hussain was before him and Zardari after him.",
+  "rel": "Asif Ali Zardari became President for a second time in March 2024.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-420",
+  "question": "Around which period was the ancient city of Taxila founded?",
+  "options": [
+   "Around the 3rd century CE",
+   "Around the 10th century CE",
+   "Around the 6th century BCE",
+   "Around the 16th century CE"
+  ],
+  "correct": 2,
+  "why": "Taxila grew as a city around the 6th century BCE (some date it earlier) and flourished under the Achaemenid, Mauryan and Kushan empires.",
+  "rel": "Taxila is a UNESCO World Heritage Site and was a famous centre of Buddhist learning.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-421",
+  "question": "Which companion was given the title 'Saifullah' (Sword of Allah)?",
+  "options": [
+   "Hazrat Ali (R.A)",
+   "Hazrat Hamza (R.A)",
+   "Hazrat Khalid bin Waleed (R.A)",
+   "Hazrat Saad bin Abi Waqqas (R.A)"
+  ],
+  "correct": 2,
+  "why": "The Holy Prophet (PBUH) called Hazrat Khalid bin Waleed (R.A) Saifullah after his leadership at the Battle of Mu'tah (8 AH).",
+  "rel": "Hazrat Khalid bin Waleed (R.A) led the Muslims to victory at Yarmouk in 636 AD.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-422",
+  "question": "About how many Huffaz (memorisers of the Quran) were martyred in the Battle of Yamama?",
+  "options": [
+   "About 70",
+   "About 1,000",
+   "About 3,000",
+   "About 7"
+  ],
+  "correct": 0,
+  "why": "The notes say about 70 Huffaz were martyred at Yamama. Their loss led Hazrat Umar (R.A) to urge Hazrat Abu Bakr (R.A) to compile the Quran.",
+  "rel": "Hazrat Zaid bin Sabit (R.A) was given the task of collecting the Quran in one book.",
+  "status": "unsure",
+  "note": "Notes say 'around 70 (up to 360)'; other common sources say 700. Figures differ, so kept 70 as in the notes."
+ },
+ {
+  "id": "T1-M-423",
+  "question": "On which river is Diamer-Bhasha Dam being built?",
+  "options": [
+   "Chenab",
+   "Jhelum",
+   "Indus",
+   "Swat"
+  ],
+  "correct": 2,
+  "why": "Diamer-Bhasha Dam is being built on the Indus River in Gilgit-Baltistan, for water storage and about 4,500 MW of electricity.",
+  "rel": "Mohmand Dam is being built on the Swat River.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-424",
+  "question": "Which Prophet has the title 'Zabiullah'?",
+  "options": [
+   "Hazrat Ismail (A.S)",
+   "Hazrat Yaqub (A.S)",
+   "Hazrat Ishaq (A.S)",
+   "Hazrat Ibrahim (A.S)"
+  ],
+  "correct": 0,
+  "why": "Hazrat Ismail (A.S) is called Zabiullah because he willingly agreed to be sacrificed for Allah. Hazrat Ibrahim is Khalilullah.",
+  "rel": "Eid-ul-Adha is celebrated in memory of this sacrifice.",
+  "status": "ok",
+  "note": ""
  }
 ]
