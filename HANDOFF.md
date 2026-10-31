@@ -332,3 +332,8 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - Gender/Province: app-styled bottom sheets (#pfSh). Other Options: Change Password (reset email), Change Language (English; Urdu "coming soon"), Delete Account (type DELETE; only within 5 min of sign-in; deletes profiles + users doc + auth user).
 - Rules: users and profiles can be deleted by their owner (user must paste firestore.rules).
 - Menu, profile and sheets start below the status bar (--sat). #satBar strip + window.__topShade (also used by android_head topColor) colour the status-bar area like the open page, ~18% darker in light / 10% lighter in dark.
+
+## Oct 31 2026 - published
+- navbar_block.html (after drawer in _blk): bottom bar Home / Roadmap (coming soon) / BMI calculator / Admin Experience (coming soon) / Social (copy-link buttons: WhatsApp channel + group, TikTok @journeytopma, Instagram = coming soon until the user sends the link). Hidden during a test. Back closes its page (window.__nbBack, called from backnav). land_block exposes window.__landHome.
+- Credit footer hidden on all pages (body>footer{display:none}).
+- Brand logos are inline SVG (the Font Awesome brands font is not shipped).

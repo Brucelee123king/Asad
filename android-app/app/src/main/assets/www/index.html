@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head><script>/*SHELLUPD*/(function(){var V=202610301628,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
+<head><script>/*SHELLUPD*/(function(){var V=202610310021,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
 try{var sv=+L.getItem('shell_v')||0,h=L.getItem('shell_html'),t=+L.getItem('shell_try')||0;
 if(h&&sv>V&&!window.__shellW){if(t>=2){L.removeItem('shell_html');L.removeItem('shell_v');L.removeItem('shell_try')}
 else{L.setItem('shell_try',String(t+1));window.__shellW=1;document.open();document.write(h);document.close();return}}}catch(e){}
@@ -1612,6 +1612,7 @@ html.dark #backBtn{background:rgba(15,23,42,.85);color:#e0e7ff;border-color:rgba
   function performBack(){
     if(window.__aiBackHook&&window.__aiBackHook())return;
     if(window.__drawerBack&&window.__drawerBack()){sync();return}
+    if(window.__nbBack&&window.__nbBack()){sync();return}
     if(window.__landBack&&window.__landBack()){sync();window.scrollTo(0,0);return}
     if(vis('view-home')||vis('view-quiz')||vis('view-results')){
       if(vis('view-quiz')&&typeof quizActive!=='undefined'&&quizActive){
@@ -1722,7 +1723,7 @@ html.pmaon #landBack{display:inline-flex}
   bk.addEventListener('click',function(){if(history.state&&history.state.n)history.back();else go('home')});
   /* phone Back button / header Back: from the categories or a 'coming soon' page go back to the main page */
   window.__landBack=function(){if(atMenu()&&ST!=='home'){go('home');return true}return false};
-  window.__landAtHome=function(){return ST==='home'};
+  window.__landAtHome=function(){return ST==='home'};window.__landHome=function(){go('home')};
   setInterval(show,400);
   go('home');
 }
@@ -1973,6 +1974,119 @@ var tries=0;(function wait(){if(document.querySelector('header>div>div')&&docume
   window.__topSync=function(){upd();d.classList.toggle('ovl',!!document.querySelector('#drawer:not([data-gone]),#pfPage:not([data-gone])'))};
   new MutationObserver(function(){upd()}).observe(d,{attributes:true,attributeFilter:['class']});
   var t=0;(function w(){if(document.body){upd()}else if(t++<100)setTimeout(w,50)})();
+})();
+</script>
+<style>
+/* no credit footer under any page */
+body>footer{display:none!important}
+/* bottom navigation bar: Home, PMA Roadmap, BMI Calculator, Admin Experience, Social; a light moves over the chosen icon */
+#nbBar{--nb-bg:#fdfbf5;--nb-ic:#9a8b6a;--nb-bd:#e7dfcc;position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));height:68px;border-radius:24px;background:var(--nb-bg);border:1px solid var(--nb-bd);box-shadow:0 14px 34px rgba(0,0,0,.22);z-index:2147482990;display:none;overflow:hidden;font-family:'Plus Jakarta Sans',system-ui,sans-serif;max-width:560px;margin:0 auto}
+html.dark #nbBar{--nb-bg:#121212;--nb-ic:#8b8b8b;--nb-bd:#232323;box-shadow:0 14px 34px rgba(0,0,0,.6)}
+html.acok #nbBar{display:flex}html.nbhide #nbBar{display:none!important}
+html.acok:not(.nbhide) body{padding-bottom:calc(92px + env(safe-area-inset-bottom,0px))}
+#nbBar button{flex:1;position:relative;z-index:1;border:0;background:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:var(--nb-ic);font:700 10.5px 'Plus Jakarta Sans',system-ui,sans-serif;cursor:pointer;-webkit-tap-highlight-color:transparent;padding:0}
+#nbBar button i{font-size:20px;transition:color .3s,text-shadow .3s,transform .3s}
+#nbBar button.on{color:var(--c)}#nbBar button.on i{color:var(--c);transform:translateY(-1px);text-shadow:0 0 12px var(--c),0 0 26px var(--c)}
+#nbLight{position:absolute;top:0;height:4px;width:44px;border-radius:0 0 4px 4px;background:var(--c,#d4af37);box-shadow:0 0 12px var(--c,#d4af37);transition:left .32s cubic-bezier(.22,.8,.24,1),background .32s;z-index:0}
+#nbLight:before{content:'';position:absolute;top:4px;left:-8px;right:-8px;height:52px;background:linear-gradient(to bottom,var(--c,#d4af37) -60%,transparent 90%);opacity:.32;clip-path:polygon(28% 0,72% 0,100% 100%,0 100%)}
+html.lite #nbLight,html.lite #nbBar button i{transition-duration:.32s!important}
+/* pages opened from the bar: between the header and the bar */
+#nbPage{--pbg:#fbf8f0;--ptx:#2b2416;--pmu:#8a7a5a;--pln:#e1d8c4;--pcd:#fffdf8;position:fixed;left:0;right:0;bottom:0;z-index:2147482980;background:var(--pbg);color:var(--ptx);overflow-y:auto;font-family:'Plus Jakarta Sans',system-ui,sans-serif;opacity:0;transform:translateY(14px);transition:opacity .28s ease,transform .28s ease}
+#nbPage.open{opacity:1;transform:none}html.lite #nbPage{transition-duration:.28s!important}
+html.dark #nbPage{--pbg:#1b1814;--ptx:#f3eee2;--pmu:#b9ab8c;--pln:#3d362c;--pcd:#24201b}
+#nbPage .in{max-width:560px;margin:0 auto;padding:22px 18px calc(110px + env(safe-area-inset-bottom,0px))}
+#nbPage h2{font-size:24px;font-weight:800;margin:4px 0 6px}#nbPage .sub{color:var(--pmu);font-size:14.5px;margin:0 0 18px;line-height:1.5}
+#nbPage .soon{margin-top:20px;text-align:center;padding:40px 22px;border:1px solid var(--pln);border-radius:24px;background:var(--pcd)}
+#nbPage .soon .ic{width:84px;height:84px;border-radius:26px;margin:0 auto 18px;display:flex;align-items:center;justify-content:center;font-size:36px;color:#fff;box-shadow:0 14px 30px rgba(0,0,0,.18)}
+#nbPage .soon h3{font-size:22px;font-weight:800;margin:0 0 8px}#nbPage .soon p{color:var(--pmu);margin:0 0 16px;line-height:1.55}
+#nbPage .pill{display:inline-block;padding:8px 16px;border-radius:999px;background:linear-gradient(120deg,#b8860b,#e9c75a 50%,#c99a17);color:#2b1d02;font-weight:800;font-size:13px;letter-spacing:.08em}
+#nbPage .card{border:1px solid var(--pln);border-radius:20px;background:var(--pcd);padding:16px;margin-bottom:14px}
+#nbPage .seg{display:flex;gap:8px}#nbPage .seg button{flex:1;height:50px;border-radius:14px;border:1.5px solid var(--pln);background:none;color:var(--ptx);font:700 15px 'Plus Jakarta Sans',system-ui,sans-serif;cursor:pointer}
+#nbPage .seg button.on{border-color:#c99a17;background:rgba(201,154,23,.14);color:#a16207}html.dark #nbPage .seg button.on{color:#facc15}
+#nbPage label.l{display:block;font-size:13px;font-weight:700;color:var(--pmu);margin:14px 2px 6px}
+#nbPage .row{display:flex;gap:10px}#nbPage .row>*{flex:1}
+#nbPage input{width:100%;box-sizing:border-box;height:52px;border:1.5px solid var(--pln);border-radius:14px;background:transparent;color:var(--ptx);font:600 17px 'Plus Jakarta Sans',system-ui,sans-serif;padding:0 14px;outline:none}
+#nbPage input:focus{border-color:#c99a17}#nbPage .u{position:relative}#nbPage .u span{position:absolute;right:14px;top:16px;color:var(--pmu);font-size:13px;font-weight:700}
+#nbPage .go{width:100%;height:56px;border:0;border-radius:16px;margin-top:18px;background:linear-gradient(120deg,#b8860b,#e9c75a 50%,#c99a17);color:#2b1d02;font:800 17px 'Plus Jakarta Sans',system-ui,sans-serif;cursor:pointer;box-shadow:0 10px 24px rgba(184,134,11,.3)}
+#nbPage .err{color:#dc2626;font-weight:700;font-size:14px;min-height:20px;margin-top:10px;text-align:center}
+#nbPage .res{text-align:center}#nbPage .res .v{font-size:52px;font-weight:800;line-height:1.1}#nbPage .res .k{display:inline-block;margin-top:6px;padding:6px 14px;border-radius:999px;font-weight:800;color:#fff}
+#nbPage .gauge{position:relative;height:14px;border-radius:9px;margin:22px 4px 8px;background:linear-gradient(90deg,#60a5fa 0 18%,#22c55e 18% 50%,#f59e0b 50% 72%,#ef4444 72% 100%)}
+#nbPage .gauge b{position:absolute;top:-6px;width:6px;height:26px;border-radius:4px;background:var(--ptx);box-shadow:0 0 0 3px var(--pcd);transform:translateX(-50%)}
+#nbPage .gl{display:flex;justify-content:space-between;font-size:11px;color:var(--pmu);font-weight:700;margin:0 2px}
+#nbPage .tip{margin-top:14px;font-size:14.5px;line-height:1.6}#nbPage .tip div{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--pln)}#nbPage .tip div b{text-align:right}
+#nbPage .note{font-size:12.5px;color:var(--pmu);margin-top:12px;line-height:1.5}
+#nbPage .soc{display:flex;align-items:center;gap:14px;padding:14px;border:1px solid var(--pln);border-radius:18px;background:var(--pcd);margin-bottom:12px}
+#nbPage .soc .lg{width:52px;height:52px;border-radius:16px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:26px;flex:0 0 auto}
+#nbPage .soc .t{min-width:0;flex:1}#nbPage .soc .t b{display:block;font-size:16px}#nbPage .soc .t small{color:var(--pmu);font-size:12.5px}
+#nbPage .soc button{border:0;border-radius:12px;padding:10px 14px;font:800 13px 'Plus Jakarta Sans',system-ui,sans-serif;background:linear-gradient(120deg,#b8860b,#e9c75a 50%,#c99a17);color:#2b1d02;cursor:pointer;white-space:nowrap}
+#nbPage .soc button.ok{background:#16a34a;color:#fff}
+#nbPage .how{font-size:13.5px;color:var(--pmu);line-height:1.55;margin:4px 2px 16px}
+</style>
+<script>
+(function(){
+  var TABS=[['home','fa-house','Home','#d4a017'],['road','fa-route','Roadmap','#22b8cf'],['bmi','fa-heart-pulse','BMI','#22c55e'],['adm','fa-user-shield','Admin Exp.','#a855f7'],['soc','fa-share-nodes','Social','#ec4899']];
+  /* social links: TikTok and Instagram are filled in when the admin sends them */
+  var WAI='<svg viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"><path d="M6 26l1.6-5.2A11 11 0 1 1 11.4 24.6z"/><path fill="#fff" stroke="none" d="M12.2 9.8c.4-.1.8 0 1 .4l1 2.4c.1.3 0 .7-.2.9l-.8.9c.9 1.8 2.3 3.2 4.1 4.1l.9-.8c.3-.2.6-.3.9-.2l2.4 1c.4.2.5.6.4 1l-.4 1.5c-.2.6-.8 1-1.4 1-5.4-.3-9.7-4.6-10-10 0-.6.4-1.2 1-1.4z"/></svg>';
+  var TTI='<svg viewBox="0 0 32 32" width="28" height="28"><path fill="#25f4ee" d="M14.5 4.5h4.3c.3 3 2.3 5 5.2 5.3v4.2c-1.9 0-3.6-.6-5.1-1.6v7.4a7 7 0 1 1-7-7c.4 0 .8 0 1.2.1v4.3a2.8 2.8 0 1 0 1.4 2.5z" transform="translate(-1 -1)"/><path fill="#fe2c55" d="M14.5 4.5h4.3c.3 3 2.3 5 5.2 5.3v4.2c-1.9 0-3.6-.6-5.1-1.6v7.4a7 7 0 1 1-7-7c.4 0 .8 0 1.2.1v4.3a2.8 2.8 0 1 0 1.4 2.5z" transform="translate(1 1)"/><path fill="#fff" d="M14.5 4.5h4.3c.3 3 2.3 5 5.2 5.3v4.2c-1.9 0-3.6-.6-5.1-1.6v7.4a7 7 0 1 1-7-7c.4 0 .8 0 1.2.1v4.3a2.8 2.8 0 1 0 1.4 2.5z"/></svg>';
+  var IGI='<svg viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="#fff" stroke-width="2.4"><rect x="5" y="5" width="22" height="22" rx="7"/><circle cx="16" cy="16" r="5.2"/><circle cx="22.6" cy="9.4" r="1.4" fill="#fff" stroke="none"/></svg>';
+  /* social links: TikTok and Instagram are filled in when the admin sends them */
+  var SOC=[['WhatsApp Channel',WAI,'#25d366','https://whatsapp.com/channel/0029Vb9RIMgF6smxoGj3tb1U'],['WhatsApp Group',WAI,'#128c7e','https://chat.whatsapp.com/E6flhu5fGhmCfNjQTEhT6H'],
+           ['TikTok',TTI,'#111111',''],['Instagram',IGI,'linear-gradient(45deg,#f58529,#dd2a7b 50%,#8134af)','']];
+  var bar,light,pg=null,cur='home',d=document.documentElement;
+  function esc(s){return String(s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function build(){bar=document.createElement('nav');bar.id='nbBar';bar.setAttribute('aria-label','Main');
+    bar.innerHTML='<div id="nbLight"></div>'+TABS.map(function(t){return '<button type="button" data-t="'+t[0]+'" style="--c:'+t[3]+'" aria-label="'+t[2]+'"><i class="fa-solid '+t[1]+'"></i>'+t[2]+'</button>'}).join('');
+    document.body.appendChild(bar);light=document.getElementById('nbLight');
+    bar.addEventListener('click',function(e){var b=e.target.closest('[data-t]');if(b)tap(b.getAttribute('data-t'))});
+    window.addEventListener('resize',mark);mark()}
+  function mark(){if(!bar)return;var b=bar.querySelector('[data-t="'+cur+'"]'),c=TABS.filter(function(t){return t[0]===cur})[0][3];
+    [].forEach.call(bar.querySelectorAll('button'),function(x){x.classList.toggle('on',x===b)});
+    if(b&&b.offsetWidth){light.style.left=(b.offsetLeft+b.offsetWidth/2-22)+'px';light.style.setProperty('--c',c)}}
+  function vis(id){var e=document.getElementById(id);return !!e&&!e.classList.contains('hidden')}
+  function tap(k){if(k==='home'){pgClose();goHome()}else{if(cur===k&&pg)return;open(k)}cur=k;mark()}
+  function goHome(){try{if(vis('view-quiz')&&typeof quizActive!=='undefined'&&quizActive)return;if(vis('view-home')||vis('view-results')||vis('view-quiz'))showSelect();if(typeof curSec!=='undefined'&&curSec!==null&&typeof openSec==='function')openSec(null);window.__landHome&&window.__landHome();window.scrollTo(0,0);window.__backSync&&window.__backSync()}catch(e){}}
+  function top(){var h=document.querySelector('header');return h?Math.max(0,h.getBoundingClientRect().bottom):0}
+  function open(k){var first=!pg;if(!pg){pg=document.createElement('div');pg.id='nbPage';document.body.appendChild(pg)}
+    pg.style.top=top()+'px';pg.innerHTML='<div class="in">'+(k==='road'?soon('fa-route','linear-gradient(135deg,#0891b2,#22d3ee)','PMA Roadmap','A step by step plan for the PMA Long Course: what to study, when to apply, the initial test, the interview and ISSB.'):
+      k==='adm'?soon('fa-user-shield','linear-gradient(135deg,#7c3aed,#c084fc)','Admin Experience','The admin\'s own PMA journey, tips and lessons.'):k==='bmi'?bmi():social())+'</div>';pg.scrollTop=0;
+    if(first){void pg.offsetWidth;requestAnimationFrame(function(){if(pg)pg.classList.add('open')});try{history.pushState({n:1,nb:1},'')}catch(e){}}
+    if(k==='bmi')bmiWire();if(k==='soc')socWire()}
+  function pgClose(){if(!pg)return;var p=pg;pg=null;p.classList.remove('open');p.style.pointerEvents='none';setTimeout(function(){p.remove()},280)}
+  window.__nbBack=function(){if(pg){pgClose();cur='home';mark();return true}return false};
+  function soon(ic,bg,t,s){return '<div class="soon"><div class="ic" style="background:'+bg+'"><i class="fa-solid '+ic+'"></i></div><h3>'+t+'</h3><p>'+s+'</p><span class="pill">COMING SOON</span></div>'}
+  /* BMI = weight (kg) / height (m)^2; adult groups (WHO): under 18.5 underweight, 18.5-24.9 normal, 25-29.9 overweight, 30+ obese */
+  function bmi(){return '<h2>BMI Calculator</h2><p class="sub">Check your Body Mass Index for fitness and medical preparation.</p><div class="card">'+
+    '<label class="l">Gender</label><div class="seg" id="bmG"><button type="button" class="on" data-v="m">Male</button><button type="button" data-v="f">Female</button></div>'+
+    '<label class="l" for="bmA">Age</label><div class="u"><input id="bmA" inputmode="numeric" maxlength="2" placeholder="20"><span>years</span></div>'+
+    '<label class="l">Height</label><div class="row"><div class="u"><input id="bmF" inputmode="numeric" maxlength="1" placeholder="5"><span>feet</span></div><div class="u"><input id="bmI" inputmode="decimal" maxlength="4" placeholder="8"><span>inches</span></div></div>'+
+    '<label class="l" for="bmW">Weight</label><div class="u"><input id="bmW" inputmode="decimal" maxlength="5" placeholder="65"><span>kg</span></div>'+
+    '<button type="button" class="go" id="bmGo">Calculate BMI</button><div class="err" id="bmE"></div></div><div id="bmR"></div>'}
+  function num(id){var v=parseFloat((document.getElementById(id).value||'').replace(',','.'));return isNaN(v)?null:v}
+  function bmiWire(){var g=document.getElementById('bmG');g.onclick=function(e){var b=e.target.closest('[data-v]');if(!b)return;[].forEach.call(g.children,function(x){x.classList.toggle('on',x===b)})};
+    ['bmA','bmF'].forEach(function(i){document.getElementById(i).oninput=function(){this.value=this.value.replace(/\D/g,'')}});
+    document.getElementById('bmGo').onclick=function(){var a=num('bmA'),f=num('bmF'),i=num('bmI')||0,w=num('bmW'),E=document.getElementById('bmE');E.textContent='';
+      if(!a||a<10||a>80){E.textContent='Write your age (10 to 80).';return}if(!f||f<3||f>7||i<0||i>=12){E.textContent='Write your height, like 5 feet 8 inches.';return}if(!w||w<25||w>200){E.textContent='Write your weight in kg (25 to 200).';return}
+      var m=(f*12+i)*0.0254,b=w/(m*m),k=b<18.5?['Underweight','#3b82f6']:b<25?['Normal','#16a34a']:b<30?['Overweight','#f59e0b']:['Obese','#ef4444'];
+      var lo=18.5*m*m,hi=24.9*m*m,pos=Math.max(2,Math.min(98,(b-10)/30*100)),cm=Math.round(m*100);
+      var adv=b<18.5?'Gain '+(lo-w).toFixed(1)+' kg to reach the normal range. Eat healthy and do strength training.':b<25?'Your weight is healthy for your height. Keep running and eating well.':'Lose '+(w-hi).toFixed(1)+' kg to reach the normal range. Run daily and eat less sugar and oily food.';
+      document.getElementById('bmR').innerHTML='<div class="card res"><div style="color:var(--pmu);font-weight:700;font-size:13px">YOUR BMI</div><div class="v">'+b.toFixed(1)+'</div><span class="k" style="background:'+k[1]+'">'+k[0]+'</span>'+
+        '<div class="gauge"><b style="left:'+pos+'%"></b></div><div class="gl"><span>10</span><span>18.5</span><span>25</span><span>30</span><span>40</span></div>'+
+        '<div class="tip"><div><span>Height</span><b>'+f+' ft '+i+' in ('+cm+' cm)</b></div><div><span>Healthy weight for you</span><b>'+lo.toFixed(1)+' to '+hi.toFixed(1)+' kg</b></div><div style="border:0;display:block;text-align:left">'+adv+'</div></div>'+
+        (a<18?'<div class="note">You are under 18: BMI for teenagers is only a rough guide.</div>':'')+'<div class="note">BMI does not show muscle or fat exactly. The army medical board decides final fitness.</div></div>';
+      setTimeout(function(){var r=document.getElementById('bmR');if(r&&pg)pg.scrollTo({top:r.offsetTop-10,behavior:'smooth'})},50)}}
+  function social(){return '<h2>Follow us</h2><p class="sub">Join PMA Preparation on social media for daily updates, tips and new tests.</p>'+
+    '<div class="how">Tap <b>Copy link</b>, then paste it in Chrome or WhatsApp to open it.</div>'+
+    SOC.map(function(s,i){return '<div class="soc"><div class="lg" style="background:'+s[2]+'">'+s[1]+'</div><div class="t"><b>'+s[0]+'</b><small>'+(s[3]?'PMA Preparation':'Coming soon')+'</small></div>'+(s[3]?'<button type="button" data-i="'+i+'">Copy link</button>':'')+'</div>'}).join('')}
+  function socWire(){pg.querySelector('.in').onclick=function(e){var b=e.target.closest('[data-i]');if(!b)return;var u=SOC[+b.getAttribute('data-i')][3];
+    function done(){b.textContent='Copied ✓';b.classList.add('ok');setTimeout(function(){b.textContent='Copy link';b.classList.remove('ok')},2000)}
+    try{if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(u).then(done,function(){fb(u);done()});return}}catch(x){}fb(u);done()}}
+  function fb(u){try{var t=document.createElement('textarea');t.value=u;t.style.cssText='position:fixed;opacity:0';document.body.appendChild(t);t.select();document.execCommand('copy');t.remove()}catch(e){}}
+  /* hide the bar while a test is running */
+  function quiz(){d.classList.toggle('nbhide',vis('view-quiz'))}
+  var tries=0;(function wait(){if(document.body&&document.querySelector('header')&&document.getElementById('view-quiz')){build();quiz();
+      new MutationObserver(quiz).observe(document.getElementById('view-quiz'),{attributes:true,attributeFilter:['class']});
+      new MutationObserver(function(){setTimeout(mark,50)}).observe(d,{attributes:true,attributeFilter:['class']})}
+    else if(tries++<200)setTimeout(wait,50)})();
 })();
 </script>
 <style>
