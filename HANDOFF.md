@@ -337,3 +337,9 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - navbar_block.html (after drawer in _blk): bottom bar Home / Roadmap (coming soon) / BMI calculator / Admin Experience (coming soon) / Social (copy-link buttons: WhatsApp channel + group, TikTok @journeytopma, Instagram = coming soon until the user sends the link). Hidden during a test. Back closes its page (window.__nbBack, called from backnav). land_block exposes window.__landHome.
 - Credit footer hidden on all pages (body>footer{display:none}).
 - Brand logos are inline SVG (the Font Awesome brands font is not shipped).
+
+## Oct 31 2026 (2) - published
+- Test grids (#view-select [id$="-grid"]) show 2 tests per row; card text made smaller.
+- Profile field labels sit above the border (z-index).
+- Bottom bar docked at the very bottom (round top corners only); main gets padding so nothing hides behind it; #nbPage ends above the bar.
+- Phone navigation strip colour (nav_night #0F172A / nav_day #F1F5F9) is fixed in the APK; cannot change without a new APK.
