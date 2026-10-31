@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head><script>/*SHELLUPD*/(function(){var V=202610311034,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
+<head><script>/*SHELLUPD*/(function(){var V=202610311134,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
 try{var sv=+L.getItem('shell_v')||0,h=L.getItem('shell_html'),t=+L.getItem('shell_try')||0;
 if(h&&sv>V&&!window.__shellW){if(t>=2){L.removeItem('shell_html');L.removeItem('shell_v');L.removeItem('shell_try')}
 else{L.setItem('shell_try',String(t+1));window.__shellW=1;document.open();document.write(h);document.close();return}}}catch(e){}
@@ -1699,7 +1699,7 @@ html.dark body.bg-slate-50.font-sans>footer.bg-white{background:#0b0b0e!importan
 .lcard .lockov span{width:96px;height:96px;display:flex;border-radius:50%;filter:drop-shadow(0 10px 18px rgba(0,0,0,.45))}.lcard .lockov svg{width:100%;height:100%}
 .lcard.locked>*:not(.lockov){filter:blur(1.2px);opacity:.75}
 .lcard.locked .tag,.lcard.locked .go{visibility:hidden}
-#landMsg{position:fixed;left:50%;bottom:calc(90px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);max-width:90vw;background:#0f172a;color:#fff;font-weight:700;font-size:14px;padding:12px 18px;border-radius:14px;box-shadow:0 10px 24px rgba(0,0,0,.35);z-index:9999;text-align:center}
+#landMsg .lmgo{display:block;margin-top:6px;color:#fde68a;font-size:12.5px;text-decoration:underline}#landMsg{cursor:pointer;position:fixed;left:50%;bottom:calc(90px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);max-width:90vw;background:#0f172a;color:#fff;font-weight:700;font-size:14px;padding:12px 18px;border-radius:14px;box-shadow:0 10px 24px rgba(0,0,0,.35);z-index:9999;text-align:center}
 #landBack{display:none}
 html.pmaon #landBack{display:inline-flex}
 </style>
@@ -1724,7 +1724,7 @@ html.pmaon #landBack{display:inline-flex}
   /* who may open what: Initial PMA = any of its categories given by the admin; Interview / ISSB = their own tick */
   function isOpen(k){if(window.__acAdmin)return true;if(k==='pma'){try{return Object.keys(window.__lkAllowed?window.__lkAllowed():{}).length>0}catch(e){return false}}return (window.__acCats||[]).indexOf(k)>-1}
   function locks(){L.querySelectorAll('.lcard[data-go]').forEach(function(b){var lk=!isOpen(b.getAttribute('data-go'));b.classList.toggle('locked',lk);b.setAttribute('aria-label',lk?'Locked: ask the admin to enable it':'')})}
-  var msgT=null;function lockMsg(){var m=document.getElementById('landMsg');if(!m){m=document.createElement('div');m.id='landMsg';document.body.appendChild(m)}m.textContent='Locked. This preparation is not enabled for your account. Ask the admin to enable it.';m.hidden=false;clearTimeout(msgT);msgT=setTimeout(function(){m.hidden=true},3500)}
+  var msgT=null;function lockMsg(){var m=document.getElementById('landMsg');if(!m){m=document.createElement('div');m.id='landMsg';document.body.appendChild(m)}m.innerHTML='<b>Locked.</b> To get access, message the admin on <b>Instagram @journeytopma</b>.<span class="lmgo">Tap here to open Social</span>';m.hidden=false;clearTimeout(msgT);msgT=setTimeout(function(){m.hidden=true},5000);if(!m.__w){m.__w=1;m.onclick=function(e){e.stopPropagation();m.hidden=true;try{window.__nbTap&&window.__nbTap('soc')}catch(x){}};document.addEventListener('pointerdown',function(e){if(!m.hidden&&!m.contains(e.target)){m.hidden=true;clearTimeout(msgT)}},true);window.addEventListener('scroll',function(){if(!m.hidden){m.hidden=true;clearTimeout(msgT)}},{passive:true})}}
   function atMenu(){return !v.classList.contains('hidden')&&typeof curSec!=='undefined'&&curSec===null}
   function show(){if(ST==='home')locks();document.documentElement.classList.toggle('landon',ST!=='pma');document.documentElement.classList.toggle('pmaon',ST==='pma'&&atMenu())}
   function go(k,push){if(k!=='home'&&!isOpen(k)){lockMsg();k='home'}ST=k;if(k==='home'){home();locks()}else if(k!=='pma')soon(k);show();try{window.__backSync&&window.__backSync()}catch(e){}if(push)try{history.pushState({n:1},'')}catch(e){}window.scrollTo(0,0)}
@@ -2181,7 +2181,7 @@ html.dark #nbPage{--pbg:#1b1814;--ptx:#f3eee2;--pmu:#b9ab8c;--pln:#3d362c;--pcd:
 #nbPage .soc .t{min-width:0;flex:1}#nbPage .soc .t b{display:block;font-size:16px}#nbPage .soc .t small{color:var(--pmu);font-size:12.5px}
 #nbPage .soc button{border:0;border-radius:12px;padding:10px 14px;font:800 13px 'Plus Jakarta Sans',system-ui,sans-serif;background:linear-gradient(120deg,#b8860b,#e9c75a 50%,#c99a17);color:#2b1d02;cursor:pointer;white-space:nowrap}
 #nbPage .soc button.ok{background:#16a34a;color:#fff}
-#nbPage .how{font-size:13.5px;color:var(--pmu);line-height:1.55;margin:4px 2px 16px}
+#nbPage .adm{display:flex;gap:12px;align-items:center;border:1.5px solid #dd2a7b;border-radius:16px;padding:12px 14px;margin:0 0 12px;font-size:14.5px;line-height:1.5;background:rgba(221,42,123,.07)}#nbPage .adm i{font-size:26px;color:#dd2a7b}#nbPage .how{font-size:13.5px;color:var(--pmu);line-height:1.55;margin:4px 2px 16px}
 </style>
 <script>
 (function(){
@@ -2191,8 +2191,7 @@ html.dark #nbPage{--pbg:#1b1814;--ptx:#f3eee2;--pmu:#b9ab8c;--pln:#3d362c;--pcd:
   var TTI='<svg viewBox="0 0 32 32" width="28" height="28"><path fill="#25f4ee" d="M14.5 4.5h4.3c.3 3 2.3 5 5.2 5.3v4.2c-1.9 0-3.6-.6-5.1-1.6v7.4a7 7 0 1 1-7-7c.4 0 .8 0 1.2.1v4.3a2.8 2.8 0 1 0 1.4 2.5z" transform="translate(-1 -1)"/><path fill="#fe2c55" d="M14.5 4.5h4.3c.3 3 2.3 5 5.2 5.3v4.2c-1.9 0-3.6-.6-5.1-1.6v7.4a7 7 0 1 1-7-7c.4 0 .8 0 1.2.1v4.3a2.8 2.8 0 1 0 1.4 2.5z" transform="translate(1 1)"/><path fill="#fff" d="M14.5 4.5h4.3c.3 3 2.3 5 5.2 5.3v4.2c-1.9 0-3.6-.6-5.1-1.6v7.4a7 7 0 1 1-7-7c.4 0 .8 0 1.2.1v4.3a2.8 2.8 0 1 0 1.4 2.5z"/></svg>';
   var IGI='<svg viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="#fff" stroke-width="2.4"><rect x="5" y="5" width="22" height="22" rx="7"/><circle cx="16" cy="16" r="5.2"/><circle cx="22.6" cy="9.4" r="1.4" fill="#fff" stroke="none"/></svg>';
   /* social links: TikTok and Instagram are filled in when the admin sends them */
-  var SOC=[['WhatsApp Channel',WAI,'#25d366','https://whatsapp.com/channel/0029Vb9RIMgF6smxoGj3tb1U'],['WhatsApp Community',WAI,'#128c7e','https://chat.whatsapp.com/EAqy7cAU5WEFMG7t2zwmlk'],
-           ['TikTok',TTI,'#111111','https://www.tiktok.com/@journeytopma','@journeytopma'],['Instagram',IGI,'linear-gradient(45deg,#f58529,#dd2a7b 50%,#8134af)','']];
+  var SOC=[['Instagram',IGI,'linear-gradient(45deg,#f58529,#dd2a7b 50%,#8134af)','https://www.instagram.com/journeytopma','@journeytopma · message the admin here'],['WhatsApp Channel',WAI,'#25d366','https://whatsapp.com/channel/0029Vb9RIMgF6smxoGj3tb1U'],['WhatsApp Community',WAI,'#128c7e','https://chat.whatsapp.com/EAqy7cAU5WEFMG7t2zwmlk'],['TikTok',TTI,'#111111','https://www.tiktok.com/@journeytopma','@journeytopma']];
   var bar,light,pg=null,cur='home',d=document.documentElement;
   function esc(s){return String(s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
   function build(){bar=document.createElement('nav');bar.id='nbBar';bar.setAttribute('aria-label','Main');
@@ -2287,6 +2286,7 @@ html.dark #nbPage{--pbg:#1b1814;--ptx:#f3eee2;--pmu:#b9ab8c;--pln:#3d362c;--pcd:
     if(first){void pg.offsetWidth;requestAnimationFrame(function(){if(pg)pg.classList.add('open')});try{history.pushState({n:1,nb:1},'')}catch(e){}}
     if(k==='bmi')bmiWire();if(k==='soc')socWire()}
   function pgClose(){rmShut(true);rmPkShut(true);d.classList.remove('nbopen');if(!pg)return;var p=pg;pg=null;p.classList.remove('open');p.style.pointerEvents='none';setTimeout(function(){p.remove()},280)}
+  window.__nbTap=function(k){tap(k)};
   window.__nbBack=function(){if(rpk){rmPkShut();return true}if(rsh){rmShut();return true}if(pg){pgClose();cur='home';mark();return true}return false};
   function soon(ic,bg,t,s){return '<div class="soon"><div class="ic" style="background:'+bg+'"><i class="fa-solid '+ic+'"></i></div><h3>'+t+'</h3><p>'+s+'</p><span class="pill">COMING SOON</span></div>'}
   /* BMI = weight (kg) / height (m)^2; adult groups (WHO): under 18.5 underweight, 18.5-24.9 normal, 25-29.9 overweight, 30+ obese */
@@ -2310,7 +2310,7 @@ html.dark #nbPage{--pbg:#1b1814;--ptx:#f3eee2;--pmu:#b9ab8c;--pln:#3d362c;--pcd:
         (a<18?'<div class="note">You are under 18: BMI for teenagers is only a rough guide.</div>':'')+'<div class="note">BMI does not show muscle or fat exactly. The army medical board decides final fitness.</div></div>';
       setTimeout(function(){var r=document.getElementById('bmR');if(r&&pg)pg.scrollTo({top:r.offsetTop-10,behavior:'smooth'})},50)}}
   function social(){return '<h2>Follow us</h2><p class="sub">Join PMA Preparation on social media for daily updates, tips and new tests.</p>'+
-    '<div class="how">Tap <b>Copy link</b>, then paste it in Chrome or WhatsApp to open it.</div>'+
+    '<div class="adm"><i class="fa-brands fa-instagram"></i><span>To get access or ask anything, <b>message the admin on Instagram @journeytopma</b>.</span></div><div class="how">Tap <b>Copy link</b>, then open Chrome and paste it in the address bar (or paste it in WhatsApp and tap it).</div>'+
     SOC.map(function(s,i){return '<div class="soc"><div class="lg" style="background:'+s[2]+'">'+s[1]+'</div><div class="t"><b>'+s[0]+'</b><small>'+(s[3]?(s[4]||'PMA Preparation'):'Coming soon')+'</small></div>'+(s[3]?'<button type="button" data-i="'+i+'">Copy link</button>':'')+'</div>'}).join('')}
   function socWire(){pg.querySelector('.in').onclick=function(e){var b=e.target.closest('[data-i]');if(!b)return;var u=SOC[+b.getAttribute('data-i')][3];
     function done(){b.textContent='Copied ✓';b.classList.add('ok');setTimeout(function(){b.textContent='Copy link';b.classList.remove('ok')},2000)}
