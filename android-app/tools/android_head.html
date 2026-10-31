@@ -1,0 +1,84 @@
+<style id="android-compat">
+/* Android app: no double-tap zoom delay, no accidental text-size jumps, no overscroll glow/bounce chaining */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;overscroll-behavior-y:none}
+*{touch-action:manipulation}
+body{-webkit-touch-callout:none}
+button,[role="button"],.option-card,a{-webkit-user-select:none;user-select:none}
+/* low-end phones: same layout, but no continuous decorative animation and no blur/backdrop filters (smoother, cooler, saves battery) */
+html.lite *,html.lite *::before,html.lite *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+/* layout fixes found by the audit: dashboard tiles were hit by the floating-icon rule (.st = 84px), header padding on 320px screens */
+.dash .st{width:auto;height:auto;filter:none}
+@media (max-width:360px){header>div{padding-right:12px!important}}
+/* long review lists: only lay out/paint cards that are on screen */
+#review-list-container>div{content-visibility:auto;contain-intrinsic-size:auto 260px}
+html body #themeBtn{z-index:40!important}
+#review-section{scroll-margin-top:calc(var(--sat) + 70px)}
+#header-timer-container{white-space:nowrap}
+@media (max-width:380px){header h1{display:none}#hdrUser{display:none!important}}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.32s;animation-timing-function:ease-in-out;mix-blend-mode:normal}
+/* page is drawn behind the status bar (Android 15+): --sat = status-bar height, set by the app; 0 elsewhere */
+html{--sat:0px}
+header{padding-top:var(--sat)!important}
+html body #themeBtn{top:calc(12px + var(--sat))!important}
+html body #auth .brand{top:calc(16px + var(--sat))!important}
+html body #auth .side{padding-top:calc(64px + var(--sat))!important}
+#srchModal{padding-top:calc(16px + var(--sat))!important}
+</style>
+<script>
+(function () {
+  var d = document.documentElement;
+  try {
+    var mem = navigator.deviceMemory || 8, cores = navigator.hardwareConcurrency || 8;
+    d.classList.add('lite'); /* the app always uses the light, smooth look (no blur / continuous animation) */
+  } catch (e) {}
+  /* tell the native shell the night theme + the colour at the top of the current page, so the status bar matches every page */
+  function hex(n) { n = Math.max(0, Math.min(255, Math.round(n))); return (n < 16 ? '0' : '') + n.toString(16); }
+  function rgba(s) { var m = /rgba?\(([^)]+)\)/.exec(s || ''); if (!m) return null; var p = m[1].split(',').map(parseFloat); return { r: p[0], g: p[1], b: p[2], a: p.length > 3 ? p[3] : 1 }; }
+  function topColor() {
+    try { if (window.__topShade) { var x = window.__topShade(); if (x) return x; } } catch (e) {}
+    var dark = d.classList.contains('dark');
+    var auth = document.getElementById('auth');
+    if (auth && !auth.classList.contains('hide') && getComputedStyle(auth).display !== 'none' && getComputedStyle(auth).visibility !== 'hidden') return dark ? '#0e0b30' : '#e4dcfc';
+    return dark ? '#0e0b2a' : '#fdfdfe';   /* colour of the app header (white-ish by day, deep indigo at night) */
+  }
+  var lastMsg = '';
+  function post(m) { if (m === lastMsg) return; lastMsg = m; try { if (window.AsadApp && AsadApp.postMessage) AsadApp.postMessage(m); } catch (e) {} }
+  var lastTop = '', lastNight = '';
+  function sync() {
+    try {
+      var n = d.classList.contains('dark') ? 'night' : 'day', t = 'top:' + topColor();
+      if (n !== lastNight) { lastNight = n; try { AsadApp.postMessage(n); } catch (e) {} }
+      if (t !== lastTop) { lastTop = t; try { AsadApp.postMessage(t); } catch (e) {} }
+    } catch (e) {}
+  }
+  var timer = 0;
+  function soon() { if (!timer) timer = setTimeout(function () { timer = 0; sync(); }, 60); }
+
+  /* smooth day/night switch: the browser keeps a picture of the old screen and cross-fades it into the new theme
+     (View Transitions) - the screen never goes blank. If the phone's WebView is too old, the theme just switches at once. */
+  var busy = false;
+  function wrapTheme() {
+    var orig = window.toggleTheme;
+    if (!orig || orig.__smooth) return;
+    var fn = function () {
+      if (!document.startViewTransition || busy) { if (!busy) orig(); return; }
+      busy = true;
+      var vt;
+      try { vt = document.startViewTransition(function () { orig(); }); }
+      catch (e) { busy = false; orig(); return; }
+      var done = function () { busy = false; };
+      try { vt.finished.then(done, done); } catch (e) { done(); }
+      setTimeout(done, 1200);
+    };
+    fn.__smooth = true; window.toggleTheme = fn;
+  }
+  document.addEventListener('DOMContentLoaded', wrapTheme);
+  window.addEventListener('load', wrapTheme);
+  document.addEventListener('DOMContentLoaded', function () {
+    sync();
+    try { new MutationObserver(soon).observe(d, { attributes: true, attributeFilter: ['class'] }); } catch (e) {}
+    try { var a = document.getElementById('auth'); if (a) new MutationObserver(soon).observe(a, { attributes: true, attributeFilter: ['class', 'style'] }); } catch (e) {}
+    window.addEventListener('load', function () { sync(); setTimeout(sync, 400); });
+  });
+})();
+</script>

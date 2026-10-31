@@ -1,0 +1,28 @@
+{
+"remove": [
+"Who wrote the first Diwan",
+"Which is the largest dam in the world, and where",
+"Fill in the blank: I bought milk",
+"How many members does the National Assembly (Lower House)",
+"In which country was the Hindenburg Line",
+"Who was the first Chief of the Naval Staff of the Pakistan Navy after the title",
+"Fill in the blank with the correct preposition: He knocked"
+],
+"fix": {
+"How many votes in the 342-member National Assembly": {
+"question": "How many votes in the 336-member National Assembly are needed to pass a no-confidence motion against the Prime Minister?",
+"options": [
+"168",
+"169",
+"200",
+"228"
+],
+"correct": 1,
+"reason": "A no-confidence resolution needs a majority of the total membership of the House. Half of 336 is 168, so 169 votes are needed.",
+"rel": "Article 95 of the Constitution deals with the vote of no confidence against the Prime Minister. The National Assembly had 342 seats before 2018."
+},
+"How many seats did the National Assembly have under the original 1973 Constitution": {
+"rel": "The National Assembly now has 336 seats: 266 general seats, 60 reserved for women and 10 for non-Muslims."
+}
+}
+}

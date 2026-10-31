@@ -1,0 +1,27 @@
+MATCH = [(1,0),(2,7),(4,53),(6,3),(10,6),(13,32),(17,21),(18,55),(19,54),(27,242),(31,241),(33,129),(36,79)]
+V="Verbal: Maths & Reasoning"; E="Verbal: English"; M="Maths & Science"; P="Pakistan Studies"
+NEW = [
+(3,V,"If the 4th day of a month is Sunday, what day will the 25th be?","Sunday",["Monday","Tuesday","Wednesday"],"From the 4th to the 25th is 21 days, which is exactly 3 weeks, so the day of the week is the same: Sunday.",0),
+(7,V,"Out of 500 students, 360 are boys. What percentage are girls?","28%",["30%","32%","35%"],"Girls = 500 - 360 = 140. Percentage = (140 / 500) x 100 = 28%.",0),
+(8,M,"What is half of 1/8?","1/16",["1/4","1/8","1/2"],"Half of 1/8 = 1/2 x 1/8 = 1/16.",0),
+(9,V,"Which one is different from the rest: September, May, March, Tuesday?","Tuesday",["September","May","March"],"September, May and March are months of the year, while Tuesday is a day of the week.",0),
+(11,V,"Complete the series: 2, 6, 12, 20, 30, ?","42",["40","44","46"],"The differences are consecutive even numbers: +4, +6, +8, +10, then +12. So 30 + 12 = 42.",0),
+(12,V,"If the 1st day of a month is Monday, what day will the 23rd be?","Tuesday",["Monday","Wednesday","Thursday"],"The 1st, 8th, 15th and 22nd are Mondays, so the 23rd is a Tuesday.",0),
+(14,V,"The speed of an aircraft is 720 km/h. How much distance does it cover in 1 minute?","12 km",["10 km","14 km","15 km"],"1 hour = 60 minutes, so distance in 1 minute = 720 / 60 = 12 km.",0),
+(15,V,"A car covers 60 km in 40 minutes. What is its speed in km/h?","90 km/h",["80 km/h","100 km/h","120 km/h"],"60 km in 40 minutes means 30 km in 20 minutes, so in 60 minutes it covers 90 km: 90 km/h.",0),
+(16,V,"Choose the odd one out: Cricket, Football, Hockey, Chess.","Chess",["Cricket","Football","Hockey"],"Chess is an indoor board game, while the others are outdoor field sports.",0),
+(20,E,"He is strictly opposed ___ this new rule.","to",["at","with","for"],"The adjective opposed takes the preposition to: opposed to something.",0),
+(21,E,"She has been living here ___ 1999.","since",["for","from","until"],"Since is used with a fixed starting point in time (1999), while for is used with a period of time.",0),
+(22,E,"The prisoner was accused ___ theft.","of",["with","for","by"],"The correct collocation is accused of (a crime).",0),
+(23,E,"What is the synonym of 'Obsolete'?","Outdated",["Current","Modern","Fresh"],"Obsolete means no longer in use or out of date, which is the same as outdated.",0),
+(24,E,"What is the antonym of 'Transparent'?","Opaque",["Clear","Translucent","Visible"],"Transparent means see-through; its opposite is opaque, which does not let light pass through.",0),
+(25,E,"Choose the correctly spelled word.","Accommodation",["Accomodation","Acommodation","Accomadation"],"The correct spelling has a double c and a double m: accommodation.",0),
+(26,M,"What is 75% of 200?","150",["140","160","175"],"(75 / 100) x 200 = 150.",0),
+(28,M,"If 20% of a number is 40, what is the number?","200",["100","150","250"],"Number = 40 / 0.20 = 200.",0),
+(29,M,"Solve for x: 3x + 5 = 20","5",["3","4","6"],"3x = 20 - 5 = 15, so x = 15 / 3 = 5.",0),
+(30,M,"The ratio of boys to girls in a class is 3:2. If there are 15 boys, how many girls are there?","10",["12","15","20"],"3 parts = 15, so 1 part = 5. Girls = 2 x 5 = 10.",0),
+(32,P,"The boundary line between Pakistan and India is called:","Radcliffe Line",["Durand Line","McMahon Line","Line of Control"],"Sir Cyril Radcliffe headed the Boundary Commission in 1947 and drew the Radcliffe Line, the international border between Pakistan and India.",0),
+(34,P,"In which year was the first Martial Law imposed in Pakistan?","1958",["1956","1969","1977"],"President Iskander Mirza imposed the first martial law in October 1958 and appointed General Ayub Khan as Chief Martial Law Administrator.",0),
+(35,P,"When did Balochistan officially become a province of Pakistan?","1970",["1947","1955","1973"],"After the One Unit scheme was dissolved, Balochistan became a full province on 1 July 1970.",0),
+(37,P,"In which year did Quaid-e-Azam join the All-India Muslim League?","1913",["1906","1909","1920"],"Muhammad Ali Jinnah joined the All-India Muslim League in 1913 (the League was founded in 1906).",0),
+]

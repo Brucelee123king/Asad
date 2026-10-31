@@ -1,0 +1,106 @@
+<style>
+#lkAll{display:none;margin:6px auto 0;border:1px solid rgba(148,163,184,.5);background:transparent;color:inherit;border-radius:999px;padding:6px 14px;font-size:12px;cursor:pointer}
+#lkToast{position:fixed;left:12px;right:12px;bottom:18px;z-index:9999;display:none;padding:12px 14px;border-radius:14px;background:#0f172a;color:#fff;font-size:13px;line-height:1.4;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+</style>
+<div id="lkToast"></div>
+<script>
+(function(){
+  var L=window.__LOCK;if(!L)return;
+  var $=function(i){return document.getElementById(i)};
+  var NAMES={o:'1000 MCQs',pma:'PMA 159 MCQs',fa:'Forces Academy Lahore MCQs',hk:'Hakeem Force Academy MCQs',lc:'PMA 158 Long Course MCQs',pg:'Pro Genius Academy MCQs',nv:'Non Verbal PMA Test',cn:'Constitution of Pakistan',iv:'100 Most Repeated Questions',en:'Academic PMA MCQs',lf:'Light Forces Academy MCQs',hf:'Haroon Force Academy'};
+  var DAY=86400000,EXP=(L.expiryDays||7)*DAY,ids=Object.keys(L.cats),ST={},busy=false,ALLOWED=null,GETKEY=null;
+  var subtle=window.crypto&&window.crypto.subtle,okEnv=!!subtle&&typeof DecompressionStream!=='undefined';
+  function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);if(v===null)localStorage.removeItem(k);else localStorage.setItem(k,v)}catch(e){return null}}
+  function toast(m){var t=$('lkToast');t.textContent=m;t.style.display='block';clearTimeout(toast._t);toast._t=setTimeout(function(){t.style.display='none'},8000)}
+  window.__lkToast=toast;
+  function b64(s){var b=atob(s),u=new Uint8Array(b.length);for(var i=0;i<b.length;i++)u[i]=b.charCodeAt(i);return u}
+  function hex(u){var s='';for(var i=0;i<u.length;i++)s+=('0'+u[i].toString(16)).slice(-2);return s}
+  function unhex(h){var u=new Uint8Array(h.length/2);for(var i=0;i<u.length;i++)u[i]=parseInt(h.substr(i*2,2),16);return u}
+  var _db=null;
+  function db(){return _db||(_db=new Promise(function(res,rej){try{var r=indexedDB.open('lkdb',1);r.onupgradeneeded=function(){r.result.createObjectStore('ct')};r.onsuccess=function(){res(r.result)};r.onerror=function(){rej(r.error)}}catch(e){rej(e)}}))}
+  function idbGet(k){return db().then(function(d){return new Promise(function(res){var q=d.transaction('ct').objectStore('ct').get(k);q.onsuccess=function(){res(q.result||null)};q.onerror=function(){res(null)}})}).catch(function(){return null})}
+  function idbSet(k,v){return db().then(function(d){return new Promise(function(res){var t=d.transaction('ct','readwrite');t.objectStore('ct').put(v,k);t.oncomplete=function(){res()};t.onerror=function(){res()}})}).catch(function(){})}
+  function idbDel(k){return db().then(function(d){return new Promise(function(res){var t=d.transaction('ct','readwrite');t.objectStore('ct').delete(k);t.oncomplete=function(){res()};t.onerror=function(){res()}})}).catch(function(){})}
+  function decryptWith(file,rawKey){
+    return subtle.importKey('raw',rawKey,'AES-GCM',false,['decrypt']).then(function(k){return subtle.decrypt({name:'AES-GCM',iv:b64(file.iv)},k,b64(file.ct))}).then(function(buf){
+      return new Response(new Blob([buf]).stream().pipeThrough(new DecompressionStream('gzip'))).text()}).then(function(t){return JSON.parse(t)});
+  }
+  function deriveKey(file,pw){
+    return subtle.importKey('raw',new TextEncoder().encode(pw),'PBKDF2',false,['deriveBits']).then(function(k){
+      return subtle.deriveBits({name:'PBKDF2',salt:b64(file.salt),iterations:file.iter,hash:'SHA-256'},k,256)}).then(function(b){return new Uint8Array(b)});
+  }
+  function getJSON(path){return fetch(L.base+path,{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error('http '+r.status);return r.json()})}
+  var fetchLock=function(){return getJSON('lock.json?t='+Date.now())};
+  var fetchCat=function(id,v){return getJSON('data/'+id+'.json?v='+encodeURIComponent(v||Date.now()))};
+  window.__isLocked=function(id){return !!L.cats[id]&&!ST[id]};
+  function refreshAll(){
+    try{if(window.__flatReset)window.__flatReset();if(window.__rngReset)window.__rngReset()}catch(e){}
+    try{renderSelect();renderPMA();renderFA();renderHK();renderLC();if(typeof renderPG==='function')renderPG();if(typeof renderNV==='function')renderNV();applySec()}catch(e){}
+  }
+  function applyData(id,data){Object.keys(data).forEach(function(k){ALL[k]=data[k]});ST[id]=1}
+  function relock(id){var st=window.__mkStubs(id);Object.keys(st).forEach(function(k){ALL[k]=st[k]});delete ST[id]}
+  function forget(id){ls('lk_k_'+id,null);ls('lk_v_'+id,null);ls('lk_t_'+id,null);return idbDel(id)}
+  /* open a category with its password (the app gets the password from the server for approved people; nobody types it) */
+  function unlockWith(id,pw){
+    pw=String(pw).toUpperCase().replace(/[^A-Z0-9]/g,'');
+    return fetchCat(id).then(function(file){
+      return deriveKey(file,pw).then(function(raw){return decryptWith(file,raw).then(function(data){return {file:file,raw:raw,data:data}})}).catch(function(){var e=new Error('pw');e.pw=1;throw e});
+    }).then(function(r){
+      applyData(id,r.data);ls('lk_k_'+id,hex(r.raw));ls('lk_v_'+id,r.file.v);ls('lk_t_'+id,String(Date.now()));
+      return idbSet(id,r.file)});
+  }
+  window.__openLock=function(id,cb){toast('This category is not enabled for your account. Ask the admin to enable it.')};
+  var _os=window.openSec;
+  window.openSec=function(id){if(id&&window.__isLocked(id)){toast('This category is not enabled for your account. Ask the admin to enable it.');return}return _os.apply(this,arguments)};
+  function decorate(){
+    var m=$('sec-menu');if(!m)return;
+    m.querySelectorAll('button[onclick^="openSec("]').forEach(function(b){
+      var mm=/openSec\('([a-z]+)'\)/.exec(b.getAttribute('onclick')||'');if(!mm)return;
+      var lk=window.__isLocked(mm[1]);var sm=b.querySelector('.text-white\\/80');
+      if(sm){if(lk&&!sm.getAttribute('data-lk')){sm.setAttribute('data-lk','1');sm.textContent='🔒 Not enabled for you - ask the admin'}}
+    });
+  }
+  var _rm=window.renderMenu;if(typeof _rm==='function')window.renderMenu=function(){var r=_rm.apply(this,arguments);try{decorate()}catch(e){}return r};
+  /* ---- saved copy, server check (new data / password changed / category removed), 7-day expiry ---- */
+  function loadSaved(id){
+    var h=ls('lk_k_'+id);if(!h||!okEnv)return Promise.resolve(false);
+    var t=parseInt(ls('lk_t_'+id)||'0',10);if(Date.now()-t>EXP||t>Date.now()+DAY)return Promise.resolve(false);
+    return idbGet(id).then(function(file){if(!file)return false;return decryptWith(file,unhex(h)).then(function(d){applyData(id,d);return true}).catch(function(){return false})});
+  }
+  function fromServerKey(id){
+    if(!GETKEY||!navigator.onLine)return Promise.resolve();
+    return GETKEY(id).then(function(pw){return unlockWith(id,pw)}).catch(function(e){if(e&&e.pw)toast('"'+(NAMES[id]||id)+'" is being updated by the admin. Try again a little later.')})
+  }
+  function syncOne(id,lock){
+    var h=ls('lk_k_'+id);
+    var sv=lock.v&&lock.v[id],have=ls('lk_v_'+id);
+    if(!h){return ST[id]?Promise.resolve():fromServerKey(id)}
+    if(!sv){return forget(id).then(function(){relock(id)})}
+    var need=sv!==have||!ST[id];
+    if(!need){ls('lk_t_'+id,String(Date.now()));return Promise.resolve()}
+    return fetchCat(id,sv).then(function(file){
+      return decryptWith(file,unhex(h)).then(function(d){applyData(id,d);ls('lk_v_'+id,file.v);ls('lk_t_'+id,String(Date.now()));return idbSet(id,file)},function(){
+        return forget(id).then(function(){relock(id);return fromServerKey(id)})});
+    }).catch(function(){});
+  }
+  function sync(){
+    if(busy||!okEnv||!navigator.onLine||!ALLOWED)return Promise.resolve();
+    if(typeof quizActive!=='undefined'&&quizActive)return Promise.resolve();
+    busy=true;
+    return fetchLock().then(function(lock){return Promise.all(ids.filter(function(i){return ALLOWED[i]}).map(function(id){return syncOne(id,lock)}))}).catch(function(){}).then(function(){busy=false;ls('lk_sync',String(Date.now()));refreshAll()});
+  }
+  window.__lkSync=sync;
+  /* called by the login part: which categories this person may open + how to get a category password from the server */
+  window.__lkSetAllowed=function(cats,getKey){
+    ALLOWED={};(cats||[]).forEach(function(c){if(L.cats[c])ALLOWED[c]=1});GETKEY=getKey||null;
+    var jobs=ids.map(function(id){
+      if(!ALLOWED[id]){return forget(id).then(function(){if(ST[id])relock(id)})}
+      return loadSaved(id)});
+    return Promise.all(jobs).then(function(){refreshAll();return sync()}).then(function(){refreshAll()});
+  };
+  window.__lkForgetAll=function(){ALLOWED={};return Promise.all(ids.map(function(id){return forget(id).then(function(){if(ST[id])relock(id)})})).then(refreshAll)};
+  window.__lkAllowed=function(){return ALLOWED};
+  document.addEventListener('visibilitychange',function(){if(!document.hidden&&Date.now()-parseInt(ls('lk_sync')||'0',10)>1800000){if(window.__acRecheck)window.__acRecheck();else sync()}});
+  try{decorate()}catch(e){}
+})();
+</script>

@@ -1,0 +1,3906 @@
+{
+"topic": [
+{
+"n": 1,
+"q": "In the sentence \"The young cadet answered confidently,\" the word \"confidently\" is a:",
+"options": [
+"noun",
+"adjective",
+"adverb",
+"preposition"
+],
+"passage": null,
+"key": "C",
+"expl": "It modifies the verb \"answered\" and tells how the action was performed."
+},
+{
+"n": 2,
+"q": "Which word is a pronoun in \"They completed the obstacle course\"?",
+"options": [
+"They",
+"completed",
+"obstacle",
+"course"
+],
+"passage": null,
+"key": "A",
+"expl": "\"They\" stands in place of a noun."
+},
+{
+"n": 3,
+"q": "In \"Honesty is essential for leadership,\" the word \"Honesty\" is a:",
+"options": [
+"verb",
+"abstract noun",
+"adjective",
+"conjunction"
+],
+"passage": null,
+"key": "B",
+"expl": "It names an abstract quality."
+},
+{
+"n": 4,
+"q": "Which word is an adjective in \"She gave a brief answer\"?",
+"options": [
+"She",
+"gave",
+"brief",
+"answer"
+],
+"passage": null,
+"key": "C",
+"expl": "\"Brief\" describes the noun \"answer\"."
+},
+{
+"n": 5,
+"q": "In \"The candidates waited outside,\" \"outside\" functions as a:",
+"options": [
+"adverb",
+"article",
+"pronoun",
+"conjunction"
+],
+"passage": null,
+"key": "A",
+"expl": "It tells where they waited."
+},
+{
+"n": 6,
+"q": "Which of the following is a conjunction?",
+"options": [
+"under",
+"because",
+"quickly",
+"brave"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Because\" joins clauses and introduces a reason."
+},
+{
+"n": 7,
+"q": "In \"The book is on the desk,\" \"on\" is a:",
+"options": [
+"preposition",
+"adverb",
+"interjection",
+"pronoun"
+],
+"passage": null,
+"key": "A",
+"expl": "It shows the relationship between \"book\" and \"desk\"."
+},
+{
+"n": 8,
+"q": "Which word is an interjection?",
+"options": [
+"Alas!",
+"although",
+"their",
+"smoothly"
+],
+"passage": null,
+"key": "A",
+"expl": "An interjection expresses sudden feeling or emotion."
+},
+{
+"n": 9,
+"q": "In \"Ali and Hamza trained together,\" \"and\" is a:",
+"options": [
+"coordinating conjunction",
+"preposition",
+"adjective",
+"adverb"
+],
+"passage": null,
+"key": "A",
+"expl": "It joins two coordinate nouns."
+},
+{
+"n": 10,
+"q": "Which word is a common noun?",
+"options": [
+"Pakistan",
+"Islamabad",
+"river",
+"Indus"
+],
+"passage": null,
+"key": "C",
+"expl": "\"River\" names a class, not a unique proper name."
+},
+{
+"n": 11,
+"q": "In \"He can swim well,\" \"can\" is a:",
+"options": [
+"main verb",
+"modal auxiliary",
+"noun",
+"preposition"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Can\" is a modal auxiliary expressing ability."
+},
+{
+"n": 12,
+"q": "Which option contains a possessive pronoun?",
+"options": [
+"my",
+"mine",
+"me",
+"I"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Mine\" stands alone as a possessive pronoun; \"my\" is a possessive determiner."
+},
+{
+"n": 13,
+"q": "In \"The wounded soldier recovered,\" \"wounded\" is functioning as a:",
+"options": [
+"noun",
+"adjective",
+"adverb",
+"conjunction"
+],
+"passage": null,
+"key": "B",
+"expl": "It describes the noun \"soldier\"."
+},
+{
+"n": 14,
+"q": "The word \"but\" in \"He was tired but continued\" is a:",
+"options": [
+"subordinating conjunction",
+"coordinating conjunction",
+"preposition",
+"interjection"
+],
+"passage": null,
+"key": "B",
+"expl": "\"But\" is a coordinating conjunction showing contrast."
+},
+{
+"n": 15,
+"q": "In \"Running improves stamina,\" \"Running\" is a:",
+"options": [
+"gerund functioning as a noun",
+"finite verb",
+"adjective",
+"preposition"
+],
+"passage": null,
+"key": "A",
+"expl": "The -ing form names an activity and serves as the subject."
+},
+{
+"n": 16,
+"q": "Which sentence contains an adverb of frequency?",
+"options": [
+"He arrived yesterday.",
+"He often exercises.",
+"He works here.",
+"He speaks softly."
+],
+"passage": null,
+"key": "B",
+"expl": "\"Often\" tells how frequently the action occurs."
+},
+{
+"n": 17,
+"q": "In \"This is the man who helped us,\" \"who\" is a:",
+"options": [
+"relative pronoun",
+"article",
+"preposition",
+"interjection"
+],
+"passage": null,
+"key": "A",
+"expl": "It introduces a relative clause and refers to \"man\"."
+},
+{
+"n": 18,
+"q": "Which word is a determiner/article in \"An officer entered the room\"?",
+"options": [
+"officer",
+"entered",
+"An",
+"room"
+],
+"passage": null,
+"key": "C",
+"expl": "\"An\" is the indefinite article modifying \"officer\"."
+},
+{
+"n": 19,
+"q": "In \"He is extremely careful,\" \"extremely\" modifies:",
+"options": [
+"He",
+"is",
+"careful",
+"the whole sentence only"
+],
+"passage": null,
+"key": "C",
+"expl": "It intensifies the adjective \"careful\"."
+},
+{
+"n": 20,
+"q": "Which pair consists entirely of prepositions?",
+"options": [
+"in, on",
+"and, but",
+"very, quite",
+"he, they"
+],
+"passage": null,
+"key": "A",
+"expl": "Both \"in\" and \"on\" express relationships of place/time."
+},
+{
+"n": 21,
+"q": "Choose the correct form: \"He ___ to the academy every morning.\"",
+"options": [
+"go",
+"goes",
+"went",
+"going"
+],
+"passage": null,
+"key": "B",
+"expl": "A habitual action with a third-person singular subject takes \"goes\"."
+},
+{
+"n": 22,
+"q": "\"They ___ the task before the instructor arrived.\"",
+"options": [
+"complete",
+"had completed",
+"have completed",
+"were completing"
+],
+"passage": null,
+"key": "B",
+"expl": "Past perfect marks the earlier of two past actions."
+},
+{
+"n": 23,
+"q": "\"I ___ this book since Monday.\"",
+"options": [
+"read",
+"am reading",
+"have been reading",
+"had read"
+],
+"passage": null,
+"key": "C",
+"expl": "\"Since Monday\" with an ongoing action calls for present perfect continuous."
+},
+{
+"n": 24,
+"q": "\"At 8 p.m. yesterday, we ___ for the test.\"",
+"options": [
+"studied",
+"were studying",
+"have studied",
+"study"
+],
+"passage": null,
+"key": "B",
+"expl": "An action in progress at a specific past time uses past continuous."
+},
+{
+"n": 25,
+"q": "\"By next June, she ___ her degree.\"",
+"options": [
+"completes",
+"completed",
+"will have completed",
+"is completing"
+],
+"passage": null,
+"key": "C",
+"expl": "Future perfect shows completion before a future point."
+},
+{
+"n": 26,
+"q": "Choose the simple past sentence.",
+"options": [
+"He trains daily.",
+"He trained yesterday.",
+"He has trained.",
+"He will train."
+],
+"passage": null,
+"key": "B",
+"expl": "\"Trained\" with a finished past time is simple past."
+},
+{
+"n": 27,
+"q": "\"The bus ___ before we reached the stop.\"",
+"options": [
+"left",
+"has left",
+"had left",
+"leaves"
+],
+"passage": null,
+"key": "C",
+"expl": "The bus departure happened before another past event."
+},
+{
+"n": 28,
+"q": "\"Listen! Someone ___ at the door.\"",
+"options": [
+"knocks",
+"knocked",
+"is knocking",
+"has knocked"
+],
+"passage": null,
+"key": "C",
+"expl": "\"Listen!\" signals an action happening now."
+},
+{
+"n": 29,
+"q": "\"She ___ in Rawalpindi for five years.\" (She still lives there.)",
+"options": [
+"lived",
+"has lived",
+"had lived",
+"will live"
+],
+"passage": null,
+"key": "B",
+"expl": "Present perfect links a past beginning to the present."
+},
+{
+"n": 30,
+"q": "\"When I was a child, I ___ cricket every evening.\"",
+"options": [
+"play",
+"played",
+"have played",
+"am playing"
+],
+"passage": null,
+"key": "B",
+"expl": "A completed past habit takes simple past."
+},
+{
+"n": 31,
+"q": "\"This time tomorrow, we ___ the written test.\"",
+"options": [
+"take",
+"took",
+"will be taking",
+"have taken"
+],
+"passage": null,
+"key": "C",
+"expl": "Future continuous describes an action in progress at a future time."
+},
+{
+"n": 32,
+"q": "Which sentence is in present perfect tense?",
+"options": [
+"I finish the work.",
+"I finished the work.",
+"I have finished the work.",
+"I had finished the work."
+],
+"passage": null,
+"key": "C",
+"expl": "Present perfect uses have/has + past participle."
+},
+{
+"n": 33,
+"q": "\"If he studies hard, he ___ the test.\"",
+"options": [
+"passes",
+"passed",
+"will pass",
+"would pass"
+],
+"passage": null,
+"key": "C",
+"expl": "First conditional: if + present simple, will + base verb."
+},
+{
+"n": 34,
+"q": "\"He ___ for two hours before the rain stopped.\"",
+"options": [
+"ran",
+"had been running",
+"has been running",
+"is running"
+],
+"passage": null,
+"key": "B",
+"expl": "Past perfect continuous emphasizes duration before another past event."
+},
+{
+"n": 35,
+"q": "\"The sun ___ in the east.\"",
+"options": [
+"rose",
+"rises",
+"is rising always",
+"has risen daily"
+],
+"passage": null,
+"key": "B",
+"expl": "Universal truths normally use simple present."
+},
+{
+"n": 36,
+"q": "\"We ___ dinner when the phone rang.\"",
+"options": [
+"had",
+"were having",
+"have had",
+"will have"
+],
+"passage": null,
+"key": "B",
+"expl": "A longer background action interrupted in the past uses past continuous."
+},
+{
+"n": 37,
+"q": "\"She ___ already ___ the form.\"",
+"options": [
+"has / submitted",
+"had / submit",
+"is / submitted",
+"was / submit"
+],
+"passage": null,
+"key": "A",
+"expl": "Present perfect is has + past participle."
+},
+{
+"n": 38,
+"q": "\"By the time you arrive, I ___ the report.\"",
+"options": [
+"finish",
+"finished",
+"will have finished",
+"am finishing yesterday"
+],
+"passage": null,
+"key": "C",
+"expl": "Completion before a future arrival takes future perfect."
+},
+{
+"n": 39,
+"q": "Which is grammatically correct?",
+"options": [
+"I am knowing him.",
+"I know him.",
+"I have knowing him.",
+"I was know him."
+],
+"passage": null,
+"key": "B",
+"expl": "Stative verb \"know\" is normally not used in the continuous form."
+},
+{
+"n": 40,
+"q": "\"He ___ to Lahore last week.\"",
+"options": [
+"has gone",
+"goes",
+"went",
+"had go"
+],
+"passage": null,
+"key": "C",
+"expl": "A definite finished time \"last week\" requires simple past."
+},
+{
+"n": 41,
+"q": "Choose the correct article: \"He is ___ honest man.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Honest\" begins with a vowel sound because the h is silent."
+},
+{
+"n": 42,
+"q": "\"She wants to become ___ engineer.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Engineer\" begins with a vowel sound."
+},
+{
+"n": 43,
+"q": "\"___ sun rises in the east.\"",
+"options": [
+"A",
+"An",
+"The",
+"No article"
+],
+"passage": null,
+"key": "C",
+"expl": "Unique objects such as the sun normally take \"the\"."
+},
+{
+"n": 44,
+"q": "\"He is ___ university student.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "A",
+"expl": "\"University\" begins with the consonant sound /ju:/."
+},
+{
+"n": 45,
+"q": "\"We crossed ___ Indus River.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "C",
+"expl": "Names of rivers take the definite article."
+},
+{
+"n": 46,
+"q": "Which sentence is correct?",
+"options": [
+"He plays the cricket.",
+"He plays cricket.",
+"He plays a cricket.",
+"He plays an cricket."
+],
+"passage": null,
+"key": "B",
+"expl": "Sports generally take no article when used generically."
+},
+{
+"n": 47,
+"q": "\"She is ___ best candidate in the group.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "C",
+"expl": "Superlatives normally take \"the\"."
+},
+{
+"n": 48,
+"q": "\"I saw ___ one-eyed man.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "A",
+"expl": "\"One\" begins with a /w/ consonant sound."
+},
+{
+"n": 49,
+"q": "\"He waited for ___ hour.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Hour\" begins with a vowel sound because h is silent."
+},
+{
+"n": 50,
+"q": "\"___ Himalayas lie north of Pakistan.\"",
+"options": [
+"A",
+"An",
+"The",
+"No article"
+],
+"passage": null,
+"key": "C",
+"expl": "Plural mountain ranges take \"the\"."
+},
+{
+"n": 51,
+"q": "Which phrase normally takes no article?",
+"options": [
+"the United States",
+"the Netherlands",
+"Mount Everest",
+"the Arabian Sea"
+],
+"passage": null,
+"key": "C",
+"expl": "Individual mountain peaks normally do not take an article."
+},
+{
+"n": 52,
+"q": "\"He went to ___ school to attend his class.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "D",
+"expl": "Institutional use of \"school\" for its primary purpose often takes no article."
+},
+{
+"n": 53,
+"q": "\"His father went to ___ school to meet the principal.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "C",
+"expl": "Here the school is a specific building/institution, not merely the activity of schooling."
+},
+{
+"n": 54,
+"q": "\"She bought ___ umbrella and ___ raincoat.\"",
+"options": [
+"a / a",
+"an / a",
+"the / an",
+"an / an"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Umbrella\" begins with a vowel sound; \"raincoat\" with a consonant sound."
+},
+{
+"n": 55,
+"q": "\"___ Quran is the holy book of Islam.\"",
+"options": [
+"A",
+"An",
+"The",
+"No article"
+],
+"passage": null,
+"key": "C",
+"expl": "Names of well-known sacred texts are conventionally used with \"the\" in this construction."
+},
+{
+"n": 56,
+"q": "Choose the correct phrase.",
+"options": [
+"an European country",
+"a European country",
+"the European country always",
+"European an country"
+],
+"passage": null,
+"key": "B",
+"expl": "\"European\" begins with /j/, a consonant sound."
+},
+{
+"n": 57,
+"q": "\"Pakistan is in ___ Asia.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "D",
+"expl": "Names of continents normally take no article."
+},
+{
+"n": 58,
+"q": "\"He is ___ MBA graduate.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "B",
+"expl": "The letter M is pronounced /em/, beginning with a vowel sound."
+},
+{
+"n": 59,
+"q": "\"This is ___ same book that I borrowed.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "C",
+"expl": "\"The same\" is the standard expression."
+},
+{
+"n": 60,
+"q": "\"She speaks ___ Urdu fluently.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "D",
+"expl": "Names of languages normally take no article."
+},
+{
+"n": 61,
+"q": "\"He is good ___ mathematics.\"",
+"options": [
+"in",
+"at",
+"on",
+"for"
+],
+"passage": null,
+"key": "B",
+"expl": "The standard collocation is \"good at\"."
+},
+{
+"n": 62,
+"q": "\"She is interested ___ military history.\"",
+"options": [
+"on",
+"at",
+"in",
+"for"
+],
+"passage": null,
+"key": "C",
+"expl": "The standard collocation is \"interested in\"."
+},
+{
+"n": 63,
+"q": "\"The test begins ___ 8:00 a.m.\"",
+"options": [
+"in",
+"on",
+"at",
+"by"
+],
+"passage": null,
+"key": "C",
+"expl": "Use \"at\" for exact clock times."
+},
+{
+"n": 64,
+"q": "\"We will meet ___ Monday.\"",
+"options": [
+"in",
+"on",
+"at",
+"from"
+],
+"passage": null,
+"key": "B",
+"expl": "Use \"on\" for days and dates."
+},
+{
+"n": 65,
+"q": "\"Pakistan became independent ___ 1947.\"",
+"options": [
+"in",
+"on",
+"at",
+"since"
+],
+"passage": null,
+"key": "A",
+"expl": "Use \"in\" for years."
+},
+{
+"n": 66,
+"q": "\"The cadets marched ___ the bridge.\"",
+"options": [
+"across",
+"between",
+"during",
+"since"
+],
+"passage": null,
+"key": "A",
+"expl": "\"Across\" expresses movement from one side to the other."
+},
+{
+"n": 67,
+"q": "\"He has lived here ___ 2022.\"",
+"options": [
+"for",
+"since",
+"from only",
+"during"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Since\" marks the starting point of an action continuing to the present."
+},
+{
+"n": 68,
+"q": "\"He has lived here ___ four years.\"",
+"options": [
+"since",
+"for",
+"at",
+"by"
+],
+"passage": null,
+"key": "B",
+"expl": "\"For\" expresses a duration."
+},
+{
+"n": 69,
+"q": "\"Divide the sweets ___ the two boys.\"",
+"options": [
+"among",
+"between",
+"into",
+"beside"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Between\" is standard for two distinct parties."
+},
+{
+"n": 70,
+"q": "\"The teacher distributed books ___ the students.\"",
+"options": [
+"between",
+"among",
+"through",
+"onto"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Among\" is used for a group of more than two."
+},
+{
+"n": 71,
+"q": "\"He was accused ___ theft.\"",
+"options": [
+"for",
+"of",
+"with",
+"by"
+],
+"passage": null,
+"key": "B",
+"expl": "The standard collocation is \"accused of\"."
+},
+{
+"n": 72,
+"q": "\"This book belongs ___ me.\"",
+"options": [
+"with",
+"for",
+"to",
+"at"
+],
+"passage": null,
+"key": "C",
+"expl": "\"Belong to\" is the correct construction."
+},
+{
+"n": 73,
+"q": "\"She is afraid ___ dogs.\"",
+"options": [
+"from",
+"of",
+"with",
+"at"
+],
+"passage": null,
+"key": "B",
+"expl": "The standard collocation is \"afraid of\"."
+},
+{
+"n": 74,
+"q": "\"The plane flew ___ the clouds.\"",
+"options": [
+"above",
+"between only",
+"beside",
+"since"
+],
+"passage": null,
+"key": "A",
+"expl": "\"Above\" indicates a higher position."
+},
+{
+"n": 75,
+"q": "\"He sat ___ me during the lecture.\"",
+"options": [
+"besides",
+"beside",
+"among",
+"across"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Beside\" means next to; \"besides\" means in addition to."
+},
+{
+"n": 76,
+"q": "\"The train passed ___ the tunnel.\"",
+"options": [
+"through",
+"across",
+"over",
+"beside"
+],
+"passage": null,
+"key": "A",
+"expl": "\"Through\" means entering and moving within an enclosed space."
+},
+{
+"n": 77,
+"q": "\"The cat jumped ___ the wall.\"",
+"options": [
+"over",
+"at",
+"since",
+"between"
+],
+"passage": null,
+"key": "A",
+"expl": "\"Over\" expresses movement above and across."
+},
+{
+"n": 78,
+"q": "\"He arrived ___ the airport on time.\"",
+"options": [
+"in",
+"at",
+"on",
+"by"
+],
+"passage": null,
+"key": "B",
+"expl": "\"At\" is used for a specific point/place such as an airport."
+},
+{
+"n": 79,
+"q": "\"She insisted ___ paying the bill.\"",
+"options": [
+"to",
+"on",
+"at",
+"for"
+],
+"passage": null,
+"key": "B",
+"expl": "The standard pattern is \"insist on + -ing\"."
+},
+{
+"n": 80,
+"q": "\"The decision depends ___ the weather.\"",
+"options": [
+"in",
+"on",
+"at",
+"for"
+],
+"passage": null,
+"key": "B",
+"expl": "The standard collocation is \"depend on\"."
+},
+{
+"n": 81,
+"q": "Change to passive: \"The officer signed the document.\"",
+"options": [
+"The document signed the officer.",
+"The document was signed by the officer.",
+"The document is signed by the officer yesterday.",
+"The officer was signed by the document."
+],
+"passage": null,
+"key": "B",
+"expl": "Simple past passive is was/were + past participle."
+},
+{
+"n": 82,
+"q": "Passive of \"They are building a bridge\" is:",
+"options": [
+"A bridge is being built by them.",
+"A bridge was built by them.",
+"A bridge has been built by them.",
+"A bridge is built them."
+],
+"passage": null,
+"key": "A",
+"expl": "Present continuous passive is am/is/are being + past participle."
+},
+{
+"n": 83,
+"q": "Passive of \"She has completed the task\" is:",
+"options": [
+"The task has completed.",
+"The task has been completed by her.",
+"The task was completed by her.",
+"The task is completing by her."
+],
+"passage": null,
+"key": "B",
+"expl": "Present perfect passive is has/have been + past participle."
+},
+{
+"n": 84,
+"q": "Active form of \"The gate was opened by the guard\" is:",
+"options": [
+"The guard opened the gate.",
+"The guard opens the gate.",
+"The gate opened the guard.",
+"The guard was opening by the gate."
+],
+"passage": null,
+"key": "A",
+"expl": "The doer becomes the subject and simple past is retained."
+},
+{
+"n": 85,
+"q": "Passive of \"They will announce the result tomorrow\" is:",
+"options": [
+"The result will announce tomorrow.",
+"The result will be announced tomorrow.",
+"The result is announced tomorrow.",
+"The result has announced tomorrow."
+],
+"passage": null,
+"key": "B",
+"expl": "Future passive is will be + past participle."
+},
+{
+"n": 86,
+"q": "Which sentence cannot normally be changed into passive voice?",
+"options": [
+"He wrote a letter.",
+"They repaired the road.",
+"The baby slept.",
+"She completed the form."
+],
+"passage": null,
+"key": "C",
+"expl": "Intransitive \"slept\" has no object to become the passive subject."
+},
+{
+"n": 87,
+"q": "Passive of \"Open the door\" is best expressed as:",
+"options": [
+"Let the door be opened.",
+"The door open.",
+"Door is opened you.",
+"Let open the door by you."
+],
+"passage": null,
+"key": "A",
+"expl": "Imperative passive can use \"Let + object + be + past participle\"."
+},
+{
+"n": 88,
+"q": "Passive of \"Someone has stolen my bag\" is:",
+"options": [
+"My bag has been stolen.",
+"My bag had stolen.",
+"My bag is stealing.",
+"My bag was stole."
+],
+"passage": null,
+"key": "A",
+"expl": "The unknown agent can be omitted in passive voice."
+},
+{
+"n": 89,
+"q": "Passive of \"The teacher is checking the papers\" is:",
+"options": [
+"The papers are checked.",
+"The papers are being checked by the teacher.",
+"The papers were being checked.",
+"The papers have checked."
+],
+"passage": null,
+"key": "B",
+"expl": "Present continuous passive requires \"are being checked\"."
+},
+{
+"n": 90,
+"q": "Passive of \"You must obey the rules\" is:",
+"options": [
+"The rules must obey.",
+"The rules must be obeyed.",
+"The rules are must obeyed.",
+"The rules have to obey you."
+],
+"passage": null,
+"key": "B",
+"expl": "Modal passive is modal + be + past participle."
+},
+{
+"n": 91,
+"q": "Active of \"English is spoken in many countries\" is:",
+"options": [
+"People speak English in many countries.",
+"People spoke English in many countries only.",
+"English speaks people.",
+"Many countries are speaking English people."
+],
+"passage": null,
+"key": "A",
+"expl": "An indefinite agent such as \"people\" is natural in active voice."
+},
+{
+"n": 92,
+"q": "Passive of \"They had finished the work\" is:",
+"options": [
+"The work had been finished.",
+"The work has been finished.",
+"The work was finishing.",
+"The work had finished them."
+],
+"passage": null,
+"key": "A",
+"expl": "Past perfect passive is had been + past participle."
+},
+{
+"n": 93,
+"q": "Passive of \"Who wrote this letter?\" is:",
+"options": [
+"By whom was this letter written?",
+"By who this letter wrote?",
+"Whom wrote this letter?",
+"This letter was wrote by whom?"
+],
+"passage": null,
+"key": "A",
+"expl": "Formal passive interrogative: \"By whom was ... written?\""
+},
+{
+"n": 94,
+"q": "Which is a correct passive sentence?",
+"options": [
+"The road is repairing.",
+"The road is being repaired.",
+"The road being repaired is.",
+"The road has repairing."
+],
+"passage": null,
+"key": "B",
+"expl": "Present continuous passive uses \"is being repaired\"."
+},
+{
+"n": 95,
+"q": "Passive of \"The storm damaged several houses\" is:",
+"options": [
+"Several houses were damaged by the storm.",
+"Several houses damaged the storm.",
+"Several houses are damage by storm.",
+"The storm was damaged by several houses."
+],
+"passage": null,
+"key": "A",
+"expl": "Simple past passive uses were + past participle."
+},
+{
+"n": 96,
+"q": "Passive of \"They make cars here\" is:",
+"options": [
+"Cars are made here.",
+"Cars were made here yesterday.",
+"Cars make here.",
+"Cars are making here."
+],
+"passage": null,
+"key": "A",
+"expl": "Simple present passive is am/is/are + past participle."
+},
+{
+"n": 97,
+"q": "Passive of \"The committee may approve the plan\" is:",
+"options": [
+"The plan may be approved by the committee.",
+"The plan may approved.",
+"The plan is may approve.",
+"The plan may been approved."
+],
+"passage": null,
+"key": "A",
+"expl": "Modal passive uses may + be + past participle."
+},
+{
+"n": 98,
+"q": "Active of \"The message was sent by Ali\" is:",
+"options": [
+"Ali sent the message.",
+"Ali sends the message now necessarily.",
+"The message sent Ali.",
+"Ali was sent the message by it."
+],
+"passage": null,
+"key": "A",
+"expl": "The passive subject becomes the object and the agent becomes subject."
+},
+{
+"n": 99,
+"q": "Passive of \"They were watching the match\" is:",
+"options": [
+"The match was watched.",
+"The match was being watched by them.",
+"The match is being watched.",
+"The match has been watched."
+],
+"passage": null,
+"key": "B",
+"expl": "Past continuous passive is was/were being + past participle."
+},
+{
+"n": 100,
+"q": "In passive voice, the main verb is normally in the:",
+"options": [
+"base form only",
+"past participle form",
+"present participle only",
+"infinitive without be"
+],
+"passage": null,
+"key": "B",
+"expl": "Passive constructions require a form of be plus the past participle."
+},
+{
+"n": 101,
+"q": "Change to indirect speech: He said, \"I am tired.\"",
+"options": [
+"He said that I am tired.",
+"He said that he was tired.",
+"He says that he was tired.",
+"He said that he is tired yesterday."
+],
+"passage": null,
+"key": "B",
+"expl": "With a past reporting verb, present \"am\" normally backshifts to \"was\" and pronouns change by"
+},
+{
+"n": 102,
+"q": "She said, \"I have finished my work.\"",
+"options": [
+"She said that she had finished her work.",
+"She said that she has finished my work.",
+"She said she finished her work tomorrow.",
+"She told that she had finish work."
+],
+"passage": null,
+"key": "A",
+"expl": "Present perfect normally backshifts to past perfect."
+},
+{
+"n": 103,
+"q": "He said to me, \"You are late.\"",
+"options": [
+"He said me that I was late.",
+"He told me that I was late.",
+"He told that you were late.",
+"He said to I that I was late."
+],
+"passage": null,
+"key": "B",
+"expl": "\"Said to\" commonly becomes \"told + object\"; \"you\" becomes \"I\" by context."
+},
+{
+"n": 104,
+"q": "Ali said, \"I will come tomorrow.\"",
+"options": [
+"Ali said that he would come the next day.",
+"Ali said that I will come tomorrow.",
+"Ali says that he would come yesterday.",
+"Ali told he would came next day."
+],
+"passage": null,
+"key": "A",
+"expl": "\"Will\" backshifts to \"would\" and \"tomorrow\" to \"the next day\"."
+},
+{
+"n": 105,
+"q": "She said, \"I can swim.\"",
+"options": [
+"She said that she could swim.",
+"She said that she can swam.",
+"She told that I could swim.",
+"She said she could swam."
+],
+"passage": null,
+"key": "A",
+"expl": "\"Can\" normally changes to \"could\" in reported speech."
+},
+{
+"n": 106,
+"q": "He said, \"I saw him yesterday.\"",
+"options": [
+"He said that he had seen him the previous day.",
+"He said that he saw him tomorrow.",
+"He said he sees him yesterday.",
+"He told that he had saw him."
+],
+"passage": null,
+"key": "A",
+"expl": "Simple past may backshift to past perfect; \"yesterday\" becomes \"the previous day\"."
+},
+{
+"n": 107,
+"q": "The teacher said, \"The earth revolves around the sun.\"",
+"options": [
+"The teacher said that the earth revolved around the sun only.",
+"The teacher said that the earth revolves around the sun.",
+"The teacher told that the earth has revolved.",
+"The teacher said earth revolving."
+],
+"passage": null,
+"key": "B",
+"expl": "Universal truths usually remain in the present tense."
+},
+{
+"n": 108,
+"q": "He said to me, \"Do you know the answer?\"",
+"options": [
+"He asked me if I knew the answer.",
+"He told me do I know the answer.",
+"He asked that I know answer.",
+"He said me whether do I knew."
+],
+"passage": null,
+"key": "A",
+"expl": "Yes/no questions use asked + if/whether + statement word order."
+},
+{
+"n": 109,
+"q": "She said, \"Where are you going?\"",
+"options": [
+"She asked where was I going.",
+"She asked where I was going.",
+"She said where I am going.",
+"She asked that where I went."
+],
+"passage": null,
+"key": "B",
+"expl": "Wh-question keeps the question word but uses statement word order."
+},
+{
+"n": 110,
+"q": "The officer said, \"Stand at ease.\"",
+"options": [
+"The officer requested them standing.",
+"The officer ordered them to stand at ease.",
+"The officer said that stand at ease.",
+"The officer asked they standed."
+],
+"passage": null,
+"key": "B",
+"expl": "Commands are commonly reported with ordered/told + object + to-infinitive."
+},
+{
+"n": 111,
+"q": "He said, \"Please help me.\"",
+"options": [
+"He requested me to help him.",
+"He ordered me help him.",
+"He said me please to help.",
+"He asked that I helped him yesterday."
+],
+"passage": null,
+"key": "A",
+"expl": "Polite requests are reported with requested/asked + object + to-infinitive."
+},
+{
+"n": 112,
+"q": "Mother said, \"Do not waste time.\"",
+"options": [
+"Mother advised me not to waste time.",
+"Mother said me do not waste time.",
+"Mother told that not waste time.",
+"Mother advised not wasting me."
+],
+"passage": null,
+"key": "A",
+"expl": "Negative commands/advice use not to + verb."
+},
+{
+"n": 113,
+"q": "He said, \"Alas! I have failed.\"",
+"options": [
+"He exclaimed with sorrow that he had failed.",
+"He said alas that he fails.",
+"He exclaimed with joy that he had failed.",
+"He asked whether he failed."
+],
+"passage": null,
+"key": "A",
+"expl": "\"Alas\" expresses sorrow; present perfect backshifts."
+},
+{
+"n": 114,
+"q": "She said, \"Hurrah! We have won.\"",
+"options": [
+"She exclaimed with joy that they had won.",
+"She exclaimed with sorrow that they won.",
+"She said hurrah we have won.",
+"She ordered that they had won."
+],
+"passage": null,
+"key": "A",
+"expl": "\"Hurrah\" expresses joy."
+},
+{
+"n": 115,
+"q": "He said, \"May you succeed!\"",
+"options": [
+"He prayed that I might succeed.",
+"He said that I may succeeded.",
+"He asked me to succeeding.",
+"He ordered success."
+],
+"passage": null,
+"key": "A",
+"expl": "Wishes/prayers are often reported with prayed/wished + might."
+},
+{
+"n": 116,
+"q": "\"This\" generally changes to ___ in reported speech when distance shifts.",
+"options": [
+"these",
+"that",
+"here",
+"now"
+],
+"passage": null,
+"key": "B",
+"expl": "\"This\" commonly changes to \"that\"."
+},
+{
+"n": 117,
+"q": "\"Now\" commonly changes to:",
+"options": [
+"then",
+"tomorrow",
+"there",
+"before only"
+],
+"passage": null,
+"key": "A",
+"expl": "\"Now\" commonly becomes \"then\" when the reporting perspective shifts."
+},
+{
+"n": 118,
+"q": "\"Here\" commonly changes to:",
+"options": [
+"there",
+"then",
+"that",
+"before"
+],
+"passage": null,
+"key": "A",
+"expl": "\"Here\" commonly becomes \"there\"."
+},
+{
+"n": 119,
+"q": "Which reporting verb is most suitable for a question?",
+"options": [
+"asked",
+"ordered",
+"exclaimed",
+"promised always"
+],
+"passage": null,
+"key": "A",
+"expl": "Questions are generally reported with \"asked\" or \"inquired\"."
+},
+{
+"n": 120,
+"q": "In reported questions, the word order is generally:",
+"options": [
+"question order",
+"statement order",
+"inverted twice",
+"verb only"
+],
+"passage": null,
+"key": "B",
+"expl": "Reported questions do not normally retain subject-auxiliary inversion."
+},
+{
+"n": 121,
+"q": "Choose the synonym of \"abandon\".",
+"options": [
+"leave",
+"collect",
+"repair",
+"praise"
+],
+"passage": null,
+"key": "A",
+"expl": "\"Abandon\" means to leave or give up."
+},
+{
+"n": 122,
+"q": "Choose the antonym of \"scarce\".",
+"options": [
+"rare",
+"limited",
+"abundant",
+"small"
+],
+"passage": null,
+"key": "C",
+"expl": "\"Scarce\" means insufficient; \"abundant\" means plentiful."
+},
+{
+"n": 123,
+"q": "Synonym of \"brave\" is:",
+"options": [
+"cowardly",
+"courageous",
+"weak",
+"silent"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Courageous\" is a direct synonym of \"brave\"."
+},
+{
+"n": 124,
+"q": "Antonym of \"ancient\" is:",
+"options": [
+"old",
+"historic",
+"modern",
+"former"
+],
+"passage": null,
+"key": "C",
+"expl": "\"Modern\" contrasts with \"ancient\"."
+},
+{
+"n": 125,
+"q": "Synonym of \"rapid\" is:",
+"options": [
+"slow",
+"swift",
+"late",
+"weak"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Rapid\" means fast or swift."
+},
+{
+"n": 126,
+"q": "Antonym of \"expand\" is:",
+"options": [
+"increase",
+"enlarge",
+"contract",
+"extend"
+],
+"passage": null,
+"key": "C",
+"expl": "\"Contract\" means to become smaller."
+},
+{
+"n": 127,
+"q": "Synonym of \"assist\" is:",
+"options": [
+"help",
+"oppose",
+"delay",
+"refuse"
+],
+"passage": null,
+"key": "A",
+"expl": "\"Assist\" means to help."
+},
+{
+"n": 128,
+"q": "Antonym of \"hostile\" is:",
+"options": [
+"unfriendly",
+"aggressive",
+"friendly",
+"angry"
+],
+"passage": null,
+"key": "C",
+"expl": "\"Friendly\" is the opposite of hostile."
+},
+{
+"n": 129,
+"q": "Synonym of \"accurate\" is:",
+"options": [
+"precise",
+"careless",
+"vague",
+"rough"
+],
+"passage": null,
+"key": "A",
+"expl": "\"Precise\" closely matches \"accurate\"."
+},
+{
+"n": 130,
+"q": "Antonym of \"optimistic\" is:",
+"options": [
+"hopeful",
+"positive",
+"pessimistic",
+"cheerful"
+],
+"passage": null,
+"key": "C",
+"expl": "\"Pessimistic\" is the opposite in outlook."
+},
+{
+"n": 131,
+"q": "Synonym of \"commence\" is:",
+"options": [
+"end",
+"begin",
+"avoid",
+"reduce"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Commence\" means begin."
+},
+{
+"n": 132,
+"q": "Antonym of \"conceal\" is:",
+"options": [
+"hide",
+"cover",
+"reveal",
+"protect"
+],
+"passage": null,
+"key": "C",
+"expl": "\"Reveal\" means make known or visible."
+},
+{
+"n": 133,
+"q": "Synonym of \"vital\" is:",
+"options": [
+"essential",
+"minor",
+"optional",
+"weak"
+],
+"passage": null,
+"key": "A",
+"expl": "\"Vital\" can mean essential or critically important."
+},
+{
+"n": 134,
+"q": "Antonym of \"permanent\" is:",
+"options": [
+"lasting",
+"fixed",
+"temporary",
+"stable"
+],
+"passage": null,
+"key": "C",
+"expl": "\"Temporary\" is not permanent."
+},
+{
+"n": 135,
+"q": "Synonym of \"diligent\" is:",
+"options": [
+"lazy",
+"hardworking",
+"careless",
+"reckless"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Diligent\" means hardworking and careful."
+},
+{
+"n": 136,
+"q": "Antonym of \"superior\" is:",
+"options": [
+"higher",
+"better",
+"inferior",
+"excellent"
+],
+"passage": null,
+"key": "C",
+"expl": "\"Inferior\" is the direct opposite."
+},
+{
+"n": 137,
+"q": "Synonym of \"obstacle\" is:",
+"options": [
+"hindrance",
+"benefit",
+"reward",
+"solution"
+],
+"passage": null,
+"key": "A",
+"expl": "An obstacle is a hindrance or barrier."
+},
+{
+"n": 138,
+"q": "Antonym of \"rigid\" is:",
+"options": [
+"stiff",
+"flexible",
+"strict",
+"hard"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Flexible\" is the opposite of rigid."
+},
+{
+"n": 139,
+"q": "Synonym of \"terminate\" is:",
+"options": [
+"continue",
+"end",
+"begin",
+"expand"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Terminate\" means bring to an end."
+},
+{
+"n": 140,
+"q": "Antonym of \"victory\" is:",
+"options": [
+"success",
+"triumph",
+"defeat",
+"achievement"
+],
+"passage": null,
+"key": "C",
+"expl": "\"Defeat\" is the opposite of victory."
+},
+{
+"n": 141,
+"q": "Choose the correct sentence.",
+"options": [
+"He do not know me.",
+"He does not knows me.",
+"He does not know me.",
+"He not does know me."
+],
+"passage": null,
+"key": "C",
+"expl": "After \"does not,\" use the base form \"know\"."
+},
+{
+"n": 142,
+"q": "Choose the correct sentence.",
+"options": [
+"She is senior than me.",
+"She is senior to me.",
+"She is senior from me.",
+"She is more senior than me always."
+],
+"passage": null,
+"key": "B",
+"expl": "The conventional construction is \"senior to\"."
+},
+{
+"n": 143,
+"q": "Choose the correct sentence.",
+"options": [
+"Neither of the boys are absent.",
+"Neither of the boys is absent.",
+"Neither boys is absent.",
+"Neither of boys are absent."
+],
+"passage": null,
+"key": "B",
+"expl": "\"Neither\" is singular in standard formal usage here."
+},
+{
+"n": 144,
+"q": "Choose the correct sentence.",
+"options": [
+"Each of the players have a kit.",
+"Each of the players has a kit.",
+"Each players has kit.",
+"Each of players have a kit."
+],
+"passage": null,
+"key": "B",
+"expl": "\"Each\" takes a singular verb."
+},
+{
+"n": 145,
+"q": "Choose the correct sentence.",
+"options": [
+"He has been living here since five years.",
+"He has been living here for five years.",
+"He is living here for five years ago.",
+"He lived here since five years."
+],
+"passage": null,
+"key": "B",
+"expl": "Use \"for\" with a duration."
+},
+{
+"n": 146,
+"q": "Choose the correct sentence.",
+"options": [
+"I prefer tea than coffee.",
+"I prefer tea to coffee.",
+"I prefer tea over than coffee.",
+"I prefer tea from coffee."
+],
+"passage": null,
+"key": "B",
+"expl": "The standard construction is \"prefer X to Y\"."
+},
+{
+"n": 147,
+"q": "Choose the correct sentence.",
+"options": [
+"One of my friend is here.",
+"One of my friends is here.",
+"One of my friends are here.",
+"One my friends is here."
+],
+"passage": null,
+"key": "B",
+"expl": "After \"one of,\" use a plural noun and singular verb."
+},
+{
+"n": 148,
+"q": "Choose the correct sentence.",
+"options": [
+"The news are good.",
+"The news is good.",
+"The news were good always.",
+"News are a good."
+],
+"passage": null,
+"key": "B",
+"expl": "\"News\" is grammatically singular."
+},
+{
+"n": 149,
+"q": "Choose the correct sentence.",
+"options": [
+"He is good in English.",
+"He is good at English.",
+"He is good on English.",
+"He is good for English."
+],
+"passage": null,
+"key": "B",
+"expl": "The usual collocation is \"good at\"."
+},
+{
+"n": 150,
+"q": "Choose the correct sentence.",
+"options": [
+"She discussed about the issue.",
+"She discussed the issue.",
+"She discussed on the issue.",
+"She was discussed the issue."
+],
+"passage": null,
+"key": "B",
+"expl": "\"Discuss\" is transitive; it does not require \"about\" before the object."
+},
+{
+"n": 151,
+"q": "Choose the correct sentence.",
+"options": [
+"He returned back home.",
+"He returned home.",
+"He back returned home.",
+"He returned to back home."
+],
+"passage": null,
+"key": "B",
+"expl": "\"Return\" already means go back; \"back\" is redundant."
+},
+{
+"n": 152,
+"q": "Choose the correct sentence.",
+"options": [
+"I am used to wake early.",
+"I am used to waking early.",
+"I used to waking early now.",
+"I am use to wake early."
+],
+"passage": null,
+"key": "B",
+"expl": "\"Be used to\" is followed by a noun or gerund."
+},
+{
+"n": 153,
+"q": "Choose the correct sentence.",
+"options": [
+"If I was you, I would apply.",
+"If I were you, I would apply.",
+"If I am you, I would apply.",
+"If I were you, I will applied."
+],
+"passage": null,
+"key": "B",
+"expl": "Formal hypothetical condition uses subjunctive \"were\"."
+},
+{
+"n": 154,
+"q": "Choose the correct sentence.",
+"options": [
+"He is married with a doctor.",
+"He is married to a doctor.",
+"He is married by a doctor.",
+"He married to with a doctor."
+],
+"passage": null,
+"key": "B",
+"expl": "The adjective \"married\" normally takes \"to\"."
+},
+{
+"n": 155,
+"q": "Choose the correct sentence.",
+"options": [
+"She did not went there.",
+"She did not go there.",
+"She not did go there.",
+"She did not gone there."
+],
+"passage": null,
+"key": "B",
+"expl": "After \"did not,\" use the base verb."
+},
+{
+"n": 156,
+"q": "Choose the correct sentence.",
+"options": [
+"The furniture are expensive.",
+"The furniture is expensive.",
+"The furnitures are expensive.",
+"Furniture are an expensive."
+],
+"passage": null,
+"key": "B",
+"expl": "\"Furniture\" is an uncountable singular mass noun."
+},
+{
+"n": 157,
+"q": "Choose the correct sentence.",
+"options": [
+"He asked that where I lived.",
+"He asked where I lived.",
+"He asked where did I live.",
+"He asked where I did lived."
+],
+"passage": null,
+"key": "B",
+"expl": "Reported questions use statement word order and no unnecessary \"that\"."
+},
+{
+"n": 158,
+"q": "Choose the correct sentence.",
+"options": [
+"There is many reasons.",
+"There are many reasons.",
+"There have many reasons.",
+"There are much reasons."
+],
+"passage": null,
+"key": "B",
+"expl": "Plural \"reasons\" requires \"are\" and \"many\"."
+},
+{
+"n": 159,
+"q": "Choose the correct sentence.",
+"options": [
+"My brother is elder than me.",
+"My brother is older than I am.",
+"My brother is more elder than me.",
+"My brother older to me."
+],
+"passage": null,
+"key": "B",
+"expl": "For general age comparison, \"older than\" is standard."
+},
+{
+"n": 160,
+"q": "Choose the correct sentence.",
+"options": [
+"He hardly never complains.",
+"He hardly ever complains.",
+"He ever hardly never complains.",
+"He hardly complains never."
+],
+"passage": null,
+"key": "B",
+"expl": "Avoid the double negative \"hardly never\"; use \"hardly ever\"."
+},
+{
+"n": 161,
+"q": "The word \"resilient\" most nearly means:",
+"options": [
+"able to recover quickly",
+"easily broken",
+"unwilling to learn",
+"extremely noisy"
+],
+"passage": null,
+"key": "A",
+"expl": "Resilient people or systems recover from difficulty or shock."
+},
+{
+"n": 162,
+"q": "\"Prudent\" means:",
+"options": [
+"careless",
+"wise and cautious",
+"angry",
+"rapid"
+],
+"passage": null,
+"key": "B",
+"expl": "Prudent means showing sound judgment and caution."
+},
+{
+"n": 163,
+"q": "\"Inevitable\" means:",
+"options": [
+"avoidable",
+"uncertain",
+"certain to happen",
+"temporary"
+],
+"passage": null,
+"key": "C",
+"expl": "Something inevitable cannot realistically be avoided."
+},
+{
+"n": 164,
+"q": "\"Concise\" means:",
+"options": [
+"brief but complete",
+"very confusing",
+"lengthy",
+"careless"
+],
+"passage": null,
+"key": "A",
+"expl": "Concise language expresses much in few words."
+},
+{
+"n": 165,
+"q": "\"Reluctant\" means:",
+"options": [
+"eager",
+"unwilling or hesitant",
+"certain",
+"powerful"
+],
+"passage": null,
+"key": "B",
+"expl": "Reluctant means not willing or hesitant."
+},
+{
+"n": 166,
+"q": "\"Meticulous\" means:",
+"options": [
+"careless",
+"very careful about details",
+"lazy",
+"fearful"
+],
+"passage": null,
+"key": "B",
+"expl": "Meticulous work is precise and detail-oriented."
+},
+{
+"n": 167,
+"q": "\"Impartial\" means:",
+"options": [
+"biased",
+"neutral and fair",
+"hostile",
+"uncertain"
+],
+"passage": null,
+"key": "B",
+"expl": "Impartial means not favoring one side."
+},
+{
+"n": 168,
+"q": "\"Feasible\" means:",
+"options": [
+"possible and practical",
+"illegal",
+"dangerous only",
+"impossible"
+],
+"passage": null,
+"key": "A",
+"expl": "Feasible means capable of being done successfully."
+},
+{
+"n": 169,
+"q": "\"Adverse\" means:",
+"options": [
+"favorable",
+"harmful or unfavorable",
+"equal",
+"pleasant"
+],
+"passage": null,
+"key": "B",
+"expl": "Adverse conditions are unfavorable or harmful."
+},
+{
+"n": 170,
+"q": "\"Coherent\" means:",
+"options": [
+"logical and connected",
+"broken physically",
+"secret",
+"angry"
+],
+"passage": null,
+"key": "A",
+"expl": "A coherent argument is logically organized and understandable."
+},
+{
+"n": 171,
+"q": "\"Vigilant\" means:",
+"options": [
+"watchful",
+"sleepy",
+"careless",
+"weak"
+],
+"passage": null,
+"key": "A",
+"expl": "Vigilant means alert and watchful."
+},
+{
+"n": 172,
+"q": "\"Ambiguous\" means:",
+"options": [
+"clear",
+"having more than one possible meaning",
+"certain",
+"short"
+],
+"passage": null,
+"key": "B",
+"expl": "Ambiguous language can be interpreted in multiple ways."
+},
+{
+"n": 173,
+"q": "\"Endeavour\" means:",
+"options": [
+"attempt or effort",
+"victory",
+"order",
+"rest"
+],
+"passage": null,
+"key": "A",
+"expl": "Endeavour means a serious attempt or effort."
+},
+{
+"n": 174,
+"q": "\"Integrity\" most nearly means:",
+"options": [
+"dishonesty",
+"moral uprightness",
+"physical speed",
+"anger"
+],
+"passage": null,
+"key": "B",
+"expl": "Integrity refers to honesty and strong moral principles."
+},
+{
+"n": 175,
+"q": "\"Mitigate\" means:",
+"options": [
+"make less severe",
+"make worse",
+"ignore entirely",
+"measure exactly"
+],
+"passage": null,
+"key": "A",
+"expl": "To mitigate is to reduce severity, harm, or intensity."
+},
+{
+"n": 176,
+"q": "\"Obsolete\" means:",
+"options": [
+"newly invented",
+"no longer in use",
+"expensive",
+"dangerous"
+],
+"passage": null,
+"key": "B",
+"expl": "Obsolete describes something outdated and no longer used."
+},
+{
+"n": 177,
+"q": "\"Credible\" means:",
+"options": [
+"believable",
+"unrelated",
+"illegal",
+"weak"
+],
+"passage": null,
+"key": "A",
+"expl": "Credible means worthy of belief or trust."
+},
+{
+"n": 178,
+"q": "\"Scrutinize\" means:",
+"options": [
+"examine closely",
+"avoid looking at",
+"destroy",
+"summarize quickly"
+],
+"passage": null,
+"key": "A",
+"expl": "To scrutinize is to inspect carefully."
+},
+{
+"n": 179,
+"q": "\"Assert\" means:",
+"options": [
+"state confidently",
+"hide",
+"forget",
+"apologize"
+],
+"passage": null,
+"key": "A",
+"expl": "To assert is to state or maintain strongly."
+},
+{
+"n": 180,
+"q": "\"Contingency\" most nearly means:",
+"options": [
+"a possible future event or emergency",
+"a fixed certainty",
+"a celebration",
+"a routine fact only"
+],
+"passage": null,
+"key": "A",
+"expl": "A contingency is a possible event that may require preparation."
+},
+{
+"n": 181,
+"q": "The cadet trained daily ___ he wanted to improve his endurance.",
+"options": [
+"because",
+"although",
+"unless",
+"whereas"
+],
+"passage": null,
+"key": "A",
+"expl": "The second clause gives the reason for training."
+},
+{
+"n": 182,
+"q": "___ the weather was severe, the exercise continued.",
+"options": [
+"Because",
+"Although",
+"Unless",
+"So that"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Although\" introduces contrast."
+},
+{
+"n": 183,
+"q": "You will not improve ___ you practise regularly.",
+"options": [
+"if",
+"unless",
+"because",
+"and"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Unless\" means \"if not\"."
+},
+{
+"n": 184,
+"q": "He is both intelligent ___ hardworking.",
+"options": [
+"or",
+"nor",
+"and",
+"but"
+],
+"passage": null,
+"key": "C",
+"expl": "The correlative pair is \"both ... and\"."
+},
+{
+"n": 185,
+"q": "Neither Ali ___ Hamza was late.",
+"options": [
+"and",
+"or",
+"nor",
+"but"
+],
+"passage": null,
+"key": "C",
+"expl": "The correlative pair is \"neither ... nor\"."
+},
+{
+"n": 186,
+"q": "The instructions were so clear ___ everyone understood them.",
+"options": [
+"than",
+"that",
+"as",
+"which"
+],
+"passage": null,
+"key": "B",
+"expl": "The pattern is \"so + adjective + that\"."
+},
+{
+"n": 187,
+"q": "He studied hard; ___, he passed the test.",
+"options": [
+"however",
+"therefore",
+"otherwise",
+"nevertheless"
+],
+"passage": null,
+"key": "B",
+"expl": "The second clause is a result, so \"therefore\" fits."
+},
+{
+"n": 188,
+"q": "The road was blocked; ___, we took another route.",
+"options": [
+"consequently",
+"although",
+"unless",
+"because of only"
+],
+"passage": null,
+"key": "A",
+"expl": "A blocked road caused the change of route."
+},
+{
+"n": 189,
+"q": "She is taller ___ her sister.",
+"options": [
+"then",
+"than",
+"to",
+"from"
+],
+"passage": null,
+"key": "B",
+"expl": "Comparatives normally take \"than\"."
+},
+{
+"n": 190,
+"q": "No sooner had the bell rung ___ the candidates entered.",
+"options": [
+"when",
+"than",
+"then",
+"that"
+],
+"passage": null,
+"key": "B",
+"expl": "The fixed pattern is \"No sooner ... than\"."
+},
+{
+"n": 191,
+"q": "Hardly had we arrived ___ it began to rain.",
+"options": [
+"than",
+"when",
+"that",
+"because"
+],
+"passage": null,
+"key": "B",
+"expl": "The fixed pattern is \"Hardly ... when\"."
+},
+{
+"n": 192,
+"q": "He behaves as if he ___ everything.",
+"options": [
+"knows",
+"knew",
+"will know",
+"has knowing"
+],
+"passage": null,
+"key": "B",
+"expl": "For an unreal present comparison, \"as if\" often takes past form \"knew\"."
+},
+{
+"n": 193,
+"q": "If I had known, I ___ you.",
+"options": [
+"would tell",
+"would have told",
+"will tell",
+"told"
+],
+"passage": null,
+"key": "B",
+"expl": "Third conditional uses would have + past participle."
+},
+{
+"n": 194,
+"q": "The officer asked the men ___ remain calm.",
+"options": [
+"for",
+"to",
+"that they to",
+"of"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Ask + object + to-infinitive\" is the standard pattern."
+},
+{
+"n": 195,
+"q": "He succeeded ___ working consistently.",
+"options": [
+"by",
+"with",
+"at",
+"to"
+],
+"passage": null,
+"key": "A",
+"expl": "\"By + gerund\" expresses method."
+},
+{
+"n": 196,
+"q": "The candidate was tired, ___ he completed the run.",
+"options": [
+"yet",
+"because",
+"so that",
+"unless"
+],
+"passage": null,
+"key": "A",
+"expl": "\"Yet\" expresses contrast."
+},
+{
+"n": 197,
+"q": "Take an umbrella ___ it rains.",
+"options": [
+"in case",
+"although",
+"because of",
+"despite"
+],
+"passage": null,
+"key": "A",
+"expl": "\"In case\" expresses precaution against a possible event."
+},
+{
+"n": 198,
+"q": "He would rather walk ___ wait for the bus.",
+"options": [
+"than",
+"to",
+"from",
+"as"
+],
+"passage": null,
+"key": "A",
+"expl": "The fixed structure is \"would rather X than Y\"."
+},
+{
+"n": 199,
+"q": "The more you practise, ___ you become.",
+"options": [
+"the better",
+"better only",
+"the best",
+"more best"
+],
+"passage": null,
+"key": "A",
+"expl": "Paired comparatives use \"the more..., the better...\"."
+},
+{
+"n": 200,
+"q": "He spoke quietly ___ disturb the class.",
+"options": [
+"so as not to",
+"because not",
+"for not",
+"unless to"
+],
+"passage": null,
+"key": "A",
+"expl": "\"So as not to\" expresses negative purpose."
+},
+{
+"n": 201,
+"q": "The central idea of the passage is that discipline:",
+"options": [
+"is only strict obedience",
+"combines self-control, reliability, and judgment",
+"depends mainly on motivation",
+"prevents all change"
+],
+"passage": "Passage 1 - Discipline and Performance\nDiscipline is often misunderstood as mere obedience to rules. In demanding institutions, however, it has a wider meaning. It includes the ability to control impulses, keep commitments, manage time, and continue working even when motivation is low. A disciplined person does not depend entirely on mood. He or she builds routines that make useful action easier and harmful delay less likely. Discipline therefore supports reliability: teammates can predict that a disciplined person will prepare, arrive on time, and complete assigned duties. Yet discipline without judgment can become mechanical. Mature discipline combines consistency with the ability to adapt when circumstances genuinely change.",
+"key": "B",
+"expl": "The passage broadens discipline beyond obedience and includes judgment."
+},
+{
+"n": 202,
+"q": "According to the passage, a disciplined person does NOT depend entirely on:",
+"options": [
+"routine",
+"mood",
+"commitment",
+"time management"
+],
+"passage": "Passage 1 - Discipline and Performance\nDiscipline is often misunderstood as mere obedience to rules. In demanding institutions, however, it has a wider meaning. It includes the ability to control impulses, keep commitments, manage time, and continue working even when motivation is low. A disciplined person does not depend entirely on mood. He or she builds routines that make useful action easier and harmful delay less likely. Discipline therefore supports reliability: teammates can predict that a disciplined person will prepare, arrive on time, and complete assigned duties. Yet discipline without judgment can become mechanical. Mature discipline combines consistency with the ability to adapt when circumstances genuinely change.",
+"key": "B",
+"expl": "The passage explicitly contrasts discipline with dependence on mood."
+},
+{
+"n": 203,
+"q": "The word \"mechanical\" most nearly means:",
+"options": [
+"automatic and unthinking",
+"highly emotional",
+"physically strong",
+"mathematically exact"
+],
+"passage": "Passage 1 - Discipline and Performance\nDiscipline is often misunderstood as mere obedience to rules. In demanding institutions, however, it has a wider meaning. It includes the ability to control impulses, keep commitments, manage time, and continue working even when motivation is low. A disciplined person does not depend entirely on mood. He or she builds routines that make useful action easier and harmful delay less likely. Discipline therefore supports reliability: teammates can predict that a disciplined person will prepare, arrive on time, and complete assigned duties. Yet discipline without judgment can become mechanical. Mature discipline combines consistency with the ability to adapt when circumstances genuinely change.",
+"key": "A",
+"expl": "In context, discipline without judgment can become automatic and unthinking."
+},
+{
+"n": 204,
+"q": "Which quality is linked directly with discipline in the passage?",
+"options": [
+"Reliability",
+"Humor",
+"Popularity",
+"Creativity only"
+],
+"passage": "Passage 1 - Discipline and Performance\nDiscipline is often misunderstood as mere obedience to rules. In demanding institutions, however, it has a wider meaning. It includes the ability to control impulses, keep commitments, manage time, and continue working even when motivation is low. A disciplined person does not depend entirely on mood. He or she builds routines that make useful action easier and harmful delay less likely. Discipline therefore supports reliability: teammates can predict that a disciplined person will prepare, arrive on time, and complete assigned duties. Yet discipline without judgment can become mechanical. Mature discipline combines consistency with the ability to adapt when circumstances genuinely change.",
+"key": "A",
+"expl": "The passage says discipline supports reliability."
+},
+{
+"n": 205,
+"q": "The author would most likely agree that good discipline should be:",
+"options": [
+"rigid in every situation",
+"consistent but adaptable",
+"based on fear",
+"unrelated to judgment"
+],
+"passage": "Passage 1 - Discipline and Performance\nDiscipline is often misunderstood as mere obedience to rules. In demanding institutions, however, it has a wider meaning. It includes the ability to control impulses, keep commitments, manage time, and continue working even when motivation is low. A disciplined person does not depend entirely on mood. He or she builds routines that make useful action easier and harmful delay less likely. Discipline therefore supports reliability: teammates can predict that a disciplined person will prepare, arrive on time, and complete assigned duties. Yet discipline without judgment can become mechanical. Mature discipline combines consistency with the ability to adapt when circumstances genuinely change.",
+"key": "B",
+"expl": "The final sentence explicitly combines consistency and adaptation."
+},
+{
+"n": 206,
+"q": "The passage argues that errors become useful when learners:",
+"options": [
+"ignore them",
+"analyse and correct their causes",
+"repeat more questions immediately",
+"avoid difficult topics"
+],
+"passage": "Passage 2 - Learning from Error\nErrors are unavoidable in serious learning. Their value, however, depends on what happens after they are noticed. Repeating an error without analysis produces little improvement. Effective learners identify the cause, correct the method, and test the correction under similar conditions. They also distinguish between a careless mistake and a conceptual misunderstanding. The first may require better attention; the second may require rebuilding knowledge from the foundation. This process can feel slower than simply doing more questions, but it usually produces more durable progress because it changes the mechanism that caused the failure.",
+"key": "B",
+"expl": "The key idea is analysis, correction, and retesting."
+},
+{
+"n": 207,
+"q": "A conceptual misunderstanding may require:",
+"options": [
+"more speed only",
+"rebuilding knowledge from the foundation",
+"less attention",
+"memorizing the same answer"
+],
+"passage": "Passage 2 - Learning from Error\nErrors are unavoidable in serious learning. Their value, however, depends on what happens after they are noticed. Repeating an error without analysis produces little improvement. Effective learners identify the cause, correct the method, and test the correction under similar conditions. They also distinguish between a careless mistake and a conceptual misunderstanding. The first may require better attention; the second may require rebuilding knowledge from the foundation. This process can feel slower than simply doing more questions, but it usually produces more durable progress because it changes the mechanism that caused the failure.",
+"key": "B",
+"expl": "The passage states this directly."
+},
+{
+"n": 208,
+"q": "The phrase \"durable progress\" most nearly means progress that is:",
+"options": [
+"temporary",
+"long-lasting",
+"accidental",
+"rapid only"
+],
+"passage": "Passage 2 - Learning from Error\nErrors are unavoidable in serious learning. Their value, however, depends on what happens after they are noticed. Repeating an error without analysis produces little improvement. Effective learners identify the cause, correct the method, and test the correction under similar conditions. They also distinguish between a careless mistake and a conceptual misunderstanding. The first may require better attention; the second may require rebuilding knowledge from the foundation. This process can feel slower than simply doing more questions, but it usually produces more durable progress because it changes the mechanism that caused the failure.",
+"key": "B",
+"expl": "Durable means lasting."
+},
+{
+"n": 209,
+"q": "Which distinction does the passage recommend?",
+"options": [
+"Easy and hard exams",
+"Careless mistakes and conceptual misunderstandings",
+"Teachers and students",
+"Written and oral work"
+],
+"passage": "Passage 2 - Learning from Error\nErrors are unavoidable in serious learning. Their value, however, depends on what happens after they are noticed. Repeating an error without analysis produces little improvement. Effective learners identify the cause, correct the method, and test the correction under similar conditions. They also distinguish between a careless mistake and a conceptual misunderstanding. The first may require better attention; the second may require rebuilding knowledge from the foundation. This process can feel slower than simply doing more questions, but it usually produces more durable progress because it changes the mechanism that caused the failure.",
+"key": "B",
+"expl": "This contrast is explicitly discussed."
+},
+{
+"n": 210,
+"q": "The passage suggests that simply doing more questions can be inferior because it may:",
+"options": [
+"be illegal",
+"fail to change the cause of error",
+"always lower confidence",
+"take no time"
+],
+"passage": "Passage 2 - Learning from Error\nErrors are unavoidable in serious learning. Their value, however, depends on what happens after they are noticed. Repeating an error without analysis produces little improvement. Effective learners identify the cause, correct the method, and test the correction under similar conditions. They also distinguish between a careless mistake and a conceptual misunderstanding. The first may require better attention; the second may require rebuilding knowledge from the foundation. This process can feel slower than simply doing more questions, but it usually produces more durable progress because it changes the mechanism that caused the failure.",
+"key": "B",
+"expl": "The author emphasizes changing the mechanism that caused failure."
+},
+{
+"n": 211,
+"q": "According to the passage, pressure can:",
+"options": [
+"only improve attention",
+"narrow attention and cause information to be overlooked",
+"eliminate uncertainty",
+"make all decisions easy"
+],
+"passage": "Passage 3 - Decision Making Under Pressure\nPressure narrows attention. This can be useful when a task demands immediate focus, but it can also make a person overlook information that would normally be considered. Good decision makers therefore use simple structures under stress: they identify the objective, separate facts from assumptions, compare the most realistic options, and consider the likely consequences of each. They also know when time is too limited for perfect information. In such cases, the goal is not certainty but a reasonable decision based on the best available evidence. Afterward, reviewing the outcome helps improve future judgment.",
+"key": "B",
+"expl": "The passage presents both a benefit and a risk of narrowed attention."
+},
+{
+"n": 212,
+"q": "Good decision makers separate:",
+"options": [
+"facts from assumptions",
+"speed from strength",
+"leaders from teams",
+"rules from laws only"
+],
+"passage": "Passage 3 - Decision Making Under Pressure\nPressure narrows attention. This can be useful when a task demands immediate focus, but it can also make a person overlook information that would normally be considered. Good decision makers therefore use simple structures under stress: they identify the objective, separate facts from assumptions, compare the most realistic options, and consider the likely consequences of each. They also know when time is too limited for perfect information. In such cases, the goal is not certainty but a reasonable decision based on the best available evidence. Afterward, reviewing the outcome helps improve future judgment.",
+"key": "A",
+"expl": "This is one of the explicit steps listed."
+},
+{
+"n": 213,
+"q": "When perfect information is impossible, the goal should be:",
+"options": [
+"total certainty",
+"a reasonable evidence-based decision",
+"no decision at all",
+"a random choice"
+],
+"passage": "Passage 3 - Decision Making Under Pressure\nPressure narrows attention. This can be useful when a task demands immediate focus, but it can also make a person overlook information that would normally be considered. Good decision makers therefore use simple structures under stress: they identify the objective, separate facts from assumptions, compare the most realistic options, and consider the likely consequences of each. They also know when time is too limited for perfect information. In such cases, the goal is not certainty but a reasonable decision based on the best available evidence. Afterward, reviewing the outcome helps improve future judgment.",
+"key": "B",
+"expl": "The passage states this directly."
+},
+{
+"n": 214,
+"q": "Why review the outcome afterward?",
+"options": [
+"To assign blame",
+"To improve future judgment",
+"To avoid evidence",
+"To make the original decision perfect"
+],
+"passage": "Passage 3 - Decision Making Under Pressure\nPressure narrows attention. This can be useful when a task demands immediate focus, but it can also make a person overlook information that would normally be considered. Good decision makers therefore use simple structures under stress: they identify the objective, separate facts from assumptions, compare the most realistic options, and consider the likely consequences of each. They also know when time is too limited for perfect information. In such cases, the goal is not certainty but a reasonable decision based on the best available evidence. Afterward, reviewing the outcome helps improve future judgment.",
+"key": "B",
+"expl": "Post-action review is linked to learning and better future judgment."
+},
+{
+"n": 215,
+"q": "The tone of the passage is primarily:",
+"options": [
+"instructional and analytical",
+"comic",
+"angry",
+"nostalgic"
+],
+"passage": "Passage 3 - Decision Making Under Pressure\nPressure narrows attention. This can be useful when a task demands immediate focus, but it can also make a person overlook information that would normally be considered. Good decision makers therefore use simple structures under stress: they identify the objective, separate facts from assumptions, compare the most realistic options, and consider the likely consequences of each. They also know when time is too limited for perfect information. In such cases, the goal is not certainty but a reasonable decision based on the best available evidence. Afterward, reviewing the outcome helps improve future judgment.",
+"key": "A",
+"expl": "It explains a structured approach to decisions under pressure."
+},
+{
+"n": 216,
+"q": "The passage says individual talent alone is:",
+"options": [
+"sufficient for teamwork",
+"not sufficient for effective team performance",
+"harmful",
+"unrelated to performance"
+],
+"passage": "Passage 4 - Teamwork\nA team is not effective merely because its members are individually talented. Performance depends on coordination: members must understand the objective, know their responsibilities, share relevant information, and adjust when another member encounters difficulty. Trust reduces the time spent checking whether others will perform basic duties, but trust does not mean the absence of accountability. Strong teams make standards clear and address problems early. They also avoid confusing agreement with unity. Members may disagree about methods while still remaining committed to the same mission.",
+"key": "B",
+"expl": "Coordination is presented as essential beyond individual talent."
+},
+{
+"n": 217,
+"q": "Trust in a team does NOT mean:",
+"options": [
+"reduced unnecessary checking",
+"absence of accountability",
+"confidence in basic duties",
+"reliable performance"
+],
+"passage": "Passage 4 - Teamwork\nA team is not effective merely because its members are individually talented. Performance depends on coordination: members must understand the objective, know their responsibilities, share relevant information, and adjust when another member encounters difficulty. Trust reduces the time spent checking whether others will perform basic duties, but trust does not mean the absence of accountability. Strong teams make standards clear and address problems early. They also avoid confusing agreement with unity. Members may disagree about methods while still remaining committed to the same mission.",
+"key": "B",
+"expl": "The passage explicitly rejects that interpretation."
+},
+{
+"n": 218,
+"q": "Strong teams should address problems:",
+"options": [
+"only at the end",
+"early",
+"secretly and never openly",
+"after standards are removed"
+],
+"passage": "Passage 4 - Teamwork\nA team is not effective merely because its members are individually talented. Performance depends on coordination: members must understand the objective, know their responsibilities, share relevant information, and adjust when another member encounters difficulty. Trust reduces the time spent checking whether others will perform basic duties, but trust does not mean the absence of accountability. Strong teams make standards clear and address problems early. They also avoid confusing agreement with unity. Members may disagree about methods while still remaining committed to the same mission.",
+"key": "B",
+"expl": "The passage says they address problems early."
+},
+{
+"n": 219,
+"q": "Members can disagree about methods while still:",
+"options": [
+"sharing commitment to the same mission",
+"having no unity",
+"rejecting all standards",
+"avoiding communication"
+],
+"passage": "Passage 4 - Teamwork\nA team is not effective merely because its members are individually talented. Performance depends on coordination: members must understand the objective, know their responsibilities, share relevant information, and adjust when another member encounters difficulty. Trust reduces the time spent checking whether others will perform basic duties, but trust does not mean the absence of accountability. Strong teams make standards clear and address problems early. They also avoid confusing agreement with unity. Members may disagree about methods while still remaining committed to the same mission.",
+"key": "A",
+"expl": "The final sentence makes this point."
+},
+{
+"n": 220,
+"q": "The best title would be:",
+"options": [
+"Why Talent Is Useless",
+"Elements of Effective Teamwork",
+"The End of Accountability",
+"Individual Competition Only"
+],
+"passage": "Passage 4 - Teamwork\nA team is not effective merely because its members are individually talented. Performance depends on coordination: members must understand the objective, know their responsibilities, share relevant information, and adjust when another member encounters difficulty. Trust reduces the time spent checking whether others will perform basic duties, but trust does not mean the absence of accountability. Strong teams make standards clear and address problems early. They also avoid confusing agreement with unity. Members may disagree about methods while still remaining committed to the same mission.",
+"key": "B",
+"expl": "It captures the passage as a whole."
+},
+{
+"n": 221,
+"q": "Efficient readers vary their pace according to:",
+"options": [
+"page color",
+"purpose",
+"handwriting",
+"mood only"
+],
+"passage": "Passage 5 - Reading Efficiently\nEfficient reading is not the same as reading every line at maximum speed. Skilled readers vary their pace according to purpose. They may scan a page to locate a date, skim an article to grasp its main argument, or read slowly when a paragraph contains dense reasoning. They also monitor comprehension. If a key sentence is unclear, they pause, reread, and connect it with surrounding ideas. This flexible approach is especially useful in timed tests, where spending too long on one difficult sentence can reduce the time available for easier questions.",
+"key": "B",
+"expl": "The passage states that pace depends on purpose."
+},
+{
+"n": 222,
+"q": "To locate a specific date quickly, a reader may:",
+"options": [
+"scan",
+"memorize the whole page",
+"read every line slowly",
+"avoid headings"
+],
+"passage": "Passage 5 - Reading Efficiently\nEfficient reading is not the same as reading every line at maximum speed. Skilled readers vary their pace according to purpose. They may scan a page to locate a date, skim an article to grasp its main argument, or read slowly when a paragraph contains dense reasoning. They also monitor comprehension. If a key sentence is unclear, they pause, reread, and connect it with surrounding ideas. This flexible approach is especially useful in timed tests, where spending too long on one difficult sentence can reduce the time available for easier questions.",
+"key": "A",
+"expl": "Scanning is used to locate specific information."
+},
+{
+"n": 223,
+"q": "Skimming is mainly used to:",
+"options": [
+"find a single word only",
+"grasp the main argument or general idea",
+"translate every sentence",
+"check spelling"
+],
+"passage": "Passage 5 - Reading Efficiently\nEfficient reading is not the same as reading every line at maximum speed. Skilled readers vary their pace according to purpose. They may scan a page to locate a date, skim an article to grasp its main argument, or read slowly when a paragraph contains dense reasoning. They also monitor comprehension. If a key sentence is unclear, they pause, reread, and connect it with surrounding ideas. This flexible approach is especially useful in timed tests, where spending too long on one difficult sentence can reduce the time available for easier questions.",
+"key": "B",
+"expl": "The passage contrasts skimming with scanning and close reading."
+},
+{
+"n": 224,
+"q": "If a key sentence is unclear, skilled readers should:",
+"options": [
+"guess and move on always",
+"pause, reread, and connect it with context",
+"stop the test",
+"ignore the paragraph entirely"
+],
+"passage": "Passage 5 - Reading Efficiently\nEfficient reading is not the same as reading every line at maximum speed. Skilled readers vary their pace according to purpose. They may scan a page to locate a date, skim an article to grasp its main argument, or read slowly when a paragraph contains dense reasoning. They also monitor comprehension. If a key sentence is unclear, they pause, reread, and connect it with surrounding ideas. This flexible approach is especially useful in timed tests, where spending too long on one difficult sentence can reduce the time available for easier questions.",
+"key": "B",
+"expl": "This strategy is explicitly described."
+},
+{
+"n": 225,
+"q": "In timed tests, spending too long on one sentence can:",
+"options": [
+"increase all scores automatically",
+"reduce time for easier questions",
+"make scanning impossible forever",
+"guarantee comprehension"
+],
+"passage": "Passage 5 - Reading Efficiently\nEfficient reading is not the same as reading every line at maximum speed. Skilled readers vary their pace according to purpose. They may scan a page to locate a date, skim an article to grasp its main argument, or read slowly when a paragraph contains dense reasoning. They also monitor comprehension. If a key sentence is unclear, they pause, reread, and connect it with surrounding ideas. This flexible approach is especially useful in timed tests, where spending too long on one difficult sentence can reduce the time available for easier questions.",
+"key": "B",
+"expl": "The passage warns of this time cost."
+}
+],
+"mock": [
+{
+"n": 1,
+"q": "In \"The very experienced instructor spoke calmly,\" \"very\" is a:",
+"options": [
+"noun",
+"adverb",
+"adjective",
+"preposition"
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 2,
+"q": "The word \"whose\" in \"The candidate whose file was missing returned\" is a:",
+"options": [
+"relative determiner/pronoun",
+"interjection",
+"preposition",
+"article"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 3,
+"q": "In \"Courage inspires others,\" \"Courage\" is a:",
+"options": [
+"proper noun",
+"abstract noun",
+"verb",
+"adverb"
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 4,
+"q": "Which contains an auxiliary verb?",
+"options": [
+"Birds fly.",
+"He has finished.",
+"Tall trees grow.",
+"Silence helps."
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 5,
+"q": "In \"She worked despite the rain,\" \"despite\" is a:",
+"options": [
+"preposition",
+"pronoun",
+"interjection",
+"adverb of manner"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 6,
+"q": "\"By 10 p.m., they ___ the exercise.\"",
+"options": [
+"finish",
+"will have finished",
+"finished tomorrow",
+"are finish"
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 7,
+"q": "\"I ___ him yesterday at the library.\"",
+"options": [
+"meet",
+"have met",
+"met",
+"am meeting"
+],
+"passage": null,
+"key": "C",
+"expl": ""
+},
+{
+"n": 8,
+"q": "\"She ___ for the interview when I called.\"",
+"options": [
+"prepared",
+"was preparing",
+"has prepared",
+"will prepare"
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 9,
+"q": "\"He ___ here since January.\"",
+"options": [
+"works",
+"worked",
+"has worked",
+"is work"
+],
+"passage": null,
+"key": "C",
+"expl": ""
+},
+{
+"n": 10,
+"q": "\"If you heat ice, it ___.\"",
+"options": [
+"melted",
+"melts",
+"will melted",
+"would melt always"
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 11,
+"q": "Choose: \"___ army officer entered the hall.\"",
+"options": [
+"A",
+"An",
+"The always",
+"No article"
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 12,
+"q": "Choose: \"He studies at ___ university near his home.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 13,
+"q": "Which is correct?",
+"options": [
+"an useful tool",
+"a useful tool",
+"the useful tool always",
+"useful an tool"
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 14,
+"q": "\"___ Pacific Ocean is the largest ocean.\"",
+"options": [
+"A",
+"An",
+"The",
+"No article"
+],
+"passage": null,
+"key": "C",
+"expl": ""
+},
+{
+"n": 15,
+"q": "Choose: \"She can play ___ piano.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "C",
+"expl": ""
+},
+{
+"n": 16,
+"q": "He apologized ___ being late.",
+"options": [
+"for",
+"of",
+"with",
+"to"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 17,
+"q": "The team consists ___ ten members.",
+"options": [
+"in",
+"of",
+"on",
+"at"
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 18,
+"q": "He is responsible ___ the equipment.",
+"options": [
+"of",
+"to",
+"for",
+"at"
+],
+"passage": null,
+"key": "C",
+"expl": ""
+},
+{
+"n": 19,
+"q": "The river flows ___ the valley.",
+"options": [
+"through",
+"since",
+"besides",
+"among"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 20,
+"q": "She was absent ___ class yesterday.",
+"options": [
+"from",
+"of",
+"to",
+"at"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 21,
+"q": "Passive of \"The mechanic repaired the vehicle\" is:",
+"options": [
+"The vehicle repaired.",
+"The vehicle was repaired by the mechanic.",
+"The vehicle is repair.",
+"The mechanic was repaired."
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 22,
+"q": "Passive of \"They have postponed the match\" is:",
+"options": [
+"The match has been postponed.",
+"The match had postpone.",
+"The match is postponing.",
+"The match was postponing."
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 23,
+"q": "Passive of \"You should follow the instructions\" is:",
+"options": [
+"The instructions should be followed.",
+"The instructions should followed.",
+"The instructions are should follow.",
+"The instructions followed you."
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 24,
+"q": "Active of \"The room is cleaned every day\" is:",
+"options": [
+"Someone cleans the room every day.",
+"Someone cleaned room tomorrow.",
+"The room cleans someone.",
+"Someone is clean the room."
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 25,
+"q": "Which verb is intransitive in the sentence \"The child laughed loudly\"?",
+"options": [
+"child",
+"laughed",
+"loudly",
+"the"
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 26,
+"q": "Indirect: Sara said, \"I am busy now.\"",
+"options": [
+"Sara said that she was busy then.",
+"Sara said she is busy now yesterday.",
+"Sara told that I was busy.",
+"Sara asked if she busy."
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 27,
+"q": "Indirect: He said, \"I may leave today.\"",
+"options": [
+"He said that he might leave that day.",
+"He said he may left today.",
+"He told he might leaves.",
+"He asked to leave yesterday."
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 28,
+"q": "Indirect: She said to him, \"Please sit down.\"",
+"options": [
+"She requested him to sit down.",
+"She said him please sit.",
+"She asked that he sat down.",
+"She ordered him sitting."
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 29,
+"q": "Indirect: He said, \"What a beautiful view!\"",
+"options": [
+"He exclaimed that it was a very beautiful view.",
+"He asked whether the view was beautiful.",
+"He ordered a beautiful view.",
+"He said what was a view?"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 30,
+"q": "Indirect questions use:",
+"options": [
+"statement word order",
+"question inversion always",
+"no verb",
+"only past perfect"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 31,
+"q": "Synonym of \"robust\" is:",
+"options": [
+"strong",
+"fragile",
+"silent",
+"rare"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 32,
+"q": "Antonym of \"transparent\" is:",
+"options": [
+"clear",
+"opaque",
+"visible",
+"plain"
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 33,
+"q": "Synonym of \"restrain\" is:",
+"options": [
+"control",
+"release",
+"encourage only",
+"expand"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 34,
+"q": "Antonym of \"frequent\" is:",
+"options": [
+"common",
+"regular",
+"rare",
+"repeated"
+],
+"passage": null,
+"key": "C",
+"expl": ""
+},
+{
+"n": 35,
+"q": "Synonym of \"evaluate\" is:",
+"options": [
+"assess",
+"ignore",
+"hide",
+"destroy"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 36,
+"q": "Choose the correct sentence.",
+"options": [
+"He is capable to do it.",
+"He is capable of doing it.",
+"He is capable for do it.",
+"He capable of do it."
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 37,
+"q": "Choose the correct sentence.",
+"options": [
+"The police is investigating.",
+"The police are investigating.",
+"The police are investigates.",
+"A police are investigating."
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 38,
+"q": "Choose the correct sentence.",
+"options": [
+"I look forward to meet you.",
+"I look forward to meeting you.",
+"I look forward for meet you.",
+"I am look forward to meeting you."
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 39,
+"q": "Choose the correct sentence.",
+"options": [
+"She has less books than me.",
+"She has fewer books than I do.",
+"She has lesser books than I.",
+"She have fewer books."
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 40,
+"q": "Choose the correct sentence.",
+"options": [
+"He denied to take the money.",
+"He denied taking the money.",
+"He denied take the money.",
+"He denied that taking money."
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 41,
+"q": "\"Adaptable\" means:",
+"options": [
+"able to adjust",
+"unable to change",
+"careless",
+"slow only"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 42,
+"q": "\"Deterrent\" means something that:",
+"options": [
+"discourages an action",
+"guarantees reward",
+"increases confusion",
+"records history"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 43,
+"q": "\"Sustain\" most nearly means:",
+"options": [
+"maintain",
+"destroy",
+"forget",
+"interrupt"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 44,
+"q": "\"Explicit\" means:",
+"options": [
+"clearly stated",
+"hidden",
+"uncertain",
+"impossible"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 45,
+"q": "\"Arbitrary\" can mean:",
+"options": [
+"based on random choice or personal whim",
+"carefully reasoned only",
+"legally required always",
+"scientifically proven"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 46,
+"q": "He was exhausted, ___ he continued working.",
+"options": [
+"yet",
+"because",
+"unless",
+"therefore because"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 47,
+"q": "I will call you ___ I arrive.",
+"options": [
+"when",
+"unless",
+"despite",
+"during"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 48,
+"q": "She saved money ___ she could buy a laptop.",
+"options": [
+"so that",
+"although",
+"unless",
+"whereas"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 49,
+"q": "He is not only punctual ___ also reliable.",
+"options": [
+"but",
+"and only",
+"nor",
+"or"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 50,
+"q": "The task was ___ difficult that many candidates ran out of time.",
+"options": [
+"so",
+"such a",
+"too much",
+"very a"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 51,
+"q": "Read: \"A checklist does not replace expertise; it protects expertise from avoidable omission.\" The main point is:",
+"options": [
+"checklists make expertise unnecessary",
+"checklists help experts avoid forgetting routine steps",
+"experts should never use lists",
+"omissions are always unavoidable"
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 52,
+"q": "In the same sentence, \"omission\" most nearly means:",
+"options": [
+"something left out",
+"a reward",
+"an explanation",
+"a prediction"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 53,
+"q": "If a passage states evidence first and a conclusion later, the reader should:",
+"options": [
+"distinguish the supporting evidence from the conclusion",
+"treat every sentence as identical in function",
+"ignore connectors",
+"assume the first sentence is always the conclusion"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 54,
+"q": "A writer says, \"The plan is costly; nevertheless, it may be necessary.\" \"Nevertheless\" signals:",
+"options": [
+"contrast",
+"cause",
+"time",
+"addition only"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 55,
+"q": "The best way to infer an unknown word from context is to:",
+"options": [
+"use surrounding clues and sentence logic",
+"choose the longest option",
+"ignore grammar",
+"always assume a positive meaning"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 56,
+"q": "Which is an adverb of manner?",
+"options": [
+"carefully",
+"yesterday",
+"often",
+"outside"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 57,
+"q": "\"By the time the test started, I ___ my notes.\"",
+"options": [
+"reviewed already now",
+"had reviewed",
+"have review",
+"will reviewing"
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 58,
+"q": "Choose: \"He is ___ honorable officer.\"",
+"options": [
+"a",
+"an",
+"the only",
+"no article"
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 59,
+"q": "The correct collocation is:",
+"options": [
+"depend of",
+"depend on",
+"depend at",
+"depend to"
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 60,
+"q": "Passive of \"They can solve the problem\" is:",
+"options": [
+"The problem can be solved.",
+"The problem can solved.",
+"The problem is can solve.",
+"The problem can solving."
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 61,
+"q": "Indirect: He said, \"I must leave now.\" In ordinary backshift, \"must\" may become:",
+"options": [
+"had to",
+"has to yesterday",
+"musted",
+"would leaving"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 62,
+"q": "Antonym of \"lenient\" is:",
+"options": [
+"strict",
+"gentle",
+"mild",
+"tolerant"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 63,
+"q": "Choose the correct sentence.",
+"options": [
+"She is one of the best player.",
+"She is one of the best players.",
+"She is one of best players is.",
+"She one of the best player."
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 64,
+"q": "\"Plausible\" means:",
+"options": [
+"seemingly reasonable or believable",
+"obviously impossible",
+"very loud",
+"completely proven beyond doubt"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 65,
+"q": "Complete: \"___ he was inexperienced, he learned quickly.\"",
+"options": [
+"Although",
+"Because of",
+"Unless",
+"Therefore"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 66,
+"q": "A paragraph whose examples all support one claim has strong:",
+"options": [
+"unity",
+"ambiguity",
+"contradiction",
+"inversion"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 67,
+"q": "Which word is a coordinating conjunction?",
+"options": [
+"although",
+"because",
+"but",
+"while"
+],
+"passage": null,
+"key": "C",
+"expl": ""
+},
+{
+"n": 68,
+"q": "\"She ___ the report before the meeting began.\"",
+"options": [
+"had read",
+"has read tomorrow",
+"reads yesterday",
+"is read"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 69,
+"q": "Choose: \"___ United Kingdom\".",
+"options": [
+"A",
+"An",
+"The",
+"No article"
+],
+"passage": null,
+"key": "C",
+"expl": ""
+},
+{
+"n": 70,
+"q": "He is proud ___ his achievement.",
+"options": [
+"of",
+"from",
+"with",
+"at"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 71,
+"q": "Passive of \"The manager is reviewing the application\" is:",
+"options": [
+"The application is being reviewed by the manager.",
+"The application is reviewed yesterday.",
+"The application has review.",
+"The manager is being reviewed by the application."
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 72,
+"q": "Indirect: \"Do not touch the switch,\" he said to us.",
+"options": [
+"He warned us not to touch the switch.",
+"He said us do not touch.",
+"He asked that we not touched.",
+"He told not touch us."
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 73,
+"q": "Synonym of \"allocate\" is:",
+"options": [
+"assign",
+"remove",
+"hide",
+"oppose"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 74,
+"q": "Choose the correct sentence.",
+"options": [
+"There are less candidates today.",
+"There are fewer candidates today.",
+"There is fewer candidates today.",
+"There are lesser candidate today."
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 75,
+"q": "Complete: \"He left early ___ avoid the traffic.\"",
+"options": [
+"in order to",
+"because",
+"although",
+"despite"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+}
+]
+}

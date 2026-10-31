@@ -1,0 +1,450 @@
+[
+{
+"item": 3,
+"text": "Date of the Lucknow Pact",
+"count": 1,
+"existing_idx": 94,
+"existing": "94\tThe Lucknow Pact between Congress and Muslim League was signed in:  => 1916"
+},
+{
+"item": 6,
+"text": "Old name of Karachi",
+"count": 3,
+"existing_idx": 108,
+"existing": "108\tWhat was the old name of Karachi?  => Kolachi"
+},
+{
+"item": 8,
+"text": "Currency of Sri Lanka",
+"count": 2,
+"existing_idx": 204,
+"existing": "204\tWhat is the currency of Sri Lanka?  => Sri Lankan Rupee"
+},
+{
+"item": 10,
+"text": "Meaning of the word Pakistan",
+"count": 1,
+"existing_idx": 337,
+"existing": "337\tWhat does the word Pakistan mean?  => Land of the Pure"
+},
+{
+"item": 12,
+"text": "Word closest in meaning to Lucid",
+"count": 1,
+"existing_idx": 59,
+"existing": "59\tWord closest in meaning to LUCID:  => Clear"
+},
+{
+"item": 15,
+"text": "One third of 120 (40)",
+"count": 4,
+"existing_idx": 5,
+"existing": "5\tWhat is one third of 120?  => 40"
+},
+{
+"item": 17,
+"text": "In a class of 1500 students 1200 are present, find the percentage present (or absent)",
+"count": 5,
+"existing_idx": 9,
+"existing": "9\tIn a class of 1500 students, 1200 are present. What percentage is present?  => 80%"
+},
+{
+"item": 19,
+"text": "Snake cannot hear and a bat cannot ? (see)",
+"count": 3,
+"existing_idx": 52,
+"existing": "52\tSnake cannot hear and bat cannot ___?  => See"
+},
+{
+"item": 21,
+"text": "If 5 men write 5 pages in 5 minutes, how long will 1 man take to write 1 page (5 minutes)",
+"count": 5,
+"existing_idx": 8,
+"existing": "8\tIf 5 men write 5 pages in 5 minutes, how long will 1 man take to write 1 page?  => 5 minutes"
+},
+{
+"item": 24,
+"text": "Why parents send their children to school (education / grooming)",
+"count": 8,
+"existing_idx": 54,
+"existing": "54\tWhy do parents send their children to school?  => For grooming (education)"
+},
+{
+"item": 26,
+"text": "Rearrange PARDLEO to get an animal (LEOPARD); also asked as LEOPARD reversed",
+"count": 4,
+"existing_idx": 48,
+"existing": "48\tRearrange PARDLEO to make an animal.  => Leopard"
+},
+{
+"item": 28,
+"text": "Ali is 4 years old and his sister is 4 times older (3 questions)",
+"count": 1,
+"existing_idx": 19,
+"existing": "19\tAli is 4 years old and his sister is 4 times older than him. How old is his sister?  => 16 years"
+},
+{
+"item": 31,
+"text": "Masjid Nabwi is in which city (Madina)",
+"count": 1,
+"existing_idx": 333,
+"existing": "333\tWhere is Masjid an-Nabawi located?  => Madinah, Saudi Arabia"
+},
+{
+"item": 33,
+"text": "Chauri Chaura incident year (1922)",
+"count": 2,
+"existing_idx": 95,
+"existing": "95\tIn which year did the Chauri Chaura incident take place?  => 1922"
+},
+{
+"item": 35,
+"text": "Which article gives the right to education (25A)",
+"count": 2,
+"existing_idx": 85,
+"existing": "85\tWhich article of the 1973 Constitution gives the right to education?  => Article 25-A"
+},
+{
+"item": 38,
+"text": "Hazrat Abu Bakr RA was the father of whom (Hazrat Ayesha RA)",
+"count": 2,
+"existing_idx": 144,
+"existing": "144\tHazrat Abu Bakr (R.A.) was the father of which wife of the Prophet ﷺ?  => Hazrat Ayesha (R.A.)"
+},
+{
+"item": 40,
+"text": "How many faces does a prism have (5)",
+"count": 2,
+"existing_idx": 242,
+"existing": "242\tA triangular prism has how many faces?  => 5"
+},
+{
+"item": 42,
+"text": "Karakoram Highway is also known as",
+"count": 1,
+"existing_idx": 99,
+"existing": "99\tThe Karakoram Highway is also known as:  => Pak-China Friendship Highway"
+},
+{
+"item": 44,
+"text": "How many Nobel prizes has Pakistan won (2)",
+"count": 1,
+"existing_idx": 102,
+"existing": "102\tHow many Nobel Prizes has Pakistan won (Malala Yousafzai and Dr Abdus Salam)?  => 2"
+},
+{
+"item": 50,
+"text": "Foreign Minister of Pakistan (current / list of foreign ministers)",
+"count": 2,
+"existing_idx": 372,
+"existing": "372\tWho is the current Foreign Minister of Pakistan (also Deputy Prime Minister)?  => Muhammad Ishaq Dar"
+},
+{
+"item": 52,
+"text": "Chief Minister of Balochistan",
+"count": 1,
+"existing_idx": 229,
+"existing": "229\tWho is the current Chief Minister of Balochistan? (current affairs)  => Mir Sarfraz Bugti"
+},
+{
+"item": 59,
+"text": "Longest river in Asia",
+"count": 2,
+"existing_idx": 209,
+"existing": "209\tWhich is the longest river in Asia?  => Yangtze"
+},
+{
+"item": 62,
+"text": "Who presented the Objectives Resolution",
+"count": 1,
+"existing_idx": 119,
+"existing": "119\tWho presented the Objectives Resolution in 1949?  => Liaquat Ali Khan"
+},
+{
+"item": 67,
+"text": "Which daughter of Hazrat Umar RA married the Prophet SAW (Hazrat Hafsa RA)",
+"count": 5,
+"existing_idx": 143,
+"existing": "143\tWhich daughter of Hazrat Umar (R.A.) married the Prophet Muhammad ﷺ?  => Hazrat Hafsa (R.A.)"
+},
+{
+"item": 72,
+"text": "Favourite fruit of Pakistan (mango)",
+"count": 2,
+"existing_idx": 218,
+"existing": "218\tWhich is the national fruit of Pakistan?  => Mango"
+},
+{
+"item": 74,
+"text": "Age of Prophet Muhammad SAW at the first revelation",
+"count": 1,
+"existing_idx": 174,
+"existing": "174\tAt what age did the Prophet ﷺ receive the first revelation?  => 40 years"
+},
+{
+"item": 78,
+"text": "Odd one out: monkey, ape, chimpanzee, panda, baboon",
+"count": 5,
+"existing_idx": 37,
+"existing": "37\tFind the odd one out: Monkey, Ape, Chimpanzee, Panda  => Panda"
+},
+{
+"item": 84,
+"text": "First Prime Minister of Pakistan",
+"count": 2,
+"existing_idx": 359,
+"existing": "359\tWho was the first Prime Minister of Pakistan?  => Liaquat Ali Khan"
+},
+{
+"item": 91,
+"text": "When did Pakistan become a SAARC member",
+"count": 1,
+"existing_idx": 91,
+"existing": "91\tIn which year did Pakistan join SAARC?  => 1985"
+},
+{
+"item": 101,
+"text": "Capital of Australia",
+"count": 1,
+"existing_idx": 268,
+"existing": "268\tWhat is the capital of Australia?  => Canberra"
+},
+{
+"item": 116,
+"text": "30 passengers (people), 2/3 are male, find the number (or percentage) of females",
+"count": 3,
+"existing_idx": 12,
+"existing": "12\tThere are 30 passengers in a bus. 2/3 of them are men. What percentage are women?  => 33.33%"
+},
+{
+"item": 122,
+"text": "How many houses does the Pakistan Parliament have",
+"count": 1,
+"existing_idx": 133,
+"existing": "133\tHow many Houses are in the Parliament of Pakistan?  => Two (National Assembly and Senate)"
+},
+{
+"item": 126,
+"text": "When did Allama Iqbal give the idea of Pakistan",
+"count": 1,
+"existing_idx": 342,
+"existing": "342\tIn which year did Allama Iqbal deliver his famous Allahabad Address?  => 1930"
+},
+{
+"item": 147,
+"text": "Second Prime Minister of Pakistan / PM after Liaquat Ali Khan (Khawaja Nazimuddin)",
+"count": 4,
+"existing_idx": 93,
+"existing": "93\tWho was the Prime Minister of Pakistan after Liaquat Ali Khan?  => Khawaja Nazimuddin"
+},
+{
+"item": 151,
+"text": "Log of 100",
+"count": 1,
+"existing_idx": 238,
+"existing": "238\tThe value of log 100 (base 10) is:  => 2"
+},
+{
+"item": 153,
+"text": "One third of 10% of 120",
+"count": 1,
+"existing_idx": 4,
+"existing": "4\tOne third of 10% of 120 is:  => 4"
+},
+{
+"item": 155,
+"text": "A class has 500 students, 340 boys and 160 girls, find the percentage of girls",
+"count": 2,
+"existing_idx": 13,
+"existing": "13\tA class has 500 students: 340 boys and 160 girls. What is the percentage of girls?  => 32%"
+},
+{
+"item": 157,
+"text": "How many manzils in the Quran",
+"count": 2,
+"existing_idx": 164,
+"existing": "164\tHow many Manzils (stations) are in the Quran?  => 7"
+},
+{
+"item": 159,
+"text": "Head of state in the 1973 Constitution of Pakistan",
+"count": 1,
+"existing_idx": 88,
+"existing": "88\tUnder the 1973 Constitution, who is the head of state?  => The President"
+},
+{
+"item": 162,
+"text": "NATO headquarters",
+"count": 3,
+"existing_idx": 189,
+"existing": "189\tWhere is the headquarters of NATO?  => Brussels"
+},
+{
+"item": 164,
+"text": "Planet with the largest number of moons",
+"count": 1,
+"existing_idx": 207,
+"existing": "207\tWhich planet has the largest number of moons?  => Saturn"
+},
+{
+"item": 166,
+"text": "Capital of Ghana",
+"count": 3,
+"existing_idx": 200,
+"existing": "200\tWhich is the capital of Ghana?  => Accra"
+},
+{
+"item": 169,
+"text": "How many pillars of Islam",
+"count": 2,
+"existing_idx": 166,
+"existing": "166\tHow many pillars are in Islam?  => 5"
+},
+{
+"item": 173,
+"text": "Second Governor General of Pakistan",
+"count": 2,
+"existing_idx": 326,
+"existing": "326\tWho was the second Governor-General of Pakistan?  => Khawaja Nazimuddin"
+},
+{
+"item": 182,
+"text": "Current Chief of Army Staff of Pakistan",
+"count": 2,
+"existing_idx": 390,
+"existing": "390\tWho is the current Chief of Army Staff of Pakistan?  => Field Marshal Asim Munir"
+},
+{
+"item": 189,
+"text": "Meaning of jihad",
+"count": 1,
+"existing_idx": 347,
+"existing": "347\tThe Arabic word Jihad literally means:  => Striving or struggle"
+},
+{
+"item": 195,
+"text": "Hazrat Ismail and Ishaq were sons of whom",
+"count": 1,
+"existing_idx": 156,
+"existing": "156\tHazrat Ismail (A.S.) and Hazrat Ishaq (A.S.) are the sons of:  => Hazrat Ibrahim (A.S.)"
+},
+{
+"item": 203,
+"text": "Which prophet was swallowed by a fish",
+"count": 2,
+"existing_idx": 368,
+"existing": "368\tWhich Prophet (A.S.) was swallowed by a fish?  => Hazrat Yunus (A.S.)"
+},
+{
+"item": 209,
+"text": "Largest river in Pakistan",
+"count": 1,
+"existing_idx": 113,
+"existing": "113\tWhich is the largest river of Pakistan?  => Indus"
+},
+{
+"item": 220,
+"text": "Last battle fought by Prophet Muhammad SAW",
+"count": 3,
+"existing_idx": 176,
+"existing": "176\tIn which Ghazwa did the Prophet ﷺ lead his last military expedition?  => Ghazwa Tabuk"
+},
+{
+"item": 223,
+"text": "Which US president said our biggest fear is fear itself (Franklin D. Roosevelt)",
+"count": 2,
+"existing_idx": 195,
+"existing": "195\tWho said 'The only thing we have to fear is fear itself'?  => Franklin D. Roosevelt"
+},
+{
+"item": 232,
+"text": "Which article of the Constitution gives freedom of speech",
+"count": 1,
+"existing_idx": 86,
+"existing": "86\tWhich article of the 1973 Constitution deals with freedom of speech?  => Article 19"
+},
+{
+"item": 247,
+"text": "First President of Pakistan",
+"count": 1,
+"existing_idx": 292,
+"existing": "292\tWho was the first President of Pakistan?  => Iskander Mirza"
+},
+{
+"item": 262,
+"text": "Who won the 2022 Asia Cup",
+"count": 1,
+"existing_idx": 391,
+"existing": "391\tWhich team won the 2022 Asia Cup cricket tournament?  => Sri Lanka"
+},
+{
+"item": 265,
+"text": "Capital of Austria",
+"count": 1,
+"existing_idx": 196,
+"existing": "196\tWhich is the capital of Austria?  => Vienna"
+},
+{
+"item": 276,
+"text": "Heart of the Quran (which surah)",
+"count": 1,
+"existing_idx": 295,
+"existing": "295\tWhich Surah is known as the Heart of the Holy Quran?  => Surah Yaseen"
+},
+{
+"item": 307,
+"text": "Which animal accompanied Ashab e Kahf",
+"count": 1,
+"existing_idx": 318,
+"existing": "318\tWhich animal was with the Ashab-e-Kahf (People of the Cave)?  => Dog"
+},
+{
+"item": 325,
+"text": "80% of 80",
+"count": 1,
+"existing_idx": 2,
+"existing": "2\t80% of 80 is:  => 64"
+},
+{
+"item": 329,
+"text": "From which country did Pakistan buy Gwadar",
+"count": 2,
+"existing_idx": 266,
+"existing": "266\tIn which year did Pakistan acquire Gwadar from Oman?  => 1958"
+},
+{
+"item": 334,
+"text": "Which battle is called Youm al Furqan",
+"count": 1,
+"existing_idx": 179,
+"existing": "179\tWhich battle is also called 'Yaum-ul-Furqan'?  => Battle of Badr"
+},
+{
+"item": 337,
+"text": "Marvi is a folk story of which province",
+"count": 1,
+"existing_idx": 128,
+"existing": "128\t'Umar Marvi' is a famous folk story of which province?  => Sindh"
+},
+{
+"item": 349,
+"text": "Height of K2 (8611 m)",
+"count": 1,
+"existing_idx": 129,
+"existing": "129\tWhat is the height of K2, Pakistan's highest peak?  => 8,611 m"
+},
+{
+"item": 353,
+"text": "Currency of Brazil",
+"count": 1,
+"existing_idx": 366,
+"existing": "366\tWhat is the currency of Brazil?  => Real"
+},
+{
+"item": 357,
+"text": "Quit India Movement leader (Mahatma Gandhi)",
+"count": 1,
+"existing_idx": 393,
+"existing": "393\tWho led the Quit India Movement?  => Mahatma Gandhi"
+}
+]

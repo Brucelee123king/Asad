@@ -1,0 +1,964 @@
+[
+{
+"n": 1,
+"q": "90% of 90 = ?",
+"opts": [
+"80",
+"81",
+"82",
+"90"
+],
+"ans": "B",
+"ans_text": "81",
+"expl": "Percentage nikalne ke liye (90 × 90) ÷ 100 = 81."
+},
+{
+"n": 2,
+"q": "How many months in a year have 31 days?",
+"opts": [
+"5",
+"6",
+"7",
+"8"
+],
+"ans": "C",
+"ans_text": "7",
+"expl": "January, March, May, July, August, October, aur December mein 31 days hotay hain (total 7 months)."
+},
+{
+"n": 3,
+"q": "If the 4th day of a month is Sunday, what will be the 25th day?",
+"opts": [
+"Sunday",
+"Monday",
+"Tuesday",
+"Wednesday"
+],
+"ans": "A",
+"ans_text": "Sunday",
+"expl": "4 se 25 tak 21 days bantay hain (21 ÷ 7 = 3 exact weeks). Is liye 25th ko bhi Sunday hi hoga."
+},
+{
+"n": 4,
+"q": "Why do we boil milk?",
+"opts": [
+"To make it sweet",
+"To kill germs",
+"To change colour",
+"To increase quantity"
+],
+"ans": "B",
+"ans_text": "To kill germs",
+"expl": "Boiling se bacteria aur harmful germs mar jatay hain."
+},
+{
+"n": 5,
+"q": "Car is used to travel as sound is to: ?",
+"opts": [
+"Wave",
+"Light",
+"Speed",
+"Noise"
+],
+"ans": "A",
+"ans_text": "Wave",
+"expl": "Car travel ka mode hai jabkay sound waves ki shakal mein move karti hai."
+},
+{
+"n": 6,
+"q": "10% of 1/3 of 90 = ?",
+"opts": [
+"2",
+"3",
+"4",
+"9"
+],
+"ans": "B",
+"ans_text": "3",
+"expl": "Pehle 90 ka 1/3 nikalen (90 ÷ 3 = 30), phir 30 ka 10% barabar 3 banta hai."
+},
+{
+"n": 7,
+"q": "Out of 500 students, 360 are boys. What is the percentage of girls?",
+"opts": [
+"28%",
+"30%",
+"32%",
+"35%"
+],
+"ans": "A",
+"ans_text": "28%",
+"expl": "Girls = 500 − 360 = 140. Percentage = (140 ÷ 500) × 100 = 28%."
+},
+{
+"n": 8,
+"q": "What is half of 1/8?",
+"opts": [
+"1/4",
+"1/16",
+"1/8",
+"1/2"
+],
+"ans": "B",
+"ans_text": "1/16",
+"expl": "1/2 × 1/8 = 1/16."
+},
+{
+"n": 9,
+"q": "Which one is different from the rest?",
+"opts": [
+"September",
+"May",
+"March",
+"Tuesday"
+],
+"ans": "D",
+"ans_text": "Tuesday",
+"expl": "Baqi sab saal ke months hain jabkay Tuesday aik day hai (Odd one out)."
+},
+{
+"n": 10,
+"q": "Evaluate: 2 + 2 ÷ 2 = ?",
+"opts": [
+"2",
+"3",
+"4",
+"1"
+],
+"ans": "B",
+"ans_text": "3",
+"expl": "BODMAS rule ke mutabiq pehle divide hoga (2 ÷ 2 = 1), phir addition 2 + 1 = 3."
+},
+{
+"n": 11,
+"q": "Complete the series: 2, 6, 12, 20, 30, ?",
+"opts": [
+"40",
+"42",
+"44",
+"46"
+],
+"ans": "B",
+"ans_text": "42",
+"expl": "Sequence mein consecutive even numbers add ho rahay hain: +4, +6, +8, +10, +12. Is liye 30 + 12 = 42."
+},
+{
+"n": 12,
+"q": "If the 1st day of a month is Monday, what will be the 23rd day?",
+"opts": [
+"Monday",
+"Tuesday",
+"Wednesday",
+"Thursday"
+],
+"ans": "B",
+"ans_text": "Tuesday",
+"expl": "1, 8, 15, aur 22 ko Monday hoga, is liye 23rd day Tuesday hoga."
+},
+{
+"n": 13,
+"q": "If yesterday was Friday, what day will be the day after tomorrow?",
+"opts": [
+"Sunday",
+"Monday",
+"Tuesday",
+"Wednesday"
+],
+"ans": "C",
+"ans_text": "Tuesday",
+"expl": "Yesterday Friday tha to today Saturday hai. Tomorrow Sunday hoga aur day after tomorrow Tuesday banega."
+},
+{
+"n": 14,
+"q": "Speed of an aircraft is 720 km/h. How much distance does it cover in 1 minute?",
+"opts": [
+"10 km",
+"12 km",
+"14 km",
+"15 km"
+],
+"ans": "B",
+"ans_text": "12 km",
+"expl": "1 hour = 60 minutes. Distance in 1 minute = 720 ÷ 60 = 12 km."
+},
+{
+"n": 15,
+"q": "A car covers 60 km in 40 minutes. What is its speed in km/h?",
+"opts": [
+"80 km/h",
+"90 km/h",
+"100 km/h",
+"120 km/h"
+],
+"ans": "B",
+"ans_text": "90 km/h",
+"expl": "40 minutes mein 60 km, yani 20 minutes mein 30 km. 60 minutes (1 hour) mein speed 30 × 3 = 90 km/h hogi."
+},
+{
+"n": 16,
+"q": "Choose the odd one out:",
+"opts": [
+"Cricket",
+"Football",
+"Hockey",
+"Chess"
+],
+"ans": "D",
+"ans_text": "Chess",
+"expl": "Chess indoor game hai jabkay baqi sab outdoor sports hain."
+},
+{
+"n": 17,
+"q": "Complete the letter series: A, C, F, J, O, ?",
+"opts": [
+"S",
+"T",
+"U",
+"V"
+],
+"ans": "C",
+"ans_text": "U",
+"expl": "Alphabet positions ka gap barh raha hai: +2, +3, +4, +5, +6. O(15) + 6 = U(21). Academic Portion English:"
+},
+{
+"n": 18,
+"q": "What is the antonym of 'Wild'?",
+"opts": [
+"Tame",
+"Fierce",
+"Angry",
+"Free"
+],
+"ans": "A",
+"ans_text": "Tame",
+"expl": "Wild ka mutazaad Tame (domesticated/paltoo) hota hai."
+},
+{
+"n": 19,
+"q": "Why do parents send children to school?",
+"opts": [
+"For playing",
+"For education and growth",
+"For earning money",
+"For fun only"
+],
+"ans": "B",
+"ans_text": "For education and growth",
+"expl": "Children ko school bhejne ka asal maqsad taleem aur shaoor hasil karna hai."
+},
+{
+"n": 20,
+"q": "He is strictly opposed _______ this new rule.",
+"opts": [
+"at",
+"to",
+"with",
+"for"
+],
+"ans": "B",
+"ans_text": "to",
+"expl": "Opposed ke baad preposition to istemal hoti hai."
+},
+{
+"n": 21,
+"q": "She has been living here _______ 1999.",
+"opts": [
+"for",
+"since",
+"from",
+"until"
+],
+"ans": "B",
+"ans_text": "since",
+"expl": "Starting point of time ke sath since lagaya jata hai."
+},
+{
+"n": 22,
+"q": "The prisoner was accused _______ theft.",
+"opts": [
+"with",
+"of",
+"for",
+"by"
+],
+"ans": "B",
+"ans_text": "of",
+"expl": "Accused ke sath preposition of aati hai."
+},
+{
+"n": 23,
+"q": "What is the synonym of 'Obsolete'?",
+"opts": [
+"Current",
+"Outdated",
+"Modern",
+"Fresh"
+],
+"ans": "B",
+"ans_text": "Outdated",
+"expl": "Obsolete ka matlab purana ya ghair-mustamal (Outdated) hota hai."
+},
+{
+"n": 24,
+"q": "What is the antonym of 'Transparent'?",
+"opts": [
+"Opaque",
+"Clear",
+"Translucent",
+"Visible"
+],
+"ans": "A",
+"ans_text": "Opaque",
+"expl": "Transparent (shafaf) ka ulat Opaque (ghair-shafaf) hota hai."
+},
+{
+"n": 25,
+"q": "Choose the correctly spelled word:",
+"opts": [
+"Accomodation",
+"Accommodation",
+"Acommodation",
+"Accomadation"
+],
+"ans": "B",
+"ans_text": "Accommodation",
+"expl": "Sahi spelling double 'c' aur double 'm' ke sath Accommodation hai. Mathematics"
+},
+{
+"n": 26,
+"q": "What is 75% of 200?",
+"opts": [
+"140",
+"150",
+"160",
+"175"
+],
+"ans": "B",
+"ans_text": "150",
+"expl": "(75 ÷ 100) × 200 = 150."
+},
+{
+"n": 27,
+"q": "How many faces does a triangular prism have?",
+"opts": [
+"4",
+"5",
+"6",
+"8"
+],
+"ans": "B",
+"ans_text": "5",
+"expl": "Triangular prism ke total 5 faces hotay hain (2 triangular aur 3 rectangular)."
+},
+{
+"n": 28,
+"q": "If 20% of a number is 40, what is the number?",
+"opts": [
+"100",
+"150",
+"200",
+"250"
+],
+"ans": "C",
+"ans_text": "200",
+"expl": "40 ÷ 0.20 = 200."
+},
+{
+"n": 29,
+"q": "Solve for x: 3x + 5 = 20",
+"opts": [
+"3",
+"4",
+"5",
+"6"
+],
+"ans": "C",
+"ans_text": "5",
+"expl": "3x = 15, is liye x = 5."
+},
+{
+"n": 30,
+"q": "The ratio of boys to girls in a class is 3:2. If there are 15 boys, how many girls are there?",
+"opts": [
+"10",
+"12",
+"15",
+"20"
+],
+"ans": "A",
+"ans_text": "10",
+"expl": "3 units = 15 (1 unit = 5). Girls = 2 × 5 = 10."
+},
+{
+"n": 31,
+"q": "What is the eccentricity of a parabola?",
+"opts": [
+"e = 0",
+"e = 1",
+"e > 1",
+"e < 1"
+],
+"ans": "B",
+"ans_text": "e = 1",
+"expl": "Parabola ki eccentricity hamesha 1 ke barabar hoti hai. Pakistan Studies"
+},
+{
+"n": 32,
+"q": "The boundary line between Pakistan and India is called:",
+"opts": [
+"Durand Line",
+"Radcliffe Line",
+"McMahon Line",
+"Line of Control"
+],
+"ans": "B",
+"ans_text": "Radcliffe Line",
+"expl": "Sir Cyril Radcliffe ne 1947 mein border commission head karte hue yeh line draw ki thi."
+},
+{
+"n": 33,
+"q": "What is the height of the K2 mountain peak?",
+"opts": [
+"8611 m",
+"8848 m",
+"8126 m",
+"8500 m"
+],
+"ans": "A",
+"ans_text": "8611 m",
+"expl": "K2 dunya ki doosri buland tareen choti hai jiski unchai 8,611 meters hai."
+},
+{
+"n": 34,
+"q": "In which year was the first Martial Law imposed in Pakistan?",
+"opts": [
+"1956",
+"1958",
+"1969",
+"1977"
+],
+"ans": "B",
+"ans_text": "1958",
+"expl": "October 1958 mein President Iskander Mirza ne pehla martial law lagaya tha."
+},
+{
+"n": 35,
+"q": "When did Balochistan officially become a province of Pakistan?",
+"opts": [
+"1947",
+"1955",
+"1970",
+"1973"
+],
+"ans": "C",
+"ans_text": "1970",
+"expl": "One Unit khatam hone par 1 July 1970 ko Balochistan mukammal sooba bana."
+},
+{
+"n": 36,
+"q": "In which year did Quaid-e-Azam present his Fourteen Points?",
+"opts": [
+"1928",
+"1929",
+"1930",
+"1935"
+],
+"ans": "B",
+"ans_text": "1929",
+"expl": "Nehru Report ke jawab mein March 1929 mein Fourteen Points pesh kiye gaye."
+},
+{
+"n": 37,
+"q": "In which year did Quaid-e-Azam join the All-India Muslim League?",
+"opts": [
+"1906",
+"1909",
+"1913",
+"1920"
+],
+"ans": "C",
+"ans_text": "1913",
+"expl": "Quaid-e-Azam ne 1913 mein Muslim League join ki."
+},
+{
+"n": 38,
+"q": "Who was the first Chief Justice of Pakistan?",
+"opts": [
+"Justice Muhammad Munir",
+"Sir Abdul Rashid",
+"Justice A.R. Cornelius",
+"Justice Hamoodur Rahman"
+],
+"ans": "B",
+"ans_text": "Sir Abdul Rashid",
+"expl": "Sir Abdul Rashid Pakistan ke pehle Chief Justice the."
+},
+{
+"n": 39,
+"q": "Who was the first President of Pakistan?",
+"opts": [
+"Quaid-e-Azam",
+"Liaquat Ali Khan",
+"Iskander Mirza",
+"Ayub Khan"
+],
+"ans": "C",
+"ans_text": "Iskander Mirza",
+"expl": "1956 ke constitution ke mutabiq Iskander Mirza pehle Sadar bane."
+},
+{
+"n": 40,
+"q": "Who was Pakistan's first Foreign Minister?",
+"opts": [
+"Liaquat Ali Khan",
+"Sir Muhammad Zafarullah Khan",
+"I.I. Chundrigar",
+"Malik Ghulam Muhammad"
+],
+"ans": "B",
+"ans_text": "Sir Muhammad Zafarullah Khan",
+"expl": "Sir Muhammad Zafarullah Khan pehle Foreign Minister the."
+},
+{
+"n": 41,
+"q": "What is the approximate coastline length of Pakistan?",
+"opts": [
+"990 km",
+"1,046 km",
+"1,120 km",
+"1,250 km"
+],
+"ans": "B",
+"ans_text": "1,046 km",
+"expl": "Pakistan ki coastline taqreeban 1,046 km hai."
+},
+{
+"n": 42,
+"q": "At what price did Pakistan purchase Gwadar from Oman in 1958?",
+"opts": [
+"£1 million",
+"£3 million",
+"£5 million",
+"£10 million"
+],
+"ans": "B",
+"ans_text": "Approximately £3 million",
+"expl": "Gwadar Oman se 1958 mein 3 million pounds mein khareeda gaya.PKR:2 crore 30 lakh(23M)"
+},
+{
+"n": 43,
+"q": "Which article of the 1973 Constitution guarantees the Right to Education?",
+"opts": [
+"Article 19-A",
+"Article 25-A",
+"Article 37",
+"Article 45"
+],
+"ans": "B",
+"ans_text": "Article 25-A",
+"expl": "Article 25-A free aur lazmi taleem ko state ki zimedari qarar deta hai."
+},
+{
+"n": 44,
+"q": "In which year was the Lucknow Pact signed?",
+"opts": [
+"1906",
+"1913",
+"1916",
+"1919"
+],
+"ans": "C",
+"ans_text": "1916",
+"expl": "Lucknow Pact 1916 mein hua tha."
+},
+{
+"n": 45,
+"q": "The book \"My Brother\" was written by:",
+"opts": [
+"Quaid-e-Azam",
+"Fatima Jinnah",
+"Begum Ra'ana Liaquat Ali",
+"Stanley Wolpert"
+],
+"ans": "B",
+"ans_text": "Fatima Jinnah",
+"expl": "Fatima Jinnah ne Quaid-e-Azam ki sawaneh hayat par yeh kitaab likhi."
+},
+{
+"n": 46,
+"q": "In which year did the Kargil War take place?",
+"opts": [
+"1965",
+"1971",
+"1999",
+"2001"
+],
+"ans": "C",
+"ans_text": "1999",
+"expl": "Kargil War summer 1999 mein lari gayi thi."
+},
+{
+"n": 47,
+"q": "Which is the largest province of Pakistan by area?",
+"opts": [
+"Punjab",
+"Sindh",
+"Balochistan",
+"KPK"
+],
+"ans": "C",
+"ans_text": "Balochistan",
+"expl": "Raqbay ke lehaz se Balochistan sab se bara sooba hai. Islamic Studies"
+},
+{
+"n": 48,
+"q": "Which is the shortest Surah in the Holy Quran?",
+"opts": [
+"Surah Al-Kausar",
+"Surah Al-Ikhlas",
+"Surah Al-Asr",
+"Surah An-Nas"
+],
+"ans": "A",
+"ans_text": "Surah Al-Kausar",
+"expl": "Surah Al-Kausar mein sirf 3 ayaat hain jo ke Quran Majeed ki sab se choti Surah hai."
+},
+{
+"n": 49,
+"q": "Which Surah is known as the Heart of the Holy Quran?",
+"opts": [
+"Surah Yaseen",
+"Surah Rehman",
+"Surah Fatiha",
+"Surah Mulk"
+],
+"ans": "A",
+"ans_text": "Surah Yaseen",
+"expl": "Surah Yaseen ko Qalb-ul-Quran (Heart of Quran) kaha jata hai."
+},
+{
+"n": 50,
+"q": "Which Prophet was given the title \"Ruhullah\"?",
+"opts": [
+"Prophet Musa (A.S)",
+"Prophet Isa (A.S)",
+"Prophet Ibrahim (A.S)",
+"Prophet Dawood (A.S)"
+],
+"ans": "B",
+"ans_text": "Prophet Isa (A.S)",
+"expl": "Ruhullah Hazrat Isa (A.S) ka laqab hai."
+},
+{
+"n": 51,
+"q": "In which Hijri year was the Battle of Badr fought?",
+"opts": [
+"1 AH",
+"2 AH",
+"3 AH",
+"4 AH"
+],
+"ans": "B",
+"ans_text": "2 AH",
+"expl": "Jung-e-Badr 17 Ramadan 2 Hijri ko lari gayi thi."
+},
+{
+"n": 52,
+"q": "In which Hijri year was Hajj made obligatory?",
+"opts": [
+"2 AH",
+"8 AH",
+"9 AH",
+"10 AH"
+],
+"ans": "C",
+"ans_text": "9 AH",
+"expl": "Hajj 9 Hijri mein farz hua tha."
+},
+{
+"n": 53,
+"q": "Which is the last Surah of the Holy Quran?",
+"opts": [
+"Surah Al-Falaq",
+"Surah An-Nas",
+"Surah Al-Ikhlas",
+"Surah Al-Kausar"
+],
+"ans": "B",
+"ans_text": "Surah An-Nas",
+"expl": "Surah An-Nas 114th aur aakhri Surah hai."
+},
+{
+"n": 54,
+"q": "Who was the first female martyr in Islam?",
+"opts": [
+"Hazrat Khadija (R.A)",
+"Hazrat Sumayyah (R.A)",
+"Hazrat Fatima (R.A)",
+"Hazrat Ayesha (R.A)"
+],
+"ans": "B",
+"ans_text": "Hazrat Sumayyah bint Khayyat (R.A)",
+"expl": "Abu Jahl ne Islam na chhorne ki wajah se unhein shaheed kar diya."
+},
+{
+"n": 55,
+"q": "Which angel is responsible for rainfall and sustenance?",
+"opts": [
+"Hazrat Jibrail (A.S)",
+"Hazrat Mikael (A.S)",
+"Hazrat Israfil (A.S)",
+"Hazrat Izrail (A.S)"
+],
+"ans": "B",
+"ans_text": "Hazrat Mikael (A.S)",
+"expl": "Baarish barsane aur rizq taqseem karne ki zimedari Hazrat Mikael (A.S) ke paas hai."
+},
+{
+"n": 56,
+"q": "How many obligatory acts (Faraiz) are there in Wudu?",
+"opts": [
+"3",
+"4",
+"5",
+"6"
+],
+"ans": "B",
+"ans_text": "4",
+"expl": "Wudu ke 4 faraiz hain."
+},
+{
+"n": 57,
+"q": "In which Hijri year did the Conquest of Makkah take place?",
+"opts": [
+"6 AH",
+"7 AH",
+"8 AH",
+"9 AH"
+],
+"ans": "C",
+"ans_text": "8 AH",
+"expl": "Fatah-e-Makkah Ramadan 8 Hijri mein hui thi. General Knowledge & Current Affairs"
+},
+{
+"n": 58,
+"q": "When did Pakistan join the United Nations (UN)?",
+"opts": [
+"14 August 1947",
+"30 September 1947",
+"24 October 1947",
+"1 January 1948"
+],
+"ans": "B",
+"ans_text": "30 September 1947",
+"expl": "Pakistan 30 September 1947 ko UN ka member bana."
+},
+{
+"n": 59,
+"q": "Where is the headquarters of the United Nations (UN) located?",
+"opts": [
+"Geneva, Switzerland",
+"Washington D.C., USA",
+"New York City, USA",
+"Paris, France"
+],
+"ans": "C",
+"ans_text": "New York City, USA",
+"expl": "UN ka central headquarters New York mein hai."
+},
+{
+"n": 60,
+"q": "Where is the headquarters of OIC and how many total members are there?",
+"opts": [
+"Riyadh, 55 members",
+"Jeddah, 57 members",
+"Cairo, 54 members",
+"Istanbul, 57 members"
+],
+"ans": "B",
+"ans_text": "Jeddah (Saudi Arabia), 57 members",
+"expl": "OIC 25 September 1969 ko Rabat, Morocco mein bani thi. Is ke qayam ki aham wajah Masjid Al- Aqsa mein aag lagaye jane ka waqia tha."
+},
+{
+"n": 61,
+"q": "Where is the headquarters of NATO located?",
+"opts": [
+"London, UK",
+"Brussels, Belgium",
+"Geneva, Switzerland",
+"New York, USA"
+],
+"ans": "B",
+"ans_text": "Brussels, Belgium",
+"expl": "NATO (North Atlantic Treaty Organization) aik military alliance hai jo 4 April 1949 ko bani thi. Is ka maqsad member countries ki collective security aur defence hai."
+},
+{
+"n": 62,
+"q": "Where is the headquarters of the Shanghai Cooperation Organisation (SCO) located?",
+"opts": [
+"Moscow, Russia",
+"Beijing, China",
+"Tashkent, Uzbekistan",
+"Shanghai, China"
+],
+"ans": "B",
+"ans_text": "Beijing, China",
+"expl": "SCO ka secretariat Beijing mein waqeh hai."
+},
+{
+"n": 63,
+"q": "Which is the largest continent in the world?",
+"opts": [
+"Africa",
+"Asia",
+"Europe",
+"North America"
+],
+"ans": "B",
+"ans_text": "Asia",
+"expl": "Asia raqbay aur aabadi dono lehaz se sab se bara continent hai."
+},
+{
+"n": 64,
+"q": "Which is the largest ocean in the world?",
+"opts": [
+"Atlantic Ocean",
+"Indian Ocean",
+"Pacific Ocean",
+"Arctic Ocean"
+],
+"ans": "C",
+"ans_text": "Pacific Ocean",
+"expl": "Pacific Ocean dunya ka sab se bara aur gehra samandar hai."
+},
+{
+"n": 65,
+"q": "What is the longest river in the world?",
+"opts": [
+"Amazon River",
+"Nile River",
+"Yangtze River",
+"Indus River"
+],
+"ans": "B",
+"ans_text": "Nile River",
+"expl": "Darya-e-Neel (Nile) dunya ka sab se lamba darya hai. (largest Amazon)"
+},
+{
+"n": 66,
+"q": "What is the official currency of Japan?",
+"opts": [
+"Yuan",
+"Won",
+"Yen",
+"Ringgit"
+],
+"ans": "C",
+"ans_text": "Yen",
+"expl": "Japan ki currency ka naam Yen hai."
+},
+{
+"n": 67,
+"q": "What is the capital of Australia?",
+"opts": [
+"Sydney",
+"Melbourne",
+"Canberra",
+"Perth"
+],
+"ans": "C",
+"ans_text": "Canberra",
+"expl": "Australia ka capital Canberra hai."
+},
+{
+"n": 68,
+"q": "What is the capital of Saudi Arabia?",
+"opts": [
+"Jeddah",
+"Riyadh",
+"Makkah",
+"Madinah"
+],
+"ans": "B",
+"ans_text": "Riyadh",
+"expl": "Saudi Arabia ka capital Riyadh hai."
+},
+{
+"n": 69,
+"q": "What is the capital of Hungary?",
+"opts": [
+"Vienna",
+"Budapest",
+"Bucharest",
+"Prague"
+],
+"ans": "B",
+"ans_text": "Budapest",
+"expl": "Hungary ka capital city Budapest hai."
+},
+{
+"n": 70,
+"q": "Who holds the record for the most wickets in men's Test cricket history?",
+"opts": [
+"Shane Warne",
+"James Anderson",
+"Muttiah Muralitharan",
+"Anil Kumble"
+],
+"ans": "C",
+"ans_text": "Muttiah Muralitharan",
+"expl": "Muttiah Muralitharan ne Test cricket mein sab se zyada 800 wickets li hain."
+},
+{
+"n": 71,
+"q": "Jahangir Khan is world-famous for which sport?",
+"opts": [
+"Cricket",
+"Squash",
+"Hockey",
+"Tennis"
+],
+"ans": "B",
+"ans_text": "Squash",
+"expl": "Jahangir Khan ne squash mein 555 matches musalsal jeetne ka record banaya."
+},
+{
+"n": 72,
+"q": "Which country was the world's largest crude oil producer in 2025/2026?",
+"opts": [
+"Saudi Arabia",
+"Russia",
+"United States of America (USA)",
+"Iran"
+],
+"ans": "C",
+"ans_text": "United States of America (USA)",
+"expl": "Crude oil production mein USA dunya mein pehle number par raha hai."
+},
+{
+"n": 73,
+"q": "Which mountain pass connects Pakistan with Afghanistan in the Khyber region?",
+"opts": [
+"Khunjerab Pass",
+"Khyber Pass",
+"Bolan Pass",
+"Lowari Pass"
+],
+"ans": "B",
+"ans_text": "Khyber Pass",
+"expl": "Khyber Pass Pakistan ko Afghanistan ke sath jorta hai."
+},
+{
+"n": 74,
+"q": "In which direction is Afghanistan located relative to Pakistan?",
+"opts": [
+"East",
+"South",
+"Northwest",
+"Northeast"
+],
+"ans": "C",
+"ans_text": "Northwest",
+"expl": "Afghanistan Pakistan ke Northwest mein waqeh hai. Join our WhatsApp Channel for More Information & Free Notes!"
+}
+]

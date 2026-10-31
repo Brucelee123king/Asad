@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin - PMA Preparation</title>
+<style>
+:root{--bg:#f1f5f9;--cd:#fff;--tx:#0f172a;--mu:#64748b;--bd:#cbd5e1;--ac:#4f46e5;--ok:#16a34a;--no:#dc2626}
+html.dark{--bg:#0b1020;--cd:#141b34;--tx:#e2e8f0;--mu:#94a3b8;--bd:#334155;--ac:#818cf8}
+#thBtn{position:fixed;top:10px;right:10px;z-index:20;width:44px;height:44px;border-radius:50%;padding:0;font-size:20px;background:var(--cd);color:var(--tx);border:1px solid var(--bd);box-shadow:0 4px 14px rgba(0,0,0,.15)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.45 system-ui,Arial,sans-serif;padding:14px;max-width:640px;margin:auto}
+h1{font-size:20px;margin:6px 0 2px}h2{font-size:16px;margin:18px 0 8px}.mu{color:var(--mu);font-size:13px}
+.card{background:var(--cd);border:1px solid var(--bd);border-radius:14px;padding:12px;margin:10px 0}
+button{border:0;border-radius:10px;padding:10px 14px;font-size:14px;font-weight:700;cursor:pointer;background:var(--ac);color:#fff}
+button.g{background:transparent;color:var(--tx);border:1px solid var(--bd)}button.r{background:var(--no)}button.k{background:var(--ok)}
+.row{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}.mq{background:rgba(129,140,248,.14);border-radius:10px;padding:9px 11px;margin-top:8px;font-size:15px;white-space:pre-wrap;word-break:break-word}.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.chips label{border:1px solid var(--bd);border-radius:999px;padding:6px 10px;font-size:13px;display:flex;gap:6px;align-items:center}
+.tag{display:inline-block;border-radius:999px;padding:2px 9px;font-size:12px;font-weight:700}.pending{background:#fef3c7;color:#92400e}.approved{background:#dcfce7;color:#166534}.blocked{background:#fee2e2;color:#991b1b}
+input[type=text],textarea{width:100%;padding:10px;border-radius:10px;border:1px solid var(--bd);background:transparent;color:var(--tx);font-size:15px}
+textarea{min-height:110px}.badge{background:var(--no);color:#fff;border-radius:999px;padding:1px 8px;font-size:12px;margin-left:6px}
+.pr{display:flex;align-items:center;gap:12px;cursor:pointer}.pr img,.pr .ph0{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:0 0 auto;background:var(--bd);display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--mu)}
+.pd{display:none;margin-top:10px;border-top:1px solid var(--bd);padding-top:8px}.card.op .pd{display:block}.pd div{display:flex;justify-content:space-between;gap:10px;padding:5px 0;font-size:14px}.pd div b{text-align:right;word-break:break-word}.pd img{width:160px;height:160px;border-radius:16px;object-fit:cover;display:block;margin:4px auto 8px}
+.acc h3{margin:0 0 2px;font-size:17px}.acc .ar{display:flex;align-items:center;gap:8px;width:100%;background:none;color:var(--tx);border:1px solid var(--bd);border-radius:12px;padding:10px 12px;margin-top:8px;text-align:left;font-weight:600}
+.acc .ar.on{border-color:var(--ac);box-shadow:0 0 0 2px var(--ac) inset}.acc .ar b{margin-left:auto;font-size:20px}.acc .cps{display:flex;flex-wrap:wrap;gap:5px}
+.cp{display:inline-block;border-radius:999px;padding:3px 10px;font-size:12.5px;font-weight:800}.cp.i{background:#fde68a;color:#78350f}.cp.v{background:#bfdbfe;color:#1e3a8a}.cp.s{background:#fed7aa;color:#7c2d12}.cp.n{background:#e2e8f0;color:#334155}
+.acc .fl{margin-top:10px;font-size:13px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+#msg{position:sticky;top:6px;z-index:5}.msg{border-radius:10px;padding:10px;font-size:14px;font-weight:600;background:#0f172a;color:#fff;margin:6px 0}
+</style></head><body>
+<button type="button" id="thBtn" aria-label="Light or dark mode"></button>
+<script>(function(){var d=document.documentElement,b=document.getElementById('thBtn'),k='adm_theme',v=null;try{v=localStorage.getItem(k)}catch(e){}
+ var dark=v?v==='dark':!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches);function set(x){dark=x;d.classList.toggle('dark',x);d.style.colorScheme=x?'dark':'light';b.textContent=x?'☀️':'🌙';b.title=x?'Light mode':'Dark mode'}
+ set(dark);b.onclick=function(){set(!dark);try{localStorage.setItem(k,dark?'dark':'light')}catch(e){}}})();</script>
+<h1>PMA Preparation: Admin</h1><div class="mu" id="who">Not signed in</div><div id="msg"></div>
+<div id="login" class="card"><p>Sign in with the admin Google account.</p><div class="row"><button id="gbtn">Sign in with Google</button></div>
+<div id="emuForm" style="display:none"><p class="mu">Test mode</p><input type="text" id="emuE" placeholder="email"><input type="text" id="emuP" placeholder="password" style="margin-top:6px"><div class="row"><button id="emuB">Test login</button></div></div></div>
+<div id="app" style="display:none">
+ <div class="row"><button id="tReq">Requests<span class="badge" id="nReq">0</span></button><button class="g" id="tUsr">People<span class="badge" id="nUsr">0</span></button><button class="g" id="tPro">User details<span class="badge" id="nPro">0</span></button><button class="g" id="tAcc">Courses</button><button class="g" id="tKey">Passwords</button><button class="g" id="bOut">Logout</button><button class="g" id="bRef">Refresh</button></div>
+ <input type="text" id="srch" placeholder="Search email or name..." autocomplete="off" autocapitalize="off" spellcheck="false" style="margin-top:10px"><div class="mu" id="srchN"></div>
+ <div id="onNow" class="card" style="margin-top:10px"></div>
+ <div id="pAcc" style="display:none"><div id="accBox" class="card"></div></div><div id="pReq"></div><div id="pUsr" style="display:none"></div><div id="pPro" style="display:none"></div>
+ <div id="pGive" class="card" style="margin-top:14px"><b>Give Initial PMA to everyone</b><div class="mu">Ticks Initial PMA Preparation (all categories) for every person in Requests and People. Their Interview and ISSB ticks stay as they are. Blocked people stay blocked. They get it at their next app opening.</div><div class="row"><button class="k" id="bGive">Give Initial PMA to everyone</button></div></div>
+ <div id="pReset" class="card" style="display:none;margin-top:14px"><b>Lock everyone again</b><div class="mu">Every approved person goes back to the Requests tab with nothing ticked. They can still open the app, but Initial PMA, Interview and ISSB stay locked until you tick them again. Blocked people stay blocked.</div><div class="row"><button class="r" id="bReset">Lock everyone again</button></div></div>
+ <div id="pKey" style="display:none">
+  <h2>Password</h2><div class="mu">One password for each preparation. The Initial PMA Preparation password opens all its categories. The app gets them from here for approved people; nobody types them. Type the passwords I gave you, then press Save.</div>
+  <div class="card" hidden><textarea id="paste"></textarea><div class="row"><button id="bFill">Fill the boxes</button></div></div>
+  <div id="keyBoxes"></div><div class="row"><button class="k" id="bSaveKeys">Save passwords</button></div>
+ </div>
+</div>
+<script src="fb.js"></script>
+<script>
+(function(){
+var ADMIN='asadullah75t@gmail.com',CFG=__FBCFG__;
+var CATS=[['o','1000 MCQs'],['pma','PMA 159'],['fa','Forces Academy'],['hk','Hakeem'],['lc','PMA 158'],['pg','Pro Genius'],['nv','Non Verbal'],['cn','Constitution of Pakistan'],['iv','100 Most Repeated'],['en','Academic (English, Islamiat)'],['lf','Light Forces Academy'],['hf','Haroon Force Academy']];
+var $=function(i){return document.getElementById(i)},FB=window.FB,app=FB.initializeApp(CFG),auth=FB.getAuth(app),fs=FB.getFirestore(app);
+var emu=location.hostname==='localhost'&&/[?&]emu=1/.test(location.search);
+if(emu){FB.connectAuthEmulator(auth,'http://127.0.0.1:9099',{disableWarnings:true});FB.connectFirestoreEmulator(fs,'127.0.0.1',8080);$('emuForm').style.display='block'}
+function say(m,bad){var d=document.createElement('div');d.className='msg';if(bad)d.style.background='#991b1b';d.textContent=m;$('msg').innerHTML='';$('msg').appendChild(d);setTimeout(function(){if(d.parentNode)d.remove()},6000)}
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function tab(t){['Req','Usr','Pro','Acc','Key'].forEach(function(x){$('p'+x).style.display=x===t?'block':'none';$('t'+x).className=x===t?'':'g'});$('pReset').style.display=t==='Usr'?'block':'none';$('pGive').style.display=(t==='Usr'||t==='Req')?'block':'none'}
+$('tReq').onclick=function(){tab('Req')};$('tUsr').onclick=function(){tab('Usr')};$('tKey').onclick=function(){tab('Key');loadKeys()};$('tPro').onclick=function(){tab('Pro')};['tReq','tUsr','tPro','tKey'].forEach(function(id){$(id).addEventListener('click',function(){if(ACCF){ACCF='';accDraw();filt()}})});$('tAcc').onclick=function(){tab('Acc')};
+$('gbtn').onclick=function(){FB.signInWithPopup(auth,new FB.GoogleAuthProvider()).catch(function(e){say('Sign-in failed: '+(e.code||e.message),1)})};
+$('emuB').onclick=function(){FB.signInWithEmailAndPassword(auth,$('emuE').value,$('emuP').value).catch(function(e){say('Test login failed: '+e.code,1)})};
+$('bOut').onclick=function(){FB.signOut(auth)};$('bRef').onclick=function(){load()};
+FB.onAuthStateChanged(auth,function(u){
+  if(!u){$('who').textContent='Not signed in';$('login').style.display='block';$('app').style.display='none';return}
+  var ok=(u.email||'').toLowerCase()===ADMIN&&u.emailVerified;
+  $('who').textContent=u.email+(ok?' (admin)':' - NOT the admin account');
+  if(!ok){$('login').style.display='block';$('app').style.display='none';say('This account is not the admin. Logout and use '+ADMIN,1);return}
+  $('login').style.display='none';$('app').style.display='block';load()});
+var IDLE=30*60*1000,lastAct=Date.now();['click','keydown','touchstart','scroll'].forEach(function(e){document.addEventListener(e,function(){lastAct=Date.now()},{passive:true})});
+setInterval(function(){if(auth.currentUser&&Date.now()-lastAct>IDLE){FB.signOut(auth);say('You were logged out after 30 minutes without use. Sign in again.',1)}},30000);
+var USERS=[],MSGS={},DAYS={},DEVS={},PROS=[];
+function pdate(t){try{return t.toDate().toLocaleString()}catch(e){return ''}}
+function pdob(v){var m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(v||'');if(!m)return v||'';var a=new Date(+m[1],m[2]-1,+m[3]),n=new Date(),y=n.getFullYear()-a.getFullYear();if(n<new Date(n.getFullYear(),m[2]-1,+m[3]))y--;return a.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})+' ('+y+' years)'}
+function proCard(p){var nm=((p.fn||'')+' '+(p.ln||'')).trim()||'(no name)',ph=p.ph?'+92 '+p.ph:'No number',img=/^data:image\/jpeg;base64,/.test(p.photo||'')?p.photo:'';
+  var row=function(a,b){return '<div><span class="mu">'+a+'</span><b>'+esc(b||'-')+'</b></div>'};
+  return '<div class="card" data-s="'+esc((nm+' '+(p.ph||'')+' '+(p.email||'')+' '+(p.city||'')).toLowerCase())+'"><div class="pr" data-pro="1">'+(img?'<img alt="" src="'+img+'">':'<span class="ph0">'+esc(nm[0].toUpperCase())+'</span>')+'<div style="min-width:0"><b>'+esc(nm)+'</b><div class="mu">'+esc(ph)+'</div></div><span class="mu" style="margin-left:auto">Tap</span></div>'+
+    '<div class="pd">'+(img?'<img alt="" src="'+img+'">':'')+row('First name',p.fn)+row('Last name',p.ln)+row('Phone',p.ph?'+92 '+p.ph:'')+row('Email',p.email)+row('Address',p.addr)+row('Province',p.prov)+row('City',p.city)+row('Gender',p.gen)+row('Date of birth',pdob(p.dob))+row('Zip code',p.zip)+row('Last updated',pdate(p.t))+'</div></div>'}
+document.addEventListener('click',function(e){var h=e.target.closest('[data-pro]');if(h)h.parentNode.classList.toggle('op')});
+function load(){return Promise.all([FB.getDocs(FB.collection(fs,'users')),FB.getDocs(FB.collection(fs,'msgs')).catch(function(){return null}),FB.getDocs(FB.collectionGroup(fs,'days')).catch(function(){return null}),FB.getDocs(FB.collection(fs,'devices')).catch(function(){return null}),FB.getDocs(FB.collection(fs,'profiles')).catch(function(){return null})]).then(function(r){var s=r[0];USERS=[];s.forEach(function(d){var x=d.data();x.id=d.id;USERS.push(x)});MSGS={};if(r[1])r[1].forEach(function(d){MSGS[d.id]=d.data()});DEVS={};if(r[3])r[3].forEach(function(d){DEVS[d.id]=d.data()});PROS=[];if(r[4])r[4].forEach(function(d){var x=d.data();x.id=d.id;PROS.push(x)});DAYS={};if(r[2])r[2].forEach(function(d){var uid=d.ref.parent.parent.id;(DAYS[uid]=DAYS[uid]||[]).push({day:d.id,d:d.data()})});draw();FB.setDoc(FB.doc(fs,'stats','public'),{approved:USERS.filter(function(u){return u.status==='approved'}).length,t:FB.serverTimestamp()}).catch(function(){})}).catch(function(e){say('Could not load: '+(e.code||e.message),1)})}
+function ts(x){try{return x.requested.toDate().toLocaleString()}catch(e){return ''}}
+/* one tick per main preparation: 'Initial PMA Preparation' gives all its categories (CATS); Interview and ISSB are stored as 'int' / 'issb' */
+var GROUPS=[['ipma','Initial PMA Preparation (all categories)'],['int','Initial Interview Preparation'],['issb','ISSB Preparation']];
+function hasAll(u){var c=u.cats||[];return CATS.every(function(x){return c.indexOf(x[0])>-1})}
+function chips(u){var c=u.cats||[],part=CATS.filter(function(x){return c.indexOf(x[0])>-1}).length;
+  return '<div class="chips">'+GROUPS.map(function(g){var on=g[0]==='ipma'?hasAll(u):c.indexOf(g[0])>-1;return '<label><input type="checkbox" data-g="'+g[0]+'"'+(on?' checked':'')+'> '+g[1]+'</label>'}).join('')+'</div>'+
+  (part&&part<CATS.length?'<div class="mu">Now he has '+part+' of '+CATS.length+' categories. Tick Initial PMA Preparation and Save to give him all.</div>':'')}
+function msgs(u){var out=[],m=MSGS[u.id],ds=(DAYS[u.id]||[]).slice().sort(function(x,y){return x.day<y.day?1:-1});
+  ds.forEach(function(x){for(var i=(x.d.n||0);i>=1;i--){if(!x.d['m'+i])continue;var t='';try{t=x.d['t'+i].toDate().toLocaleString()}catch(e){}out.push({t:t,m:x.d['m'+i],n:i,k:'today'})}});
+  if(m&&m.n){for(var j=m.n;j>=1;j--){if(!m['m'+j])continue;var t2='';try{t2=m['t'+j].toDate().toLocaleString()}catch(e){}out.push({t:t2,m:m['m'+j],n:j,k:'first'})}}
+  if(!out.length)return '';var more=out.length>12?out.length-12:0;
+  return out.slice(0,12).map(function(o){return '<div class="mq"><div class="mu">'+(o.t?esc(o.t):'Message')+'</div>'+esc(o.m)+'</div>'}).join('')+(more?'<div class="mu" style="margin-top:6px">... and '+more+' older messages</div>':'')}
+function devLine(u){var d=DEVS[u.id];if(!d)return '<div class="mu">Phone: not used yet</div>';var t='';try{t=d.t.toDate().toLocaleString()}catch(e){}return '<div class="mu">Phone: locked to one phone'+(t?' (since '+esc(t)+')':'')+'</div>'}
+function card(u){return '<div class="card" data-cb="'+combo(u)+'" data-id="'+u.id+'" data-s="'+esc(((u.email||'')+' '+(u.name||'')).toLowerCase())+'"><b>'+esc(u.email)+'</b> <span class="tag '+u.status+'">'+u.status+'</span><div class="mu">'+esc(u.name||'')+' '+esc(ts(u))+'</div>'+devLine(u)+msgs(u)+chips(u)+
+ '<div class="row"><button class="k" data-a="ok">'+(u.status==='approved'?'Save':'Approve')+'</button>'+(u.status==='blocked'?'':'<button class="r" data-a="block">Block</button>')+'<button class="g" data-a="del">Delete</button>'+(DEVS[u.id]?'<button class="g" data-a="dev">Reset phone</button>':'')+'</div></div>'}
+/* course access: who has Initial PMA (any of its categories), Interview, ISSB, and every mix of them */
+var ACCF='';
+function combo(u){if(u.status==='blocked')return 'B';var c=u.cats||[],i=CATS.some(function(x){return c.indexOf(x[0])>-1}),v=c.indexOf('int')>-1,s=c.indexOf('issb')>-1;return (i?'I':'')+(v?'V':'')+(s?'S':'')||'0'}
+var COMBOS=[['I','Only Initial PMA'],['V','Only Interview'],['S','Only ISSB'],['IV','Initial PMA + Interview'],['IS','Initial PMA + ISSB'],['VS','Interview + ISSB'],['IVS','All three'],['0','Nothing open (locked)']];
+function chipsOf(k){if(k==='0')return '<span class="cp n">Nothing</span>';return (k.indexOf('I')>-1?'<span class="cp i">Initial PMA</span>':'')+(k.indexOf('V')>-1?'<span class="cp v">Interview</span>':'')+(k.indexOf('S')>-1?'<span class="cp s">ISSB</span>':'')}
+function accDraw(){var cnt={},n=0;USERS.forEach(function(u){if((u.email||'').toLowerCase()===ADMIN)return;var k=combo(u);if(k==='B')return;cnt[k]=(cnt[k]||0)+1;n++});
+  var tot={I:0,V:0,S:0};Object.keys(cnt).forEach(function(k){['I','V','S'].forEach(function(x){if(k.indexOf(x)>-1)tot[x]+=cnt[k]})});
+  $('accBox').className='card acc';$('accBox').innerHTML='<h3>Course access</h3><div class="mu">'+n+' people (blocked not counted). In total: Initial PMA '+tot.I+' · Interview '+tot.V+' · ISSB '+tot.S+'. Tap a row to see those people.</div>'+
+    COMBOS.map(function(c){return '<button type="button" class="ar'+(ACCF===c[0]?' on':'')+'" data-acc="'+c[0]+'"><span><span class="cps">'+chipsOf(c[0])+'</span><span class="mu" style="display:block;margin-top:3px">'+c[1]+'</span></span><b>'+(cnt[c[0]]||0)+'</b></button>'}).join('')+
+    (ACCF?'<div class="fl">Showing: '+chipsOf(ACCF)+' <button type="button" class="g" data-acc="">Show everyone</button></div>':'')}
+document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('[data-acc]');if(!b)return;var k=b.getAttribute('data-acc');ACCF=(ACCF===k)?'':k;
+  if(ACCF)tab(ACCF==='0'?'Req':'Usr');accDraw();filt();if(ACCF){var t=$(ACCF==='0'?'pReq':'pUsr');if(t)t.scrollIntoView({behavior:'smooth'})}});
+function filt(){var q=($('srch').value||'').trim().toLowerCase(),n=0,t=0;[].forEach.call(document.querySelectorAll('#pReq .card[data-s],#pUsr .card[data-s],#pPro .card[data-s]'),function(c){t++;var ok=(!q||c.getAttribute('data-s').indexOf(q)>-1)&&(!ACCF||!c.hasAttribute('data-cb')||c.getAttribute('data-cb')===ACCF);c.style.display=ok?'':'none';if(ok)n++});$('srchN').textContent=(q||ACCF)?(n+' of '+t+' people match'):''}
+$('srch').addEventListener('input',filt);
+function onNow(){FB.getDoc(FB.doc(fs,'online','now')).then(function(d){var m=d.exists()?d.data():{},a=[],k,v,t,mx=0;
+  for(k in m){v=m[k];t=0;try{t=v&&v.toMillis?v.toMillis():(v&&v.t&&v.t.toMillis?v.t.toMillis():0)}catch(e){}a.push({uid:k,t:t,on:!(v&&v.on===false)});if(t>mx)mx=t}
+  mx=Date.now();var on=a.filter(function(x){return x.on&&x.t>=mx-210000}).map(function(x){var u=USERS.filter(function(z){return z.id===x.uid})[0];return u?(u.name||u.email):(x.uid===(auth.currentUser&&auth.currentUser.uid)?'You (admin)':'Unknown')});
+  $('onNow').innerHTML='<b>Online now: '+on.length+'</b><div class="mu">'+(on.length?on.map(function(s){return String(s).replace(/</g,'&lt;')}).join(', '):'Nobody right now.')+'</div><div class="mu">Updates every 20 seconds.</div>'}).catch(function(e){$('onNow').innerHTML='<span class="mu">Online list: '+(e.code||e.message)+'</span>'})}
+setInterval(function(){if(USERS&&USERS.length!==undefined&&$('app').style.display!=='none')onNow()},20000);
+/* lock all approved people again (the user's choice, Oct 2026): status back to pending, no ticks */
+document.addEventListener('click',function(e){if(!e.target.closest||!e.target.closest('#bGive'))return;
+  var ids=CATS.map(function(c){return c[0]}),ps=USERS.filter(function(u){return u.status!=='blocked'&&(u.email||'').toLowerCase()!==ADMIN});if(!ps.length){say('Nobody to give.');return}
+  var t=prompt('This gives Initial PMA Preparation to '+ps.length+' people. Type GIVE to continue.');if(String(t||'').trim().toUpperCase()!=='GIVE'){say('Cancelled. Nothing changed.');return}
+  say('Giving Initial PMA to '+ps.length+' people...');Promise.all(ps.map(function(u){var c=(u.cats||[]).slice();ids.forEach(function(x){if(c.indexOf(x)<0)c.push(x)});return FB.updateDoc(FB.doc(fs,'users',u.id),{status:'approved',cats:c})})).then(function(){say('Done: '+ps.length+' people now have Initial PMA Preparation.');return load()}).catch(function(x){say('Failed: '+(x.code||x.message),1);load()})});
+document.addEventListener('click',function(e){if(!e.target.closest||!e.target.closest('#bReset'))return;
+  var ap=USERS.filter(function(u){return u.status==='approved'});if(!ap.length){say('Nobody is approved now.');return}
+  var t=prompt('This locks '+ap.length+' approved people. They must ask again. Type LOCK to continue.');if(String(t||'').trim().toUpperCase()!=='LOCK'){say('Cancelled. Nothing changed.');return}
+  say('Locking '+ap.length+' people...');Promise.all(ap.map(function(u){return FB.updateDoc(FB.doc(fs,'users',u.id),{status:'pending',cats:[]})})).then(function(){say('Done: '+ap.length+' people are waiting for approval again (Requests tab).');return load()}).catch(function(x){say('Failed: '+(x.code||x.message),1);load()})});
+function draw(){
+  var p=USERS.filter(function(u){return u.status==='pending'}),o=USERS.filter(function(u){return u.status!=='pending'});
+  $('nReq').textContent=p.length;$('nUsr').textContent=o.length;try{accDraw()}catch(e){}
+  $('pReq').innerHTML='<h2>People waiting for approval</h2>'+(p.length?p.map(card).join(''):'<div class="mu">Nobody is waiting.</div>');
+  var ps=PROS.slice().sort(function(a,b){var x=a.t&&a.t.toMillis?a.t.toMillis():0,y=b.t&&b.t.toMillis?b.t.toMillis():0;return y-x});$('nPro').textContent=ps.length;
+  $('pPro').innerHTML='<h2>User details</h2><div class="mu">Details people filled in My Profile. Tap a person to see everything.</div>'+(ps.length?ps.map(proCard).join(''):'<div class="mu" style="margin-top:10px">Nobody has filled the profile yet.</div>');
+  $('pUsr').innerHTML='<h2>Approved and blocked people</h2>'+(o.length?o.map(card).join(''):'<div class="mu">No one yet.</div>');filt();try{onNow()}catch(e){}}
+document.addEventListener('click',function(e){var b=e.target.closest('button[data-a]');if(!b)return;var c=b.closest('.card'),id=c.getAttribute('data-id'),a=b.getAttribute('data-a');
+  var cats=[];[].slice.call(c.querySelectorAll('input[data-g]')).forEach(function(i){if(!i.checked)return;var g=i.getAttribute('data-g');if(g==='ipma')CATS.forEach(function(x){cats.push(x[0])});else cats.push(g)});
+  var ref=FB.doc(fs,'users',id),job;
+  if(a==='ok'){if(!cats.length&&!confirm('Nothing ticked. Approve anyway? (He will see nothing)'))return;job=FB.updateDoc(ref,{status:'approved',cats:cats})}
+  else if(a==='block'){if(!confirm('Block this person?'))return;job=FB.updateDoc(ref,{status:'blocked',cats:[]})}
+  else if(a==='dev'){if(!confirm('Reset the phone of this person? The next phone where he logs in becomes his phone.'))return;job=FB.deleteDoc(FB.doc(fs,'devices',id))}
+  else if(a==='del'){if(!confirm('Delete this person completely? He can ask again.'))return;job=FB.deleteDoc(ref)}
+  job.then(function(){say(a==='ok'?'Saved. This person is in the People tab: open it any time to tick or untick.':'Done');return load()}).catch(function(x){say('Failed: '+(x.code||x.message),1)})});
+/* one password for the whole Initial PMA Preparation: saved into every category's key */
+function keyBoxes(vals){var v=vals.o||'',same=CATS.every(function(c){return (vals[c[0]]||'')===v});var box=function(id,name,val){return '<div class="card"><b>'+name+'</b><input type="text" id="k_'+id+'" autocomplete="off" autocapitalize="characters" value="'+esc(val||'')+'" placeholder="XXXX-XXXX"></div>'};
+  $('keyBoxes').innerHTML=box('ipma','Initial PMA Preparation (all categories)',same?v:'')+box('int','Initial Interview Preparation',vals.int)+box('issb','ISSB Preparation',vals.issb)}
+function loadKeys(){var vals={};Promise.all(CATS.concat([['int'],['issb']]).map(function(c){return FB.getDoc(FB.doc(fs,'catKeys',c[0])).then(function(d){if(d.exists())vals[c[0]]=d.data().pw}).catch(function(){})})).then(function(){keyBoxes(vals)})}
+$('bFill').onclick=function(){var t=$('paste').value,vals={};var map={o:/1000\s*MCQs/i,pma:/PMA\s*159/i,fa:/Forces\s*Academy/i,hk:/Hakeem/i,lc:/PMA\s*158/i,pg:/Pro\s*Genius/i,nv:/Non\s*Verbal/i,cn:/Constitution/i,iv:/Most\s*Repeated/i,en:/Academic|English/i,lf:/Light\s*Forces/i};
+  t.split(/\n/).forEach(function(l){var m=/([A-Z0-9]{4}-[A-Z0-9]{4})\s*$/i.exec(l.trim());if(!m)return;for(var k of ['lf','pg','nv','cn','iv','en','o','pma','fa','hk','lc']){if(map[k].test(l)){vals[k]=m[1].toUpperCase();break}}});
+  keyBoxes(vals);say('Filled '+Object.keys(vals).length+' of 11. Check them, then press Save all passwords.')};
+$('bSaveKeys').onclick=function(){var jobs=[],n=0,v=($('k_ipma')&&$('k_ipma').value||'').trim().toUpperCase();if(v)CATS.forEach(function(c){n++;jobs.push(FB.setDoc(FB.doc(fs,'catKeys',c[0]),{pw:v}))});['int','issb'].forEach(function(k){var w=($('k_'+k)&&$('k_'+k).value||'').trim().toUpperCase();if(w){n++;jobs.push(FB.setDoc(FB.doc(fs,'catKeys',k),{pw:w}))}});
+  if(!n){say('Nothing to save',1);return}Promise.all(jobs).then(function(){say('Saved.')}).catch(function(x){var c=x.code||x.message||'';say(/permission/.test(c)?'For safety, passwords can be saved only within 15 minutes after signing in. Tap Logout, sign in again with Google, then save.':'Failed: '+c,1)})};
+keyBoxes({});
+})();
+</script></body></html>

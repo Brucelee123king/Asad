@@ -1,0 +1,245 @@
+#1798: (Forces Academy Test 15 · Q3) Which one of the following is different? A. PQO, B. KJL, C. UYW, D. SRT, E. FEG
+   A. PQO
+   B. KJL
+   C. UYW
+   D. SRT
+   E. FEG
+   MARKED: A
+   BLIND CHECKER: X (low) PQO and UYW both break the pattern
+   REASON SHOWN: KJL, SRT and FEG each go one step back then two steps forward (-1, +2). PQO goes forward then back (+1, -2), the reverse of that pattern, which is the answer given in the key.
+   RELATED: Tip: write the step sizes between neighbouring letters, as in +1, -2, to spot the odd group.
+
+#1801: (Forces Academy Test 15 · Q6) Which one of the following is different? A. Picture, B. Painting, C. Photography, D. Poster
+   A. Picture
+   B. Painting
+   C. Photography
+   D. Poster
+   MARKED: C
+   BLIND CHECKER: C (low) odd one out is subjective; photography is a process, others are objects
+   REASON SHOWN: Picture, painting and poster are finished visual items. Photography is the art or process of taking photographs, not an item.
+   RELATED: Tip: separate objects from activities or processes when finding the odd one out.
+
+#1811: (Forces Academy Test 15 · Q16) Which one of the following is different? A. August, B. September, C. October, D. November
+   A. August
+   B. September
+   C. October
+   D. November
+   MARKED: A
+   BLIND CHECKER: A (low) August only one not ending in -ber; month lengths split 2/2
+   REASON SHOWN: September, October and November all end in the letters ber. August does not.
+   RELATED: Tip: September to December get their names from Latin numbers (septem, octo, novem, decem).
+
+#1814: (Forces Academy Test 15 · Q19) What number comes next in the series: 8, 5, 3, 2, ?
+   A. 0
+   B. 1
+   C. 2
+   D. -1
+   MARKED: B
+   BLIND CHECKER: X (low) ambiguous: reverse Fibonacci gives 1, differences 3,2,1,0 gives 2
+   REASON SHOWN: The differences are 3, 2, 1, so the next difference is 1 (the gaps themselves shrink by 1). 2 - 1 = 1.
+   RELATED: Tip: when the differences form their own pattern, extend the pattern of differences.
+
+#1834: (Forces Academy Test 16 · Q9) What number comes next in the following series? 1/2, A/B, 3, C, 4/5, D/E, ?
+   A. F
+   B. 6
+   C. 5/6
+   D. G
+   MARKED: B
+   BLIND CHECKER: B (low) pattern of number/letter types unclear
+   REASON SHOWN: The pattern is number pair, letter pair, number, letter, so the terms run 1/2, A/B, 3, C, 4/5, D/E, 6, F and the next is 6.
+   RELATED: Tip: when numbers and letters are mixed, follow the numbers and the letters as two interleaved sequences.
+
+#1838: (Forces Academy Test 16 · Q14) Which one of the following is different? A. Month, B. Season, C. Year, D. Day, E. Week
+   A. Month
+   B. Season
+   C. Year
+   D. Day
+   E. Week
+   MARKED: B
+   BLIND CHECKER: B (low) season is not a fixed time unit; subjective
+   REASON SHOWN: Month, year, day and week are fixed units of time measured by the calendar. A season is a part of the year with a particular climate and has no fixed number of days.
+   RELATED: Tip: the four seasons are summer, autumn, winter and spring.
+
+#1841: (Forces Academy Test 16 · Q17) Which one of the following is different? A. Camel, B. Ox, C. Horse, D. Donkey, E. Mule
+   A. Camel
+   B. Ox
+   C. Horse
+   D. Donkey
+   E. Mule
+   MARKED: E
+   BLIND CHECKER: X (low) Camel/Ox (ruminants) vs Horse/Donkey/Mule (equines); no unique odd one
+   REASON SHOWN: Camel, ox, horse and donkey are natural animal species. A mule is a hybrid, the offspring of a male donkey and a female horse.
+   RELATED: Tip: a hinny is the opposite cross, a male horse and a female donkey.
+
+#1878: (Forces Academy Test 17 · Q24) People smoke because: A. They get pleasure from it, B. They want to show off, C. It is a fashion these days, D. It makes them social, E. It is good for health
+   A. They get pleasure from it
+   B. They want to show off
+   C. It is a fashion these days
+   D. It makes them social
+   E. It is good for health
+   MARKED: A
+   BLIND CHECKER: A (low) opinion question
+   REASON SHOWN: The most common reason smokers give is the pleasure or relief they feel, driven by nicotine. Smoking is not good for health.
+   RELATED: Tip: smoking is a leading cause of lung cancer and heart disease worldwide.
+
+#1889: (Forces Academy Test 17 · Q35) You should not tell lies because: A. People will not trust you, B. You will always be found out, C. It is bad to do so, D. Truth is bitter, E. You will be punished
+   A. People will not trust you
+   B. You will always be found out
+   C. It is bad to do so
+   D. Truth is bitter
+   E. You will be punished
+   MARKED: C
+   BLIND CHECKER: A (medium) 
+   REASON SHOWN: The basic reason not to lie is moral: it is wrong. The other reasons are consequences that may or may not follow.
+   RELATED: Tip: the answer that states the principle is better than one that states a possible consequence.
+
+#1892: (Forces Academy Test 17 · Q38) Which one of the following is different? A. Teacher, B. Patient, C. Lawyer, D. Doctor, E. Medicine
+   A. Teacher
+   B. Patient
+   C. Lawyer
+   D. Doctor
+   E. Medicine
+   MARKED: E
+   BLIND CHECKER: E (low) Patient also not a profession
+   REASON SHOWN: Teacher, patient, lawyer and doctor are all people. Medicine is a thing.
+   RELATED: Tip: check for person versus thing.
+
+#1917: (Forces Academy Test 20 · Q24) Which one is different? Camel, Donkey, Bull, Mare
+   A. Camel
+   B. Mare
+   C. Donkey
+   D. Bull
+   MARKED: B
+   BLIND CHECKER: X (low) odd-one-out ambiguous: Mare (female) vs Bull (male) vs Camel; no clear answer
+   REASON SHOWN: Camel, donkey and bull are general or male animal names, while a mare is specifically a female horse.
+   RELATED: Tip: the key for this test chose mare as the odd one.
+
+#1932: (Forces Academy Academic · Sheet Q10) Which country is the largest exporter of oil in the world?
+   A. Saudi Arabia
+   B. Russia
+   C. Iraq
+   D. United Arab Emirates
+   MARKED: A
+   BLIND CHECKER: X (low) disputed in 2026: US leads on total exports, Russia on seaborne crude, Saudi on 2025 crude; no single answer
+   REASON SHOWN: Saudi Arabia exports more crude oil than any other country.
+   RELATED: Saudi Arabia is the largest exporter of crude oil, while the United States is now the largest oil producer, followed by Russia and Saudi Arabia.
+
+#1997: (Forces Academy Academic · Exam World 25) On what date was the Objective Resolution passed (the chart gives 7 March)?
+   A. 7 March 1949
+   B. 12 March 1949
+   C. 12 March 1948
+   D. 23 March 1949
+   MARKED: B
+   BLIND CHECKER: X (low) resolution moved 7 March, passed 12 March 1949; question says chart gives 7 March, so A (chart) vs B (fact) conflict
+   REASON SHOWN: The Constituent Assembly passed it on 12 March 1949.
+   RELATED: The chart says 7 March, which is not the accepted date; it was moved by Liaquat Ali Khan.
+
+#2003: (Forces Academy Academic · Exam World 31) What were the years of the first war between Pakistan and India (chart says 1947 to 1949)?
+   A. 1947-49 (to 1950)
+   B. 1950-51
+   C. 1949-50
+   D. 1947-48
+   MARKED: D
+   BLIND CHECKER: X (medium) war 1947-48 (ceasefire Jan 1949); chart says 1947-49; option A is garbled, D is standard, so ambiguous
+   REASON SHOWN: The war began in October 1947 and the UN-brokered ceasefire took effect on 1 January 1949; it is usually called the 1947-48 war.
+   RELATED: Many books call it the 1947-48 war.
+
+#2050: (Forces Academy Academic · Line 22) How many seats did the Awami League win in the National Assembly election of 1970?
+   A. 100
+   B. 138
+   C. 160
+   D. 167
+   MARKED: C
+   BLIND CHECKER: X (medium) 160 of 300 general seats, 167 with reserved seats; both C and D defensible
+   REASON SHOWN: The Awami League of Sheikh Mujibur Rahman won 160 general seats, all but two of East Pakistan's seats.
+   RELATED: Counting reserved women seats, its tally rose to 167 of 313 seats.
+
+#2077: (Forces Academy Academic · Line 77) Which was the first country to recognise Pakistan?
+   A. Turkey
+   B. Iran
+   C. Saudi Arabia
+   D. Afghanistan
+   MARKED: B
+   BLIND CHECKER: X (medium) disputed: Iran, Turkey, Saudi Arabia all cited as first; searched
+   REASON SHOWN: Iran was the first country to accept and recognise Pakistan after independence.
+   RELATED: Afghanistan was the only country to vote against Pakistan's UN membership in 1947.
+
+#2089: (Forces Academy Academic · Line 89) How many seats does the National Assembly of Pakistan have at present?
+   A. 342
+   B. 336
+   C. 350
+   D. 272
+   MARKED: B
+   BLIND CHECKER: A (high) 342
+   REASON SHOWN: After FATA's merger the 6 FATA seats were abolished, so the National Assembly now has 336 seats (266 general, 60 women and 10 minorities).
+   RELATED: Earlier it had 342 seats; 272 was the old number of general seats.
+
+#2091: (Forces Academy Academic · Line 91) In which year was the Muhammadan Anglo-Oriental (Aligarh) College established?
+   A. 1857
+   B. 1875
+   C. 1877
+   D. 1920
+   MARKED: C
+   BLIND CHECKER: X (medium) founded 1875 as school, college status 1877; both B and C defensible
+   REASON SHOWN: The school was begun in 1875 and upgraded to MAO College in 1877 by Sir Syed Ahmad Khan.
+   RELATED: The college became Aligarh Muslim University in 1920.
+
+#2186: Who was the first Chief Justice of Pakistan?
+   A. Muhammad Munir
+   B. Sir Abdul Rashid
+   C. Mian Abdul Rashid
+   D. Sheikh Abdur Rahman
+   MARKED: B
+   BLIND CHECKER: X (high) B and C are the same person (Sir Abdul Rashid)
+   REASON SHOWN: Sir Abdul Rashid became the first Chief Justice of the Federal Court of Pakistan in 1949.
+   RELATED: Muhammad Munir succeeded him as Chief Justice in 1954.
+
+#2211: A bat cannot see; a snake cannot what?
+   A. Smell
+   B. Hear
+   C. Taste
+   D. Feel
+   MARKED: B
+   BLIND CHECKER: B (low) riddle-like; snakes lack external ears and hear airborne sound poorly
+   REASON SHOWN: Snakes have no external ears and cannot hear airborne sound well; they sense ground vibrations instead.
+   RELATED: Bats find their way by echolocation using high-pitched sounds.
+
+#2229: What is the largest river of Afghanistan?
+   A. Amu Darya
+   B. Kabul River
+   C. Helmand River
+   D. Kunar River
+   MARKED: C
+   BLIND CHECKER: C (low) Helmand longest river wholly in Afghanistan; Amu Darya is a border river; arguable
+   REASON SHOWN: The Helmand River, about 1,150 km, is the longest river wholly within Afghanistan.
+   RELATED: The Amu Darya forms part of the northern border and is not entirely within Afghanistan.
+
+#2273: What is the maximum length of a cricket bat under the laws of cricket?
+   A. 34 inches
+   B. 36 inches
+   C. 38 inches
+   D. 40 inches
+   MARKED: C
+   BLIND CHECKER: D (medium) 38 inches (96.52 cm) max
+   REASON SHOWN: The Laws of Cricket limit a bat to 38 inches (96.52 cm) in length.
+   RELATED: The maximum width of the blade is 4.25 inches.
+
+#2294: Who was the first man to embrace Islam?
+   A. Hazrat Umar (RA)
+   B. Hazrat Ali (RA)
+   C. Hazrat Uthman (RA)
+   D. Hazrat Abu Bakr (RA)
+   MARKED: D
+   BLIND CHECKER: X (medium) first man to accept Islam disputed (Abu Bakr, Ali, Zaid)
+   REASON SHOWN: Among adult free men, Hazrat Abu Bakr (RA) was the first to accept Islam.
+   RELATED: Hazrat Khadija (RA) was the first woman and Hazrat Ali (RA) the first child to accept Islam.
+
+#2381: Which cricketer broke Shahid Afridi's record of the fastest century in ODIs (37 balls, 1996)?
+   A. Brendon McCullum
+   B. AB de Villiers
+   C. Corey Anderson
+   D. Glenn Maxwell
+   MARKED: C
+   BLIND CHECKER: C (low) Corey Anderson (36 balls, 2014) broke Afridi's record directly; de Villiers (31) broke Anderson's; McCullum/Maxwell never held it. Answer is C by strict reading; flawed wording
+   REASON SHOWN: New Zealand's Corey Anderson scored a century off 36 balls against the West Indies in January 2014 and broke Afridi's 17-year-old record.
+   RELATED: AB de Villiers later broke Anderson's record with a 31-ball century against the West Indies in January 2015, and it still stands.

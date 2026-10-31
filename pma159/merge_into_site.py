@@ -1,0 +1,830 @@
+"""Builds site/index.html = the original 1000-MCQ site + the PMA 159 tests as a separate section.
+usage: python3 merge_into_site.py <original_site.html> <output.html>"""
+import json, os, random, re, sys, html
+sys.path.insert(0, '.')
+from questions import Q
+# new PMA 159 experience file (Vision Force Academy, pma162/): repeated MCQs raise the repeat count of the existing PMA 159 MCQ,
+# new MCQs are appended (they fill the last part up to 50 and then start new 50-MCQ parts). Existing MCQs are not rewritten.
+Q = list(Q)
+_p162 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma162')
+if os.path.exists(os.path.join(_p162, 'm_p1.py')):
+    import runpy as _rp
+    _drop = {42, 52}   # source item numbers removed after review (unverifiable / disputed)
+    for _f in ('m_p1.py', 'm_p2.py'):
+        _m = _rp.run_path(os.path.join(_p162, _f))
+        for _n, _idx in _m['MATCH']:
+            _t = list(Q[_idx]); _t[5] = _t[5] + 1; Q[_idx] = tuple(_t)
+        for _t in _m['NEW']:
+            if _t[0] in _drop: continue
+            Q.append((_t[1], _t[2], _t[3], _t[4], _t[5], _t[6]))
+# Light Forces Academy experiences (pma163/): same procedure
+_p163 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma163', 'm_q1.py')
+if os.path.exists(_p163):
+    import runpy as _rp2
+    _m = _rp2.run_path(_p163)
+    for _n, _idx in _m['MATCH']:
+        _t = list(Q[_idx]); _t[5] = _t[5] + 1; Q[_idx] = tuple(_t)
+    _dup163 = {31: 7, 42: 20}   # same question written twice by the writer: merge into the first, raise its repeat count
+    for _t in _m['NEW']:
+        if _t[0] in _dup163: continue
+        _extra = sum(1 for _d, _k in _dup163.items() if _k == _t[0])
+        Q.append((_t[1], _t[2], _t[3], _t[4], _t[5], _t[6] + _extra))
+# Pro Genius solved academic experience (pma165/): same procedure (repeats raise the count, new MCQs appended)
+_p165 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma165')
+if os.path.exists(os.path.join(_p165, 'm_r1.py')):
+    import runpy as _rp3
+    _seen165 = {}; _seenm165 = set()
+    for _f in ('m_r1.py', 'm_r2.py', 'm_r3.py'):
+        _m = _rp3.run_path(os.path.join(_p165, _f))
+        for _n, _idx in _m['MATCH']:
+            if _n in _seenm165: continue   # Q46 is printed on a page boundary and was read by two agents
+            _seenm165.add(_n)
+            _t = list(Q[_idx]); _t[5] = _t[5] + 1; Q[_idx] = tuple(_t)
+        for _t in _m['NEW']:
+            _key = re.sub(r'[^a-z0-9]+', ' ', _t[2].lower()).strip()
+            if _key in _seen165:
+                _j = _seen165[_key]; _u = list(Q[_j]); _u[5] += 1; Q[_j] = tuple(_u); continue
+            _seen165[_key] = len(Q)
+            Q.append((_t[1], _t[2], _t[3], _t[4], _t[5], _t[6]))
+
+# friends' PMA 159 write-ups of October 2026 (pma166/): items.json holds how many write-ups asked each question;
+# a MATCH raises the repeat count of the existing MCQ by that number, NEW MCQs are appended (they fill the last part to 50, then start new parts of 50)
+_p166 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma166')
+if os.path.exists(os.path.join(_p166, 'items.json')):
+    import glob as _gl, json as _js, runpy as _rp4
+    _cnt166 = {_i['id']: _i['count'] for _i in _js.load(open(os.path.join(_p166, 'items.json'), encoding='utf8'))}
+    _drop166 = set()
+    _dp = os.path.join(_p166, 'drop.json')
+    if os.path.exists(_dp): _drop166 = set(_js.load(open(_dp)))
+    for _f in sorted(_gl.glob(os.path.join(_p166, 'm_s*.py'))):
+        _m = _rp4.run_path(_f)
+        for _n, _idx in _m['MATCH']:
+            _t = list(Q[_idx]); _t[5] = _t[5] + _cnt166[_n]; Q[_idx] = tuple(_t)
+        for _t in _m['NEW']:
+            if _t[0] in _drop166: continue
+            Q.append((_t[1], _t[2], _t[3], _t[4], _t[5], _t[6]))
+
+# more PMA 159 write-ups (pma167/): same procedure as pma166
+_p167 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma167')
+if os.path.exists(os.path.join(_p167, 'items.json')):
+    import glob as _gl7, json as _js7, runpy as _rp7
+    _cnt167 = {_i['id']: _i['count'] for _i in _js7.load(open(os.path.join(_p167, 'items.json'), encoding='utf8'))}
+    _fx167 = _js7.load(open(os.path.join(_p167, 'fix_reason.json'), encoding='utf8')) if os.path.exists(os.path.join(_p167, 'fix_reason.json')) else {}
+    _drop167 = set()
+    _dp7 = os.path.join(_p167, 'drop.json')
+    if os.path.exists(_dp7): _drop167 = set(_js7.load(open(_dp7)))
+    for _f in sorted(_gl7.glob(os.path.join(_p167, 'm_s*.py'))):
+        _m = _rp7.run_path(_f)
+        for _n, _idx in _m['MATCH']:
+            _t = list(Q[_idx]); _t[5] = _t[5] + _cnt167[_n]; Q[_idx] = tuple(_t)
+        for _t in _m['NEW']:
+            if _t[0] in _drop167: continue
+            _why = _fx167.get(str(_t[0]), _t[5])
+            Q.append((_t[1], _t[2], _t[3], _t[4], _why, _t[6]))
+
+# batch 2 (pma168/)
+_p168 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma168')
+if os.path.exists(os.path.join(_p168, 'items.json')):
+    import glob as _gl8, json as _js8, runpy as _rp8
+    _cnt168 = {_i['id']: _i['count'] for _i in _js8.load(open(os.path.join(_p168, 'items.json'), encoding='utf8'))}
+    _fy168 = _js8.load(open(os.path.join(_p168, 'fix_reason.json'), encoding='utf8')) if os.path.exists(os.path.join(_p168, 'fix_reason.json')) else {}
+    _drop168 = set()
+    _dp8 = os.path.join(_p168, 'drop.json')
+    if os.path.exists(_dp8): _drop168 = set(_js8.load(open(_dp8)))
+    for _f in sorted(_gl8.glob(os.path.join(_p168, 'm_s*.py'))):
+        _m = _rp8.run_path(_f)
+        for _n, _idx in _m['MATCH']:
+            _t = list(Q[_idx]); _t[5] = _t[5] + _cnt168[_n]; Q[_idx] = tuple(_t)
+        for _t in _m['NEW']:
+            if _t[0] in _drop168: continue
+            _why = _fy168.get(str(_t[0]), _t[5])
+            Q.append((_t[1], _t[2], _t[3], _t[4], _why, _t[6]))
+
+
+# batch 3 (pma169/)
+_p169 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma169')
+if os.path.exists(os.path.join(_p169, 'items.json')):
+    import glob as _gl9, json as _js9, runpy as _rp9
+    _cnt169 = {_i['id']: _i['count'] for _i in _js9.load(open(os.path.join(_p169, 'items.json'), encoding='utf8'))}
+    _fy169 = _js9.load(open(os.path.join(_p169, 'fix_reason.json'), encoding='utf8')) if os.path.exists(os.path.join(_p169, 'fix_reason.json')) else {}
+    _drop169 = set()
+    _dp9 = os.path.join(_p169, 'drop.json')
+    if os.path.exists(_dp9): _drop169 = set(_js9.load(open(_dp9)))
+    for _f in sorted(_gl9.glob(os.path.join(_p169, 'm_s*.py'))):
+        _m = _rp9.run_path(_f)
+        for _n, _idx in _m['MATCH']:
+            _t = list(Q[_idx]); _t[5] = _t[5] + _cnt169[_n]; Q[_idx] = tuple(_t)
+        for _t in _m['NEW']:
+            if _t[0] in _drop169: continue
+            _why = _fy169.get(str(_t[0]), _t[5])
+            Q.append((_t[1], _t[2], _t[3], _t[4], _why, _t[6]))
+
+
+# batch 4 (PDF PMA ALL Centers Academic) (pma170/)
+_p170 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma170')
+if os.path.exists(os.path.join(_p170, 'items.json')):
+    import glob as _gl10, json as _js10, runpy as _rp10
+    _cnt170 = {_i['id']: _i['count'] for _i in _js10.load(open(os.path.join(_p170, 'items.json'), encoding='utf8'))}
+    _fy170 = _js10.load(open(os.path.join(_p170, 'fix_reason.json'), encoding='utf8')) if os.path.exists(os.path.join(_p170, 'fix_reason.json')) else {}
+    _drop170 = set()
+    _dp10 = os.path.join(_p170, 'drop.json')
+    if os.path.exists(_dp10): _drop170 = set(_js10.load(open(_dp10)))
+    for _f in sorted(_gl10.glob(os.path.join(_p170, 'm_s*.py'))):
+        _m = _rp10.run_path(_f)
+        for _n, _idx in _m['MATCH']:
+            _t = list(Q[_idx]); _t[5] = _t[5] + _cnt170[_n]; Q[_idx] = tuple(_t)
+        for _t in _m['NEW']:
+            if _t[0] in _drop170: continue
+            _why = _fy170.get(str(_t[0]), _t[5])
+            Q.append((_t[1], _t[2], _t[3], _t[4], _why, _t[6]))
+
+
+# batch 5 (write-ups N67-N76, 21-25 Oct 2026) (pma171/)
+_p171 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma171')
+if os.path.exists(os.path.join(_p171, 'items.json')) and os.environ.get('NO171') is None:
+    import glob as _gl11, json as _js11, runpy as _rp11
+    _cnt171 = {_i['id']: _i['count'] for _i in _js11.load(open(os.path.join(_p171, 'items.json'), encoding='utf8'))}
+    _fy171 = _js11.load(open(os.path.join(_p171, 'fix_reason.json'), encoding='utf8')) if os.path.exists(os.path.join(_p171, 'fix_reason.json')) else {}
+    _drop171 = set(_js11.load(open(os.path.join(_p171, 'drop.json')))) if os.path.exists(os.path.join(_p171, 'drop.json')) else set()
+    _fix171 = _js11.load(open(os.path.join(_p171, 'fix_existing.json'), encoding='utf8')) if os.path.exists(os.path.join(_p171, 'fix_existing.json')) else {}
+    _n0_171 = len(Q)
+    for _f in sorted(_gl11.glob(os.path.join(_p171, 'm_s*.py'))):
+        _m = _rp11.run_path(_f)
+        for _n, _idx in _m['MATCH']:
+            _t = list(Q[_idx]); _t[5] = _t[5] + _cnt171[_n]; Q[_idx] = tuple(_t)
+        for _t in _m['NEW']:
+            if _t[0] in _drop171: continue
+            Q.append((_t[1], _t[2], _t[3], _t[4], _fy171.get(str(_t[0]), _t[5]), _t[6]))
+    for _k, _v in _fix171.items():   # existing MCQs whose answer was wrong/outdated: {"index": [question, correct, [3 wrong], reason]}
+        _t = list(Q[int(_k)]); _t[1], _t[2], _t[3], _t[4] = _v[0], _v[1], _v[2], _v[3]; Q[int(_k)] = tuple(_t)
+
+if os.environ.get('DUMPQ'):
+    with open(os.environ['DUMPQ'], 'w', encoding='utf8') as _df:
+        for _i, _t in enumerate(Q): _df.write('%d\t%s  => %s\n' % (_i, _t[1], _t[2]))
+
+src, out = sys.argv[1], sys.argv[2]
+s = open(src, encoding='utf8').read()
+
+# ---- 1. PMA data in the site's own question format ----
+items = []
+for i, (sec, q, ok, wrong, why, rep) in enumerate(Q):
+    o = [ok] + list(wrong)
+    random.Random(i * 7919 + 13).shuffle(o)
+    assert not re.search(r'[<>&]', q + ''.join(o)), q
+    items.append({"id": 0, "question": q + (f" (Repeated in {rep} test{'s' if rep > 1 else ''})" if rep else ""),
+                  "options": o, "correct": o.index(ok), "facts": why, "pma": True, "sec": sec})
+PMA = {}
+for n in range((len(items) + 49) // 50):
+    chunk = items[n * 50:(n + 1) * 50]
+    for k, it in enumerate(chunk): it["id"] = k + 1
+    PMA[f"PMA-{n + 1}"] = chunk
+
+import glob, runpy
+FA = {}
+fa_items = []
+for f in sorted(glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fa_parts', 'fa_0*.py'))):
+    fa_items += runpy.run_path(f)['QS']
+_ov = runpy.run_path(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fa_parts', 'fa_overrides.py'))
+_lab = lambda q: q.split(')', 1)[0] + ')'
+_removed = [it for it in fa_items if _lab(it[1]) in _ov['REMOVE']]
+assert len(_removed) == len(_ov['REMOVE']), (len(_removed), len(_ov['REMOVE']))
+fa_items = [it for it in fa_items if _lab(it[1]) not in _ov['REMOVE']]
+_fixed = []
+for _i, (_sec, _q, _o, _a, _why, _rel) in enumerate(fa_items):
+    _f = _ov['FIX'].get(_lab(_q))
+    if _f:
+        _a = _f.get('correct', _a); _why = _f.get('reason', _why) + _f.get('append_reason', ''); _rel = _f.get('rel', _rel)
+        if 'append_reason' in _f and 'reason' not in _f: _why = fa_items[_i][4] + _f['append_reason']
+        fa_items[_i] = (_sec, _q, _o, _a, _why, _rel); _fixed.append(_lab(_q))
+assert sorted(_fixed) == sorted(_ov['FIX']), set(_ov['FIX']) ^ set(_fixed)
+for n in range((len(fa_items) + 49) // 50):
+    FA['FA-%d' % (n + 1)] = [{"id": k + 1, "question": q, "options": o, "correct": a, "facts": why, "rel": rel, "pma": True, "sec": sec}
+                              for k, (sec, q, o, a, why, rel) in enumerate(fa_items[n * 50:(n + 1) * 50])]
+
+HK = {}
+hk_items = []
+_hkp = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma149', 'hk_final.json')
+_hkp2 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma150', 'hk_final2.json')
+if os.path.exists(_hkp2): _hkp = _hkp2
+_hkp3 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma151', 'hk_final3.json')
+if os.path.exists(_hkp3): _hkp = _hkp3
+_hkp4 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'dedupe', 'hk_final_dedup.json')
+if os.path.exists(_hkp4): _hkp = _hkp4
+_hkp5 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'dedupe', 'hk_final_dedup2.json')
+if os.path.exists(_hkp5): _hkp = _hkp5
+_hkp6 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma152', 'hk_final4.json')
+if os.path.exists(_hkp6): _hkp = _hkp6
+_hkp7 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma152', 'hk_final5.json')
+if os.path.exists(_hkp7): _hkp = _hkp7; _hkp6 = _hkp7
+_hkp8 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma153', 'hk_final7.json')
+if os.path.exists(_hkp8): _hkp = _hkp8; _hkp6 = _hkp8
+_hkp9 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma154', 'hk_final7.json')
+if os.path.exists(_hkp9): _hkp = _hkp9; _hkp6 = _hkp9
+_hkp10 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma155', 'hk_final7.json')
+if os.path.exists(_hkp10): _hkp = _hkp10; _hkp6 = _hkp10
+_hkp11 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma156', 'hk_final7.json')
+if os.path.exists(_hkp11): _hkp = _hkp11; _hkp6 = _hkp11
+_hkp12 = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma157', 'hk_final7.json')
+if os.path.exists(_hkp12): _hkp = _hkp12; _hkp6 = _hkp12
+if os.path.exists(_hkp):
+    hk_items = json.load(open(_hkp, encoding='utf8'))
+# Hakeem section is split by experience: each MCQ lives in the PMA (149/150/151/152/153/154) where it first appeared;
+# repeats from later PMAs only raise its bracket count. Origin list: dedupe/make_origin.py
+HK_META = {}
+_hko = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', *(('pma157', 'hk_origin7.json') if _hkp == _hkp12 else ('pma156', 'hk_origin7.json') if _hkp == _hkp11 else ('pma155', 'hk_origin7.json') if _hkp == _hkp10 else ('pma154', 'hk_origin7.json') if _hkp == _hkp9 else ('pma153', 'hk_origin7.json') if _hkp == _hkp8 else ('pma152', 'hk_origin5.json' if _hkp == _hkp7 else 'hk_origin4.json'))) if os.path.exists(_hkp6) else os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'dedupe', 'hk_origin2.json')
+hk_org = json.load(open(_hko)) if os.path.exists(_hko) and len(json.load(open(_hko))) == len(hk_items) else [149] * len(hk_items)
+_hn = 0
+for _p in (149, 150, 151, 152, 153, 154, 155, 156, 157):
+    _its = [it for it, o_ in zip(hk_items, hk_org) if o_ == _p]
+    for n in range((len(_its) + 49) // 50):
+        _hn += 1
+        HK_META['HK-%d' % _hn] = {"pma": _p, "part": n + 1}
+        HK['HK-%d' % _hn] = [{"id": k + 1, "question": q + (' (%d)' % rep if rep > 1 else ''), "options": o, "correct": a, "facts": why, "rel": rel,
+                              "pma": True, "sec": sec, "rep": rep}
+                             for k, (sec, q, o, a, why, rel, rep) in enumerate(_its[n * 50:(n + 1) * 50])]
+
+_hk_count = (len(HK), len(hk_items))
+# Most repeated MCQs: one test per repeat band (500+, 450-499, 400-449, ... 10-19, 5-9), 30 seconds per MCQ; empty bands are skipped.
+MR_THR = [500, 450, 400, 350, 300, 250, 200, 150, 100, 50, 40, 30, 20, 10, 5]
+MR = {}
+for _i, _t in enumerate(MR_THR):
+    _hi = MR_THR[_i - 1] if _i else 10 ** 9  # band: _t <= repeats < next higher threshold (no MCQ in two tests)
+    _its = sorted([it for it in hk_items if _t <= it[6] < _hi], key=lambda it: -it[6])
+    if not _its: continue
+    _k = 'MR-%d' % _t
+    MR[_k] = [{"id": i + 1, "question": q + (' (%d)' % rep if rep > 1 else ''), "options": o, "correct": a, "facts": why, "rel": rel,
+               "pma": True, "sec": sec, "rep": rep} for i, (sec, q, o, a, why, rel, rep) in enumerate(_its)]
+    HK_META[_k] = {"pma": "rep", "thr": _t, "hi": (_hi - 1 if _i else 0), "part": len(MR)}
+
+CN = {}
+_cnp = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma160', 'constitution_final.json')
+if os.path.exists(_cnp):
+    _cn = json.load(open(_cnp, encoding='utf8'))
+    CN['CN-1'] = [{"id": i + 1, "question": q + (' (%d)' % rep if rep > 1 else ''), "options": o, "correct": a, "facts": why, "rel": rel,
+                   "pma": True, "sec": sec, "rep": rep} for i, (sec, q, o, a, why, rel, rep) in enumerate(_cn)]
+    HK_META['CN-1'] = {"pma": "con", "part": 1}
+
+IV = {}
+_ivp = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma161', 'verbal_final.json')
+if os.path.exists(_ivp):
+    _iv = json.load(open(_ivp, encoding='utf8'))
+    IV['IV-1'] = [{"id": i + 1, "question": q + (' (%d)' % rep if rep > 1 else ''), "options": o, "correct": a, "facts": why, "rel": rel,
+                   "pma": True, "sec": sec, "rep": rep} for i, (sec, q, o, a, why, rel, rep) in enumerate(_iv)]
+    HK_META['IV-1'] = {"pma": "imp", "part": 1}
+
+EN = {}
+_enp = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'english', 'en_final.json')
+if os.path.exists(_enp):
+    _enl = json.load(open(_enp, encoding='utf8'))
+    for _n in range((len(_enl) + 49) // 50):
+        EN['EN-%d' % (_n + 1)] = [dict(e, id=k + 1) for k, e in enumerate(_enl[_n * 50:(_n + 1) * 50])]
+# Islamiat MCQs PMA (islamiat/is_final.json): IS-n tests of 50, shown inside 'Academic PMA MCQs' with English (same 'en' lock)
+_isp = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'islamiat', 'is_final.json')
+IS_N = 0
+if os.path.exists(_isp):
+    _isl = json.load(open(_isp, encoding='utf8')); IS_N = len(_isl)
+    for _n in range((len(_isl) + 49) // 50):
+        EN['IS-%d' % (_n + 1)] = [dict(e, id=k + 1) for k, e in enumerate(_isl[_n * 50:(_n + 1) * 50])]
+# Light Forces Academy MCQs (lightfa/lf_final.json = {"exp": [...], "lc": [...], "seerah": [...]}): LFE-/LFL-/LFS-n tests of 50, own 'lf' lock
+_lfp = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'lightfa', 'lf_final.json')
+if os.path.exists(_lfp):
+    _lfd = json.load(open(_lfp, encoding='utf8'))
+    for _pre, _key in (('LFE', 'exp'), ('LFL', 'lc'), ('LFS', 'seerah')):
+        _l = _lfd.get(_key, [])
+        for _n in range((len(_l) + 49) // 50):
+            EN['%s-%d' % (_pre, _n + 1)] = [dict(e, id=k + 1) for k, e in enumerate(_l[_n * 50:(_n + 1) * 50])]
+
+# Haroon Force Academy (haroon/hf_final.json = [[sec, q, options, correct, why, rel, rep], ...]): HF-n tests of 50, own 'hf' lock
+_hfp = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'haroon', 'hf_final.json')
+_hf_n = 0
+if os.path.exists(_hfp):
+    _hfl = json.load(open(_hfp, encoding='utf8')); _hf_n = len(_hfl)
+    for _n in range((len(_hfl) + 49) // 50):
+        EN['HF-%d' % (_n + 1)] = [{"id": k + 1, "question": q + (' (%d)' % rp if rp > 1 else ''), "options": o, "correct": a, "facts": why, "rel": rel,
+                                   "pma": True, "sec": sec, "rep": rp} for k, (sec, q, o, a, why, rel, rp) in enumerate(_hfl[_n * 50:(_n + 1) * 50])]
+
+LC = {}
+_lcp = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'pma164', 'pma158_final.json')
+_lc_n = 0
+if os.path.exists(_lcp):
+    _lc = json.load(open(_lcp, encoding='utf8')); _lc_n = len(_lc)
+    for _n in range((len(_lc) + 49) // 50):
+        LC['LC-%d' % (_n + 1)] = [{"id": k + 1, "question": q + (' (%d)' % rep if rep > 1 else ''), "options": o, "correct": a, "facts": why, "rel": rel,
+                                   "pma": True, "sec": sec, "rep": rep} for k, (sec, q, o, a, why, rel, rep) in enumerate(_lc[_n * 50:(_n + 1) * 50])]
+
+PG = {}; PF = {}; PV = {}
+_pg_n = 0; _pf_n = 0
+for _fn, _D, _pre in (('pv_final.json', PV, 'PV'), ('pg_final.json', PG, 'PG'), ('pf_final.json', PF, 'PF')):
+    _pp = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'progenius', _fn)
+    if os.path.exists(_pp):
+        _l = json.load(open(_pp, encoding='utf8'))
+        if _pre == 'PG': _pg_n = len(_l)
+        elif _pre == 'PF': _pf_n = len(_l)
+        for _n in range((len(_l) + 49) // 50):
+            _D['%s-%d' % (_pre, _n + 1)] = [{"id": k + 1, "question": q + (' (%d)' % rep if rep > 1 else ''), "options": o, "correct": a, "facts": why, "rel": rel,
+                                             "pma": True, "sec": sec, "rep": rep} for k, (sec, q, o, a, why, rel, rep) in enumerate(_l[_n * 50:(_n + 1) * 50])]
+
+PB = {}
+_pbp = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'progenius', 'pb_final.json')
+if os.path.exists(_pbp):
+    _pbl = json.load(open(_pbp, encoding='utf8'))
+    for _n in range((len(_pbl) + 49) // 50):
+        PB['PB-%d' % (_n + 1)] = [dict(e, id=k + 1) for k, e in enumerate(_pbl[_n * 50:(_n + 1) * 50])]
+
+NV = {}; _nv_n = 0
+_nvp = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'progenius', 'nv_final.json')
+if os.path.exists(_nvp):
+    _nvl = json.load(open(_nvp, encoding='utf8')); _nv_n = len(_nvl)
+    for _n in range((len(_nvl) + 49) // 50):
+        NV['NV-%d' % (_n + 1)] = [dict(e, id=k + 1) for k, e in enumerate(_nvl[_n * 50:(_n + 1) * 50])]
+
+def sub(a, b, count=1):
+    global s
+    assert s.count(a) == count, (s.count(a), a[:80])
+    s = s.replace(a, b)
+
+# insert data right after the ALL object
+SPLIT_JS = '''(function () {
+            const NEW = {};
+            Object.keys(ALL).forEach(k => {
+                const a = parseInt(k.split('-')[0], 10), b = parseInt(k.split('-')[1], 10), arr = ALL[k];
+                const half = arr.length / 2;
+                NEW[a + '-' + (a + half - 1)] = arr.slice(0, half).map((q, i) => Object.assign({}, q, { id: i + 1 }));
+                NEW[(a + half) + '-' + b] = arr.slice(half).map((q, i) => Object.assign({}, q, { id: i + 1 }));
+            });
+            Object.keys(ALL).forEach(k => delete ALL[k]);
+            Object.assign(ALL, NEW);
+        })();
+        '''
+m = re.search(r'const ALL = ', s)
+eol = s.index('\n', m.start())
+assert s[:eol].rstrip().endswith(';')
+s = s[:eol] + '\n        const PMA_DATA = ' + json.dumps(PMA, ensure_ascii=False) + ';\n        ' + SPLIT_JS + 'Object.assign(ALL, PMA_DATA);\n        const FA_DATA = ' + json.dumps(FA, ensure_ascii=False) + ';\n        Object.assign(ALL, FA_DATA);\n        const HK_DATA = ' + json.dumps(HK, ensure_ascii=False) + ';\n        Object.assign(ALL, HK_DATA);\n        const MR_DATA = ' + json.dumps(MR, ensure_ascii=False) + ';\n        Object.assign(ALL, MR_DATA);\n        const CN_DATA = ' + json.dumps(CN, ensure_ascii=False) + ';\n        Object.assign(ALL, CN_DATA);\n        const IV_DATA = ' + json.dumps(IV, ensure_ascii=False) + ';\n        Object.assign(ALL, IV_DATA);\n        const LC_DATA = ' + json.dumps(LC, ensure_ascii=False) + ';\n        Object.assign(ALL, LC_DATA);\n        const PV_DATA = ' + json.dumps(PV, ensure_ascii=False) + ';\n        Object.assign(ALL, PV_DATA);\n        const PB_DATA = ' + json.dumps(PB, ensure_ascii=False) + ';\n        Object.assign(ALL, PB_DATA);\n        const PG_DATA = ' + json.dumps(PG, ensure_ascii=False) + ';\n        Object.assign(ALL, PG_DATA);\n        const PF_DATA = ' + json.dumps(PF, ensure_ascii=False) + ';\n        Object.assign(ALL, PF_DATA);\n        const NV_DATA = ' + json.dumps(NV, ensure_ascii=False) + ';\n        Object.assign(ALL, NV_DATA);\n        const EN_DATA = ' + json.dumps(EN, ensure_ascii=False) + ';\n        Object.assign(ALL, EN_DATA);\n        const HK_META = ' + json.dumps(HK_META) + ';\n        let TEST_SECS = 1200;\n        const isPMA = k => String(k).indexOf("PMA-") === 0;\n        const isFA = k => String(k).indexOf("FA-") === 0;\n        const isHK = k => String(k).indexOf("HK-") === 0;\n        const isMR = k => String(k).indexOf("MR-") === 0;\n        const isCN = k => String(k).indexOf("CN-") === 0;\n        const isIV = k => String(k).indexOf("IV-") === 0;\n        const isLC = k => String(k).indexOf("LC-") === 0;\n        const isPG = k => String(k).indexOf("PG-") === 0;\n        const isPF = k => String(k).indexOf("PF-") === 0;\n        const isPV = k => String(k).indexOf("PV-") === 0;\n        const isPB = k => String(k).indexOf("PB-") === 0;\n        const isNV = k => String(k).indexOf("NV-") === 0;\n        const isVB = k => String(k).indexOf("VB-") === 0;\n        const isEN = k => String(k).indexOf("EN-") === 0;\n        const isIS = k => String(k).indexOf("IS-") === 0;\n        const isAC = k => isEN(k) || isIS(k);\n        const isLF = k => /^LF[ELS]-/.test(String(k));\n        const isHF = k => String(k).indexOf("HF-") === 0;\n        const isExtra = k => isPMA(k) || isFA(k) || isHK(k) || isMR(k) || isCN(k) || isIV(k) || isLC(k) || isPG(k) || isPF(k) || isPV(k) || isPB(k) || isNV(k) || isVB(k) || isEN(k) || isIS(k) || isLF(k) || isHF(k);\n        /* answer audit corrections (Oct 2026): patched by test key + question id, nothing is removed */\n        const CORR = ' + json.dumps(json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'corrections.json'), encoding='utf8')), ensure_ascii=False) + ';\n        Object.keys(CORR).forEach(function (k) { var arr = ALL[k]; if (!arr) return; arr.forEach(function (q) { var c = CORR[k][String(q.id)]; if (c) Object.assign(q, c); }); });' + s[eol:]
+
+# ---- 2. second section on the selection page ----
+sub('<div id="test-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>',
+    '''<div id="test-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            <div class="bg-gradient-to-r from-emerald-700 to-teal-600 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
+                <span class="inline-block bg-white/20 text-emerald-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">@@PMA_COUNT@@</span>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">PMA 159 Long Course &ndash; Initial Test Practice</h2>
+                <p class="text-emerald-50 text-sm sm:text-base">Built from PMA 159 test experiences. Questions marked (Repeated in N tests) were reported in several experiences. Every answer comes with a reason.</p>
+            </div>
+            <div id="pma-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            <div class="bg-gradient-to-r from-amber-700 to-orange-600 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
+                <span class="inline-block bg-white/20 text-amber-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">@@FA_COUNT@@</span>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Forces Academy Lahore &ndash; Intelligence and Academic Practice</h2>
+                <p class="text-amber-50 text-sm sm:text-base">Forces Academy intelligence tests 1 to 20 (verbal) and academic questions, in blocks of 50. Every answer shows a reason and a related fact.</p>
+            </div>
+            <div id="fa-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>''')
+
+s = s.replace('@@PMA_COUNT@@', '%d Tests &bull; %d MCQs' % (len(PMA), len(items)))
+s = s.replace('@@FA_COUNT@@', '%d Tests &bull; %d MCQs' % (len(FA), len(fa_items)))
+# ---- 3. render both grids ----
+sub("grid.innerHTML = Object.keys(ALL).map((k, i) => {",
+    "grid.innerHTML = Object.keys(ALL).filter(k => !isExtra(k)).map((k, i) => {")
+sub("function selectTest(k) {", '''function renderPMA() {
+            const g = document.getElementById('pma-grid');
+            g.innerHTML = Object.keys(ALL).filter(isPMA).map((k, i) => {
+                let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
+                const secs = [...new Set(ALL[k].map(q => q.sec))].join(' &bull; ');
+                return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-emerald-500 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full">PMA Test ${i + 1}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
+                    <div class="text-xl font-bold text-slate-900">PMA 159 &ndash; Part ${i + 1}</div>
+                    <div class="text-xs text-slate-500">${secs}</div>
+                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * 12) / 60))} Minutes &bull; Instant feedback</div>
+                    <div class="text-sm font-semibold text-emerald-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+            }).join('');
+        }
+        function selectTest(k) {''')
+FA_RENDER = r'''function renderFA() {
+            const g = document.getElementById('fa-grid');
+            g.innerHTML = Object.keys(ALL).filter(isFA).map((k, i) => {
+                let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
+                const secs = [...new Set(ALL[k].map(q => q.sec.replace('Forces Academy ', '')))].join(' &bull; ');
+                return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-amber-500 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full">FA Test ${i + 1}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
+                    <div class="text-xl font-bold text-slate-900">Forces Academy &ndash; Part ${i + 1}</div>
+                    <div class="text-xs text-slate-500">${secs}</div>
+                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * 12) / 60))} Minutes &bull; Instant feedback</div>
+                    <div class="text-sm font-semibold text-amber-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+            }).join('');
+        }
+        function selectTest(k) {'''
+sub("            renderSelect(); window.scrollTo(0, 0);\n        }\n\n        function bootQuizApp() {\n            renderSelect();",
+    "            renderSelect(); renderPMA(); window.scrollTo(0, 0);\n        }\n\n        function bootQuizApp() {\n            renderSelect(); renderPMA();")
+
+# ---- 4. selectTest: labels + per-test time ----
+sub("const label = k.replace('-', '–');\n            document.getElementById('q-total').textContent = quizData.length;\n            document.getElementById('home-badge').textContent = '100 MCQs (Original Questions ' + label + ')';\n            document.getElementById('home-desc').textContent = 'Challenge yourself with 100 MCQs from original questions ' + label + '.';",
+    """const label = k.replace('-', '–');
+            const nQ = quizData.length;
+            TEST_SECS = isPMA(k) ? Math.max(60, nQ * 12) : 600;
+            const nMin = Math.ceil(TEST_SECS / 60);
+            document.getElementById('q-total').textContent = nQ;
+            document.getElementById('home-badge').textContent = isPMA(k) ? (nQ + ' MCQs (PMA 159 Long Course – Part ' + k.slice(4) + ')') : (nQ + ' MCQs (Original Questions ' + label + ')');
+            document.getElementById('home-desc').textContent = isPMA(k) ? ('Practice ' + nQ + ' MCQs from PMA 159 test experiences. Every answer shows a reason.') : ('Challenge yourself with ' + nQ + ' MCQs from original questions ' + label + '.');
+            document.getElementById('info-total').textContent = nQ + ' MCQs';
+            document.getElementById('info-time').textContent = nMin + ' Minutes';
+            document.getElementById('info-timer-note').textContent = '• The quiz will auto-submit when the ' + nMin + '-minute timer expires.';""")
+sub('<div class="text-lg font-bold text-slate-900">100 MCQs</div>', '<div id="info-total" class="text-lg font-bold text-slate-900">100 MCQs</div>')
+sub('<div class="text-lg font-bold text-slate-900">20 Minutes</div>', '<div id="info-time" class="text-lg font-bold text-slate-900">20 Minutes</div>')
+sub('<p>• The quiz will auto-submit when the 20-minute timer expires.</p>', '<p id="info-timer-note">• The quiz will auto-submit when the 20-minute timer expires.</p>')
+sub("\n            timeRemaining = 1200;\n", "\n            timeRemaining = TEST_SECS;\n")
+sub("const elapsedSeconds = 1200 - timeRemaining;", "const elapsedSeconds = TEST_SECS - timeRemaining;")
+
+# ---- 5. feedback + reason for PMA questions ----
+sub("""if (q.facts) { const ff = document.createElement('div'); ff.className = 'mt-2 p-3 rounded-xl text-xs sm:text-sm bg-slate-100 text-slate-600'; ff.innerHTML = '<b class="text-slate-700">Related facts:</b> ';""",
+    """if (q.pma && !ok) { const wy = document.createElement('div'); wy.className = 'mt-2 p-3 rounded-xl text-sm bg-rose-50 text-rose-800'; wy.innerHTML = '<b>Why your choice is wrong:</b> '; wy.appendChild(document.createTextNode('You chose ' + String.fromCharCode(65 + userAnswers[index]) + ') ' + q.options[userAnswers[index]] + '. That option does not answer this question correctly.')); optionsContainer.appendChild(wy); }
+                if (q.facts) { const ff = document.createElement('div'); ff.className = q.pma ? 'mt-2 p-3 rounded-xl text-sm bg-emerald-50 text-emerald-900' : 'mt-2 p-3 rounded-xl text-xs sm:text-sm bg-slate-100 text-slate-600'; ff.innerHTML = q.pma ? '<b>Why ' + String.fromCharCode(65 + q.correct) + ') ' + q.options[q.correct] + ' is correct:</b> ' : '<b class="text-slate-700">Related facts:</b> ';""")
+sub("""                    <div class="space-y-1.5 pt-1">${optionsHtml}</div>
+                `;""", """                    <div class="space-y-1.5 pt-1">${optionsHtml}</div>
+                    ${q.pma ? '<div class="p-3 rounded-lg text-xs sm:text-sm bg-emerald-50 text-emerald-900"><b>Reason:</b> ' + q.facts + '</div>' : ''}
+                `;""")
+
+# ---- 8. 20 tests of 50 MCQs ----
+sub('10 Tests &bull; 1000 MCQs', '20 Tests &bull; 1000 MCQs')
+sub('Original questions 1 to 1000, in 10 tests of 100 MCQs each, all questions included.', 'Original questions 1 to 1000, in 20 tests of 50 MCQs each, all questions included.')
+sub('${ALL[k].length} MCQs &bull; 20 Minutes &bull; Instant feedback</div>\n                    <div class="text-sm font-semibold text-indigo-600">', '${ALL[k].length} MCQs &bull; 10 Minutes &bull; Instant feedback</div>\n                    <div class="text-sm font-semibold text-indigo-600">')
+sub('<div id="info-total" class="text-lg font-bold text-slate-900">100 MCQs</div>', '<div id="info-total" class="text-lg font-bold text-slate-900">50 MCQs</div>')
+sub('<div id="info-time" class="text-lg font-bold text-slate-900">20 Minutes</div>', '<div id="info-time" class="text-lg font-bold text-slate-900">10 Minutes</div>')
+sub('auto-submit when the 20-minute timer expires.</p>', 'auto-submit when the 10-minute timer expires.</p>')
+
+# ---- 6. branding: Asadullah Notes, Asad signature ----
+import base64, os
+sub('<title>Mission Commission Academy – MCQ Tests 1 to 1000</title>', '<title>PMA Preparation – MCQ Tests</title>')
+sub('tracking-tight">Mission Commission Academy</h1>', 'tracking-tight">PMA Preparation</h1>')
+sub('This test belongs to <span class="text-indigo-600 font-bold">Mission Commission Academy</span>', 'This test belongs to <span class="text-indigo-600 font-bold">PMA Preparation</span>')
+sub('Software Created by Admin Mubasher', 'Software Created by Admin Asadullah')
+sub('<h1 class="ln">MISSION <span>COMMISSION</span></h1>', '<h1 class="ln">ASADULLAH <span>NOTES</span></h1>')
+sub('This test is provided by Mission Commission for all of you.', 'This test is provided by PMA Preparation for all of you.')
+sub('Special thanks to Sir Safeer and his admins.', 'Special thanks to Asadullah and his admins.')
+sig = base64.b64encode(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'asad_signature.jpg'), 'rb').read()).decode()
+s, n = re.subn(r'(<div class="sig"><img alt="Signature" src=")[^"]+(")', lambda m: m.group(1) + 'data:image/jpeg;base64,' + sig + m.group(2), s)
+assert n == 1
+assert 'Mission Commission' not in s and 'MISSION <span>' not in s and 'Mubasher' not in s and 'Safeer' not in s
+# ---- 7. splash screen: black instead of green ----
+sub('radial-gradient(circle at 50% 20%,#1f3a2a 0%,#0b120f 65%)', 'radial-gradient(circle at 50% 20%,#2a2a2a 0%,#000000 65%)')
+sub('background:#6f8f52;top:-60px', 'background:#555555;top:-60px')
+sub('color:#91ad70;margin:12px 0 22px', 'color:#bdbdbd;margin:12px 0 22px')
+sub('color:#e4ebe5;animation-delay:2s', 'color:#ececec;animation-delay:2s')
+sub('background:linear-gradient(135deg,#6f8f52,#4e6b38);color:#fff;border:1px solid rgba(255,255,255,.2)', 'background:linear-gradient(135deg,#2e2e2e,#0a0a0a);color:#fff;border:1px solid rgba(197,167,90,.6)')
+sub('color:#9aa8a0;background:none;border:1px solid rgba(255,255,255,.15)', 'color:#b5b5b5;background:none;border:1px solid rgba(255,255,255,.2)')
+
+# ---- 9. Forces Academy section ----
+sub("function selectTest(k) {", FA_RENDER)
+sub("renderSelect(); renderPMA(); window.scrollTo(0, 0);", "renderSelect(); renderPMA(); renderFA(); window.scrollTo(0, 0);")
+sub("function bootQuizApp() {\n            renderSelect(); renderPMA();", "function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA();")
+sub("TEST_SECS = isPMA(k) ? Math.max(60, nQ * 12) : 600;", "TEST_SECS = isExtra(k) ? Math.max(60, nQ * 12) : 600;")
+sub("isPMA(k) ? (nQ + ' MCQs (PMA 159 Long Course – Part ' + k.slice(4) + ')')", "isExtra(k) ? (nQ + (isFA(k) ? ' MCQs (Forces Academy Lahore – Part ' + k.slice(3) + ')' : ' MCQs (PMA 159 Long Course – Part ' + k.slice(4) + ')'))")
+sub("isPMA(k) ? ('Practice ' + nQ + ' MCQs from PMA 159 test experiences. Every answer shows a reason.')", "isExtra(k) ? ('Practice ' + nQ + (isFA(k) ? ' MCQs from Forces Academy Lahore tests and academic lists. Every answer shows a reason and a related fact.' : ' MCQs from PMA 159 test experiences. Every answer shows a reason.'))")
+sub("optionsContainer.appendChild(ff); }", "optionsContainer.appendChild(ff); }\n                if (q.rel) { const rf = document.createElement('div'); rf.className = 'mt-2 p-3 rounded-xl text-xs sm:text-sm bg-slate-100 text-slate-700'; rf.innerHTML = '<b>Related fact:</b> '; rf.appendChild(document.createTextNode(q.rel)); optionsContainer.appendChild(rf); }")
+sub("<b>Reason:</b> ' + q.facts + '</div>' : ''}", "<b>Reason:</b> ' + q.facts + '</div>' : ''}\n                    ${q.rel ? '<div class=\"p-3 rounded-lg text-xs sm:text-sm bg-slate-100 text-slate-700\"><b>Related fact:</b> ' + q.rel + '</div>' : ''}")
+
+# ---- 10. Hakeem Force Academy section ----
+sub('<div id="fa-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>', '''<div id="fa-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            <div class="bg-gradient-to-r from-sky-700 to-cyan-500 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
+                <span class="inline-block bg-white/20 text-sky-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">@@HK_COUNT@@</span>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Hakeem Force Academy</h2>
+                <p class="text-sky-50 text-sm sm:text-base">Choose PMA All Experiences (PMA 149 to 157). Every question is written only once. The number in brackets shows how many times that question was repeated. Every answer has a reason and a related fact, and current-affairs answers are updated to today.</p>
+            </div>
+            <div id="hk-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            <div class="bg-gradient-to-r from-violet-700 to-fuchsia-600 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
+                <span class="inline-block bg-white/20 text-violet-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">@@LC_COUNT@@</span>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">PMA 158 Long Course</h2>
+                <p class="text-violet-50 text-sm sm:text-base">MCQs from the PMA 158 Long Course test experiences, in tests of 50 MCQs. Every answer shows a reason and a related fact, and current-affairs answers are updated to today.</p>
+            </div>
+            <div id="lc-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            <div class="bg-gradient-to-r from-cyan-700 to-blue-600 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
+                <span class="inline-block bg-white/20 text-cyan-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">@@PG_COUNT@@</span>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Pro Genius Academy MCQs</h2>
+                <p class="text-cyan-50 text-sm sm:text-base">MCQs from Pro Genius Academy, in tests of 50 MCQs. A repeated question is written once and the number in brackets shows how many times it came. Every answer has a reason and a related fact.</p>
+            </div>
+            <div id="pg-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            <div class="bg-gradient-to-r from-amber-600 to-orange-500 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
+                <span class="inline-block bg-white/20 text-amber-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">@@NV_COUNT@@</span>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Verbal and Non Verbal Test</h2>
+                <p class="text-amber-50 text-sm sm:text-base">Choose Verbal (word and number reasoning MCQs) or Non Verbal (picture questions with solution and trick).</p>
+            </div>
+            <div id="nv-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            <div class="bg-gradient-to-r from-green-800 to-lime-600 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
+                <span class="inline-block bg-white/20 text-lime-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">@@CN_COUNT@@</span>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Constitution of Pakistan</h2>
+                <p class="text-lime-50 text-sm sm:text-base">MCQs on the Constitutions of Pakistan of 1956, 1962 and 1973. The number in brackets shows how many times the question was repeated. Every answer has a reason and a related fact.</p>
+            </div>
+            <div id="cn-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            <div class="bg-gradient-to-r from-rose-700 to-pink-500 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
+                <span class="inline-block bg-white/20 text-rose-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">@@IV_COUNT@@</span>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">100 Most Repeated Questions</h2>
+                <p class="text-rose-50 text-sm sm:text-base">The most important verbal intelligence questions. The number in brackets shows how many times the question was repeated. Every answer has a reason and a related fact.</p>
+            </div>
+            <div id="iv-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            <div class="bg-gradient-to-r engrad rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
+                <span class="inline-block bg-white/20 text-amber-50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">@@EN_COUNT@@</span>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Academic PMA MCQs</h2>
+                <p class="text-amber-50 text-sm sm:text-base">English MCQs and Islamiat MCQs PMA, all mixed, in tests of 50. Every answer shows why it is correct, why the other options are wrong, and a related fact.</p>
+            </div>
+            <div id="en-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            <div class="bg-gradient-to-r lfgrad rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
+                <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">Experiences &bull; 159 LC MCQs &bull; Seerah</span>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Light Forces Academy MCQs</h2>
+                <p class="text-white/90 text-sm sm:text-base">PMA 159 test experiences, 159 LC important MCQs and Seerah MCQs from Light Forces Academy, in tests of 50. Every answer was checked and shows why it is correct, why the other options are wrong, and a related fact.</p>
+            </div>
+            <div id="lf-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            <div class="bg-gradient-to-r hfgrad rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
+                <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">@@HF_COUNT@@</span>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Haroon Force Academy</h2>
+                <p class="text-white/90 text-sm sm:text-base">Haroon Forces Academy MCQs for the PMA initial test, in tests of 50. A repeated question is written once with its count.</p>
+            </div>
+            <div id="hf-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>''')
+s = s.replace('@@HF_COUNT@@', '%d Tests &bull; %d MCQs' % (len([k for k in EN if k.startswith('HF-')]), _hf_n))
+s = s.replace('@@EN_COUNT@@', 'English &bull; Islamiat')
+s = s.replace('@@CN_COUNT@@', '%d Test &bull; %d MCQs' % (len(CN), sum(len(v) for v in CN.values())))
+s = s.replace('@@IV_COUNT@@', '%d Test &bull; %d MCQs' % (len(IV), sum(len(v) for v in IV.values())))
+s = s.replace('@@NV_COUNT@@', 'Verbal &bull; Non Verbal')
+s = s.replace('@@PG_COUNT@@', '%d Tests &bull; %d MCQs' % (len(PG) + len(PF) + len(PV) + len(PB), _pg_n + _pf_n + sum(len(v) for v in PV.values()) + sum(len(v) for v in PB.values())))
+s = s.replace('@@LC_COUNT@@', '%d Tests &bull; %d MCQs' % (len(LC), _lc_n))
+s = s.replace('@@HK_COUNT@@', '%d Tests &bull; %d MCQs' % _hk_count)
+SIMPLE_RENDER = """function renderSimple(gid, test, tag, title, ac) {
+            const g = document.getElementById(gid); if (!g) return;
+            g.innerHTML = Object.keys(ALL).filter(test).map((k, i) => {
+                let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
+                return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="bg-${ac}-100 text-${ac}-800 text-xs font-bold px-3 py-1 rounded-full">${tag}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}</span>` : ''}</div>
+                    <div class="text-xl font-bold text-slate-900">${title}</div>
+                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * 30) / 60))} Minutes &bull; Reason and related fact for every answer</div>
+                    <div class="text-sm font-semibold text-${ac}-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+            }).join('');
+        }
+        function renderCN() { renderSimple('cn-grid', isCN, 'Constitution of Pakistan', 'Constitution of Pakistan (1956, 1962, 1973)', 'green'); }
+        function renderIV() { renderSimple('iv-grid', isIV, '100 Most Repeated', '100 Most Repeated Questions', 'rose'); }
+        function renderHF() { const g = document.getElementById('hf-grid'); if (!g) return; renderSimple('hf-grid', isHF, 'Haroon Force Academy', 'Haroon Force Academy', 'emerald'); [].forEach.call(g.querySelectorAll('button .text-xl'), (e, i) => { e.textContent = 'Haroon Force Academy \u2013 Part ' + (i + 1); }); [].forEach.call(g.querySelectorAll('button > div:first-child > span:first-child'), (e, i) => { e.textContent = 'Haroon \u2022 Test ' + (i + 1); }); }
+        let lfSub = null;
+        function openLfSub(p) { lfSub = p; renderLF(); window.scrollTo(0, 0); }
+        function renderLF() {
+            const g = document.getElementById('lf-grid'); if (!g) return;
+            const SUBS = [['e', 'LFE-', 'Test Experiences', 'PMA 159 test experiences of Light Forces Academy students', 'Experiences'], ['l', 'LFL-', '159 LC Important MCQs', 'PMA 159 Long Course experience and important preparation MCQs', '159 LC'], ['s', 'LFS-', 'Seerah MCQs', 'Life of the Holy Prophet PBUH', 'Seerah']];
+            const keysOf = p => Object.keys(ALL).filter(k => String(k).indexOf(p) === 0);
+            if (lfSub === null) {
+                g.innerHTML = SUBS.map(s => { const ks = keysOf(s[1]), n = ks.reduce((t, k) => t + ALL[k].length, 0); return `<button type="button" onclick="openLfSub('${s[0]}')" class="text-left bg-gradient-to-r lfgrad text-white rounded-2xl shadow-xl hover:shadow-2xl transition p-6 flex flex-col gap-2 col-span-full sm:col-span-1"><div class="text-xl sm:text-2xl font-bold">${s[2]}</div><div class="text-white/90 text-sm">${s[3]}</div><div class="text-white/80 text-xs font-semibold">${ks.length} Tests &bull; ${n} MCQs</div><div class="text-sm font-bold mt-1">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`; }).join('');
+                return;
+            }
+            const s = SUBS.find(x => x[0] === lfSub), ks = keysOf(s[1]);
+            g.innerHTML = '<div class="col-span-full"><button type="button" onclick="openLfSub(null)" class="inline-flex items-center gap-2 bg-white border border-slate-200 hover:border-slate-500 text-slate-700 text-sm font-semibold px-4 py-2 rounded-full shadow-sm"><i class="fa-solid fa-arrow-left"></i> Light Forces Academy MCQs</button></div>' + ks.map((k, i) => {
+                let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
+                return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="lftag text-xs font-bold px-3 py-1 rounded-full">${s[4]} &bull; Test ${i + 1}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}</span>` : ''}</div>
+                    <div class="text-xl font-bold text-slate-900">${s[2]} &ndash; Part ${i + 1}</div>
+                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * 30) / 60))} Minutes &bull; Reason and related fact for every answer</div>
+                    <div class="text-sm font-semibold text-slate-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+            }).join('');
+        }
+        let enSub = null;
+        function openEnSub(p) { enSub = p; renderEN(); window.scrollTo(0, 0); }
+        function renderEN() {
+            const g = document.getElementById('en-grid'); if (!g) return;
+            const ke = Object.keys(ALL).filter(isEN), ki = Object.keys(ALL).filter(isIS);
+            if (enSub === null) {
+                const card = (id, name, sub, ks) => { const n = ks.reduce((t, k) => t + ALL[k].length, 0); return `<button type="button" onclick="openEnSub('${id}')" class="text-left bg-gradient-to-r engrad text-white rounded-2xl shadow-xl hover:shadow-2xl transition p-6 flex flex-col gap-2 col-span-full sm:col-span-1"><div class="text-xl sm:text-2xl font-bold">${name}</div><div class="text-white/90 text-sm">${sub}</div><div class="text-white/80 text-xs font-semibold">${ks.length} Tests &bull; ${n} MCQs</div><div class="text-sm font-bold mt-1">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`; };
+                g.innerHTML = card('e', 'English MCQs', 'Grammar, vocabulary, synonyms, antonyms and reading passages', ke) + card('i', 'Islamiat MCQs PMA', 'Battles and Hijri history, prophets, Quran, angels, worship and Sahaba', ki);
+                return;
+            }
+            const isE = enSub === 'e', ks = isE ? ke : ki, tag = isE ? 'English' : 'Islamiat', title = isE ? 'English MCQs' : 'Islamiat MCQs PMA';
+            g.innerHTML = '<div class="col-span-full"><button type="button" onclick="openEnSub(null)" class="inline-flex items-center gap-2 bg-white border border-slate-200 hover:border-slate-500 text-slate-700 text-sm font-semibold px-4 py-2 rounded-full shadow-sm"><i class="fa-solid fa-arrow-left"></i> Academic PMA MCQs</button></div>' + ks.map((k, i) => {
+                let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
+                return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full">${tag} &bull; Test ${i + 1}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}</span>` : ''}</div>
+                    <div class="text-xl font-bold text-slate-900">${title} &ndash; Part ${i + 1}</div>
+                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * 30) / 60))} Minutes &bull; Reason and related fact for every answer</div>
+                    <div class="text-sm font-semibold text-slate-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+            }).join('');
+        }
+        """
+sub("function selectTest(k) {", "function selectTest(k) {".replace("function selectTest(k) {", SIMPLE_RENDER + "function selectTest(k) {"))
+sub("function selectTest(k) {", """let nvSub = null;
+        function openNvSub(p) { nvSub = p; renderNV(); window.scrollTo(0, 0); }
+        function renderNV() {
+            const NVN = ['Odd One Out', 'Analogy', 'Complete the Series', 'Missing Figure and Matrix', 'Mirror Images'];
+            const VBN = ['Number and Letter Series', 'Coding and Decoding', 'Mirror and Water Images', 'Direction Sense', 'Blood Relations', 'Age Problems', 'Calendar and Days', 'Clock Problems', 'Ranking and Order', 'Alphabet and Word Arrangement', 'Analogy', 'Odd One Out', 'Percentage and Fractions', 'Speed, Time and Work', 'Profit, Loss and Dozen', 'English Vocabulary and Grammar', 'Logical Reasoning', 'Basic Maths and Reasoning', 'Mixed Verbal'];
+            const g = document.getElementById('nv-grid'); if (!g) return;
+            const kv = Object.keys(ALL).filter(isVB), kn = Object.keys(ALL).filter(isNV);
+            if (nvSub === null) {
+                const card = (id, name, sub, ks) => { const n = ks.reduce((t, k) => t + ALL[k].length, 0); return `<button type="button" onclick="openNvSub('${id}')" class="text-left bg-gradient-to-r from-amber-600 to-orange-500 text-white rounded-2xl shadow-xl hover:shadow-2xl transition p-6 flex flex-col gap-2 col-span-full sm:col-span-1"><div class="text-xl sm:text-2xl font-bold">${name}</div><div class="text-white/90 text-sm">${sub}</div><div class="text-white/80 text-xs font-semibold">${ks.length} Tests &bull; ${n} MCQs</div><div class="text-sm font-bold mt-1">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`; };
+                g.innerHTML = card('v', 'Verbal', 'All verbal questions of the app, sorted by type: series, coding, mirror, direction and more.', kv) + card('n', 'Non Verbal', 'All picture questions sorted by type: odd one out, analogy, series, matrix, mirror.', kn);
+                return;
+            }
+            const isV = nvSub === 'v', ks = isV ? kv : kn, tag = isV ? 'Verbal' : 'Non Verbal', title = isV ? 'Verbal Test' : 'Non Verbal PMA Test';
+            g.innerHTML = '<div class="col-span-full"><button type="button" onclick="openNvSub(null)" class="inline-flex items-center gap-2 bg-white border border-slate-200 hover:border-amber-400 text-slate-700 text-sm font-semibold px-4 py-2 rounded-full shadow-sm"><i class="fa-solid fa-arrow-left"></i> Verbal and Non Verbal</button></div>' + ks.map((k, i) => {
+                let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
+                return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-amber-500 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full">${tag + ' &bull; ' + ALL[k].length + ' MCQs'}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}</span>` : ''}</div>
+                    <div class="text-xl font-bold text-slate-900">${isV ? (VBN[+k.split('-')[1] - 1] || 'Verbal') : (NVN[+k.split('-')[1] - 1] || title)}</div>
+                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * 30) / 60))} Minutes &bull; ${isV ? 'Reason for every answer' : 'Solution and trick for every question'}</div>
+                    <div class="text-sm font-semibold text-amber-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+            }).join('');
+        }
+        let pgSub = null;
+        function openPgSub(p) { pgSub = p; renderPG(); window.scrollTo(0, 0); }
+        function renderPG() {
+            const g = document.getElementById('pg-grid'); if (!g) return;
+            const GR = {v: {name: '105 Verbal by PGS', sub: '105 most repeated verbal questions by Pro Genius Students', test: isPV, tag: '105 Verbal'}, b: {name: 'Paid Non Verbal Booklet', sub: 'Picture questions: odd one out, analogy, mirror, sequence, matrix', test: isPB, tag: 'NV Booklet'}, f: {name: 'Famous 1000 MCQs', sub: 'Pro Genius most famous MCQs', test: isPF, tag: 'Famous 1000'}, p: {name: 'PMA 159 Pro Genius MCQs', sub: 'PMA 159 initial test, Pro Genius', test: isPG, tag: 'PMA 159 Pro Genius'}};
+            if (pgSub === null) {
+                g.innerHTML = ['v', 'b', 'f', 'p'].map(id => {
+                    const ks = Object.keys(ALL).filter(GR[id].test), n = ks.reduce((t, k) => t + ALL[k].length, 0);
+                    return ks.length ? `<button type="button" onclick="openPgSub('${id}')" class="text-left bg-gradient-to-r from-cyan-700 to-blue-600 text-white rounded-2xl shadow-xl p-6 flex flex-col gap-2 col-span-full sm:col-span-1"><div class="text-xl font-bold">${GR[id].name}</div><div class="text-white/90 text-sm">${GR[id].sub}</div><div class="text-white/80 text-xs font-semibold">${ks.length} Tests &bull; ${n} MCQs</div><div class="text-sm font-bold mt-1">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`
+                        : `<div class="text-left bg-slate-200 text-slate-600 rounded-2xl p-6 flex flex-col gap-2 col-span-full sm:col-span-1"><div class="text-xl font-bold">${GR[id].name}</div><div class="text-sm">${GR[id].sub}</div><div class="text-xs font-semibold">Coming soon</div></div>`;
+                }).join('');
+                return;
+            }
+            const gr = GR[pgSub], ks = Object.keys(ALL).filter(gr.test);
+            g.innerHTML = '<div class="col-span-full"><button type="button" onclick="openPgSub(null)" class="inline-flex items-center gap-2 bg-white border border-slate-200 hover:border-cyan-400 text-slate-700 text-sm font-semibold px-4 py-2 rounded-full shadow-sm"><i class="fa-solid fa-arrow-left"></i> Pro Genius Academy</button><div class="text-lg font-bold text-slate-900 mt-3">' + gr.name + '</div></div>' + ks.map((k, i) => {
+                let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
+                return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-cyan-500 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="bg-cyan-100 text-cyan-800 text-xs font-bold px-3 py-1 rounded-full">${gr.tag} &bull; Test ${i + 1}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
+                    <div class="text-xl font-bold text-slate-900">${gr.name.replace(' MCQs', '')} &ndash; Part ${i + 1}</div>
+                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * 30) / 60))} Minutes &bull; Instant feedback</div>
+                    <div class="text-sm font-semibold text-cyan-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+            }).join('');
+        }
+        function renderLC() {
+            const g = document.getElementById('lc-grid'); if (!g) return;
+            g.innerHTML = Object.keys(ALL).filter(isLC).map((k, i) => {
+                let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
+                const secs = [...new Set(ALL[k].map(q => q.sec))].join(' &bull; ');
+                return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-violet-500 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="bg-violet-100 text-violet-800 text-xs font-bold px-3 py-1 rounded-full">PMA 158 &bull; Test ${i + 1}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
+                    <div class="text-xl font-bold text-slate-900">PMA 158 Long Course &ndash; Part ${i + 1}</div>
+                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * 12) / 60))} Minutes &bull; Instant feedback</div>
+                    <div class="text-sm font-semibold text-violet-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+            }).join('');
+        }
+        let hkSub = null;
+        function openHkSub(p) { hkSub = p; renderHK(); window.scrollTo(0, 0); }
+        function renderHK() {
+            const g = document.getElementById('hk-grid');
+            const ks = Object.keys(ALL).filter(isHK);
+            const bk = (to, label, title) => '<div class="col-span-full"><button type="button" onclick="openHkSub(' + to + ')" class="inline-flex items-center gap-2 bg-white border border-slate-200 hover:border-sky-400 text-slate-700 text-sm font-semibold px-4 py-2 rounded-full shadow-sm"><i class="fa-solid fa-arrow-left"></i> ' + label + '</button><div class="text-lg font-bold text-slate-900 mt-3">' + title + '</div></div>';
+            if (hkSub === null) {
+                const nAll = ks.reduce((t, k) => t + ALL[k].length, 0), mk = Object.keys(ALL).filter(isMR);
+                g.innerHTML = `<button type="button" onclick="openHkSub('all')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-sky-500 hover:shadow-lg transition p-6 flex flex-col gap-3">
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-medal text-2xl text-sky-600"></i><span class="text-xl font-bold text-slate-900">PMA All Experiences</span></div>
+                        <div class="text-xs text-slate-500">PMA 149 to 157 &bull; ${ks.length} Tests &bull; ${nAll} MCQs</div>
+                        <div class="text-sm font-semibold text-sky-700">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>
+`;
+                return;
+            }
+            if (hkSub === 'all') {
+                g.innerHTML = bk('null', 'Hakeem Force Academy', 'PMA All Experiences') + [149, 150, 151, 152, 153, 154, 155, 156, 157].map(p => {
+                    const pk = ks.filter(k => HK_META[k].pma === p), n = pk.reduce((t, k) => t + ALL[k].length, 0);
+                    return `<button type="button" onclick="openHkSub(${p})" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-sky-500 hover:shadow-lg transition p-6 flex flex-col gap-3">
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-medal text-2xl text-sky-600"></i><span class="text-xl font-bold text-slate-900">PMA ${p} Experience</span></div>
+                        <div class="text-xs text-slate-500">${pk.length} Tests &bull; ${n} MCQs</div>
+                        <div class="text-sm font-semibold text-sky-700">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+                }).join('');
+                return;
+            }
+            if (hkSub === 'imp') {
+                g.innerHTML = bk('null', 'Hakeem Force Academy', '100 Most Repeated Questions') + Object.keys(ALL).filter(isIV).map(k => {
+                    let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
+                    const n = ALL[k].length, mins = Math.ceil(Math.max(60, n * SEC_PER_MCQ) / 60), nr = ALL[k].filter(q => (q.rep || 1) > 1).length;
+                    return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-sky-500 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="bg-sky-100 text-sky-800 text-xs font-bold px-3 py-1 rounded-full">100 Most Repeated</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
+                    <div class="text-xl font-bold text-slate-900">100 Most Repeated Verbal Questions</div>
+                    <div class="text-xs text-slate-500">${nr} MCQs show in brackets how many times they were repeated in the earlier tests</div>
+                    <div class="text-xs text-slate-500">${n} MCQs &bull; ${mins} Minutes (${SEC_PER_MCQ} seconds each) &bull; Instant feedback</div>
+                    <div class="text-sm font-semibold text-sky-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+                }).join('');
+                return;
+            }
+            if (hkSub === 'con') {
+                g.innerHTML = bk('null', 'Hakeem Force Academy', 'Constitution of Pakistan (1956, 1962, 1973)') + Object.keys(ALL).filter(isCN).map(k => {
+                    let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
+                    const n = ALL[k].length, mins = Math.ceil(Math.max(60, n * SEC_PER_MCQ) / 60), nr = ALL[k].filter(q => (q.rep || 1) > 1).length;
+                    return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-sky-500 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="bg-sky-100 text-sky-800 text-xs font-bold px-3 py-1 rounded-full">Constitution &bull; All MCQs</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
+                    <div class="text-xl font-bold text-slate-900">Constitution of Pakistan &ndash; 1956, 1962, 1973</div>
+                    <div class="text-xs text-slate-500">${nr} MCQs show a repeat number in brackets (asked before in the PMA experiences)</div>
+                    <div class="text-xs text-slate-500">${n} MCQs &bull; ${mins} Minutes (${SEC_PER_MCQ} seconds each) &bull; Instant feedback</div>
+                    <div class="text-sm font-semibold text-sky-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+                }).join('');
+                return;
+            }
+            if (hkSub === 'rep') {
+                g.innerHTML = bk('null', 'Hakeem Force Academy', 'Most Repeated MCQs') + Object.keys(ALL).filter(isMR).map(k => {
+                    let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
+                    const t = HK_META[k].thr, h = HK_META[k].hi, rng = h ? (t + ' to ' + h) : (t + '+'), n = ALL[k].length, mins = Math.ceil(n * 30 / 60);
+                    return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-sky-500 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="bg-sky-100 text-sky-800 text-xs font-bold px-3 py-1 rounded-full">Most Repeated &bull; ${rng}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
+                    <div class="text-xl font-bold text-slate-900">Repeated ${rng} times</div>
+                    <div class="text-xs text-slate-500">${n} MCQs &bull; ${mins} Minutes (30 seconds each) &bull; Instant feedback</div>
+                    <div class="text-sm font-semibold text-sky-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+                }).join('');
+                return;
+            }
+            const bar = bk("'all'", 'PMA All Experiences', 'PMA ' + hkSub + ' Experience');
+            g.innerHTML = bar + ks.filter(k => HK_META[k].pma === hkSub).map(k => {
+                let best = null; try { best = localStorage.getItem('mc_best_' + k); } catch (e) {}
+                const part = HK_META[k].part;
+                const reps = ALL[k].map(q => q.rep || 1), hi = Math.max.apply(null, reps), lo = Math.min.apply(null, reps);
+                const rtxt = hi > 1 ? ('Repeated ' + hi + (lo !== hi ? ' to ' + lo : '') + ' times') : 'Asked once each';
+                return `<button type="button" onclick="selectTest('${k}')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-sky-500 hover:shadow-lg transition p-5 flex flex-col gap-3">
+                    <div class="flex items-center justify-between"><span class="bg-sky-100 text-sky-800 text-xs font-bold px-3 py-1 rounded-full">PMA ${hkSub} &bull; Test ${part}</span>${best !== null ? `<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best ${best}%</span>` : '<span class="text-xs text-slate-400">Not attempted</span>'}</div>
+                    <div class="text-xl font-bold text-slate-900">PMA ${hkSub} Experience &ndash; Part ${part}</div>
+                    <div class="text-xs text-slate-500">${rtxt}</div>
+                    <div class="text-xs text-slate-500">${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * 12) / 60))} Minutes &bull; Instant feedback</div>
+                    <div class="text-sm font-semibold text-sky-700">${best !== null ? 'Try again' : 'Start'} <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+            }).join('');
+        }
+        function selectTest(k) {""")
+sub("renderSelect(); renderPMA(); renderFA(); window.scrollTo(0, 0);", "renderSelect(); renderPMA(); renderFA(); renderHK(); window.scrollTo(0, 0);")
+sub("function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA();", "function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA(); renderHK();")
+sub("(isFA(k) ? ' MCQs (Forces Academy Lahore – Part ' + k.slice(3) + ')' : ' MCQs (PMA 159 Long Course – Part ' + k.slice(4) + ')')", "(isLC(k) ? ' MCQs (PMA 158 Long Course – Part ' + k.slice(3) + ')' : isIV(k) ? ' MCQs (100 Most Repeated Verbal Questions)' : isCN(k) ? ' MCQs (Constitution of Pakistan – 1956, 1962, 1973)' : isMR(k) ? ' MCQs (Most Repeated – ' + (HK_META[k].hi ? HK_META[k].thr + ' to ' + HK_META[k].hi : HK_META[k].thr + '+') + ' times)' : isHK(k) ? ' MCQs (Hakeem Force Academy – PMA ' + HK_META[k].pma + ' Part ' + HK_META[k].part + ')' : isFA(k) ? ' MCQs (Forces Academy Lahore – Part ' + k.slice(3) + ')' : ' MCQs (PMA 159 Long Course – Part ' + k.slice(4) + ')')")
+sub("(isFA(k) ? ' MCQs from Forces Academy Lahore tests and academic lists. Every answer shows a reason and a related fact.' : ' MCQs from PMA 159 test experiences. Every answer shows a reason.')", "(isLC(k) ? ' MCQs from the PMA 158 Long Course test experiences. Every answer shows a reason and a related fact.' : isIV(k) ? ' of the most important verbal intelligence questions. The number in brackets is how many times the question was repeated in the earlier tests. Every answer shows a reason and a related fact.' : isCN(k) ? ' MCQs on the Constitutions of Pakistan of 1956, 1962 and 1973. The number in brackets is how many times the question was repeated in the PMA experiences. Every answer shows a reason and a related fact.' : isMR(k) ? ' MCQs repeated ' + (HK_META[k].hi ? HK_META[k].thr + ' to ' + HK_META[k].hi : HK_META[k].thr + ' or more') + ' times in the Hakeem Force Academy experiences. The number in brackets is how many times the question was repeated. Every answer shows a reason and a related fact.' : isHK(k) ? ' MCQs from PMA ' + HK_META[k].pma + ' test experiences. The number in brackets is how many times the question was repeated. Every answer shows a reason and a related fact.' : isFA(k) ? ' MCQs from Forces Academy Lahore tests and academic lists. Every answer shows a reason and a related fact.' : ' MCQs from PMA 159 test experiences. Every answer shows a reason.')")
+sub("(isLC(k) ? ' MCQs (PMA 158 Long Course", "(isHF(k) ? ' MCQs (Haroon Force Academy – Part ' + k.slice(3) + ')' : isLF(k) ? ' MCQs (Light Forces Academy ' + ({LFE: 'Test Experiences', LFL: '159 LC Important MCQs', LFS: 'Seerah MCQs'})[String(k).split('-')[0]] + ' – Part ' + String(k).split('-')[1] + ')' : isEN(k) ? ' MCQs (English MCQs – Part ' + k.slice(3) + ')' : isIS(k) ? ' MCQs (Islamiat MCQs PMA – Part ' + k.slice(3) + ')' : isVB(k) ? ' MCQs (Verbal: ' + (['Number and Letter Series','Coding and Decoding','Mirror and Water Images','Direction Sense','Blood Relations','Age Problems','Calendar and Days','Clock Problems','Ranking and Order','Alphabet and Word Arrangement','Analogy','Odd One Out','Percentage and Fractions','Speed, Time and Work','Profit, Loss and Dozen','English Vocabulary and Grammar','Logical Reasoning','Basic Maths and Reasoning','Mixed Verbal'][+k.slice(3) - 1] || 'Verbal') + ')' : isNV(k) ? ' MCQs (Non Verbal: ' + (['Odd One Out','Analogy','Complete the Series','Missing Figure and Matrix','Mirror Images'][+k.slice(3) - 1] || 'Picture questions') + ')' : isPG(k) ? ' MCQs (PMA 159 Pro Genius – Part ' + k.slice(3) + ')' : isPF(k) ? ' MCQs (Famous 1000 – Part ' + k.slice(3) + ')' : isPV(k) ? ' MCQs (105 Verbal by PGS – Part ' + k.slice(3) + ')' : isPB(k) ? ' MCQs (Paid Non Verbal Booklet – Part ' + k.slice(3) + ')' : isLC(k) ? ' MCQs (PMA 158 Long Course")
+sub("(isLC(k) ? ' MCQs from the PMA 158 Lon", "(isHF(k) ? ' MCQs from Haroon Forces Academy. Every answer was checked and shows a reason and a related fact.' : isLF(k) ? ' MCQs from Light Forces Academy. Every answer was checked and shows why it is correct and a related fact.' : isEN(k) ? ' English MCQs: grammar, vocabulary, synonyms, antonyms and reading passages, all mixed. Every answer shows a reason.' : isIS(k) ? ' Islamiat MCQs for the PMA test: battles and Hijri history, prophets, Quran, angels, worship and Sahaba. Every answer shows why it is correct and a related fact.' : isVB(k) ? ' verbal intelligence MCQs collected from all categories. A repeated question is written once and the number in brackets shows how many times it came. Every answer shows a reason.' : isNV(k) ? ' picture questions (non verbal reasoning). Every answer shows the solution and a trick.' : isPG(k) ? ' MCQs from Pro Genius Academy PMA 159 tests. Every answer shows a reason and a related fact.' : isPF(k) ? ' of the most famous MCQs from Pro Genius Academy. Every answer shows a reason and a related fact.' : isPB(k) ? ' picture questions from the Pro Genius Paid Non Verbal Booklet. Every answer shows the solution and a trick.' : isPV(k) ? ' verbal MCQs from the 105 most repeated verbal questions by Pro Genius Students. Every answer shows a reason and a related fact.' : isLC(k) ? ' MCQs from the PMA 158 Lon")
+
+MENU_JS = """let curSec = null, menuReady = false;
+        const SECS = [
+            {id: 'o', name: '1000 MCQs', sub: 'Original questions 1 to 1000', grad: 'from-indigo-600 to-violet-600', icon: 'fa-book', test: k => !isExtra(k)},
+            {id: 'pma', name: 'PMA 159 MCQs', sub: 'PMA 159 Long Course test experiences', grad: 'from-emerald-700 to-teal-600', icon: 'fa-shield-halved', test: k => isPMA(k)},
+            {id: 'fa', name: 'Forces Academy Lahore MCQs', sub: 'Intelligence tests and academic practice', grad: 'from-amber-700 to-orange-600', icon: 'fa-brain', test: k => isFA(k)},
+            {id: 'hk', name: 'Hakeem Force Academy MCQs', sub: 'PMA All Experiences, Constitution of Pakistan and 100 Most Repeated Questions', grad: 'from-sky-700 to-cyan-500', icon: 'fa-medal', test: k => isHK(k)},
+            {id: 'lc', name: 'PMA 158 Long Course MCQs', sub: 'PMA 158 Long Course test experiences', grad: 'from-violet-700 to-fuchsia-600', icon: 'fa-flag', test: k => isLC(k)},
+            {id: 'pg', name: 'Pro Genius Academy MCQs', sub: '105 Verbal, Non Verbal Booklet, Famous 1000 and PMA 159 Pro Genius', grad: 'from-cyan-700 to-blue-600', icon: 'fa-graduation-cap', test: k => isPG(k) || isPF(k) || isPV(k) || isPB(k)},
+            {id: 'nv', name: 'Verbal and Non Verbal Test', sub: 'Verbal MCQs and picture questions', grad: 'from-amber-600 to-orange-500', icon: 'fa-shapes', test: k => isNV(k) || isVB(k)},
+            {id: 'cn', name: 'Constitution of Pakistan', sub: '1956, 1962 and 1973 Constitutions', grad: 'from-green-800 to-lime-600', icon: 'fa-scale-balanced', test: k => isCN(k)},
+            {id: 'iv', name: '100 Most Repeated Questions', sub: 'Most important verbal questions', grad: 'from-rose-700 to-pink-500', icon: 'fa-star', test: k => isIV(k)},
+            {id: 'en', name: 'Academic PMA MCQs', sub: 'English MCQs and Islamiat MCQs PMA', grad: 'engrad', icon: 'fa-book-open', test: k => isAC(k)},
+            {id: 'lf', name: 'Light Forces Academy MCQs', sub: 'Test experiences, 159 LC important MCQs and Seerah MCQs', grad: 'lfgrad', icon: 'fa-star-and-crescent', test: k => isLF(k)},
+            {id: 'hf', name: 'Haroon Force Academy', sub: 'Haroon Forces Academy MCQs for the PMA initial test', grad: 'hfgrad', icon: 'fa-shield-halved', test: k => isHF(k)}
+        ];
+        /* order of the category cards on the menu (user's choice, Oct 2026); SECS itself keeps its order because initMenu links it to the page blocks */
+        const MENU_ORDER = ['cn', 'iv', 'lc', 'o', 'pma', 'pg', 'nv', 'en', 'fa', 'hk', 'lf', 'hf'];
+        function initMenu() {
+            if (menuReady) return; menuReady = true;
+            const v = document.getElementById('view-select');
+            const kids = Array.from(v.children);
+            SECS.forEach((sc, i) => {
+                const a = kids[2 * i], b = kids[2 * i + 1];
+                a.dataset.sec = sc.id; b.dataset.sec = sc.id;
+                const bar = document.createElement('div');
+                bar.dataset.sec = sc.id; bar.className = 'mb-4';
+                bar.innerHTML = '<button type="button" onclick="openSec(null)" class="inline-flex items-center gap-2 bg-white border border-slate-200 hover:border-indigo-400 text-slate-700 text-sm font-semibold px-4 py-2 rounded-full shadow-sm"><i class="fa-solid fa-arrow-left"></i> All categories</button>';
+                v.insertBefore(bar, a);
+                a.classList.remove('mt-10');
+            });
+            const m = document.createElement('div'); m.id = 'sec-menu'; v.insertBefore(m, v.firstChild);
+        }
+        function renderMenu() {
+            const keys = Object.keys(ALL);
+            document.getElementById('sec-menu').innerHTML = '<div class="text-center mb-6"><h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">Choose a Category</h2><p class="text-slate-500 text-sm mt-1">Tap a category to see its tests</p></div><div class="grid grid-cols-1 sm:grid-cols-2 gap-4">' + MENU_ORDER.map(id => SECS.find(x => x.id === id)).filter(Boolean).map(sc => {
+                const ks = keys.filter(sc.test), n = ks.reduce((t, k) => t + ALL[k].length, 0);
+                return `<button type="button" onclick="openSec('${sc.id}')" class="text-left bg-gradient-to-r ${sc.grad} text-white rounded-2xl shadow-xl hover:shadow-2xl hover:scale-[1.01] transition p-6 flex flex-col gap-2">
+                    <div class="flex items-center gap-3"><i class="fa-solid ${sc.icon} text-2xl"></i><span class="text-xl sm:text-2xl font-bold">${sc.name}</span></div>
+                    <div class="text-white/90 text-sm">${sc.sub}</div>
+                    <div class="text-white/80 text-xs font-semibold">${ks.length} Tests &bull; ${n} MCQs</div>
+                    <div class="text-sm font-bold mt-1">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>`;
+            }).join('') + '</div>';
+        }
+        function applySec() {
+            initMenu(); renderMenu();
+            const v = document.getElementById('view-select');
+            Array.from(v.children).forEach(e => {
+                if (e.id === 'sec-menu') e.classList.toggle('hidden', curSec !== null);
+                else e.classList.toggle('hidden', e.dataset.sec !== curSec);
+            });
+        }
+        function openSec(id) { if (id === 'hf') renderHF(); if (id === 'nv' && curSec !== 'nv' && typeof nvSub !== 'undefined') { nvSub = null; renderNV(); } if (id === 'pg' && curSec !== 'pg') { pgSub = null; renderPG(); } if (id === 'en' && curSec !== 'en' && typeof enSub !== 'undefined') { enSub = null; renderEN(); } if (id === 'lf' && typeof lfSub !== 'undefined') { if (curSec !== 'lf') lfSub = null; renderLF(); } if (id === 'hk' && curSec !== 'hk' && typeof hkSub !== 'undefined') { hkSub = null; renderHK(); } curSec = id; applySec(); window.scrollTo(0, 0); }
+        function bootQuizApp() {"""
+sub("function bootQuizApp() {", MENU_JS)
+sub("renderSelect(); renderPMA(); renderFA(); renderHK(); window.scrollTo(0, 0);", "renderSelect(); renderPMA(); renderFA(); renderHK(); renderLC(); renderPG(); renderNV(); renderCN(); renderIV(); renderEN(); renderLF(); renderHF(); applySec(); window.scrollTo(0, 0);")
+sub("const passed = correctCount >= 25;", "const passed = correctCount * 2 >= quizData.length;")
+sub("function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA(); renderHK();", "function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA(); renderHK(); renderLC(); renderPG(); renderNV(); renderCN(); renderIV(); renderEN(); renderLF(); renderHF(); applySec();")
+
+# login screen (glassy sign in / create account / continue as guest) and day-night mode
+_d = os.path.dirname(os.path.abspath(__file__))
+_blk = open(os.path.join(_d, 'theme_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'auth_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'seccolor_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'polish_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'backnav_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'land_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'drawer_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'navbar_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'features_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'range_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'nv_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'glass_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'd3_block.html'), encoding='utf8').read()
+import json as _j
+_imgs=_j.load(open(os.path.join(_d,'space_imgs.json')))
+for _k,_v in _imgs.items(): _blk=_blk.replace('{{IMG_'+_k+'}}','data:image/webp;base64,'+_v)
+assert s.count('<div id="splash"') == 1
+s = s.replace('<div id="splash"', _blk + '\n<div id="splash"')
+
+# user request: real PMA initial-test pace, 30 seconds per MCQ in every test (50 MCQs = 25 minutes)
+s = s.replace("TEST_SECS = isExtra(k) ? Math.max(60, nQ * 12) : 600;", "TEST_SECS = Math.max(60, nQ * SEC_PER_MCQ);")
+s = s.replace("ALL[k].length * 12) / 60))} Minutes", "ALL[k].length * SEC_PER_MCQ) / 60))} Minutes")
+s = s.replace("${ALL[k].length} MCQs &bull; 10 Minutes &bull;", "${ALL[k].length} MCQs &bull; ${Math.max(1, Math.ceil(Math.max(60, ALL[k].length * SEC_PER_MCQ) / 60))} Minutes &bull;")
+s = s.replace("mins = Math.ceil(n * 30 / 60);", "mins = Math.ceil(n * SEC_PER_MCQ / 60);")
+s = s.replace("Minutes (30 seconds each)", "Minutes (' + SEC_PER_MCQ + ' seconds each)".replace("' + SEC_PER_MCQ + '", "${SEC_PER_MCQ}"))
+s = s.replace("let TEST_SECS = 1200;", "let TEST_SECS = 1500;\n        const SEC_PER_MCQ = 30;")
+s = s.replace('<div id="info-time" class="text-lg font-bold text-slate-900">10 Minutes</div>', '<div id="info-time" class="text-lg font-bold text-slate-900">25 Minutes</div>')
+s = s.replace("auto-submit when the 10-minute timer expires.", "auto-submit when the 25-minute timer expires.")
+assert "SEC_PER_MCQ" in s and "nQ * 12" not in s and "* 12) / 60" not in s and "10 Minutes" not in s
+
+# user request: remove the front "ASADULLAH NOTES presents" splash page completely
+import re as _re
+_a = s.index('<div id="splash"'); _b = s.index('</script>', s.index('setTimeout(closeSplash', _a)) + len('</script>')
+s = s[:_a] + '<script>function closeSplash(){}</script>' + s[_b:]
+s = _re.sub(r'[ \t]*#splash[^\n]*\n', '', s)
+assert 'id="splash"' not in s
+
+open(out, 'w', encoding='utf8').write(s)
+print("written", out, len(s))

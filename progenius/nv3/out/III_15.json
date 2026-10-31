@@ -1,0 +1,25 @@
+{
+ "type": "III",
+ "num": 15,
+ "kind": "series",
+ "pdf_page": 23,
+ "stem_groups": [
+  [
+   "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><rect width=\"100\" height=\"100\" fill=\"#fff\"/><rect x=\"2\" y=\"38\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.2\"/><g transform=\"translate(2,38) scale(.24)\"><path d=\"M22,14L78,14L78,23\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/></g><text x=\"14\" y=\"71\" font-size=\"7\" font-family=\"Arial\" text-anchor=\"middle\">A</text><rect x=\"26\" y=\"38\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.2\"/><g transform=\"translate(26,38) scale(.24)\"><path d=\"M22,14L78,14L78,23L22,23L22,32L78,32\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/></g><text x=\"38\" y=\"71\" font-size=\"7\" font-family=\"Arial\" text-anchor=\"middle\">B</text><rect x=\"50\" y=\"38\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.2\"/><text x=\"62\" y=\"56\" font-size=\"16\" font-family=\"Arial\" font-weight=\"bold\" text-anchor=\"middle\">?</text><text x=\"62\" y=\"71\" font-size=\"7\" font-family=\"Arial\" text-anchor=\"middle\">C</text><rect x=\"74\" y=\"38\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.2\"/><g transform=\"translate(74,38) scale(.24)\"><path d=\"M22,12L78,12L78,22.5L22,22.5L22,33.0L78,33.0L78,43.5L22,43.5L22,54.0L78,54.0L78,64.5L22,64.5L22,75.0L78,75.0L78,85.5\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/></g><text x=\"86\" y=\"71\" font-size=\"7\" font-family=\"Arial\" text-anchor=\"middle\">D</text></svg>"
+  ]
+ ],
+ "noq": true,
+ "options": [
+  "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><rect width=\"100\" height=\"100\" fill=\"#fff\"/><rect x=\"4\" y=\"4\" width=\"92\" height=\"92\" fill=\"none\" stroke=\"#111\" stroke-width=\"2\"/><path d=\"M22,14L78,14L78,23L22,23L22,32L78,32L78,41L22,41L22,50L78,50\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/></svg>",
+  "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><rect width=\"100\" height=\"100\" fill=\"#fff\"/><rect x=\"4\" y=\"4\" width=\"92\" height=\"92\" fill=\"none\" stroke=\"#111\" stroke-width=\"2\"/><path d=\"M22,14L78,14L78,23L22,23L22,32L78,32L78,41L22,41\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/></svg>",
+  "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><rect width=\"100\" height=\"100\" fill=\"#fff\"/><rect x=\"4\" y=\"4\" width=\"92\" height=\"92\" fill=\"none\" stroke=\"#111\" stroke-width=\"2\"/><path d=\"M22,14L78,14L78,23L22,23L22,32L78,32L78,41L22,41L22,50\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/></svg>",
+  "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><rect width=\"100\" height=\"100\" fill=\"#fff\"/><rect x=\"4\" y=\"4\" width=\"92\" height=\"92\" fill=\"none\" stroke=\"#111\" stroke-width=\"2\"/><path d=\"M22,14L78,14L78,23L22,23L22,32L78,32L78,41L22,41L22,50L78,50L78,59\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/></svg>",
+  "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><rect width=\"100\" height=\"100\" fill=\"#fff\"/><rect x=\"4\" y=\"4\" width=\"92\" height=\"92\" fill=\"none\" stroke=\"#111\" stroke-width=\"2\"/><path d=\"M22,14L78,14L78,23L22,23L22,32L78,32L78,41L22,41L22,50L78,50L78,59L22,59\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/></svg>"
+ ],
+ "correct": 0,
+ "book_answer": 1,
+ "why": "The zig-zag line gets longer each time. Count the straight pieces: A has 2, B has 5, D has 14. The number added grows by 1 each time (+3, +4, +5), so C must have 9 pieces: 5 across and 4 down. Option 1 has exactly 9 pieces. Option 4 (10 pieces) and option 5 (11 pieces) look similar but are too long.",
+ "trick": "For growing line figures, count the straight pieces and look at the differences between the counts.",
+ "confidence": "high",
+ "note": "Whole row A, B, ?, D drawn as one SVG because D comes after the ?."
+}

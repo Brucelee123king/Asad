@@ -1,0 +1,2 @@
+[{"num":1,"pick":4,"confidence":"low","rule":"Circle moves clockwise around outer corners (TL, TR, TR, BR, next BL); inner squares shift in pairs. No clean rule found.","alt":[1,3]},
+{"num":2,"pick":4,"confidence":"low","rule":"Two arrow hands rotate around the centre circle with shifting gaps; could not find a clean rule, best guess.","alt":[3,5]}]

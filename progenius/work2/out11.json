@@ -1,0 +1,1183 @@
+[
+ {
+  "num": 1025,
+  "page": 121,
+  "question": "What was the relation of Hazrat Hamza (RA) with the Prophet (PBUH)?",
+  "options": [
+   "Cousin",
+   "Uncle",
+   "Brother",
+   "Grandfather"
+  ],
+  "correct": 1,
+  "why": "Hazrat Hamza (RA) was the paternal uncle of the Prophet (PBUH).",
+  "rel": "He was called Asad-ullah (Lion of Allah) and was martyred in the Battle of Uhud."
+ },
+ {
+  "num": 1026,
+  "page": 121,
+  "question": "Famous boxer Muhammad Ali belongs to which country?",
+  "options": [
+   "America",
+   "England",
+   "Brazil",
+   "Germany"
+  ],
+  "correct": 0,
+  "why": "Muhammad Ali (born Cassius Clay) was an American heavyweight boxer.",
+  "rel": "He won the Olympic gold medal in 1960 and accepted Islam in 1964."
+ },
+ {
+  "num": 1027,
+  "page": 121,
+  "question": "Who advised Hazrat Abu Bakr (RA) to compile the Holy Quran?",
+  "options": [
+   "Hazrat Uthman (RA)",
+   "Hazrat Ali (RA)",
+   "Hazrat Umar (RA)",
+   "Hazrat Zaid bin Thabit (RA)"
+  ],
+  "correct": 2,
+  "why": "After many Huffaz were martyred in the Battle of Yamama, Hazrat Umar (RA) advised Abu Bakr (RA) to compile the Quran.",
+  "rel": "Zaid bin Thabit (RA) did the compilation work; Hazrat Uthman (RA) later made standard copies."
+ },
+ {
+  "num": 1028,
+  "page": 121,
+  "question": "Which is the last month of the Islamic calendar?",
+  "options": [
+   "Dhul Hijjah",
+   "Muharram",
+   "Ramadan",
+   "Rajab"
+  ],
+  "correct": 0,
+  "why": "Dhul Hijjah, the month of Hajj, is the 12th and last Islamic month.",
+  "rel": "The first month is Muharram; Eid-ul-Adha falls on 10 Dhul Hijjah."
+ },
+ {
+  "num": 1029,
+  "page": 121,
+  "question": "How many nuclear tests did Pakistan perform on 28 May 1998 at Chagai, Balochistan?",
+  "options": [
+   "Three",
+   "Six",
+   "Five",
+   "Seven"
+  ],
+  "correct": 2,
+  "why": "Pakistan conducted five nuclear tests on 28 May 1998 in the Chagai Hills.",
+  "rel": "A sixth test was done on 30 May 1998 at Kharan. 28 May is Youm-e-Takbeer.",
+  "problem": "Source says only 'Five'; total tests on 28 and 30 May were six, so the question was fixed to 28 May."
+ },
+ {
+  "num": 1030,
+  "page": 121,
+  "question": "Namaz-e-Istisqa is offered for what?",
+  "options": [
+   "Solar eclipse",
+   "Rain",
+   "Lunar eclipse",
+   "Safe journey"
+  ],
+  "correct": 1,
+  "why": "Salat al-Istisqa is the prayer asking Allah for rain during drought.",
+  "rel": "Salat al-Kusuf is offered at a solar eclipse."
+ },
+ {
+  "num": 1031,
+  "page": 121,
+  "question": "Namaz-e-Kasoof is offered at the time of which event?",
+  "options": [
+   "Solar eclipse",
+   "Drought",
+   "Rainfall",
+   "Earthquake"
+  ],
+  "correct": 0,
+  "why": "Salat al-Kusuf is the prayer offered during a solar eclipse.",
+  "rel": "Prayer for a lunar eclipse is called Salat al-Khusuf.",
+  "problem": "Some scholars use Kusuf/Khusuf for either eclipse; the standard exam answer is solar eclipse."
+ },
+ {
+  "num": 1032,
+  "page": 122,
+  "question": "Which Sahabi served the Prophet (PBUH) for ten years?",
+  "options": [
+   "Hazrat Bilal (RA)",
+   "Hazrat Abdullah bin Masud (RA)",
+   "Hazrat Abu Huraira (RA)",
+   "Hazrat Anas bin Malik (RA)"
+  ],
+  "correct": 3,
+  "why": "Anas bin Malik (RA) was given to the Prophet (PBUH) as a boy and served him for ten years in Madinah.",
+  "rel": "He is among the Sahabah who narrated the most Ahadith."
+ },
+ {
+  "num": 1033,
+  "page": 122,
+  "question": "Where is the headquarters of the International Monetary Fund (IMF)?",
+  "options": [
+   "Washington DC",
+   "New York",
+   "Geneva",
+   "Paris"
+  ],
+  "correct": 0,
+  "why": "The IMF headquarters is in Washington DC, USA.",
+  "rel": "The IMF was set up in 1944 (Bretton Woods) and began work in 1945.",
+  "problem": "Source answer gave only the full form of IMF; question refers to its headquarters."
+ },
+ {
+  "num": 1034,
+  "page": 122,
+  "question": "Who was the first Pakistani to climb Mount Everest?",
+  "options": [
+   "Nazir Sabir",
+   "Hassan Sadpara",
+   "Ali Sadpara",
+   "Ashraf Aman"
+  ],
+  "correct": 0,
+  "why": "Nazir Sabir reached the summit of Mount Everest on 17 May 1977, the first Pakistani to do so.",
+  "rel": "Samina Baig became the first Pakistani woman to climb Everest in 2013."
+ },
+ {
+  "num": 1035,
+  "page": 122,
+  "question": "In which year was the Suez Canal completed (opened)?",
+  "options": [
+   "1869",
+   "1859",
+   "1889",
+   "1914"
+  ],
+  "correct": 0,
+  "why": "The Suez Canal in Egypt opened in 1869 and is about 193 km long.",
+  "rel": "It was built under Ferdinand de Lesseps."
+ },
+ {
+  "num": 1036,
+  "page": 122,
+  "question": "The Suez Canal connects which two seas?",
+  "options": [
+   "Mediterranean Sea and Red Sea",
+   "Red Sea and Arabian Sea",
+   "Black Sea and Caspian Sea",
+   "Mediterranean Sea and Black Sea"
+  ],
+  "correct": 0,
+  "why": "The canal links the Mediterranean Sea in the north with the Red Sea in the south.",
+  "rel": "It separates Africa from Asia (Sinai Peninsula)."
+ },
+ {
+  "num": 1037,
+  "page": 122,
+  "question": "How many houses does the Parliament of Pakistan have?",
+  "options": [
+   "Two",
+   "One",
+   "Three",
+   "Four"
+  ],
+  "correct": 0,
+  "why": "Parliament has two houses: the National Assembly (lower) and the Senate (upper).",
+  "rel": "The President is also part of the Parliament."
+ },
+ {
+  "num": 1038,
+  "page": 122,
+  "question": "What is Pakistan's rank in the world by population?",
+  "options": [
+   "3rd",
+   "4th",
+   "5th",
+   "7th"
+  ],
+  "correct": 2,
+  "why": "Pakistan is the fifth most populous country after India, China, the USA and Indonesia.",
+  "rel": "Top four are India, China, USA and Indonesia as in the source.",
+  "problem": "Some recent sources rank China 2nd and the USA 3rd; Pakistan stays 5th."
+ },
+ {
+  "num": 1039,
+  "page": 123,
+  "question": "Which Prophet built the Ark (boat) for the great flood?",
+  "options": [
+   "Hazrat Ibrahim (AS)",
+   "Hazrat Musa (AS)",
+   "Hazrat Nuh (AS)",
+   "Hazrat Yunus (AS)"
+  ],
+  "correct": 2,
+  "why": "Hazrat Nuh (AS) built the Ark by Allah's command to save believers from the flood.",
+  "rel": "His people did not accept his message for about 950 years."
+ },
+ {
+  "num": 1040,
+  "page": 123,
+  "question": "On which mountain did the Ark of Hazrat Nuh (AS) come to rest?",
+  "options": [
+   "Mount Sinai",
+   "Mount Ararat in Iran",
+   "Mount Uhud",
+   "Mount Judi (Turkey)"
+  ],
+  "correct": 3,
+  "why": "The Quran says the Ark settled on Mount Judi (Al-Judi), traditionally located in Turkey.",
+  "rel": "Tradition says the people stayed in the Ark for about 6 months.",
+  "problem": "Source answer mentions 6 months in water, which is tradition-based, not a clear Quranic fact; the question was set on the stop location."
+ },
+ {
+  "num": 1041,
+  "page": 123,
+  "question": "What is the capital of Nepal?",
+  "options": [
+   "Kathmandu",
+   "Pokhara",
+   "Lhasa",
+   "Thimphu"
+  ],
+  "correct": 0,
+  "why": "Kathmandu is the capital and largest city of Nepal.",
+  "rel": "Mount Everest lies on the Nepal-China border."
+ },
+ {
+  "num": 1042,
+  "page": 123,
+  "question": "What is the capital of Somalia?",
+  "options": [
+   "Nairobi",
+   "Mogadishu",
+   "Djibouti",
+   "Addis Ababa"
+  ],
+  "correct": 1,
+  "why": "Mogadishu is the capital of Somalia.",
+  "rel": "Somalia is in the Horn of Africa."
+ },
+ {
+  "num": 1043,
+  "page": 123,
+  "question": "Which Prophet worked as a carpenter?",
+  "options": [
+   "Hazrat Dawud (AS)",
+   "Hazrat Idris (AS)",
+   "Hazrat Zakariya (AS)",
+   "Hazrat Yusuf (AS)"
+  ],
+  "correct": 2,
+  "why": "A Hadith in Sahih Muslim says Zakariya (AS) was a carpenter.",
+  "rel": "Hazrat Dawud (AS) was known for making armour."
+ },
+ {
+  "num": 1044,
+  "page": 123,
+  "question": "Where is Jabal-e-Noor located?",
+  "options": [
+   "Near Madinah",
+   "Near Taif",
+   "In Jerusalem",
+   "Near Makkah"
+  ],
+  "correct": 3,
+  "why": "Jabal-e-Noor is the mountain near Makkah that holds the Cave of Hira.",
+  "rel": "The first revelation came to the Prophet (PBUH) in the Cave of Hira."
+ },
+ {
+  "num": 1045,
+  "page": 123,
+  "question": "What is the meaning (synonym) of 'fondness'?",
+  "options": [
+   "Hatred",
+   "Anger",
+   "Laziness",
+   "Affection"
+  ],
+  "correct": 3,
+  "why": "Fondness means a liking or love for someone or something, so affection is its meaning.",
+  "rel": "Related words: love, liking, tenderness."
+ },
+ {
+  "num": 1046,
+  "page": 124,
+  "question": "Which country has won the most FIFA World Cups?",
+  "options": [
+   "Brazil",
+   "Germany",
+   "Argentina",
+   "Italy"
+  ],
+  "correct": 0,
+  "why": "Brazil has won the World Cup five times (1958, 1962, 1970, 1994, 2002).",
+  "rel": "Argentina won the 2022 final against France."
+ },
+ {
+  "num": 1047,
+  "page": 124,
+  "question": "In which country was the 2022 FIFA World Cup held?",
+  "options": [
+   "Russia",
+   "Brazil",
+   "Qatar",
+   "Saudi Arabia"
+  ],
+  "correct": 2,
+  "why": "Qatar hosted the 2022 FIFA World Cup, the first in the Middle East.",
+  "rel": "The 2026 World Cup is hosted by the USA, Canada and Mexico."
+ },
+ {
+  "num": 1048,
+  "page": 124,
+  "question": "What is the currency of Saudi Arabia?",
+  "options": [
+   "Dinar",
+   "Dirham",
+   "Saudi Riyal",
+   "Rupee"
+  ],
+  "correct": 2,
+  "why": "The currency is the Saudi Riyal (SAR).",
+  "rel": "The UAE uses the Dirham and Kuwait the Dinar."
+ },
+ {
+  "num": 1049,
+  "page": 124,
+  "question": "What is the range of Pakistan's Ababeel missile?",
+  "options": [
+   "290 km",
+   "2200 km",
+   "750 km",
+   "1500 km"
+  ],
+  "correct": 1,
+  "why": "The Ababeel is a surface-to-surface ballistic missile with a range of about 2200 km.",
+  "rel": "It carries multiple warheads (MIRV)."
+ },
+ {
+  "num": 1050,
+  "page": 124,
+  "question": "On which date is Defence Day of Pakistan observed?",
+  "options": [
+   "14 August",
+   "6 September",
+   "23 March",
+   "28 May"
+  ],
+  "correct": 1,
+  "why": "Defence Day marks the 6 September 1965 defence of Pakistan against India.",
+  "rel": "Youm-e-Takbeer is 28 May."
+ },
+ {
+  "num": 1051,
+  "page": 124,
+  "question": "Who discovered bacteria?",
+  "options": [
+   "Louis Pasteur",
+   "Robert Hooke",
+   "Antonie van Leeuwenhoek",
+   "Alexander Fleming"
+  ],
+  "correct": 2,
+  "why": "Van Leeuwenhoek first observed bacteria through a microscope in 1676.",
+  "rel": "He is called the Father of Microbiology."
+ },
+ {
+  "num": 1052,
+  "page": 124,
+  "question": "The word 'Jihad' belongs to which language?",
+  "options": [
+   "Persian",
+   "Urdu",
+   "Arabic",
+   "Turkish"
+  ],
+  "correct": 2,
+  "why": "Jihad is an Arabic word meaning struggle or striving.",
+  "rel": "Its root is j-h-d."
+ },
+ {
+  "num": 1053,
+  "page": 124,
+  "question": "What is the capital of Austria?",
+  "options": [
+   "Berlin",
+   "Budapest",
+   "Vienna",
+   "Bern"
+  ],
+  "correct": 2,
+  "why": "Vienna is the capital of Austria.",
+  "rel": "Bern is the capital of Switzerland."
+ },
+ {
+  "num": 1054,
+  "page": 125,
+  "question": "Which country invented the game of chess?",
+  "options": [
+   "China",
+   "India",
+   "Persia (Iran)",
+   "Greece"
+  ],
+  "correct": 1,
+  "why": "Chess began in India in the Gupta period as 'Chaturanga'.",
+  "rel": "It later spread to Persia and Europe."
+ },
+ {
+  "num": 1055,
+  "page": 125,
+  "question": "In which year did Pakistan win its first Cricket World Cup?",
+  "options": [
+   "1987",
+   "1996",
+   "1992",
+   "1999"
+  ],
+  "correct": 2,
+  "why": "Pakistan won the 1992 World Cup under Imran Khan in Australia and New Zealand.",
+  "rel": "Pakistan beat England in the final at Melbourne."
+ },
+ {
+  "num": 1056,
+  "page": 125,
+  "question": "'Israel' is the title of which Prophet?",
+  "options": [
+   "Hazrat Yaqoob (AS)",
+   "Hazrat Ishaq (AS)",
+   "Hazrat Yusuf (AS)",
+   "Hazrat Ismail (AS)"
+  ],
+  "correct": 0,
+  "why": "Israel was the title (name) of Hazrat Yaqoob (AS); his children are called Bani Israel.",
+  "rel": "He was the son of Hazrat Ishaq (AS)."
+ },
+ {
+  "num": 1057,
+  "page": 125,
+  "question": "What is the gestation (pregnancy) period of a buffalo?",
+  "options": [
+   "About 150 days",
+   "About 210 days",
+   "About 300 days",
+   "About 400 days"
+  ],
+  "correct": 2,
+  "why": "A buffalo carries its calf for roughly 300 to 320 days.",
+  "rel": "A cow's pregnancy lasts about 280 days.",
+  "problem": "Exact figure varies by breed (about 300-320 days)."
+ },
+ {
+  "num": 1058,
+  "page": 125,
+  "question": "What is the unit of electric current?",
+  "options": [
+   "Volt",
+   "Ampere",
+   "Ohm",
+   "Watt"
+  ],
+  "correct": 1,
+  "why": "Electric current is measured in amperes (A).",
+  "rel": "Volt is the unit of potential difference and ohm of resistance."
+ },
+ {
+  "num": 1059,
+  "page": 125,
+  "question": "At the point of contact, a tangent to a circle makes what angle with the radius?",
+  "options": [
+   "45 degrees",
+   "60 degrees",
+   "90 degrees",
+   "180 degrees"
+  ],
+  "correct": 2,
+  "why": "A tangent is perpendicular to the radius at the point of contact.",
+  "rel": "Two tangents from an outside point are equal in length.",
+  "problem": "Source question was incomplete; reconstructed."
+ },
+ {
+  "num": 1060,
+  "page": 125,
+  "question": "In which year did the Khilafat Movement start?",
+  "options": [
+   "1919",
+   "1857",
+   "1906",
+   "1930"
+  ],
+  "correct": 0,
+  "why": "The Khilafat Movement was started by Indian Muslims in 1919 to save the Ottoman Caliphate.",
+  "rel": "Leaders included Maulana Muhammad Ali Jauhar and Shaukat Ali. Montagu-Chelmsford Reforms: 1919; Minto-Morley Reforms: 1909.",
+  "problem": "Some sources give 1920 as the formal launch; 1919 is the standard answer."
+ },
+ {
+  "num": 1061,
+  "page": 126,
+  "question": "The Battle of Plassey was fought between whom?",
+  "options": [
+   "Mughals and Marathas",
+   "British and Tipu Sultan",
+   "British East India Company and Siraj-ud-Daulah",
+   "Babur and Ibrahim Lodhi"
+  ],
+  "correct": 2,
+  "why": "The 1757 Battle of Plassey was won by the East India Company against Siraj-ud-Daulah, the last independent Nawab of Bengal.",
+  "rel": "Battles of Panipat: 1526, 1556 and 1761."
+ },
+ {
+  "num": 1062,
+  "page": 126,
+  "question": "The Karakoram Highway is also called by which name?",
+  "options": [
+   "Grand Trunk Road",
+   "Silk Route",
+   "Indus Highway",
+   "Motorway M-2"
+  ],
+  "correct": 1,
+  "why": "The KKH follows part of the ancient Silk Route and is also called the Friendship Highway.",
+  "rel": "It links Hasan Abdal in Pakistan with Kashgar in China.",
+  "problem": "Also called Friendship Highway; only one of the two names is used as an option."
+ },
+ {
+  "num": 1063,
+  "page": 126,
+  "question": "The Khyber Pass connects Pakistan with which country?",
+  "options": [
+   "Afghanistan",
+   "Iran",
+   "China",
+   "India"
+  ],
+  "correct": 0,
+  "why": "The Khyber Pass links Peshawar in Pakistan with Kabul side in Afghanistan.",
+  "rel": "Torkham is the border crossing."
+ },
+ {
+  "num": 1064,
+  "page": 126,
+  "question": "The Khunjerab Pass connects Pakistan with which country?",
+  "options": [
+   "Afghanistan",
+   "Iran",
+   "India",
+   "China"
+  ],
+  "correct": 3,
+  "why": "The Khunjerab Pass is on the Pakistan-China border.",
+  "rel": "It is the highest paved border crossing in the world; Bolan Pass connects Balochistan with Sindh/Afghanistan route.",
+  "problem": "Source mentioned Bolan Pass as Baluchistan-KPK, which is not correct, so only the Khunjerab part was used."
+ },
+ {
+  "num": 1065,
+  "page": 126,
+  "question": "How many letters does the Pashto alphabet have?",
+  "options": [
+   "26",
+   "39",
+   "45",
+   "28"
+  ],
+  "correct": 2,
+  "why": "The Pashto alphabet is usually counted as 44-45 letters.",
+  "rel": "Urdu has about 39 and English has 26 letters.",
+  "problem": "Counts vary slightly (44 to 45); 45 is the common exam answer."
+ },
+ {
+  "num": 1066,
+  "page": 127,
+  "question": "What does the word 'Urdu' mean?",
+  "options": [
+   "Poetry",
+   "Language of kings",
+   "Army (camp)",
+   "Beauty"
+  ],
+  "correct": 2,
+  "why": "Urdu is a Turkish word meaning army or camp (Lashkar).",
+  "rel": "Urdu grew in army camps of the Mughal period."
+ },
+ {
+  "num": 1067,
+  "page": 127,
+  "question": "In which year did Pakistan join the United Nations?",
+  "options": [
+   "1948",
+   "1950",
+   "1947",
+   "1956"
+  ],
+  "correct": 2,
+  "why": "Pakistan became a UN member on 30 September 1947.",
+  "rel": "The UN has 193 members and its headquarters is in New York."
+ },
+ {
+  "num": 1068,
+  "page": 127,
+  "question": "Kot Diji is located in which province?",
+  "options": [
+   "Punjab",
+   "Balochistan",
+   "Khyber Pakhtunkhwa",
+   "Sindh"
+  ],
+  "correct": 3,
+  "why": "Kot Diji is in Khairpur district, Sindh, known for its fort and an early Indus-period site.",
+  "rel": "Kot Diji culture came before the Mohenjo-daro civilisation."
+ },
+ {
+  "num": 1069,
+  "page": 127,
+  "question": "How many verses (ayat) does Surah Al-Baqarah have?",
+  "options": [
+   "200",
+   "114",
+   "286",
+   "176"
+  ],
+  "correct": 2,
+  "why": "Surah Al-Baqarah has 286 verses and is the longest surah.",
+  "rel": "It is the 2nd surah of the Quran."
+ },
+ {
+  "num": 1070,
+  "page": 127,
+  "question": "Which is the smallest Surah of the Holy Quran?",
+  "options": [
+   "Surah Al-Ikhlas",
+   "Surah Al-Asr",
+   "Surah An-Nas",
+   "Surah Al-Kausar"
+  ],
+  "correct": 3,
+  "why": "Surah Al-Kausar has only 3 short verses.",
+  "rel": "The longest is Al-Baqarah."
+ },
+ {
+  "num": 1071,
+  "page": 127,
+  "question": "What is the first pillar of Islam?",
+  "options": [
+   "Tauheed (Kalima Shahada)",
+   "Salah",
+   "Zakat",
+   "Hajj"
+  ],
+  "correct": 0,
+  "why": "The first pillar is the declaration of faith in the oneness of Allah and the prophethood of Muhammad (PBUH).",
+  "rel": "The five pillars are Kalima, Salah, Zakat, Sawm, Hajj."
+ },
+ {
+  "num": 1072,
+  "page": 128,
+  "question": "How many heads (Masarif) of Zakat are mentioned in the Quran?",
+  "options": [
+   "5",
+   "7",
+   "10",
+   "8"
+  ],
+  "correct": 3,
+  "why": "Surah At-Tawbah (9:60) names eight categories of those who may receive Zakat.",
+  "rel": "They include the poor, the needy, debtors and travellers."
+ },
+ {
+  "num": 1073,
+  "page": 128,
+  "question": "Who is the Foreign Minister of Pakistan (As of Oct 2026)?",
+  "options": [
+   "Mohammad Ishaq Dar",
+   "Bilawal Bhutto Zardari",
+   "Khawaja Asif",
+   "Shah Mahmood Qureshi"
+  ],
+  "correct": 0,
+  "why": "As of Oct 2026, Ishaq Dar is Deputy Prime Minister and Foreign Minister of Pakistan (web check: listed in that role in 2026).",
+  "rel": "Bilawal Bhutto Zardari was Foreign Minister from April 2022 to August 2023 and again until the 2024 government change.",
+  "problem": "Source answer (Bilawal Bhutto) is outdated; web search shows Dar in the post in July-Aug 2026 (October not directly confirmed)."
+ },
+ {
+  "num": 1074,
+  "page": 128,
+  "question": "In which year was the Shanghai Cooperation Organisation (SCO) established?",
+  "options": [
+   "1991",
+   "2001",
+   "1996",
+   "2010"
+  ],
+  "correct": 1,
+  "why": "The SCO was formally founded on 15 June 2001 in Shanghai.",
+  "rel": "As of Oct 2026 it has 10 members (Belarus joined in 2024); HQ is Beijing.",
+  "problem": "Source said total members 8, which is outdated (10 since Belarus joined in July 2024). Source number '142.' is a typo."
+ },
+ {
+  "num": 1075,
+  "page": 128,
+  "question": "What was the capital of Pakistan before Islamabad?",
+  "options": [
+   "Karachi",
+   "Lahore",
+   "Rawalpindi",
+   "Peshawar"
+  ],
+  "correct": 0,
+  "why": "Karachi was the first capital; the capital moved to Rawalpindi (temporary) and then Islamabad in 1960s.",
+  "rel": "Islamabad was planned by Constantinos Doxiadis.",
+  "problem": "Capital decision was taken in 1959-60; Islamabad formally became capital later in the 1960s."
+ },
+ {
+  "num": 1076,
+  "page": 128,
+  "question": "Which province of Pakistan is called 'Bab-ul-Islam'?",
+  "options": [
+   "Punjab",
+   "Balochistan",
+   "Khyber Pakhtunkhwa",
+   "Sindh"
+  ],
+  "correct": 3,
+  "why": "Sindh is called Bab-ul-Islam (Gateway of Islam) because Muhammad bin Qasim brought Islam there in 712 AD.",
+  "rel": "Raja Dahir was the ruler of Sindh at that time."
+ },
+ {
+  "num": 1077,
+  "page": 128,
+  "question": "In which year did Bangladesh separate from Pakistan?",
+  "options": [
+   "1971",
+   "1965",
+   "1970",
+   "1974"
+  ],
+  "correct": 0,
+  "why": "East Pakistan became Bangladesh on 16 December 1971 after the war.",
+  "rel": "Bangladesh was recognised by Pakistan in 1974."
+ },
+ {
+  "num": 1078,
+  "page": 129,
+  "question": "What was Mother Teresa's occupation?",
+  "options": [
+   "Catholic nun and missionary",
+   "Doctor and surgeon",
+   "Politician",
+   "School principal only"
+  ],
+  "correct": 0,
+  "why": "Mother Teresa was a Catholic nun and missionary who served the poor in Kolkata.",
+  "rel": "She founded the Missionaries of Charity and won the Nobel Peace Prize in 1979."
+ },
+ {
+  "num": 1079,
+  "page": 129,
+  "question": "In which year was the Tarbela Dam completed?",
+  "options": [
+   "1960",
+   "1976",
+   "1985",
+   "1992"
+  ],
+  "correct": 1,
+  "why": "Tarbela Dam on the River Indus was completed in 1976.",
+  "rel": "It is the largest earth-filled dam in the world.",
+  "problem": "Source says 'construction date'; construction took place from 1968 to 1976, so the completion year is used."
+ },
+ {
+  "num": 1080,
+  "page": 129,
+  "question": "What is the total length of Pakistan's coastline?",
+  "options": [
+   "750 km",
+   "1200 km",
+   "1500 km",
+   "1046 km"
+  ],
+  "correct": 3,
+  "why": "Pakistan's coastline along the Arabian Sea is about 1046 km (Sindh ~270 km, Balochistan ~770 km).",
+  "rel": "Gwadar and Karachi are the main ports on this coast."
+ },
+ {
+  "num": 1081,
+  "page": 129,
+  "question": "Mohammad Ali Bogra was the ___ of Pakistan.",
+  "options": [
+   "Governor-General",
+   "Chief Justice",
+   "Prime Minister",
+   "Army Chief"
+  ],
+  "correct": 2,
+  "why": "Mohammad Ali Bogra was Prime Minister of Pakistan from 1953 to 1955.",
+  "rel": "The first PM was Liaqat Ali Khan and the second was Khawaja Nazimuddin.",
+  "problem": "Source gives 1955 only; his term was 1953-55."
+ },
+ {
+  "num": 1082,
+  "page": 129,
+  "question": "What is the process of water changing into steam (vapour) called?",
+  "options": [
+   "Condensation",
+   "Freezing",
+   "Evaporation",
+   "Sublimation"
+  ],
+  "correct": 2,
+  "why": "Water turning into vapour on heating is called evaporation (vaporisation).",
+  "rel": "The reverse process is condensation.",
+  "problem": "Strictly, boiling is fast vaporisation; evaporation is the standard exam answer."
+ },
+ {
+  "num": 1083,
+  "page": 129,
+  "question": "Translate this passage ___ English.",
+  "options": [
+   "in",
+   "to",
+   "into",
+   "by"
+  ],
+  "correct": 2,
+  "why": "We say 'translate something into a language'.",
+  "rel": "'Translate from Urdu into English' is the usual pattern."
+ },
+ {
+  "num": 1084,
+  "page": 129,
+  "question": "His head is covered ___ hair.",
+  "options": [
+   "with",
+   "by",
+   "of",
+   "in"
+  ],
+  "correct": 0,
+  "why": "'Covered with' is the correct phrase.",
+  "rel": "'Covered by' is used for agents, e.g. covered by insurance."
+ },
+ {
+  "num": 1085,
+  "page": 130,
+  "question": "He was accused ___ theft.",
+  "options": [
+   "for",
+   "with",
+   "at",
+   "of"
+  ],
+  "correct": 3,
+  "why": "The correct phrase is 'accused of'.",
+  "rel": "Also: charged with, convicted of."
+ },
+ {
+  "num": 1086,
+  "page": 130,
+  "question": "Choose the correct word: 'I am going ___ home.'",
+  "options": [
+   "to",
+   "at",
+   "No word is needed",
+   "towards"
+  ],
+  "correct": 2,
+  "why": "'Home' works as an adverb here, so no preposition is used after 'going'.",
+  "rel": "Say 'go home', not 'go to home'."
+ },
+ {
+  "num": 1087,
+  "page": 130,
+  "question": "He is fond ___ drawing.",
+  "options": [
+   "to",
+   "with",
+   "for",
+   "of"
+  ],
+  "correct": 3,
+  "why": "The correct phrase is 'fond of'.",
+  "rel": "Also: proud of, afraid of."
+ },
+ {
+  "num": 1088,
+  "page": 130,
+  "question": "My sister is bad ___ Maths.",
+  "options": [
+   "in",
+   "at",
+   "of",
+   "with"
+  ],
+  "correct": 1,
+  "why": "We say 'bad at' a subject or skill.",
+  "rel": "Also: good at, weak in."
+ },
+ {
+  "num": 1089,
+  "page": 130,
+  "question": "We must bear ___ his pranks.",
+  "options": [
+   "to",
+   "with",
+   "of",
+   "at"
+  ],
+  "correct": 1,
+  "why": "'Bear with' means to be patient with something.",
+  "rel": "'Bear' alone means to carry."
+ },
+ {
+  "num": 1090,
+  "page": 130,
+  "question": "I am envious ___ them.",
+  "options": [
+   "of",
+   "at",
+   "to",
+   "for"
+  ],
+  "correct": 0,
+  "why": "The correct phrase is 'envious of'.",
+  "rel": "Also: jealous of."
+ },
+ {
+  "num": 1091,
+  "page": 130,
+  "question": "Harry is capable ___ doing anything.",
+  "options": [
+   "to",
+   "for",
+   "of",
+   "at"
+  ],
+  "correct": 2,
+  "why": "The correct phrase is 'capable of'.",
+  "rel": "'Able to' is followed by a verb."
+ },
+ {
+  "num": 1092,
+  "page": 130,
+  "question": "My book is different ___ yours.",
+  "options": [
+   "than",
+   "from",
+   "to",
+   "with"
+  ],
+  "correct": 1,
+  "why": "The standard phrase is 'different from'.",
+  "rel": "'Different to' is used in British casual speech."
+ },
+ {
+  "num": 1093,
+  "page": 130,
+  "question": "It was kind ___ you to help.",
+  "options": [
+   "to",
+   "for",
+   "of",
+   "with"
+  ],
+  "correct": 2,
+  "why": "For adjectives describing a person's behaviour we use 'of', as in 'kind of you'.",
+  "rel": "Also: nice of, silly of.",
+  "problem": "Source question was incomplete; reconstructed."
+ },
+ {
+  "num": 1094,
+  "page": 131,
+  "question": "Sana was staring ___ me.",
+  "options": [
+   "to",
+   "on",
+   "with",
+   "at"
+  ],
+  "correct": 3,
+  "why": "The correct phrase is 'stare at'.",
+  "rel": "Also: look at, glare at."
+ },
+ {
+  "num": 1095,
+  "page": 131,
+  "question": "I was astonished ___ his failure.",
+  "options": [
+   "of",
+   "with",
+   "at",
+   "for"
+  ],
+  "correct": 2,
+  "why": "The correct phrase is 'astonished at'.",
+  "rel": "Also: surprised at, shocked at."
+ },
+ {
+  "num": 1096,
+  "page": 131,
+  "question": "What does 'yearn' mean?",
+  "options": [
+   "To refuse",
+   "To forget",
+   "To scold",
+   "To desire strongly"
+  ],
+  "correct": 3,
+  "why": "Yearn means to long for something deeply.",
+  "rel": "Synonyms: long, crave, pine."
+ },
+ {
+  "num": 1097,
+  "page": 131,
+  "question": "Which word is a synonym of 'alert'?",
+  "options": [
+   "Sleepy",
+   "Watchful",
+   "Careless",
+   "Silent"
+  ],
+  "correct": 1,
+  "why": "Alert means quick to notice, so watchful is its synonym.",
+  "rel": "Synonyms: vigilant, attentive."
+ },
+ {
+  "num": 1098,
+  "page": 131,
+  "question": "Which word is a synonym of 'precarious'?",
+  "options": [
+   "Safe",
+   "Insecure",
+   "Valuable",
+   "Humble"
+  ],
+  "correct": 1,
+  "why": "Precarious means unsafe or uncertain, so insecure fits.",
+  "rel": "Synonyms: risky, unstable."
+ },
+ {
+  "num": 1099,
+  "page": 131,
+  "question": "Which word is a synonym of 'blush'?",
+  "options": [
+   "Redden",
+   "Shiver",
+   "Laugh",
+   "Whisper"
+  ],
+  "correct": 0,
+  "why": "To blush is to turn red in the face, so redden is a synonym.",
+  "rel": "Blush is caused by shame or embarrassment."
+ },
+ {
+  "num": 1100,
+  "page": 131,
+  "question": "What is the meaning of 'zeal'?",
+  "options": [
+   "Laziness",
+   "Anger",
+   "Sadness",
+   "Enthusiasm"
+  ],
+  "correct": 3,
+  "why": "Zeal means great energy or eagerness.",
+  "rel": "Synonyms: passion, fervour."
+ },
+ {
+  "num": 1101,
+  "page": 131,
+  "question": "What is the meaning of 'cordial'?",
+  "options": [
+   "Friendly",
+   "Rude",
+   "Bitter",
+   "Distant"
+  ],
+  "correct": 0,
+  "why": "Cordial means warm and friendly.",
+  "rel": "Synonyms: warm, genial."
+ },
+ {
+  "num": 1102,
+  "page": 132,
+  "question": "Choose the antonym of 'expand'.",
+  "options": [
+   "Extend",
+   "Enlarge",
+   "Condense",
+   "Inflate"
+  ],
+  "correct": 2,
+  "why": "Expand means to grow bigger; its opposite is condense (make smaller).",
+  "rel": "Synonyms of expand: enlarge, extend."
+ },
+ {
+  "num": 1103,
+  "page": 132,
+  "question": "Choose the antonym of 'attract'.",
+  "options": [
+   "Allure",
+   "Repel",
+   "Draw",
+   "Invite"
+  ],
+  "correct": 1,
+  "why": "Attract means to pull towards; repel means to push away.",
+  "rel": "Magnets attract and repel."
+ },
+ {
+  "num": 1104,
+  "page": 132,
+  "question": "Choose the antonym of 'ductile'.",
+  "options": [
+   "Flexible",
+   "Soft",
+   "Elastic",
+   "Stiff"
+  ],
+  "correct": 3,
+  "why": "Ductile means able to be drawn into wire or bent easily; stiff (brittle) is the opposite.",
+  "rel": "Copper is a ductile metal."
+ },
+ {
+  "num": 1105,
+  "page": 132,
+  "question": "Which word is a synonym of 'tyrant'?",
+  "options": [
+   "Despot",
+   "Saint",
+   "Servant",
+   "Hero"
+  ],
+  "correct": 0,
+  "why": "A tyrant is a cruel, oppressive ruler, so despot is a synonym.",
+  "rel": "Synonyms: dictator, oppressor.",
+  "problem": "Source answer 'abusive' is an adjective and not a true synonym; changed to despot."
+ },
+ {
+  "num": 1106,
+  "page": 132,
+  "question": "Choose the synonym of 'arrogant'.",
+  "options": [
+   "Humble",
+   "Modest",
+   "Polite",
+   "Conceited"
+  ],
+  "correct": 3,
+  "why": "Arrogant means having too high an opinion of oneself; conceited means the same.",
+  "rel": "Synonyms: haughty, proud."
+ },
+ {
+  "num": 1107,
+  "page": 132,
+  "question": "What is the meaning of 'vagrant'?",
+  "options": [
+   "Wealthy",
+   "Skilled",
+   "Loyal",
+   "Roving (wandering person)"
+  ],
+  "correct": 3,
+  "why": "A vagrant is a person who wanders without a home or job.",
+  "rel": "Synonyms: wanderer, drifter."
+ }
+]

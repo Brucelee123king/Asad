@@ -1,0 +1,2 @@
+[{"num":3,"pick":2,"confidence":"low","rule":"Center filled shape cycles circle, triangle, square, circle so triangle is next, with a matching small open triangle outside; the outside marker keeps moving around the container (top-right, right, bottom-right, bottom, then left).","alt":[5,4]},
+{"num":4,"pick":1,"confidence":"medium","rule":"Elements are removed step by step: right then top then left stripes and dots vanish, so only the bottom region remains; next step drops the bottom stripes and leaves only the bottom dot.","alt":[5,3]}]

@@ -1,0 +1,1352 @@
+[
+ {
+  "src": "t1-1",
+  "question": "In the sentence \"The young cadet answered confidently,\" the word \"confidently\" is a:",
+  "options": [
+   "noun",
+   "adjective",
+   "adverb",
+   "preposition"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "It modifies the verb \"answered\" and tells how the action was performed.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Confidently' tells HOW the cadet answered, so it modifies the verb and is an adverb. Many adverbs end in -ly. A) noun is wrong: it is not a name of a person, place or thing. B) adjective is wrong: an adjective describes a noun, and 'confident' would be the adjective. D) preposition is wrong: it does not show a relation between a noun and another word.",
+  "rel": "Adjective + -ly often makes an adverb: quick - quickly, brave - bravely, careful - carefully. Adverbs answer how, when, where and how often."
+ },
+ {
+  "src": "t1-2",
+  "question": "Which word is a pronoun in \"They completed the obstacle course\"?",
+  "options": [
+   "They",
+   "completed",
+   "obstacle",
+   "course"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"They\" stands in place of a noun.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'They' is used in place of the names of people, so it is a pronoun. B) 'completed' is wrong: it is the verb (action). C) 'obstacle' is wrong: here it describes 'course' like an adjective (noun used as modifier). D) 'course' is wrong: it is a noun.",
+  "rel": "Subject pronouns: I, we, you, he, she, it, they. Object pronouns: me, us, you, him, her, it, them."
+ },
+ {
+  "src": "t1-3",
+  "question": "In \"Honesty is essential for leadership,\" the word \"Honesty\" is a:",
+  "options": [
+   "verb",
+   "abstract noun",
+   "adjective",
+   "conjunction"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "It names an abstract quality.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Honesty' is the name of a quality we cannot touch or see, so it is an abstract noun. A) verb is wrong: it shows no action. C) adjective is wrong: the adjective form is 'honest'. D) conjunction is wrong: it does not join words or clauses.",
+  "rel": "Other abstract nouns: bravery, loyalty, kindness, freedom, wisdom. Many are made with -ness, -ty, -dom, -ship (kind - kindness, friend - friendship)."
+ },
+ {
+  "src": "t1-4",
+  "question": "Which word is an adjective in \"She gave a brief answer\"?",
+  "options": [
+   "She",
+   "gave",
+   "brief",
+   "answer"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Brief\" describes the noun \"answer\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Brief' describes the noun 'answer' (what kind of answer?), so it is an adjective. A) 'She' is wrong: it is a pronoun. B) 'gave' is wrong: it is a verb. D) 'answer' is wrong: it is a noun, the word being described.",
+  "rel": "Adjectives usually come before a noun (a brief answer) or after a linking verb (the answer was brief). 'Briefly' would be the adverb form."
+ },
+ {
+  "src": "t1-5",
+  "question": "In \"The candidates waited outside,\" \"outside\" functions as a:",
+  "options": [
+   "adverb",
+   "article",
+   "pronoun",
+   "conjunction"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "It tells where they waited.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Outside' tells WHERE they waited, so it modifies the verb 'waited' and is an adverb of place. B) article is wrong: the only articles are a, an, the. C) pronoun is wrong: it does not replace a noun. D) conjunction is wrong: it joins nothing.",
+  "rel": "Words like outside, inside, here, there, upstairs are adverbs when no noun follows. With a noun after them (outside the hall) they become prepositions."
+ },
+ {
+  "src": "t1-6",
+  "question": "Which of the following is a conjunction?",
+  "options": [
+   "under",
+   "because",
+   "quickly",
+   "brave"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Because\" joins clauses and introduces a reason.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Because' joins two clauses and gives a reason, so it is a (subordinating) conjunction. A) 'under' is wrong: it is a preposition of place. C) 'quickly' is wrong: it is an adverb of manner. D) 'brave' is wrong: it is an adjective.",
+  "rel": "Other subordinating conjunctions: since, as, although, though, unless, if, when, while. Example: He stayed home because he was ill."
+ },
+ {
+  "src": "t1-7",
+  "question": "In \"The book is on the desk,\" \"on\" is a:",
+  "options": [
+   "preposition",
+   "adverb",
+   "interjection",
+   "pronoun"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "It shows the relationship between \"book\" and \"desk\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'On' shows the position of the book in relation to the desk, so it is a preposition (it is followed by the noun 'the desk'). B) adverb is wrong: an adverb would have no noun object after it. C) interjection is wrong: it shows no feeling. D) pronoun is wrong: it does not replace a noun.",
+  "rel": "Prepositions of place: on, in, at, under, above, beside, between. A preposition is always followed by a noun or pronoun (its object)."
+ },
+ {
+  "src": "t1-8",
+  "question": "Which word is an interjection?",
+  "options": [
+   "Alas!",
+   "although",
+   "their",
+   "smoothly"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "An interjection expresses sudden feeling or emotion.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Alas!' expresses a sudden feeling of sorrow, so it is an interjection; the exclamation mark is a clue. B) 'although' is wrong: it is a conjunction. C) 'their' is wrong: it is a possessive determiner. D) 'smoothly' is wrong: it is an adverb.",
+  "rel": "Other interjections: Hurrah! (joy), Oh! (surprise), Ouch! (pain), Bravo! (praise), Alas! (sorrow)."
+ },
+ {
+  "src": "t1-9",
+  "question": "In \"Ali and Hamza trained together,\" \"and\" is a:",
+  "options": [
+   "coordinating conjunction",
+   "preposition",
+   "adjective",
+   "adverb"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "It joins two coordinate nouns.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'And' joins two words of equal rank (Ali and Hamza), so it is a coordinating conjunction. B) preposition is wrong: it does not show relation of place or time. C) adjective is wrong: it describes nothing. D) adverb is wrong: it does not modify a verb.",
+  "rel": "The seven coordinating conjunctions can be remembered as FANBOYS: for, and, nor, but, or, yet, so."
+ },
+ {
+  "src": "t1-10",
+  "question": "Which word is a common noun?",
+  "options": [
+   "Pakistan",
+   "Islamabad",
+   "river",
+   "Indus"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"River\" names a class, not a unique proper name.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'River' is a general name for any river of its kind, so it is a common noun. A) 'Pakistan', B) 'Islamabad' and D) 'Indus' are wrong: they are names of one particular country, city and river, so they are proper nouns and start with capital letters.",
+  "rel": "Common noun vs proper noun: city - Lahore, mountain - K2, book - the Quran, month - March. Proper nouns always take a capital letter."
+ },
+ {
+  "src": "t1-11",
+  "question": "In \"He can swim well,\" \"can\" is a:",
+  "options": [
+   "main verb",
+   "modal auxiliary",
+   "noun",
+   "preposition"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Can\" is a modal auxiliary expressing ability.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Can' helps the main verb 'swim' and shows ability, so it is a modal auxiliary. A) main verb is wrong: the main verb is 'swim'. C) noun is wrong: here 'can' is not a tin container. D) preposition is wrong: it shows no relation of place or time.",
+  "rel": "Other modals: could, may, might, shall, should, will, would, must. A modal is always followed by the base form: can swim, must go, should study."
+ },
+ {
+  "src": "t1-12",
+  "question": "Which option contains a possessive pronoun?",
+  "options": [
+   "my",
+   "mine",
+   "me",
+   "I"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Mine\" stands alone as a possessive pronoun; \"my\" is a possessive determiner.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Mine' stands alone without a noun (The book is mine), so it is a possessive pronoun. A) 'my' is wrong: it must come before a noun (my book), so it is a possessive determiner/adjective. C) 'me' is wrong: it is an object pronoun. D) 'I' is wrong: it is a subject pronoun.",
+  "rel": "Possessive pronouns: mine, yours, his, hers, ours, theirs. Their determiner pairs: my, your, his, her, our, their (used before nouns)."
+ },
+ {
+  "src": "t1-13",
+  "question": "In \"The wounded soldier recovered,\" \"wounded\" is functioning as a:",
+  "options": [
+   "noun",
+   "adjective",
+   "adverb",
+   "conjunction"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "It describes the noun \"soldier\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Wounded' describes the noun 'soldier' (which soldier?), so here this past participle works as an adjective. A) noun is wrong: the noun is 'soldier'. C) adverb is wrong: it does not modify the verb 'recovered'. D) conjunction is wrong: it joins nothing.",
+  "rel": "Participles often act as adjectives: a broken chair, a running train, a trained soldier, a falling leaf."
+ },
+ {
+  "src": "t1-14",
+  "question": "The word \"but\" in \"He was tired but continued\" is a:",
+  "options": [
+   "subordinating conjunction",
+   "coordinating conjunction",
+   "preposition",
+   "interjection"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"But\" is a coordinating conjunction showing contrast.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'But' joins two parts of equal rank and shows contrast, so it is a coordinating conjunction. A) subordinating conjunction is wrong: those (although, because) start a dependent clause. C) preposition is wrong: here no noun object follows it. D) interjection is wrong: it shows no emotion.",
+  "rel": "Contrast words: but, yet (coordinating); although, though, whereas (subordinating); however (linking adverb). Example: He was tired, yet he continued."
+ },
+ {
+  "src": "t1-15",
+  "question": "In \"Running improves stamina,\" \"Running\" is a:",
+  "options": [
+   "gerund functioning as a noun",
+   "finite verb",
+   "adjective",
+   "preposition"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "The -ing form names an activity and serves as the subject.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Running' is the -ing form used as the subject of the sentence, so it is a gerund working as a noun. B) finite verb is wrong: the finite verb is 'improves'. C) adjective is wrong: it does not describe a noun here. D) preposition is wrong: it shows no relation.",
+  "rel": "Gerunds as nouns: Swimming is good exercise. I enjoy reading. Compare a participle used as adjective: a running tap."
+ },
+ {
+  "src": "t1-16",
+  "question": "Which sentence contains an adverb of frequency?",
+  "options": [
+   "He arrived yesterday.",
+   "He often exercises.",
+   "He works here.",
+   "He speaks softly."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Often\" tells how frequently the action occurs.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Often' tells how many times the action happens, so it is an adverb of frequency. A) 'yesterday' is wrong: it is an adverb of time. C) 'here' is wrong: it is an adverb of place. D) 'softly' is wrong: it is an adverb of manner.",
+  "rel": "Adverbs of frequency: always, usually, often, sometimes, seldom, rarely, never. They usually come before the main verb: He often exercises."
+ },
+ {
+  "src": "t1-17",
+  "question": "In \"This is the man who helped us,\" \"who\" is a:",
+  "options": [
+   "relative pronoun",
+   "article",
+   "preposition",
+   "interjection"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "It introduces a relative clause and refers to \"man\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Who' refers back to 'the man' and starts the clause 'who helped us', so it is a relative pronoun. B) article is wrong: articles are only a, an, the. C) preposition is wrong: it shows no relation of place or time. D) interjection is wrong: it shows no feeling.",
+  "rel": "Relative pronouns: who (people), which (things), that (people or things), whom, whose. Example: The book which I bought is new."
+ },
+ {
+  "src": "t1-18",
+  "question": "Which word is a determiner/article in \"An officer entered the room\"?",
+  "options": [
+   "officer",
+   "entered",
+   "An",
+   "room"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"An\" is the indefinite article modifying \"officer\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'An' is the indefinite article placed before 'officer', which starts with a vowel sound. A) 'officer' is wrong: it is a noun. B) 'entered' is wrong: it is a verb. D) 'room' is wrong: it is a noun; 'the' before it is also an article, but it is not an option.",
+  "rel": "Articles are determiners: a/an (indefinite) and the (definite). Other determiners: this, that, some, every, my, his."
+ },
+ {
+  "src": "t1-19",
+  "question": "In \"He is extremely careful,\" \"extremely\" modifies:",
+  "options": [
+   "He",
+   "is",
+   "careful",
+   "the whole sentence only"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "It intensifies the adjective \"careful\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Extremely' is an intensifier that tells how careful he is, so it modifies the adjective 'careful'. A) 'He' is wrong: adverbs do not modify pronouns. B) 'is' is wrong: it does not tell how he 'is'; it grades the quality. D) is wrong: it modifies one word, not the whole sentence.",
+  "rel": "Adverbs can modify adjectives (very tall), other adverbs (very quickly) and verbs (ran quickly). Other intensifiers: very, too, quite, highly, fairly."
+ },
+ {
+  "src": "t1-20",
+  "question": "Which pair consists entirely of prepositions?",
+  "options": [
+   "in, on",
+   "and, but",
+   "very, quite",
+   "he, they"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Both \"in\" and \"on\" express relationships of place/time.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'In' and 'on' both show relation of place or time, so both are prepositions. B) 'and, but' are wrong: they are conjunctions. C) 'very, quite' are wrong: they are adverbs (intensifiers). D) 'he, they' are wrong: they are pronouns.",
+  "rel": "More prepositions: at, by, with, from, into, under, over, between, among. A preposition plus its noun makes a prepositional phrase: on the table."
+ },
+ {
+  "src": "t1-21",
+  "question": "Choose the correct form: \"He ___ to the academy every morning.\"",
+  "options": [
+   "go",
+   "goes",
+   "went",
+   "going"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "A habitual action with a third-person singular subject takes \"goes\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A daily habit (every morning) uses simple present, and the singular subject 'He' takes -es: 'goes'. A) 'go' is wrong: it is for I/we/you/they. C) 'went' is wrong: 'every morning' shows a present habit, not past. D) 'going' is wrong: an -ing form needs 'is' before it.",
+  "rel": "Third person singular adds -s/-es: she watches, he does, it fixes, he studies. Time clues for simple present: every day, always, usually."
+ },
+ {
+  "src": "t1-22",
+  "question": "\"They ___ the task before the instructor arrived.\"",
+  "options": [
+   "complete",
+   "had completed",
+   "have completed",
+   "were completing"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Past perfect marks the earlier of two past actions.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Two past actions: finishing the task came first, so it takes past perfect 'had completed'; the later one is simple past 'arrived'. A) 'complete' is wrong: it is present tense. C) 'have completed' is wrong: present perfect does not fit with a past time clause. D) 'were completing' is wrong: it shows the work was still going on, not finished before.",
+  "rel": "Past perfect pattern: had + past participle. Example: The train had left before we reached the station. 'Before' and 'after' are common clues."
+ },
+ {
+  "src": "t1-23",
+  "question": "\"I ___ this book since Monday.\"",
+  "options": [
+   "read",
+   "am reading",
+   "have been reading",
+   "had read"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Since Monday\" with an ongoing action calls for present perfect continuous.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Since Monday' shows an action that started in the past and is still going on, so present perfect continuous 'have been reading' is correct. A) 'read' is wrong: simple tense does not show continuation till now. B) 'am reading' is wrong: present continuous cannot be used with 'since'. D) 'had read' is wrong: past perfect needs another past event.",
+  "rel": "Present perfect continuous: have/has been + verb-ing, with since (point of time) or for (period). Example: She has been waiting for two hours."
+ },
+ {
+  "src": "t1-24",
+  "question": "\"At 8 p.m. yesterday, we ___ for the test.\"",
+  "options": [
+   "studied",
+   "were studying",
+   "have studied",
+   "study"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "An action in progress at a specific past time uses past continuous.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "An action that was going on at a fixed past time (8 p.m. yesterday) uses past continuous 'were studying'. A) 'studied' is wrong: it shows a completed action, not one in progress at that moment. C) 'have studied' is wrong: present perfect cannot be used with 'yesterday'. D) 'study' is wrong: it is present tense.",
+  "rel": "Past continuous: was/were + verb-ing. Example: At 10 a.m. she was writing a letter. Also used for an interrupted action: I was reading when he came."
+ },
+ {
+  "src": "t1-25",
+  "question": "\"By next June, she ___ her degree.\"",
+  "options": [
+   "completes",
+   "completed",
+   "will have completed",
+   "is completing"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Future perfect shows completion before a future point.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'By next June' means the action will be finished before a future time, so future perfect 'will have completed' is right. A) 'completes' is wrong: it is simple present. B) 'completed' is wrong: it is past. D) 'is completing' is wrong: it shows an action now or a near plan, not completion before a point.",
+  "rel": "Future perfect: will have + past participle; the clue is 'by' + future time. Example: By 2030, they will have built the dam."
+ },
+ {
+  "src": "t1-26",
+  "question": "Choose the simple past sentence.",
+  "options": [
+   "He trains daily.",
+   "He trained yesterday.",
+   "He has trained.",
+   "He will train."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Trained\" with a finished past time is simple past.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'He trained yesterday' uses the past form 'trained' with the finished time 'yesterday', so it is simple past. A) is wrong: 'trains daily' is simple present. C) is wrong: 'has trained' is present perfect. D) is wrong: 'will train' is simple future.",
+  "rel": "Simple past time clues: yesterday, last week, ago, in 2010. Irregular past forms: go - went, see - saw, write - wrote."
+ },
+ {
+  "src": "t1-27",
+  "question": "\"The bus ___ before we reached the stop.\"",
+  "options": [
+   "left",
+   "has left",
+   "had left",
+   "leaves"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "The bus departure happened before another past event.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "The bus left before another past action (we reached), so the earlier action takes past perfect 'had left'. A) 'left' is wrong: it does not show which action happened first as clearly. B) 'has left' is wrong: present perfect does not match the past 'reached'. D) 'leaves' is wrong: it is present tense.",
+  "rel": "Rule: earlier past action = past perfect, later past action = simple past. Example: When I reached the hall, the lecture had started."
+ },
+ {
+  "src": "t1-28",
+  "question": "\"Listen! Someone ___ at the door.\"",
+  "options": [
+   "knocks",
+   "knocked",
+   "is knocking",
+   "has knocked"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Listen!\" signals an action happening now.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Listen!' shows the knocking is happening right now, so present continuous 'is knocking' is correct. A) 'knocks' is wrong: simple present is for habits. B) 'knocked' is wrong: it is past. D) 'has knocked' is wrong: it shows a completed action, not one in progress.",
+  "rel": "Clue words for present continuous: Look!, Listen!, now, at the moment. Example: Look! The children are playing."
+ },
+ {
+  "src": "t1-29",
+  "question": "\"She ___ in Rawalpindi for five years.\" (She still lives there.)",
+  "options": [
+   "lived",
+   "has lived",
+   "had lived",
+   "will live"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Present perfect links a past beginning to the present.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "She started living there in the past and still lives there, so present perfect 'has lived' with 'for five years' is correct. A) 'lived' is wrong: it means she does not live there now. C) 'had lived' is wrong: past perfect needs another past event. D) 'will live' is wrong: it is future.",
+  "rel": "Present perfect joins past and present: I have known him for ten years. 'For' gives the length of time; 'since' gives the starting point."
+ },
+ {
+  "src": "t1-30",
+  "question": "\"When I was a child, I ___ cricket every evening.\"",
+  "options": [
+   "play",
+   "played",
+   "have played",
+   "am playing"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "A completed past habit takes simple past.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'When I was a child' places the habit in the finished past, so simple past 'played' is correct. A) 'play' is wrong: it is present. C) 'have played' is wrong: present perfect does not go with a finished past time. D) 'am playing' is wrong: it shows action happening now.",
+  "rel": "Past habits can also be shown with 'used to' or 'would': When I was a child, I used to play cricket every evening."
+ },
+ {
+  "src": "t1-31",
+  "question": "\"This time tomorrow, we ___ the written test.\"",
+  "options": [
+   "take",
+   "took",
+   "will be taking",
+   "have taken"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Future continuous describes an action in progress at a future time.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'This time tomorrow' means the action will be in progress at that future moment, so future continuous 'will be taking' is right. A) 'take' is wrong: it is present. B) 'took' is wrong: it is past. D) 'have taken' is wrong: it is present perfect and does not refer to the future.",
+  "rel": "Future continuous: will be + verb-ing. Example: At 9 p.m. tonight, I will be travelling to Karachi."
+ },
+ {
+  "src": "t1-32",
+  "question": "Which sentence is in present perfect tense?",
+  "options": [
+   "I finish the work.",
+   "I finished the work.",
+   "I have finished the work.",
+   "I had finished the work."
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Present perfect uses have/has + past participle.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'I have finished the work' uses have + past participle, which is present perfect. A) is wrong: 'finish' is simple present. B) is wrong: 'finished' is simple past. D) is wrong: 'had finished' is past perfect.",
+  "rel": "Present perfect = has/have + past participle (has written, have gone). Past perfect = had + past participle (had written)."
+ },
+ {
+  "src": "t1-33",
+  "question": "\"If he studies hard, he ___ the test.\"",
+  "options": [
+   "passes",
+   "passed",
+   "will pass",
+   "would pass"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "First conditional: if + present simple, will + base verb.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "This is a first conditional (a real, possible future): if + simple present, then will + base verb, so 'will pass'. A) 'passes' is wrong: the result clause needs 'will'. B) 'passed' is wrong: past does not fit a present-tense condition. D) 'would pass' is wrong: it is used in the second conditional (If he studied, he would pass).",
+  "rel": "Conditionals: 1st - If it rains, we will stay home. 2nd - If I were rich, I would travel. 3rd - If he had studied, he would have passed."
+ },
+ {
+  "src": "t1-34",
+  "question": "\"He ___ for two hours before the rain stopped.\"",
+  "options": [
+   "ran",
+   "had been running",
+   "has been running",
+   "is running"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Past perfect continuous emphasizes duration before another past event.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'For two hours before the rain stopped' stresses how long an action continued before another past event, so past perfect continuous 'had been running' is correct. A) 'ran' is wrong: it does not show duration before another past event. C) 'has been running' is wrong: it links to the present, not the past. D) 'is running' is wrong: it is present.",
+  "rel": "Past perfect continuous: had been + verb-ing. Example: She had been waiting for an hour when the bus came."
+ },
+ {
+  "src": "t1-35",
+  "question": "\"The sun ___ in the east.\"",
+  "options": [
+   "rose",
+   "rises",
+   "is rising always",
+   "has risen daily"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Universal truths normally use simple present.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "The sun rising in the east is a universal truth, so simple present 'rises' is used. A) 'rose' is wrong: facts that are always true are not put in the past. C) 'is rising always' is wrong: continuous form is not used for permanent facts and the word order is odd. D) 'has risen daily' is wrong: present perfect is not used for general truths.",
+  "rel": "Other universal truths in simple present: Water boils at 100 degrees Celsius. The earth moves round the sun."
+ },
+ {
+  "src": "t1-36",
+  "question": "\"We ___ dinner when the phone rang.\"",
+  "options": [
+   "had",
+   "were having",
+   "have had",
+   "will have"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "A longer background action interrupted in the past uses past continuous.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A longer action (having dinner) was going on when a short action (the phone rang) interrupted it, so past continuous 'were having' is right. A) 'had' is wrong: it suggests a complete action, not one in progress. C) 'have had' is wrong: present perfect does not fit a past story. D) 'will have' is wrong: it is future.",
+  "rel": "Pattern: past continuous + when + simple past. Example: I was sleeping when the alarm rang. 'While' often goes with the longer action."
+ },
+ {
+  "src": "t1-37",
+  "question": "\"She ___ already ___ the form.\"",
+  "options": [
+   "has / submitted",
+   "had / submit",
+   "is / submitted",
+   "was / submit"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Present perfect is has + past participle.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Present perfect is has/have + past participle, and 'already' comes between them: 'has already submitted'. B) 'had submit' is wrong: 'submit' is not a past participle. C) 'is submitted' is wrong: it is passive and does not fit 'She ... the form'. D) 'was submit' is wrong: 'was' with a base verb is not correct grammar.",
+  "rel": "Words like already, just, never, ever, yet go with present perfect: He has just arrived. Have you ever seen snow? I haven't finished yet."
+ },
+ {
+  "src": "t1-38",
+  "question": "\"By the time you arrive, I ___ the report.\"",
+  "options": [
+   "finish",
+   "finished",
+   "will have finished",
+   "am finishing yesterday"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Completion before a future arrival takes future perfect.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "The report will be finished before a future moment (you arrive), so future perfect 'will have finished' is correct. A) 'finish' is wrong: it does not show completion before a point. B) 'finished' is wrong: it is past. D) 'am finishing yesterday' is wrong: present continuous cannot go with 'yesterday'.",
+  "rel": "After 'by the time', 'when', 'before' in a future sense we use simple present (you arrive), not 'will arrive'. Example: By the time he comes, we will have left."
+ },
+ {
+  "src": "t1-39",
+  "question": "Which is grammatically correct?",
+  "options": [
+   "I am knowing him.",
+   "I know him.",
+   "I have knowing him.",
+   "I was know him."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Stative verb \"know\" is normally not used in the continuous form.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Know' is a stative verb (a state of mind), so it is used in simple form: 'I know him'. A) is wrong: stative verbs are not normally used in continuous form. C) is wrong: 'have knowing' is not a correct verb form. D) is wrong: 'was know' mixes 'was' with a base verb.",
+  "rel": "Other stative verbs: believe, understand, like, love, want, own, belong, seem. Say 'I understand', not 'I am understanding'."
+ },
+ {
+  "src": "t1-40",
+  "question": "\"He ___ to Lahore last week.\"",
+  "options": [
+   "has gone",
+   "goes",
+   "went",
+   "had go"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "A definite finished time \"last week\" requires simple past.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Last week' is a finished past time, so simple past 'went' is correct. A) 'has gone' is wrong: present perfect cannot be used with a definite past time. B) 'goes' is wrong: it is present. D) 'had go' is wrong: the past participle is 'gone', and past perfect is not needed.",
+  "rel": "Irregular verb forms: go - went - gone, see - saw - seen, take - took - taken. Never say 'I have seen him yesterday'; say 'I saw him yesterday'."
+ },
+ {
+  "src": "t1-41",
+  "question": "Choose the correct article: \"He is ___ honest man.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Honest\" begins with a vowel sound because the h is silent.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "The h in 'honest' is silent, so the word begins with a vowel sound (on-est) and takes 'an'. A) 'a' is wrong: 'a' is for consonant sounds. C) 'the' is wrong: the man is not a specific one already known. D) is wrong: a singular countable noun needs an article.",
+  "rel": "Silent h words that take 'an': an hour, an heir, an honour, an honest man. But 'a house', 'a hotel' because h is pronounced."
+ },
+ {
+  "src": "t1-42",
+  "question": "\"She wants to become ___ engineer.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Engineer\" begins with a vowel sound.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Engineer' begins with a vowel sound, so it takes 'an'. A) 'a' is wrong: 'a' comes before consonant sounds. C) 'the' is wrong: she wants to be any one engineer, not a specific one. D) is wrong: a singular countable noun of profession needs an article.",
+  "rel": "Professions take a/an: She is a doctor. He is an officer. He wants to be an architect."
+ },
+ {
+  "src": "t1-43",
+  "question": "\"___ sun rises in the east.\"",
+  "options": [
+   "A",
+   "An",
+   "The",
+   "No article"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Unique objects such as the sun normally take \"the\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "There is only one sun, so it takes the definite article 'The'. A) 'A' and B) 'An' are wrong: indefinite articles mean 'any one', but there is only one sun. D) is wrong: unique objects need 'the'.",
+  "rel": "Other unique things with 'the': the moon, the earth, the sky, the world, the north pole."
+ },
+ {
+  "src": "t1-44",
+  "question": "\"He is ___ university student.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"University\" begins with the consonant sound /ju:/.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "We choose the article by sound, not letter. 'University' starts with a 'yoo' sound, which is a consonant sound, so it takes 'a'. B) 'an' is wrong: the word does not start with a vowel sound. C) 'the' is wrong: no specific university student is meant. D) is wrong: a singular countable noun needs an article.",
+  "rel": "Other words that start with a 'yoo' sound and take 'a': a uniform, a useful book, a unit, a European, a union."
+ },
+ {
+  "src": "t1-45",
+  "question": "\"We crossed ___ Indus River.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Names of rivers take the definite article.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Names of rivers take 'the', so it is 'the Indus River'. A) 'a' and B) 'an' are wrong: a particular named river is not 'any one'. D) is wrong: river names are not used without 'the'.",
+  "rel": "Also with 'the': seas, oceans, canals and deserts - the Arabian Sea, the Pacific Ocean, the Suez Canal, the Thar Desert."
+ },
+ {
+  "src": "t1-46",
+  "question": "Which sentence is correct?",
+  "options": [
+   "He plays the cricket.",
+   "He plays cricket.",
+   "He plays a cricket.",
+   "He plays an cricket."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Sports generally take no article when used generically.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Games and sports used in general take no article, so 'He plays cricket' is correct. A) is wrong: 'the cricket' is not used for the game. C) is wrong: 'a cricket' means an insect. D) is wrong: 'an' is used only before vowel sounds, and no article is needed anyway.",
+  "rel": "No article with games: play hockey, play football, play chess. But musical instruments take 'the': play the guitar, play the piano."
+ },
+ {
+  "src": "t1-47",
+  "question": "\"She is ___ best candidate in the group.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Superlatives normally take \"the\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Superlative adjectives (best, tallest, most famous) take 'the', so 'the best candidate'. A) 'a' and B) 'an' are wrong: a superlative points to one specific person, not any one. D) is wrong: a superlative normally needs 'the'.",
+  "rel": "Examples: the tallest boy, the most intelligent student, the highest peak. Also 'the' with ordinal numbers: the first, the second."
+ },
+ {
+  "src": "t1-48",
+  "question": "\"I saw ___ one-eyed man.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"One\" begins with a /w/ consonant sound.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'One' begins with a 'w' sound (wun), which is a consonant sound, so it takes 'a': a one-eyed man. B) 'an' is wrong: the sound is not a vowel sound though the letter o is a vowel. C) 'the' is wrong: no specific man is meant. D) is wrong: a singular countable noun needs an article.",
+  "rel": "Similar: a one-rupee coin, a one-way street, a once-famous actor. Remember: articles go by sound, not spelling."
+ },
+ {
+  "src": "t1-49",
+  "question": "\"He waited for ___ hour.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Hour\" begins with a vowel sound because h is silent.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "The h in 'hour' is silent, so it begins with a vowel sound and takes 'an'. A) 'a' is wrong: 'a' is for consonant sounds. C) 'the' is wrong: no specific hour is meant. D) is wrong: 'hour' is a singular countable noun and needs an article.",
+  "rel": "Silent h: an hour, an honest man, an heir, an honour. Pronounced h: a hospital, a hero, a historic day."
+ },
+ {
+  "src": "t1-50",
+  "question": "\"___ Himalayas lie north of Pakistan.\"",
+  "options": [
+   "A",
+   "An",
+   "The",
+   "No article"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Plural mountain ranges take \"the\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Names of mountain ranges (plural) take 'the', so 'The Himalayas'. A) 'A' and B) 'An' are wrong: these are for one non-specific thing. D) is wrong: plural names of ranges are not used without 'the'.",
+  "rel": "Also: the Alps, the Andes, the Karakoram, the Hindu Kush. Plural country names also take 'the': the Netherlands, the Philippines."
+ },
+ {
+  "src": "t1-51",
+  "question": "Which phrase normally takes no article?",
+  "options": [
+   "the United States",
+   "the Netherlands",
+   "Mount Everest",
+   "the Arabian Sea"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Individual mountain peaks normally do not take an article.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Single mountain peaks do not take an article, so 'Mount Everest' has none. A) 'the United States' and B) 'the Netherlands' are wrong: countries with plural or 'states/kingdom' names take 'the'. D) 'the Arabian Sea' is wrong: seas take 'the'.",
+  "rel": "No article: Mount Everest, K2, Lake Saiful Muluk (single lakes), Pakistan, Asia. With 'the': the United Kingdom, the Red Sea."
+ },
+ {
+  "src": "t1-52",
+  "question": "\"He went to ___ school to attend his class.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 3,
+  "book_key": "D",
+  "reason": "Institutional use of \"school\" for its primary purpose often takes no article.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "He went to school for its main purpose (to study), so no article is used: 'went to school'. A) 'a' and B) 'an' are wrong: they would mean any one school building. C) 'the' is wrong: 'the' is used when we mean the building for another purpose.",
+  "rel": "Same rule: go to bed, go to hospital (as a patient), go to church, go to prison (as a prisoner), go to college."
+ },
+ {
+  "src": "t1-53",
+  "question": "\"His father went to ___ school to meet the principal.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Here the school is a specific building/institution, not merely the activity of schooling.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "His father did not go to study; he went to the building to meet the principal, so 'the school' is used. A) 'a' and B) 'an' are wrong: a specific school (his son's) is meant. D) is wrong: no article is used only when we go for the main purpose (to study).",
+  "rel": "Compare: The patient went to hospital. His wife went to the hospital to see him. The prisoner is in prison. His lawyer went to the prison."
+ },
+ {
+  "src": "t1-54",
+  "question": "\"She bought ___ umbrella and ___ raincoat.\"",
+  "options": [
+   "a / a",
+   "an / a",
+   "the / an",
+   "an / an"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Umbrella\" begins with a vowel sound; \"raincoat\" with a consonant sound.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Umbrella' starts with a vowel sound, so 'an umbrella'; 'raincoat' starts with a consonant sound, so 'a raincoat'. A) 'a / a' is wrong: 'a umbrella' is incorrect. C) 'the / an' is wrong: 'an raincoat' is incorrect and no specific umbrella is meant. D) 'an / an' is wrong for the same reason.",
+  "rel": "Quick check: an apple, an egg, an idea, an orange, an umbrella; a bag, a pen, a raincoat."
+ },
+ {
+  "src": "t1-55",
+  "question": "\"___ Quran is the holy book of Islam.\"",
+  "options": [
+   "A",
+   "An",
+   "The",
+   "No article"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Names of well-known sacred texts are conventionally used with \"the\" in this construction.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Names of well-known holy books take 'the', so 'The Quran'. A) 'A' and B) 'An' are wrong: there is only one Quran, not any one of many. D) is wrong: the name is used with 'the' by convention.",
+  "rel": "Similarly: the Bible, the Torah, the Gita. Some famous newspapers too: the Times, the Guardian."
+ },
+ {
+  "src": "t1-56",
+  "question": "Choose the correct phrase.",
+  "options": [
+   "an European country",
+   "a European country",
+   "the European country always",
+   "European an country"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"European\" begins with /j/, a consonant sound.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'European' begins with a 'yoo' sound, which is a consonant sound, so 'a European country' is right. A) 'an European' is wrong: 'an' is only for vowel sounds. C) is wrong: 'always' makes no sense here and 'the' is not needed. D) is wrong: the word order is incorrect.",
+  "rel": "Same 'yoo' sound: a university, a unique idea, a uniform, a useful tool, a Euro note."
+ },
+ {
+  "src": "t1-57",
+  "question": "\"Pakistan is in ___ Asia.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 3,
+  "book_key": "D",
+  "reason": "Names of continents normally take no article.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Names of continents take no article, so 'in Asia'. A) 'a', B) 'an' and C) 'the' are wrong: continent names like Asia, Africa, Europe are used without any article.",
+  "rel": "No article: most countries (Pakistan, China), cities (Lahore), continents (Asia). But: the Middle East, the USA, the UK."
+ },
+ {
+  "src": "t1-58",
+  "question": "\"He is ___ MBA graduate.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The letter M is pronounced /em/, beginning with a vowel sound.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "We go by sound: the letter M is said 'em', which starts with a vowel sound, so 'an MBA graduate'. A) 'a' is wrong: 'a' is for consonant sounds. C) 'the' is wrong: no specific graduate is meant. D) is wrong: a singular countable noun needs an article.",
+  "rel": "Other letters starting with vowel sounds: an MA, an MP, an LLB, an X-ray, an SP. But: a BA, a PhD (pee), a UN officer (yoo)."
+ },
+ {
+  "src": "t1-59",
+  "question": "\"This is ___ same book that I borrowed.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"The same\" is the standard expression.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Same' is always used with 'the': 'the same book'. A) 'a' and B) 'an' are wrong: 'a same' or 'an same' is incorrect English. D) is wrong: 'same' cannot be used without 'the' before it.",
+  "rel": "Other fixed uses of 'the': the same, the only, the whole, the first, the last. Example: He is the only person who came."
+ },
+ {
+  "src": "t1-60",
+  "question": "\"She speaks ___ Urdu fluently.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 3,
+  "book_key": "D",
+  "reason": "Names of languages normally take no article.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Names of languages take no article: 'speaks Urdu'. A) 'a', B) 'an' and C) 'the' are wrong: we do not put an article before a language name.",
+  "rel": "But we say 'the Urdu language' when the word 'language' follows. Similarly: She speaks English. But: the English (meaning the people)."
+ },
+ {
+  "src": "t1-61",
+  "question": "\"He is good ___ mathematics.\"",
+  "options": [
+   "in",
+   "at",
+   "on",
+   "for"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The standard collocation is \"good at\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "The correct pair (collocation) is 'good at' for a skill or subject: good at mathematics. A) 'in' is wrong: 'good in' is not standard here. C) 'on' and D) 'for' are wrong: 'good for' means beneficial (Exercise is good for health).",
+  "rel": "Similar: bad at, clever at, expert at. Opposite: weak in/at maths. 'Good for' = useful to; 'good to' = kind to."
+ },
+ {
+  "src": "t1-62",
+  "question": "\"She is interested ___ military history.\"",
+  "options": [
+   "on",
+   "at",
+   "in",
+   "for"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "The standard collocation is \"interested in\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "The fixed phrase is 'interested in' something. A) 'on', B) 'at' and D) 'for' are wrong: they do not go with 'interested'.",
+  "rel": "Similar collocations: keen on, fond of, good at, aware of, proud of. Example: He is fond of reading."
+ },
+ {
+  "src": "t1-63",
+  "question": "\"The test begins ___ 8:00 a.m.\"",
+  "options": [
+   "in",
+   "on",
+   "at",
+   "by"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Use \"at\" for exact clock times.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Use 'at' for an exact clock time: at 8:00 a.m. A) 'in' is wrong: 'in' is for months, years, parts of the day. B) 'on' is wrong: 'on' is for days and dates. D) 'by' is wrong: it means 'not later than', which changes the meaning.",
+  "rel": "AT clock time (at noon, at night), ON day/date (on Monday, on 14 August), IN month/year/season (in May, in 1947, in winter)."
+ },
+ {
+  "src": "t1-64",
+  "question": "\"We will meet ___ Monday.\"",
+  "options": [
+   "in",
+   "on",
+   "at",
+   "from"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Use \"on\" for days and dates.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Use 'on' for days of the week: on Monday. A) 'in' is wrong: 'in' is for months and years. C) 'at' is wrong: 'at' is for clock time. D) 'from' is wrong: it shows a starting point and needs 'to/till'.",
+  "rel": "On is also used for dates and special days: on 23 March, on Eid day, on my birthday."
+ },
+ {
+  "src": "t1-65",
+  "question": "\"Pakistan became independent ___ 1947.\"",
+  "options": [
+   "in",
+   "on",
+   "at",
+   "since"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Use \"in\" for years.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Use 'in' for years: in 1947. B) 'on' is wrong: 'on' is for days and dates. C) 'at' is wrong: 'at' is for clock time. D) 'since' is wrong: it goes with perfect tenses (has been independent since 1947).",
+  "rel": "'In' is used with months, years, seasons, centuries: in August, in 1947, in summer, in the 20th century. But 'on 14 August 1947' with a full date."
+ },
+ {
+  "src": "t1-66",
+  "question": "\"The cadets marched ___ the bridge.\"",
+  "options": [
+   "across",
+   "between",
+   "during",
+   "since"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Across\" expresses movement from one side to the other.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Across' means from one side to the other side, so they marched across the bridge. B) 'between' is wrong: it needs two things (between the two posts). C) 'during' is wrong: it is used with time, not place. D) 'since' is wrong: it is used for a point of time.",
+  "rel": "Movement prepositions: across (side to side), through (inside, end to end), along (lengthwise), over (above), into (entering)."
+ },
+ {
+  "src": "t1-67",
+  "question": "\"He has lived here ___ 2022.\"",
+  "options": [
+   "for",
+   "since",
+   "from only",
+   "during"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Since\" marks the starting point of an action continuing to the present.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Use 'since' with a point of time (2022) when the action continues to now. A) 'for' is wrong: 'for' is for a period (for three years). C) 'from only' is wrong: 'from' needs 'to/till' and does not suit present perfect. D) 'during' is wrong: it means within a period.",
+  "rel": "Since + point of time: since Monday, since morning, since 2010. For + period: for two days, for a week, for ten years."
+ },
+ {
+  "src": "t1-68",
+  "question": "\"He has lived here ___ four years.\"",
+  "options": [
+   "since",
+   "for",
+   "at",
+   "by"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"For\" expresses a duration.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Use 'for' with a period of time: for four years. A) 'since' is wrong: 'since' needs a starting point like 2022. C) 'at' is wrong: it is for clock time. D) 'by' is wrong: it means 'not later than'.",
+  "rel": "Remember: for an hour, for a long time, for six months; since 9 o'clock, since last year, since childhood."
+ },
+ {
+  "src": "t1-69",
+  "question": "\"Divide the sweets ___ the two boys.\"",
+  "options": [
+   "among",
+   "between",
+   "into",
+   "beside"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Between\" is standard for two distinct parties.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Use 'between' for two people or things: between the two boys. A) 'among' is wrong: it is for more than two. C) 'into' is wrong: it means movement inside or dividing into parts (divide into pieces). D) 'beside' is wrong: it means next to.",
+  "rel": "Between for two (between you and me); among for more than two (among the students). 'Divide into' is for parts: divide the cake into four pieces."
+ },
+ {
+  "src": "t1-70",
+  "question": "\"The teacher distributed books ___ the students.\"",
+  "options": [
+   "between",
+   "among",
+   "through",
+   "onto"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Among\" is used for a group of more than two.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Use 'among' for more than two people: among the students. A) 'between' is wrong: it is mainly for two. C) 'through' is wrong: it means passing from one end to the other. D) 'onto' is wrong: it means movement to a surface.",
+  "rel": "Among the crowd, among friends, among the trees. 'Amongst' has the same meaning but is more formal."
+ },
+ {
+  "src": "t1-71",
+  "question": "\"He was accused ___ theft.\"",
+  "options": [
+   "for",
+   "of",
+   "with",
+   "by"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The standard collocation is \"accused of\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "The fixed phrase is 'accused of' a crime. A) 'for' is wrong: 'accused for' is a common mistake. C) 'with' is wrong: we say 'charged with' theft, not 'accused with'. D) 'by' is wrong: 'by' shows who accused him (accused by the police).",
+  "rel": "Similar: guilty of, suspected of, convicted of, charged with, blamed for."
+ },
+ {
+  "src": "t1-72",
+  "question": "\"This book belongs ___ me.\"",
+  "options": [
+   "with",
+   "for",
+   "to",
+   "at"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Belong to\" is the correct construction.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "The verb 'belong' takes 'to': belongs to me. A) 'with', B) 'for' and D) 'at' are wrong: they do not go with 'belong' in this meaning of ownership.",
+  "rel": "Other verb + to: listen to, reply to, object to, refer to. 'Belong' is a stative verb, so not 'is belonging'."
+ },
+ {
+  "src": "t1-73",
+  "question": "\"She is afraid ___ dogs.\"",
+  "options": [
+   "from",
+   "of",
+   "with",
+   "at"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The standard collocation is \"afraid of\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "The fixed phrase is 'afraid of' something. A) 'from' is wrong: 'afraid from' is a common Urdu-influenced mistake. C) 'with' and D) 'at' are wrong: they do not go with 'afraid'.",
+  "rel": "Similar adjectives with 'of': scared of, frightened of, fond of, proud of, tired of, aware of."
+ },
+ {
+  "src": "t1-74",
+  "question": "\"The plane flew ___ the clouds.\"",
+  "options": [
+   "above",
+   "between only",
+   "beside",
+   "since"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Above\" indicates a higher position.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Above' means at a higher level, so the plane flew above the clouds. B) 'between only' is wrong: 'between' needs two things and 'only' makes it ungrammatical. C) 'beside' is wrong: it means next to, at the side. D) 'since' is wrong: it is for time, not place.",
+  "rel": "Above vs over: above = higher than (the plane is above the clouds); over = covering or crossing (a bridge over the river). Opposite: below/under."
+ },
+ {
+  "src": "t1-75",
+  "question": "\"He sat ___ me during the lecture.\"",
+  "options": [
+   "besides",
+   "beside",
+   "among",
+   "across"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Beside\" means next to; \"besides\" means in addition to.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "'Beside' means next to or by the side of: He sat beside me. A) 'besides' is wrong: it means 'in addition to' (Besides English, he knows Arabic). C) 'among' is wrong: it is for more than two people, and 'me' is one person. D) 'across' is wrong: it means on the other side or from side to side.",
+  "rel": "Commonly confused pairs: beside/besides, principal/principle, stationary/stationery, affect/effect, lose/loose."
+ }
+]

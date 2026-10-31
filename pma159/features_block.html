@@ -1,0 +1,196 @@
+<style>
+.dash{margin:0 0 22px;display:grid;gap:14px}
+.dash .hi{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.dash .hi h3{font-size:clamp(18px,4.6vw,24px);font-weight:800;letter-spacing:-.3px;margin:0}
+.dash .hi p{margin:2px 0 0;font-size:13px;color:#64748b}
+.dash .streak{display:flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;font-weight:800;font-size:14px;color:#9a3412;background:linear-gradient(135deg,#ffedd5,#fed7aa);box-shadow:0 8px 20px -10px rgba(234,88,12,.6)}
+.dash .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.dash .st{padding:12px 8px;border-radius:16px;text-align:center;background:rgba(255,255,255,.78);border:1px solid rgba(148,163,184,.25);backdrop-filter:blur(8px)}
+.dash .st b{display:block;font-size:clamp(17px,4.4vw,24px);font-weight:800;color:#312e81}
+.dash .st span{font-size:10.5px;letter-spacing:.4px;text-transform:uppercase;color:#64748b;font-weight:600}
+.dash .week{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:10px 14px;border-radius:16px;background:rgba(255,255,255,.78);border:1px solid rgba(148,163,184,.25)}
+.dash .week .d{display:flex;flex-direction:column;align-items:center;gap:5px;font-size:10.5px;color:#64748b;font-weight:600}
+.dash .week .d i{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:#e2e8f0;color:#fff;font-style:normal;font-size:12px}
+.dash .week .d.on i{background:linear-gradient(135deg,#34d399,#059669);box-shadow:0 4px 10px rgba(5,150,105,.45)}
+.dash .week .d.today span{color:#4f46e5;font-weight:800}
+.dash .acts{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media (min-width:700px){.dash .acts{grid-template-columns:repeat(4,1fr)}}
+.dash .act{display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:16px;cursor:pointer;text-align:left;border:1px solid rgba(148,163,184,.25);background:rgba(255,255,255,.82);color:#0f172a;transition:transform .2s,box-shadow .2s;box-shadow:0 8px 20px -14px rgba(15,23,42,.5)}
+.dash .act:hover{transform:translateY(-2px);box-shadow:0 14px 28px -14px rgba(15,23,42,.5)}
+.dash .act .ic{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;font-size:17px;flex:none}
+.dash .act b{display:block;font-size:13.5px;font-weight:800}
+.dash .act small{font-size:11px;color:#64748b}
+.dash .act.daily .ic{background:linear-gradient(135deg,#fbbf24,#f97316);color:#fff}
+.dash .act.saved .ic{background:linear-gradient(135deg,#fde047,#f59e0b);color:#fff}
+.dash .act.mist .ic{background:linear-gradient(135deg,#fb7185,#e11d48);color:#fff}
+.dash .act.srch .ic{background:linear-gradient(135deg,#38bdf8,#4f46e5);color:#fff}
+.dash .act.done{opacity:.75}
+html.dark .dash .hi p,html.dark .dash .st span,html.dark .dash .week .d,html.dark .dash .act small{color:#94a3b8}
+html.dark .dash .st,html.dark .dash .week,html.dark .dash .act{background:rgba(17,24,39,.72);border-color:rgba(148,163,184,.16);color:#e2e8f0}
+html.dark .dash .st b{color:#c7d2fe}
+html.dark .dash .week .d i{background:#1e293b}
+html.dark .dash .week .d.today span{color:#a5b4fc}
+html.dark .dash .streak{color:#fed7aa;background:linear-gradient(135deg,rgba(194,65,12,.45),rgba(154,52,18,.45))}
+body[data-sec="cus"]{--c1:#0f766e;--c2:#0284c7;--cs:#0d9488;--ch:#0f766e;--cl:#f0fdfa;--ct:#115e59;--cb:#14b8a6;--cr:#5eead4}
+/* bookmark star in a question */
+#qStar{position:absolute;top:10px;right:10px;width:38px;height:38px;border-radius:12px;border:1px solid rgba(148,163,184,.35);background:rgba(255,255,255,.85);color:#94a3b8;font-size:18px;cursor:pointer;display:grid;place-items:center;transition:transform .15s,color .2s;z-index:3}
+#qStar:active{transform:scale(.88)}
+#qStar.on{color:#f59e0b;background:#fffbeb;border-color:#fbbf24}
+html.dark #qStar{background:rgba(15,23,42,.85);border-color:rgba(148,163,184,.25)}
+html.dark #qStar.on{background:rgba(120,53,15,.5)}
+.qwrap{position:relative}
+.qwrap #question-text{padding-right:48px}
+/* search modal */
+#srchModal{position:fixed;inset:0;z-index:9996;display:none;align-items:flex-start;justify-content:center;padding:16px;background:rgba(2,6,23,.55);backdrop-filter:blur(6px);overflow:auto}
+#srchModal.open{display:flex}
+#srchModal .box{width:min(720px,100%);margin:auto;margin-top:6vh;border-radius:22px;padding:16px;background:#fff;color:#0f172a;box-shadow:0 30px 80px rgba(0,0,0,.45)}
+html.dark #srchModal .box{background:#0f172a;color:#e2e8f0;border:1px solid rgba(148,163,184,.18)}
+#srchModal .top{display:flex;gap:8px;align-items:center}
+#srchModal input{flex:1;padding:13px 14px;border-radius:12px;border:1px solid rgba(148,163,184,.4);font-size:15px;outline:none;background:transparent;color:inherit}
+#srchModal input:focus{border-color:#6366f1;box-shadow:0 0 0 3px rgba(99,102,241,.2)}
+#srchModal .x{border:0;background:rgba(148,163,184,.2);width:40px;height:40px;border-radius:12px;cursor:pointer;font-size:16px;color:inherit}
+#srchModal .res{margin-top:12px;display:grid;gap:10px;max-height:62vh;overflow:auto}
+#srchModal .it{padding:12px 14px;border-radius:14px;border:1px solid rgba(148,163,184,.25);font-size:14px;line-height:1.5}
+#srchModal .it .q{font-weight:700;margin-bottom:6px}
+#srchModal .it .a{color:#047857;font-weight:700;font-size:13px}
+html.dark #srchModal .it .a{color:#6ee7b7}
+#srchModal .it .w{font-size:12.5px;color:#64748b;margin-top:4px}
+#srchModal .hint{font-size:12.5px;color:#64748b;padding:6px 2px}
+#srchModal mark{background:#fde68a;color:#111;border-radius:3px;padding:0 2px}
+#srchModal .bm{float:right;border:0;background:none;font-size:18px;cursor:pointer;color:#94a3b8}
+#srchModal .bm.on{color:#f59e0b}
+/* result extras */
+#resExtra{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:16px 0 4px}
+#resExtra button{padding:11px 18px;border-radius:12px;font-weight:700;font-size:13.5px;cursor:pointer;border:1px solid rgba(255,255,255,.35);color:#fff;background:rgba(255,255,255,.18);backdrop-filter:blur(6px)}
+#resExtra button:hover{background:rgba(255,255,255,.3)}
+#toastX{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);opacity:0;z-index:9997;padding:11px 18px;border-radius:999px;background:#0f172a;color:#fff;font-size:13px;font-weight:600;transition:all .3s;pointer-events:none;box-shadow:0 12px 30px rgba(0,0,0,.4)}
+#toastX.on{opacity:1;transform:translateX(-50%) translateY(0)}
+.kbd{display:none}
+@media (min-width:900px){.kbd{display:block;text-align:center;font-size:11.5px;color:#94a3b8;margin-top:10px}}
+</style>
+<div id="srchModal" role="dialog" aria-label="Search questions"><div class="box">
+  <div class="top"><input id="srchIn" type="search" placeholder="Search any question or answer (e.g. Mangla Dam, Tashkent, 90%)" autocomplete="off"><button class="x" onclick="closeSearch()" aria-label="Close">&#10005;</button></div>
+  <div class="hint" id="srchHint">Type at least 2 letters. Searches all sections.</div>
+  <div class="res" id="srchRes"></div>
+</div></div>
+<div id="toastX"></div>
+<script>
+(function(){
+  var $=function(id){return document.getElementById(id)};
+  function ld(k,d){try{var v=JSON.parse(localStorage.getItem(k));return v==null?d:v}catch(e){return d}}
+  function sv(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+  function today(d){d=d||new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
+  function toast(m){var t=$('toastX');t.textContent=m;t.classList.add('on');clearTimeout(toast.h);toast.h=setTimeout(function(){t.classList.remove('on')},2200)}
+  function esc(s){return String(s).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})}
+  function clean(q){return JSON.parse(JSON.stringify(q))}
+  /* ---------- storage ---------- */
+  function bms(){return ld('an_bm',{})}
+  function wrs(){return ld('an_wr',{})}
+  function stats(){return ld('an_st',{tests:0,right:0,total:0,days:{}})}
+  function streak(){var s=stats(),n=0,d=new Date();if(!s.days[today(d)])d.setDate(d.getDate()-1);while(s.days[today(d)]){n++;d.setDate(d.getDate()-1)}return n}
+  /* ---------- all questions ---------- */
+  var flat=null;
+  window.__flatReset=function(){flat=null};
+  function allQ(){if(flat)return flat;var seen={};flat=[];Object.keys(ALL).forEach(function(k){if(k.indexOf('CUS-')===0||k.indexOf('NV-')===0||k.indexOf('VB-')===0)return;ALL[k].forEach(function(q){if(!q.question)return;if(!seen[q.question]){seen[q.question]=1;flat.push(q)}})});return flat}
+  function rng(seed){var a=seed>>>0;return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+  function seedOf(s){var h=2166136261;for(var i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return h>>>0}
+  function pick(arr,n,r){var a=arr.slice(),o=[];for(var i=0;i<n&&a.length;i++){var j=Math.floor(r()*a.length);o.push(a.splice(j,1)[0])}return o}
+  /* ---------- launching a custom practice set ---------- */
+  var custom=0;
+  function launch(key,title,desc,qs){
+    if(!qs.length){toast('Nothing here yet');return}
+    ALL[key]=qs.map(function(q,i){var c=clean(q);c.id=i+1;return c});
+    selectTest(key);document.body.dataset.sec='cus';
+    $('home-badge').textContent=title;$('home-desc').textContent=desc;
+    var nMin=Math.ceil(TEST_SECS/60);
+  }
+  /* Daily Challenge: 25 MCQs mixed from every subject the person has unlocked; the same set for everyone on the same day */
+  var DQ=[['Verbal',3],['Non Verbal',3],['English',4],['Islamiat',4],['Pakistan Studies',4],['Science',2],['Current Affairs',2],['General Knowledge',3]];
+  var RX={isl:/\b(allah|quran|qur'an|holy prophet|prophet|hazrat|surah?|surat|islam|islamic|hadith|hadees|sahab[ai]|caliph|khalifa|zakat|hajj|umrah|namaz|salah|salat|ramadan|ramzan|makkah|mecca|madina|medina|ghazwa|badr|uhud|khandaq|kaaba|ka'aba|wahi|nabi|rasool|ayat|ayah|juz|sunnah|fiqh|shariah|eid|muslim ummah|hijrah|hijri|sahih)\b/i,
+    pak:/\b(pakistan|quaid|jinnah|iqbal|liaquat|lahore resolution|muslim league|kashmir|partition|karachi|islamabad|lahore|punjab|sindh|balochistan|khyber|kpk|gilgit|constitution|ayub|bhutto|simla|tashkent|objectives resolution|two.nation|indus|tarbela|mangla|k2|nanga parbat|siachen)\b/i,
+    sci:/\b(science|scientist|chemical|element|atom|planet|vitamin|blood|cell|gas|acid|formula|speed of|light|sound|energy|oxygen|hydrogen|carbon|nitrogen|disease|organ|bone|virus|bacteria|metal|electric|magnet|gravity|temperature|unit of|calorie|heart|brain|kidney|liver)\b/i,
+    ca:/\b(202[3-6]|current|recently|newly)\b/i};
+  function subj(k,q){var t=String(q.question||''),sc=String(q.sec||'');
+    if(q.nv||k.indexOf('NV-')===0)return 'Non Verbal';
+    if(k.indexOf('VB-')===0||/^Verbal: Maths/.test(sc))return 'Verbal';
+    if(k.indexOf('EN-')===0||/English/.test(sc))return 'English';
+    if(k.indexOf('IS-')===0||sc==='Islamiat'||RX.isl.test(t))return 'Islamiat';
+    if(sc==='Current Affairs'||RX.ca.test(t))return 'Current Affairs';
+    if(sc==='Pakistan Studies'||k.indexOf('CN-')===0||RX.pak.test(t))return 'Pakistan Studies';
+    if(/Science/.test(sc)||RX.sci.test(t))return 'Science';
+    return 'General Knowledge'}
+  var DB=null,DBK='';  /* subject lists are made once and kept until the data changes (the Daily Challenge opens at once) */
+  function buckets(){var ks=Object.keys(ALL).filter(function(k){return k.indexOf('CUS-')!==0}),sig=ks.length+':'+ks.reduce(function(t,k){return t+((ALL[k]||[]).length)},0);
+    if(DB&&DBK===sig)return DB;var B={},seen={};
+    ks.forEach(function(k){(ALL[k]||[]).forEach(function(q){if(!q||!q.question||!q.options)return;var id=q.question+'|'+q.options.length;if(seen[id])return;seen[id]=1;var b=subj(k,q);(B[b]=B[b]||[]).push(q)})});
+    DB=B;DBK=sig;return B}
+  function dailySet(r){var B0=buckets(),B={};Object.keys(B0).forEach(function(b){B[b]=B0[b].slice()});
+    var out=[],left=0;DQ.forEach(function(d){var got=pick(B[d[0]]||[],d[1],r);left+=d[1]-got.length;out=out.concat(got);B[d[0]]=(B[d[0]]||[]).filter(function(q){return got.indexOf(q)<0})});
+    if(left>0){var rest=[];Object.keys(B).forEach(function(b){rest=rest.concat(B[b])});out=out.concat(pick(rest,left,r))}  /* a subject that is locked for this person: fill with other subjects */
+    return pick(out,out.length,r)}  /* mix the order */
+  window.startDaily=function(){var t=today(),r=rng(seedOf('asadullah-'+t));launch('CUS-daily',"Today's Daily Challenge",'25 fresh MCQs for '+t+', mixed from every subject: Verbal, Non Verbal, English, Islamiat, Pakistan Studies, Science, Current Affairs and General Knowledge. Finish it to keep your streak going.',dailySet(r))};
+  window.startSaved=function(){var q=Object.keys(bms()).map(function(k){return bms()[k]});launch('CUS-saved','Saved Questions ('+q.length+')','Your starred questions in one test.',q)};
+  window.startMistakes=function(){var w=wrs(),q=Object.keys(w).map(function(k){return w[k]}).slice(-50);launch('CUS-mist','Mistakes Practice ('+q.length+')','Questions you answered wrong before. Answer them correctly to remove them from this list.',q)};
+  /* ---------- search ---------- */
+  window.openSearch=function(){$('srchModal').classList.add('open');setTimeout(function(){$('srchIn').focus()},50)};
+  window.closeSearch=function(){$('srchModal').classList.remove('open')};
+  function hl(t,ws){var s=esc(t);ws.forEach(function(w){if(w.length>1)s=s.replace(new RegExp('('+w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','ig'),'<mark>$1</mark>')});return s}
+  var th;
+  $('srchIn').addEventListener('input',function(){clearTimeout(th);th=setTimeout(function(){
+    var v=$('srchIn').value.trim().toLowerCase(),res=$('srchRes');
+    if(v.length<2){res.innerHTML='';$('srchHint').textContent='Type at least 2 letters. Searches all sections.';return}
+    var ws=v.split(/\s+/),out=[],b=bms();
+    var A=allQ();for(var i=0;i<A.length&&out.length<40;i++){var q=A[i],hay=(q.question+' '+q.options.join(' ')).toLowerCase();if(ws.every(function(w){return hay.indexOf(w)>-1}))out.push(q)}
+    $('srchHint').textContent=out.length?(out.length>=40?'Showing first 40 matches':out.length+' match'+(out.length>1?'es':'')):'No match. Try another word.';
+    res.innerHTML=out.map(function(q,i){var why=q.facts||q.rel||'';return '<div class="it"><button class="bm'+(b[q.question]?' on':'')+'" data-i="'+i+'" title="Save">&#9733;</button><div class="q">'+hl(q.question,ws)+'</div><div class="a">&#10003; '+hl(q.options[q.correct],ws)+'</div>'+(why?'<div class="w">'+esc(String(why).slice(0,220))+'</div>':'')+'</div>'}).join('');
+    res.querySelectorAll('.bm').forEach(function(bt){bt.onclick=function(){toggleBm(out[+bt.dataset.i]);bt.classList.toggle('on')}});
+  },160)});
+  $('srchModal').addEventListener('click',function(e){if(e.target===this)closeSearch()});
+  /* ---------- bookmarks ---------- */
+  function toggleBm(q){var b=bms();if(b[q.question]){delete b[q.question];toast('Removed from Saved')}else{b[q.question]=clean(q);toast('Saved \u2605')}sv('an_bm',b)}
+  var star=document.createElement('button');star.id='qStar';star.type='button';star.setAttribute('aria-label','Save question');star.innerHTML='&#9733;';
+  var qt=$('question-text');if(qt&&qt.parentElement){qt.parentElement.classList.add('qwrap');qt.parentElement.insertBefore(star,qt)}
+  star.onclick=function(){var q=quizData[currentQuestionIndex];if(!q)return;toggleBm(q);star.classList.toggle('on',!!bms()[q.question])};
+  var _lq=loadQuestion;window.loadQuestion=loadQuestion=function(i){var r=_lq.apply(this,arguments);var q=quizData[i];star.classList.toggle('on',!!(q&&bms()[q.question]));return r};
+  /* ---------- mistakes bank: record every answer ---------- */
+  var _so=selectOption;window.selectOption=selectOption=function(qi,oi){var had=userAnswers[qi];var r=_so.apply(this,arguments);
+    if(had===null&&userAnswers[qi]!==null){var q=quizData[qi],w=wrs();if(userAnswers[qi]===q.correct){if(w[q.question]){delete w[q.question];sv('an_wr',w)}}else{w[q.question]=clean(q);var ks=Object.keys(w);if(ks.length>500)delete w[ks[0]];sv('an_wr',w)}}
+    return r};
+  /* ---------- results: stats + extra buttons ---------- */
+  var _cr=computeAndDisplayResults;window.computeAndDisplayResults=computeAndDisplayResults=function(){var r=_cr.apply(this,arguments);
+    var c=0;quizData.forEach(function(q,i){if(userAnswers[i]===q.correct)c++});var n=quizData.length,s=stats();
+    s.tests++;s.right+=c;s.total+=n;s.days[today()]=1;sv('an_st',s);
+    if(currentTestKey==='CUS-daily')sv('an_daily',today());
+    var host=$('result-pass-status').parentElement;var ex=$('resExtra');if(!ex){ex=document.createElement('div');ex.id='resExtra';host.appendChild(ex)}
+    var pct=Math.round(c*100/n);
+    ex.innerHTML='<button id="rxShare">\u{1F4E4} Share score</button><button id="rxMist">\u{1F501} Practice my mistakes</button>';
+    $('rxShare').onclick=function(){var t='I scored '+c+'/'+n+' ('+pct+'%) in a test on PMA Preparation! Streak: '+streak()+' day(s). Try it yourself.';
+      if(navigator.share){navigator.share({text:t}).catch(function(){})}else{try{navigator.clipboard.writeText(t);toast('Score copied \u2014 paste it anywhere')}catch(e){toast(t)}}};
+    $('rxMist').onclick=function(){if(typeof showSelect==='function'){quizActive=false;showSelect()}startMistakes()};
+    return r};
+  /* ---------- dashboard on the category menu ---------- */
+  function render(){
+    var s=stats(),st=streak(),b=Object.keys(bms()).length,w=Object.keys(wrs()).length,done=ld('an_daily','')===today();
+    var nm=($('authUserName')&&$('authUserName').textContent||'').replace(/^\W+\s*/,'').trim();var who=nm&&nm!=='Guest'?nm:'there';
+    var acc=s.total?Math.round(s.right*100/s.total):0,days='';var D=['S','M','T','W','T','F','S'];
+    for(var i=6;i>=0;i--){var d=new Date();d.setDate(d.getDate()-i);var on=s.days[today(d)];days+='<div class="d'+(on?' on':'')+(i===0?' today':'')+'"><i>'+(on?'\u2713':'')+'</i><span>'+D[d.getDay()]+'</span></div>'}
+    return '<div class="dash"><div class="hi"><div><h3>Assalam o Alaikum, '+esc(who)+' \u{1F44B}</h3><p>'+(st?'Keep it up \u2014 you are on a '+st+'-day streak.':'Solve a test today to start your streak.')+'</p></div><div class="streak">\u{1F525} '+st+' day'+(st===1?'':'s')+'</div></div>'+
+     '<div class="stats"><div class="st"><b>'+s.tests+'</b><span>Tests</span></div><div class="st"><b>'+s.total+'</b><span>Solved</span></div><div class="st"><b>'+acc+'%</b><span>Accuracy</span></div><div class="st"><b>'+w+'</b><span>To revise</span></div></div>'+
+     '<div class="week">'+days+'</div>'+
+     '<div class="acts"><button class="act daily'+(done?' done':'')+'" onclick="startDaily()"><span class="ic">\u26A1</span><span><b>Daily Challenge</b><small>'+(done?'Done today \u2713 \u2014 play again':'25 MCQs \u2022 new every day')+'</small></span></button>'+
+     '<button class="act saved" onclick="startSaved()"><span class="ic">\u2605</span><span><b>Saved</b><small>'+b+' question'+(b===1?'':'s')+'</small></span></button>'+
+     '<button class="act mist" onclick="startMistakes()"><span class="ic">\u{1F501}</span><span><b>Mistakes</b><small>'+w+' to practise</small></span></button>'+
+     '<button class="act srch" onclick="openSearch()"><span class="ic">\u{1F50D}</span><span><b>Search</b><small>Find any MCQ</small></span></button></div></div>'}
+  var _rm=renderMenu;window.renderMenu=renderMenu=function(){_rm.apply(this,arguments);var m=$('sec-menu');if(m)m.insertAdjacentHTML('afterbegin',render())};
+  if(typeof applySec==='function')applySec();
+  /* ---------- keyboard shortcuts (computer) ---------- */
+  document.addEventListener('keydown',function(e){
+    if(e.target&&/INPUT|TEXTAREA/.test(e.target.tagName))return;if(e.ctrlKey||e.metaKey||e.altKey)return;
+    var vq=$('view-quiz');if(!vq||vq.classList.contains('hidden'))return;var k=e.key.toLowerCase(),m={a:0,b:1,c:2,d:3,'1':0,'2':1,'3':2,'4':3};
+    if(k in m){if(quizData[currentQuestionIndex]&&m[k]<quizData[currentQuestionIndex].options.length)selectOption(currentQuestionIndex,m[k])}
+    else if(k==='n'||k==='arrowright'){nextQuestion()}else if(k==='p'||k==='arrowleft'){prevQuestion()}else if(k==='s'){star.click()}
+  });
+  var nav=$('quiz-nav');if(nav){var h=document.createElement('div');h.className='kbd';h.textContent='Keyboard: A\u2013D choose \u2022 N next \u2022 P previous \u2022 S save';nav.parentElement.appendChild(h)}
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeSearch()});
+})();
+</script>

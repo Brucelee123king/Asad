@@ -1,0 +1,2 @@
+[{"num":7,"pick":5,"confidence":"low","rule":"First pair is a mirror/flip pair; the arrow should be flipped/turned. No option is an exact horizontal mirror, so best guess is option 5 (arrow turned with head at top-left).","alt":[2,3]},
+{"num":8,"pick":4,"confidence":"low","rule":"A base line with an arm that changes position and angle each step (left, middle, tilted, right); no clean rule found. Options 1, 2, 3, 5 repeat earlier figures, so the new shape 4 is the best guess.","alt":[2,5]}]

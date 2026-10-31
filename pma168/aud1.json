@@ -1,0 +1,310 @@
+[
+{
+"item": 1,
+"text": "90% of 90",
+"count": 4,
+"existing_idx": 0,
+"existing": "0\t90% of 90 is:  => 81"
+},
+{
+"item": 2,
+"text": "Train is twice the speed of a car; car covers 60 km in 30 min / 60 km per hour; train distance in 30 minutes",
+"count": 2,
+"existing_idx": 470,
+"existing": "470\tA train runs at twice the speed of a car. The car covers 60 km in 30 minutes. How many km will the train cover in 30 minutes?  => 120 km"
+},
+{
+"item": 4,
+"text": "Quarter of 10% of 120",
+"count": 2,
+"existing_idx": 364,
+"existing": "364\tA quarter of 10% of 120 is:  => 3"
+},
+{
+"item": 5,
+"text": "One third of 10% of 90",
+"count": 2,
+"existing_idx": 3,
+"existing": "3\tOne third of 10% of 90 is:  => 3"
+},
+{
+"item": 8,
+"text": "Who married 2 daughters of Prophet Muhammad SAW (Hazrat Usman)",
+"count": 1,
+"existing_idx": 312,
+"existing": "312\tWho married two daughters of the Prophet Muhammad (PBUH), one after the other?  => Hazrat Usman (R.A.)"
+},
+{
+"item": 9,
+"text": "Prophet Muhammad SAW had how many sons",
+"count": 2,
+"existing_idx": 540,
+"existing": "540\tHow many sons did Prophet Muhammad (SAW) have?  => Three"
+},
+{
+"item": 14,
+"text": "Currency of Japan",
+"count": 1,
+"existing_idx": 302,
+"existing": "302\tWhat is the official currency of Japan?  => Yen"
+},
+{
+"item": 18,
+"text": "Manzils in Quran",
+"count": 1,
+"existing_idx": 164,
+"existing": "164\tHow many Manzils (stations) are in the Quran?  => 7"
+},
+{
+"item": 21,
+"text": "Provincial capital of Gilgit Baltistan",
+"count": 1,
+"existing_idx": 370,
+"existing": "370\tWhat is the capital of Gilgit-Baltistan?  => Gilgit"
+},
+{
+"item": 23,
+"text": "Which agreement in 1972",
+"count": 1,
+"existing_idx": 327,
+"existing": "327\tIn which year was the Simla Agreement signed between Pakistan and India?  => 1972"
+},
+{
+"item": 25,
+"text": "Antonym of wild (tame)",
+"count": 2,
+"existing_idx": 55,
+"existing": "55\tAntonym of WILD:  => Tame"
+},
+{
+"item": 31,
+"text": "Durand Line is between which two countries",
+"count": 1,
+"existing_idx": 387,
+"existing": "387\tThe Durand Line separates Pakistan from which country?  => Afghanistan"
+},
+{
+"item": 33,
+"text": "Khilafat movement started due to",
+"count": 1,
+"existing_idx": 550,
+"existing": "550\tThe Khilafat Movement was launched by Indian Muslims to support which institution?  => The Ottoman Caliphate"
+},
+{
+"item": 36,
+"text": "If today is Friday and 2nd day of month, what day will be the 23rd",
+"count": 1,
+"existing_idx": 252,
+"existing": "252\tIf the 2nd day of a month is Friday, what day is the 23rd?  => Friday"
+},
+{
+"item": 38,
+"text": "Injeel is the book of which prophet",
+"count": 1,
+"existing_idx": 538,
+"existing": "538\tOn which Prophet was the Injeel (Gospel) revealed?  => Hazrat Isa (AS)"
+},
+{
+"item": 40,
+"text": "Bogra formula date",
+"count": 1,
+"existing_idx": 265,
+"existing": "265\tIn which year was the Bogra Formula presented?  => 1953"
+},
+{
+"item": 42,
+"text": "Friends Not Masters written by",
+"count": 1,
+"existing_idx": 397,
+"existing": "397\tWho wrote the book Friends Not Masters?  => Field Marshal Ayub Khan"
+},
+{
+"item": 46,
+"text": "Current Foreign Minister",
+"count": 1,
+"existing_idx": 372,
+"existing": "372\tWho is the current Foreign Minister of Pakistan (also Deputy Prime Minister)?  => Muhammad Ishaq Dar"
+},
+{
+"item": 49,
+"text": "Why we boil milk",
+"count": 1,
+"existing_idx": 53,
+"existing": "53\tWhy do we boil milk?  => To kill germs"
+},
+{
+"item": 50,
+"text": "Why we spend money on children's education / why children go to school",
+"count": 2,
+"existing_idx": 54,
+"existing": "54\tWhy do parents send their children to school?  => For grooming (education)"
+},
+{
+"item": 51,
+"text": "1500 students in a class, 1200 present, percentage of present",
+"count": 1,
+"existing_idx": 9,
+"existing": "9\tIn a class of 1500 students, 1200 are present. What percentage is present?  => 80%"
+},
+{
+"item": 52,
+"text": "5 men write 5 pages in 5 minutes, how many pages does one man write (1 page)",
+"count": 1,
+"existing_idx": 8,
+"existing": "8\tIf 5 men write 5 pages in 5 minutes, how long will 1 man take to write 1 page?  => 5 minutes"
+},
+{
+"item": 53,
+"text": "A man walks 20 km in 1 hour 40 minutes, how much time for 1 km",
+"count": 1,
+"existing_idx": 18,
+"existing": "18\tA man walks 20 km in 1 hour 40 minutes. How long will he take to cover 1 km?  => 5 minutes"
+},
+{
+"item": 54,
+"text": "80% of 80",
+"count": 2,
+"existing_idx": 2,
+"existing": "2\t80% of 80 is:  => 64"
+},
+{
+"item": 55,
+"text": "Train covers 90 km per hour, distance in 12 minutes",
+"count": 1,
+"existing_idx": 16,
+"existing": "16\tA train moves at 90 km/h. How much distance will it cover in 12 minutes?  => 18 km"
+},
+{
+"item": 56,
+"text": "CM of Balochistan",
+"count": 1,
+"existing_idx": 229,
+"existing": "229\tWho is the current Chief Minister of Balochistan? (current affairs)  => Mir Sarfraz Bugti"
+},
+{
+"item": 58,
+"text": "Ghazwa Tabuk year",
+"count": 1,
+"existing_idx": 452,
+"existing": "452\tIn which Hijri year was Ghazwa Tabuk fought?  => 9 AH"
+},
+{
+"item": 60,
+"text": "Who started the Non-Cooperation Movement",
+"count": 1,
+"existing_idx": 546,
+"existing": "546\tWho launched the Non-Cooperation Movement?  => Mahatma Gandhi"
+},
+{
+"item": 63,
+"text": "When is Air Force day",
+"count": 1,
+"existing_idx": 537,
+"existing": "537\tOn which date is Pakistan Air Force Day observed every year?  => 7 September"
+},
+{
+"item": 64,
+"text": "When did Quaid-e-Azam join AIML (Muslim League)",
+"count": 2,
+"existing_idx": 291,
+"existing": "291\tIn which year did Quaid-e-Azam join the All-India Muslim League?  => 1913"
+},
+{
+"item": 65,
+"text": "UNO HQ",
+"count": 1,
+"existing_idx": 188,
+"existing": "188\tWhere is the headquarters of the United Nations?  => New York"
+},
+{
+"item": 66,
+"text": "Which pass connects Pakistan with China (Khunjerab)",
+"count": 2,
+"existing_idx": 100,
+"existing": "100\tThe Khunjerab Pass connects Pakistan with:  => China"
+},
+{
+"item": 69,
+"text": "90% of 80",
+"count": 1,
+"existing_idx": 529,
+"existing": "529\tWhat is 90% of 80?  => 72"
+},
+{
+"item": 70,
+"text": "First prime minister of Pakistan",
+"count": 1,
+"existing_idx": 359,
+"existing": "359\tWho was the first Prime Minister of Pakistan?  => Liaquat Ali Khan"
+},
+{
+"item": 71,
+"text": "India atomic explosions year (1974)",
+"count": 1,
+"existing_idx": 217,
+"existing": "217\tIndia conducted its first nuclear test ('Smiling Buddha') in:  => 1974"
+},
+{
+"item": 72,
+"text": "How many nuclear tests by Pakistan",
+"count": 1,
+"existing_idx": 259,
+"existing": "259\tHow many nuclear tests did Pakistan conduct in May 1998?  => 6 (five on 28 May and one on 30 May)"
+},
+{
+"item": 74,
+"text": "Faisalabad is known as the ? of Pakistan",
+"count": 1,
+"existing_idx": 106,
+"existing": "106\tWhich city is known as the 'Manchester of Pakistan'?  => Faisalabad"
+},
+{
+"item": 75,
+"text": "Indus Water Treaty signed in year",
+"count": 1,
+"existing_idx": 377,
+"existing": "377\tIn which year was the Indus Waters Treaty signed?  => 1960"
+},
+{
+"item": 79,
+"text": "Capital of Australia",
+"count": 2,
+"existing_idx": 268,
+"existing": "268\tWhat is the capital of Australia?  => Canberra"
+},
+{
+"item": 81,
+"text": "Ayesha was daughter of (Abu Bakr)",
+"count": 1,
+"existing_idx": 144,
+"existing": "144\tHazrat Abu Bakr (R.A.) was the father of which wife of the Prophet ﷺ?  => Hazrat Ayesha (R.A.)"
+},
+{
+"item": 82,
+"text": "First President of Pakistan",
+"count": 1,
+"existing_idx": 292,
+"existing": "292\tWho was the first President of Pakistan?  => Iskander Mirza"
+},
+{
+"item": 84,
+"text": "Capital of Kazakhstan",
+"count": 1,
+"existing_idx": 198,
+"existing": "198\tWhich is the capital of Kazakhstan?  => Astana"
+},
+{
+"item": 85,
+"text": "Bat cannot see as snake cannot (hear)",
+"count": 1,
+"existing_idx": 52,
+"existing": "52\tSnake cannot hear and bat cannot ___?  => See"
+},
+{
+"item": 88,
+"text": "Land of lakes (country)",
+"count": 1,
+"existing_idx": 191,
+"existing": "191\tWhich country is called the 'Land of a Thousand Lakes'?  => Finland"
+}
+]

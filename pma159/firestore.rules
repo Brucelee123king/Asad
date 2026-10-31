@@ -1,0 +1,148 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAdmin() {
+      return request.auth != null
+        && request.auth.token.email == 'asadullah75t@gmail.com'
+        && request.auth.token.email_verified == true;
+    }
+    function me() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
+    }
+    match /users/{uid} {
+      allow read: if isAdmin() || (request.auth != null && request.auth.uid == uid);
+      allow create: if request.auth != null
+        && request.auth.uid == uid
+        && request.resource.data.status == 'pending'
+        && request.resource.data.cats.size() == 0
+        && request.resource.data.email == request.auth.token.email
+        && request.resource.data.keys().hasOnly(['email','name','status','cats','requested'])
+        && request.resource.data.name is string
+        && request.resource.data.name.size() <= 60
+        && request.resource.data.email.size() <= 100;
+      allow update: if isAdmin();
+      allow delete: if isAdmin() || (request.auth != null && request.auth.uid == uid);
+    }
+    match /profiles/{uid} {
+      function okStr(k, n) {
+        return request.resource.data[k] is string && request.resource.data[k].size() <= n;
+      }
+      allow read: if isAdmin() || (request.auth != null && request.auth.uid == uid);
+      allow create, update: if request.auth != null
+        && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['fn','ln','ph','addr','prov','city','gen','dob','zip','photo','email','t'])
+        && okStr('fn', 40) && okStr('ln', 40) && okStr('ph', 10) && okStr('addr', 150)
+        && okStr('prov', 40) && okStr('city', 40) && okStr('gen', 10) && okStr('dob', 10)
+        && okStr('zip', 6) && okStr('photo', 100000)
+        && request.resource.data.email == request.auth.token.email
+        && request.resource.data.t == request.time;
+      allow delete: if isAdmin() || (request.auth != null && request.auth.uid == uid);
+    }
+    match /devices/{uid} {
+      allow read: if isAdmin() || (request.auth != null && request.auth.uid == uid);
+      allow create: if request.auth != null
+        && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['r','t'])
+        && request.resource.data.r is string
+        && request.resource.data.r.size() == 32
+        && request.resource.data.t == request.time;
+      allow delete: if isAdmin();
+    }
+    match /msgs/{uid} {
+      allow read: if isAdmin() || (request.auth != null && request.auth.uid == uid);
+      allow create: if request.auth != null
+        && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['email','n','m1','t1'])
+        && request.resource.data.n == 1
+        && request.resource.data.email == request.auth.token.email
+        && request.resource.data.m1 is string
+        && request.resource.data.m1.size() > 0
+        && request.resource.data.m1.size() <= 300
+        && request.resource.data.t1 == request.time;
+      allow update: if request.auth != null
+        && request.auth.uid == uid
+        && request.resource.data.n == resource.data.n + 1
+        && (
+          (resource.data.n == 1
+            && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['n','m2','t2'])
+            && request.resource.data.m2 is string
+            && request.resource.data.m2.size() > 0
+            && request.resource.data.m2.size() <= 300
+            && request.resource.data.t2 == request.time)
+          ||
+          (resource.data.n == 2
+            && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['n','m3','t3'])
+            && request.resource.data.m3 is string
+            && request.resource.data.m3.size() > 0
+            && request.resource.data.m3.size() <= 300
+            && request.resource.data.t3 == request.time)
+        );
+      allow delete: if isAdmin();
+      match /days/{day} {
+        function today() {
+          let t = request.time + duration.value(5, 'h');
+          return string(t.year() * 10000 + t.month() * 100 + t.day());
+        }
+        allow read: if isAdmin() || (request.auth != null && request.auth.uid == uid);
+        allow create: if request.auth != null
+          && request.auth.uid == uid
+          && day == today()
+          && request.resource.data.keys().hasOnly(['n','m1','t1'])
+          && request.resource.data.n == 1
+          && request.resource.data.m1 is string
+          && request.resource.data.m1.size() > 0
+          && request.resource.data.m1.size() <= 300
+          && request.resource.data.t1 == request.time;
+        allow update: if request.auth != null
+          && request.auth.uid == uid
+          && day == today()
+          && request.resource.data.n == resource.data.n + 1
+          && (
+            (resource.data.n == 1
+              && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['n','m2','t2'])
+              && request.resource.data.m2 is string
+              && request.resource.data.m2.size() > 0
+              && request.resource.data.m2.size() <= 300
+              && request.resource.data.t2 == request.time)
+            ||
+            (resource.data.n == 2
+              && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['n','m3','t3'])
+              && request.resource.data.m3 is string
+              && request.resource.data.m3.size() > 0
+              && request.resource.data.m3.size() <= 300
+              && request.resource.data.t3 == request.time)
+          );
+        allow delete: if isAdmin();
+      }
+    }
+    match /{path=**}/days/{d} {
+      allow read: if isAdmin();
+    }
+    match /online/{d} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null && d == 'now'
+        && request.resource.data.keys().hasOnly([request.auth.uid])
+        && request.resource.data[request.auth.uid].keys().hasOnly(['t','on'])
+        && request.resource.data[request.auth.uid].t == request.time
+        && request.resource.data[request.auth.uid].on is bool;
+      allow update: if request.auth != null && d == 'now'
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly([request.auth.uid])
+        && request.resource.data[request.auth.uid].keys().hasOnly(['t','on'])
+        && request.resource.data[request.auth.uid].t == request.time
+        && request.resource.data[request.auth.uid].on is bool;
+    }
+    match /stats/{d} {
+      allow read: if request.auth != null;
+      allow write: if isAdmin();
+    }
+    match /catKeys/{cat} {
+      allow read: if isAdmin()
+        || (request.auth != null
+            && exists(/databases/$(database)/documents/users/$(request.auth.uid))
+            && me().status == 'approved'
+            && cat in me().cats);
+      allow write: if isAdmin()
+        && request.time < timestamp.value(request.auth.token.auth_time * 1000) + duration.value(15, 'm');
+    }
+  }
+}

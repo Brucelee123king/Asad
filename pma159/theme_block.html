@@ -1,0 +1,54 @@
+<style>
+html.dark body{background:#0b1220!important;color:#e2e8f0}
+html.dark .bg-white{background-color:#131c2e!important}
+html.dark .bg-slate-50{background-color:#0f172a!important}
+html.dark .bg-slate-100,html.dark .bg-slate-200,html.dark .bg-slate-200\/80{background-color:#1e293b!important}
+html.dark .bg-slate-900\/60{background-color:rgba(2,6,23,.75)!important}
+html.dark .text-slate-900,html.dark .text-slate-800{color:#f1f5f9!important}
+html.dark .text-slate-700{color:#e2e8f0!important}
+html.dark .text-slate-600{color:#cbd5e1!important}
+html.dark .text-slate-500{color:#94a3b8!important}
+html.dark .text-slate-400{color:#7c8ba1!important}
+html.dark .border-slate-100,html.dark .border-slate-200,html.dark .border-slate-200\/80,html.dark .border-slate-200\/85,html.dark .border-slate-300{border-color:#2a3650!important}
+html.dark .bg-indigo-50,html.dark .bg-indigo-100{background-color:rgba(99,102,241,.18)!important}
+html.dark .bg-emerald-50,html.dark .bg-emerald-50\/40,html.dark .bg-emerald-100{background-color:rgba(16,185,129,.16)!important}
+html.dark .bg-rose-50,html.dark .bg-rose-50\/40,html.dark .bg-rose-100{background-color:rgba(244,63,94,.16)!important}
+html.dark .bg-amber-50,html.dark .bg-amber-100{background-color:rgba(245,158,11,.16)!important}
+html.dark .text-indigo-900,html.dark .text-indigo-800,html.dark .text-indigo-700{color:#a5b4fc!important}
+html.dark .text-indigo-600,html.dark .text-indigo-500{color:#818cf8!important}
+html.dark .text-emerald-900,html.dark .text-emerald-800,html.dark .text-emerald-700{color:#6ee7b7!important}
+html.dark .text-emerald-600{color:#34d399!important}
+html.dark .text-rose-900,html.dark .text-rose-800,html.dark .text-rose-700{color:#fda4af!important}
+html.dark .text-rose-600{color:#fb7185!important}
+html.dark .text-amber-800,html.dark .text-amber-700{color:#fcd34d!important}
+html.dark .text-amber-600{color:#fbbf24!important}
+html.dark .border-emerald-100,html.dark .border-emerald-200{border-color:rgba(16,185,129,.35)!important}
+html.dark .border-rose-100,html.dark .border-rose-200{border-color:rgba(244,63,94,.35)!important}
+html.dark .border-amber-200{border-color:rgba(245,158,11,.35)!important}
+html.dark .border-indigo-100,html.dark .border-indigo-300{border-color:rgba(129,140,248,.35)!important}
+html.dark header{background-color:rgba(15,23,42,.92)!important;border-color:#1e293b!important}
+html.dark input,html.dark select,html.dark textarea{background-color:#0f172a;color:#e2e8f0;border-color:#2a3650}
+html.dark .shadow-xl,html.dark .shadow-lg,html.dark .shadow-sm{box-shadow:0 10px 30px rgba(0,0,0,.45)!important}
+html.dark #quiz-nav{background:#131c2e!important;border-top-color:#2a3650!important}
+html.dark .hover\:bg-slate-50:hover{background-color:#1e293b!important}
+html.dark #authUser{background:rgba(30,41,59,.95)}
+/* login screen: day look */
+#themeBtn{position:fixed;bottom:12px;left:12px;z-index:9995;width:42px;height:42px;border-radius:999px;display:flex;align-items:center;justify-content:center;cursor:pointer;
+  border:1px solid rgba(148,163,184,.4);background:rgba(255,255,255,.85);color:#0f172a;box-shadow:0 6px 18px rgba(0,0,0,.18);backdrop-filter:blur(8px);font-size:18px;transition:background .3s,color .3s,transform .2s}
+#themeBtn:active{transform:scale(.92)}
+html.dark #themeBtn{background:rgba(15,23,42,.85);color:#fde68a;border-color:rgba(148,163,184,.3)}
+body{transition:background-color .3s ease}
+/* while switching day/night no element starts its own colour transition (that made the switch hang on slow phones) */
+html.thx *,html.thx *::before,html.thx *::after,html.thx body{transition:none!important}
+</style>
+<button id="themeBtn" type="button" aria-label="Switch day / night mode" title="Day / Night mode" onclick="toggleTheme()"></button>
+<script>
+(function(){
+  var root=document.documentElement,btn=document.getElementById('themeBtn'),saved=null;
+  try{saved=localStorage.getItem('an_theme')}catch(e){}
+  var dark=saved?saved==='dark':(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches);
+  function apply(){root.classList.toggle('dark',dark);btn.textContent=dark?'☀️':'\u{1F319}';btn.title=dark?'Day mode':'Night mode'}
+  window.toggleTheme=function(){dark=!dark;try{localStorage.setItem('an_theme',dark?'dark':'light')}catch(e){}root.classList.add('thx');apply();requestAnimationFrame(function(){requestAnimationFrame(function(){setTimeout(function(){root.classList.remove('thx')},80)})})};
+  apply();
+})();
+</script>

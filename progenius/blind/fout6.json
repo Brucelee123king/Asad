@@ -1,0 +1,706 @@
+[
+ {
+  "id": 5,
+  "pick": 2,
+  "confidence": "medium",
+  "note": "Estimates vary 6,400-7,000 km; 6,400 is the standard exam figure"
+ },
+ {
+  "id": 11,
+  "pick": 2,
+  "confidence": "medium",
+  "note": "Hanafi: 3 (ihram, wuquf Arafah, tawaf ziyarah); some count 4"
+ },
+ {
+  "id": 17,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 23,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 29,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 35,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 41,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 47,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 53,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 59,
+  "pick": 0,
+  "confidence": "medium",
+  "note": "Dead Sea is lowest land point; Turpan is lowest in China"
+ },
+ {
+  "id": 65,
+  "pick": 3,
+  "confidence": "medium",
+  "note": "Islamabad usually cited highest"
+ },
+ {
+  "id": 71,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 77,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 83,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 89,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 95,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 101,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 107,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 113,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 119,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 125,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 131,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 137,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 143,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 149,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 155,
+  "pick": 1,
+  "confidence": "medium",
+  "note": "700 fought at Uhud (7 hundred); 1000 left initially"
+ },
+ {
+  "id": 161,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 167,
+  "pick": 3,
+  "confidence": "medium",
+  "note": "Tikka Khan first COAS 1972; Gul Hassan last C-in-C"
+ },
+ {
+  "id": 173,
+  "pick": 2,
+  "confidence": "medium",
+  "note": "Jeddah is the OIC HQ"
+ },
+ {
+  "id": 179,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 185,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 191,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 197,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 203,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 209,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 215,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 221,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 227,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 233,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 239,
+  "pick": 2,
+  "confidence": "medium",
+  "note": "Two: Abdus Salam, Malala; Pakistani-origin counts vary"
+ },
+ {
+  "id": 245,
+  "pick": 2,
+  "confidence": "medium",
+  "note": "Naila Kiani 2022 first Pakistani woman on K2"
+ },
+ {
+  "id": 251,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 257,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 263,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 269,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 275,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 281,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 287,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 293,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 299,
+  "pick": 0,
+  "confidence": "medium",
+  "note": "Gotthard Base 57 km is longest"
+ },
+ {
+  "id": 305,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 311,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 317,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 323,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 329,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 335,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 341,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 347,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 353,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 359,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 365,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 371,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 377,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 383,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 389,
+  "pick": 3,
+  "confidence": "medium",
+  "note": "Two: Abdus Salam, Malala"
+ },
+ {
+  "id": 395,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 401,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 407,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 413,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 419,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 425,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 431,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 437,
+  "pick": 2,
+  "confidence": "medium",
+  "note": "Nile traditional; Amazon argued"
+ },
+ {
+  "id": 443,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 449,
+  "pick": 2,
+  "confidence": "medium",
+  "note": "57 members"
+ },
+ {
+  "id": 455,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 461,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 467,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 473,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 479,
+  "pick": 2,
+  "confidence": "medium",
+  "note": "No 2026 successor found via search; Blome last confirmed"
+ },
+ {
+  "id": 485,
+  "pick": 2,
+  "confidence": "medium",
+  "note": "250 articles per common sources"
+ },
+ {
+  "id": 491,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 497,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 503,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 509,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 515,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 521,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 527,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 533,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 539,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 545,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 551,
+  "pick": 2,
+  "confidence": "medium",
+  "note": "86 Makki is common count"
+ },
+ {
+  "id": 557,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 563,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 569,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 575,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 581,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 587,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 593,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 599,
+  "pick": 1,
+  "confidence": "medium",
+  "note": "Jakarta ranked first per UN WUP 2025 (search confirmed)"
+ },
+ {
+  "id": 605,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 611,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 617,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 623,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 629,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 635,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 641,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 647,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 653,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 659,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 665,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 671,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 677,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 683,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 689,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 695,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 701,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 707,
+  "pick": 1,
+  "confidence": "low",
+  "note": "Date of Fatima Jinnah joining Muslim League unclear; 1947 guess"
+ },
+ {
+  "id": 713,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 719,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 725,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 731,
+  "pick": 3,
+  "confidence": "high"
+ },
+ {
+  "id": 737,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 743,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 749,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 755,
+  "pick": 2,
+  "confidence": "medium",
+  "note": "Pakistan won 30+ titles; exam figure uncertain"
+ },
+ {
+  "id": 761,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 767,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 773,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 779,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 785,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 791,
+  "pick": 0,
+  "confidence": "high"
+ },
+ {
+  "id": 797,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 803,
+  "pick": 2,
+  "confidence": "high"
+ },
+ {
+  "id": 809,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 815,
+  "pick": 1,
+  "confidence": "high"
+ },
+ {
+  "id": 821,
+  "pick": 3,
+  "confidence": "high"
+ }
+]

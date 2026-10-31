@@ -1,0 +1,202 @@
+<style>
+#auth{--tx:#1d1647;--mu:#5f5694;--gl:rgba(255,255,255,.42);--gbd:rgba(255,255,255,.85);--fb:rgba(255,255,255,.55);--fbd:rgba(120,95,210,.28);--ph:#9a90c8;--lk:#6d3fd6;--gh:rgba(255,255,255,.5);--ac:#8b5cf6;
+  position:fixed;inset:0;z-index:9990;overflow:auto;font-family:'Plus Jakarta Sans','Roboto','Inter',system-ui,sans-serif;color:var(--tx);background:linear-gradient(160deg,#fde8d4,#efe3ff 45%,#d6ecff);transition:opacity .6s ease,visibility .6s}
+html.dark #auth{--tx:#f3efff;--mu:#bdb3e6;--gl:rgba(24,18,66,.42);--gbd:rgba(190,170,255,.32);--fb:rgba(10,8,38,.45);--fbd:rgba(190,170,255,.3);--ph:#8d82bd;--lk:#b79bff;--gh:rgba(255,255,255,.08);background:linear-gradient(160deg,#0b0a2a,#1b1250 50%,#0b2347)}
+#auth.hide{opacity:0;visibility:hidden}
+#auth .sky{position:fixed;inset:0;overflow:hidden;pointer-events:none}
+#auth .lyr{position:absolute;inset:-4%;transform:translate3d(calc(var(--px,0)*var(--d,0)*1px),calc(var(--py,0)*var(--d,0)*1px),0);transition:transform .35s ease-out;will-change:transform}
+/* liquid blobs */
+#auth .bl{position:absolute;border-radius:46% 54% 60% 40%/50% 42% 58% 50%;filter:blur(2px);animation:auBlob 60s ease-in-out infinite alternate}
+#auth .bl.b1{left:-8%;top:-10%;width:52vmax;height:46vmax;background:radial-gradient(circle at 35% 30%,#fff8,#b79bff 55%,#8b6cf0);opacity:.7}
+#auth .bl.b2{right:-12%;top:12%;width:46vmax;height:42vmax;background:radial-gradient(circle at 35% 30%,#fff8,#7fd0ff 55%,#4aa8f5);opacity:.6;animation-duration:75s;animation-delay:-14s}
+#auth .bl.b3{left:18%;bottom:-22%;width:44vmax;height:36vmax;background:radial-gradient(circle at 35% 30%,#fff8,#ffc8a0 55%,#ff9ec0);opacity:.55;animation-duration:85s;animation-delay:-30s}
+html.dark #auth .bl{opacity:.38}
+@keyframes auBlob{0%{transform:translate(0,0) rotate(0) scale(1)}100%{transform:translate(4vw,3vh) rotate(25deg) scale(1.1)}}
+/* floating study icons + sparkles */
+#auth .fi{position:absolute;filter:drop-shadow(0 10px 12px rgba(70,50,180,.3));animation:auFloat 22s ease-in-out infinite}
+#auth .fi svg{width:100%;height:100%;display:block}
+#auth .fi.i1{left:8%;top:22%;width:64px;height:64px}#auth .fi.i2{right:9%;top:62%;width:58px;height:58px;animation-delay:-7s}#auth .fi.i3{left:12%;bottom:12%;width:54px;height:54px;animation-delay:-12s}#auth .fi.i4{right:14%;top:12%;width:50px;height:50px;animation-delay:-4s}
+@keyframes auFloat{0%,100%{translate:0 0;rotate:-5deg}50%{translate:8px -16px;rotate:6deg}}
+#auth .sp{position:absolute;width:26px;height:26px;animation:auTw 5s ease-in-out infinite}
+#auth .sp:before,#auth .sp:after{content:"";position:absolute;left:50%;top:50%;background:radial-gradient(closest-side,#fff,transparent);transform:translate(-50%,-50%)}
+#auth .sp:before{width:26px;height:2px}#auth .sp:after{width:2px;height:26px}
+#auth .sp.a{left:30%;top:18%}#auth .sp.b{right:28%;top:30%;animation-delay:-2s}#auth .sp.c{left:22%;top:70%;animation-delay:-3s}#auth .sp.d{right:20%;bottom:16%;animation-delay:-1s}
+@keyframes auTw{0%,100%{opacity:1;scale:1}50%{opacity:.3;scale:.6}}
+#auth .brand{position:absolute;left:28px;top:22px;z-index:3;display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;color:var(--tx)}
+#auth .brand i{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(135deg,#8b5cf6,#38bdf8);box-shadow:0 8px 20px rgba(139,92,246,.45);font-style:normal;font-size:18px}
+#auth .brand small{display:block;font-size:9px;letter-spacing:5px;font-weight:600;color:var(--mu);margin-top:-2px}
+/* glass card */
+#auth .side{position:relative;z-index:2;min-height:100%;display:flex;align-items:center;justify-content:center;padding:64px 16px 32px;box-sizing:border-box;perspective:1100px}
+#auth .wrap{position:relative;overflow:hidden;width:100%;max-width:400px;padding:0 28px 22px;border-radius:30px;background:linear-gradient(145deg,rgba(255,255,255,.5),var(--gl) 40%,rgba(255,255,255,.14));border:1px solid var(--gbd);backdrop-filter:blur(26px) saturate(170%);-webkit-backdrop-filter:blur(26px) saturate(170%);
+  box-shadow:0 34px 70px -24px rgba(60,40,160,.55),inset 0 2px 2px rgba(255,255,255,.9),inset 0 -18px 30px rgba(120,100,220,.12);
+  transform:rotateY(calc(var(--px,0)*4deg)) rotateX(calc(var(--py,0)*-3deg));transition:transform .4s ease-out}
+html.dark #auth .wrap{background:linear-gradient(145deg,rgba(255,255,255,.14),var(--gl) 40%,rgba(255,255,255,.04));box-shadow:0 34px 70px -24px rgba(0,0,0,.7),inset 0 1px 1px rgba(255,255,255,.3),0 0 40px -10px rgba(120,100,255,.3)}
+#auth .wrap:after{content:"";position:absolute;top:-30%;left:-60%;width:40%;height:160%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:rotate(12deg);animation:auShine 9s ease-in-out infinite;pointer-events:none}
+html.dark #auth .wrap:after{background:linear-gradient(100deg,transparent,rgba(255,255,255,.16),transparent)}
+@keyframes auShine{0%,55%{left:-60%}100%{left:130%}}
+/* cap hero */
+#auth .hero{position:relative;width:200px;height:150px;margin:18px auto 0;transform-style:preserve-3d;transform:translate3d(calc(var(--px,0)*8px),calc(var(--py,0)*6px),0) rotateY(calc(var(--px,0)*14deg)) rotateX(calc(var(--py,0)*-10deg));transition:transform .3s ease-out;animation:auHero 9s ease-in-out infinite;filter:drop-shadow(0 18px 14px rgba(60,40,140,.35))}
+@keyframes auHero{0%,100%{translate:0 0}50%{translate:0 -9px}}
+#auth .hero svg{width:100%;height:100%;overflow:visible}
+#auth .tas{transform-origin:170px 60px;animation:auSwing 5s ease-in-out infinite alternate}
+@keyframes auSwing{from{transform:rotate(-7deg)}to{transform:rotate(7deg)}}
+#auth h2{font-size:25px;font-weight:800;letter-spacing:-.3px;text-align:center;margin:6px 0 4px}
+#auth .sub{font-size:13.5px;color:var(--mu);margin:0 0 14px;text-align:center}
+#auth .fld{position:relative;margin-top:11px}
+#auth .fld label{display:block;font-size:12.5px;font-weight:600;color:var(--mu);margin:0 0 5px 3px}
+#auth input.in{width:100%;box-sizing:border-box;height:50px;padding:0 46px 0 16px;border-radius:16px;border:1px solid var(--fbd);background:var(--fb);color:var(--tx);font-size:15px;font-family:inherit;outline:none;box-shadow:inset 0 2px 6px rgba(80,60,170,.12),inset 0 1px 0 rgba(255,255,255,.5);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:border .2s,box-shadow .2s}
+#auth input.in::placeholder{color:var(--ph)}
+#auth input.in:focus{border-color:var(--ac);box-shadow:0 0 0 3px rgba(139,92,246,.3),inset 0 2px 6px rgba(80,60,170,.1)}
+#auth .eye{position:absolute;right:12px;bottom:13px;background:none;border:0;color:var(--ph);cursor:pointer;padding:2px;z-index:2}
+#auth .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+#auth .opts{display:flex;justify-content:space-between;align-items:center;margin:14px 0 16px;font-size:13px;color:var(--mu)}
+#auth .opts a,#auth .foot a{color:var(--lk);text-decoration:none;font-weight:700;cursor:pointer}
+#auth .chk{display:flex;align-items:center;gap:8px;cursor:pointer}
+#auth .chk input{accent-color:#8b5cf6;width:16px;height:16px}
+#auth .btn{position:relative;overflow:hidden;width:100%;height:52px;border:0;border-radius:16px;font-weight:800;font-size:16px;color:#fff;cursor:pointer;background:linear-gradient(135deg,#8b5cf6,#5b4ae6 55%,#3b9be0);box-shadow:0 7px 0 rgba(50,30,140,.35),0 18px 28px -10px rgba(99,70,229,.7),inset 0 2px 2px rgba(255,255,255,.55),inset 0 -10px 16px rgba(0,0,0,.14);transition:transform .12s,box-shadow .12s}
+#auth .btn:before{content:"";position:absolute;left:8%;right:8%;top:3px;height:44%;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,.5),rgba(255,255,255,0))}
+#auth .btn:active{transform:translateY(5px);box-shadow:0 2px 0 rgba(50,30,140,.35),0 6px 12px -6px rgba(99,70,229,.6),inset 0 2px 2px rgba(255,255,255,.5)}
+#auth .guest{width:100%;margin-top:14px;height:48px;border-radius:16px;font-weight:700;font-size:14.5px;cursor:pointer;color:var(--tx);background:var(--gh);border:1px solid var(--fbd);box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 8px 16px -10px rgba(70,50,180,.4);transition:background .2s,transform .15s}
+#auth .guest:hover{background:rgba(139,92,246,.2);transform:translateY(-1px)}
+#auth .orr{display:flex;align-items:center;gap:12px;margin:14px 0 0;font-size:11px;font-weight:700;letter-spacing:2px;color:var(--mu)}
+#auth .orr:before,#auth .orr:after{content:"";flex:1;height:1px;background:var(--fbd)}
+#auth .foot{text-align:center;font-size:14px;margin-top:14px;color:var(--mu)}
+#auth .err{min-height:16px;font-size:12.5px;color:#d6334a;margin-top:10px;text-align:center}
+#auth .err.ok{color:#14905a}
+html.dark #auth .err{color:#ff8fa3}html.dark #auth .err.ok{color:#7ff0b8}
+#auth .copy{text-align:center;font-size:9.5px;letter-spacing:1.4px;text-transform:uppercase;color:var(--mu);opacity:.6;margin-top:14px}
+#auth .pane{transition:opacity .35s ease,filter .35s ease,transform .35s ease}
+#auth .pane.out{opacity:0;filter:blur(8px);transform:translateY(10px);pointer-events:none}
+#auth .pane[hidden]{display:none}
+#auth .logo{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .35s;z-index:5}
+#auth .logo.on{opacity:1}
+#auth .logo .ring{position:absolute;width:200px;height:200px;border-radius:50%;border:2px solid rgba(167,139,250,.5);box-shadow:0 0 60px rgba(139,92,246,.5),inset 0 0 40px rgba(139,92,246,.3)}
+#auth .logo.on .ring{animation:authRing .9s ease-out}
+#auth .logo .mk{position:relative;font-size:56px}
+#auth .logo.on .mk{animation:authPop .9s ease}
+@keyframes authRing{0%{transform:scale(.4);opacity:0}60%{opacity:1}100%{transform:scale(1.15);opacity:0}}
+@keyframes authPop{0%{transform:scale(.6) rotate(-20deg);opacity:0}50%{transform:scale(1.08) rotate(0);opacity:1}100%{transform:scale(1)}}
+#authUser{position:fixed;right:12px;bottom:12px;z-index:60;display:none;align-items:center;gap:8px;padding:7px 12px;border-radius:999px;font-size:12px;font-weight:600;background:rgba(15,23,42,.88);color:#e2e8f0}
+#authUser button{background:none;border:1px solid rgba(255,255,255,.25);color:#cbd5e1;border-radius:999px;padding:3px 9px;font-size:11px;cursor:pointer}
+@media (max-width:520px){#auth .wrap{padding:0 20px 18px;border-radius:26px}#auth .hero{width:170px;height:128px}#auth .row2{grid-template-columns:1fr}#auth .fi.i2,#auth .fi.i3,#auth .fi.i4{display:none}#auth .brand{left:18px;top:16px}}
+@media (prefers-reduced-motion:reduce){#auth *{animation:none!important}}
+</style>
+<div id="auth" role="dialog" aria-label="Student Login">
+  <div class="sky">
+    <div class="lyr" data-d="10"><i class="bl b1"></i><i class="bl b2"></i><i class="bl b3"></i></div>
+    <div class="lyr" data-d="26"><i class="sp a"></i><i class="sp b"></i><i class="sp c"></i><i class="sp d"></i></div>
+    <div class="lyr" data-d="40">
+      <div class="fi i1"><svg viewBox="0 0 64 64"><defs><linearGradient id="aB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a78bfa"/><stop offset="1" stop-color="#5b3fd6"/></linearGradient></defs><path d="M6 14c8-3 18-3 26 3v37c-8-6-18-6-26-3z" fill="url(#aB)"/><path d="M58 14c-8-3-18-3-26 3v37c8-6 18-6 26-3z" fill="url(#aB)" opacity=".8"/><path d="M12 22c6-1.5 12-1 16 2M12 30c6-1.5 12-1 16 2M52 22c-6-1.5-12-1-16 2M52 30c-6-1.5-12-1-16 2" stroke="#fff" stroke-width="2.4" stroke-linecap="round" fill="none" opacity=".85"/></svg></div>
+      <div class="fi i2"><svg viewBox="0 0 64 64"><defs><linearGradient id="aP" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fde68a"/><stop offset="1" stop-color="#f59e0b"/></linearGradient></defs><g transform="rotate(40 32 32)"><rect x="25" y="4" width="14" height="40" rx="3" fill="url(#aP)"/><rect x="25" y="4" width="14" height="7" rx="3" fill="#f9a8d4"/><path d="M25 44h14l-7 15z" fill="#fde7c3"/><path d="M29.500 53h5l-2.500 6z" fill="#334155"/><path d="M29 12v32" stroke="#fff" stroke-width="2" opacity=".6"/></g></svg></div>
+      <div class="fi i3"><svg viewBox="0 0 64 64"><defs><linearGradient id="aL" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fef08a"/><stop offset="1" stop-color="#f59e0b"/></linearGradient></defs><path d="M32 5c-10 0-18 7.500-18 17 0 6.500 3.500 10.500 7 14.500 2 2.300 3 4 3 7h16c0-3 1-4.700 3-7 3.500-4 7-8 7-14.500C50 12.500 42 5 32 5z" fill="url(#aL)"/><rect x="23" y="46" width="18" height="5" rx="2.500" fill="#94a3b8"/><rect x="25" y="53" width="14" height="5" rx="2.500" fill="#64748b"/><path d="M26 22c1-4 4-6 8-6" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none" opacity=".8"/></svg></div>
+      <div class="fi i4"><svg viewBox="0 0 64 64"><defs><linearGradient id="aC" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f0abfc"/><stop offset="1" stop-color="#c026d3"/></linearGradient></defs><circle cx="32" cy="34" r="22" fill="url(#aC)"/><circle cx="32" cy="34" r="17" fill="#fff" opacity=".92"/><path d="M32 34V23M32 34l8 5" stroke="#6d28d9" stroke-width="3.200" stroke-linecap="round"/><path d="M22 8l-6 6M42 8l6 6" stroke="#c026d3" stroke-width="5" stroke-linecap="round"/></svg></div>
+    </div>
+  </div>
+  <div class="brand"><i>&#127891;</i><div>PMA<small>PREPARATION</small></div></div>
+  <div class="logo" id="authLogo"><span class="ring"></span><span class="mk">&#127891;</span></div>
+  <div class="side"><div class="wrap">
+      <div class="hero" aria-hidden="true"><svg viewBox="0 0 200 150"><defs>
+        <linearGradient id="hcB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a4a5e"/><stop offset=".5" stop-color="#17171f"/><stop offset="1" stop-color="#2a2a3a"/></linearGradient>
+        <linearGradient id="hcS" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b2b38"/><stop offset="1" stop-color="#0c0c12"/></linearGradient>
+        <linearGradient id="hcG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe9a0"/><stop offset="1" stop-color="#e9a521"/></linearGradient>
+        <linearGradient id="hcP" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff6dc"/><stop offset="1" stop-color="#e8d19b"/></linearGradient>
+        <radialGradient id="hcR" cx=".35" cy=".3"><stop offset="0" stop-color="#ffc46b"/><stop offset="1" stop-color="#e2681b"/></radialGradient></defs>
+        <path d="M44 66v36c0 14 25 24 56 24s56-10 56-24V66L100 84z" fill="url(#hcS)"/>
+        <path d="M52 78v22c0 9 22 17 48 17" stroke="rgba(255,255,255,.18)" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <rect x="6" y="88" width="82" height="22" rx="11" fill="url(#hcP)" transform="rotate(-18 47 99)"/>
+        <circle cx="14" cy="104" r="11" fill="#e8d19b" stroke="#d1b878" stroke-width="2" transform="rotate(-18 47 99)"/>
+        <path d="M14 98a6 6 0 1 1-5 6" stroke="#c9ad6b" stroke-width="2" fill="none" transform="rotate(-18 47 99)"/>
+        <path d="M52 112l-10 22 11-6 7 10 4-24z" fill="#c9302c"/><path d="M60 112l8 22 5-10 11 5-8-21z" fill="#a82220"/>
+        <circle cx="62" cy="108" r="12" fill="url(#hcR)" stroke="#f08a2c" stroke-width="2"/><circle cx="62" cy="108" r="6" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.5"/>
+        <polygon points="100,14 194,50 100,86 6,50" fill="url(#hcB)"/>
+        <polygon points="100,14 194,50 100,86 6,50" fill="none" stroke="rgba(255,255,255,.22)" stroke-width="1.5" stroke-linejoin="round"/>
+        <polygon points="100,20 150,40 100,52 48,40" fill="rgba(255,255,255,.12)"/>
+        <ellipse cx="100" cy="50" rx="8" ry="4.500" fill="url(#hcG)"/>
+        <path d="M100 50L168 58" stroke="#f0b72f" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <g class="tas"><path d="M168 58v34" stroke="#f0b72f" stroke-width="3" stroke-linecap="round"/><rect x="163" y="90" width="10" height="9" rx="3" fill="#d9951a"/><path d="M162 99h12l2 24h-16z" fill="url(#hcG)"/><path d="M165 101v20M169 101v20M173 101v20" stroke="rgba(160,100,10,.35)" stroke-width="1"/></g>
+      </svg></div>
+      <form class="pane" id="paneIn" autocomplete="on" onsubmit="return authSignIn(event)">
+        <h2>Student Login</h2>
+        <p class="sub">Welcome back! Login to continue.</p>
+        <div class="fld"><label for="inEmail">Email</label><input class="in" id="inEmail" type="email" placeholder="yourname@gmail.com" autocomplete="email" required></div>
+        <div class="fld"><label for="inPass">Password</label><input class="in" id="inPass" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" autocomplete="current-password" required>
+          <button type="button" class="eye" onclick="authEye('inPass')" aria-label="Show password"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+        <div class="opts"><label class="chk"><input type="checkbox" id="inRemember" checked> Remember Me</label><a onclick="authForgot()">Forgot password?</a></div>
+        <button class="btn" type="submit">Log In</button>
+        <div class="orr">OR</div>
+        <button class="guest" type="button" onclick="authGuest()">Continue as Guest &rarr;</button>
+        <div class="err" id="inErr"></div>
+        <div class="foot">Don't have an account? <a onclick="authSwitch('up')">Sign up</a></div>
+      </form>
+      <form class="pane out" id="paneUp" hidden autocomplete="on" onsubmit="return authSignUp(event)">
+        <h2>Create Account</h2>
+        <p class="sub">Sign up free to save your progress.</p>
+        <div class="fld"><label for="upName">Full Name</label><input class="in" id="upName" type="text" placeholder="Your name" autocomplete="name" required></div>
+        <div class="fld"><label for="upEmail">Email</label><input class="in" id="upEmail" type="email" placeholder="yourname@gmail.com" autocomplete="email" required></div>
+        <div class="row2"><div class="fld"><label for="upPass">Password</label><input class="in" id="upPass" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" autocomplete="new-password" required minlength="6">
+          <button type="button" class="eye" onclick="authEye('upPass')" aria-label="Show password"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div><div class="fld"><label for="upPass2">Confirm</label><input class="in" id="upPass2" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" autocomplete="new-password" required minlength="6">
+          <button type="button" class="eye" onclick="authEye('upPass2')" aria-label="Show password"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div></div>
+        <div class="opts"><label class="chk"><input type="checkbox" id="upAgree" checked> I agree to the Terms &amp; Privacy</label></div>
+        <button class="btn" type="submit">Create Account</button>
+        <div class="orr">OR</div>
+        <button class="guest" type="button" onclick="authGuest()">Continue as Guest &rarr;</button>
+        <div class="err" id="upErr"></div>
+        <div class="foot">Already have an account? <a onclick="authSwitch('in')">Login</a></div>
+      </form>
+      <div class="copy">&copy; PMA Preparation</div>
+  </div></div>
+</div>
+<script>
+(function(){
+  var a=document.getElementById('auth');if(!a)return;
+  [].forEach.call(a.querySelectorAll('.lyr'),function(l){l.style.setProperty('--d',l.getAttribute('data-d')||0)});
+  function set(x,y){a.style.setProperty('--px',Math.max(-1,Math.min(1,x)).toFixed(3));a.style.setProperty('--py',Math.max(-1,Math.min(1,y)).toFixed(3))}
+  window.addEventListener('mousemove',function(e){set(e.clientX/innerWidth*2-1,e.clientY/innerHeight*2-1)});
+  var base=null,on=false;
+  function ori(e){if(e.gamma==null)return;if(!base)base={b:e.beta,g:e.gamma};set((e.gamma-base.g)/25,(e.beta-base.b)/25)}
+  function start(){if(on)return;on=true;window.addEventListener('deviceorientation',ori)}
+  function ask(){
+    if(typeof DeviceOrientationEvent!=='undefined'&&typeof DeviceOrientationEvent.requestPermission==='function'){
+      DeviceOrientationEvent.requestPermission().then(function(r){if(r==='granted')start()}).catch(function(){});
+    }else start();
+  }
+  a.addEventListener('touchstart',function(){ask()},{once:true,passive:true});
+  a.addEventListener('click',function(){ask()},{once:true});
+  if(typeof DeviceOrientationEvent!=='undefined'&&typeof DeviceOrientationEvent.requestPermission!=='function')start();
+  a.addEventListener('touchmove',function(e){var t=e.touches[0];if(t&&!base)set(t.clientX/innerWidth*2-1,t.clientY/innerHeight*2-1)},{passive:true});
+})();
+</script>
+<div id="authUser"><span id="authUserName"></span><button onclick="authLogout()">Log out</button></div>
+<script>
+(function(){
+  var LS={get:function(k){try{return JSON.parse(localStorage.getItem(k))}catch(e){return null}},set:function(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}},del:function(k){try{localStorage.removeItem(k)}catch(e){}}};
+  var S=null; try{S=JSON.parse(sessionStorage.getItem('an_session_tmp'))}catch(e){}
+  function hash(s){var h=5381;for(var i=0;i<s.length;i++){h=((h<<5)+h+s.charCodeAt(i))|0}return 'h'+(h>>>0).toString(36)+'_'+s.length}
+  function $(id){return document.getElementById(id)}
+  function showUser(u){var b=$('authUser');if(!u){b.style.display='none';return}$('authUserName').textContent=(u.guest?'Guest':'\u{1F464} '+u.name);b.style.display='flex'}
+  function enter(u,remember){if(remember)LS.set('an_session',u);else{LS.del('an_session');try{sessionStorage.setItem('an_session_tmp',JSON.stringify(u))}catch(e){}}
+    var a=$('auth');a.classList.add('hide');showUser(u)}
+  window.authEye=function(id){var i=$(id);i.type=i.type==='password'?'text':'password'};
+  window.authSwitch=function(to){var from=to==='up'?$('paneIn'):$('paneUp'),nx=to==='up'?$('paneUp'):$('paneIn'),lg=$('authLogo');
+    $('inErr').textContent='';$('upErr').textContent='';from.classList.add('out');
+    setTimeout(function(){from.hidden=true;lg.classList.add('on')},300);
+    setTimeout(function(){lg.classList.remove('on');nx.hidden=false;void nx.offsetWidth;nx.classList.remove('out')},1150)};
+  window.authGuest=function(){enter({guest:true,name:'Guest'},false)};
+  window.authSocial=function(n){var e=$('paneIn').hidden?$('upErr'):$('inErr');e.className='err';e.textContent=n+' sign-in is not available yet. Please use email, or Continue as Guest.'};
+  window.authForgot=function(){var e=$('inErr');e.className='err';e.textContent='Accounts are saved on this device only. If you forgot the password, create a new account or Continue as Guest.'};
+  window.authSignUp=function(ev){ev.preventDefault();var n=$('upName').value.trim(),m=$('upEmail').value.trim().toLowerCase(),p=$('upPass').value,p2=$('upPass2').value,e=$('upErr');e.className='err';
+    if(p.length<6){e.textContent='Password must be at least 6 characters.';return false}
+    if(p!==p2){e.textContent='Passwords do not match.';return false}
+    if(!$('upAgree').checked){e.textContent='Please agree to the Terms & Privacy Policy.';return false}
+    var us=LS.get('an_users')||{};if(us[m]){e.textContent='An account with this email already exists. Please sign in.';return false}
+    us[m]={name:n,h:hash(m+'|'+p)};LS.set('an_users',us);e.className='err ok';e.textContent='Account created. Welcome, '+n+'!';
+    setTimeout(function(){enter({name:n,email:m},true)},700);return false};
+  window.authSignIn=function(ev){ev.preventDefault();var m=$('inEmail').value.trim().toLowerCase(),p=$('inPass').value,e=$('inErr');e.className='err';
+    var us=LS.get('an_users')||{},u=us[m];
+    if(!u){e.textContent='No account found with this email on this device. Please Sign Up first.';return false}
+    if(u.h!==hash(m+'|'+p)){e.textContent='Wrong password. Please try again.';return false}
+    enter({name:u.name,email:m},$('inRemember').checked);return false};
+  window.authLogout=function(){LS.del('an_session');try{sessionStorage.removeItem('an_session_tmp')}catch(e){}showUser(null);var pi=$('paneIn'),pu=$('paneUp');pu.hidden=true;pu.classList.add('out');pi.hidden=false;pi.classList.remove('out');$('inErr').textContent='';$('upErr').textContent='';var a=$('auth');a.classList.remove('hide');window.scrollTo(0,0)};
+  var cur=LS.get('an_session')||S;if(cur){$('auth').classList.add('hide');showUser(cur)}
+})();
+</script>

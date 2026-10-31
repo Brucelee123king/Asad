@@ -1,0 +1,257 @@
+[
+ {
+  "question": "What is the factorial of 4 (4!)?",
+  "options": [
+   "12",
+   "24",
+   "16",
+   "120"
+  ],
+  "correct": 1,
+  "why": "4! = 4 x 3 x 2 x 1 = 24. 12 is only 4 x 3, 16 is 4 x 4, and 120 is 5!.",
+  "rel": "0! = 1 and 5! = 120. 3! = 6.",
+  "rep": 0,
+  "src": "exp 1",
+  "note": ""
+ },
+ {
+  "question": "What is the negative of iota (i)?",
+  "options": [
+   "i",
+   "1",
+   "-i",
+   "-1"
+  ],
+  "correct": 2,
+  "why": "The negative of any number x is -x, so the negative of i is -i. i is the number itself, and 1 and -1 are real numbers, not the negative of i.",
+  "rel": "i squared = -1, so 1/i = -i. i to the power 4 = 1.",
+  "rep": 0,
+  "src": "exp 1",
+  "note": ""
+ },
+ {
+  "question": "Where was Benazir Bhutto assassinated on 27 December 2007?",
+  "options": [
+   "Liaquat Bagh, Rawalpindi",
+   "Karsaz, Karachi",
+   "Jinnah Park, Lahore",
+   "Garhi Khuda Bakhsh, Larkana"
+  ],
+  "correct": 0,
+  "why": "Benazir Bhutto was killed after an election rally at Liaquat Bagh, Rawalpindi. Karsaz in Karachi was the earlier October 2007 attack on her rally, and Garhi Khuda Bakhsh is where she is buried.",
+  "rel": "Liaquat Ali Khan, the first PM, was also assassinated at the same park in Rawalpindi in 1951.",
+  "rep": 0,
+  "src": "exp 1",
+  "note": ""
+ },
+ {
+  "question": "What is 90% of 90?",
+  "options": [
+   "90",
+   "72",
+   "9",
+   "81"
+  ],
+  "correct": 3,
+  "why": "90% of 90 = 0.9 x 90 = 81. 90 is 100%, 9 is 10%, and 72 is 80% of 90.",
+  "rel": "10% of a number = the number divided by 10. 50% of 90 = 45.",
+  "rep": 0,
+  "src": "exp 1",
+  "note": ""
+ },
+ {
+  "question": "What is one third of one tenth of 90?",
+  "options": [
+   "3",
+   "9",
+   "30",
+   "1"
+  ],
+  "correct": 0,
+  "why": "One tenth of 90 is 9, and one third of 9 is 3. 9 is only one tenth, 30 is only one third, and 1 is too small.",
+  "rel": "Of means multiply: (1/3) x (1/10) x 90 = 90/30 = 3.",
+  "rep": 0,
+  "src": "exp 1",
+  "note": ""
+ },
+ {
+  "question": "What was the name of the father of Hazrat Khadija (RA)?",
+  "options": [
+   "Abu Talib",
+   "Khuwaylid",
+   "Abdul Muttalib",
+   "Abu Quhafa"
+  ],
+  "correct": 1,
+  "why": "Hazrat Khadija (RA) was the daughter of Khuwaylid ibn Asad of the Quraysh. Abu Talib was the Prophet's uncle, Abdul Muttalib his grandfather, and Abu Quhafa the father of Hazrat Abu Bakr (RA).",
+  "rel": "Hazrat Khadija (RA) was the first wife of the Prophet (PBUH) and the first person to accept Islam. Her title is Tahira.",
+  "rep": 0,
+  "src": "exp 1",
+  "note": ""
+ },
+ {
+  "question": "Who married two daughters of the Holy Prophet (PBUH)?",
+  "options": [
+   "Hazrat Ali (RA)",
+   "Hazrat Umar (RA)",
+   "Hazrat Uthman (RA)",
+   "Hazrat Abu Bakr (RA)"
+  ],
+  "correct": 2,
+  "why": "Hazrat Uthman (RA) married Hazrat Ruqayyah (RA) and, after her death, Hazrat Umm Kulthum (RA), so he is called Dhun-Nurayn (possessor of two lights). Hazrat Ali (RA) married only Hazrat Fatima (RA), and Abu Bakr and Umar (RA) were fathers-in-law of the Prophet.",
+  "rel": "Hazrat Zainab (RA), the eldest daughter, married Abul As. Hazrat Fatima (RA) married Hazrat Ali (RA).",
+  "rep": 1,
+  "src": "exp 1",
+  "note": "Also asked in experience 8."
+ },
+ {
+  "question": "What is the meaning of Al-Ahzab, the name of Surah 33?",
+  "options": [
+   "The Cave",
+   "The Confederates (Allied Clans)",
+   "The Spoils of War",
+   "The Victory"
+  ],
+  "correct": 1,
+  "why": "Ahzab means the confederates or allied groups, the tribes who joined to attack Madinah in the Battle of the Trench. The Cave is Al-Kahf, the Spoils of War is Al-Anfal, and the Victory is Al-Fath.",
+  "rel": "The Battle of Ahzab (Khandaq) took place in 5 AH. The trench was suggested by Hazrat Salman Farsi (RA).",
+  "rep": 0,
+  "src": "exp 1",
+  "note": ""
+ },
+ {
+  "question": "What is the capital city of Australia?",
+  "options": [
+   "Canberra",
+   "Sydney",
+   "Melbourne",
+   "Perth"
+  ],
+  "correct": 0,
+  "why": "Canberra is the capital of Australia. Sydney is the largest city, and Melbourne and Perth are other big cities, not the capital.",
+  "rel": "Wellington is the capital of New Zealand. Ottawa is the capital of Canada.",
+  "rep": 0,
+  "src": "exp 1",
+  "note": ""
+ },
+ {
+  "question": "Which is the largest seaport of Pakistan?",
+  "options": [
+   "Gwadar Port",
+   "Port Qasim",
+   "Karachi Port",
+   "Pasni Port"
+  ],
+  "correct": 2,
+  "why": "Karachi Port is the largest and busiest seaport of Pakistan. Port Qasim is the second largest, Gwadar is a newer deep-sea port under CPEC, and Pasni is a small fishing port.",
+  "rel": "Port Qasim is also in Karachi. Gwadar Port is in Balochistan.",
+  "rep": 0,
+  "src": "exp 1",
+  "note": ""
+ },
+ {
+  "question": "The Eiffel Tower in Paris was completed in which year?",
+  "options": [
+   "1789",
+   "1914",
+   "1901",
+   "1889"
+  ],
+  "correct": 3,
+  "why": "The Eiffel Tower was built from 1887 and completed in 1889 for the World Fair in Paris. 1789 was the French Revolution, and 1901 and 1914 are too late.",
+  "rel": "It was designed by the company of Gustave Eiffel. The Statue of Liberty (1886) was a gift from France to the USA.",
+  "rep": 0,
+  "src": "exp 2",
+  "note": ""
+ },
+ {
+  "question": "Ayat al-Birr (the verse of righteousness) is in which Surah?",
+  "options": [
+   "Surah Al-Baqarah",
+   "Surah Al-Imran",
+   "Surah An-Nisa",
+   "Surah Al-Maidah"
+  ],
+  "correct": 0,
+  "why": "Ayat al-Birr is verse 177 of Surah Al-Baqarah; it says righteousness is not turning faces east or west but true faith and good deeds. The other Surahs do not contain this verse.",
+  "rel": "Ayat al-Kursi is verse 255 of Surah Al-Baqarah. Ayat al-Dain (longest verse) is verse 282 of Al-Baqarah.",
+  "rep": 0,
+  "src": "exp 4",
+  "note": ""
+ },
+ {
+  "question": "Which animal was with the Ashab-e-Kahf (People of the Cave) in the cave?",
+  "options": [
+   "A cat",
+   "A dog",
+   "A camel",
+   "A horse"
+  ],
+  "correct": 1,
+  "why": "Surah Al-Kahf says a dog stretched its forelegs at the entrance of the cave. The Quran mentions no cat, camel or horse with them.",
+  "rel": "The dog is traditionally named Qitmir. The sleepers stayed in the cave for 309 years (Al-Kahf 18:25).",
+  "rep": 0,
+  "src": "exp 4",
+  "note": ""
+ },
+ {
+  "question": "What was the age of the Holy Prophet (PBUH) at the time of Hijrat to Madinah?",
+  "options": [
+   "40 years",
+   "63 years",
+   "53 years",
+   "50 years"
+  ],
+  "correct": 2,
+  "why": "The Prophet (PBUH) received the first revelation at 40 and spent 13 years preaching in Makkah, so he migrated at 53. 63 was his age at death, and 50 was his age in the Year of Grief.",
+  "rel": "Hijrat took place in 622 AD; Hazrat Abu Bakr (RA) was with him in Cave Thawr.",
+  "rep": 0,
+  "src": "exp 4",
+  "note": ""
+ },
+ {
+  "question": "Who wrote the book My Brother?",
+  "options": [
+   "Fatima Jinnah",
+   "Quaid-e-Azam",
+   "Allama Iqbal",
+   "Begum Ra'ana Liaquat Ali Khan"
+  ],
+  "correct": 0,
+  "why": "My Brother is a book by Mohtarma Fatima Jinnah about her brother Quaid-e-Azam Muhammad Ali Jinnah. The Quaid did not write it about himself, and Iqbal and Begum Ra'ana Liaquat did not write it.",
+  "rel": "Fatima Jinnah is called Madr-e-Millat (Mother of the Nation). The book was published in 1987 by the Quaid-e-Azam Academy.",
+  "rep": 0,
+  "src": "exp 5",
+  "note": ""
+ },
+ {
+  "question": "Pakistan conducted its nuclear tests in May 1998 at which site?",
+  "options": [
+   "Kahuta",
+   "Thar",
+   "Chagai",
+   "Kharan"
+  ],
+  "correct": 2,
+  "why": "Pakistan tested its nuclear devices on 28 May 1998 in the Ras Koh Hills of Chagai, Balochistan. Kahuta is the uranium enrichment lab (KRL), Thar is famous for coal, and Kharan was used for the 30 May test only, not the main site.",
+  "rel": "28 May is celebrated as Youm-e-Takbeer. Dr Abdul Qadeer Khan founded Khan Research Laboratories (KRL) at Kahuta.",
+  "rep": 0,
+  "src": "exp 5",
+  "note": "Write-up asked 'Pakistan atomic nuclear site kahan bani'; made as the nuclear test site (Chagai)."
+ },
+ {
+  "question": "Hazrat Hajra (AS) was the mother of which Prophet?",
+  "options": [
+   "Hazrat Ishaq (AS)",
+   "Hazrat Yaqub (AS)",
+   "Hazrat Yusuf (AS)",
+   "Hazrat Ismail (AS)"
+  ],
+  "correct": 3,
+  "why": "Hazrat Hajra (AS) was the wife of Hazrat Ibrahim (AS) and the mother of Hazrat Ismail (AS). Hazrat Ishaq (AS) was the son of Hazrat Sarah (AS), Yaqub (AS) was son of Ishaq, and Yusuf (AS) was son of Yaqub.",
+  "rel": "Hazrat Hajra (AS) ran between Safa and Marwa searching for water, which is now Sa'i in Hajj. The well of Zamzam appeared for Hazrat Ismail (AS).",
+  "rep": 1,
+  "src": "exp 5",
+  "note": "Also asked in experience 9."
+ }
+]

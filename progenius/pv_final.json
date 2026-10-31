@@ -1,0 +1,1612 @@
+[
+[
+"105 Verbal by PGS",
+"If Ali's present age is 5 years and Sidra is twice Ali's age, what will be Sidra's age when Ali is 11 years old?",
+[
+"16",
+"22",
+"18",
+"15"
+],
+0,
+"Sidra is 10 now, so she is 5 years older than Ali. When Ali is 11, Sidra is 11 + 5 = 16. The age difference never changes, so 22 (double of 11) is wrong.",
+"In age questions, first find the age difference: it stays the same for life.",
+1
+],
+[
+"105 Verbal by PGS",
+"A boy is 3 years old and his sister is 3 times his age. What will be his sister's age when the boy is 11?",
+[
+"14",
+"19",
+"17",
+"33"
+],
+2,
+"Sister is 9, which is 6 years more than the boy. When he is 11 she is 11 + 6 = 17. 33 (3 x 11) is wrong because the 'times' rule is only true today.",
+"Age ratios change every year, but the difference in years stays fixed.",
+1
+],
+[
+"105 Verbal by PGS",
+"My age is 10 years and my brother is 2 times my age. What will be the ratio of our ages after 10 years?",
+[
+"2:1",
+"2:3",
+"1:2",
+"3:4"
+],
+1,
+"Now: 10 and 20. After 10 years: 20 and 30. 20 : 30 = 2 : 3. 1:2 is today's ratio, not the ratio after 10 years.",
+"Add the same years to both ages before making the ratio.",
+1
+],
+[
+"105 Verbal by PGS",
+"Ali is 5 years old and his sister is 3 times his age. What will be his sister's age when Ali is 10?",
+[
+"15",
+"25",
+"30",
+"20"
+],
+3,
+"Sister is 15, so she is 10 years older. When Ali is 10 she is 10 + 10 = 20. 30 (3 x 10) wrongly keeps the 'times' rule.",
+"Age difference = 15 - 5 = 10 years, and it never changes.",
+1
+],
+[
+"105 Verbal by PGS",
+"Salman is 4 years old and Ali is twice Salman's age. When Salman is 12, what will be Ali's age?",
+[
+"20",
+"24",
+"16",
+"14"
+],
+2,
+"Ali is 8, so he is 4 years older. When Salman is 12, Ali is 12 + 4 = 16. 24 wrongly doubles 12.",
+"Twice the age is true only today; the gap of 4 years stays.",
+1
+],
+[
+"105 Verbal by PGS",
+"Adil is 5 years old and his sister is 3 times his age. What will be his sister's age when Adil is 15?",
+[
+"45",
+"25",
+"30",
+"20"
+],
+1,
+"Sister is 15, so she is 10 years older. When Adil is 15 she is 15 + 10 = 25. 45 (3 x 15) is wrong.",
+"Always add the fixed age gap to the new age.",
+1
+],
+[
+"105 Verbal by PGS",
+"A man walked towards North, then turned left. After some time he turned right. What is his present direction?",
+[
+"East",
+"West",
+"North",
+"South"
+],
+2,
+"From North a left turn faces West; a right turn from West faces North again.",
+"A left turn and then a right turn cancel each other.",
+1
+],
+[
+"105 Verbal by PGS",
+"Ali moves towards North. After some time he turns left and then again turns left. What is his present direction?",
+[
+"West",
+"North",
+"South",
+"East"
+],
+2,
+"North, left = West, left again = South. Two left turns make a U-turn.",
+"Two turns in the same direction (left-left or right-right) = facing the opposite way.",
+1
+],
+[
+"105 Verbal by PGS",
+"A man walks towards North, then turns left, then turns right. What is his present direction?",
+[
+"South",
+"West",
+"North",
+"East"
+],
+2,
+"North, left = West, right = North. The two opposite turns cancel.",
+"Left then right (or right then left) brings you back to your first direction.",
+1
+],
+[
+"105 Verbal by PGS",
+"Ahmad walks towards North and then turns left. What is his present direction?",
+[
+"South",
+"North",
+"West",
+"East"
+],
+2,
+"When you face North, your left hand points West.",
+"Facing North: right = East, left = West, behind = South.",
+1
+],
+[
+"105 Verbal by PGS",
+"Adnan walks 10 metres towards North, then towards South. After this he turns back and then moves towards his left. What is his present direction?",
+[
+"East",
+"West",
+"North",
+"South"
+],
+1,
+"He faces South, turns back so he faces North, then turns left: facing North, left is West.",
+"'Turn back' means a 180 degree turn.",
+1
+],
+[
+"105 Verbal by PGS",
+"Frank is taller than John, and Ralph is taller than Frank. Who is the shortest?",
+[
+"Frank",
+"Ralph",
+"John",
+"Cannot be found"
+],
+2,
+"Order: Ralph > Frank > John, so John is the shortest.",
+"Write the names in one line from tallest to shortest to solve ranking questions.",
+1
+],
+[
+"105 Verbal by PGS",
+"Azhar was born in 2000 and Javed in 2005. Aslam is older than Javed but younger than Azhar. Who is the oldest?",
+[
+"Javed",
+"Aslam",
+"Azhar",
+"All same"
+],
+2,
+"The person born first is the oldest. Azhar (2000) is older than Aslam, and Aslam is older than Javed (2005).",
+"Earlier year of birth = older person.",
+1
+],
+[
+"105 Verbal by PGS",
+"Ali is younger than Ahmad, and Yaqoob is older than Ahmad. Who is the youngest?",
+[
+"Ahmad",
+"Yaqoob",
+"Ali",
+"Cannot be found"
+],
+2,
+"Order: Yaqoob > Ahmad > Ali, so Ali is the youngest.",
+"Younger than the middle person who is himself younger than the oldest = youngest.",
+1
+],
+[
+"105 Verbal by PGS",
+"90% of 90 is",
+[
+"72",
+"81",
+"80",
+"90"
+],
+1,
+"0.9 x 90 = 81.",
+"Trick: 90% of a number = number minus 10% of it (90 - 9 = 81).",
+1
+],
+[
+"105 Verbal by PGS",
+"80% of 90 is",
+[
+"64",
+"81",
+"70",
+"72"
+],
+3,
+"0.8 x 90 = 72.",
+"80% = 4/5, and 4/5 of 90 = 72.",
+1
+],
+[
+"105 Verbal by PGS",
+"80% of 80 is",
+[
+"60",
+"56",
+"64",
+"72"
+],
+2,
+"0.8 x 80 = 64.",
+"8 x 8 = 64, so 80% of 80 = 64.",
+1
+],
+[
+"105 Verbal by PGS",
+"90% of 70 is",
+[
+"72",
+"56",
+"63",
+"60"
+],
+2,
+"0.9 x 70 = 63.",
+"70 - 10% of 70 (7) = 63.",
+1
+],
+[
+"105 Verbal by PGS",
+"60% of 9 is",
+[
+"4.5",
+"5.4",
+"6",
+"5"
+],
+1,
+"0.6 x 9 = 5.4.",
+"Find 10% first (0.9), then multiply by 6.",
+1
+],
+[
+"105 Verbal by PGS",
+"80% of 10 is",
+[
+"9",
+"80",
+"8",
+"0.8"
+],
+2,
+"0.8 x 10 = 8.",
+"Any % of 10 = that % divided by 10.",
+1
+],
+[
+"105 Verbal by PGS",
+"One third of 10% of 90 is",
+[
+"9",
+"30",
+"6",
+"3"
+],
+3,
+"10% of 90 = 9; one third of 9 = 3.",
+"Solve 'of' questions from the end: the last number first.",
+1
+],
+[
+"105 Verbal by PGS",
+"One third of 10% of 120 is",
+[
+"4",
+"12",
+"40",
+"6"
+],
+0,
+"10% of 120 = 12; one third of 12 = 4.",
+"'Of' means multiply.",
+1
+],
+[
+"105 Verbal by PGS",
+"20% of one tenth of 90 is",
+[
+"1.8",
+"9",
+"0.9",
+"18"
+],
+0,
+"One tenth of 90 = 9; 20% of 9 = 1.8.",
+"20% is the same as one fifth.",
+1
+],
+[
+"105 Verbal by PGS",
+"Out of 500 students, 360 are boys. What is the percentage of girls?",
+[
+"72%",
+"28%",
+"14%",
+"36%"
+],
+1,
+"Girls = 500 - 360 = 140. 140 / 500 x 100 = 28%. 72% is the percentage of boys.",
+"Boys % + Girls % must always be 100%.",
+1
+],
+[
+"105 Verbal by PGS",
+"There are 30 passengers in a bus and 2/3 of them are men. What is the percentage of women?",
+[
+"33.33%",
+"66.67%",
+"20%",
+"30%"
+],
+0,
+"Women are 1/3 of the passengers, and 1/3 = 33.33%.",
+"2/3 = 66.67% and 1/3 = 33.33%.",
+1
+],
+[
+"105 Verbal by PGS",
+"In a class of 500, 340 are boys. Find the percentage of boys.",
+[
+"32%",
+"64%",
+"68%",
+"34%"
+],
+2,
+"340 / 500 x 100 = 68%.",
+"Dividing by 500 and multiplying by 100 is the same as dividing by 5.",
+1
+],
+[
+"105 Verbal by PGS",
+"In a class of 1500 students, 1200 are present. What is the percentage of absent students?",
+[
+"20%",
+"30%",
+"25%",
+"80%"
+],
+0,
+"Absent = 300. 300 / 1500 x 100 = 20%. 80% is the present percentage.",
+"Present % + Absent % = 100%.",
+1
+],
+[
+"105 Verbal by PGS",
+"In a classroom of 1500 students, 1200 are present. Find the percentage of present students.",
+[
+"75%",
+"80%",
+"20%",
+"85%"
+],
+1,
+"1200 / 1500 x 100 = 80%.",
+"1200/1500 = 4/5 = 80%.",
+1
+],
+[
+"105 Verbal by PGS",
+"Out of 500 students, 340 are present. What is the percentage of absent students?",
+[
+"32%",
+"16%",
+"68%",
+"34%"
+],
+0,
+"Absent = 160. 160 / 500 x 100 = 32%.",
+"First find the number absent, then the percentage.",
+1
+],
+[
+"105 Verbal by PGS",
+"Which word looks the same in a mirror?",
+[
+"ARMY",
+"CADET",
+"TITITIT",
+"PAKISTAN"
+],
+2,
+"T and I are symmetrical letters, and TITITIT reads the same from both sides, so its mirror image is the same word.",
+"Letters that look the same in a mirror: A, H, I, M, O, T, U, V, W, X, Y.",
+1
+],
+[
+"105 Verbal by PGS",
+"Complete the series: 115, 55, 170, 65, 235, ?",
+[
+"300",
+"85",
+"75",
+"70"
+],
+2,
+"Two series: 55, 65, 75 (+10) and 115 + 55 = 170, 170 + 65 = 235. The missing term is 75.",
+"Check alternate terms when a series jumps up and down.",
+1
+],
+[
+"105 Verbal by PGS",
+"Complete the series: 66, 63, 57, 45, ?",
+[
+"30",
+"24",
+"33",
+"21"
+],
+3,
+"Differences are 3, 6, 12, then 24 (doubling). 45 - 24 = 21. The PDF wrote 24, which is the difference, not the next number.",
+"Doubling differences: 3, 6, 12, 24.",
+1
+],
+[
+"105 Verbal by PGS",
+"Complete the series: 2, 6, 14, 30, 62, ?",
+[
+"128",
+"124",
+"126",
+"94"
+],
+2,
+"Each term x 2 + 2: 62 x 2 + 2 = 126.",
+"Differences 4, 8, 16, 32, 64 also give 126.",
+1
+],
+[
+"105 Verbal by PGS",
+"What comes next: 3, 7, 14, 18, 36, 40, ?",
+[
+"44",
+"80",
+"72",
+"76"
+],
+1,
+"Pattern: +4, x2, +4, x2, +4, x2. 40 x 2 = 80.",
+"Mixed patterns often repeat two steps.",
+1
+],
+[
+"105 Verbal by PGS",
+"Quarter of one tenth of 120 is",
+[
+"3",
+"4",
+"30",
+"12"
+],
+0,
+"One tenth of 120 = 12; a quarter of 12 = 3.",
+"Quarter = 1/4.",
+1
+],
+[
+"105 Verbal by PGS",
+"Quarter of 120 is",
+[
+"24",
+"12",
+"40",
+"30"
+],
+3,
+"120 / 4 = 30.",
+"Quarter = divide by 4.",
+1
+],
+[
+"105 Verbal by PGS",
+"One tenth of 90 is",
+[
+"0.9",
+"10",
+"9",
+"90"
+],
+2,
+"90 / 10 = 9.",
+"One tenth = divide by 10.",
+1
+],
+[
+"105 Verbal by PGS",
+"One tenth of 120 is",
+[
+"10",
+"20",
+"12",
+"1.2"
+],
+2,
+"120 / 10 = 12.",
+"Move the decimal one place left.",
+1
+],
+[
+"105 Verbal by PGS",
+"One third of 120 is",
+[
+"60",
+"40",
+"12",
+"30"
+],
+1,
+"120 / 3 = 40.",
+"One third = divide by 3.",
+1
+],
+[
+"105 Verbal by PGS",
+"Half of 9/90 is",
+[
+"1/5",
+"1/10",
+"1/20",
+"9/45"
+],
+2,
+"9/90 = 1/10; half of 1/10 = 1/20 = 0.05.",
+"Simplify the fraction first.",
+1
+],
+[
+"105 Verbal by PGS",
+"120 x 7 =",
+[
+"820",
+"960",
+"740",
+"840"
+],
+3,
+"120 x 7 = 840.",
+"12 x 7 = 84, then add the zero.",
+1
+],
+[
+"105 Verbal by PGS",
+"1 + 2/2 =",
+[
+"3",
+"1",
+"2",
+"1.5"
+],
+2,
+"Division first: 2/2 = 1, then 1 + 1 = 2.",
+"BODMAS: Division comes before Addition.",
+1
+],
+[
+"105 Verbal by PGS",
+"2(2 + 2) =",
+[
+"16",
+"4",
+"6",
+"8"
+],
+3,
+"Bracket first: 2 + 2 = 4, then 2 x 4 = 8.",
+"BODMAS: Brackets first.",
+1
+],
+[
+"105 Verbal by PGS",
+"Half of a quarter is",
+[
+"1/6",
+"1/2",
+"1/8",
+"1/4"
+],
+2,
+"1/2 x 1/4 = 1/8.",
+"'Of' means multiply.",
+1
+],
+[
+"105 Verbal by PGS",
+"Complete the series: B, E, J, Q, ?",
+[
+"X",
+"Z",
+"W",
+"Y"
+],
+1,
+"Positions 2, 5, 10, 17: add 3, 5, 7, then 9. 17 + 9 = 26 = Z.",
+"Write letter positions (A=1 ... Z=26) to solve letter series.",
+1
+],
+[
+"105 Verbal by PGS",
+"Complete the series: A, C, F, J, O, ?",
+[
+"T",
+"V",
+"U",
+"S"
+],
+2,
+"Positions 1, 3, 6, 10, 15: add 2, 3, 4, 5, then 6. 15 + 6 = 21 = U.",
+"Increasing gaps of 1 are common in letter series.",
+1
+],
+[
+"105 Verbal by PGS",
+"Complete the series: L, M, N, ?",
+[
+"Q",
+"P",
+"K",
+"O"
+],
+3,
+"Simple alphabetical order: L, M, N, O.",
+"O is the 15th letter.",
+1
+],
+[
+"105 Verbal by PGS",
+"If Z = 2 and X = 5, then which comes next?",
+[
+"V = 8",
+"T = 11",
+"W = 7",
+"U = 9"
+],
+3,
+"Letters go back with growing gaps (Z to X is 2 back, X to U is 3 back) and numbers grow with growing gaps (2 to 5 is +3, 5 to 9 is +4). So the next is U = 9.",
+"In growing-gap series both the letter gap and the number gap go up by 1 each step.",
+1
+],
+[
+"105 Verbal by PGS",
+"Z = 3, X = 5, V = 7, T = 9. Find the next.",
+[
+"R = 12",
+"S = 10",
+"R = 11",
+"Q = 11"
+],
+2,
+"Letters go back by 2 (Z, X, V, T, R) and numbers go up by 2 (3, 5, 7, 9, 11).",
+"Check the letter rule and the number rule separately.",
+1
+],
+[
+"105 Verbal by PGS",
+"What comes next: A, E, K, ?",
+[
+"T",
+"R",
+"Q",
+"S"
+],
+3,
+"Positions 1, 5, 11: add 4, 6, then 8. 11 + 8 = 19 = S.",
+"Gaps going up by 2 (4, 6, 8).",
+1
+],
+[
+"105 Verbal by PGS",
+"Complete the series: AB/A, BC/B, CD/C, ?",
+[
+"DE/D",
+"EF/E",
+"CE/D",
+"DE/E"
+],
+0,
+"Each term moves one letter forward: DE / D.",
+"Look at every part of the term separately.",
+1
+],
+[
+"105 Verbal by PGS",
+"Complete the series: H, F, D, ?",
+[
+"E",
+"B",
+"A",
+"C"
+],
+1,
+"Each letter goes back by 2: H, F, D, B.",
+"Backward series: subtract the same gap.",
+1
+],
+[
+"105 Verbal by PGS",
+"Complete the series: J, H, F, D, ?",
+[
+"E",
+"B",
+"A",
+"C"
+],
+1,
+"Back by 2 each time: J, H, F, D, B.",
+"Same rule as H, F, D, B.",
+1
+],
+[
+"105 Verbal by PGS",
+"Complete the series: A, E, K, ?",
+[
+"Q",
+"S",
+"T",
+"R"
+],
+1,
+"Same question as before: positions 1, 5, 11, gaps 4, 6, 8, so 19 = S. The PDF wrote R here, which does not fit the pattern.",
+"Repeated in the notes twice with two answers; S is correct.",
+1
+],
+[
+"105 Verbal by PGS",
+"How many months have 31 days?",
+[
+"7",
+"6",
+"8",
+"5"
+],
+0,
+"January, March, May, July, August, October and December = 7 months.",
+"Knuckle trick: every knuckle month has 31 days.",
+1
+],
+[
+"105 Verbal by PGS",
+"A leap year comes after how many years?",
+[
+"5",
+"4",
+"3",
+"2"
+],
+1,
+"A year is about 365 days and 6 hours. 4 x 6 hours = 1 extra day, so every 4th year has 366 days.",
+"In a leap year February has 29 days.",
+1
+],
+[
+"105 Verbal by PGS",
+"If yesterday was Sunday, then the day after tomorrow will be",
+[
+"Wednesday",
+"Tuesday",
+"Thursday",
+"Monday"
+],
+0,
+"Today is Monday, tomorrow Tuesday, the day after tomorrow Wednesday.",
+"Find 'today' first in day questions.",
+1
+],
+[
+"105 Verbal by PGS",
+"If yesterday was Friday, tomorrow will be",
+[
+"Thursday",
+"Saturday",
+"Monday",
+"Sunday"
+],
+3,
+"Today is Saturday, so tomorrow is Sunday.",
+"Yesterday + 2 days = tomorrow.",
+1
+],
+[
+"105 Verbal by PGS",
+"If the 28th day of a month is Sunday, then the 2nd day will be",
+[
+"Tuesday",
+"Wednesday",
+"Sunday",
+"Monday"
+],
+0,
+"28 - 2 = 26 days back. 26 = 3 weeks + 5 days. 5 days before Sunday is Tuesday.",
+"Remove full weeks (7 days) and count only the remainder.",
+1
+],
+[
+"105 Verbal by PGS",
+"If the 4th day of a month is Tuesday, then the 26th day will be",
+[
+"Monday",
+"Thursday",
+"Wednesday",
+"Tuesday"
+],
+2,
+"26 - 4 = 22 = 3 weeks + 1 day. Tuesday + 1 = Wednesday.",
+"Same weekday repeats every 7 days.",
+1
+],
+[
+"105 Verbal by PGS",
+"If the 4th day of a month is Sunday, the 19th day will be",
+[
+"Sunday",
+"Monday",
+"Tuesday",
+"Saturday"
+],
+1,
+"19 - 4 = 15 = 2 weeks + 1 day. Sunday + 1 = Monday.",
+"4, 11, 18 are Sundays, so 19 is Monday.",
+1
+],
+[
+"105 Verbal by PGS",
+"If the 14th day of a month is Sunday, the 4th day will be",
+[
+"Wednesday",
+"Thursday",
+"Tuesday",
+"Friday"
+],
+1,
+"14 - 4 = 10 = 1 week + 3 days back. 3 days before Sunday is Thursday.",
+"7th is also Sunday, so 4th is 3 days before it.",
+1
+],
+[
+"105 Verbal by PGS",
+"If the 1st day of a month is Monday, then the 12th day will be",
+[
+"Monday",
+"Friday",
+"Saturday",
+"Thursday"
+],
+1,
+"12 - 1 = 11 = 1 week + 4 days. Monday + 4 = Friday. (The PDF wrote Saturday, which is one day off.)",
+"1st and 8th are Mondays, so the 12th is Friday.",
+1
+],
+[
+"105 Verbal by PGS",
+"If the 2nd day of a month is Monday, then the 12th day will be",
+[
+"Wednesday",
+"Tuesday",
+"Friday",
+"Thursday"
+],
+3,
+"12 - 2 = 10 = 1 week + 3 days. Monday + 3 = Thursday.",
+"2nd and 9th are Mondays.",
+1
+],
+[
+"105 Verbal by PGS",
+"If the 2nd day of a month is Sunday, the 23rd day will be",
+[
+"Monday",
+"Saturday",
+"Tuesday",
+"Sunday"
+],
+3,
+"23 - 2 = 21 = exactly 3 weeks, so the same day: Sunday.",
+"Any gap of 7, 14, 21 or 28 days gives the same weekday.",
+1
+],
+[
+"105 Verbal by PGS",
+"If the 15th day of a month is Monday, the 4th day of the month is",
+[
+"Monday",
+"Wednesday",
+"Thursday",
+"Friday"
+],
+2,
+"15 - 4 = 11 = 1 week + 4 days back. 4 days before Monday is Thursday.",
+"8th is Monday, so 4th is 4 days earlier.",
+1
+],
+[
+"105 Verbal by PGS",
+"If the 2nd day of a month is Friday, then the 23rd day will be",
+[
+"Sunday",
+"Friday",
+"Thursday",
+"Saturday"
+],
+1,
+"23 - 2 = 21 = 3 full weeks, so the same day: Friday.",
+"Exact weeks keep the same weekday.",
+1
+],
+[
+"105 Verbal by PGS",
+"If the 4th day of a month is Sunday, the 14th day is",
+[
+"Tuesday",
+"Wednesday",
+"Monday",
+"Thursday"
+],
+1,
+"14 - 4 = 10 = 1 week + 3 days. Sunday + 3 = Wednesday.",
+"11th is Sunday, so 14th is Wednesday.",
+1
+],
+[
+"105 Verbal by PGS",
+"If one dozen pencils cost Rs 27, then the price of 4 pencils is",
+[
+"Rs 8",
+"Rs 12",
+"Rs 9",
+"Rs 6"
+],
+2,
+"4 is one third of 12, so the price is 27 / 3 = Rs 9.",
+"1 dozen = 12.",
+1
+],
+[
+"105 Verbal by PGS",
+"If 1 dozen pencils cost Rs 60, the price of 5 pencils will be",
+[
+"Rs 24",
+"Rs 30",
+"Rs 25",
+"Rs 20"
+],
+2,
+"One pencil = 60 / 12 = Rs 5, so 5 pencils = Rs 25.",
+"Find the price of one item first (unitary method).",
+1
+],
+[
+"105 Verbal by PGS",
+"If one dozen eggs cost Rs 24, then the price of 7 eggs is",
+[
+"Rs 14",
+"Rs 16",
+"Rs 21",
+"Rs 12"
+],
+0,
+"One egg = 24 / 12 = Rs 2, so 7 eggs = Rs 14.",
+"Unitary method: one item first, then multiply.",
+1
+],
+[
+"105 Verbal by PGS",
+"One dozen pencils cost Rs 15. What is the price of 72 pencils?",
+[
+"Rs 60",
+"Rs 90",
+"Rs 120",
+"Rs 75"
+],
+1,
+"72 pencils = 6 dozen. 6 x 15 = Rs 90.",
+"72 / 12 = 6 dozen.",
+1
+],
+[
+"105 Verbal by PGS",
+"If my brother's sister is your mother, who am I to you?",
+[
+"Father",
+"Cousin",
+"Uncle",
+"Brother"
+],
+2,
+"My brother's sister is my sister. My sister is your mother, so I am your mother's brother: your (maternal) uncle.",
+"Mother's brother = maternal uncle (Mamun).",
+1
+],
+[
+"105 Verbal by PGS",
+"The sister of my brother's son is my",
+[
+"Daughter",
+"Niece",
+"Cousin",
+"Sister"
+],
+1,
+"My brother's son's sister is my brother's daughter, who is my niece.",
+"Brother's or sister's daughter = niece.",
+1
+],
+[
+"105 Verbal by PGS",
+"My sister is your mother. What is your relation to me?",
+[
+"Cousin",
+"Nephew or niece",
+"Son",
+"Brother"
+],
+1,
+"You are my sister's child, so you are my nephew (boy) or niece (girl).",
+"Sister's son = nephew, sister's daughter = niece.",
+1
+],
+[
+"105 Verbal by PGS",
+"A is the father of B, but B is not A's son. What is B to A?",
+[
+"Nephew",
+"Daughter",
+"Brother",
+"Son"
+],
+1,
+"A child of a father who is not his son must be his daughter.",
+"Read the 'not' carefully in relation questions.",
+1
+],
+[
+"105 Verbal by PGS",
+"A train's speed is twice that of a car. If the car covers 60 km in one hour, how much distance will the train cover in 30 minutes?",
+[
+"90 km",
+"120 km",
+"60 km",
+"30 km"
+],
+2,
+"Train speed = 120 km/h. In half an hour it covers 120 / 2 = 60 km.",
+"Distance = Speed x Time.",
+1
+],
+[
+"105 Verbal by PGS",
+"A train's speed is double that of a car, and the car travels 30 km in 1 hour. How much distance will the train cover in 30 minutes?",
+[
+"15 km",
+"30 km",
+"60 km",
+"45 km"
+],
+1,
+"Train speed = 60 km/h. In 30 minutes it covers 30 km.",
+"30 minutes = half an hour.",
+1
+],
+[
+"105 Verbal by PGS",
+"A train is moving at 90 km/h. How much distance will it cover in 12 minutes?",
+[
+"15 km",
+"20 km",
+"9 km",
+"18 km"
+],
+3,
+"12 minutes = 1/5 hour. 90 / 5 = 18 km.",
+"Change minutes to hours by dividing by 60.",
+1
+],
+[
+"105 Verbal by PGS",
+"If a helicopter needs 50 gallons to fly 320 km, how many gallons does it need to fly 400 km?",
+[
+"62.5",
+"64",
+"60",
+"70"
+],
+0,
+"50 / 320 x 400 = 62.5 gallons.",
+"Direct proportion: more distance, more fuel.",
+1
+],
+[
+"105 Verbal by PGS",
+"A man walks 20 km in 1 hour 40 minutes. How much time will he take to cover 1 km?",
+[
+"10 minutes",
+"5 minutes",
+"4 minutes",
+"6 minutes"
+],
+1,
+"1 hour 40 minutes = 100 minutes. 100 / 20 = 5 minutes per km.",
+"Convert hours to minutes first.",
+1
+],
+[
+"105 Verbal by PGS",
+"A bus moves at 60 km/h and a train moves at twice that speed. How much distance does the train cover in 30 minutes?",
+[
+"120 km",
+"30 km",
+"90 km",
+"60 km"
+],
+3,
+"Train speed = 120 km/h. In half an hour: 60 km. (The PDF does not show the answer.)",
+"Same as the train and car question: double speed, half time.",
+1
+],
+[
+"105 Verbal by PGS",
+"Ali bought a pen for Rs 30 and sold it for Rs 40. What is his profit percentage?",
+[
+"40%",
+"25%",
+"10%",
+"33.33%"
+],
+3,
+"Profit = Rs 10. 10 / 30 x 100 = 33.33%.",
+"Profit % is always on the cost price.",
+1
+],
+[
+"105 Verbal by PGS",
+"A person bought a book for Rs 500 and sold it for Rs 700. Find the profit percentage.",
+[
+"40%",
+"20%",
+"28.57%",
+"35%"
+],
+0,
+"Profit = Rs 200. 200 / 500 x 100 = 40%.",
+"28.57% would be wrongly using the selling price.",
+1
+],
+[
+"105 Verbal by PGS",
+"A bat cannot see, and a snake cannot",
+[
+"Hear",
+"Taste",
+"Smell",
+"Feel"
+],
+0,
+"Snakes have no outer ears and cannot hear sound in the air the way we do; they feel vibrations.",
+"Bats use echoes (echolocation) to move in the dark.",
+1
+],
+[
+"105 Verbal by PGS",
+"Find the odd one: Angle, Rectangle, Square, Hexagon",
+[
+"Square",
+"Rectangle",
+"Angle",
+"Hexagon"
+],
+2,
+"Rectangle, square and hexagon are closed shapes (polygons); an angle is not a shape.",
+"A hexagon has 6 sides.",
+1
+],
+[
+"105 Verbal by PGS",
+"Find the odd one: Cricket, Football, Tennis, Baseball",
+[
+"Tennis",
+"Baseball",
+"Football",
+"Cricket"
+],
+2,
+"Cricket, tennis and baseball are played with a bat or racket; football is played with the feet.",
+"Hockey is the national game of Pakistan.",
+1
+],
+[
+"105 Verbal by PGS",
+"Find the odd one: Wheat, Hay, Rice, Maize",
+[
+"Hay",
+"Maize",
+"Wheat",
+"Rice"
+],
+0,
+"Wheat, rice and maize are grains (food crops); hay is dried grass for animals.",
+"Wheat is the main food crop of Pakistan.",
+1
+],
+[
+"105 Verbal by PGS",
+"Find the odd one: Monkey, Ape, Chimpanzee, Panda",
+[
+"Panda",
+"Ape",
+"Chimpanzee",
+"Monkey"
+],
+0,
+"Monkey, ape and chimpanzee are primates; the panda is a bear.",
+"The giant panda mainly eats bamboo.",
+1
+],
+[
+"105 Verbal by PGS",
+"Find the odd one: America, Africa, Asia, Euro",
+[
+"Asia",
+"America",
+"Africa",
+"Euro"
+],
+3,
+"America, Africa and Asia are continents; the euro is a currency.",
+"Asia is the largest continent.",
+1
+],
+[
+"105 Verbal by PGS",
+"The sound of an eagle is called a",
+[
+"Hoot",
+"Scream",
+"Coo",
+"Chirp"
+],
+1,
+"An eagle screams (also called a screech). An owl hoots, a pigeon coos and small birds chirp.",
+"Animal sounds are common in verbal tests.",
+1
+],
+[
+"105 Verbal by PGS",
+"An aeroplane flies due to",
+[
+"Weight",
+"Lift",
+"Gravity",
+"Drag"
+],
+1,
+"The wings make lift, the upward force that keeps the aeroplane in the air.",
+"The four forces on a plane: lift, weight, thrust and drag.",
+1
+],
+[
+"105 Verbal by PGS",
+"Vehicle is to wheels as sound is to",
+[
+"Ears",
+"Noise",
+"Speed",
+"Waves"
+],
+3,
+"A vehicle moves on wheels; sound travels as waves.",
+"Sound cannot travel in a vacuum.",
+1
+],
+[
+"105 Verbal by PGS",
+"Dog is to bitch as horse is to",
+[
+"Colt",
+"Pony",
+"Mare",
+"Stallion"
+],
+2,
+"A female dog is a bitch; a female horse is a mare.",
+"A young horse is a foal; a young male horse is a colt.",
+1
+],
+[
+"105 Verbal by PGS",
+"Parents give education to their children",
+[
+"To get money",
+"To keep them busy",
+"To show others",
+"To groom them"
+],
+3,
+"The main aim of education is to groom children into good, skilled people.",
+"In 'why' questions, choose the main and most sensible reason.",
+1
+],
+[
+"105 Verbal by PGS",
+"We boil milk",
+[
+"To cool it",
+"To make it thick",
+"To kill germs",
+"To make it sweet"
+],
+2,
+"Boiling kills harmful germs and makes milk safe to drink.",
+"Pasteurisation also heats milk to kill germs.",
+1
+],
+[
+"105 Verbal by PGS",
+"Why do people read newspapers?",
+[
+"To pass time",
+"To get knowledge",
+"To sleep",
+"To learn cooking"
+],
+1,
+"Newspapers give news and knowledge about the world.",
+"Choose the main purpose, not a side use.",
+1
+],
+[
+"105 Verbal by PGS",
+"Why do people use cars?",
+[
+"To sleep",
+"To play",
+"To show off",
+"To travel"
+],
+3,
+"The main use of a car is travelling from one place to another.",
+"Main purpose questions have one sensible answer.",
+1
+],
+[
+"105 Verbal by PGS",
+"Why do girls wear glasses?",
+[
+"For reading only",
+"For eyesight",
+"For fashion",
+"For sunlight"
+],
+1,
+"Glasses are mainly worn to correct eyesight.",
+"Short sight and long sight are corrected with lenses.",
+1
+],
+[
+"105 Verbal by PGS",
+"Why do women go to the bazaar?",
+[
+"For shopping",
+"For eating",
+"For walking",
+"For meeting"
+],
+0,
+"A bazaar is a market, and people go there mainly for shopping.",
+"Bazaar = market.",
+1
+],
+[
+"105 Verbal by PGS",
+"What will be the last letter of UTYEAB after arranging it alphabetically?",
+[
+"T",
+"Y",
+"U",
+"E"
+],
+1,
+"Arranged: A, B, E, T, U, Y. The last letter is Y.",
+"Write the letters in A to Z order before answering.",
+1
+],
+[
+"105 Verbal by PGS",
+"What will be the 3rd letter of the word MANAGEMENT when its different letters are arranged alphabetically?",
+[
+"G",
+"N",
+"M",
+"T"
+],
+0,
+"Different letters in order: A, E, G, M, N, T. The 3rd is G. (If every letter is counted, including repeats, the 3rd letter would be E.)",
+"Read whether the question counts repeated letters.",
+1
+],
+[
+"105 Verbal by PGS",
+"What will be the second letter when AUGMENTED is arranged alphabetically?",
+[
+"A",
+"E",
+"G",
+"D"
+],
+3,
+"Arranged: A, D, E, E, G, M, N, T, U. The 2nd letter is D. (The PDF wrote E, which is the 3rd letter.)",
+"AUGMENTED has the letters A, U, G, M, E, N, T, E, D.",
+1
+],
+[
+"105 Verbal by PGS",
+"Arrange RAPIS. It is the name of a",
+[
+"Ocean",
+"Country",
+"State",
+"City"
+],
+3,
+"RAPIS rearranged gives PARIS, a city (the capital of France).",
+"Paris is on the River Seine.",
+1
+],
+[
+"105 Verbal by PGS",
+"Arrange OPERALD. In which category does it lie?",
+[
+"Wild animal",
+"Country",
+"Fruit",
+"Bird"
+],
+0,
+"OPERALD rearranged gives LEOPARD, a wild animal.",
+"The leopard is found in northern Pakistan and Azad Kashmir.",
+1
+],
+[
+"105 Verbal by PGS",
+"Find the odd one: Lahore, Rawalpindi, Karachi, Sindh, Quetta",
+[
+"Quetta",
+"Lahore",
+"Karachi",
+"Sindh"
+],
+3,
+"Sindh is a province; the others are cities.",
+"Karachi is the capital of Sindh.",
+1
+],
+[
+"105 Verbal by PGS",
+"Cold is to ice as hot is to",
+[
+"Sun",
+"Steam",
+"Water",
+"Fire"
+],
+1,
+"Very cold water becomes ice; very hot water becomes steam.",
+"Water boils at 100 degrees C and freezes at 0 degrees C.",
+1
+],
+[
+"105 Verbal by PGS",
+"Which does not belong to the group: Cow, Dog, Leopard, Cat",
+[
+"Cow",
+"Cat",
+"Leopard",
+"Dog"
+],
+0,
+"Dog, leopard and cat eat meat (carnivores); the cow eats grass (herbivore).",
+"Herbivores eat plants; carnivores eat meat.",
+1
+],
+[
+"105 Verbal by PGS",
+"Arrange E, H, M, O, R, T into a word.",
+[
+"Hermot",
+"Mother",
+"Mother-in-law",
+"Thermo"
+],
+1,
+"E, H, M, O, R, T make the word MOTHER.",
+"Jumbled-word questions usually make a common word.",
+1
+],
+[
+"105 Verbal by PGS",
+"According to the dictionary, which comes first: MOUNTAIN, MARGALLA, MACHINE?",
+[
+"Mountain",
+"Margalla",
+"Machine",
+"All same"
+],
+2,
+"All start with M. Second letters: A, A, O. Then third letters: C (MACHINE) comes before R (MARGALLA).",
+"Compare letter by letter until they differ.",
+1
+],
+[
+"105 Verbal by PGS",
+"If 1 man writes 5 papers in 5 minutes, then 1 man will write 1 paper in",
+[
+"1 minute",
+"25 minutes",
+"2 minutes",
+"5 minutes"
+],
+0,
+"5 papers in 5 minutes = 1 paper per minute.",
+"Find the work done in one unit of time.",
+1
+],
+[
+"105 Verbal by PGS",
+"There are 30 passengers in a bus and 2/3 of them are men. What is the number of women?",
+[
+"10",
+"20",
+"15",
+"12"
+],
+0,
+"Men = 2/3 x 30 = 20. Women = 30 - 20 = 10.",
+"1/3 of 30 = 10.",
+1
+],
+[
+"105 Verbal by PGS",
+"Amjad and Ahmad have 24 balls. Amjad has 3 times as many as Ahmad. How many does Ahmad have?",
+[
+"6",
+"8",
+"12",
+"18"
+],
+0,
+"Ahmad = x, Amjad = 3x, so 4x = 24 and x = 6.",
+"Total parts = 1 + 3 = 4.",
+1
+],
+[
+"105 Verbal by PGS",
+"If 5 men write 5 pages in 5 minutes, then 1 man will write 1 page in",
+[
+"1 minute",
+"10 minutes",
+"25 minutes",
+"5 minutes"
+],
+3,
+"Each man writes 1 page in 5 minutes, because 5 men write 5 pages in 5 minutes.",
+"Classic trick question: the answer stays 5 minutes.",
+1
+],
+[
+"105 Verbal by PGS",
+"10 men dig a well in 5 days. How many days will 5 men take?",
+[
+"10",
+"20",
+"2.5",
+"5"
+],
+0,
+"Work = 10 x 5 = 50 man-days. 50 / 5 = 10 days.",
+"Fewer men = more days (inverse proportion).",
+1
+]
+]

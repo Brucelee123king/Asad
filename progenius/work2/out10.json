@@ -1,0 +1,1004 @@
+[
+ {
+  "num": 955,
+  "page": 109,
+  "question": "Which is the smallest river of Pakistan among the main rivers?",
+  "options": [
+   "River Chenab",
+   "River Sutlej",
+   "River Kabul",
+   "River Ravi"
+  ],
+  "correct": 3,
+  "why": "The Ravi is the shortest of the five rivers of the Punjab (about 720 km).",
+  "rel": "The Ravi flows through Lahore. The five rivers of Punjab are Jhelum, Chenab, Ravi, Beas and Sutlej.",
+  "problem": "Smallest depends on definition; standard exam answer is Ravi."
+ },
+ {
+  "num": 956,
+  "page": 109,
+  "question": "How many provinces does Pakistan have?",
+  "options": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "correct": 1,
+  "why": "Pakistan has four provinces: Punjab, Sindh, Khyber Pakhtunkhwa and Balochistan.",
+  "rel": "Islamabad is the Capital Territory; Gilgit-Baltistan and Azad Kashmir are administered regions."
+ },
+ {
+  "num": 957,
+  "page": 109,
+  "question": "Which city is on the border of Sindh and Punjab provinces?",
+  "options": [
+   "Kashmore",
+   "Hyderabad",
+   "Larkana",
+   "Nawabshah"
+  ],
+  "correct": 0,
+  "why": "Kashmore is the northernmost district of Sindh and touches the Punjab border.",
+  "rel": "Kashmore also touches Balochistan. Sukkur is the third largest city of Sindh."
+ },
+ {
+  "num": 958,
+  "page": 109,
+  "question": "Who was the Prime Minister of Great Britain during the Second World War (1940-45)?",
+  "options": [
+   "Winston Churchill",
+   "Neville Chamberlain",
+   "Clement Attlee",
+   "Anthony Eden"
+  ],
+  "correct": 0,
+  "why": "Churchill led Britain from May 1940 to July 1945, most of the war.",
+  "rel": "WWII lasted 1939 to 1945; WWI lasted 1914 to 1918. Chamberlain was PM only in the first months (1939-40).",
+  "problem": "Chamberlain was PM at the very start of the war; standard answer is Churchill."
+ },
+ {
+  "num": 959,
+  "page": 109,
+  "question": "In which year did Fatima Jinnah join the Muslim League?",
+  "options": [
+   "1925",
+   "1947",
+   "1939",
+   "1950"
+  ],
+  "correct": 2,
+  "why": "Common exam books give 1939 as the year she joined the Muslim League.",
+  "rel": "She contested the 1965 election against Ayub Khan and died on 9 July 1967.",
+  "problem": "Sources differ (1937 to 1939); 1939 is the usual exam answer."
+ },
+ {
+  "num": 960,
+  "page": 110,
+  "question": "After the 1965 war, which agreement did Pakistan sign with India?",
+  "options": [
+   "Simla Agreement (1972)",
+   "Tashkent Agreement (1966)",
+   "Lahore Declaration (1999)",
+   "Indus Waters Treaty (1960)"
+  ],
+  "correct": 1,
+  "why": "The Tashkent Agreement was signed on 10 January 1966 to end the 1965 war.",
+  "rel": "It was signed by Ayub Khan and Indian PM Lal Bahadur Shastri, with USSR mediation."
+ },
+ {
+  "num": 961,
+  "page": 110,
+  "question": "Who is the founder of Facebook?",
+  "options": [
+   "Jack Dorsey",
+   "Elon Musk",
+   "Bill Gates",
+   "Mark Zuckerberg"
+  ],
+  "correct": 3,
+  "why": "Mark Zuckerberg founded Facebook in 2004 at Harvard.",
+  "rel": "Apple was founded by Steve Jobs; Microsoft by Bill Gates."
+ },
+ {
+  "num": 962,
+  "page": 110,
+  "question": "Who wrote 'Das Kapital'?",
+  "options": [
+   "Adam Smith",
+   "John Maynard Keynes",
+   "Karl Marx",
+   "David Ricardo"
+  ],
+  "correct": 2,
+  "why": "Karl Marx wrote Das Kapital, the book that criticises capitalism (first volume 1867).",
+  "rel": "Marx also co-wrote the Communist Manifesto with Friedrich Engels."
+ },
+ {
+  "num": 963,
+  "page": 110,
+  "question": "Breaking a promise is a sign of what?",
+  "options": [
+   "Humility",
+   "Hypocrisy",
+   "Courage",
+   "Patience"
+  ],
+  "correct": 1,
+  "why": "A hadith lists breaking a promise as a sign of a hypocrite (munafiq).",
+  "rel": "Other signs of hypocrisy in the hadith: lying and betraying a trust.",
+  "problem": "Answer follows the hadith; Hypocrisy is the standard answer."
+ },
+ {
+  "num": 964,
+  "page": 110,
+  "question": "Who was the first woman head (Governor) of the State Bank of Pakistan?",
+  "options": [
+   "Ishrat Husain",
+   "Shamshad Akhtar",
+   "Reza Baqir",
+   "Tariq Bajwa"
+  ],
+  "correct": 1,
+  "why": "Shamshad Akhtar became the first woman Governor of the SBP in 2005.",
+  "rel": "The State Bank of Pakistan began work on 1 July 1948."
+ },
+ {
+  "num": 965,
+  "page": 110,
+  "question": "Masjid-e-Zarrar was built by whom?",
+  "options": [
+   "Hazrat Umar (RA)",
+   "The hypocrites (Munafiqin)",
+   "The Quraysh polytheists",
+   "Hazrat Bilal (RA)"
+  ],
+  "correct": 1,
+  "why": "The hypocrites of Madinah built it to harm Muslims, and the Prophet (SAW) had it destroyed.",
+  "rel": "It is mentioned in Surah At-Tawbah. Masjid Quba was the first mosque of Islam."
+ },
+ {
+  "num": 966,
+  "page": 110,
+  "question": "In which years was Tarbela Dam constructed?",
+  "options": [
+   "1958-1966",
+   "1968-1976",
+   "1948-1956",
+   "1978-1986"
+  ],
+  "correct": 1,
+  "why": "Construction of Tarbela Dam started in 1968 and the dam was completed in 1976.",
+  "rel": "Tarbela is on the River Indus in Haripur, KPK; it is the largest earth-filled dam in the world.",
+  "problem": "Source says 1968-1978 (operations began about 1977-78); standard span 1968-1976."
+ },
+ {
+  "num": 967,
+  "page": 111,
+  "question": "Who was the foster mother of Prophet Muhammad (SAW)?",
+  "options": [
+   "Hazrat Aminah (RA)",
+   "Hazrat Khadija (RA)",
+   "Hazrat Halima Sadia (RA)",
+   "Hazrat Umm Ayman (RA)"
+  ],
+  "correct": 2,
+  "why": "Halima Sadia of Banu Saad nursed the Prophet (SAW) in his infancy.",
+  "rel": "His real mother was Hazrat Aminah, who died when he was six."
+ },
+ {
+  "num": 968,
+  "page": 111,
+  "question": "What does LOC stand for in the Kashmir issue?",
+  "options": [
+   "Line of Control",
+   "Line of Conflict",
+   "Line of Command",
+   "Line of Cooperation"
+  ],
+  "correct": 0,
+  "why": "LOC means Line of Control, the military line dividing Indian and Pakistani held Kashmir.",
+  "rel": "The LOC is about 740 km (460 miles) long and came after the Simla Agreement 1972."
+ },
+ {
+  "num": 969,
+  "page": 111,
+  "question": "The Theory of Relativity was given by whom?",
+  "options": [
+   "Isaac Newton",
+   "Galileo Galilei",
+   "Albert Einstein",
+   "Stephen Hawking"
+  ],
+  "correct": 2,
+  "why": "Einstein published special relativity in 1905 and general relativity in 1915.",
+  "rel": "Einstein won the Nobel Prize in Physics in 1921."
+ },
+ {
+  "num": 970,
+  "page": 111,
+  "question": "When did Queen Elizabeth II tour Pakistan?",
+  "options": [
+   "1947 and 1965",
+   "1952 and 1980",
+   "1971 and 1990",
+   "1961 and 1997"
+  ],
+  "correct": 3,
+  "why": "She visited twice, in 1961 (President Ayub Khan) and in 1997.",
+  "rel": "The 1997 visit was during Pakistan's 50th anniversary year."
+ },
+ {
+  "num": 971,
+  "page": 111,
+  "question": "In which year were the Morley-Minto Reforms introduced?",
+  "options": [
+   "1892",
+   "1909",
+   "1919",
+   "1935"
+  ],
+  "correct": 1,
+  "why": "The Indian Councils Act 1909, known as Morley-Minto Reforms, gave Muslims separate electorates.",
+  "rel": "Montagu-Chelmsford Reforms came in 1919; Government of India Act in 1935."
+ },
+ {
+  "num": 972,
+  "page": 111,
+  "question": "The telescope was discovered (first used for astronomy) by whom?",
+  "options": [
+   "Isaac Newton",
+   "Johannes Kepler",
+   "Nicolaus Copernicus",
+   "Galileo Galilei"
+  ],
+  "correct": 3,
+  "why": "Galileo built a telescope in 1609 and used it to study the sky.",
+  "rel": "Hans Lippershey first patented a telescope in 1608; Newton built the reflecting telescope.",
+  "problem": "Strictly Lippershey invented it; standard exam answer is Galileo."
+ },
+ {
+  "num": 973,
+  "page": 111,
+  "question": "Who was the first wife of the Holy Prophet (SAW)?",
+  "options": [
+   "Hazrat Khadija (RA)",
+   "Hazrat Aisha (RA)",
+   "Hazrat Hafsa (RA)",
+   "Hazrat Zainab bint Khuzaima (RA)"
+  ],
+  "correct": 0,
+  "why": "Hazrat Khadija bint Khuwaylid married the Prophet (SAW) before prophethood.",
+  "rel": "The Prophet did not marry again while she was alive."
+ },
+ {
+  "num": 974,
+  "page": 112,
+  "question": "Who was the first Khalifa (Caliph) of Islam?",
+  "options": [
+   "Hazrat Abu Bakr Siddiq (RA)",
+   "Hazrat Umar (RA)",
+   "Hazrat Usman (RA)",
+   "Hazrat Ali (RA)"
+  ],
+  "correct": 0,
+  "why": "Abu Bakr became caliph after the Prophet (SAW) passed away in 632 CE.",
+  "rel": "His caliphate lasted about 2 years and 3 months (source says 2 years 2 months 11 days).",
+  "problem": "Question text was not printed on the page beyond 'First khalifa of Islam'; reconstructed."
+ },
+ {
+  "num": 975,
+  "page": 112,
+  "question": "In which year was the Indian National Congress established?",
+  "options": [
+   "1857",
+   "1906",
+   "1919",
+   "1885"
+  ],
+  "correct": 3,
+  "why": "Congress was founded in December 1885.",
+  "rel": "Founder: Allan Octavian Hume. Muslim League was founded in 1906."
+ },
+ {
+  "num": 976,
+  "page": 112,
+  "question": "In which year was the Kargil war fought?",
+  "options": [
+   "1999",
+   "1965",
+   "1971",
+   "2001"
+  ],
+  "correct": 0,
+  "why": "The Kargil conflict between Pakistan and India took place in 1999.",
+  "rel": "It was fought in the Kargil district of Kashmir in May-July 1999."
+ },
+ {
+  "num": 977,
+  "page": 112,
+  "question": "Who was the first President of India?",
+  "options": [
+   "Dr. Rajendra Prasad",
+   "Jawaharlal Nehru",
+   "Sarvepalli Radhakrishnan",
+   "Zakir Husain"
+  ],
+  "correct": 0,
+  "why": "Rajendra Prasad served as first President from 1950 to 1962.",
+  "rel": "Jawaharlal Nehru was the first Prime Minister."
+ },
+ {
+  "num": 978,
+  "page": 112,
+  "question": "By which year does Pakistan plan to send its first astronaut into space?",
+  "options": [
+   "2022",
+   "2024",
+   "2026",
+   "2030"
+  ],
+  "correct": 2,
+  "why": "As of Oct 2026, Pakistan's first astronaut is set to fly to China's Tiangong station, reported for 25 November 2026.",
+  "rel": "Two Pakistani candidates were selected by China; one will go as payload specialist.",
+  "problem": "Source answer 2022 is outdated; the mission has slipped to 2026 and is not yet flown as of Oct 2026."
+ },
+ {
+  "num": 979,
+  "page": 112,
+  "question": "In which region of Pakistan does the Neelum River flow?",
+  "options": [
+   "Azad Kashmir",
+   "Gilgit-Baltistan",
+   "Khyber Pakhtunkhwa",
+   "Punjab"
+  ],
+  "correct": 0,
+  "why": "The Neelum River flows through Neelum Valley in Azad Jammu and Kashmir.",
+  "rel": "The Neelum-Jhelum hydropower project is on this river; it joins the Jhelum near Muzaffarabad.",
+  "problem": "Question says 'district'; Neelum is also an AJK district."
+ },
+ {
+  "num": 980,
+  "page": 112,
+  "question": "Sindh was conquered by whom?",
+  "options": [
+   "Muhammad bin Qasim",
+   "Mahmud of Ghazni",
+   "Tariq bin Ziyad",
+   "Qutbuddin Aibak"
+  ],
+  "correct": 0,
+  "why": "Muhammad bin Qasim conquered Sindh in 712 CE at about age 17.",
+  "rel": "He defeated Raja Dahir. Sindh is called Bab-ul-Islam."
+ },
+ {
+  "num": 981,
+  "page": 113,
+  "question": "On which river is Warsak Dam built?",
+  "options": [
+   "River Kabul",
+   "River Indus",
+   "River Swat",
+   "River Jhelum"
+  ],
+  "correct": 0,
+  "why": "Warsak Dam is built on the Kabul River near Peshawar.",
+  "rel": "It was built in the 1960s with Canadian help under the Colombo Plan."
+ },
+ {
+  "num": 982,
+  "page": 113,
+  "question": "Who was the leader of the Muslims in the Ghazwa Tabuk?",
+  "options": [
+   "Hazrat Abu Bakr (RA)",
+   "Prophet Muhammad (SAW)",
+   "Hazrat Umar (RA)",
+   "Hazrat Khalid bin Walid (RA)"
+  ],
+  "correct": 1,
+  "why": "The Prophet (SAW) personally led the army to Tabuk in 9 AH.",
+  "rel": "It is also called Ghazwa-e-Usrah (hardship), and no fighting took place."
+ },
+ {
+  "num": 983,
+  "page": 113,
+  "question": "The Kashmir Highway in Islamabad was renamed as what?",
+  "options": [
+   "Islamabad Highway",
+   "Murree Expressway",
+   "Srinagar Highway",
+   "Jinnah Avenue"
+  ],
+  "correct": 2,
+  "why": "In 2018 the Kashmir Highway was renamed Srinagar Highway to show solidarity with Kashmiris.",
+  "rel": "It connects Islamabad with Rawalpindi side routes and the Faizabad area."
+ },
+ {
+  "num": 984,
+  "page": 113,
+  "question": "Fill in the blank: 'I am going ____ home.'",
+  "options": [
+   "No word is needed",
+   "to",
+   "at",
+   "towards"
+  ],
+  "correct": 0,
+  "why": "With 'home' used as an adverb, no preposition is used: 'I am going home'.",
+  "rel": "Similar: 'come home', 'go abroad' take no preposition."
+ },
+ {
+  "num": 985,
+  "page": 113,
+  "question": "Fill in the blank: 'Asad is swimming ____ one hour.'",
+  "options": [
+   "since",
+   "from",
+   "by",
+   "for"
+  ],
+  "correct": 3,
+  "why": "'For' is used with a period of time such as one hour.",
+  "rel": "'Since' is used with a point in time (since 5 o'clock)."
+ },
+ {
+  "num": 986,
+  "page": 113,
+  "question": "Why do we boil milk?",
+  "options": [
+   "To make it sweeter",
+   "To kill germs",
+   "To increase its fat",
+   "To remove its colour"
+  ],
+  "correct": 1,
+  "why": "Boiling kills harmful bacteria in milk.",
+  "rel": "Pasteurisation (named after Louis Pasteur) also kills germs by heating."
+ },
+ {
+  "num": 987,
+  "page": 113,
+  "question": "One third of one tenth of 90 is?",
+  "options": [
+   "9",
+   "30",
+   "10",
+   "3"
+  ],
+  "correct": 3,
+  "why": "One tenth of 90 = 9; one third of 9 = 3.",
+  "rel": "Fractions of a number are found step by step."
+ },
+ {
+  "num": 988,
+  "page": 113,
+  "question": "A quarter of one tenth of 120 is?",
+  "options": [
+   "12",
+   "30",
+   "4",
+   "3"
+  ],
+  "correct": 3,
+  "why": "One tenth of 120 = 12; a quarter of 12 = 3.",
+  "rel": "Answer printed on page 114 as 3."
+ },
+ {
+  "num": 989,
+  "page": 114,
+  "question": "What is the value of 2 + 2/2 ?",
+  "options": [
+   "2",
+   "4",
+   "1",
+   "3"
+  ],
+  "correct": 3,
+  "why": "By BODMAS division comes first: 2/2 = 1, then 2 + 1 = 3.",
+  "rel": "BODMAS: Brackets, Orders, Division, Multiplication, Addition, Subtraction."
+ },
+ {
+  "num": 990,
+  "page": 114,
+  "question": "Fill in the blank: 'Throw the pen ____ the dustbin.'",
+  "options": [
+   "in",
+   "at",
+   "into",
+   "with"
+  ],
+  "correct": 2,
+  "why": "'Into' shows movement from outside to the inside of the dustbin.",
+  "rel": "'In' shows position, 'into' shows movement.",
+  "problem": "Answer not printed in the source; standard answer is into."
+ },
+ {
+  "num": 991,
+  "page": 114,
+  "question": "Fill in the blank: 'He is superior ____ me.'",
+  "options": [
+   "than",
+   "from",
+   "to",
+   "over"
+  ],
+  "correct": 2,
+  "why": "Words like superior, inferior and senior take 'to' not 'than'.",
+  "rel": "Other 'to' words: prefer, junior, preferable."
+ },
+ {
+  "num": 992,
+  "page": 114,
+  "question": "Fill in the blank: 'I was amazed ____ his misbehaviour.'",
+  "options": [
+   "at",
+   "of",
+   "with",
+   "for"
+  ],
+  "correct": 0,
+  "why": "'Amazed at' is the correct phrase.",
+  "rel": "Similar: surprised at, shocked at."
+ },
+ {
+  "num": 993,
+  "page": 114,
+  "question": "Fill in the blank: 'He is responsible ____ his decision.'",
+  "options": [
+   "to",
+   "of",
+   "for",
+   "with"
+  ],
+  "correct": 2,
+  "why": "We say 'responsible for' a thing and 'responsible to' a person.",
+  "rel": "Accountable also takes 'for' (a thing).",
+  "problem": "Source answer 'to' is wrong; the correct word is 'for'."
+ },
+ {
+  "num": 994,
+  "page": 114,
+  "question": "Fill in the blank: 'He is good ____ football.'",
+  "options": [
+   "in",
+   "of",
+   "at",
+   "for"
+  ],
+  "correct": 2,
+  "why": "'Good at' is used for skills.",
+  "rel": "Similar: bad at, clever at, weak at."
+ },
+ {
+  "num": 995,
+  "page": 114,
+  "question": "Fill in the blank: 'Usman is afraid ____ the dog.'",
+  "options": [
+   "from",
+   "at",
+   "to",
+   "of"
+  ],
+  "correct": 3,
+  "why": "'Afraid of' is the correct phrase.",
+  "rel": "Similar: fond of, proud of, full of."
+ },
+ {
+  "num": 996,
+  "page": 114,
+  "question": "Fill in the blank: 'She is jealous ____ my friend.'",
+  "options": [
+   "of",
+   "at",
+   "with",
+   "to"
+  ],
+  "correct": 0,
+  "why": "'Jealous of' is the correct phrase.",
+  "rel": "Similar: envious of."
+ },
+ {
+  "num": 997,
+  "page": 115,
+  "question": "When did the USA invade Afghanistan?",
+  "options": [
+   "1979",
+   "2001",
+   "1988",
+   "2003"
+  ],
+  "correct": 1,
+  "why": "The USA invaded Afghanistan in October 2001 after the 11 September attacks.",
+  "rel": "The USA withdrew completely in 2021; Russia invaded in 1979 and left in 1988-89."
+ },
+ {
+  "num": 998,
+  "page": 115,
+  "question": "What type of constitution was the 1962 Constitution of Pakistan?",
+  "options": [
+   "Parliamentary",
+   "Semi-presidential",
+   "Unitary and military",
+   "Presidential"
+  ],
+  "correct": 3,
+  "why": "The 1962 Constitution gave all power to the President (Ayub Khan).",
+  "rel": "Pakistan has had constitutions in 1956, 1962 and 1973."
+ },
+ {
+  "num": 999,
+  "page": 115,
+  "question": "When did Operation Radd-ul-Fasaad start?",
+  "options": [
+   "2017",
+   "2014",
+   "2015",
+   "2019"
+  ],
+  "correct": 0,
+  "why": "Operation Radd-ul-Fasaad was launched in February 2017.",
+  "rel": "It followed the wave of terror attacks in early 2017 and was nationwide."
+ },
+ {
+  "num": 1000,
+  "page": 115,
+  "question": "When was Operation Zarb-e-Azb launched?",
+  "options": [
+   "2009",
+   "2012",
+   "2014",
+   "2017"
+  ],
+  "correct": 2,
+  "why": "Zarb-e-Azb began in June 2014 after the terrorist attack on Jinnah International Airport, Karachi.",
+  "rel": "It was carried out in North Waziristan.",
+  "problem": "Question printed only as 'Objective?'; reconstructed from the answer lines."
+ },
+ {
+  "num": 1001,
+  "page": 115,
+  "question": "How many roots does a linear equation have?",
+  "options": [
+   "0",
+   "1",
+   "2",
+   "3"
+  ],
+  "correct": 1,
+  "why": "A linear equation (degree 1) has exactly one root.",
+  "rel": "A quadratic equation has two roots."
+ },
+ {
+  "num": 1002,
+  "page": 116,
+  "question": "What is the name of the lower house of Pakistan's Parliament?",
+  "options": [
+   "Senate",
+   "Provincial Assembly",
+   "Council of Common Interests",
+   "National Assembly"
+  ],
+  "correct": 3,
+  "why": "The National Assembly is the lower house; the Senate is the upper house.",
+  "rel": "Parliament is bicameral. The source says 342 members; after the FATA merger and 25th Amendment the NA has 336 seats.",
+  "problem": "Source member count (342) is outdated."
+ },
+ {
+  "num": 1003,
+  "page": 116,
+  "question": "In which city was the Indian National Congress formed?",
+  "options": [
+   "Calcutta",
+   "Delhi",
+   "Bombay",
+   "Madras"
+  ],
+  "correct": 2,
+  "why": "The first Congress session was held in Bombay in December 1885.",
+  "rel": "Its first president was W. C. Bonnerjee."
+ },
+ {
+  "num": 1004,
+  "page": 116,
+  "question": "Hazrat Ismail (AS) was the son of whom?",
+  "options": [
+   "Hazrat Yaqub (AS)",
+   "Hazrat Nuh (AS)",
+   "Hazrat Musa (AS)",
+   "Hazrat Ibrahim (AS)"
+  ],
+  "correct": 3,
+  "why": "Hazrat Ismail was the elder son of Hazrat Ibrahim and Hazrat Hajra.",
+  "rel": "Ibrahim had 2 sons: Ismail and Ishaq."
+ },
+ {
+  "num": 1005,
+  "page": 116,
+  "question": "What was the name of the son of Hazrat Zakariya (AS)?",
+  "options": [
+   "Hazrat Isa (AS)",
+   "Hazrat Ismail (AS)",
+   "Hazrat Yusuf (AS)",
+   "Hazrat Yahya (AS)"
+  ],
+  "correct": 3,
+  "why": "Hazrat Yahya (John) was the son of Hazrat Zakariya.",
+  "rel": "Yahya was a cousin of Hazrat Isa (AS)."
+ },
+ {
+  "num": 1006,
+  "page": 116,
+  "question": "In which year did Pakistan introduce its first postage stamp?",
+  "options": [
+   "1947",
+   "1950",
+   "1951",
+   "1948"
+  ],
+  "correct": 3,
+  "why": "Pakistan issued its first stamps on 9 July 1948.",
+  "rel": "The first stamp design was by Abdul Rehman Chughtai and was approved by Quaid-i-Azam."
+ },
+ {
+  "num": 1007,
+  "page": 117,
+  "question": "In which year was the Indus Waters Treaty signed?",
+  "options": [
+   "1948",
+   "1960",
+   "1954",
+   "1972"
+  ],
+  "correct": 1,
+  "why": "The Indus Waters Treaty was signed in 1960 in Karachi.",
+  "rel": "Signed by Nehru and Ayub Khan with the World Bank as a party. India got three eastern rivers, Pakistan the three western rivers.",
+  "problem": "Question text 'signed by?' did not match the answer (1960); reconstructed as year. (India put the treaty in abeyance in April 2025.)"
+ },
+ {
+  "num": 1008,
+  "page": 117,
+  "question": "In which province is Manchar Lake located?",
+  "options": [
+   "Sindh",
+   "Punjab",
+   "Khyber Pakhtunkhwa",
+   "Balochistan"
+  ],
+  "correct": 0,
+  "why": "Manchar Lake is in Jamshoro district of Sindh.",
+  "rel": "It is the largest freshwater lake of Pakistan. Keenjhar Lake is in Thatta, Sindh."
+ },
+ {
+  "num": 1009,
+  "page": 117,
+  "question": "With whose help was Pakistan Steel Mills built?",
+  "options": [
+   "The Soviet Union",
+   "China",
+   "USA",
+   "Japan"
+  ],
+  "correct": 0,
+  "why": "Pakistan Steel Mills in Karachi was built with Soviet Union help; work began in 1973.",
+  "rel": "It started production in 1981 near Bin Qasim."
+ },
+ {
+  "num": 1010,
+  "page": 117,
+  "question": "Where did the boat of Hazrat Nuh (AS) stop?",
+  "options": [
+   "Mount Judi",
+   "Mount Sinai",
+   "Mount Uhud",
+   "Mount Hira"
+  ],
+  "correct": 0,
+  "why": "The Quran says the Ark settled on Mount Judi.",
+  "rel": "Mount Judi is mentioned in Surah Hud."
+ },
+ {
+  "num": 1011,
+  "page": 118,
+  "question": "Which of these countries has no army?",
+  "options": [
+   "Pakistan",
+   "Iceland",
+   "India",
+   "Egypt"
+  ],
+  "correct": 1,
+  "why": "Iceland has no standing army; it relies on NATO membership and a coast guard.",
+  "rel": "Others without armies include Andorra, Dominica and Grenada.",
+  "problem": "Several countries qualify; Iceland is a standard answer."
+ },
+ {
+  "num": 1012,
+  "page": 118,
+  "question": "When did Pakistan become a member of the United Nations?",
+  "options": [
+   "14 August 1947",
+   "1 January 1948",
+   "24 October 1945",
+   "30 September 1947"
+  ],
+  "correct": 3,
+  "why": "Pakistan joined the UN on 30 September 1947.",
+  "rel": "As of Oct 2026 the UN has 193 members and its HQ is in New York."
+ },
+ {
+  "num": 1013,
+  "page": 118,
+  "question": "What is the approximate length of the Amazon River?",
+  "options": [
+   "About 3,200 km",
+   "About 5,000 km",
+   "About 6,400 km (4,000 miles)",
+   "About 8,500 km"
+  ],
+  "correct": 2,
+  "why": "Common sources give the Amazon about 6,400 km; some measures give about 6,992 km.",
+  "rel": "Nile is about 6,650 km; Yangtze (6,300 km) is the longest river in Asia.",
+  "problem": "Same UN question printed again as 1013; Amazon length asked instead. Estimates vary."
+ },
+ {
+  "num": 1014,
+  "page": 119,
+  "question": "What is the largest single source of electricity generation in Pakistan?",
+  "options": [
+   "Natural gas",
+   "Hydropower",
+   "Coal",
+   "Nuclear power"
+  ],
+  "correct": 1,
+  "why": "As of Oct 2026, hydel is the biggest single source (about 23% in FY2026 July-March data), ahead of nuclear (about 7%).",
+  "rel": "Solar is also growing fast (about 20-25%); thermal sources together are about 49%.",
+  "problem": "Source answer (natural gas 32.3%) is outdated; solar and hydro are close in 2025-26."
+ },
+ {
+  "num": 1015,
+  "page": 119,
+  "question": "In which year was the First Battle of Panipat fought?",
+  "options": [
+   "1556",
+   "1761",
+   "1526",
+   "1192"
+  ],
+  "correct": 2,
+  "why": "The First Battle of Panipat (Babur vs Ibrahim Lodhi) was fought in 1526.",
+  "rel": "Second battle 1556, third 1761. Kashmir was sold to Gulab Singh by the British in 1846 for 7.5 million rupees.",
+  "problem": "Question vague ('Battle of Panipat?'); a separate item 'Who sold Kashmir to Gulab Singh' is embedded here and not made separate."
+ },
+ {
+  "num": 1016,
+  "page": 119,
+  "question": "How many Hockey World Cups has Pakistan won?",
+  "options": [
+   "Two",
+   "Three",
+   "Four",
+   "Five"
+  ],
+  "correct": 2,
+  "why": "Pakistan won the Hockey World Cup four times.",
+  "rel": "Years: 1971, 1978, 1982 and 1994."
+ },
+ {
+  "num": 1017,
+  "page": 119,
+  "question": "In which district is the ancient site of Harappa located?",
+  "options": [
+   "Larkana",
+   "Sahiwal",
+   "Multan",
+   "Sukkur"
+  ],
+  "correct": 1,
+  "why": "Harappa is near Sahiwal in Punjab.",
+  "rel": "Mohenjo-daro is in Larkana, Sindh."
+ },
+ {
+  "num": 1018,
+  "page": 120,
+  "question": "Which companion is known by the title 'Saifullah' (Sword of Allah)?",
+  "options": [
+   "Hazrat Hamza (RA)",
+   "Hazrat Ali (RA)",
+   "Hazrat Umar (RA)",
+   "Hazrat Khalid bin Walid (RA)"
+  ],
+  "correct": 3,
+  "why": "The Prophet (SAW) gave Khalid bin Walid the title Saifullah.",
+  "rel": "Safiullah is the title of Hazrat Adam (AS); Roohullah is Hazrat Isa (AS); Roohul Quds is Hazrat Jibrael (AS).",
+  "problem": "Source line 'Saifullah = Adam' is a spelling slip for Safiullah."
+ },
+ {
+  "num": 1019,
+  "page": 120,
+  "question": "Pakistan has won the British Open squash title more than how many times?",
+  "options": [
+   "10",
+   "20",
+   "30",
+   "40"
+  ],
+  "correct": 2,
+  "why": "Between 1950 and 1997 Pakistanis won over 30 British Open titles.",
+  "rel": "Jahangir Khan won 10 British Opens; Jansher Khan won 6.",
+  "problem": "Source says 23; sources are loose, over 30 is the commonly quoted figure."
+ },
+ {
+  "num": 1020,
+  "page": 120,
+  "question": "Jahangir Khan was a player of which sport?",
+  "options": [
+   "Cricket",
+   "Squash",
+   "Hockey",
+   "Snooker"
+  ],
+  "correct": 1,
+  "why": "Jahangir Khan was a legendary squash champion.",
+  "rel": "He won 10 British Open titles and was unbeaten for about 5 years."
+ },
+ {
+  "num": 1021,
+  "page": 120,
+  "question": "What does 'Israel' mean?",
+  "options": [
+   "Servant of God",
+   "King of Kings",
+   "Land of Peace",
+   "Son of Light"
+  ],
+  "correct": 0,
+  "why": "Israel is the title of Hazrat Yaqub (AS) and means servant of God (Abdullah).",
+  "rel": "His children are called Bani Israel.",
+  "problem": "Source says 'the chosen one / wrestler with God'; standard Islamic exam answer is servant of God."
+ },
+ {
+  "num": 1022,
+  "page": 120,
+  "question": "What does 'Zam Zam' mean?",
+  "options": [
+   "Holy",
+   "Stop (stop flowing)",
+   "Sweet",
+   "Cold"
+  ],
+  "correct": 1,
+  "why": "Hazrat Hajra said 'zam zam' (stop) to the gushing water.",
+  "rel": "Zamzam well is in Masjid al-Haram, Makkah, near the Kaaba.",
+  "problem": "Meaning also explained as 'abundant water'; the exam answer is stop."
+ },
+ {
+  "num": 1023,
+  "page": 120,
+  "question": "The two daughters of the Holy Prophet (SAW) were married to whom, one after the other?",
+  "options": [
+   "Hazrat Ali (RA)",
+   "Hazrat Usman (RA)",
+   "Hazrat Abu Bakr (RA)",
+   "Hazrat Umar (RA)"
+  ],
+  "correct": 1,
+  "why": "Hazrat Ruqayyah and then Hazrat Umm Kulthum were married to Hazrat Usman, so he is called Zun-Noorain.",
+  "rel": "Hazrat Fatima married Hazrat Ali (RA)."
+ },
+ {
+  "num": 1024,
+  "page": 120,
+  "question": "In which year did the Khilafat Movement start?",
+  "options": [
+   "1905",
+   "1930",
+   "1919",
+   "1947"
+  ],
+  "correct": 2,
+  "why": "The Khilafat Movement started in 1919 to protect the Ottoman Caliphate.",
+  "rel": "Leaders: Maulana Muhammad Ali Jauhar and Maulana Shaukat Ali. Jang-e-Azadi was in 1857."
+ }
+]

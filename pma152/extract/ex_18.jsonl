@@ -1,0 +1,414 @@
+{"exp": 18001, "q": "What is 90% of 90?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18001, "q": "What is 2+2/2?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18001, "q": "If yesterday was Friday, what is the day after tomorrow?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18001, "q": "Which one is different among cricket, baseball, football, tennis?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18001, "q": "If the sister of my brother is your mother, what relation am I to you?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18001, "q": "When did the Khilafat Movement start?", "a": "1919", "ok": true, "kind": "academic"}
+{"exp": 18001, "q": "What is the Karakoram Highway also called?", "a": "silk route", "ok": true, "kind": "academic"}
+{"exp": 18001, "q": "How many faraiz of wuzu are there?", "a": "4", "ok": true, "kind": "academic"}
+{"exp": 18001, "q": "Khyber Pass connects Pakistan with which country?", "a": "Afghanistan", "ok": true, "kind": "academic"}
+{"exp": 18001, "q": "Between whom was the Battle of Plassey fought?", "a": "", "ok": false, "kind": "academic"}
+{"exp": 18001, "q": "What is a synonym of disruption?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18001, "q": "What is a synonym of fragment?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18001, "q": "In which year did the First Round Table Conference take place?", "a": "1930", "ok": false, "kind": "academic"}
+{"exp": 18002, "q": "What was the strength of Muslims in the Battle of Uhud?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "In which battle was Abu Jahal killed?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "Who was the first captain of the Pakistan cricket team?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "In which city of Pakistan is the first steel mill?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "What is the smallest surah of the Holy Quran?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "What was the age of the Holy Prophet when his grandfather died?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "Who was the foster mother of the Holy Prophet?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "Why do we boil milk?", "a": "to kill germs", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "A bat cannot see and a snake cannot what?", "a": "hear", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "What is the sides count of a prism?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "What is the date of the Cripps Mission?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "Hazrat Ishaq is the son of whom?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "When was Balochistan given the status of province?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "What was the age of the Holy Prophet when the last wahi was revealed?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "What is the opposite of wild?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "What is a synonym of fragment?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "Make a sentence with the idiom \"to drive home\".", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "Hazrat Hafsa is the daughter of whom?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "Whose title is \"Quaid-e-Millat\"?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "Who invented the iPhone?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "Who invented the bulb?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "Which companion was with the Holy Prophet at the time of migration?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "Where is the Cholistan desert?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "What is the closest meaning of \"abundant\"?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "What was the first battle of Islam?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "What is the second name of Bait ul Muqaddas?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "What is the second name of the Kashmir Highway?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "How many Khulafa-e-Rashideen are there in Islam?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "What is the third largest city of Pakistan?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "In which city was the Congress founded?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "The Hindu Kush range connects Pakistan with which country?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "How many daughters did the Holy Prophet have?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "Which Prophet of Islam had kingship?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "What is the closest meaning of \"lately\"?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "In which province is the Thal desert?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "What is the capital city of Gilgit Baltistan?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18002, "q": "Ali bought a pen for Rs 30 and sold it for Rs 40. What will be the profit percentage?", "a": "33.33 %", "ok": true, "kind": "verbal"}
+{"exp": 18002, "q": "Out of 500 students 360 are boys. What will be the percentage of girls?", "a": "28%", "ok": true, "kind": "verbal"}
+{"exp": 18002, "q": "In a class of 1500 students 1200 are present. What is the percentage of present students?", "a": "80%", "ok": true, "kind": "verbal"}
+{"exp": 18002, "q": "If 1 man writes 5 papers in 5 minutes, in how much time will 1 man write 1 paper?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18003, "q": "What is 90% of 90?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18003, "q": "If there are 24 people and 18 are women, what percentage are men?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18003, "q": "What is 1200 is what?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18003, "q": "How many months in a year have 31 days?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18003, "q": "Why do we send kids to school?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18003, "q": "Why do we boil milk?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18003, "q": "Who accepted Islam first among kids?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18003, "q": "What was the basis of the 1956 constitution?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18003, "q": "According to the 1956 constitution, who appoints the Prime Minister?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18003, "q": "Who was the first Prime Minister of Pakistan?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18003, "q": "Which province is the biggest in area?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18003, "q": "When did Hajj become farz?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18003, "q": "In which last ghazwa did the Holy Prophet take part?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18003, "q": "Which surah is called Surah Shifa?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18003, "q": "What are the major climate regions of Pakistan?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18004, "q": "If the 28th day of a month is Sunday, what day will the 2nd day be?", "a": "Tuesday", "ok": true, "kind": "verbal"}
+{"exp": 18004, "q": "If yesterday was Sunday, what will the day after tomorrow be?", "a": "Wednesday", "ok": true, "kind": "verbal"}
+{"exp": 18004, "q": "If the 4th day of a month is Friday, what day will the 19th be?", "a": "Saturday", "ok": true, "kind": "verbal"}
+{"exp": 18004, "q": "What is 90% of 90?", "a": "81", "ok": true, "kind": "verbal"}
+{"exp": 18004, "q": "What is one third of 10% of 90?", "a": "3", "ok": true, "kind": "verbal"}
+{"exp": 18004, "q": "What is one third of 10% of 120?", "a": "4", "ok": true, "kind": "verbal"}
+{"exp": 18004, "q": "How many months in a year have 31 days?", "a": "seven", "ok": true, "kind": "verbal"}
+{"exp": 18004, "q": "If 1 man writes 5 papers in 5 minutes, in how much time will 1 man write 1 paper?", "a": "1 minute", "ok": true, "kind": "verbal"}
+{"exp": 18004, "q": "Out of 500 students 360 are boys. What will be the percentage of girls?", "a": "28%", "ok": true, "kind": "verbal"}
+{"exp": 18004, "q": "What is 2+2/2?", "a": "3", "ok": true, "kind": "verbal"}
+{"exp": 18004, "q": "What is a quarter of one tenth of 120?", "a": "3", "ok": true, "kind": "verbal"}
+{"exp": 18004, "q": "There are 30 passengers in a bus and 2/3 of them are men. What is the percentage of women?", "a": "33.33%", "ok": true, "kind": "verbal"}
+{"exp": 18004, "q": "Ali bought a pen for Rs 30 and sold it for Rs 40. What will be the profit percentage?", "a": "33.33%", "ok": true, "kind": "verbal"}
+{"exp": 18004, "q": "Which one is different: Angle, Rectangle, Square, Hexagon?", "a": "Angle", "ok": true, "kind": "verbal"}
+{"exp": 18004, "q": "Which one is different: Cricket, Football, Tennis, Baseball?", "a": "Football", "ok": true, "kind": "verbal"}
+{"exp": 18004, "q": "Which one is different: Hockey, Football, Basketball, Baseball, Tennis?", "a": "Football", "ok": true, "kind": "verbal"}
+{"exp": 18004, "q": "Which one is different: Wheat, Hay, Rice, Barley?", "a": "Hay", "ok": true, "kind": "verbal"}
+{"exp": 18004, "q": "Which one is different: Monkey, Ape, Chimpanzee, Panda, Baboon?", "a": "Panda", "ok": true, "kind": "verbal"}
+{"exp": 18004, "q": "Which one is different: America, Africa, Asia, Euro?", "a": "Euro", "ok": true, "kind": "verbal"}
+{"exp": 18004, "q": "If the 4th day of a month is Tuesday, what day will the 26th day be?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18005, "q": "Dictionary order questions appeared (arrange words in dictionary order).", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18005, "q": "Age calculation with relation questions appeared.", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18005, "q": "Who is the father of Hazrat Hafsa R.A?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18005, "q": "What is the relation of Hazrat Safiyya with Prophet Muhammad PBUH?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18005, "q": "Babusar Pass connects Kaghan with which place?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18005, "q": "In which ghazwa did Allah help the Muslims?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18005, "q": "Where is the Kharan desert located?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18005, "q": "Who designed the flag of Pakistan?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18005, "q": "How did Quaid-e-Azam respond to the Nehru Report?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18005, "q": "What is the establishment date of Pakistan Steel Mills?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18005, "q": "What is the date of the first postal stamp of Pakistan?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18007, "q": "Which is the largest airport of Pakistan?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18007, "q": "Who was the first constitutional prime minister/president of Pakistan?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18007, "q": "Which country is present in the west of Pakistan?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18007, "q": "Why do we boil milk?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18007, "q": "Why do we send children to schools?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18007, "q": "What is the antonym of wild?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18007, "q": "Which river separates Pakistan and India on the border?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18007, "q": "By which treaty was Kashmir given to Raja Gulab Singh?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18007, "q": "What is the derivative of the exponential function?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18007, "q": "Who named the UNO?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18007, "q": "For how many days did the Indo-Pak war of 1965 last?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18008, "q": "What is 90% of 90?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18008, "q": "Why do we boil milk?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18008, "q": "Who was the first prime minister of Pakistan?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18008, "q": "When did Pakistan play its first T20 match?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18008, "q": "When did Pakistan win its first hockey world cup?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18009, "q": "Which country has won the most football world cups?", "a": "Brazil", "ok": true, "kind": "academic"}
+{"exp": 18009, "q": "Sardar Abdur Rab Nishtar was governor of which province?", "a": "Punjab", "ok": true, "kind": "academic"}
+{"exp": 18009, "q": "Who invented the telescope?", "a": "", "ok": false, "kind": "academic"}
+{"exp": 18009, "q": "What is a synonym of turbulent?", "a": "violent", "ok": true, "kind": "academic"}
+{"exp": 18009, "q": "How many rivers came to the Pakistan side in the Indus Water Treaty?", "a": "3", "ok": true, "kind": "academic"}
+{"exp": 18009, "q": "Who discovered bacteria?", "a": "", "ok": false, "kind": "academic"}
+{"exp": 18009, "q": "In which year were the first postal stamps of Pakistan made?", "a": "1948", "ok": true, "kind": "academic"}
+{"exp": 18009, "q": "What is the meaning of the idiom \"snake in the grass\"?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18009, "q": "Which prophet was a carpenter?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18009, "q": "Which prophet addressed Nimrod?", "a": "Hazrat Mosa", "ok": true, "kind": "academic"}
+{"exp": 18009, "q": "Which agreement between India and Pakistan was signed in 1965?", "a": "Tashkent agreement", "ok": true, "kind": "academic"}
+{"exp": 18009, "q": "Under whom was the Indus Water Treaty signed?", "a": "World Bank", "ok": true, "kind": "academic"}
+{"exp": 18009, "q": "With whose help was the Tashkent Agreement signed?", "a": "USSR", "ok": true, "kind": "academic"}
+{"exp": 18009, "q": "If a matrix order is 5x4, what is the number of elements in the 1st column?", "a": "", "ok": false, "kind": "academic"}
+{"exp": 18009, "q": "How many tribes were in Madina at the time of migration of the Prophet PBUH?", "a": "", "ok": false, "kind": "academic"}
+{"exp": 18009, "q": "In which year did Pakistan win the Champions Trophy?", "a": "2017", "ok": true, "kind": "academic"}
+{"exp": 18009, "q": "What type of constitution was the 1962 constitution?", "a": "presidential", "ok": true, "kind": "academic"}
+{"exp": 18009, "q": "From which family was Prophet Muhammad PBUH?", "a": "Banu Hashim family", "ok": true, "kind": "academic"}
+{"exp": 18009, "q": "Who discovered penicillin?", "a": "Alexander Fleming", "ok": true, "kind": "academic"}
+{"exp": 18009, "q": "Who is the fastest man on earth in present days?", "a": "Usain Bolt", "ok": true, "kind": "academic"}
+{"exp": 18010, "q": "What is 90% of 90?", "a": "81", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "How many months in a year have 31 days?", "a": "7", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "Out of 500 students 360 are boys. What will be the percentage of girls?", "a": "28", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "What is 2+2/2?", "a": "3", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "What is a quarter of 1/10 of 120?", "a": "3", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "There are 30 passengers in a bus and 1/3 of them are men. What is the percentage of women?", "a": "33.3", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "Ali bought a pen for Rs 30 and sold it for Rs 40. What is the profit percentage?", "a": "33.33", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "Which one is different: Angle, Rectangle, Square, Hexagon?", "a": "Angle", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "Which one is different: Cricket, Hockey, Baseball, Football?", "a": "Football", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "Which one is different: Monkey, Ape, Chimpanzee, Panda?", "a": "Panda", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "If the 4th day of a month is Tuesday, what day will the 26th day of the month be?", "a": "Wednesday", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "There are 30 passengers in a bus and 2/3 are men. What is the number of women?", "a": "10", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "A man walked north, turns left, then again turns right. What is his present direction?", "a": "NORTH", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "Which number comes next: 115, 55, 170, 65, 235, 75, ?", "a": "", "ok": false, "kind": "verbal"}
+{"exp": 18010, "q": "Which number comes next: 66, 63, 57, 45, ?", "a": "21", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "Which letter comes next: B, E, J, Q, ?", "a": "Z", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "Why do parents give education to children?", "a": "for grooming", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "Why do we boil milk?", "a": "to kill germs", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "If yesterday was Friday, what is the day after tomorrow?", "a": "Sunday", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "A train's speed is twice that of a car. If the car covers 60 km in an hour, how far will the train cover in 30 minutes?", "a": "60 km", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "A bat cannot see and a snake cannot what?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "In a class of 500 students 1200 are present. What is the percentage of absent students?", "a": "20", "ok": false, "kind": "verbal"}
+{"exp": 18010, "q": "If my brother's sister is your mother, what am I to you?", "a": "uncle", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "If 5 men write 5 pages in 5 minutes, how many pages will 1 man write in 5 minutes?", "a": "1 page in 5 minutes", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "Out of 500 students 340 are present. What is the percentage of absent students?", "a": "32", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "Vehicle is to wheel as sound is to what?", "a": "waves", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "Arrange the letters \"Utyeab\" to make a word (beauty). What is its last letter?", "a": "Y", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "What is the 3rd letter alphabetically in the word \"management\"?", "a": "G", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "Arrange the letters \"poearld\" to make a word.", "a": "leopard", "ok": true, "kind": "verbal"}
+{"exp": 18010, "q": "Change the voice to passive: a sentence in simple tense.", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18010, "q": "Change the voice to passive: a sentence in present perfect tense.", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18010, "q": "Change the narration of a sentence (two questions).", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18010, "q": "Which preposition is used with \"and\": of, with, up, about?", "a": "About", "ok": true, "kind": "academic"}
+{"exp": 18010, "q": "How many daughters did the Holy Prophet have?", "a": "4", "ok": true, "kind": "academic"}
+{"exp": 18010, "q": "What is the tenure of the National Assembly?", "a": "5 years", "ok": true, "kind": "academic"}
+{"exp": 18010, "q": "Who was the winner of the 2022 World Cup?", "a": "Argentina", "ok": true, "kind": "academic"}
+{"exp": 18011, "q": "What is the title of Hazrat Ali?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18011, "q": "What is the title of Hazrat Khalid bin Waleed?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18011, "q": "When did the first migration take place and in which direction?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18011, "q": "What should be the age of the President of Pakistan?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18011, "q": "According to the 1973 constitution, what should the education be (qualification)?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18012, "q": "Who was the first female prime minister of Pakistan?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18012, "q": "In which city was Benazir assassinated?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18012, "q": "Olympic is the airspace of which country?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18012, "q": "In which year was the first space satellite of Pakistan launched?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18012, "q": "Which prophet addressed Namrood?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18012, "q": "Which Prophet took the revelation to the Holy Prophet PBUH?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18012, "q": "In which year was the first cricket world cup?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18012, "q": "Which Pakistani cricketer has the most test runs?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18012, "q": "Who was the leader in the ghazwa of Tabook?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18012, "q": "Which Prophet could talk to jinns?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18013, "q": "Who designed the national anthem?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18013, "q": "In which field did Malala Yousafzai receive the Nobel Prize?", "a": "peace", "ok": true, "kind": "academic"}
+{"exp": 18013, "q": "What is the capital of Bangladesh?", "a": "Dhaka", "ok": true, "kind": "academic"}
+{"exp": 18013, "q": "How many degrees does a circle make in a total turn?", "a": "360", "ok": true, "kind": "academic"}
+{"exp": 18014, "q": "In which district is Keenjhar Lake located?", "a": "Thatta", "ok": true, "kind": "academic"}
+{"exp": 18014, "q": "In which year did Pakistan become first snooker champion?", "a": "1994", "ok": true, "kind": "academic"}
+{"exp": 18014, "q": "How many Pakistanis are Nobel prize holders?", "a": "2", "ok": true, "kind": "academic"}
+{"exp": 18014, "q": "In which year was Tarbela Dam built?", "a": "1974", "ok": true, "kind": "academic"}
+{"exp": 18014, "q": "In which year did Pakistan join SEATO?", "a": "1954", "ok": true, "kind": "academic"}
+{"exp": 18014, "q": "What is the relation between Hazrat Haroon and Hazrat Musa?", "a": "brother", "ok": true, "kind": "academic"}
+{"exp": 18014, "q": "Which is the 2nd highest mountain range or hill in Pakistan?", "a": "Nanga Parbat", "ok": true, "kind": "academic"}
+{"exp": 18014, "q": "What is the date of the Montagu Chelmsford reforms?", "a": "1919", "ok": true, "kind": "academic"}
+{"exp": 18014, "q": "What is the total number of members of the National Assembly?", "a": "342", "ok": true, "kind": "academic"}
+{"exp": 18014, "q": "Where is the NATO headquarters?", "a": "Brussels, Belgium", "ok": true, "kind": "academic"}
+{"exp": 18014, "q": "Where was Hazrat Hamza martyred?", "a": "Uhud", "ok": true, "kind": "academic"}
+{"exp": 18014, "q": "With what is tayammum performed?", "a": "sand, stone, mud", "ok": true, "kind": "academic"}
+{"exp": 18014, "q": "What was the age of Muhammad SAW at the last wahi?", "a": "64", "ok": true, "kind": "academic"}
+{"exp": 18014, "q": "Who discovered the neutron?", "a": "Chadwick", "ok": true, "kind": "academic"}
+{"exp": 18014, "q": "On what date did Pakistan join the UN?", "a": "30 Sep 1947", "ok": true, "kind": "academic"}
+{"exp": 18014, "q": "In which year did Pakistan leave SEATO?", "a": "1973", "ok": true, "kind": "academic"}
+{"exp": 18014, "q": "In which year was Sui gas discovered?", "a": "1952", "ok": true, "kind": "academic"}
+{"exp": 18015, "q": "What is 90% of 90?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18015, "q": "What is 2+2/2?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18015, "q": "If yesterday was Friday, what is the day after tomorrow?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18015, "q": "Which one is different among cricket, baseball, football, tennis?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18015, "q": "If the sister of my brother is your mother, what relation am I to you?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18015, "q": "When did the Khilafat Movement start?", "a": "1919", "ok": true, "kind": "academic"}
+{"exp": 18015, "q": "What is the Karakoram Highway also called?", "a": "silk route", "ok": true, "kind": "academic"}
+{"exp": 18015, "q": "How many faraiz of wuzu are there?", "a": "4", "ok": true, "kind": "academic"}
+{"exp": 18015, "q": "Khyber Pass connects Pakistan with which country?", "a": "Afghanistan", "ok": true, "kind": "academic"}
+{"exp": 18015, "q": "Between whom was the Battle of Plassey fought?", "a": "", "ok": false, "kind": "academic"}
+{"exp": 18015, "q": "What is a synonym of disruption?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18015, "q": "What is a synonym of fragment?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18015, "q": "In which year did the First Round Table Conference take place?", "a": "1930", "ok": false, "kind": "academic"}
+{"exp": 18016, "q": "4+4x4 (apply the rule of operations): what is the value?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18016, "q": "After which battle could Muslims not attack Makkah?", "a": "Badar", "ok": false, "kind": "academic"}
+{"exp": 18016, "q": "What was the new name of the Kashmir Highway?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18016, "q": "In which battle was the tooth of Prophet Muhammad PBUH martyred?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18016, "q": "Who was the leader of the kuffar in Badar?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18016, "q": "Who discovered the proton?", "a": "Niels Bohr", "ok": true, "kind": "academic"}
+{"exp": 18016, "q": "Where is K2 located?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18016, "q": "Where is the world's largest polo ground?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18016, "q": "Which was the first Muslim country to accept Pakistan?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18016, "q": "By whom was the photostat machine first introduced?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18016, "q": "Who discovered micro-organisms?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18016, "q": "Which fruit has its seeds coming out from the soil?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18016, "q": "What is the common base of logarithm?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18016, "q": "4/4 and 4x4 are what of each other?", "a": "inverse", "ok": true, "kind": "academic"}
+{"exp": 18016, "q": "If y is the only point of a linear line, what will its axis be?", "a": "y", "ok": true, "kind": "academic"}
+{"exp": 18016, "q": "Who is the writer of \"Indian Dream Win\"?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18016, "q": "Who designed the Pakistan flag?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18017, "q": "Mohammad Ali Bogra was what of Pakistan?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18017, "q": "What is the nisab of gold for zakat in Islam?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18017, "q": "In which city is the IMF headquarters located?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18017, "q": "How many daughters of Hazrat Muhammad PBUH passed away in his life?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18017, "q": "Who is the chairman of the People's Party?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18017, "q": "Who is the current chairman of NAB?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18017, "q": "What is the duration of buffalo lactation?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18017, "q": "What is the antonym of abhorrent?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18017, "q": "Change the voice: We work for them.", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18017, "q": "In which hijri year did Hazrat Muhammad PBUH perform Umrat ul Qaza?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18018, "q": "Who is the Education Minister?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18018, "q": "Which river is between Pakistan and India?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18018, "q": "Who are the Ashra Mubashra?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18018, "q": "Who killed Hazrat Hamza?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18018, "q": "In which Islamic month did Pakistan become independent?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18018, "q": "Rooh ul Qudus is the title of whom?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18018, "q": "The Indus Water Treaty was between which leaders?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18018, "q": "Who allocated the Indus Water Treaty?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18018, "q": "In which year did Pakistan win the One Day World Cup?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18018, "q": "By what other name is Surah Al Fatiha known?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18018, "q": "With what does the Quran begin?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18018, "q": "What is the length of the Suez Canal?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18018, "q": "Where were the Quraish resident?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18018, "q": "How many lines can pass through a single point?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18018, "q": "What is the antonym of tamed?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18018, "q": "What is a synonym of possession?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18018, "q": "Change the voice of a sentence (3 to 4).", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18018, "q": "Which city has the highest literacy in Pakistan?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18018, "q": "How many articles were in the 1956 constitution?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18018, "q": "What was the age of the president according to the 1956 constitution?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18019, "q": "If yesterday was Sunday, what is the day after tomorrow?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18019, "q": "What is 90% of 90?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18019, "q": "What is 1/3 of 10% of 90?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18019, "q": "What is 1/4 of 10% of 120?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18019, "q": "In a class of 500 students 340 are present. What is the percentage of absent students?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18019, "q": "In a class of 1500 students 1200 are present. What is the percentage of present students?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18019, "q": "Why do we boil milk?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18019, "q": "What is the last letter of \"beauty\" when its letters are arranged?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18019, "q": "Why do we send children to school?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18019, "q": "In which surah does Bismillah come twice?", "a": "Namal", "ok": true, "kind": "academic"}
+{"exp": 18019, "q": "Where was the first wahi revealed?", "a": "Cave Hira", "ok": true, "kind": "academic"}
+{"exp": 18019, "q": "What is the relation between Haroon AS and Musa AS?", "a": "Brothers", "ok": true, "kind": "academic"}
+{"exp": 18019, "q": "How many articles were in the first constitution?", "a": "250", "ok": true, "kind": "academic"}
+{"exp": 18019, "q": "Who was the second prime minister of Pakistan?", "a": "Khwaja Nazimuddin", "ok": true, "kind": "academic"}
+{"exp": 18019, "q": "Who discovered the proton?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18020, "q": "In which place was the Battle of Badr fought?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18020, "q": "In which battle was the tooth of the Holy Prophet SAW martyred?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18020, "q": "What job did Mother Teresa do?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18020, "q": "Who was the German leader in World War II?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18020, "q": "In which battle were many Hafiz-e-Quran martyred?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18020, "q": "What is 90% of 90?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18020, "q": "Why do we boil milk?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18020, "q": "Why do we send children to school?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "In which Hijri year did the Prophet PBUH perform Umrah?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "What is the capital of Bhutan?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "What is the capital of Somalia?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "What is the largest organ of the human body?", "a": "Liver", "ok": false, "kind": "academic"}
+{"exp": 18021, "q": "How many verses are in Surah Ikhlas?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "Mohammad Ali Bogra was a what?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "What is the relationship of Kalsoom with the Prophet PBUH?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "What is the Indus Water Treaty?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "Who was the president of Pakistan in the 1956 constitution?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "How many ayats are in Surah Baqarah?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "In which year were the Olympics cancelled?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "2 km equals how much?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "How many general seats does the Punjab in the National Assembly have?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "Who were the powerful politicians of KPK in 1947?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "What is the last letter of \"beauty\" when arranged?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "What is the capital of Russia?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "Jahangir Khan was a famous player of which sport?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "Who is called Baba-e-Urdu?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "Who is the Chief Minister of Balochistan?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "Who gave the idea of Pakistan?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "What is the highest range of Pakistan?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "What is the relationship of Abu Talib with the Prophet PBUH?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "What is the title of Kaleemullah?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "What do the five colours of the Olympic represent?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "Who is the Sword of Allah?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "What is the Montagu Chelmsford reform?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "Who was the first Hafiz of the Quran?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "Hitler was a politician of which country?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "In which year did Pakistan win the first hockey world cup?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18021, "q": "What are the faraiz of wuzu?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18023, "q": "What does KRL stand for?", "a": "Kahuta Research Laboratories", "ok": true, "kind": "academic"}
+{"exp": 18023, "q": "For how many days did Rasool Allah stay in Cave Hira?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18023, "q": "In which year did Pakistan win its first world cup?", "a": "1992", "ok": true, "kind": "academic"}
+{"exp": 18023, "q": "Who made the flag of Pakistan?", "a": "Syed Amiruddin Kedwaii", "ok": true, "kind": "academic"}
+{"exp": 18023, "q": "Who chooses the president of Pakistan?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18023, "q": "From which tribe of Quraish was Rasool Allah?", "a": "Banu Hashim", "ok": true, "kind": "academic"}
+{"exp": 18023, "q": "What was the name of the uncle of the Prophet with whom he was raised?", "a": "Hazrat Abu Talib", "ok": true, "kind": "academic"}
+{"exp": 18023, "q": "To which companion did Rasool Allah tell his secrets?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18023, "q": "Which dam has been built on a river of Pakistan?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18023, "q": "Shah Abdul Latif Bhittai is a poet of which language?", "a": "Sindhi", "ok": true, "kind": "academic"}
+{"exp": 18023, "q": "Who wrote the book \"The Happiness Hypothesis\"?", "a": "Jonathan Haidt", "ok": true, "kind": "academic"}
+{"exp": 18023, "q": "On which river did India build the Baglihar dam?", "a": "Chenab", "ok": true, "kind": "academic"}
+{"exp": 18023, "q": "How many Muslims were martyred in the Ghazwa of Uhud?", "a": "70", "ok": true, "kind": "academic"}
+{"exp": 18023, "q": "When did Hajj become farz?", "a": "9 hijri", "ok": false, "kind": "academic"}
+{"exp": 18023, "q": "What is the first pillar of Islam?", "a": "Kalma Tauheed", "ok": true, "kind": "academic"}
+{"exp": 18023, "q": "Who founded the PPP?", "a": "Zulfiqar Ali Bhutto", "ok": true, "kind": "academic"}
+{"exp": 18023, "q": "Israel is the title of whom?", "a": "Hazrat Yaqoob as", "ok": true, "kind": "academic"}
+{"exp": 18024, "q": "Where is the Nile located?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18024, "q": "Which border is between India and Pakistan?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18024, "q": "Who are the Ashra Mubashra?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18024, "q": "Who killed Hazrat Hamza?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18024, "q": "Who was the first to climb Everest?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18024, "q": "Rooh Ullah is the title of whom?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18024, "q": "In which year was the Indus Water Treaty signed?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18024, "q": "What is the length of the Pakistan Afghanistan border?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18024, "q": "How many times is namaz and zikr mentioned in the Quran?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18024, "q": "In which month was the Quran revealed?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18024, "q": "Who was the Quraish leader during the Battle of Uhud?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18024, "q": "Who was the first caliph of Islam?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18024, "q": "What is the length of the Suez Canal?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18024, "q": "What is a synonym of possession?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18024, "q": "Change the voice of a sentence (3 to 4).", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18024, "q": "Which country is in the east of Pakistan?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18024, "q": "How many surahs are in the Quran?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18025, "q": "Who is the son-in-law of Hazrat Muhammad (SAW)?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18025, "q": "When did the Khilafat Movement start?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18025, "q": "How many surahs in the Quran are named after Prophets?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18025, "q": "What is the capital of Bhutan?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18025, "q": "What is the most populated country?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18025, "q": "What does LOC stand for?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18025, "q": "What is a synonym of restricted?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18025, "q": "Who was the first president of Congress?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18026, "q": "What is 90% of 90?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18026, "q": "What is 2+2/2?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18026, "q": "What is a quarter of one tenth of 120?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18026, "q": "There are 30 passengers in a bus and 2/3 of them are men. What is the percentage of women?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18026, "q": "What is one third of 10% of 120?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18026, "q": "If the second day of a month is Monday, what day will the 12th day be?", "a": "Friday", "ok": true, "kind": "verbal"}
+{"exp": 18026, "q": "In which year did Pakistan win the One Day World Cup?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18026, "q": "How many sons did Hazrat Muhammad S.A.W have?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18026, "q": "Who accepted Islam first among women?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18026, "q": "Why do we boil milk?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18026, "q": "Who has taken the most wickets in test matches?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18026, "q": "How many Pakistanis have won the Nobel prize in physics?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18026, "q": "What is the heart of the Quran?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18026, "q": "What is the shortest surah of the Quran?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18027, "q": "If yesterday was Friday, what will the day after tomorrow be?", "a": "Monday", "ok": true, "kind": "verbal"}
+{"exp": 18027, "q": "What is 90% of 90?", "a": "81", "ok": true, "kind": "verbal"}
+{"exp": 18027, "q": "What is one third of 10% of 90?", "a": "3", "ok": true, "kind": "verbal"}
+{"exp": 18027, "q": "What is one third of 10% of 120?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18027, "q": "How many months in a year have 31 days?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18027, "q": "If 1 man writes 5 papers in 5 minutes, in how much time will 1 man write 1 paper?", "a": "1 minute", "ok": true, "kind": "verbal"}
+{"exp": 18027, "q": "Ali bought a pen for Rs 30 and sold it for Rs 40. What will be the profit percentage?", "a": "33.3 %", "ok": true, "kind": "verbal"}
+{"exp": 18027, "q": "On what date was the Pak-China border agreed?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18027, "q": "When did Fatima Jinnah die?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18027, "q": "Where is the headquarters of the UN?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18027, "q": "Where is the headquarters of the Atomic Energy agency?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18027, "q": "Where is the headquarters of the World Bank?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18028, "q": "How many letters are in the Urdu alphabet?", "a": "37", "ok": true, "kind": "academic"}
+{"exp": 18028, "q": "Bulleh Shah was a poet of which language?", "a": "Punjabi", "ok": true, "kind": "academic"}
+{"exp": 18028, "q": "How many times is prayer mentioned in the Quran?", "a": "700", "ok": true, "kind": "academic"}
+{"exp": 18028, "q": "Boxer Muhammad Ali belongs to which country?", "a": "America", "ok": true, "kind": "academic"}
+{"exp": 18028, "q": "What type of constitution was the 1956 constitution?", "a": "parliamentary", "ok": true, "kind": "academic"}
+{"exp": 18028, "q": "Iceland is present in which continent?", "a": "Europe", "ok": true, "kind": "academic"}
+{"exp": 18028, "q": "Which article gives the right of freedom of speech?", "a": "article 19", "ok": true, "kind": "academic"}
+{"exp": 18028, "q": "Which uncle of Hazrat Muhammad SAW is mentioned in the Quran?", "a": "Abu Lahab", "ok": true, "kind": "academic"}
+{"exp": 18028, "q": "What is the tribe of Hazrat Muhammad SAW?", "a": "Banu Hashim", "ok": true, "kind": "academic"}
+{"exp": 18029, "q": "What is 90% of 90?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18029, "q": "What is 2+2/2?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18029, "q": "If yesterday was Friday, what is the day after tomorrow?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18029, "q": "Which one is different among cricket, baseball, football, tennis?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18029, "q": "If the sister of my brother is your mother, what relation am I to you?", "a": "", "ok": true, "kind": "verbal"}
+{"exp": 18029, "q": "When did the Khilafat Movement start?", "a": "1919", "ok": true, "kind": "academic"}
+{"exp": 18029, "q": "What is the Karakoram Highway also called?", "a": "silk route", "ok": true, "kind": "academic"}
+{"exp": 18029, "q": "How many faraiz of wuzu are there?", "a": "4", "ok": true, "kind": "academic"}
+{"exp": 18029, "q": "Khyber Pass connects Pakistan with which country?", "a": "Afghanistan", "ok": true, "kind": "academic"}
+{"exp": 18029, "q": "Between whom was the Battle of Plassey fought?", "a": "", "ok": false, "kind": "academic"}
+{"exp": 18029, "q": "What is a synonym of disruption?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18029, "q": "What is a synonym of fragment?", "a": "", "ok": true, "kind": "academic"}
+{"exp": 18029, "q": "In which year did the First Round Table Conference take place?", "a": "1930", "ok": false, "kind": "academic"}
+{"exp": 18029, "q": "Who wrote Humayun Nama?", "a": "Gulbadan Begum", "ok": true, "kind": "academic"}
+{"exp": 18029, "q": "Tirmizi Sharif is a book of what?", "a": "Ahadees", "ok": true, "kind": "academic"}
+{"exp": 18029, "q": "Who made Microsoft in Pakistan?", "a": "Arfa Karim", "ok": true, "kind": "academic"}
+{"exp": 18029, "q": "What is the length of the Pakistan China border?", "a": "", "ok": false, "kind": "academic"}

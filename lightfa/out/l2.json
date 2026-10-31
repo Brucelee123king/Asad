@@ -1,0 +1,737 @@
+[
+ {
+  "question": "What is the height of Tirich Mir, the highest peak of the Hindu Kush range?",
+  "options": [
+   "8611 meters",
+   "7708 meters",
+   "8126 meters",
+   "7788 meters"
+  ],
+  "correct": 1,
+  "why": "Tirich Mir in Chitral is about 7708 meters high and is the highest peak of the Hindu Kush. 8611 m is K2, 8126 m is Nanga Parbat and 7788 m is Rakaposhi.",
+  "rel": "Tirich Mir is in Chitral district, KP. K2 (8611 m) is the highest peak in Pakistan.",
+  "rep": 0,
+  "src": "lc100 51",
+  "note": ""
+ },
+ {
+  "question": "In which year did Quaid-e-Azam present his famous Fourteen Points?",
+  "options": [
+   "1929",
+   "1916",
+   "1928",
+   "1930"
+  ],
+  "correct": 0,
+  "why": "Quaid-e-Azam presented the Fourteen Points in March 1929 (commonly given as 28 March 1929) in reply to the Nehru Report. 1928 was the Nehru Report itself, 1916 the Lucknow Pact and 1930 Allama Iqbal's Allahabad Address.",
+  "rel": "The Nehru Report came in 1928. Allama Iqbal gave the Allahabad Address in 1930.",
+  "rep": 0,
+  "src": "lc100 52",
+  "note": ""
+ },
+ {
+  "question": "In which Islamic month is Hajj performed?",
+  "options": [
+   "Ramadan",
+   "Muharram",
+   "Dhul Hijjah",
+   "Shawwal"
+  ],
+  "correct": 2,
+  "why": "Hajj is performed on 8 to 12 Dhul Hijjah, the 12th Islamic month. Ramadan is the month of fasting, Shawwal has Eid ul Fitr and Muharram is the first month of the Islamic year.",
+  "rel": "Eid ul Adha falls on 10 Dhul Hijjah. The Day of Arafah is 9 Dhul Hijjah.",
+  "rep": 0,
+  "src": "lc100 53",
+  "note": ""
+ },
+ {
+  "question": "Which mountain range lies in the north-west of Pakistan?",
+  "options": [
+   "Hindu Kush",
+   "Salt Range",
+   "Kirthar Range",
+   "Karakoram"
+  ],
+  "correct": 0,
+  "why": "The Hindu Kush lies in the north-west of Pakistan (Chitral area) and its highest peak is Tirich Mir. The Karakoram is in the far north (Gilgit-Baltistan), the Salt Range is in Punjab and the Kirthar Range is in Sindh and Balochistan.",
+  "rel": "Tirich Mir (7708 m) is the highest peak of the Hindu Kush. K2 is in the Karakoram.",
+  "rep": 0,
+  "src": "lc100 54",
+  "note": ""
+ },
+ {
+  "question": "Who wrote the book 'Friends Not Masters'?",
+  "options": [
+   "Zulfikar Ali Bhutto",
+   "Ayub Khan",
+   "Liaquat Ali Khan",
+   "Pervez Musharraf"
+  ],
+  "correct": 1,
+  "why": "'Friends Not Masters' (1967) is the autobiography of President Ayub Khan. Bhutto wrote 'The Myth of Independence', Musharraf wrote 'In the Line of Fire', and Liaquat Ali Khan wrote 'Pakistan: The Heart of Asia'.",
+  "rel": "Benazir Bhutto wrote 'Daughter of the East'. Ayub Khan ruled from 1958 to 1969.",
+  "rep": 0,
+  "src": "lc100 55",
+  "note": ""
+ },
+ {
+  "question": "Under the Constitution of Pakistan, the President is the head of:",
+  "options": [
+   "Government",
+   "Parliament",
+   "Armed Forces only",
+   "State"
+  ],
+  "correct": 3,
+  "why": "The President is the Head of State (Article 41) and represents the unity of the Republic. The Prime Minister is the head of government, and Parliament is led by its presiding officers. The President is Supreme Commander, but that is not the main title asked here.",
+  "rel": "The Prime Minister is the chief executive (head of government). The President is elected by an electoral college.",
+  "rep": 0,
+  "src": "lc100 56",
+  "note": ""
+ },
+ {
+  "question": "Where is the headquarters of the World Health Organization (WHO)?",
+  "options": [
+   "New York, USA",
+   "Paris, France",
+   "Geneva, Switzerland",
+   "Vienna, Austria"
+  ],
+  "correct": 2,
+  "why": "The WHO headquarters is in Geneva, Switzerland. New York has the UN headquarters, Paris has UNESCO and Vienna has the IAEA.",
+  "rel": "WHO was founded on 7 April 1948, now World Health Day. The WTO and Red Cross (ICRC) are also in Geneva.",
+  "rep": 0,
+  "src": "lc100 57",
+  "note": ""
+ },
+ {
+  "question": "Warsak Dam is located near which city?",
+  "options": [
+   "Peshawar",
+   "Haripur",
+   "Jhelum",
+   "Kohat"
+  ],
+  "correct": 0,
+  "why": "Warsak Dam is on the Kabul River about 30 km from Peshawar, KP. Tarbela is in Haripur, Mangla is near Jhelum (Mirpur), and Kohat has Tanda Dam.",
+  "rel": "Warsak Dam was completed in the 1960s on the Kabul River. Tanda Dam is in Kohat.",
+  "rep": 0,
+  "src": "lc100 58",
+  "note": ""
+ },
+ {
+  "question": "Green plants make their food through which process?",
+  "options": [
+   "Respiration",
+   "Photosynthesis",
+   "Transpiration",
+   "Digestion"
+  ],
+  "correct": 1,
+  "why": "Plants make food (glucose) by photosynthesis using sunlight, carbon dioxide and water, with the help of chlorophyll. Respiration breaks food down for energy, transpiration is loss of water from leaves, and digestion happens in animals.",
+  "rel": "Photosynthesis releases oxygen. Chlorophyll gives plants their green colour.",
+  "rep": 0,
+  "src": "lc100 59",
+  "note": ""
+ },
+ {
+  "question": "Where is the headquarters of Amnesty International?",
+  "options": [
+   "Geneva",
+   "New York",
+   "Paris",
+   "London"
+  ],
+  "correct": 3,
+  "why": "Amnesty International has its International Secretariat in London, UK. Geneva has WHO and the Red Cross, New York has the UN, and Paris has UNESCO.",
+  "rel": "Amnesty International was founded in 1961 in London. It won the Nobel Peace Prize in 1977.",
+  "rep": 0,
+  "src": "lc100 60",
+  "note": ""
+ },
+ {
+  "question": "The Indus Waters Treaty between Pakistan and India was brokered by:",
+  "options": [
+   "World Bank",
+   "United Nations",
+   "IMF",
+   "Asian Development Bank"
+  ],
+  "correct": 0,
+  "why": "The World Bank brokered the Indus Waters Treaty, signed in Karachi in 1960 by Ayub Khan and Nehru. The UN, IMF and ADB were not the mediators.",
+  "rel": "Pakistan got the western rivers (Indus, Jhelum, Chenab) and India the eastern rivers (Ravi, Beas, Sutlej). India announced it was holding the treaty in abeyance in April 2025.",
+  "rep": 0,
+  "src": "lc100 61",
+  "note": ""
+ },
+ {
+  "question": "Who founded the newspaper Dawn?",
+  "options": [
+   "Allama Iqbal",
+   "Liaquat Ali Khan",
+   "Quaid-e-Azam",
+   "Sir Syed Ahmad Khan"
+  ],
+  "correct": 2,
+  "why": "Quaid-e-Azam Muhammad Ali Jinnah founded Dawn in Delhi in 1941 as the voice of the Muslim League. Sir Syed started the Tahzib-ul-Akhlaq, and Iqbal and Liaquat Ali Khan did not found Dawn.",
+  "rel": "Dawn moved to Karachi after 1947. Maulana Muhammad Ali Jauhar ran 'Comrade' and 'Hamdard'.",
+  "rep": 0,
+  "src": "lc100 62",
+  "note": ""
+ },
+ {
+  "question": "In which year did World War I start?",
+  "options": [
+   "1918",
+   "1914",
+   "1939",
+   "1905"
+  ],
+  "correct": 1,
+  "why": "World War I started in July 1914 after the killing of Archduke Franz Ferdinand. It ended in 1918, World War II started in 1939, and 1905 was the Partition of Bengal.",
+  "rel": "World War I ended on 11 November 1918. The Treaty of Versailles was signed in 1919.",
+  "rep": 0,
+  "src": "lc100 63",
+  "note": ""
+ },
+ {
+  "question": "In which year was the Kargil War fought?",
+  "options": [
+   "1971",
+   "1965",
+   "1999",
+   "1984"
+  ],
+  "correct": 2,
+  "why": "The Kargil conflict between Pakistan and India was fought in 1999 (May to July). 1965 and 1971 were earlier Pak-India wars, and 1984 was the start of the Siachen conflict.",
+  "rel": "Captain Karnal Sher Khan and Havaldar Lalak Jan got the Nishan-e-Haider in Kargil. The Lahore Declaration was signed earlier in February 1999.",
+  "rep": 0,
+  "src": "lc100 64",
+  "note": ""
+ },
+ {
+  "question": "When was the first Cricket World Cup held?",
+  "options": [
+   "1975",
+   "1983",
+   "1992",
+   "1971"
+  ],
+  "correct": 0,
+  "why": "The first Cricket World Cup was held in England in 1975 and the West Indies won it. India won in 1983, Pakistan won in 1992, and 1971 was the first ODI match, not a World Cup.",
+  "rel": "Pakistan won the 1992 World Cup under Imran Khan. The first ODI was played in 1971 in Melbourne.",
+  "rep": 0,
+  "src": "lc100 65",
+  "note": ""
+ },
+ {
+  "question": "Who gave the heliocentric (Sun-centred) model of the Solar System?",
+  "options": [
+   "Ptolemy",
+   "Isaac Newton",
+   "Galileo Galilei",
+   "Nicolaus Copernicus"
+  ],
+  "correct": 3,
+  "why": "Nicolaus Copernicus proposed in 1543 that the Sun, not the Earth, is at the centre of the Solar System. Ptolemy gave the Earth-centred model, Galileo later supported Copernicus with his telescope, and Newton gave the laws of gravity.",
+  "rel": "Copernicus's book was 'De revolutionibus' (1543). Kepler gave the laws of planetary motion.",
+  "rep": 0,
+  "src": "lc100 66",
+  "note": "PDF said only 'Solar System: Copernicus'; question made clear as heliocentric model."
+ },
+ {
+  "question": "Where is the headquarters of the International Monetary Fund (IMF)?",
+  "options": [
+   "New York",
+   "Washington D.C.",
+   "Geneva",
+   "London"
+  ],
+  "correct": 1,
+  "why": "The IMF headquarters is in Washington D.C., USA. New York has the UN, Geneva has WHO, and London has Amnesty International.",
+  "rel": "The World Bank is also in Washington D.C. Both IMF and World Bank came from the Bretton Woods Conference of 1944.",
+  "rep": 0,
+  "src": "lc100 67",
+  "note": ""
+ },
+ {
+  "question": "In which year was the Lucknow Pact signed between the Congress and the Muslim League?",
+  "options": [
+   "1906",
+   "1919",
+   "1916",
+   "1920"
+  ],
+  "correct": 2,
+  "why": "The Lucknow Pact was agreed in December 1916 at Lucknow, and Quaid-e-Azam played a key role. 1906 was the founding of the Muslim League, 1919 the Khilafat Movement, and 1920 when Quaid left Congress.",
+  "rel": "Under the pact Congress accepted separate electorates for Muslims. Sarojini Naidu called Jinnah the 'Ambassador of Hindu-Muslim Unity'.",
+  "rep": 0,
+  "src": "lc100 68",
+  "note": "PDF said 19 Dec 1916; sources give late December 1916 (Congress adopted it 29 Dec, League 31 Dec), so only the year is asked."
+ },
+ {
+  "question": "When did Quaid-e-Azam resign from the Indian National Congress?",
+  "options": [
+   "1913",
+   "1920",
+   "1916",
+   "1928"
+  ],
+  "correct": 1,
+  "why": "Quaid-e-Azam left Congress in December 1920 (Nagpur session) because he disagreed with Gandhi's Non-Cooperation Movement. He joined the Muslim League in 1913, 1916 was the Lucknow Pact, and 1928 was the Nehru Report.",
+  "rel": "Jinnah joined Congress in 1906 and the Muslim League in 1913.",
+  "rep": 0,
+  "src": "lc100 69",
+  "note": ""
+ },
+ {
+  "question": "World Hepatitis Day is observed on:",
+  "options": [
+   "7 April",
+   "1 December",
+   "24 March",
+   "28 July"
+  ],
+  "correct": 3,
+  "why": "World Hepatitis Day is on 28 July, the birthday of Dr Baruch Blumberg who discovered the hepatitis B virus. 7 April is World Health Day, 1 December is World AIDS Day and 24 March is World TB Day.",
+  "rel": "Hepatitis B and C spread through blood. Hepatitis A and E spread through dirty food and water.",
+  "rep": 0,
+  "src": "lc100 70",
+  "note": ""
+ },
+ {
+  "question": "What is the approximate range of Pakistan's Nasr (Hatf-IX) missile?",
+  "options": [
+   "60-70 km",
+   "290 km",
+   "750 km",
+   "2750 km"
+  ],
+  "correct": 0,
+  "why": "Nasr (Hatf-IX) is a short-range tactical missile with a range of 60 km, raised to 70 km in the improved version (2017). 290 km is Ghaznavi, 750 km is Shaheen-I and 2750 km is Shaheen-III.",
+  "rel": "Ababeel (MIRV) has a range of about 2200 km. Babur is a cruise missile.",
+  "rep": 0,
+  "src": "lc100 71",
+  "note": ""
+ },
+ {
+  "question": "In which year was the Pakistan-China boundary agreement signed?",
+  "options": [
+   "1951",
+   "1963",
+   "1970",
+   "1978"
+  ],
+  "correct": 1,
+  "why": "Pakistan and China signed their boundary agreement on 2 March 1963. 1951 is when diplomatic ties began, and 1978 is when the Karakoram Highway opened.",
+  "rel": "Khunjerab Pass is on the Pak-China border. Diplomatic relations started on 21 May 1951.",
+  "rep": 0,
+  "src": "lc100 72",
+  "note": ""
+ },
+ {
+  "question": "The 38th parallel divides which two countries?",
+  "options": [
+   "India and China",
+   "North and South Vietnam",
+   "North and South Korea",
+   "USA and Canada"
+  ],
+  "correct": 2,
+  "why": "The 38th parallel is the line that divides North Korea and South Korea. The McMahon Line is between India and China, the 17th parallel divided Vietnam, and the 49th parallel is the USA-Canada border.",
+  "rel": "The Korean War was fought from 1950 to 1953. The Radcliffe Line is the Pak-India border.",
+  "rep": 0,
+  "src": "lc100 73",
+  "note": ""
+ },
+ {
+  "question": "Who was the first President of Pakistan?",
+  "options": [
+   "Ayub Khan",
+   "Iskander Mirza",
+   "Ghulam Muhammad",
+   "Fazal Ilahi Chaudhry"
+  ],
+  "correct": 1,
+  "why": "Iskander Mirza became the first President in March 1956 under the 1956 Constitution. Ghulam Muhammad was Governor-General, Ayub Khan was the second President, and Fazal Ilahi Chaudhry was President under the 1973 Constitution.",
+  "rel": "Iskander Mirza imposed the first Martial Law on 7 October 1958. Quaid-e-Azam was the first Governor-General.",
+  "rep": 0,
+  "src": "lc100 74",
+  "note": ""
+ },
+ {
+  "question": "In which year did Malala Yousafzai win the Nobel Peace Prize?",
+  "options": [
+   "2012",
+   "2013",
+   "2014",
+   "2016"
+  ],
+  "correct": 2,
+  "why": "Malala won the Nobel Peace Prize in 2014, sharing it with Kailash Satyarthi of India. 2012 was the year she was attacked, and 2013 and 2016 are wrong.",
+  "rel": "She is the youngest Nobel laureate (age 17). Dr Abdus Salam won the Nobel Prize in Physics in 1979.",
+  "rep": 0,
+  "src": "lc100 75",
+  "note": ""
+ },
+ {
+  "question": "Who is the President of China (October 2026)?",
+  "options": [
+   "Li Qiang",
+   "Hu Jintao",
+   "Wang Yi",
+   "Xi Jinping"
+  ],
+  "correct": 3,
+  "why": "Xi Jinping has been President of China since 2013 and still holds the post. Li Qiang is the Premier, Wang Yi is the Foreign Minister, and Hu Jintao was the earlier President.",
+  "rel": "Xi Jinping is also General Secretary of the Communist Party. Li Qiang became Premier in 2023.",
+  "rep": 0,
+  "src": "lc100 76",
+  "note": ""
+ },
+ {
+  "question": "Muhammad bin Qasim invaded Sindh in:",
+  "options": [
+   "712 CE",
+   "1001 CE",
+   "632 CE",
+   "1192 CE"
+  ],
+  "correct": 0,
+  "why": "Muhammad bin Qasim conquered Sindh in 712 CE and defeated Raja Dahir. 1001 CE was Mahmud of Ghazni's first attack, 1192 CE was the Second Battle of Tarain, and 632 CE was when the Prophet (PBUH) passed away.",
+  "rel": "Sindh is called 'Bab-ul-Islam' (Gateway of Islam). He was sent by Hajjaj bin Yusuf.",
+  "rep": 0,
+  "src": "lc100 77",
+  "note": ""
+ },
+ {
+  "question": "In which year did Pakistan buy Gwadar from Oman?",
+  "options": [
+   "1947",
+   "1952",
+   "1958",
+   "1965"
+  ],
+  "correct": 2,
+  "why": "Pakistan bought Gwadar from the Sultanate of Oman in 1958 (handed over on 8 September 1958) during Feroz Khan Noon's government. The other years are wrong.",
+  "rel": "Gwadar is in Balochistan on the Arabian Sea. It is a key port of CPEC.",
+  "rep": 0,
+  "src": "lc100 78",
+  "note": ""
+ },
+ {
+  "question": "How many seats are reserved for women in the National Assembly of Pakistan?",
+  "options": [
+   "10",
+   "60",
+   "70",
+   "33"
+  ],
+  "correct": 1,
+  "why": "Article 51 reserves 60 seats for women in the National Assembly, and this is still the number in 2026. 10 seats are for non-Muslims, 70 is wrong, and 33 is not the women quota in the NA.",
+  "rel": "The National Assembly has 336 seats: 266 general, 60 women and 10 minorities. Women's seats were raised to 60 in 2002.",
+  "rep": 0,
+  "src": "lc100 79",
+  "note": "PDF said '60 (now 70)'; still 60 per National Assembly website, so 70 removed."
+ },
+ {
+  "question": "Which is the largest desert of Pakistan?",
+  "options": [
+   "Thal",
+   "Kharan",
+   "Cholistan",
+   "Thar"
+  ],
+  "correct": 3,
+  "why": "The Thar Desert (in Sindh and part of Punjab) is the largest desert in Pakistan. Thal is in Punjab, Kharan is in Balochistan, and Cholistan is a smaller desert in Punjab next to Thar.",
+  "rel": "Thar is also called the Great Indian Desert. Thar coal is in Sindh.",
+  "rep": 0,
+  "src": "lc100 80",
+  "note": ""
+ },
+ {
+  "question": "What is the reported range of Pakistan's Ababeel missile?",
+  "options": [
+   "70 km",
+   "750 km",
+   "2200 km",
+   "2750 km"
+  ],
+  "correct": 2,
+  "why": "Ababeel is a MIRV ballistic missile with a reported range of about 2200 km, first tested in 2017. 70 km is Nasr, 750 km is Shaheen-I and 2750 km is Shaheen-III.",
+  "rel": "MIRV means one missile can carry several warheads. Shaheen-III (2750 km) is Pakistan's longest-range tested missile.",
+  "rep": 0,
+  "src": "lc100 81",
+  "note": ""
+ },
+ {
+  "question": "For how many days was the 1965 Pakistan-India war fought?",
+  "options": [
+   "17 days",
+   "13 days",
+   "30 days",
+   "7 days"
+  ],
+  "correct": 0,
+  "why": "The 1965 war lasted 17 days, from 6 September to 23 September 1965. The 1971 war lasted about 13 days, and 30 and 7 days are wrong.",
+  "rel": "6 September is Defence Day in Pakistan. The Tashkent Declaration was signed in January 1966.",
+  "rep": 0,
+  "src": "lc100 82",
+  "note": ""
+ },
+ {
+  "question": "In which year was the present Constitution of Pakistan adopted?",
+  "options": [
+   "1956",
+   "1962",
+   "1973",
+   "1985"
+  ],
+  "correct": 2,
+  "why": "The present Constitution was passed on 10 April 1973 and came into force on 14 August 1973. 1956 and 1962 were earlier constitutions, and 1985 was the 8th Amendment.",
+  "rel": "1956 was the first Constitution. 1962 was the second, under Ayub Khan.",
+  "rep": 0,
+  "src": "lc100 83",
+  "note": ""
+ },
+ {
+  "question": "Which river is generally called the longest river in the world?",
+  "options": [
+   "Amazon",
+   "Nile",
+   "Yangtze",
+   "Indus"
+  ],
+  "correct": 1,
+  "why": "The Nile in Africa (about 6650 km) is usually counted as the longest river. The Amazon carries the most water, the Yangtze is the longest in Asia, and the Indus is the longest in Pakistan.",
+  "rel": "The Yangtze is Asia's longest river. The Indus is Pakistan's largest river.",
+  "rep": 0,
+  "src": "lc100 85",
+  "note": "PDF said 'Largest river world: Nile'; Nile is the longest, the Amazon is largest by water volume, so the question asks longest."
+ },
+ {
+  "question": "Who wrote 'Mein Kampf'?",
+  "options": [
+   "Adolf Hitler",
+   "Benito Mussolini",
+   "Karl Marx",
+   "Joseph Stalin"
+  ],
+  "correct": 0,
+  "why": "Adolf Hitler wrote 'Mein Kampf' (My Struggle) in the 1920s. Marx wrote 'Das Kapital', and Mussolini and Stalin did not write it.",
+  "rel": "Hitler led Nazi Germany in World War II. Karl Marx also wrote 'The Communist Manifesto'.",
+  "rep": 0,
+  "src": "lc100 86",
+  "note": ""
+ },
+ {
+  "question": "In which year was the Lahore Declaration signed between Pakistan and India?",
+  "options": [
+   "1972",
+   "1966",
+   "2004",
+   "1999"
+  ],
+  "correct": 3,
+  "why": "The Lahore Declaration was signed in February 1999 by Nawaz Sharif and Atal Bihari Vajpayee. 1966 was Tashkent, 1972 was the Simla Agreement, and 2004 was the Islamabad meeting.",
+  "rel": "Vajpayee came to Lahore by bus. The Kargil War came later the same year.",
+  "rep": 0,
+  "src": "lc100 87",
+  "note": ""
+ },
+ {
+  "question": "About what percentage of the adult human body is water?",
+  "options": [
+   "20-30%",
+   "50-60%",
+   "80-90%",
+   "10-15%"
+  ],
+  "correct": 1,
+  "why": "Water makes up about 50-60% of an adult body weight (about 60% in men). 20-30% and 10-15% are too low, and 80-90% is too high for a whole adult.",
+  "rel": "Blood plasma is about 90% water. Babies have about 75% water.",
+  "rep": 0,
+  "src": "lc100 88",
+  "note": ""
+ },
+ {
+  "question": "Islam originated in the:",
+  "options": [
+   "Arabian Peninsula",
+   "Persia",
+   "Egypt",
+   "Central Asia"
+  ],
+  "correct": 0,
+  "why": "Islam began in Makkah, in the Arabian Peninsula, in the 7th century. Persia, Egypt and Central Asia received Islam later through conquest and preaching.",
+  "rel": "The first revelation came in Cave Hira in 610 CE. Makkah and Madinah are in today's Saudi Arabia.",
+  "rep": 0,
+  "src": "lc100 89",
+  "note": ""
+ },
+ {
+  "question": "What is the value of cos 0 degrees?",
+  "options": [
+   "0",
+   "Undefined",
+   "1",
+   "-1"
+  ],
+  "correct": 2,
+  "why": "cos 0 degrees = 1. sin 0 degrees is 0, tan 90 degrees is undefined, and cos 180 degrees is -1.",
+  "rel": "sin 90 degrees = 1. cos 90 degrees = 0.",
+  "rep": 0,
+  "src": "lc100 90",
+  "note": ""
+ },
+ {
+  "question": "Which country is called the 'Land of a Thousand Lakes'?",
+  "options": [
+   "Norway",
+   "Switzerland",
+   "Canada",
+   "Finland"
+  ],
+  "correct": 3,
+  "why": "Finland is called the 'Land of a Thousand Lakes' (it really has about 188,000 lakes). Norway is the Land of the Midnight Sun, Switzerland is the Playground of Europe, and Canada is the Land of Maple Leaf.",
+  "rel": "Japan is the Land of the Rising Sun. Helsinki is the capital of Finland.",
+  "rep": 0,
+  "src": "lc100 91",
+  "note": ""
+ },
+ {
+  "question": "What is the capital of Kazakhstan?",
+  "options": [
+   "Almaty",
+   "Astana",
+   "Tashkent",
+   "Bishkek"
+  ],
+  "correct": 1,
+  "why": "Astana is the capital of Kazakhstan. It was called Nur-Sultan from 2019 to 2022 and then renamed Astana again. Almaty was the old capital, Tashkent is in Uzbekistan and Bishkek is in Kyrgyzstan.",
+  "rel": "Kazakhstan is the largest landlocked country in the world. Its currency is the tenge.",
+  "rep": 0,
+  "src": "lc100 92",
+  "note": "PDF said 'Astana / Nur-Sultan'; the name has been Astana again since September 2022."
+ },
+ {
+  "question": "Which disease is caused by the bite of an infected dog?",
+  "options": [
+   "Tetanus",
+   "Malaria",
+   "Rabies",
+   "Typhoid"
+  ],
+  "correct": 2,
+  "why": "Rabies is a virus spread by the bite of an infected dog (or other animal). Malaria comes from mosquitoes, typhoid from dirty food and water, and tetanus from a bacterium in soil and rusty wounds.",
+  "rel": "Louis Pasteur made the rabies vaccine in 1885. Rabies is also called hydrophobia (fear of water).",
+  "rep": 0,
+  "src": "lc100 93",
+  "note": ""
+ },
+ {
+  "question": "The Hingol River flows in which province of Pakistan?",
+  "options": [
+   "Sindh",
+   "Khyber Pakhtunkhwa",
+   "Punjab",
+   "Balochistan"
+  ],
+  "correct": 3,
+  "why": "The Hingol River is in Balochistan and is the longest river of Balochistan. It flows through Hingol National Park into the Arabian Sea. It is not in Sindh, KP or Punjab.",
+  "rel": "Hingol National Park is the largest national park in Pakistan. The Hinglaj temple is near the river.",
+  "rep": 0,
+  "src": "lc100 94",
+  "note": ""
+ },
+ {
+  "question": "In English grammar, 'the' is:",
+  "options": [
+   "Definite article",
+   "Indefinite article",
+   "Pronoun",
+   "Preposition"
+  ],
+  "correct": 0,
+  "why": "'The' is the definite article because it points to a specific thing. 'A' and 'an' are indefinite articles, and 'the' is not a pronoun or preposition.",
+  "rel": "Use 'an' before a vowel sound (an hour). Use 'a' before a consonant sound (a university).",
+  "rep": 0,
+  "src": "lc100 95",
+  "note": ""
+ },
+ {
+  "question": "The Battle of Plassey was fought on:",
+  "options": [
+   "10 May 1857",
+   "4 May 1799",
+   "23 June 1757",
+   "22 October 1764"
+  ],
+  "correct": 2,
+  "why": "The Battle of Plassey was fought on 23 June 1757, when Robert Clive defeated Nawab Siraj-ud-Daulah. 1764 was the Battle of Buxar, 1799 was Tipu Sultan's death, and 1857 was the War of Independence.",
+  "rel": "Mir Jafar betrayed Siraj-ud-Daulah at Plassey. The Battle of Buxar (1764) made the British stronger in Bengal.",
+  "rep": 0,
+  "src": "lc100 96",
+  "note": ""
+ },
+ {
+  "question": "World War II ended on:",
+  "options": [
+   "11 November 1918",
+   "2 September 1945",
+   "8 May 1944",
+   "1 September 1939"
+  ],
+  "correct": 1,
+  "why": "World War II formally ended on 2 September 1945, when Japan signed the surrender. 1 September 1939 is when it started, 11 November 1918 ended World War I, and the war in Europe ended on 8 May 1945, not 1944.",
+  "rel": "Atomic bombs hit Hiroshima (6 August 1945) and Nagasaki (9 August 1945). The UN was founded on 24 October 1945.",
+  "rep": 0,
+  "src": "lc100 97",
+  "note": ""
+ },
+ {
+  "question": "The Al-Khalid main battle tank was inducted into the Pakistan Army in which decade?",
+  "options": [
+   "1970s",
+   "1980s",
+   "1990s",
+   "2000s"
+  ],
+  "correct": 3,
+  "why": "Al-Khalid was made by Heavy Industries Taxila with China and was inducted into the Pakistan Army in 2001, so in the 2000s. It was being developed in the 1990s but not yet inducted, and the 1970s and 1980s are too early.",
+  "rel": "Al-Khalid is made at Heavy Industries Taxila (HIT). It was based on Chinese tank designs.",
+  "rep": 0,
+  "src": "lc100 98",
+  "note": "PDF said only '2000s'; question made clear (induction 2001)."
+ },
+ {
+  "question": "Choose the antonym of 'Embrace':",
+  "options": [
+   "Hug",
+   "Accept",
+   "Reject",
+   "Adopt"
+  ],
+  "correct": 2,
+  "why": "'Embrace' means to accept or hold warmly, so its opposite is 'reject'. Hug, accept and adopt are close in meaning (synonyms), not opposites.",
+  "rel": "Synonyms of embrace: welcome, accept. Antonyms: refuse, spurn.",
+  "rep": 0,
+  "src": "lc100 99",
+  "note": ""
+ },
+ {
+  "question": "Milk is boiled mainly to:",
+  "options": [
+   "Kill bacteria and pathogens",
+   "Add vitamins",
+   "Increase fat",
+   "Make it sweeter"
+  ],
+  "correct": 0,
+  "why": "Boiling milk kills harmful bacteria and pathogens so it is safe to drink. Boiling does not add vitamins (it can reduce some), does not increase fat and does not make milk sweeter.",
+  "rel": "Pasteurisation (Louis Pasteur) heats milk to kill germs. Curd is made by Lactobacillus bacteria.",
+  "rep": 0,
+  "src": "lc100 100",
+  "note": ""
+ }
+]

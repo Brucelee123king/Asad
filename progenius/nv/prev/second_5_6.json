@@ -1,0 +1,2 @@
+[{"num":5,"pick":2,"confidence":"medium","rule":"Outer shape cycles triangle, circle, square with period 3 (fig 4 repeats fig 1 exactly), so the next figure repeats fig 2: circle with circle top-left, square top-right, triangle bottom.","alt":[4]},
+{"num":6,"pick":3,"confidence":"high","rule":"Hexagon with two rows of triangle-square-circle: the outer row moves ccw 60 degrees per step and the inner row moves cw around the edges, rotating with their edges. Step 5 has the outer row on the lower-right edge and the inner row on the lower-left edge, as in option 3.","alt":[]}]
