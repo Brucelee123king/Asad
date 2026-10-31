@@ -1913,6 +1913,10 @@ var tries=0;(function wait(){if(document.querySelector('header>div>div')&&docume
 })();
 </script>
 <style>
+/* category pages: the top block shows only the category name (no count line, no long text) */
+#view-select .bg-gradient-to-r.rounded-2xl.text-white.text-center{padding:22px 20px!important}
+#view-select .bg-gradient-to-r.rounded-2xl.text-white.text-center>span,#view-select .bg-gradient-to-r.rounded-2xl.text-white.text-center>p{display:none!important}
+#view-select .bg-gradient-to-r.rounded-2xl.text-white.text-center>h2{margin:0!important}
 /* while a bottom-bar page is open, the page behind it must not move */
 html.nbopen,html.nbopen body{overflow:hidden!important;overscroll-behavior:none}
 #nbPage{overscroll-behavior:contain}
