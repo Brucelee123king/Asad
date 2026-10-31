@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head><script>/*SHELLUPD*/(function(){var V=202610310021,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
+<head><script>/*SHELLUPD*/(function(){var V=202610310022,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
 try{var sv=+L.getItem('shell_v')||0,h=L.getItem('shell_html'),t=+L.getItem('shell_try')||0;
 if(h&&sv>V&&!window.__shellW){if(t>=2){L.removeItem('shell_html');L.removeItem('shell_v');L.removeItem('shell_try')}
 else{L.setItem('shell_try',String(t+1));window.__shellW=1;document.open();document.write(h);document.close();return}}}catch(e){}
@@ -2031,7 +2031,7 @@ html.dark #nbPage{--pbg:#1b1814;--ptx:#f3eee2;--pmu:#b9ab8c;--pln:#3d362c;--pcd:
   var IGI='<svg viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="#fff" stroke-width="2.4"><rect x="5" y="5" width="22" height="22" rx="7"/><circle cx="16" cy="16" r="5.2"/><circle cx="22.6" cy="9.4" r="1.4" fill="#fff" stroke="none"/></svg>';
   /* social links: TikTok and Instagram are filled in when the admin sends them */
   var SOC=[['WhatsApp Channel',WAI,'#25d366','https://whatsapp.com/channel/0029Vb9RIMgF6smxoGj3tb1U'],['WhatsApp Group',WAI,'#128c7e','https://chat.whatsapp.com/E6flhu5fGhmCfNjQTEhT6H'],
-           ['TikTok',TTI,'#111111',''],['Instagram',IGI,'linear-gradient(45deg,#f58529,#dd2a7b 50%,#8134af)','']];
+           ['TikTok',TTI,'#111111','https://www.tiktok.com/@journeytopma','@journeytopma'],['Instagram',IGI,'linear-gradient(45deg,#f58529,#dd2a7b 50%,#8134af)','']];
   var bar,light,pg=null,cur='home',d=document.documentElement;
   function esc(s){return String(s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
   function build(){bar=document.createElement('nav');bar.id='nbBar';bar.setAttribute('aria-label','Main');
@@ -2076,7 +2076,7 @@ html.dark #nbPage{--pbg:#1b1814;--ptx:#f3eee2;--pmu:#b9ab8c;--pln:#3d362c;--pcd:
       setTimeout(function(){var r=document.getElementById('bmR');if(r&&pg)pg.scrollTo({top:r.offsetTop-10,behavior:'smooth'})},50)}}
   function social(){return '<h2>Follow us</h2><p class="sub">Join PMA Preparation on social media for daily updates, tips and new tests.</p>'+
     '<div class="how">Tap <b>Copy link</b>, then paste it in Chrome or WhatsApp to open it.</div>'+
-    SOC.map(function(s,i){return '<div class="soc"><div class="lg" style="background:'+s[2]+'">'+s[1]+'</div><div class="t"><b>'+s[0]+'</b><small>'+(s[3]?'PMA Preparation':'Coming soon')+'</small></div>'+(s[3]?'<button type="button" data-i="'+i+'">Copy link</button>':'')+'</div>'}).join('')}
+    SOC.map(function(s,i){return '<div class="soc"><div class="lg" style="background:'+s[2]+'">'+s[1]+'</div><div class="t"><b>'+s[0]+'</b><small>'+(s[3]?(s[4]||'PMA Preparation'):'Coming soon')+'</small></div>'+(s[3]?'<button type="button" data-i="'+i+'">Copy link</button>':'')+'</div>'}).join('')}
   function socWire(){pg.querySelector('.in').onclick=function(e){var b=e.target.closest('[data-i]');if(!b)return;var u=SOC[+b.getAttribute('data-i')][3];
     function done(){b.textContent='Copied ✓';b.classList.add('ok');setTimeout(function(){b.textContent='Copy link';b.classList.remove('ok')},2000)}
     try{if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(u).then(done,function(){fb(u);done()});return}}catch(x){}fb(u);done()}}
