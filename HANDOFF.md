@@ -368,3 +368,7 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 ## Oct 31 2026 (7) - published
 - Theme switch smoother: html.thx turns off all transitions while switching (the html.lite '*' rule made every element start a colour transition: ~300 ms -> ~10 ms of script on a 6x-slow CPU). The menu pill moves first, the theme changes 300 ms later.
 - Admin people icon (#onBtn) pinned top-right (it used to sit next to #themeBtn, which is now hidden).
+
+## Oct 31 2026 (8) - published
+- PMA Roadmap (navbar_block, Roadmap tab): 11 levels in the user's order on a glowing gold zig-zag line, START at top, FINAL DESTINATION PMA Kakul at bottom; navy/army-green (dark) and cream (light). Tap a level -> bottom sheet (#rmSh) with short text, "I have done this step", Previous/Next. Progress saved in localStorage rm_done. Text per level is in the RM array (user may send their own).
+- Theme pill in the menu made 20% smaller.
