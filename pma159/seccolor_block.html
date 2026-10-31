@@ -38,7 +38,7 @@ body[data-sec] #view-home .text-emerald-600{color:var(--cs)!important}
 (function(){
   if(typeof selectTest!=='function')return;
   var _sel=selectTest,_show=showSelect;
-  window.selectTest=selectTest=function(k){var c=(isHK(k)||isMR(k))?'hk':(typeof isLF==='function'&&isLF(k))?'lf':(typeof isEN==='function'&&(isEN(k)||(typeof isIS==='function'&&isIS(k))))?'en':isCN(k)?'cn':isIV(k)?'iv':(isNV(k)||(typeof isVB==='function'&&isVB(k)))?'nv':(isPG(k)||isPF(k)||(typeof isPV==='function'&&isPV(k)))?'pg':isLC(k)?'lc':isFA(k)?'fa':isPMA(k)?'pma':'';if(c)document.body.dataset.sec=c;else delete document.body.dataset.sec;return _sel.apply(this,arguments)};
+  window.selectTest=selectTest=function(k){var c=(isHK(k)||isMR(k))?'hk':(typeof isLF==='function'&&isLF(k))?'lf':(typeof isEN==='function'&&(isEN(k)||(typeof isIS==='function'&&isIS(k))))?'en':isCN(k)?'cn':isIV(k)?'iv':(isNV(k)||(typeof isVB==='function'&&isVB(k)))?'nv':(isPG(k)||isPF(k)||(typeof isPV==='function'&&isPV(k))||(typeof isPB==='function'&&isPB(k)))?'pg':isLC(k)?'lc':isFA(k)?'fa':isPMA(k)?'pma':'';if(c)document.body.dataset.sec=c;else delete document.body.dataset.sec;return _sel.apply(this,arguments)};
   window.showSelect=showSelect=function(){var r=_show.apply(this,arguments);if(!quizActive)delete document.body.dataset.sec;return r};
 })();
 </script>
