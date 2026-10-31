@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head><script>/*SHELLUPD*/(function(){var V=202610310327,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
+<head><script>/*SHELLUPD*/(function(){var V=202610310401,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
 try{var sv=+L.getItem('shell_v')||0,h=L.getItem('shell_html'),t=+L.getItem('shell_try')||0;
 if(h&&sv>V&&!window.__shellW){if(t>=2){L.removeItem('shell_html');L.removeItem('shell_v');L.removeItem('shell_try')}
 else{L.setItem('shell_try',String(t+1));window.__shellW=1;document.open();document.write(h);document.close();return}}}catch(e){}
@@ -1830,7 +1830,7 @@ html.dark #pfPage .dic{background:linear-gradient(180deg,#3b342b,#2a251f);color:
 /* Dark Mode switch inside the menu (the round sun/moon button is not shown after login) */
 html.acok #themeBtn{display:none!important}
 /* admin people icon: sits at the top right now that the round sun/moon button is gone */
-html.acok #onBtn{top:calc(12px + var(--sat,0px))!important;right:12px!important;left:auto!important;width:40px!important;height:40px!important}html.acok #onBox{top:calc(62px + var(--sat,0px))!important}
+html.acok #onBtn{top:calc(12px + var(--sat,0px))!important;right:12px!important;left:auto!important;width:40px!important;height:40px!important}html.acok #onBox{top:calc(62px + var(--sat,0px))!important;z-index:2147482996!important}html.acok #onBtn{z-index:2147482995!important}
 #drawer .thw{margin-top:auto;padding:14px 22px 16px;display:flex;justify-content:flex-start}#drawer .thw+.it.out{margin-top:0}
 #drawer .thsw{position:relative;width:132px;height:52px;border-radius:999px;border:1.5px solid var(--dic);background:rgba(160,122,44,.08);display:flex;align-items:center;justify-content:space-around;padding:0;cursor:pointer}
 #drawer .thsw i{position:relative;z-index:1;font-size:19px;color:var(--dmu);width:44px;text-align:center;transition:color .3s}
@@ -2918,7 +2918,7 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
     document.documentElement.classList.add('acok');document.documentElement.classList.toggle('acadmin',!!window.__acAdmin);A.classList.add('hide');showUser(nm(user)||'');try{cmSetup(user,(user.email||'').toLowerCase()===ADMIN)}catch(e){}try{onSetup(user)}catch(e){}
     return window.__lkSetAllowed(cats,offline||!fs?null:getKey);
   }
-  function leave(){try{cmOff()}catch(e){}try{onOff()}catch(e){}ls('ac_state',null);if(window.__lkForgetAll)window.__lkForgetAll()}
+  function leave(){document.documentElement.classList.remove('acok','acadmin');try{cmOff()}catch(e){}try{onOff()}catch(e){}ls('ac_state',null);if(window.__lkForgetAll)window.__lkForgetAll()}
   function cached(user){
     var s=null;try{s=JSON.parse(ls('ac_state'))}catch(e){}
     if(s&&s.status==='approved'&&(!user||s.uid===user.uid)&&Date.now()-s.t<EXP&&s.t<=Date.now()+864e5)return enter(user,s.cats||[],true);

@@ -60,7 +60,7 @@
     document.documentElement.classList.add('acok');document.documentElement.classList.toggle('acadmin',!!window.__acAdmin);A.classList.add('hide');showUser(nm(user)||'');try{cmSetup(user,(user.email||'').toLowerCase()===ADMIN)}catch(e){}try{onSetup(user)}catch(e){}
     return window.__lkSetAllowed(cats,offline||!fs?null:getKey);
   }
-  function leave(){try{cmOff()}catch(e){}try{onOff()}catch(e){}ls('ac_state',null);if(window.__lkForgetAll)window.__lkForgetAll()}
+  function leave(){document.documentElement.classList.remove('acok','acadmin');try{cmOff()}catch(e){}try{onOff()}catch(e){}ls('ac_state',null);if(window.__lkForgetAll)window.__lkForgetAll()}
   function cached(user){
     var s=null;try{s=JSON.parse(ls('ac_state'))}catch(e){}
     if(s&&s.status==='approved'&&(!user||s.uid===user.uid)&&Date.now()-s.t<EXP&&s.t<=Date.now()+864e5)return enter(user,s.cats||[],true);
