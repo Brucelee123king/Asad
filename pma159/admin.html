@@ -15,6 +15,10 @@ input[type=text],textarea{width:100%;padding:10px;border-radius:10px;border:1px 
 textarea{min-height:110px}.badge{background:var(--no);color:#fff;border-radius:999px;padding:1px 8px;font-size:12px;margin-left:6px}
 .pr{display:flex;align-items:center;gap:12px;cursor:pointer}.pr img,.pr .ph0{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:0 0 auto;background:var(--bd);display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--mu)}
 .pd{display:none;margin-top:10px;border-top:1px solid var(--bd);padding-top:8px}.card.op .pd{display:block}.pd div{display:flex;justify-content:space-between;gap:10px;padding:5px 0;font-size:14px}.pd div b{text-align:right;word-break:break-word}.pd img{width:160px;height:160px;border-radius:16px;object-fit:cover;display:block;margin:4px auto 8px}
+.acc h3{margin:0 0 2px;font-size:17px}.acc .ar{display:flex;align-items:center;gap:8px;width:100%;background:none;color:var(--tx);border:1px solid var(--bd);border-radius:12px;padding:10px 12px;margin-top:8px;text-align:left;font-weight:600}
+.acc .ar.on{border-color:var(--ac);box-shadow:0 0 0 2px var(--ac) inset}.acc .ar b{margin-left:auto;font-size:20px}.acc .cps{display:flex;flex-wrap:wrap;gap:5px}
+.cp{display:inline-block;border-radius:999px;padding:3px 10px;font-size:12.5px;font-weight:800}.cp.i{background:#fde68a;color:#78350f}.cp.v{background:#bfdbfe;color:#1e3a8a}.cp.s{background:#fed7aa;color:#7c2d12}.cp.n{background:#e2e8f0;color:#334155}
+.acc .fl{margin-top:10px;font-size:13px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 #msg{position:sticky;top:6px;z-index:5}.msg{border-radius:10px;padding:10px;font-size:14px;font-weight:600;background:#0f172a;color:#fff;margin:6px 0}
 </style></head><body>
 <h1>PMA Preparation: Admin</h1><div class="mu" id="who">Not signed in</div><div id="msg"></div>
@@ -24,6 +28,7 @@ textarea{min-height:110px}.badge{background:var(--no);color:#fff;border-radius:9
  <div class="row"><button id="tReq">Requests<span class="badge" id="nReq">0</span></button><button class="g" id="tUsr">People<span class="badge" id="nUsr">0</span></button><button class="g" id="tPro">User details<span class="badge" id="nPro">0</span></button><button class="g" id="tKey">Passwords</button><button class="g" id="bOut">Logout</button><button class="g" id="bRef">Refresh</button></div>
  <input type="text" id="srch" placeholder="Search email or name..." autocomplete="off" autocapitalize="off" spellcheck="false" style="margin-top:10px"><div class="mu" id="srchN"></div>
  <div id="onNow" class="card" style="margin-top:10px"></div>
+ <div id="accBox" class="card"></div>
  <div id="pReq"></div><div id="pUsr" style="display:none"></div><div id="pPro" style="display:none"></div>
  <div id="pGive" class="card" style="margin-top:14px"><b>Give Initial PMA to everyone</b><div class="mu">Ticks Initial PMA Preparation (all categories) for every person in Requests and People. Their Interview and ISSB ticks stay as they are. Blocked people stay blocked. They get it at their next app opening.</div><div class="row"><button class="k" id="bGive">Give Initial PMA to everyone</button></div></div>
  <div id="pReset" class="card" style="display:none;margin-top:14px"><b>Lock everyone again</b><div class="mu">Every approved person goes back to the Requests tab with nothing ticked. They can still open the app, but Initial PMA, Interview and ISSB stay locked until you tick them again. Blocked people stay blocked.</div><div class="row"><button class="r" id="bReset">Lock everyone again</button></div></div>
@@ -78,9 +83,21 @@ function msgs(u){var out=[],m=MSGS[u.id],ds=(DAYS[u.id]||[]).slice().sort(functi
   if(!out.length)return '';var more=out.length>12?out.length-12:0;
   return out.slice(0,12).map(function(o){return '<div class="mq"><div class="mu">'+(o.t?esc(o.t):'Message')+'</div>'+esc(o.m)+'</div>'}).join('')+(more?'<div class="mu" style="margin-top:6px">... and '+more+' older messages</div>':'')}
 function devLine(u){var d=DEVS[u.id];if(!d)return '<div class="mu">Phone: not used yet</div>';var t='';try{t=d.t.toDate().toLocaleString()}catch(e){}return '<div class="mu">Phone: locked to one phone'+(t?' (since '+esc(t)+')':'')+'</div>'}
-function card(u){return '<div class="card" data-id="'+u.id+'" data-s="'+esc(((u.email||'')+' '+(u.name||'')).toLowerCase())+'"><b>'+esc(u.email)+'</b> <span class="tag '+u.status+'">'+u.status+'</span><div class="mu">'+esc(u.name||'')+' '+esc(ts(u))+'</div>'+devLine(u)+msgs(u)+chips(u)+
+function card(u){return '<div class="card" data-cb="'+combo(u)+'" data-id="'+u.id+'" data-s="'+esc(((u.email||'')+' '+(u.name||'')).toLowerCase())+'"><b>'+esc(u.email)+'</b> <span class="tag '+u.status+'">'+u.status+'</span><div class="mu">'+esc(u.name||'')+' '+esc(ts(u))+'</div>'+devLine(u)+msgs(u)+chips(u)+
  '<div class="row"><button class="k" data-a="ok">'+(u.status==='approved'?'Save':'Approve')+'</button>'+(u.status==='blocked'?'':'<button class="r" data-a="block">Block</button>')+'<button class="g" data-a="del">Delete</button>'+(DEVS[u.id]?'<button class="g" data-a="dev">Reset phone</button>':'')+'</div></div>'}
-function filt(){var q=($('srch').value||'').trim().toLowerCase(),n=0,t=0;[].forEach.call(document.querySelectorAll('#pReq .card[data-s],#pUsr .card[data-s],#pPro .card[data-s]'),function(c){t++;var ok=!q||c.getAttribute('data-s').indexOf(q)>-1;c.style.display=ok?'':'none';if(ok)n++});$('srchN').textContent=q?(n+' of '+t+' people match'):''}
+/* course access: who has Initial PMA (any of its categories), Interview, ISSB, and every mix of them */
+var ACCF='';
+function combo(u){if(u.status==='blocked')return 'B';var c=u.cats||[],i=CATS.some(function(x){return c.indexOf(x[0])>-1}),v=c.indexOf('int')>-1,s=c.indexOf('issb')>-1;return (i?'I':'')+(v?'V':'')+(s?'S':'')||'0'}
+var COMBOS=[['I','Only Initial PMA'],['V','Only Interview'],['S','Only ISSB'],['IV','Initial PMA + Interview'],['IS','Initial PMA + ISSB'],['VS','Interview + ISSB'],['IVS','All three'],['0','Nothing open (locked)']];
+function chipsOf(k){if(k==='0')return '<span class="cp n">Nothing</span>';return (k.indexOf('I')>-1?'<span class="cp i">Initial PMA</span>':'')+(k.indexOf('V')>-1?'<span class="cp v">Interview</span>':'')+(k.indexOf('S')>-1?'<span class="cp s">ISSB</span>':'')}
+function accDraw(){var cnt={},n=0;USERS.forEach(function(u){if((u.email||'').toLowerCase()===ADMIN)return;var k=combo(u);if(k==='B')return;cnt[k]=(cnt[k]||0)+1;n++});
+  var tot={I:0,V:0,S:0};Object.keys(cnt).forEach(function(k){['I','V','S'].forEach(function(x){if(k.indexOf(x)>-1)tot[x]+=cnt[k]})});
+  $('accBox').className='card acc';$('accBox').innerHTML='<h3>Course access</h3><div class="mu">'+n+' people (blocked not counted). In total: Initial PMA '+tot.I+' · Interview '+tot.V+' · ISSB '+tot.S+'. Tap a row to see those people.</div>'+
+    COMBOS.map(function(c){return '<button type="button" class="ar'+(ACCF===c[0]?' on':'')+'" data-acc="'+c[0]+'"><span><span class="cps">'+chipsOf(c[0])+'</span><span class="mu" style="display:block;margin-top:3px">'+c[1]+'</span></span><b>'+(cnt[c[0]]||0)+'</b></button>'}).join('')+
+    (ACCF?'<div class="fl">Showing: '+chipsOf(ACCF)+' <button type="button" class="g" data-acc="">Show everyone</button></div>':'')}
+document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('[data-acc]');if(!b)return;var k=b.getAttribute('data-acc');ACCF=(ACCF===k)?'':k;
+  if(ACCF)tab(ACCF==='0'?'Req':'Usr');accDraw();filt();if(ACCF){var t=$(ACCF==='0'?'pReq':'pUsr');if(t)t.scrollIntoView({behavior:'smooth'})}});
+function filt(){var q=($('srch').value||'').trim().toLowerCase(),n=0,t=0;[].forEach.call(document.querySelectorAll('#pReq .card[data-s],#pUsr .card[data-s],#pPro .card[data-s]'),function(c){t++;var ok=(!q||c.getAttribute('data-s').indexOf(q)>-1)&&(!ACCF||!c.hasAttribute('data-cb')||c.getAttribute('data-cb')===ACCF);c.style.display=ok?'':'none';if(ok)n++});$('srchN').textContent=(q||ACCF)?(n+' of '+t+' people match'):''}
 $('srch').addEventListener('input',filt);
 function onNow(){FB.getDoc(FB.doc(fs,'online','now')).then(function(d){var m=d.exists()?d.data():{},a=[],k,v,t,mx=0;
   for(k in m){v=m[k];t=0;try{t=v&&v.toMillis?v.toMillis():(v&&v.t&&v.t.toMillis?v.t.toMillis():0)}catch(e){}a.push({uid:k,t:t,on:!(v&&v.on===false)});if(t>mx)mx=t}
@@ -98,7 +115,7 @@ document.addEventListener('click',function(e){if(!e.target.closest||!e.target.cl
   say('Locking '+ap.length+' people...');Promise.all(ap.map(function(u){return FB.updateDoc(FB.doc(fs,'users',u.id),{status:'pending',cats:[]})})).then(function(){say('Done: '+ap.length+' people are waiting for approval again (Requests tab).');return load()}).catch(function(x){say('Failed: '+(x.code||x.message),1);load()})});
 function draw(){
   var p=USERS.filter(function(u){return u.status==='pending'}),o=USERS.filter(function(u){return u.status!=='pending'});
-  $('nReq').textContent=p.length;$('nUsr').textContent=o.length;
+  $('nReq').textContent=p.length;$('nUsr').textContent=o.length;try{accDraw()}catch(e){}
   $('pReq').innerHTML='<h2>People waiting for approval</h2>'+(p.length?p.map(card).join(''):'<div class="mu">Nobody is waiting.</div>');
   var ps=PROS.slice().sort(function(a,b){var x=a.t&&a.t.toMillis?a.t.toMillis():0,y=b.t&&b.t.toMillis?b.t.toMillis():0;return y-x});$('nPro').textContent=ps.length;
   $('pPro').innerHTML='<h2>User details</h2><div class="mu">Details people filled in My Profile. Tap a person to see everything.</div>'+(ps.length?ps.map(proCard).join(''):'<div class="mu" style="margin-top:10px">Nobody has filled the profile yet.</div>');
