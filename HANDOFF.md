@@ -381,3 +381,6 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - Score circle (.tring) on every test card from mc_best_<key>; green >=70, orange >=40, red below; "–" not tried.
 - Header round back arrow (#backBtn) hidden after login (in-page back buttons + phone Back remain).
 - Roadmap: glow + YOU on the highest level marked done (rm_done holds 0..k); Done on level k completes all before it; light burst once.
+
+## Oct 31 2026 (11) - published
+- Pro Genius: new first sub-card "105 Verbal by PGS" (prefix PV-, progenius/pv_final.json built by progenius/v105/build_pv.py from the PDF 105_verbal_By_ProGeniusStudents). 115 MCQs (105 numbered + 10 unnumbered extras) in 3 tests (50/50/15). PDF had no options: written by hand with reasons + facts. PDF errors fixed: Q26=21, Q46=S, Q55=Friday, Q93=D; Q72 had no answer (60 km). PV wired in merge_into_site (isPV, GR 'v', counts), lock_sections ('PV':'pg'), range_block, seccolor_block.
