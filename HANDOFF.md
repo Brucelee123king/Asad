@@ -361,3 +361,6 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 
 ## Oct 31 2026 (5) - published
 - admin.html: "Course access" box (counts for every mix of Initial PMA / Interview / ISSB; tap a row to filter the lists; blocked not counted) and a light/dark switch (#thBtn, saved in localStorage adm_theme).
+
+## Oct 31 2026 (6) - published
+- Light/dark: round #themeBtn hidden after login (html.acok); sun/moon pill switch (.thsw, calls window.toggleTheme) at the bottom of the side menu above Log Out, aligned left.
