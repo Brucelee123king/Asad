@@ -81,5 +81,173 @@
    "bullionvault.com"
   ],
   "note": "USA holds about 8,133 tonnes, largest official gold reserve"
+ },
+ {
+  "id": "M4663",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "Britannica White House",
+   "simple.wikipedia.org White House",
+   "bensguide.gpo.gov"
+  ],
+  "note": "White House is home and workplace of the US President"
+ },
+ {
+  "id": "M4814",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "Guinness World Records",
+   "geo.tv",
+   "icc-cricket.com"
+  ],
+  "note": "Shoaib Akhtar 161.3 km/h vs England, 22 Feb 2003 World Cup"
+ },
+ {
+  "id": "M5132",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "radio.gov.pk 15-10-2026",
+   "arynews.tv",
+   "pkrevenue.com"
+  ],
+  "note": "Muhammad Aurangzeb is Finance Minister, led Pakistan at WB-IMF meetings Oct 2026"
+ },
+ {
+  "id": "M5217",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "tridge.com (FAO data)",
+   "helgilibrary.com",
+   "worldatlas.com"
+  ],
+  "note": "Spain is the largest olive producer (about 20-36% of world output)"
+ },
+ {
+  "id": "M5315",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "Wikipedia List of tallest buildings in Pakistan",
+   "skyscrapercenter.com Bahria Town ICON",
+   "zameen.com"
+  ],
+  "note": "Bahria Icon Tower Karachi (about 273-300 m) is the tallest in Pakistan"
+ },
+ {
+  "id": "M5466",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "Wikipedia Younis Khan",
+   "tribune.com.pk",
+   "eurosport.com"
+  ],
+  "note": "Younis Khan 10,099 Test runs, Pakistan record"
+ },
+ {
+  "id": "M5563",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "aljazeera.com Feb 2026",
+   "arabnews.com",
+   "news4jax.com (AP)"
+  ],
+  "note": "US owes nearly $4 billion, about 95% of UN regular budget arrears"
+ },
+ {
+  "id": "M9303",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "Wikipedia Mark Carney",
+   "thecanadaguide.com",
+   "thehub.ca Sept 2026"
+  ],
+  "note": "Mark Carney PM since 14 March 2025, still in office 2026"
+ },
+ {
+  "id": "M9337",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "Wikipedia List of Pakistani Nobel laureates",
+   "aljazeera.com",
+   "dawn.com"
+  ],
+  "note": "Two: Abdus Salam (Physics 1979) and Malala Yousafzai (Peace 2014)"
+ },
+ {
+  "id": "M9356",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "propakistani.pk (Economic Survey 2026)",
+   "indexmundi.com (World Bank 4.83%)",
+   "fao.org"
+  ],
+  "note": "Forests cover about 4.7-4.8% of Pakistan (Economic Survey 2026: 4.7%)"
+ },
+ {
+  "id": "M9409",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "Wikipedia Governor of Sindh",
+   "thenews.pk",
+   "dailytimes.com.pk"
+  ],
+  "note": "Nehal Hashmi sworn in 13 March 2026, replacing Kamran Tessori; still governor"
+ },
+ {
+  "id": "M9443",
+  "verdict": "unclear",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "Wikipedia Asadullah",
+   "en.alukah.net",
+   "yaqeeninstitute.org"
+  ],
+  "note": "Title Asadullah given to both Hamza (first) and Ali (RA); Ali is the common Pakistani answer"
+ },
+ {
+  "id": "M9490",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "propakistani.pk (Economic Survey 2026)",
+   "indexmundi.com (World Bank)",
+   "fao.org"
+  ],
+  "note": "Forest about 4.7% of land area (Economic Survey 2026)"
+ },
+ {
+  "id": "M9710",
+  "verdict": "unclear",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "Wikipedia Kobo (woreda) Ethiopia",
+   "Wikipedia Kobo",
+   "britannica.com Kilimanjaro (Kibo)"
+  ],
+  "note": "No source found for a place called Kobo Hills; Kobo town is in Ethiopia, nothing for Tanzania"
  }
 ]
