@@ -403,3 +403,9 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - Non Verbal now also has copies of the Paid Non Verbal Booklet (PB) as NV-4..7 (315 picture questions total).
 - renderNV shows type names (VBN list must match vb_types.TYPES order).
 - Non Verbal also by type now (vb_build NV_TYPES: odd, analogy, series, matrix, mirror; PB items carry 'kind').
+
+## Nov 1 2026 (16) - published: Haroon Force Academy (12th category, id 'hf', prefix HF-)
+- Source: haroon/t1.pdf (Haroon Forces Academy Initial Test 1) + haroon/t2.pdf (Sir Haroon MCQs PMA 158, Important MCQs, Current Affairs 2026). Geography of Balochistan left out (user asked).
+- 1271 MCQs checked by 7 agents (haroon/out/c1..c7.json, haroon/SPEC.md). haroon/build_hf.py dedupes -> haroon/hf_final.json: 1209 MCQs, 57 repeated (count in brackets), 25 tests of 50.
+- 49 answers fixed, 73 unsure (mostly Current Affairs 2026): haroon/REPORT.md sent to user.
+- Own lock 'hf' (section_passwords same as 'o'). User must re-save Initial PMA password on admin Passwords tab and press "Give Initial PMA to everyone".
