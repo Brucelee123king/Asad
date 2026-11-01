@@ -419,3 +419,6 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 ## Nov 1 2026 (18) - published: PMA 159 Pro Genius +382 MCQs
 - progenius/pg2: a.pdf (Q1-230) + b.pdf (Q231-500) -> raw.json -> c1..c7 -> agents (SPEC.md) -> out/c*.json (match = index in pg_final_base.json). build_pg2.py: pg_final_base.json (old 299) + matches raise count + dups.json (30 near-duplicates inside the new set) -> progenius/pg_final.json = 681 MCQs, 14 tests (PG-). REPORT.md: 16 fixed, 22 unsure.
 - pg3: Pro Genius Solved Academic Experience PDF (= pma165/src.pdf, pages pma165/pg) also into PMA 159 Pro Genius; why = PDF explanation word for word (user). build_pg2.py phase 2: 22 matched/repeated, 34 new, C35 (= C1) and C28 skipped -> 715 MCQs, 15 tests.
+
+## Nov 1 2026 (19) - published: full recheck of all MCQs
+- recheck/: all_mcqs.json (dump), key.json (13,078 unique text MCQs), where.json (id -> test key + index). Stage 1 blind answers out/s01..20 (+ r1 redo of slipped ranges). Stage 2 web check s2in/s2out t01..23 (624 doubtful). apply_fixes.py writes pma159/corrections.json (+ manual FA-3 #13). REPORT.md: 13 changed, unclear list.
