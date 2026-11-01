@@ -1,0 +1,1154 @@
+[
+ {
+  "id": "A1",
+  "question": "Who was Pakistan's Army Commander-in-Chief during the 1965 war?",
+  "options": [
+   "General Muhammad Musa Khan",
+   "General Tikka Khan",
+   "General Yahya Khan",
+   "General Ayub Khan"
+  ],
+  "correct": 0,
+  "why": "General Muhammad Musa Khan was Commander-in-Chief of the Pakistan Army during the 1965 war.",
+  "rel": "The title 'Chief of Army Staff' replaced 'Commander-in-Chief' in later years.",
+  "status": "ok",
+  "note": "",
+  "match": 41
+ },
+ {
+  "id": "A2",
+  "question": "Who was the first Governor-General of Pakistan?",
+  "options": [
+   "Liaquat Ali Khan",
+   "Khawaja Nazimuddin",
+   "Muhammad Ali Jinnah",
+   "Ghulam Muhammad"
+  ],
+  "correct": 2,
+  "why": "Quaid-e-Azam Muhammad Ali Jinnah was Pakistan's first Governor-General from 14 August 1947 until his death in 1948.",
+  "rel": "Liaquat Ali Khan was Pakistan's first Prime Minister.",
+  "status": "ok",
+  "note": "",
+  "match": 171
+ },
+ {
+  "id": "A3",
+  "question": "What is the main reason children are sent to school?",
+  "options": [
+   "For education, learning and social development",
+   "Only to earn a certificate",
+   "To make them obey their elders only",
+   "To keep them away from home"
+  ],
+  "correct": 0,
+  "why": "School gives children education, skills and social development.",
+  "rel": "Primary education is a basic right in Pakistan under Article 25-A of the Constitution.",
+  "status": "ok",
+  "note": "Opinion item turned into a best-answer MCQ.",
+  "match": null
+ },
+ {
+  "id": "A4",
+  "question": "Who is the Speaker of the Punjab Assembly?",
+  "options": [
+   "Malik Muhammad Ahmad Khan",
+   "Chaudhry Pervaiz Elahi",
+   "Rana Iqbal Khan",
+   "Sibtain Khan"
+  ],
+  "correct": 0,
+  "why": "Malik Muhammad Ahmad Khan was elected Speaker of the Punjab Assembly in February 2024.",
+  "rel": "Maryam Nawaz is the Chief Minister of Punjab.",
+  "status": "ok",
+  "note": "Current affairs; recheck before the test.",
+  "match": null
+ },
+ {
+  "id": "A5",
+  "question": "Why is milk usually boiled before drinking?",
+  "options": [
+   "To make it sweeter",
+   "To add more vitamins",
+   "To increase its fat content",
+   "To kill harmful germs"
+  ],
+  "correct": 3,
+  "why": "Heating milk to boiling kills most harmful microbes, making it safer to drink.",
+  "rel": "Pasteurization, named after Louis Pasteur, heats milk to a set temperature to kill germs.",
+  "status": "ok",
+  "note": "Opinion item turned into a best-answer MCQ.",
+  "match": null
+ },
+ {
+  "id": "A6",
+  "question": "Who wrote Kashf-ul-Mahjoob?",
+  "options": [
+   "Imam Ghazali",
+   "Baba Fariduddin Ganjshakar",
+   "Ali Hujwiri (Data Ganj Bakhsh)",
+   "Shah Waliullah"
+  ],
+  "correct": 2,
+  "why": "Kashf-ul-Mahjoob was written by Syed Ali Hujwiri, known as Data Ganj Bakhsh.",
+  "rel": "It is one of the oldest Persian books on Sufism; Data Sahib's shrine is in Lahore.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A7",
+  "question": "Who wrote Al-Bidaya wa'l-Nihaya?",
+  "options": [
+   "Ibn Taymiyyah",
+   "Ibn Khaldun",
+   "Ibn Kathir",
+   "Imam Tabari"
+  ],
+  "correct": 2,
+  "why": "Al-Bidaya wa'l-Nihaya, a large history of Islam, was written by Ibn Kathir.",
+  "rel": "Ibn Kathir also wrote the famous Tafsir Ibn Kathir.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A8",
+  "question": "In which Hijri year was the Battle of Khaybar fought?",
+  "options": [
+   "9 AH",
+   "5 AH",
+   "7 AH",
+   "8 AH"
+  ],
+  "correct": 2,
+  "why": "The Battle (Conquest) of Khaybar took place in 7 AH (628 CE).",
+  "rel": "Hazrat Ali (RA) is famous for conquering the fort of Qamus at Khaybar.",
+  "status": "ok",
+  "note": "",
+  "match": 267
+ },
+ {
+  "id": "A9",
+  "question": "Who is credited with inventing the practical light bulb?",
+  "options": [
+   "Alexander Graham Bell",
+   "Nikola Tesla",
+   "Thomas Edison",
+   "Michael Faraday"
+  ],
+  "correct": 2,
+  "why": "Thomas Edison developed the first practical, commercially successful incandescent light bulb in 1879.",
+  "rel": "Other inventors such as Joseph Swan also worked on electric lamps.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A10",
+  "question": "Who discovered X-rays?",
+  "options": [
+   "Wilhelm Conrad Röntgen",
+   "Ernest Rutherford",
+   "Marie Curie",
+   "J. J. Thomson"
+  ],
+  "correct": 0,
+  "why": "Wilhelm Conrad Röntgen discovered X-rays in 1895.",
+  "rel": "Röntgen received the first Nobel Prize in Physics in 1901.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A11",
+  "question": "Where are the headquarters of the Pakistan Navy?",
+  "options": [
+   "Rawalpindi",
+   "Gwadar",
+   "Islamabad",
+   "Karachi"
+  ],
+  "correct": 2,
+  "why": "Naval Headquarters of the Pakistan Navy is in Islamabad.",
+  "rel": "Karachi is the Navy's main base and fleet headquarters.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A12",
+  "question": "Who were awarded the Nishan-e-Haider for the 1999 Kargil conflict?",
+  "options": [
+   "Captain Karnal Sher Khan and Havildar Lalak Jan",
+   "Captain Sarwar and Naik Saif Ali Janjua",
+   "Major Aziz Bhatti and Major Shabbir Sharif",
+   "Rashid Minhas and Major Akram"
+  ],
+  "correct": 0,
+  "why": "Captain Karnal Sher Khan and Havildar Lalak Jan received the Nishan-e-Haider for their bravery in Kargil in 1999.",
+  "rel": "Nishan-e-Haider is Pakistan's highest military gallantry award.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A13",
+  "question": "According to the Qur'an (2:127), who raised the foundations of the Kaaba?",
+  "options": [
+   "Prophet Nuh (AS) and his sons",
+   "Prophet Ibrahim and Prophet Ismail (AS)",
+   "Prophet Musa and Prophet Haroon (AS)",
+   "Prophet Adam and Prophet Shees (AS)"
+  ],
+  "correct": 1,
+  "why": "Surah Al-Baqarah 2:127 says Ibrahim and Ismail (AS) raised the foundations of the House.",
+  "rel": "Some traditions say an earlier Kaaba existed from the time of Adam (AS).",
+  "status": "ok",
+  "note": "Question reworded to follow the Qur'an.",
+  "match": null
+ },
+ {
+  "id": "A14",
+  "question": "How many rukus are there in the Holy Qur'an (common count)?",
+  "options": [
+   "540",
+   "600",
+   "480",
+   "666"
+  ],
+  "correct": 0,
+  "why": "The commonly taught count of rukus in the Qur'an is 540.",
+  "rel": "The Qur'an has 114 surahs and 30 paras.",
+  "status": "ok",
+  "note": "Some editions count differently (e.g. 558).",
+  "match": null
+ },
+ {
+  "id": "A15",
+  "question": "In which year was the Cripps Mission sent to India?",
+  "options": [
+   "1945",
+   "1946",
+   "1940",
+   "1942"
+  ],
+  "correct": 3,
+  "why": "The British government sent the Cripps Mission in March 1942 during World War II.",
+  "rel": "It offered dominion status after the war in return for Indian support in the war.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A16",
+  "question": "How many surahs of the Qur'an are Madani (common count)?",
+  "options": [
+   "38",
+   "24",
+   "86",
+   "28"
+  ],
+  "correct": 3,
+  "why": "By the common count, 28 surahs are Madani and 86 are Makki.",
+  "rel": "Madani surahs were revealed after the Hijrah to Madinah.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A17",
+  "question": "Which country is known as the Land of the Rising Sun?",
+  "options": [
+   "Japan",
+   "China",
+   "Thailand",
+   "South Korea"
+  ],
+  "correct": 0,
+  "why": "Japan's name 'Nippon' means 'origin of the sun', so it is called the Land of the Rising Sun.",
+  "rel": "Thailand is called the Land of White Elephants.",
+  "status": "ok",
+  "note": "",
+  "match": 104
+ },
+ {
+  "id": "A18",
+  "question": "Which city is called the Manchester of Pakistan?",
+  "options": [
+   "Sialkot",
+   "Gujranwala",
+   "Karachi",
+   "Faisalabad"
+  ],
+  "correct": 3,
+  "why": "Faisalabad is called the Manchester of Pakistan because of its large textile industry.",
+  "rel": "Faisalabad was earlier named Lyallpur.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A19",
+  "question": "When was the Battle of Badr fought?",
+  "options": [
+   "5 AH (Shawwal)",
+   "8 AH (Ramadan)",
+   "3 AH (Shawwal)",
+   "2 AH (17 Ramadan)"
+  ],
+  "correct": 3,
+  "why": "The Battle of Badr was fought on 17 Ramadan, 2 AH (624 CE).",
+  "rel": "About 313 Muslims fought against the Quraysh of Makkah.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A20",
+  "question": "Who commanded the Muslim army at the Battle of Uhud?",
+  "options": [
+   "Hazrat Hamza (RA)",
+   "Hazrat Khalid ibn Walid (RA)",
+   "Prophet Muhammad (PBUH)",
+   "Hazrat Ali (RA)"
+  ],
+  "correct": 2,
+  "why": "The Holy Prophet (PBUH) himself led the Muslim army at Uhud in 3 AH.",
+  "rel": "Khalid ibn Walid fought on the Makkan side at Uhud before accepting Islam.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A21",
+  "question": "Who is the youngest recipient of the Nishan-e-Haider?",
+  "options": [
+   "Pilot Officer Rashid Minhas",
+   "Captain Karnal Sher Khan",
+   "Major Aziz Bhatti",
+   "Lance Naik Muhammad Mahfuz"
+  ],
+  "correct": 0,
+  "why": "Pilot Officer Rashid Minhas was about 20 years old when he was martyred in 1971 and awarded the Nishan-e-Haider.",
+  "rel": "He is the only Pakistan Air Force officer to receive the Nishan-e-Haider.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A22",
+  "question": "Who said, 'No power on earth can undo Pakistan'?",
+  "options": [
+   "Liaquat Ali Khan",
+   "Allama Muhammad Iqbal",
+   "Quaid-e-Azam Muhammad Ali Jinnah",
+   "Sir Syed Ahmad Khan"
+  ],
+  "correct": 2,
+  "why": "This famous statement is attributed to Quaid-e-Azam Muhammad Ali Jinnah after the creation of Pakistan.",
+  "rel": "Jinnah died on 11 September 1948 in Karachi.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A23",
+  "question": "Which title of Prophet Muhammad (PBUH) is given in the Qur'an (21:107)?",
+  "options": [
+   "Khalilullah",
+   "Ruhullah",
+   "Rahmat-ul-lil-Alameen",
+   "Kaleemullah"
+  ],
+  "correct": 2,
+  "why": "Surah Al-Anbiya 21:107 calls him a mercy to all the worlds (Rahmat-ul-lil-Alameen).",
+  "rel": "Khalilullah is the title of Prophet Ibrahim (AS).",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A24",
+  "question": "In which year did Pakistan join the OIC as a founding member?",
+  "options": [
+   "1972",
+   "1974",
+   "1947",
+   "1969"
+  ],
+  "correct": 3,
+  "why": "The OIC was founded at Rabat, Morocco, in September 1969, and Pakistan was a founding member.",
+  "rel": "Pakistan hosted the second Islamic Summit in Lahore in 1974.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A25",
+  "question": "Thimphu is the capital of which country?",
+  "options": [
+   "Bhutan",
+   "Nepal",
+   "Laos",
+   "Myanmar"
+  ],
+  "correct": 0,
+  "why": "Thimphu is the capital and largest city of Bhutan.",
+  "rel": "Kathmandu is the capital of Nepal.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A26",
+  "question": "What was the famous title of Hazrat Umar (RA)?",
+  "options": [
+   "Asadullah",
+   "Al-Siddiq",
+   "Ghani",
+   "Al-Farooq"
+  ],
+  "correct": 3,
+  "why": "Hazrat Umar (RA) was called Al-Farooq, meaning the one who separates truth from falsehood.",
+  "rel": "He was also the first caliph called Amir-ul-Mu'mineen.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A27",
+  "question": "Who was Pakistan's first Test cricket captain?",
+  "options": [
+   "Imtiaz Ahmed",
+   "Abdul Hafeez Kardar",
+   "Hanif Mohammad",
+   "Fazal Mahmood"
+  ],
+  "correct": 1,
+  "why": "Abdul Hafeez Kardar captained Pakistan in its first Test series in India in 1952.",
+  "rel": "Kardar is called the father of Pakistan cricket.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A28",
+  "question": "Who is Pakistan's highest run-scorer in Test cricket?",
+  "options": [
+   "Younis Khan",
+   "Mohammad Yousuf",
+   "Inzamam-ul-Haq",
+   "Javed Miandad"
+  ],
+  "correct": 0,
+  "why": "Younis Khan scored 10,099 Test runs, the most by a Pakistani batter.",
+  "rel": "He was the first Pakistani to score 10,000 Test runs.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A29",
+  "question": "In which district is the ancient site of Harappa located?",
+  "options": [
+   "Multan",
+   "Okara",
+   "Sahiwal",
+   "Larkana"
+  ],
+  "correct": 2,
+  "why": "Harappa archaeological site is in Sahiwal District, Punjab.",
+  "rel": "Mohenjo-daro, another Indus Valley site, is in Larkana District, Sindh.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A30",
+  "question": "The yuan is the currency unit of which country?",
+  "options": [
+   "China",
+   "Vietnam",
+   "Japan",
+   "South Korea"
+  ],
+  "correct": 0,
+  "why": "The yuan is the main unit of China's currency, the renminbi.",
+  "rel": "Japan's currency is the yen.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A31",
+  "question": "How many daughters did Prophet Muhammad (PBUH) have?",
+  "options": [
+   "Two",
+   "Three",
+   "Five",
+   "Four"
+  ],
+  "correct": 3,
+  "why": "He had four daughters: Zainab, Ruqayyah, Umm Kulthum and Fatimah (RA).",
+  "rel": "Ruqayyah and Umm Kulthum (RA) were both married to Hazrat Uthman (RA).",
+  "status": "ok",
+  "note": "",
+  "match": 204
+ },
+ {
+  "id": "A32",
+  "question": "Who is the Speaker of the National Assembly of Pakistan?",
+  "options": [
+   "Raja Pervaiz Ashraf",
+   "Asad Qaiser",
+   "Sardar Ayaz Sadiq",
+   "Yousuf Raza Gilani"
+  ],
+  "correct": 2,
+  "why": "Sardar Ayaz Sadiq was elected Speaker of the National Assembly on 1 March 2024.",
+  "rel": "Yousuf Raza Gilani is the Chairman of the Senate.",
+  "status": "ok",
+  "note": "Current affairs; recheck before the test.",
+  "match": 138
+ },
+ {
+  "id": "A33",
+  "question": "In which Hijri year did Prophet Muhammad (PBUH) perform his first Umrah?",
+  "options": [
+   "7 AH",
+   "6 AH",
+   "10 AH",
+   "8 AH"
+  ],
+  "correct": 0,
+  "why": "The first completed Umrah was Umrat al-Qada in 7 AH, after the Treaty of Hudaybiyyah.",
+  "rel": "In 6 AH the Muslims were stopped at Hudaybiyyah and could not perform Umrah.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A34",
+  "question": "Into how many physical (geographical) regions is Pakistan commonly divided in textbooks?",
+  "options": [
+   "Eight",
+   "Eleven",
+   "Three",
+   "Five"
+  ],
+  "correct": 3,
+  "why": "Many textbooks divide Pakistan into five physical regions such as northern mountains, western mountains, Balochistan Plateau, Potohar Plateau and the Indus Plain.",
+  "rel": "Some books add deserts as a separate region, giving six.",
+  "status": "unsure",
+  "note": "Count depends on the textbook; follow the syllabus.",
+  "match": null
+ },
+ {
+  "id": "A35",
+  "question": "On which river is Warsak Dam built?",
+  "options": [
+   "Jhelum River",
+   "Kabul River",
+   "Swat River",
+   "Indus River"
+  ],
+  "correct": 1,
+  "why": "Warsak Dam is on the Kabul River, about 30 km from Peshawar.",
+  "rel": "Mangla Dam is on the Jhelum River.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A36",
+  "question": "Who was the first President of Pakistan's Constituent Assembly?",
+  "options": [
+   "Maulvi Tamizuddin Khan",
+   "Liaquat Ali Khan",
+   "Muhammad Ali Jinnah",
+   "Sardar Abdur Rab Nishtar"
+  ],
+  "correct": 2,
+  "why": "Quaid-e-Azam Muhammad Ali Jinnah was elected the first President of the Constituent Assembly on 11 August 1947.",
+  "rel": "Maulvi Tamizuddin Khan later became President of the Assembly.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A37",
+  "question": "Babusar Pass connects which two areas?",
+  "options": [
+   "Hunza and China",
+   "Swat and Dir",
+   "Kaghan Valley and Chilas",
+   "Chitral and Afghanistan"
+  ],
+  "correct": 2,
+  "why": "Babusar Pass joins Naran/Kaghan Valley (Mansehra) with Chilas in Diamer District.",
+  "rel": "Khunjerab Pass connects Hunza with China.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A38",
+  "question": "What is 90% of 90?",
+  "options": [
+   "9",
+   "80",
+   "81",
+   "90"
+  ],
+  "correct": 2,
+  "why": "90% of 90 = 0.9 x 90 = 81.",
+  "rel": "One tenth (10%) of 90 is 9.",
+  "status": "ok",
+  "note": "",
+  "match": 139
+ },
+ {
+  "id": "A39",
+  "question": "On what date did Pakistan become an Islamic Republic?",
+  "options": [
+   "23 March 1956",
+   "14 August 1947",
+   "23 March 1940",
+   "14 August 1973"
+  ],
+  "correct": 0,
+  "why": "The first Constitution came into force on 23 March 1956 and named the country the Islamic Republic of Pakistan.",
+  "rel": "The 1956 Constitution was abrogated in 1958.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A40",
+  "question": "When was Pakistan Tehreek-e-Insaf (PTI) founded?",
+  "options": [
+   "25 April 2002",
+   "14 August 1993",
+   "30 November 1967",
+   "25 April 1996"
+  ],
+  "correct": 3,
+  "why": "Imran Khan founded PTI on 25 April 1996.",
+  "rel": "Pakistan Peoples Party was founded on 30 November 1967.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A41",
+  "question": "What is the name of the boundary line drawn between Pakistan and India in 1947?",
+  "options": [
+   "Line of Control",
+   "Radcliffe Line",
+   "Durand Line",
+   "McMahon Line"
+  ],
+  "correct": 1,
+  "why": "Sir Cyril Radcliffe drew the partition boundary between Pakistan and India in 1947.",
+  "rel": "The Durand Line is the Pakistan-Afghanistan border.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A42",
+  "question": "When was the United Nations established?",
+  "options": [
+   "1 January 1942",
+   "24 October 1945",
+   "26 June 1945",
+   "10 January 1920"
+  ],
+  "correct": 1,
+  "why": "The UN Charter came into force on 24 October 1945, now celebrated as UN Day.",
+  "rel": "The UN Charter was signed on 26 June 1945 in San Francisco.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A43",
+  "question": "Who is Pakistan's Federal Minister for National Health Services?",
+  "options": [
+   "Syed Mustafa Kamal",
+   "Dr Nadeem Jan",
+   "Aleem Khan",
+   "Abdul Qadir Patel"
+  ],
+  "correct": 0,
+  "why": "Syed Mustafa Kamal became Federal Minister for National Health Services in March 2025.",
+  "rel": "Mustafa Kamal was earlier the Mayor (Nazim) of Karachi.",
+  "status": "unsure",
+  "note": "Cabinet posts can change; recheck before the test.",
+  "match": null
+ },
+ {
+  "id": "A44",
+  "question": "When was the World Health Organization (WHO) founded?",
+  "options": [
+   "7 April 1948",
+   "7 April 1950",
+   "24 October 1945",
+   "10 December 1948"
+  ],
+  "correct": 0,
+  "why": "WHO's constitution came into force on 7 April 1948.",
+  "rel": "7 April is celebrated every year as World Health Day.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A45",
+  "question": "What was the old name of Madinah?",
+  "options": [
+   "Bakkah",
+   "Hijr",
+   "Taif",
+   "Yathrib"
+  ],
+  "correct": 3,
+  "why": "Before the Hijrah, Madinah was called Yathrib.",
+  "rel": "After the Hijrah it became Madinat-un-Nabi, the City of the Prophet.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A46",
+  "question": "The Khyber Pass connects Pakistan with which country?",
+  "options": [
+   "Iran",
+   "China",
+   "Tajikistan",
+   "Afghanistan"
+  ],
+  "correct": 3,
+  "why": "The Khyber Pass links Peshawar with Afghanistan through the Khyber District.",
+  "rel": "Torkham is the main border crossing on the Khyber route.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A47",
+  "question": "What system of government did the 1962 Constitution of Pakistan give?",
+  "options": [
+   "Federal parliamentary with a Prime Minister",
+   "Parliamentary",
+   "Military council",
+   "Presidential"
+  ],
+  "correct": 3,
+  "why": "The 1962 Constitution, made under Ayub Khan, introduced a presidential system.",
+  "rel": "The 1956 Constitution had a parliamentary system.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A48",
+  "question": "After textiles, which is Pakistan's second-largest export item?",
+  "options": [
+   "Leather goods",
+   "Sports goods",
+   "Cotton yarn only",
+   "Rice"
+  ],
+  "correct": 3,
+  "why": "Textiles are Pakistan's largest export group, and rice is commonly ranked second.",
+  "rel": "Basmati rice from Punjab is a famous Pakistani export.",
+  "status": "fixed",
+  "note": "Printed answer gave no item; rice is the standard answer (rankings can change by year).",
+  "match": null
+ },
+ {
+  "id": "A49",
+  "question": "What is Brazil's largest export crop?",
+  "options": [
+   "Wheat",
+   "Soybeans",
+   "Rice",
+   "Tea"
+  ],
+  "correct": 1,
+  "why": "Soybeans are Brazil's leading agricultural export.",
+  "rel": "Brazil is also the world's largest coffee producer.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A50",
+  "question": "When did the Chauri Chaura incident take place?",
+  "options": [
+   "13 April 1919",
+   "4 February 1922",
+   "20 May 1920",
+   "8 August 1942"
+  ],
+  "correct": 1,
+  "why": "The Chauri Chaura incident happened on 4 February 1922 in the United Provinces.",
+  "rel": "Gandhi called off the Non-Cooperation Movement after this violence.",
+  "status": "ok",
+  "note": "",
+  "match": 128
+ },
+ {
+  "id": "A51",
+  "question": "Which team won the 1999 Cricket World Cup?",
+  "options": [
+   "Australia",
+   "South Africa",
+   "Sri Lanka",
+   "Pakistan"
+  ],
+  "correct": 0,
+  "why": "Australia beat Pakistan in the final at Lord's to win the 1999 World Cup.",
+  "rel": "Pakistan won the Cricket World Cup in 1992.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A52",
+  "question": "How old was Prophet Muhammad (PBUH) when his mother died?",
+  "options": [
+   "About six years",
+   "About two years",
+   "About twelve years",
+   "About eight years"
+  ],
+  "correct": 0,
+  "why": "His mother Hazrat Amina died at Abwa when he was about six years old.",
+  "rel": "His grandfather Abdul Muttalib then took care of him.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A53",
+  "question": "What is the currency of Cuba?",
+  "options": [
+   "Cuban escudo",
+   "Cuban dollar",
+   "Cuban peso",
+   "Cuban real"
+  ],
+  "correct": 2,
+  "why": "Cuba's official currency is the Cuban peso (CUP).",
+  "rel": "Cuba ended its dual-currency system in 2021.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A54",
+  "question": "What is the world's largest lake by surface area?",
+  "options": [
+   "Caspian Sea",
+   "Lake Victoria",
+   "Lake Baikal",
+   "Lake Superior"
+  ],
+  "correct": 0,
+  "why": "The Caspian Sea is the largest lake by area, though its water is salty.",
+  "rel": "Lake Superior is the largest freshwater lake by surface area.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A55",
+  "question": "Under the 1962 Constitution, who elected the President of Pakistan?",
+  "options": [
+   "The people by direct vote",
+   "The National Assembly alone",
+   "The Senate",
+   "Basic Democrats (electoral college)"
+  ],
+  "correct": 3,
+  "why": "Under the 1962 Constitution, the President was elected indirectly by an electoral college of Basic Democrats.",
+  "rel": "There were 80,000 Basic Democrats, 40,000 from each wing.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A56",
+  "question": "What is the currency of Sri Lanka?",
+  "options": [
+   "Sri Lankan rupee",
+   "Sri Lankan taka",
+   "Sri Lankan ringgit",
+   "Sri Lankan dinar"
+  ],
+  "correct": 0,
+  "why": "Sri Lanka's currency is the Sri Lankan rupee.",
+  "rel": "Bangladesh's currency is the taka.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A57",
+  "question": "What is the capital of Albania?",
+  "options": [
+   "Skopje",
+   "Tirana",
+   "Podgorica",
+   "Sarajevo"
+  ],
+  "correct": 1,
+  "why": "Tirana is the capital and largest city of Albania.",
+  "rel": "Skopje is the capital of North Macedonia.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A58",
+  "question": "What is the capital of Bulgaria?",
+  "options": [
+   "Bucharest",
+   "Sofia",
+   "Zagreb",
+   "Belgrade"
+  ],
+  "correct": 1,
+  "why": "Sofia is the capital of Bulgaria.",
+  "rel": "Bucharest is the capital of Romania.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A59",
+  "question": "What is Canada's official national winter sport?",
+  "options": [
+   "Skiing",
+   "Figure skating",
+   "Curling",
+   "Ice hockey"
+  ],
+  "correct": 3,
+  "why": "By federal law (1994), ice hockey is Canada's national winter sport.",
+  "rel": "Lacrosse is Canada's national summer sport.",
+  "status": "ok",
+  "note": "Reworded: Canada has two national sports.",
+  "match": null
+ },
+ {
+  "id": "A60",
+  "question": "In his current term, Donald Trump is which numbered President of the United States?",
+  "options": [
+   "48th",
+   "44th",
+   "46th",
+   "47th"
+  ],
+  "correct": 3,
+  "why": "Donald Trump began his second term on 20 January 2025 as the 47th President.",
+  "rel": "He was also the 45th President (2017-2021), as his terms are non-consecutive.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A61",
+  "question": "Which is commonly cited as the tallest building in Pakistan?",
+  "options": [
+   "MCB Tower, Karachi",
+   "Bahria Icon Tower, Karachi",
+   "Arfa Software Technology Park, Lahore",
+   "Centaurus, Islamabad"
+  ],
+  "correct": 1,
+  "why": "Bahria Icon Tower in Karachi, about 273 m tall, is commonly cited as Pakistan's tallest building.",
+  "rel": "Minar-e-Pakistan in Lahore is a famous national monument.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A62",
+  "question": "What is the currency of Bosnia and Herzegovina?",
+  "options": [
+   "Euro",
+   "Convertible mark",
+   "Dinar",
+   "Kuna"
+  ],
+  "correct": 1,
+  "why": "Bosnia and Herzegovina uses the convertible mark (BAM).",
+  "rel": "Its capital is Sarajevo.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A63",
+  "question": "What is the capital of Algeria?",
+  "options": [
+   "Tripoli",
+   "Tunis",
+   "Rabat",
+   "Algiers"
+  ],
+  "correct": 3,
+  "why": "Algiers is the capital of Algeria.",
+  "rel": "Algeria is the largest country in Africa by area.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A64",
+  "question": "In which year was the Simla (Shimla) Conference held?",
+  "options": [
+   "1942",
+   "1940",
+   "1946",
+   "1945"
+  ],
+  "correct": 3,
+  "why": "The Simla Conference was held in June-July 1945 by Viceroy Lord Wavell.",
+  "rel": "It failed over the Muslim League's demand to nominate all Muslim members.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A65",
+  "question": "Who was the first (permanent) President of the All-India Muslim League?",
+  "options": [
+   "Nawab Viqar-ul-Mulk",
+   "Sir Aga Khan III",
+   "Nawab Salimullah Khan",
+   "Muhammad Ali Jinnah"
+  ],
+  "correct": 1,
+  "why": "Sir Aga Khan III was the first permanent President of the All-India Muslim League.",
+  "rel": "The Muslim League was founded in Dhaka on 30 December 1906.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A66",
+  "question": "What is the world's deepest lake?",
+  "options": [
+   "Lake Baikal",
+   "Caspian Sea",
+   "Lake Superior",
+   "Lake Tanganyika"
+  ],
+  "correct": 0,
+  "why": "Lake Baikal in Russia is the deepest lake in the world, about 1,642 m deep.",
+  "rel": "Lake Baikal is also the oldest lake in the world.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A67",
+  "question": "Where is Shahi Qila (Royal Fort) located?",
+  "options": [
+   "Delhi",
+   "Peshawar",
+   "Multan",
+   "Lahore"
+  ],
+  "correct": 3,
+  "why": "Shahi Qila, or Lahore Fort, is in Lahore, next to the Badshahi Mosque.",
+  "rel": "Lahore Fort is a UNESCO World Heritage Site.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A68",
+  "question": "Who is the President of Pakistan?",
+  "options": [
+   "Mamnoon Hussain",
+   "Asif Ali Zardari",
+   "Yousuf Raza Gilani",
+   "Arif Alvi"
+  ],
+  "correct": 1,
+  "why": "Asif Ali Zardari began his second term as President in March 2024.",
+  "rel": "The President is elected by an electoral college of Parliament and the provincial assemblies.",
+  "status": "ok",
+  "note": "Current affairs; recheck before the test.",
+  "match": null
+ },
+ {
+  "id": "A69",
+  "question": "In which year was the Organisation of Islamic Cooperation (OIC) established?",
+  "options": [
+   "1974",
+   "1945",
+   "1981",
+   "1969"
+  ],
+  "correct": 3,
+  "why": "The OIC was set up in 1969 after the first Islamic Summit in Rabat, Morocco.",
+  "rel": "The OIC headquarters is in Jeddah, Saudi Arabia.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A70",
+  "question": "How many member states are in the European Union?",
+  "options": [
+   "30",
+   "25",
+   "27",
+   "28"
+  ],
+  "correct": 2,
+  "why": "The EU has 27 member states.",
+  "rel": "The United Kingdom left the EU in 2020.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A71",
+  "question": "Who is the President of France?",
+  "options": [
+   "Francois Hollande",
+   "Nicolas Sarkozy",
+   "Emmanuel Macron",
+   "Michel Barnier"
+  ],
+  "correct": 2,
+  "why": "Emmanuel Macron has been President of France since 2017; his second term runs to 2027.",
+  "rel": "Paris is the capital of France.",
+  "status": "ok",
+  "note": "Current affairs; recheck before the test.",
+  "match": null
+ },
+ {
+  "id": "A72",
+  "question": "Which country is the world's largest coffee producer?",
+  "options": [
+   "Kenya",
+   "Brazil",
+   "Ethiopia",
+   "Colombia"
+  ],
+  "correct": 1,
+  "why": "Brazil produces the most coffee in the world.",
+  "rel": "Vietnam is the second-largest coffee producer.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ }
+]
