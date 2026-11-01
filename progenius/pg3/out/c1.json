@@ -1,0 +1,562 @@
+[
+ {
+  "id": "C1",
+  "question": "In which year did Quaid-e-Azam Muhammad Ali Jinnah present his Fourteen Points?",
+  "options": [
+   "1928",
+   "1929",
+   "1930",
+   "1940"
+  ],
+  "correct": 1,
+  "why": "Quaid-e-Azam presented his Fourteen Points in March 1929 in response to the Nehru Report of 1928. These points outlined constitutional safeguards for Muslims in British India.",
+  "rel": "Allama Iqbal gave his Allahabad Address a year later, in 1930.",
+  "status": "ok",
+  "note": "",
+  "match": 512
+ },
+ {
+  "id": "C2",
+  "question": "Where is the headquarters (Secretariat) of the Shanghai Cooperation Organisation (SCO)?",
+  "options": [
+   "Shanghai, China",
+   "Moscow, Russia",
+   "Beijing, China",
+   "Tashkent, Uzbekistan"
+  ],
+  "correct": 2,
+  "why": "The SCO Secretariat is located in Beijing, China. The organisation was established in 2001 to promote regional cooperation among its member states.",
+  "rel": "The SCO's anti-terrorism body (RATS) is based in Tashkent; Pakistan became a full member in 2017.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C3",
+  "question": "Who was the first Chief Justice of Pakistan?",
+  "options": [
+   "Justice Muhammad Munir",
+   "Justice A. R. Cornelius",
+   "Justice Hamoodur Rahman",
+   "Sir Abdul Rashid"
+  ],
+  "correct": 3,
+  "why": "Sir Abdul Rashid became Pakistan’s first Chief Justice in 1949, heading the Federal Court. He served in this position until 1954.",
+  "rel": "Justice Muhammad Munir succeeded him in 1954.",
+  "status": "fixed",
+  "note": "Answer is right; printed explanation said he became Chief Justice in 1947, but he took office in June 1949.",
+  "match": null
+ },
+ {
+  "id": "C4",
+  "question": "What is the approximate length of Pakistan's coastline?",
+  "options": [
+   "About 1,046 km",
+   "About 846 km",
+   "About 1,246 km",
+   "About 1,446 km"
+  ],
+  "correct": 0,
+  "why": "Pakistan’s coastline extends along the Arabian Sea through Sindh and Balochistan. Published estimates can vary depending on the measurement method.",
+  "rel": "Most of the coastline (about 770 km) lies in Balochistan.",
+  "status": "ok",
+  "note": "",
+  "match": 156
+ },
+ {
+  "id": "C5",
+  "question": "Who is the Deputy Prime Minister of Pakistan (as of October 2026)?",
+  "options": [
+   "Khawaja Muhammad Asif",
+   "Mohammad Ishaq Dar",
+   "Ahsan Iqbal",
+   "Mohsin Naqvi"
+  ],
+  "correct": 1,
+  "why": "Ishaq Dar serves as Pakistan’s Deputy Prime Minister and Foreign Minister. Government appointments should be checked against the latest official records before publication.",
+  "rel": "Ishaq Dar was appointed Deputy Prime Minister in April 2024.",
+  "status": "unsure",
+  "note": "Current office holder; could not verify the very latest position.",
+  "match": null
+ },
+ {
+  "id": "C6",
+  "question": "In which direction is Afghanistan located from Pakistan?",
+  "options": [
+   "Northeast",
+   "Northwest",
+   "Southwest",
+   "West"
+  ],
+  "correct": 1,
+  "why": "Afghanistan lies mainly to the northwest of Pakistan and shares a long international border with it, commonly known as the Durand Line.",
+  "rel": "The Durand Line was drawn in 1893.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C7",
+  "question": "In which year did the Kargil War take place?",
+  "options": [
+   "1965",
+   "1971",
+   "1999",
+   "1984"
+  ],
+  "correct": 2,
+  "why": "The Kargil conflict took place between India and Pakistan in the summer of 1999 in the Kargil sector of the disputed Kashmir region.",
+  "rel": "Captain Karnal Sher Khan and Havildar Lalak Jan received the Nishan-e-Haider for Kargil.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C8",
+  "question": "In which year did East Pakistan become Bangladesh?",
+  "options": [
+   "1965",
+   "1970",
+   "1974",
+   "1971"
+  ],
+  "correct": 3,
+  "why": "East Pakistan became the independent state of Bangladesh in December 1971 following a war involving Pakistan, Bengali independence forces and India.",
+  "rel": "Pakistan formally recognised Bangladesh in 1974.",
+  "status": "ok",
+  "note": "",
+  "match": 4
+ },
+ {
+  "id": "C9",
+  "question": "In which year did Quaid-e-Azam Muhammad Ali Jinnah join the All-India Muslim League?",
+  "options": [
+   "1906",
+   "1913",
+   "1916",
+   "1920"
+  ],
+  "correct": 1,
+  "why": "Jinnah joined the All-India Muslim League in 1913. He had joined the Indian National Congress earlier, in 1906.",
+  "rel": "The All-India Muslim League was founded in Dhaka in 1906.",
+  "status": "ok",
+  "note": "",
+  "match": 595
+ },
+ {
+  "id": "C10",
+  "question": "What is the capital of Saudi Arabia?",
+  "options": [
+   "Jeddah",
+   "Makkah",
+   "Riyadh",
+   "Dammam"
+  ],
+  "correct": 2,
+  "why": "Riyadh is the capital and largest city of Saudi Arabia. It is an important political, administrative and economic centre.",
+  "rel": "Jeddah is Saudi Arabia's main Red Sea port city.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C11",
+  "question": "What is the official currency of Saudi Arabia?",
+  "options": [
+   "Dirham",
+   "Dinar",
+   "Qatari Riyal",
+   "Saudi Riyal"
+  ],
+  "correct": 3,
+  "why": "The Saudi riyal is the official currency of Saudi Arabia. One riyal is divided into 100 halalas.",
+  "rel": "The UAE uses the dirham.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C12",
+  "question": "Where is the headquarters of the United Nations located?",
+  "options": [
+   "New York City, USA",
+   "Geneva, Switzerland",
+   "Washington, D.C., USA",
+   "Vienna, Austria"
+  ],
+  "correct": 0,
+  "why": "The UN headquarters is located in Manhattan, New York City. The United Nations was established in 1945 to promote international peace, security and cooperation.",
+  "rel": "Pakistan joined the UN on 30 September 1947.",
+  "status": "ok",
+  "note": "",
+  "match": 670
+ },
+ {
+  "id": "C13",
+  "question": "Which mountain pass connects Pakistan with Afghanistan in the Khyber region?",
+  "options": [
+   "Khunjerab Pass",
+   "Lowari Pass",
+   "Khyber Pass",
+   "Babusar Pass"
+  ],
+  "correct": 2,
+  "why": "The Khyber Pass connects northwestern Pakistan with Afghanistan. Historically, it has served as an important route for trade, travel and military movements.",
+  "rel": "The Khunjerab Pass connects Pakistan with China.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C14",
+  "question": "At what price did Pakistan purchase Gwadar from Oman?",
+  "options": [
+   "About 1 million",
+   "About 3 million",
+   "About 5 million",
+   "About 10 million"
+  ],
+  "correct": 1,
+  "why": "Pakistan purchased Gwadar from Oman in 1958. The port later became strategically important because of its location on the Arabian Sea.",
+  "rel": "Gwadar became part of Pakistan on 8 September 1958, under Prime Minister Feroz Khan Noon.",
+  "status": "unsure",
+  "note": "Sources differ on the currency (US$3 million vs £3 million); options avoid naming the currency.",
+  "match": null
+ },
+ {
+  "id": "C15",
+  "question": "Who was the first Governor-General of Pakistan?",
+  "options": [
+   "Khawaja Nazimuddin",
+   "Quaid-e-Azam Muhammad Ali Jinnah",
+   "Liaquat Ali Khan",
+   "Ghulam Muhammad"
+  ],
+  "correct": 1,
+  "why": "Muhammad Ali Jinnah became Pakistan’s first Governor-General on 14 August 1947. He held the office until his death in September 1948.",
+  "rel": "Khawaja Nazimuddin was the second Governor-General.",
+  "status": "ok",
+  "note": "",
+  "match": 171
+ },
+ {
+  "id": "C16",
+  "question": "Who was Pakistan's first Foreign Minister?",
+  "options": [
+   "Sir Muhammad Zafarullah Khan",
+   "Liaquat Ali Khan",
+   "Muhammad Ali Bogra",
+   "Zulfikar Ali Bhutto"
+  ],
+  "correct": 0,
+  "why": "Sir Muhammad Zafarullah Khan was Pakistan’s first Foreign Minister after independence in 1947. He later served as President of the International Court of Justice.",
+  "rel": "He also served as President of the UN General Assembly in 1962.",
+  "status": "ok",
+  "note": "",
+  "match": 143
+ },
+ {
+  "id": "C17",
+  "question": "Under which constitutional amendment was the post of Chief of Defence Forces (CDF) created in Pakistan?",
+  "options": [
+   "26th Amendment (2024)",
+   "18th Amendment (2010)",
+   "25th Amendment (2018)",
+   "27th Amendment (2025)"
+  ],
+  "correct": 3,
+  "why": "The amendment changed Article 243 of Pakistan’s Constitution and restructured the higher defence command system.",
+  "rel": "The 26th Amendment (2024) changed how the Chief Justice of Pakistan is appointed.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C18",
+  "question": "Which Surah is the last Surah of the Holy Quran?",
+  "options": [
+   "Surah Al-Falaq",
+   "Surah Al-Ikhlas",
+   "Surah An-Nas",
+   "Surah Al-Kawthar"
+  ],
+  "correct": 2,
+  "why": "Surah An-Nas is the 114th and final chapter of the Quran. It contains six verses and teaches believers to seek Allah’s protection from evil whispers.",
+  "rel": "Surah Al-Falaq and Surah An-Nas together are called Al-Mu'awwidhatayn.",
+  "status": "ok",
+  "note": "",
+  "match": 397
+ },
+ {
+  "id": "C19",
+  "question": "Which Prophet is known by the title \"Ruhullah\"?",
+  "options": [
+   "Prophet Musa (A.S.)",
+   "Prophet Isa (A.S.)",
+   "Prophet Ibrahim (A.S.)",
+   "Prophet Adam (A.S.)"
+  ],
+  "correct": 1,
+  "why": "Ruhullah is an honorific title associated with Prophet Isa (A.S.) in Islamic tradition. Muslims believe that he was born miraculously by Allah’s command.",
+  "rel": "Prophet Musa (A.S.) is called Kalimullah.",
+  "status": "ok",
+  "note": "",
+  "match": 281
+ },
+ {
+  "id": "C20",
+  "question": "Who was the father of Prophet Ibrahim (A.S.) according to the Quranic account commonly taught in Islamic Studies?",
+  "options": [
+   "Imran",
+   "Nahor",
+   "Lut",
+   "Azar"
+  ],
+  "correct": 3,
+  "why": "Surah Al-An'am (6:74) mentions Azar in connection with Prophet Ibrahim (A.S.) and his rejection of idol worship. Classical scholars have discussed the precise relationship described in this verse.",
+  "rel": "Prophet Ibrahim (A.S.) is known by the title Khalilullah.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C21",
+  "question": "Which Prophet was known as Israel?",
+  "options": [
+   "Prophet Ishaq (A.S.)",
+   "Prophet Yusuf (A.S.)",
+   "Prophet Yaqub (A.S.)",
+   "Prophet Musa (A.S.)"
+  ],
+  "correct": 2,
+  "why": "Israel is traditionally identified with Prophet Yaqub (A.S.). His descendants are known as the Children of Israel in Islamic tradition.",
+  "rel": "Prophet Yaqub (A.S.) was the father of Prophet Yusuf (A.S.).",
+  "status": "ok",
+  "note": "",
+  "match": 140
+ },
+ {
+  "id": "C22",
+  "question": "In which Hijri year was Hajj made obligatory for Muslims?",
+  "options": [
+   "2 AH",
+   "9 AH",
+   "5 AH",
+   "10 AH"
+  ],
+  "correct": 1,
+  "why": "Hajj is one of the five pillars of Islam and is obligatory once in a lifetime for Muslims who meet the required physical and financial conditions. The commonly taught answer for the year of obligation is 9 AH.",
+  "rel": "The Prophet (PBUH) performed his only Hajj, the Farewell Hajj, in 10 AH.",
+  "status": "ok",
+  "note": "",
+  "match": 165
+ },
+ {
+  "id": "C23",
+  "question": "Who was the first Muslim martyr in Islam?",
+  "options": [
+   "Hazrat Yasir (R.A.)",
+   "Hazrat Hamza (R.A.)",
+   "Hazrat Bilal (R.A.)",
+   "Hazrat Sumayyah bint Khayyat (R.A.)"
+  ],
+  "correct": 3,
+  "why": "Hazrat Sumayyah (R.A.) was among the earliest Muslims persecuted in Makkah. She is widely recognised in Islamic history as the first martyr of Islam.",
+  "rel": "She was the mother of Hazrat Ammar bin Yasir (R.A.).",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C24",
+  "question": "What is the eccentricity of a parabola?",
+  "options": [
+   "e = 0",
+   "e < 1",
+   "e > 1",
+   "e = 1"
+  ],
+  "correct": 3,
+  "why": "Eccentricity describes the shape of a conic section. A parabola has an eccentricity exactly equal to 1.",
+  "rel": "A circle has e = 0, an ellipse 0 < e < 1, and a hyperbola e > 1.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C25",
+  "question": "Who holds the record for the most wickets in men's Test cricket?",
+  "options": [
+   "Shane Warne",
+   "Muttiah Muralitharan",
+   "James Anderson",
+   "Anil Kumble"
+  ],
+  "correct": 1,
+  "why": "The Sri Lankan spin bowler retired from Test cricket with 800 wickets, the highest total in the format’s history.",
+  "rel": "Shane Warne is second with 708 Test wickets.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C26",
+  "question": "Jahangir Khan is famous for which sport?",
+  "options": [
+   "Squash",
+   "Hockey",
+   "Cricket",
+   "Tennis"
+  ],
+  "correct": 0,
+  "why": "Jahangir Khan is a legendary Pakistani squash player. He is particularly famous for his record-breaking unbeaten run of 555 consecutive matches.",
+  "rel": "He won the British Open squash title a record 10 times in a row.",
+  "status": "ok",
+  "note": "",
+  "match": 409
+ },
+ {
+  "id": "C27",
+  "question": "What is a synonym of \"turbulent\"?",
+  "options": [
+   "Calm",
+   "Gentle",
+   "Steady",
+   "Stormy"
+  ],
+  "correct": 3,
+  "why": "“Turbulent” describes something marked by disorder, instability or violent movement. “Stormy” is an appropriate synonym when describing rough weather.",
+  "rel": "\"Tranquil\" is an antonym of turbulent.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C28",
+  "question": "How many articles were in the original 1973 Constitution of Pakistan?",
+  "options": [
+   "250",
+   "290",
+   "300",
+   "280"
+  ],
+  "correct": 3,
+  "why": "The printed question did not say which article was asked, so it has no answer. The original 1973 Constitution had 280 articles.",
+  "rel": "The 1973 Constitution came into force on 14 August 1973.",
+  "status": "fixed",
+  "note": "Printed item had no real question or answer (article not known); replaced with a related checkable question. Consider dropping it.",
+  "match": null
+ },
+ {
+  "id": "C29",
+  "question": "What is the integral of 2x with respect to x?",
+  "options": [
+   "2x² + c",
+   "x + c",
+   "x² + c",
+   "2 + c"
+  ],
+  "correct": 2,
+  "why": "The printed question was unclear; it most likely meant ∫2x dx. Since the derivative of x² is 2x, ∫2x dx = x² + c.",
+  "rel": "The derivative of any constant c is 0, which is why c is added.",
+  "status": "fixed",
+  "note": "Printed answer said the expression was unclear; read as ∫2x dx = x² + c (the reported \"x square plus c\").",
+  "match": null
+ },
+ {
+  "id": "C30",
+  "question": "What is the antonym of \"wild\"?",
+  "options": [
+   "Fierce",
+   "Tame",
+   "Savage",
+   "Untamed"
+  ],
+  "correct": 1,
+  "why": "“Wild” describes an animal that is not domesticated,  whereas “tame” describes an animal that has been trained to live peacefully with humans.",
+  "rel": "\"Domesticated\" is another antonym of wild.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C31",
+  "question": "What is the antonym of \"gracious\"?",
+  "options": [
+   "Rude",
+   "Kind",
+   "Polite",
+   "Courteous"
+  ],
+  "correct": 0,
+  "why": "“Gracious” means courteous, kind and pleasant in behaviour. “Rude” describes someone who behaves impolitely or shows a lack of consideration for others.",
+  "rel": "\"Cordial\" is a synonym of gracious.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C32",
+  "question": "How many months of the year have 31 days?",
+  "options": [
+   "5",
+   "6",
+   "7",
+   "8"
+  ],
+  "correct": 2,
+  "why": "January, March, May, July, August, October and December each have 31 days.",
+  "rel": "Four months (April, June, September, November) have 30 days.",
+  "status": "ok",
+  "note": "",
+  "match": 111
+ },
+ {
+  "id": "C33",
+  "question": "Who wrote the book \"Jinnah of Pakistan\"?",
+  "options": [
+   "Hector Bolitho",
+   "Akbar S. Ahmed",
+   "Stanley Wolpert",
+   "Ayesha Jalal"
+  ],
+  "correct": 2,
+  "why": "Stanley Wolpert was an American historian and author. His book Jinnah of Pakistan is a biography of Muhammad Ali Jinnah, the founder of Pakistan.",
+  "rel": "Hector Bolitho wrote \"Jinnah: Creator of Pakistan\" (1954).",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C34",
+  "question": "Where is Masjid an-Nabawi located?",
+  "options": [
+   "Makkah, Saudi Arabia",
+   "Jerusalem",
+   "Taif, Saudi Arabia",
+   "Madinah, Saudi Arabia"
+  ],
+  "correct": 3,
+  "why": "Masjid an-Nabawi was established by Prophet Muhammad ﷺ after his migration to Madinah. It is one of the holiest mosques in Islam.",
+  "rel": "Masjid al-Haram is in Makkah.",
+  "status": "ok",
+  "note": "",
+  "match": 561
+ },
+ {
+  "id": "C35",
+  "question": "In which year did Quaid-e-Azam Muhammad Ali Jinnah present his Fourteen Points?",
+  "options": [
+   "1927",
+   "1931",
+   "1935",
+   "1929"
+  ],
+  "correct": 3,
+  "why": "Jinnah presented his Fourteen Points in response to the Nehru Report of 1928. They outlined constitutional safeguards for Muslims in British India.",
+  "rel": "The Nehru Report was prepared under Motilal Nehru.",
+  "status": "ok",
+  "note": "Same as Q1 (repeated in PDF).",
+  "match": 512
+ }
+]

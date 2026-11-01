@@ -23,5 +23,20 @@ for f in sorted(glob.glob(os.path.join(H, 'out', 'c*.json')), key=lambda s: int(
             Q[seen[k]][6] += 1; nd += 1; continue
         seen[k] = len(Q); byq.setdefault(nq, len(Q))
         Q.append(['Pro Genius Academy', it['question'], it['options'], it['correct'], it['why'], it['rel'], 1]); nn += 1
+
+# Pro Genius "Solved Academic Experience" PDF (pg3/out/c*.json): match = index in the list above (after pg2); why = PDF explanation word for word
+SKIP3 = {'C35', 'C28'}   # C35 is C1 printed twice; C28 had no real question in the PDF
+n3m = n3n = 0
+for f in sorted(glob.glob(os.path.join(P, 'pg3', 'out', 'c*.json'))):
+    for it in json.load(open(f, encoding='utf8')):
+        if it['id'] in SKIP3: continue
+        m = it.get('match')
+        if isinstance(m, int) and 0 <= m < len(Q):
+            Q[m][6] += 1; n3m += 1; continue
+        k = key(it['question'], it['options'][it['correct']])
+        if k in seen: Q[seen[k]][6] += 1; n3m += 1; continue
+        seen[k] = len(Q)
+        Q.append(['Pro Genius Academy', it['question'], it['options'], it['correct'], it['why'], it['rel'], 1]); n3n += 1
+print('pg3: matched %d, new %d' % (n3m, n3n))
 json.dump(Q, open(os.path.join(P, 'pg_final.json'), 'w', encoding='utf8'), ensure_ascii=False)
 print('base %d, matched existing %d, repeated inside new %d, new %d -> %d MCQs, %d tests' % (len(base), nm, nd, nn, len(Q), (len(Q) + 49) // 50))
