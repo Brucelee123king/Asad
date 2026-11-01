@@ -118,12 +118,12 @@ document.addEventListener('click',function(e){if(!e.target.closest||!e.target.cl
   var t=prompt('This locks '+ap.length+' approved people. They must ask again. Type LOCK to continue.');if(String(t||'').trim().toUpperCase()!=='LOCK'){say('Cancelled. Nothing changed.');return}
   say('Locking '+ap.length+' people...');Promise.all(ap.map(function(u){return FB.updateDoc(FB.doc(fs,'users',u.id),{status:'pending',cats:[]})})).then(function(){say('Done: '+ap.length+' people are waiting for approval again (Requests tab).');return load()}).catch(function(x){say('Failed: '+(x.code||x.message),1);load()})});
 function draw(){
-  var p=USERS.filter(function(u){return u.status==='pending'}),o=USERS.filter(function(u){return u.status!=='pending'});
+  var p=USERS.filter(function(u){return u.status==='pending'}),o=USERS.filter(function(u){return u.status!=='pending'}).sort(function(a,b){var ms=function(u){var r=u.requested;return r&&r.toMillis?r.toMillis():(typeof r==='number'?r:9e15)};return ms(a)-ms(b)});
   $('nReq').textContent=p.length;$('nUsr').textContent=o.length;try{accDraw()}catch(e){}
   $('pReq').innerHTML='<h2>People waiting for approval</h2>'+(p.length?p.map(card).join(''):'<div class="mu">Nobody is waiting.</div>');
   var ps=PROS.slice().sort(function(a,b){var x=a.t&&a.t.toMillis?a.t.toMillis():0,y=b.t&&b.t.toMillis?b.t.toMillis():0;return y-x});$('nPro').textContent=ps.length;
   $('pPro').innerHTML='<h2>User details</h2><div class="mu">Details people filled in My Profile. Tap a person to see everything.</div>'+(ps.length?ps.map(proCard).join(''):'<div class="mu" style="margin-top:10px">Nobody has filled the profile yet.</div>');
-  $('pUsr').innerHTML='<h2>Approved and blocked people</h2>'+(o.length?o.map(card).join(''):'<div class="mu">No one yet.</div>');filt();try{onNow()}catch(e){}}
+  $('pUsr').innerHTML='<h2>Approved and blocked people</h2><div class="mu">Oldest first: the first person who joined is at the top.</div>'+(o.length?o.map(card).join(''):'<div class="mu">No one yet.</div>');filt();try{onNow()}catch(e){}}
 document.addEventListener('click',function(e){var b=e.target.closest('button[data-a]');if(!b)return;var c=b.closest('.card'),id=c.getAttribute('data-id'),a=b.getAttribute('data-a');
   var cats=[];[].slice.call(c.querySelectorAll('input[data-g]')).forEach(function(i){if(!i.checked)return;var g=i.getAttribute('data-g');if(g==='ipma')CATS.forEach(function(x){cats.push(x[0])});else cats.push(g)});
   var ref=FB.doc(fs,'users',id),job;
