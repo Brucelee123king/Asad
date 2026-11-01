@@ -409,3 +409,8 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - 1271 MCQs checked by 7 agents (haroon/out/c1..c7.json, haroon/SPEC.md). haroon/build_hf.py dedupes -> haroon/hf_final.json: 1209 MCQs, 57 repeated (count in brackets), 25 tests of 50.
 - 49 answers fixed, 73 unsure (mostly Current Affairs 2026): haroon/REPORT.md sent to user.
 - Own lock 'hf' (section_passwords same as 'o'). User must re-save Initial PMA password on admin Passwords tab and press "Give Initial PMA to everyone".
+
+## Nov 1 2026 (17) - published: booklet figure/answer fixes + resume test
+- Booklet (progenius/nvb/out): user-confirmed fixes S1_28 (new figures), S2_21 (ans 2), S2_24 (3 legs), S4_10, S4_12, S4_19, S4_22, S5_10, S5_11, S5_21 (ans 1), S5_32 (ans 4), S5_39 (order reversed), S5_79 (ans 1), S6_27 (2 white triangles, ans 3), S6_30 (ans 4).
+- admin.html: Initial PMA box pre-filled with catKeys/o.
+- pma159/resume_block.html (last in _blk): saves unfinished test in localStorage rs_<key> (answers, index, time); back/leave shows "Leave this test?" sheet (Stay / Leave and save); selectTest/startQuiz shows "Continue your test?" (Resume / Restart). Cleared on submit/auto-submit. backnav_block calls window.__rsLeave. Test: fbbuild/rstest.js.

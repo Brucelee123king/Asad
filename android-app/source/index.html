@@ -1509,6 +1509,7 @@ html.dark #backBtn{background:rgba(15,23,42,.85);color:#e0e7ff;border-color:rgba
     if(window.__landBack&&window.__landBack()){sync();window.scrollTo(0,0);return}
     if(vis('view-home')||vis('view-quiz')||vis('view-results')){
       if(vis('view-quiz')&&typeof quizActive!=='undefined'&&quizActive){
+        if(window.__rsLeave){history.pushState({n:1},'');window.__rsLeave(function(){showSelect();sync();window.scrollTo(0,0)},null);return}
         if(!confirm('Leave this test? Your progress will be lost.')){history.pushState({n:1},'');return}
         quizActive=false;
       }
@@ -3251,6 +3252,101 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
 })();
 </script>
 
+<style>
+#rsDim{position:fixed;inset:0;z-index:2147483000;background:rgba(15,23,42,.45);-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);opacity:0;pointer-events:none;transition:opacity .2s}
+#rsDim.on{opacity:1;pointer-events:auto}
+#rsSh{position:fixed;left:14px;right:14px;bottom:calc(24px + env(safe-area-inset-bottom));z-index:2147483001;max-width:480px;margin:0 auto;background:#fff;border-radius:26px;padding:22px 20px 18px;box-shadow:0 20px 50px rgba(0,0,0,.3);transform:translateY(130%);transition:transform .28s cubic-bezier(.2,.8,.2,1);font-family:inherit}
+#rsSh.on{transform:none}
+#rsSh .rs-ic{width:54px;height:54px;border-radius:16px;background:linear-gradient(135deg,#065f46,#0f766e);display:flex;align-items:center;justify-content:center;color:#fff;font-size:22px;margin-bottom:12px}
+#rsSh h2{margin:0 0 4px;font-size:21px;font-weight:800;color:#0f172a}
+#rsSh .rs-sub{color:#64748b;font-size:14px;margin-bottom:14px;line-height:1.4}
+#rsSh .rs-st{display:flex;gap:8px;margin-bottom:16px}
+#rsSh .rs-st div{flex:1;background:#f1f5f9;border-radius:14px;padding:10px 6px;text-align:center}
+#rsSh .rs-st b{display:block;font-size:18px;color:#0f172a}
+#rsSh .rs-st span{font-size:11px;color:#64748b}
+#rsSh .rs-bar{height:8px;border-radius:9px;background:#e2e8f0;margin-bottom:18px;overflow:hidden}
+#rsSh .rs-bar i{display:block;height:100%;background:linear-gradient(90deg,#059669,#0d9488)}
+#rsSh .rs-b1{display:block;width:100%;border:0;border-radius:16px;padding:15px;font-size:16px;font-weight:700;color:#fff;background:linear-gradient(135deg,#065f46,#0f766e);margin-bottom:10px;cursor:pointer}
+#rsSh .rs-b2{display:block;width:100%;border:1.5px solid #cbd5e1;border-radius:16px;padding:13px;font-size:15px;font-weight:700;color:#334155;background:#fff;cursor:pointer}
+#rsSh .rs-x{position:absolute;right:16px;top:16px;width:32px;height:32px;border-radius:50%;background:#f1f5f9;border:0;display:flex;align-items:center;justify-content:center;color:#64748b;font-size:15px;cursor:pointer}
+html.dark #rsSh{background:#0f172a;box-shadow:0 20px 50px rgba(0,0,0,.6)}
+html.dark #rsSh h2,html.dark #rsSh .rs-st b{color:#f1f5f9}
+html.dark #rsSh .rs-st div,html.dark #rsSh .rs-x{background:#1e293b}
+html.dark #rsSh .rs-bar{background:#1e293b}
+html.dark #rsSh .rs-b2{background:#0f172a;color:#e2e8f0;border-color:#334155}
+</style>
+<div id="rsDim"></div>
+<div id="rsSh" role="dialog" aria-modal="true"><button class="rs-x" type="button" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+  <div class="rs-ic"></div><h2></h2><div class="rs-sub"></div>
+  <div class="rs-st"><div><b class="rs-q"></b><span>Question</span></div><div><b class="rs-a"></b><span>Answered</span></div><div><b class="rs-t"></b><span>Time left</span></div></div>
+  <div class="rs-bar"><i></i></div>
+  <button class="rs-b1" type="button"></button><button class="rs-b2" type="button"></button></div>
+<script>
+/* Resume a test: progress of an unfinished test is kept on this phone (localStorage 'rs_<testKey>').
+   Leaving asks Stay / Leave and save; opening the same test again asks Resume / Restart. */
+(function(){
+  var dim=document.getElementById('rsDim'),sh=document.getElementById('rsSh');if(!sh)return;
+  var $=function(c){return sh.querySelector(c)},onX=null,on1=null,on2=null,bypass=false;
+  function K(){return 'rs_'+currentTestKey}
+  function sig(){try{return String(quizData.length)+'|'+String((quizData[0]||{}).question||'').slice(0,40)}catch(e){return ''}}
+  function load(){try{var s=JSON.parse(localStorage.getItem(K())||'null');if(!s||s.g!==sig()||!(s.t>0)||!s.a)return null;if(!s.a.some(function(x){return x!==null})&&!s.i)return null;return s}catch(e){return null}}
+  function clear(){try{localStorage.removeItem(K())}catch(e){}}
+  function save(){try{if(typeof quizActive==='undefined'||!quizActive||!currentTestKey||document.getElementById('view-quiz').classList.contains('hidden'))return;localStorage.setItem(K(),JSON.stringify({g:sig(),i:currentQuestionIndex,a:userAnswers,t:timeRemaining,at:Date.now()}))}catch(e){}}
+  window.__rsSave=save;
+  function fmt(t){t=Math.max(0,t|0);return String(Math.floor(t/60)).padStart(2,'0')+':'+String(t%60).padStart(2,'0')}
+  function tname(){try{var b=document.getElementById('home-badge');var m=b&&/\((.*)\)/.exec(b.textContent||'');return m?m[1]:String(currentTestKey).replace('-',' – ')}catch(e){return ''}}
+  function close(){dim.classList.remove('on');sh.classList.remove('on')}
+  function open(o){
+    $('.rs-ic').innerHTML='<i class="fa-solid '+o.icon+'"></i>';$('h2').textContent=o.title;$('.rs-sub').textContent=o.sub;
+    var n=o.a.length,ans=o.a.filter(function(x){return x!==null}).length;
+    $('.rs-q').textContent=(o.i+1)+' / '+n;$('.rs-a').textContent=ans;$('.rs-t').textContent=fmt(o.t);
+    $('.rs-bar i').style.width=Math.round(100*ans/Math.max(1,n))+'%';
+    $('.rs-b1').innerHTML=o.b1;$('.rs-b2').innerHTML=o.b2;onX=o.x;on1=o.f1;on2=o.f2;
+    dim.classList.add('on');sh.classList.add('on')}
+  function fire(f){close();if(f)try{f()}catch(e){console.error(e)}}
+  $('.rs-x').onclick=function(){fire(onX)};dim.onclick=function(){fire(onX)};
+  $('.rs-b1').onclick=function(){fire(on1)};$('.rs-b2').onclick=function(){fire(on2)};
+
+  function restore(s){
+    bypass=true;try{origStart()}finally{bypass=false}
+    userAnswers=s.a.slice(0,quizData.length);while(userAnswers.length<quizData.length)userAnswers.push(null);
+    currentQuestionIndex=Math.min(Math.max(0,s.i|0),quizData.length-1);timeRemaining=s.t;
+    try{renderPalette()}catch(e){}loadQuestion(currentQuestionIndex);updateTimerDisplays();save()}
+  function askResume(s){
+    open({icon:'fa-pause',title:'Continue your test?',sub:tname(),i:s.i|0,a:s.a,t:s.t,
+      b1:'<i class="fa-solid fa-play"></i>&nbsp; Resume from Question '+((s.i|0)+1),b2:'<i class="fa-solid fa-rotate-right"></i>&nbsp; Restart from the beginning',
+      x:null,f1:function(){restore(s)},f2:function(){clear();bypass=true;try{origStart()}finally{bypass=false}save()}})}
+
+  var origStart=window.startQuiz;
+  window.startQuiz=function(){
+    if(!bypass&&!quizActive){var s=load();if(s){askResume(s);return}}
+    var r=origStart.apply(this,arguments);save();return r};
+  var origSel=window.selectTest;
+  window.selectTest=function(){var r=origSel.apply(this,arguments);var s=load();if(s)setTimeout(function(){askResume(s)},120);return r};
+
+  /* leaving */
+  function askLeave(onLeave,onStay){
+    save();
+    open({icon:'fa-door-open',title:'Leave this test?',sub:"Don't worry, your answers and time are saved. You can resume later.",
+      i:currentQuestionIndex,a:userAnswers,t:timeRemaining,
+      b1:'Stay in the test',b2:'Leave and save progress',x:onStay,f1:onStay,f2:function(){save();if(timerInterval)clearInterval(timerInterval);quizActive=false;onLeave&&onLeave()}})}
+  window.__rsLeave=askLeave;
+  var origShow=window.showSelect;
+  window.showSelect=function(){
+    if(typeof quizActive!=='undefined'&&quizActive&&!document.getElementById('view-quiz').classList.contains('hidden')){
+      var self=this,args=arguments;askLeave(function(){origShow.apply(self,args)},null);return}
+    return origShow.apply(this,arguments)};
+
+  /* finished: forget the saved progress */
+  ['computeAndDisplayResults','autoSubmitQuiz','executeSubmitQuiz'].forEach(function(n){var f=window[n];if(typeof f!=='function')return;
+    window[n]=function(){clear();return f.apply(this,arguments)}});
+
+  setInterval(save,3000);
+  document.addEventListener('visibilitychange',function(){if(document.hidden)save()});
+  window.addEventListener('pagehide',save);
+  document.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('#options-container,#palette-grid,#btn-next,#btn-prev'))setTimeout(save,50)},true);
+})();
+</script>
 
 <script>function closeSplash(){}</script>
 </body>
