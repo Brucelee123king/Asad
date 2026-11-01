@@ -8,15 +8,20 @@ norm = lambda s: re.sub(r'[^a-z0-9]+', ' ', s.lower()).strip()
 key = lambda q, a: norm(q) + '|' + norm(a)
 seen = {key(x[1], x[2][x[3]]): i for i, x in enumerate(Q)}
 nm = nn = nd = 0
+DUP = json.load(open(os.path.join(H, 'dups.json'))) if os.path.exists(os.path.join(H, 'dups.json')) else {}
+byq = {norm(x[1]): i for i, x in enumerate(Q)}
 for f in sorted(glob.glob(os.path.join(H, 'out', 'c*.json')), key=lambda s: int(re.findall(r'c(\d+)', s)[-1])):
     for it in json.load(open(f, encoding='utf8')):
         m = it.get('match')
         if isinstance(m, int) and 0 <= m < len(base):
             Q[m][6] += 1; nm += 1; continue
+        nq = norm(it['question'])
+        if nq in DUP and DUP[nq] in byq:
+            Q[byq[DUP[nq]]][6] += 1; nd += 1; continue
         k = key(it['question'], it['options'][it['correct']])
         if k in seen:
             Q[seen[k]][6] += 1; nd += 1; continue
-        seen[k] = len(Q)
+        seen[k] = len(Q); byq.setdefault(nq, len(Q))
         Q.append(['Pro Genius Academy', it['question'], it['options'], it['correct'], it['why'], it['rel'], 1]); nn += 1
 json.dump(Q, open(os.path.join(P, 'pg_final.json'), 'w', encoding='utf8'), ensure_ascii=False)
 print('base %d, matched existing %d, repeated inside new %d, new %d -> %d MCQs, %d tests' % (len(base), nm, nd, nn, len(Q), (len(Q) + 49) // 50))

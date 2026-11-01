@@ -415,3 +415,6 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - admin.html: Initial PMA box pre-filled with catKeys/o.
 - pma159/resume_block.html (last in _blk): saves unfinished test in localStorage rs_<key> (answers, index, time); back/leave shows "Leave this test?" sheet (Stay / Leave and save); selectTest/startQuiz shows "Continue your test?" (Resume / Restart). Cleared on submit/auto-submit. backnav_block calls window.__rsLeave. Test: fbbuild/rstest.js.
 - resume_block.html also: sheet colour from #progress-bar-fill (--rsbg); category progress bars (.cpg) on #sec-menu cards = MCQs of tests with mc_best_<key> / all MCQs (wraps renderMenu). Test: fbbuild/pgtest.js.
+
+## Nov 1 2026 (18) - published: PMA 159 Pro Genius +382 MCQs
+- progenius/pg2: a.pdf (Q1-230) + b.pdf (Q231-500) -> raw.json -> c1..c7 -> agents (SPEC.md) -> out/c*.json (match = index in pg_final_base.json). build_pg2.py: pg_final_base.json (old 299) + matches raise count + dups.json (30 near-duplicates inside the new set) -> progenius/pg_final.json = 681 MCQs, 14 tests (PG-). REPORT.md: 16 fixed, 22 unsure.
