@@ -414,3 +414,4 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - Booklet (progenius/nvb/out): user-confirmed fixes S1_28 (new figures), S2_21 (ans 2), S2_24 (3 legs), S4_10, S4_12, S4_19, S4_22, S5_10, S5_11, S5_21 (ans 1), S5_32 (ans 4), S5_39 (order reversed), S5_79 (ans 1), S6_27 (2 white triangles, ans 3), S6_30 (ans 4).
 - admin.html: Initial PMA box pre-filled with catKeys/o.
 - pma159/resume_block.html (last in _blk): saves unfinished test in localStorage rs_<key> (answers, index, time); back/leave shows "Leave this test?" sheet (Stay / Leave and save); selectTest/startQuiz shows "Continue your test?" (Resume / Restart). Cleared on submit/auto-submit. backnav_block calls window.__rsLeave. Test: fbbuild/rstest.js.
+- resume_block.html also: sheet colour from #progress-bar-fill (--rsbg); category progress bars (.cpg) on #sec-menu cards = MCQs of tests with mc_best_<key> / all MCQs (wraps renderMenu). Test: fbbuild/pgtest.js.
