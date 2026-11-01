@@ -1,0 +1,359 @@
+[
+ {
+  "id": "M5753",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Demographics_of_the_Philippines",
+   "UN WPP estimate"
+  ],
+  "note": "112.7M in 2024 census, ~116-118M by 2026; 118M is the only close option"
+ },
+ {
+  "id": "M5754",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "nobelprize.org",
+   "Britannica"
+  ],
+  "note": "Abdus Salam (Physics 1979) and Malala Yousafzai (Peace 2014) = 2"
+ },
+ {
+  "id": "M5757",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "arynews.tv",
+   "dailytimes.com.pk",
+   "english.aaj.tv"
+  ],
+  "note": "Barrister Gohar Ali Khan is PTI chairman (Oct 2026 reports)"
+ },
+ {
+  "id": "M5768",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_busiest_container_ports",
+   "World Shipping Council"
+  ],
+  "note": "Shanghai busiest by TEU (~55M in 2025), Singapore second"
+ },
+ {
+  "id": "M5777",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Chief_of_Army_Staff_(Pakistan)",
+   "aljazeera.com"
+  ],
+  "note": "Field Marshal Asim Munir COAS since Nov 2022 (also CDF since 2025)"
+ },
+ {
+  "id": "M5785",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "aljazeera.com",
+   "khaleejtimes.com",
+   "wisden.com"
+  ],
+  "note": "PCB named Sahibzada Farhan T20I captain on 5 Oct 2026, replacing Salman Agha"
+ },
+ {
+  "id": "M5820",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "solved"
+  ],
+  "note": "Bilal is 2 years younger than Azhar (1970) so born 1972"
+ },
+ {
+  "id": "M5928",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "riotimesonline.com (25 Oct 2026)",
+   "newsonair.gov.in",
+   "en.wikipedia.org"
+  ],
+  "note": "Bart De Wever PM of Belgium since Feb 2025, still PM Oct 2026"
+ },
+ {
+  "id": "M5945",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "Guinness World Records",
+   "Britannica"
+  ],
+  "note": "Danyang-Kunshan Grand Bridge (164 km) in China is longest"
+ },
+ {
+  "id": "M5948",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "CTBUH",
+   "Britannica"
+  ],
+  "note": "Burj Khalifa (828 m) still tallest; Jeddah Tower not complete in 2026"
+ },
+ {
+  "id": "M5969",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Pakistan_women's_national_cricket_team",
+   "PCB"
+  ],
+  "note": "Fatima Sana is captain, led Pakistan at 2026 Asian Games"
+ },
+ {
+  "id": "M5987",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/2026_FIFA_World_Cup",
+   "FIFA"
+  ],
+  "note": "Spain beat Argentina 1-0 aet in final on 19 July 2026"
+ },
+ {
+  "id": "M5988",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "english.gov.cn",
+   "Britannica"
+  ],
+  "note": "Li Qiang Premier of China since March 2023"
+ },
+ {
+  "id": "M6031",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "Britannica",
+   "spa.gov.sa"
+  ],
+  "note": "Mohammed bin Salman Crown Prince since 2017"
+ },
+ {
+  "id": "M6038",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Deputy_Speaker_of_the_National_Assembly_of_Pakistan",
+   "na.gov.pk"
+  ],
+  "note": "Syed Ghulam Mustafa Shah Deputy Speaker since 1 Mar 2024, still in office Aug 2026"
+ },
+ {
+  "id": "M6051",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Divisions_of_Punjab,_Pakistan",
+   "dawn.com"
+  ],
+  "note": "Punjab has 10 divisions (Gujrat 10th, 2022)"
+ },
+ {
+  "id": "M6099",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "UN World Population Prospects",
+   "worldometers.info"
+  ],
+  "note": "India, China, USA, Indonesia - Indonesia is 4th"
+ },
+ {
+  "id": "M6268",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "National Bureau of Statistics of China",
+   "UN WPP"
+  ],
+  "note": "China ~1.405-1.41 billion"
+ },
+ {
+  "id": "M6269",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "UN WPP",
+   "worldometers.info"
+  ],
+  "note": "World population ~8.2-8.3 billion in 2026"
+ },
+ {
+  "id": "M6270",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "UN WPP",
+   "worldometers.info"
+  ],
+  "note": "After India, China, USA, Indonesia, Pakistan, Nigeria is 6th (Brazil 7th)"
+ },
+ {
+  "id": "M6314",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "ESPNcricinfo",
+   "en.wikipedia.org"
+  ],
+  "note": "Babar Azam is Pakistan's top T20I run scorer (4000+)"
+ },
+ {
+  "id": "M6317",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Raja_Nasir_Abbas_Jafri",
+   "geo.tv",
+   "thenews.pk"
+  ],
+  "note": "Raja Nasir Abbas notified Senate opposition leader Jan 2026, still in post Aug 2026"
+ },
+ {
+  "id": "M6374",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/2025_Asia_Cup",
+   "ESPNcricinfo"
+  ],
+  "note": "India beat Pakistan by 5 wickets in final, 28 Sep 2025 (T20I)"
+ },
+ {
+  "id": "M6386",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "ESPNcricinfo",
+   "en.wikipedia.org"
+  ],
+  "note": "Younis Khan 10,099 Test runs, Pakistan's highest"
+ },
+ {
+  "id": "M6403",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "whitehouse.gov",
+   "Britannica"
+  ],
+  "note": "J. D. Vance VP since 20 Jan 2025"
+ },
+ {
+  "id": "M6443",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "khaleejtimes.com",
+   "wionews.com",
+   "geosuper.tv"
+  ],
+  "note": "Shaheen Shah Afridi remains ODI captain for Oct 2026 tri-series"
+ },
+ {
+  "id": "M6460",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "nobelprize.org",
+   "Britannica"
+  ],
+  "note": "Abdus Salam and Malala Yousafzai = 2 Pakistani laureates"
+ },
+ {
+  "id": "M6469",
+  "verdict": "change",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "dhakatribune.com",
+   "khaleejtimes.com",
+   "newsonair.gov.in"
+  ],
+  "note": "Mirza Fakhrul Islam Alamgir elected 23rd President 20 Aug 2026 after Shahabuddin resigned"
+ },
+ {
+  "id": "M6579",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "oic-oci.org",
+   "Britannica"
+  ],
+  "note": "OIC has 57 member states"
+ },
+ {
+  "id": "M6584",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "ESPNcricinfo",
+   "Guinness World Records"
+  ],
+  "note": "Muttiah Muralitharan 800 Test wickets is the record"
+ },
+ {
+  "id": "M6650",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_districts_in_Punjab,_Pakistan",
+   "thepakistanconnect.com"
+  ],
+  "note": "Punjab has 41 districts; Aug 2026 reports of new districts were fake"
+ },
+ {
+  "id": "M6676",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "app.com.pk (Aug 2026)",
+   "gotest.com.pk"
+  ],
+  "note": "Azam Nazeer Tarar is Federal Law Minister (seen Aug 2026)"
+ }
+]

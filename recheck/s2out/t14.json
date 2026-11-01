@@ -1,0 +1,308 @@
+[
+ {
+  "id": "M8779",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/National_Assembly_of_Pakistan",
+   "geo.tv (ECP final constituencies)",
+   "arabnews.com"
+  ],
+  "note": "NA has 336 seats: 266 general, 60 women, 10 non-Muslims (after 25th Amendment)."
+ },
+ {
+  "id": "M8813",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "un.org/unispal Status of Palestine",
+   "npr/wamc 2012 UNGA vote",
+   "cfr.org"
+  ],
+  "note": "Palestine is a non-member observer state since UNGA res 67/19 (2012); no full membership."
+ },
+ {
+  "id": "M8814",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Gaza_Strip_under_Hamas",
+   "fdd.org June 2026",
+   "mcac.maryland.gov (Reuters Feb 2026)"
+  ],
+  "note": "Hamas still rules the non-Israeli-held part of Gaza in 2026."
+ },
+ {
+  "id": "M8815",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_countries_supplying_arms_to_Israel",
+   "thedefensepost.com (SIPRI)",
+   "swissinfo.ch"
+  ],
+  "note": "US supplies ~69-78% of Israel arms imports plus $3.8bn/yr aid; Germany second."
+ },
+ {
+  "id": "M8820",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "thenationalnews.com Oct 2026 (Reuters)",
+   "president.ps",
+   "egypttoday.com Sep 2026"
+  ],
+  "note": "Mahmoud Abbas is still PA/State of Palestine president in Oct 2026."
+ },
+ {
+  "id": "M8940",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "na.gov.pk Constitution of Pakistan",
+   "katiba.humanrights.or.tz (Pakistan constitution)",
+   "humanrts.umn.edu (UN HRC report)"
+  ],
+  "note": "Art 21: no special tax for any religion other than one own; Art 20 = freedom of religion, Art 22 = education safeguards."
+ },
+ {
+  "id": "M9052",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/President_of_China",
+   "english.www.gov.cn",
+   "britannica.com"
+  ],
+  "note": "Xi Jinping is President of China (since 2013, third term 2023-2028)."
+ },
+ {
+  "id": "M9058",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "statista.com (USDA data)",
+   "databoks.katadata.co.id",
+   "foodbusinessmea.com"
+  ],
+  "note": "Brazil is largest coffee producer (~1/3 of world output), Vietnam second."
+ },
+ {
+  "id": "M9105",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Maryam_Nawaz",
+   "punjab.gov.pk",
+   "dawn.com"
+  ],
+  "note": "Maryam Nawaz is Punjab CM since 26 Feb 2024, still in office 2026."
+ },
+ {
+  "id": "M9106",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "geo.tv",
+   "dawn.com",
+   "app.com.pk"
+  ],
+  "note": "Sarfraz Bugti is Balochistan CM since March 2024; ouster attempt failed, still CM in 2026."
+ },
+ {
+  "id": "M9237",
+  "verdict": "change",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "solved (series reasoning)"
+  ],
+  "note": "Letters go back 2 (Z,X,V) and numbers go up 3 (2,5,8), so next is V = 8."
+ },
+ {
+  "id": "M9294",
+  "verdict": "unclear",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "solved (reasoning)"
+  ],
+  "note": "Ambiguous: Cow is the only herbivore (app), but Leopard is the only wild animal; keep app answer."
+ },
+ {
+  "id": "M9301",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "cm.sindh.gov.pk/cm-profile",
+   "en.wikipedia.org/wiki/Chief_Minister_of_Sindh",
+   "arynews.tv"
+  ],
+  "note": "Syed Murad Ali Shah is Sindh CM since 26 Feb 2024 (third term)."
+ },
+ {
+  "id": "M9303",
+  "verdict": "unclear",
+  "ans": 0,
+  "fix": "",
+  "src": [],
+  "note": "NOT web-checked: shared web search limit (200/turn) ran out; needs recheck. From memory: Mark Carney PM since March 2025, won April 2025 election; app answer looks right."
+ },
+ {
+  "id": "M9305",
+  "verdict": "unclear",
+  "ans": 2,
+  "fix": "",
+  "src": [],
+  "note": "NOT web-checked: shared web search limit (200/turn) ran out; needs recheck. From memory: independence declared 26 Mar 1971, victory 16 Dec 1971; both options are defensible."
+ },
+ {
+  "id": "M9322",
+  "verdict": "unclear",
+  "ans": 2,
+  "fix": "",
+  "src": [],
+  "note": "NOT web-checked: shared web search limit (200/turn) ran out; needs recheck. From memory: GB population ~1.49m (2017 census), ~1.7-1.8m in later estimates; app answer plausible."
+ },
+ {
+  "id": "M9337",
+  "verdict": "unclear",
+  "ans": 1,
+  "fix": "",
+  "src": [],
+  "note": "NOT web-checked: shared web search limit (200/turn) ran out; needs recheck. From memory: two (Abdus Salam 1979, Malala 2014); app answer looks right."
+ },
+ {
+  "id": "M9349",
+  "verdict": "unclear",
+  "ans": 1,
+  "fix": "",
+  "src": [],
+  "note": "NOT web-checked: shared web search limit (200/turn) ran out; needs recheck. From memory: Shehbaz Sharif PM since March 2024; app answer looks right."
+ },
+ {
+  "id": "M9353",
+  "verdict": "unclear",
+  "ans": 3,
+  "fix": "",
+  "src": [],
+  "note": "NOT web-checked: shared web search limit (200/turn) ran out; needs recheck. Same fact as M9106: Sarfraz Bugti is Balochistan CM (web-checked there via geo.tv/dawn); app answer looks right."
+ },
+ {
+  "id": "M9356",
+  "verdict": "unclear",
+  "ans": 3,
+  "fix": "",
+  "src": [],
+  "note": "NOT web-checked: shared web search limit (200/turn) ran out; needs recheck. From memory: forest cover usually given as ~4.8-5%; app answer looks right."
+ },
+ {
+  "id": "M9384",
+  "verdict": "unclear",
+  "ans": 1,
+  "fix": "",
+  "src": [],
+  "note": "NOT web-checked: shared web search limit (200/turn) ran out; needs recheck. Vague question; no reliable standard count found from memory."
+ },
+ {
+  "id": "M9403",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "solved (reasoning)"
+  ],
+  "note": "MANAGEMENT sorted = A A E E G M M N N T, third letter is E."
+ },
+ {
+  "id": "M9408",
+  "verdict": "unclear",
+  "ans": 3,
+  "fix": "",
+  "src": [],
+  "note": "NOT web-checked: shared web search limit (200/turn) ran out; needs recheck. From memory: Muhammad Hanif Abbasi is Railways Minister since March 2024; app answer looks right."
+ },
+ {
+  "id": "M9409",
+  "verdict": "unclear",
+  "ans": 3,
+  "fix": "",
+  "src": [],
+  "note": "NOT web-checked: shared web search limit (200/turn) ran out; needs recheck. From memory: Kamran Khan Tessori (option 0) has been Sindh Governor since Oct 2022; app answer Nehal Hashmi looks WRONG, likely should be change to 0."
+ },
+ {
+  "id": "M9412",
+  "verdict": "unclear",
+  "ans": 2,
+  "fix": "",
+  "src": [],
+  "note": "NOT web-checked: shared web search limit (200/turn) ran out; needs recheck. From memory: Chagai is the largest district by area (~44,748 km2); app answer looks right."
+ },
+ {
+  "id": "M9432",
+  "verdict": "unclear",
+  "ans": 3,
+  "fix": "",
+  "src": [],
+  "note": "NOT web-checked: shared web search limit (200/turn) ran out; needs recheck. From memory: Sardar Ayaz Sadiq is NA Speaker since March 2024; app answer looks right."
+ },
+ {
+  "id": "M9443",
+  "verdict": "unclear",
+  "ans": 0,
+  "fix": "",
+  "src": [],
+  "note": "NOT web-checked: shared web search limit (200/turn) ran out; needs recheck. From memory: both Hazrat Ali and Hazrat Hamza are called Asadullah; Hamza is called Asadullah wa Asad Rasulihi."
+ },
+ {
+  "id": "M9450",
+  "verdict": "unclear",
+  "ans": 1,
+  "fix": "",
+  "src": [],
+  "note": "NOT web-checked: shared web search limit (200/turn) ran out; needs recheck. From memory: sources differ (Iran historic leader of handmade carpets; China/India big producers)."
+ },
+ {
+  "id": "M9462",
+  "verdict": "unclear",
+  "ans": 2,
+  "fix": "",
+  "src": [],
+  "note": "NOT web-checked: shared web search limit (200/turn) ran out; needs recheck. From memory: Namira Salim flew on Virgin Galactic in Oct 2023 as first Pakistani in space; app answer looks right."
+ },
+ {
+  "id": "M9490",
+  "verdict": "unclear",
+  "ans": 0,
+  "fix": "",
+  "src": [],
+  "note": "NOT web-checked: shared web search limit (200/turn) ran out; needs recheck. From memory: forest cover usually given as ~4.8-5%; app answer looks right."
+ },
+ {
+  "id": "M9508",
+  "verdict": "unclear",
+  "ans": 2,
+  "fix": "",
+  "src": [],
+  "note": "NOT web-checked: shared web search limit (200/turn) ran out; needs recheck. From memory: Syeda Tahira Safdar became first woman Chief Justice of a High Court (Balochistan HC, 2018); app answer looks right."
+ },
+ {
+  "id": "M9525",
+  "verdict": "unclear",
+  "ans": 1,
+  "fix": "",
+  "src": [],
+  "note": "NOT web-checked: shared web search limit (200/turn) ran out; needs recheck. From memory: reports differ (70 vs several hundred huffaz martyred at Yamama)."
+ }
+]

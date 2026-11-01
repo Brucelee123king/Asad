@@ -1,0 +1,349 @@
+[
+ {
+  "id": "M2447",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "sbp.org.pk (Governor speech 14 Aug 2026)",
+   "thenews.pk",
+   "dailytimes.com.pk"
+  ],
+  "note": "Jameel Ahmad is SBP Governor (reappointed for 5 years, Jan 2026)"
+ },
+ {
+  "id": "M2449",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Provincial_assemblies_of_Pakistan",
+   "ECP final delimitation 2023"
+  ],
+  "note": "Punjab Assembly 371 seats (297 general + 66 women + 8 non-Muslim)"
+ },
+ {
+  "id": "M2450",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Provincial_Assembly_of_Khyber_Pakhtunkhwa",
+   "ECP"
+  ],
+  "note": "KP Assembly 145 seats after 25th Amendment (was 124)"
+ },
+ {
+  "id": "M2498",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "UN Charter Art. 23",
+   "un.org"
+  ],
+  "note": "5 permanent members: US, UK, France, Russia, China"
+ },
+ {
+  "id": "M2499",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "Britannica: Battle of the Trench",
+   "Seerah"
+  ],
+  "note": "Trench dug in Battle of Khandaq/Ahzab, 5 AH"
+ },
+ {
+  "id": "M2504",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org (List of current Pakistani chief ministers)",
+   "Dawn Oct 2025"
+  ],
+  "note": "Sohail Afridi elected KP CM Oct 2025 after Gandapur"
+ },
+ {
+  "id": "M2513",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org (List of current Pakistani chief ministers)"
+  ],
+  "note": "Maryam Nawaz is CM Punjab since Feb 2024"
+ },
+ {
+  "id": "M2526",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Districts_of_Pakistan",
+   "en.wikipedia.org/wiki/Chagai_District"
+  ],
+  "note": "Chagai 44,748 km2 is largest district"
+ },
+ {
+  "id": "M2548",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "USDA/ICO data",
+   "Britannica"
+  ],
+  "note": "Brazil is largest coffee producer (own knowledge; search limit reached)"
+ },
+ {
+  "id": "M2549",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "FAO",
+   "Britannica"
+  ],
+  "note": "China is largest tea producer (own knowledge; search limit reached)"
+ },
+ {
+  "id": "M2557",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "european-union.europa.eu"
+  ],
+  "note": "EU has 27 members since UK left in 2020"
+ },
+ {
+  "id": "M2573",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "worldatlas.com longest rivers in Afghanistan",
+   "en.wikipedia.org/wiki/Helmand_River",
+   "pmfias.com river basins"
+  ],
+  "note": "Helmand is longest river wholly in Afghanistan and largest basin; Amu Darya longer but shared"
+ },
+ {
+  "id": "M2581",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "sectsco.org",
+   "Wikipedia SCO"
+  ],
+  "note": "Turkey is only a dialogue partner; Iran (2023), Belarus (2024) are full members"
+ },
+ {
+  "id": "M2585",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Nazir_Ahmed_Butt",
+   "pakobserver.net",
+   "nab.gov.pk"
+  ],
+  "note": "Lt Gen (retd) Nazir Ahmed chairman; 3-year extension from March 2026"
+ },
+ {
+  "id": "M2586",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/President_of_Turkey"
+  ],
+  "note": "Erdogan is President since 2014"
+ },
+ {
+  "id": "M2623",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Provincial_assemblies_of_Pakistan",
+   "ECP"
+  ],
+  "note": "Punjab Assembly 371 seats"
+ },
+ {
+  "id": "M2625",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "icc-cricket.com",
+   "Wikipedia ICC Champions Trophy"
+  ],
+  "note": "Pakistan won 2017; 2025 won by India"
+ },
+ {
+  "id": "M2631",
+  "verdict": "none",
+  "ans": 2,
+  "fix": "Muharram",
+  "src": [
+   "sunnah.com Sahih Muslim 1163",
+   "islamqa.info"
+  ],
+  "note": "Hadith: best fast after Ramadan is in Allah's month al-Muharram; Muharram not in options"
+ },
+ {
+  "id": "M2637",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org (List of current Pakistani chief ministers)"
+  ],
+  "note": "Syed Murad Ali Shah is CM Sindh"
+ },
+ {
+  "id": "M2656",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "Constitution of Pakistan Art. 51",
+   "na.gov.pk"
+  ],
+  "note": "60 NA seats reserved for women"
+ },
+ {
+  "id": "M2676",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "UN World Population Prospects",
+   "worldometers"
+  ],
+  "note": "Pakistan 5th after India, China, US, Indonesia (own knowledge; search limit reached)"
+ },
+ {
+  "id": "M2683",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "Wikipedia Islamabad International Airport"
+  ],
+  "note": "Islamabad Intl Airport (~3,600 acres) largest by area (own knowledge; search limit reached)"
+ },
+ {
+  "id": "M2699",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "World Bank data",
+   "measuredworld.com",
+   "nukta.com"
+  ],
+  "note": "Maldives ~98% highest; Sri Lanka ~92% second"
+ },
+ {
+  "id": "M2703",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org (List of current heads of state)"
+  ],
+  "note": "Masoud Pezeshkian is President of Iran"
+ },
+ {
+  "id": "M2721",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "ESPNcricinfo",
+   "Wikipedia fastest ODI century"
+  ],
+  "note": "Corey Anderson 36 balls (Jan 2014) broke Afridi's record"
+ },
+ {
+  "id": "M2809",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "UN DESA (India passed China in 2023)"
+  ],
+  "note": "China is second after India"
+ },
+ {
+  "id": "M2817",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Secretary-General_of_the_United_Nations"
+  ],
+  "note": "Guterres in office until 31 Dec 2026"
+ },
+ {
+  "id": "M2847",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "SIPRI arms transfers"
+  ],
+  "note": "US is largest arms exporter (~40%+) (own knowledge; search limit reached)"
+ },
+ {
+  "id": "M2857",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "world-nuclear.org"
+  ],
+  "note": "Kazakhstan ~40% of world uranium (own knowledge; search limit reached)"
+ },
+ {
+  "id": "M2863",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "Silver Institute World Silver Survey 2026",
+   "carboncredits.com",
+   "statista.com"
+  ],
+  "note": "Mexico 172.9 Moz in 2025, then Peru, China"
+ },
+ {
+  "id": "M2895",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "nobelprize.org"
+  ],
+  "note": "6 fields incl. Economic Sciences"
+ },
+ {
+  "id": "M2922",
+  "verdict": "change",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/China-Pakistan_Economic_Corridor",
+   "pc.gov.pk/web/cpec",
+   "pakobserver.net"
+  ],
+  "note": "Wikipedia: established 20 April 2015 (Xi visit); idea proposed May 2013, MoU 5 July 2013"
+ }
+]

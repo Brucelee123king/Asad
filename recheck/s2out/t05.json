@@ -1,0 +1,341 @@
+[
+ {
+  "id": "M1702",
+  "verdict": "unclear",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "solved by reasoning"
+  ],
+  "note": "Easy~Light (synonyms); Rough~Hard closest; analogy loose"
+ },
+ {
+  "id": "M1756",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "solved by reasoning"
+  ],
+  "note": "Differences 20,20,30,30 -> 80+30=110"
+ },
+ {
+  "id": "M1757",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "solved by reasoning"
+  ],
+  "note": "'Road development necessary to trade' - omit CUSTOM, 2nd letter U"
+ },
+ {
+  "id": "M1814",
+  "verdict": "unclear",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "solved by reasoning"
+  ],
+  "note": "Oxygen only gas (if Protenium=Platinum); 'Protenium' not a real element, question flawed"
+ },
+ {
+  "id": "M1825",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "solved by reasoning"
+  ],
+  "note": "Canals branch off a river like branches off a tree"
+ },
+ {
+  "id": "M1835",
+  "verdict": "unclear",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "solved by reasoning"
+  ],
+  "note": "Fish is the general class; but Crab (crustacean) / Whale (mammal) also defensible"
+ },
+ {
+  "id": "M1883",
+  "verdict": "keep",
+  "ans": 4,
+  "fix": "",
+  "src": [
+   "solved by reasoning"
+  ],
+  "note": "Canal is man-made; others natural water bodies"
+ },
+ {
+  "id": "M1908",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "solved by reasoning"
+  ],
+  "note": "Legs do running, teeth do biting (specific action); Eating also arguable"
+ },
+ {
+  "id": "M1920",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "solved by reasoning"
+  ],
+  "note": "Gaps +4,+5,+3,+5,+2 -> U(21)+2 = W"
+ },
+ {
+  "id": "M1995",
+  "verdict": "change",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "solved by reasoning"
+  ],
+  "note": "Life stages: infancy->childhood, adolescence->maturity (adulthood); youth = adolescence itself"
+ },
+ {
+  "id": "M2001",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "solved by reasoning"
+  ],
+  "note": "Trip planned per day, calendar covers a year"
+ },
+ {
+  "id": "M2009",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "solved by reasoning"
+  ],
+  "note": "Food is bought because people need to eat it"
+ },
+ {
+  "id": "M2027",
+  "verdict": "unclear",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "solved by reasoning"
+  ],
+  "note": "Bait used to catch fish; gun used to hunt - HUNT/BULLET both arguable"
+ },
+ {
+  "id": "M2066",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "solved by reasoning"
+  ],
+  "note": "Divide by 6,5,4,3: 1440/6=240, 240/5=48, 48/4=12, 12/3=4 -> 4"
+ },
+ {
+  "id": "M2075",
+  "verdict": "unclear",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "solved by reasoning",
+   "careers360.com similar series"
+  ],
+  "note": "Gaps 2,3,5: primes ->S(19), Fibonacci ->T(20); both in options"
+ },
+ {
+  "id": "M2106",
+  "verdict": "unclear",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "solved by reasoning",
+   "careers360.com similar series"
+  ],
+  "note": "Gaps 2,3,5: primes ->S(19), Fibonacci ->T(20); both in options"
+ },
+ {
+  "id": "M2110",
+  "verdict": "unclear",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "solved by reasoning"
+  ],
+  "note": "Wheel supports bicycle like leg supports table; leg part of body also arguable"
+ },
+ {
+  "id": "M2146",
+  "verdict": "unclear",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "solved by reasoning"
+  ],
+  "note": "Tobacco is the substance, others used to smoke it; Pipe (not made of tobacco) also arguable"
+ },
+ {
+  "id": "M2185",
+  "verdict": "keep",
+  "ans": 4,
+  "fix": "",
+  "src": [
+   "solved by reasoning"
+  ],
+  "note": "Mule is a hybrid (horse x donkey); others are natural species"
+ },
+ {
+  "id": "M2233",
+  "verdict": "unclear",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "solved by reasoning"
+  ],
+  "note": "Opinion item; 'people will not trust you' also commonly keyed"
+ },
+ {
+  "id": "M2261",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "solved by reasoning"
+  ],
+  "note": "Mare is female; others male/general"
+ },
+ {
+  "id": "M2273",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "tehrantimes.com",
+   "testpointpk.com",
+   "cssprep.com.pk"
+  ],
+  "note": "Iran first to recognise Pakistan; Pakistani notes give Iran as first embassy"
+ },
+ {
+  "id": "M2276",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "tradeint.com",
+   "wionews.com",
+   "OPEC/IEA data"
+  ],
+  "note": "Saudi Arabia is the largest crude oil exporter, Russia second"
+ },
+ {
+  "id": "M2402",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "IISS Military Balance",
+   "en.wikipedia.org/wiki/People's_Liberation_Army"
+  ],
+  "note": "PLA about 2 million active personnel"
+ },
+ {
+  "id": "M2414",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "UN World Population Prospects",
+   "en.wikipedia.org"
+  ],
+  "note": "India overtook China in 2023"
+ },
+ {
+  "id": "M2432",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "senate.gov.pk",
+   "en.wikipedia.org/wiki/Senate_of_Pakistan"
+  ],
+  "note": "Senate has 96 seats after FATA merger"
+ },
+ {
+  "id": "M2433",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "na.gov.pk",
+   "en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+  ],
+  "note": "National Assembly has 336 seats"
+ },
+ {
+  "id": "M2442",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "brecorder.com",
+   "arabnews.com",
+   "en.wikipedia.org/wiki/Ayaz_Sadiq"
+  ],
+  "note": "Ayaz Sadiq Speaker since 1 Mar 2024, still in office 2026"
+ },
+ {
+  "id": "M2443",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "english.aaj.tv",
+   "en.wikipedia.org/wiki/Deputy_Speaker_of_the_National_Assembly_of_Pakistan"
+  ],
+  "note": "Syed Ghulam Mustafa Shah Deputy Speaker since 1 Mar 2024"
+ },
+ {
+  "id": "M2444",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "dailytimes.com.pk",
+   "thenews.com.pk",
+   "en.wikipedia.org/wiki/Second_Shehbaz_Sharif_government"
+  ],
+  "note": "Khawaja Asif Defence Minister (Aug 2026 reports)"
+ },
+ {
+  "id": "M2445",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "dailytimes.com.pk",
+   "minutemirror.com.pk",
+   "na.gov.pk"
+  ],
+  "note": "Mohsin Naqvi Interior Minister (Aug 2026 reports)"
+ },
+ {
+  "id": "M2446",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "mofa.gov.pk",
+   "bolnews.com",
+   "tribune.com.pk"
+  ],
+  "note": "Ishaq Dar FM and Deputy PM (Oct 2026)"
+ }
+]

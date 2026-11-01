@@ -1,0 +1,363 @@
+[
+ {
+  "id": "M15",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Provincial_Assembly_of_the_Punjab",
+   "https://www.pap.gov.pk",
+   "https://www.dawn.com/news/1816449"
+  ],
+  "note": "Punjab Assembly has 371 seats (297 general, 66 women, 8 non-Muslim)."
+ },
+ {
+  "id": "M29",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Sohail_Afridi",
+   "https://www.aljazeera.com/news/2026/10/12/what-do-emergency-and-governor-rule-in-pakistans-khyber-pakhtunkhwa-mean",
+   "https://tribune.com.pk/story/2634256/governors-rule-imposed-in-k-p-for-fourth-time"
+  ],
+  "note": "Sohail Afridi was KP CM until governor's rule was imposed on 11 Oct 2026."
+ },
+ {
+  "id": "M34",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Three_Gorges_Dam",
+   "https://en.wikipedia.org/wiki/List_of_largest_hydroelectric_power_stations"
+  ],
+  "note": "Three Gorges Dam is the world's largest by installed power capacity (22.5 GW); best of the options."
+ },
+ {
+  "id": "M47",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Constitution_of_Pakistan",
+   "Britannica",
+   "pakistani.org"
+  ],
+  "note": "1973 Constitution has 280 articles."
+ },
+ {
+  "id": "M51",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Nazir_Ahmed_Butt",
+   "https://english.aaj.tv/news/amp/330453531",
+   "https://www.radio.gov.pk/02-09-2026/nab-chairman-briefs-finance-minister-on-recoveries-anti-graft-initiatives"
+  ],
+  "note": "Lt Gen (R) Nazir Ahmed Butt is NAB chairman (3-year extension March 2026)."
+ },
+ {
+  "id": "M52",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/President_of_France",
+   "https://www.elysee.fr"
+  ],
+  "note": "Emmanuel Macron is President of France (term to 2027)."
+ },
+ {
+  "id": "M55",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "https://www.un.org/securitycouncil",
+   "https://en.wikipedia.org/wiki/United_Nations_Security_Council_veto_power"
+  ],
+  "note": "5 permanent members (US, UK, France, Russia, China) hold veto."
+ },
+ {
+  "id": "M63",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Mohsin_Naqvi",
+   "https://en.wikipedia.org/wiki/Chief_Minister_of_Punjab_(Pakistan)"
+  ],
+  "note": "Mohsin Naqvi was caretaker CM Punjab Jan 2023 - Feb 2024, the last one."
+ },
+ {
+  "id": "M64",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "Pakistan Bureau of Statistics census 2023",
+   "https://en.wikipedia.org/wiki/Literacy_in_Pakistan"
+  ],
+  "note": "Islamabad has the highest literacy rate in Pakistan."
+ },
+ {
+  "id": "M74",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "https://www.un.org/en/about-us/member-states",
+   "https://en.wikipedia.org/wiki/Member_states_of_the_United_Nations"
+  ],
+  "note": "UN has 193 member states."
+ },
+ {
+  "id": "M84",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Maryam_Nawaz",
+   "https://dailytimes.com.pk/tag/punjab-assembly/"
+  ],
+  "note": "Maryam Nawaz is CM Punjab since Feb 2024 (still CM in July 2026 reports)."
+ },
+ {
+  "id": "M85",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Sohail_Afridi",
+   "https://www.aljazeera.com/news/2026/10/12/what-do-emergency-and-governor-rule-in-pakistans-khyber-pakhtunkhwa-mean",
+   "https://tribune.com.pk/story/2634256/governors-rule-imposed-in-k-p-for-fourth-time"
+  ],
+  "note": "Sohail Afridi was KP CM before governor's rule of 11 Oct 2026."
+ },
+ {
+  "id": "M87",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Amendments_to_the_Constitution_of_Pakistan",
+   "https://dailytimes.com.pk/1494730/no-sign-of-28th-amendment-for-now-says-law-minister/",
+   "https://southasia.com.pk/2026/07/04/charter-of-convenience/"
+  ],
+  "note": "Adopted 12 April 1973; 27 amendments passed (28th only proposed, not enacted)."
+ },
+ {
+  "id": "M90",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/A._K._Fazlul_Huq",
+   "https://en.banglapedia.org/index.php/Huq,_AK_Fazlul"
+  ],
+  "note": "Huq was a founder of the Muslim League at Dhaka, Dec 1906 (rejoined 1937)."
+ },
+ {
+  "id": "M92",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/National_Assembly_of_Pakistan",
+   "https://na.gov.pk"
+  ],
+  "note": "NA has 336 seats: 266 general, 60 women, 10 minorities."
+ },
+ {
+  "id": "M97",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "NEPRA State of Industry Report",
+   "Pakistan Economic Survey"
+  ],
+  "note": "Thermal (oil, gas, coal) is the largest source of electricity in Pakistan."
+ },
+ {
+  "id": "M105",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Tarique_Rahman",
+   "https://www.dawn.com/news/1973874",
+   "https://www.newsonair.gov.in/bangladesh-bnp-chief-tarique-rahman-sworn-in-as-prime-minister"
+  ],
+  "note": "Tarique Rahman sworn in as Bangladesh PM on 17 Feb 2026."
+ },
+ {
+  "id": "M109",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "https://www.nobelprize.org",
+   "https://en.wikipedia.org/wiki/List_of_Pakistani_Nobel_laureates"
+  ],
+  "note": "Two: Abdus Salam (Physics 1979) and Malala Yousafzai (Peace 2014)."
+ },
+ {
+  "id": "M113",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Supreme_Court_of_Pakistan",
+   "https://www.supremecourt.gov.pk"
+  ],
+  "note": "Supreme Court is the apex court among options (27th Amendment added a Federal Constitutional Court, not an option)."
+ },
+ {
+  "id": "M114",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "IISS Military Balance",
+   "https://en.wikipedia.org/wiki/List_of_countries_by_number_of_military_and_paramilitary_personnel"
+  ],
+  "note": "China (PLA, about 2 million active) has the largest active military."
+ },
+ {
+  "id": "M132",
+  "verdict": "none",
+  "ans": 3,
+  "fix": "π/6 ≈ 0.524 rad",
+  "src": [
+   "maths: 30 x π/180 = π/6"
+  ],
+  "note": "30° = π/6 = 0.524 rad; option text lost the π sign (1/6 is wrong as written). Option 4 meant this."
+ },
+ {
+  "id": "M155",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "UN World Population Prospects",
+   "https://en.wikipedia.org/wiki/List_of_countries_by_population_(United_Nations)"
+  ],
+  "note": "India overtook China as most populous country in 2023."
+ },
+ {
+  "id": "M160",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Twenty-seventh_Amendment_to_the_Constitution_of_Pakistan",
+   "Dawn Nov 2025"
+  ],
+  "note": "27th Amendment: the senior of the CJ of Supreme Court and CJ of Federal Constitutional Court is Chief Justice of Pakistan."
+ },
+ {
+  "id": "M191",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Provincial_Assembly_of_the_Punjab",
+   "https://www.pap.gov.pk",
+   "https://www.dawn.com/news/1816449"
+  ],
+  "note": "Punjab Assembly has 371 seats."
+ },
+ {
+  "id": "M192",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Malik_Ahmad_Khan",
+   "https://pap.gov.pk/members/profile/en/22/1673",
+   "https://www.app.com.pk/?p=1227617"
+  ],
+  "note": "Malik Muhammad Ahmad Khan is Speaker Punjab Assembly since Feb 2024 (active June 2026)."
+ },
+ {
+  "id": "M225",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/President_of_France",
+   "https://www.elysee.fr"
+  ],
+  "note": "Emmanuel Macron is President of France."
+ },
+ {
+  "id": "M226",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/President_of_Pakistan",
+   "https://www.president.gov.pk"
+  ],
+  "note": "Asif Ali Zardari is President of Pakistan since March 2024."
+ },
+ {
+  "id": "M240",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "https://www.nobelprize.org",
+   "https://en.wikipedia.org/wiki/List_of_Pakistani_Nobel_laureates"
+  ],
+  "note": "Two Pakistani Nobel laureates: Abdus Salam and Malala Yousafzai."
+ },
+ {
+  "id": "M256",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "https://www.thenews.pk/print/1416646-pm-appoints-khalid-maqbool-siddiqui-as-ecc-member",
+   "https://www.app.com.pk",
+   "https://pid.gov.pk"
+  ],
+  "note": "Dr Khalid Maqbool Siddiqui is Federal Education Minister (active Sept 2026)."
+ },
+ {
+  "id": "M257",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "https://www.geo.tv/latest/679960-health-minister-tendered-resignation-hours-after-pims-fire-pm-asked-him-to-stay-on",
+   "https://arynews.tv/mustafa-kamal-calls-for-greater-health-investment-as-pakistans-needs-grow",
+   "https://pid.gov.pk/site/press_detail/33178"
+  ],
+  "note": "Mustafa Kamal is Federal Health Minister; PM declined his Aug 2026 resignation, still acting in Sept 2026."
+ },
+ {
+  "id": "M266",
+  "verdict": "unclear",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "web search found no reliable source on a poet Kalsoom Begum"
+  ],
+  "note": "Source-dependent question; could not verify Urdu vs Punjabi; keeping app answer."
+ },
+ {
+  "id": "M286",
+  "verdict": "unclear",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Brazil_national_football_team",
+   "https://www.fifa.com"
+  ],
+  "note": "Brazil won 5 (1958, 62, 70, 94, 2002); 2026 World Cup winner not verified (search limit hit) - if Brazil won 2026 the answer is 6."
+ }
+]

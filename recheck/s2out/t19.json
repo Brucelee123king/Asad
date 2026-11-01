@@ -1,0 +1,360 @@
+[
+ {
+  "id": "M12444",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "Global Firepower 2026 via malaymail.com",
+   "kun.uz",
+   "wionews.com"
+  ],
+  "note": "GFP 2026: USA 1st, Russia 2nd, China 3rd"
+ },
+ {
+  "id": "M12462",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "worldometers.info",
+   "pewresearch.org",
+   "databoks.katadata.co.id"
+  ],
+  "note": "India overtook China in 2023; China is now 2nd most populous"
+ },
+ {
+  "id": "M12479",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "sipri.org fact sheet Mar 2026",
+   "deccanherald.com",
+   "thewire.in"
+  ],
+  "note": "SIPRI 2021-25: Ukraine 1st, India 2nd largest arms importer"
+ },
+ {
+  "id": "M12480",
+  "verdict": "change",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "gktoday.in",
+   "newworldencyclopedia.org",
+   "asianage.com"
+  ],
+  "note": "Quit India resolution (8 Aug 1942) was moved by Nehru and seconded by Patel; Gandhi gave the 'Do or Die' call"
+ },
+ {
+  "id": "M12481",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Senate_of_Pakistan",
+   "pakvoter.org",
+   "english.aaj.tv"
+  ],
+  "note": "Each province: 14 general + 4 women + 4 technocrat + 1 minority = 23"
+ },
+ {
+  "id": "M12514",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "USGS Mineral Commodity Summaries (platinum)",
+   "Britannica: South Africa"
+  ],
+  "note": "South Africa produces about 70% of world platinum (no new search: budget used up)"
+ },
+ {
+  "id": "M12516",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "World Nuclear Association: World Uranium Mining",
+   "Wikipedia: Uranium mining by country"
+  ],
+  "note": "Kazakhstan produces ~40% of world uranium (no new search: budget used up)"
+ },
+ {
+  "id": "M12521",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Majid_Khan_(cricketer)",
+   "ESPNcricinfo"
+  ],
+  "note": "Majid Khan scored Pakistan's first ODI hundred, 109 v England, Trent Bridge, 31 Aug 1974"
+ },
+ {
+  "id": "M12572",
+  "verdict": "unclear",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "Wikipedia: Constitutional history of Pakistan"
+  ],
+  "note": "'According to the notes' - vague; no single accepted year for 'first democratic reforms'; kept app answer"
+ },
+ {
+  "id": "M12606",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Muztagh_Pass",
+   "Wikipedia: Khunjerab Pass"
+  ],
+  "note": "Muztagh Pass ~5,422 m is higher than Khunjerab (~4,693 m); Khunjerab is only the highest paved crossing"
+ },
+ {
+  "id": "M12622",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "Pakistan Railways official site",
+   "Pakistan Economic Survey"
+  ],
+  "note": "Route length 7,791 km (11,881 km is total track length) (no new search: budget used up)"
+ },
+ {
+  "id": "M12639",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "IISS Military Balance",
+   "Global Firepower 2026"
+  ],
+  "note": "China ~2.0 million active personnel, the largest (no new search: budget used up)"
+ },
+ {
+  "id": "M12655",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Senate_of_Pakistan",
+   "senate.gov.pk",
+   "english.aaj.tv"
+  ],
+  "note": "Senate has 96 seats after 25th Amendment (FATA seats removed)"
+ },
+ {
+  "id": "M12656",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Senate_of_Pakistan",
+   "pakvoter.org",
+   "arynews.tv"
+  ],
+  "note": "Each province has 23 Senate seats"
+ },
+ {
+  "id": "M12666",
+  "verdict": "unclear",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "quran.com word search"
+  ],
+  "note": "'According to the notes'; the word salah itself appears ~67 times, '700 times' is a popular claim; kept app answer"
+ },
+ {
+  "id": "M12685",
+  "verdict": "none",
+  "ans": 2,
+  "fix": "Andy Burnham",
+  "src": [
+   "npr.org 2026-07-20",
+   "fortune.com",
+   "openaccessgovernment.org"
+  ],
+  "note": "Starmer resigned; Andy Burnham became UK PM on 20 July 2026 (still PM, Budget 28 Oct 2026)"
+ },
+ {
+  "id": "M12687",
+  "verdict": "unclear",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "Wikipedia: Foreign relations of Pakistan"
+  ],
+  "note": "Notes-based fact, could not verify (web search budget used up); Iran was first to recognise Pakistan; kept app answer"
+ },
+ {
+  "id": "M12688",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Pakistan_Air_Force"
+  ],
+  "note": "J-10C (inducted 2022) is the newest fighter in PAF service among the options"
+ },
+ {
+  "id": "M12689",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "malaymail.com (Sep 2026)",
+   "thevibes.com",
+   "tribuneindia.com"
+  ],
+  "note": "Anwar Ibrahim PM of Malaysia since Nov 2022, still in office 2026"
+ },
+ {
+  "id": "M12694",
+  "verdict": "change",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Islamic_Military_Counter_Terrorism_Coalition",
+   "csmonitor.com",
+   "cbc.ca"
+  ],
+  "note": "IMCTC announced 15 Dec 2015 with 34 member countries"
+ },
+ {
+  "id": "M12695",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "Pakistan Bureau of Statistics",
+   "Wikipedia: Economy of Pakistan"
+  ],
+  "note": "China is Pakistan's largest overall trading partner (no new search: budget used up)"
+ },
+ {
+  "id": "M12701",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "Wikipedia: Constitution of Pakistan of 1956",
+   "Britannica"
+  ],
+  "note": "1956 Constitution named the country Islamic Republic of Pakistan"
+ },
+ {
+  "id": "M12716",
+  "verdict": "unclear",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "Wikipedia: Kaaba"
+  ],
+  "note": "Traditions differ (Adam/angels first; Sheesh or Ibrahim next); Quran names Ibrahim and Ismail as builders; kept app answer"
+ },
+ {
+  "id": "M12727",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "Pakistan Economic Survey",
+   "FAO Global Forest Resources Assessment"
+  ],
+  "note": "Pakistan forest cover about 4.8-5% (no new search: budget used up)"
+ },
+ {
+  "id": "M12728",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "Pakistan Bureau of Statistics Census 2023",
+   "PSLM survey"
+  ],
+  "note": "Islamabad has the highest literacy rate among Pakistani cities (no new search: budget used up)"
+ },
+ {
+  "id": "M12731",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Anura_Kumara_Dissanayake",
+   "newsonair.gov.in",
+   "adaderana.lk"
+  ],
+  "note": "Anura Kumara Dissanayake President since Sep 2024, still in 2026"
+ },
+ {
+  "id": "M12742",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "nobelprize.org (Abdus Salam 1979)",
+   "Britannica"
+  ],
+  "note": "Only Abdus Salam (1979) won the Physics Nobel for Pakistan"
+ },
+ {
+  "id": "M12743",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "nobelprize.org (Peace 2014)",
+   "Britannica"
+  ],
+  "note": "Malala Yousafzai, Nobel Peace Prize 2014"
+ },
+ {
+  "id": "M12745",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "NEPRA State of Industry Report",
+   "Pakistan Economic Survey"
+  ],
+  "note": "Thermal (oil/gas/coal/RLNG) is the largest share of Pakistan's electricity (no new search: budget used up)"
+ },
+ {
+  "id": "M12780",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "president.uz",
+   "daryo.uz",
+   "uzdaily.uz"
+  ],
+  "note": "Shavkat Mirziyoyev is President of Uzbekistan (2026)"
+ },
+ {
+  "id": "M12807",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "Wikipedia: King Fahd International Airport",
+   "Guinness World Records"
+  ],
+  "note": "King Fahd Intl (Dammam) ~776 sq km, largest airport by area"
+ },
+ {
+  "id": "M12820",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Javed_Jabbar"
+  ],
+  "note": "Javed Jabbar wrote 'What Is Pakistaniat?' (2019)"
+ }
+]

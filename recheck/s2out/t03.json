@@ -1,0 +1,355 @@
+[
+ {
+  "id": "M668",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "Wikipedia: 2026 state visit by Donald Trump to China",
+   "fmprc.gov.cn",
+   "app.com.pk"
+  ],
+  "note": "Xi Jinping is President of China in 2026."
+ },
+ {
+  "id": "M679",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "elysee.fr",
+   "Wikipedia"
+  ],
+  "note": "Emmanuel Macron is President of France (term to 2027)."
+ },
+ {
+  "id": "M685",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "un.org WUP2025 press release",
+   "aljazeera.com",
+   "upi.com"
+  ],
+  "note": "UN WUP 2025: Jakarta (~42 million) is the world's largest city."
+ },
+ {
+  "id": "M695",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Safiyya_bint_Abd_al-Muttalib",
+   "yaqeeninstitute.org",
+   "en.wikishia.net"
+  ],
+  "note": "Safiyyah bint Abd al-Muttalib was the Prophet's paternal aunt."
+ },
+ {
+  "id": "M697",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_Pakistani_Nobel_laureates",
+   "aljazeera.com",
+   "foreignpolicy.com"
+  ],
+  "note": "Pakistan has 2 Nobel Prizes: Abdus Salam 1979, Malala 2014."
+ },
+ {
+  "id": "M706",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Chairman_of_the_Senate_of_Pakistan",
+   "senate.gov.pk",
+   "app.com.pk"
+  ],
+  "note": "Yusuf Raza Gilani is Senate Chairman since 9 April 2024."
+ },
+ {
+  "id": "M713",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Literacy_in_Pakistan",
+   "en.wikipedia.org/wiki/List_of_districts_of_Pakistan_by_literacy_rate",
+   "ictadministration.gov.pk"
+  ],
+  "note": "Islamabad has the highest literacy rate (~84%, 2023 census)."
+ },
+ {
+  "id": "M748",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "allamaiqbal.com",
+   "en.wikipedia.org/wiki/Fatima_Jinnah",
+   "thefridaytimes.com"
+  ],
+  "note": "Made member of Bombay Provincial ML working committee in 1934 (commonly cited); Wikipedia notes first AIML session 1937."
+ },
+ {
+  "id": "M756",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "icc-cricket.com Hall of Fame",
+   "en.wikipedia.org/wiki/Wasim_Akram",
+   "espncricinfo.com"
+  ],
+  "note": "Wasim Akram: 414 Test wickets, most for Pakistan."
+ },
+ {
+  "id": "M774",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Enlargement_of_the_United_Nations",
+   "un.org",
+   "geographyworlds.com"
+  ],
+  "note": "UN has 193 member states (since 2011)."
+ },
+ {
+  "id": "M781",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Islam_in_Asia"
+  ],
+  "note": "27 Muslim-majority countries in Asia (incl. Lebanon, Palestine); count varies by definition."
+ },
+ {
+  "id": "M783",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_busiest_container_ports"
+  ],
+  "note": "Shanghai busiest container port (55.1m TEU 2025); Ningbo-Zhoushan (not an option) leads by tonnage."
+ },
+ {
+  "id": "M795",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Vatican_City"
+  ],
+  "note": "Vatican City is the smallest country (0.49 sq km)."
+ },
+ {
+  "id": "M802",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Naveed_Ashraf",
+   "app.com.pk",
+   "quwa.org"
+  ],
+  "note": "Admiral Naveed Ashraf is CNS since 7 October 2023."
+ },
+ {
+  "id": "M821",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Member_state_of_the_European_Union"
+  ],
+  "note": "EU has 27 member states (as of 2026)."
+ },
+ {
+  "id": "M843",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_Pakistani_Nobel_laureates",
+   "aljazeera.com",
+   "foreignpolicy.com"
+  ],
+  "note": "Pakistan has 2 Nobel laureates: Abdus Salam and Malala."
+ },
+ {
+  "id": "M851",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "allamaiqbal.com",
+   "en.wikipedia.org/wiki/Fatima_Jinnah",
+   "thefridaytimes.com"
+  ],
+  "note": "Joined Muslim League (Bombay Provincial working committee) in 1934, commonly cited."
+ },
+ {
+  "id": "M870",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Space_and_Upper_Atmosphere_Research_Commission",
+   "en.wikipedia.org/wiki/Shenzhou_24"
+  ],
+  "note": "Plan: first Pakistani astronaut to Tiangong by end-2026 (Shenzhou 24, now listed ~Nov 2026, not yet flown)."
+ },
+ {
+  "id": "M894",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/National_Assembly_of_Pakistan"
+  ],
+  "note": "National Assembly has 336 seats (266 general + 60 women + 10 minorities)."
+ },
+ {
+  "id": "M907",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Men's_FIH_Hockey_World_Cup"
+  ],
+  "note": "Pakistan won 4 Hockey World Cups: 1971, 1978, 1982, 1994."
+ },
+ {
+  "id": "M910",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/World_Squash_Championships"
+  ],
+  "note": "Jahangir Khan 6 + Jansher Khan 8 = 14 World Open titles."
+ },
+ {
+  "id": "M912",
+  "verdict": "unclear",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Israel_(name)"
+  ],
+  "note": "Hebrew etymology: 'struggles/wrestles with God'; Islamic tafsir (Ibn Abbas) says 'Abdullah' (servant of God)."
+ },
+ {
+  "id": "M930",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Mount_Judi",
+   "en.wikipedia.org/wiki/Noah_in_Islam"
+  ],
+  "note": "Ark rested on Mount Judi (Turkey); tradition (Qatadah via Ibn Kathir) 10 Rajab to 10 Muharram = ~6 months (duration not web-verified)."
+ },
+ {
+  "id": "M936",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/FIFA_World_Cup",
+   "en.wikipedia.org/wiki/2026_FIFA_World_Cup"
+  ],
+  "note": "Brazil has most World Cups (5); Spain won 2026 (its 2nd)."
+ },
+ {
+  "id": "M963",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "mofa.gov.pk",
+   "pakun.org",
+   "tbsnews.net"
+  ],
+  "note": "Ishaq Dar is Deputy PM and Foreign Minister in 2026."
+ },
+ {
+  "id": "M999",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_cities_in_Pakistan_by_population"
+  ],
+  "note": "2023 census: Karachi, Lahore, Faisalabad (3.69m) third, then Rawalpindi."
+ },
+ {
+  "id": "M1070",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "solved (English vocabulary)"
+  ],
+  "note": "Commence = begin."
+ },
+ {
+  "id": "M1071",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "solved (English vocabulary)"
+  ],
+  "note": "Antonym of expand = contract."
+ },
+ {
+  "id": "M1072",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "solved (English vocabulary)"
+  ],
+  "note": "Antonym of victory = defeat."
+ },
+ {
+  "id": "M1102",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_Pakistani_Nobel_laureates",
+   "aljazeera.com",
+   "foreignpolicy.com"
+  ],
+  "note": "Pakistan has won 2 Nobel Prizes."
+ },
+ {
+  "id": "M1205",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Muttiah_Muralitharan",
+   "en.wikipedia.org/wiki/List_of_Test_cricket_records"
+  ],
+  "note": "Muralitharan: 800 Test wickets, the most ever."
+ },
+ {
+  "id": "M1207",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Moons_of_Saturn"
+  ],
+  "note": "Saturn has the most moons (293 confirmed as of June 2026)."
+ }
+]

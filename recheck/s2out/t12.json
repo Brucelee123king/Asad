@@ -1,0 +1,350 @@
+[
+ {
+  "id": "M6799",
+  "verdict": "keep",
+  "ans": 1,
+  "src": [
+   "https://en.wikipedia.org/wiki/Qaumi_Taranah",
+   "https://www.thefridaytimes.com/09-Aug-2019/first-to-play-pakistan-s-national-anthem",
+   "https://www.dawn.com/news/1200428"
+  ],
+  "note": "Anthem tune first played publicly 1 March 1950 (Shah of Iran visit); lyrics broadcast 1954",
+  "fix": ""
+ },
+ {
+  "id": "M6835",
+  "verdict": "keep",
+  "ans": 1,
+  "src": [
+   "https://en.wikipedia.org/wiki/List_of_tallest_buildings_in_Karachi",
+   "https://www.skyscrapercenter.com/building/id/11163",
+   "https://www.zameen.com/blog/tallest-buildings-karachi.html"
+  ],
+  "note": "Bahria Icon Tower (273 m) is the tallest completed building in Karachi/Pakistan",
+  "fix": ""
+ },
+ {
+  "id": "M6884",
+  "verdict": "keep",
+  "ans": 0,
+  "src": [
+   "https://en.wikipedia.org/wiki/Kuwaiti_dinar",
+   "Reuters/XE currency rates"
+  ],
+  "note": "Kuwaiti Dinar (~3.25 USD) is the highest-valued currency unit",
+  "fix": ""
+ },
+ {
+  "id": "M6945",
+  "verdict": "keep",
+  "ans": 0,
+  "src": [
+   "https://www.geo.tv/latest/671731-amjad-hussain-takes-oath-as-gilgit-baltistan-cm",
+   "https://english.aaj.tv/news/330462486",
+   "https://arynews.tv/amjad-hussain-sworn-in-as-gilgit-baltistan-chief-minister"
+  ],
+  "note": "Governor Syed Mehdi Shah administered oath to new CM Amjad Hussain in July 2026",
+  "fix": ""
+ },
+ {
+  "id": "M6946",
+  "verdict": "keep",
+  "ans": 1,
+  "src": [
+   "https://en.wikipedia.org/wiki/Sardar_Saleem_Haider_Khan",
+   "https://www.app.com.pk/?p=1139115",
+   "https://tribune.com.pk/story/2465267"
+  ],
+  "note": "Sardar Saleem Haider Khan Governor Punjab since May 2024, active in 2026",
+  "fix": ""
+ },
+ {
+  "id": "M7010",
+  "verdict": "keep",
+  "ans": 0,
+  "src": [
+   "https://en.wikipedia.org/wiki/Conquest_of_Mecca",
+   "https://en.wikipedia.org/wiki/Battle_of_the_Trench"
+  ],
+  "note": "Fath Makkah (8 AH) was the last campaign against the Quraish; Hunayn was against Hawazin. (Khandaq was the last Quraish attack, so slightly ambiguous)",
+  "fix": ""
+ },
+ {
+  "id": "M7039",
+  "verdict": "keep",
+  "ans": 2,
+  "src": [
+   "https://mofa.gov.pk",
+   "https://www.siasat.com/muhammad-ishaq-dar-takes-charge-as-pakistans-new-foreign-minister-2991076/",
+   "https://pakistanhc.org.nz/?p=3789"
+  ],
+  "note": "Ishaq Dar is Deputy PM and Foreign Minister, active in July-Aug 2026",
+  "fix": ""
+ },
+ {
+  "id": "M7056",
+  "verdict": "unclear",
+  "src": [
+   "solved"
+  ],
+  "note": "Differences 6,12: doubling gives 24 -> 21 (app), but steady +6 step gives 18 -> 27; both options present",
+  "fix": "",
+  "ans": 1
+ },
+ {
+  "id": "M7132",
+  "verdict": "keep",
+  "ans": 2,
+  "src": [
+   "https://en.wikipedia.org/wiki/Hanif_Mohammad",
+   "ESPNcricinfo records"
+  ],
+  "note": "Hanif Mohammad 337 vs West Indies 1958 is the highest Pakistani Test score",
+  "fix": ""
+ },
+ {
+  "id": "M7157",
+  "verdict": "keep",
+  "ans": 3,
+  "src": [
+   "https://en.wikipedia.org/wiki/List_of_presidents_of_the_United_States"
+  ],
+  "note": "No woman has been elected US President; Trump is president since Jan 2025",
+  "fix": ""
+ },
+ {
+  "id": "M7210",
+  "verdict": "keep",
+  "ans": 1,
+  "src": [
+   "ESPNcricinfo ODI records",
+   "https://en.wikipedia.org/wiki/Muttiah_Muralitharan"
+  ],
+  "note": "Muralitharan 534 ODI wickets is the record",
+  "fix": ""
+ },
+ {
+  "id": "M7214",
+  "verdict": "keep",
+  "ans": 1,
+  "src": [
+   "UN World Population Prospects",
+   "https://en.wikipedia.org/wiki/List_of_countries_by_population_(United_Nations)"
+  ],
+  "note": "India first since 2023, China second",
+  "fix": ""
+ },
+ {
+  "id": "M7243",
+  "verdict": "keep",
+  "ans": 2,
+  "src": [
+   "https://en.wikipedia.org/wiki/Prime_Minister_of_Canada"
+  ],
+  "note": "Mark Carney PM since 14 March 2025",
+  "fix": ""
+ },
+ {
+  "id": "M7251",
+  "verdict": "keep",
+  "ans": 1,
+  "src": [
+   "https://en.wikipedia.org/wiki/Asrar-i-Khudi",
+   "https://en.wikipedia.org/wiki/Muhammad_Iqbal"
+  ],
+  "note": "Asrar-e-Khudi (1915, Persian) was first poetry book; Bang-e-Dra (1924) first Urdu one",
+  "fix": ""
+ },
+ {
+  "id": "M7273",
+  "verdict": "keep",
+  "ans": 0,
+  "src": [
+   "https://www.icc-cricket.com (ICC Awards 2022)",
+   "https://en.wikipedia.org/wiki/ICC_Awards"
+  ],
+  "note": "Babar Azam won Sir Garfield Sobers Trophy 2022; Stokes won Test Cricketer of the Year",
+  "fix": ""
+ },
+ {
+  "id": "M7289",
+  "verdict": "keep",
+  "ans": 2,
+  "src": [
+   "https://en.wikipedia.org/wiki/Economy_of_Pakistan",
+   "State Bank of Pakistan trade data"
+  ],
+  "note": "China is Pakistan largest overall trading partner (US is largest export market)",
+  "fix": ""
+ },
+ {
+  "id": "M7290",
+  "verdict": "keep",
+  "ans": 1,
+  "src": [
+   "https://en.wikipedia.org/wiki/President_of_Pakistan"
+  ],
+  "note": "Asif Ali Zardari President (head of state) since 10 March 2024",
+  "fix": ""
+ },
+ {
+  "id": "M7327",
+  "verdict": "unclear",
+  "src": [
+   "https://en.wikipedia.org/wiki/Asim_Iftikhar_Ahmad",
+   "https://tribune.com.pk/story/2628480/asim-iftikhar-made-new-foreign-secretary"
+  ],
+  "note": "Asim Iftikhar was PR until 12 Oct 2026, then became Foreign Secretary; successor not found",
+  "fix": "",
+  "ans": 2
+ },
+ {
+  "id": "M7358",
+  "verdict": "keep",
+  "ans": 2,
+  "src": [
+   "FAO tea statistics",
+   "https://en.wikipedia.org/wiki/Tea_industry_in_Kenya"
+  ],
+  "note": "Kenya is the largest black-tea exporter by volume",
+  "fix": ""
+ },
+ {
+  "id": "M7377",
+  "verdict": "keep",
+  "ans": 2,
+  "src": [
+   "solved (Oxford pronunciation)"
+  ],
+  "note": "white /wait/ and wait /weit/ start with w sound; wrong has silent w (/rong/)",
+  "fix": ""
+ },
+ {
+  "id": "M7394",
+  "verdict": "keep",
+  "ans": 0,
+  "src": [
+   "https://en.wikipedia.org/wiki/Nizar_Amidi",
+   "https://english.aawsat.com/arab-world/5261247",
+   "https://www.newsonair.gov.in/iraqi-parliament-elects-nizar-amedi-as-countrys-new-president"
+  ],
+  "note": "Nizar Amedi elected Iraq President on 11 April 2026, succeeding Abdul Latif Rashid",
+  "fix": ""
+ },
+ {
+  "id": "M7405",
+  "verdict": "keep",
+  "ans": 2,
+  "src": [
+   "https://en.wikipedia.org/wiki/Pakistan_Super_League"
+  ],
+  "note": "Lahore Qalandars won 2022 and 2023 back-to-back; 2026 won by Peshawar Zalmi",
+  "fix": ""
+ },
+ {
+  "id": "M7437",
+  "verdict": "keep",
+  "ans": 2,
+  "src": [
+   "https://en.wikipedia.org/wiki/Asim_Malik",
+   "https://en.dailypakistan.com.pk/20-Sep-2026/dg-isi-asim-malik-reportedly-gets-one-year-extension-as-spymaster-nsa",
+   "https://minutemirror.com.pk/lt-gen-asim-malik-reportedly-gets-another-one-year-extension-as-dg-isi-and-nsa-632579/"
+  ],
+  "note": "Lt Gen Asim Malik DG ISI since Sept 2024, extended in 2026",
+  "fix": ""
+ },
+ {
+  "id": "M7438",
+  "verdict": "keep",
+  "ans": 2,
+  "src": [
+   "https://en.wikipedia.org/wiki/President_of_Pakistan",
+   "https://mofa.gov.pk"
+  ],
+  "note": "Shehbaz Sharif is PM since March 2024",
+  "fix": ""
+ },
+ {
+  "id": "M7472",
+  "verdict": "keep",
+  "ans": 0,
+  "src": [
+   "Pakistan Bureau of Statistics",
+   "https://en.wikipedia.org/wiki/Economy_of_Pakistan"
+  ],
+  "note": "Textiles are about 55-60% of Pakistan exports",
+  "fix": ""
+ },
+ {
+  "id": "M7499",
+  "verdict": "keep",
+  "ans": 0,
+  "src": [
+   "https://en.wikipedia.org/wiki/Argentine_peso"
+  ],
+  "note": "Argentina uses the Argentine peso",
+  "fix": ""
+ },
+ {
+  "id": "M7509",
+  "verdict": "keep",
+  "ans": 1,
+  "src": [
+   "https://en.wikipedia.org/wiki/Brazil_national_football_team",
+   "FIFA.com"
+  ],
+  "note": "Brazil 5 titles (1958,62,70,94,2002); 2026 WC did not add a 6th",
+  "fix": ""
+ },
+ {
+  "id": "M7520",
+  "verdict": "keep",
+  "ans": 2,
+  "src": [
+   "https://en.wikipedia.org/wiki/Pakistan_Super_League"
+  ],
+  "note": "Lahore Qalandars won 2022 and 2023 consecutively",
+  "fix": ""
+ },
+ {
+  "id": "M7538",
+  "verdict": "keep",
+  "ans": 0,
+  "src": [
+   "https://en.wikipedia.org/wiki/Syed_Mustafa_Kamal"
+  ],
+  "note": "Mustafa Kamal Health Minister since 27 Feb 2025 (page updated Sept 2026)",
+  "fix": ""
+ },
+ {
+  "id": "M7613",
+  "verdict": "keep",
+  "ans": 0,
+  "src": [
+   "solved"
+  ],
+  "note": "Two alternating series: 65,75,85 and 115,175; 5th term is 85",
+  "fix": ""
+ },
+ {
+  "id": "M7686",
+  "verdict": "keep",
+  "ans": 2,
+  "src": [
+   "https://www.globalfirepower.com",
+   "https://en.wikipedia.org/wiki/Global_Firepower"
+  ],
+  "note": "USA ranked No.1 in Global Firepower index (Russia 2, China 3)",
+  "fix": ""
+ },
+ {
+  "id": "M7698",
+  "verdict": "keep",
+  "ans": 1,
+  "src": [
+   "https://en.wikipedia.org/wiki/Azad_Kashmir"
+  ],
+  "note": "AJK has 3 divisions (Mirpur, Muzaffarabad, Poonch) and 10 districts",
+  "fix": ""
+ }
+]
