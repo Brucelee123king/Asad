@@ -10,11 +10,14 @@ html.dark #rsSh{--cb:#1b1814;--ct:#f3eee2;--cm:#b9ab8c;--cl:#3d362c;--cd:#4b4338
 #rsSh h2{margin:6px 0 0;font-size:24px;font-weight:800;color:var(--ct)}
 #rsSh .rs-ck{text-align:center;margin:12px 0 4px}#rsSh .rs-cl{color:var(--ac);font-weight:800;font-size:12px;letter-spacing:.08em}
 #rsSh .rs-t{display:block;font-size:62px;font-weight:800;letter-spacing:2px;line-height:1.1;font-variant-numeric:tabular-nums}#rsSh .rs-ck span{color:var(--cm);font-size:13px;font-weight:700}
-#rsSh .rs-bar{position:relative;height:10px;border-radius:9px;background:var(--cl);margin:14px 0 6px;overflow:hidden}
-#rsSh .rs-bar i{position:relative;display:block;height:100%;border-radius:9px;background:var(--rsbg,linear-gradient(90deg,#059669,#0d9488));box-shadow:0 0 12px var(--rsc),0 0 4px var(--rsc);overflow:hidden;transition:width .5s}
-#rsSh .rs-bar i:after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:60%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.85),transparent);animation:rsShine 1.6s linear infinite}
-@keyframes rsShine{to{left:110%}}
-html.lite #rsSh .rs-bar i:after{animation-duration:1.6s!important;animation-iteration-count:infinite!important}
+#rsSh .rs-bar{position:relative;height:16px;border-radius:99px;background:linear-gradient(180deg,#05080f,#121b2b);margin:16px 0 8px;padding:3px;box-shadow:inset 0 2px 5px rgba(0,0,0,.8),inset 0 -1px 1px rgba(255,255,255,.08),0 1px 0 rgba(255,255,255,.35),0 4px 10px rgba(0,0,0,.18)}
+#rsSh .rs-bar i{position:relative;display:block;height:100%;border-radius:99px;transition:width .5s;
+  background:linear-gradient(90deg,color-mix(in srgb,var(--rsc) 25%,transparent) 0%,var(--rsc) 45%,color-mix(in srgb,var(--rsc) 55%,#fff) 85%,#fff 100%);
+  box-shadow:0 0 6px var(--rsc),0 0 14px var(--rsc),0 0 26px color-mix(in srgb,var(--rsc) 60%,transparent);animation:rsGlow 1.8s ease-in-out infinite}
+#rsSh .rs-bar i:before{content:"";position:absolute;right:-4px;top:50%;width:18px;height:18px;margin-top:-9px;border-radius:50%;background:radial-gradient(circle,#fff 0 25%,color-mix(in srgb,var(--rsc) 60%,#fff) 45%,transparent 72%);filter:blur(.5px)}
+#rsSh .rs-bar i:after{content:"";position:absolute;top:2px;left:6px;right:10px;height:3px;border-radius:99px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.7))}
+@keyframes rsGlow{0%,100%{filter:brightness(1)}50%{filter:brightness(1.3)}}
+html.lite #rsSh .rs-bar i{animation-duration:1.8s!important;animation-iteration-count:infinite!important}
 #rsSh .rs-ln{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--cl);font-size:15px}#rsSh .rs-ln span{color:var(--cm)}#rsSh .rs-ln:last-of-type{border:0}
 #rsSh .rs-b1{display:block;width:100%;height:56px;border-radius:18px;border:1px solid var(--cd);background:var(--cbb);color:var(--cbt);font-size:16px;font-weight:800;margin-top:16px;box-shadow:0 8px 20px rgba(120,95,40,.16);cursor:pointer}
 #rsSh .rs-b2{display:block;width:100%;border:0;background:none;color:var(--ac);font-weight:800;font-size:15px;margin-top:12px;padding:6px;cursor:pointer}
