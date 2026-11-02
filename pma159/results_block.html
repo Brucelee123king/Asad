@@ -1,12 +1,13 @@
 <style id="r10Css">
 /* result page (design 10): score header in the test's colour, mistakes box, light/dark */
-#view-results.r10x>:not(#r10){display:none!important}
+#view-results.r10x>:not(#r10):not(#r10g){display:none!important}
 #r10{--ta:#0891b2;--tb:#2563eb;--bg:#fff;--tx:#0f172a;--mu:#64748b;--ln:#e2e8f0;--b2:#fff;max-width:520px;margin:0 auto;border-radius:26px;overflow:hidden;background:var(--bg);color:var(--tx);box-shadow:0 10px 30px rgba(15,23,42,.10);font-family:"Plus Jakarta Sans",system-ui,sans-serif}
 html.dark #r10{--bg:#0f172a;--tx:#f1f5f9;--mu:#94a3b8;--ln:#1e293b;--b2:#111c33;box-shadow:0 18px 40px rgba(2,6,23,.4)}
 #r10 .w{background:linear-gradient(135deg,var(--ta),var(--tb));color:var(--tc,#fff);padding:24px 22px 58px;position:relative}
 #r10 .w:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:40px;background:var(--bg);border-radius:50% 50% 0 0/100% 100% 0 0}
 #r10 .w small{opacity:.85;font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;display:block}
 #r10 .w .sc{display:flex;align-items:center;gap:16px;margin-top:10px}#r10 .w .sc b{font-size:60px;line-height:1;font-weight:800}#r10 .w .sc div{font-weight:700;font-size:15px;line-height:1.5}
+#r10 .tp{text-align:center;margin-bottom:6px}#r10 .tp .tr{font-size:38px;line-height:1}#r10 .tp .gd{width:84px;height:84px;margin:6px auto 8px;border-radius:50%;background:#fff;color:var(--ta);font-size:44px;font-weight:900;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(0,0,0,.18)}#r10 .tp h2{margin:0;font-size:22px;font-weight:800}
 #r10 .pf{display:inline-block;margin-top:12px;background:rgba(255,255,255,.22);border-radius:99px;padding:5px 12px;font-weight:800;font-size:12.5px;letter-spacing:.06em}
 #r10 .b{padding:0 20px 22px}
 #r10 .m{display:flex;align-items:center;gap:14px;background:#fff1f2;border:1px solid #fecdd3;border-radius:18px;padding:14px;margin:4px 0 12px;color:#881337}
@@ -16,11 +17,17 @@ html.dark #r10 .m{background:#2a1220;border-color:#4c1d2e;color:#fecdd3}
 #r10 .go{display:block;width:100%;border:0;border-radius:16px;padding:16px;font-size:16px;font-weight:800;color:var(--tc,#fff);background:linear-gradient(135deg,var(--ta),var(--tb));cursor:pointer;box-shadow:0 10px 24px color-mix(in srgb,var(--ta) 30%,transparent)}
 #r10 .rw{display:flex;gap:10px;margin-top:10px}#r10 .rw button,#r10 .al{flex:1;border:1.5px solid var(--ln);background:var(--b2);color:var(--tx);border-radius:16px;padding:13px;font-size:15px;font-weight:700;cursor:pointer}
 #r10 .al{display:block;width:100%;margin-top:10px}#r10 .tm{color:var(--mu);font-size:13px;text-align:center;margin-top:12px}
+#r10g{--ta:#0891b2;--tb:#2563eb;max-width:520px;margin:14px auto 0;background:#fff;color:#0f172a;border-radius:24px;padding:20px 20px 16px;box-shadow:0 10px 30px rgba(15,23,42,.08);font-family:"Plus Jakarta Sans",system-ui,sans-serif}
+html.dark #r10g{background:#0f172a;color:#f1f5f9;box-shadow:0 18px 40px rgba(2,6,23,.4)}
+#r10g small{color:#64748b;font-weight:800;font-size:12px;letter-spacing:.06em;text-transform:uppercase}#r10g h4{margin:4px 0 0;font-size:20px;font-weight:800}#r10g h4 em{font-style:normal;font-size:14px;margin-left:6px}
+#r10g .ch{display:flex;gap:12px;height:170px;margin:16px 0 4px}#r10g .co{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:stretch;min-width:0}#r10g .ba{border-radius:12px 12px 4px 4px;text-align:center;color:#fff;font-weight:800;font-size:13px;padding-top:8px;min-height:30px;background:#94a3b8}#r10g .co>span{display:block;text-align:center;font-size:12px;font-weight:700;color:#64748b;margin-top:6px;white-space:nowrap}
+#r10g .ba.now{background:linear-gradient(var(--ta),var(--tb))}#r10g .lb{display:flex;gap:12px;font-size:12px;font-weight:700;color:#64748b;text-align:center}#r10g .lb span{flex:1}
+#r10g .nt{color:#64748b;font-size:12.5px;margin-top:10px;text-align:center}
 </style>
 <script>
 (function(){
   var vr=document.getElementById('view-results');if(!vr)return;
-  var R=document.createElement('div');R.id='r10';vr.insertBefore(R,vr.firstChild);vr.classList.add('r10x');
+  var R=document.createElement('div');R.id='r10';vr.insertBefore(R,vr.firstChild);vr.classList.add('r10x');var G=document.createElement('div');G.id='r10g';R.after(G);
   function col(el){try{var c=getComputedStyle(el),m=c.backgroundImage&&c.backgroundImage.match(/rgba?\([^)]*\)/g);if(m&&m.length)return [m[0],m[m.length-1]];var b=c.backgroundColor;if(b&&!/rgba\(0, 0, 0, 0\)/.test(b))return [b,b]}catch(e){}return null}
   function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
   function retry(){try{var qs=[];quizData.forEach(function(q,i){if(userAnswers[i]!==q.correct){var c=JSON.parse(JSON.stringify(q));c.id=qs.length+1;c.question=String(c.question).replace(/\s*\(\d+\)$/,'');qs.push(c)}});
@@ -32,12 +39,19 @@ html.dark #r10 .m{background:#2a1220;border-color:#4c1d2e;color:#fecdd3}
     var n=quizData.length,c=0,s=0;quizData.forEach(function(q,i){if(userAnswers[i]===q.correct)c++;else if(userAnswers[i]===null||userAnswers[i]===undefined)s++});
     var w=n-c-s,p=n?Math.round(100*c/n):0,name=nm();lastName=name;
     var a=col(document.getElementById('start-quiz-btn'));if(a){R.style.setProperty('--ta',a[0]);R.style.setProperty('--tb',a[1]);var v=(a[0].match(/[\d.]+/g)||[]).map(Number),L=v.length>2?(0.299*v[0]+0.587*v[1]+0.114*v[2])/255:0;R.style.setProperty('--tc',L<0.62?'#fff':'#0b1220')}
-    var ps=(document.getElementById('result-pass-status')||{}).textContent||'',tm=(document.getElementById('stat-time')||{}).textContent||'';
+    var ps=p>=50?'PASS ✓':'FAIL',tm=(document.getElementById('stat-time')||{}).textContent||'';
     var miss=w+s;
-    R.innerHTML='<div class="w"><small>'+esc(name)+'</small><div class="sc"><b>'+p+'%</b><div>'+c+' correct<br>'+w+' wrong · '+s+' skipped</div></div>'+(ps.trim()?'<span class="pf">'+esc(ps.trim())+'</span>':'')+'</div>'+
+    var G2=p>=90?['A+','Outstanding! 🌟','🏆']:p>=75?['A','Excellent work!','🏆']:p>=60?['B','Good job!','🥈']:p>=45?['C','Not bad, keep going!','🥉']:p>=33?['D','You can do better!','📘']:['F','Keep practising!','💪'];
+    R.innerHTML='<div class="w"><div class="tp"><div class="tr">'+G2[2]+'</div><div class="gd">'+G2[0]+'</div><h2>'+G2[1]+'</h2></div><small>'+esc(name)+'</small><div class="sc"><b>'+p+'%</b><div>'+c+' correct<br>'+w+' wrong · '+s+' skipped</div></div>'+(ps.trim()?'<span class="pf">'+esc(ps.trim())+'</span>':'')+'</div>'+
       '<div class="b">'+(miss?'<div class="m"><i>🎯</i><div><b>'+miss+' mistake'+(miss>1?'s':'')+' to fix</b><span>Practise them now so you remember next time.</span></div></div><button type="button" class="go" data-r="p">Practise mistakes</button>'
         :'<div class="m ok"><i>🏆</i><div><b>Perfect score!</b><span>You got every question right.</span></div></div>')+
       '<div class="rw"><button type="button" data-r="v">Review all</button><button type="button" data-r="t">↻ Retake</button></div><button type="button" class="al" data-r="a">← All tests</button>'+(tm?'<div class="tm">⏱️ Time used: '+esc(tm)+'</div>':'')+'</div>';
+    var hk='r10h_'+currentTestKey,h=[];try{h=JSON.parse(localStorage.getItem(hk)||'[]')}catch(e){}
+    if(!h.length){try{var bs=localStorage.getItem('mc_best_'+currentTestKey);}catch(e){}}
+    h.push(p);h=h.slice(-5);try{localStorage.setItem(hk,JSON.stringify(h))}catch(e){}
+    var prev=h.length>1?h[h.length-2]:null,tr=prev===null?'':(p>prev?'<em style="color:#16a34a">▲ improving</em>':p<prev?'<em style="color:#dc2626">▼ lower than last time</em>':'<em style="color:#64748b">● same as last time</em>');
+    if(a){G.style.setProperty('--ta',a[0]);G.style.setProperty('--tb',a[1])}
+    G.innerHTML='<small>Your tries</small><h4>Score: '+p+'%'+tr+'</h4><div class="ch">'+h.map(function(v,i){var last=i===h.length-1;return '<div class="co"><div class="ba'+(last?' now':'')+'" style="height:'+Math.max(14,Math.round(v*0.8))+'%;opacity:'+(last?1:(.45+.12*i))+'">'+v+'%</div><span>'+(last?'Now':'Try '+(i+1))+'</span></div>'}).join('')+'</div>'+(h.length<2?'<div class="nt">Retake this test to see if you improve.</div>':'');
     R.onclick=function(e){var b=e.target.closest('[data-r]');if(!b)return;var k=b.getAttribute('data-r');
       if(k==='p')retry();else if(k==='v'){if(typeof openReviewModal==='function')openReviewModal()}else if(k==='t'){if(typeof restartQuiz==='function')restartQuiz()}else if(k==='a'){if(typeof showSelect==='function')showSelect()}};
   }catch(e){console.error(e)}}
