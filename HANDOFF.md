@@ -422,3 +422,4 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 
 ## Nov 1 2026 (19) - published: full recheck of all MCQs
 - recheck/: all_mcqs.json (dump), key.json (13,078 unique text MCQs), where.json (id -> test key + index). Stage 1 blind answers out/s01..20 (+ r1 redo of slipped ranges). Stage 2 web check s2in/s2out t01..23 (624 doubtful). apply_fixes.py writes pma159/corrections.json (+ manual FA-3 #13). REPORT.md: 13 changed, unclear list.
+- pma159/testhome_block.html (test start page, design 4, colour of test, light/dark) and results_block.html (result page design 10: score header in test colour, Practise mistakes = CUS-retry test of wrong+skipped). Tests: fbbuild/thtest.js, r10test.js.

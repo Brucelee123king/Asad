@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head><script>/*SHELLUPD*/(function(){var V=202611020023,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
+<head><script>/*SHELLUPD*/(function(){var V=202611020031,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
 try{var sv=+L.getItem('shell_v')||0,h=L.getItem('shell_html'),t=+L.getItem('shell_try')||0;
 if(h&&sv>V&&!window.__shellW){if(t>=2){L.removeItem('shell_html');L.removeItem('shell_v');L.removeItem('shell_try')}
 else{L.setItem('shell_try',String(t+1));window.__shellW=1;document.open();document.write(h);document.close();return}}}catch(e){}
@@ -3563,6 +3563,53 @@ html.dark #th{--bg:#0b1220;--tx:#f1f5f9;--mu:#94a3b8;--ch:#111c33;--ln:#1e293b;-
   }catch(e){}}
   var f=window.selectTest;if(typeof f==='function')window.selectTest=function(){var r=f.apply(this,arguments);draw();setTimeout(draw,60);return r};
   window.__thDraw=draw;
+})();
+</script>
+<style id="r10Css">
+/* result page (design 10): score header in the test's colour, mistakes box, light/dark */
+#view-results.r10x>:not(#r10){display:none!important}
+#r10{--ta:#0891b2;--tb:#2563eb;--bg:#fff;--tx:#0f172a;--mu:#64748b;--ln:#e2e8f0;--b2:#fff;max-width:520px;margin:0 auto;border-radius:26px;overflow:hidden;background:var(--bg);color:var(--tx);box-shadow:0 10px 30px rgba(15,23,42,.10);font-family:"Plus Jakarta Sans",system-ui,sans-serif}
+html.dark #r10{--bg:#0f172a;--tx:#f1f5f9;--mu:#94a3b8;--ln:#1e293b;--b2:#111c33;box-shadow:0 18px 40px rgba(2,6,23,.4)}
+#r10 .w{background:linear-gradient(135deg,var(--ta),var(--tb));color:var(--tc,#fff);padding:24px 22px 58px;position:relative}
+#r10 .w:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:40px;background:var(--bg);border-radius:50% 50% 0 0/100% 100% 0 0}
+#r10 .w small{opacity:.85;font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;display:block}
+#r10 .w .sc{display:flex;align-items:center;gap:16px;margin-top:10px}#r10 .w .sc b{font-size:60px;line-height:1;font-weight:800}#r10 .w .sc div{font-weight:700;font-size:15px;line-height:1.5}
+#r10 .pf{display:inline-block;margin-top:12px;background:rgba(255,255,255,.22);border-radius:99px;padding:5px 12px;font-weight:800;font-size:12.5px;letter-spacing:.06em}
+#r10 .b{padding:0 20px 22px}
+#r10 .m{display:flex;align-items:center;gap:14px;background:#fff1f2;border:1px solid #fecdd3;border-radius:18px;padding:14px;margin:4px 0 12px;color:#881337}
+html.dark #r10 .m{background:#2a1220;border-color:#4c1d2e;color:#fecdd3}
+#r10 .m.ok{background:#f0fdf4;border-color:#bbf7d0;color:#14532d}html.dark #r10 .m.ok{background:#0f2a1c;border-color:#14532d;color:#bbf7d0}
+#r10 .m i{font-size:28px;font-style:normal}#r10 .m b{display:block;font-size:16px}#r10 .m span{font-size:13px;opacity:.85}
+#r10 .go{display:block;width:100%;border:0;border-radius:16px;padding:16px;font-size:16px;font-weight:800;color:var(--tc,#fff);background:linear-gradient(135deg,var(--ta),var(--tb));cursor:pointer;box-shadow:0 10px 24px color-mix(in srgb,var(--ta) 30%,transparent)}
+#r10 .rw{display:flex;gap:10px;margin-top:10px}#r10 .rw button,#r10 .al{flex:1;border:1.5px solid var(--ln);background:var(--b2);color:var(--tx);border-radius:16px;padding:13px;font-size:15px;font-weight:700;cursor:pointer}
+#r10 .al{display:block;width:100%;margin-top:10px}#r10 .tm{color:var(--mu);font-size:13px;text-align:center;margin-top:12px}
+</style>
+<script>
+(function(){
+  var vr=document.getElementById('view-results');if(!vr)return;
+  var R=document.createElement('div');R.id='r10';vr.insertBefore(R,vr.firstChild);vr.classList.add('r10x');
+  function col(el){try{var c=getComputedStyle(el),m=c.backgroundImage&&c.backgroundImage.match(/rgba?\([^)]*\)/g);if(m&&m.length)return [m[0],m[m.length-1]];var b=c.backgroundColor;if(b&&!/rgba\(0, 0, 0, 0\)/.test(b))return [b,b]}catch(e){}return null}
+  function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function retry(){try{var qs=[];quizData.forEach(function(q,i){if(userAnswers[i]!==q.correct){var c=JSON.parse(JSON.stringify(q));c.id=qs.length+1;c.question=String(c.question).replace(/\s*\(\d+\)$/,'');qs.push(c)}});
+    if(!qs.length)return;var name=nm();ALL['CUS-retry']=qs;selectTest('CUS-retry');
+    var bd=document.getElementById('home-badge');if(bd)bd.textContent=qs.length+' MCQs (Mistakes: '+name+')';try{window.__thDraw&&window.__thDraw()}catch(e){}}catch(e){console.error(e)}}
+  var lastName='';
+  function nm(){if(String(currentTestKey).indexOf('CUS-retry')===0&&lastName)return lastName;var bd=document.getElementById('home-badge'),t=(bd&&bd.textContent)||'',m=/\((.*)\)\s*$/.exec(t);return m?m[1].replace(/^Mistakes: /,''):String(currentTestKey)}
+  function draw(){try{
+    var n=quizData.length,c=0,s=0;quizData.forEach(function(q,i){if(userAnswers[i]===q.correct)c++;else if(userAnswers[i]===null||userAnswers[i]===undefined)s++});
+    var w=n-c-s,p=n?Math.round(100*c/n):0,name=nm();lastName=name;
+    var a=col(document.getElementById('start-quiz-btn'));if(a){R.style.setProperty('--ta',a[0]);R.style.setProperty('--tb',a[1]);var v=(a[0].match(/[\d.]+/g)||[]).map(Number),L=v.length>2?(0.299*v[0]+0.587*v[1]+0.114*v[2])/255:0;R.style.setProperty('--tc',L<0.62?'#fff':'#0b1220')}
+    var ps=(document.getElementById('result-pass-status')||{}).textContent||'',tm=(document.getElementById('stat-time')||{}).textContent||'';
+    var miss=w+s;
+    R.innerHTML='<div class="w"><small>'+esc(name)+'</small><div class="sc"><b>'+p+'%</b><div>'+c+' correct<br>'+w+' wrong · '+s+' skipped</div></div>'+(ps.trim()?'<span class="pf">'+esc(ps.trim())+'</span>':'')+'</div>'+
+      '<div class="b">'+(miss?'<div class="m"><i>🎯</i><div><b>'+miss+' mistake'+(miss>1?'s':'')+' to fix</b><span>Practise them now so you remember next time.</span></div></div><button type="button" class="go" data-r="p">Practise mistakes</button>'
+        :'<div class="m ok"><i>🏆</i><div><b>Perfect score!</b><span>You got every question right.</span></div></div>')+
+      '<div class="rw"><button type="button" data-r="v">Review all</button><button type="button" data-r="t">↻ Retake</button></div><button type="button" class="al" data-r="a">← All tests</button>'+(tm?'<div class="tm">⏱️ Time used: '+esc(tm)+'</div>':'')+'</div>';
+    R.onclick=function(e){var b=e.target.closest('[data-r]');if(!b)return;var k=b.getAttribute('data-r');
+      if(k==='p')retry();else if(k==='v'){if(typeof openReviewModal==='function')openReviewModal()}else if(k==='t'){if(typeof restartQuiz==='function')restartQuiz()}else if(k==='a'){if(typeof showSelect==='function')showSelect()}};
+  }catch(e){console.error(e)}}
+  var f=window.computeAndDisplayResults;if(typeof f==='function')window.computeAndDisplayResults=function(){var r=f.apply(this,arguments);draw();return r};
+  window.__r10Draw=draw;
 })();
 </script>
 
