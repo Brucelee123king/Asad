@@ -174,7 +174,7 @@ html.dark #srchModal .it .a{color:#6ee7b7}
     var nm=($('authUserName')&&$('authUserName').textContent||'').replace(/^\W+\s*/,'').trim();var who=nm&&nm!=='Guest'?nm:'there';
     var acc=s.total?Math.round(s.right*100/s.total):0,days='';var D=['S','M','T','W','T','F','S'];
     for(var i=6;i>=0;i--){var d=new Date();d.setDate(d.getDate()-i);var on=s.days[today(d)];days+='<div class="hx-d'+(on?' on':'')+(i===0?' today':'')+'"><i>'+(on?'\u{1F525}':'')+'</i><span>'+D[d.getDay()]+'</span></div>'}
-    var RMN=['What is PMA?','Eligibility & Criteria','Online Registration','Initial Test','Physical Test','Initial Medical Test','Initial Interview','ISSB','Final Medical Examination','GHQ Final Selection','Training at PMA Kakul'],N=RMN.length,top=-1;
+    var RMN=['What is PMA?','Eligibility & Criteria','Online Registration','Initial Test','Initial Medical Test','Physical Test','Initial Interview','ISSB','Final Medical Examination','GHQ Final Selection','Training at PMA Kakul'],N=RMN.length,top=-1;
     try{var ra=JSON.parse(localStorage.getItem('rm_done')||'[]');if(Array.isArray(ra)&&ra.length)top=Math.min(N-1,Math.max.apply(null,ra))}catch(e){}
     var rc=top<0?0:top,rd=rc;
     var cur=RMN[rc],nx=rc+1<N?'Next: '+RMN[rc+1]:'Final step, future officer!',steps='';
