@@ -173,14 +173,23 @@ html.dark #srchModal .it .a{color:#6ee7b7}
     var s=stats(),st=streak(),b=Object.keys(bms()).length,w=Object.keys(wrs()).length,done=ld('an_daily','')===today();
     var nm=($('authUserName')&&$('authUserName').textContent||'').replace(/^\W+\s*/,'').trim();var who=nm&&nm!=='Guest'?nm:'there';
     var acc=s.total?Math.round(s.right*100/s.total):0,days='';var D=['S','M','T','W','T','F','S'];
-    for(var i=6;i>=0;i--){var d=new Date();d.setDate(d.getDate()-i);var on=s.days[today(d)];days+='<div class="d'+(on?' on':'')+(i===0?' today':'')+'"><i>'+(on?'\u2713':'')+'</i><span>'+D[d.getDay()]+'</span></div>'}
-    return '<div class="dash"><div class="hi"><div><h3>Assalam o Alaikum, '+esc(who)+' \u{1F44B}</h3><p>'+(st?'Keep it up \u2014 you are on a '+st+'-day streak.':'Solve a test today to start your streak.')+'</p></div><div class="streak">\u{1F525} '+st+' day'+(st===1?'':'s')+'</div></div>'+
-     '<div class="stats"><div class="st"><b>'+s.tests+'</b><span>Tests</span></div><div class="st"><b>'+s.total+'</b><span>Solved</span></div><div class="st"><b>'+acc+'%</b><span>Accuracy</span></div><div class="st"><b>'+w+'</b><span>To revise</span></div></div>'+
-     '<div class="week">'+days+'</div>'+
-     '<div class="acts"><button class="act daily'+(done?' done':'')+'" onclick="startDaily()"><span class="ic">\u26A1</span><span><b>Daily Challenge</b><small>'+(done?'Done today \u2713 \u2014 play again':'25 MCQs \u2022 new every day')+'</small></span></button>'+
-     '<button class="act saved" onclick="startSaved()"><span class="ic">\u2605</span><span><b>Saved</b><small>'+b+' question'+(b===1?'':'s')+'</small></span></button>'+
-     '<button class="act mist" onclick="startMistakes()"><span class="ic">\u{1F501}</span><span><b>Mistakes</b><small>'+w+' to practise</small></span></button>'+
-     '<button class="act srch" onclick="openSearch()"><span class="ic">\u{1F50D}</span><span><b>Search</b><small>Find any MCQ</small></span></button></div></div>'}
+    for(var i=6;i>=0;i--){var d=new Date();d.setDate(d.getDate()-i);var on=s.days[today(d)];days+='<div class="hx-d'+(on?' on':'')+(i===0?' today':'')+'"><i>'+(on?'\u{1F525}':'')+'</i><span>'+D[d.getDay()]+'</span></div>'}
+    var RMN=['What is PMA?','Eligibility & Criteria','Online Registration','Physical Test','Initial Medical Test','Initial Interview','ISSB','Final Medical Examination','GHQ Final Selection','Training at PMA Kakul'],N=RMN.length,rd=0;
+    try{var ra=JSON.parse(localStorage.getItem('rm_done')||'[]');if(Array.isArray(ra))rd=Math.min(N,ra.length)}catch(e){}
+    var cur=rd<N?RMN[rd]:'All steps done',nx=rd+1<N?'Next: '+RMN[rd+1]:(rd<N?'Last step':'Well done, future officer!'),steps='';
+    for(var k=0;k<N;k++)steps+=k<rd?'<i class="hx-sd"></i>':(k===rd?'<i class="hx-sc"><b>⚡</b></i>':'<i class="hx-sn"></i>');
+    return '<div class="hx">'+
+     '<div class="hx-top"><div class="hx-hd"><div><small>Assalam o Alaikum \u{1F44B}</small><h3>'+esc(who)+'</h3></div><span class="hx-pill">\u{1F525} '+st+' day'+(st===1?'':'s')+'</span></div>'+
+     '<div class="hx-mid"><div class="hx-ring"><canvas width="240" height="240" data-acc="'+acc+'"></canvas><div class="hx-in">'+(acc>=100?'<em>\u{1F451}</em>':'')+'<b>'+acc+'%</b><span>ACCURACY</span></div></div>'+
+     '<div class="hx-l"><div><span>Tests</span><b>'+s.tests+'</b></div><div><span>Solved</span><b>'+s.total+'</b></div><div><span>To revise</span><b class="r">'+w+'</b></div></div></div>'+
+     '<div class="hx-wk">'+days+'</div></div>'+
+     '<button type="button" class="hx-rm" onclick="window.__nbTap&&__nbTap(\'road\')"><div class="hx-rt"><div class="hx-bd">'+Math.min(N,rd+1)+'<small>/'+N+'</small></div><div class="hx-rx"><small>ROADMAP LEVEL</small><b>'+esc(cur)+'</b><span>'+esc(nx)+'</span></div><em>\u{1F396}️</em></div>'+
+     '<div class="hx-tr">'+steps+'</div><div class="hx-ft"><span>Start</span><b>'+rd+' OF '+N+' DONE</b><span>PMA Kakul \u{1F3C1}</span></div></button>'+
+     '<div class="hx-big"><button type="button" class="hx-cr" onclick="window.openRange&&openRange()"><span class="hx-ic"><svg viewBox="0 0 40 40" width="30" height="30"><rect x="6" y="18" width="28" height="4" rx="2" fill="rgba(255,255,255,.45)"/><rect x="12" y="18" width="14" height="4" fill="#fff"/><circle cx="12" cy="20" r="5" fill="#fff" stroke="#be123c" stroke-width="2"/><circle cx="26" cy="20" r="5" fill="#fff" stroke="#be123c" stroke-width="2"/><text x="12" y="11" font-size="7" font-weight="800" text-anchor="middle" fill="#fff" font-family="sans-serif">50</text><text x="26" y="11" font-size="7" font-weight="800" text-anchor="middle" fill="#fff" font-family="sans-serif">100</text></svg></span><b>Custom Range</b><small>Pick numbers</small></button>'+
+     '<button type="button" class="hx-dc'+(done?' done':'')+'" onclick="startDaily()"><span class="hx-ic">⚡</span><b>Daily Challenge</b><small>'+(done?'Done today ✓':'25 MCQs • new every day')+'</small></button></div>'+
+     '<div class="hx-sm"><button type="button" onclick="startMistakes()"><span class="hx-ic m">\u{1F501}</span><b>Mistakes</b><small>'+w+' to practise</small></button>'+
+     '<button type="button" onclick="startSaved()"><span class="hx-ic s">⭐</span><b>Saved</b><small>'+b+' question'+(b===1?'':'s')+'</small></button>'+
+     '<button type="button" onclick="openSearch()"><span class="hx-ic q">\u{1F50D}</span><b>Search</b><small>Any MCQ</small></button></div></div>'}
   var _rm=renderMenu;window.renderMenu=renderMenu=function(){_rm.apply(this,arguments);var m=$('sec-menu');if(m)m.insertAdjacentHTML('afterbegin',render())};
   if(typeof applySec==='function')applySec();
   /* ---------- keyboard shortcuts (computer) ---------- */
