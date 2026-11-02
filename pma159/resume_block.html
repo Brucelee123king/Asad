@@ -45,7 +45,7 @@ html.lite #rsSh .rs-bar i{animation-duration:1.8s!important;animation-iteration-
   function fmt(t){t=Math.max(0,t|0);return String(Math.floor(t/60)).padStart(2,'0')+':'+String(t%60).padStart(2,'0')}
   function tname(){try{var b=document.getElementById('home-badge');var m=b&&/\((.*)\)/.exec(b.textContent||'');return m?m[1]:String(currentTestKey).replace('-',' – ')}catch(e){return ''}}
   function close(){dim.classList.remove('on');sh.classList.remove('on')}
-  function theme(){try{var e=document.getElementById('progress-bar-fill');if(!e)return;var c=getComputedStyle(e),bg=c.backgroundImage&&c.backgroundImage!=='none'?c.backgroundImage:c.backgroundColor;if(bg&&!/rgba\(0, 0, 0, 0\)|transparent/.test(bg)){sh.style.setProperty('--rsbg',bg);var m=String(bg).match(/rgba?\([^)]*\)/);if(m)sh.style.setProperty('--rsc',m[0])}else sh.style.removeProperty('--rsbg')}catch(x){}}
+  function theme(){try{var nc=getComputedStyle(document.documentElement).getPropertyValue('--nc').trim();if(nc){sh.style.setProperty('--rsc',nc);return}var e=document.getElementById('progress-bar-fill');if(!e)return;var c=getComputedStyle(e),bg=c.backgroundImage&&c.backgroundImage!=='none'?c.backgroundImage:c.backgroundColor;if(bg&&!/rgba\(0, 0, 0, 0\)|transparent/.test(bg)){sh.style.setProperty('--rsbg',bg);var m=String(bg).match(/rgba?\([^)]*\)/);if(m)sh.style.setProperty('--rsc',m[0])}else sh.style.removeProperty('--rsbg')}catch(x){}}
   function open(o){theme();
     $('.rs-tag').textContent=tname();$('h2').textContent=o.title;$('.rs-cl').textContent=o.cl||'⏸ CLOCK STOPPED';
     var n=o.a.length,ans=o.a.filter(function(x){return x!==null}).length;
