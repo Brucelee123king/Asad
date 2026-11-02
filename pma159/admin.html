@@ -54,7 +54,7 @@ function say(m,bad){var d=document.createElement('div');d.className='msg';if(bad
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function tab(t){['Req','Usr','Pro','Acc','Key','Act'].forEach(function(x){$('p'+x).style.display=x===t?'block':'none';$('t'+x).className=x===t?'':'g'});$('pReset').style.display=t==='Usr'?'block':'none';$('pGive').style.display=(t==='Usr'||t==='Req')?'block':'none'}
 /* Active users: per-day history (seen/{uid}.d = {YYYYMMDD:true}, Pakistan days) + last time open (online/now). Admin can log a person out (users.out). */
-var ACT={mode:'day',day:0,sub:'on',rng:3},ACTM={},ACTS={};
+var ACT={mode:'day',day:0,sub:'on',rng:3,from:'',to:''},ACTM={},ACTS={};
 function actKey(back){var d=new Date(Date.now()+5*36e5-back*864e5);return String(d.getUTCFullYear()*10000+(d.getUTCMonth()+1)*100+d.getUTCDate())}
 function actLbl(back){if(back===0)return 'Today';if(back===1)return 'Yesterday';var d=new Date(Date.now()+5*36e5-back*864e5);return ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][d.getUTCDay()]+' '+d.getUTCDate()+' '+['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][d.getUTCMonth()]}
 function actAgo(t){if(!t)return 'not recorded yet';var m=Date.now()-t,d=Math.floor(m/864e5);if(d<1){var h=Math.floor(m/36e5);return h<1?'less than 1 hour ago':h+' hour'+(h>1?'s':'')+' ago'}return d+' day'+(d>1?'s':'')+' ago'}
@@ -70,7 +70,7 @@ function actLast(uid){var best=ACTM[uid]||0,d=ACTS[uid]||{};for(var b=0;b<120&&!
 function actCard(u,extra){var nm=(u.name||'').replace(/</g,'&lt;'),em=(u.email||'').replace(/</g,'&lt;'),t=actLast(u.id);
   return '<div class="card" data-id="'+u.id+'"><b>'+(nm||em)+'</b><div class="mu">'+em+'</div><div class="mu">Last used: <b>'+actAgo(t)+'</b>'+(u.out?' • logged out by admin':'')+'</div>'+(extra||'')+'<div class="row"><button class="r" data-lo="'+u.id+'">Log out</button></div></div>'}
 function actDraw(){var us=USERS.filter(function(u){return u.status!=='blocked'}),h='<h2>Active users</h2>';
-  h+='<div class="row" style="gap:6px;flex-wrap:wrap"><button class="'+(ACT.mode==='day'?'':'g')+'" data-am="day">By day</button><button class="'+(ACT.mode==='rng'?'':'g')+'" data-am="rng">Not used for…</button></div>';
+  h+='<div class="row" style="gap:6px;flex-wrap:wrap"><button class="'+(ACT.mode==='day'?'':'g')+'" data-am="day">By day</button><button class="'+(ACT.mode==='rng'?'':'g')+'" data-am="rng">Not used for…</button><button class="'+(ACT.mode==='dr'?'':'g')+'" data-am="dr">Date range</button></div>';
   if(ACT.mode==='day'){
     var on=us.filter(function(u){return actUsed(u.id,ACT.day)}),off=us.filter(function(u){return !actUsed(u.id,ACT.day)});
     h+='<div class="mu" style="margin:8px 0 4px">Pick a day:</div><div style="display:flex;gap:6px;overflow-x:auto;padding-bottom:6px">';
@@ -79,6 +79,17 @@ function actDraw(){var us=USERS.filter(function(u){return u.status!=='blocked'})
     var L=ACT.sub==='on'?on:off;L.sort(function(a,b){return actLast(b.id)-actLast(a.id)});
     h+='<div class="mu" style="margin:6px 0">'+actLbl(ACT.day)+': '+(ACT.sub==='on'?'people who opened the app that day.':'people who did NOT open the app that day.')+'</div>';
     h+=L.length?L.map(function(u){return actCard(u)}).join(''):'<div class="card mu">Nobody here.</div>';
+  }else if(ACT.mode==='dr'){
+    var iso=function(back){var d=new Date(Date.now()+5*36e5-back*864e5);return d.toISOString().slice(0,10)};if(!ACT.to)ACT.to=iso(0);if(!ACT.from)ACT.from=iso(6);
+    var f=ACT.from<=ACT.to?ACT.from:ACT.to,tt=ACT.from<=ACT.to?ACT.to:ACT.from,keys=[];
+    for(var bb=0;bb<400;bb++){var dd=iso(bb);if(dd<f)break;if(dd<=tt)keys.push(dd.replace(/-/g,''))}
+    var useN=function(u){var m=ACTS[u.id]||{},n=0;keys.forEach(function(k){if(m[k])n++});return n};
+    var on2=us.filter(function(u){return useN(u)>0}),off2=us.filter(function(u){return useN(u)===0});
+    h+='<div class="mu" style="margin:8px 0 4px">From – To (Pakistan dates):</div><div class="row" style="gap:8px;align-items:center"><input type="date" id="actFrom" value="'+ACT.from+'" max="'+iso(0)+'" style="flex:1;min-width:0"><span>to</span><input type="date" id="actTo" value="'+ACT.to+'" max="'+iso(0)+'" style="flex:1;min-width:0"></div>';
+    h+='<div class="mu" style="margin:6px 0">'+keys.length+' day'+(keys.length===1?'':'s')+' selected.</div><div class="row" style="gap:6px"><button class="'+(ACT.sub==='on'?'':'g')+'" data-as="on">✅ Active ('+on2.length+')</button><button class="'+(ACT.sub==='off'?'':'g')+'" data-as="off">⛔ Inactive ('+off2.length+')</button></div>';
+    h+='<div class="mu" style="margin:6px 0">'+(ACT.sub==='on'?'Opened the app on at least one day in this range (number of days shown).':'Did NOT open the app on any day in this range.')+'</div>';
+    var L3=(ACT.sub==='on'?on2:off2).sort(function(a,b){return useN(b)-useN(a)||actLast(b.id)-actLast(a.id)});
+    h+=L3.length?L3.map(function(u){return actCard(u,ACT.sub==='on'?'<div class="mu">Days used in range: <b>'+useN(u)+' of '+keys.length+'</b></div>':'')}).join(''):'<div class="card mu">Nobody here.</div>';
   }else{
     var R=[3,7,20,30,40,50,60];h+='<div class="mu" style="margin:8px 0 4px">People who have NOT used the app for at least:</div><div class="row" style="gap:6px;flex-wrap:wrap">'+R.map(function(r){var n=us.filter(function(u){var t=actLast(u.id);return !t||t<Date.now()-r*864e5}).length;return '<button class="'+(r===ACT.rng?'':'g')+'" data-ar="'+r+'">'+r+' days ('+n+')</button>'}).join('')+'</div>';
     var L2=us.filter(function(u){var t=actLast(u.id);return !t||t<Date.now()-ACT.rng*864e5}).sort(function(a,b){return actLast(a.id)-actLast(b.id)});
@@ -86,6 +97,7 @@ function actDraw(){var us=USERS.filter(function(u){return u.status!=='blocked'})
   }
   h+='<div class="mu" style="margin-top:10px">Day-by-day history starts from the day this was added. "Log out" signs the person out of the app the next time it opens; they can log in again.</div>';
   $('pAct').innerHTML=h}
+document.addEventListener('change',function(e){var t=e.target;if(!t||!t.closest||!t.closest('#pAct'))return;if(t.id==='actFrom'){ACT.from=t.value;actDraw()}else if(t.id==='actTo'){ACT.to=t.value;actDraw()}});
 document.addEventListener('click',function(e){var t=e.target.closest&&e.target.closest('#pAct button');if(!t)return;
   if(t.hasAttribute('data-am')){ACT.mode=t.getAttribute('data-am');actDraw();return}
   if(t.hasAttribute('data-dy')){ACT.day=+t.getAttribute('data-dy');actDraw();return}
