@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head><script>/*SHELLUPD*/(function(){var V=202611020232,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
+<head><script>/*SHELLUPD*/(function(){var V=202611020733,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
 try{var sv=+L.getItem('shell_v')||0,h=L.getItem('shell_html'),t=+L.getItem('shell_try')||0;
 if(h&&sv>V&&!window.__shellW){if(t>=2){L.removeItem('shell_html');L.removeItem('shell_v');L.removeItem('shell_try')}
 else{L.setItem('shell_try',String(t+1));window.__shellW=1;document.open();document.write(h);document.close();return}}}catch(e){}
@@ -2541,16 +2541,17 @@ html.dark #srchModal .it .a{color:#6ee7b7}
     var nm=($('authUserName')&&$('authUserName').textContent||'').replace(/^\W+\s*/,'').trim();var who=nm&&nm!=='Guest'?nm:'there';
     var acc=s.total?Math.round(s.right*100/s.total):0,days='';var D=['S','M','T','W','T','F','S'];
     for(var i=6;i>=0;i--){var d=new Date();d.setDate(d.getDate()-i);var on=s.days[today(d)];days+='<div class="hx-d'+(on?' on':'')+(i===0?' today':'')+'"><i>'+(on?'\u{1F525}':'')+'</i><span>'+D[d.getDay()]+'</span></div>'}
-    var RMN=['What is PMA?','Eligibility & Criteria','Online Registration','Physical Test','Initial Medical Test','Initial Interview','ISSB','Final Medical Examination','GHQ Final Selection','Training at PMA Kakul'],N=RMN.length,rd=0;
-    try{var ra=JSON.parse(localStorage.getItem('rm_done')||'[]');if(Array.isArray(ra))rd=Math.min(N,ra.length)}catch(e){}
-    var cur=rd<N?RMN[rd]:'All steps done',nx=rd+1<N?'Next: '+RMN[rd+1]:(rd<N?'Last step':'Well done, future officer!'),steps='';
-    for(var k=0;k<N;k++)steps+=k<rd?'<i class="hx-sd"></i>':(k===rd?'<i class="hx-sc"><b>⚡</b></i>':'<i class="hx-sn"></i>');
+    var RMN=['What is PMA?','Eligibility & Criteria','Online Registration','Initial Test','Physical Test','Initial Medical Test','Initial Interview','ISSB','Final Medical Examination','GHQ Final Selection','Training at PMA Kakul'],N=RMN.length,top=-1;
+    try{var ra=JSON.parse(localStorage.getItem('rm_done')||'[]');if(Array.isArray(ra)&&ra.length)top=Math.min(N-1,Math.max.apply(null,ra))}catch(e){}
+    var rc=top<0?0:top,rd=rc;
+    var cur=RMN[rc],nx=rc+1<N?'Next: '+RMN[rc+1]:'Final step, future officer!',steps='';
+    for(var k=0;k<N;k++)steps+=k<rc?'<i class="hx-sd"></i>':(k===rc?'<i class="hx-sc"><b>⚡</b></i>':'<i class="hx-sn"></i>');
     return '<div class="hx">'+
      '<div class="hx-top"><div class="hx-hd"><div><small>Assalam o Alaikum \u{1F44B}</small><h3>'+esc(who)+'</h3></div><span class="hx-pill">\u{1F525} '+st+' day'+(st===1?'':'s')+'</span></div>'+
      '<div class="hx-mid"><div class="hx-ring"><canvas width="240" height="240" data-acc="'+acc+'"></canvas><div class="hx-in">'+(acc>=100?'<em>\u{1F451}</em>':'')+'<b>'+acc+'%</b><span>ACCURACY</span></div></div>'+
      '<div class="hx-l"><div><span>Tests</span><b>'+s.tests+'</b></div><div><span>Solved</span><b>'+s.total+'</b></div><div><span>To revise</span><b class="r">'+w+'</b></div></div></div>'+
      '<div class="hx-wk">'+days+'</div></div>'+
-     '<button type="button" class="hx-rm" onclick="window.__nbTap&&__nbTap(\'road\')"><div class="hx-rt"><div class="hx-bd">'+Math.min(N,rd+1)+'<small>/'+N+'</small></div><div class="hx-rx"><small>ROADMAP LEVEL</small><b>'+esc(cur)+'</b><span>'+esc(nx)+'</span></div><em>\u{1F396}️</em></div>'+
+     '<button type="button" class="hx-rm" onclick="window.__nbTap&&__nbTap(\'road\')"><div class="hx-rt"><div class="hx-bd">'+(rc+1)+'<small>/'+N+'</small></div><div class="hx-rx"><small>ROADMAP LEVEL</small><b>'+esc(cur)+'</b><span>'+esc(nx)+'</span></div><em>\u{1F396}️</em></div>'+
      '<div class="hx-tr">'+steps+'</div><div class="hx-ft"><span>Start</span><b>'+rd+' OF '+N+' DONE</b><span>PMA Kakul \u{1F3C1}</span></div></button>'+
      '<div class="hx-big"><button type="button" class="hx-cr" onclick="window.openRange&&openRange()"><span class="hx-ic"><svg viewBox="0 0 40 40" width="30" height="30"><rect x="6" y="18" width="28" height="4" rx="2" fill="rgba(255,255,255,.45)"/><rect x="12" y="18" width="14" height="4" fill="#fff"/><circle cx="12" cy="20" r="5" fill="#fff" stroke="#be123c" stroke-width="2"/><circle cx="26" cy="20" r="5" fill="#fff" stroke="#be123c" stroke-width="2"/><text x="12" y="11" font-size="7" font-weight="800" text-anchor="middle" fill="#fff" font-family="sans-serif">50</text><text x="26" y="11" font-size="7" font-weight="800" text-anchor="middle" fill="#fff" font-family="sans-serif">100</text></svg></span><b>Custom Range</b><small>Pick numbers</small></button>'+
      '<button type="button" class="hx-dc'+(done?' done':'')+'" onclick="startDaily()"><span class="hx-ic">⚡</span><b>Daily Challenge</b><small>'+(done?'Done today ✓':'25 MCQs • new every day')+'</small></button></div>'+
