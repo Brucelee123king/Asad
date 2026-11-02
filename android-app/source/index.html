@@ -3113,6 +3113,7 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
     return ud.then(function(d){
       if(!d.exists()){return FB.setDoc(FB.doc(fs,'users',user.uid),{email:email,name:nm(user),status:'pending',cats:[],requested:FB.serverTimestamp()}).then(function(){done();return afterUser(user,[])})}
       var u=d.data();
+      try{var lsi=Date.parse(user.metadata&&user.metadata.lastSignInTime)||0;if(u.out&&u.out.toMillis&&u.out.toMillis()>lsi+1000){done();wzClose();logout();return}}catch(e){}
       if(u.name){window.__acName=u.name;if(!ls('ac_name'))ls('ac_name',u.name)}
       if(u.status==='blocked'){done();wzClose();leave();showBlocked();return}
       done();return afterUser(user,u.status==='approved'?(u.cats||[]):[]);
@@ -3199,7 +3200,8 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
   /* online/now = {uid:{t:server time, on:true/false}}: on:true every 90 s while the app is open, on:false the moment it is closed or hidden */
   var ONW=210000,onStat=null,onWasShown=document.visibilityState==='visible';
   function onSave(on){if(!onUser)return Promise.resolve();var o={};o[onUser.uid]={t:FB.serverTimestamp(),on:on};return FB.setDoc(FB.doc(fs,'online','now'),o,{merge:true}).catch(function(){})}
-  function onBeat(){if(!onUser)return;onSave(true).then(function(){onRead()})}
+  function seenMark(){try{if(!onUser||!fs)return;var k=dayKey(),lk='seen_'+onUser.uid;if(ls(lk)===k)return;var o={};o[k]=true;FB.setDoc(FB.doc(fs,'seen',onUser.uid),{d:o},{merge:true}).then(function(){ls(lk,k)},function(){})}catch(e){}}
+  function onBeat(){if(!onUser)return;seenMark();onSave(true).then(function(){onRead()})}
   function onRead(withStats){if(!onUser)return;
     var ps=[FB.getDoc(FB.doc(fs,'online','now'))];if(withStats||onStat===null)ps.push(FB.getDoc(FB.doc(fs,'stats','public')).then(function(d){onStat=d.exists()?(d.data().approved||0):0},function(){}));
     Promise.all(ps).then(function(r){
