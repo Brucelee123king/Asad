@@ -3434,14 +3434,15 @@ html.dark #th{--bg:#0b1220;--tx:#f1f5f9;--mu:#94a3b8;--ch:#111c33;--ln:#1e293b;-
 </script>
 <style id="r10Css">
 /* result page (design 10): score header in the test's colour, mistakes box, light/dark */
-#view-results.r10x>:not(#r10):not(#r10g){display:none!important}
+#view-results.r10x>:not(#r10):not(#r10g):not(#review-section){display:none!important}#view-results.r10x:not(.rvon)>#review-section{display:none!important}#view-results.r10x.rvon>#review-section{margin-top:14px}
 #r10{--ta:#0891b2;--tb:#2563eb;--bg:#fff;--tx:#0f172a;--mu:#64748b;--ln:#e2e8f0;--b2:#fff;max-width:520px;margin:0 auto;border-radius:26px;overflow:hidden;background:var(--bg);color:var(--tx);box-shadow:0 10px 30px rgba(15,23,42,.10);font-family:"Plus Jakarta Sans",system-ui,sans-serif}
 html.dark #r10{--bg:#0f172a;--tx:#f1f5f9;--mu:#94a3b8;--ln:#1e293b;--b2:#111c33;box-shadow:0 18px 40px rgba(2,6,23,.4)}
 #r10 .w{background:linear-gradient(135deg,var(--ta),var(--tb));color:var(--tc,#fff);padding:24px 22px 58px;position:relative}
 #r10 .w:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:40px;background:var(--bg);border-radius:50% 50% 0 0/100% 100% 0 0}
 #r10 .w small{opacity:.85;font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;display:block}
 #r10 .w .sc{display:flex;align-items:center;gap:16px;margin-top:10px}#r10 .w .sc b{font-size:60px;line-height:1;font-weight:800}#r10 .w .sc div{font-weight:700;font-size:15px;line-height:1.5}
-#r10 .tp{text-align:center;margin-bottom:6px}#r10 .tp .tr{font-size:38px;line-height:1}#r10 .tp .gd{width:84px;height:84px;margin:6px auto 8px;border-radius:50%;background:#fff;color:var(--ta);font-size:44px;font-weight:900;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(0,0,0,.18)}#r10 .tp h2{margin:0;font-size:22px;font-weight:800}
+#r10 .tp{text-align:center;margin-bottom:6px}#r10 .tp .tr{font-size:38px;line-height:1}#r10 .tp .gd{width:84px;height:84px;margin:6px auto 8px;border-radius:50%;background:#fff;color:var(--ta);font-size:44px;font-weight:900;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(0,0,0,.18)}#r10 .tp .av{position:relative;width:96px;height:96px;margin:6px auto 10px}#r10 .tp .av .ph{width:96px;height:96px;border-radius:50%;border:4px solid #fff;background:#fff;overflow:hidden;box-shadow:0 10px 24px rgba(0,0,0,.18)}#r10 .tp .av .ph img,#r10 .tp .av .ph svg{width:100%;height:100%;object-fit:cover;display:block}#r10 .tp .av .gb{position:absolute;right:-8px;bottom:-4px;min-width:40px;height:40px;padding:0 6px;border-radius:20px;background:#fff;color:var(--ta);font-size:20px;font-weight:900;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 14px rgba(0,0,0,.2);border:3px solid color-mix(in srgb,var(--ta) 30%,#fff)}
+#r10 .tp h2{margin:0;font-size:22px;font-weight:800}
 #r10 .pf{display:inline-block;margin-top:12px;background:rgba(255,255,255,.22);border-radius:99px;padding:5px 12px;font-weight:800;font-size:12.5px;letter-spacing:.06em}
 #r10 .b{padding:0 20px 22px}
 #r10 .m{display:flex;align-items:center;gap:14px;background:#fff1f2;border:1px solid #fecdd3;border-radius:18px;padding:14px;margin:4px 0 12px;color:#881337}
@@ -3455,8 +3456,13 @@ html.dark #r10 .m{background:#2a1220;border-color:#4c1d2e;color:#fecdd3}
 html.dark #r10g{background:#0f172a;color:#f1f5f9;box-shadow:0 18px 40px rgba(2,6,23,.4)}
 #r10g small{color:#64748b;font-weight:800;font-size:12px;letter-spacing:.06em;text-transform:uppercase}#r10g h4{margin:4px 0 0;font-size:20px;font-weight:800}#r10g h4 em{font-style:normal;font-size:14px;margin-left:6px}
 #r10g .ch{display:flex;gap:12px;height:170px;margin:16px 0 4px}#r10g .co{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:stretch;min-width:0}#r10g .ba{border-radius:12px 12px 4px 4px;text-align:center;color:#fff;font-weight:800;font-size:13px;padding-top:8px;min-height:30px;background:#94a3b8}#r10g .co>span{display:block;text-align:center;font-size:12px;font-weight:700;color:#64748b;margin-top:6px;white-space:nowrap}
-#r10g .ba.now{background:linear-gradient(var(--ta),var(--tb))}#r10g .lb{display:flex;gap:12px;font-size:12px;font-weight:700;color:#64748b;text-align:center}#r10g .lb span{flex:1}
+#r10g .xx{background:linear-gradient(var(--ta),var(--tb))}#r10g .lb{display:flex;gap:12px;font-size:12px;font-weight:700;color:#64748b;text-align:center}#r10g .lb span{flex:1}
 #r10g .nt{color:#64748b;font-size:12.5px;margin-top:10px;text-align:center}
+#r10g .st{flex:1;display:flex;flex-direction:column-reverse;border-radius:12px 12px 6px 6px;overflow:hidden;background:#e2e8f0;opacity:.55}html.dark #r10g .st{background:#1e293b}
+#r10g .st.now{opacity:1;box-shadow:0 6px 16px color-mix(in srgb,var(--ta) 30%,transparent)}
+#r10g .cr{background:linear-gradient(var(--ta),var(--tb));color:#fff;font-weight:800;font-size:12px;display:flex;align-items:flex-start;justify-content:center;padding-top:4px}
+#r10g .wr{background:#ef4444;color:#fff;font-weight:800;font-size:11px;display:flex;align-items:flex-start;justify-content:center;padding-top:3px}
+#r10g .lg{display:flex;justify-content:center;gap:14px;font-size:12px;font-weight:700;color:#64748b;margin-top:8px}#r10g .lg i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
 </style>
 <script>
 (function(){
@@ -3468,26 +3474,31 @@ html.dark #r10g{background:#0f172a;color:#f1f5f9;box-shadow:0 18px 40px rgba(2,6
     if(!qs.length)return;var name=nm();ALL['CUS-retry']=qs;selectTest('CUS-retry');
     var bd=document.getElementById('home-badge');if(bd)bd.textContent=qs.length+' MCQs (Mistakes: '+name+')';try{window.__thDraw&&window.__thDraw()}catch(e){}}catch(e){console.error(e)}}
   var lastName='';
+  var MALE='<svg viewBox="0 0 100 100"><rect width="100" height="100" fill="#dbe7d3"/><path d="M18 100c2-20 16-30 32-30s30 10 32 30z" fill="#4d6b3c"/><path d="M42 70l8 10 8-10" fill="#e9d7b9"/><rect x="44" y="58" width="12" height="14" fill="#e0b48c"/><circle cx="50" cy="45" r="17" fill="#e8bf96"/><path d="M30 36c2-12 12-18 20-18s18 6 20 18z" fill="#3e5a2f"/><rect x="28" y="33" width="44" height="6" rx="3" fill="#2f4524"/><circle cx="50" cy="27" r="3.5" fill="#e6b422"/><path d="M60 82l6-2v8l-6 2z" fill="#e6b422"/></svg>';
+  var FEMALE='<svg viewBox="0 0 100 100"><rect width="100" height="100" fill="#dbe7d3"/><path d="M18 100c2-20 16-30 32-30s30 10 32 30z" fill="#4d6b3c"/><path d="M32 46c0 14 4 26 18 26s18-12 18-26z" fill="#2b1d14"/><rect x="44" y="58" width="12" height="14" fill="#e0b48c"/><circle cx="50" cy="46" r="16" fill="#e8bf96"/><path d="M30 37c2-12 12-18 20-18s18 6 20 18z" fill="#3e5a2f"/><rect x="28" y="34" width="44" height="6" rx="3" fill="#2f4524"/><circle cx="50" cy="28" r="3.5" fill="#e6b422"/><path d="M42 70l8 10 8-10" fill="#e9d7b9"/></svg>';
+  function prof(){var o=null;try{var a=window.__acDb&&window.__acDb(),u=a&&a.auth&&a.auth.currentUser;if(u)o=JSON.parse(localStorage.getItem('ac_prof_'+u.uid)||'null')}catch(e){}
+    if(!o){try{for(var i=0;i<localStorage.length;i++){var k=localStorage.key(i);if(k&&k.indexOf('ac_prof_')===0){o=JSON.parse(localStorage.getItem(k)||'null');if(o)break}}}catch(e){}}return o||{}}
+  function avatar(){var p=prof();if(p.photo&&/^data:image\/|^https:\/\//.test(p.photo))return '<img alt="" src="'+esc(p.photo)+'">';return /^f/i.test(p.gen||'')?FEMALE:MALE}
   function nm(){if(String(currentTestKey).indexOf('CUS-retry')===0&&lastName)return lastName;var bd=document.getElementById('home-badge'),t=(bd&&bd.textContent)||'',m=/\((.*)\)\s*$/.exec(t);return m?m[1].replace(/^Mistakes: /,''):String(currentTestKey)}
-  function draw(){try{
+  function draw(){try{vr.classList.remove('rvon');
     var n=quizData.length,c=0,s=0;quizData.forEach(function(q,i){if(userAnswers[i]===q.correct)c++;else if(userAnswers[i]===null||userAnswers[i]===undefined)s++});
     var w=n-c-s,p=n?Math.round(100*c/n):0,name=nm();lastName=name;
     var a=col(document.getElementById('start-quiz-btn'));if(a){R.style.setProperty('--ta',a[0]);R.style.setProperty('--tb',a[1]);var v=(a[0].match(/[\d.]+/g)||[]).map(Number),L=v.length>2?(0.299*v[0]+0.587*v[1]+0.114*v[2])/255:0;R.style.setProperty('--tc',L<0.62?'#fff':'#0b1220')}
     var ps=p>=50?'PASS ✓':'FAIL',tm=(document.getElementById('stat-time')||{}).textContent||'';
     var miss=w+s;
     var G2=p>=90?['A+','Outstanding! 🌟','🏆']:p>=75?['A','Excellent work!','🏆']:p>=60?['B','Good job!','🥈']:p>=45?['C','Not bad, keep going!','🥉']:p>=33?['D','You can do better!','📘']:['F','Keep practising!','💪'];
-    R.innerHTML='<div class="w"><div class="tp"><div class="tr">'+G2[2]+'</div><div class="gd">'+G2[0]+'</div><h2>'+G2[1]+'</h2></div><small>'+esc(name)+'</small><div class="sc"><b>'+p+'%</b><div>'+c+' correct<br>'+w+' wrong · '+s+' skipped</div></div>'+(ps.trim()?'<span class="pf">'+esc(ps.trim())+'</span>':'')+'</div>'+
+    R.innerHTML='<div class="w"><div class="tp"><div class="tr">'+G2[2]+'</div><div class="av"><div class="ph">'+avatar()+'</div><div class="gb">'+G2[0]+'</div></div><h2>'+G2[1]+'</h2></div><small>'+esc(name)+'</small><div class="sc"><b>'+p+'%</b><div>'+c+' correct<br>'+w+' wrong · '+s+' skipped</div></div>'+(ps.trim()?'<span class="pf">'+esc(ps.trim())+'</span>':'')+'</div>'+
       '<div class="b">'+(miss?'<div class="m"><i>🎯</i><div><b>'+miss+' mistake'+(miss>1?'s':'')+' to fix</b><span>Practise them now so you remember next time.</span></div></div><button type="button" class="go" data-r="p">Practise mistakes</button>'
         :'<div class="m ok"><i>🏆</i><div><b>Perfect score!</b><span>You got every question right.</span></div></div>')+
       '<div class="rw"><button type="button" data-r="v">Review all</button><button type="button" data-r="t">↻ Retake</button></div><button type="button" class="al" data-r="a">← All tests</button>'+(tm?'<div class="tm">⏱️ Time used: '+esc(tm)+'</div>':'')+'</div>';
     var hk='r10h_'+currentTestKey,h=[];try{h=JSON.parse(localStorage.getItem(hk)||'[]')}catch(e){}
     if(!h.length){try{var bs=localStorage.getItem('mc_best_'+currentTestKey);}catch(e){}}
-    h.push(p);h=h.slice(-5);try{localStorage.setItem(hk,JSON.stringify(h))}catch(e){}
-    var prev=h.length>1?h[h.length-2]:null,tr=prev===null?'':(p>prev?'<em style="color:#16a34a">▲ improving</em>':p<prev?'<em style="color:#dc2626">▼ lower than last time</em>':'<em style="color:#64748b">● same as last time</em>');
+    h=h.map(function(x){return typeof x==='number'?{c:x,w:0}:x});h.push({c:p,w:n?Math.round(100*w/n):0});h=h.slice(-5);try{localStorage.setItem(hk,JSON.stringify(h))}catch(e){}
+    var prev=h.length>1?h[h.length-2].c:null,tr=prev===null?'':(p>prev?'<em style="color:#16a34a">▲ improving</em>':p<prev?'<em style="color:#dc2626">▼ lower than last time</em>':'<em style="color:#64748b">● same as last time</em>');
     if(a){G.style.setProperty('--ta',a[0]);G.style.setProperty('--tb',a[1])}
-    G.innerHTML='<small>Your tries</small><h4>Score: '+p+'%'+tr+'</h4><div class="ch">'+h.map(function(v,i){var last=i===h.length-1;return '<div class="co"><div class="ba'+(last?' now':'')+'" style="height:'+Math.max(14,Math.round(v*0.8))+'%;opacity:'+(last?1:(.45+.12*i))+'">'+v+'%</div><span>'+(last?'Now':'Try '+(i+1))+'</span></div>'}).join('')+'</div>'+(h.length<2?'<div class="nt">Retake this test to see if you improve.</div>':'');
+    G.innerHTML='<small>Your tries</small><h4>Score: '+p+'%'+tr+'</h4><div class="ch">'+h.map(function(v,i){var last=i===h.length-1;return '<div class="co"><div class="st'+(last?' now':'')+'"><div class="cr" style="height:'+v.c+'%">'+(v.c>=12?v.c+'%':'')+'</div><div class="wr" style="height:'+v.w+'%">'+(v.w>=12?v.w+'%':'')+'</div></div><span>'+(last?'Now':'Try '+(i+1))+'</span></div>'}).join('')+'</div><div class="lg"><span><i style="background:var(--ta)"></i>Correct</span><span><i style="background:#ef4444"></i>Wrong</span><span><i style="background:#e2e8f0"></i>Skipped</span></div>'+(h.length<2?'<div class="nt">Retake this test to see if you improve.</div>':'');
     R.onclick=function(e){var b=e.target.closest('[data-r]');if(!b)return;var k=b.getAttribute('data-r');
-      if(k==='p')retry();else if(k==='v'){if(typeof openReviewModal==='function')openReviewModal()}else if(k==='t'){if(typeof restartQuiz==='function')restartQuiz()}else if(k==='a'){if(typeof showSelect==='function')showSelect()}};
+      if(k==='p')retry();else if(k==='v'){vr.classList.add('rvon');try{if(typeof renderReview==='function')renderReview()}catch(x){}var rs=document.getElementById('review-section');if(rs)setTimeout(function(){rs.scrollIntoView({behavior:'smooth',block:'start'})},60)}else if(k==='t'){if(typeof restartQuiz==='function')restartQuiz()}else if(k==='a'){if(typeof showSelect==='function')showSelect()}};
   }catch(e){console.error(e)}}
   var f=window.computeAndDisplayResults;if(typeof f==='function')window.computeAndDisplayResults=function(){var r=f.apply(this,arguments);draw();return r};
   window.__r10Draw=draw;
