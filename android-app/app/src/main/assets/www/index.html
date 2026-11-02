@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head><script>/*SHELLUPD*/(function(){var V=202611020149,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
+<head><script>/*SHELLUPD*/(function(){var V=202611020151,B='https://brucelee123king.github.io/asad-data/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
 try{var sv=+L.getItem('shell_v')||0,h=L.getItem('shell_html'),t=+L.getItem('shell_try')||0;
 if(h&&sv>V&&!window.__shellW){if(t>=2){L.removeItem('shell_html');L.removeItem('shell_v');L.removeItem('shell_try')}
 else{L.setItem('shell_try',String(t+1));window.__shellW=1;document.open();document.write(h);document.close();return}}}catch(e){}
@@ -3630,7 +3630,7 @@ html.dark #r10g{background:#0f172a;color:#f1f5f9;box-shadow:0 18px 40px rgba(2,6
     var a=col(document.getElementById('start-quiz-btn'));if(a){R.style.setProperty('--ta',a[0]);R.style.setProperty('--tb',a[1]);var v=(a[0].match(/[\d.]+/g)||[]).map(Number),L=v.length>2?(0.299*v[0]+0.587*v[1]+0.114*v[2])/255:0;R.style.setProperty('--tc',L<0.62?'#fff':'#0b1220')}
     var ps=p>=50?'PASS ✓':'FAIL',tm=(document.getElementById('stat-time')||{}).textContent||'';
     var miss=w+s;
-    var G2=p>=90?['A+','Outstanding! 🌟','🏆']:p>=80?['A','Excellent work!','🏆']:p>=70?['B+','Very good!','🥈']:p>=60?['B','Good job!','🥈']:p>=45?['C','Not bad, keep going!','🥉']:p>=33?['D','You can do better!','📘']:['F','Keep practising!','💪'];
+    var G2=p>=90?['A+','Outstanding! 🌟','🏆']:p>=80?['A','Excellent work!','🏆']:p>=70?['B+','Very good!','🥈']:p>=60?['B','Good job!','🥈']:p>=50?['C','Not bad, keep going!','🥉']:p>=33?['D','You can do better!','📘']:['F','Keep practising!','💪'];
     R.innerHTML='<div class="q-w"><div class="q-tp"><div class="q-tr">'+G2[2]+'</div><div class="q-av"><div class="q-ph">'+avatar()+'</div><div class="q-gb">'+G2[0]+'</div></div><h2>'+G2[1]+'</h2></div><small>'+esc(name)+'</small><div class="q-sc"><b>'+p+'%</b><div>'+c+' correct<br>'+w+' wrong · '+s+' skipped</div></div>'+(ps.trim()?'<span class="q-pf">'+esc(ps.trim())+'</span>':'')+'</div>'+
       '<div class="q-b">'+(miss?'<div class="q-m"><i>🎯</i><div><b>'+miss+' mistake'+(miss>1?'s':'')+' to fix</b><span>Practise them now so you remember next time.</span></div></div><button type="button" class="q-go" data-r="p">Practise mistakes</button>'
         :'<div class="q-m q-ok"><i>🏆</i><div><b>Perfect score!</b><span>You got every question right.</span></div></div>')+
