@@ -434,5 +434,5 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - Hooks in navbar_block.html: `__admHtml`, `__admWire`, `__admBack`.
 
 ## Main page Books block + background (03 Nov 2026)
-- Main page (land_block.html) now has a 4th card "04 Books" under ISSB, never locked. Real Dogar Brothers covers (webp data URIs in BKI) behind, "Explore Books" opens a Books page (ST='books') with 4 books; each shows "Coming soon" until the user decides what Open should do (external links do not open in the APK).
+- Main page (land_block.html) now has a 4th card "04 Books" under ISSB, never locked. Real Dogar Brothers covers (webp data URIs in BKI) behind, "Explore Books" opens a Books page (ST='books') with 4 books; now a sale page: 90% OFF banner (Rs 1000 crossed, Rs 99 only), 6 books 2 per row; "Buy now" shows a message to order via TikTok @journeytopma (external links do not open in the APK).
 - Light-mode main page background = design 1 "Royal Gold" (cream + soft gold glow; hides the old .lb colour blobs).
