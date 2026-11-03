@@ -61,8 +61,16 @@ MED = ('<div class="ax-hero" style="background:linear-gradient(135deg,#075985,#0
              '<li><b>Weight / BMI</b>: check yours in the BMI tab.</li><li><b>Flat feet</b>: the arch of the foot is checked.</li>'
              '<li><b>Knock knees</b>: stand with feet together; they check if the knees touch.</li><li><b>Chest</b>: chest size and expansion are measured.</li></ul><p class="ax-sm">General guide only; follow the instructions at your centre.</p>', True))
 
+PHY = ('<div class="ax-hero" style="background:linear-gradient(135deg,#9a3412,#ea580c)"><div class="ax-k">🏃 INITIAL PHYSICAL TEST</div><h2>Initial Physical Test</h2>'
+       '<p>After the medical, they check your fitness with running and some exercises.</p><div class="ax-pass" style="background:#ffedd5;color:#9a3412">⏳ My physical test is next • my notes coming after</div></div>'
+       + sec('🏋️', 'Events usually taken', '5 events', '<ul class="ax-ok"><li><b>1.6 km run</b>: about 8 minutes</li><li><b>Push-ups</b>: about 15 in 2 minutes</li>'
+             '<li><b>Sit-ups</b>: about 20 in 2 minutes</li><li><b>Chin-ups</b>: about 3</li><li><b>Ditch jump</b>: about 7 × 7 feet</li></ul>'
+             '<p class="ax-sm">Commonly reported numbers; follow the instructions at your centre.</p>', True)
+       + sec('📅', 'How to prepare', '6 tips', '<ul class="ax-ok"><li>Run every day; build up slowly</li><li>Push-ups and sit-ups daily, with correct form</li>'
+             '<li>Practise chin-ups on a bar</li><li>Sleep well and eat healthy food</li><li>Wear proper running shoes</li><li>Warm up before; do not get injured before the test</li></ul>'))
+
 INT = ('<div class="ax-hero" style="background:linear-gradient(135deg,#5b21b6,#8b5cf6)"><div class="ax-k">🗣️ INITIAL INTERVIEW</div><h2>Initial Interview Guide</h2>'
-       '<p>A short one-to-one talk with an officer. They check your confidence, honesty, family background and why you want to join.</p><div class="ax-pass" style="background:#ede9fe;color:#5b21b6">⏳ My interview is next • my notes coming after</div></div>'
+       '<p>A short one-to-one talk with an officer. They check your confidence, honesty, family background and why you want to join.</p><div class="ax-pass" style="background:#ede9fe;color:#5b21b6">🔒 Coming soon • my notes after my interview</div></div>'
        + sec('❓', 'Most asked questions', 'With tips', '<ul class="ax-qa">'
              '<li><b>Tell me about yourself.</b><span>Name, city, education, family in 2 lines, hobbies, why Army.</span></li>'
              '<li><b>Why do you want to join the Army?</b><span>Your own honest reason: service, discipline, leadership.</span></li>'
@@ -85,12 +93,23 @@ INT = ('<div class="ax-hero" style="background:linear-gradient(135deg,#5b21b6,#8
 ISSB = ('<div class="ax-hero" style="background:linear-gradient(135deg,#92400e,#f59e0b)"><div class="ax-k">🎖️ ISSB</div><h2>ISSB</h2><p>The 4-day selection board after the interview.</p>'
         '<div class="ax-pass" style="background:#fef3c7;color:#92400e">🔒 Coming soon</div></div><div class="ax-note">I will share my ISSB guide and experience here, In shaa Allah.</div>')
 
+def svg(body):
+    return '<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' + body + '</svg>'
+ICO = {
+  't': svg('<rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9z"/><path d="M8.5 12l2 2 4-4"/><path d="M8.5 17h7"/>'),
+  'm': svg('<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/><path d="M6.5 12h3l1.5-2.5 2 5 1.5-2.5h3"/>'),
+  'p': svg('<circle cx="14.5" cy="4.5" r="1.8" fill="#fff"/><path d="M8 21l3-6 3 2v5"/><path d="M11 15l1.5-6 3.5 3h3"/><path d="M12.5 9L9 8.5 6.5 11"/>'),
+  'i': svg('<path d="M4 5h11a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H9l-4 3v-3H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/><path d="M19 9h1a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-1v3l-4-3h-3"/>'),
+  's': svg('<path d="M8 2l4 6 4-6"/><circle cx="12" cy="14.5" r="6"/><path d="M12 11.5l1 2 2.2.3-1.6 1.5.4 2.2-2-1.1-2 1.1.4-2.2-1.6-1.5 2.2-.3z" fill="#fff" stroke-width="1"/>'),
+}
+
 STAGES = [
     ('t', '📝', 'Initial Test', '03 Nov 2026 • D.I. Khan • 63 questions shared', 'done', '#16a34a', '#22c55e', TEST),
     ('m', '🩺', 'Initial Medical', '03 Nov 2026 • what they checked', 'done', '#0284c7', '#38bdf8', MED),
-    ('i', '🗣️', 'Initial Interview', 'Coming next • full guide inside', 'next', '#7c3aed', '#a855f7', INT),
+    ('p', '🏃', 'Initial Physical Test', 'Next • run and exercises', 'next', '#ea580c', '#fb923c', PHY),
+    ('i', '🗣️', 'Initial Interview', 'Coming soon • guide inside', 'lock', '#7c3aed', '#a855f7', INT),
     ('s', '🎖️', 'ISSB', 'Later • 4-day guide coming', 'lock', '#b45309', '#f59e0b', ISSB)]
-data = {k: {'ic': ic, 't': t, 'd': d, 's': s, 'a': a, 'b': b, 'h': h} for k, ic, t, d, s, a, b, h in STAGES}
+data = {k: {'ic': ICO[k], 't': t, 'd': d, 's': s, 'a': a, 'b': b, 'h': h} for k, ic, t, d, s, a, b, h in STAGES}
 
 import os; tpl = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'adm_tpl.html')).read()
 out = tpl.replace('@@DATA@@', json.dumps(data, ensure_ascii=False))

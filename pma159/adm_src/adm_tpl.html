@@ -28,7 +28,7 @@ html.dark .ax{--b:#111c33;--t:#f1f5f9;--m:#94a3b8;--l:#1e293b}
 </style>
 <script>
 (function(){
-  var D=@@DATA@@,order=['t','m','i','s'],view=null,host=null;
+  var D=@@DATA@@,order=['t','m','p','i','s'],view=null,host=null;
   function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
   function tag(s){return s==='done'?'<span class="ax-tag ax-done">✅ Passed</span>':s==='next'?'<span class="ax-tag ax-next">⏳ Next</span>':'<span class="ax-tag ax-lock">🔒 Soon</span>'}
   function list(){return '<div class="ax"><div class="ax-top"><div class="ax-k">🪖 PMA 159 LONG COURSE</div><h2>Admin Experience</h2><p>My journey, step by step. Tap a stage to read.</p></div>'+
