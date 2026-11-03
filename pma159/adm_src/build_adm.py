@@ -49,17 +49,17 @@ TEST = ('<div class="ax-hero"><div class="ax-k">🪖 PMA 159 LONG COURSE</div><h
         + sec('📚', 'Academic Portion', '29 questions • Easy',
               '<p>Academic portion was comparatively easy and covered Pakistan Studies, Islamic Studies, General Knowledge, History and Current Affairs.</p>'
               + ''.join('<h4>%s</h4>%s' % (e(t), ol(q, st)) for (t, q), st in zip(AC, (1, 5, 20))))
-        + sec('💡', 'Overall Experience & Advice', '5 tips',
+        + sec('💡', 'Overall Experience & Advice', '6 tips',
               '<p>Overall, the test was moderate and manageable. Verbal required quick calculations and logical thinking, while Non-Verbal required concentration and pattern recognition. Academic was mostly based on Pakistan Studies, Islamic Studies, General Knowledge and History.</p>'
-              + '<ul class="ax-ok">' + ''.join('<li>%s</li>' % e(a) for a in ADV) + '</ul><p class="ax-end">Best of luck to all PMA 159 candidates!<br>🇵🇰 Pakistan Army Zindabad!</p>'))
+              + '<ul class="ax-ok"><li><b>⏰ Time management is the MOST important. Focus on managing your time more than anything else.</b></li>' + ''.join('<li>%s</li>' % e(a) for a in ADV) + '</ul><p class="ax-end">Best of luck to all PMA 159 candidates!<br>🇵🇰 Pakistan Army Zindabad!</p>'))
 
 MED = ('<div class="ax-hero" style="background:linear-gradient(135deg,#075985,#0284c7)"><div class="ax-k">🩺 INITIAL MEDICAL</div><h2>Initial Medical</h2>'
        '<div class="ax-meta"><span>📅 03 Nov 2026</span><span>📍 D.I. Khan</span></div><div class="ax-pass">✅ Alhamdulillah, PASSED!</div></div>'
        '<div class="ax-note">✍️ My full medical experience is coming soon.</div>'
        + sec('🩺', 'What is usually checked', 'General guide',
              '<ul class="ax-ok"><li><b>Eyesight</b>: checked without glasses.</li><li><b>Height</b>: see the Eligibility step in the Roadmap.</li>'
-             '<li><b>Weight / BMI</b>: check yours in the BMI tab.</li><li><b>Ears</b>: keep them clean.</li><li><b>Flat feet</b>: the arch of the foot is checked.</li>'
-             '<li><b>Teeth and general health</b>: a basic check.</li></ul><p class="ax-sm">General guide only; follow the instructions at your centre.</p>', True))
+             '<li><b>Weight / BMI</b>: check yours in the BMI tab.</li><li><b>Flat feet</b>: the arch of the foot is checked.</li>'
+             '<li><b>Knock knees</b>: stand with feet together; they check if the knees touch.</li><li><b>Chest</b>: chest size and expansion are measured.</li></ul><p class="ax-sm">General guide only; follow the instructions at your centre.</p>', True))
 
 INT = ('<div class="ax-hero" style="background:linear-gradient(135deg,#5b21b6,#8b5cf6)"><div class="ax-k">🗣️ INITIAL INTERVIEW</div><h2>Initial Interview Guide</h2>'
        '<p>A short one-to-one talk with an officer. They check your confidence, honesty, family background and why you want to join.</p><div class="ax-pass" style="background:#ede9fe;color:#5b21b6">⏳ My interview is next • my notes coming after</div></div>'
@@ -92,7 +92,7 @@ STAGES = [
     ('s', '🎖️', 'ISSB', 'Later • 4-day guide coming', 'lock', '#b45309', '#f59e0b', ISSB)]
 data = {k: {'ic': ic, 't': t, 'd': d, 's': s, 'a': a, 'b': b, 'h': h} for k, ic, t, d, s, a, b, h in STAGES}
 
-tpl = open('/tmp/claude-0/-home-user/549049af-53c4-5020-a180-21e595f45279/scratchpad/myexp/adm_tpl.html').read()
+import os; tpl = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'adm_tpl.html')).read()
 out = tpl.replace('@@DATA@@', json.dumps(data, ensure_ascii=False))
 open('/home/user/Asad/pma159/adm_block.html', 'w').write(out)
 print(len(out))
