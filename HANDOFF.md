@@ -436,3 +436,10 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 ## Main page Books block + background (03 Nov 2026)
 - Main page (land_block.html) now has a 4th card "04 Books" under ISSB, never locked. Real Dogar Brothers covers (webp data URIs in BKI) behind, "Explore Books" opens a Books page (ST='books') with 4 books; now a sale page: 90% OFF banner (Rs 1000 crossed, Rs 99 only), 6 books 2 per row; "Buy now" shows a message to order via TikTok @journeytopma (external links do not open in the APK).
 - Light-mode main page background = design 1 "Royal Gold" (cream + soft gold glow; hides the old .lb colour blobs).
+
+## Books: ISSB book + in-app reader (03 Nov 2026)
+- Books page now has ONE book: "ISSB: All preparation notes for ISSB Test" (user bought the rights from his brother). Cover = page-1 image of his PDF with email/price/links removed.
+- Pages: his PDF cleaned (grey watermark removed in the PDF, header email/link + stamps removed with OCR+inpaint, bold border added) -> 94 webp pages, AES-GCM encrypted -> pma159/books/issb130/pNNN.bin + meta.json (PBKDF2 key, AAD "issb130/<n>"). publish_build.sh copies pma159/books -> /tmp/publish/bk. Scripts used: pma159/books_src/*.py (plain pages are NOT in git).
+- Book key: /home/user/keystore/book_passwords.json (NOT in git). Admin must save it once in admin page -> Books tab -> "Book key" (stored in catKeys/bk_issb130).
+- Access: admin Books tab ticks a person -> adds 'bk_issb130' to users.cats (existing catKeys rule = only people with that cat can read the key). Saving a person in People keeps bk_* cats.
+- Reader (land_block.html): canvas pages, user's email as faint watermark, pinch/double-tap/+- zoom, page counter, no download/long-press; phone Back closes it. Users without the book see Buy now (TikTok message).

@@ -30,10 +30,10 @@ textarea{min-height:110px}.badge{background:var(--no);color:#fff;border-radius:9
 <div id="login" class="card"><p>Sign in with the admin Google account.</p><div class="row"><button id="gbtn">Sign in with Google</button></div>
 <div id="emuForm" style="display:none"><p class="mu">Test mode</p><input type="text" id="emuE" placeholder="email"><input type="text" id="emuP" placeholder="password" style="margin-top:6px"><div class="row"><button id="emuB">Test login</button></div></div></div>
 <div id="app" style="display:none">
- <div class="row"><button id="tReq">Requests<span class="badge" id="nReq">0</span></button><button class="g" id="tUsr">People<span class="badge" id="nUsr">0</span></button><button class="g" id="tPro">User details<span class="badge" id="nPro">0</span></button><button class="g" id="tAcc">Courses</button><button class="g" id="tAct">Active users</button><button class="g" id="tKey">Passwords</button><button class="g" id="bOut">Logout</button><button class="g" id="bRef">Refresh</button></div>
+ <div class="row"><button id="tReq">Requests<span class="badge" id="nReq">0</span></button><button class="g" id="tUsr">People<span class="badge" id="nUsr">0</span></button><button class="g" id="tPro">User details<span class="badge" id="nPro">0</span></button><button class="g" id="tAcc">Courses</button><button class="g" id="tAct">Active users</button><button class="g" id="tBk">Books</button><button class="g" id="tKey">Passwords</button><button class="g" id="bOut">Logout</button><button class="g" id="bRef">Refresh</button></div>
  <input type="text" id="srch" placeholder="Search email or name..." autocomplete="off" autocapitalize="off" spellcheck="false" style="margin-top:10px"><div class="mu" id="srchN"></div>
  <div id="onNow" class="card" style="margin-top:10px"></div>
- <div id="pAcc" style="display:none"><div id="accBox" class="card"></div></div><div id="pReq"></div><div id="pUsr" style="display:none"></div><div id="pPro" style="display:none"></div><div id="pAct" style="display:none"></div>
+ <div id="pAcc" style="display:none"><div id="accBox" class="card"></div></div><div id="pReq"></div><div id="pUsr" style="display:none"></div><div id="pPro" style="display:none"></div><div id="pAct" style="display:none"></div><div id="pBk" style="display:none"></div>
  <div id="pGive" class="card" style="margin-top:14px"><b>Give Initial PMA to everyone</b><div class="mu">Ticks Initial PMA Preparation (all categories) for every person in Requests and People. Their Interview and ISSB ticks stay as they are. Blocked people stay blocked. They get it at their next app opening.</div><div class="row"><button class="k" id="bGive">Give Initial PMA to everyone</button></div></div>
  <div id="pReset" class="card" style="display:none;margin-top:14px"><b>Lock everyone again</b><div class="mu">Every approved person goes back to the Requests tab with nothing ticked. They can still open the app, but Initial PMA, Interview and ISSB stay locked until you tick them again. Blocked people stay blocked.</div><div class="row"><button class="r" id="bReset">Lock everyone again</button></div></div>
  <div id="pKey" style="display:none">
@@ -52,8 +52,28 @@ var emu=location.hostname==='localhost'&&/[?&]emu=1/.test(location.search);
 if(emu){FB.connectAuthEmulator(auth,'http://127.0.0.1:9099',{disableWarnings:true});FB.connectFirestoreEmulator(fs,'127.0.0.1',8080);$('emuForm').style.display='block'}
 function say(m,bad){var d=document.createElement('div');d.className='msg';if(bad)d.style.background='#991b1b';d.textContent=m;$('msg').innerHTML='';$('msg').appendChild(d);setTimeout(function(){if(d.parentNode)d.remove()},6000)}
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
-function tab(t){['Req','Usr','Pro','Acc','Key','Act'].forEach(function(x){$('p'+x).style.display=x===t?'block':'none';$('t'+x).className=x===t?'':'g'});$('pReset').style.display=t==='Usr'?'block':'none';$('pGive').style.display=(t==='Usr'||t==='Req')?'block':'none'}
-/* Active users: per-day history (seen/{uid}.d = {YYYYMMDD:true}, Pakistan days) + last time open (online/now). Admin can log a person out (users.out). */
+function tab(t){['Req','Usr','Pro','Acc','Key','Act','Bk'].forEach(function(x){$('p'+x).style.display=x===t?'block':'none';$('t'+x).className=x===t?'':'g'});$('pReset').style.display=t==='Usr'?'block':'none';$('pGive').style.display=(t==='Usr'||t==='Req')?'block':'none'}
+
+/* Books: give a person access to read a book inside the app (adds bk_<id> to his cats; the book key in catKeys/bk_<id> opens it) */
+var BOOKS=[['bk_issb130','ISSB: All preparation notes for ISSB Test']],BKQ={};
+function bkEsc(t){return String(t||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function bkDraw(){var ps=USERS.filter(function(u){return (u.email||'').toLowerCase()!==ADMIN&&u.status!=='blocked'}).sort(function(a,b){return String(a.name||a.email).localeCompare(String(b.name||b.email))});
+  var h='<div class="card"><b>Books</b><div class="mu">Tick a person to let him read that book inside the app. Untick to take it back. He gets it at his next app opening.</div></div>';
+  BOOKS.forEach(function(b){var q=(BKQ[b[0]]||'').toLowerCase(),n=ps.filter(function(u){return (u.cats||[]).indexOf(b[0])>-1}).length;
+    h+='<div class="card"><b>📚 '+bkEsc(b[1])+'</b><div class="mu">'+n+' people can read this book.</div>'+
+    '<div class="row" style="margin-top:8px"><input id="bkk_'+b[0]+'" placeholder="Book key" autocomplete="off" style="flex:1;text-transform:uppercase"><button class="k" data-bksave="'+b[0]+'">Save key</button></div>'+
+    '<input data-bkf="'+b[0]+'" value="'+bkEsc(BKQ[b[0]]||'')+'" placeholder="Search name or email" style="width:100%;margin:10px 0 6px">'+
+    ps.filter(function(u){return !q||(String(u.name||'')+' '+String(u.email||'')).toLowerCase().indexOf(q)>-1}).map(function(u){var on=(u.cats||[]).indexOf(b[0])>-1;
+      return '<label style="display:flex;gap:10px;align-items:center;padding:8px 2px;border-bottom:1px solid #e2e8f0"><input type="checkbox" data-bku="'+u.id+'" data-bkb="'+b[0]+'"'+(on?' checked':'')+' style="width:20px;height:20px"><span style="flex:1"><b>'+bkEsc(u.name||'(no name)')+'</b><br><small class="mu">'+bkEsc(u.email)+'</small></span>'+(on?'<span style="color:#166534;font-weight:800;font-size:12px">✅ Has book</span>':'')+'</label>'}).join('')+'</div>'});
+  $('pBk').innerHTML=h;
+  BOOKS.forEach(function(b){FB.getDoc(FB.doc(fs,'catKeys',b[0])).then(function(d){var i=$('bkk_'+b[0]);if(i&&d.exists()&&!i.value)i.value=d.data().pw}).catch(function(){})})}
+document.addEventListener('input',function(e){var t=e.target;if(!t||!t.getAttribute||!t.getAttribute('data-bkf'))return;BKQ[t.getAttribute('data-bkf')]=t.value;var p=t.selectionStart;bkDraw();var n=document.querySelector('[data-bkf="'+t.getAttribute('data-bkf')+'"]');if(n){n.focus();try{n.setSelectionRange(p,p)}catch(x){}}});
+document.addEventListener('change',function(e){var t=e.target;if(!t||!t.getAttribute||!t.getAttribute('data-bku'))return;var id=t.getAttribute('data-bku'),b=t.getAttribute('data-bkb'),u=USERS.filter(function(x){return x.id===id})[0];if(!u)return;
+  var c=(u.cats||[]).filter(function(x){return x!==b});if(t.checked)c.push(b);var up={cats:c};if(t.checked&&u.status!=='approved')up.status='approved';
+  t.disabled=true;FB.updateDoc(FB.doc(fs,'users',id),up).then(function(){u.cats=c;if(up.status)u.status='approved';say((t.checked?'Book given to ':'Book taken back from ')+(u.name||u.email)+'.');bkDraw()}).catch(function(x){say('Failed: '+(x.code||x.message),1);bkDraw()})});
+document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('[data-bksave]');if(!b)return;var id=b.getAttribute('data-bksave'),v=(($('bkk_'+id)||{}).value||'').trim().toUpperCase();if(!v){say('Type the book key first.',1);return}
+  FB.setDoc(FB.doc(fs,'catKeys',id),{pw:v}).then(function(){say('Book key saved.')}).catch(function(x){say('Failed: '+(x.code||x.message)+'. Log out and log in again, then save within 15 minutes.',1)})});
+setTimeout(function(){var t=$('tBk');if(t)t.onclick=function(){tab('Bk');bkDraw()}},0);/* Active users: per-day history (seen/{uid}.d = {YYYYMMDD:true}, Pakistan days) + last time open (online/now). Admin can log a person out (users.out). */
 var ACT={mode:'day',day:0,sub:'on',rng:3,from:'',to:''},ACTM={},ACTS={};
 function actKey(back){var d=new Date(Date.now()+5*36e5-back*864e5);return String(d.getUTCFullYear()*10000+(d.getUTCMonth()+1)*100+d.getUTCDate())}
 function actLbl(back){if(back===0)return 'Today';if(back===1)return 'Yesterday';var d=new Date(Date.now()+5*36e5-back*864e5);return ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][d.getUTCDay()]+' '+d.getUTCDate()+' '+['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][d.getUTCMonth()]}
@@ -178,7 +198,7 @@ function draw(){
   $('pPro').innerHTML='<h2>User details</h2><div class="mu">Details people filled in My Profile. Tap a person to see everything.</div>'+(ps.length?ps.map(proCard).join(''):'<div class="mu" style="margin-top:10px">Nobody has filled the profile yet.</div>');
   $('pUsr').innerHTML='<h2>Approved and blocked people</h2><div class="mu">Oldest first: the first person who joined is at the top.</div>'+(o.length?o.map(card).join(''):'<div class="mu">No one yet.</div>');filt();try{onNow()}catch(e){}}
 document.addEventListener('click',function(e){var b=e.target.closest('button[data-a]');if(!b)return;var c=b.closest('.card'),id=c.getAttribute('data-id'),a=b.getAttribute('data-a');
-  var cats=[];[].slice.call(c.querySelectorAll('input[data-g]')).forEach(function(i){if(!i.checked)return;var g=i.getAttribute('data-g');if(g==='ipma')CATS.forEach(function(x){cats.push(x[0])});else cats.push(g)});
+  var cats=[];[].slice.call(c.querySelectorAll('input[data-g]')).forEach(function(i){if(!i.checked)return;var g=i.getAttribute('data-g');if(g==='ipma')CATS.forEach(function(x){cats.push(x[0])});else cats.push(g)});USERS.forEach(function(u){if(u.id===id)(u.cats||[]).forEach(function(x){if(/^bk_/.test(x)&&cats.indexOf(x)<0)cats.push(x)})});
   var ref=FB.doc(fs,'users',id),job;
   if(a==='ok'){if(!cats.length&&!confirm('Nothing ticked. Approve anyway? (He will see nothing)'))return;job=FB.updateDoc(ref,{status:'approved',cats:cats})}
   else if(a==='block'){if(!confirm('Block this person?'))return;job=FB.updateDoc(ref,{status:'blocked',cats:[]})}
