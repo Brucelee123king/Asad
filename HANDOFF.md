@@ -432,3 +432,7 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - Tap a stage to open its page; Back button or phone back returns to the list.
 - Source: `pma159/adm_src/build_adm.py` + `adm_tpl.html` build `pma159/adm_block.html` (last block in the merge_into_site.py `_blk` chain). Edit the stage text in build_adm.py, re-run it, then publish.
 - Hooks in navbar_block.html: `__admHtml`, `__admWire`, `__admBack`.
+
+## Main page Books block + background (03 Nov 2026)
+- Main page (land_block.html) now has a 4th card "04 Books" under ISSB, never locked. Real Dogar Brothers covers (webp data URIs in BKI) behind, "Explore Books" opens a Books page (ST='books') with 4 books; each shows "Coming soon" until the user decides what Open should do (external links do not open in the APK).
+- Light-mode main page background = design 1 "Royal Gold" (cream + soft gold glow; hides the old .lb colour blobs).
