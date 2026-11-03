@@ -28,7 +28,8 @@ AC = [("🕌 Islamic Studies", ["Against whom was Ghazwa Badr fought?", "Which G
                                                  "Which planet has the highest number of moons?", "What is the capital of Ghana?",
                                                  "Lira is the currency of which country?", "Who is the current President of France?",
                                                  "What is the plain face count of a prism?", "What is the antonym of Modesty?",
-                                                 "What is the synonym of Refrain?", "Identify the odd one out: Islamabad, Karachi, Quetta and Lahore."])]
+                                                 "What is the synonym of Refrain?", "Identify the odd one out: Islamabad, Karachi, Quetta and Lahore.",
+                                                 "Who invented the World Wide Web (WWW)?"])]
 ADV = ["Practice basic mathematics and percentages.", "Prepare alphabetical series and coding/decoding.", "Practice mirror images and figure patterns.",
        "Revise Pakistan Studies and Islamic Studies.", "Improve your speed and time management."]
 
@@ -43,10 +44,10 @@ TEST = ('<div class="ax-hero"><div class="ax-k">🪖 PMA 159 LONG COURSE</div><h
         '<div class="ax-meta"><span>👤 Asadullah</span><span>📍 D.I. Khan</span><span>📅 03 Nov 2026</span><span>⏰ 07:00 – 09:00 AM</span></div>'
         '<div class="ax-pass">✅ Alhamdulillah, PASSED! ❤️🇵🇰</div></div>'
         + sec('🔤', 'Verbal Intelligence', '24 questions • Moderate',
-              '<p>Verbal portion was moderate. Most questions were based on basic mathematics, analytical reasoning, alphabetical series and general IQ.</p>' + ol(V), True)
+              '<p>Verbal portion was moderate. Most questions were based on basic mathematics, analytical reasoning, alphabetical series and general IQ.</p>' + ol(V))
         + sec('🧩', 'Non-Verbal Intelligence', '10 patterns • Moderate',
               '<p>Non-verbal portion was moderate and included different figure-based questions.</p>' + ol(N))
-        + sec('📚', 'Academic Portion', '29 questions • Easy',
+        + sec('📚', 'Academic Portion', '30 questions • Easy',
               '<p>Academic portion was comparatively easy and covered Pakistan Studies, Islamic Studies, General Knowledge, History and Current Affairs.</p>'
               + ''.join('<h4>%s</h4>%s' % (e(t), ol(q, st)) for (t, q), st in zip(AC, (1, 5, 20))))
         + sec('💡', 'Overall Experience & Advice', '6 tips',
@@ -55,40 +56,17 @@ TEST = ('<div class="ax-hero"><div class="ax-k">🪖 PMA 159 LONG COURSE</div><h
 
 MED = ('<div class="ax-hero" style="background:linear-gradient(135deg,#075985,#0284c7)"><div class="ax-k">🩺 INITIAL MEDICAL</div><h2>Initial Medical</h2>'
        '<div class="ax-meta"><span>📅 03 Nov 2026</span><span>📍 D.I. Khan</span></div><div class="ax-pass">✅ Alhamdulillah, PASSED!</div></div>'
-       '<div class="ax-note">✍️ My full medical experience is coming soon.</div>'
+       ''
        + sec('🩺', 'What is usually checked', 'General guide',
              '<ul class="ax-ok"><li><b>Eyesight</b>: checked without glasses.</li><li><b>Height</b>: see the Eligibility step in the Roadmap.</li>'
              '<li><b>Weight / BMI</b>: check yours in the BMI tab.</li><li><b>Flat feet</b>: the arch of the foot is checked.</li>'
-             '<li><b>Knock knees</b>: stand with feet together; they check if the knees touch.</li><li><b>Chest</b>: chest size and expansion are measured.</li></ul><p class="ax-sm">General guide only; follow the instructions at your centre.</p>', True))
+             '<li><b>Knock knees</b>: stand with feet together; they check if the knees touch.</li><li><b>Chest</b>: chest size and expansion are measured.</li></ul><p class="ax-sm">General guide only; follow the instructions at your centre.</p>'))
 
 PHY = ('<div class="ax-hero" style="background:linear-gradient(135deg,#9a3412,#ea580c)"><div class="ax-k">🏃 INITIAL PHYSICAL TEST</div><h2>Initial Physical Test</h2>'
-       '<p>After the medical, they check your fitness with running and some exercises.</p><div class="ax-pass" style="background:#ffedd5;color:#9a3412">⏳ My physical test is next • my notes coming after</div></div>'
-       + sec('🏋️', 'Events usually taken', '5 events', '<ul class="ax-ok"><li><b>1.6 km run</b>: about 8 minutes</li><li><b>Push-ups</b>: about 15 in 2 minutes</li>'
-             '<li><b>Sit-ups</b>: about 20 in 2 minutes</li><li><b>Chin-ups</b>: about 3</li><li><b>Ditch jump</b>: about 7 × 7 feet</li></ul>'
-             '<p class="ax-sm">Commonly reported numbers; follow the instructions at your centre.</p>', True)
-       + sec('📅', 'How to prepare', '6 tips', '<ul class="ax-ok"><li>Run every day; build up slowly</li><li>Push-ups and sit-ups daily, with correct form</li>'
-             '<li>Practise chin-ups on a bar</li><li>Sleep well and eat healthy food</li><li>Wear proper running shoes</li><li>Warm up before; do not get injured before the test</li></ul>'))
+       '<div class="ax-pass" style="background:#ffedd5;color:#9a3412">🔒 Coming soon</div></div><div class="ax-note">My physical test has not happened yet. I will share my experience here after it, In shaa Allah.</div>')
 
-INT = ('<div class="ax-hero" style="background:linear-gradient(135deg,#5b21b6,#8b5cf6)"><div class="ax-k">🗣️ INITIAL INTERVIEW</div><h2>Initial Interview Guide</h2>'
-       '<p>A short one-to-one talk with an officer. They check your confidence, honesty, family background and why you want to join.</p><div class="ax-pass" style="background:#ede9fe;color:#5b21b6">🔒 Coming soon • my notes after my interview</div></div>'
-       + sec('❓', 'Most asked questions', 'With tips', '<ul class="ax-qa">'
-             '<li><b>Tell me about yourself.</b><span>Name, city, education, family in 2 lines, hobbies, why Army.</span></li>'
-             '<li><b>Why do you want to join the Army?</b><span>Your own honest reason: service, discipline, leadership.</span></li>'
-             '<li><b>What does your father do?</b><span>Simple and honest; show respect.</span></li>'
-             '<li><b>Your strengths and weaknesses?</b><span>One strength with an example; one weakness you are improving.</span></li>'
-             '<li><b>Any current affairs?</b><span>Know Pakistan\'s main leaders and recent big news.</span></li></ul>', True)
-       + sec('🗣️', 'Make your introduction', '1 minute', '<p>Prepare these 6 lines and practise them aloud:</p><ol><li>My name is…</li><li>I am from (city)…</li><li>I studied (FA/FSc, marks)…</li><li>My family: my father is…</li><li>My hobbies are…</li><li>I want to join the Army because…</li></ol>')
-       + sec('🚪', 'Inside the room: step by step', '5 steps', '<ol><li><b>Knock and ask:</b> "May I come in, Sir?" Wait for permission.</li><li><b>Greet:</b> "Assalam o Alaikum, Sir." Stand straight.</li>'
-             '<li><b>Sit when told:</b> only sit after "Have a seat". Thank him.</li><li><b>Answer:</b> short, honest and clear. Say "Sir" politely.</li><li><b>Leave:</b> "Thank you, Sir." Stand, push the chair back, walk out calmly.</li></ol>')
-       + sec('📁', 'Documents to carry', 'Checklist', '<ul class="ax-ok"><li>Call letter / roll number slip</li><li>Original CNIC or B-form</li><li>Matric certificate and marks sheet</li><li>FA/FSc certificate or result card</li><li>Domicile</li><li>Passport-size photos</li><li>Black pen and a file</li></ul><p class="ax-sm">Carry originals and 2 photocopies. Check your call letter for the exact list.</p>')
-       + sec('👔', 'Dress and body language', '6 tips', '<ul class="ax-ok"><li>Clean, ironed simple shirt</li><li>Polished formal shoes</li><li>Short, clean haircut</li><li>Sit straight, do not lean</li><li>Calm eye contact</li><li>Clear voice, not too fast</li></ul>')
-       + sec('📚', 'Topics to prepare', '6 topics', '<ul class="ax-ok"><li><b>About you:</b> intro, family, education, hobbies, strengths</li><li><b>Army & PMA:</b> why Army, ranks, PMA Kakul, Nishan-e-Haider</li>'
-             '<li><b>Pakistan:</b> leaders, provinces, capital, key dates</li><li><b>Current affairs:</b> big national news of the last 3 months</li><li><b>Islamiat:</b> basic duties, Kalimas, prayers</li><li><b>Hobbies:</b> know your hobby well; they ask about it</li></ul>')
-       + sec('❌', 'Common mistakes', 'Avoid these', '<ul class="ax-no"><li>A memorised speech that sounds like a robot</li><li>Lying about marks or family</li><li>Looking down, no eye contact</li><li>Saying "I don\'t know" without trying</li><li>Talking too long</li><li>Arguing with the officer</li></ul>'
-             '<p><b>Instead:</b> be natural, honest and short. If you don\'t know, say "Sorry Sir, I don\'t know, but I will learn."</p>')
-       + sec('🗓️', '7-day practice plan', 'One task a day', '<ol><li>Write your self intro</li><li>Practise it aloud 10 times</li><li>Learn the most asked questions</li><li>Current affairs and Pakistan facts</li><li>Mock interview with a friend</li><li>Dress and body language practice</li><li>Rest, check documents, sleep early</li></ol>')
-       + sec('⏰', 'Day before and on the day', 'Checklist', '<p><b>🌙 Day before:</b> iron clothes, polish shoes, haircut, pack documents, sleep early.</p><p><b>☀️ On the day:</b> light breakfast, reach early, stay calm, phone silent, smile and be polite.</p>')
-       + '<p class="ax-sm">General guidance, not official rules.</p>')
+INT = ('<div class="ax-hero" style="background:linear-gradient(135deg,#5b21b6,#8b5cf6)"><div class="ax-k">🗣️ INITIAL INTERVIEW</div><h2>Initial Interview</h2>'
+       '<div class="ax-pass" style="background:#ede9fe;color:#5b21b6">🔒 Coming soon</div></div><div class="ax-note">My interview has not happened yet. I will share my experience here after it, In shaa Allah.</div>')
 
 ISSB = ('<div class="ax-hero" style="background:linear-gradient(135deg,#92400e,#f59e0b)"><div class="ax-k">🎖️ ISSB</div><h2>ISSB</h2><p>The 4-day selection board after the interview.</p>'
         '<div class="ax-pass" style="background:#fef3c7;color:#92400e">🔒 Coming soon</div></div><div class="ax-note">I will share my ISSB guide and experience here, In shaa Allah.</div>')
@@ -104,10 +82,10 @@ ICO = {
 }
 
 STAGES = [
-    ('t', '📝', 'Initial Test', '03 Nov 2026 • D.I. Khan • 63 questions shared', 'done', '#16a34a', '#22c55e', TEST),
+    ('t', '📝', 'Initial Test', '03 Nov 2026 • D.I. Khan • 64 questions shared', 'done', '#16a34a', '#22c55e', TEST),
     ('m', '🩺', 'Initial Medical', '03 Nov 2026 • what they checked', 'done', '#0284c7', '#38bdf8', MED),
-    ('p', '🏃', 'Initial Physical Test', 'Next • run and exercises', 'next', '#ea580c', '#fb923c', PHY),
-    ('i', '🗣️', 'Initial Interview', 'Coming soon • guide inside', 'lock', '#7c3aed', '#a855f7', INT),
+    ('p', '🏃', 'Initial Physical Test', 'Coming soon', 'lock', '#ea580c', '#fb923c', PHY),
+    ('i', '🗣️', 'Initial Interview', 'Coming soon', 'lock', '#7c3aed', '#a855f7', INT),
     ('s', '🎖️', 'ISSB', 'Later • 4-day guide coming', 'lock', '#b45309', '#f59e0b', ISSB)]
 data = {k: {'ic': ICO[k], 't': t, 'd': d, 's': s, 'a': a, 'b': b, 'h': h} for k, ic, t, d, s, a, b, h in STAGES}
 
