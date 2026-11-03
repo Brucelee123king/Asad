@@ -243,12 +243,12 @@ html.dark #nbPage{--pbg:#1b1814;--ptx:#f3eee2;--pmu:#b9ab8c;--pln:#3d362c;--pcd:
   function rmWire(){pg.onclick=function(e){var b=e.target.closest('[data-lv]');if(b){rmPeek(+b.getAttribute('data-lv'));try{history.pushState({n:1,nb:1,rm:1},'')}catch(x){}}}}
   function open(k){var first=!pg;if(!pg){try{window.scrollTo(0,0)}catch(e){}d.classList.add('nbopen');pg=document.createElement('div');pg.id='nbPage';document.body.appendChild(pg)}
     pg.style.top=top()+'px';pg.classList.toggle('road',k==='road');pg.onclick=null;rmShut(true);rmPkShut(true);if(k==='road'){pg.innerHTML=rmHtml();rmWire();pg.scrollTop=0}else pg.innerHTML='<div class="in">'+(k==='road'?soon('fa-route','linear-gradient(135deg,#0891b2,#22d3ee)','PMA Roadmap','A step by step plan for the PMA Long Course: what to study, when to apply, the initial test, the interview and ISSB.'):
-      k==='adm'?soon('fa-user-shield','linear-gradient(135deg,#7c3aed,#c084fc)','Admin Experience','The admin\'s own PMA journey, tips and lessons.'):k==='bmi'?bmi():social())+'</div>';pg.scrollTop=0;
+      k==='adm'?(window.__admHtml?window.__admHtml():soon('fa-user-shield','linear-gradient(135deg,#7c3aed,#c084fc)','Admin Experience','The admin\'s own PMA journey, tips and lessons.')):k==='bmi'?bmi():social())+'</div>';pg.scrollTop=0;
     if(first){void pg.offsetWidth;requestAnimationFrame(function(){if(pg)pg.classList.add('open')});try{history.pushState({n:1,nb:1},'')}catch(e){}}
-    if(k==='bmi')bmiWire();if(k==='soc')socWire()}
+    if(k==='bmi')bmiWire();if(k==='soc')socWire();if(k==='adm'&&window.__admWire)window.__admWire(pg)}
   function pgClose(){rmShut(true);rmPkShut(true);d.classList.remove('nbopen');if(!pg)return;var p=pg;pg=null;p.classList.remove('open');p.style.pointerEvents='none';setTimeout(function(){p.remove()},280)}
   window.__nbTap=function(k){tap(k)};
-  window.__nbBack=function(){if(rpk){rmPkShut();return true}if(rsh){rmShut();return true}if(pg){pgClose();cur='home';mark();return true}return false};
+  window.__nbBack=function(){if(window.__admBack&&window.__admBack())return true;if(rpk){rmPkShut();return true}if(rsh){rmShut();return true}if(pg){pgClose();cur='home';mark();return true}return false};
   function soon(ic,bg,t,s){return '<div class="soon"><div class="ic" style="background:'+bg+'"><i class="fa-solid '+ic+'"></i></div><h3>'+t+'</h3><p>'+s+'</p><span class="pill">COMING SOON</span></div>'}
   /* BMI = weight (kg) / height (m)^2; adult groups (WHO): under 18.5 underweight, 18.5-24.9 normal, 25-29.9 overweight, 30+ obese */
   function bmi(){return '<h2>BMI Calculator</h2><p class="sub">Check your Body Mass Index for fitness and medical preparation.</p><div class="card">'+

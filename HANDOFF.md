@@ -426,3 +426,9 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - pma159/home_block.html: home top styles + fire ring (canvas, artwork strip/ball as webp data-URIs from scratchpad fire/, firering.js); features_block render() = new Level A markup (roadmap level from rm_done, 10 steps); #rngCard hidden (Custom Range now a tile). Test: fbbuild/hometest2.js.
 - pma159/cat_block.html: category cards gold border, army emoji icons (q-cic) replace fa icons, 'Choose a Category' heading replaced by army ribbon (q-rib). Test: fbbuild/cattest.js.
 - Admin 'Active users' tab (pAct): by day Active/Inactive (seen/{uid}.d day map, written once a day by the app, plus online/now last time) and 'Not used for 3-60 days'; Log out sets users.out, app signs out if out > lastSignInTime. NEW RULE needed: match /seen/{uid} (pma159/firestore.rules). Test fbbuild/acttest.js.
+
+## Admin Experience tab (03 Nov 2026)
+- Bottom bar "Admin Exp." now shows a journey of 4 stages: Initial Test (passed), Initial Medical (passed), Initial Interview (next), ISSB (soon).
+- Tap a stage to open its page; Back button or phone back returns to the list.
+- Source: `pma159/adm_src/build_adm.py` + `adm_tpl.html` build `pma159/adm_block.html` (last block in the merge_into_site.py `_blk` chain). Edit the stage text in build_adm.py, re-run it, then publish.
+- Hooks in navbar_block.html: `__admHtml`, `__admWire`, `__admBack`.
