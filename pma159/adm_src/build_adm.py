@@ -60,7 +60,7 @@ MED = ('<div class="ax-hero" style="background:linear-gradient(135deg,#075985,#0
        + sec('🩺', 'What is usually checked', 'General guide',
              '<ul class="ax-ok"><li><b>Eyesight</b>: checked without glasses.</li><li><b>Height</b>: see the Eligibility step in the Roadmap.</li>'
              '<li><b>Weight / BMI</b>: check yours in the BMI tab.</li><li><b>Flat feet</b>: the arch of the foot is checked.</li>'
-             '<li><b>Knock knees</b>: stand with feet together; they check if the knees touch.</li><li><b>Chest</b>: chest size and expansion are measured.</li></ul><p class="ax-sm">General guide only; follow the instructions at your centre.</p>'))
+             '<li><b>Knock knees</b>: stand with feet together; they check if the knees touch.</li><li><b>Chest</b>: chest size and expansion are measured.</li></ul><p class="ax-sm">General guide only; follow the instructions at your centre.</p>', True))
 
 PHY = ('<div class="ax-hero" style="background:linear-gradient(135deg,#9a3412,#ea580c)"><div class="ax-k">🏃 INITIAL PHYSICAL TEST</div><h2>Initial Physical Test</h2>'
        '<div class="ax-pass" style="background:#ffedd5;color:#9a3412">🔒 Coming soon</div></div><div class="ax-note">My physical test has not happened yet. I will share my experience here after it, In shaa Allah.</div>')
