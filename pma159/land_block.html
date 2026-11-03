@@ -123,6 +123,19 @@ html.bkrd #nbBar,html.bkrd #landMsg{display:none!important}
 .lg4 .k4p{display:flex;align-items:center;gap:8px;margin-top:8px;text-shadow:none}.lg4 .k4p s{color:#fca5a5;font-weight:700;font-size:13px;text-decoration-thickness:2px}.lg4 .k4p em{font-style:normal;background:#fde047;color:#7f1d1d;font-weight:800;font-size:14px;border-radius:9px;padding:3px 9px}
 .lg4.own .k4buy,.lg4:not(.own) .k4b.rd{display:none!important}
 .lg4 .k4b{display:inline-block;margin-top:10px;font-weight:800;font-size:15px;color:#2b1d02;background:linear-gradient(120deg,#b8860b,#ffe9a0 50%,#d4a017);border-radius:12px;padding:8px 16px;box-shadow:0 4px 12px rgba(0,0,0,.3);text-shadow:none}
+
+#bkRd .rt .rn{cursor:pointer}#bkRd .rgb{width:40px;height:40px;border-radius:12px;border:1px solid #334155;background:#1e293b;color:#fde68a;font-size:18px;font-weight:800;cursor:pointer}
+#bkRd .rz{flex-wrap:wrap;max-width:calc(100% - 24px)}#bkRd .rz [data-z="2"],#bkRd .rz .rgb2{font-size:13px;padding:0 10px;color:#fde68a}
+#bkRd .rsb{position:absolute;right:2px;top:72px;bottom:90px;width:34px;pointer-events:none}
+#bkRd .rsb .rh{position:absolute;right:4px;width:26px;height:44px;border-radius:13px;background:#d4a017;box-shadow:0 2px 8px rgba(0,0,0,.5);opacity:0;transition:opacity .25s;pointer-events:auto;touch-action:none}
+#bkRd .rsb.on .rh{opacity:.95}#bkRd .rsb .rh:after{content:"⇕";display:block;text-align:center;line-height:44px;color:#2b1d02;font-weight:800}
+#bkRd .rsb em{position:absolute;right:40px;top:50%;display:none;font-style:normal;background:#0f172a;color:#fde68a;font-weight:800;border-radius:10px;padding:6px 10px;border:1px solid #d4a017}#bkRd .rsb.dr em{display:block}
+#bkRd .rg{position:absolute;inset:0;background:#0f172a;z-index:5;display:flex;flex-direction:column}#bkRd .rg[hidden]{display:none}
+#bkRd .rgt{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;padding-top:calc(12px + env(safe-area-inset-top,0px));color:#fff;border-bottom:2px solid #d4a017}#bkRd .rgt b{font-size:16px}
+#bkRd .rgx{width:40px;height:40px;border-radius:12px;border:1px solid #334155;background:#1e293b;color:#fff;font-size:18px;cursor:pointer}
+#bkRd .rgg{flex:1;overflow:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:12px;align-content:start}
+#bkRd .rgi{background:none;border:0;padding:0;cursor:pointer;color:#cbd5e1;font-weight:800;font-size:12px}#bkRd .rgi span{display:block;background:#fff;border-radius:4px;overflow:hidden;border:2px solid transparent}#bkRd .rgi.cur span{border-color:#d4a017}
+#bkRd .rgi canvas{display:block;width:100%;height:100%}#bkRd .rgi i{display:block;font-style:normal;margin-top:4px}
 </style>
 <script>
 (function(){function init(){
@@ -166,7 +179,7 @@ html.bkrd #nbBar,html.bkrd #landMsg{display:none!important}
   function openReader(i){var b=BKL[i];if(!b)return;if(!hasBook(b[3])){lockMsg('<b>Order this book:</b> message the admin on <b>TikTok @journeytopma</b>.<span class="lmgo">Tap here to open Social</span>');return}
     if(!window.crypto||!crypto.subtle||!window.__acGetKey){rdToast('This phone cannot open the book. Please update the app.');return}
     var base=rdBase()+'bk/'+b[4]+'/';
-    var o=document.createElement('div');o.id='bkRd';o.innerHTML='<div class="rt"><button type="button" class="rx" aria-label="Close">←</button><b>'+b[1]+'</b><span class="rn">…</span></div><div class="rs"><div class="ri"></div></div><div class="rz"><button type="button" data-z="-1">−</button><button type="button" data-z="0">100%</button><button type="button" data-z="1">+</button></div><div class="rl">Opening the book…</div>';
+    var o=document.createElement('div');o.id='bkRd';o.innerHTML='<div class="rt"><button type="button" class="rx" aria-label="Close">←</button><b>'+b[1]+'</b><button type="button" class="rn" title="Go to page">…</button><button type="button" class="rgb" title="All pages">▦</button></div><div class="rs"><div class="ri"></div></div><div class="rsb"><span class="rh"></span><em></em></div><div class="rz"><button type="button" data-z="-1">−</button><button type="button" data-z="0">100%</button><button type="button" data-z="1">+</button><button type="button" data-z="2">Fit</button><button type="button" class="rgb2">▦ Pages</button></div><div class="rg" hidden><div class="rgt"><b>All pages</b><button type="button" class="rgx">✕</button></div><div class="rgg"></div></div><div class="rl">Opening the book…</div>';
     document.body.appendChild(o);document.documentElement.classList.add('bkrd');
     try{history.pushState({n:1,bk:1},'')}catch(e){}
     RD={o:o,b:b,z:1,key:null,meta:null,obs:null,busy:{}};
@@ -177,11 +190,29 @@ html.bkrd #nbBar,html.bkrd #landMsg{display:none!important}
     RD.obs=new IntersectionObserver(function(es){es.forEach(function(en){var d=en.target,p=+d.getAttribute('data-p');if(en.isIntersecting)rdLoad(base,d,p);else rdDrop(d)})},{root:sc,rootMargin:'1400px 0px'});
     [].forEach.call(inn.children,function(d){RD.obs.observe(d)});
     var cnt=RD.o.querySelector('.rn');sc.addEventListener('scroll',function(){var r=sc.getBoundingClientRect(),mid=r.top+r.height/3,ch=inn.children;for(var i=0;i<ch.length;i++){var q=ch[i].getBoundingClientRect();if(q.bottom>mid){cnt.textContent=(i+1)+' / '+m.n;break}}},{passive:true});cnt.textContent='1 / '+m.n;
-    rdPinch(sc,inn)}
-  function rdLoad(base,d,p){if(!RD||d.__on||RD.busy[p])return;RD.busy[p]=1;var key=RD.key;
-    fetch(base+'p'+('00'+p).slice(-3)+'.bin',{cache:'force-cache'}).then(function(r){if(!r.ok)throw 0;return r.arrayBuffer()}).then(function(buf){
-      return crypto.subtle.decrypt({name:'AES-GCM',iv:new Uint8Array(buf,0,12),additionalData:new TextEncoder().encode(RD.b[4]+'/'+p)},key,new Uint8Array(buf,12))})
-    .then(function(pt){return createImageBitmap(new Blob([pt],{type:'image/webp'}))}).then(function(bm){if(!RD)return;var c=d.querySelector('canvas');c.width=bm.width;c.height=bm.height;var x=c.getContext('2d');x.drawImage(bm,0,0);try{bm.close()}catch(e){}
+    rdPinch(sc,inn);RD.base=base;rdScrub(sc)}
+  function rdGo(p){if(!RD||!RD.meta)return;p=Math.max(1,Math.min(RD.meta.n,p|0));var d=RD.o.querySelector('.rp[data-p="'+p+'"]'),sc=RD.o.querySelector('.rs');if(d)sc.scrollTop=d.offsetTop-8}
+  function rdCur(){var t=RD.o.querySelector('.rn').textContent;return parseInt(t,10)||1}
+  function rdScrub(sc){var bar=RD.o.querySelector('.rsb'),h=bar.querySelector('.rh'),em=bar.querySelector('em'),n=RD.meta.n,drag=false,hide=null;
+    function place(){var f=sc.scrollTop/Math.max(1,sc.scrollHeight-sc.clientHeight);h.style.top=(f*(bar.clientHeight-44))+'px';bar.classList.add('on');clearTimeout(hide);hide=setTimeout(function(){if(!drag)bar.classList.remove('on')},1500)}
+    sc.addEventListener('scroll',function(){if(!drag)place()},{passive:true});
+    function at(y){var r=bar.getBoundingClientRect(),f=Math.max(0,Math.min(1,(y-r.top-22)/(r.height-44)));var p=Math.round(f*(n-1))+1;em.textContent=p;h.style.top=(f*(r.height-44))+'px';sc.scrollTop=f*(sc.scrollHeight-sc.clientHeight)}
+    h.addEventListener('touchstart',function(e){drag=true;bar.classList.add('on','dr');e.preventDefault()},{passive:false});
+    h.addEventListener('mousedown',function(e){drag=true;bar.classList.add('on','dr');e.preventDefault()});
+    document.addEventListener('touchmove',function(e){if(drag&&RD){at(e.touches[0].clientY);e.preventDefault()}},{passive:false});
+    document.addEventListener('mousemove',function(e){if(drag&&RD)at(e.clientY)});
+    function up(){if(!drag)return;drag=false;bar.classList.remove('dr');place()}
+    document.addEventListener('touchend',up);document.addEventListener('mouseup',up);place()}
+  function rdGrid(open){if(!RD||!RD.meta)return;var g=RD.o.querySelector('.rg'),gg=g.querySelector('.rgg');g.hidden=!open;if(!open){if(RD.gobs){RD.gobs.disconnect();RD.gobs=null}gg.innerHTML='';return}
+    var cur=rdCur(),h='';for(var i=1;i<=RD.meta.n;i++)h+='<button type="button" class="rgi'+(i===cur?' cur':'')+'" data-gp="'+i+'"><span style="aspect-ratio:'+RD.meta.wh[0]+'/'+RD.meta.wh[1]+'"><canvas></canvas></span><i>'+i+'</i></button>';gg.innerHTML=h;
+    RD.gobs=new IntersectionObserver(function(es){es.forEach(function(en){if(!en.isIntersecting||en.target.__on)return;var d=en.target;d.__on=1;var p=+d.getAttribute('data-gp');
+      rdPage(RD.base,p).then(function(bm){if(!RD)return;var c=d.querySelector('canvas'),w=220;c.width=w;c.height=Math.round(bm.height*w/bm.width);c.getContext('2d').drawImage(bm,0,0,c.width,c.height);try{bm.close()}catch(x){}}).catch(function(){d.__on=0})})},{root:gg,rootMargin:'300px 0px'});
+    [].forEach.call(gg.children,function(d){RD.gobs.observe(d)});var c=gg.querySelector('.cur');if(c)gg.scrollTop=c.offsetTop-80}
+  function rdPage(base,p){var key=RD.key,dir=RD.b[4];return fetch(base+'p'+('00'+p).slice(-3)+'.bin',{cache:'force-cache'}).then(function(r){if(!r.ok)throw 0;return r.arrayBuffer()}).then(function(buf){
+      return crypto.subtle.decrypt({name:'AES-GCM',iv:new Uint8Array(buf,0,12),additionalData:new TextEncoder().encode(dir+'/'+p)},key,new Uint8Array(buf,12))})
+    .then(function(pt){return createImageBitmap(new Blob([pt],{type:'image/webp'}))})}
+  function rdLoad(base,d,p){if(!RD||d.__on||RD.busy[p])return;RD.busy[p]=1;
+    rdPage(base,p).then(function(bm){if(!RD)return;var c=d.querySelector('canvas');c.width=bm.width;c.height=bm.height;var x=c.getContext('2d');x.drawImage(bm,0,0);try{bm.close()}catch(e){}
       var w=String(window.__acEmail||'').trim();if(w){x.save();x.translate(c.width/2,c.height/2);x.rotate(-Math.PI/6);x.font='600 34px sans-serif';x.fillStyle='rgba(30,41,59,.07)';x.textAlign='center';for(var k=-2;k<=2;k++)x.fillText(w,0,k*300);x.restore()}
       d.__on=1;d.classList.add('ok')}).catch(function(){}).then(function(){if(RD)delete RD.busy[p]})}
   function rdDrop(d){if(!d.__on)return;var c=d.querySelector('canvas');c.width=1;c.height=1;d.__on=0;d.classList.remove('ok')}
@@ -193,9 +224,13 @@ html.bkrd #nbBar,html.bkrd #landMsg{display:none!important}
     sc.addEventListener('touchmove',function(e){if(e.touches.length===2&&d0){e.preventDefault();var t=e.touches;rdZoom(z0*dist(t)/d0,(t[0].clientX+t[1].clientX)/2,(t[0].clientY+t[1].clientY)/2)}},{passive:false});
     sc.addEventListener('touchend',function(e){if(e.touches.length<2)d0=0},{passive:true});
     var lt=0;sc.addEventListener('touchend',function(e){if(e.touches.length||e.changedTouches.length!==1)return;var n=Date.now();if(n-lt<300){var t=e.changedTouches[0];rdZoom(RD.z>1.2?1:2.2,t.clientX,t.clientY);lt=0}else lt=n},{passive:true})}
-  function closeReader(){if(!RD)return false;try{RD.obs&&RD.obs.disconnect()}catch(e){}RD.o.remove();RD=null;document.documentElement.classList.remove('bkrd');return true}
+  function closeReader(){if(!RD)return false;var gq=RD.o.querySelector('.rg');if(gq&&!gq.hidden){rdGrid(false);try{history.pushState({n:1,bk:1},'')}catch(e){}return true}try{RD.obs&&RD.obs.disconnect()}catch(e){}RD.o.remove();RD=null;document.documentElement.classList.remove('bkrd');return true}
   document.addEventListener('click',function(e){if(!RD)return;var t=e.target;if(t.closest('#bkRd .rx')){if(history.state&&history.state.bk)history.back();else closeReader();return}
-    var z=t.closest('#bkRd [data-z]');if(z){var k=+z.getAttribute('data-z');rdZoom(k===0?1:RD.z+(k>0?.5:-.5))}});
+    var z=t.closest('#bkRd [data-z]');if(z){var k=+z.getAttribute('data-z');rdZoom(k===0||k===2?1:RD.z+(k===1?.5:-.5));return}
+    if(t.closest('#bkRd .rgb')||t.closest('#bkRd .rgb2')){rdGrid(true);return}
+    if(t.closest('#bkRd .rgx')){rdGrid(false);return}
+    var gi=t.closest('#bkRd [data-gp]');if(gi){var gp=+gi.getAttribute('data-gp');rdGrid(false);rdZoom(1);rdGo(gp);return}
+    if(t.closest('#bkRd .rn')&&RD.meta){var v=prompt('Go to page (1 - '+RD.meta.n+')',String(rdCur()));if(v)rdGo(parseInt(v,10))}});
   document.addEventListener('contextmenu',function(e){if(RD&&e.target.closest('#bkRd'))e.preventDefault()});
   function home(){L.innerHTML='<div class="lh"><div class="emb"><i class="fa-solid fa-shield-halved"></i></div><div class="kick">PMA Preparation</div><h2>Assalam o Alaikum</h2><p>Choose your preparation</p><div class="rule"></div></div>'+
     card('pma','lg1','fa-graduation-cap','01','Initial PMA Preparation','All categories: 1000 MCQs, PMA 159, Hakeem, Forces Academy, Pro Genius, Verbal and Non Verbal, Academic and more.')+
