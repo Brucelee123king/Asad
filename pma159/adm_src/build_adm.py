@@ -50,9 +50,9 @@ TEST = ('<div class="ax-hero"><div class="ax-k">🪖 PMA 159 LONG COURSE</div><h
         + sec('📚', 'Academic Portion', '30 questions • Easy',
               '<p>Academic portion was comparatively easy and covered Pakistan Studies, Islamic Studies, General Knowledge, History and Current Affairs.</p>'
               + ''.join('<h4>%s</h4>%s' % (e(t), ol(q, st)) for (t, q), st in zip(AC, (1, 5, 20))))
-        + sec('💡', 'Overall Experience & Advice', '6 tips',
+        + sec('💡', 'Overall Experience & Advice', '7 tips',
               '<p>Overall, the test was moderate and manageable. Verbal required quick calculations and logical thinking, while Non-Verbal required concentration and pattern recognition. Academic was mostly based on Pakistan Studies, Islamic Studies, General Knowledge and History.</p>'
-              + '<ul class="ax-ok"><li><b>⏰ Time management is the MOST important. Focus on managing your time more than anything else.</b></li>' + ''.join('<li>%s</li>' % e(a) for a in ADV) + '</ul><p class="ax-end">Best of luck to all PMA 159 candidates!<br>🇵🇰 Pakistan Army Zindabad!</p>'))
+              + '<ul class="ax-ok"><li><b>⏰ Time management is the MOST important. Focus on managing your time more than anything else.</b></li><li><b>📱 The whole paper came from this app. Not a single question came from outside. Prepare everything given in this app.</b></li>' + ''.join('<li>%s</li>' % e(a) for a in ADV) + '</ul><p class="ax-end">Best of luck to all PMA 159 candidates!<br>🇵🇰 Pakistan Army Zindabad!</p>'))
 
 MED = ('<div class="ax-hero" style="background:linear-gradient(135deg,#075985,#0284c7)"><div class="ax-k">🩺 INITIAL MEDICAL</div><h2>Initial Medical</h2>'
        '<div class="ax-meta"><span>📅 03 Nov 2026</span><span>📍 D.I. Khan</span></div><div class="ax-pass">✅ Alhamdulillah, PASSED!</div></div>'
