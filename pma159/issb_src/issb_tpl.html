@@ -92,7 +92,7 @@ html.dark #isP{--b:#111c33;--t:#f1f5f9;--m:#94a3b8;--l:#1e293b}
   function norm(k){var x=O(D[k]);if(k==='wat')return A(x.words).map(function(w){return {s:w.w||w.s,r:w.s&&w.w?w.s:(w.r||'')}});return A(x.items).concat(A(x.samples)).map(function(i){return typeof i==='string'?{s:i,r:''}:{s:i.s||i.q,r:i.r||i.a||''}})}
   function drillPage(k,ic,t,secs,list,ur){var x=O(D[k]);
     return '<button type="button" class="big" data-dr="'+k+'">⏱️ Start practice ('+secs+' seconds each)</button>'+ul('💡 Tips',x.tips)+(list.length?'<div class="bx'+(ur?' ur':'')+'"><h4>'+(k==='wat'?'Words':'Practice items')+' <small>'+list.length+'</small></h4>'+items(list.map(function(z){return {s:z.s,r:z.r}}),k,ur)+'</div>':'')}
-  function sub(k){var all=PSY.concat(GTO),c=all.filter(function(z){return z[0]===k})[0],x=O(D[k]),grad=SUBC[all.indexOf(c)%SUBC.length],h=head(c[2],'',grad,c[1]);
+  function sub(k){var all=PSY.concat(GTO),c=all.filter(function(z){return z[0]===k})[0],x=O(D[k]),grad=SUBC[all.indexOf(c)%SUBC.length],h=head(c[2],'',grad,c[1]);if(x.diagram&&x.diagram.svg)h+='<div class="bx"><h4>📐 Diagram</h4><div class="dg">'+x.diagram.svg+'</div><p style="margin:0;font-size:13px;color:var(--m);line-height:1.5">'+esc(x.diagram.caption)+'</p></div>';
     if(c[3]==='drill')return h+drillPage(k,c[1],c[2],c[4],norm(k),false);
     if(c[3]==='sct'){var tb=TAB.sct||'en',L=tb==='ur'?norm('sct_ur'):norm('sct_en');var xx=O(D[tb==='ur'?'sct_ur':'sct_en']);
       return h+'<div class="tabs"><button type="button" data-tab="sct:en" class="'+(tb==='en'?'on':'')+'">🇬🇧 English ('+A(O(D.sct_en).items).length+')</button><button type="button" data-tab="sct:ur" class="'+(tb==='ur'?'on':'')+'">🇵🇰 اردو ('+A(O(D.sct_ur).items).length+')</button></div>'+
