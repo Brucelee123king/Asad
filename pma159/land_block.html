@@ -211,6 +211,9 @@ html.bkrd #satBar{background:#1f4d32!important}
 #bkRd .rg,#bkRd .rqb,#bkRd .rqi{background:#0b1a12!important}#bkRd .rgt{border-bottom-color:#f1d27a!important}#bkRd .rql{background:#13291a!important}#bkRd .rqr{border-bottom-color:#1f4d32!important}
 
 html.lite #bkRd .rrail,html.lite #bkRd .rbody:after,#bkRd .rrail,#bkRd .rbody:after{transition-duration:.38s!important}
+
+#landBooks .pg2 .sc>b{font-size:14px}#landBooks .pg2 .sc>small{margin-bottom:10px}#landBooks .pg2 .buy{margin-top:auto}
+#landBooks .pfi{width:96px;height:126px;border-radius:8px 22px 8px 8px;background:#fff;border:1px solid #e2e8f0;border-top:16px solid #dc2626;color:#dc2626;font-weight:900;font-size:22px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:16px;box-shadow:0 10px 18px rgba(0,0,0,.18);margin-bottom:6px}
 </style>
 <script>
 (function(){function init(){
@@ -234,7 +237,7 @@ html.lite #bkRd .rrail,html.lite #bkRd .rbody:after,#bkRd .rrail,#bkRd .rbody:af
   function booksPage(){L.innerHTML='<button type="button" class="lback" data-go="home"><i class="fa-solid fa-arrow-left"></i> Main page</button><div id="landBooks">'+
     '<div class="ph2"><small>📄 PDF NOTES</small><h3>PDFs</h3><p>Notes PDFs from top academies. They open inside the app.</p></div>'+
     '<h4>All PDFs <small>'+BKL.length+(BKL.length>1?' PDFs':' PDF')+'</small></h4>'+
-    BKL.map(function(b,i){var own=hasBook(b[3]);return '<div class="pr"><div class="pi">'+(BKI[b[0]]?'<img src="'+BKI[b[0]]+'" alt="">':'<span>PDF</span>')+'</div><div class="pt"><b>'+b[1]+'</b><small>'+b[2]+'</small>'+(own&&b[5]?'<button type="button" class="buy rd" data-read="'+i+'">📖 Open PDF</button>':own?'<button type="button" class="buy soon" disabled>⏳ Coming soon</button>':'<button type="button" class="buy lk" data-buy="'+i+'">🔒 Locked</button>')+'</div></div>'}).join('')+'</div>'}
+    '<div class="sg pg2">'+BKL.map(function(b,i){var own=hasBook(b[3]);return '<div class="sc"><div class="im">'+(BKI[b[0]]?'<img src="'+BKI[b[0]]+'" alt="">':'<span class="pfi">PDF</span>')+'</div><b>'+b[1]+'</b><small>'+b[2]+'</small>'+(own&&b[5]?'<button type="button" class="buy rd" data-read="'+i+'">📖 Open PDF</button>':own?'<button type="button" class="buy soon" disabled>⏳ Coming soon</button>':'<button type="button" class="buy lk" data-buy="'+i+'">🔒 Locked</button>')+'</div>'}).join('')+'</div></div>'}
 
   /* ---- in-app book reader: pages are AES-GCM encrypted files (bk/<dir>/pNNN.bin); key = catKeys/<id> (only people given the book can read it).
      Pages are drawn on canvas with the reader's email as a faint watermark; no download, no save, no long-press. ---- */
