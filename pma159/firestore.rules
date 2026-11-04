@@ -118,6 +118,12 @@ service cloud.firestore {
     match /{path=**}/days/{d} {
       allow read: if isAdmin();
     }
+    match /payproofs/{uid} {
+      allow read, delete: if isAdmin();
+      allow create, update: if request.auth != null && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['email','uid','item','price','img','t','name','mail','qual','phone','city','course'])
+        && request.resource.data.img is string && request.resource.data.img.size() < 900000;
+    }
     match /seen/{uid} {
       allow read: if isAdmin();
       allow create, update: if request.auth != null && request.auth.uid == uid

@@ -1746,6 +1746,26 @@ html.lite #bkRd .rrail,html.lite #bkRd .rbody:after,#bkRd .rrail,#bkRd .rbody:af
 
 #landBooks .pg2 .sc>b{font-size:14px}#landBooks .pg2 .sc>small{margin-bottom:10px}#landBooks .pg2 .buy{margin-top:auto}
 #landBooks .pfi{width:96px;height:126px;border-radius:8px 22px 8px 8px;background:#fff;border:1px solid #e2e8f0;border-top:16px solid #dc2626;color:#dc2626;font-weight:900;font-size:22px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:16px;box-shadow:0 10px 18px rgba(0,0,0,.18);margin-bottom:6px}
+
+/* UPaisa payment sheet */
+html.payon,html.payon body{overflow:hidden!important}html.payon #nbBar{display:none!important}
+#payS{position:fixed;inset:0;z-index:2147483001;display:flex;align-items:flex-end;justify-content:center;font-family:"Plus Jakarta Sans",system-ui,sans-serif}
+#payS .pb{position:absolute;inset:0;background:rgba(15,23,42,.6)}
+#payS .pp{position:relative;width:100%;max-width:480px;max-height:92vh;overflow:auto;background:#fffdf7;border-radius:26px 26px 0 0;padding:20px 18px calc(22px + env(safe-area-inset-bottom,0px));border-top:4px solid #16a34a;animation:payUp .3s cubic-bezier(.22,.8,.24,1);color:#0f172a;text-align:left}
+@keyframes payUp{from{transform:translateY(100%)}to{transform:none}}
+#payS .px{position:absolute;right:14px;top:14px;width:38px;height:38px;border-radius:50%;border:0;background:#f1f5f9;font-size:16px;cursor:pointer}
+#payS .ph{display:flex;align-items:center;gap:12px;margin-bottom:14px}#payS .pl{width:50px;height:50px;border-radius:14px;background:linear-gradient(135deg,#7e22ce,#16a34a);color:#fff;font-weight:900;font-size:26px;display:flex;align-items:center;justify-content:center}
+#payS .ph small{display:block;font-size:11px;font-weight:800;color:#64748b;letter-spacing:.12em}#payS .ph b{font-size:22px;font-weight:900}
+#payS .pi{display:flex;justify-content:space-between;align-items:center;background:#f8fafc;border:1px solid #e2e8f0;border-radius:14px;padding:12px 14px;font-weight:700;font-size:14px}#payS .pi b{font-size:20px;color:#166534}
+#payS .pn{margin:12px 0;text-align:center;background:linear-gradient(135deg,#ecfdf5,#f0fdf4);border:2px dashed #16a34a;border-radius:16px;padding:14px}
+#payS .pn small{display:block;font-size:12.5px;color:#475569;font-weight:700}#payS .pn b{display:block;font-size:30px;letter-spacing:.06em;font-weight:900;margin:4px 0 8px;font-variant-numeric:tabular-nums}
+#payS .pcp{border:0;border-radius:99px;background:#16a34a;color:#fff;font-weight:800;font-size:14px;padding:9px 18px;cursor:pointer}
+#payS .ps{margin:6px 0 10px;padding-left:22px;font-size:14px;line-height:1.6}#payS .ps li{margin:4px 0}
+#payS .pt{background:#fef9c3;border-radius:12px;padding:10px 12px;font-size:13px;line-height:1.5;margin-bottom:12px}
+#payS .pf{background:#f8fafc;border:1px solid #e2e8f0;border-radius:16px;padding:12px;margin-bottom:12px}#payS .pf b{display:block;font-size:14px;margin-bottom:8px}#payS .pf input{display:block;width:100%;height:42px;border:1px solid #cbd5e1;border-radius:12px;padding:0 12px;margin-bottom:8px;font-size:14.5px;font-family:inherit;background:#fff;color:#0f172a}html.dark #payS .pf{background:#111c33;border-color:#1e293b}html.dark #payS .pf input{background:#0f172a;color:#f1f5f9;border-color:#334155}
+#payS .pu{display:block;margin-bottom:10px;text-align:center;border-radius:16px;padding:14px;font-weight:900;font-size:16px;color:#fff;background:linear-gradient(120deg,#166534,#22c55e);cursor:pointer}#payS .pmsg{font-size:13.5px;margin:0 0 10px;text-align:center;font-weight:700}#payS .pmsg.ok{color:#166534}#payS .pmsg.bad{color:#b91c1c}
+#payS .pg{display:block;width:100%;border:0;border-radius:16px;padding:11px;font-weight:800;font-size:14px;color:#2b1d02;background:#fef3c7;cursor:pointer}
+html.dark #payS .pp{background:#0f172a;color:#f1f5f9}html.dark #payS .pi{background:#111c33;border-color:#1e293b}html.dark #payS .pn{background:#052e16}html.dark #payS .pn small{color:#cbd5e1}html.dark #payS .pt{background:#3b2a05;color:#fde68a}html.dark #payS .px{background:#1e293b;color:#fff}
 </style>
 <script>
 (function(){function init(){
@@ -1881,6 +1901,34 @@ html.lite #bkRd .rrail,html.lite #bkRd .rbody:after,#bkRd .rrail,#bkRd .rbody:af
   document.addEventListener('contextmenu',function(e){if(RD&&e.target.closest('#bkRd'))e.preventDefault()});
   var rqT=null;document.addEventListener('input',function(e){if(!RD||!e.target.closest||!e.target.closest('#bkRd .rq input'))return;RD.o.querySelector('.rql').classList.remove('min');clearTimeout(rqT);var v=e.target.value;rqT=setTimeout(function(){rdSearch(v)},300)});
   document.addEventListener('keydown',function(e){if(!RD||!e.target.closest||!e.target.closest('#bkRd .rq input'))return;if(e.key==='Enter'){e.preventDefault();clearTimeout(rqT);if(RD.hits&&RD.hits.length){RD.o.querySelector('.rql').classList.add('min');rdHit(RD.hi+1)}else rdSearch(e.target.value);try{e.target.blur()}catch(x){}}});
+
+  /* payment page: UPaisa transfer steps for the admin's number */
+  var PAYNO='03354148160';
+  function showPay(item,price){var o=document.getElementById('payS');if(o)o.remove();o=document.createElement('div');o.id='payS';
+    var em=String(window.__acEmail||'').trim();
+    o.innerHTML='<div class="pb" data-pc="1"></div><div class="pp"><button type="button" class="px" data-pc="1" aria-label="Close">✕</button>'+
+      '<div class="ph"><span class="pl">U</span><div><small>PAY WITH</small><b>UPaisa</b></div></div>'+
+      '<div class="pi"><span>'+item+'</span><b>Rs '+price+'</b></div>'+
+      '<div class="pn"><small>Send to this UPaisa number</small><b>'+PAYNO.replace(/(\d{4})(\d{7})/,'$1 $2')+'</b><button type="button" class="pcp" data-pcopy="1">📋 Copy number</button></div>'+
+      '<ol class="ps"><li>Open the <b>UPaisa app</b> (or dial <b>*786#</b>).</li><li>Tap <b>Send Money</b> → <b>UPaisa / Mobile Account</b>.</li><li>Enter the number <b>'+PAYNO+'</b>.</li><li>Enter the amount <b>Rs '+price+'</b> and confirm with your PIN.</li><li>Take a <b>screenshot</b> of the payment.</li><li>Fill <b>your details</b> below, then tap <b>Upload payment screenshot</b>. Both go straight to the admin.</li></ol>'+
+      '<div class="pt">✅ The admin will open <b>'+item+'</b> for you. Close and open the app again to see it.</div>'+
+      '<div class="pf"><b>Your details</b>'+[['pname','Full name','text',''],['pmail','Email','email',em],['pqual','Qualification (e.g. FSc, BS)','text',''],['pphone','Contact number (e.g. 03xx xxxxxxx)','tel',''],['pcity','City','text',''],['pcourse','Course applying for (e.g. PMA 159)','text','']].map(function(f){return '<input id="'+f[0]+'" type="'+f[2]+'" placeholder="'+f[1]+'" value="'+String(f[3]).replace(/"/g,'')+'" autocomplete="off">'}).join('')+'</div>'+'<label class="pu"><input type="file" accept="image/*" data-pup="1" hidden><span>📤 Upload payment screenshot</span></label><div class="pmsg"></div>'+'<button type="button" class="pg" data-psoc="1">📩 Or send it to admin on TikTok</button></div>';o.__item=item;o.__price=price;
+    document.body.appendChild(o);document.documentElement.classList.add('payon');try{history.pushState({n:1,pay:1},'')}catch(e){}}
+  function closePay(){var o=document.getElementById('payS');if(!o)return false;o.remove();document.documentElement.classList.remove('payon');return true}
+  document.addEventListener('click',function(e){var t=e.target;if(!t.closest||!t.closest('#payS'))return;
+    if(t.closest('[data-pc]')){if(history.state&&history.state.pay)history.back();else closePay();return}
+    var c=t.closest('[data-pcopy]');if(c){var done=function(){c.textContent='✓ Copied';setTimeout(function(){c.textContent='📋 Copy number'},2000)};
+      try{navigator.clipboard.writeText(PAYNO).then(done,function(){fb()})}catch(x){fb()}
+      function fb(){var i=document.createElement('textarea');i.value=PAYNO;document.body.appendChild(i);i.select();try{document.execCommand('copy');done()}catch(y){}i.remove()}return}
+    if(t.closest('[data-psoc]')){closePay();try{window.__nbTap&&window.__nbTap('soc')}catch(x){}}});
+
+  document.addEventListener('change',function(e){var t=e.target;if(!t||!t.getAttribute||!t.getAttribute('data-pup'))return;var o=document.getElementById('payS'),m=o.querySelector('.pmsg'),f=t.files&&t.files[0];if(!f)return;
+    var V=function(i){return String((o.querySelector('#'+i)||{}).value||'').trim().slice(0,120)},info={name:V('pname'),mail:V('pmail'),qual:V('pqual'),phone:V('pphone'),city:V('pcity'),course:V('pcourse')};
+    if(!info.name||!info.phone||!info.qual){m.className='pmsg bad';m.textContent='Please fill your name, qualification and contact number first.';t.value='';return}
+    m.className='pmsg';m.textContent='Uploading…';var rd=new FileReader();rd.onload=function(){var im=new Image();im.onload=function(){var k=Math.min(1,900/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=Math.round(im.width*k);c.height=Math.round(im.height*k);c.getContext('2d').drawImage(im,0,0,c.width,c.height);
+      var q=.7,d=c.toDataURL('image/jpeg',q);while(d.length>850000&&q>.3){q-=.1;d=c.toDataURL('image/jpeg',q)}
+      if(!window.__acPayProof){m.className='pmsg bad';m.textContent='Please update the app and try again.';return}
+      window.__acPayProof({item:o.__item,price:o.__price,img:d,name:info.name,mail:info.mail,qual:info.qual,phone:info.phone,city:info.city,course:info.course}).then(function(){m.className='pmsg ok';m.innerHTML='✅ Screenshot sent to the admin. You will get access soon. Close and open the app again later.'}).catch(function(x){m.className='pmsg bad';m.textContent='Could not upload ('+(x&&x.code||x&&x.message||'error')+'). Please send it on TikTok instead.'})};im.src=rd.result};rd.readAsDataURL(f)});
   function home(){L.innerHTML='<div class="lh"><div class="emb"><i class="fa-solid fa-shield-halved"></i></div><div class="kick">PMA Preparation</div><h2>Assalam o Alaikum</h2><p>Choose your preparation</p><div class="rule"></div></div>'+
     card('pma','lg1','fa-graduation-cap','01','Initial PMA Preparation','All categories: 1000 MCQs, PMA 159, Hakeem, Forces Academy, Pro Genius, Verbal and Non Verbal, Academic and more.')+
     card('int','lg2','fa-user-tie','02','Initial Interview Preparation','Mock interview, question bank, real experiences, essays and tips.')+
@@ -1899,10 +1947,10 @@ html.lite #bkRd .rrail,html.lite #bkRd .rbody:after,#bkRd .rrail,#bkRd .rbody:af
   function atMenu(){return !v.classList.contains('hidden')&&typeof curSec!=='undefined'&&curSec===null}
   function show(){if(ST==='home')locks();document.documentElement.classList.toggle('landon',ST!=='pma');document.documentElement.classList.toggle('pmaon',ST==='pma'&&atMenu())}
   function go(k,push){if(k!=='home'&&!isOpen(k)){lockMsg();k='home'}ST=k;if(k==='home'){home();locks()}else if(k==='books'){if(!window.__acAdmin){go('home');return}booksPage()}else if(k==='issb'&&window.__issbRender){L.innerHTML='<button type="button" class="lback" data-go="home"><i class="fa-solid fa-arrow-left"></i> Main page</button><div id="issbHost"></div>';window.__issbRender(document.getElementById('issbHost'))}else if(k==='int'&&window.__intRender){L.innerHTML='<button type="button" class="lback" data-go="home"><i class="fa-solid fa-arrow-left"></i> Main page</button><div id="intHost"></div>';window.__intRender(document.getElementById('intHost'))}else if(k!=='pma')soon(k);show();try{window.__backSync&&window.__backSync()}catch(e){}if(push)try{history.pushState({n:1},'')}catch(e){}window.scrollTo(0,0)}
-  L.addEventListener('click',function(e){var rdb=e.target.closest('[data-read]');if(rdb){openReader(+rdb.getAttribute('data-read'));return}if(e.target.closest('[data-buy]')){lockMsg('<b>Locked.</b> To get this PDF, message the admin on <b>TikTok @journeytopma</b>.<span class="lmgo">Tap here to open Social</span>');return}var t=e.target.closest('[data-go]');if(!t)return;var k=t.getAttribute('data-go');if(t.classList.contains('cdon')){lockMsg('<b>Opening soon.</b> The Initial Interview section opens when the timer ends.');return}if(t.classList.contains('locked')&&t.classList.contains('buyon')&&t.getAttribute('data-go')==='pma'){lockMsg('<b>Initial PMA Preparation: Rs 300.</b> To buy, message the admin on <b>TikTok @journeytopma</b>.<span class="lmgo">Tap here to open Social</span>');return}if(t.classList.contains('locked')&&t.classList.contains('buyon')){lockMsg('<b>Initial Interview: Rs 200.</b> To buy, message the admin on <b>TikTok @journeytopma</b>.<span class="lmgo">Tap here to open Social</span>');return}if(t.classList.contains('locked')){lockMsg();return}if(k==='home'){if(history.state&&history.state.n)history.back();else go('home')}else go(k,true)});
+  L.addEventListener('click',function(e){var rdb=e.target.closest('[data-read]');if(rdb){openReader(+rdb.getAttribute('data-read'));return}if(e.target.closest('[data-buy]')){lockMsg('<b>Locked.</b> To get this PDF, message the admin on <b>TikTok @journeytopma</b>.<span class="lmgo">Tap here to open Social</span>');return}var t=e.target.closest('[data-go]');if(!t)return;var k=t.getAttribute('data-go');if(t.classList.contains('cdon')){lockMsg('<b>Opening soon.</b> The Initial Interview section opens when the timer ends.');return}if(t.classList.contains('locked')&&t.classList.contains('buyon')&&t.getAttribute('data-go')==='pma'){showPay('Initial PMA Preparation',300);return}if(t.classList.contains('locked')&&t.classList.contains('buyon')){showPay('Initial Interview Preparation',200);return}if(t.classList.contains('locked')){lockMsg();return}if(k==='home'){if(history.state&&history.state.n)history.back();else go('home')}else go(k,true)});
   bk.addEventListener('click',function(){if(history.state&&history.state.n)history.back();else go('home')});
   /* phone Back button / header Back: from the categories or a 'coming soon' page go back to the main page */
-  window.__landBack=function(){if(closeReader())return true;if(ST==='int'&&window.__intBack&&window.__intBack())return true;if(ST==='issb'&&window.__issbBack&&window.__issbBack())return true;if(atMenu()&&ST!=='home'){go('home');return true}return false};
+  window.__landBack=function(){if(closePay())return true;if(closeReader())return true;if(ST==='int'&&window.__intBack&&window.__intBack())return true;if(ST==='issb'&&window.__issbBack&&window.__issbBack())return true;if(atMenu()&&ST!=='home'){go('home');return true}return false};
   window.__landAtHome=function(){return ST==='home'};window.__landHome=function(){go('home')};
   setInterval(show,400);
   go('home');
@@ -3274,6 +3322,7 @@ html.dark #sec-menu h2,html.dark .dash .hi h3{filter:drop-shadow(0 0 16px rgba(1
   /* ---- entering the app ---- */
   function getKey(id){return FB.getDoc(FB.doc(fs,'catKeys',id)).then(function(d){if(!d.exists())throw new Error('nokey');return d.data().pw})}
   window.__acGetKey=function(id){return getKey(id)};
+  window.__acPayProof=function(d){if(!fs||!cur)return Promise.reject(new Error('login'));d.email=cur.email||'';d.uid=cur.uid;d.t=FB.serverTimestamp();return FB.setDoc(FB.doc(fs,'payproofs',cur.uid),d)};
   function enter(user,cats,offline){window.__acCats=(cats||[]).slice();try{window.__acEmail=(user&&user.email)||''}catch(e){}window.__acAdmin=!!(user&&(user.email||'').toLowerCase()===ADMIN);
     if(!offline)ls('ac_state',JSON.stringify({uid:user&&user.uid,name:nm(user),cats:cats,status:'approved',t:Date.now()}));
     document.documentElement.classList.add('acok');document.documentElement.classList.toggle('acadmin',!!window.__acAdmin);A.classList.add('hide');showUser(nm(user)||'');try{cmSetup(user,(user.email||'').toLowerCase()===ADMIN)}catch(e){}try{onSetup(user)}catch(e){}
