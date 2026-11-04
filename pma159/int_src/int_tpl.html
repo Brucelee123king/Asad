@@ -1,0 +1,137 @@
+<style id="intCss">
+/* Initial Interview page (main page card 02): hub of 6 sections in the Initial PMA category style + fun practice modes */
+#intP{--b:#fff;--t:#0f172a;--m:#64748b;--l:#e2e8f0;font-family:"Plus Jakarta Sans",system-ui,sans-serif;color:var(--t);text-align:left;padding-bottom:30px}
+html.dark #intP{--b:#111c33;--t:#f1f5f9;--m:#94a3b8;--l:#1e293b}
+#intP button{font:inherit;color:inherit;cursor:pointer;text-align:left}
+#intP .ir{display:flex;flex-direction:column;align-items:center;margin:4px 0 14px}
+#intP .ir div{background:linear-gradient(135deg,#2e4a1e,#4d7c2a);color:#f1d27a;font-weight:900;font-size:18px;padding:11px 28px;clip-path:polygon(0 0,100% 0,94% 50%,100% 100%,0 100%,6% 50%);letter-spacing:.04em;white-space:nowrap}
+#intP .ir p{margin:8px 0 0;color:var(--m);font-size:13px;text-align:center}
+#intP .rd{background:var(--b);border:1px solid var(--l);border-radius:18px;padding:12px 14px;margin-bottom:14px;box-shadow:0 6px 16px rgba(15,23,42,.06)}
+#intP .rd b{font-size:14px}#intP .rd small{color:var(--m);font-size:12px;float:right;font-weight:800}
+#intP .bar{height:10px;border-radius:99px;background:var(--l);overflow:hidden;margin-top:8px}#intP .bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#16a34a,#84cc16);transition:width .4s}
+#intP .hub{display:grid;grid-template-columns:1fr;gap:14px}
+#intP .hc{display:flex;flex-direction:column;gap:6px;color:#fff;border-radius:18px;padding:18px;border:3px solid #f1d27a;box-shadow:0 0 0 2px rgba(201,164,58,.4),0 10px 24px rgba(0,0,0,.15);position:relative;overflow:hidden;width:100%}
+#intP .hc:active{transform:scale(.985)}
+#intP .hc .t{display:flex;align-items:center;gap:12px;font-size:20px;font-weight:800}
+#intP .hc .e{flex:none;width:46px;height:46px;border-radius:50%;background:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:24px;box-shadow:0 0 0 3px rgba(255,255,255,.4)}
+#intP .hc .s{font-size:13.5px;opacity:.92}#intP .hc .n{font-size:12px;font-weight:700;opacity:.85}#intP .hc .o{font-size:14px;font-weight:800;margin-top:2px}
+#intP .hc .tag{position:absolute;right:14px;top:14px;background:#f1d27a;color:#3b2a05;font-size:10.5px;font-weight:900;border-radius:99px;padding:3px 9px;letter-spacing:.06em}
+#intP .bk{display:inline-flex;align-items:center;gap:6px;background:var(--b);border:1px solid var(--l);border-radius:99px;padding:8px 14px;font-weight:800;margin-bottom:12px;font-size:14px}
+#intP .hd{border-radius:18px;padding:16px;color:#fff;margin-bottom:12px;border:3px solid #f1d27a}
+#intP .hd h3{margin:0;font-size:20px;font-weight:800}#intP .hd p{margin:4px 0 0;font-size:13px;opacity:.92}
+#intP .cat{background:var(--b);border:1px solid var(--l);border-radius:16px;margin-bottom:10px;overflow:hidden}
+#intP .cat>button{display:flex;align-items:center;gap:10px;width:100%;padding:13px 14px;background:none;border:0}
+#intP .cat>button b{flex:1;font-size:15px}#intP .cat>button small{color:var(--m);font-size:12px;font-weight:800}
+#intP .ring{--p:0;width:34px;height:34px;border-radius:50%;background:conic-gradient(#16a34a calc(var(--p)*1%),var(--l) 0);display:flex;align-items:center;justify-content:center;flex:none}
+#intP .ring span{width:26px;height:26px;border-radius:50%;background:var(--b);display:flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:900}
+#intP .cat .ql{display:none;padding:0 10px 10px}#intP .cat.open .ql{display:block}
+#intP .q{display:flex;gap:10px;align-items:flex-start;padding:10px 6px;border-top:1px dashed var(--l)}
+#intP .q .ck{flex:none;width:28px;height:28px;border-radius:9px;border:2px solid #94a3b8;background:none;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;font-size:15px;padding:0}
+#intP .q.ok .ck{background:#16a34a;border-color:#16a34a}
+#intP .q .qt{flex:1;font-size:14px;line-height:1.45}#intP .q.ok .qt{color:var(--m)}
+#intP .q .hn{display:block;margin-top:6px;font-size:12.5px;color:#166534;background:#dcfce7;border-radius:10px;padding:7px 9px}html.dark #intP .q .hn{background:#14321f;color:#bbf7d0}
+#intP .hn[hidden]{display:none!important}
+#intP .q .hb{display:inline-block;margin-top:5px;font-size:11.5px;font-weight:800;color:#4f46e5;background:none;border:0;padding:0}html.dark #intP .q .hb{color:#a5b4fc}
+#intP .xp{background:var(--b);border:1px solid var(--l);border-radius:16px;padding:14px;margin-bottom:12px;box-shadow:0 6px 16px rgba(15,23,42,.06)}
+#intP .xp .h{display:flex;justify-content:space-between;gap:8px;align-items:center}#intP .xp .h b{font-size:15px}
+#intP .xp .r{font-size:11px;font-weight:800;border-radius:99px;padding:3px 9px;white-space:nowrap}
+#intP .xp .r.y{background:#dcfce7;color:#166534}#intP .xp .r.n{background:#fee2e2;color:#991b1b}#intP .xp .r.u{background:#f1f5f9;color:#64748b}
+#intP .xp p{margin:8px 0;font-size:13.5px;line-height:1.55;color:var(--m)}
+#intP .xp h5{margin:10px 0 4px;font-size:12.5px;letter-spacing:.04em;color:#a16207}
+#intP .xp ul{margin:0;padding-left:20px;font-size:13.5px;line-height:1.5}#intP .xp li{margin:2px 0}
+#intP .es{display:flex;gap:10px;align-items:center;background:var(--b);border:1px solid var(--l);border-radius:14px;padding:11px 12px;margin-bottom:8px;width:100%}
+#intP .es i{font-style:normal;flex:none;width:28px;height:28px;border-radius:50%;background:#fef3c7;color:#92400e;font-weight:900;font-size:12px;display:flex;align-items:center;justify-content:center}
+#intP .es span{flex:1;font-size:14px}
+#intP .big{display:block;width:100%;text-align:center!important;font-weight:900!important;font-size:16px;border:0;border-radius:16px;padding:14px;color:#2b1d02!important;background:linear-gradient(120deg,#b8860b,#ffe9a0 50%,#d4a017);box-shadow:0 8px 20px rgba(184,134,11,.3);margin-bottom:12px}
+#intP .big.g{color:#fff!important;background:linear-gradient(120deg,#166534,#22c55e)}#intP .big.r{color:#fff!important;background:linear-gradient(120deg,#9f1239,#e11d48)}
+#intP .row{display:flex;gap:10px}#intP .row .big{flex:1}
+#intP .mk{background:var(--b);border:1px solid var(--l);border-radius:22px;padding:20px 16px;text-align:center;margin-bottom:12px;box-shadow:0 10px 24px rgba(15,23,42,.08)}
+#intP .mk .c{font-size:12px;font-weight:800;color:#a16207;letter-spacing:.08em}
+#intP .mk .qq{font-size:20px;font-weight:800;margin:14px 0;line-height:1.4}
+#intP .mk .ct{display:inline-block;font-size:11.5px;font-weight:800;background:#ede9fe;color:#5b21b6;border-radius:99px;padding:3px 10px}
+#intP .mk .tm{font-size:34px;font-weight:900;color:#16a34a;margin:6px 0}#intP .mk .tm.w{color:#dc2626}
+#intP .mk .hn{display:block;margin-top:10px;font-size:13.5px;color:#166534;background:#dcfce7;border-radius:12px;padding:10px;text-align:left}
+#intP .dots{display:flex;gap:5px;justify-content:center;margin-bottom:12px}#intP .dots i{width:9px;height:9px;border-radius:50%;background:var(--l)}#intP .dots i.d{background:#16a34a}#intP .dots i.s{background:#f59e0b}#intP .dots i.c{background:#4f46e5;transform:scale(1.3)}
+#intP .tg{background:var(--b);border:1px solid var(--l);border-radius:16px;padding:12px 14px;margin-bottom:12px}
+#intP .tg h4{margin:0 0 6px;font-size:15px}
+#intP .tp{display:flex;gap:10px;align-items:flex-start;width:100%;background:none;border:0;padding:8px 0;border-top:1px dashed var(--l);font-size:14px;line-height:1.45}
+#intP .tp .ck{flex:none;width:24px;height:24px;border-radius:7px;border:2px solid #94a3b8;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:13px}
+#intP .tp.ok .ck{background:#16a34a;border-color:#16a34a}#intP .tp.ok span{color:var(--m);text-decoration:line-through}
+#intP .srch{width:100%;height:44px;border-radius:99px;border:1px solid var(--l);background:var(--b);color:var(--t);padding:0 16px;font-size:14.5px;margin-bottom:12px;font-family:inherit}
+#intP .done{font-size:44px;text-align:center}
+</style>
+<script>
+(function(){
+  var D=@@DATA@@;
+  var CATS=Object.keys(D.questions).filter(function(k){return D.questions[k].length});
+  var CI={'About you':'🙋','Family':'👨‍👩‍👦','Education':'🎓','Army & PMA':'🪖','Pakistan & GK':'🇵🇰','Current affairs':'📰','Islamiat':'🕌','Hobbies & sports':'⚽','Situation & reasoning':'🧠','Other':'💬'};
+  var ALLQ=[];CATS.forEach(function(c){D.questions[c].forEach(function(q){ALLQ.push({q:q,c:c})})});
+  var LS='intv_ok',TS='intv_tip',ok={},tok={},host=null,view='hub',sub=null,mk=null,tmr=null;
+  function ld(){try{ok=JSON.parse(localStorage.getItem(LS)||'{}')}catch(e){ok={}}try{tok=JSON.parse(localStorage.getItem(TS)||'{}')}catch(e){tok={}}}
+  function sv(){try{localStorage.setItem(LS,JSON.stringify(ok));localStorage.setItem(TS,JSON.stringify(tok))}catch(e){}}
+  function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function hid(s){var h=0;for(var i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))|0;return 'q'+(h>>>0).toString(36)}
+  function readyPct(){var n=ALLQ.filter(function(x){return ok[hid(x.q)]}).length;return Math.round(100*n/Math.max(1,ALLQ.length))}
+  var TIPN=0;Object.keys(D.tips).forEach(function(k){TIPN+=D.tips[k].length});
+  var CARDS=[
+    ['mock','🎤','Mock Interview','Sit in the real room: one question at a time, with a timer.','linear-gradient(120deg,#7f1d1d,#dc2626 55%,#f97316)','10 random questions','FUN'],
+    ['qb','❓','Question Bank','Every question asked, in groups. Tick the ones you can answer.','linear-gradient(120deg,#1e3a8a,#2563eb 55%,#38bdf8)',ALLQ.length+' questions',''],
+    ['ans','💡','Model Answers','How to answer the most common questions.','linear-gradient(120deg,#14532d,#16a34a 55%,#84cc16)',Object.keys(D.answers).length+' answers',''],
+    ['xp','📖','Real Experiences','What happened in real candidates\' interviews.','linear-gradient(120deg,#4c1d95,#7c3aed 55%,#c084fc)',D.experiences.length+' experiences',''],
+    ['es','✍️','Essay Topics','Topics asked in the essay. Try the random topic challenge.','linear-gradient(120deg,#78350f,#d97706 55%,#fbbf24)',D.essays.length+' topics','FUN'],
+    ['tips','✅','Tips & Checklist','Before, inside the room and while answering. Tick as you go.','linear-gradient(120deg,#134e4a,#0d9488 55%,#5eead4)',TIPN+' tips','']];
+  function hub(){var p=readyPct();
+    return '<div class="ir"><div>⭐ INITIAL INTERVIEW ⭐</div><p>Prepare step by step. Your progress is saved on this phone.</p></div>'+
+      '<div class="rd"><b>🎯 Your interview readiness</b><small>'+p+'%</small><div class="bar"><i style="width:'+p+'%"></i></div></div>'+
+      '<div class="hub">'+CARDS.map(function(c){return '<button type="button" class="hc" data-iv="'+c[0]+'" style="background:'+c[4]+'">'+(c[6]?'<span class="tag">'+c[6]+'</span>':'')+'<span class="t"><span class="e">'+c[1]+'</span>'+c[2]+'</span><span class="s">'+c[3]+'</span><span class="n">'+c[5]+'</span><span class="o">Open →</span></button>'}).join('')+'</div>'}
+  function head(c){return '<button type="button" class="bk" data-ib="1">← Back</button><div class="hd" style="background:'+c[4]+'"><h3>'+c[1]+' '+c[2]+'</h3><p>'+c[3]+'</p></div>'}
+  function card(k){return CARDS.filter(function(c){return c[0]===k})[0]}
+  function qrow(q,withHint){var id=hid(q),h=D.answers[q];return '<div class="q'+(ok[id]?' ok':'')+'"><button type="button" class="ck" data-qk="'+id+'">'+(ok[id]?'✓':'')+'</button><div class="qt">'+esc(q)+(h?(withHint?'<span class="hn">💡 '+esc(h)+'</span>':'<br><button type="button" class="hb" data-hn="1">💡 Show answer tip</button><span class="hn" hidden>💡 '+esc(h)+'</span>'):'')+'</div></div>'}
+  function qb(){var f=(sub||'').toLowerCase();
+    return head(card('qb'))+'<input class="srch" type="search" placeholder="🔍 Search a question" value="'+esc(sub||'')+'" data-is="1">'+
+      CATS.map(function(c){var L=D.questions[c].filter(function(q){return !f||q.toLowerCase().indexOf(f)>-1});if(!L.length)return '';var n=L.filter(function(q){return ok[hid(q)]}).length,p=Math.round(100*n/L.length);
+        return '<div class="cat'+(f?' open':'')+'"><button type="button" data-ic="1"><span class="ring" style="--p:'+p+'"><span>'+p+'%</span></span><span style="font-size:20px">'+(CI[c]||'💬')+'</span><b>'+esc(c)+'</b><small>'+n+'/'+L.length+'</small></button><div class="ql">'+L.map(function(q){return qrow(q,false)}).join('')+'</div></div>'}).join('')}
+  function ans(){return head(card('ans'))+'<div class="cat open"><div class="ql" style="display:block">'+Object.keys(D.answers).map(function(q){return qrow(q,true)}).join('')+'</div></div>'}
+  function xp(){return head(card('xp'))+D.experiences.map(function(e){var r=/^rec/i.test(e.result)?'y':/^not/i.test(e.result)?'n':'u';
+    return '<div class="xp"><div class="h"><b>🪖 '+esc(e.title)+'</b><span class="r '+r+'">'+(r==='y'?'✅ Recommended':r==='n'?'❌ Not recommended':'• Result not shared')+'</span></div><p>'+esc(e.summary)+'</p>'+
+      (e.asked&&e.asked.length?'<h5>QUESTIONS ASKED</h5><ul>'+e.asked.map(function(q){return '<li>'+esc(q)+'</li>'}).join('')+'</ul>':'')+
+      (e.tips&&e.tips.length?'<h5>TIPS</h5><ul>'+e.tips.map(function(q){return '<li>'+esc(q)+'</li>'}).join('')+'</ul>':'')+'</div>'}).join('')}
+  function es(){var s=sub;
+    var top=s?'<div class="mk"><div class="c">YOUR TOPIC</div><div class="qq">'+esc(s.t)+'</div><div class="tm'+(s.left<60?' w':'')+'" id="ivTm">'+fmt(s.left)+'</div><p style="color:var(--m);font-size:12.5px;margin:4px 0 0">Write: introduction → 3 points → conclusion</p></div><div class="row"><button type="button" class="big g" data-er="1">🎲 New topic</button><button type="button" class="big r" data-es="1">⏹ Stop</button></div>'
+      :'<button type="button" class="big" data-er="1">🎲 Give me a random topic (15-minute challenge)</button>';
+    return head(card('es'))+top+D.essays.map(function(t,i){return '<button type="button" class="es" data-et="'+i+'"><i>'+(i+1)+'</i><span>'+esc(t)+'</span></button>'}).join('')}
+  function tips(){return head(card('tips'))+Object.keys(D.tips).map(function(g){return '<div class="tg"><h4>'+esc(g)+'</h4>'+D.tips[g].map(function(t){var id=hid(g+t);return '<button type="button" class="tp'+(tok[id]?' ok':'')+'" data-tk="'+id+'"><span class="ck">'+(tok[id]?'✓':'')+'</span><span>'+esc(t)+'</span></button>'}).join('')+'</div>'}).join('')}
+  function fmt(s){s=Math.max(0,s|0);return Math.floor(s/60)+':'+('0'+s%60).slice(-2)}
+  function newMock(){var pool=ALLQ.slice(),pick=[];var intro=pool.filter(function(x){return /introduce yourself|tell me about yourself/i.test(x.q)})[0];if(intro){pick.push(intro);pool.splice(pool.indexOf(intro),1)}
+    while(pick.length<10&&pool.length){var i=Math.floor(Math.random()*pool.length);pick.push(pool.splice(i,1)[0])}mk={qs:pick,i:0,res:[],left:45,hint:false}}
+  function mock(){if(!mk)newMock();var c=card('mock');
+    if(mk.i>=mk.qs.length){var a=mk.res.filter(function(x){return x==='d'}).length;
+      return head(c)+'<div class="mk"><div class="done">'+(a>=8?'🏆':a>=5?'👍':'💪')+'</div><div class="qq">You answered '+a+' of '+mk.qs.length+'</div><p style="color:var(--m);font-size:13.5px">'+(a>=8?'Excellent! You are ready. Keep practising daily.':a>=5?'Good! Practise the skipped questions in the Question Bank.':'Keep going. Read Model Answers, then try again.')+'</p></div><button type="button" class="big" data-mn="1">🔁 New mock interview</button>'}
+    var x=mk.qs[mk.i],h=D.answers[x.q];
+    return head(c)+'<div class="dots">'+mk.qs.map(function(_,j){return '<i class="'+(j<mk.i?(mk.res[j]==='d'?'d':'s'):j===mk.i?'c':'')+'"></i>'}).join('')+'</div>'+
+      '<div class="mk"><div class="c">QUESTION '+(mk.i+1)+' OF '+mk.qs.length+'</div><div class="qq">"'+esc(x.q)+'"</div><span class="ct">'+(CI[x.c]||'💬')+' '+esc(x.c)+'</span><div class="tm'+(mk.left<=10?' w':'')+'" id="ivTm">'+fmt(mk.left)+'</div><p style="color:var(--m);font-size:12.5px;margin:0">Answer out loud, like in the real room</p>'+(h?(mk.hint?'<span class="hn">💡 '+esc(h)+'</span>':'<br><button type="button" class="hb" data-mh="1" style="font-size:13px;font-weight:800;color:#4f46e5;background:none;border:0">💡 Show answer tip</button>'):'')+'</div>'+
+      '<div class="row"><button type="button" class="big g" data-ma="d">✓ I answered</button><button type="button" class="big r" data-ma="s">↷ Skip</button></div>'}
+  function tick(){clearInterval(tmr);tmr=null;if(view==='mock'&&mk&&mk.i<mk.qs.length){tmr=setInterval(function(){if(!host||view!=='mock'){clearInterval(tmr);return}mk.left--;var e=host.querySelector('#ivTm');if(e){e.textContent=fmt(mk.left);e.classList.toggle('w',mk.left<=10)}if(mk.left<=0){clearInterval(tmr)}},1000)}
+    if(view==='es'&&sub&&sub.t){tmr=setInterval(function(){if(!host||view!=='es'||!sub){clearInterval(tmr);return}sub.left--;var e=host.querySelector('#ivTm');if(e){e.textContent=fmt(sub.left);e.classList.toggle('w',sub.left<60)}if(sub.left<=0)clearInterval(tmr)},1000)}}
+  function draw(keep){if(!host)return;var y=window.scrollY;var lb=host.previousElementSibling;if(lb&&lb.classList&&lb.classList.contains('lback'))lb.style.display=view==='hub'?'':'none';host.innerHTML='<div id="intP">'+(view==='hub'?hub():view==='qb'?qb():view==='ans'?ans():view==='xp'?xp():view==='es'?es():view==='tips'?tips():mock())+'</div>';if(!keep)window.scrollTo(0,0);else window.scrollTo(0,y);tick()}
+  function go(v){view=v;sub=null;if(v==='mock')mk=null;draw();try{history.pushState({n:1,iv:1},'')}catch(e){}}
+  window.__intRender=function(el){ld();host=el;view='hub';sub=null;draw();
+    if(!el.__iv){el.__iv=1;el.addEventListener('click',onClick);el.addEventListener('input',function(e){if(e.target.getAttribute('data-is')&&view==='qb'){sub=e.target.value;var p=e.target.selectionStart;draw(true);var n=host.querySelector('[data-is]');if(n){n.focus();try{n.setSelectionRange(p,p)}catch(x){}}}})}};
+  window.__intBack=function(){if(!host||!document.getElementById('intP')||view==='hub')return false;view='hub';sub=null;draw();return true};
+  window.__intActive=function(){return !!(host&&document.getElementById('intP'))};
+  function onClick(e){var t=e.target;if(!document.getElementById('intP'))return;var b;
+    if((b=t.closest('[data-iv]'))){go(b.getAttribute('data-iv'));return}
+    if(t.closest('[data-ib]')){if(history.state&&history.state.iv)history.back();else{view='hub';draw()}return}
+    if((b=t.closest('[data-qk]'))){var id=b.getAttribute('data-qk');if(ok[id])delete ok[id];else ok[id]=1;sv();var r=b.closest('.q');r.classList.toggle('ok',!!ok[id]);b.textContent=ok[id]?'✓':'';var cat=b.closest('.cat');if(cat&&view==='qb'){var qs=cat.querySelectorAll('.q'),n=cat.querySelectorAll('.q.ok').length,p=Math.round(100*n/qs.length);var rg=cat.querySelector('.ring');rg.style.setProperty('--p',p);rg.querySelector('span').textContent=p+'%';cat.querySelector('small').textContent=n+'/'+qs.length}return}
+    if((b=t.closest('[data-hn]'))){var s=b.nextElementSibling;if(s)s.hidden=false;b.remove();return}
+    if((b=t.closest('[data-ic]'))){b.parentElement.classList.toggle('open');return}
+    if((b=t.closest('[data-tk]'))){var k=b.getAttribute('data-tk');if(tok[k])delete tok[k];else tok[k]=1;sv();b.classList.toggle('ok',!!tok[k]);b.querySelector('.ck').textContent=tok[k]?'✓':'';return}
+    if(t.closest('[data-er]')){var i=Math.floor(Math.random()*D.essays.length);sub={t:D.essays[i],left:900};draw();return}
+    if((b=t.closest('[data-et]'))){sub={t:D.essays[+b.getAttribute('data-et')],left:900};draw();return}
+    if(t.closest('[data-es]')){sub=null;draw();return}
+    if(t.closest('[data-mh]')){mk.hint=true;var y=window.scrollY;draw(true);return}
+    if((b=t.closest('[data-ma]'))){var a=b.getAttribute('data-ma');var x=mk.qs[mk.i];mk.res.push(a);if(a==='d'){ok[hid(x.q)]=1;sv()}mk.i++;mk.left=45;mk.hint=false;draw();return}
+    if(t.closest('[data-mn]')){mk=null;draw();return}
+  }
+})();
+</script>
