@@ -802,6 +802,10 @@ sub("function bootQuizApp() {\n            renderSelect(); renderPMA(); renderFA
 # login screen (glassy sign in / create account / continue as guest) and day-night mode
 _d = os.path.dirname(os.path.abspath(__file__))
 _blk = open(os.path.join(_d, 'theme_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'auth_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'seccolor_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'polish_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'backnav_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'land_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'drawer_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'navbar_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'features_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'range_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'nv_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'glass_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'd3_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'resume_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'testhome_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'results_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'home_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'cat_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'adm_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'int_block.html'), encoding='utf8').read() + open(os.path.join(_d, 'issb_block.html'), encoding='utf8').read()
+import sys as _s; _s.path.insert(0, _d)
+from lz_build import write_data as _lzw
+_cv = _lzw('covers', __import__('json').load(open(__import__('os').path.join(_d, 'lz_covers_src.json'))))
+_blk = _blk.replace('@@COVERS_V@@', _cv)
 import json as _j
 _imgs=_j.load(open(os.path.join(_d,'space_imgs.json')))
 for _k,_v in _imgs.items(): _blk=_blk.replace('{{IMG_'+_k+'}}','data:image/webp;base64,'+_v)

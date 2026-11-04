@@ -32,8 +32,8 @@ fetch(B+'shell.json?'+Date.now(),{cache:'no-store'}).then(function(r){return r.j
 if(!(j.v>cur)||!j.sig)return;
 return fetch(B+'shell.html?'+j.v,{cache:'no-store'}).then(function(r){return r.text()}).then(function(x){
  var mv=/var V=(\d+)/.exec(x);if(x.length<50000||x.indexOf('SHELLUPD')<0||!mv||+mv[1]!==j.v)return;
- return chk(x,j.sig).then(function(ok){if(ok){try{L.setItem('shell_html',x);L.setItem('shell_v',String(j.v));L.setItem('shell_try','0');ready=1;apply()}catch(e){try{L.removeItem('shell_html');L.removeItem('shell_v')}catch(e2){}}}})})}).catch(function(){}).then(function(){busy=0},function(){busy=0})}
-window.addEventListener('load',function(){setTimeout(function(){try{if(window.FB&&document.getElementById('auth'))L.setItem('shell_try','0')}catch(e){}},6000);
+ return chk(x,j.sig).then(function(ok){if(ok){var sv2=function(){L.setItem('shell_html',x);L.setItem('shell_v',String(j.v));L.setItem('shell_try','0');ready=1;apply()};try{sv2()}catch(e){try{L.removeItem('shell_html');for(var i=L.length-1;i>=0;i--){var kk=L.key(i);if(kk&&/^(lk_c_|cache_|tmp_|ai_)/.test(kk))L.removeItem(kk)}sv2()}catch(e2){try{L.removeItem('shell_html');L.removeItem('shell_v')}catch(e3){}}}}})})}).catch(function(){}).then(function(){busy=0},function(){busy=0})}
+window.addEventListener('load',function(){setTimeout(function(){try{if(document.getElementById('auth')||document.getElementById('mainLand'))L.setItem('shell_try','0')}catch(e){}},1500);
  setTimeout(check,600);setInterval(check,120000);document.addEventListener('visibilitychange',function(){if(!document.hidden)check()});window.addEventListener('online',check)});
 })();</script>"""
 h = hashlib.sha1((html + LOADER_T).encode('utf8')).hexdigest()[:12]
