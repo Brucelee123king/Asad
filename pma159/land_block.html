@@ -96,7 +96,7 @@ html.dark #landBooks .sc{background:#111c33;border-color:#a16207}html.dark #land
 
 /* book reader */
 html.bkrd,html.bkrd body{overflow:hidden!important}
-html.bkrd #nbBar,html.bkrd #landMsg{display:none!important}
+html.bkrd #nbBar,html.bkrd #landMsg{display:none!important}html.bkrd #satBar{background:#0b1220!important}
 #bkRd{position:fixed;inset:0;z-index:2147483000;background:#1e293b;display:flex;flex-direction:column;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
 #bkRd .rt{display:flex;align-items:center;gap:10px;padding:10px 12px;padding-top:calc(10px + max(var(--sat,0px),env(safe-area-inset-top,0px)));flex:none;background:#0f172a;color:#fff;border-bottom:2px solid #d4a017}
 #bkRd .rt b{flex:1;font-size:14px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -148,7 +148,7 @@ html.bkrd #nbBar,html.bkrd #landMsg{display:none!important}
 #bkRd .rp{border-radius:2px;box-shadow:0 8px 24px rgba(0,0,0,.45)}
 #bkRd .rp:not(.ok){background:linear-gradient(100deg,#f1f5f9 40%,#ffffff 50%,#f1f5f9 60%);background-size:200% 100%;animation:rdsh 1.2s linear infinite}@keyframes rdsh{to{background-position:-200% 0}}
 #bkRd .rz{left:50%;right:auto;transform:translateX(-50%);border-radius:99px;padding:5px;gap:4px;background:rgba(11,18,32,.92);box-shadow:0 10px 30px rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.1);flex-wrap:nowrap}
-#bkRd .rz button{min-width:42px;height:40px;border-radius:99px;background:transparent}#bkRd .rz button:active{background:rgba(255,255,255,.12)}
+#bkRd .rz button{min-width:42px;height:40px;border-radius:99px;background:transparent;white-space:nowrap}#bkRd .rz button:active{background:rgba(255,255,255,.12)}
 #bkRd.qon .rz{display:none}
 #bkRd .rhl{position:absolute;background:rgba(250,204,21,.38);border-radius:2px;pointer-events:none;z-index:2}#bkRd .rhl.on{background:rgba(249,115,22,.5);outline:2px solid #f97316}
 #bkRd .rq{position:absolute;left:0;right:0;top:0;z-index:6;display:flex;flex-direction:column;max-height:100%}#bkRd .rq[hidden]{display:none}
