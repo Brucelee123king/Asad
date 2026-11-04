@@ -213,7 +213,7 @@ document.addEventListener('click',function(e){var b=e.target.closest('button[dat
   if(a==='ok'){if(!cats.length&&!confirm('Nothing ticked. Approve anyway? (He will see nothing)'))return;job=FB.updateDoc(ref,{status:'approved',cats:cats})}
   else if(a==='block'){if(!confirm('Block this person?'))return;job=FB.updateDoc(ref,{status:'blocked',cats:[]})}
   else if(a==='dev'){if(!confirm('Reset the phone of this person? The next phone where he logs in becomes his phone.'))return;job=FB.deleteDoc(FB.doc(fs,'devices',id))}
-  else if(a==='del'){if(!confirm('Delete this person completely? He can ask again.'))return;job=FB.deleteDoc(ref)}
+  else if(a==='del'){if(!confirm('Delete this person completely (request, profile, phone lock, messages, payment)? Then also delete the login in Firebase > Authentication so the same email can sign up fresh.'))return;job=Promise.all(['profiles','devices','msgs','payproofs'].map(function(col){return FB.deleteDoc(FB.doc(fs,col,id)).catch(function(){})})).then(function(){return FB.deleteDoc(ref)})}
   job.then(function(){say(a==='ok'?'Saved. This person is in the People tab: open it any time to tick or untick.':'Done');return load()}).catch(function(x){say('Failed: '+(x.code||x.message),1)})});
 /* one password for the whole Initial PMA Preparation: saved into every category's key */
 function keyBoxes(vals){var v=vals.o||'',same=CATS.every(function(c){return (vals[c[0]]||'')===v});var box=function(id,name,val){return '<div class="card"><b>'+name+'</b><input type="text" id="k_'+id+'" autocomplete="off" autocapitalize="characters" value="'+esc(val||'')+'" placeholder="XXXX-XXXX"></div>'};
