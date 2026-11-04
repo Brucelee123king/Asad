@@ -446,5 +446,5 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 
 ## Initial Interview page (04 Nov 2026)
 - Main page card 02 now opens the Initial Interview page (still locked by the 'int' tick in admin). Source: pma159/int_src/final.json (data) + int_tpl.html -> build_int.py -> pma159/int_block.html (last block in merge chain).
-- Sections: Mock Interview (10 random Qs, 45s timer), Question Bank (170 Qs, 10 groups, ticks saved in localStorage intv_ok), Model Answers (30), Real Experiences (28), Essay Topics (80 + random 15-min challenge), Tips checklist (37, localStorage intv_tip).
+- Sections: Mock Interview (10 random Qs, 45s timer), Question Bank (349 Qs, 10 groups, ticks saved in localStorage intv_ok), Model Answers (45), Real Experiences (74), Essay Topics (150 + random 15-min challenge), Tips checklist (51, localStorage intv_tip).
 - Data was extracted from the user's Drive folder (PMA experience PDFs), rewritten in simple English, no names/phones.
