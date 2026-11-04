@@ -1,0 +1,66 @@
+<!doctype html><html><head><meta charset="utf8">
+<style>
+@font-face{font-family:J;src:local("Inter"),local("Inter Display")}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#0b1a12}
+body{font-family:"Inter Display","Inter",system-ui,sans-serif;color:#fff}
+.bg{position:absolute;inset:0;background:radial-gradient(1200px 900px at 50% 20%,#2f5a2a 0%,#13291a 55%,#08130c 100%)}
+.bg:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.025) 0 2px,transparent 2px 22px)}
+.glow{position:absolute;width:900px;height:900px;border-radius:50%;left:90px;top:620px;background:radial-gradient(circle,rgba(241,210,122,.35),rgba(241,210,122,0) 65%);animation:pul 3s ease-in-out infinite}
+@keyframes pul{50%{transform:scale(1.08);opacity:.7}}
+.top{position:absolute;left:0;right:0;top:70px;display:flex;justify-content:center}
+.brand{display:flex;align-items:center;gap:18px;background:rgba(0,0,0,.35);border:2px solid #f1d27a;border-radius:99px;padding:14px 34px;font-weight:800;font-size:34px;letter-spacing:.04em;color:#f1d27a}
+.sc{position:absolute;inset:0;opacity:0;transition:opacity .45s}
+.sc.on{opacity:1}
+.hl{position:absolute;left:70px;right:70px;top:190px;text-align:center}
+.hl .k{display:inline-block;background:linear-gradient(120deg,#b8860b,#ffe9a0 50%,#d4a017);color:#2b1d02;font-weight:900;font-size:34px;letter-spacing:.08em;border-radius:14px;padding:10px 24px;margin-bottom:26px}
+.hl h1{font-size:84px;line-height:1.05;font-weight:900;text-shadow:0 6px 24px rgba(0,0,0,.5)}
+.hl h1 em{font-style:normal;color:#f1d27a}
+.hl p{margin-top:22px;font-size:40px;line-height:1.3;color:#e2e8f0;font-weight:600}
+.ph{position:absolute;left:50%;top:700px;width:560px;height:1100px;margin-left:-280px;border-radius:64px;background:#0b0f14;border:14px solid #1f2937;box-shadow:0 0 0 4px #f1d27a,0 40px 90px rgba(0,0,0,.6);overflow:hidden}
+.ph img{width:100%;display:block}
+.ph:before{content:"";position:absolute;left:50%;top:14px;width:150px;height:30px;margin-left:-75px;background:#0b0f14;border-radius:99px;z-index:2}
+.on .ph{animation:up .8s cubic-bezier(.2,.8,.2,1) both}
+@keyframes up{from{transform:translateY(260px) scale(.9);opacity:0}to{transform:none;opacity:1}}
+.on .hl{animation:fd .6s ease both}@keyframes fd{from{transform:translateY(-40px);opacity:0}to{transform:none;opacity:1}}
+.badge{position:absolute;right:70px;top:760px;width:230px;height:230px;border-radius:50%;background:linear-gradient(135deg,#dc2626,#f97316);border:6px solid #fde68a;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:900;transform:rotate(10deg);box-shadow:0 20px 40px rgba(0,0,0,.5);z-index:3}
+.badge b{font-size:72px;line-height:1}.badge span{font-size:28px;letter-spacing:.06em}
+.on .badge{animation:pop .6s .5s cubic-bezier(.2,1.6,.4,1) both}@keyframes pop{from{transform:scale(0) rotate(-40deg)}to{transform:scale(1) rotate(10deg)}}
+.hook .big{position:absolute;left:0;right:0;top:640px;text-align:center;font-size:300px;animation:wob 1.2s ease-in-out infinite}@keyframes wob{50%{transform:scale(1.08) rotate(-4deg)}}
+.list{position:absolute;left:110px;right:110px;top:1160px;display:flex;flex-direction:column;gap:22px}
+.list div{background:rgba(0,0,0,.35);border:2px solid rgba(241,210,122,.6);border-radius:24px;padding:22px 28px;font-size:40px;font-weight:800;opacity:0}
+.on .list div{animation:fd .5s ease both}
+.on .list div:nth-child(1){animation-delay:.3s}.on .list div:nth-child(2){animation-delay:.6s}.on .list div:nth-child(3){animation-delay:.9s}.on .list div:nth-child(4){animation-delay:1.2s}
+.cta{position:absolute;left:90px;right:90px;top:1020px;text-align:center}
+.cta .btn{display:block;background:linear-gradient(120deg,#16a34a,#22c55e);border:4px solid #fde68a;border-radius:36px;padding:34px;font-size:56px;font-weight:900;box-shadow:0 20px 50px rgba(22,163,74,.45);animation:pul 1.6s ease-in-out infinite}
+.cta .tt{margin-top:40px;display:inline-flex;align-items:center;gap:20px;background:#000;border:3px solid #fff;border-radius:28px;padding:24px 40px;font-size:48px;font-weight:900}
+.cta .tt i{font-style:normal;font-size:56px}
+.prog{position:absolute;left:0;bottom:0;height:12px;background:linear-gradient(90deg,#d4a017,#fde68a);width:0}
+</style></head><body>
+<div class="bg"></div><div class="glow"></div>
+<div class="top"><div class="brand">🪖 PMA PREPARATION APP</div></div>
+
+<div class="sc hook" id="s0"><div class="hl"><div class="k">PMA INITIAL INTERVIEW</div><h1>Scared of the <em>Initial Interview?</em></h1><p>Don't worry. Now preparation is easy.</p></div><div class="big">🎤</div></div>
+
+<div class="sc" id="s1"><div class="hl"><div class="k">NEW IN THE APP</div><h1>Complete <em>Initial Interview</em> section</h1></div><div class="ph"><img src="hub.jpg" class="scroll"></div></div>
+
+<div class="sc" id="s2"><div class="hl"><div class="k">🎤 MOCK INTERVIEW</div><h1>Real questions, <em>one by one</em></h1><p>With a timer, like the real room</p></div><div class="ph"><img src="mock.jpg"></div><div class="badge"><b>⏱</b><span>TIMER</span></div></div>
+
+<div class="sc" id="s3"><div class="hl"><div class="k">❓ QUESTION BANK</div><h1><em>349</em> real interview questions</h1><p>in 10 easy groups</p></div><div class="ph"><img src="qb.jpg" class="scroll"></div><div class="badge"><b>349</b><span>QUESTIONS</span></div></div>
+
+<div class="sc" id="s4"><div class="hl"><div class="k">📖 REAL EXPERIENCES</div><h1><em>74</em> candidates' real interviews</h1></div><div class="ph"><img src="xp.jpg" class="scroll"></div><div class="badge"><b>74</b><span>STORIES</span></div></div>
+
+<div class="sc" id="s5"><div class="hl"><div class="k">✍️ ESSAY TOPICS</div><h1><em>150</em> English + <em>70</em> Urdu topics</h1><p>with a 15-minute challenge</p></div><div class="ph"><img src="es.jpg" class="scroll"></div><div class="badge"><b>220</b><span>ESSAYS</span></div></div>
+
+<div class="sc" id="s6"><div class="hl"><div class="k">💡 MODEL ANSWERS + ✅ TIPS</div><h1>Walk in <em>confident</em></h1></div>
+  <div class="list"><div>💡 45 model answers</div><div>✅ 51 tips checklist</div><div>🎯 Readiness progress bar</div><div>🌙 Works in dark mode</div></div></div>
+
+<div class="sc" id="s7"><div class="hl"><div class="k">GET IT NOW</div><h1>Start your <em>interview prep</em> today</h1></div>
+  <div class="cta"><span class="btn">📲 Download the App</span><span class="tt"><i>♪</i> @journeytopma</span><p style="margin-top:30px;font-size:38px;color:#e2e8f0;font-weight:600">Message on TikTok to get access</p></div></div>
+
+<div class="prog" id="pg"></div>
+<script>
+var D=@@DUR@@,tot=D.reduce(function(a,b){return a+b},0);
+window.__play=function(){var t=0;D.forEach(function(d,i){setTimeout(function(){document.querySelectorAll('.sc').forEach(function(s){s.classList.remove('on')});var sc=document.getElementById('s'+i);sc.classList.add('on');var im=sc.querySelector('img.scroll'),ph=sc.querySelector('.ph');if(im&&ph){var dist=Math.max(0,im.offsetHeight-ph.clientHeight);im.style.transition='none';im.style.transform='translateY(0)';setTimeout(function(){im.style.transition='transform '+Math.max(1.5,d-1.6)+'s ease-in-out';im.style.transform='translateY(-'+dist+'px)'},900)}},t*1000);t+=d});
+  var p=document.getElementById('pg');p.style.transition='width '+tot+'s linear';requestAnimationFrame(function(){p.style.width='100%'})};
+</script></body></html>
