@@ -443,3 +443,8 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - Book key: /home/user/keystore/book_passwords.json (NOT in git). Admin must save it once in admin page -> Books tab -> "Book key" (stored in catKeys/bk_issb130).
 - Access: admin Books tab ticks a person -> adds 'bk_issb130' to users.cats (existing catKeys rule = only people with that cat can read the key). Saving a person in People keeps bk_* cats.
 - Reader (land_block.html): canvas pages, user's email as faint watermark, pinch/double-tap/+- zoom, page counter, no download/long-press; phone Back closes it. Users without the book see Buy now (TikTok message).
+
+## Initial Interview page (04 Nov 2026)
+- Main page card 02 now opens the Initial Interview page (still locked by the 'int' tick in admin). Source: pma159/int_src/final.json (data) + int_tpl.html -> build_int.py -> pma159/int_block.html (last block in merge chain).
+- Sections: Mock Interview (10 random Qs, 45s timer), Question Bank (170 Qs, 10 groups, ticks saved in localStorage intv_ok), Model Answers (30), Real Experiences (28), Essay Topics (80 + random 15-min challenge), Tips checklist (37, localStorage intv_tip).
+- Data was extracted from the user's Drive folder (PMA experience PDFs), rewritten in simple English, no names/phones.
