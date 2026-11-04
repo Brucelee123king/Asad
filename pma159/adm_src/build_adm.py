@@ -1,4 +1,4 @@
-import json, html
+import json, html, re
 V = ["What is 90% of 90?", "What is 90% of 60?", "What is the log of 100?", "Find one-third of 10% of 90.", "Find one-third of 10% of 120.",
      "What is one-quarter of one-tenth of 120?", "If 5 persons write 5 pages in 5 minutes, how much time will 1 person take to write 1 page?",
      "A class has 500 students, 340 boys and 160 girls. Find the percentage of girls.", "Today is Monday. What day will it be after 15 days?",
@@ -34,6 +34,23 @@ ADV = ["Practice basic mathematics and percentages.", "Prepare alphabetical seri
        "Revise Pakistan Studies and Islamic Studies.", "Improve your speed and time management."]
 
 e = html.escape
+
+import os as _os
+_HERE=_os.path.dirname(_os.path.abspath(__file__))
+VQ=json.load(open(_os.path.join(_HERE,'exp_verbal.json'),encoding='utf8'))
+NQ=json.load(open(_os.path.join(_HERE,'exp_nonverbal.json'),encoding='utf8'))
+def vq_html():
+    out=''
+    for q in VQ:
+        lines=q['q'].split('\n');qt=e(lines[0])
+        for x in lines[1:]:
+            if re.fullmatch(r'[A-Z_ ]{1,15}',x.strip()) or re.fullmatch(r'[A-Z0-9_ ]{1,15}',x.strip()) and len(x.split())>=3:qt+='<span class="ax-qg">%s</span>'%e(x)
+            else:qt+=' '+e(x)
+        ops=''.join('<span class="ax-op" data-k="%s"><i>%s</i>%s</span>'%(k,k,e(v)) for k,v in q['opts'].items())
+        out+='<div class="ax-q"><b>%d.</b> %s<div class="ax-ops">%s</div><button type="button" class="ax-ab" data-axa="%s">👁 Show answer</button></div>'%(q['n'],qt,ops,q['ans'])
+    return out
+def nv_html():
+    return ''.join('<div class="ax-q ax-nv"><b>%d.</b><img loading="lazy" alt="Non-verbal question %d" data-axi="expimg/nv%02d.webp"><button type="button" class="ax-ab" data-axa="%s" data-nv="1">👁 Show answer</button></div>'%(q['n'],q['n'],q['n'],q['ans']) for q in NQ)
 def ol(xs, start=1):
     return '<ol start="%d">' % start + ''.join('<li>%s</li>' % e(x) for x in xs) + '</ol>'
 def sec(ic, title, sub, body, op=False):
@@ -43,10 +60,10 @@ def sec(ic, title, sub, body, op=False):
 TEST = ('<div class="ax-hero"><div class="ax-k">🪖 PMA 159 LONG COURSE</div><h2>My Complete Test Experience</h2>'
         '<div class="ax-meta"><span>👤 Asadullah</span><span>📍 D.I. Khan</span><span>📅 03 Nov 2026</span><span>⏰ 07:00 – 09:00 AM</span></div>'
         '<div class="ax-pass">✅ Alhamdulillah, PASSED! ❤️🇵🇰</div></div>'
-        + sec('🔤', 'Verbal Intelligence', '24 questions • Moderate',
-              '<p>Verbal portion was moderate. Most questions were based on basic mathematics, analytical reasoning, alphabetical series and general IQ.</p>' + ol(V))
-        + sec('🧩', 'Non-Verbal Intelligence', '10 patterns • Moderate',
-              '<p>Non-verbal portion was moderate and included different figure-based questions.</p>' + ol(N))
+        + sec('🔤', 'Verbal Intelligence', '%d questions with answers' % len(VQ),
+              '<p>These are the verbal questions that came in my test. Try each one, then tap Show answer.</p>' + vq_html())
+        + sec('🧩', 'Non-Verbal Intelligence', '%d figures with answers' % len(NQ),
+              '<p>These are the non-verbal figures that came in my test. Find the missing figure, then tap Show answer.</p>' + nv_html())
         + sec('📚', 'Academic Portion', '30 questions • Easy',
               '<p>Academic portion was comparatively easy and covered Pakistan Studies, Islamic Studies, General Knowledge, History and Current Affairs.</p>'
               + ''.join('<h4>%s</h4>%s' % (e(t), ol(q, st)) for (t, q), st in zip(AC, (1, 5, 20))))
@@ -82,7 +99,7 @@ ICO = {
 }
 
 STAGES = [
-    ('t', '📝', 'Initial Test', '03 Nov 2026 • D.I. Khan • 64 questions shared', 'done', '#16a34a', '#22c55e', TEST),
+    ('t', '📝', 'Initial Test', '03 Nov 2026 • D.I. Khan • %d questions shared' % (len(VQ)+len(NQ)+30), 'done', '#16a34a', '#22c55e', TEST),
     ('m', '🩺', 'Initial Medical', '03 Nov 2026 • what they checked', 'done', '#0284c7', '#38bdf8', MED),
     ('p', '🏃', 'Initial Physical Test', 'Coming soon', 'lock', '#ea580c', '#fb923c', PHY),
     ('i', '🗣️', 'Initial Interview', 'Coming soon', 'lock', '#7c3aed', '#a855f7', INT),

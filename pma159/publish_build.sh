@@ -11,5 +11,5 @@ cp ../site/index.html ../android-app/source/index.html
 rm -rf /tmp/shellout; mkdir -p /tmp/shellout; python3 sign_shell.py ../android-app/app/src/main/assets/www/index.html /tmp/shellout "$BASE" "${PREV:-}"
 rm -rf /tmp/publish; mkdir -p /tmp/publish
 cp -r ../android-app/app/src/main/assets/www/. /tmp/publish/
-cp -r books /tmp/publish/bk; cp -r "$DIST/data" /tmp/publish/data; cp "$DIST/lock.json" /tmp/publish/lock.json; cp "$DIST/admin.html" /tmp/publish/admin.html; cp /tmp/shellout/shell.html /tmp/shellout/shell.json /tmp/publish/; touch /tmp/publish/.nojekyll
+cp -r books /tmp/publish/bk; cp -r expimg /tmp/publish/expimg; cp -r "$DIST/data" /tmp/publish/data; cp "$DIST/lock.json" /tmp/publish/lock.json; cp "$DIST/admin.html" /tmp/publish/admin.html; cp /tmp/shellout/shell.html /tmp/shellout/shell.json /tmp/publish/; touch /tmp/publish/.nojekyll
 echo "publish folder ready: /tmp/publish"; du -sh /tmp/publish
