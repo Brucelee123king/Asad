@@ -448,3 +448,10 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - Main page card 02 now opens the Initial Interview page (still locked by the 'int' tick in admin). Source: pma159/int_src/final.json (data) + int_tpl.html -> build_int.py -> pma159/int_block.html (last block in merge chain).
 - Sections: Mock Interview (10 random Qs, 45s timer), Question Bank (349 Qs, 10 groups, ticks saved in localStorage intv_ok), Model Answers (45), Real Experiences (74), Essay Topics (150 + random 15-min challenge), Tips checklist (51, localStorage intv_tip).
 - Data was extracted from the user's Drive folder (PMA experience PDFs), rewritten in simple English, no names/phones.
+
+## ISSB page (04 Nov 2026)
+- Main page card 03 opens the ISSB page (locked by the 'issb' tick). Source: pma159/issb_src/final.json (merged by merge_issb.py from 22 agent extracts of the user's 2nd Drive folder) + issb_tpl.html -> build_issb.py -> pma159/issb_block.html (in merge chain after int_block).
+- 7 steps: Guide (days/kit/docs), Intelligence, Psychologist tests (WAT/SRT/SCT EN+UR/pointer/picture/OPI/biodata/essay/mechanical, timed drills), GTO tasks, Interviews (DP/Psy/GTO, ticks in localStorage issb_ok), Experiences, Conference & final tips.
+
+## Private PDFs (admin only)
+- Card 04 "PDFs" is visible/openable only for the admin account. BKL in land_block.html lists the PDFs; pages in pma159/books/<dir>/ encrypted with the bk_issb130 key. Scanned books processed by books_src/make_scanned_pdf.py (deskew, border, OCR search).
