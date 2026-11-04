@@ -58,6 +58,8 @@ html.dark #intP{--b:#111c33;--t:#f1f5f9;--m:#94a3b8;--l:#1e293b}
 #intP .tp .ck{flex:none;width:24px;height:24px;border-radius:7px;border:2px solid #94a3b8;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:13px}
 #intP .tp.ok .ck{background:#16a34a;border-color:#16a34a}#intP .tp.ok span{color:var(--m);text-decoration:line-through}
 #intP .srch{width:100%;height:44px;border-radius:99px;border:1px solid var(--l);background:var(--b);color:var(--t);padding:0 16px;font-size:14.5px;margin-bottom:12px;font-family:inherit}
+#intP .et{display:flex;gap:8px;margin-bottom:12px}#intP .et button{flex:1;text-align:center!important;font-weight:800;font-size:14px;border-radius:14px;padding:11px 6px;background:var(--b);border:2px solid var(--l)}#intP .et button.on{border-color:#d97706;background:#fef3c7;color:#78350f}html.dark #intP .et button.on{background:#3b2a05;color:#fde68a}#intP .et small{display:block;font-size:11px;opacity:.75}
+#intP .urd,#intP .es.ur span{font-family:"Noto Nastaliq Urdu","Jameel Noori Nastaleeq","Noto Naskh Arabic",serif;direction:rtl;line-height:1.9}#intP .es.ur{flex-direction:row-reverse}#intP .es.ur span{text-align:right;font-size:16px}#intP .qq.urd{font-size:24px}
 #intP .done{font-size:44px;text-align:center}
 </style>
 <script>
@@ -78,7 +80,7 @@ html.dark #intP{--b:#111c33;--t:#f1f5f9;--m:#94a3b8;--l:#1e293b}
     ['qb','❓','Question Bank','Every question asked, in groups. Tick the ones you can answer.','linear-gradient(120deg,#1e3a8a,#2563eb 55%,#38bdf8)',ALLQ.length+' questions',''],
     ['ans','💡','Model Answers','How to answer the most common questions.','linear-gradient(120deg,#14532d,#16a34a 55%,#84cc16)',Object.keys(D.answers).length+' answers',''],
     ['xp','📖','Real Experiences','What happened in real candidates\' interviews.','linear-gradient(120deg,#4c1d95,#7c3aed 55%,#c084fc)',D.experiences.length+' experiences',''],
-    ['es','✍️','Essay Topics','Topics asked in the essay. Try the random topic challenge.','linear-gradient(120deg,#78350f,#d97706 55%,#fbbf24)',D.essays.length+' topics','FUN'],
+    ['es','✍️','Essay Topics','English and Urdu essay topics. Try the random topic challenge.','linear-gradient(120deg,#78350f,#d97706 55%,#fbbf24)',D.essays.length+' English • '+(D.urdu||[]).length+' Urdu','FUN'],
     ['tips','✅','Tips & Checklist','Before, inside the room and while answering. Tick as you go.','linear-gradient(120deg,#134e4a,#0d9488 55%,#5eead4)',TIPN+' tips','']];
   function hub(){var p=readyPct();
     return '<div class="ir"><div>⭐ INITIAL INTERVIEW ⭐</div><p>Prepare step by step. Your progress is saved on this phone.</p></div>'+
@@ -96,10 +98,13 @@ html.dark #intP{--b:#111c33;--t:#f1f5f9;--m:#94a3b8;--l:#1e293b}
     return '<div class="xp"><div class="h"><b>🪖 '+esc(e.title)+'</b><span class="r '+r+'">'+(r==='y'?'✅ Recommended':r==='n'?'❌ Not recommended':'• Result not shared')+'</span></div><p>'+esc(e.summary)+'</p>'+
       (e.asked&&e.asked.length?'<h5>QUESTIONS ASKED</h5><ul>'+e.asked.map(function(q){return '<li>'+esc(q)+'</li>'}).join('')+'</ul>':'')+
       (e.tips&&e.tips.length?'<h5>TIPS</h5><ul>'+e.tips.map(function(q){return '<li>'+esc(q)+'</li>'}).join('')+'</ul>':'')+'</div>'}).join('')}
-  function es(){var s=sub;
-    var top=s?'<div class="mk"><div class="c">YOUR TOPIC</div><div class="qq">'+esc(s.t)+'</div><div class="tm'+(s.left<60?' w':'')+'" id="ivTm">'+fmt(s.left)+'</div><p style="color:var(--m);font-size:12.5px;margin:4px 0 0">Write: introduction → 3 points → conclusion</p></div><div class="row"><button type="button" class="big g" data-er="1">🎲 New topic</button><button type="button" class="big r" data-es="1">⏹ Stop</button></div>'
-      :'<button type="button" class="big" data-er="1">🎲 Give me a random topic (15-minute challenge)</button>';
-    return head(card('es'))+top+D.essays.map(function(t,i){return '<button type="button" class="es" data-et="'+i+'"><i>'+(i+1)+'</i><span>'+esc(t)+'</span></button>'}).join('')}
+  var EL='en';
+  function es(){var s=sub,ur=EL==='ur',L=ur?(D.urdu||[]):D.essays;
+    var tabs='<div class="et"><button type="button" data-el="en" class="'+(ur?'':'on')+'">🇬🇧 English essay <small>'+D.essays.length+'</small></button><button type="button" data-el="ur" class="'+(ur?'on':'')+'">🇵🇰 اردو مضمون <small>'+(D.urdu||[]).length+'</small></button></div>';
+    var top=s?'<div class="mk"><div class="c">'+(s.ur?'آپ کا موضوع':'YOUR TOPIC')+'</div><div class="qq'+(s.ur?' urd':'')+'">'+esc(s.t)+'</div><div class="tm'+(s.left<60?' w':'')+'" id="ivTm">'+fmt(s.left)+'</div><p style="color:var(--m);font-size:12.5px;margin:4px 0 0">'+(s.ur?'<span class="urd">تمہید ← تین نکات ← اختتام</span>':'Write: introduction → 3 points → conclusion')+'</p></div><div class="row"><button type="button" class="big g" data-er="1">🎲 New topic</button><button type="button" class="big r" data-es="1">⏹ Stop</button></div>'
+      :'<button type="button" class="big" data-er="1">🎲 '+(ur?'Random Urdu topic (15-minute challenge)':'Random English topic (15-minute challenge)')+'</button>';
+    var tp=ur&&D.urduTips?'<div class="tg"><h4>✍️ Urdu essay tips</h4>'+D.urduTips.map(function(t){return '<div class="tp" style="cursor:default"><span>•</span><span>'+esc(t)+'</span></div>'}).join('')+'</div>':'';
+    return head(card('es'))+tabs+top+tp+L.map(function(t,i){return '<button type="button" class="es'+(ur?' ur':'')+'" data-et="'+i+'"><i>'+(i+1)+'</i><span>'+esc(t)+'</span></button>'}).join('')}
   function tips(){return head(card('tips'))+Object.keys(D.tips).map(function(g){return '<div class="tg"><h4>'+esc(g)+'</h4>'+D.tips[g].map(function(t){var id=hid(g+t);return '<button type="button" class="tp'+(tok[id]?' ok':'')+'" data-tk="'+id+'"><span class="ck">'+(tok[id]?'✓':'')+'</span><span>'+esc(t)+'</span></button>'}).join('')+'</div>'}).join('')}
   function fmt(s){s=Math.max(0,s|0);return Math.floor(s/60)+':'+('0'+s%60).slice(-2)}
   function newMock(){var pool=ALLQ.slice(),pick=[];var intro=pool.filter(function(x){return /introduce yourself|tell me about yourself/i.test(x.q)})[0];if(intro){pick.push(intro);pool.splice(pool.indexOf(intro),1)}
@@ -126,8 +131,9 @@ html.dark #intP{--b:#111c33;--t:#f1f5f9;--m:#94a3b8;--l:#1e293b}
     if((b=t.closest('[data-hn]'))){var s=b.nextElementSibling;if(s)s.hidden=false;b.remove();return}
     if((b=t.closest('[data-ic]'))){b.parentElement.classList.toggle('open');return}
     if((b=t.closest('[data-tk]'))){var k=b.getAttribute('data-tk');if(tok[k])delete tok[k];else tok[k]=1;sv();b.classList.toggle('ok',!!tok[k]);b.querySelector('.ck').textContent=tok[k]?'✓':'';return}
-    if(t.closest('[data-er]')){var i=Math.floor(Math.random()*D.essays.length);sub={t:D.essays[i],left:900};draw();return}
-    if((b=t.closest('[data-et]'))){sub={t:D.essays[+b.getAttribute('data-et')],left:900};draw();return}
+    if((b=t.closest('[data-el]'))){EL=b.getAttribute('data-el');sub=null;draw(true);return}
+    if(t.closest('[data-er]')){var LL=EL==='ur'?D.urdu:D.essays,i=Math.floor(Math.random()*LL.length);sub={t:LL[i],left:900,ur:EL==='ur'};draw();return}
+    if((b=t.closest('[data-et]'))){var LL2=EL==='ur'?D.urdu:D.essays;sub={t:LL2[+b.getAttribute('data-et')],left:900,ur:EL==='ur'};draw();return}
     if(t.closest('[data-es]')){sub=null;draw();return}
     if(t.closest('[data-mh]')){mk.hint=true;var y=window.scrollY;draw(true);return}
     if((b=t.closest('[data-ma]'))){var a=b.getAttribute('data-ma');var x=mk.qs[mk.i];mk.res.push(a);if(a==='d'){ok[hid(x.q)]=1;sv()}mk.i++;mk.left=45;mk.hint=false;draw();return}
