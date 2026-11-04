@@ -185,6 +185,30 @@ html.bkrd #nbBar,html.bkrd #landMsg{display:none!important}html.bkrd #satBar{bac
 #landBooks .pt{flex:1;min-width:0}#landBooks .pt b{display:block;font-size:15px;color:#0f172a}#landBooks .pt small{display:block;color:#64748b;font-size:12.5px;margin:2px 0 8px}
 #landBooks .buy.lk{background:#e2e8f0;color:#475569}
 html.dark #landBooks .pr{background:#111c33;border-color:#a16207}html.dark #landBooks .pt b{color:#f1f5f9}html.dark #landBooks .pt small{color:#94a3b8}
+
+/* reader theme: mix of Classic Dark (1) + Army Green & Gold (5) */
+#bkRd{background:#13291a}
+#bkRd .rt{background:linear-gradient(120deg,#1f4d32,#2e6b3f)!important;border-bottom:3px solid #f1d27a!important;box-shadow:0 2px 10px rgba(0,0,0,.35)}
+#bkRd .rtt small{color:#f1d27a!important;opacity:.9}
+#bkRd .rx,#bkRd .rsr,#bkRd .rgb{background:rgba(241,210,122,.18)!important;color:#f1d27a!important}
+#bkRd .rn{background:rgba(11,26,18,.55)!important;border-color:rgba(241,210,122,.5)!important;color:#fde68a!important}
+#bkRd .rpb{background:rgba(0,0,0,.25)}
+html.bkrd #satBar{background:#1f4d32!important}
+#bkRd .rbody{flex:1;display:flex;min-height:0}
+#bkRd .rrail{width:64px;flex:none;background:#0b1a12;overflow-y:auto;padding:8px 6px 90px;display:flex;flex-direction:column;gap:8px;scrollbar-width:none}#bkRd .rrail::-webkit-scrollbar{display:none}
+#bkRd .rrt{background:none;border:0;padding:0;cursor:pointer;text-align:center}
+#bkRd .rrt span{display:block;background:#fff;border:2px solid transparent;border-radius:3px;overflow:hidden;opacity:.7}#bkRd .rrt canvas{display:block;width:100%;height:100%}
+#bkRd .rrt i{display:block;font-style:normal;color:#f1d27a;font-size:10px;font-weight:800;margin-top:2px;opacity:.75}
+#bkRd .rrt.c span{border-color:#f1d27a;opacity:1;box-shadow:0 0 0 2px rgba(241,210,122,.35)}#bkRd .rrt.c i{opacity:1}
+#bkRd .rs{flex:1;min-width:0}
+#bkRd .rp{border:2px solid #f1d27a;border-radius:3px;box-shadow:0 8px 22px rgba(0,0,0,.5)}
+#bkRd .rz{left:auto!important;right:12px!important;transform:none!important;flex-direction:column!important;background:none!important;border:0!important;box-shadow:none!important;padding:0!important;gap:9px!important;align-items:center}
+#bkRd .rz button{width:46px!important;min-width:0!important;height:46px!important;border-radius:50%!important;background:#f1d27a!important;color:#3b2a05!important;font-weight:900!important;font-size:19px!important;box-shadow:0 5px 12px rgba(0,0,0,.45)!important;padding:0!important}
+#bkRd .rz [data-z="2"],#bkRd .rz .rgb2{font-size:13px!important}
+#bkRd .rz [data-z="0"]{width:auto!important;height:24px!important;border-radius:99px!important;font-size:11px!important;padding:0 8px!important;background:rgba(11,26,18,.85)!important;color:#fde68a!important;border:1px solid #f1d27a!important}
+#bkRd .rsb{bottom:300px!important;top:calc(80px + var(--sat,0px))!important}
+#bkRd .rsb .rh{background:#f1d27a!important}
+#bkRd .rg,#bkRd .rqb,#bkRd .rqi{background:#0b1a12!important}#bkRd .rgt{border-bottom-color:#f1d27a!important}#bkRd .rql{background:#13291a!important}#bkRd .rqr{border-bottom-color:#1f4d32!important}
 </style>
 <script>
 (function(){function init(){
@@ -224,7 +248,7 @@ html.dark #landBooks .pr{background:#111c33;border-color:#a16207}html.dark #land
     if(!window.crypto||!crypto.subtle||!window.__acGetKey){rdToast('This phone cannot open the book. Please update the app.');return}
     var base=rdBase()+'bk/'+b[4]+'/';
     var o=document.createElement('div');o.id='bkRd';o.innerHTML='<div class="rt"><button type="button" class="rx" aria-label="Close">←</button><div class="rtt"><b>'+b[1]+'</b><small class="rsub">Opening…</small></div><button type="button" class="rsr" title="Search" aria-label="Search">⌕</button><button type="button" class="rn" title="Go to page">…</button><button type="button" class="rgb" title="All pages">▦</button></div><div class="rpb"><i></i></div>'+
-      '<div class="rq" hidden><div class="rqb"><button type="button" class="rqx" aria-label="Close search">←</button><input type="search" placeholder="Search in book" autocomplete="off"><button type="button" class="rqp" aria-label="Previous">⌃</button><button type="button" class="rqn" aria-label="Next">⌄</button></div><div class="rqi"></div><div class="rql"></div></div><div class="rs"><div class="ri"></div></div><div class="rsb"><span class="rh"></span><em></em></div><div class="rz"><button type="button" data-z="-1">−</button><button type="button" data-z="0">100%</button><button type="button" data-z="1">+</button><button type="button" data-z="2">Fit</button><button type="button" class="rgb2">▦ Pages</button></div><div class="rg" hidden><div class="rgt"><b>All pages</b><button type="button" class="rgx">✕</button></div><div class="rgg"></div></div><div class="rl">Opening the book…</div>';
+      '<div class="rq" hidden><div class="rqb"><button type="button" class="rqx" aria-label="Close search">←</button><input type="search" placeholder="Search in book" autocomplete="off"><button type="button" class="rqp" aria-label="Previous">⌃</button><button type="button" class="rqn" aria-label="Next">⌄</button></div><div class="rqi"></div><div class="rql"></div></div><div class="rbody"><div class="rrail"></div><div class="rs"><div class="ri"></div></div></div><div class="rsb"><span class="rh"></span><em></em></div><div class="rz"><button type="button" data-z="1">+</button><button type="button" data-z="-1">−</button><button type="button" data-z="2">Fit</button><button type="button" class="rgb2">▦</button><button type="button" data-z="0">100%</button></div><div class="rg" hidden><div class="rgt"><b>All pages</b><button type="button" class="rgx">✕</button></div><div class="rgg"></div></div><div class="rl">Opening the book…</div>';
     document.body.appendChild(o);document.documentElement.classList.add('bkrd');
     try{history.pushState({n:1,bk:1},'')}catch(e){}
     RD={o:o,b:b,z:1,key:null,meta:null,obs:null,busy:{}};
@@ -236,10 +260,10 @@ html.dark #landBooks .pr{background:#111c33;border-color:#a16207}html.dark #land
     [].forEach.call(inn.children,function(d){RD.obs.observe(d)});
     var cnt=RD.o.querySelector('.rn'),sub=RD.o.querySelector('.rsub'),pb=RD.o.querySelector('.rpb i'),lk='bk_last_'+RD.b[4];
     function upd(){var r=sc.getBoundingClientRect(),mid=r.top+r.height/3,ch=inn.children,cur=1;for(var i=0;i<ch.length;i++){var q=ch[i].getBoundingClientRect();if(q.bottom>mid){cur=i+1;break}}
-      cnt.textContent=cur+' / '+m.n;sub.textContent='Page '+cur+' of '+m.n;pb.style.width=(100*sc.scrollTop/Math.max(1,sc.scrollHeight-sc.clientHeight))+'%';try{localStorage.setItem(lk,String(cur))}catch(e){}}
+      cnt.textContent=cur+' / '+m.n;sub.textContent='Page '+cur+' of '+m.n;rdRailCur(cur);pb.style.width=(100*sc.scrollTop/Math.max(1,sc.scrollHeight-sc.clientHeight))+'%';try{localStorage.setItem(lk,String(cur))}catch(e){}}
     var ut=null;sc.addEventListener('scroll',function(){if(ut)return;ut=requestAnimationFrame(function(){ut=null;upd()})},{passive:true});cnt.textContent='1 / '+m.n;sub.textContent='Page 1 of '+m.n;
     var last=0;try{last=parseInt(localStorage.getItem(lk)||'0',10)}catch(e){}if(last>1&&last<=m.n){setTimeout(function(){rdGo(last);rdToast2('Continued from page '+last)},60)}
-    rdPinch(sc,inn);RD.base=base;rdScrub(sc)}
+    rdPinch(sc,inn);RD.base=base;rdScrub(sc);rdRail()}
   function rdToast2(t){if(!RD)return;var x=document.createElement('div');x.className='rtoast';x.textContent=t;RD.o.appendChild(x);setTimeout(function(){x.classList.add('out')},1800);setTimeout(function(){x.remove()},2300)}
   function rdText(){if(RD.txt)return Promise.resolve(RD.txt);if(!RD.key||!RD.base)return Promise.reject(0);if(RD.txtP)return RD.txtP;var dir=RD.b[4],key=RD.key;
     RD.txtP=fetch(RD.base+'text.bin',{cache:'force-cache'}).then(function(r){if(!r.ok)throw 0;return r.arrayBuffer()}).then(function(buf){
@@ -264,6 +288,11 @@ html.dark #landBooks .pr{background:#111c33;border-color:#a16207}html.dark #land
     var pg=RD.o.querySelector('.rp[data-p="'+h.p+'"]'),w=RD.txt[h.p][h.i],sc=RD.o.querySelector('.rs');if(pg&&w)sc.scrollTop=pg.offsetTop+w[2]*pg.offsetHeight-sc.clientHeight/3;
     rdMark();RD.o.querySelector('.rqi').textContent='Result '+(RD.hi+1)+' of '+RD.hits.length}
   function rdQ(open){var q=RD.o.querySelector('.rq');q.hidden=!open;RD.o.classList.toggle('qon',open);if(open){var i=q.querySelector('input');setTimeout(function(){i.focus()},50);rdText().catch(function(){})}}
+  function rdRail(){if(!RD||!RD.meta)return;var r=RD.o.querySelector('.rrail'),h='';for(var i=1;i<=RD.meta.n;i++)h+='<button type="button" class="rrt" data-gp="'+i+'"><span style="aspect-ratio:'+RD.meta.wh[0]+'/'+RD.meta.wh[1]+'"><canvas></canvas></span><i>'+i+'</i></button>';r.innerHTML=h;
+    RD.robs=new IntersectionObserver(function(es){es.forEach(function(en){if(!en.isIntersecting||en.target.__on)return;var d=en.target;d.__on=1;var pn=+d.getAttribute('data-gp');
+      rdPage(RD.base,pn).then(function(bm){if(!RD)return;var c=d.querySelector('canvas'),w=110;c.width=w;c.height=Math.round(bm.height*w/bm.width);c.getContext('2d').drawImage(bm,0,0,c.width,c.height);try{bm.close()}catch(x){}}).catch(function(){d.__on=0})})},{root:r,rootMargin:'400px 0px'});
+    [].forEach.call(r.children,function(d){RD.robs.observe(d)});rdRailCur(1)}
+  function rdRailCur(n){if(!RD)return;var r=RD.o.querySelector('.rrail');if(!r||RD.rcur===n)return;RD.rcur=n;var o=r.querySelector('.rrt.c');if(o)o.classList.remove('c');var t=r.querySelector('.rrt[data-gp="'+n+'"]');if(t){t.classList.add('c');var rt=t.offsetTop-r.clientHeight/2+t.offsetHeight/2;r.scrollTop=rt}}
   function rdGo(p){if(!RD||!RD.meta)return;p=Math.max(1,Math.min(RD.meta.n,p|0));var d=RD.o.querySelector('.rp[data-p="'+p+'"]'),sc=RD.o.querySelector('.rs');if(d)sc.scrollTop=d.offsetTop-8}
   function rdCur(){var t=RD.o.querySelector('.rn').textContent;return parseInt(t,10)||1}
   function rdScrub(sc){var bar=RD.o.querySelector('.rsb'),h=bar.querySelector('.rh'),em=bar.querySelector('em'),n=RD.meta.n,drag=false,hide=null;
@@ -286,7 +315,7 @@ html.dark #landBooks .pr{background:#111c33;border-color:#a16207}html.dark #land
     .then(function(pt){return createImageBitmap(new Blob([pt],{type:'image/webp'}))})}
   function rdLoad(base,d,p){if(!RD||d.__on||RD.busy[p])return;RD.busy[p]=1;
     rdPage(base,p).then(function(bm){if(!RD)return;var c=d.querySelector('canvas');c.width=bm.width;c.height=bm.height;var x=c.getContext('2d');x.drawImage(bm,0,0);try{bm.close()}catch(e){}
-      var w=String(window.__acEmail||'').trim();if(w){x.save();x.translate(c.width/2,c.height/2);x.rotate(-Math.PI/6);x.font='600 34px sans-serif';x.fillStyle='rgba(30,41,59,.07)';x.textAlign='center';for(var k=-2;k<=2;k++)x.fillText(w,0,k*300);x.restore()}
+      var w=String(window.__acEmail||'').trim();if(w){x.save();x.translate(c.width/2,c.height/2);x.rotate(-Math.PI/6);x.font='600 34px sans-serif';x.fillStyle='rgba(30,41,59,.035)';x.textAlign='center';for(var k=-2;k<=2;k++)x.fillText(w,0,k*300);x.restore()}
       d.__on=1;d.classList.add('ok');if(RD.hi>=0)rdMark()}).catch(function(){}).then(function(){if(RD)delete RD.busy[p]})}
   function rdDrop(d){if(!d.__on)return;var c=d.querySelector('canvas');c.width=1;c.height=1;d.__on=0;d.classList.remove('ok')}
   function rdZoom(z,cx,cy){if(!RD)return;var sc=RD.o.querySelector('.rs'),inn=RD.o.querySelector('.ri'),old=RD.z;z=Math.max(1,Math.min(4,z));if(Math.abs(z-old)<.001)return;
@@ -298,7 +327,7 @@ html.dark #landBooks .pr{background:#111c33;border-color:#a16207}html.dark #land
     function end(){if(!d0)return;d0=0;RD.pinchEnd=Date.now();var r=sc.getBoundingClientRect(),cx=ox-sc.scrollLeft+r.left,cy=oy-sc.scrollTop+r.top;inn.style.transform='';inn.style.willChange='';RD.pinch=0;rdZoom(z0*k,cx,cy)}
     sc.addEventListener('touchend',function(e){if(e.touches.length<2)end()},{passive:true});sc.addEventListener('touchcancel',end,{passive:true});
     var lt=0;sc.addEventListener('touchend',function(e){if(e.touches.length||e.changedTouches.length!==1||RD.pinch)return;var n=Date.now();if(n-(RD.pinchEnd||0)<500){lt=0;return}if(n-lt<300){var t=e.changedTouches[0];rdZoom(RD.z>1.2?1:2.2,t.clientX,t.clientY);lt=0}else lt=n},{passive:true})}
-  function closeReader(){if(!RD)return false;var qq=RD.o.querySelector('.rq');if(qq&&!qq.hidden){rdQ(false);try{history.pushState({n:1,bk:1},'')}catch(e){}return true}try{RD.dobs&&RD.dobs.disconnect()}catch(e){}var gq=RD.o.querySelector('.rg');if(gq&&!gq.hidden){rdGrid(false);try{history.pushState({n:1,bk:1},'')}catch(e){}return true}try{RD.obs&&RD.obs.disconnect()}catch(e){}RD.o.remove();RD=null;document.documentElement.classList.remove('bkrd');return true}
+  function closeReader(){if(!RD)return false;try{RD.robs&&RD.robs.disconnect()}catch(e){}var qq=RD.o.querySelector('.rq');if(qq&&!qq.hidden){rdQ(false);try{history.pushState({n:1,bk:1},'')}catch(e){}return true}try{RD.dobs&&RD.dobs.disconnect()}catch(e){}var gq=RD.o.querySelector('.rg');if(gq&&!gq.hidden){rdGrid(false);try{history.pushState({n:1,bk:1},'')}catch(e){}return true}try{RD.obs&&RD.obs.disconnect()}catch(e){}RD.o.remove();RD=null;document.documentElement.classList.remove('bkrd');return true}
   document.addEventListener('click',function(e){if(!RD)return;var t=e.target;if(t.closest('#bkRd .rx')){if(history.state&&history.state.bk)history.back();else closeReader();return}
     var z=t.closest('#bkRd [data-z]');if(z){var k=+z.getAttribute('data-z');rdZoom(k===0||k===2?1:RD.z+(k===1?.5:-.5));return}
     if(t.closest('#bkRd .rsr')){rdQ(true);return}
