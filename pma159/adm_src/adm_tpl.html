@@ -31,14 +31,32 @@ html.dark .ax{--b:#111c33;--t:#f1f5f9;--m:#94a3b8;--l:#1e293b}
 .ax-op i{font-style:normal;font-weight:800;color:var(--m)}.ax-op.ok{background:#dcfce7;border-color:#16a34a;color:#166534;font-weight:800}html.dark .ax-op.ok{background:#14321f;color:#bbf7d0}
 .ax-ab{font-size:12.5px!important;font-weight:800;color:#4f46e5!important;background:none!important;border:0!important;padding:2px 0!important}html.dark .ax-ab{color:#a5b4fc!important}
 .ax-ab.done{color:#166534!important}.ax-nv img{display:block;width:100%;margin:6px 0;background:#fff;border-radius:10px;border:1px solid var(--l);min-height:80px}
+.ax-pg{background:rgba(255,255,255,.14);border-radius:14px;padding:10px 12px;margin-top:12px}.ax-pg .r{display:flex;justify-content:space-between;font-size:12.5px;font-weight:800}.ax-pg .r em{font-style:normal;color:#f1d27a}
+.ax-pb{height:9px;border-radius:9px;background:rgba(0,0,0,.25);margin-top:7px;overflow:hidden}.ax-pb i{display:block;height:100%;border-radius:9px;background:linear-gradient(90deg,#f1d27a,#fde68a)}
+.ax-v{display:flex!important;gap:12px;align-items:stretch;width:100%;position:relative;padding-bottom:14px}
+.ax-v .ln{position:absolute;left:27px;top:58px;bottom:-2px;width:4px;border-radius:4px;background:var(--l)}.ax-v.dn .ln,.ax-v.ok .ln{background:linear-gradient(#22c55e,#16a34a)}.ax-v:last-child .ln{display:none}
+.ax-v .ic{position:relative;flex:none;width:58px;height:58px;border-radius:18px;display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 8px 18px rgba(0,0,0,.18);z-index:1}
+.ax-v .ic .ck{position:absolute;right:-6px;bottom:-6px;width:22px;height:22px;border-radius:50%;background:#16a34a;border:3px solid var(--bg2,#fbf6ea);font-size:11px;display:flex;align-items:center;justify-content:center;font-weight:900}
+html.dark .ax-v .ic .ck{border-color:#0b1220}
+.ax-v .cd{flex:1;position:relative;overflow:hidden;background:var(--b);border:1px solid var(--l);border-radius:20px;padding:12px 14px 12px 16px;box-shadow:0 8px 20px rgba(15,23,42,.07)}
+.ax-v .cd:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--c)}
+.ax-v .sp{font-size:10.5px;font-weight:900;letter-spacing:.12em;color:var(--c)}
+.ax-v .cd b{display:block;font-size:16.5px;margin:1px 0 2px}.ax-v .cd small{display:block;color:var(--m);font-size:12.5px;line-height:1.45}
+.ax-v .ft{display:flex;justify-content:space-between;align-items:center;margin-top:8px}.ax-v .ft .op{font-size:12.5px;font-weight:900;color:var(--c)}
+.ax-v.nx .cd{border:2px solid #8b5cf6;box-shadow:0 0 0 4px rgba(139,92,246,.15),0 8px 20px rgba(15,23,42,.07)}
+.ax-v.lk .cd{border-style:dashed;box-shadow:none}.ax-v.lk .ic{filter:grayscale(.55);opacity:.75}.ax-v.lk .cd b{color:var(--m)}
+.ax-ok2{background:#ffedd5;color:#9a3412}
+.ax-steps{display:grid;gap:8px;margin-bottom:12px}.ax-step{display:flex;gap:10px;align-items:center;background:var(--b);border:1px solid var(--l);border-radius:16px;padding:10px 12px}
+.ax-step>i{flex:none;width:26px;height:26px;border-radius:50%;background:#ea580c;color:#fff;font-style:normal;font-weight:900;font-size:13px;display:flex;align-items:center;justify-content:center}.ax-sic{font-size:26px}.ax-step b{display:block;font-size:14.5px}.ax-step small{color:var(--m);font-size:12.5px}
 </style>
 <script>
 (function(){
   var D=@@DATA@@,order=['t','m','p','i','s'],view=null,host=null;
   function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
-  function tag(s){return s==='done'?'<span class="ax-tag ax-done">✅ Passed</span>':s==='next'?'<span class="ax-tag ax-next">⏳ Next</span>':'<span class="ax-tag ax-lock">🔒 Soon</span>'}
-  function list(){return '<div class="ax"><div class="ax-top"><div class="ax-k">🪖 PMA 159 LONG COURSE</div><h2>Admin Experience</h2><p>My journey, step by step. Tap a stage to read.</p></div>'+
-    order.map(function(k){var x=D[k];return '<button type="button" class="ax-r'+(x.s==='lock'?' lock':'')+'" data-ax="'+k+'"><span class="ax-ri" style="background:linear-gradient(135deg,'+x.a+','+x.b+')">'+x.ic+'</span><span class="ax-rc"><span class="h"><b>'+esc(x.t)+'</b>'+tag(x.s)+'</span><small>'+esc(x.d)+'</small><span class="ax-go">Open →</span></span></button>'}).join('')+'</div>'}
+  function tag(s){return s==='done'?'<span class="ax-tag ax-done">✅ Passed</span>':s==='ok'?'<span class="ax-tag ax-ok2">✅ Done</span>':s==='next'?'<span class="ax-tag ax-next">⏳ Up next</span>':'<span class="ax-tag ax-lock">🔒 Soon</span>'}
+  function list(){var n=order.filter(function(k){return D[k].s==='done'||D[k].s==='ok'}).length;
+    return '<div class="ax"><div class="ax-top"><div class="ax-k">🪖 PMA 159 LONG COURSE</div><h2>Admin Experience</h2><p>My journey, step by step. Tap a stage to read.</p><div class="ax-pg"><div class="r"><span>Journey progress</span><em>'+n+' of '+order.length+' stages done</em></div><div class="ax-pb"><i style="width:'+Math.round(n*100/order.length)+'%"></i></div></div></div>'+
+    order.map(function(k,ix){var x=D[k],c=x.s==='done'?'dn':x.s==='ok'?'ok':x.s==='next'?'nx':'lk';return '<button type="button" class="ax-v '+c+'" data-ax="'+k+'" style="--c:'+x.a+'"><span class="ln"></span><span class="ic" style="background:linear-gradient(135deg,'+x.a+','+x.b+')">'+x.ic+(c==='dn'||c==='ok'?'<span class="ck">✓</span>':'')+'</span><span class="cd"><span class="sp">STEP '+(ix+1)+'</span><b>'+esc(x.t)+'</b><small>'+esc(x.d)+'</small><span class="ft">'+tag(x.s)+'<span class="op">Open →</span></span></span></button>'}).join('')+'</div>'}
   function page(k){return '<div class="ax"><button type="button" class="ax-bk" data-axb="1">← Back</button>'+D[k].h+'</div>'}
   function draw(){if(!host)return;host.innerHTML=view?page(view):list();try{host.scrollTop=0}catch(e){}}
   function axImgs(sp){var b=(window.__LOCK&&window.__LOCK.base)||'./';if(b.charAt(b.length-1)!=='/')b+='/';sp.querySelectorAll('img[data-axi]').forEach(function(im){if(!im.src)im.src=b+im.getAttribute('data-axi')})}

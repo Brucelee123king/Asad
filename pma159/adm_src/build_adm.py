@@ -80,7 +80,20 @@ MED = ('<div class="ax-hero" style="background:linear-gradient(135deg,#075985,#0
              '<li><b>Knock knees</b>: stand with feet together; they check if the knees touch.</li><li><b>Chest</b>: chest size and expansion are measured.</li></ul><p class="ax-sm">General guide only; follow the instructions at your centre.</p>', True))
 
 PHY = ('<div class="ax-hero" style="background:linear-gradient(135deg,#9a3412,#ea580c)"><div class="ax-k">🏃 INITIAL PHYSICAL TEST</div><h2>Initial Physical Test</h2>'
-       '<div class="ax-pass" style="background:#ffedd5;color:#9a3412">🔒 Coming soon</div></div><div class="ax-note">My physical test has not happened yet. I will share my experience here after it, In shaa Allah.</div>')
+       '<div class="ax-meta"><span>📅 05 Nov 2026</span><span>📍 D.I. Khan</span></div><div class="ax-pass" style="background:#ffedd5;color:#9a3412">✅ Done, Alhamdulillah!</div></div>'
+       '<div class="ax-steps">'
+       '<div class="ax-step"><i>1</i><span class="ax-sic">🏃</span><div><b>Running: about 1 km</b><small>The first part was a run of about one kilometre.</small></div></div>'
+       '<div class="ax-step"><i>2</i><span class="ax-sic">💪</span><div><b>15 Push-ups</b><small>Then we did 15 push-ups.</small></div></div>'
+       '<div class="ax-step"><i>3</i><span class="ax-sic">🧘</span><div><b>15 Sit-ups</b><small>After that, 15 sit-ups.</small></div></div>'
+       '<div class="ax-step"><i>4</i><span class="ax-sic">📝</span><div><b>Interview form</b><small>Then they had us fill in the interview form.</small></div></div>'
+       '<div class="ax-step"><i>5</i><span class="ax-sic">🏠</span><div><b>Sent home</b><small>After the form, we were allowed to leave.</small></div></div>'
+       '</div>'
+       + sec('💡', 'My advice for the physical', 'Prepare before your date',
+             '<ul class="ax-ok"><li><b>Run 1–2 km daily</b> for a few weeks before the test, so 1 km feels easy.</li>'
+             '<li><b>Practise push-ups and sit-ups</b> every day. Aim for more than 15 of each with correct form.</li>'
+             '<li>Wear proper <b>sports shoes</b> and comfortable clothes.</li><li>Eat light in the morning and drink water.</li>'
+             '<li>Warm up before the run. Do not start too fast; keep a steady pace.</li>'
+             '<li>Fill the interview form carefully and honestly. Officers ask questions from it.</li></ul>', True))
 
 INT = ('<div class="ax-hero" style="background:linear-gradient(135deg,#5b21b6,#8b5cf6)"><div class="ax-k">🗣️ INITIAL INTERVIEW</div><h2>Initial Interview</h2>'
        '<div class="ax-pass" style="background:#ede9fe;color:#5b21b6">🔒 Coming soon</div></div><div class="ax-note">My interview has not happened yet. I will share my experience here after it, In shaa Allah.</div>')
@@ -101,8 +114,8 @@ ICO = {
 STAGES = [
     ('t', '📝', 'Initial Test', '03 Nov 2026 • D.I. Khan • %d questions shared' % (len(VQ)+len(NQ)+30), 'done', '#16a34a', '#22c55e', TEST),
     ('m', '🩺', 'Initial Medical', '03 Nov 2026 • what they checked', 'done', '#0284c7', '#38bdf8', MED),
-    ('p', '🏃', 'Initial Physical Test', 'Coming soon', 'lock', '#ea580c', '#fb923c', PHY),
-    ('i', '🗣️', 'Initial Interview', 'Coming soon', 'lock', '#7c3aed', '#a855f7', INT),
+    ('p', '🏃', 'Initial Physical Test', '05 Nov 2026 • 1 km run, 15 push-ups, 15 sit-ups', 'ok', '#ea580c', '#fb923c', PHY),
+    ('i', '🗣️', 'Initial Interview', 'Interview form filled • my experience coming', 'next', '#7c3aed', '#a855f7', INT),
     ('s', '🎖️', 'ISSB', 'Later • 4-day guide coming', 'lock', '#b45309', '#f59e0b', ISSB)]
 data = {k: {'ic': ICO[k], 't': t, 'd': d, 's': s, 'a': a, 'b': b, 'h': h} for k, ic, t, d, s, a, b, h in STAGES}
 
