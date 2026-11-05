@@ -85,6 +85,16 @@ html.dark #intP{--b:#111c33;--t:#f1f5f9;--m:#94a3b8;--l:#1e293b}
 #intP .sng{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:4px}
 #intP .sn{position:relative;color:#1f2937!important;border:0;border-radius:4px;padding:12px 10px 14px;min-height:140px;font-size:12.8px;line-height:1.45;text-align:left;box-shadow:0 6px 12px rgba(0,0,0,.22);transition:opacity .2s}
 #intP .sn i{display:block;font-style:normal;font-weight:900;margin-bottom:4px}#intP .sn .snk{display:none;position:absolute;right:6px;top:4px;font-size:18px}#intP .sn.ok{opacity:.55}#intP .sn.ok .snk{display:block}
+#intP .mst{display:flex;gap:8px;margin-bottom:12px}#intP .mst>div{flex:1;text-align:center;background:var(--b);border:1px solid var(--l);border-radius:16px;padding:10px 4px}#intP .mst b{display:block;font-size:22px;font-weight:900}#intP .mst small{font-size:11.5px;color:var(--m)}#intP .mst .tm{color:inherit}#intP .mst .tm.w{color:#dc2626}
+#intP .mq{background:var(--b);border:1px solid var(--l);border-left:6px solid #10b981;border-radius:18px;padding:14px 16px;margin-bottom:12px}#intP .mq .c{font-size:11.5px;font-weight:800;color:var(--m);letter-spacing:.04em}#intP .mq .qq{font-size:20px;font-weight:900;line-height:1.35;margin:6px 0 4px}
+#intP .mq .hb{font-size:13px;font-weight:800;color:#059669;background:none;border:0;padding:4px 0}#intP .mq .hn{display:block;margin-top:8px;font-size:13.5px;color:#166534;background:#dcfce7;border-radius:12px;padding:10px}
+#intP .mbx{background:var(--b);border:1px solid var(--l);border-radius:18px;padding:12px 14px;margin-bottom:12px}#intP .mh{font-size:11.5px;font-weight:800;color:var(--m);margin-bottom:6px;letter-spacing:.04em}#intP .mh2{font-weight:800;font-size:14px;margin-bottom:10px}
+#intP .mrt{display:flex;gap:8px}#intP .mrt button{flex:1;text-align:center;font-size:30px;border-radius:16px;padding:8px 0;background:var(--s,#f6f1e3);border:1px solid var(--l);color:inherit;font-family:inherit}#intP .mrt small{display:block;font-size:12px;font-weight:800;color:var(--m)}
+#intP .mrt button.on{background:#dcfce7;border:2px solid #16a34a}#intP .mrt button.on small{color:#166534}
+#intP .mso{font-size:14px;padding:4px 0;display:flex;gap:6px;line-height:1.35}#intP .mso span{flex:1}
+#intP .big.g2{background:linear-gradient(120deg,#059669,#10b981)!important;color:#fff!important}#intP .big.dim{opacity:.6}
+#intP .mcf{font-size:40px;font-weight:900;color:#16a34a}#intP .mcf small{display:block;font-size:12px;color:var(--m);font-weight:700}
+html.dark #intP .mrt button{background:#0f1a2e}html.dark #intP .mrt button.on{background:#14321f}html.dark #intP .mrt button.on small{color:#86efac}html.dark #intP .mq .hn{background:#14321f;color:#bbf7d0}
 #intP .done{font-size:44px;text-align:center}
 </style>
 <script>
@@ -149,13 +159,20 @@ function BOOT(D){
   function fmt(s){s=Math.max(0,s|0);return Math.floor(s/60)+':'+('0'+s%60).slice(-2)}
   function newMock(){var pool=ALLQ.slice(),pick=[];var intro=pool.filter(function(x){return /introduce yourself|tell me about yourself/i.test(x.q)})[0];if(intro){pick.push(intro);pool.splice(pool.indexOf(intro),1)}
     while(pick.length<10&&pool.length){var i=Math.floor(Math.random()*pool.length);pick.push(pool.splice(i,1)[0])}mk={qs:pick,i:0,res:[],left:45,hint:false}}
+  var RT=[['😟','Weak',20],['🙂','OK',60],['😎','Strong',100]];
+  function mconf(){var r=mk.res.filter(function(x){return x!=='s'});if(!r.length)return 0;return Math.round(r.reduce(function(a,x){return a+RT[x][2]},0)/r.length)}
   function mock(){if(!mk)newMock();var c=card('mock');
-    if(mk.i>=mk.qs.length){var a=mk.res.filter(function(x){return x==='d'}).length;
-      return head(c)+'<div class="mk"><div class="done">'+(a>=8?'🏆':a>=5?'👍':'💪')+'</div><div class="qq">You answered '+a+' of '+mk.qs.length+'</div><p style="color:var(--m);font-size:13.5px">'+(a>=8?'Excellent! You are ready. Keep practising daily.':a>=5?'Good! Practise the skipped questions in the Question Bank.':'Keep going. Read Model Answers, then try again.')+'</p></div><button type="button" class="big" data-mn="1">🔁 New mock interview</button>'}
-    var x=mk.qs[mk.i],h=D.answers[x.q];
-    return head(c)+'<div class="dots">'+mk.qs.map(function(_,j){return '<i class="'+(j<mk.i?(mk.res[j]==='d'?'d':'s'):j===mk.i?'c':'')+'"></i>'}).join('')+'</div>'+
-      '<div class="mk"><div class="c">QUESTION '+(mk.i+1)+' OF '+mk.qs.length+'</div><div class="qq">"'+esc(x.q)+'"</div><span class="ct">'+(CI[x.c]||'💬')+' '+esc(x.c)+'</span><div class="tm'+(mk.left<=10?' w':'')+'" id="ivTm">'+fmt(mk.left)+'</div><p style="color:var(--m);font-size:12.5px;margin:0">Answer out loud, like in the real room</p>'+(h?(mk.hint?'<span class="hn">💡 '+esc(h)+'</span>':'<br><button type="button" class="hb" data-mh="1" style="font-size:13px;font-weight:800;color:#4f46e5;background:none;border:0">💡 Show answer tip</button>'):'')+'</div>'+
-      '<div class="row"><button type="button" class="big g" data-ma="d">✓ I answered</button><button type="button" class="big r" data-ma="s">↷ Skip</button></div>'}
+    var so=mk.res.map(function(x,j){return '<div class="mso">'+(x==='s'?'↷':RT[x][0])+' <span>'+esc(mk.qs[j].q)+'</span></div>'}).join('');
+    if(mk.i>=mk.qs.length){var a=mk.res.filter(function(x){return x!=='s'}).length,cf=mconf(),wk=mk.res.map(function(x,j){return x==='s'||x===0?mk.qs[j].q:null}).filter(Boolean);
+      return head(c)+'<div class="mk"><div class="done">'+(cf>=75?'🏆':cf>=50?'👍':'💪')+'</div><div class="qq">You answered '+a+' of '+mk.qs.length+'</div><div class="mcf">'+cf+'%<small>confidence</small></div><p style="color:var(--m);font-size:13.5px">'+(cf>=75?'Excellent! You are ready. Keep practising daily.':cf>=50?'Good! Practise your weak questions in Model Answers.':'Keep going. Read Model Answers, then try again.')+'</p></div>'+
+        (wk.length?'<div class="mbx"><div class="mh">📌 PRACTISE THESE AGAIN</div>'+wk.map(function(q){return '<div class="mso">• <span>'+esc(q)+'</span></div>'}).join('')+'</div>':'')+
+        '<div class="mbx"><div class="mh">YOUR ANSWERS</div>'+so+'</div><button type="button" class="big g2" data-mn="1">🔁 New mock interview</button>'}
+    var x=mk.qs[mk.i],h=D.answers[x.q],r=mk.r;
+    return head(c)+'<div class="mst"><div><b>'+(mk.i+1)+'/'+mk.qs.length+'</b><small>question</small></div><div><b style="color:#16a34a">'+(mk.res.length?mconf()+'%':'–')+'</b><small>confidence</small></div><div><b class="tm'+(mk.left<=10?' w':'')+'" id="ivTm">'+fmt(mk.left)+'</b><small>time left</small></div></div>'+
+      '<div class="mq"><div class="c">🎤 ANSWER OUT LOUD • '+(CI[x.c]||'💬')+' '+esc(x.c)+'</div><div class="qq">'+esc(x.q)+'</div>'+(h?(mk.hint?'<span class="hn">💡 '+esc(h)+'</span>':'<button type="button" class="hb" data-mh="1">💡 Show answer tip</button>'):'')+'</div>'+
+      '<div class="mbx"><div class="mh2">How well did you answer?</div><div class="mrt">'+RT.map(function(t,k){return '<button type="button" data-mr="'+k+'" class="'+(r===k?'on':'')+'">'+t[0]+'<small>'+t[1]+'</small></button>'}).join('')+'</div></div>'+
+      (so?'<div class="mbx"><div class="mh">YOUR ANSWERS SO FAR</div>'+so+'</div>':'')+
+      '<div class="row"><button type="button" class="big g2'+(r==null?' dim':'')+'" data-ma="d">Next question →</button><button type="button" class="big wht" data-ma="s" style="flex:.45">↷ Skip</button></div>'}
   function tick(){clearInterval(tmr);tmr=null;if(view==='mock'&&mk&&mk.i<mk.qs.length){tmr=setInterval(function(){if(!host||view!=='mock'){clearInterval(tmr);return}mk.left--;var e=host.querySelector('#ivTm');if(e){e.textContent=fmt(mk.left);e.classList.toggle('w',mk.left<=10)}if(mk.left<=0){clearInterval(tmr)}},1000)}
     if(view==='es'&&sub&&sub.t){tmr=setInterval(function(){if(!host||view!=='es'||!sub){clearInterval(tmr);return}sub.left--;var e=host.querySelector('#ivTm');if(e){e.textContent=fmt(sub.left);e.classList.toggle('w',sub.left<60)}if(sub.left<=0)clearInterval(tmr)},1000)}}
   function draw(keep){if(!host)return;var y=window.scrollY;var lb=host.previousElementSibling;if(lb&&lb.classList&&lb.classList.contains('lback'))lb.style.display=view==='hub'?'':'none';host.innerHTML='<div id="intP">'+(view==='hub'?hub():view==='qb'?qb():view==='ans'?ans():view==='xp'?xp():view==='es'?es():view==='tips'?tips():mock())+'</div>';if(!keep)window.scrollTo(0,0);else window.scrollTo(0,y);tick()}
@@ -169,8 +186,8 @@ function BOOT(D){
     if((b=t.closest('[data-iv]'))){go(b.getAttribute('data-iv'));return}
     if(t.closest('[data-ib]')){if(history.state&&history.state.iv)history.back();else{view='hub';draw()}return}
     if((b=t.closest('[data-qk]'))){var id=b.getAttribute('data-qk');if(ok[id])delete ok[id];else ok[id]=1;sv();var r=b.closest('.q');r.classList.toggle('ok',!!ok[id]);b.textContent=ok[id]?'✓':'';var cat=b.closest('.cat');if(cat&&view==='qb'){var qs=cat.querySelectorAll('.q'),n=cat.querySelectorAll('.q.ok').length,p=Math.round(100*n/qs.length);var rg=cat.querySelector('.ring');rg.style.setProperty('--p',p);rg.querySelector('span').textContent=p+'%';cat.querySelector('small').textContent=n+'/'+qs.length}return}
-    if((b=t.closest('[data-qc]'))){QC=b.getAttribute('data-qc');draw();return}
-    if(t.closest('[data-qcb]')){QC=null;draw();return}
+    if((b=t.closest('[data-qc]'))){QC=b.getAttribute('data-qc');draw();try{history.pushState({n:1,iv:1},'')}catch(e){}return}
+    if(t.closest('[data-qcb]')){if(history.state&&history.state.iv)history.back();else{QC=null;draw()}return}
     if((b=t.closest('[data-xnx]'))){var L=D.experiences.length;XI=(XI+(+b.getAttribute('data-xnx'))+L)%L;XF=0;draw();return}
     if(t.closest('[data-xfull]')){XF=XF?0:1;draw(true);return}
     if((b=t.closest('[data-anx]'))){var K=Object.keys(D.answers).length;AI=(AI+(+b.getAttribute('data-anx'))+K)%K;AV=0;AT=null;draw();atick();return}
@@ -184,7 +201,8 @@ function BOOT(D){
     if((b=t.closest('[data-et]'))){var LL2=EL==='ur'?D.urdu:D.essays;sub={t:LL2[+b.getAttribute('data-et')],left:900,ur:EL==='ur'};draw();return}
     if(t.closest('[data-es]')){sub=null;draw();return}
     if(t.closest('[data-mh]')){mk.hint=true;var y=window.scrollY;draw(true);return}
-    if((b=t.closest('[data-ma]'))){var a=b.getAttribute('data-ma');var x=mk.qs[mk.i];mk.res.push(a);if(a==='d'){ok[hid(x.q)]=1;sv()}mk.i++;mk.left=45;mk.hint=false;draw();return}
+    if((b=t.closest('[data-mr]'))){mk.r=+b.getAttribute('data-mr');draw(true);return}
+    if((b=t.closest('[data-ma]'))){var a=b.getAttribute('data-ma');var x=mk.qs[mk.i];if(a==='d'){if(mk.r==null)mk.r=1;a=mk.r;if(a>0){ok[hid(x.q)]=1;sv()}}mk.res.push(a);mk.i++;mk.left=45;mk.hint=false;mk.r=null;draw();return}
     if(t.closest('[data-mn]')){mk=null;draw();return}
   }
 }
