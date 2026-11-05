@@ -4189,7 +4189,7 @@ function BOOT(D){
   function eFil(){var ur=EL==='ur',L=eList(ur),q=EQ.toLowerCase(),o=[];L.forEach(function(t,i){if(EG&&eGrp(ur,i)!==EG)return;if(q&&t.toLowerCase().indexOf(q)<0)return;o.push(i)});return o}
   function eT(t,ur,i){var g=(D.esT||{})[eGrp(ur,i)];return g||null}
   function wheel(nums,ang,big){var C=['#ef4444','#f59e0b','#10b981','#3b82f6','#8b5cf6','#ec4899','#14b8a6','#f97316'],sv='';for(var k=0;k<8;k++){var a=(k*45-90)*Math.PI/180,b=((k+1)*45-90)*Math.PI/180;sv+='<path d="M80 80 L'+(80+76*Math.cos(a)).toFixed(1)+' '+(80+76*Math.sin(a)).toFixed(1)+' A76 76 0 0 1 '+(80+76*Math.cos(b)).toFixed(1)+' '+(80+76*Math.sin(b)).toFixed(1)+'Z" fill="'+C[k]+'"/><text x="'+(80+52*Math.cos(a+.39)).toFixed(1)+'" y="'+(84+52*Math.sin(a+.39)).toFixed(1)+'" fill="#fff" font-size="12" font-weight="900" text-anchor="middle">'+(nums[k]==null?'':nums[k]+1)+'</text>'}
-    return '<div class="ewh"><svg viewBox="0 0 160 160" width="'+big+'" height="'+big+'"><g id="esW" style="transform-origin:80px 80px;transform:rotate('+ang+'deg)">'+sv+'</g><circle cx="80" cy="80" r="15" fill="#fff" stroke="#0f172a" stroke-width="3"/></svg><i class="ept"></i></div>'}
+    return '<div class="ewh"><svg viewBox="0 0 160 160" width="'+big+'" height="'+big+'"><g id="esW" transform="rotate('+(ang%360)+' 80 80)">'+sv+'</g><circle cx="80" cy="80" r="15" fill="#fff" stroke="#0f172a" stroke-width="3"/></svg><i class="ept"></i></div>'}
   function es(){esL();var ur=EL==='ur',L=eList(ur),s=sub;
     var tabs='<div class="et"><button type="button" data-el="en" class="'+(ur?'':'on')+'">🇬🇧 English <small>'+D.essays.length+' topics</small></button><button type="button" data-el="ur" class="'+(ur?'on':'')+'">🇵🇰 اردو <small>'+(D.urdu||[]).length+' topics</small></button></div>';
     if(s&&s.spin){var F=eFil();if(!F.length)F=L.map(function(_,i){return i});var nums=s.nums||F.slice(0,8);s.nums=nums;
@@ -4259,8 +4259,11 @@ function BOOT(D){
     if((b=t.closest('[data-el]'))){EL=b.getAttribute('data-el');EG='';EQ='';draw(true);return}
     if((b=t.closest('[data-eg]'))){EG=b.getAttribute('data-eg');draw(true);return}
     if(t.closest('[data-espin]')){sub={spin:1,ang:0};draw();try{history.pushState({n:1,iv:1},'')}catch(e){}return}
-    if(t.closest('[data-spin]')){if(WA)return;var F=eFil();if(!F.length)F=eList(EL==='ur').map(function(_,i){return i});for(var k=F.length-1;k>0;k--){var r=Math.floor(Math.random()*(k+1)),x=F[k];F[k]=F[r];F[r]=x}var nums=F.slice(0,8),seg=Math.floor(Math.random()*nums.length);sub.nums=nums;sub.pick=null;var a0=sub.ang||0,tg=a0-(a0%360)+1800+(360-(seg*45+22.5));sub.ang=tg;draw(true);
-      var w=host.querySelector('#esW');WA=1;if(w){w.style.transform='rotate('+a0+'deg)';w.getBoundingClientRect();w.style.transition='transform 2.6s cubic-bezier(.17,.67,.2,1)';w.style.transform='rotate('+tg+'deg)'}setTimeout(function(){WA=0;if(view==='es'&&sub&&sub.spin){sub.pick=nums[seg];draw(true)}},2700);return}
+    if(t.closest('[data-spin]')){if(WA)return;var F=eFil();if(!F.length)F=eList(EL==='ur').map(function(_,i){return i});for(var k=F.length-1;k>0;k--){var r=Math.floor(Math.random()*(k+1)),x=F[k];F[k]=F[r];F[r]=x}var nums=F.slice(0,8),seg=Math.floor(Math.random()*nums.length);sub.nums=nums;sub.pick=null;var a0=(sub.ang||0)%360,tg=a0+360*7+((360-(seg*45+22.5))-a0+720)%360;sub.ang=tg;WA=1;draw(true);
+      var w=host.querySelector('#esW'),bt=host.querySelector('.esp [data-spin]');if(bt){bt.textContent='🎡 Spinning…';bt.style.opacity='.7'}var T0=0,DU=6000,K=11.79,P1=K*0.0144;
+      function ez(t){if(t<0.12)return K*t*t;var u=(t-0.12)/0.88;return P1+(1-P1)*(1-Math.pow(1-u,3))}
+      function fr(ts){if(!T0)T0=ts;var t=Math.min(1,(ts-T0)/DU),a=a0+(tg-a0)*ez(t);if(w)w.setAttribute('transform','rotate('+(a%360).toFixed(2)+' 80 80)');if(t<1)requestAnimationFrame(fr);else setTimeout(function(){WA=0;if(view==='es'&&sub&&sub.spin){sub.pick=nums[seg];draw(true)}},350)}
+      requestAnimationFrame(fr);return}
     if((b=t.closest('[data-eo]'))){var fromSpin=sub&&sub.spin;sub={i:+b.getAttribute('data-eo'),left:900,run:0};draw();if(!fromSpin)try{history.pushState({n:1,iv:1},'')}catch(e){}return}
     if(t.closest('[data-erun]')){sub.run=!sub.run;if(sub.left<=0){sub.left=900;sub.run=1}draw(true);return}
     if(t.closest('[data-edn]')){esL();var key=(EL==='ur'?'ur':'en')+sub.i;if(ESD[key])delete ESD[key];else ESD[key]=dk();esS();draw(true);return}
