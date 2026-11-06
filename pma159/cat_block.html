@@ -11,7 +11,7 @@
   var IC={cn:'📜',iv:'🎯',lc:'🪖',o:'📚',pma:'🎖️',pg:'🎓',nv:'🧩',en:'📝',fa:'⚔️',hk:'🏆',lf:'🌟',hf:'🦅'};
   function deco(){try{var m=document.getElementById('sec-menu');if(!m)return;
     m.querySelectorAll('h2').forEach(function(h){if(/Choose a/i.test(h.textContent)&&!h.closest('.q-rib')){var w=h.parentElement;if(!w||w.querySelector('.q-rib'))return;var r=document.createElement('div');r.className='q-rib';r.innerHTML='<div>⭐ CHOOSE A CATEGORY ⭐</div><p>Tap a category to see its tests</p>';w.replaceWith(r)}});
-    m.querySelectorAll('button[onclick*="openSec"]').forEach(function(b){var k=/openSec\('([^']+)'\)/.exec(b.getAttribute('onclick')||'');if(!k||!IC[k[1]])return;var i=b.querySelector('i.fa-solid');if(i&&!b.querySelector('.q-cic')){var s=document.createElement('span');s.className='q-cic';s.textContent=IC[k[1]];i.replaceWith(s)}});
+    m.querySelectorAll('button[onclick*="openSec"]').forEach(function(b){var k=/openSec\('([^']+)'\)/.exec(b.getAttribute('onclick')||'');if(!k||!IC[k[1]])return;var i=b.querySelector('i.fa-solid');if(i&&!b.querySelector('.q-cic')){var s=document.createElement('span');s.className='q-cic';if(k[1]==='pg')s.innerHTML='<span class="capimg" style="width:34px;height:34px"></span>';else s.textContent=IC[k[1]];i.replaceWith(s)}});
   }catch(e){}}
   var f=window.renderMenu;if(typeof f==='function')window.renderMenu=function(){var r=f.apply(this,arguments);deco();return r};
   deco();setTimeout(deco,1200);
