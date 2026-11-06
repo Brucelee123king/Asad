@@ -182,3 +182,9 @@ html.dark #auth .err{color:#ff8fa3}html.dark #auth .err.ok{color:#7ff0b8}
   var cur=LS.get('an_session')||S;if(cur){$('auth').classList.add('hide');showUser(cur)}
 })();
 </script>
+<script>
+/* graduation cap swings like a pendulum (login / please-wait screen and main page). Web Animations so lite mode does not stop it */
+(function(){function sw(){document.querySelectorAll('#auth .hero .capimg,.emb.emcap .capimg').forEach(function(e){if(e.__sw||!e.animate)return;e.__sw=1;e.style.transformOrigin='50% 8%';
+  e.animate([{transform:'rotate(-7deg)'},{transform:'rotate(7deg)'}],{duration:1600,direction:'alternate',iterations:Infinity,easing:'ease-in-out'})})}
+  sw();setInterval(sw,700)})();
+</script>

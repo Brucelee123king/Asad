@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head><script>/*SHELLUPD*/(function(){var V=202611060049,B='http://localhost:8099/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
+<head><script>/*SHELLUPD*/(function(){var V=202611060051,B='http://localhost:8099/',K={"kty":"EC","crv":"P-256","x":"WLNDBL38D-Ti-NrKlaK6H2wt8XSIQz3cPDKV3rv3pOo","y":"x5KsdvSUYKs5GlFtmUssI2MmDZtTFqvZiaJRLu4GlXU"},L=localStorage;
 try{var sv=+L.getItem('shell_v')||0,h=L.getItem('shell_html'),t=+L.getItem('shell_try')||0;
 if(h&&sv>V&&!window.__shellW){if(t>=2){L.removeItem('shell_html');L.removeItem('shell_v');L.removeItem('shell_try')}
 else{L.setItem('shell_try',String(t+1));window.__shellW=1;document.open();document.write(h);document.close();return}}}catch(e){}
@@ -1480,6 +1480,12 @@ html.dark #auth .err{color:#ff8fa3}html.dark #auth .err.ok{color:#7ff0b8}
   window.authLogout=function(){LS.del('an_session');try{sessionStorage.removeItem('an_session_tmp')}catch(e){}showUser(null);var pi=$('paneIn'),pu=$('paneUp');pu.hidden=true;pu.classList.add('out');pi.hidden=false;pi.classList.remove('out');$('inErr').textContent='';$('upErr').textContent='';var a=$('auth');a.classList.remove('hide');window.scrollTo(0,0)};
   var cur=LS.get('an_session')||S;if(cur){$('auth').classList.add('hide');showUser(cur)}
 })();
+</script>
+<script>
+/* graduation cap swings like a pendulum (login / please-wait screen and main page). Web Animations so lite mode does not stop it */
+(function(){function sw(){document.querySelectorAll('#auth .hero .capimg,.emb.emcap .capimg').forEach(function(e){if(e.__sw||!e.animate)return;e.__sw=1;e.style.transformOrigin='50% 8%';
+  e.animate([{transform:'rotate(-7deg)'},{transform:'rotate(7deg)'}],{duration:1600,direction:'alternate',iterations:Infinity,easing:'ease-in-out'})})}
+  sw();setInterval(sw,700)})();
 </script>
 <style>
 /* each section keeps its own colour inside the test (start page, questions, results) */
