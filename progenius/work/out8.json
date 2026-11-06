@@ -1,0 +1,442 @@
+[
+ {
+  "src": "A",
+  "num": 11,
+  "question": "Who was the first President of the United States?",
+  "options": [
+   "Thomas Jefferson",
+   "John Adams",
+   "George Washington",
+   "Abraham Lincoln"
+  ],
+  "correct": 2,
+  "why": "George Washington was inaugurated on 30 April 1789 as the first US President.",
+  "rel": "He served two terms, 1789 to 1797. John Adams was the second President."
+ },
+ {
+  "src": "A",
+  "num": 33,
+  "question": "Fill in the blank: “She is afraid ___ the dark.”",
+  "options": [
+   "of",
+   "from",
+   "at",
+   "with"
+  ],
+  "correct": 0,
+  "why": "The standard pattern is 'afraid of'.",
+  "rel": "Other examples: afraid of heights, fond of, proud of."
+ },
+ {
+  "src": "A",
+  "num": 48,
+  "question": "What is the radius of a unit circle?",
+  "options": [
+   "2 units",
+   "0.5 unit",
+   "pi units",
+   "1 unit"
+  ],
+  "correct": 3,
+  "why": "A unit circle has radius 1 and equation x² + y² = 1.",
+  "rel": "It is centred at the origin."
+ },
+ {
+  "src": "A",
+  "num": 64,
+  "question": "What is the third pillar of Islam?",
+  "options": [
+   "Salah",
+   "Zakat",
+   "Sawm",
+   "Hajj"
+  ],
+  "correct": 1,
+  "why": "The five pillars in order are Shahadah, Salah, Zakat, Sawm and Hajj.",
+  "rel": "Zakat is obligatory almsgiving when conditions are met."
+ },
+ {
+  "src": "A",
+  "num": 79,
+  "question": "Where is the Golden Gate Bridge?",
+  "options": [
+   "San Francisco Bay, California",
+   "New York Harbor",
+   "Sydney Harbour",
+   "Seattle, Washington"
+  ],
+  "correct": 0,
+  "why": "The Golden Gate Bridge connects San Francisco with Marin County.",
+  "rel": "It opened in 1937."
+ },
+ {
+  "src": "A",
+  "num": 92,
+  "question": "The set of points on a line is called what?",
+  "options": [
+   "Coordinates",
+   "Origin",
+   "Locus",
+   "Slope"
+  ],
+  "correct": 2,
+  "why": "A set of points following a condition, such as lying on a line, is called a locus.",
+  "rel": "Points on one line are also called collinear points.",
+  "problem": "Source question is incomplete and answer is unclear; 'locus' chosen as the standard term."
+ },
+ {
+  "src": "A",
+  "num": 105,
+  "question": "Which is the largest forest in Pakistan?",
+  "options": [
+   "Changa Manga",
+   "Ayubia National Park",
+   "Murree Hills Forest",
+   "Kund Malir Forest"
+  ],
+  "correct": 0,
+  "why": "Changa Manga is Pakistan's famous man-made planted forest near Lahore.",
+  "rel": "It lies in Punjab near Kasur.",
+  "problem": "'Largest forest' depends on natural vs planted; Changa Manga is the commonly expected answer."
+ },
+ {
+  "src": "A",
+  "num": 118,
+  "question": "What is Pakistan’s national flower?",
+  "options": [
+   "Rose",
+   "Jasmine",
+   "Tulip",
+   "Sunflower"
+  ],
+  "correct": 1,
+  "why": "Jasmine (chambeli) is Pakistan's national flower.",
+  "rel": "Pakistan's national tree is deodar."
+ },
+ {
+  "src": "A",
+  "num": 131,
+  "question": "How long did Prophet Yunus remain in the fish?",
+  "options": [
+   "Not specified in the Qur'an",
+   "3 days",
+   "7 days",
+   "40 days"
+  ],
+  "correct": 0,
+  "why": "The Qur'an gives no exact duration for Prophet Yunus in the fish.",
+  "rel": "His supplication is in Qur'an 21:87.",
+  "problem": "Question has no single agreed duration; reports of 3 to 40 days are not established."
+ },
+ {
+  "src": "B",
+  "num": 5,
+  "question": "Which Surah is named after an ant?",
+  "options": [
+   "An-Nahl",
+   "Al-Ankabut",
+   "An-Naml",
+   "Al-Baqarah"
+  ],
+  "correct": 2,
+  "why": "Surah An-Naml (Surah 27) means 'The Ant'.",
+  "rel": "An-Nahl is the Bee and Al-Ankabut is the Spider."
+ },
+ {
+  "src": "B",
+  "num": 15,
+  "question": "Simplify sin(180° − x).",
+  "options": [
+   "-sin x",
+   "cos x",
+   "-cos x",
+   "sin x"
+  ],
+  "correct": 3,
+  "why": "Sine is positive in the second quadrant, so sin(180° - x) = sin x.",
+  "rel": "In radians, sin(π - x) = sin x."
+ },
+ {
+  "src": "B",
+  "num": 25,
+  "question": "What is the third letter when “MANAGEMENT” is arranged alphabetically?",
+  "options": [
+   "E",
+   "A",
+   "G",
+   "M"
+  ],
+  "correct": 0,
+  "why": "MANAGEMENT sorts as A, A, E, E, G, M, M, N, N, T, so the third letter is E.",
+  "rel": "Sort repeated letters too."
+ },
+ {
+  "src": "B",
+  "num": 35,
+  "question": "Who wrote “The Loyal Muhammadans of India”?",
+  "options": [
+   "Allama Iqbal",
+   "Sir Syed Ahmad Khan",
+   "Maulana Muhammad Ali Jauhar",
+   "Nawab Salimullah"
+  ],
+  "correct": 1,
+  "why": "Sir Syed wrote it after 1857 to show Muslims who stayed loyal to the British.",
+  "rel": "He founded the Aligarh college in 1875."
+ },
+ {
+  "src": "B",
+  "num": 45,
+  "question": "When did the Chauri Chaura incident occur?",
+  "options": [
+   "5 February 1922",
+   "4 February 1921",
+   "4 February 1922",
+   "12 March 1922"
+  ],
+  "correct": 2,
+  "why": "The Chauri Chaura incident happened on 4 February 1922 in Gorakhpur district.",
+  "rel": "Gandhi suspended the Non-Cooperation Movement afterwards."
+ },
+ {
+  "src": "B",
+  "num": 55,
+  "question": "Who is the Speaker of Pakistan's National Assembly?",
+  "options": [
+   "Asad Qaiser",
+   "Raja Pervaiz Ashraf",
+   "Syed Ghulam Mustafa Shah",
+   "Sardar Ayaz Sadiq"
+  ],
+  "correct": 3,
+  "why": "As of Oct 2026, Sardar Ayaz Sadiq is the Speaker; he was elected on 1 March 2024.",
+  "rel": "Asad Qaiser was Speaker 2018 to 2022. Ghulam Mustafa Shah is Deputy Speaker."
+ },
+ {
+  "src": "B",
+  "num": 66,
+  "question": "When did Muhammad Ali Jinnah leave the Indian National Congress?",
+  "options": [
+   "1920",
+   "1913",
+   "1916",
+   "1930"
+  ],
+  "correct": 0,
+  "why": "Jinnah broke with Congress in 1920 around the Nagpur session over Gandhi's methods.",
+  "rel": "He joined the Muslim League in 1913."
+ },
+ {
+  "src": "B",
+  "num": 76,
+  "question": "What is the length of Pakistan's coastline?",
+  "options": [
+   "790 km",
+   "1,046 km",
+   "1,350 km",
+   "1,600 km"
+  ],
+  "correct": 1,
+  "why": "Pakistan's coast along the Arabian Sea is commonly given as about 1,046 km.",
+  "rel": "Major areas: Karachi, Makran coast, Gwadar.",
+  "problem": "Sources vary (about 990 to 1,050 km) depending on measurement; 1,046 km is the commonly cited figure."
+ },
+ {
+  "src": "B",
+  "num": 86,
+  "question": "What was the name of Hazrat Uthman ibn Affan's father?",
+  "options": [
+   "Abu Sufyan",
+   "Abu Talib",
+   "Affan",
+   "Abdullah"
+  ],
+  "correct": 2,
+  "why": "Hazrat Uthman's father was Affan ibn Abi al-As.",
+  "rel": "Uthman was the third Rightly Guided Caliph and Dhun-Nurayn."
+ },
+ {
+  "src": "B",
+  "num": 96,
+  "question": "What is commonly listed as Pakistan's longest national highway?",
+  "options": [
+   "N-25",
+   "N-55",
+   "N-35",
+   "N-5"
+  ],
+  "correct": 3,
+  "why": "N-5 runs from Karachi to Torkham and is the longest national highway.",
+  "rel": "The Karakoram Highway (N-35) is famous for altitude, not length."
+ },
+ {
+  "src": "B",
+  "num": 106,
+  "question": "Which angel brought revelation to the Prophets?",
+  "options": [
+   "Jibril (Gabriel)",
+   "Mikail",
+   "Israfil",
+   "Izrail"
+  ],
+  "correct": 0,
+  "why": "Angel Jibril brought revelation to the Prophets.",
+  "rel": "He is also called Ruh al-Amin."
+ },
+ {
+  "src": "B",
+  "num": 116,
+  "question": "What is Sahifa al-Sadiqa?",
+  "options": [
+   "Collection of letters of Hazrat Umar",
+   "Hadith collection of Abdullah ibn Amr ibn al-As",
+   "A tafsir of Surah Al-Baqarah by Ibn Abbas",
+   "A book of Islamic law by Imam Malik"
+  ],
+  "correct": 1,
+  "why": "Sahifa al-Sadiqa was an early written hadith collection by Abdullah ibn Amr ibn al-As.",
+  "rel": "It is often called the first hadith writing, depending on definition."
+ },
+ {
+  "src": "B",
+  "num": 126,
+  "question": "How many daughters did Prophet Muhammad (PBUH) have?",
+  "options": [
+   "Two",
+   "Three",
+   "Four",
+   "Five"
+  ],
+  "correct": 2,
+  "why": "Zaynab, Ruqayyah, Umm Kulthum and Fatimah were the Prophet's four daughters.",
+  "rel": "Fatimah (RA) was the youngest."
+ },
+ {
+  "src": "B",
+  "num": 136,
+  "question": "What are ambassadors of Commonwealth countries to one another commonly called?",
+  "options": [
+   "Consuls",
+   "Chargé d'affaires",
+   "Nuncios",
+   "High Commissioners"
+  ],
+  "correct": 3,
+  "why": "Commonwealth members' envoys to one another are High Commissioners.",
+  "rel": "Their mission is a High Commission, not an embassy."
+ },
+ {
+  "src": "B",
+  "num": 146,
+  "question": "In which country was the 1955 Bandung Conference held, which helped inspire the Non-Aligned Movement?",
+  "options": [
+   "Indonesia",
+   "India",
+   "Egypt",
+   "Yugoslavia"
+  ],
+  "correct": 0,
+  "why": "The Bandung Conference was held in Bandung, Indonesia, in April 1955.",
+  "rel": "The Non-Aligned Movement was formed at Belgrade in 1961."
+ },
+ {
+  "src": "B",
+  "num": 156,
+  "question": "Evaluate 2 + 2 ÷ 2.",
+  "options": [
+   "2",
+   "3",
+   "4",
+   "1"
+  ],
+  "correct": 1,
+  "why": "Division comes first: 2 ÷ 2 = 1, then 2 + 1 = 3.",
+  "rel": "BODMAS/PEMDAS sets the order of operations."
+ },
+ {
+  "src": "B",
+  "num": 166,
+  "question": "How many types of articles are there in English grammar?",
+  "options": [
+   "Four",
+   "Five",
+   "Two",
+   "Six"
+  ],
+  "correct": 2,
+  "why": "English has two types of articles, definite (the) and indefinite (a/an).",
+  "rel": "'A' goes before consonant sounds, 'an' before vowel sounds.",
+  "problem": "Source answer mixes 'two types' and 'three forms'; two types chosen as standard."
+ },
+ {
+  "src": "B",
+  "num": 176,
+  "question": "Where do articles usually appear in an English noun phrase?",
+  "options": [
+   "After a noun",
+   "After a verb",
+   "At the end of a sentence",
+   "Before a noun"
+  ],
+  "correct": 3,
+  "why": "Articles come before a noun or noun phrase, such as 'a book'.",
+  "rel": "They often come before adjectives: 'the old house'."
+ },
+ {
+  "src": "B",
+  "num": 186,
+  "question": "According to a commonly cited hadith, what is the jihad of women?",
+  "options": [
+   "Hajj",
+   "Hijab",
+   "Fasting",
+   "Zakat"
+  ],
+  "correct": 0,
+  "why": "A hadith describes a righteous Hajj as the jihad of women.",
+  "rel": "Wording depends on the hadith report."
+ },
+ {
+  "src": "B",
+  "num": 196,
+  "question": "What does OPEC stand for?",
+  "options": [
+   "Organization of Petroleum Exploring Companies",
+   "Organization of the Petroleum Exporting Countries",
+   "Organization of Pacific Energy Countries",
+   "Organization of Petroleum Exchange Committees"
+  ],
+  "correct": 1,
+  "why": "OPEC stands for Organization of the Petroleum Exporting Countries.",
+  "rel": "Founded in Baghdad in 1960; HQ in Vienna."
+ },
+ {
+  "src": "B",
+  "num": 206,
+  "question": "What is the approximate length of the Line of Control (LoC) in Kashmir?",
+  "options": [
+   "About 540 km",
+   "About 1,040 km",
+   "About 740 km",
+   "About 340 km"
+  ],
+  "correct": 2,
+  "why": "The LoC in Kashmir is commonly cited as about 740 km long.",
+  "rel": "It is not a final international border.",
+  "problem": "Estimates vary slightly (about 740 to 778 km)."
+ },
+ {
+  "src": "B",
+  "num": 216,
+  "question": "In which mountain range is Siachen Glacier located?",
+  "options": [
+   "Himalaya Range",
+   "Hindu Kush",
+   "Pir Panjal Range",
+   "Karakoram Range"
+  ],
+  "correct": 3,
+  "why": "Siachen Glacier lies in the eastern Karakoram.",
+  "rel": "It is among the longest glaciers outside the polar regions."
+ }
+]

@@ -1,0 +1,1154 @@
+[
+ {
+  "id": "A145",
+  "question": "Which lake is known as the world's largest desert lake?",
+  "options": [
+   "Lake Turkana",
+   "Lake Chad",
+   "Lake Balkhash",
+   "Lake Victoria"
+  ],
+  "correct": 0,
+  "why": "Lake Turkana in northern Kenya lies in a hot, dry desert region and is called the world's largest permanent desert lake.",
+  "rel": "Lake Turkana is also the world's largest alkaline lake.",
+  "status": "fixed",
+  "note": "Printed answer gave no answer; Lake Turkana is the standard answer for 'largest desert lake'.",
+  "match": null
+ },
+ {
+  "id": "A146",
+  "question": "Who is known by the title 'Sardar-ul-Ansar' (leader of the Ansar)?",
+  "options": [
+   "Hazrat Abu Ayyub Ansari (RA)",
+   "Hazrat Sa'd ibn Mu'adh (RA)",
+   "Hazrat Zayd ibn Thabit (RA)",
+   "Hazrat Mus'ab ibn Umair (RA)"
+  ],
+  "correct": 1,
+  "why": "Sa'd ibn Mu'adh (RA) was chief of the Aws tribe of the Ansar; the Prophet (PBUH) told the Ansar, 'Stand up for your leader' about him.",
+  "rel": "Sa'd ibn Ubadah (RA) was the chief of the Khazraj, the other Ansar tribe.",
+  "status": "unsure",
+  "note": "Title is not well established; some sources give it to Sa'd ibn Ubadah (RA). Kept the notes' answer.",
+  "match": null
+ },
+ {
+  "id": "A147",
+  "question": "Which region is called the cradle of Islam?",
+  "options": [
+   "Mesopotamia (Iraq)",
+   "Hijaz (Saudi Arabia)",
+   "Levant (Syria)",
+   "Nile Valley (Egypt)"
+  ],
+  "correct": 1,
+  "why": "Islam began in Makkah and Madinah, both in the Hijaz region of present-day Saudi Arabia.",
+  "rel": "The Hijaz lies along the Red Sea coast of the Arabian Peninsula.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A148",
+  "question": "In which year of Prophethood did the 'Year of Grief' (Aam-ul-Huzn) occur?",
+  "options": [
+   "10th year",
+   "5th year",
+   "8th year",
+   "13th year"
+  ],
+  "correct": 0,
+  "why": "Hazrat Khadijah (RA) and Abu Talib both died in the 10th year of Prophethood, so it was called the Year of Grief.",
+  "rel": "The Year of Grief is usually dated to about 619 CE, before the Hijrah.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A149",
+  "question": "In which Surah does Allah swear by time?",
+  "options": [
+   "Surah Ash-Shams",
+   "Surah Ad-Duha",
+   "Surah Al-Asr",
+   "Surah Al-Fajr"
+  ],
+  "correct": 2,
+  "why": "Surah Al-Asr begins with 'Wal-Asr', an oath by time.",
+  "rel": "Surah Ash-Shams begins with an oath by the sun.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A150",
+  "question": "In which city is the shrine of Data Ganj Bakhsh located?",
+  "options": [
+   "Multan",
+   "Pakpattan",
+   "Uch Sharif",
+   "Lahore"
+  ],
+  "correct": 3,
+  "why": "The shrine of Hazrat Ali Hujwiri (Data Ganj Bakhsh) is in Lahore.",
+  "rel": "Data Ganj Bakhsh wrote Kashf-ul-Mahjoob, an early Persian book on Sufism.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A151",
+  "question": "Who was the first Foreign Minister of Pakistan?",
+  "options": [
+   "Liaquat Ali Khan",
+   "Sir Muhammad Zafarullah Khan",
+   "Sardar Abdur Rab Nishtar",
+   "Malik Ghulam Muhammad"
+  ],
+  "correct": 1,
+  "why": "Sir Muhammad Zafarullah Khan became Pakistan's first Foreign Minister in December 1947.",
+  "rel": "He later served as President of the UN General Assembly (1962-63).",
+  "status": "ok",
+  "note": "",
+  "match": 143
+ },
+ {
+  "id": "A152",
+  "question": "Who was the first muezzin of Islam?",
+  "options": [
+   "Hazrat Abdullah ibn Umm Maktum (RA)",
+   "Hazrat Abu Mahdhura (RA)",
+   "Hazrat Zayd ibn Harithah (RA)",
+   "Hazrat Bilal ibn Rabah (RA)"
+  ],
+  "correct": 3,
+  "why": "The Prophet (PBUH) chose Hazrat Bilal (RA) to give the first Azan in Madinah.",
+  "rel": "Bilal (RA) was freed from slavery by Hazrat Abu Bakr (RA).",
+  "status": "ok",
+  "note": "",
+  "match": 197
+ },
+ {
+  "id": "A153",
+  "question": "Who was the first Mughal emperor?",
+  "options": [
+   "Humayun",
+   "Akbar",
+   "Sher Shah Suri",
+   "Zahir-ud-din Muhammad Babur"
+  ],
+  "correct": 3,
+  "why": "Babur founded the Mughal Empire after winning the First Battle of Panipat in 1526.",
+  "rel": "Babur wrote his memoirs, the Baburnama, in Chagatai Turkish.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A154",
+  "question": "What is the approximate length of the Makran Coastal Highway (N-10) between Karachi and Gwadar?",
+  "options": [
+   "About 653 km",
+   "About 450 km",
+   "About 820 km",
+   "About 1,046 km"
+  ],
+  "correct": 0,
+  "why": "The Makran Coastal Highway along the Balochistan coast is commonly quoted as about 653 km long.",
+  "rel": "1,046 km is the length of Pakistan's whole coastline.",
+  "status": "ok",
+  "note": "Length varies slightly by route definition; 653 km is the standard figure.",
+  "match": null
+ },
+ {
+  "id": "A155",
+  "question": "Which Prophet built the Ark?",
+  "options": [
+   "Prophet Ibrahim (AS)",
+   "Prophet Musa (AS)",
+   "Prophet Nuh (AS)",
+   "Prophet Yunus (AS)"
+  ],
+  "correct": 2,
+  "why": "The Quran tells that Allah ordered Prophet Nuh (AS) to build the Ark before the great flood.",
+  "rel": "Surah Nuh (Surah 71) is named after him.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A156",
+  "question": "Whom did Babur defeat in the First Battle of Panipat?",
+  "options": [
+   "Ibrahim Lodi",
+   "Rana Sanga",
+   "Hemu",
+   "Sher Shah Suri"
+  ],
+  "correct": 0,
+  "why": "Babur defeated Sultan Ibrahim Lodi of Delhi at Panipat in 1526.",
+  "rel": "Babur defeated Rana Sanga a year later at the Battle of Khanwa (1527).",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A157",
+  "question": "In which year did Muhammad Ali Jinnah join the All-India Muslim League?",
+  "options": [
+   "1913",
+   "1906",
+   "1916",
+   "1920"
+  ],
+  "correct": 0,
+  "why": "Jinnah joined the Muslim League in 1913 while still a member of the Congress.",
+  "rel": "He left the Congress in 1920.",
+  "status": "ok",
+  "note": "",
+  "match": 18
+ },
+ {
+  "id": "A158",
+  "question": "From which Surah was the first revelation?",
+  "options": [
+   "Surah Al-Fatiha",
+   "Surah Al-Muddaththir",
+   "Surah Al-Muzzammil",
+   "Surah Al-Alaq"
+  ],
+  "correct": 3,
+  "why": "The first five verses of Surah Al-Alaq, starting with 'Iqra' (Read), were the first revelation in the Cave of Hira.",
+  "rel": "The first revealed word was 'Iqra', meaning 'Read' or 'Recite'.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A159",
+  "question": "What is the official height of Mount Everest?",
+  "options": [
+   "8,611 m",
+   "8,848.86 m",
+   "8,126 m",
+   "8,586 m"
+  ],
+  "correct": 1,
+  "why": "Nepal and China jointly announced Everest's height as 8,848.86 metres in 2020.",
+  "rel": "8,611 m is the height of K2, the world's second-highest mountain.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A160",
+  "question": "What is the approximate length of the Amazon River?",
+  "options": [
+   "About 4,000 km",
+   "About 5,500 km",
+   "About 7,500 km",
+   "About 6,400 km"
+  ],
+  "correct": 3,
+  "why": "The Amazon is commonly given as about 6,400 km long, though estimates vary.",
+  "rel": "The Amazon carries more water than any other river in the world.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A161",
+  "question": "What is the name of Turkey's (Türkiye's) parliament?",
+  "options": [
+   "Majlis",
+   "Knesset",
+   "Grand National Assembly",
+   "Duma"
+  ],
+  "correct": 2,
+  "why": "Türkiye's legislature is the Grand National Assembly (TBMM).",
+  "rel": "The Knesset is Israel's parliament and the Duma is Russia's.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A162",
+  "question": "Which sea lies between the Black Sea and the Mediterranean (Aegean) Sea?",
+  "options": [
+   "Sea of Marmara",
+   "Red Sea",
+   "Caspian Sea",
+   "Adriatic Sea"
+  ],
+  "correct": 0,
+  "why": "The Black Sea joins the Sea of Marmara through the Bosporus, and Marmara joins the Aegean through the Dardanelles.",
+  "rel": "The Sea of Marmara lies entirely within Türkiye.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A163",
+  "question": "Fill in the blank: 'He went to the river ___ car.'",
+  "options": [
+   "on",
+   "with",
+   "in the",
+   "by"
+  ],
+  "correct": 3,
+  "why": "We use 'by' with means of transport: by car, by bus, by train.",
+  "rel": "We say 'on foot', not 'by foot'.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A164",
+  "question": "Mount Kigo is located in which country?",
+  "options": [
+   "Tanzania",
+   "Kenya",
+   "Uganda",
+   "Rwanda"
+  ],
+  "correct": 2,
+  "why": "Kigo is in Wakiso District near Kampala, Uganda.",
+  "rel": "Lake Victoria borders Uganda, Kenya and Tanzania.",
+  "status": "unsure",
+  "note": "Name could not be confirmed; may be a misspelling. Best guess Uganda (Kigo, Wakiso). Check source.",
+  "match": null
+ },
+ {
+  "id": "A165",
+  "question": "Lake Victoria is shared by which countries?",
+  "options": [
+   "Tanzania, Uganda and Kenya",
+   "Ethiopia, Sudan and Egypt",
+   "Zambia, Malawi and Mozambique",
+   "Congo, Rwanda and Burundi"
+  ],
+  "correct": 0,
+  "why": "Lake Victoria in East Africa is bordered by Tanzania, Uganda and Kenya.",
+  "rel": "Lake Victoria is Africa's largest lake and a main source of the White Nile.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A166",
+  "question": "Mount Whitney is located in which country?",
+  "options": [
+   "Canada",
+   "United States",
+   "Mexico",
+   "Australia"
+  ],
+  "correct": 1,
+  "why": "Mount Whitney is in the Sierra Nevada, California, USA.",
+  "rel": "It is the highest peak in the contiguous United States (about 4,421 m).",
+  "status": "unsure",
+  "note": "Printed 'Whitley Mountain' is unclear; assumed Mount Whitney.",
+  "match": null
+ },
+ {
+  "id": "A167",
+  "question": "What is the fifth (outermost) layer of Earth's atmosphere?",
+  "options": [
+   "Thermosphere",
+   "Exosphere",
+   "Mesosphere",
+   "Stratosphere"
+  ],
+  "correct": 1,
+  "why": "The layers are troposphere, stratosphere, mesosphere, thermosphere and exosphere; the exosphere is the fifth and outermost.",
+  "rel": "The ozone layer lies in the stratosphere.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A168",
+  "question": "What percentage of air is nitrogen?",
+  "options": [
+   "About 21%",
+   "About 50%",
+   "About 78%",
+   "About 0.9%"
+  ],
+  "correct": 2,
+  "why": "Dry air is about 78% nitrogen by volume.",
+  "rel": "Oxygen makes up about 21% of air, and argon about 0.93%.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A169",
+  "question": "The Kobo Hills are in which country?",
+  "options": [
+   "Uganda",
+   "Tanzania",
+   "Kenya",
+   "Ethiopia"
+  ],
+  "correct": 1,
+  "why": "The supplied source places the Kobo Hills in Tanzania.",
+  "rel": "Tanzania is home to Mount Kilimanjaro, Africa's highest peak.",
+  "status": "unsure",
+  "note": "Location/spelling could not be verified; kept printed answer.",
+  "match": null
+ },
+ {
+  "id": "A170",
+  "question": "What is the total area of Pakistan?",
+  "options": [
+   "About 652,230 sq km",
+   "About 881,913 sq km",
+   "About 1,046,000 sq km",
+   "About 7,796,969 sq km"
+  ],
+  "correct": 1,
+  "why": "Pakistan's total area including Gilgit-Baltistan and Azad Kashmir is commonly given as 881,913 sq km.",
+  "rel": "Without GB and AJK, the area is often quoted as 796,096 sq km.",
+  "status": "ok",
+  "note": "Value depends on territorial definition; 7,796,969 in the source is wrong.",
+  "match": null
+ },
+ {
+  "id": "A171",
+  "question": "What is the approximate area of Pakistan's Exclusive Economic Zone (EEZ)?",
+  "options": [
+   "About 50,000 sq km",
+   "About 240,000 sq km",
+   "About 120,000 sq km",
+   "About 500,000 sq km"
+  ],
+  "correct": 1,
+  "why": "Pakistan's EEZ, extending 200 nautical miles from the coast, covers about 240,000 sq km.",
+  "rel": "In 2015 the UN extended Pakistan's continental shelf by about 50,000 sq km, so total maritime area is about 290,000 sq km.",
+  "status": "fixed",
+  "note": "Printed had no answer; question fixed to EEZ (about 240,000 sq km).",
+  "match": null
+ },
+ {
+  "id": "A172",
+  "question": "What is the area of Islamabad Capital Territory?",
+  "options": [
+   "About 450 sq km",
+   "About 1,500 sq km",
+   "About 906 sq km",
+   "About 3,200 sq km"
+  ],
+  "correct": 2,
+  "why": "Islamabad Capital Territory covers about 906 sq km.",
+  "rel": "Islamabad became the capital in place of Karachi in the 1960s.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A173",
+  "question": "Which is the second-longest river in Africa?",
+  "options": [
+   "Congo River",
+   "Niger River",
+   "Zambezi River",
+   "Orange River"
+  ],
+  "correct": 0,
+  "why": "The Congo is Africa's second-longest river after the Nile.",
+  "rel": "The Congo River crosses the Equator twice.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A174",
+  "question": "Who is the most recent recipient of the Nishan-e-Haider?",
+  "options": [
+   "Pilot Officer Rashid Minhas",
+   "Havildar Lalak Jan",
+   "Sepoy Muhammad Mahfuz",
+   "Major Raja Aziz Bhatti"
+  ],
+  "correct": 1,
+  "why": "Havildar Lalak Jan was martyred on 7 July 1999 in the Kargil conflict, the latest action for which Nishan-e-Haider was given.",
+  "rel": "Captain Karnal Sher Khan also received Nishan-e-Haider for Kargil; he was martyred on 5 July 1999.",
+  "status": "fixed",
+  "note": "Printed gave no single answer; Lalak Jan is the latest by date of action.",
+  "match": null
+ },
+ {
+  "id": "A175",
+  "question": "Which is the deepest river in the world?",
+  "options": [
+   "Amazon River",
+   "Nile River",
+   "Congo River",
+   "Mississippi River"
+  ],
+  "correct": 2,
+  "why": "Parts of the Congo River are more than 220 m deep, the deepest measured in any river.",
+  "rel": "The Congo also has the second-largest discharge after the Amazon.",
+  "status": "fixed",
+  "note": "Printed had no answer; Congo is the standard answer.",
+  "match": null
+ },
+ {
+  "id": "A176",
+  "question": "Where is Tanda Dam located?",
+  "options": [
+   "Bannu",
+   "Kohat",
+   "Mardan",
+   "Swabi"
+  ],
+  "correct": 1,
+  "why": "Tanda Dam is near Kohat in Khyber Pakhtunkhwa.",
+  "rel": "Tanda Dam is used for irrigation and is also a picnic spot.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A177",
+  "question": "Under which law was the Punjab Police (colonial police system) established?",
+  "options": [
+   "Police Act 1861",
+   "Government of India Act 1935",
+   "Indian Councils Act 1909",
+   "Police Order 2002"
+  ],
+  "correct": 0,
+  "why": "The Police Act 1861, passed after the 1857 uprising, set up the police system that became the Punjab Police.",
+  "rel": "Police Order 2002 later replaced the 1861 Act in Pakistan.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A178",
+  "question": "Who is the Speaker of Pakistan's National Assembly?",
+  "options": [
+   "Raja Pervez Ashraf",
+   "Asad Qaiser",
+   "Sardar Ayaz Sadiq",
+   "Yousuf Raza Gilani"
+  ],
+  "correct": 2,
+  "why": "Sardar Ayaz Sadiq was elected Speaker of the National Assembly in March 2024.",
+  "rel": "Yousuf Raza Gilani is the Chairman of the Senate.",
+  "status": "ok",
+  "note": "Current as of Oct 2026.",
+  "match": 138
+ },
+ {
+  "id": "A179",
+  "question": "Which is the world's busiest container seaport?",
+  "options": [
+   "Port of Singapore",
+   "Port of Rotterdam",
+   "Port of Shanghai",
+   "Port of Los Angeles"
+  ],
+  "correct": 2,
+  "why": "Shanghai has handled the most containers (TEUs) of any port for many years.",
+  "rel": "Rotterdam is Europe's largest seaport.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A180",
+  "question": "In which language did Waris Shah write his poetry?",
+  "options": [
+   "Sindhi",
+   "Punjabi",
+   "Persian",
+   "Pashto"
+  ],
+  "correct": 1,
+  "why": "Waris Shah wrote the famous romance 'Heer' in Punjabi.",
+  "rel": "Shah Abdul Latif Bhitai wrote in Sindhi.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A181",
+  "question": "Which country is called the land of a thousand lakes?",
+  "options": [
+   "Norway",
+   "Canada",
+   "Finland",
+   "Switzerland"
+  ],
+  "correct": 2,
+  "why": "Finland has around 188,000 lakes, giving it this nickname.",
+  "rel": "Thailand is called the Land of White Elephants.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A182",
+  "question": "Who nominates the Chief Justice of Pakistan under the 26th Amendment?",
+  "options": [
+   "A Special Parliamentary Committee",
+   "The Prime Minister alone",
+   "The Supreme Judicial Council",
+   "The Senate Chairman"
+  ],
+  "correct": 0,
+  "why": "Since the 26th Amendment (2024), a Special Parliamentary Committee picks the CJP from the three most senior Supreme Court judges and the President formally appoints.",
+  "rel": "Before 2024, the most senior Supreme Court judge became Chief Justice automatically.",
+  "status": "fixed",
+  "note": "Printed answer was vague; under the 26th Amendment a parliamentary committee nominates and the President appoints.",
+  "match": null
+ },
+ {
+  "id": "A183",
+  "question": "On which day of the week did the 1965 war begin (6 September 1965)?",
+  "options": [
+   "Sunday",
+   "Wednesday",
+   "Friday",
+   "Monday"
+  ],
+  "correct": 3,
+  "why": "6 September 1965, when India attacked Lahore, was a Monday.",
+  "rel": "6 September is celebrated in Pakistan as Defence Day.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A184",
+  "question": "When was NATO established?",
+  "options": [
+   "24 October 1945",
+   "4 April 1949",
+   "14 May 1955",
+   "9 May 1950"
+  ],
+  "correct": 1,
+  "why": "NATO was created by the North Atlantic Treaty signed in Washington on 4 April 1949.",
+  "rel": "NATO had 12 founding members.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A185",
+  "question": "When was the OIC established?",
+  "options": [
+   "4 April 1949",
+   "22 February 1974",
+   "25 September 1969",
+   "14 May 1955"
+  ],
+  "correct": 2,
+  "why": "The OIC was founded at the first Islamic Summit in Rabat, Morocco, on 25 September 1969.",
+  "rel": "The second OIC summit was held in Lahore in February 1974.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A186",
+  "question": "Which drink is popularly called Pakistan's national juice?",
+  "options": [
+   "Mango juice",
+   "Sugarcane juice",
+   "Orange juice",
+   "Pomegranate juice"
+  ],
+  "correct": 1,
+  "why": "Sugarcane juice is widely called Pakistan's national drink/juice.",
+  "rel": "The mango is Pakistan's national fruit.",
+  "status": "ok",
+  "note": "Informal title, not an official symbol.",
+  "match": null
+ },
+ {
+  "id": "A187",
+  "question": "When did the Arabs under Muhammad bin Qasim conquer Sindh?",
+  "options": [
+   "712 CE",
+   "632 CE",
+   "850 CE",
+   "1001 CE"
+  ],
+  "correct": 0,
+  "why": "Muhammad bin Qasim conquered Sindh in 711-712 CE, defeating Raja Dahir.",
+  "rel": "Sindh is called Bab-ul-Islam (Gateway of Islam).",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A188",
+  "question": "How many Muslims fought at the Battle of Uhud?",
+  "options": [
+   "313",
+   "About 700",
+   "About 1,500",
+   "About 3,000"
+  ],
+  "correct": 1,
+  "why": "About 1,000 Muslims set out, but around 300 left with Abdullah ibn Ubayy, leaving about 700.",
+  "rel": "The Makkan army at Uhud was about 3,000 strong.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A189",
+  "question": "Who led the Muslim army in the Ghazwa of Tabuk?",
+  "options": [
+   "Hazrat Abu Bakr (RA)",
+   "Hazrat Khalid ibn Walid (RA)",
+   "Hazrat Zayd ibn Harithah (RA)",
+   "Prophet Muhammad (PBUH)"
+  ],
+  "correct": 3,
+  "why": "A Ghazwa is an expedition led by the Prophet (PBUH) himself; he led Tabuk in 9 AH.",
+  "rel": "Tabuk was the Prophet's last expedition, and no battle was fought.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A190",
+  "question": "Who was the first adult free man to accept Islam?",
+  "options": [
+   "Hazrat Abu Bakr (RA)",
+   "Hazrat Umar (RA)",
+   "Hazrat Uthman (RA)",
+   "Hazrat Hamza (RA)"
+  ],
+  "correct": 0,
+  "why": "Hazrat Abu Bakr (RA) is traditionally the first free adult man to accept Islam.",
+  "rel": "Hazrat Khadijah (RA) was the first person overall, and Hazrat Ali (RA) the first child.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A191",
+  "question": "Which is conventionally taught as the world's longest river?",
+  "options": [
+   "Amazon",
+   "Nile",
+   "Yangtze",
+   "Mississippi"
+  ],
+  "correct": 1,
+  "why": "The Nile, about 6,650 km, is usually taught as the longest river.",
+  "rel": "Some studies argue the Amazon is longer, depending on how it is measured.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A192",
+  "question": "The Danube River is in which continent?",
+  "options": [
+   "Asia",
+   "Africa",
+   "South America",
+   "Europe"
+  ],
+  "correct": 3,
+  "why": "The Danube flows through central and eastern Europe into the Black Sea.",
+  "rel": "The Danube passes through four capitals: Vienna, Bratislava, Budapest and Belgrade.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A193",
+  "question": "Pakistan's non-party general elections of 1985 were held under whose government?",
+  "options": [
+   "General Zia-ul-Haq",
+   "Zulfikar Ali Bhutto",
+   "General Ayub Khan",
+   "General Yahya Khan"
+  ],
+  "correct": 0,
+  "why": "Non-party elections were held on 25 February 1985 under General Zia-ul-Haq.",
+  "rel": "Muhammad Khan Junejo became Prime Minister after these elections.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A194",
+  "question": "Which of these organizations is NOT part of the United Nations?",
+  "options": [
+   "UNESCO",
+   "WHO",
+   "NATO",
+   "UNICEF"
+  ],
+  "correct": 2,
+  "why": "NATO is a separate military alliance; UNESCO, WHO and UNICEF are UN bodies.",
+  "rel": "The UN was founded on 24 October 1945.",
+  "status": "fixed",
+  "note": "Original options were missing; made a fair MCQ with own options.",
+  "match": null
+ },
+ {
+  "id": "A195",
+  "question": "What is the distance between the points (0,1) and (1,1)?",
+  "options": [
+   "0 units",
+   "1 unit",
+   "2 units",
+   "√2 units"
+  ],
+  "correct": 1,
+  "why": "Both points have y = 1, so the distance is the difference in x: 1 - 0 = 1.",
+  "rel": "The distance between (0,0) and (1,1) would be √2.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A196",
+  "question": "Who was the Iranian (Sasanian) king at the time of the Battle of Qadisiyyah?",
+  "options": [
+   "Rostam Farrokhzad",
+   "Yazdegerd III",
+   "Khosrow II",
+   "Shapur I"
+  ],
+  "correct": 1,
+  "why": "Yazdegerd III was the last Sasanian king and ruled during Qadisiyyah (636 CE).",
+  "rel": "Rostam Farrokhzad was the Persian commander killed in the battle.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A197",
+  "question": "Who founded the Indian National Congress in 1885?",
+  "options": [
+   "Allan Octavian Hume",
+   "Lord Curzon",
+   "Dadabhai Naoroji",
+   "Sir Syed Ahmad Khan"
+  ],
+  "correct": 0,
+  "why": "A.O. Hume, a retired British civil servant, founded the Congress in 1885 to give educated Indians a platform.",
+  "rel": "The first Congress session was held in Bombay under W.C. Bonnerjee.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A198",
+  "question": "When did the Muslim League celebrate the Day of Deliverance?",
+  "options": [
+   "23 March 1940",
+   "16 August 1946",
+   "14 August 1947",
+   "22 December 1939"
+  ],
+  "correct": 3,
+  "why": "Jinnah called for the Day of Deliverance on 22 December 1939 after the Congress ministries resigned.",
+  "rel": "The Congress ministries ruled from 1937 to 1939.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A199",
+  "question": "Who won the 2015 Nobel Prize in Literature?",
+  "options": [
+   "Svetlana Alexievich",
+   "Malala Yousafzai",
+   "Bob Dylan",
+   "Kazuo Ishiguro"
+  ],
+  "correct": 0,
+  "why": "Belarusian writer Svetlana Alexievich won the 2015 Nobel Prize in Literature.",
+  "rel": "The 2015 Nobel Peace Prize went to the Tunisian National Dialogue Quartet.",
+  "status": "fixed",
+  "note": "Printed answer gave no winner; turned into a category-specific question.",
+  "match": null
+ },
+ {
+  "id": "A200",
+  "question": "Over how many years was the Holy Quran revealed?",
+  "options": [
+   "About 23 years",
+   "About 10 years",
+   "About 13 years",
+   "About 40 years"
+  ],
+  "correct": 0,
+  "why": "The Quran was revealed over about 23 years: about 13 in Makkah and 10 in Madinah.",
+  "rel": "The Quran has 114 Surahs.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A201",
+  "question": "Which is the largest ocean?",
+  "options": [
+   "Atlantic Ocean",
+   "Indian Ocean",
+   "Pacific Ocean",
+   "Arctic Ocean"
+  ],
+  "correct": 2,
+  "why": "The Pacific is the largest and deepest ocean, covering about a third of Earth's surface.",
+  "rel": "The Arctic is the smallest ocean.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A202",
+  "question": "The Yangtze River is in which country?",
+  "options": [
+   "Vietnam",
+   "China",
+   "India",
+   "Russia"
+  ],
+  "correct": 1,
+  "why": "The Yangtze flows west to east across China into the East China Sea.",
+  "rel": "The Three Gorges Dam is built on the Yangtze.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A203",
+  "question": "In which year did the Panama Canal open, and which oceans does it join?",
+  "options": [
+   "1869; Mediterranean and Red Sea",
+   "1914; Atlantic and Pacific",
+   "1914; Atlantic and Indian",
+   "1904; Pacific and Indian"
+  ],
+  "correct": 1,
+  "why": "The Panama Canal opened on 15 August 1914 and links the Atlantic (via the Caribbean) and the Pacific.",
+  "rel": "The Suez Canal (1869) links the Mediterranean and the Red Sea.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A204",
+  "question": "Rawal Dam is built on which river, and when was it completed?",
+  "options": [
+   "Soan River, 1962",
+   "Haro River, 1975",
+   "Korang River, 1962",
+   "Kunhar River, 1967"
+  ],
+  "correct": 2,
+  "why": "Rawal Dam on the Korang River near Islamabad was completed in 1962.",
+  "rel": "Rawal Dam supplies water to Rawalpindi and Islamabad.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A205",
+  "question": "From which city was Pakistan's first radio broadcast made on 14 August 1947?",
+  "options": [
+   "Karachi",
+   "Lahore",
+   "Dhaka",
+   "Peshawar"
+  ],
+  "correct": 1,
+  "why": "Radio Pakistan's first announcement of independence was broadcast from Lahore on the night of 13-14 August 1947.",
+  "rel": "Mustafa Ali Hamdani made the famous announcement.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A206",
+  "question": "What is the approximate length of the Nile in miles?",
+  "options": [
+   "About 4,130 miles",
+   "About 2,500 miles",
+   "About 3,200 miles",
+   "About 5,400 miles"
+  ],
+  "correct": 0,
+  "why": "The Nile is about 6,650 km long, which is about 4,130 miles.",
+  "rel": "The Nile flows north into the Mediterranean Sea.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A207",
+  "question": "From how many camels does zakat become due?",
+  "options": [
+   "5 camels",
+   "4 camels",
+   "10 camels",
+   "30 camels"
+  ],
+  "correct": 0,
+  "why": "The nisab for camels starts at five, on which one goat is due.",
+  "rel": "The nisab for goats/sheep starts at 40.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A208",
+  "question": "Which river is commonly ranked the sixth-longest in the world?",
+  "options": [
+   "Nile",
+   "Danube",
+   "Huang He (Yellow River)",
+   "Indus"
+  ],
+  "correct": 2,
+  "why": "By length, the Huang He (about 5,464 km) is usually ranked sixth after the Nile, Amazon, Yangtze, Mississippi-Missouri and Yenisei.",
+  "rel": "The Huang He is called 'China's Sorrow' because of its deadly floods.",
+  "status": "ok",
+  "note": "Rankings vary by source.",
+  "match": null
+ },
+ {
+  "id": "A209",
+  "question": "Narowal District is part of which division?",
+  "options": [
+   "Gujranwala Division",
+   "Lahore Division",
+   "Rawalpindi Division",
+   "Sargodha Division"
+  ],
+  "correct": 0,
+  "why": "Narowal is a district of Punjab within Gujranwala Division.",
+  "rel": "Kartarpur Corridor is in Narowal District.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A210",
+  "question": "Who was the Prime Minister of Cuba from 1959 to 1976?",
+  "options": [
+   "Fidel Castro",
+   "Che Guevara",
+   "Raúl Castro",
+   "Fulgencio Batista"
+  ],
+  "correct": 0,
+  "why": "Fidel Castro became Prime Minister after the 1959 revolution and held the post until 1976.",
+  "rel": "Havana is the capital of Cuba.",
+  "status": "unsure",
+  "note": "Original wording 'of which city' unclear; rewritten.",
+  "match": null
+ },
+ {
+  "id": "A211",
+  "question": "What was Hazrat Luqman famous for?",
+  "options": [
+   "Bravery",
+   "Wealth",
+   "Wisdom",
+   "Poetry"
+  ],
+  "correct": 2,
+  "why": "Luqman is known as Luqman al-Hakim (the Wise) for the wise advice given in the Quran.",
+  "rel": "Surah Luqman (Surah 31) contains his advice to his son.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A212",
+  "question": "Which strait separates the USA (Alaska) from Russia?",
+  "options": [
+   "Strait of Gibraltar",
+   "Bering Strait",
+   "Strait of Hormuz",
+   "Strait of Malacca"
+  ],
+  "correct": 1,
+  "why": "The Bering Strait lies between Alaska and Russia's Chukotka region.",
+  "rel": "The Diomede Islands lie in the Bering Strait.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A213",
+  "question": "In which city is the Shah Jahan Mosque located?",
+  "options": [
+   "Lahore",
+   "Thatta",
+   "Multan",
+   "Hyderabad"
+  ],
+  "correct": 1,
+  "why": "Shah Jahan built this mosque in Thatta, Sindh, in the 1640s.",
+  "rel": "It is famous for its blue tile work and many domes.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A214",
+  "question": "What does WAPDA stand for?",
+  "options": [
+   "Water and Power Distribution Agency",
+   "Water and Public Development Authority",
+   "Works and Power Development Agency",
+   "Water and Power Development Authority"
+  ],
+  "correct": 3,
+  "why": "WAPDA is the Water and Power Development Authority, set up in 1958.",
+  "rel": "WAPDA builds and runs big dams like Tarbela and Mangla.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A215",
+  "question": "Who was the first child to accept Islam?",
+  "options": [
+   "Hazrat Ali (RA)",
+   "Hazrat Zayd ibn Harithah (RA)",
+   "Hazrat Abdullah ibn Abbas (RA)",
+   "Hazrat Usama ibn Zayd (RA)"
+  ],
+  "correct": 0,
+  "why": "Hazrat Ali (RA) accepted Islam at about 10 years of age, the first child to do so.",
+  "rel": "Hazrat Ali (RA) is known by the title Asadullah.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A216",
+  "question": "What is the capital of Bhutan?",
+  "options": [
+   "Kathmandu",
+   "Paro",
+   "Dhaka",
+   "Thimphu"
+  ],
+  "correct": 3,
+  "why": "Thimphu is the capital and largest city of Bhutan.",
+  "rel": "Bhutan's currency is the ngultrum.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ }
+]

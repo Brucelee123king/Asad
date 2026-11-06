@@ -1,0 +1,594 @@
+[
+ {
+  "src": "m2-39",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "She has less books than me.",
+   "She has fewer books than I do.",
+   "She has lesser books than I.",
+   "She have fewer books."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Use \"fewer\" with countable nouns like books, and \"than I do\" is the correct comparison.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-40",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "He denied to take the money.",
+   "He denied taking the money.",
+   "He denied take the money.",
+   "He denied that taking money."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Deny\" is followed by a gerund (-ing form), so \"denied taking\" is correct.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-41",
+  "question": "\"Adaptable\" means:",
+  "options": [
+   "able to adjust",
+   "unable to change",
+   "careless",
+   "slow only"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Adaptable\" means able to adjust to new conditions.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-42",
+  "question": "\"Deterrent\" means something that:",
+  "options": [
+   "discourages an action",
+   "guarantees reward",
+   "increases confusion",
+   "records history"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "A deterrent is something that discourages or stops people from doing an action.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-43",
+  "question": "\"Sustain\" most nearly means:",
+  "options": [
+   "maintain",
+   "destroy",
+   "forget",
+   "interrupt"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Sustain\" means to keep something going, that is, to maintain it.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-44",
+  "question": "\"Explicit\" means:",
+  "options": [
+   "clearly stated",
+   "hidden",
+   "uncertain",
+   "impossible"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Explicit\" means stated clearly and directly, with nothing hidden.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-45",
+  "question": "\"Arbitrary\" can mean:",
+  "options": [
+   "based on random choice or personal whim",
+   "carefully reasoned only",
+   "legally required always",
+   "scientifically proven"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Arbitrary\" means based on random choice or personal wish, not on reason.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-46",
+  "question": "He was exhausted, ___ he continued working.",
+  "options": [
+   "yet",
+   "because",
+   "unless",
+   "therefore because"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Yet\" shows contrast: he was tired, but he still continued.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-47",
+  "question": "I will call you ___ I arrive.",
+  "options": [
+   "when",
+   "unless",
+   "despite",
+   "during"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"When\" introduces the time of the action: I will call you at the time I arrive.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-48",
+  "question": "She saved money ___ she could buy a laptop.",
+  "options": [
+   "so that",
+   "although",
+   "unless",
+   "whereas"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"So that\" shows purpose: she saved money for the purpose of buying a laptop.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-49",
+  "question": "He is not only punctual ___ also reliable.",
+  "options": [
+   "but",
+   "and only",
+   "nor",
+   "or"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "The correct pair is \"not only ... but also\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-50",
+  "question": "The task was ___ difficult that many candidates ran out of time.",
+  "options": [
+   "so",
+   "such a",
+   "too much",
+   "very a"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "The pattern is \"so + adjective + that\"; \"difficult\" is an adjective, so \"so\" is correct.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-51",
+  "question": "Read: \"A checklist does not replace expertise; it protects expertise from avoidable omission.\" The main point is:",
+  "options": [
+   "checklists make expertise unnecessary",
+   "checklists help experts avoid forgetting routine steps",
+   "experts should never use lists",
+   "omissions are always unavoidable"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The sentence says a checklist protects expertise from avoidable omission, so it helps experts not forget routine steps.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-52",
+  "question": "In the same sentence, \"omission\" most nearly means:",
+  "options": [
+   "something left out",
+   "a reward",
+   "an explanation",
+   "a prediction"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "An omission is something that is left out or forgotten.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-53",
+  "question": "If a passage states evidence first and a conclusion later, the reader should:",
+  "options": [
+   "distinguish the supporting evidence from the conclusion",
+   "treat every sentence as identical in function",
+   "ignore connectors",
+   "assume the first sentence is always the conclusion"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "A good reader separates the supporting evidence from the conclusion it leads to.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-54",
+  "question": "A writer says, \"The plan is costly; nevertheless, it may be necessary.\" \"Nevertheless\" signals:",
+  "options": [
+   "contrast",
+   "cause",
+   "time",
+   "addition only"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Nevertheless\" means \"in spite of that\", so it shows contrast.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-55",
+  "question": "The best way to infer an unknown word from context is to:",
+  "options": [
+   "use surrounding clues and sentence logic",
+   "choose the longest option",
+   "ignore grammar",
+   "always assume a positive meaning"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Context clues and the logic of the sentence help you guess the meaning of an unknown word.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-56",
+  "question": "Which is an adverb of manner?",
+  "options": [
+   "carefully",
+   "yesterday",
+   "often",
+   "outside"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Adverbs of manner tell how something is done; \"carefully\" tells how. Yesterday is time, often is frequency, outside is place.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-57",
+  "question": "\"By the time the test started, I ___ my notes.\"",
+  "options": [
+   "reviewed already now",
+   "had reviewed",
+   "have review",
+   "will reviewing"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "An action finished before another past action uses the past perfect: \"had reviewed\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-58",
+  "question": "Choose: \"He is ___ honorable officer.\"",
+  "options": [
+   "a",
+   "an",
+   "the only",
+   "no article"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Honorable\" starts with a silent h, so it has a vowel sound and takes \"an\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-59",
+  "question": "The correct collocation is:",
+  "options": [
+   "depend of",
+   "depend on",
+   "depend at",
+   "depend to"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The verb \"depend\" is always followed by \"on\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-60",
+  "question": "Passive of \"They can solve the problem\" is:",
+  "options": [
+   "The problem can be solved.",
+   "The problem can solved.",
+   "The problem is can solve.",
+   "The problem can solving."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Passive with a modal is modal + be + past participle: \"can be solved\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-61",
+  "question": "Indirect: He said, \"I must leave now.\" In ordinary backshift, \"must\" may become:",
+  "options": [
+   "had to",
+   "has to yesterday",
+   "musted",
+   "would leaving"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "In reported speech \"must\" (for need/duty) usually changes to \"had to\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-62",
+  "question": "Antonym of \"lenient\" is:",
+  "options": [
+   "strict",
+   "gentle",
+   "mild",
+   "tolerant"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Lenient\" means soft and easy-going, so its opposite is \"strict\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-63",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "She is one of the best player.",
+   "She is one of the best players.",
+   "She is one of best players is.",
+   "She one of the best player."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"One of the\" is followed by a plural noun: \"one of the best players\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-64",
+  "question": "\"Plausible\" means:",
+  "options": [
+   "seemingly reasonable or believable",
+   "obviously impossible",
+   "very loud",
+   "completely proven beyond doubt"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Plausible\" means something seems reasonable or believable.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-65",
+  "question": "Complete: \"___ he was inexperienced, he learned quickly.\"",
+  "options": [
+   "Although",
+   "Because of",
+   "Unless",
+   "Therefore"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Although\" shows contrast between two clauses: inexperienced, but he learned quickly.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-66",
+  "question": "A paragraph whose examples all support one claim has strong:",
+  "options": [
+   "unity",
+   "ambiguity",
+   "contradiction",
+   "inversion"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Unity means every part of a paragraph supports one main idea.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-67",
+  "question": "Which word is a coordinating conjunction?",
+  "options": [
+   "although",
+   "because",
+   "but",
+   "while"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Coordinating conjunctions are FANBOYS (for, and, nor, but, or, yet, so); \"but\" is one of them. The others are subordinating.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-68",
+  "question": "\"She ___ the report before the meeting began.\"",
+  "options": [
+   "had read",
+   "has read tomorrow",
+   "reads yesterday",
+   "is read"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Reading was finished before the meeting began, so we use past perfect \"had read\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-69",
+  "question": "Choose: \"___ United Kingdom\".",
+  "options": [
+   "A",
+   "An",
+   "The",
+   "No article"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Country names with words like Kingdom, States or Republic take \"the\": the United Kingdom.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-70",
+  "question": "He is proud ___ his achievement.",
+  "options": [
+   "of",
+   "from",
+   "with",
+   "at"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "The adjective \"proud\" is followed by \"of\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-71",
+  "question": "Passive of \"The manager is reviewing the application\" is:",
+  "options": [
+   "The application is being reviewed by the manager.",
+   "The application is reviewed yesterday.",
+   "The application has review.",
+   "The manager is being reviewed by the application."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Present continuous passive is is/are + being + past participle: \"is being reviewed\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-72",
+  "question": "Indirect: \"Do not touch the switch,\" he said to us.",
+  "options": [
+   "He warned us not to touch the switch.",
+   "He said us do not touch.",
+   "He asked that we not touched.",
+   "He told not touch us."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "A negative command in reported speech uses \"not to\" + verb; \"warned\" fits a caution.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-73",
+  "question": "Synonym of \"allocate\" is:",
+  "options": [
+   "assign",
+   "remove",
+   "hide",
+   "oppose"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Allocate\" means to give or assign something for a purpose.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-74",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "There are less candidates today.",
+   "There are fewer candidates today.",
+   "There is fewer candidates today.",
+   "There are lesser candidate today."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Candidates\" is countable and plural, so use \"are fewer\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m2-75",
+  "question": "Complete: \"He left early ___ avoid the traffic.\"",
+  "options": [
+   "in order to",
+   "because",
+   "although",
+   "despite"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"In order to\" + base verb shows purpose: he left early to avoid traffic.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ }
+]

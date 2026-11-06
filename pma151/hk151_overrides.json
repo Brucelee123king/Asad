@@ -1,0 +1,6 @@
+{"remove":["With which neighbouring country does Pakistan share its longest border?","How many members did the United Nations have in 1947, when Pakistan joined?"],
+"fix":{
+"Which is the fastest animal on earth?":{"options":["Peregrine falcon","Lion","Eagle","Greyhound"],"correct":0},
+"How many wives did the Holy Prophet Muhammad (PBUH) have at the time of his death":{"correct":0,"reason":"At the time of his death the Holy Prophet (PBUH) had 9 wives living. In total he married 11 wives; Hazrat Khadija (RA) and Hazrat Zainab bint Khuzaima (RA) had died before him.","rel":"The wives of the Prophet (PBUH) are called Ummahat-ul-Momineen (Mothers of the Believers)."},
+"In which of Quaid-e-Azam's Fourteen Points was the separation of Sindh":{"options":["First point","Fourth point","Ninth point","Seventh point"],"correct":2,"reason":"Point 9 of the Quaid's Fourteen Points (1929) demanded that Sindh be separated from the Bombay Presidency.","rel":"Sindh was finally separated from Bombay and made a separate province in 1936."}
+}}

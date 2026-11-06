@@ -1,0 +1,452 @@
+[
+ {
+  "question": "In which year was Prophet Muhammad (PBUH) born in Makkah?",
+  "options": [
+   "571 CE",
+   "610 CE",
+   "632 CE",
+   "550 CE"
+  ],
+  "correct": 0,
+  "why": "He was born in Makkah in 571 CE (some books say 570 CE), in the Year of the Elephant. 610 CE is the year of the first revelation and 632 CE is the year he passed away. 550 CE is too early.",
+  "rel": "He was born on 12 Rabi ul Awwal (common view) in the Year of the Elephant (Aam al-Feel). First revelation came in 610 CE at age 40.",
+  "rep": 0,
+  "src": "seerah 1",
+  "note": ""
+ },
+ {
+  "question": "To which clan of the Quraysh tribe did Prophet Muhammad (PBUH) belong?",
+  "options": [
+   "Banu Umayyah",
+   "Banu Hashim",
+   "Banu Taym",
+   "Banu Makhzum"
+  ],
+  "correct": 1,
+  "why": "He belonged to Banu Hashim, the clan named after his great-grandfather Hashim. Banu Makhzum was the clan of Abu Jahl and Khalid bin Walid, Banu Umayyah of Abu Sufyan and Uthman (RA), and Banu Taym of Abu Bakr (RA).",
+  "rel": "Hashim was the great-grandfather of the Prophet (PBUH). Banu Hashim were boycotted in Shib Abi Talib for about 3 years.",
+  "rep": 0,
+  "src": "seerah 2",
+  "note": ""
+ },
+ {
+  "question": "What was the name of Prophet Muhammad's (PBUH) mother?",
+  "options": [
+   "Safiyyah",
+   "Halimah",
+   "Aminah bint Wahb",
+   "Fatimah"
+  ],
+  "correct": 2,
+  "why": "His mother was Aminah bint Wahb from Banu Zuhrah. Halimah was his foster (wet) mother, Fatimah was his daughter, and Safiyyah was his aunt (and also the name of a wife).",
+  "rel": "Aminah died at Abwa, between Makkah and Madinah. Her father Wahb was chief of Banu Zuhrah.",
+  "rep": 0,
+  "src": "seerah 3",
+  "note": ""
+ },
+ {
+  "question": "Who was the father of Prophet Muhammad (PBUH)?",
+  "options": [
+   "Hamza ibn Abdul Muttalib",
+   "Abdul Muttalib",
+   "Abu Talib",
+   "Abdullah ibn Abdul Muttalib"
+  ],
+  "correct": 3,
+  "why": "His father was Abdullah ibn Abdul Muttalib, who died before the Prophet (PBUH) was born. Abdul Muttalib was his grandfather, and Abu Talib and Hamza were his uncles.",
+  "rel": "Abdullah died in Yathrib (Madinah) on the way back from a trade journey to Syria.",
+  "rep": 0,
+  "src": "seerah 4",
+  "note": ""
+ },
+ {
+  "question": "Who was the foster mother who nursed Prophet Muhammad (PBUH) in the desert?",
+  "options": [
+   "Halimah al-Sa'diyyah",
+   "Umm Ayman",
+   "Fatimah bint Asad",
+   "Sobia"
+  ],
+  "correct": 0,
+  "why": "Halimah al-Sa'diyyah of Banu Sa'd nursed him in the desert. Umm Ayman (Barakah) was his nurse/caretaker in Makkah, Fatimah bint Asad was Abu Talib's wife, and Sobia is a wrong option.",
+  "rel": "Thuwaybah, a freed slave of Abu Lahab, also nursed him for a few days. The event of opening of the chest (Shaq-e-Sadr) happened while he was with Halimah.",
+  "rep": 0,
+  "src": "seerah 5",
+  "note": ""
+ },
+ {
+  "question": "How old was Prophet Muhammad (PBUH) when his mother passed away?",
+  "options": [
+   "4 years",
+   "6 years",
+   "8 years",
+   "12 years"
+  ],
+  "correct": 1,
+  "why": "His mother Aminah died when he was 6 years old, at Abwa. He was 8 when his grandfather died and about 12 on the Syria journey, so those ages are for other events.",
+  "rel": "Umm Ayman brought him back to Makkah after his mother's death.",
+  "rep": 0,
+  "src": "seerah 6",
+  "note": ""
+ },
+ {
+  "question": "Who took care of Prophet Muhammad (PBUH) after his mother's death?",
+  "options": [
+   "Hamza",
+   "Abu Talib",
+   "Abdul Muttalib",
+   "Abu Lahab"
+  ],
+  "correct": 2,
+  "why": "His grandfather Abdul Muttalib took care of him after his mother died. Abu Talib took care of him later, after Abdul Muttalib died. Abu Lahab was an enemy, and Hamza was a young uncle.",
+  "rel": "Abdul Muttalib looked after him for about 2 years, until the Prophet (PBUH) was 8.",
+  "rep": 0,
+  "src": "seerah 7",
+  "note": ""
+ },
+ {
+  "question": "How old was Prophet Muhammad (PBUH) when his grandfather Abdul Muttalib died?",
+  "options": [
+   "10 years",
+   "12 years",
+   "6 years",
+   "8 years"
+  ],
+  "correct": 3,
+  "why": "Abdul Muttalib died when the Prophet (PBUH) was 8 years old. He was 6 when his mother died and about 12 on the Syria trip, so the other options are wrong.",
+  "rel": "After Abdul Muttalib, his uncle Abu Talib became his guardian.",
+  "rep": 0,
+  "src": "seerah 8",
+  "note": ""
+ },
+ {
+  "question": "Which uncle took responsibility for Prophet Muhammad (PBUH) after his grandfather's death?",
+  "options": [
+   "Abu Talib",
+   "Hamza",
+   "Abu Lahab",
+   "Abbas"
+  ],
+  "correct": 0,
+  "why": "Abu Talib, the full brother of his father Abdullah, became his guardian. Abu Lahab opposed Islam, while Abbas and Hamza did not raise him.",
+  "rel": "Abu Talib protected him until his own death in the Year of Sorrow (10th year of Prophethood). Abu Talib was the father of Ali (RA).",
+  "rep": 0,
+  "src": "seerah 9",
+  "note": ""
+ },
+ {
+  "question": "Who accompanied Prophet Muhammad (PBUH) on the journey to Syria during his childhood?",
+  "options": [
+   "Abu Bakr",
+   "Abu Talib",
+   "Abdul Muttalib",
+   "Hamza"
+  ],
+  "correct": 1,
+  "why": "He went to Syria with his uncle Abu Talib on a trade caravan when he was about 12. Abdul Muttalib had already died, and Abu Bakr and Hamza did not go on this trip.",
+  "rel": "On this trip the Christian monk Bahira recognised signs of prophethood in him at Busra. His second Syria trip was for Khadijah (RA) with her servant Maysarah.",
+  "rep": 0,
+  "src": "seerah 10",
+  "note": ""
+ },
+ {
+  "question": "Which titles were associated with Prophet Muhammad (PBUH) because of his honesty?",
+  "options": [
+   "As-Siddiq",
+   "Saifullah",
+   "Al-Amin and As-Sadiq",
+   "Al-Farooq"
+  ],
+  "correct": 2,
+  "why": "The people of Makkah called him Al-Amin (the trustworthy) and As-Sadiq (the truthful). Al-Farooq is the title of Umar (RA), As-Siddiq of Abu Bakr (RA), and Saifullah of Khalid bin Walid (RA).",
+  "rel": "Because he was Al-Amin, the Quraysh accepted his decision on placing the Black Stone (Hajr-e-Aswad) in the Kaaba.",
+  "rep": 0,
+  "src": "seerah 11",
+  "note": ""
+ },
+ {
+  "question": "Which pact did Prophet Muhammad (PBUH) participate in to support the oppressed?",
+  "options": [
+   "Pledge of Aqabah",
+   "Charter of Madinah",
+   "Treaty of Hudaybiyyah",
+   "Hilf al-Fudul"
+  ],
+  "correct": 3,
+  "why": "Hilf al-Fudul was a pact made in Makkah before prophethood to help the oppressed, and he took part in it as a young man. Hudaybiyyah (6 AH), the Pledges of Aqabah and the Charter of Madinah all came after prophethood.",
+  "rel": "Hilf al-Fudul was made in the house of Abdullah ibn Jud'an after the Harb al-Fijar wars.",
+  "rep": 0,
+  "src": "seerah 12",
+  "note": ""
+ },
+ {
+  "question": "How old was Prophet Muhammad (PBUH) when he married Hazrat Khadijah (RA)?",
+  "options": [
+   "25 years",
+   "30 years",
+   "40 years",
+   "20 years"
+  ],
+  "correct": 0,
+  "why": "He married Khadijah (RA) at the age of 25, and she was about 40. 40 was his age at the first revelation, so the other options are wrong.",
+  "rel": "Khadijah (RA) was his first wife, and he did not marry anyone else during her life. All his children except Ibrahim were from her.",
+  "rep": 0,
+  "src": "seerah 13",
+  "note": ""
+ },
+ {
+  "question": "Which Surah contains the first five verses identified as the first revelation?",
+  "options": [
+   "Surah Al-Baqarah",
+   "Surah Al-Alaq",
+   "Surah Al-Muddaththir",
+   "Surah Al-Fatihah"
+  ],
+  "correct": 1,
+  "why": "The first revelation was the first five verses of Surah Al-Alaq, starting with Iqra (Read), in the Cave of Hira. Al-Muddaththir came after the pause in revelation, and Al-Fatihah and Al-Baqarah came later.",
+  "rel": "Surah Al-Alaq is the 96th Surah. The first complete Surah revealed is commonly said to be Al-Fatihah.",
+  "rep": 0,
+  "src": "seerah 19",
+  "note": ""
+ },
+ {
+  "question": "Who was the first person to accept Islam?",
+  "options": [
+   "Abu Bakr (RA)",
+   "Ali ibn Abi Talib (RA)",
+   "Khadijah (RA)",
+   "Zayd ibn Harithah (RA)"
+  ],
+  "correct": 2,
+  "why": "Hazrat Khadijah (RA) was the first person of all to accept Islam. Abu Bakr (RA) was the first free adult man, Ali (RA) the first child, and Zayd (RA) the first freed slave.",
+  "rel": "Khadijah (RA) died in the Year of Sorrow, the same year as Abu Talib.",
+  "rep": 0,
+  "src": "seerah 20",
+  "note": ""
+ },
+ {
+  "question": "Who is commonly identified as the first adult free man to accept Islam?",
+  "options": [
+   "Umar ibn al-Khattab (RA)",
+   "Uthman ibn Affan (RA)",
+   "Ali ibn Abi Talib (RA)",
+   "Abu Bakr as-Siddiq (RA)"
+  ],
+  "correct": 3,
+  "why": "Abu Bakr as-Siddiq (RA) was the first free adult man to accept Islam. Ali (RA) was a child then, Uthman (RA) accepted Islam through Abu Bakr (RA), and Umar (RA) accepted Islam years later.",
+  "rel": "Through Abu Bakr (RA), Uthman, Zubair, Talha, Abdur Rahman bin Auf and Saad bin Abi Waqqas (RA) accepted Islam.",
+  "rep": 0,
+  "src": "seerah 21",
+  "note": ""
+ },
+ {
+  "question": "Who is commonly identified as the first child to accept Islam?",
+  "options": [
+   "Ali ibn Abi Talib (RA)",
+   "Husayn ibn Ali (RA)",
+   "Usama ibn Zayd (RA)",
+   "Hasan ibn Ali (RA)"
+  ],
+  "correct": 0,
+  "why": "Ali ibn Abi Talib (RA) was about 10 years old when he accepted Islam, so he was the first child Muslim. Hasan, Husayn and Usama (RA) were born after that.",
+  "rel": "Ali (RA) lived in the Prophet's (PBUH) house as a child. He later married Fatimah (RA).",
+  "rep": 0,
+  "src": "seerah 22",
+  "note": ""
+ },
+ {
+  "question": "Who was the first freed slave commonly identified among the earliest Muslims?",
+  "options": [
+   "Bilal ibn Rabah (RA)",
+   "Zayd ibn Harithah (RA)",
+   "Ammar ibn Yasir (RA)",
+   "Salman al-Farsi (RA)"
+  ],
+  "correct": 1,
+  "why": "Zayd ibn Harithah (RA), the freed slave and adopted son of the Prophet (PBUH), was among the first four Muslims. Bilal (RA) accepted Islam a little later, Ammar (RA) was not a freed slave of the Prophet, and Salman (RA) accepted Islam in Madinah.",
+  "rel": "Zayd (RA) is the only companion named in the Quran (Surah Al-Ahzab). He was martyred at the Battle of Mu'tah.",
+  "rep": 0,
+  "src": "seerah 23",
+  "note": ""
+ },
+ {
+  "question": "For approximately how many years was the Islamic message initially preached privately?",
+  "options": [
+   "7 years",
+   "2 years",
+   "3 years",
+   "5 years"
+  ],
+  "correct": 2,
+  "why": "The secret preaching lasted about 3 years. Then Allah ordered open preaching, and the Prophet (PBUH) called the Quraysh from Mount Safa. 2, 5 and 7 years are not the accepted period.",
+  "rel": "Dar al-Arqam was the house used as the secret centre of the early Muslims.",
+  "rep": 0,
+  "src": "seerah 24",
+  "note": ""
+ },
+ {
+  "question": "Which Christian scholar did Prophet Muhammad (PBUH) meet through Hazrat Khadijah (RA)?",
+  "options": [
+   "Nestorius",
+   "Heraclius",
+   "Bahira",
+   "Waraqah ibn Nawfal"
+  ],
+  "correct": 3,
+  "why": "After the first revelation, Khadijah (RA) took him to her cousin Waraqah ibn Nawfal, who said the same angel (Namus) came to Musa (AS). Bahira was the monk met on the Syria trip, Heraclius was the Roman emperor, and Nestorius was an old church leader.",
+  "rel": "Waraqah was Khadijah's (RA) cousin and knew the Torah and Gospel.",
+  "rep": 0,
+  "src": "seerah 25",
+  "note": ""
+ },
+ {
+  "question": "From which hill did Prophet Muhammad (PBUH) publicly call the Quraysh to Islam?",
+  "options": [
+   "Mount Safa",
+   "Mount Marwah",
+   "Mount Arafat",
+   "Mount Uhud"
+  ],
+  "correct": 0,
+  "why": "He stood on Mount Safa near the Kaaba and called the Quraysh openly to Islam. Uhud is in Madinah, Arafat is outside Makkah, and Marwah is the other hill of Sa'i, not this event.",
+  "rel": "Before that he invited his family to a dinner (Dawat-e-Dhul Ashira).",
+  "rep": 0,
+  "src": "seerah 26",
+  "note": ""
+ },
+ {
+  "question": "Which uncle opposed Prophet Muhammad (PBUH) during his public warning at Mount Safa?",
+  "options": [
+   "Abu Talib",
+   "Abu Lahab",
+   "Abbas",
+   "Hamza"
+  ],
+  "correct": 1,
+  "why": "Abu Lahab cursed him at Mount Safa, and Surah Al-Lahab (Al-Masad) was revealed about him. Abu Talib protected him, Hamza later accepted Islam, and Abbas did not oppose him there.",
+  "rel": "Abu Lahab's real name was Abdul Uzza. His wife Umm Jamil is also condemned in the same Surah.",
+  "rep": 0,
+  "src": "seerah 27",
+  "note": ""
+ },
+ {
+  "question": "Who is traditionally recognized as the first martyr of Islam?",
+  "options": [
+   "Hamza (RA)",
+   "Yasir (RA)",
+   "Sumayyah bint Khayyat (RA)",
+   "Bilal ibn Rabah (RA)"
+  ],
+  "correct": 2,
+  "why": "Sumayyah (RA), mother of Ammar (RA), was killed by Abu Jahl and is the first martyr of Islam. Her husband Yasir (RA) was also martyred but after her, Bilal (RA) survived, and Hamza (RA) was martyred later at Uhud.",
+  "rel": "The first male martyr is commonly said to be Yasir (RA). Hamza (RA) is called Sayyid ush-Shuhada (leader of martyrs).",
+  "rep": 0,
+  "src": "seerah 28",
+  "note": ""
+ },
+ {
+  "question": "Which companion endured persecution while repeatedly declaring the oneness of Allah?",
+  "options": [
+   "Abu Dharr (RA)",
+   "Khabbab ibn al-Aratt (RA)",
+   "Ammar ibn Yasir (RA)",
+   "Bilal ibn Rabah (RA)"
+  ],
+  "correct": 3,
+  "why": "Bilal (RA) was tortured by his master Umayyah ibn Khalaf on hot sand but kept saying Ahad, Ahad (Allah is One). Ammar, Abu Dharr and Khabbab (RA) were also persecuted, but the Ahad Ahad story is of Bilal (RA).",
+  "rel": "Abu Bakr (RA) bought Bilal (RA) and set him free. Bilal (RA) later became the first Mu'adhdhin of Islam.",
+  "rep": 0,
+  "src": "seerah 29",
+  "note": ""
+ },
+ {
+  "question": "Where did the first migration of Muslims to escape persecution take place?",
+  "options": [
+   "Abyssinia",
+   "Yemen",
+   "Yathrib",
+   "Taif"
+  ],
+  "correct": 0,
+  "why": "The first Hijrah was to Abyssinia (Habshah, now Ethiopia) in the 5th year of Prophethood. Hijrah to Yathrib (Madinah) was later, Taif was only a visit, and Yemen is wrong.",
+  "rel": "Uthman (RA) and his wife Ruqayyah (RA) were in the first group. Ja'far ibn Abi Talib (RA) spoke before the Najashi in the second migration.",
+  "rep": 0,
+  "src": "seerah 30",
+  "note": ""
+ },
+ {
+  "question": "What title was used for the Christian ruler of Abyssinia who gave shelter to Muslims?",
+  "options": [
+   "Muqawqis",
+   "Najashi",
+   "Heraclius",
+   "Chosroes"
+  ],
+  "correct": 1,
+  "why": "The king of Abyssinia was called Najashi (Negus); his name was Ashama. Heraclius was the Roman emperor, Chosroes (Kisra) the Persian king, and Muqawqis the ruler of Egypt.",
+  "rel": "Najashi Ashama later accepted Islam, and the Prophet (PBUH) offered his funeral prayer in absentia.",
+  "rep": 0,
+  "src": "seerah 31",
+  "note": ""
+ },
+ {
+  "question": "Which uncle and protector of Prophet Muhammad (PBUH) died during the Year of Sorrow?",
+  "options": [
+   "Abbas (RA)",
+   "Abu Lahab",
+   "Abu Talib",
+   "Hamza (RA)"
+  ],
+  "correct": 2,
+  "why": "Abu Talib died in the 10th year of Prophethood, called Aam al-Huzn (Year of Sorrow). Abu Lahab died after Badr, Hamza (RA) was martyred at Uhud, and Abbas (RA) lived long after.",
+  "rel": "Khadijah (RA) also died in the Year of Sorrow.",
+  "rep": 0,
+  "src": "seerah 37",
+  "note": ""
+ },
+ {
+  "question": "Which city did Prophet Muhammad (PBUH) visit seeking support after facing opposition in Makkah?",
+  "options": [
+   "Khaybar",
+   "Tabuk",
+   "Madinah",
+   "Taif"
+  ],
+  "correct": 3,
+  "why": "After the Year of Sorrow he went to Taif to seek help, but its people stoned him. Madinah was the place of Hijrah later, and Khaybar and Tabuk are places of later expeditions.",
+  "rel": "Taif is the city of the Banu Thaqif tribe. On the way back, a Christian slave named Addas met him.",
+  "rep": 0,
+  "src": "seerah 38",
+  "note": ""
+ },
+ {
+  "question": "Which companion accompanied Prophet Muhammad (PBUH) on his journey to Taif?",
+  "options": [
+   "Zayd ibn Harithah (RA)",
+   "Ali (RA)",
+   "Umar (RA)",
+   "Abu Bakr (RA)"
+  ],
+  "correct": 0,
+  "why": "Zayd ibn Harithah (RA) went with him to Taif and was injured while protecting him. Abu Bakr (RA) was his companion in the Hijrah, not Taif; Ali and Umar (RA) did not go.",
+  "rel": "The Taif journey was in the 10th year of Prophethood.",
+  "rep": 0,
+  "src": "seerah 39",
+  "note": ""
+ },
+ {
+  "question": "What is the night journey from Masjid al-Haram to Masjid al-Aqsa called?",
+  "options": [
+   "Hijrah",
+   "Isra",
+   "Mi'raj",
+   "Ghazwah"
+  ],
+  "correct": 1,
+  "why": "The night journey from Makkah to Jerusalem is called Isra. Mi'raj is the ascension from Al-Aqsa to the heavens, Hijrah is migration, and Ghazwah is a battle.",
+  "rel": "Surah Bani Israel (Al-Isra) begins with this journey. The Prophet (PBUH) rode Buraq.",
+  "rep": 0,
+  "src": "seerah 40",
+  "note": ""
+ }
+]

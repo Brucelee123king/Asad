@@ -1,0 +1,352 @@
+[
+ {
+  "id": "M1211",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "worldometers.info",
+   "worldpopulationreview.com",
+   "UN WPP 2024"
+  ],
+  "note": "India overtook China in 2023 as most populous country"
+ },
+ {
+  "id": "M1216",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "keeptrack.space",
+   "orbitalradar.com",
+   "statista.com"
+  ],
+  "note": "USA has most satellites (~13,900 incl. Starlink), China second"
+ },
+ {
+  "id": "M1228",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "dawn.com/news/1817293",
+   "cm.sindh.gov.pk",
+   "arynews.tv"
+  ],
+  "note": "Murad Ali Shah CM Sindh since Feb 2024 (third term)"
+ },
+ {
+  "id": "M1229",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "na.gov.pk press release Jun 2026",
+   "dailytimes.com.pk",
+   "dawn.com/news/1818349"
+  ],
+  "note": "Mir Sarfraz Bugti CM Balochistan since March 2024"
+ },
+ {
+  "id": "M1230",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Shehbaz_Sharif",
+   "pakobserver.net",
+   "pakun.org"
+  ],
+  "note": "Shehbaz Sharif PM since March 2024"
+ },
+ {
+  "id": "M1231",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Deputy_Prime_Minister_of_Pakistan",
+   "mofa.gov.pk",
+   "tribune.com.pk"
+  ],
+  "note": "Ishaq Dar Deputy PM since 28 Apr 2024"
+ },
+ {
+  "id": "M1232",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "geo.tv/latest/655491",
+   "thenews.pk",
+   "en.wikipedia.org/wiki/Governor_of_Sindh"
+  ],
+  "note": "Nehal Hashmi sworn in as 35th Sindh governor 13 Mar 2026, replacing Tessori"
+ },
+ {
+  "id": "M1233",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Faisal_Karim_Kundi",
+   "dawn.com/news/2000903",
+   "tribune.com.pk"
+  ],
+  "note": "Faisal Karim Kundi KP governor since May 2024 (governor rule from Oct 2026)"
+ },
+ {
+  "id": "M1234",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Chairman_of_the_Senate_of_Pakistan",
+   "senate.gov.pk",
+   "tribune.com.pk/story/2462161"
+  ],
+  "note": "Yousaf Raza Gilani Senate Chairman since 9 Apr 2024"
+ },
+ {
+  "id": "M1235",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "kurdistan24.net",
+   "report.az",
+   "lorientlejour.com"
+  ],
+  "note": "Erdogan President of Turkey (third term since 2023)"
+ },
+ {
+  "id": "M1306",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "eia.gov/todayinenergy id=67844",
+   "enerdata.net",
+   "hydrocarbonprocessing.com"
+  ],
+  "note": "US largest crude producer since 2018 (13.6 mb/d in 2025)"
+ },
+ {
+  "id": "M1326",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Governor-General_of_Pakistan"
+  ],
+  "note": "Khawaja Nazimuddin 2nd GG (14 Sep 1948 - 17 Oct 1951) after Jinnah; Ghulam Muhammad was 3rd"
+ },
+ {
+  "id": "M1372",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "mofa.gov.pk",
+   "en.wikipedia.org/wiki/Deputy_Prime_Minister_of_Pakistan",
+   "arynews.tv"
+  ],
+  "note": "Ishaq Dar is Foreign Minister and Deputy PM (mofa.gov.pk Jul-Aug 2026)"
+ },
+ {
+  "id": "M1385",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/President_of_Iran"
+  ],
+  "note": "Masoud Pezeshkian President of Iran since 28 Jul 2024"
+ },
+ {
+  "id": "M1388",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/National_Assembly_of_Pakistan",
+   "Constitution Art. 51 (25th Amendment)"
+  ],
+  "note": "25th Amendment fixed NA total at 336 (266 general+60 women+10 minority)"
+ },
+ {
+  "id": "M1390",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Chief_of_the_Army_Staff_(Pakistan)"
+  ],
+  "note": "Field Marshal Asim Munir COAS since 29 Nov 2022 (also CDF since 2025)"
+ },
+ {
+  "id": "M1396",
+  "verdict": "change",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "solved by calculation"
+  ],
+  "note": "17th = 1st + 16 days = 2 weeks + 2 days, Sunday+2 = Tuesday"
+ },
+ {
+  "id": "M1399",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/President_of_Azad_Kashmir"
+  ],
+  "note": "Najeeb Naqi Khan (PML-N) AJK President from 24 Sep 2026; Latif Akbar was only acting"
+ },
+ {
+  "id": "M1404",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population",
+   "worldometers.info"
+  ],
+  "note": "Pakistan 5th by population after India, China, USA, Indonesia"
+ },
+ {
+  "id": "M1413",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Chief_of_the_Naval_Staff_(Pakistan)"
+  ],
+  "note": "Admiral Naveed Ashraf CNS since 7 Oct 2023"
+ },
+ {
+  "id": "M1414",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Pakistan_International_Airlines"
+  ],
+  "note": "PIA 75% stake sold 23 Dec 2025 to Arif Habib-led consortium for Rs135bn"
+ },
+ {
+  "id": "M1458",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/National_Accountability_Bureau"
+  ],
+  "note": "Lt Gen (retd) Nazir Ahmed Butt NAB chairman since Mar 2023"
+ },
+ {
+  "id": "M1469",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/President_of_China"
+  ],
+  "note": "Xi Jinping President of China since 14 Mar 2013"
+ },
+ {
+  "id": "M1507",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Prime_Minister_of_France"
+  ],
+  "note": "Sebastien Lecornu PM since Sep 2025 (reappointed 10 Oct 2025)"
+ },
+ {
+  "id": "M1539",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/National_Assembly_of_Pakistan",
+   "Constitution Art. 51"
+  ],
+  "note": "266 general seats (plus 60 women, 10 minority = 336)"
+ },
+ {
+  "id": "M1567",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Chief_of_the_Air_Staff_(Pakistan)"
+  ],
+  "note": "Air Chief Marshal Zaheer Ahmad Babar Sidhu CAS since 19 Mar 2021"
+ },
+ {
+  "id": "M1568",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Prime_Minister_of_France"
+  ],
+  "note": "Emmanuel Macron President of France (term to 2027)"
+ },
+ {
+  "id": "M1577",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/President_of_Pakistan"
+  ],
+  "note": "Asif Ali Zardari President since 10 Mar 2024"
+ },
+ {
+  "id": "M1624",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Mecca_Joint_Defence_Agreement"
+  ],
+  "note": "Pakistan, Saudi Arabia and Turkey signed it in Mecca on 7 Aug 2026"
+ },
+ {
+  "id": "M1626",
+  "verdict": "unclear",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Abdul_Hafeez_Pirzada",
+   "en.wikipedia.org/wiki/Mahmud_Ali_Kasuri"
+  ],
+  "note": "Committee (Apr 1972) first chaired by Mahmud Ali Kasuri; after he resigned (Oct 1972) Hafeez Pirzada chaired and finished the draft - both answers used"
+ },
+ {
+  "id": "M1628",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Supreme_Leader_of_Iran"
+  ],
+  "note": "Mojtaba Khamenei Supreme Leader since 8 Mar 2026 after Ali Khamenei killed 28 Feb 2026"
+ },
+ {
+  "id": "M1630",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "worldometers.info",
+   "en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population",
+   "UN WPP 2024"
+  ],
+  "note": "India most populous since 2023"
+ }
+]

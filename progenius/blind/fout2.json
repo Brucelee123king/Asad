@@ -1,0 +1,710 @@
+[
+{
+"id": 1,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 7,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 13,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 19,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 25,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 31,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 37,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 43,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 49,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 55,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 61,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 67,
+"pick": 0,
+"confidence": "medium",
+"note": "1938 commonly cited; sources vary"
+},
+{
+"id": 73,
+"pick": 3,
+"confidence": "medium",
+"note": "Sobers 2022 recalled as Stokes; not searched"
+},
+{
+"id": 79,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 85,
+"pick": 1,
+"confidence": "medium",
+"note": "Hashim Shah also arguable; Fazal Shah most popular"
+},
+{
+"id": 91,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 97,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 103,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 109,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 115,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 121,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 127,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 133,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 139,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 145,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 151,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 157,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 163,
+"pick": 3,
+"confidence": "medium",
+"note": "Lahore first broadcast 1947; Peshawar/Rawalpindi arguable"
+},
+{
+"id": 169,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 175,
+"pick": 2,
+"confidence": "medium",
+"note": "Sugarcane juice commonly listed; sources vary"
+},
+{
+"id": 181,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 187,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 193,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 199,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 205,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 211,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 217,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 223,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 229,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 235,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 241,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 247,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 253,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 259,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 265,
+"pick": 3,
+"confidence": "low",
+"note": "Eyre vs Turkana depends on definition"
+},
+{
+"id": 271,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 277,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 283,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 289,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 295,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 301,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 307,
+"pick": 2,
+"confidence": "medium",
+"note": "Official ~523 km; 595 km commonly cited"
+},
+{
+"id": 313,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 319,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 325,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 331,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 337,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 343,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 349,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 355,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 361,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 367,
+"pick": 1,
+"confidence": "medium",
+"note": "Weinberger got honorary KBE 1988"
+},
+{
+"id": 373,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 379,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 385,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 391,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 397,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 403,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 409,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 415,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 421,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 427,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 433,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 439,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 445,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 451,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 457,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 463,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 469,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 475,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 481,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 487,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 493,
+"pick": 0,
+"confidence": "medium",
+"note": "Jakarta still legal capital; Nusantara transition"
+},
+{
+"id": 499,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 505,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 511,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 517,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 523,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 529,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 535,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 541,
+"pick": 1,
+"confidence": "low",
+"note": "Several GoI Acts; 1935 most famous"
+},
+{
+"id": 547,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 553,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 559,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 565,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 571,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 577,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 583,
+"pick": 0,
+"confidence": "low",
+"note": "Founded in Paris 1904; HQ Switzerland"
+},
+{
+"id": 589,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 595,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 601,
+"pick": 1,
+"confidence": "medium",
+"note": "1967 official; decision 1959-60"
+},
+{
+"id": 607,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 613,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 619,
+"pick": 1,
+"confidence": "low",
+"note": "Sources differ (1938/1939); none exact"
+},
+{
+"id": 625,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 631,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 637,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 643,
+"pick": 3,
+"confidence": "medium",
+"note": "Snakes lack external ears; poor airborne hearing"
+},
+{
+"id": 649,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 655,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 661,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 667,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 673,
+"pick": 2,
+"confidence": "medium",
+"note": "Indus along Salt Range west; Jhelum north"
+},
+{
+"id": 679,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 685,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 691,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 697,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 703,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 709,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 715,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 721,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 727,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 733,
+"pick": 2,
+"confidence": "medium",
+"note": "'in' also possible; 'into' best"
+},
+{
+"id": 739,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 745,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 751,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 757,
+"pick": 0,
+"confidence": "medium",
+"note": "Traditional meaning; other etymologies exist"
+},
+{
+"id": 763,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 769,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 775,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 781,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 787,
+"pick": 2,
+"confidence": "low",
+"note": "Pashto alphabet 44/45 letters; unsure"
+},
+{
+"id": 793,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 799,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 805,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 811,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 817,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 823,
+"pick": 3,
+"confidence": "high"
+}
+]

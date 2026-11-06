@@ -1,0 +1,8 @@
+# Internet check (stage 2) of doubtful MCQs in the PMA preparation app
+Input: /home/user/Asad/recheck/s2in/t<NN>.json = list of {"id","q","o":[options],"app": index the app marks correct,"blind": index another checker chose (-1 = none),"why":[reasons it was flagged: disagree/low/changes]}.
+Today is 1 November 2026. For EVERY item:
+1. Use WebSearch (and WebFetch if needed) to look the fact up in at least 2-3 DIFFERENT reliable sources (official sites, Wikipedia, Dawn/Express Tribune/Geo/BBC/Reuters, Britannica, Islamic references like sunnah.com/quran.com, government sites). For maths/English/reasoning items you may solve them yourself instead of searching.
+2. Take the answer most sources agree on (as of 1 Nov 2026 for current office holders/records).
+3. Decide: "keep" (app answer is right), "change" (another option is right: give its index in "ans"), "none" (no option is right: give the correct answer text in "fix"), or "unclear" (sources really disagree / question too vague: keep the app answer).
+Output /home/user/Asad/recheck/s2out/t<NN>.json = JSON list, same order, each {"id","verdict":"keep|change|none|unclear","ans": index (for keep = app index),"fix":"correct text if none else empty","src":["up to 3 source names or URLs"],"note":"one short line: the fact found"}.
+Write each result to the file as you go (a private script in /tmp/claude-0/-home-user/549049af-53c4-5020-a180-21e595f45279/scratchpad/t<NN>_private/ - never use shared scratchpad files), each written row carries its "id". Validate at the end (same ids in same order). Do not edit other files. Final reply SHORT: counts of keep/change/none/unclear.

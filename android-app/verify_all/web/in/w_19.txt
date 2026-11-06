@@ -1,0 +1,62 @@
+#8496: Which country gives the most military aid to Israel?
+   A. United States
+   B. Germany
+   C. United Kingdom
+   D. France
+   MARKED: A
+   EARLIER CHECKS: blind=A (medium) not searched; US assumed | adjudication=KEEP United States is the largest military aid provider to Israel.
+   REASON SHOWN: The United States is the largest provider of military aid to Israel, about 3.8 billion dollars each year under a 2016 agreement.
+
+#8640: Who is the current Chief Minister of Punjab (Pakistan)?
+   A. Parvez Elahi
+   B. Hamza Shahbaz
+   C. Maryam Nawaz
+   D. Usman Buzdar
+   MARKED: C
+   EARLIER CHECKS: blind=C (medium) time-sensitive, not searched | adjudication=KEEP Maryam Nawaz is CM Punjab since Feb 2024.
+   REASON SHOWN: Maryam Nawaz has been Chief Minister of Punjab since February 2024, the first woman in this post.
+
+#8641: Who is the current Chief Minister of Balochistan?
+   A. Abdul Quddus Bizenjo
+   B. Jam Kamal Khan
+   C. Abdul Malik Baloch
+   D. Sarfraz Bugti
+   MARKED: D
+   EARLIER CHECKS: blind=D (medium) time-sensitive, not searched | adjudication=KEEP Sarfraz Bugti CM Balochistan since March 2024. Option "PPP" in the related note is correct.
+   REASON SHOWN: Mir Sarfraz Bugti was elected Chief Minister of Balochistan in March 2024 and still holds the office.
+
+#8642: Pakistan created the post of Chief of Defence Forces through which constitutional amendment?
+   A. 27th Amendment
+   B. 26th Amendment
+   C. 18th Amendment
+   D. 25th Amendment
+   MARKED: A
+   EARLIER CHECKS: blind=A (medium) time-sensitive, not searched (27th Amendment, Nov 2025) | adjudication=KEEP 27th Amendment (Nov 2025) created Chief of Defence Forces.
+   REASON SHOWN: The 27th Amendment (November 2025) changed Article 243 and created the Chief of Defence Forces.
+
+#8649: Who has scored the most Test runs for Pakistan?
+   A. Babar Azam
+   B. Inzamam-ul-Haq
+   C. Younis Khan
+   D. Javed Miandad
+   MARKED: C
+   EARLIER CHECKS: blind=C (medium) time-sensitive, not searched (Younis Khan 10099) | adjudication=KEEP Younis Khan 10,099 is Pakistan's top Test run scorer.
+   REASON SHOWN: Younis Khan scored 10,099 Test runs and is Pakistan's top Test run scorer.
+
+#8782: Under which Article of the 1962 Constitution could the President promulgate Ordinances when the National Assembly was not in session?
+   A. Article 19
+   B. Article 29
+   C. Article 39
+   D. Article 49
+   MARKED: B
+   EARLIER CHECKS: blind=B (low) Article 29 recalled from memory, not verified | adjudication=KEEP Article 29 of 1962 Constitution covered President's Ordinances
+   REASON SHOWN: Article 29 of the 1962 Constitution allowed the President to make an Ordinance with the same force as an Act when the Assembly was dissolved or not in session and immediate legislation was needed.
+
+#8840: Which one is different: Cricket, Football, Tennis, Baseball?
+   A. Cricket
+   B. Football
+   C. Tennis
+   D. Baseball
+   MARKED: B
+   EARLIER CHECKS: blind=X (low) ambiguous: Tennis (racket, no team ball), Football (played with foot) or Baseball/Cricket (bat) could each be odd | adjudication=KEEP Football is the odd one (foot vs bat/racket); wording loose, optionally add "bat or racket" hint
+   REASON SHOWN: Cricket, tennis and baseball are played with a bat or racket; football is mainly played with the foot.

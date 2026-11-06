@@ -1,0 +1,1277 @@
+[
+ {
+  "name": "DATA total keys/questions",
+  "ok": true,
+  "ev": "196 tests, 11208 questions; per-section: o=20 tests/1000 Q, pma=7 tests/339 Q, fa=16 tests/771 Q, hk=132 tests/6423 Q, lc=5 tests/205 Q, unassigned=16 tests/2470 Q"
+ },
+ {
+  "name": "DATA every test belongs to a section card",
+  "ok": false,
+  "ev": "tests not matched by any SECS.test (invisible from menu cards): [\"MR-500\",\"MR-400\",\"MR-350\",\"MR-300\",\"MR-250\",\"MR-200\",\"MR-150\",\"MR-100\",\"MR-50\",\"MR-40\",\"MR-30\",\"MR-20\",\"MR-10\",\"MR-5\",\"CN-1\",\"IV-1\"] (they may be reachable via HK sub-pages, checked below)"
+ },
+ {
+  "name": "MENU count matches data: section o",
+  "ok": true,
+  "ev": "expected \"20 Tests • 1000 MCQs\"; menu: [\"\",\"\",\"\",\"\",\"20 Tests • 1000 MCQs\",\"7 Tests • 339 MCQs\",\"16 Tests • 771 MCQs\",\"132 Tests • 6423 MCQs\",\"5 Tests • 205 MCQs\"]"
+ },
+ {
+  "name": "MENU count matches data: section pma",
+  "ok": true,
+  "ev": "expected \"7 Tests • 339 MCQs\"; menu: [\"\",\"\",\"\",\"\",\"20 Tests • 1000 MCQs\",\"7 Tests • 339 MCQs\",\"16 Tests • 771 MCQs\",\"132 Tests • 6423 MCQs\",\"5 Tests • 205 MCQs\"]"
+ },
+ {
+  "name": "MENU count matches data: section fa",
+  "ok": true,
+  "ev": "expected \"16 Tests • 771 MCQs\"; menu: [\"\",\"\",\"\",\"\",\"20 Tests • 1000 MCQs\",\"7 Tests • 339 MCQs\",\"16 Tests • 771 MCQs\",\"132 Tests • 6423 MCQs\",\"5 Tests • 205 MCQs\"]"
+ },
+ {
+  "name": "MENU count matches data: section hk",
+  "ok": true,
+  "ev": "expected \"132 Tests • 6423 MCQs\"; menu: [\"\",\"\",\"\",\"\",\"20 Tests • 1000 MCQs\",\"7 Tests • 339 MCQs\",\"16 Tests • 771 MCQs\",\"132 Tests • 6423 MCQs\",\"5 Tests • 205 MCQs\"]"
+ },
+ {
+  "name": "MENU count matches data: section lc",
+  "ok": true,
+  "ev": "expected \"5 Tests • 205 MCQs\"; menu: [\"\",\"\",\"\",\"\",\"20 Tests • 1000 MCQs\",\"7 Tests • 339 MCQs\",\"16 Tests • 771 MCQs\",\"132 Tests • 6423 MCQs\",\"5 Tests • 205 MCQs\"]"
+ },
+ {
+  "name": "DATA integrity (question text, 2-6 distinct non-empty options, valid correct index) for all tests",
+  "ok": true,
+  "ev": "all ok"
+ },
+ {
+  "name": "DATA option-count distribution (info)",
+  "ok": true,
+  "ev": "{\"3\":22,\"4\":11030,\"5\":156}"
+ },
+ {
+  "name": "DATA original section = 20 tests x 50 (1000 MCQs)",
+  "ok": true,
+  "ev": "20 tests, sizes 50  keys first/last 1-50 951-1000"
+ },
+ {
+  "name": "[1-50] selection card visible & clickable in UI",
+  "ok": true,
+  "ev": "card found"
+ },
+ {
+  "name": "[1-50] test opens (intro screen: count and minutes)",
+  "ok": true,
+  "ev": "home visible=true, q-total=50, info=50 MCQs/25 Minutes, expected 50/25 min"
+ },
+ {
+  "name": "[1-50] quiz view shown, quizActive",
+  "ok": true,
+  "ev": ""
+ },
+ {
+  "name": "[1-50] timer starts at N*30s (min 60s)",
+  "ok": true,
+  "ev": "display 25:00 expected 25:00"
+ },
+ {
+  "name": "[1-50] timer counts down 1s/s (5s elapsed -> -5)",
+  "ok": true,
+  "ev": "1500 -> 1495; sidebar=24:55"
+ },
+ {
+  "name": "[1-50] single timer (10 more s => about -10, not -20)",
+  "ok": true,
+  "ev": "active 1000ms intervals base=0 now=0"
+ },
+ {
+  "name": "[1-50] questions appear in order with all options (real Next clicks for first 12 + last; all N via DOM)",
+  "ok": true,
+  "ev": "click-walk bad=[] full-scan bad=[]"
+ },
+ {
+  "name": "[1-50] last question shows \"Finish & Submit\"",
+  "ok": true,
+  "ev": "Finish & Submit"
+ },
+ {
+  "name": "[1-50] Previous/Next navigation (Prev disabled at Q1; next,next,prev -> Q2)",
+  "ok": true,
+  "ev": "prevDisabledAtQ1=true, qnum=2"
+ },
+ {
+  "name": "[1-50] selecting an answer records it (pattern correct/wrong/skip over all Qs)",
+  "ok": true,
+  "ev": "mismatches=0"
+ },
+ {
+  "name": "[1-50] changing an answer (second click on other option)",
+  "ok": false,
+  "ev": "answer 1 -> 1; app LOCKS first answer by design (\"answer locked after first click\"); instant feedback: \"Related facts: Latest FIFA World Cup (20\""
+ },
+ {
+  "name": "[1-50] palette colours: unanswered=slate/indigo-50(current), correct=green, wrong=red",
+  "ok": true,
+  "ev": "bad=[]"
+ },
+ {
+  "name": "[1-50] palette click jumps to that question",
+  "ok": true,
+  "ev": "tested Q26,50,1 bad="
+ },
+ {
+  "name": "[1-50] submit shows confirmation with answered count",
+  "ok": true,
+  "ev": "You have answered 34 out of 50 questions. Are you sure you want to finish and view your results?"
+ },
+ {
+  "name": "[1-50] \"Continue Quiz\" cancels submit (still in quiz, timer alive)",
+  "ok": true,
+  "ev": ""
+ },
+ {
+  "name": "[1-50] manual submit: results screen, timer hidden, no running timer",
+  "ok": true,
+  "ev": "results=true timerHidden=true intervals 0 (base 0)"
+ },
+ {
+  "name": "[1-50] score / percentage / correct / incorrect match own computation",
+  "ok": true,
+  "ev": "app: 17 / 50 34% correct=17 incorrect=33; expected 17/50 34% incorrect=33"
+ },
+ {
+  "name": "[1-50] time-taken stat sane (>= elapsed fast-forward 5s)",
+  "ok": true,
+  "ev": "stat-time=00:25"
+ },
+ {
+  "name": "[1-50] PASS/FAIL badge is consistent with 50-question test (app rule: correct>=25)",
+  "ok": true,
+  "ev": "badge=FAIL correct=17/50 (34%); 50% of 50 = 25"
+ },
+ {
+  "name": "[1-50] best score saved to localStorage (mc_best_*)",
+  "ok": true,
+  "ev": "stored=34 expected=34"
+ },
+ {
+  "name": "[1-50] answer review lists all Qs with right Correct/Incorrect/Unanswered labels",
+  "ok": true,
+  "ev": "cards=50/50"
+ },
+ {
+  "name": "[1-50] review \"Incorrect Only\" filter (incorrect + unanswered, none correct)",
+  "ok": true,
+  "ev": "shown 33, expected 33 (incorrect=17, unanswered=16); note: filter treats unanswered as incorrect"
+ },
+ {
+  "name": "[1-50] review \"All\" filter restores full list",
+  "ok": true,
+  "ev": "50"
+ },
+ {
+  "name": "[1-50] retake resets answers and returns to intro",
+  "ok": true,
+  "ev": "{\"ua\":true,\"home\":true,\"res\":true,\"active\":false}"
+ },
+ {
+  "name": "[1-50] retake: Q1, full timer, palette all unanswered, only options (no stale feedback), single interval",
+  "ok": true,
+  "ev": "{\"q\":\"1\",\"t\":\"25:00\",\"pal\":0,\"opts\":4,\"nBtn\":50} intervals=0"
+ },
+ {
+  "name": "[1-50] Back button during quiz asks confirmation; Cancel keeps quiz + timer running",
+  "ok": true,
+  "ev": "dialogs=[\"confirm:Leave this test? Your progress will be lost.\"] stillInQuiz=true timer 1500->1497"
+ },
+ {
+  "name": "[1-50] Back + OK: returns to selection, quiz stopped, no running timer",
+  "ok": true,
+  "ev": "selectVisible=true intervals=0(base 0) display 24:57->24:57 dialogs=[\"confirm:Leave this test? Your progress will be lost.\"]"
+ },
+ {
+  "name": "[PMA-1] selection card visible & clickable in UI",
+  "ok": true,
+  "ev": "card found"
+ },
+ {
+  "name": "[PMA-1] test opens (intro screen: count and minutes)",
+  "ok": true,
+  "ev": "home visible=true, q-total=50, info=50 MCQs/25 Minutes, expected 50/25 min"
+ },
+ {
+  "name": "[PMA-1] quiz view shown, quizActive",
+  "ok": true,
+  "ev": ""
+ },
+ {
+  "name": "[PMA-1] timer starts at N*30s (min 60s)",
+  "ok": true,
+  "ev": "display 25:00 expected 25:00"
+ },
+ {
+  "name": "[PMA-1] timer counts down 1s/s (5s elapsed -> -5)",
+  "ok": true,
+  "ev": "1500 -> 1495; sidebar=24:55"
+ },
+ {
+  "name": "[PMA-1] single timer (10 more s => about -10, not -20)",
+  "ok": true,
+  "ev": "active 1000ms intervals base=0 now=0"
+ },
+ {
+  "name": "[PMA-1] questions appear in order with all options (real Next clicks for first 12 + last; all N via DOM)",
+  "ok": true,
+  "ev": "click-walk bad=[] full-scan bad=[]"
+ },
+ {
+  "name": "[PMA-1] last question shows \"Finish & Submit\"",
+  "ok": true,
+  "ev": "Finish & Submit"
+ },
+ {
+  "name": "[PMA-1] Previous/Next navigation (Prev disabled at Q1; next,next,prev -> Q2)",
+  "ok": true,
+  "ev": "prevDisabledAtQ1=true, qnum=2"
+ },
+ {
+  "name": "[PMA-1] selecting an answer records it (pattern correct/wrong/skip over all Qs)",
+  "ok": true,
+  "ev": "mismatches=0"
+ },
+ {
+  "name": "[PMA-1] changing an answer (second click on other option)",
+  "ok": false,
+  "ev": "answer 1 -> 1; app LOCKS first answer by design (\"answer locked after first click\"); instant feedback: \"Why B) 81 is correct: 90% = 90/100, so 9\""
+ },
+ {
+  "name": "[PMA-1] palette colours: unanswered=slate/indigo-50(current), correct=green, wrong=red",
+  "ok": true,
+  "ev": "bad=[]"
+ },
+ {
+  "name": "[PMA-1] palette click jumps to that question",
+  "ok": true,
+  "ev": "tested Q26,50,1 bad="
+ },
+ {
+  "name": "[PMA-1] submit shows confirmation with answered count",
+  "ok": true,
+  "ev": "You have answered 34 out of 50 questions. Are you sure you want to finish and view your results?"
+ },
+ {
+  "name": "[PMA-1] \"Continue Quiz\" cancels submit (still in quiz, timer alive)",
+  "ok": true,
+  "ev": ""
+ },
+ {
+  "name": "[PMA-1] manual submit: results screen, timer hidden, no running timer",
+  "ok": true,
+  "ev": "results=true timerHidden=true intervals 0 (base 0)"
+ },
+ {
+  "name": "[PMA-1] score / percentage / correct / incorrect match own computation",
+  "ok": true,
+  "ev": "app: 17 / 50 34% correct=17 incorrect=33; expected 17/50 34% incorrect=33"
+ },
+ {
+  "name": "[PMA-1] time-taken stat sane (>= elapsed fast-forward 5s)",
+  "ok": true,
+  "ev": "stat-time=00:25"
+ },
+ {
+  "name": "[PMA-1] PASS/FAIL badge is consistent with 50-question test (app rule: correct>=25)",
+  "ok": true,
+  "ev": "badge=FAIL correct=17/50 (34%); 50% of 50 = 25"
+ },
+ {
+  "name": "[PMA-1] best score saved to localStorage (mc_best_*)",
+  "ok": true,
+  "ev": "stored=34 expected=34"
+ },
+ {
+  "name": "[PMA-1] answer review lists all Qs with right Correct/Incorrect/Unanswered labels",
+  "ok": true,
+  "ev": "cards=50/50"
+ },
+ {
+  "name": "[PMA-1] review \"Incorrect Only\" filter (incorrect + unanswered, none correct)",
+  "ok": true,
+  "ev": "shown 33, expected 33 (incorrect=17, unanswered=16); note: filter treats unanswered as incorrect"
+ },
+ {
+  "name": "[PMA-1] review \"All\" filter restores full list",
+  "ok": true,
+  "ev": "50"
+ },
+ {
+  "name": "[PMA-1] retake resets answers and returns to intro",
+  "ok": true,
+  "ev": "{\"ua\":true,\"home\":true,\"res\":true,\"active\":false}"
+ },
+ {
+  "name": "[PMA-1] retake: Q1, full timer, palette all unanswered, only options (no stale feedback), single interval",
+  "ok": true,
+  "ev": "{\"q\":\"1\",\"t\":\"25:00\",\"pal\":0,\"opts\":4,\"nBtn\":50} intervals=0"
+ },
+ {
+  "name": "[PMA-1] Back button during quiz asks confirmation; Cancel keeps quiz + timer running",
+  "ok": true,
+  "ev": "dialogs=[\"confirm:Leave this test? Your progress will be lost.\"] stillInQuiz=true timer 1500->1497"
+ },
+ {
+  "name": "[PMA-1] Back + OK: returns to selection, quiz stopped, no running timer",
+  "ok": true,
+  "ev": "selectVisible=true intervals=0(base 0) display 24:57->24:57 dialogs=[\"confirm:Leave this test? Your progress will be lost.\"]"
+ },
+ {
+  "name": "[FA-1] selection card visible & clickable in UI",
+  "ok": true,
+  "ev": "card found"
+ },
+ {
+  "name": "[FA-1] test opens (intro screen: count and minutes)",
+  "ok": true,
+  "ev": "home visible=true, q-total=50, info=50 MCQs/25 Minutes, expected 50/25 min"
+ },
+ {
+  "name": "[FA-1] quiz view shown, quizActive",
+  "ok": true,
+  "ev": ""
+ },
+ {
+  "name": "[FA-1] timer starts at N*30s (min 60s)",
+  "ok": true,
+  "ev": "display 25:00 expected 25:00"
+ },
+ {
+  "name": "[FA-1] timer counts down 1s/s (5s elapsed -> -5)",
+  "ok": true,
+  "ev": "1500 -> 1495; sidebar=24:55"
+ },
+ {
+  "name": "[FA-1] single timer (10 more s => about -10, not -20)",
+  "ok": true,
+  "ev": "active 1000ms intervals base=0 now=0"
+ },
+ {
+  "name": "[FA-1] questions appear in order with all options (real Next clicks for first 12 + last; all N via DOM)",
+  "ok": true,
+  "ev": "click-walk bad=[] full-scan bad=[]"
+ },
+ {
+  "name": "[FA-1] last question shows \"Finish & Submit\"",
+  "ok": true,
+  "ev": "Finish & Submit"
+ },
+ {
+  "name": "[FA-1] Previous/Next navigation (Prev disabled at Q1; next,next,prev -> Q2)",
+  "ok": true,
+  "ev": "prevDisabledAtQ1=true, qnum=2"
+ },
+ {
+  "name": "[FA-1] selecting an answer records it (pattern correct/wrong/skip over all Qs)",
+  "ok": true,
+  "ev": "mismatches=0"
+ },
+ {
+  "name": "[FA-1] changing an answer (second click on other option)",
+  "ok": false,
+  "ev": "answer 1 -> 1; app LOCKS first answer by design (\"answer locked after first click\"); instant feedback: \"Related fact: Tip: first check the diffe\""
+ },
+ {
+  "name": "[FA-1] palette colours: unanswered=slate/indigo-50(current), correct=green, wrong=red",
+  "ok": true,
+  "ev": "bad=[]"
+ },
+ {
+  "name": "[FA-1] palette click jumps to that question",
+  "ok": true,
+  "ev": "tested Q26,50,1 bad="
+ },
+ {
+  "name": "[FA-1] submit shows confirmation with answered count",
+  "ok": true,
+  "ev": "You have answered 34 out of 50 questions. Are you sure you want to finish and view your results?"
+ },
+ {
+  "name": "[FA-1] \"Continue Quiz\" cancels submit (still in quiz, timer alive)",
+  "ok": true,
+  "ev": ""
+ },
+ {
+  "name": "[FA-1] manual submit: results screen, timer hidden, no running timer",
+  "ok": true,
+  "ev": "results=true timerHidden=true intervals 0 (base 0)"
+ },
+ {
+  "name": "[FA-1] score / percentage / correct / incorrect match own computation",
+  "ok": true,
+  "ev": "app: 17 / 50 34% correct=17 incorrect=33; expected 17/50 34% incorrect=33"
+ },
+ {
+  "name": "[FA-1] time-taken stat sane (>= elapsed fast-forward 5s)",
+  "ok": true,
+  "ev": "stat-time=00:25"
+ },
+ {
+  "name": "[FA-1] PASS/FAIL badge is consistent with 50-question test (app rule: correct>=25)",
+  "ok": true,
+  "ev": "badge=FAIL correct=17/50 (34%); 50% of 50 = 25"
+ },
+ {
+  "name": "[FA-1] best score saved to localStorage (mc_best_*)",
+  "ok": true,
+  "ev": "stored=34 expected=34"
+ },
+ {
+  "name": "[FA-1] answer review lists all Qs with right Correct/Incorrect/Unanswered labels",
+  "ok": true,
+  "ev": "cards=50/50"
+ },
+ {
+  "name": "[FA-1] review \"Incorrect Only\" filter (incorrect + unanswered, none correct)",
+  "ok": true,
+  "ev": "shown 33, expected 33 (incorrect=17, unanswered=16); note: filter treats unanswered as incorrect"
+ },
+ {
+  "name": "[FA-1] review \"All\" filter restores full list",
+  "ok": true,
+  "ev": "50"
+ },
+ {
+  "name": "[FA-1] retake resets answers and returns to intro",
+  "ok": true,
+  "ev": "{\"ua\":true,\"home\":true,\"res\":true,\"active\":false}"
+ },
+ {
+  "name": "[FA-1] retake: Q1, full timer, palette all unanswered, only options (no stale feedback), single interval",
+  "ok": true,
+  "ev": "{\"q\":\"1\",\"t\":\"25:00\",\"pal\":0,\"opts\":4,\"nBtn\":50} intervals=0"
+ },
+ {
+  "name": "[FA-1] Back button during quiz asks confirmation; Cancel keeps quiz + timer running",
+  "ok": true,
+  "ev": "dialogs=[\"confirm:Leave this test? Your progress will be lost.\"] stillInQuiz=true timer 1500->1497"
+ },
+ {
+  "name": "[FA-1] Back + OK: returns to selection, quiz stopped, no running timer",
+  "ok": true,
+  "ev": "selectVisible=true intervals=0(base 0) display 24:57->24:57 dialogs=[\"confirm:Leave this test? Your progress will be lost.\"]"
+ },
+ {
+  "name": "[HK-1] selection card visible & clickable in UI",
+  "ok": true,
+  "ev": "card found"
+ },
+ {
+  "name": "[HK-1] test opens (intro screen: count and minutes)",
+  "ok": true,
+  "ev": "home visible=true, q-total=50, info=50 MCQs/25 Minutes, expected 50/25 min"
+ },
+ {
+  "name": "[HK-1] quiz view shown, quizActive",
+  "ok": true,
+  "ev": ""
+ },
+ {
+  "name": "[HK-1] timer starts at N*30s (min 60s)",
+  "ok": true,
+  "ev": "display 25:00 expected 25:00"
+ },
+ {
+  "name": "[HK-1] timer counts down 1s/s (5s elapsed -> -5)",
+  "ok": true,
+  "ev": "1500 -> 1495; sidebar=24:55"
+ },
+ {
+  "name": "[HK-1] single timer (10 more s => about -10, not -20)",
+  "ok": true,
+  "ev": "active 1000ms intervals base=0 now=0"
+ },
+ {
+  "name": "[HK-1] questions appear in order with all options (real Next clicks for first 12 + last; all N via DOM)",
+  "ok": true,
+  "ev": "click-walk bad=[] full-scan bad=[]"
+ },
+ {
+  "name": "[HK-1] last question shows \"Finish & Submit\"",
+  "ok": true,
+  "ev": "Finish & Submit"
+ },
+ {
+  "name": "[HK-1] Previous/Next navigation (Prev disabled at Q1; next,next,prev -> Q2)",
+  "ok": true,
+  "ev": "prevDisabledAtQ1=true, qnum=2"
+ },
+ {
+  "name": "[HK-1] selecting an answer records it (pattern correct/wrong/skip over all Qs)",
+  "ok": true,
+  "ev": "mismatches=0"
+ },
+ {
+  "name": "[HK-1] changing an answer (second click on other option)",
+  "ok": false,
+  "ev": "answer 1 -> 1; app LOCKS first answer by design (\"answer locked after first click\"); instant feedback: \"Related fact: Taking 90% of a number 90 \""
+ },
+ {
+  "name": "[HK-1] palette colours: unanswered=slate/indigo-50(current), correct=green, wrong=red",
+  "ok": true,
+  "ev": "bad=[]"
+ },
+ {
+  "name": "[HK-1] palette click jumps to that question",
+  "ok": true,
+  "ev": "tested Q26,50,1 bad="
+ },
+ {
+  "name": "[HK-1] submit shows confirmation with answered count",
+  "ok": true,
+  "ev": "You have answered 34 out of 50 questions. Are you sure you want to finish and view your results?"
+ },
+ {
+  "name": "[HK-1] \"Continue Quiz\" cancels submit (still in quiz, timer alive)",
+  "ok": true,
+  "ev": ""
+ },
+ {
+  "name": "[HK-1] manual submit: results screen, timer hidden, no running timer",
+  "ok": true,
+  "ev": "results=true timerHidden=true intervals 0 (base 0)"
+ },
+ {
+  "name": "[HK-1] score / percentage / correct / incorrect match own computation",
+  "ok": true,
+  "ev": "app: 17 / 50 34% correct=17 incorrect=33; expected 17/50 34% incorrect=33"
+ },
+ {
+  "name": "[HK-1] time-taken stat sane (>= elapsed fast-forward 5s)",
+  "ok": true,
+  "ev": "stat-time=00:22"
+ },
+ {
+  "name": "[HK-1] PASS/FAIL badge is consistent with 50-question test (app rule: correct>=25)",
+  "ok": true,
+  "ev": "badge=FAIL correct=17/50 (34%); 50% of 50 = 25"
+ },
+ {
+  "name": "[HK-1] best score saved to localStorage (mc_best_*)",
+  "ok": true,
+  "ev": "stored=34 expected=34"
+ },
+ {
+  "name": "[HK-1] answer review lists all Qs with right Correct/Incorrect/Unanswered labels",
+  "ok": true,
+  "ev": "cards=50/50"
+ },
+ {
+  "name": "[HK-1] review \"Incorrect Only\" filter (incorrect + unanswered, none correct)",
+  "ok": true,
+  "ev": "shown 33, expected 33 (incorrect=17, unanswered=16); note: filter treats unanswered as incorrect"
+ },
+ {
+  "name": "[HK-1] review \"All\" filter restores full list",
+  "ok": true,
+  "ev": "50"
+ },
+ {
+  "name": "[HK-1] retake resets answers and returns to intro",
+  "ok": true,
+  "ev": "{\"ua\":true,\"home\":true,\"res\":true,\"active\":false}"
+ },
+ {
+  "name": "[HK-1] retake: Q1, full timer, palette all unanswered, only options (no stale feedback), single interval",
+  "ok": true,
+  "ev": "{\"q\":\"1\",\"t\":\"25:00\",\"pal\":0,\"opts\":4,\"nBtn\":50} intervals=0"
+ },
+ {
+  "name": "[HK-1] Back button during quiz asks confirmation; Cancel keeps quiz + timer running",
+  "ok": true,
+  "ev": "dialogs=[\"confirm:Leave this test? Your progress will be lost.\"] stillInQuiz=true timer 1500->1497"
+ },
+ {
+  "name": "[HK-1] Back + OK: returns to selection, quiz stopped, no running timer",
+  "ok": true,
+  "ev": "selectVisible=true intervals=0(base 0) display 24:57->24:57 dialogs=[\"confirm:Leave this test? Your progress will be lost.\"]"
+ },
+ {
+  "name": "[MR-500] selection card visible & clickable in UI",
+  "ok": true,
+  "ev": "card found"
+ },
+ {
+  "name": "[MR-500] test opens (intro screen: count and minutes)",
+  "ok": true,
+  "ev": "home visible=true, q-total=5, info=5 MCQs/3 Minutes, expected 5/3 min"
+ },
+ {
+  "name": "[MR-500] quiz view shown, quizActive",
+  "ok": true,
+  "ev": ""
+ },
+ {
+  "name": "[MR-500] timer starts at N*30s (min 60s)",
+  "ok": true,
+  "ev": "display 02:30 expected 2:30"
+ },
+ {
+  "name": "[MR-500] timer counts down 1s/s (5s elapsed -> -5)",
+  "ok": true,
+  "ev": "150 -> 145; sidebar=02:25"
+ },
+ {
+  "name": "[MR-500] single timer (10 more s => about -10, not -20)",
+  "ok": true,
+  "ev": "active 1000ms intervals base=0 now=0"
+ },
+ {
+  "name": "[MR-500] questions appear in order with all options (real Next clicks for first 12 + last; all N via DOM)",
+  "ok": true,
+  "ev": "click-walk bad=[] full-scan bad=[]"
+ },
+ {
+  "name": "[MR-500] last question shows \"Finish & Submit\"",
+  "ok": true,
+  "ev": "Finish & Submit"
+ },
+ {
+  "name": "[MR-500] Previous/Next navigation (Prev disabled at Q1; next,next,prev -> Q2)",
+  "ok": true,
+  "ev": "prevDisabledAtQ1=true, qnum=2"
+ },
+ {
+  "name": "[MR-500] selecting an answer records it (pattern correct/wrong/skip over all Qs)",
+  "ok": true,
+  "ev": "mismatches=0"
+ },
+ {
+  "name": "[MR-500] changing an answer (second click on other option)",
+  "ok": false,
+  "ev": "answer 1 -> 1; app LOCKS first answer by design (\"answer locked after first click\"); instant feedback: \"Related fact: Taking 90% of a number 90 \""
+ },
+ {
+  "name": "[MR-500] palette colours: unanswered=slate/indigo-50(current), correct=green, wrong=red",
+  "ok": true,
+  "ev": "bad=[]"
+ },
+ {
+  "name": "[MR-500] palette click jumps to that question",
+  "ok": true,
+  "ev": "tested Q3,5,1 bad="
+ },
+ {
+  "name": "[MR-500] submit shows confirmation with answered count",
+  "ok": true,
+  "ev": "You have answered 4 out of 5 questions. Are you sure you want to finish and view your results?"
+ },
+ {
+  "name": "[MR-500] \"Continue Quiz\" cancels submit (still in quiz, timer alive)",
+  "ok": true,
+  "ev": ""
+ },
+ {
+  "name": "[MR-500] manual submit: results screen, timer hidden, no running timer",
+  "ok": true,
+  "ev": "results=true timerHidden=true intervals 0 (base 0)"
+ },
+ {
+  "name": "[MR-500] score / percentage / correct / incorrect match own computation",
+  "ok": true,
+  "ev": "app: 2 / 5 40% correct=2 incorrect=3; expected 2/5 40% incorrect=3"
+ },
+ {
+  "name": "[MR-500] time-taken stat sane (>= elapsed fast-forward 5s)",
+  "ok": true,
+  "ev": "stat-time=00:18"
+ },
+ {
+  "name": "[MR-500] PASS/FAIL badge is consistent with 5-question test (app rule: correct>=25)",
+  "ok": true,
+  "ev": "badge=FAIL correct=2/5 (40%); 50% of 5 = 2.5 -> fixed threshold 25 is above 50% for this size"
+ },
+ {
+  "name": "[MR-500] best score saved to localStorage (mc_best_*)",
+  "ok": true,
+  "ev": "stored=40 expected=40"
+ },
+ {
+  "name": "[MR-500] answer review lists all Qs with right Correct/Incorrect/Unanswered labels",
+  "ok": true,
+  "ev": "cards=5/5"
+ },
+ {
+  "name": "[MR-500] review \"Incorrect Only\" filter (incorrect + unanswered, none correct)",
+  "ok": true,
+  "ev": "shown 3, expected 3 (incorrect=2, unanswered=1); note: filter treats unanswered as incorrect"
+ },
+ {
+  "name": "[MR-500] review \"All\" filter restores full list",
+  "ok": true,
+  "ev": "5"
+ },
+ {
+  "name": "[MR-500] retake resets answers and returns to intro",
+  "ok": true,
+  "ev": "{\"ua\":true,\"home\":true,\"res\":true,\"active\":false}"
+ },
+ {
+  "name": "[MR-500] retake: Q1, full timer, palette all unanswered, only options (no stale feedback), single interval",
+  "ok": true,
+  "ev": "{\"q\":\"1\",\"t\":\"02:30\",\"pal\":0,\"opts\":4,\"nBtn\":5} intervals=0"
+ },
+ {
+  "name": "[MR-500] Back button during quiz asks confirmation; Cancel keeps quiz + timer running",
+  "ok": true,
+  "ev": "dialogs=[\"confirm:Leave this test? Your progress will be lost.\"] stillInQuiz=true timer 150->147"
+ },
+ {
+  "name": "[MR-500] Back + OK: returns to selection, quiz stopped, no running timer",
+  "ok": true,
+  "ev": "selectVisible=true intervals=0(base 0) display 02:27->02:27 dialogs=[\"confirm:Leave this test? Your progress will be lost.\"]"
+ },
+ {
+  "name": "[CN-1] selection card visible & clickable in UI",
+  "ok": true,
+  "ev": "card found"
+ },
+ {
+  "name": "[CN-1] test opens (intro screen: count and minutes)",
+  "ok": true,
+  "ev": "home visible=true, q-total=89, info=89 MCQs/45 Minutes, expected 89/45 min"
+ },
+ {
+  "name": "[CN-1] quiz view shown, quizActive",
+  "ok": true,
+  "ev": ""
+ },
+ {
+  "name": "[CN-1] timer starts at N*30s (min 60s)",
+  "ok": true,
+  "ev": "display 44:30 expected 44:30"
+ },
+ {
+  "name": "[CN-1] timer counts down 1s/s (5s elapsed -> -5)",
+  "ok": true,
+  "ev": "2670 -> 2665; sidebar=44:25"
+ },
+ {
+  "name": "[CN-1] single timer (10 more s => about -10, not -20)",
+  "ok": true,
+  "ev": "active 1000ms intervals base=0 now=0"
+ },
+ {
+  "name": "[CN-1] questions appear in order with all options (real Next clicks for first 12 + last; all N via DOM)",
+  "ok": true,
+  "ev": "click-walk bad=[] full-scan bad=[]"
+ },
+ {
+  "name": "[CN-1] last question shows \"Finish & Submit\"",
+  "ok": true,
+  "ev": "Finish & Submit"
+ },
+ {
+  "name": "[CN-1] Previous/Next navigation (Prev disabled at Q1; next,next,prev -> Q2)",
+  "ok": true,
+  "ev": "prevDisabledAtQ1=true, qnum=2"
+ },
+ {
+  "name": "[CN-1] selecting an answer records it (pattern correct/wrong/skip over all Qs)",
+  "ok": true,
+  "ev": "mismatches=0"
+ },
+ {
+  "name": "[CN-1] changing an answer (second click on other option)",
+  "ok": false,
+  "ev": "answer 1 -> 1; app LOCKS first answer by design (\"answer locked after first click\"); instant feedback: \"Related fact: It came into force on 23 M\""
+ },
+ {
+  "name": "[CN-1] palette colours: unanswered=slate/indigo-50(current), correct=green, wrong=red",
+  "ok": true,
+  "ev": "bad=[]"
+ },
+ {
+  "name": "[CN-1] palette click jumps to that question",
+  "ok": true,
+  "ev": "tested Q45,89,1 bad="
+ },
+ {
+  "name": "[CN-1] submit shows confirmation with answered count",
+  "ok": true,
+  "ev": "You have answered 60 out of 89 questions. Are you sure you want to finish and view your results?"
+ },
+ {
+  "name": "[CN-1] \"Continue Quiz\" cancels submit (still in quiz, timer alive)",
+  "ok": true,
+  "ev": ""
+ },
+ {
+  "name": "[CN-1] manual submit: results screen, timer hidden, no running timer",
+  "ok": true,
+  "ev": "results=true timerHidden=true intervals 0 (base 0)"
+ },
+ {
+  "name": "[CN-1] score / percentage / correct / incorrect match own computation",
+  "ok": true,
+  "ev": "app: 30 / 89 34% correct=30 incorrect=59; expected 30/89 34% incorrect=59"
+ },
+ {
+  "name": "[CN-1] time-taken stat sane (>= elapsed fast-forward 5s)",
+  "ok": true,
+  "ev": "stat-time=00:23"
+ },
+ {
+  "name": "[CN-1] PASS/FAIL badge is consistent with 89-question test (app rule: correct>=25)",
+  "ok": true,
+  "ev": "badge=PASS correct=30/89 (34%); 50% of 89 = 44.5 -> fixed threshold 25 is below 50% for this size"
+ },
+ {
+  "name": "[CN-1] best score saved to localStorage (mc_best_*)",
+  "ok": true,
+  "ev": "stored=34 expected=34"
+ },
+ {
+  "name": "[CN-1] answer review lists all Qs with right Correct/Incorrect/Unanswered labels",
+  "ok": true,
+  "ev": "cards=89/89"
+ },
+ {
+  "name": "[CN-1] review \"Incorrect Only\" filter (incorrect + unanswered, none correct)",
+  "ok": true,
+  "ev": "shown 59, expected 59 (incorrect=30, unanswered=29); note: filter treats unanswered as incorrect"
+ },
+ {
+  "name": "[CN-1] review \"All\" filter restores full list",
+  "ok": true,
+  "ev": "89"
+ },
+ {
+  "name": "[CN-1] retake resets answers and returns to intro",
+  "ok": true,
+  "ev": "{\"ua\":true,\"home\":true,\"res\":true,\"active\":false}"
+ },
+ {
+  "name": "[CN-1] retake: Q1, full timer, palette all unanswered, only options (no stale feedback), single interval",
+  "ok": true,
+  "ev": "{\"q\":\"1\",\"t\":\"44:30\",\"pal\":0,\"opts\":4,\"nBtn\":89} intervals=0"
+ },
+ {
+  "name": "[CN-1] Back button during quiz asks confirmation; Cancel keeps quiz + timer running",
+  "ok": true,
+  "ev": "dialogs=[\"confirm:Leave this test? Your progress will be lost.\"] stillInQuiz=true timer 2670->2667"
+ },
+ {
+  "name": "[CN-1] Back + OK: returns to selection, quiz stopped, no running timer",
+  "ok": true,
+  "ev": "selectVisible=true intervals=0(base 0) display 44:27->44:27 dialogs=[\"confirm:Leave this test? Your progress will be lost.\"]"
+ },
+ {
+  "name": "[IV-1] selection card visible & clickable in UI",
+  "ok": true,
+  "ev": "card found"
+ },
+ {
+  "name": "[IV-1] test opens (intro screen: count and minutes)",
+  "ok": true,
+  "ev": "home visible=true, q-total=107, info=107 MCQs/54 Minutes, expected 107/54 min"
+ },
+ {
+  "name": "[IV-1] quiz view shown, quizActive",
+  "ok": true,
+  "ev": ""
+ },
+ {
+  "name": "[IV-1] timer starts at N*30s (min 60s)",
+  "ok": true,
+  "ev": "display 53:30 expected 53:30"
+ },
+ {
+  "name": "[IV-1] timer counts down 1s/s (5s elapsed -> -5)",
+  "ok": true,
+  "ev": "3210 -> 3205; sidebar=53:25"
+ },
+ {
+  "name": "[IV-1] single timer (10 more s => about -10, not -20)",
+  "ok": true,
+  "ev": "active 1000ms intervals base=0 now=0"
+ },
+ {
+  "name": "[IV-1] questions appear in order with all options (real Next clicks for first 12 + last; all N via DOM)",
+  "ok": true,
+  "ev": "click-walk bad=[] full-scan bad=[]"
+ },
+ {
+  "name": "[IV-1] last question shows \"Finish & Submit\"",
+  "ok": true,
+  "ev": "Finish & Submit"
+ },
+ {
+  "name": "[IV-1] Previous/Next navigation (Prev disabled at Q1; next,next,prev -> Q2)",
+  "ok": true,
+  "ev": "prevDisabledAtQ1=true, qnum=2"
+ },
+ {
+  "name": "[IV-1] selecting an answer records it (pattern correct/wrong/skip over all Qs)",
+  "ok": true,
+  "ev": "mismatches=0"
+ },
+ {
+  "name": "[IV-1] changing an answer (second click on other option)",
+  "ok": false,
+  "ev": "answer 1 -> 1; app LOCKS first answer by design (\"answer locked after first click\"); instant feedback: \"Related fact: Days: shift by the remaind\""
+ },
+ {
+  "name": "[IV-1] palette colours: unanswered=slate/indigo-50(current), correct=green, wrong=red",
+  "ok": true,
+  "ev": "bad=[]"
+ },
+ {
+  "name": "[IV-1] palette click jumps to that question",
+  "ok": true,
+  "ev": "tested Q54,107,1 bad="
+ },
+ {
+  "name": "[IV-1] submit shows confirmation with answered count",
+  "ok": true,
+  "ev": "You have answered 72 out of 107 questions. Are you sure you want to finish and view your results?"
+ },
+ {
+  "name": "[IV-1] \"Continue Quiz\" cancels submit (still in quiz, timer alive)",
+  "ok": true,
+  "ev": ""
+ },
+ {
+  "name": "[IV-1] manual submit: results screen, timer hidden, no running timer",
+  "ok": true,
+  "ev": "results=true timerHidden=true intervals 0 (base 0)"
+ },
+ {
+  "name": "[IV-1] score / percentage / correct / incorrect match own computation",
+  "ok": true,
+  "ev": "app: 36 / 107 34% correct=36 incorrect=71; expected 36/107 34% incorrect=71"
+ },
+ {
+  "name": "[IV-1] time-taken stat sane (>= elapsed fast-forward 5s)",
+  "ok": true,
+  "ev": "stat-time=00:22"
+ },
+ {
+  "name": "[IV-1] PASS/FAIL badge is consistent with 107-question test (app rule: correct>=25)",
+  "ok": true,
+  "ev": "badge=PASS correct=36/107 (34%); 50% of 107 = 53.5 -> fixed threshold 25 is below 50% for this size"
+ },
+ {
+  "name": "[IV-1] best score saved to localStorage (mc_best_*)",
+  "ok": true,
+  "ev": "stored=34 expected=34"
+ },
+ {
+  "name": "[IV-1] answer review lists all Qs with right Correct/Incorrect/Unanswered labels",
+  "ok": true,
+  "ev": "cards=107/107"
+ },
+ {
+  "name": "[IV-1] review \"Incorrect Only\" filter (incorrect + unanswered, none correct)",
+  "ok": true,
+  "ev": "shown 71, expected 71 (incorrect=36, unanswered=35); note: filter treats unanswered as incorrect"
+ },
+ {
+  "name": "[IV-1] review \"All\" filter restores full list",
+  "ok": true,
+  "ev": "107"
+ },
+ {
+  "name": "[IV-1] retake resets answers and returns to intro",
+  "ok": true,
+  "ev": "{\"ua\":true,\"home\":true,\"res\":true,\"active\":false}"
+ },
+ {
+  "name": "[IV-1] retake: Q1, full timer, palette all unanswered, only options (no stale feedback), single interval",
+  "ok": true,
+  "ev": "{\"q\":\"1\",\"t\":\"53:30\",\"pal\":0,\"opts\":4,\"nBtn\":107} intervals=0"
+ },
+ {
+  "name": "[IV-1] Back button during quiz asks confirmation; Cancel keeps quiz + timer running",
+  "ok": true,
+  "ev": "dialogs=[\"confirm:Leave this test? Your progress will be lost.\"] stillInQuiz=true timer 3210->3207"
+ },
+ {
+  "name": "[IV-1] Back + OK: returns to selection, quiz stopped, no running timer",
+  "ok": true,
+  "ev": "selectVisible=true intervals=0(base 0) display 53:27->53:27 dialogs=[\"confirm:Leave this test? Your progress will be lost.\"]"
+ },
+ {
+  "name": "[LC-1] selection card visible & clickable in UI",
+  "ok": true,
+  "ev": "card found"
+ },
+ {
+  "name": "[LC-1] test opens (intro screen: count and minutes)",
+  "ok": true,
+  "ev": "home visible=true, q-total=50, info=50 MCQs/25 Minutes, expected 50/25 min"
+ },
+ {
+  "name": "[LC-1] quiz view shown, quizActive",
+  "ok": true,
+  "ev": ""
+ },
+ {
+  "name": "[LC-1] timer starts at N*30s (min 60s)",
+  "ok": true,
+  "ev": "display 25:00 expected 25:00"
+ },
+ {
+  "name": "[LC-1] timer counts down 1s/s (5s elapsed -> -5)",
+  "ok": true,
+  "ev": "1500 -> 1495; sidebar=24:55"
+ },
+ {
+  "name": "[LC-1] single timer (10 more s => about -10, not -20)",
+  "ok": true,
+  "ev": "active 1000ms intervals base=0 now=0"
+ },
+ {
+  "name": "[LC-1] questions appear in order with all options (real Next clicks for first 12 + last; all N via DOM)",
+  "ok": true,
+  "ev": "click-walk bad=[] full-scan bad=[]"
+ },
+ {
+  "name": "[LC-1] last question shows \"Finish & Submit\"",
+  "ok": true,
+  "ev": "Finish & Submit"
+ },
+ {
+  "name": "[LC-1] Previous/Next navigation (Prev disabled at Q1; next,next,prev -> Q2)",
+  "ok": true,
+  "ev": "prevDisabledAtQ1=true, qnum=2"
+ },
+ {
+  "name": "[LC-1] selecting an answer records it (pattern correct/wrong/skip over all Qs)",
+  "ok": true,
+  "ev": "mismatches=0"
+ },
+ {
+  "name": "[LC-1] changing an answer (second click on other option)",
+  "ok": false,
+  "ev": "answer 0 -> 0; app LOCKS first answer by design (\"answer locked after first click\"); instant feedback: \"Related fact: 10% of 90 is 9, so 90% is \""
+ },
+ {
+  "name": "[LC-1] palette colours: unanswered=slate/indigo-50(current), correct=green, wrong=red",
+  "ok": true,
+  "ev": "bad=[]"
+ },
+ {
+  "name": "[LC-1] palette click jumps to that question",
+  "ok": true,
+  "ev": "tested Q26,50,1 bad="
+ },
+ {
+  "name": "[LC-1] submit shows confirmation with answered count",
+  "ok": true,
+  "ev": "You have answered 34 out of 50 questions. Are you sure you want to finish and view your results?"
+ },
+ {
+  "name": "[LC-1] \"Continue Quiz\" cancels submit (still in quiz, timer alive)",
+  "ok": true,
+  "ev": ""
+ },
+ {
+  "name": "[LC-1] manual submit: results screen, timer hidden, no running timer",
+  "ok": true,
+  "ev": "results=true timerHidden=true intervals 0 (base 0)"
+ },
+ {
+  "name": "[LC-1] score / percentage / correct / incorrect match own computation",
+  "ok": true,
+  "ev": "app: 17 / 50 34% correct=17 incorrect=33; expected 17/50 34% incorrect=33"
+ },
+ {
+  "name": "[LC-1] time-taken stat sane (>= elapsed fast-forward 5s)",
+  "ok": true,
+  "ev": "stat-time=00:22"
+ },
+ {
+  "name": "[LC-1] PASS/FAIL badge is consistent with 50-question test (app rule: correct>=25)",
+  "ok": true,
+  "ev": "badge=FAIL correct=17/50 (34%); 50% of 50 = 25"
+ },
+ {
+  "name": "[LC-1] best score saved to localStorage (mc_best_*)",
+  "ok": true,
+  "ev": "stored=34 expected=34"
+ },
+ {
+  "name": "[LC-1] answer review lists all Qs with right Correct/Incorrect/Unanswered labels",
+  "ok": true,
+  "ev": "cards=50/50"
+ },
+ {
+  "name": "[LC-1] review \"Incorrect Only\" filter (incorrect + unanswered, none correct)",
+  "ok": true,
+  "ev": "shown 33, expected 33 (incorrect=17, unanswered=16); note: filter treats unanswered as incorrect"
+ },
+ {
+  "name": "[LC-1] review \"All\" filter restores full list",
+  "ok": true,
+  "ev": "50"
+ },
+ {
+  "name": "[LC-1] retake resets answers and returns to intro",
+  "ok": true,
+  "ev": "{\"ua\":true,\"home\":true,\"res\":true,\"active\":false}"
+ },
+ {
+  "name": "[LC-1] retake: Q1, full timer, palette all unanswered, only options (no stale feedback), single interval",
+  "ok": true,
+  "ev": "{\"q\":\"1\",\"t\":\"25:00\",\"pal\":0,\"opts\":4,\"nBtn\":50} intervals=0"
+ },
+ {
+  "name": "[LC-1] Back button during quiz asks confirmation; Cancel keeps quiz + timer running",
+  "ok": true,
+  "ev": "dialogs=[\"confirm:Leave this test? Your progress will be lost.\"] stillInQuiz=true timer 1500->1497"
+ },
+ {
+  "name": "[LC-1] Back + OK: returns to selection, quiz stopped, no running timer",
+  "ok": true,
+  "ev": "selectVisible=true intervals=0(base 0) display 24:57->24:57 dialogs=[\"confirm:Leave this test? Your progress will be lost.\"]"
+ },
+ {
+  "name": "[1-50] auto-submit exactly when timer hits 0 (not before)",
+  "ok": true,
+  "ev": "at T-3s display=00:03; results shown at 0: true"
+ },
+ {
+  "name": "[1-50] auto-submit score = own computation (4 correct, 1 wrong, rest unanswered)",
+  "ok": true,
+  "ev": "4 / 50"
+ },
+ {
+  "name": "[1-50] auto-submit: timer stops (no interval, no negative display) and quizActive=false",
+  "ok": true,
+  "ev": "intervals 0/0, display 00:00, stat-time=25:00 (expected 25:00)"
+ },
+ {
+  "name": "[1-50] auto-submit while confirm modal open: modal is closed",
+  "ok": true,
+  "ev": "modal still visible over results = false"
+ },
+ {
+  "name": "[1-50] after auto-submit, 10s later nothing changes (ran once)",
+  "ok": true,
+  "ev": "best stored=34"
+ },
+ {
+  "name": "[1-50] timer after retake counts 1s/s (no duplicated timer)",
+  "ok": true,
+  "ev": "1500->1490"
+ },
+ {
+  "name": "[1-50] showSelect() clears timer",
+  "ok": true,
+  "ev": "intervals 0"
+ },
+ {
+  "name": "[PMA-1] auto-submit exactly when timer hits 0 (not before)",
+  "ok": false,
+  "ev": "at T-3s display=00:04; results shown at 0: false"
+ },
+ {
+  "name": "[PMA-1] auto-submit score = own computation (4 correct, 1 wrong, rest unanswered)",
+  "ok": true,
+  "ev": "4 / 50"
+ },
+ {
+  "name": "[PMA-1] auto-submit: timer stops (no interval, no negative display) and quizActive=false",
+  "ok": false,
+  "ev": "intervals 0/0, display 00:01, stat-time=25:00 (expected 25:00)"
+ },
+ {
+  "name": "[PMA-1] auto-submit while confirm modal open: modal is closed",
+  "ok": false,
+  "ev": "modal still visible over results = true"
+ },
+ {
+  "name": "[PMA-1] after auto-submit, 10s later nothing changes (ran once)",
+  "ok": true,
+  "ev": "best stored=34"
+ },
+ {
+  "name": "[PMA-1] timer after retake counts 1s/s (no duplicated timer)",
+  "ok": true,
+  "ev": "1500->1490"
+ },
+ {
+  "name": "[PMA-1] showSelect() clears timer",
+  "ok": true,
+  "ev": "intervals 0"
+ },
+ {
+  "name": "[IV-1] auto-submit exactly when timer hits 0 (not before)",
+  "ok": true,
+  "ev": "at T-3s display=00:03; results shown at 0: true"
+ },
+ {
+  "name": "[IV-1] auto-submit score = own computation (4 correct, 1 wrong, rest unanswered)",
+  "ok": true,
+  "ev": "4 / 107"
+ },
+ {
+  "name": "[IV-1] auto-submit: timer stops (no interval, no negative display) and quizActive=false",
+  "ok": true,
+  "ev": "intervals 0/0, display 00:00, stat-time=53:30 (expected 53:30)"
+ },
+ {
+  "name": "[IV-1] auto-submit while confirm modal open: modal is closed",
+  "ok": true,
+  "ev": "modal still visible over results = false"
+ },
+ {
+  "name": "[IV-1] after auto-submit, 10s later nothing changes (ran once)",
+  "ok": true,
+  "ev": "best stored=34"
+ },
+ {
+  "name": "[IV-1] timer after retake counts 1s/s (no duplicated timer)",
+  "ok": true,
+  "ev": "3210->3200"
+ },
+ {
+  "name": "[IV-1] showSelect() clears timer",
+  "ok": true,
+  "ev": "intervals 0"
+ },
+ {
+  "name": "startQuiz() called repeatedly creates only one timer",
+  "ok": true,
+  "ev": "timer drops ~10 in 10s"
+ },
+ {
+  "name": "best scores persist in localStorage after reload",
+  "ok": true,
+  "ev": "before={\"mc_best_FA-1\":\"34\",\"mc_best_1-50\":\"34\",\"mc_best_MR-500\":\"40\",\"mc_best_PMA-1\":\"34\",\"mc_best_IV-1\":\"34\",\"mc_best_HK-1\":\"34\",\"mc_best_CN-1\":\"34\",\"mc_best_LC-1\":\"34\"}"
+ },
+ {
+  "name": "best score shown on the test card after reload",
+  "ok": true,
+  "ev": "Test 1 Best 34% Questions 1 – 50 50 MCQs • 25 Minutes • Instant feedback Try again "
+ },
+ {
+  "name": "best score never decreases (0% retry keeps old best)",
+  "ok": true,
+  "ev": "before 34, after 34"
+ },
+ {
+  "name": "offline: no request outside 127.0.0.1 was attempted",
+  "ok": true,
+  "ev": "none attempted"
+ },
+ {
+  "name": "no failed requests",
+  "ok": true,
+  "ev": "none"
+ },
+ {
+  "name": "no JS page errors",
+  "ok": true,
+  "ev": "none"
+ },
+ {
+  "name": "no console errors",
+  "ok": true,
+  "ev": "none"
+ }
+]

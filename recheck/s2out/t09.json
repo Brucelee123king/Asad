@@ -1,0 +1,95 @@
+[
+ {
+  "id": "M4092",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "aljazeera.com",
+   "Reuters (via internazionale.it)",
+   "ahram.org.eg"
+  ],
+  "note": "Netanyahu was PM before the 27 Oct 2026 election and stays caretaker PM."
+ },
+ {
+  "id": "M4096",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "solved"
+  ],
+  "note": "Consecutive letters L, M, N, O."
+ },
+ {
+  "id": "M4407",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "geo.tv",
+   "tribune.com.pk",
+   "arynews.tv"
+  ],
+  "note": "Dr Najeeb Naqi (PML-N) elected 25th AJK President on 24 Sep 2026."
+ },
+ {
+  "id": "M4559",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "euronews.com",
+   "en.wikipedia.org/wiki/Jetten_cabinet",
+   "AFP (nampa.org)"
+  ],
+  "note": "Rob Jetten sworn in as Dutch PM on 23 Feb 2026."
+ },
+ {
+  "id": "M4657",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "aa.com.tr",
+   "babel.ua",
+   "expro.com.ua"
+  ],
+  "note": "Rada appointed Serhii Koretskyi PM on 16 July 2026 after Svyrydenko resigned."
+ },
+ {
+  "id": "M4735",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "tribune.com.pk",
+   "arynews.tv",
+   "radio.gov.pk"
+  ],
+  "note": "Barrister Iftikhar Gilani elected 17th AJK PM on 28 Aug 2026."
+ },
+ {
+  "id": "M4736",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Muhammad_Najeeb_Naqi_Khan",
+   "geo.tv"
+  ],
+  "note": "Barrister Sultan Mehmood Chaudhry was President until his death in Jan 2026; Naqi followed."
+ },
+ {
+  "id": "M4789",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "dawn.com",
+   "aljazeera.com",
+   "pbs.org"
+  ],
+  "note": "Tarique Rahman sworn in as Bangladesh PM on 17 Feb 2026."
+ }
+]

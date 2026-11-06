@@ -1,0 +1,242 @@
+[
+ {
+  "id": "M4109",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "timesofisrael.com",
+   "jta.org",
+   "noovo.info (Oct 2026)"
+  ],
+  "note": "Isaac Herzog is Israel's 11th President since July 2021 (7-year term to 2028)."
+ },
+ {
+  "id": "M4135",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "dawn.com",
+   "airforce-technology.com",
+   "aerocorner.com"
+  ],
+  "note": "J-10C formally inducted March 2022; J-35 only agreed, not delivered as of Oct 2026."
+ },
+ {
+  "id": "M4223",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "wapda.gov.pk (2025: hydel ~30%)",
+   "mettisglobal.news (FY25 hydel 31.4% largest)",
+   "finance.gov.pk Economic Survey"
+  ],
+  "note": "Hydel is the largest single source (~30-31%); gas+RLNG ~26%, coal lower."
+ },
+ {
+  "id": "M4432",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "governorbalochistan.gov.pk",
+   "en.wikipedia.org/wiki/Sheikh_Jaffar_Khan_Mandokhail",
+   "app.com.pk (2026)"
+  ],
+  "note": "Sheikh Jaffar Khan Mandokhail governor since 6 May 2024, still active in 2026."
+ },
+ {
+  "id": "M4496",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "fbr.gov.pk press release Aug 2026",
+   "geo.tv",
+   "thenews.pk"
+  ],
+  "note": "Rashid Mahmood Langrial FBR Chairman since Aug 2024, still in office Aug 2026."
+ },
+ {
+  "id": "M4578",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Asif_Ali_Zardari",
+   "arynews.tv",
+   "gulfnews.com"
+  ],
+  "note": "Asif Ali Zardari is PPP co-chairman; Bilawal is chairman."
+ },
+ {
+  "id": "M4612",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Shanghai_Cooperation_Organisation",
+   "aa.com.tr",
+   "24.kg"
+  ],
+  "note": "Iran full member since July 2023; Afghanistan/Mongolia observers, Turkey dialogue partner."
+ },
+ {
+  "id": "M4706",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "unhcr.org/globaltrends2019",
+   "aa.com.tr",
+   "jointdatacenter.org"
+  ],
+  "note": "UNHCR Global Trends 2019: Turkey hosted most refugees (3.6 million)."
+ },
+ {
+  "id": "M5124",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Enlargement_of_the_United_Nations",
+   "un.org",
+   "geographyworlds.com"
+  ],
+  "note": "UN has 193 member states (South Sudan 2011 last); 195 includes 2 observers."
+ },
+ {
+  "id": "M5172",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "sipri.org YB2026 World Nuclear Forces",
+   "sipri.org press release 2026",
+   "thenews.pk"
+  ],
+  "note": "SIPRI 2026: nine nuclear-armed states (US, Russia, UK, France, China, India, Pakistan, N. Korea, Israel)."
+ },
+ {
+  "id": "M5222",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Provincial_Assembly_of_Khyber_Pakhtunkhwa",
+   "pakp.gov.pk",
+   "ecp.gov.pk"
+  ],
+  "note": "KP Assembly has 145 seats (115 general, 26 women, 4 non-Muslim) after FATA merger."
+ },
+ {
+  "id": "M5358",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "sipri.org fact sheet March 2026",
+   "thewire.in",
+   "manoramayearbook.in"
+  ],
+  "note": "SIPRI 2021-25: Russia 40% of India imports, France 29%, Israel 15%."
+ },
+ {
+  "id": "M5484",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Commonwealth_Games_Association",
+   "enca.com",
+   "sportsdigest.in"
+  ],
+  "note": "CGF has 74 member nations/territories (Gabon and Togo added)."
+ },
+ {
+  "id": "M5580",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "sipri.org fs_2603_at_2025",
+   "pravda.com.ua",
+   "euromaidanpress.com"
+  ],
+  "note": "SIPRI 2021-25: Ukraine largest importer (9.7%), India 2nd (8.2%), Saudi 3rd."
+ },
+ {
+  "id": "M9305",
+  "verdict": "unclear",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Independence_of_Bangladesh",
+   "thedailystar.net",
+   "tbsnews.net"
+  ],
+  "note": "Independence declared 26 March 1971 (official Independence Day); war won/Pakistan surrendered 16 Dec 1971 (Victory Day). Both options are defensible."
+ },
+ {
+  "id": "M9349",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Shehbaz_Sharif",
+   "dawn.com",
+   "pakobserver.net (Aug-Sep 2026 SCO trip as PM)"
+  ],
+  "note": "Shehbaz Sharif PM since March 2024; still PM in 2026, no change reported."
+ },
+ {
+  "id": "M9384",
+  "verdict": "unclear",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "testpointpk.com (7 main rivers)",
+   "balochistan.gov.pk/explore (lists 11)",
+   "en.wikipedia.org/wiki/Tourism_in_Balochistan,_Pakistan (lists 10)"
+  ],
+  "note": "No fixed count; quiz sites say 7 main rivers, govt site names 11. Vague question."
+ },
+ {
+  "id": "M9412",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Districts_of_Pakistan",
+   "en.wikipedia.org/wiki/Chagai_District",
+   "geo.tv"
+  ],
+  "note": "Chagai is largest district by area (~44,748 km2)."
+ },
+ {
+  "id": "M9450",
+  "verdict": "unclear",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "oec.world knotted carpets (India top exporter 2022)",
+   "cgihk.gov.in (India largest handmade exporter)",
+   "tehrantimes.com / fibre2fashion (Iran claims top)"
+  ],
+  "note": "Iran traditionally called largest handmade carpet producer; India now top exporter; China leads machine-made. Sources disagree."
+ },
+ {
+  "id": "M9508",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Majida_Rizvi",
+   "arynews.tv",
+   "scconline.com"
+  ],
+  "note": "Tahira Safdar became first woman HC Chief Justice (Balochistan HC, 2018); Majida Rizvi was first woman HC judge (1994)."
+ }
+]

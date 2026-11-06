@@ -1,0 +1,348 @@
+[
+ {
+  "id": "M3777",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Naveed_Ashraf",
+   "app.com.pk",
+   "dailytimes.com.pk"
+  ],
+  "note": "Admiral Naveed Ashraf is CNS since 7 Oct 2023, still in office in 2026."
+ },
+ {
+  "id": "M3778",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "na.gov.pk/en/speaker.php",
+   "app.com.pk",
+   "bolnews.com"
+  ],
+  "note": "Sardar Ayaz Sadiq is NA Speaker since 1 Mar 2024, still in office 2026."
+ },
+ {
+  "id": "M3779",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "dailytimes.com.pk",
+   "english.aaj.tv",
+   "en.wikipedia.org"
+  ],
+  "note": "Khawaja Muhammad Asif is Defence Minister (still in Aug 2026)."
+ },
+ {
+  "id": "M3780",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Mohsin_Naqvi",
+   "dailytimes.com.pk",
+   "theprint.in"
+  ],
+  "note": "Mohsin Naqvi is Interior Minister since 11 Mar 2024."
+ },
+ {
+  "id": "M3781",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Malik_Ahmad_Khan",
+   "pap.gov.pk",
+   "dawn.com"
+  ],
+  "note": "Malik Muhammad Ahmad Khan is Punjab Assembly Speaker since 24 Feb 2024."
+ },
+ {
+  "id": "M3903",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "solved (reasoning)"
+  ],
+  "note": "Islamabad, Lahore, Quetta are capitals; Rawalpindi is not."
+ },
+ {
+  "id": "M3961",
+  "verdict": "unclear",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "solved (reasoning)"
+  ],
+  "note": "Football (no bat/racket) and Tennis (not a team sport) both defensible."
+ },
+ {
+  "id": "M3962",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/President_of_Russia (knowledge, not re-searched)"
+  ],
+  "note": "Vladimir Putin is President of Russia (term to 2030)."
+ },
+ {
+  "id": "M3964",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/President_of_the_United_States (knowledge, not re-searched)"
+  ],
+  "note": "Donald Trump is US President since 20 Jan 2025."
+ },
+ {
+  "id": "M3967",
+  "verdict": "unclear",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "not web-verified (search limit reached)"
+  ],
+  "note": "Could not confirm first embassy country online; keeping app answer Iran."
+ },
+ {
+  "id": "M3968",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/President_of_India (knowledge, not re-searched)"
+  ],
+  "note": "Droupadi Murmu is President of India since July 2022 (term to 2027)."
+ },
+ {
+  "id": "M3974",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Harini_Amarasuriya",
+   "adaderana.lk",
+   "deccanherald.com"
+  ],
+  "note": "Harini Amarasuriya is PM of Sri Lanka since Sept 2024, no change found."
+ },
+ {
+  "id": "M3976",
+  "verdict": "unclear",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "franceinfo.fr",
+   "parismatch.be",
+   "gjopen.com"
+  ],
+  "note": "Lecornu PM since Sept/Oct 2025; no 2026 source found confirming or showing a successor."
+ },
+ {
+  "id": "M3977",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "royal.uk (knowledge, not re-searched)"
+  ],
+  "note": "King Charles III is UK head of state since Sept 2022."
+ },
+ {
+  "id": "M3981",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "FAO / Pakistan Economic Survey (knowledge, not re-searched)"
+  ],
+  "note": "Pakistan forest cover commonly given as about 4.8-5 percent."
+ },
+ {
+  "id": "M3982",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Premiership_of_Sanae_Takaichi",
+   "news.rthk.hk",
+   "english.adnkronos.com"
+  ],
+  "note": "Sanae Takaichi PM since 21 Oct 2025, reappointed Feb 2026, reshuffled cabinet Sept 2026."
+ },
+ {
+  "id": "M3986",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Faisal_Karim_Kundi",
+   "dawn.com",
+   "arynews.tv"
+  ],
+  "note": "Faisal Karim Kundi is KP Governor since May 2024, still in Oct 2026."
+ },
+ {
+  "id": "M3991",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "pakobserver.net",
+   "dailytimes.com.pk",
+   "outlookindia.com"
+  ],
+  "note": "Mohsin Naqvi is PCB chairman (3-year term from Feb 2024), still in 2026."
+ },
+ {
+  "id": "M3993",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Prime_Minister_of_Malaysia (knowledge, not re-searched)"
+  ],
+  "note": "Anwar Ibrahim is Malaysian PM since Nov 2022."
+ },
+ {
+  "id": "M3998",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "thejakartapost.com",
+   "npr.org (kuow.org)",
+   "dezeen.com"
+  ],
+  "note": "Jakarta still official capital; no decree moving it to Nusantara (court May 2026)."
+ },
+ {
+  "id": "M3999",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "science.nasa.gov/saturn/moons (knowledge, not re-searched)"
+  ],
+  "note": "Saturn has the most moons (274 confirmed as of 2025)."
+ },
+ {
+  "id": "M4008",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Prime_Minister_of_New_Zealand (knowledge, not re-searched)"
+  ],
+  "note": "Christopher Luxon PM since Nov 2023; 2026 election not yet changed PM by Oct 2026."
+ },
+ {
+  "id": "M4012",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/President_of_China (knowledge, not re-searched)"
+  ],
+  "note": "Xi Jinping is President of China."
+ },
+ {
+  "id": "M4028",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Yang_di-Pertuan_Agong (knowledge, not re-searched)"
+  ],
+  "note": "Sultan Ibrahim of Johor is Agong from 31 Jan 2024 to 2029."
+ },
+ {
+  "id": "M4029",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "pbs.gov.pk 2023 census (knowledge, not re-searched)"
+  ],
+  "note": "2023 census: Muslims about 96.35 percent."
+ },
+ {
+  "id": "M4031",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "pakrail.gov.pk (knowledge, not re-searched)"
+  ],
+  "note": "Pakistan Railways: 7,791 km route length, 11,881 km track length; question asks track."
+ },
+ {
+  "id": "M4040",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Prime_Minister_of_Israel (knowledge, not re-searched)"
+  ],
+  "note": "Benjamin Netanyahu PM since Dec 2022 (stays until a new government forms)."
+ },
+ {
+  "id": "M4043",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/President_of_Ukraine (knowledge, not re-searched)"
+  ],
+  "note": "Volodymyr Zelensky is President of Ukraine since 2019."
+ },
+ {
+  "id": "M4052",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Harini_Amarasuriya",
+   "thediplomat.com",
+   "adaderana.lk"
+  ],
+  "note": "Anura Kumara Dissanayake is President of Sri Lanka since Sept 2024."
+ },
+ {
+  "id": "M4068",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "nobelprize.org (knowledge, not re-searched)"
+  ],
+  "note": "Dr Abdus Salam (1979) is the only Pakistani Physics Nobel laureate."
+ },
+ {
+  "id": "M4070",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "pbs.gov.pk 2023 census (knowledge, not re-searched)"
+  ],
+  "note": "2023 census population 241.49 million."
+ },
+ {
+  "id": "M4085",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/2026_Men%27s_FIH_Hockey_World_Cup",
+   "newsonair.gov.in",
+   "outlookindia.com"
+  ],
+  "note": "Germany beat Spain 1-0 in the final on 30 Aug 2026 in Wavre."
+ }
+]

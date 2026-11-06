@@ -1,0 +1,1762 @@
+[
+ {
+  "num": 126,
+  "page": 13,
+  "question": "Which city of Balochistan is the biggest by population?",
+  "options": [
+   "Gwadar",
+   "Khuzdar",
+   "Turbat",
+   "Quetta"
+  ],
+  "correct": 3,
+  "why": "Quetta is the provincial capital and the most populous city of Balochistan.",
+  "rel": "Quetta is called the Fruit Garden of Pakistan. Gwadar is a deep-sea port city."
+ },
+ {
+  "num": 127,
+  "page": 13,
+  "question": "Which is the largest district of Balochistan by area?",
+  "options": [
+   "Chagai",
+   "Gwadar",
+   "Khuzdar",
+   "Quetta"
+  ],
+  "correct": 0,
+  "why": "Chagai is the largest district of Balochistan and of Pakistan by area (about 50,545 sq km).",
+  "rel": "Chagai is where Pakistan's 1998 nuclear tests were held. Source answer Gwadar is a small coastal district.",
+  "problem": "Source answer (Gawadar) is wrong. Question says city but the standard answer is the largest district by area: Chagai."
+ },
+ {
+  "num": 128,
+  "page": 13,
+  "question": "What is the area of Balochistan?",
+  "options": [
+   "347,190 sq km",
+   "205,344 sq km",
+   "796,095 sq km",
+   "140,914 sq km"
+  ],
+  "correct": 0,
+  "why": "Balochistan covers about 347,190 sq km, about 44 percent of Pakistan.",
+  "rel": "Balochistan is the largest province by area. Sindh is about 140,914 sq km."
+ },
+ {
+  "num": 129,
+  "page": 13,
+  "question": "Where is the Tanda Dam located?",
+  "options": [
+   "Swat (KPK)",
+   "Kohat (KPK)",
+   "Abbottabad (KPK)",
+   "Peshawar (KPK)"
+  ],
+  "correct": 1,
+  "why": "Tanda Dam is on Tanda Kohat river near Kohat in Khyber Pakhtunkhwa.",
+  "rel": "Tarbela Dam is on the Indus. Warsak Dam is near Peshawar."
+ },
+ {
+  "num": 130,
+  "page": 13,
+  "question": "What was the name of Hazrat Ayesha's (RA) father?",
+  "options": [
+   "Hazrat Umar (RA)",
+   "Hazrat Abu Bakr (RA)",
+   "Hazrat Uthman (RA)",
+   "Hazrat Ali (RA)"
+  ],
+  "correct": 1,
+  "why": "Hazrat Ayesha (RA) was the daughter of Hazrat Abu Bakr Siddiq (RA), the first caliph.",
+  "rel": "Hazrat Hafsa (RA) was daughter of Hazrat Umar (RA). Abu Bakr was called Siddiq."
+ },
+ {
+  "num": 131,
+  "page": 13,
+  "question": "Who was the third wife of the Holy Prophet Muhammad (PBUH)?",
+  "options": [
+   "Hazrat Hafsa (RA)",
+   "Hazrat Umm Salama (RA)",
+   "Hazrat Zainab bint Jahsh (RA)",
+   "Hazrat Ayesha (RA)"
+  ],
+  "correct": 3,
+  "why": "The Prophet's wives in order: Khadija, Sawda, then Ayesha (RA).",
+  "rel": "Khadija (RA) was the first wife. After Khadija's death he married Sawda (RA)."
+ },
+ {
+  "num": 132,
+  "page": 13,
+  "question": "Who was the first man to accept Islam among men?",
+  "options": [
+   "Hazrat Umar (RA)",
+   "Hazrat Abu Bakr (RA)",
+   "Hazrat Zaid bin Haritha (RA)",
+   "Hazrat Bilal (RA)"
+  ],
+  "correct": 1,
+  "why": "In the standard answer, Hazrat Abu Bakr (RA) was the first free adult man to accept Islam.",
+  "rel": "First woman: Khadija (RA). First child: Hazrat Ali (RA).",
+  "problem": "Different groups name different people (Ali among children, Zaid among freed slaves). Standard exam answer is Abu Bakr."
+ },
+ {
+  "num": 133,
+  "page": 13,
+  "question": "Where are the remains of the Harappa civilization located?",
+  "options": [
+   "Larkana district, Sindh",
+   "Bahawalpur district, Punjab",
+   "Dera Ghazi Khan district, Punjab",
+   "Sahiwal district, Punjab"
+  ],
+  "correct": 3,
+  "why": "Harappa is a site in Sahiwal district, Punjab, Pakistan.",
+  "rel": "Mohenjo-daro is in Larkana, Sindh. The Indus Valley Civilization is about 2500 BCE old."
+ },
+ {
+  "num": 134,
+  "page": 13,
+  "question": "What was the old name of Sahiwal?",
+  "options": [
+   "Montgomery",
+   "Lyallpur",
+   "Campbellpur",
+   "Jacobabad"
+  ],
+  "correct": 0,
+  "why": "Sahiwal was called Montgomery during British rule and renamed in 1967.",
+  "rel": "Lyallpur is now Faisalabad. Campbellpur is now Attock."
+ },
+ {
+  "num": 135,
+  "page": 13,
+  "question": "When did Quaid-e-Azam Muhammad Ali Jinnah present his 14 Points?",
+  "options": [
+   "12 March 1931",
+   "23 March 1940",
+   "28 March 1929",
+   "29 December 1930"
+  ],
+  "correct": 2,
+  "why": "Jinnah presented his 14 Points in Delhi in March 1929 at a Muslim League meeting.",
+  "rel": "The Lahore Resolution was 23 March 1940. Allama Iqbal gave Allahabad address in 1930."
+ },
+ {
+  "num": 136,
+  "page": 13,
+  "question": "Quaid-e-Azam presented his 14 Points in response to which report?",
+  "options": [
+   "Simon Commission Report (1930)",
+   "Hunter Commission Report (1919)",
+   "Cripps Mission Report (1942)",
+   "Nehru Report (1928)"
+  ],
+  "correct": 3,
+  "why": "The 14 Points were Jinnah's answer to the Nehru Report of 1928, which rejected separate electorates.",
+  "rel": "The Nehru Report was prepared by Motilal Nehru's committee in 1928.",
+  "problem": "Question says 'act' but the source answer says 'Against Nehru Report'; it was a reply to a report, not an act."
+ },
+ {
+  "num": 137,
+  "page": 14,
+  "question": "In which year was Muhammad Ali Jinnah awarded the title Quaid-e-Azam, as per the standard exam answer?",
+  "options": [
+   "1930",
+   "1944",
+   "1938",
+   "1947"
+  ],
+  "correct": 2,
+  "why": "Exam books say Maulana Mazharuddin Siddiqui gave him the title in 1938.",
+  "rel": "Gandhi popularised the title in 1944 talks. Jinnah died on 11 September 1948.",
+  "problem": "Sources disagree on the exact year (1938 in exam books, Gandhi's 1944 usage); 1938 is the standard answer."
+ },
+ {
+  "num": 138,
+  "page": 14,
+  "question": "Who is known as the founder of democracy in Pakistan?",
+  "options": [
+   "Liaquat Ali Khan",
+   "Zulfikar Ali Bhutto",
+   "Allama Iqbal",
+   "Muhammad Ali Jinnah"
+  ],
+  "correct": 3,
+  "why": "Jinnah founded Pakistan through a democratic and constitutional struggle, so he is called its founder of democracy.",
+  "rel": "Jinnah was the first Governor-General of Pakistan. Liaquat Ali Khan was first Prime Minister.",
+  "problem": "Opinion-style question; standard exam answer given."
+ },
+ {
+  "num": 139,
+  "page": 14,
+  "question": "Who was the Commander-in-Chief of the Pakistan Army during the 1965 war?",
+  "options": [
+   "General Muhammad Musa",
+   "General Ayub Khan",
+   "General Yahya Khan",
+   "General Gul Hassan"
+  ],
+  "correct": 0,
+  "why": "General Muhammad Musa Khan led the army in 1965; Ayub Khan was President.",
+  "rel": "Musa was C-in-C from 1958 to 1966. Yahya Khan took over in 1966."
+ },
+ {
+  "num": 140,
+  "page": 14,
+  "question": "On which day of the week did the 1965 Indo-Pak war start (6 September 1965)?",
+  "options": [
+   "Monday",
+   "Wednesday",
+   "Friday",
+   "Sunday"
+  ],
+  "correct": 0,
+  "why": "6 September 1965 was a Monday, when India crossed the border near Lahore.",
+  "rel": "6 September is celebrated as Defence Day in Pakistan. Operation Grand Slam began on 1 September (Wednesday).",
+  "problem": "Source says Wednesday, which is the day Operation Grand Slam began (1 Sept). The war's start date 6 Sept 1965 was Monday."
+ },
+ {
+  "num": 141,
+  "page": 14,
+  "question": "What was the name of the operation launched by Pakistan in Kashmir in 1965?",
+  "options": [
+   "Operation Grand Slam",
+   "Operation Gibraltar",
+   "Operation Searchlight",
+   "Operation Zarb-e-Azb"
+  ],
+  "correct": 1,
+  "why": "Operation Gibraltar sent infiltrators into Indian-held Kashmir in August 1965.",
+  "rel": "Operation Grand Slam was the attack on Akhnoor. Operation Searchlight was in East Pakistan, 1971."
+ },
+ {
+  "num": 142,
+  "page": 14,
+  "question": "Convert 30 degrees into radians.",
+  "options": [
+   "pi/3 (1.047 rad)",
+   "pi/6 (0.524 rad)",
+   "pi/4 (0.785 rad)",
+   "pi/2 (1.571 rad)"
+  ],
+  "correct": 1,
+  "why": "Radians = degrees x pi/180, so 30 x pi/180 = pi/6, about 0.524.",
+  "rel": "180 degrees = pi radians. 45 degrees = pi/4."
+ },
+ {
+  "num": 143,
+  "page": 14,
+  "question": "The first constitution of Pakistan was enforced on:",
+  "options": [
+   "23 March 1956",
+   "8 June 1962",
+   "14 August 1973",
+   "12 April 1973"
+  ],
+  "correct": 0,
+  "why": "The 1956 constitution came into force on 23 March 1956; Pakistan became an Islamic Republic.",
+  "rel": "It was abrogated in October 1958 by Ayub Khan's martial law."
+ },
+ {
+  "num": 144,
+  "page": 14,
+  "question": "The second constitution of Pakistan was enforced on:",
+  "options": [
+   "23 March 1956",
+   "14 August 1973",
+   "1 March 1962",
+   "8 June 1962"
+  ],
+  "correct": 3,
+  "why": "Ayub Khan's constitution of 1962 was enforced on 8 June 1962.",
+  "rel": "It introduced a presidential system and Basic Democracies."
+ },
+ {
+  "num": 145,
+  "page": 14,
+  "question": "The third constitution of Pakistan was enforced on:",
+  "options": [
+   "23 March 1956",
+   "14 August 1973",
+   "8 June 1962",
+   "10 April 1973"
+  ],
+  "correct": 1,
+  "why": "The 1973 constitution was enforced on 14 August 1973.",
+  "rel": "It was passed by the National Assembly on 10 April 1973 and is parliamentary."
+ },
+ {
+  "num": 146,
+  "page": 14,
+  "question": "What was the relationship between Abu Talib and Prophet Muhammad (PBUH)?",
+  "options": [
+   "Grandfather",
+   "Uncle",
+   "Cousin",
+   "Foster father"
+  ],
+  "correct": 1,
+  "why": "Abu Talib was the paternal uncle who raised the Prophet after his grandfather Abdul Muttalib died.",
+  "rel": "Hazrat Ali (RA) was Abu Talib's son. Abu Talib died in the 10th year of Nabuwat."
+ },
+ {
+  "num": 147,
+  "page": 15,
+  "question": "At what age did the Prophet (PBUH) travel to Syria with Abu Talib?",
+  "options": [
+   "8 years",
+   "15 years",
+   "25 years",
+   "12 years"
+  ],
+  "correct": 3,
+  "why": "He went with Abu Talib on a trade journey at age 12, when monk Bahira recognised him.",
+  "rel": "At 25 he travelled to Syria for Khadija (RA)'s trade."
+ },
+ {
+  "num": 148,
+  "page": 15,
+  "question": "In which year of Nabuwat did Hazrat Khadija (RA) and Abu Talib pass away?",
+  "options": [
+   "7th year",
+   "3rd year",
+   "13th year",
+   "10th year"
+  ],
+  "correct": 3,
+  "why": "Both died in the 10th year of Nabuwat, called Aam ul Huzn (Year of Sorrow).",
+  "rel": "The Prophet's Hijra to Madina was in the 13th year of Nabuwat."
+ },
+ {
+  "num": 149,
+  "page": 15,
+  "question": "The largest lake of North America is:",
+  "options": [
+   "Lake Superior",
+   "Lake Michigan",
+   "Lake Huron",
+   "Great Bear Lake"
+  ],
+  "correct": 0,
+  "why": "Lake Superior is the largest of the Great Lakes by area and the largest freshwater lake in North America.",
+  "rel": "Lake Michigan lies entirely in the USA. Superior is the second largest lake in the world by area after Caspian."
+ },
+ {
+  "num": 150,
+  "page": 15,
+  "question": "The largest lake of Germany (by area, shared with neighbours) is:",
+  "options": [
+   "Lake Geneva",
+   "Lake Constance",
+   "Lake Garda",
+   "Lake Balaton"
+  ],
+  "correct": 1,
+  "why": "Lake Constance (Bodensee) is the biggest German lake by area, shared with Austria and Switzerland.",
+  "rel": "The largest lake wholly inside Germany is Muritz. Lake Geneva is Swiss-French.",
+  "problem": "Source says Lake Constance, which is shared; the largest lake fully inside Germany is Muritz."
+ },
+ {
+  "num": 151,
+  "page": 15,
+  "question": "The largest salt water lake of the world is:",
+  "options": [
+   "Dead Sea",
+   "Great Salt Lake",
+   "Caspian Sea",
+   "Aral Sea"
+  ],
+  "correct": 2,
+  "why": "The Caspian Sea is the largest inland body of water, a salty lake of about 371,000 sq km.",
+  "rel": "The Dead Sea is the lowest point on land. Lake Baikal is the deepest lake."
+ },
+ {
+  "num": 152,
+  "page": 15,
+  "question": "From where did Quaid-e-Azam obtain his law degree?",
+  "options": [
+   "Gray's Inn, London",
+   "Lincoln's Inn, London",
+   "Oxford University",
+   "Cambridge University"
+  ],
+  "correct": 1,
+  "why": "Jinnah joined Lincoln's Inn and became a barrister in 1896.",
+  "rel": "He went to England in 1893 and was the youngest Indian barrister then."
+ },
+ {
+  "num": 153,
+  "page": 15,
+  "question": "Who was the second caliph of the Rashidun Caliphate?",
+  "options": [
+   "Hazrat Abu Bakr (RA)",
+   "Hazrat Uthman (RA)",
+   "Hazrat Ali (RA)",
+   "Hazrat Umar (RA)"
+  ],
+  "correct": 3,
+  "why": "Hazrat Umar bin Khattab (RA) ruled from 634 to 644 CE after Abu Bakr (RA).",
+  "rel": "He started the Hijri calendar. His title was Al-Farooq."
+ },
+ {
+  "num": 154,
+  "page": 15,
+  "question": "In which year of the Hijra was the Battle of Uhud fought?",
+  "options": [
+   "2 AH (624 CE)",
+   "5 AH (627 CE)",
+   "8 AH (630 CE)",
+   "3 AH (625 CE)"
+  ],
+  "correct": 3,
+  "why": "Uhud took place in Shawwal of the third year of Hijra (625 CE).",
+  "rel": "Badr was in 2 AH. The Battle of the Trench was in 5 AH.",
+  "problem": "The printed answer is garbled ('15th/7th of Shawwal'); sources give 7 Shawwal, so the year 3 AH is used."
+ },
+ {
+  "num": 155,
+  "page": 15,
+  "question": "Who martyred Hazrat Hamza (RA) in the Battle of Uhud?",
+  "options": [
+   "Abu Sufyan",
+   "Khalid bin Walid",
+   "Wahshi",
+   "Ikrimah"
+  ],
+  "correct": 2,
+  "why": "Wahshi bin Harb threw a spear and killed Hazrat Hamza (RA).",
+  "rel": "Hamza (RA) was the Prophet's uncle and is called Sayyid al-Shuhada. Wahshi later accepted Islam."
+ },
+ {
+  "num": 156,
+  "page": 15,
+  "question": "Who was the commander of the archers in the Battle of Uhud?",
+  "options": [
+   "Hazrat Hamza (RA)",
+   "Hazrat Mus'ab bin Umair (RA)",
+   "Abdullah bin Jubair (RA)",
+   "Hazrat Zubair (RA)"
+  ],
+  "correct": 2,
+  "why": "The Prophet placed 50 archers on the hill under Abdullah bin Jubair (RA).",
+  "rel": "The archers left their post when they thought victory was won, which turned the battle.",
+  "problem": "Overall commander of the Muslim army was the Prophet (PBUH); the source answer refers to the archers' commander."
+ },
+ {
+  "num": 157,
+  "page": 16,
+  "question": "What is the capital of Azad Kashmir?",
+  "options": [
+   "Muzaffarabad",
+   "Mirpur",
+   "Kotli",
+   "Rawalakot"
+  ],
+  "correct": 0,
+  "why": "Muzaffarabad is the capital of Azad Jammu and Kashmir.",
+  "rel": "Gilgit-Baltistan's capital is Gilgit. Mirpur is where Mangla Dam is."
+ },
+ {
+  "num": 158,
+  "page": 16,
+  "question": "Where is the Mangla Dam located?",
+  "options": [
+   "Khyber Pakhtunkhwa",
+   "Punjab",
+   "Azad Kashmir (Mirpur)",
+   "Gilgit-Baltistan"
+  ],
+  "correct": 2,
+  "why": "Mangla Dam is on the Jhelum river near Mirpur in Azad Kashmir.",
+  "rel": "It was completed in 1967. Tarbela is on the Indus."
+ },
+ {
+  "num": 159,
+  "page": 16,
+  "question": "How many Muslim soldiers fought in the Battle of Uhud?",
+  "options": [
+   "313",
+   "700",
+   "1500",
+   "3000"
+  ],
+  "correct": 1,
+  "why": "About 1000 set out but 300 hypocrites withdrew, so around 700 fought.",
+  "rel": "The Quraish army was about 3000. At Badr the Muslims were 313.",
+  "problem": "Source says 1000 (the number that marched out); about 700 actually fought."
+ },
+ {
+  "num": 160,
+  "page": 16,
+  "question": "In which battle (ghazwa) was the Prophet's (PBUH) tooth martyred?",
+  "options": [
+   "Battle of Uhud",
+   "Battle of Badr",
+   "Battle of the Trench",
+   "Battle of Hunain"
+  ],
+  "correct": 0,
+  "why": "The Prophet's front tooth broke and he was wounded at Uhud.",
+  "rel": "Uhud was fought near a mountain north of Madina."
+ },
+ {
+  "num": 161,
+  "page": 16,
+  "question": "Which is the largest river of Pakistan?",
+  "options": [
+   "Jhelum River",
+   "Chenab River",
+   "Indus River",
+   "Sutlej River"
+  ],
+  "correct": 2,
+  "why": "The Indus is the longest river in Pakistan and the national river.",
+  "rel": "It starts in Tibet near Lake Mansarovar and falls into the Arabian Sea."
+ },
+ {
+  "num": 162,
+  "page": 16,
+  "question": "On which river is Tarbela Dam built?",
+  "options": [
+   "Jhelum",
+   "Chenab",
+   "Kabul",
+   "Indus"
+  ],
+  "correct": 3,
+  "why": "Tarbela Dam is on the Indus in Haripur, KP.",
+  "rel": "Tarbela is the largest earth-filled dam in the world. It was completed in 1976."
+ },
+ {
+  "num": 163,
+  "page": 16,
+  "question": "In which river of Pakistan are blind dolphins found?",
+  "options": [
+   "Jhelum",
+   "Ravi",
+   "Indus",
+   "Kabul"
+  ],
+  "correct": 2,
+  "why": "The Indus river dolphin (Bhulan) lives in the Indus river.",
+  "rel": "It is the national aquatic mammal of Pakistan. A reserve exists between Guddu and Sukkur barrages."
+ },
+ {
+  "num": 164,
+  "page": 16,
+  "question": "What is the length of the Indus River (about)?",
+  "options": [
+   "3180 km",
+   "2880 km",
+   "2500 km",
+   "3600 km"
+  ],
+  "correct": 0,
+  "why": "Common Pakistani books give the Indus length as about 3180 km.",
+  "rel": "Total length figures vary by source (2880 to 3180 km).",
+  "problem": "Different sources give different lengths; 3180 km is the figure given in the source."
+ },
+ {
+  "num": 165,
+  "page": 16,
+  "question": "Which is the longest river of Asia?",
+  "options": [
+   "Yellow River",
+   "Mekong River",
+   "Ganges",
+   "Yangtze River"
+  ],
+  "correct": 3,
+  "why": "The Yangtze (about 6300 km) is the longest river in Asia.",
+  "rel": "The Yellow River is the second longest in China. The Nile is the longest in Africa.",
+  "problem": "Question says 'largest'; the standard answer is the longest, Yangtze."
+ },
+ {
+  "num": 166,
+  "page": 17,
+  "question": "Which is the most populous country in the world (as of Oct 2026)?",
+  "options": [
+   "China",
+   "India",
+   "United States",
+   "Indonesia"
+  ],
+  "correct": 1,
+  "why": "India passed China in 2023 and is the most populous country.",
+  "rel": "China is now second. India's population is over 1.4 billion. As of Oct 2026.",
+  "problem": "Source says China, which is outdated; India has been first since 2023."
+ },
+ {
+  "num": 167,
+  "page": 17,
+  "question": "Which city is the most populated in the province of Sindh?",
+  "options": [
+   "Hyderabad",
+   "Karachi",
+   "Sukkur",
+   "Larkana"
+  ],
+  "correct": 1,
+  "why": "Karachi is Sindh's capital and Pakistan's largest city.",
+  "rel": "Hyderabad is the second largest city of Sindh."
+ },
+ {
+  "num": 168,
+  "page": 17,
+  "question": "Which was the first radio station of Pakistan?",
+  "options": [
+   "Karachi",
+   "Peshawar",
+   "Rawalpindi",
+   "Lahore"
+  ],
+  "correct": 3,
+  "why": "Lahore, Peshawar and Dhaka stations became Radio Pakistan in 1947; Lahore is called the first.",
+  "rel": "Karachi's official station opened on 14 August 1948. Rawalpindi's opened in April 1948.",
+  "problem": "Source says Karachi, but Karachi's station started in 1948; Lahore was part of Radio Pakistan from 1947."
+ },
+ {
+  "num": 169,
+  "page": 17,
+  "question": "Which is the largest seaport of Pakistan?",
+  "options": [
+   "Karachi Port",
+   "Port Qasim",
+   "Gwadar Port",
+   "Ormara Port"
+  ],
+  "correct": 0,
+  "why": "Karachi Port is the largest and busiest seaport of Pakistan.",
+  "rel": "Port Qasim is the second major port. Gwadar is a deep-sea port."
+ },
+ {
+  "num": 170,
+  "page": 17,
+  "question": "Who was the Chief Minister of Khyber Pakhtunkhwa from October 2025 until governor's rule in October 2026?",
+  "options": [
+   "Ali Amin Gandapur",
+   "Mehmood Khan",
+   "Pervez Khattak",
+   "Sohail Afridi"
+  ],
+  "correct": 3,
+  "why": "Sohail Afridi became CM on 15 October 2025 after Gandapur resigned. Governor's rule was imposed on 11 October 2026.",
+  "rel": "As of Oct 2026 KP has no elected CM; Governor Faisal Karim Kundi runs the province.",
+  "problem": "Source (Ali Amin Gandapur) is outdated. As of Oct 2026 there is no sitting CM because governor's rule began 11 Oct 2026 (WebSearch, Wikipedia/Dawn; very recent)."
+ },
+ {
+  "num": 171,
+  "page": 17,
+  "question": "Who was the first Chief Justice of Pakistan?",
+  "options": [
+   "Muhammad Munir",
+   "Sir Abdul Rashid",
+   "A. R. Cornelius",
+   "Mohammad Shahabuddin"
+  ],
+  "correct": 1,
+  "why": "Sir Abdul Rashid was the first Chief Justice of the Federal Court/Pakistan (1948).",
+  "rel": "Muhammad Munir headed the court in Dosso case 1958. A.R. Cornelius was a Christian chief justice.",
+  "problem": "Source says Sir Mian Abdul Rashid; the standard name is Sir Abdul Rashid."
+ },
+ {
+  "num": 172,
+  "page": 17,
+  "question": "Who appoints the Chief Justice of Pakistan?",
+  "options": [
+   "President",
+   "Prime Minister",
+   "Chief of Army Staff",
+   "Chairman Senate"
+  ],
+  "correct": 0,
+  "why": "The President appoints the Chief Justice (now on recommendation of a parliamentary committee after the 26th Amendment).",
+  "rel": "Judges are appointed by the President on advice.",
+  "problem": "Process changed after the 26th Amendment (2024) with a parliamentary committee; the President still makes the appointment."
+ },
+ {
+  "num": 173,
+  "page": 17,
+  "question": "Who was the first Chief of Army Staff of Pakistan after the title replaced Commander-in-Chief (1972)?",
+  "options": [
+   "General Gul Hassan",
+   "General Yahya Khan",
+   "General Zia-ul-Haq",
+   "General Tikka Khan"
+  ],
+  "correct": 3,
+  "why": "Tikka Khan became the first Chief of Army Staff in March 1972.",
+  "rel": "Gul Hassan was the last Commander-in-Chief. Zia succeeded Tikka Khan in 1976.",
+  "problem": "Question is vague ('Chief of staff of Armed Forces'); source says 'Tikka Khan (not confirmed)'. Best match is first Chief of Army Staff."
+ },
+ {
+  "num": 174,
+  "page": 17,
+  "question": "What is the currency of Bangladesh?",
+  "options": [
+   "Taka",
+   "Rupee",
+   "Ringgit",
+   "Rufiyaa"
+  ],
+  "correct": 0,
+  "why": "Bangladesh's currency is the Taka.",
+  "rel": "Maldives uses Rufiyaa. Malaysia uses Ringgit."
+ },
+ {
+  "num": 175,
+  "page": 17,
+  "question": "Yuan is the currency of:",
+  "options": [
+   "China",
+   "Japan",
+   "South Korea",
+   "Vietnam"
+  ],
+  "correct": 0,
+  "why": "The yuan (renminbi) is China's currency.",
+  "rel": "Japan uses yen. South Korea uses won."
+ },
+ {
+  "num": 176,
+  "page": 18,
+  "question": "What is the currency of Cuba?",
+  "options": [
+   "Cuban peso",
+   "Cuban dollar",
+   "Cuban real",
+   "Cuban lira"
+  ],
+  "correct": 0,
+  "why": "Cuba's official currency is the Cuban peso.",
+  "rel": "Cuba is in the Caribbean. Its capital is Havana.",
+  "problem": "Source spelled 'Cubian peso'."
+ },
+ {
+  "num": 177,
+  "page": 18,
+  "question": "What is the currency of Bosnia and Herzegovina?",
+  "options": [
+   "Euro",
+   "Dinar",
+   "Convertible Mark",
+   "Kuna"
+  ],
+  "correct": 2,
+  "why": "Bosnia and Herzegovina uses the Convertible Mark (KM).",
+  "rel": "Capital is Sarajevo. Croatia switched from kuna to euro in 2023.",
+  "problem": "Source answer (Bosnia-Herzegovina) names the country, not a currency."
+ },
+ {
+  "num": 178,
+  "page": 18,
+  "question": "What is the currency of Egypt?",
+  "options": [
+   "Egyptian dinar",
+   "Egyptian pound",
+   "Egyptian riyal",
+   "Egyptian dirham"
+  ],
+  "correct": 1,
+  "why": "Egypt's currency is the Egyptian pound.",
+  "rel": "Capital is Cairo. The Suez Canal is in Egypt."
+ },
+ {
+  "num": 179,
+  "page": 18,
+  "question": "When did Pakistan join the Organisation of Islamic Cooperation (OIC)?",
+  "options": [
+   "1971",
+   "1947",
+   "1969",
+   "1974"
+  ],
+  "correct": 2,
+  "why": "Pakistan was a founding member when the OIC was formed in 1969.",
+  "rel": "Lahore hosted the 1974 OIC Summit.",
+  "problem": "The OIC was called Organisation of the Islamic Conference until 2011."
+ },
+ {
+  "num": 180,
+  "page": 18,
+  "question": "Where is the headquarters of the OIC?",
+  "options": [
+   "Riyadh, Saudi Arabia",
+   "Islamabad, Pakistan",
+   "Jeddah, Saudi Arabia",
+   "Cairo, Egypt"
+  ],
+  "correct": 2,
+  "why": "The OIC secretariat is in Jeddah.",
+  "rel": "It has 57 member states."
+ },
+ {
+  "num": 181,
+  "page": 18,
+  "question": "Where was the first Islamic Summit held that led to the founding of the OIC in 1969?",
+  "options": [
+   "Jeddah, Saudi Arabia",
+   "Rabat, Morocco",
+   "Lahore, Pakistan",
+   "Cairo, Egypt"
+  ],
+  "correct": 1,
+  "why": "The OIC was founded at the Rabat summit in 1969 after the Al-Aqsa mosque arson.",
+  "rel": "Saudi Arabia played a key role. The charter was adopted in 1972.",
+  "problem": "Question 'made by which country' has no single answer; rephrased to the founding summit."
+ },
+ {
+  "num": 182,
+  "page": 18,
+  "question": "What is the national drink of Pakistan (as commonly listed)?",
+  "options": [
+   "Lassi",
+   "Doodh patti",
+   "Sugarcane juice",
+   "Sattu"
+  ],
+  "correct": 2,
+  "why": "Sugarcane juice is listed as Pakistan's national drink in many sources.",
+  "rel": "The national animal is Markhor and national fruit is mango.",
+  "problem": "Not officially notified; commonly listed answer."
+ },
+ {
+  "num": 183,
+  "page": 18,
+  "question": "How many verses (ayat) does Surah Al-Fatiha, the first surah, have?",
+  "options": [
+   "5",
+   "6",
+   "7",
+   "10"
+  ],
+  "correct": 2,
+  "why": "Surah Al-Fatiha has 7 verses.",
+  "rel": "It is also called Sab'a Mathani. It is read in every rakat of prayer.",
+  "problem": "Source answer is blank; the question has two parts, name is Al-Fatiha and verses are 7."
+ },
+ {
+  "num": 184,
+  "page": 18,
+  "question": "Which Surah is first in the order of the Quran?",
+  "options": [
+   "Surah Al-Baqarah",
+   "Surah Al-Alaq",
+   "Surah Al-Fatiha",
+   "Surah Al-Ikhlas"
+  ],
+  "correct": 2,
+  "why": "Al-Fatiha is the first surah in the written Quran.",
+  "rel": "Surah Al-Alaq was revealed first. Al-Baqarah is the longest."
+ },
+ {
+  "num": 185,
+  "page": 18,
+  "question": "The word Fatiha means:",
+  "options": [
+   "Light",
+   "Mercy",
+   "Opening",
+   "Guidance"
+  ],
+  "correct": 2,
+  "why": "Al-Fatiha means The Opening.",
+  "rel": "It is also called Umm-ul-Kitab."
+ },
+ {
+  "num": 186,
+  "page": 19,
+  "question": "How many planets are there in the solar system?",
+  "options": [
+   "8",
+   "7",
+   "9",
+   "10"
+  ],
+  "correct": 0,
+  "why": "There are 8 planets since Pluto was reclassified in 2006.",
+  "rel": "Pluto is a dwarf planet."
+ },
+ {
+  "num": 187,
+  "page": 19,
+  "question": "Which is the largest planet of the solar system?",
+  "options": [
+   "Saturn",
+   "Neptune",
+   "Uranus",
+   "Jupiter"
+  ],
+  "correct": 3,
+  "why": "Jupiter is the biggest planet.",
+  "rel": "Saturn has the most visible rings."
+ },
+ {
+  "num": 188,
+  "page": 19,
+  "question": "Which is the smallest planet of the solar system?",
+  "options": [
+   "Mars",
+   "Venus",
+   "Pluto",
+   "Mercury"
+  ],
+  "correct": 3,
+  "why": "Mercury is the smallest planet and nearest to the Sun.",
+  "rel": "Mercury has no moons."
+ },
+ {
+  "num": 189,
+  "page": 19,
+  "question": "Which planet has the coldest recorded atmosphere?",
+  "options": [
+   "Neptune",
+   "Saturn",
+   "Uranus",
+   "Mars"
+  ],
+  "correct": 2,
+  "why": "Uranus has the lowest recorded temperature, about -224 C.",
+  "rel": "Neptune is farthest from the Sun and is also very cold.",
+  "problem": "Source says Neptune (farthest planet); many books say Uranus coldest by recorded temperature. Answer varies by source."
+ },
+ {
+  "num": 190,
+  "page": 19,
+  "question": "Which is the reddest planet in our solar system?",
+  "options": [
+   "Venus",
+   "Mercury",
+   "Mars",
+   "Jupiter"
+  ],
+  "correct": 2,
+  "why": "Mars looks red due to iron oxide (rust) on its surface.",
+  "rel": "Mars is called the Red Planet. Venus is the hottest planet.",
+  "problem": "Printed question is misspelt ('rightest'); the answer line says reddest planet, so it is read as Reddest."
+ },
+ {
+  "num": 191,
+  "page": 19,
+  "question": "When and where did India conduct its first nuclear test?",
+  "options": [
+   "11 May 1998, Pokhran (Rajasthan)",
+   "28 May 1998, Chagai (Balochistan)",
+   "18 May 1984, Ladakh",
+   "18 May 1974, Pokhran (Rajasthan)"
+  ],
+  "correct": 3,
+  "why": "India's first nuclear test, Smiling Buddha, was on 18 May 1974 at Pokhran.",
+  "rel": "India tested again in May 1998. Pakistan tested on 28 May 1998."
+ },
+ {
+  "num": 192,
+  "page": 19,
+  "question": "In which Pakistani province is Manchar Lake located?",
+  "options": [
+   "Punjab",
+   "Balochistan",
+   "Sindh",
+   "Khyber Pakhtunkhwa"
+  ],
+  "correct": 2,
+  "why": "Manchar Lake is in Dadu district, Sindh.",
+  "rel": "It is one of Asia's largest freshwater lakes. Keenjhar is also in Sindh."
+ },
+ {
+  "num": 193,
+  "page": 19,
+  "question": "In which district of Punjab is the largest salt mine/range (Khewra) of Pakistan located?",
+  "options": [
+   "Jhelum",
+   "Multan",
+   "Bahawalpur",
+   "Sargodha"
+  ],
+  "correct": 0,
+  "why": "The Salt Range with the Khewra salt mine is in Jhelum district.",
+  "rel": "Khewra is among the world's largest salt mines.",
+  "problem": "The Salt Range spans several districts; Khewra mine is in Jhelum."
+ },
+ {
+  "num": 194,
+  "page": 19,
+  "question": "In the 1960 Indus Waters Treaty, which rivers were allotted to Pakistan?",
+  "options": [
+   "Ravi, Beas and Sutlej",
+   "Indus, Ravi and Sutlej",
+   "Jhelum, Beas and Sutlej",
+   "Indus, Jhelum and Chenab"
+  ],
+  "correct": 3,
+  "why": "The three western rivers went to Pakistan; the three eastern rivers to India.",
+  "rel": "The treaty was signed in Karachi by Ayub Khan, Nehru and the World Bank. India put it in abeyance in April 2025."
+ },
+ {
+  "num": 195,
+  "page": 19,
+  "question": "Which is the smallest continent on Earth?",
+  "options": [
+   "Europe",
+   "Antarctica",
+   "Australia",
+   "South America"
+  ],
+  "correct": 2,
+  "why": "Australia (Oceania) is the smallest continent.",
+  "rel": "Asia is the largest continent."
+ },
+ {
+  "num": 196,
+  "page": 19,
+  "question": "Which is the largest continent?",
+  "options": [
+   "Asia",
+   "Africa",
+   "North America",
+   "Europe"
+  ],
+  "correct": 0,
+  "why": "Asia is the largest continent by area and population.",
+  "rel": "Africa is second largest."
+ },
+ {
+  "num": 197,
+  "page": 20,
+  "question": "What is the name of Chaudhry Rehmat Ali's famous pamphlet?",
+  "options": [
+   "Pakistan Resolution",
+   "Indian Musalmans",
+   "Now or Never",
+   "The Muslim Question"
+  ],
+  "correct": 2,
+  "why": "Rehmat Ali published 'Now or Never: Are We to Live or Perish Forever?' in 1933.",
+  "rel": "He coined the name Pakistan."
+ },
+ {
+  "num": 198,
+  "page": 20,
+  "question": "Who suggested the name of Pakistan?",
+  "options": [
+   "Allama Iqbal",
+   "Quaid-e-Azam",
+   "Chaudhry Rehmat Ali",
+   "Liaquat Ali Khan"
+  ],
+  "correct": 2,
+  "why": "Rehmat Ali first suggested the name Pakistan in 1933.",
+  "rel": "He studied at Cambridge."
+ },
+ {
+  "num": 199,
+  "page": 20,
+  "question": "Upon which prophet was the Injeel revealed?",
+  "options": [
+   "Hazrat Isa (AS)",
+   "Hazrat Musa (AS)",
+   "Hazrat Dawood (AS)",
+   "Hazrat Ibrahim (AS)"
+  ],
+  "correct": 0,
+  "why": "The Injeel (Gospel) was revealed on Hazrat Isa (AS).",
+  "rel": "Torah was on Musa, Zabur on Dawood."
+ },
+ {
+  "num": 200,
+  "page": 20,
+  "question": "Choose the synonym of 'attire':",
+  "options": [
+   "Apparel",
+   "Pledge",
+   "Vigour",
+   "Sorrow"
+  ],
+  "correct": 0,
+  "why": "Attire means clothing; apparel has the same meaning.",
+  "rel": "Garb and clothes are also synonyms."
+ },
+ {
+  "num": 201,
+  "page": 20,
+  "question": "Choose the antonym of 'entire':",
+  "options": [
+   "Whole",
+   "Complete",
+   "Total",
+   "Partial"
+  ],
+  "correct": 3,
+  "why": "Entire means whole; the opposite is partial.",
+  "rel": "Other opposites: incomplete, unfinished."
+ },
+ {
+  "num": 202,
+  "page": 20,
+  "question": "cos 0 is equal to:",
+  "options": [
+   "1",
+   "0",
+   "-1",
+   "1/2"
+  ],
+  "correct": 0,
+  "why": "The cosine of 0 degrees is 1.",
+  "rel": "sin 0 = 0. cos 90 = 0."
+ },
+ {
+  "num": 203,
+  "page": 20,
+  "question": "How many total seats does the Punjab Assembly have?",
+  "options": [
+   "371",
+   "297",
+   "342",
+   "258"
+  ],
+  "correct": 0,
+  "why": "The Punjab Assembly has 371 seats: 297 general, 66 women and 8 minorities.",
+  "rel": "Sindh has 168 seats."
+ },
+ {
+  "num": 204,
+  "page": 20,
+  "question": "Who is the Speaker of the Punjab Assembly (as of Oct 2026)?",
+  "options": [
+   "Ch. Pervaiz Elahi",
+   "Rana Muhammad Iqbal",
+   "Malik Muhammad Ahmad Khan",
+   "Sibtain Khan"
+  ],
+  "correct": 2,
+  "why": "Malik Ahmad Khan was elected Speaker in February 2024 and was still Speaker in mid-2026.",
+  "rel": "He belongs to PML-N and represents Kasur. As of Oct 2026."
+ },
+ {
+  "num": 205,
+  "page": 20,
+  "question": "The Pakistan-China border agreement was signed in:",
+  "options": [
+   "1951",
+   "1962",
+   "1971",
+   "1963"
+  ],
+  "correct": 3,
+  "why": "Pakistan and China signed the border agreement on 2 March 1963.",
+  "rel": "The Karakoram Highway links the two countries.",
+  "problem": "Source answer (Malik Ahmad Khan) is a copy-paste error and unrelated."
+ },
+ {
+  "num": 206,
+  "page": 20,
+  "question": "Which month is the last in the Islamic calendar?",
+  "options": [
+   "Muharram",
+   "Dhu al-Hijjah",
+   "Ramadan",
+   "Shawwal"
+  ],
+  "correct": 1,
+  "why": "Dhu al-Hijjah is the 12th and last month, when Hajj happens.",
+  "rel": "Muharram is the first month."
+ },
+ {
+  "num": 207,
+  "page": 21,
+  "question": "What is the length of the Amazon River (as per a common figure)?",
+  "options": [
+   "3180 km",
+   "4300 km",
+   "5200 km",
+   "6992 km"
+  ],
+  "correct": 3,
+  "why": "A commonly quoted figure is about 6992 km.",
+  "rel": "The Nile is about 6650 km. Estimates for the Amazon range from 6400 to 7000 km.",
+  "problem": "Length figures differ by source (6400 to 6992 km)."
+ },
+ {
+  "num": 208,
+  "page": 21,
+  "question": "What is the length of the Indus River (about)?",
+  "options": [
+   "3180 km",
+   "2880 km",
+   "2500 km",
+   "3600 km"
+  ],
+  "correct": 0,
+  "why": "Common Pakistani books give about 3180 km.",
+  "rel": "The Indus is the longest river in Pakistan.",
+  "problem": "Different sources give different lengths; 3180 km is used in the source."
+ },
+ {
+  "num": 209,
+  "page": 21,
+  "question": "Choose the synonym of 'co-operation':",
+  "options": [
+   "Collaboration",
+   "Rivalry",
+   "Opposition",
+   "Dispute"
+  ],
+  "correct": 0,
+  "why": "Co-operation means working together, like collaboration.",
+  "rel": "Coordination is also close in meaning."
+ },
+ {
+  "num": 210,
+  "page": 21,
+  "question": "Choose the antonym of 'wild':",
+  "options": [
+   "Fierce",
+   "Savage",
+   "Tame",
+   "Rough"
+  ],
+  "correct": 2,
+  "why": "Wild means untamed; tame is the opposite.",
+  "rel": "Domestic is also an opposite."
+ },
+ {
+  "num": 211,
+  "page": 21,
+  "question": "At what age did the mother of the Prophet (PBUH) pass away?",
+  "options": [
+   "2 years",
+   "6 years",
+   "4 years",
+   "8 years"
+  ],
+  "correct": 1,
+  "why": "Bibi Amina died when the Prophet was about 6 years old.",
+  "rel": "His father Abdullah died before his birth. His grandfather died when he was 8."
+ },
+ {
+  "num": 212,
+  "page": 21,
+  "question": "Which wife of the Prophet (PBUH) was the daughter of Hazrat Umar (RA)?",
+  "options": [
+   "Hazrat Ayesha (RA)",
+   "Hazrat Sawda (RA)",
+   "Hazrat Zainab (RA)",
+   "Hazrat Hafsa (RA)"
+  ],
+  "correct": 3,
+  "why": "Hazrat Hafsa bint Umar (RA) married the Prophet in 3 AH.",
+  "rel": "The first copy of the Quran was kept with her."
+ },
+ {
+  "num": 213,
+  "page": 21,
+  "question": "What was Hazrat Safiyah's (RA) relation with the Holy Prophet (PBUH)?",
+  "options": [
+   "Daughter",
+   "Sister",
+   "Foster mother",
+   "Wife"
+  ],
+  "correct": 3,
+  "why": "Hazrat Safiyah bint Huyayy (RA) was a wife of the Prophet.",
+  "rel": "She married him after the Battle of Khaybar.",
+  "problem": "Another Safiyah (bint Abdul Muttalib) was the Prophet's aunt; the exam answer refers to the wife."
+ },
+ {
+  "num": 214,
+  "page": 21,
+  "question": "Which set names the four daughters of the Holy Prophet (PBUH)?",
+  "options": [
+   "Zainab, Ruqayyah, Hafsa, Fatimah",
+   "Ayesha, Ruqayyah, Umm Kulthum, Fatimah",
+   "Zainab, Ruqayyah, Umm Kulthum, Fatimah",
+   "Zainab, Sawda, Umm Kulthum, Fatimah"
+  ],
+  "correct": 2,
+  "why": "The four daughters were Zainab, Ruqayyah, Umm Kulthum and Fatimah (RA).",
+  "rel": "Hazrat Uthman (RA) married Ruqayyah and then Umm Kulthum. Fatimah married Ali (RA)."
+ },
+ {
+  "num": 215,
+  "page": 21,
+  "question": "Jawab-e-Shikwa was written by which poet?",
+  "options": [
+   "Altaf Hussain Hali",
+   "Mirza Ghalib",
+   "Allama Muhammad Iqbal",
+   "Faiz Ahmed Faiz"
+  ],
+  "correct": 2,
+  "why": "Iqbal wrote Shikwa (1911) and Jawab-e-Shikwa (1913).",
+  "rel": "Both poems are in Bang-e-Dra."
+ },
+ {
+  "num": 216,
+  "page": 21,
+  "question": "Tafseer Tabari was written by:",
+  "options": [
+   "Ibn Jarir al-Tabari",
+   "Ibn Kathir",
+   "Imam Qurtubi",
+   "Imam Razi"
+  ],
+  "correct": 0,
+  "why": "Tafsir al-Tabari was compiled by Muhammad ibn Jarir al-Tabari.",
+  "rel": "It is one of the earliest big Quran commentaries."
+ },
+ {
+  "num": 217,
+  "page": 22,
+  "question": "Kashf-ul-Mahjoob was written by:",
+  "options": [
+   "Ali bin Usman Hujwiri (Data Ganj Bakhsh)",
+   "Baba Farid Ganjshakar",
+   "Bulleh Shah",
+   "Maulana Rumi"
+  ],
+  "correct": 0,
+  "why": "Hujwiri wrote the Persian Sufi book Kashf-ul-Mahjoob in the 11th century.",
+  "rel": "He is buried in Lahore.",
+  "problem": "Question spelt 'Kash e Majoob boom'; read as Kashf-ul-Mahjoob."
+ },
+ {
+  "num": 218,
+  "page": 22,
+  "question": "Kashf-ul-Mahjoob is written by:",
+  "options": [
+   "Ali bin Usman Hujwiri (Data Ganj Bakhsh)",
+   "Baba Farid Ganjshakar",
+   "Bulleh Shah",
+   "Maulana Rumi"
+  ],
+  "correct": 0,
+  "why": "It was written by Hujwiri in Persian.",
+  "rel": "His shrine in Lahore is Data Darbar."
+ },
+ {
+  "num": 219,
+  "page": 22,
+  "question": "Who defeated Humayun?",
+  "options": [
+   "Akbar",
+   "Sher Shah Suri",
+   "Ibrahim Lodhi",
+   "Hemu"
+  ],
+  "correct": 1,
+  "why": "Sher Shah Suri beat Humayun at Chausa (1539) and Kannauj (1540).",
+  "rel": "Humayun regained the throne in 1555 with Persian help."
+ },
+ {
+  "num": 220,
+  "page": 22,
+  "question": "Which is the highest battlefield in the world?",
+  "options": [
+   "Kargil",
+   "Doklam",
+   "Siachin Glacier",
+   "Galwan Valley"
+  ],
+  "correct": 2,
+  "why": "Siachin Glacier in the Karakoram is the world's highest battlefield.",
+  "rel": "It is at about 5400 m above sea level."
+ },
+ {
+  "num": 221,
+  "page": 22,
+  "question": "In which year was the Battle of Plassey fought?",
+  "options": [
+   "1764",
+   "1757",
+   "1526",
+   "1857"
+  ],
+  "correct": 1,
+  "why": "Robert Clive defeated Nawab Siraj ud-Daulah at Plassey in 1757.",
+  "rel": "Battle of Buxar was 1764. Panipat (first) was 1526.",
+  "problem": "The numbering skips 222 in the source."
+ },
+ {
+  "num": 223,
+  "page": 22,
+  "question": "In which country is the headquarters of the World Health Organization?",
+  "options": [
+   "United States (New York)",
+   "Austria (Vienna)",
+   "France (Paris)",
+   "Switzerland (Geneva)"
+  ],
+  "correct": 3,
+  "why": "The WHO is headquartered in Geneva, Switzerland.",
+  "rel": "WHO was founded in 1948."
+ },
+ {
+  "num": 224,
+  "page": 22,
+  "question": "The OPEC headquarters is in:",
+  "options": [
+   "Geneva",
+   "Riyadh",
+   "Brussels",
+   "Vienna"
+  ],
+  "correct": 3,
+  "why": "OPEC has its headquarters in Vienna, Austria.",
+  "rel": "OPEC was formed in 1960 in Baghdad."
+ },
+ {
+  "num": 225,
+  "page": 22,
+  "question": "NATO headquarters is situated in:",
+  "options": [
+   "Paris",
+   "Brussels",
+   "Vienna",
+   "Washington D.C."
+  ],
+  "correct": 1,
+  "why": "NATO headquarters is in Brussels, Belgium.",
+  "rel": "NATO was formed in 1949."
+ },
+ {
+  "num": 226,
+  "page": 22,
+  "question": "The headquarters of the United Nations (UNO) is in:",
+  "options": [
+   "New York",
+   "Geneva",
+   "Vienna",
+   "The Hague"
+  ],
+  "correct": 0,
+  "why": "The UN headquarters is in New York City, USA.",
+  "rel": "UN has major offices in Geneva and Vienna."
+ },
+ {
+  "num": 227,
+  "page": 22,
+  "question": "The Suez Canal is located in which continent?",
+  "options": [
+   "Asia",
+   "Europe",
+   "Africa",
+   "South America"
+  ],
+  "correct": 2,
+  "why": "The Suez Canal is in Egypt, in Africa.",
+  "rel": "It joins the Mediterranean and Red Sea."
+ },
+ {
+  "num": 228,
+  "page": 22,
+  "question": "Which is the longest canal in the world?",
+  "options": [
+   "Suez Canal",
+   "Panama Canal",
+   "Erie Canal",
+   "Grand Canal of China"
+  ],
+  "correct": 3,
+  "why": "China's Grand Canal (Beijing to Hangzhou) is about 1776 km.",
+  "rel": "It is the oldest and longest artificial waterway."
+ },
+ {
+  "num": 229,
+  "page": 23,
+  "question": "The Panama Canal joins which two oceans?",
+  "options": [
+   "Atlantic and Indian",
+   "Pacific and Indian",
+   "Arctic and Atlantic",
+   "Pacific and Atlantic"
+  ],
+  "correct": 3,
+  "why": "The Panama Canal joins the Pacific and Atlantic oceans.",
+  "rel": "It opened in 1914."
+ },
+ {
+  "num": 230,
+  "page": 23,
+  "question": "In which country is the Suez Canal?",
+  "options": [
+   "Egypt",
+   "Israel",
+   "Saudi Arabia",
+   "Sudan"
+  ],
+  "correct": 0,
+  "why": "The Suez Canal is in Egypt.",
+  "rel": "It opened in 1869."
+ },
+ {
+  "num": 231,
+  "page": 23,
+  "question": "What is the capital of Kazakhstan?",
+  "options": [
+   "Almaty",
+   "Tashkent",
+   "Bishkek",
+   "Astana"
+  ],
+  "correct": 3,
+  "why": "Astana is the capital of Kazakhstan.",
+  "rel": "It was called Nur-Sultan from 2019 to 2022. Almaty is its largest city."
+ },
+ {
+  "num": 232,
+  "page": 23,
+  "question": "Thimphu is the capital of which country?",
+  "options": [
+   "Bhutan",
+   "Nepal",
+   "Sri Lanka",
+   "Myanmar"
+  ],
+  "correct": 0,
+  "why": "Thimphu is the capital of Bhutan.",
+  "rel": "Kathmandu is Nepal's capital.",
+  "problem": "Source spelled 'Timphu'."
+ },
+ {
+  "num": 233,
+  "page": 23,
+  "question": "What is the capital of Algeria?",
+  "options": [
+   "Algiers",
+   "Tunis",
+   "Rabat",
+   "Tripoli"
+  ],
+  "correct": 0,
+  "why": "Algiers is the capital of Algeria.",
+  "rel": "Tunis is Tunisia's capital."
+ },
+ {
+  "num": 234,
+  "page": 23,
+  "question": "The Montagu-Chelmsford Reforms were introduced in:",
+  "options": [
+   "1909",
+   "1919",
+   "1935",
+   "1892"
+  ],
+  "correct": 1,
+  "why": "They became the Government of India Act 1919 in December 1919 and brought dyarchy.",
+  "rel": "Morley-Minto was 1909. The 1935 Act gave provincial autonomy."
+ },
+ {
+  "num": 235,
+  "page": 23,
+  "question": "The Morley-Minto Reforms were introduced in:",
+  "options": [
+   "1919",
+   "1909",
+   "1892",
+   "1935"
+  ],
+  "correct": 1,
+  "why": "They were passed in 1909 and gave separate electorates to Muslims.",
+  "rel": "Lord Minto was Viceroy; Morley was Secretary of State."
+ },
+ {
+  "num": 236,
+  "page": 23,
+  "question": "Who was the first Pakistani to summit K2?",
+  "options": [
+   "Ashraf Aman",
+   "Nazir Sabir",
+   "Hassan Sadpara",
+   "Muhammad Ali Sadpara"
+  ],
+  "correct": 0,
+  "why": "Ashraf Aman reached the K2 summit in 1977.",
+  "rel": "Nazir Sabir was the first Pakistani to climb Everest in 2000."
+ },
+ {
+  "num": 237,
+  "page": 23,
+  "question": "Another name of K2 is:",
+  "options": [
+   "Mount Kangchenjunga",
+   "Mount Rakaposhi",
+   "Mount Godwin-Austen",
+   "Mount Nanga Parbat"
+  ],
+  "correct": 2,
+  "why": "K2 is also called Godwin-Austen and Chogori.",
+  "rel": "K2 is the second highest mountain in the world.",
+  "problem": "Source says 'Godwin Austin'."
+ },
+ {
+  "num": 238,
+  "page": 23,
+  "question": "What is the height of K2?",
+  "options": [
+   "8848 m",
+   "8611 m",
+   "8126 m",
+   "8516 m"
+  ],
+  "correct": 1,
+  "why": "K2 is 8611 m high, the second highest peak in the world.",
+  "rel": "Everest is 8848 m. Nanga Parbat is 8126 m.",
+  "problem": "Source writes 8611 km; the correct unit is metres."
+ },
+ {
+  "num": 239,
+  "page": 24,
+  "question": "The book 'Pakistan: A Hard Country' is written by:",
+  "options": [
+   "Anatol Lieven",
+   "Stephen P. Cohen",
+   "Ahmed Rashid",
+   "Christophe Jaffrelot"
+  ],
+  "correct": 0,
+  "why": "Anatol Lieven wrote it in 2011.",
+  "rel": "Ahmed Rashid wrote 'Taliban'."
+ },
+ {
+  "num": 240,
+  "page": 24,
+  "question": "The book Tafseer Tabari is written by:",
+  "options": [
+   "Ibn Jarir al-Tabari",
+   "Ibn Kathir",
+   "Imam Qurtubi",
+   "Imam Razi"
+  ],
+  "correct": 0,
+  "why": "Tafsir al-Tabari was compiled by Muhammad ibn Jarir al-Tabari.",
+  "rel": "He also wrote a big history book."
+ },
+ {
+  "num": 241,
+  "page": 24,
+  "question": "'The Idea of Pakistan' is a famous book written by:",
+  "options": [
+   "Anatol Lieven",
+   "Ayesha Jalal",
+   "Hamza Alavi",
+   "Stephen P. Cohen"
+  ],
+  "correct": 3,
+  "why": "Stephen Philip Cohen wrote 'The Idea of Pakistan' (2004).",
+  "rel": "Ayesha Jalal wrote 'The Sole Spokesman'."
+ },
+ {
+  "num": 242,
+  "page": 24,
+  "question": "The current President of France (as of Oct 2026) is:",
+  "options": [
+   "Marine Le Pen",
+   "Francois Hollande",
+   "Emmanuel Macron",
+   "Nicolas Sarkozy"
+  ],
+  "correct": 2,
+  "why": "Macron was re-elected in 2022 and is still President in 2026; his term ends in 2027.",
+  "rel": "The next presidential election is in 2027. As of Oct 2026."
+ },
+ {
+  "num": 243,
+  "page": 24,
+  "question": "The current President of Pakistan (as of Oct 2026) is:",
+  "options": [
+   "Arif Alvi",
+   "Asif Ali Zardari",
+   "Mamnoon Hussain",
+   "Shehbaz Sharif"
+  ],
+  "correct": 1,
+  "why": "Zardari took office on 10 March 2024 as the 14th President.",
+  "rel": "He earlier served as the 11th President (2008 to 2013). As of Oct 2026."
+ },
+ {
+  "num": 244,
+  "page": 24,
+  "question": "The smallest country in the world is:",
+  "options": [
+   "Vatican City",
+   "Monaco",
+   "San Marino",
+   "Liechtenstein"
+  ],
+  "correct": 0,
+  "why": "Vatican City is the smallest country by area (about 0.44 sq km).",
+  "rel": "Monaco is the second smallest."
+ },
+ {
+  "num": 245,
+  "page": 24,
+  "question": "The largest country in the world by area is:",
+  "options": [
+   "Canada",
+   "Russia",
+   "China",
+   "United States"
+  ],
+  "correct": 1,
+  "why": "Russia is the largest country by area.",
+  "rel": "Canada is second."
+ },
+ {
+  "num": 246,
+  "page": 24,
+  "question": "When was the Battle of Uhud fought?",
+  "options": [
+   "17 Ramadan, 2 AH",
+   "5 Shawwal, 5 AH",
+   "7 Shawwal, 3 AH",
+   "20 Ramadan, 8 AH"
+  ],
+  "correct": 2,
+  "why": "Uhud was fought on 7 Shawwal 3 AH (March 625 CE).",
+  "rel": "Badr was 17 Ramadan 2 AH."
+ },
+ {
+  "num": 247,
+  "page": 24,
+  "question": "Who led the Quraish army in the Battle of Uhud?",
+  "options": [
+   "Abu Jahl",
+   "Abu Sufyan",
+   "Utbah bin Rabi'ah",
+   "Umayyah bin Khalaf"
+  ],
+  "correct": 1,
+  "why": "Abu Sufyan commanded the Quraish at Uhud; Abu Jahl and the others had died at Badr.",
+  "rel": "Khalid bin Walid led the Quraish cavalry then."
+ },
+ {
+  "num": 248,
+  "page": 24,
+  "question": "How many Muslim soldiers fought in the Battle of Uhud?",
+  "options": [
+   "700",
+   "313",
+   "500",
+   "3000"
+  ],
+  "correct": 0,
+  "why": "About 700 Muslims fought after 300 hypocrites withdrew.",
+  "rel": "The Quraish had about 3000 men.",
+  "problem": "Many books say 1000 marched out; 700 is the number who fought."
+ },
+ {
+  "num": 249,
+  "page": 24,
+  "question": "In Ghazwa Uhud, Hazrat Ali (RA) was awarded with:",
+  "options": [
+   "Saifullah (title)",
+   "Al-Farooq (title)",
+   "Dhun-Nurayn (title)",
+   "Zulfiqar (sword)"
+  ],
+  "correct": 3,
+  "why": "As reported in tradition, the Prophet gave Hazrat Ali (RA) the sword Zulfiqar at Uhud.",
+  "rel": "Saifullah was Khalid bin Walid's title.",
+  "problem": "This is a traditional report; sources differ."
+ }
+]

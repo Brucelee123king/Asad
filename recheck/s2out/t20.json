@@ -1,0 +1,185 @@
+[
+ {
+  "id": "M12850",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "penguinrandomhouse.com The Happiness Equation",
+   "penguin.co.uk",
+   "blinkist.com"
+  ],
+  "note": "The Happiness Equation (2016) is by Neil Pasricha."
+ },
+ {
+  "id": "M12868",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Member_states_of_the_United_Nations",
+   "un.org"
+  ],
+  "note": "UN has 193 member states (South Sudan last, 2011)."
+ },
+ {
+  "id": "M12874",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Chancellor_of_Germany"
+  ],
+  "note": "Friedrich Merz (CDU) is Chancellor since 6 May 2025."
+ },
+ {
+  "id": "M12876",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Amendments_to_the_Constitution_of_Pakistan",
+   "dailytimes.com.pk",
+   "nukta.com"
+  ],
+  "note": "27th Amendment enacted 13 Nov 2025; 28th still under discussion, not passed as of Nov 2026."
+ },
+ {
+  "id": "M12877",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "businesstoday.in BRICS explainer Sep 2026",
+   "en.wikipedia.org/wiki/18th_BRICS_summit",
+   "telanganatoday.com"
+  ],
+  "note": "BRICS has 11 full members (Indonesia joined Jan 2025); none added at 2026 Delhi summit."
+ },
+ {
+  "id": "M12879",
+  "verdict": "change",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Amazon_River",
+   "pubs.usgs.gov circ 486",
+   "newworldencyclopedia.org"
+  ],
+  "note": "Average width ~3 km (~10,000 ft) in Middle Amazon; no source gives 2,300 ft."
+ },
+ {
+  "id": "M12889",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Amendments_to_the_Constitution_of_Pakistan",
+   "dailytimes.com.pk"
+  ],
+  "note": "27 amendments; 28th not yet passed as of Nov 2026."
+ },
+ {
+  "id": "M12957",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Organisation_of_Islamic_Cooperation",
+   "oic-oci.org"
+  ],
+  "note": "OIC has 57 member states."
+ },
+ {
+  "id": "M12968",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_countries_by_coffee_production",
+   "FAO"
+  ],
+  "note": "Brazil is largest coffee producer (~3.4 Mt 2023), Vietnam second."
+ },
+ {
+  "id": "M12969",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "developmentaid.org",
+   "databoks.katadata.co.id",
+   "worldatlas.com"
+  ],
+  "note": "China is the largest tea producer (FAO/ITC 2024), India second."
+ },
+ {
+  "id": "M12994",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_longest_bridges"
+  ],
+  "note": "Danyang-Kunshan Grand Bridge, ~164.8 km, longest bridge in world."
+ },
+ {
+  "id": "M13007",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "quran.com Tafsir Maariful Quran 11:44",
+   "juancole.com Hughes Dictionary of Islam",
+   "muftiwp.gov.my"
+  ],
+  "note": "Tafsir: Nuh boarded on 10 Rajab, landed 10 Muharram, about 6 months (40 days is only the rain in Bible)."
+ },
+ {
+  "id": "M13027",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Klein_River",
+   "whalecoast.info",
+   "en.wikipedia.org/wiki/List_of_rivers_of_South_Africa"
+  ],
+  "note": "Klein River is a short coastal river (~80 km); Orange, Vaal, Limpopo are major long rivers."
+ },
+ {
+  "id": "M13045",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "bairdmaritime.com (Reuters column)",
+   "nst.com.my",
+   "realeconomy.rsmus.com"
+  ],
+  "note": "Middle East crude exports to China Jan-May 2026 fell 28% year on year."
+ },
+ {
+  "id": "M13053",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "aljazeera.com 2026/4/14",
+   "pravda.com.ua (Axios)",
+   "dhakatribune.com"
+  ],
+  "note": "In Islamabad talks US proposed a 20-year enrichment moratorium; Iran offered up to 5 years."
+ },
+ {
+  "id": "M13054",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "arabnews.pk/node/2640103",
+   "aljazeera.com 2026/4/13"
+  ],
+  "note": "Islamabad hosted US-Iran talks lasting about 21 hours (Apr 11-12, 2026)."
+ }
+]

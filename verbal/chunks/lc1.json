@@ -1,0 +1,1027 @@
+[
+{
+"ref": "LC-1#1",
+"q": "What is 90% of 90?",
+"a": "81"
+},
+{
+"ref": "LC-1#2",
+"q": "What is one-third of 10% of 120?",
+"a": "4"
+},
+{
+"ref": "LC-1#3",
+"q": "What is one-third of 10% of 90?",
+"a": "3"
+},
+{
+"ref": "LC-1#4",
+"q": "What is one-fourth of 120?",
+"a": "30"
+},
+{
+"ref": "LC-1#5",
+"q": "If the 4th day of a month is Monday, what will be the 24th day of that month?",
+"a": "Sunday"
+},
+{
+"ref": "LC-1#6",
+"q": "If the 2nd day of a month is Sunday, what will be the 23rd day of that month?",
+"a": "Sunday"
+},
+{
+"ref": "LC-1#7",
+"q": "A boy is 3 years old and his sister is 3 times his age. What will be the age of the sister when the boy is 11 years old?",
+"a": "17"
+},
+{
+"ref": "LC-1#8",
+"q": "In a class of 1500 students, 1200 are present. What is the percentage of present and absent students?",
+"a": "80% present, 20% absent"
+},
+{
+"ref": "LC-1#9",
+"q": "Amjad and Ahmad kept 25 balls. Amjad kept 4 times as many as Ahmad. How many balls did Ahmad keep?",
+"a": "5"
+},
+{
+"ref": "LC-1#10",
+"q": "Ali bought a pen for Rs. 30 and sold it for Rs. 40. What is his profit percentage?",
+"a": "33.33%"
+},
+{
+"ref": "LC-1#11",
+"q": "If a man travels 90 km in 1 hour and 40 minutes, how much time will he take to cover 1 km?",
+"a": "10/9 minutes (about 1 minute 7 seconds)"
+},
+{
+"ref": "LC-1#12",
+"q": "If 5 men write 5 pages in 5 minutes, in how many minutes will 1 man write 1 page?",
+"a": "5 minutes"
+},
+{
+"ref": "LC-1#13",
+"q": "A train's speed is twice that of a car. If the car covers 60 km in one hour, how much distance will the train cover in 30 minutes?",
+"a": "60 km"
+},
+{
+"ref": "LC-1#14",
+"q": "There are 30 passengers in a bus and 2/3 of them are men. What is the number of women?",
+"a": "10"
+},
+{
+"ref": "LC-1#15",
+"q": "Akbar is older than Ahmad, and Umair is older than Akbar. Who is the oldest?",
+"a": "Umair"
+},
+{
+"ref": "LC-1#16",
+"q": "Akbar is older than Ahmad, and Umair is older than Akbar. Who is the youngest?",
+"a": "Ahmad"
+},
+{
+"ref": "LC-1#17",
+"q": "Ali moves towards the north, after some time he turns left, then again turns left. What is his present direction?",
+"a": "South"
+},
+{
+"ref": "LC-1#18",
+"q": "A man walked towards the north, then he turned left. After some time he turned right. What is his present direction?",
+"a": "North"
+},
+{
+"ref": "LC-1#19",
+"q": "What will be the 3rd letter of the word MANAGEMENT when its letters are arranged alphabetically?",
+"a": "E"
+},
+{
+"ref": "LC-1#20",
+"q": "What will be the 3rd letter when the word AUGMENTED is arranged alphabetically?",
+"a": "E"
+},
+{
+"ref": "LC-1#21",
+"q": "The jumbled word UTYEAB is rearranged to form a word. What will be the last letter of that word when its letters are arranged alphabetically?",
+"a": "Y"
+},
+{
+"ref": "LC-1#22",
+"q": "Arrange the jumbled word OPERALD to form a word and identify its category.",
+"a": "LEOPARD, a wild animal"
+},
+{
+"ref": "LC-1#23",
+"q": "According to the dictionary order, which word comes first: MOUNTAIN, MARGALLA, MACHINE?",
+"a": "Machine"
+},
+{
+"ref": "LC-1#24",
+"q": "What comes next in the series: B, E, J, Q, ?",
+"a": "Z"
+},
+{
+"ref": "LC-1#25",
+"q": "Find the odd one out: Wheat, Hay, Rice, Maize.",
+"a": "Hay"
+},
+{
+"ref": "LC-1#26",
+"q": "Find the odd one out: Monkey, Ape, Chimpanzee, Panda.",
+"a": "Panda"
+},
+{
+"ref": "LC-1#27",
+"q": "If my brother's sister is your mother, who am I to you (taking me as a male)?",
+"a": "Maternal uncle (Mamu)"
+},
+{
+"ref": "LC-1#28",
+"q": "The sister of my brother's son is my what?",
+"a": "Niece"
+},
+{
+"ref": "LC-1#29",
+"q": "Vehicle is to wheels as Sound is to ?",
+"a": "Waves"
+},
+{
+"ref": "LC-1#30",
+"q": "Water is to flow as Air is to ?",
+"a": "Blow"
+},
+{
+"ref": "LC-1#31",
+"q": "A bat cannot see well and a snake cannot ?",
+"a": "Hear"
+},
+{
+"ref": "LC-1#32",
+"q": "How many months of the year have 31 days?",
+"a": "7"
+},
+{
+"ref": "LC-1#33",
+"q": "What is the value of 3P2 (3 permutation 2)?",
+"a": "6"
+},
+{
+"ref": "LC-1#34",
+"q": "What is the area of a rectangle whose width is 3 and height is 8?",
+"a": "24"
+},
+{
+"ref": "LC-1#35",
+"q": "How many faces does a triangular prism have?",
+"a": "5"
+},
+{
+"ref": "LC-1#36",
+"q": "What is the eccentricity of a parabola?",
+"a": "1"
+},
+{
+"ref": "LC-1#37",
+"q": "The probability of an event always lies between which values?",
+"a": "0 and 1"
+},
+{
+"ref": "LC-1#38",
+"q": "Which city is known as the heart of Pakistan?",
+"a": "Lahore"
+},
+{
+"ref": "LC-1#39",
+"q": "What was the earlier capital of Pakistan before Islamabad?",
+"a": "Karachi"
+},
+{
+"ref": "LC-1#40",
+"q": "What is the capital of Kazakhstan?",
+"a": "Astana"
+},
+{
+"ref": "LC-1#41",
+"q": "What is the capital of Ghana?",
+"a": "Accra"
+},
+{
+"ref": "LC-1#42",
+"q": "What is the capital of Austria?",
+"a": "Vienna"
+},
+{
+"ref": "LC-1#43",
+"q": "What is the capital of Somalia?",
+"a": "Mogadishu"
+},
+{
+"ref": "LC-1#44",
+"q": "Who is the Foreign Minister of Iran?",
+"a": "Abbas Araghchi"
+},
+{
+"ref": "LC-1#45",
+"q": "Who is the President of China?",
+"a": "Xi Jinping"
+},
+{
+"ref": "LC-1#46",
+"q": "Who was the leader of Germany in World War 2?",
+"a": "Adolf Hitler"
+},
+{
+"ref": "LC-1#47",
+"q": "What is the most important resource of the Arabian countries?",
+"a": "Oil"
+},
+{
+"ref": "LC-1#48",
+"q": "What is the currency of Japan?",
+"a": "Yen"
+},
+{
+"ref": "LC-1#49",
+"q": "Which is the smallest continent in the world?",
+"a": "Australia (Oceania)"
+},
+{
+"ref": "LC-1#50",
+"q": "Which is the 2nd largest continent in the world?",
+"a": "Africa"
+},
+{
+"ref": "LC-2#1",
+"q": "What is the main source of freshwater in the world?",
+"a": "Glaciers and ice caps"
+},
+{
+"ref": "LC-2#2",
+"q": "Which country is the biggest coffee producer in the world?",
+"a": "Brazil"
+},
+{
+"ref": "LC-2#3",
+"q": "Which country is known as the Land of a Thousand Lakes?",
+"a": "Finland"
+},
+{
+"ref": "LC-2#4",
+"q": "Which is the deepest lake in the world?",
+"a": "Lake Baikal"
+},
+{
+"ref": "LC-2#5",
+"q": "Which is the longest river in the world (by the traditional measurement)?",
+"a": "Nile"
+},
+{
+"ref": "LC-2#6",
+"q": "Which is the fastest bird in the world?",
+"a": "Peregrine Falcon"
+},
+{
+"ref": "LC-2#7",
+"q": "Where is the headquarters of the United Nations (UNO)?",
+"a": "New York"
+},
+{
+"ref": "LC-2#8",
+"q": "Where is the headquarters of the Asian Development Bank?",
+"a": "Manila, Philippines"
+},
+{
+"ref": "LC-2#9",
+"q": "At the end of 2016, which country was the third-largest refugee-hosting country in the world according to UNHCR?",
+"a": "Lebanon"
+},
+{
+"ref": "LC-2#10",
+"q": "Why did America take part in World War 2?",
+"a": "Because of the Japanese attack on Pearl Harbor"
+},
+{
+"ref": "LC-2#11",
+"q": "The 2015 nuclear agreement between Iran and world powers (including the USA) is known as?",
+"a": "JCPOA (Joint Comprehensive Plan of Action)"
+},
+{
+"ref": "LC-2#12",
+"q": "In which year did India conduct its first nuclear test?",
+"a": "1974"
+},
+{
+"ref": "LC-2#13",
+"q": "What is the SI unit of temperature?",
+"a": "Kelvin"
+},
+{
+"ref": "LC-2#14",
+"q": "What is the antonym of Wild?",
+"a": "Tamed"
+},
+{
+"ref": "LC-2#15",
+"q": "What is a synonym of Gorgeous?",
+"a": "Beautiful"
+},
+{
+"ref": "LC-2#16",
+"q": "Who is the author of Shikwa and Jawab-e-Shikwa?",
+"a": "Allama Iqbal"
+},
+{
+"ref": "LC-2#17",
+"q": "Who wrote the book Friends Not Masters?",
+"a": "Ayub Khan"
+},
+{
+"ref": "LC-2#18",
+"q": "Who wrote the book Jinnah of Pakistan?",
+"a": "Stanley Wolpert"
+},
+{
+"ref": "LC-2#19",
+"q": "What is the national bird of Pakistan?",
+"a": "Chukar Partridge"
+},
+{
+"ref": "LC-2#20",
+"q": "What is the national flower of Pakistan?",
+"a": "Jasmine"
+},
+{
+"ref": "LC-2#21",
+"q": "Who designed the flag of Pakistan?",
+"a": "Syed Amir-ud-Din Kidwai"
+},
+{
+"ref": "LC-2#22",
+"q": "In which region of Asia is Pakistan located?",
+"a": "South Asia"
+},
+{
+"ref": "LC-2#23",
+"q": "Which is the largest river of Pakistan?",
+"a": "Indus River"
+},
+{
+"ref": "LC-2#24",
+"q": "Which is the largest district of Pakistan by area?",
+"a": "Chagai"
+},
+{
+"ref": "LC-2#25",
+"q": "How many peaks above 8000 metres are located in Pakistan?",
+"a": "5"
+},
+{
+"ref": "LC-2#26",
+"q": "What is the height of Tirich Mir, the highest peak of the Hindu Kush in Pakistan?",
+"a": "7708 meters"
+},
+{
+"ref": "LC-2#27",
+"q": "Which line is the boundary between China and India in the eastern sector?",
+"a": "McMahon Line"
+},
+{
+"ref": "LC-2#28",
+"q": "The Wakhan border of Pakistan is shared with which country?",
+"a": "Afghanistan"
+},
+{
+"ref": "LC-2#29",
+"q": "How was Attabad Lake in Gilgit-Baltistan formed?",
+"a": "By a massive landslide in 2010"
+},
+{
+"ref": "LC-2#30",
+"q": "In which province is Mohenjo-Daro located?",
+"a": "Sindh"
+},
+{
+"ref": "LC-2#31",
+"q": "Why do people visit Ziarat in Balochistan?",
+"a": "Quaid-e-Azam's Residency is located there"
+},
+{
+"ref": "LC-2#32",
+"q": "Why do we boil milk?",
+"a": "To kill germs and bacteria"
+},
+{
+"ref": "LC-2#33",
+"q": "Why do parents send children to school?",
+"a": "To groom them and give them education"
+},
+{
+"ref": "LC-2#34",
+"q": "PEMRA is the regulatory body for which media?",
+"a": "Electronic media"
+},
+{
+"ref": "LC-2#35",
+"q": "Which city started television broadcasting first in Pakistan?",
+"a": "Lahore"
+},
+{
+"ref": "LC-2#36",
+"q": "When did Pakistan join the United Nations?",
+"a": "30 September 1947"
+},
+{
+"ref": "LC-2#37",
+"q": "When did Quaid-e-Azam present his 14 Points?",
+"a": "March 1929"
+},
+{
+"ref": "LC-2#38",
+"q": "In which year did Allama Iqbal deliver the Allahabad Address?",
+"a": "1930"
+},
+{
+"ref": "LC-2#39",
+"q": "When did Muslims get the right of separate electorates?",
+"a": "1909, Minto-Morley Reforms"
+},
+{
+"ref": "LC-2#40",
+"q": "When did Quaid-e-Azam join the All India Muslim League?",
+"a": "1913"
+},
+{
+"ref": "LC-2#41",
+"q": "What was the date of the Lahore Resolution?",
+"a": "23 March 1940"
+},
+{
+"ref": "LC-2#42",
+"q": "What was the official reason given for the Partition of Bengal in 1905?",
+"a": "Administrative reasons"
+},
+{
+"ref": "LC-2#43",
+"q": "Who became the Prime Minister of Pakistan after Liaquat Ali Khan?",
+"a": "Khawaja Nazimuddin"
+},
+{
+"ref": "LC-2#44",
+"q": "Who was the third Governor-General of Pakistan?",
+"a": "Malik Ghulam Muhammad"
+},
+{
+"ref": "LC-2#45",
+"q": "Which Act was used as the basis of Pakistan's first (interim) constitution?",
+"a": "Government of India Act 1935"
+},
+{
+"ref": "LC-2#46",
+"q": "The 1956 Constitution was framed under the Prime Ministership of which leader?",
+"a": "Chaudhry Muhammad Ali"
+},
+{
+"ref": "LC-2#47",
+"q": "The 1962 Constitution of Pakistan was abrogated by whom?",
+"a": "Yahya Khan"
+},
+{
+"ref": "LC-2#48",
+"q": "When were the first general elections held after the 1962 Constitution was abrogated?",
+"a": "1970"
+},
+{
+"ref": "LC-2#49",
+"q": "How many general seats did the Awami League win in the 1970 elections?",
+"a": "160"
+},
+{
+"ref": "LC-2#50",
+"q": "The Shimla Agreement of 1972 was signed between which two leaders?",
+"a": "Zulfikar Ali Bhutto and Indira Gandhi"
+},
+{
+"ref": "LC-3#1",
+"q": "In which year was the Pakistan-China border agreement signed?",
+"a": "1963"
+},
+{
+"ref": "LC-3#2",
+"q": "How many days did the 1965 Pakistan-India war last?",
+"a": "17 days"
+},
+{
+"ref": "LC-3#3",
+"q": "In which year did Fatima Jinnah die?",
+"a": "1967"
+},
+{
+"ref": "LC-3#4",
+"q": "What is the date of Pakistan's first nuclear test?",
+"a": "28 May 1998"
+},
+{
+"ref": "LC-3#5",
+"q": "How many nuclear blasts did Pakistan conduct in 1998?",
+"a": "6"
+},
+{
+"ref": "LC-3#6",
+"q": "Who was the first female Prime Minister of Pakistan (and of the Muslim world)?",
+"a": "Benazir Bhutto"
+},
+{
+"ref": "LC-3#7",
+"q": "Who is the current Chief Minister of Punjab (Pakistan)?",
+"a": "Maryam Nawaz"
+},
+{
+"ref": "LC-3#8",
+"q": "Who is the current Chief Minister of Balochistan?",
+"a": "Sarfraz Bugti"
+},
+{
+"ref": "LC-3#9",
+"q": "Pakistan created the post of Chief of Defence Forces through which constitutional amendment?",
+"a": "27th Amendment"
+},
+{
+"ref": "LC-3#10",
+"q": "Which Chinese-made fighter jet was inducted by the Pakistan Air Force in 2022 and used in the May 2025 conflict?",
+"a": "J-10C"
+},
+{
+"ref": "LC-3#11",
+"q": "What is the Uraan Pakistan plan?",
+"a": "A national economic transformation plan launched in December 2024"
+},
+{
+"ref": "LC-3#12",
+"q": "Who was the first Pakistani to win a Nobel Prize?",
+"a": "Dr. Abdus Salam"
+},
+{
+"ref": "LC-3#13",
+"q": "Ahsan Ramzan is a famous player of which sport?",
+"a": "Snooker"
+},
+{
+"ref": "LC-3#14",
+"q": "Jahangir Khan is famous for which sport?",
+"a": "Squash"
+},
+{
+"ref": "LC-3#15",
+"q": "Abdul Hafeez Kardar was a player of which sport?",
+"a": "Cricket"
+},
+{
+"ref": "LC-3#16",
+"q": "Who has scored the most Test runs for Pakistan?",
+"a": "Younis Khan"
+},
+{
+"ref": "LC-3#17",
+"q": "Which game is played with a racket and a shuttle?",
+"a": "Badminton"
+},
+{
+"ref": "LC-3#18",
+"q": "Which ICC tournament did Pakistan host in 2025?",
+"a": "ICC Champions Trophy"
+},
+{
+"ref": "LC-3#19",
+"q": "Who said that the life of the Holy Prophet (PBUH) is the practical interpretation of the Holy Quran?",
+"a": "Hazrat Ayesha R.A"
+},
+{
+"ref": "LC-3#20",
+"q": "Over what period was the Holy Quran revealed?",
+"a": "About 23 years"
+},
+{
+"ref": "LC-3#21",
+"q": "How many Ayats are in Surah Al-Baqarah?",
+"a": "286"
+},
+{
+"ref": "LC-3#22",
+"q": "How many Prophets are mentioned by name in the Holy Quran?",
+"a": "25"
+},
+{
+"ref": "LC-3#23",
+"q": "What is the meaning of Khatam-ul-Nabiyyin?",
+"a": "The Last of the Prophets"
+},
+{
+"ref": "LC-3#24",
+"q": "Who was the first martyr of Islam?",
+"a": "Hazrat Sumayyah R.A"
+},
+{
+"ref": "LC-3#25",
+"q": "Who was the first woman to accept Islam? (2)",
+"a": "Hazrat Khadija R.A"
+},
+{
+"ref": "LC-3#26",
+"q": "Who narrated the largest number of Ahadith?",
+"a": "Hazrat Abu Hurairah R.A"
+},
+{
+"ref": "LC-3#27",
+"q": "Which of the following lists names all four daughters of Hazrat Muhammad (PBUH)?",
+"a": "Zainab, Ruqayyah, Umm Kulthum, Fatima"
+},
+{
+"ref": "LC-3#28",
+"q": "Hazrat Ayesha R.A was the daughter of which Sahabi?",
+"a": "Hazrat Abu Bakr R.A"
+},
+{
+"ref": "LC-3#29",
+"q": "Which of the following was a daughter of Hazrat Abu Bakr R.A?",
+"a": "Hazrat Ayesha R.A"
+},
+{
+"ref": "LC-3#30",
+"q": "Hazrat Ali R.A belonged to which clan?",
+"a": "Banu Hashim"
+},
+{
+"ref": "LC-3#31",
+"q": "Which was the first major battle of Islam, fought between Muslims and the Quraysh?",
+"a": "Battle of Badr"
+},
+{
+"ref": "LC-3#32",
+"q": "Youm-e-Furqan is the title of which battle?",
+"a": "Battle of Badr"
+},
+{
+"ref": "LC-3#33",
+"q": "In which year of Hijrah did the Battle of Badr take place?",
+"a": "2 AH"
+},
+{
+"ref": "LC-3#34",
+"q": "How many Muslims took part in the Battle of Badr?",
+"a": "313"
+},
+{
+"ref": "LC-3#35",
+"q": "How did Abu Jahl die?",
+"a": "Killed in the Battle of Badr, struck by two young boys Mu'adh and Mu'awwidh"
+},
+{
+"ref": "LC-3#36",
+"q": "What does the word Ahzab mean?",
+"a": "Confederates, allied forces"
+},
+{
+"ref": "LC-3#37",
+"q": "Which companion suggested digging a trench in the Battle of Ahzab (Khandaq)?",
+"a": "Hazrat Salman Farsi R.A"
+},
+{
+"ref": "LC-3#38",
+"q": "When was the Treaty of Hudaybiyyah signed?",
+"a": "6 AH"
+},
+{
+"ref": "LC-3#39",
+"q": "Which special prayer is performed in the middle of the night?",
+"a": "Tahajjud"
+},
+{
+"ref": "LC-3#40",
+"q": "Where is Mina located?",
+"a": "Near Makkah"
+},
+{
+"ref": "LC-3#41",
+"q": "Where is Mina located?",
+"a": "Near Makkah (about 5 km east of it)"
+},
+{
+"ref": "LC-3#42",
+"q": "How many gates does Jannah (Paradise) have?",
+"a": "8"
+},
+{
+"ref": "LC-3#43",
+"q": "Who will blow the Trumpet (Soor) on the Day of Judgment?",
+"a": "Hazrat Israfil A.S"
+},
+{
+"ref": "LC-3#44",
+"q": "According to Pakistani textbooks, in which year A.D. was the Holy Prophet (PBUH) born (in Rabi-ul-Awwal, commonly given as 22nd April)?",
+"a": "571 A.D"
+},
+{
+"ref": "LC-3#45",
+"q": "What was the name of the father of the Holy Prophet (PBUH)?",
+"a": "Hazrat Abdullah"
+},
+{
+"ref": "LC-3#46",
+"q": "What was the name of the mother of the Holy Prophet (PBUH)?",
+"a": "Hazrat Amina"
+},
+{
+"ref": "LC-3#47",
+"q": "What was the name of the maternal grandfather of the Holy Prophet (PBUH)?",
+"a": "Wahb bin Abd Manaf"
+},
+{
+"ref": "LC-3#48",
+"q": "What was the name of the maternal grandmother of the Holy Prophet (PBUH), as given in the list?",
+"a": "Barrah (written Batarah in the list)"
+},
+{
+"ref": "LC-3#49",
+"q": "What was the real name of Abdul Muttalib, grandfather of the Holy Prophet (PBUH)?",
+"a": "Shaybah"
+},
+{
+"ref": "LC-3#50",
+"q": "What was the name of the paternal grandmother of the Holy Prophet (PBUH), the mother of Abdullah?",
+"a": "Fatima bint Amr"
+},
+{
+"ref": "LC-4#1",
+"q": "At what age did the Holy Prophet (PBUH) travel to Syria with his uncle Abu Talib?",
+"a": "12 years"
+},
+{
+"ref": "LC-4#2",
+"q": "At what age did the Holy Prophet (PBUH) marry Hazrat Khadija R.A?",
+"a": "25 years"
+},
+{
+"ref": "LC-4#3",
+"q": "Among adult free men, who was the first to accept Islam?",
+"a": "Hazrat Abu Bakr R.A"
+},
+{
+"ref": "LC-4#4",
+"q": "Who was the first among children to accept Islam?",
+"a": "Hazrat Ali R.A"
+},
+{
+"ref": "LC-4#5",
+"q": "After the first revelation, which relative of Hazrat Khadija R.A confirmed that the Prophet (PBUH) was the awaited Prophet?",
+"a": "Waraqa bin Naufal"
+},
+{
+"ref": "LC-4#6",
+"q": "How many children did the Holy Prophet (PBUH) have, according to the common Seerah account?",
+"a": "7 (3 sons and 4 daughters)"
+},
+{
+"ref": "LC-4#7",
+"q": "At what age did the Holy Prophet (PBUH) receive the first revelation (Wahy)?",
+"a": "40 years"
+},
+{
+"ref": "LC-4#8",
+"q": "Who was the second wife of the Holy Prophet (PBUH)?",
+"a": "Hazrat Sawda bint Zam'a R.A"
+},
+{
+"ref": "LC-4#9",
+"q": "In which year A.D. did the Holy Prophet (PBUH) migrate to Madina?",
+"a": "622 A.D"
+},
+{
+"ref": "LC-4#10",
+"q": "Which pair were among the foster mothers (wet nurses) of the Holy Prophet (PBUH)?",
+"a": "Hazrat Halima Sa'diyah and Thuwaybah"
+},
+{
+"ref": "LC-4#11",
+"q": "Besides Hazrat Halima, whom did the Holy Prophet (PBUH) call his mother?",
+"a": "Umm Ayman (Barakah) R.A"
+},
+{
+"ref": "LC-4#12",
+"q": "How many years after the birth of the Holy Prophet (PBUH) did his mother Hazrat Amina die?",
+"a": "6 years"
+},
+{
+"ref": "LC-4#13",
+"q": "What was the name of the foster sister of the Holy Prophet (PBUH)?",
+"a": "Shaima"
+},
+{
+"ref": "LC-4#14",
+"q": "Which of these was a foster brother of the Holy Prophet (PBUH), a son of Hazrat Halima?",
+"a": "Abdullah bin Harith"
+},
+{
+"ref": "LC-4#15",
+"q": "For how long, according to the common account, did Hazrat Halima look after the Holy Prophet (PBUH)?",
+"a": "About 4 years"
+},
+{
+"ref": "LC-4#16",
+"q": "How old was the Holy Prophet (PBUH) at the time of the Hajr-e-Aswad (Black Stone) incident?",
+"a": "35 years"
+},
+{
+"ref": "LC-4#17",
+"q": "Who used to spread thorns in the way of the Holy Prophet (PBUH)?",
+"a": "Umm Jamil, wife of Abu Lahab"
+},
+{
+"ref": "LC-4#18",
+"q": "Whose house was used as the centre of secret preaching by the Holy Prophet (PBUH)?",
+"a": "Hazrat Arqam bin Abi Arqam R.A"
+},
+{
+"ref": "LC-4#19",
+"q": "In which year of Prophethood did the boycott of Banu Hashim begin?",
+"a": "7th Nabvi"
+},
+{
+"ref": "LC-4#20",
+"q": "Which Prophet did the Holy Prophet (PBUH) meet on the first heaven during Miraj?",
+"a": "Hazrat Adam A.S"
+},
+{
+"ref": "LC-4#21",
+"q": "Which Prophets did the Holy Prophet (PBUH) meet on the second heaven during Miraj?",
+"a": "Hazrat Isa A.S and Hazrat Yahya A.S"
+},
+{
+"ref": "LC-4#22",
+"q": "Which Prophet did the Holy Prophet (PBUH) meet on the third heaven during Miraj?",
+"a": "Hazrat Yusuf A.S"
+},
+{
+"ref": "LC-4#23",
+"q": "Which Prophet did the Holy Prophet (PBUH) meet on the fourth heaven during Miraj?",
+"a": "Hazrat Idris A.S"
+},
+{
+"ref": "LC-4#24",
+"q": "Which Prophet did the Holy Prophet (PBUH) meet on the fifth heaven during Miraj?",
+"a": "Hazrat Haroon A.S"
+},
+{
+"ref": "LC-4#25",
+"q": "Which Prophet did the Holy Prophet (PBUH) meet on the sixth heaven during Miraj?",
+"a": "Hazrat Musa A.S"
+},
+{
+"ref": "LC-4#26",
+"q": "Which Prophet did the Holy Prophet (PBUH) meet on the seventh heaven during Miraj?",
+"a": "Hazrat Ibrahim A.S"
+},
+{
+"ref": "LC-4#27",
+"q": "What was the name of the camel on which the Holy Prophet (PBUH) traveled during the Hijrah?",
+"a": "Al-Qaswa"
+},
+{
+"ref": "LC-4#28",
+"q": "From whom did the Holy Prophet (PBUH) purchase the land for the mosque in Madina (Masjid-e-Nabawi)?",
+"a": "Two orphans (Sahl and Suhail)"
+},
+{
+"ref": "LC-4#29",
+"q": "In which Hijri year was the Charter of Madina (Meesaq-e-Madina) issued?",
+"a": "1 A.H"
+},
+{
+"ref": "LC-4#30",
+"q": "In which Hijri year was the change of Qibla (from Baitul Maqdis to Kaaba) ordered?",
+"a": "2nd A.H"
+},
+{
+"ref": "LC-4#31",
+"q": "According to the common Seerah count, how many Ghazwat (expeditions led by the Prophet PBUH himself) are there?",
+"a": "27"
+},
+{
+"ref": "LC-4#32",
+"q": "Which was the first Ghazwa of Islam?",
+"a": "Ghazwa Abwa (Waddan)"
+},
+{
+"ref": "LC-4#33",
+"q": "Who was the first to compile Ahadith (Hadith) officially, on the order of Hazrat Umar bin Abdul Aziz?",
+"a": "Imam Zuhri (Ibn Shihab Zuhri)"
+},
+{
+"ref": "LC-4#34",
+"q": "How many Ahadith are reported from Hazrat Abu Hurairah R.A?",
+"a": "5374"
+},
+{
+"ref": "LC-4#35",
+"q": "Which Prophet is known as Shaikh-ul-Anbiya?",
+"a": "Hazrat Nuh A.S"
+},
+{
+"ref": "LC-4#36",
+"q": "Who was given the title Ameen-ul-Ummat?",
+"a": "Hazrat Abu Ubaidah bin Jarrah R.A"
+},
+{
+"ref": "LC-4#37",
+"q": "What is the dome over the sacred grave of the Holy Prophet (PBUH) known as?",
+"a": "Gumbad-e-Khizra (Green Dome)"
+},
+{
+"ref": "LC-4#38",
+"q": "Where is Bait-ul-Mamoor located?",
+"a": "In the seventh heaven"
+},
+{
+"ref": "LC-4#39",
+"q": "Which mosque was demolished on the order of the Holy Prophet (PBUH)?",
+"a": "Masjid-e-Dirar (Mosque of Zarar)"
+},
+{
+"ref": "LC-4#40",
+"q": "Who conquered the fort of Qamus during the Battle of Khyber?",
+"a": "Hazrat Ali R.A"
+},
+{
+"ref": "LC-4#41",
+"q": "Which woman tried to poison the Holy Prophet (PBUH) at Khyber?",
+"a": "Zainab bint Harith"
+},
+{
+"ref": "LC-4#42",
+"q": "Which Surah did the Holy Prophet (PBUH) recite at the conquest of Makkah?",
+"a": "Surah Al-Fath"
+},
+{
+"ref": "LC-4#43",
+"q": "In which year of Prophethood did the first migration to Abyssinia (Habshah) take place?",
+"a": "5th Nabvi (615 A.D)"
+},
+{
+"ref": "LC-4#44",
+"q": "How many people took part in the first migration to Abyssinia, according to Ibn Ishaq?",
+"a": "15 (11 men and 4 women)"
+},
+{
+"ref": "LC-4#45",
+"q": "In which year A.D. did the second migration to Abyssinia take place, according to the common account?",
+"a": "616 A.D"
+},
+{
+"ref": "LC-4#46",
+"q": "How many people in total took part in the second migration to Abyssinia?",
+"a": "101 (including 18 women)"
+},
+{
+"ref": "LC-4#47",
+"q": "What does Harb-e-Fijar mean?",
+"a": "A war fought in the prohibited (sacred) months"
+},
+{
+"ref": "LC-4#48",
+"q": "Which year is called Aam-ul-Huzn (Year of Grief)?",
+"a": "10th Nabvi"
+},
+{
+"ref": "LC-4#49",
+"q": "What was the original name of Abu Jahl?",
+"a": "Amr bin Hisham"
+},
+{
+"ref": "LC-4#50",
+"q": "In which Hijri year did the conquest of Makkah take place?",
+"a": "8th Hijri"
+},
+{
+"ref": "LC-5#1",
+"q": "In which Hijri year did the Holy Prophet (PBUH) perform his (Farewell) Hajj?",
+"a": "10th Hijri"
+},
+{
+"ref": "LC-5#2",
+"q": "Where was the Holy Prophet (PBUH) buried?",
+"a": "In the room (Hujra) of Hazrat Ayesha R.A"
+},
+{
+"ref": "LC-5#3",
+"q": "Which king tore up the letter of the Holy Prophet (PBUH) inviting him to Islam?",
+"a": "Khusro Parvez, King of Persia (Iran)"
+},
+{
+"ref": "LC-5#4",
+"q": "Who was the Byzantine (Roman) emperor in the 7th Hijri year, when the Prophet PBUH sent him a letter?",
+"a": "Heraclius (Hercules)"
+},
+{
+"ref": "LC-5#5",
+"q": "At what age did the Holy Prophet (PBUH) pass away?",
+"a": "63 years"
+}
+]

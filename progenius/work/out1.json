@@ -1,0 +1,459 @@
+[
+ {
+  "src": "A",
+  "num": 1,
+  "question": "Current Chief Minister of Sindh",
+  "options": [
+   "Syed Murad Ali Shah",
+   "Qaim Ali Shah",
+   "Sardar Ali Shah",
+   "Syed Murad Hussain"
+  ],
+  "correct": 0,
+  "why": "As of Oct 2026, Syed Murad Ali Shah (PPP) is Chief Minister of Sindh; no change was found in searches.",
+  "rel": "The Governor of Sindh is a different office. Murad Ali Shah started his third term after the 2024 election."
+ },
+ {
+  "src": "A",
+  "num": 16,
+  "question": "The Lucknow Pact was an agreement between which parties?",
+  "options": [
+   "Muslim League and Unionist Party",
+   "Indian National Congress and Hindu Mahasabha",
+   "Muslim League and British Government",
+   "Indian National Congress and All-India Muslim League"
+  ],
+  "correct": 3,
+  "why": "The Lucknow Pact of 1916 was signed by the Congress and the Muslim League.",
+  "rel": "It agreed on constitutional reforms and separate electorates. Jinnah is called the ambassador of Hindu-Muslim unity for it."
+ },
+ {
+  "src": "A",
+  "num": 38,
+  "question": "Which is Pakistan’s most populous province?",
+  "options": [
+   "Sindh",
+   "Khyber Pakhtunkhwa",
+   "Punjab",
+   "Balochistan"
+  ],
+  "correct": 2,
+  "why": "Punjab is the most populous province, about 127.7 million people in the 2023 census.",
+  "rel": "Sindh is second most populous. Balochistan is largest by area."
+ },
+ {
+  "src": "A",
+  "num": 53,
+  "question": "Which country is commonly ranked third by total area?",
+  "options": [
+   "Canada",
+   "China",
+   "Russia",
+   "Brazil"
+  ],
+  "correct": 1,
+  "why": "Many school lists rank China third by total area, after Russia and Canada; others put the United States third.",
+  "rel": "Russia is the largest country by area. Rankings of 3rd and 4th (China, USA) vary by convention.",
+  "problem": "Ranking of 3rd place depends on convention (China or the United States); China chosen as per source."
+ },
+ {
+  "src": "A",
+  "num": 68,
+  "question": "How many Nobel Prizes have been awarded to Pakistani laureates?",
+  "options": [
+   "One",
+   "Two",
+   "Three",
+   "Four"
+  ],
+  "correct": 1,
+  "why": "Pakistan's two commonly counted Nobel laureates are Abdus Salam (Physics, 1979) and Malala Yousafzai (Peace, 2014).",
+  "rel": "Malala was the youngest Nobel laureate at the time of her award. Abdus Salam was the first Pakistani laureate.",
+  "problem": "Count depends on definition; some lists add people born in British India in what is now Pakistan."
+ },
+ {
+  "src": "A",
+  "num": 83,
+  "question": "How many consecutive matches did Jahangir Khan win?",
+  "options": [
+   "555",
+   "455",
+   "505",
+   "600"
+  ],
+  "correct": 0,
+  "why": "Jahangir Khan won 555 consecutive matches, a famous squash record.",
+  "rel": "He dominated squash from 1981 to 1986. He won the World Open six times."
+ },
+ {
+  "src": "A",
+  "num": 97,
+  "question": "Who wrote Khilafat-o-Mulukiyat?",
+  "options": [
+   "Allama Iqbal",
+   "Shibli Nomani",
+   "Syed Qutb",
+   "Abul A'la Maududi"
+  ],
+  "correct": 3,
+  "why": "Khilafat-o-Mulukiyat was written by Abul A'la Maududi.",
+  "rel": "It discusses the shift from caliphate to monarchy. Maududi founded Jamaat-e-Islami."
+ },
+ {
+  "src": "A",
+  "num": 108,
+  "question": "Who designed Pakistan’s national flag?",
+  "options": [
+   "Syed Amir Ali",
+   "Ghulam Ali Allana",
+   "Amiruddin Kidwai",
+   "Liaquat Ali Khan"
+  ],
+  "correct": 2,
+  "why": "Amiruddin Kidwai designed Pakistan's national flag.",
+  "rel": "The flag was adopted on 11 August 1947. The white stripe stands for minorities."
+ },
+ {
+  "src": "A",
+  "num": 121,
+  "question": "What is Pakistan’s national tree?",
+  "options": [
+   "Chinar",
+   "Shisham",
+   "Deodar",
+   "Banyan"
+  ],
+  "correct": 2,
+  "why": "Deodar (Himalayan cedar) is Pakistan's national tree.",
+  "rel": "Its scientific name is Cedrus deodara. It grows in the western Himalayas."
+ },
+ {
+  "src": "A",
+  "num": 135,
+  "question": "What does SAARC stand for?",
+  "options": [
+   "South Asian Alliance for Regional Cooperation",
+   "South Asian Association for Regional Cooperation",
+   "Southern Asian Association for Regional Commerce",
+   "South Asian Association for Resource Cooperation"
+  ],
+  "correct": 1,
+  "why": "SAARC stands for South Asian Association for Regional Cooperation.",
+  "rel": "The charter was signed in Dhaka on 8 December 1985. The Secretariat is in Kathmandu."
+ },
+ {
+  "src": "B",
+  "num": 8,
+  "question": "When was the Pirpur Report published?",
+  "options": [
+   "1938",
+   "1930",
+   "1935",
+   "1940"
+  ],
+  "correct": 0,
+  "why": "The Pirpur Report was published in 1938 for the All-India Muslim League.",
+  "rel": "It alleged Congress ministries mistreated Muslims after the 1937 elections. Raja Muhammad Mehdi of Pirpur headed the committee."
+ },
+ {
+  "src": "B",
+  "num": 18,
+  "question": "What is the length of the Pakistan-Afghanistan border?",
+  "options": [
+   "About 1,200 km",
+   "About 3,310 km",
+   "About 1,810 km",
+   "About 2,640 km"
+  ],
+  "correct": 3,
+  "why": "The Pakistan-Afghanistan border (Durand Line) is commonly estimated at about 2,640 km.",
+  "rel": "The Durand Agreement was signed in 1893. Some sources give about 2,430 km.",
+  "problem": "Source gives varying figures (2,640 vs 2,430 km); 2,640 km is the common one."
+ },
+ {
+  "src": "B",
+  "num": 28,
+  "question": "There are 30 people in a room and the male:female ratio is 3:2. How many females are there?",
+  "options": [
+   "10",
+   "15",
+   "18",
+   "12"
+  ],
+  "correct": 3,
+  "why": "30 people split 3:2 gives 5 parts of 6 each, so females = 2 x 6 = 12.",
+  "rel": "Males = 18. Always divide the total by the sum of ratio parts first."
+ },
+ {
+  "src": "B",
+  "num": 38,
+  "question": "A question claims Pakistan has a 1,200-mile border with which country. Is that accurate?",
+  "options": [
+   "Yes, it is accurate",
+   "No, it is about 800 km",
+   "No, it is about 2,640 km",
+   "No, it is about 4,000 km"
+  ],
+  "correct": 2,
+  "why": "The Pakistan-Afghanistan border (Durand Line) is about 2,640 km (1,640 miles), not 1,200 miles.",
+  "rel": "The Durand Agreement was signed in 1893. Sources vary slightly in the figure.",
+  "problem": "Question is a claim-check; wording is awkward and the border length varies between sources."
+ },
+ {
+  "src": "B",
+  "num": 48,
+  "question": "What is the nisab of gold for zakat?",
+  "options": [
+   "5 tola (about 58.3 g)",
+   "7.5 tola (about 87.48 g)",
+   "10 tola (about 116.6 g)",
+   "52.5 tola (about 612 g)"
+  ],
+  "correct": 1,
+  "why": "The Hanafi nisab of gold is 7.5 tola, about 87.48 grams.",
+  "rel": "Zakat is 2.5% after one lunar year. The silver nisab is 52.5 tola (about 612.36 g)."
+ },
+ {
+  "src": "B",
+  "num": 59,
+  "question": "“Israel” is a traditional title/name associated with which prophet?",
+  "options": [
+   "Prophet Yaqub (Jacob)",
+   "Prophet Ishaq (Isaac)",
+   "Prophet Yusuf (Joseph)",
+   "Prophet Ismail (Ishmael)"
+  ],
+  "correct": 0,
+  "why": "Israel is the title of Prophet Yaqub (AS), so his descendants are Bani Israel.",
+  "rel": "Israel means servant of Allah. Yusuf (AS) was his son."
+ },
+ {
+  "src": "B",
+  "num": 69,
+  "question": "Who is known by the title “Asadullah”?",
+  "options": [
+   "Hazrat Ali (RA)",
+   "Hazrat Hamza (RA)",
+   "Hazrat Khalid bin Walid (RA)",
+   "Hazrat Umar (RA)"
+  ],
+  "correct": 0,
+  "why": "Hazrat Ali ibn Abi Talib (RA) is known as Asadullah, Lion of Allah.",
+  "rel": "Hazrat Hamza (RA) is also called Asadullah. Khalid bin Walid (RA) is called Saifullah.",
+  "problem": "Both Ali (RA) and Hamza (RA) are called Asadullah; Ali chosen per source."
+ },
+ {
+  "src": "B",
+  "num": 79,
+  "question": "What is sin 90°?",
+  "options": [
+   "0",
+   "1/2",
+   "-1",
+   "1"
+  ],
+  "correct": 3,
+  "why": "The sine of 90 degrees is 1, the top point of the unit circle.",
+  "rel": "sin 0 = 0 and cos 90 = 0. In radians 90 degrees is pi/2."
+ },
+ {
+  "src": "B",
+  "num": 89,
+  "question": "Which country is called the “Land of White Elephants”?",
+  "options": [
+   "Myanmar",
+   "Laos",
+   "Thailand",
+   "Cambodia"
+  ],
+  "correct": 2,
+  "why": "Thailand is called the Land of White Elephants.",
+  "rel": "The white elephant is linked to Thai royalty. Bangkok is the capital."
+ },
+ {
+  "src": "B",
+  "num": 99,
+  "question": "Who wrote the “Now or Never” pamphlet and when?",
+  "options": [
+   "Allama Iqbal, 1930",
+   "Chaudhry Rahmat Ali, 1933",
+   "Chaudhry Rahmat Ali, 1940",
+   "Sir Syed Ahmad Khan, 1933"
+  ],
+  "correct": 1,
+  "why": "Chaudhry Rahmat Ali published Now or Never in 1933.",
+  "rel": "It used the name Pakistan. He was a student at Cambridge."
+ },
+ {
+  "src": "B",
+  "num": 109,
+  "question": "When did Jinnah present the Delhi Proposals?",
+  "options": [
+   "1916",
+   "1927",
+   "1930",
+   "1940"
+  ],
+  "correct": 1,
+  "why": "Jinnah's Delhi Muslim Proposals were made in 1927.",
+  "rel": "The Lucknow Pact was 1916, not the Delhi Proposals. The Delhi Proposals led to Nehru Report responses and Jinnah's 14 Points in 1929.",
+  "problem": "Source notes that the 'Delhi Pact of 1916' wording is a confusion with the Lucknow Pact."
+ },
+ {
+  "src": "B",
+  "num": 119,
+  "question": "Who was the first muezzin of Islam?",
+  "options": [
+   "Hazrat Bilal ibn Rabah (RA)",
+   "Hazrat Abdullah ibn Umm Maktum (RA)",
+   "Hazrat Abu Bakr (RA)",
+   "Hazrat Ammar ibn Yasir (RA)"
+  ],
+  "correct": 0,
+  "why": "Hazrat Bilal (RA) was the first muezzin of Islam.",
+  "rel": "The muezzin gives the adhan. Bilal suffered persecution before the Hijrah."
+ },
+ {
+  "src": "B",
+  "num": 129,
+  "question": "Who was the mother of Prophet Ishaq (Isaac), peace be upon him?",
+  "options": [
+   "Hajar",
+   "Maryam",
+   "Asiya",
+   "Sarah"
+  ],
+  "correct": 3,
+  "why": "Sarah was the mother of Prophet Ishaq (AS) and wife of Ibrahim (AS).",
+  "rel": "Ibrahim (AS) was his father. Ismail (AS) was the son of Hajar."
+ },
+ {
+  "src": "B",
+  "num": 139,
+  "question": "What is the Pentagon?",
+  "options": [
+   "Headquarters of the CIA",
+   "Residence of the US President",
+   "Headquarters of the US Department of Defense",
+   "Headquarters of NATO"
+  ],
+  "correct": 2,
+  "why": "The Pentagon is the headquarters of the US Department of Defense in Arlington, Virginia.",
+  "rel": "It is five-sided. It lies across the Potomac from Washington, D.C."
+ },
+ {
+  "src": "B",
+  "num": 149,
+  "question": "What is Pakistan's largest operating oil refinery?",
+  "options": [
+   "Attock Refinery",
+   "National Refinery",
+   "PARCO Mid-Country Refinery",
+   "Pakistan Refinery Limited"
+  ],
+  "correct": 2,
+  "why": "PARCO calls its Mid-Country Refinery near Mahmoodkot Pakistan's largest operating refinery, 120,000 barrels per day.",
+  "rel": "PARCO means Pak-Arab Refinery Limited. MCR capacity was upgraded from 100,000 to 120,000 bpd in 2020.",
+  "problem": "'Largest' is PARCO's own claim; a third-party dataset lists Cnergyico (Hub, about 156,000 bpd) as larger by capacity."
+ },
+ {
+  "src": "B",
+  "num": 159,
+  "question": "In which direction is Iran from Pakistan?",
+  "options": [
+   "East",
+   "West",
+   "North",
+   "South"
+  ],
+  "correct": 1,
+  "why": "Iran lies to the west of Pakistan.",
+  "rel": "Iran borders Balochistan. Pakistan also borders Afghanistan, China and India."
+ },
+ {
+  "src": "B",
+  "num": 169,
+  "question": "How many times is the name Jibril explicitly mentioned in the Quran?",
+  "options": [
+   "Three times",
+   "Once",
+   "Five times",
+   "Seven times"
+  ],
+  "correct": 0,
+  "why": "Jibril is named explicitly three times: Quran 2:97, 2:98 and 66:4.",
+  "rel": "Ruh al-Qudus and Ruh al-Amin are titles and not counted. Jibril brought revelation to the Prophet (PBUH)."
+ },
+ {
+  "src": "B",
+  "num": 179,
+  "question": "Of 500 students, 340 are present. What percentage is absent?",
+  "options": [
+   "24%",
+   "40%",
+   "68%",
+   "32%"
+  ],
+  "correct": 3,
+  "why": "Absent = 500 - 340 = 160; 160/500 x 100 = 32%.",
+  "rel": "Present is 68%. Percentage = part/whole x 100."
+ },
+ {
+  "src": "B",
+  "num": 189,
+  "question": "Where are Pakistan's famous salt mines located?",
+  "options": [
+   "Kohat",
+   "Mianwali",
+   "Dera Ghazi Khan",
+   "Khewra"
+  ],
+  "correct": 3,
+  "why": "Khewra Salt Mine in Punjab is Pakistan's famous salt mine.",
+  "rel": "It is in the Salt Range near Pind Dadan Khan, district Jhelum. It is a major tourist site."
+ },
+ {
+  "src": "B",
+  "num": 199,
+  "question": "Where is the Jinnah Antarctic Research Station located?",
+  "options": [
+   "West Antarctica",
+   "Antarctic Peninsula",
+   "East Antarctica (Queen Maud Land region)",
+   "Ross Island"
+  ],
+  "correct": 2,
+  "why": "Jinnah Antarctic Station is in East Antarctica, in the Queen Maud Land region as commonly described.",
+  "rel": "It was established in January 1991. It supports Pakistan's scientific work.",
+  "problem": "Exact location descriptions vary between sources; not independently confirmed."
+ },
+ {
+  "src": "B",
+  "num": 209,
+  "question": "Bari Doab lies between which rivers?",
+  "options": [
+   "Chenab and Jhelum",
+   "Ravi and Beas",
+   "Sutlej and Indus",
+   "Jhelum and Ravi"
+  ],
+  "correct": 1,
+  "why": "Bari Doab lies between the Ravi and Beas rivers.",
+  "rel": "A doab is land between two rivers. Rachna Doab lies between the Ravi and Chenab.",
+  "problem": "Some sources define Bari Doab as between Beas/Sutlej and Ravi; standard answer used."
+ },
+ {
+  "src": "B",
+  "num": 219,
+  "question": "If yesterday was Monday, what day will it be the day after tomorrow?",
+  "options": [
+   "Thursday",
+   "Wednesday",
+   "Friday",
+   "Tuesday"
+  ],
+  "correct": 0,
+  "why": "If yesterday was Monday, today is Tuesday, so the day after tomorrow is Thursday.",
+  "rel": "Tomorrow is Wednesday. Count forward from today."
+ }
+]

@@ -1,0 +1,1473 @@
+[
+ {
+  "num": 469,
+  "page": 49,
+  "question": "In which year did Pakistan play its first Test match?",
+  "options": [
+   "1947",
+   "1948",
+   "1952",
+   "1954"
+  ],
+  "correct": 2,
+  "why": "Pakistan played its first Test against India at Delhi in October 1952.",
+  "rel": "Pakistan's first Test win came at Lucknow in the same 1952-53 tour. Pakistan became a Test nation in 1952."
+ },
+ {
+  "num": 470,
+  "page": 49,
+  "question": "Which Article of the 1973 Constitution of Pakistan guarantees freedom of speech?",
+  "options": [
+   "Article 17",
+   "Article 20",
+   "Article 19",
+   "Article 25"
+  ],
+  "correct": 2,
+  "why": "Article 19 gives every citizen freedom of speech and expression, subject to reasonable restrictions.",
+  "rel": "Article 19A gives the right to information. Article 17 is freedom of association."
+ },
+ {
+  "num": 471,
+  "page": 49,
+  "question": "Which Article of the Constitution of Pakistan provides the right to free and compulsory education?",
+  "options": [
+   "Article 25A",
+   "Article 22",
+   "Article 19A",
+   "Article 37"
+  ],
+  "correct": 0,
+  "why": "Article 25A (added by the 18th Amendment, 2010) gives free and compulsory education to children aged 5 to 16.",
+  "rel": "The 18th Amendment was passed in April 2010. Article 22 deals with educational institutions.",
+  "problem": "Source says 'freedom of education'; the standard exam answer is the right to education, Article 25A."
+ },
+ {
+  "num": 472,
+  "page": 49,
+  "question": "Which of the Seven Wonders of the Ancient World is still standing today?",
+  "options": [
+   "Hanging Gardens of Babylon",
+   "Colossus of Rhodes",
+   "Lighthouse of Alexandria",
+   "Great Pyramid of Giza"
+  ],
+  "correct": 3,
+  "why": "The Great Pyramid of Giza in Egypt is the only ancient wonder that still exists.",
+  "rel": "It was built for Pharaoh Khufu about 2560 BC. The Colossus and Lighthouse were destroyed by earthquakes."
+ },
+ {
+  "num": 473,
+  "page": 49,
+  "question": "Who is credited with inventing the first electric motor (1821)?",
+  "options": [
+   "Thomas Edison",
+   "Michael Faraday",
+   "Alexander Graham Bell",
+   "James Watt"
+  ],
+  "correct": 1,
+  "why": "Michael Faraday demonstrated electromagnetic rotation in 1821, the first electric motor principle.",
+  "rel": "Faraday also discovered electromagnetic induction in 1831. Practical motors were later built by Jacobi and Davenport.",
+  "problem": "Credit is debated; Faraday is the standard exam answer."
+ },
+ {
+  "num": 474,
+  "page": 49,
+  "question": "Who proposed the heliocentric model of the solar system (Sun at the centre)?",
+  "options": [
+   "Nicolaus Copernicus",
+   "Ptolemy",
+   "Isaac Newton",
+   "Johannes Kepler"
+  ],
+  "correct": 0,
+  "why": "Copernicus published his Sun-centred model in 1543 in 'De revolutionibus orbium coelestium'.",
+  "rel": "Kepler later described elliptical orbits. Galileo supported the model with telescope evidence.",
+  "problem": "Question says 'invented'; the solar system was not invented, the heliocentric model was proposed."
+ },
+ {
+  "num": 475,
+  "page": 49,
+  "question": "What is the currency of Denmark?",
+  "options": [
+   "Euro",
+   "Krone",
+   "Krona",
+   "Kroon"
+  ],
+  "correct": 1,
+  "why": "Denmark uses the Danish krone (DKK) and did not adopt the euro.",
+  "rel": "Sweden uses the krona and Norway the krone. Copenhagen is the capital."
+ },
+ {
+  "num": 476,
+  "page": 49,
+  "question": "Syed Abul A'la Maududi, founder of Jamaat-e-Islami, died in which city?",
+  "options": [
+   "New York (Buffalo, USA)",
+   "Lahore",
+   "London",
+   "Karachi"
+  ],
+  "correct": 0,
+  "why": "Maududi died on 22 September 1979 in Buffalo, New York, USA, while receiving medical treatment.",
+  "rel": "He is buried in Lahore. His famous work is the Tafheem-ul-Quran.",
+  "problem": "Source says only 'New York'."
+ },
+ {
+  "num": 477,
+  "page": 49,
+  "question": "On which date did the British first arrive in the subcontinent (ship Hector landing at Surat)?",
+  "options": [
+   "31 December 1600",
+   "23 June 1757",
+   "24 August 1608",
+   "15 March 1612"
+  ],
+  "correct": 2,
+  "why": "Captain William Hawkins arrived at Surat on the ship Hector on 24 August 1608.",
+  "rel": "The East India Company was founded on 31 December 1600. Sir Thomas Roe reached Jahangir's court in 1615.",
+  "problem": "Question text is cut off; reconstructed from the answer line on the next page."
+ },
+ {
+  "num": 478,
+  "page": 50,
+  "question": "What is Pakistan's rank in the world by population?",
+  "options": [
+   "3rd",
+   "4th",
+   "7th",
+   "5th"
+  ],
+  "correct": 3,
+  "why": "Pakistan is the fifth most populous country, after India, China, USA and Indonesia.",
+  "rel": "The 2023 census counted 241.49 million people. Pakistan is about to pass Indonesia in some estimates.",
+  "problem": "As of Oct 2026 UN estimates place Pakistan 5th."
+ },
+ {
+  "num": 479,
+  "page": 50,
+  "question": "Who was the first Hafiz of the Quran according to the common exam answer?",
+  "options": [
+   "Hazrat Abu Bakr (RA)",
+   "Hazrat Usman (RA)",
+   "Hazrat Umar (RA)",
+   "Hazrat Bilal (RA)"
+  ],
+  "correct": 1,
+  "why": "Many Pakistani exam books give Hazrat Usman (RA) as the first Hafiz who memorised the whole Quran.",
+  "rel": "Hazrat Usman is also called Jamiul Quran (compiler of the Quran). The Prophet (PBUH) himself memorised the Quran first.",
+  "problem": "Scholars disagree (Ali, Zaid bin Thabit, Ibn Masud are also named); source answer used as the standard exam answer."
+ },
+ {
+  "num": 480,
+  "page": 50,
+  "question": "What is the term of a Senator in Pakistan?",
+  "options": [
+   "4 years",
+   "5 years",
+   "3 years",
+   "6 years"
+  ],
+  "correct": 3,
+  "why": "Senators are elected for 6 years; half retire every 3 years.",
+  "rel": "The Senate is a permanent house and cannot be dissolved. The Senate has 96 members."
+ },
+ {
+  "num": 481,
+  "page": 50,
+  "question": "Thimphu is the capital of which country?",
+  "options": [
+   "Bhutan",
+   "Nepal",
+   "Sri Lanka",
+   "Myanmar"
+  ],
+  "correct": 0,
+  "why": "Thimphu is the capital and largest city of Bhutan.",
+  "rel": "Bhutan is a Himalayan kingdom. Its currency is the ngultrum."
+ },
+ {
+  "num": 482,
+  "page": 50,
+  "question": "Which is the upper house of the Parliament of Pakistan?",
+  "options": [
+   "National Assembly",
+   "Senate",
+   "Provincial Assembly",
+   "Federal Shariat Court"
+  ],
+  "correct": 1,
+  "why": "The Senate is the upper house; the National Assembly is the lower house.",
+  "rel": "Parliament = President + National Assembly + Senate. The Senate is led by its Chairman."
+ },
+ {
+  "num": 483,
+  "page": 50,
+  "question": "In which year did Allama Iqbal deliver his Allahabad Address?",
+  "options": [
+   "1930",
+   "1927",
+   "1933",
+   "1940"
+  ],
+  "correct": 0,
+  "why": "Iqbal presented the idea of a separate Muslim state in North-West India at the Muslim League session in Allahabad in December 1930.",
+  "rel": "The Lahore Resolution came in 1940. Iqbal was the Muslim League president in 1930."
+ },
+ {
+  "num": 484,
+  "page": 50,
+  "question": "Abdur Rahman Chughtai was a famous?",
+  "options": [
+   "Poet",
+   "Painter (artist)",
+   "Historian",
+   "Politician"
+  ],
+  "correct": 1,
+  "why": "Abdur Rahman Chughtai (1894-1975) was a Pakistani painter known for Mughal and Islamic style art.",
+  "rel": "He designed the Pakistan Postal Stamps and Muraqqa-e-Chughtai. He was awarded Hilal-e-Imtiaz."
+ },
+ {
+  "num": 485,
+  "page": 50,
+  "question": "Which mountain range lies in the north-west of Pakistan?",
+  "options": [
+   "Karakoram",
+   "Himalayas",
+   "Sulaiman",
+   "Hindu Kush"
+  ],
+  "correct": 3,
+  "why": "The Hindu Kush range runs along north-west Pakistan (Chitral) into Afghanistan.",
+  "rel": "Tirich Mir (7,708 m) is its highest peak. The Karakoram lies in the north."
+ },
+ {
+  "num": 486,
+  "page": 51,
+  "question": "Who was the first Prime Minister of Pakistan?",
+  "options": [
+   "Khawaja Nazimuddin",
+   "Muhammad Ali Bogra",
+   "Liaqat Ali Khan",
+   "Chaudhry Muhammad Ali"
+  ],
+  "correct": 2,
+  "why": "Liaqat Ali Khan became the first PM on 15 August 1947 and served until his assassination in 1951.",
+  "rel": "He was assassinated at Company Bagh, Rawalpindi on 16 October 1951. He is called Quaid-e-Millat."
+ },
+ {
+  "num": 487,
+  "page": 51,
+  "question": "In which region of the world is Pakistan located?",
+  "options": [
+   "Central Asia",
+   "South Asia",
+   "Middle East",
+   "South-East Asia"
+  ],
+  "correct": 1,
+  "why": "Pakistan lies in South Asia, bordering India, Afghanistan, Iran and China.",
+  "rel": "Pakistan became a member of SAARC in 1985. Its capital is Islamabad."
+ },
+ {
+  "num": 488,
+  "page": 51,
+  "question": "Liaqat Ali Khan made his first state visit to which country in 1950?",
+  "options": [
+   "Soviet Union",
+   "United Kingdom",
+   "India",
+   "United States of America"
+  ],
+  "correct": 3,
+  "why": "He visited the USA in May 1950 after getting invitations from both the USSR and the USA.",
+  "rel": "This visit set Pakistan on a pro-West foreign policy. He addressed the US Congress.",
+  "problem": "Source says only 'America'."
+ },
+ {
+  "num": 489,
+  "page": 51,
+  "question": "In which year did Pakistan play its first Test match?",
+  "options": [
+   "1949",
+   "1952",
+   "1955",
+   "1958"
+  ],
+  "correct": 1,
+  "why": "Pakistan's first Test was against India at Delhi in October 1952.",
+  "rel": "Pakistan's first Test captain was Abdul Hafeez Kardar. Pakistan beat India at Lucknow in that series."
+ },
+ {
+  "num": 490,
+  "page": 51,
+  "question": "In which year did Quaid-e-Azam Muhammad Ali Jinnah join the Indian National Congress?",
+  "options": [
+   "1906",
+   "1913",
+   "1916",
+   "1920"
+  ],
+  "correct": 0,
+  "why": "Jinnah joined the Congress in 1906 and attended the Calcutta session as Dadabhai Naoroji's secretary.",
+  "rel": "He joined the Muslim League in 1913. He left the Congress in 1920."
+ },
+ {
+  "num": 491,
+  "page": 51,
+  "question": "In which province of Pakistan is the Kharan Desert located?",
+  "options": [
+   "Sindh",
+   "Balochistan",
+   "Punjab",
+   "Khyber Pakhtunkhwa"
+  ],
+  "correct": 1,
+  "why": "The Kharan Desert lies in Kharan district of Balochistan; the first nuclear tests were near Chagai.",
+  "rel": "Pakistan's other deserts are Thar (Sindh), Thal and Cholistan (Punjab)."
+ },
+ {
+  "num": 492,
+  "page": 51,
+  "question": "Which is the longest river of Pakistan?",
+  "options": [
+   "Jhelum",
+   "Chenab",
+   "Ravi",
+   "Indus River"
+  ],
+  "correct": 3,
+  "why": "The Indus (about 3,180 km) is Pakistan's longest and largest river.",
+  "rel": "It starts from Tibet near Lake Mansarovar and falls in the Arabian Sea."
+ },
+ {
+  "num": 493,
+  "page": 51,
+  "question": "In which year was the first Cricket World Cup held?",
+  "options": [
+   "1971",
+   "1975",
+   "1979",
+   "1983"
+  ],
+  "correct": 1,
+  "why": "The first Cricket World Cup was held in England in 1975; West Indies won.",
+  "rel": "Pakistan won the World Cup in 1992 under Imran Khan. Lord's hosted the 1975 final."
+ },
+ {
+  "num": 494,
+  "page": 51,
+  "question": "In which year did Pakistan win the ICC Champions Trophy?",
+  "options": [
+   "2009",
+   "2017",
+   "2013",
+   "2019"
+  ],
+  "correct": 1,
+  "why": "Pakistan beat India by 180 runs at The Oval in the 2017 final under Sarfraz Ahmed.",
+  "rel": "Pakistan hosted the Champions Trophy in 2025. Fakhar Zaman scored a century in the final.",
+  "problem": "Pakistan has won it once (2017)."
+ },
+ {
+  "num": 495,
+  "page": 52,
+  "question": "What is the capital of Nepal?",
+  "options": [
+   "Kathmandu",
+   "Pokhara",
+   "Thimphu",
+   "Dhaka"
+  ],
+  "correct": 0,
+  "why": "Kathmandu is the capital and largest city of Nepal.",
+  "rel": "Mount Everest lies on the Nepal-China border. Nepal was a Hindu kingdom until 2008."
+ },
+ {
+  "num": 496,
+  "page": 52,
+  "question": "Who is the highest wicket-taker for the Pakistan cricket team?",
+  "options": [
+   "Wasim Akram",
+   "Waqar Younis",
+   "Shahid Afridi",
+   "Imran Khan"
+  ],
+  "correct": 0,
+  "why": "Wasim Akram took 916 international wickets (414 Test, 502 ODI), the most for Pakistan.",
+  "rel": "He is called the Sultan of Swing. Waqar Younis is second among fast bowlers.",
+  "problem": "As of Oct 2026 Wasim Akram remains the top wicket-taker."
+ },
+ {
+  "num": 497,
+  "page": 52,
+  "question": "In which year did Sir Syed Ahmad Khan die?",
+  "options": [
+   "1888",
+   "1898",
+   "1905",
+   "1917"
+  ],
+  "correct": 1,
+  "why": "Sir Syed died on 27 March 1898 at Aligarh.",
+  "rel": "He founded the Aligarh Muslim University (MAO College in 1875). He was born in 1817."
+ },
+ {
+  "num": 498,
+  "page": 52,
+  "question": "What is the capital of Somalia?",
+  "options": [
+   "Nairobi",
+   "Mogadishu",
+   "Djibouti",
+   "Addis Ababa"
+  ],
+  "correct": 1,
+  "why": "Mogadishu is the capital and largest city of Somalia.",
+  "rel": "Somalia is in the Horn of Africa. It has the longest coastline on mainland Africa."
+ },
+ {
+  "num": 499,
+  "page": 52,
+  "question": "On which date did East Pakistan separate to become Bangladesh?",
+  "options": [
+   "26 March 1971",
+   "16 December 1971",
+   "14 August 1971",
+   "23 March 1971"
+  ],
+  "correct": 1,
+  "why": "Pakistan's army surrendered in Dhaka on 16 December 1971 and Bangladesh came into being.",
+  "rel": "Bangladesh declared independence on 26 March 1971. Sheikh Mujibur Rahman led the Awami League.",
+  "problem": "Source gives only the year 1971."
+ },
+ {
+  "num": 500,
+  "page": 52,
+  "question": "What was Pakistan's total population in the 2023 census?",
+  "options": [
+   "207.68 million",
+   "241.49 million",
+   "132.35 million",
+   "225.20 million"
+  ],
+  "correct": 1,
+  "why": "The 7th Population and Housing Census (2023) counted 241.49 million people.",
+  "rel": "The 2017 census counted 207.68 million. The census is digital for the first time in 2023."
+ },
+ {
+  "num": 501,
+  "page": 52,
+  "question": "What was Allama Iqbal's first Persian book of poetry?",
+  "options": [
+   "Bang-e-Dara",
+   "Zarb-e-Kaleem",
+   "Asrar-e-Khudi (The Secrets of the Self)",
+   "Payam-e-Mashriq"
+  ],
+  "correct": 2,
+  "why": "Asrar-e-Khudi was published in 1915 as Iqbal's first Persian poetry book.",
+  "rel": "Iqbal's first book overall was Ilm-ul-Iqtisad (1903) on economics. Bang-e-Dara (1924) was his first Urdu poetry book.",
+  "problem": "Source says 'first book'; the very first book was Ilm-ul-Iqtisad."
+ },
+ {
+  "num": 502,
+  "page": 52,
+  "question": "Who wrote the book 'Friends Not Masters' (1967)?",
+  "options": [
+   "Zulfikar Ali Bhutto",
+   "Yahya Khan",
+   "Ayub Khan",
+   "Iskander Mirza"
+  ],
+  "correct": 2,
+  "why": "Field Marshal Ayub Khan wrote his political autobiography 'Friends Not Masters' in 1967.",
+  "rel": "Ayub Khan was Pakistan's first military ruler (1958-69). He introduced the 1962 Constitution."
+ },
+ {
+  "num": 503,
+  "page": 53,
+  "question": "Which sea separates Morocco (Africa) from Europe?",
+  "options": [
+   "Red Sea",
+   "Mediterranean Sea",
+   "Black Sea",
+   "Caspian Sea"
+  ],
+  "correct": 1,
+  "why": "Morocco faces Spain across the Strait of Gibraltar, which joins the Mediterranean Sea to the Atlantic.",
+  "rel": "The Strait of Gibraltar is only about 14 km wide at its narrowest. Morocco's capital is Rabat.",
+  "problem": "Source spelling 'Metatherian' is a garble of 'Mediterranean'."
+ },
+ {
+  "num": 504,
+  "page": 53,
+  "question": "In which year did India conduct its nuclear tests at Pokhran that led to Pakistan's tests?",
+  "options": [
+   "1974",
+   "1998",
+   "1990",
+   "2003"
+  ],
+  "correct": 1,
+  "why": "India conducted Pokhran-II tests on 11 and 13 May 1998; Pakistan answered on 28 May 1998.",
+  "rel": "India's first test (Smiling Buddha) was in 1974. Pakistan celebrates 28 May as Youm-e-Takbeer.",
+  "problem": "Source gives 'India nuclear blasts: 1998'; India also tested in 1974."
+ },
+ {
+  "num": 505,
+  "page": 53,
+  "question": "KANUPP (Karachi Nuclear Power Plant) was built with the help of which country?",
+  "options": [
+   "USA",
+   "Canada",
+   "France",
+   "China"
+  ],
+  "correct": 1,
+  "why": "KANUPP-1 was a CANDU reactor supplied by Canada and started in 1972.",
+  "rel": "Pakistan's first nuclear power plant. Chashma plants were built with Chinese help."
+ },
+ {
+  "num": 506,
+  "page": 53,
+  "question": "Who was the Chief Minister of Khyber Pakhtunkhwa until governor's rule began on 11 October 2026?",
+  "options": [
+   "Ali Amin Gandapur",
+   "Sohail Afridi",
+   "Mahmood Khan",
+   "Pervez Khattak"
+  ],
+  "correct": 1,
+  "why": "Sohail Afridi (PTI) became CM on 15 October 2025 and his government ended on 11 October 2026 when governor's rule was imposed.",
+  "rel": "Governor Faisal Karim Kundi runs KP under governor's rule. Ali Amin Gandapur was CM before Afridi.",
+  "problem": "Source answer 'Syed Arshad Hussain' is wrong/outdated. As of Oct 2026 KP has no elected CM (web search; only Wikipedia/Dawn sources)."
+ },
+ {
+  "num": 507,
+  "page": 53,
+  "question": "Who is the Chief Minister of Sindh?",
+  "options": [
+   "Qaim Ali Shah",
+   "Syed Abdullah Shah",
+   "Ghous Ali Shah",
+   "Syed Murad Ali Shah"
+  ],
+  "correct": 3,
+  "why": "Murad Ali Shah (PPP) was elected CM of Sindh for a 3rd term on 26 February 2024.",
+  "rel": "He first became CM in 2016 after Qaim Ali Shah. Karachi is Sindh's capital.",
+  "problem": "Source answer 'Maqbool Bakar' is wrong. Not fully confirmed for Oct 2026 by web search."
+ },
+ {
+  "num": 508,
+  "page": 53,
+  "question": "Which is the longest river in the world (traditional measurement)?",
+  "options": [
+   "Amazon",
+   "Yangtze",
+   "Nile",
+   "Mississippi"
+  ],
+  "correct": 2,
+  "why": "The Nile (about 6,650 km) is traditionally taken as the longest river.",
+  "rel": "The Amazon carries the most water. Some studies claim the Amazon is longer.",
+  "problem": "'Largest' is ambiguous; standard exam answer is Nile (longest)."
+ },
+ {
+  "num": 509,
+  "page": 53,
+  "question": "What is the value of sin 0 degrees?",
+  "options": [
+   "0",
+   "1",
+   "1/2",
+   "-1"
+  ],
+  "correct": 0,
+  "why": "On the unit circle, the y-coordinate at 0 degrees is 0, so sin 0 = 0.",
+  "rel": "cos 0 = 1. sin 90 = 1."
+ },
+ {
+  "num": 510,
+  "page": 53,
+  "question": "Who gave the idea of SAARC (South Asian Association for Regional Cooperation)?",
+  "options": [
+   "Zia-ul-Haq",
+   "Rajiv Gandhi",
+   "Ziaur Rahman",
+   "J. R. Jayewardene"
+  ],
+  "correct": 2,
+  "why": "Bangladesh President Ziaur Rahman proposed regional cooperation in 1977-80, leading to SAARC in 1985.",
+  "rel": "SAARC was founded in Dhaka on 8 December 1985. Its secretariat is in Kathmandu."
+ },
+ {
+  "num": 511,
+  "page": 53,
+  "question": "Which is the deepest lake in the world?",
+  "options": [
+   "Lake Superior",
+   "Lake Victoria",
+   "Caspian Sea",
+   "Lake Baikal"
+  ],
+  "correct": 3,
+  "why": "Lake Baikal in Russia is about 1,642 m deep, the deepest lake.",
+  "rel": "It holds about 20 percent of the world's fresh surface water. It is also the oldest lake."
+ },
+ {
+  "num": 512,
+  "page": 54,
+  "question": "In which country was the G-20 summit of 2023 held?",
+  "options": [
+   "Indonesia",
+   "India",
+   "Brazil",
+   "Japan"
+  ],
+  "correct": 1,
+  "why": "The 2023 G20 summit was held in New Delhi on 9-10 September 2023.",
+  "rel": "Indonesia hosted in 2022 and Brazil in 2024. The African Union joined as a permanent member in 2023."
+ },
+ {
+  "num": 513,
+  "page": 54,
+  "question": "Which is considered the world's oldest sport?",
+  "options": [
+   "Football",
+   "Wrestling",
+   "Cricket",
+   "Badminton"
+  ],
+  "correct": 1,
+  "why": "Wrestling is commonly called the oldest sport, shown in cave paintings about 15,000 years old.",
+  "rel": "Wrestling was in the ancient Olympic Games from 708 BC.",
+  "problem": "Opinion-based; wrestling is the standard exam answer."
+ },
+ {
+  "num": 514,
+  "page": 54,
+  "question": "Abu Jahl was killed in which battle?",
+  "options": [
+   "Battle of Uhud",
+   "Battle of Khandaq",
+   "Battle of Badr",
+   "Battle of Hunain"
+  ],
+  "correct": 2,
+  "why": "Abu Jahl was killed at Badr in 2 AH (624 CE) by two young Ansar brothers.",
+  "rel": "Badr was the first battle of Islam. 313 Muslims fought about 1,000 Quraish."
+ },
+ {
+  "num": 515,
+  "page": 54,
+  "question": "What is the approximate value of the square root of 14?",
+  "options": [
+   "3.74",
+   "3.46",
+   "3.87",
+   "4.12"
+  ],
+  "correct": 0,
+  "why": "3.74 squared is about 13.99, so the square root of 14 is about 3.74.",
+  "rel": "The square root of 16 is 4. The square root of 9 is 3.",
+  "problem": "The answer was missing in the source; the number 14 was read from the page."
+ },
+ {
+  "num": 516,
+  "page": 54,
+  "question": "Who is the current Chief Minister of Sindh?",
+  "options": [
+   "Qaim Ali Shah",
+   "Ghous Ali Shah",
+   "Syed Murad Ali Shah",
+   "Syed Abdullah Shah"
+  ],
+  "correct": 2,
+  "why": "Murad Ali Shah (PPP) has served as Sindh's CM since 2016 and was re-elected in February 2024.",
+  "rel": "He belongs to the Pakistan Peoples Party. Sindh Assembly has 168 general seats.",
+  "problem": "As of Oct 2026 not fully confirmed by web search."
+ },
+ {
+  "num": 517,
+  "page": 54,
+  "question": "Muhammad Ali, the legendary boxer, belonged to which country?",
+  "options": [
+   "UK",
+   "Pakistan",
+   "USA",
+   "Germany"
+  ],
+  "correct": 2,
+  "why": "Muhammad Ali (born Cassius Clay) was an American heavyweight champion.",
+  "rel": "He won gold at the 1960 Rome Olympics. He was called 'The Greatest'."
+ },
+ {
+  "num": 518,
+  "page": 54,
+  "question": "Major Aziz Bhatti was martyred in which war?",
+  "options": [
+   "1965 war",
+   "1971 war",
+   "1948 war",
+   "Kargil 1999"
+  ],
+  "correct": 0,
+  "why": "Major Raja Aziz Bhatti was killed on 12 September 1965 at the BRB Canal in Lahore sector.",
+  "rel": "He received the Nishan-e-Haider. He belonged to the 17 Punjab Regiment."
+ },
+ {
+  "num": 519,
+  "page": 54,
+  "question": "What does OS stand for in computing?",
+  "options": [
+   "Open Source",
+   "Output Signal",
+   "Operating System",
+   "Online Service"
+  ],
+  "correct": 2,
+  "why": "OS means operating system, the main software that runs a computer.",
+  "rel": "Examples are Windows, Linux and Android. DOS means Disk Operating System.",
+  "problem": "Source says 'OP'; this is an obvious misprint for 'OS'."
+ },
+ {
+  "num": 520,
+  "page": 55,
+  "question": "Which is considered the oldest seaport of Pakistan?",
+  "options": [
+   "Karachi",
+   "Gwadar",
+   "Port Qasim",
+   "Pasni"
+  ],
+  "correct": 0,
+  "why": "Karachi Port (opened 1887 in modern form) is Pakistan's oldest and busiest seaport.",
+  "rel": "Port Qasim was built in 1980s. Gwadar is a deep sea port in Balochistan.",
+  "problem": "Ancient ports like Banbhore also existed; Karachi is the standard exam answer."
+ },
+ {
+  "num": 521,
+  "page": 55,
+  "question": "Who was the first Prime Minister of Pakistan?",
+  "options": [
+   "Huseyn Shaheed Suhrawardy",
+   "Feroz Khan Noon",
+   "Liaqat Ali Khan",
+   "Muhammad Ali Bogra"
+  ],
+  "correct": 2,
+  "why": "Liaqat Ali Khan served from 1947 to 1951.",
+  "rel": "He is called Quaid-e-Millat. Khawaja Nazimuddin followed him as PM."
+ },
+ {
+  "num": 522,
+  "page": 55,
+  "question": "Which symbol denotes the union of sets?",
+  "options": [
+   "∩",
+   "⊂",
+   "∪",
+   "∈"
+  ],
+  "correct": 2,
+  "why": "The symbol ∪ is read 'union' and joins all elements of both sets.",
+  "rel": "∩ means intersection. ⊂ means subset."
+ },
+ {
+  "num": 523,
+  "page": 55,
+  "question": "How many member states does the OIC have?",
+  "options": [
+   "47",
+   "52",
+   "57",
+   "62"
+  ],
+  "correct": 2,
+  "why": "The Organisation of Islamic Cooperation has 57 member states.",
+  "rel": "Its headquarters is in Jeddah, Saudi Arabia. It was founded in 1969."
+ },
+ {
+  "num": 524,
+  "page": 55,
+  "question": "Where is the NATO headquarters located?",
+  "options": [
+   "Paris",
+   "Washington DC",
+   "Geneva",
+   "Brussels"
+  ],
+  "correct": 3,
+  "why": "NATO headquarters is in Brussels, Belgium.",
+  "rel": "NATO was formed in 1949 with 12 members. Sweden became its 32nd member in 2024."
+ },
+ {
+  "num": 525,
+  "page": 55,
+  "question": "In which Constitution of Pakistan were Islamic provisions first added?",
+  "options": [
+   "1935",
+   "1947",
+   "1956",
+   "1962"
+  ],
+  "correct": 2,
+  "why": "The 1956 Constitution declared Pakistan an Islamic Republic and included Islamic provisions.",
+  "rel": "The 1973 Constitution also made Islam the state religion. The 1962 Constitution first dropped 'Islamic' from the name.",
+  "problem": "Source says 'constitutions' (plural); first adoption is 1956."
+ },
+ {
+  "num": 526,
+  "page": 55,
+  "question": "In which city is the National Library of Pakistan located?",
+  "options": [
+   "Lahore",
+   "Islamabad",
+   "Karachi",
+   "Peshawar"
+  ],
+  "correct": 1,
+  "why": "The National Library of Pakistan is in Islamabad, on Constitution Avenue.",
+  "rel": "It was established in 1993. The Quaid-e-Azam Library is in Lahore."
+ },
+ {
+  "num": 527,
+  "page": 55,
+  "question": "Where is the headquarters of the Asian Development Bank (ADB)?",
+  "options": [
+   "Tokyo, Japan",
+   "Singapore",
+   "Bangkok, Thailand",
+   "Manila, Philippines"
+  ],
+  "correct": 3,
+  "why": "ADB is headquartered in Mandaluyong, Metro Manila, Philippines.",
+  "rel": "ADB was founded in 1966. Japan and the USA are its largest shareholders."
+ },
+ {
+  "num": 528,
+  "page": 56,
+  "question": "Complete the common trivia: 'Bats cannot ___, snakes cannot ___.'",
+  "options": [
+   "fly; swim",
+   "hear; see",
+   "walk; smell",
+   "see; hear"
+  ],
+  "correct": 3,
+  "why": "This is the common folk statement in the source: bats cannot see and snakes cannot hear.",
+  "rel": "Real science: bats can see and also use echolocation; snakes have no outer ear and sense ground vibrations.",
+  "problem": "Scientifically weak (bats can see). Kept as source statement; low-value item."
+ },
+ {
+  "num": 529,
+  "page": 56,
+  "question": "The name 'India' and the word 'Hindu' come from which river?",
+  "options": [
+   "Ganges",
+   "Indus River",
+   "Brahmaputra",
+   "Jhelum"
+  ],
+  "correct": 1,
+  "why": "Persians and Greeks pronounced Sindhu as Hindu/Indus; the Indus gave India its name.",
+  "rel": "The Indus is called Sindhu in Sanskrit. The Indus Valley Civilization grew along it.",
+  "problem": "Source: 'river called Hindus by Indians'."
+ },
+ {
+  "num": 530,
+  "page": 56,
+  "question": "In which city were the Round Table Conferences (1930-32) held?",
+  "options": [
+   "London",
+   "Delhi",
+   "Karachi",
+   "Paris"
+  ],
+  "correct": 0,
+  "why": "Three Round Table Conferences were held in London between 1930 and 1932.",
+  "rel": "Allama Iqbal attended the 2nd conference. Jinnah had also attended the first."
+ },
+ {
+  "num": 531,
+  "page": 56,
+  "question": "Which city is called the 'Golden Gate of the World'?",
+  "options": [
+   "New York",
+   "Los Angeles",
+   "San Francisco",
+   "Sydney"
+  ],
+  "correct": 2,
+  "why": "San Francisco is known for the Golden Gate Strait and the Golden Gate Bridge.",
+  "rel": "The bridge opened in 1937. The city is in California.",
+  "problem": "Source says 'capital'; San Francisco is a city, not a national capital."
+ },
+ {
+  "num": 532,
+  "page": 56,
+  "question": "What does 'Mohenjo-daro' mean?",
+  "options": [
+   "Mound of the Dead",
+   "City of Gold",
+   "Hill of Kings",
+   "Land of Rivers"
+  ],
+  "correct": 0,
+  "why": "In Sindhi, Mohenjo-daro means 'Mound of the Dead'.",
+  "rel": "The Indus Valley city dates to about 2500 BC. It is in Larkana, Sindh.",
+  "problem": "Question asked for the date but the source answered with the meaning; used the meaning."
+ },
+ {
+  "num": 533,
+  "page": 56,
+  "question": "What is the border line between India and China called?",
+  "options": [
+   "Durand Line",
+   "Radcliffe Line",
+   "McMahon Line",
+   "Maginot Line"
+  ],
+  "correct": 2,
+  "why": "The McMahon Line marks the eastern boundary of India with Tibet/China (1914).",
+  "rel": "The actual control is called the Line of Actual Control (LAC). The Durand Line is Pakistan-Afghanistan.",
+  "problem": "The border is disputed; McMahon Line is the standard answer."
+ },
+ {
+  "num": 534,
+  "page": 56,
+  "question": "Who is the Supreme Commander of the Pakistan Armed Forces under the Constitution?",
+  "options": [
+   "Prime Minister",
+   "Chief of Army Staff",
+   "Chief Justice",
+   "The President of Pakistan"
+  ],
+  "correct": 3,
+  "why": "The President is the supreme commander of the armed forces under Article 243.",
+  "rel": "The 27th Amendment (Nov 2025) created the post of Chief of Defence Forces held by Field Marshal Asim Munir.",
+  "problem": "As of Oct 2026 the 27th Amendment changed military posts; President still named supreme commander in standard answers."
+ },
+ {
+  "num": 535,
+  "page": 56,
+  "question": "Who designed the national flag of Pakistan?",
+  "options": [
+   "Syed Amiruddin Kidwai",
+   "Allama Iqbal",
+   "Chaudhry Rahmat Ali",
+   "Zafar Ali Khan"
+  ],
+  "correct": 0,
+  "why": "Syed Amir-ud-Din Kidwai designed the flag, based on the Muslim League flag; it was adopted on 11 August 1947.",
+  "rel": "The white strip shows minorities. The green shows the Muslim majority.",
+  "problem": "Source spelling 'Amer o din'."
+ },
+ {
+  "num": 536,
+  "page": 56,
+  "question": "Who is the Chief Minister of Balochistan?",
+  "options": [
+   "Abdul Malik Baloch",
+   "Jam Kamal Khan",
+   "Abdul Quddus Bizenjo",
+   "Mir Sarfraz Bugti"
+  ],
+  "correct": 3,
+  "why": "Sarfraz Bugti (PPP) has been CM since March 2024.",
+  "rel": "Quetta is the provincial capital. Bugti was elected unopposed.",
+  "problem": "Source answer 'Ali Mardan Khan' is outdated/wrong. Web search shows Bugti in office in mid-2026."
+ },
+ {
+  "num": 537,
+  "page": 57,
+  "question": "Sher Shah Suri was a famous?",
+  "options": [
+   "Poet",
+   "Painter",
+   "Ruler (Afghan emperor of the Sur dynasty)",
+   "Merchant"
+  ],
+  "correct": 2,
+  "why": "Sher Shah Suri defeated Humayun and ruled North India from 1540 to 1545.",
+  "rel": "He built the Grand Trunk Road and introduced the rupee.",
+  "problem": "Source says 'politician'; ruler is the better description."
+ },
+ {
+  "num": 538,
+  "page": 57,
+  "question": "In which year was NATO formed?",
+  "options": [
+   "1945",
+   "1955",
+   "1961",
+   "1949"
+  ],
+  "correct": 3,
+  "why": "NATO was created by the North Atlantic Treaty signed on 4 April 1949.",
+  "rel": "The Warsaw Pact (1955) was the Soviet reply. NATO HQ is in Brussels."
+ },
+ {
+  "num": 539,
+  "page": 57,
+  "question": "Which is the largest district of Pakistan by area?",
+  "options": [
+   "Chagai",
+   "Khuzdar",
+   "Awaran",
+   "Kech"
+  ],
+  "correct": 0,
+  "why": "Chagai in Balochistan is the largest district, over 50,000 sq km.",
+  "rel": "Pakistan's nuclear tests were held at Chagai hills in 1998. Balochistan is the largest province."
+ },
+ {
+  "num": 540,
+  "page": 57,
+  "question": "How many faces does a pentagonal prism have?",
+  "options": [
+   "5",
+   "9",
+   "10",
+   "7"
+  ],
+  "correct": 3,
+  "why": "A pentagonal prism has 5 rectangular side faces and 2 pentagonal bases, so 7 faces.",
+  "rel": "It has 15 edges and 10 vertices. A cuboid has 6 faces.",
+  "problem": "Source line unreadable ('plan prism side 7'); reconstructed."
+ },
+ {
+  "num": 541,
+  "page": 57,
+  "question": "Which country lies to the east of Pakistan?",
+  "options": [
+   "India",
+   "Afghanistan",
+   "Iran",
+   "China"
+  ],
+  "correct": 0,
+  "why": "India borders Pakistan on the east.",
+  "rel": "Iran is west, Afghanistan is west/north-west and China is north-east."
+ },
+ {
+  "num": 542,
+  "page": 57,
+  "question": "Who is the Chief Minister of Khyber Pakhtunkhwa as of October 2026?",
+  "options": [
+   "Sohail Afridi",
+   "No elected CM (Governor's rule since 11 October 2026)",
+   "Ali Amin Gandapur",
+   "Mahmood Khan"
+  ],
+  "correct": 1,
+  "why": "KP has been under governor's rule since 11 October 2026, run by Governor Faisal Karim Kundi.",
+  "rel": "Sohail Afridi was CM from October 2025. Governor's rule is imposed under Article 234.",
+  "problem": "Source answer 'Arshad Hussain' is wrong. Date-sensitive; web sources limited to Wikipedia/Dawn."
+ },
+ {
+  "num": 543,
+  "page": 57,
+  "question": "How many flat circular faces does a cylinder have?",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "0"
+  ],
+  "correct": 1,
+  "why": "A cylinder has two flat circular faces (top and bottom) and one curved surface.",
+  "rel": "A sphere has no flat face. A cone has one flat circular face.",
+  "problem": "Source question garbled ('cylinder face of prism'); reconstructed."
+ },
+ {
+  "num": 544,
+  "page": 57,
+  "question": "Which is the deepest river in the world?",
+  "options": [
+   "Congo River",
+   "Nile",
+   "Amazon",
+   "Indus"
+  ],
+  "correct": 0,
+  "why": "The Congo River in Africa is over 220 m deep.",
+  "rel": "It is also Africa's second longest river. It crosses the equator twice."
+ },
+ {
+  "num": 545,
+  "page": 57,
+  "question": "Which prophet was inside the fish (whale)?",
+  "options": [
+   "Hazrat Musa (AS)",
+   "Hazrat Yunus (AS)",
+   "Hazrat Nuh (AS)",
+   "Hazrat Ibrahim (AS)"
+  ],
+  "correct": 1,
+  "why": "Hazrat Yunus (Jonah) was swallowed by a big fish and prayed 'La ilaha illa anta subhanaka'.",
+  "rel": "He is called Zun-Nun or Sahib-ul-Hut. Surah Yunus is the 10th surah."
+ },
+ {
+  "num": 546,
+  "page": 58,
+  "question": "Which is the smallest surah of the Holy Quran?",
+  "options": [
+   "Surah Al-Ikhlas",
+   "Surah Al-Asr",
+   "Surah An-Nasr",
+   "Surah Al-Kawthar"
+  ],
+  "correct": 3,
+  "why": "Al-Kawthar (Surah 108) has only 3 verses and about 10 words.",
+  "rel": "Al-Baqarah is the longest surah. Al-Asr and An-Nasr also have 3 verses but are longer."
+ },
+ {
+  "num": 547,
+  "page": 58,
+  "question": "What is the value of sin 180 degrees?",
+  "options": [
+   "1",
+   "-1",
+   "0",
+   "1/2"
+  ],
+  "correct": 2,
+  "why": "On the unit circle, the y-coordinate at 180 degrees is 0.",
+  "rel": "sin 90 = 1. sin 270 = -1.",
+  "problem": "Source '12 = sin180' is garbled; reconstructed."
+ },
+ {
+  "num": 548,
+  "page": 58,
+  "question": "What is the capital of Russia?",
+  "options": [
+   "St Petersburg",
+   "Kyiv",
+   "Moscow",
+   "Minsk"
+  ],
+  "correct": 2,
+  "why": "Moscow is Russia's capital and largest city.",
+  "rel": "St Petersburg was the capital in imperial times. The Kremlin is in Moscow."
+ },
+ {
+  "num": 549,
+  "page": 58,
+  "question": "Which is the national bird of Pakistan?",
+  "options": [
+   "Peacock",
+   "Houbara Bustard",
+   "Chukar (Chakor)",
+   "Sparrow"
+  ],
+  "correct": 2,
+  "why": "The Chukar partridge is Pakistan's national bird.",
+  "rel": "The Markhor is the national animal. The Jasmine is the national flower."
+ },
+ {
+  "num": 550,
+  "page": 58,
+  "question": "What is the approximate length of the Pakistan-Iran border?",
+  "options": [
+   "650 km",
+   "1,250 km",
+   "1,500 km",
+   "909 km"
+  ],
+  "correct": 3,
+  "why": "The Pakistan-Iran border is about 909 km long, between Balochistan and Sistan-Baluchestan.",
+  "rel": "The Pakistan-Afghanistan border (Durand Line) is about 2,640 km. Pakistan-India is about 3,323 km.",
+  "problem": "Source says 904 km; sources vary (905-959 km); 909 km is the most cited."
+ },
+ {
+  "num": 551,
+  "page": 58,
+  "question": "In which country is the Leaning Tower of Pisa?",
+  "options": [
+   "Italy",
+   "France",
+   "Spain",
+   "Greece"
+  ],
+  "correct": 0,
+  "why": "The Leaning Tower of Pisa is in Pisa, Italy.",
+  "rel": "It began leaning during construction in the 12th century. It is a bell tower."
+ },
+ {
+  "num": 552,
+  "page": 58,
+  "question": "In which city is the Jinnah Bridge located?",
+  "options": [
+   "Lahore",
+   "Islamabad",
+   "Karachi",
+   "Quetta"
+  ],
+  "correct": 2,
+  "why": "Jinnah Bridge connects Karachi's city to Keamari and the port.",
+  "rel": "Karachi is Sindh's capital. Quaid's mausoleum is also in Karachi."
+ },
+ {
+  "num": 553,
+  "page": 58,
+  "question": "Which country is called the 'Land of a Thousand Lakes'?",
+  "options": [
+   "Sweden",
+   "Norway",
+   "Finland",
+   "Canada"
+  ],
+  "correct": 2,
+  "why": "Finland has about 188,000 lakes and is known as the Land of a Thousand Lakes.",
+  "rel": "Helsinki is Finland's capital. Its currency is the euro.",
+  "problem": "Source line unclear ('Land of river'); reconstructed from the answer Finland."
+ },
+ {
+  "num": 554,
+  "page": 59,
+  "question": "Where is the headquarters of the World Health Organization (WHO)?",
+  "options": [
+   "Geneva",
+   "New York",
+   "Paris",
+   "Vienna"
+  ],
+  "correct": 0,
+  "why": "WHO headquarters is in Geneva, Switzerland.",
+  "rel": "WHO was founded on 7 April 1948. The UN is headquartered in New York."
+ },
+ {
+  "num": 555,
+  "page": 59,
+  "question": "What is the border line between Pakistan and Afghanistan called?",
+  "options": [
+   "McMahon Line",
+   "Radcliffe Line",
+   "Line of Control",
+   "Durand Line"
+  ],
+  "correct": 3,
+  "why": "The Durand Line was drawn in 1893 by Sir Mortimer Durand.",
+  "rel": "Afghanistan has never formally accepted it. It is about 2,640 km long."
+ },
+ {
+  "num": 556,
+  "page": 59,
+  "question": "What is the currency of Russia?",
+  "options": [
+   "Ruble",
+   "Rupee",
+   "Krone",
+   "Zloty"
+  ],
+  "correct": 0,
+  "why": "The Russian ruble (RUB) is Russia's currency.",
+  "rel": "Moscow is the capital. Poland uses the zloty."
+ },
+ {
+  "num": 557,
+  "page": 59,
+  "question": "What is the currency of Canada?",
+  "options": [
+   "US dollar",
+   "Canadian dollar",
+   "Pound",
+   "Franc"
+  ],
+  "correct": 1,
+  "why": "Canada uses the Canadian dollar (CAD).",
+  "rel": "Ottawa is the capital. Its coin is nicknamed the 'loonie'."
+ },
+ {
+  "num": 558,
+  "page": 59,
+  "question": "In which city is the National Library of Pakistan?",
+  "options": [
+   "Karachi",
+   "Rawalpindi",
+   "Islamabad",
+   "Faisalabad"
+  ],
+  "correct": 2,
+  "why": "The National Library of Pakistan stands in Islamabad.",
+  "rel": "It lies near the Prime Minister's Secretariat."
+ },
+ {
+  "num": 559,
+  "page": 59,
+  "question": "Which is the highest polo ground in Pakistan?",
+  "options": [
+   "Skardu",
+   "Hunza",
+   "Shandur",
+   "Murree"
+  ],
+  "correct": 2,
+  "why": "The Shandur Polo Ground (about 3,700 m) is the highest polo ground in the world.",
+  "rel": "Shandur hosts the Shandur Polo Festival between Chitral and Gilgit teams."
+ },
+ {
+  "num": 560,
+  "page": 59,
+  "question": "In which year was the first martial law imposed in Pakistan?",
+  "options": [
+   "1951",
+   "1958",
+   "1969",
+   "1977"
+  ],
+  "correct": 1,
+  "why": "President Iskander Mirza imposed martial law on 7 October 1958, then Ayub Khan took over.",
+  "rel": "The 1956 Constitution was abrogated. Zia imposed martial law in 1977."
+ },
+ {
+  "num": 561,
+  "page": 59,
+  "question": "Who was the last confirmed US ambassador to Pakistan?",
+  "options": [
+   "Cameron Munter",
+   "Richard Olson",
+   "Donald Blome",
+   "Anne Patterson"
+  ],
+  "correct": 2,
+  "why": "Donald Blome served as US ambassador to Pakistan from 2022 until January 2025.",
+  "rel": "Natalie Baker became chargé d'affaires after him.",
+  "problem": "Source answer outdated: As of Oct 2026 search found no confirmed new ambassador."
+ },
+ {
+  "num": 562,
+  "page": 59,
+  "question": "What is the capital of Gilgit-Baltistan?",
+  "options": [
+   "Skardu",
+   "Hunza",
+   "Gilgit",
+   "Chilas"
+  ],
+  "correct": 2,
+  "why": "Gilgit is the capital of Gilgit-Baltistan.",
+  "rel": "K2 lies in Gilgit-Baltistan. It was given provincial-like status in 2009."
+ },
+ {
+  "num": 563,
+  "page": 60,
+  "question": "How many faces does a rectangular prism (cuboid) have?",
+  "options": [
+   "6",
+   "4",
+   "5",
+   "8"
+  ],
+  "correct": 0,
+  "why": "A cuboid has 6 rectangular faces, 12 edges and 8 vertices.",
+  "rel": "A triangular prism has 5 faces. A cube is a special cuboid.",
+  "problem": "Source says 'prism' only; the number depends on the base. 6 for a rectangular prism."
+ },
+ {
+  "num": 564,
+  "page": 60,
+  "question": "How many Farz (obligatory acts) are there in Hajj according to the Hanafi view?",
+  "options": [
+   "2",
+   "4",
+   "3",
+   "5"
+  ],
+  "correct": 2,
+  "why": "The Hanafi view counts three Farz: Ihram, standing at Arafat and Tawaf-e-Ziyarat.",
+  "rel": "Other schools count Sa'i as a pillar too. Wuquf at Arafat is the most important.",
+  "problem": "Counts differ between schools; the Hanafi count of 3 is used."
+ },
+ {
+  "num": 565,
+  "page": 60,
+  "question": "Who is the Federal Minister for Education and Professional Training of Pakistan?",
+  "options": [
+   "Shafqat Mahmood",
+   "Rana Tanveer Hussain",
+   "Dr Khalid Maqbool Siddiqui",
+   "Ahsan Iqbal"
+  ],
+  "correct": 2,
+  "why": "Dr Khalid Maqbool Siddiqui held the federal education portfolio in 2026.",
+  "rel": "He belongs to MQM-P. Rana Tanveer Hussain held the post in 2023.",
+  "problem": "Source answer 'Madad Ali' is wrong. As of Oct 2026 based on a Feb 2026 source only."
+ },
+ {
+  "num": 566,
+  "page": 60,
+  "question": "In which year did Bangladesh separate from Pakistan?",
+  "options": [
+   "1947",
+   "1965",
+   "1971",
+   "1974"
+  ],
+  "correct": 2,
+  "why": "East Pakistan became Bangladesh after the war of 1971.",
+  "rel": "Dhaka fell on 16 December 1971. The Hamoodur Rahman Commission investigated the fall."
+ },
+ {
+  "num": 567,
+  "page": 60,
+  "question": "In which year did Quaid-e-Azam present his 14 Points (in reply to the Nehru Report)?",
+  "options": [
+   "1927",
+   "1929",
+   "1928",
+   "1930"
+  ],
+  "correct": 1,
+  "why": "Jinnah gave his 14 Points in March 1929 as a response to the Nehru Report of 1928.",
+  "rel": "The Nehru Report was drafted by Motilal Nehru. The Allahabad Address was in 1930."
+ },
+ {
+  "num": 568,
+  "page": 60,
+  "question": "What is the currency of Egypt?",
+  "options": [
+   "Egyptian pound",
+   "Dinar",
+   "Riyal",
+   "Dirham"
+  ],
+  "correct": 0,
+  "why": "Egypt's currency is the Egyptian pound (EGP).",
+  "rel": "Cairo is the capital. The Nile flows through Egypt."
+ },
+ {
+  "num": 569,
+  "page": 60,
+  "question": "Who was the first female Prime Minister of the Muslim world?",
+  "options": [
+   "Tansu Ciller",
+   "Benazir Bhutto",
+   "Khaleda Zia",
+   "Sheikh Hasina"
+  ],
+  "correct": 1,
+  "why": "Benazir Bhutto became Pakistan's PM in December 1988, the first woman to lead a Muslim-majority country.",
+  "rel": "She was PM twice (1988-90, 1993-96). She was assassinated on 27 December 2007."
+ },
+ {
+  "num": 570,
+  "page": 60,
+  "question": "In which year was SEATO (South-East Asia Treaty Organization) founded?",
+  "options": [
+   "1949",
+   "1955",
+   "1954",
+   "1959"
+  ],
+  "correct": 2,
+  "why": "SEATO was formed on 8 September 1954 by the Manila Pact.",
+  "rel": "Pakistan joined SEATO and CENTO. SEATO was dissolved in 1977.",
+  "problem": "Source writes 'SETO'; meant SEATO."
+ }
+]

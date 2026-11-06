@@ -1,0 +1,334 @@
+[
+ {
+  "id": "M10350",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/United_States_Ambassador_to_Pakistan",
+   "geo.tv (Senate confirms Blome)"
+  ],
+  "note": "Donald Blome (2022-Jan 2025) last confirmed; Natalie Baker charge d'affaires since"
+ },
+ {
+  "id": "M10360",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Capital_of_Indonesia"
+  ],
+  "note": "Jakarta still capital; Nusantara move not completed (deadline 2028+)"
+ },
+ {
+  "id": "M10361",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "app.com.pk (Swat divided)",
+   "en.wikipedia.org/wiki/List_of_districts_in_Khyber_Pakhtunkhwa"
+  ],
+  "note": "KP has 40 districts after Swat split (Dec 2025/Jan 2026)"
+ },
+ {
+  "id": "M10383",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Chief_Justice_of_Pakistan",
+   "en.wikipedia.org/wiki/Yahya_Afridi"
+  ],
+  "note": "Yahya Afridi CJP since 26 Oct 2024, term to Oct 2027"
+ },
+ {
+  "id": "M10395",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Masoud_Pezeshkian",
+   "enb.iisd.org (COP17, 16 Oct 2026)"
+  ],
+  "note": "Pezeshkian still president of Iran in Oct 2026"
+ },
+ {
+  "id": "M10428",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "Britannica",
+   "Wikipedia: Governor-General of India"
+  ],
+  "note": "Lord Mountbatten was first GG of independent India (1947-48)"
+ },
+ {
+  "id": "M10429",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "Britannica",
+   "Wikipedia: Axis powers"
+  ],
+  "note": "Axis = Germany, Italy, Japan"
+ },
+ {
+  "id": "M10436",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/2026_FIFA_World_Cup"
+  ],
+  "note": "Brazil 5 titles; Spain won 2026 (its 2nd)"
+ },
+ {
+  "id": "M10454",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_largest_cities",
+   "UN WUP 2025"
+  ],
+  "note": "UN WUP 2025: Jakarta largest (~41.9 million)"
+ },
+ {
+  "id": "M10461",
+  "verdict": "unclear",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "sunnah.com",
+   "Wikipedia: Safiyya bint Abd al-Muttalib / Safiyya bint Huyayy"
+  ],
+  "note": "Two Safiyyas: bint Abd al-Muttalib (aunt) and bint Huyayy (wife); question ambiguous"
+ },
+ {
+  "id": "M10467",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Chairman_of_the_Senate_of_Pakistan"
+  ],
+  "note": "Yusuf Raza Gilani chairman since 9 Apr 2024"
+ },
+ {
+  "id": "M10485",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "Wikipedia: Administrative units of Pakistan"
+  ],
+  "note": "4 provinces + ICT + GB (AJK separate) commonly given as 6"
+ },
+ {
+  "id": "M10487",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Chief_Minister_of_Khyber_Pakhtunkhwa"
+  ],
+  "note": "Sohail Afridi CM from Oct 2025; Governor's rule from 11 Oct 2026"
+ },
+ {
+  "id": "M10492",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "un.org",
+   "Wikipedia: Member states of the UN"
+  ],
+  "note": "UN has 193 members"
+ },
+ {
+  "id": "M10497",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_busiest_container_ports"
+  ],
+  "note": "Shanghai busiest port (~55 million TEU 2025)"
+ },
+ {
+  "id": "M10512",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Chief_of_the_Naval_Staff_(Pakistan)"
+  ],
+  "note": "Admiral Naveed Ashraf CNS since 7 Oct 2023, still incumbent"
+ },
+ {
+  "id": "M10524",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "europa.eu",
+   "Wikipedia: Member state of the EU"
+  ],
+  "note": "EU has 27 members"
+ },
+ {
+  "id": "M10539",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "Wikipedia: President of Pakistan"
+  ],
+  "note": "Ayub Khan 1958-1969 (~10y5m) longest; Zia ~9y11m"
+ },
+ {
+  "id": "M10542",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_Pakistani_Nobel_laureates",
+   "Wikipedia: 2026 Nobel Peace Prize (Navi Pillay)"
+  ],
+  "note": "2 Pakistani laureates: Abdus Salam 1979, Malala 2014"
+ },
+ {
+  "id": "M10562",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Space_and_Upper_Atmosphere_Research_Commission",
+   "en.wikipedia.org/wiki/Shenzhou_24"
+  ],
+  "note": "Pakistani astronaut planned on Shenzhou 24 in late 2026"
+ },
+ {
+  "id": "M10589",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Electricity_sector_in_Pakistan"
+  ],
+  "note": "FY2025 hydro 31.5% largest single source (fossil split among gas/coal/RLNG)"
+ },
+ {
+  "id": "M10591",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "Wikipedia: British Open (squash)"
+  ],
+  "note": "Pakistani men won ~30 British Open titles (Hashim 7, Jahangir 10, Jansher 6 etc.)"
+ },
+ {
+  "id": "M10626",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Minister_of_Foreign_Affairs_(Pakistan)"
+  ],
+  "note": "Ishaq Dar FM since 11 Mar 2024"
+ },
+ {
+  "id": "M10769",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "solved"
+  ],
+  "note": "Differences 20,20,30,30 -> 80+30=110"
+ },
+ {
+  "id": "M10797",
+  "verdict": "unclear",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "solved"
+  ],
+  "note": "Gaps 2,3,5 -> prime 7 gives S, Fibonacci 8 gives T; ambiguous"
+ },
+ {
+  "id": "M10800",
+  "verdict": "change",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "solved"
+  ],
+  "note": "Pattern n, n^2+1: 3,10,4,17,5,26"
+ },
+ {
+  "id": "M10888",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "solved"
+  ],
+  "note": "Reverse alphabet: 4th after W is S (same as W-4)"
+ },
+ {
+  "id": "M10911",
+  "verdict": "unclear",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "solved"
+  ],
+  "note": "Wheel is part of bicycle; leg part of body or table - ambiguous"
+ },
+ {
+  "id": "M10921",
+  "verdict": "change",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "solved"
+  ],
+  "note": "Life stage sequence: infancy->childhood, adolescence->maturity (youth = adolescence)"
+ },
+ {
+  "id": "M10944",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "solved"
+  ],
+  "note": "Branches spread out of tree as canals/distributaries branch off a river"
+ },
+ {
+  "id": "M10962",
+  "verdict": "unclear",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "solved"
+  ],
+  "note": "No clear matching relation among options"
+ },
+ {
+  "id": "M11006",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "solved"
+  ],
+  "note": "Fish is the general class; others are specific sea animals"
+ }
+]

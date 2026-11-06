@@ -1,0 +1,1484 @@
+[
+ {
+  "num": 771,
+  "page": 85,
+  "question": "Who is the President of France?",
+  "options": [
+   "Francois Hollande",
+   "Emmanuel Macron",
+   "Nicolas Sarkozy",
+   "Marine Le Pen"
+  ],
+  "correct": 1,
+  "why": "Emmanuel Macron has been President of France since 2017 (re-elected 2022). As of Oct 2026 he is still in office.",
+  "rel": "The next French presidential election is due in April-May 2027. The French President lives in the Elysee Palace."
+ },
+ {
+  "num": 772,
+  "page": 85,
+  "question": "Which company's co-founder Steve Jobs is credited with launching the iPhone?",
+  "options": [
+   "Microsoft",
+   "Samsung",
+   "Apple",
+   "Nokia"
+  ],
+  "correct": 2,
+  "why": "The iPhone was launched by Apple under Steve Jobs in 2007.",
+  "rel": "Steve Jobs co-founded Apple in 1976. The first iPhone was unveiled on 9 January 2007.",
+  "problem": "Source says 'who invent iPhone: Steve Jobs'; the product was built by an Apple team, Jobs led and launched it. Question reworded to be clear."
+ },
+ {
+  "num": 773,
+  "page": 85,
+  "question": "Where is the headquarters of NATO?",
+  "options": [
+   "Paris, France",
+   "Geneva, Switzerland",
+   "London, United Kingdom",
+   "Brussels, Belgium"
+  ],
+  "correct": 3,
+  "why": "NATO headquarters is in Brussels, Belgium.",
+  "rel": "NATO was formed in 1949. Its HQ moved from Paris to Brussels in 1967."
+ },
+ {
+  "num": 774,
+  "page": 85,
+  "question": "Where is the headquarters of OPEC?",
+  "options": [
+   "Geneva",
+   "Vienna",
+   "Riyadh",
+   "Doha"
+  ],
+  "correct": 1,
+  "why": "OPEC headquarters is in Vienna, Austria.",
+  "rel": "OPEC was founded in Baghdad in 1960. Its HQ was first in Geneva, then moved to Vienna in 1965."
+ },
+ {
+  "num": 775,
+  "page": 85,
+  "question": "Which is the largest (best-known) salt mine of Pakistan?",
+  "options": [
+   "Sambhar Salt Mine",
+   "Khewra Salt Mine",
+   "Saindak Mine",
+   "Thar Coal Mine"
+  ],
+  "correct": 1,
+  "why": "Khewra Salt Mine in Jhelum district is the largest salt mine in Pakistan and one of the biggest in the world.",
+  "rel": "It lies in the Salt Range of Punjab. Pink Himalayan salt comes from here.",
+  "problem": "Source says 'largest mine of Pakistan'; by size Khewra is the standard exam answer (largest salt mine)."
+ },
+ {
+  "num": 776,
+  "page": 85,
+  "question": "From which country did Pakistan buy Gwadar?",
+  "options": [
+   "Oman",
+   "Iran",
+   "United Arab Emirates",
+   "Saudi Arabia"
+  ],
+  "correct": 0,
+  "why": "Pakistan bought Gwadar from the Sultan of Oman in 1958.",
+  "rel": "Gwadar formally joined Pakistan on 8 September 1958. Gwadar port is part of CPEC."
+ },
+ {
+  "num": 777,
+  "page": 85,
+  "question": "When was Operation Radd-ul-Fasaad launched?",
+  "options": [
+   "22 February 2017",
+   "22 June 2014",
+   "15 April 2016",
+   "10 January 2018"
+  ],
+  "correct": 0,
+  "why": "Operation Radd-ul-Fasaad was launched by the Pakistan Army on 22 February 2017.",
+  "rel": "It followed a wave of terror attacks in Feb 2017. Operation Zarb-e-Azb began in June 2014."
+ },
+ {
+  "num": 778,
+  "page": 85,
+  "question": "Which is the biggest city in the world by population (UN World Urbanization Prospects 2025)?",
+  "options": [
+   "Tokyo, Japan",
+   "Jakarta, Indonesia",
+   "Dhaka, Bangladesh",
+   "Delhi, India"
+  ],
+  "correct": 1,
+  "why": "The UN World Urbanization Prospects 2025 report ranks Jakarta first (about 42 million), ahead of Dhaka, with Tokyo third. As of Oct 2026 this is the latest UN ranking.",
+  "rel": "Older books list Tokyo as the largest city. Shanghai and Delhi are also among the largest.",
+  "problem": "Source answer 'Tokyo' is outdated; UN 2025 report ranks Jakarta first. Older exam keys still say Tokyo."
+ },
+ {
+  "num": 779,
+  "page": 85,
+  "question": "Through which amendment of the Constitution of Pakistan were Ahmadis declared non-Muslim?",
+  "options": [
+   "First Amendment (1974)",
+   "Second Amendment (1974)",
+   "Fourth Amendment (1975)",
+   "Eighth Amendment (1985)"
+  ],
+  "correct": 1,
+  "why": "The Second Amendment of 1974 declared Ahmadis non-Muslim for legal purposes.",
+  "rel": "It was passed under PM Zulfikar Ali Bhutto in September 1974. Article 260 was amended."
+ },
+ {
+  "num": 780,
+  "page": 86,
+  "question": "When did the capital of Pakistan officially shift from Karachi to Islamabad?",
+  "options": [
+   "1958",
+   "1967",
+   "1960",
+   "1973"
+  ],
+  "correct": 1,
+  "why": "Capital work started with Rawalpindi as interim capital in 1960; Islamabad formally became capital in 1967.",
+  "rel": "Islamabad was designed by Constantinos Doxiadis. Margalla Hills lie to its north.",
+  "problem": "Source says '14 August 1967' which is not a firmly documented date; year 1967 is the standard answer."
+ },
+ {
+  "num": 781,
+  "page": 86,
+  "question": "Which Pakistani cricketer has taken the most wickets in Test cricket?",
+  "options": [
+   "Waqar Younis",
+   "Imran Khan",
+   "Abdul Qadir",
+   "Wasim Akram"
+  ],
+  "correct": 3,
+  "why": "Wasim Akram took 414 Test wickets, the most for Pakistan.",
+  "rel": "Wasim also has 502 ODI wickets. Waqar Younis took 373 Test wickets."
+ },
+ {
+  "num": 782,
+  "page": 86,
+  "question": "What is the length of the Pakistan-Afghanistan border (Durand Line)?",
+  "options": [
+   "About 2,640 km",
+   "About 1,200 km",
+   "About 3,300 km",
+   "About 596 km"
+  ],
+  "correct": 0,
+  "why": "The Durand Line border is about 2,640 km long.",
+  "rel": "The line was drawn in 1893 by Sir Mortimer Durand. Afghanistan does not formally accept it."
+ },
+ {
+  "num": 783,
+  "page": 86,
+  "question": "In which year did America attack Iraq?",
+  "options": [
+   "1991",
+   "2001",
+   "2005",
+   "2003"
+  ],
+  "correct": 3,
+  "why": "The US-led invasion of Iraq began on 20 March 2003.",
+  "rel": "The Gulf War was in 1991. Saddam Hussein was captured in December 2003."
+ },
+ {
+  "num": 784,
+  "page": 86,
+  "question": "Which city is nicknamed 'Paradise City'?",
+  "options": [
+   "Las Vegas, Nevada",
+   "Honolulu, Hawaii",
+   "Miami, Florida",
+   "Northampton, Massachusetts"
+  ],
+  "correct": 3,
+  "why": "Northampton, Massachusetts is known by the nickname Paradise City.",
+  "rel": "Smith College is located in Northampton. Many other cities also use 'Paradise' as a slogan.",
+  "problem": "Obscure question; source answer kept as the standard key."
+ },
+ {
+  "num": 785,
+  "page": 86,
+  "question": "Where is the NATO headquarters located?",
+  "options": [
+   "Washington D.C., USA",
+   "Berlin, Germany",
+   "Rome, Italy",
+   "Brussels, Belgium"
+  ],
+  "correct": 3,
+  "why": "NATO headquarters is in Brussels, Belgium.",
+  "rel": "NATO has 32 members as of 2024 (Sweden joined in March 2024). Its first Secretary General was Lord Ismay.",
+  "problem": "Repeat of Q773."
+ },
+ {
+  "num": 786,
+  "page": 86,
+  "question": "Where is the headquarters of the WHO?",
+  "options": [
+   "New York, USA",
+   "Paris, France",
+   "Vienna, Austria",
+   "Geneva, Switzerland"
+  ],
+  "correct": 3,
+  "why": "The World Health Organization has its headquarters in Geneva, Switzerland.",
+  "rel": "WHO was founded on 7 April 1948. World Health Day is 7 April.",
+  "problem": "Repeat of later question about WHO."
+ },
+ {
+  "num": 787,
+  "page": 86,
+  "question": "Where is the headquarters of the UNO?",
+  "options": [
+   "Geneva, Switzerland",
+   "Paris, France",
+   "The Hague, Netherlands",
+   "New York City, USA"
+  ],
+  "correct": 3,
+  "why": "The United Nations headquarters is in New York City.",
+  "rel": "The UN was founded on 24 October 1945. The International Court of Justice sits at The Hague."
+ },
+ {
+  "num": 788,
+  "page": 87,
+  "question": "Which picture is printed on the back of the Pakistani 100 rupee note?",
+  "options": [
+   "Badshahi Mosque",
+   "Quaid-e-Azam Residency, Ziarat",
+   "Mohenjo-daro",
+   "Faisal Mosque"
+  ],
+  "correct": 1,
+  "why": "The back of the Rs 100 note shows the Quaid-e-Azam Residency in Ziarat, Balochistan.",
+  "rel": "Quaid-e-Azam's portrait is on the front of all notes. Ziarat is also known for its juniper forests.",
+  "problem": "Rs 100 back design as per State Bank; fine."
+ },
+ {
+  "num": 789,
+  "page": 87,
+  "question": "In which year did Pakistan join the United Nations?",
+  "options": [
+   "1948",
+   "1950",
+   "1945",
+   "1947"
+  ],
+  "correct": 3,
+  "why": "Pakistan became a UN member on 30 September 1947.",
+  "rel": "Afghanistan was the only country to vote against Pakistan's entry. Pakistan was the 56th member."
+ },
+ {
+  "num": 790,
+  "page": 87,
+  "question": "What was Hazrat Safiyya (RA) to Prophet Muhammad (PBUH)?",
+  "options": [
+   "Paternal aunt (Phupho)",
+   "Wife",
+   "Daughter",
+   "Foster mother"
+  ],
+  "correct": 0,
+  "why": "Safiyya bint Abdul Muttalib was the Prophet's paternal aunt and mother of Zubair ibn al-Awwam.",
+  "rel": "Another Safiyya (bint Huyayy) was the Prophet's wife, so read the name carefully.",
+  "problem": "Two Safiyyas exist; the answer 'Aunt' refers to Safiyya bint Abdul Muttalib."
+ },
+ {
+  "num": 791,
+  "page": 87,
+  "question": "From where do plants mainly absorb nitrogen?",
+  "options": [
+   "Air directly through leaves",
+   "Sunlight",
+   "Rainwater only",
+   "Soil (as nitrates)"
+  ],
+  "correct": 3,
+  "why": "Plants take nitrogen from the soil as nitrates and ammonium; bacteria fix atmospheric nitrogen into these forms.",
+  "rel": "Air is about 78% nitrogen. Rhizobium bacteria live in legume root nodules.",
+  "problem": "Air holds the nitrogen but plants cannot use it directly; standard answer is soil."
+ },
+ {
+  "num": 792,
+  "page": 87,
+  "question": "How many Nobel Prizes has Pakistan won (to Oct 2026, counting Pakistani-born laureates)?",
+  "options": [
+   "One",
+   "Two",
+   "Three",
+   "Four"
+  ],
+  "correct": 1,
+  "why": "Abdus Salam (Physics, 1979) and Malala Yousafzai (Peace, 2014) are Pakistan's two Nobel laureates.",
+  "rel": "Malala is the youngest Nobel laureate. Salam was the first Muslim to win a science Nobel.",
+  "problem": "Not rechecked for any new 2025-26 laureate; standard answer is two."
+ },
+ {
+  "num": 793,
+  "page": 87,
+  "question": "'Saifullah' (Sword of Allah) is the title of which companion?",
+  "options": [
+   "Khalid bin Walid (RA)",
+   "Hamza (RA)",
+   "Ali (RA)",
+   "Umar (RA)"
+  ],
+  "correct": 0,
+  "why": "The Prophet (PBUH) gave Khalid bin Walid the title Saifullah.",
+  "rel": "He conquered Syria and Iraq. He became Muslim around 629 CE."
+ },
+ {
+  "num": 794,
+  "page": 87,
+  "question": "Which was the first battle of Muslims against a non-Arab army?",
+  "options": [
+   "Battle of Badr",
+   "Battle of Khandaq",
+   "Battle of Mutah",
+   "Battle of Hunain"
+  ],
+  "correct": 2,
+  "why": "At Mutah (629 CE) Muslims fought the Byzantine (Roman) army, a non-Arab force.",
+  "rel": "Zaid bin Haritha, Jafar and Abdullah bin Rawaha were commanders there. Khalid bin Walid saved the army."
+ },
+ {
+  "num": 795,
+  "page": 87,
+  "question": "In which year was the Second Battle of Panipat fought?",
+  "options": [
+   "1526",
+   "1761",
+   "1658",
+   "1556"
+  ],
+  "correct": 3,
+  "why": "The Second Battle of Panipat was fought in 1556 between Akbar's forces (Bairam Khan) and Hemu.",
+  "rel": "First Panipat was 1526 (Babur vs Ibrahim Lodi). Third Panipat was 1761."
+ },
+ {
+  "num": 796,
+  "page": 87,
+  "question": "In which region of Pakistan is the Shina (Sheena) language spoken?",
+  "options": [
+   "Sindh",
+   "Balochistan",
+   "Punjab",
+   "Gilgit-Baltistan"
+  ],
+  "correct": 3,
+  "why": "Shina is mainly spoken in Gilgit-Baltistan.",
+  "rel": "Burushaski and Balti are other languages of the region."
+ },
+ {
+  "num": 797,
+  "page": 88,
+  "question": "Who gave the motto 'Unity, Faith, Discipline'?",
+  "options": [
+   "Allama Iqbal",
+   "Liaquat Ali Khan",
+   "Chaudhry Rahmat Ali",
+   "Muhammad Ali Jinnah"
+  ],
+  "correct": 3,
+  "why": "The Quaid-e-Azam gave the motto of Unity, Faith and Discipline to the nation.",
+  "rel": "It is the national motto of Pakistan. The order is Iman, Ittehad, Tanzeem."
+ },
+ {
+  "num": 798,
+  "page": 88,
+  "question": "What is the national motto of Pakistan?",
+  "options": [
+   "Unity, Faith, Discipline",
+   "Peace, Progress, Prosperity",
+   "Faith, Honour, Duty",
+   "Truth, Justice, Freedom"
+  ],
+  "correct": 0,
+  "why": "Pakistan's national motto is Unity, Faith, Discipline.",
+  "rel": "It appears on the national emblem. Urdu: Iman, Ittehad, Nazm."
+ },
+ {
+  "num": 799,
+  "page": 88,
+  "question": "Where did Allama Iqbal deliver his famous address of 1930?",
+  "options": [
+   "Lahore",
+   "Delhi",
+   "Allahabad",
+   "Karachi"
+  ],
+  "correct": 2,
+  "why": "Iqbal gave his Presidential Address at the Muslim League session at Allahabad in December 1930, proposing a separate Muslim state.",
+  "rel": "The Lahore Resolution came in 1940."
+ },
+ {
+  "num": 800,
+  "page": 88,
+  "question": "Who invented the (practical) electric light bulb?",
+  "options": [
+   "Thomas Edison",
+   "Nikola Tesla",
+   "Alexander Graham Bell",
+   "Michael Faraday"
+  ],
+  "correct": 0,
+  "why": "Thomas Edison made the first practical long-lasting bulb in 1879.",
+  "rel": "Joseph Swan also worked on the bulb in Britain. Edison also invented the phonograph."
+ },
+ {
+  "num": 801,
+  "page": 88,
+  "question": "Who invented the electric motor (first demonstration, 1821)?",
+  "options": [
+   "Michael Faraday",
+   "Thomas Edison",
+   "Alexander Volta",
+   "James Watt"
+  ],
+  "correct": 0,
+  "why": "Faraday demonstrated the first electric motor principle in 1821.",
+  "rel": "Faraday also discovered electromagnetic induction. Nikola Tesla invented the AC induction motor.",
+  "problem": "Question has more than one possible claim; Faraday is the standard exam key."
+ },
+ {
+  "num": 802,
+  "page": 88,
+  "question": "The Khyber Pass connects Pakistan with which country?",
+  "options": [
+   "Iran",
+   "China",
+   "India",
+   "Afghanistan"
+  ],
+  "correct": 3,
+  "why": "The Khyber Pass links Peshawar (Pakistan) with Jalalabad/Kabul in Afghanistan.",
+  "rel": "It lies in the Safed Koh range. Torkham is the border crossing."
+ },
+ {
+  "num": 803,
+  "page": 88,
+  "question": "Who is the Chairman of the Senate of Pakistan (as of Oct 2026)?",
+  "options": [
+   "Sadiq Sanjrani",
+   "Mian Muhammad Soomro",
+   "Farooq Naek",
+   "Syed Yousaf Raza Gilani"
+  ],
+  "correct": 3,
+  "why": "Gilani took office on 9 April 2024 and is still chairman as of Oct 2026.",
+  "rel": "The Senate has 96 members (after 2018 merger). The deputy chairman is Syedaal Khan Nasar.",
+  "problem": "Checked by web search; source answer is still correct."
+ },
+ {
+  "num": 804,
+  "page": 88,
+  "question": "What is the upper house of Pakistan's Parliament called?",
+  "options": [
+   "Senate",
+   "National Assembly",
+   "Provincial Assembly",
+   "Council of Elders"
+  ],
+  "correct": 0,
+  "why": "The Senate is the upper house; the National Assembly is the lower house.",
+  "rel": "Senate members are elected for 6 years and half retire every 3 years."
+ },
+ {
+  "num": "804b",
+  "page": 89,
+  "question": "In which year was the current Constitution of Pakistan adopted?",
+  "options": [
+   "1973",
+   "1956",
+   "1962",
+   "1985"
+  ],
+  "correct": 0,
+  "why": "Pakistan's current Constitution was passed in 1973 and enforced on 14 August 1973.",
+  "rel": "The first constitution was 1956; the second was 1962 (Ayub Khan).",
+  "problem": "Question number missing in the scan; placed after 804."
+ },
+ {
+  "num": 805,
+  "page": 89,
+  "question": "What was Urwa bin Zubair's relation with Hazrat Aisha (RA)?",
+  "options": [
+   "Son",
+   "Brother",
+   "Nephew",
+   "Cousin"
+  ],
+  "correct": 2,
+  "why": "Urwa was the son of Zubair and Asma (Aisha's sister), so he was Aisha's nephew and she was his aunt.",
+  "rel": "He was a major early narrator of hadith and one of the seven Fuqaha of Madinah.",
+  "problem": "Source says 'Aunt'; question asks his relation to her, which is nephew (she is his aunt)."
+ },
+ {
+  "num": 806,
+  "page": 89,
+  "question": "Who was the adopted son (Muh-boley beta) of the Prophet Muhammad (PBUH)?",
+  "options": [
+   "Usama bin Zaid (RA)",
+   "Zaid bin Haritha (RA)",
+   "Ali bin Abi Talib (RA)",
+   "Bilal bin Rabah (RA)"
+  ],
+  "correct": 1,
+  "why": "Zaid bin Haritha was freed and adopted by the Prophet before Islam.",
+  "rel": "Zaid is the only companion named in the Quran (Surah Al-Ahzab). He died at Mutah."
+ },
+ {
+  "num": 807,
+  "page": 89,
+  "question": "'Saifullah' is the title of which companion (Sahabi)?",
+  "options": [
+   "Khalid bin Waleed (RA)",
+   "Saad bin Abi Waqqas (RA)",
+   "Amr bin Al-Aas (RA)",
+   "Abu Ubaidah (RA)"
+  ],
+  "correct": 0,
+  "why": "Khalid bin Waleed was called Saifullah (Sword of Allah).",
+  "rel": "He never lost a battle. He died in 642 CE in Homs.",
+  "problem": "Repeat of Q793."
+ },
+ {
+  "num": 808,
+  "page": 89,
+  "question": "'Zabihullah' is the title of which Prophet?",
+  "options": [
+   "Hazrat Ibrahim (AS)",
+   "Hazrat Yaqub (AS)",
+   "Hazrat Musa (AS)",
+   "Hazrat Ismail (AS)"
+  ],
+  "correct": 3,
+  "why": "Hazrat Ismail (AS) is known as Zabihullah (the one offered for sacrifice).",
+  "rel": "Ibrahim is Khalilullah. Musa is Kalimullah. Isa is Ruhullah.",
+  "problem": "Source says Ibrahim; the standard title Zabihullah belongs to Ismail (AS)."
+ },
+ {
+  "num": 809,
+  "page": 89,
+  "question": "What is the capital of Gilgit-Baltistan?",
+  "options": [
+   "Skardu",
+   "Gilgit",
+   "Hunza",
+   "Chilas"
+  ],
+  "correct": 1,
+  "why": "Gilgit is the capital of Gilgit-Baltistan.",
+  "rel": "Skardu is the main city of Baltistan. K2 is in this region."
+ },
+ {
+  "num": 810,
+  "page": 89,
+  "question": "What is the length of the Pakistan-China border?",
+  "options": [
+   "About 1,000 km",
+   "About 596 km",
+   "About 2,430 km",
+   "About 2,640 km"
+  ],
+  "correct": 1,
+  "why": "The Pakistan-China border is about 596 km long.",
+  "rel": "The border treaty was signed in 1963. The Khunjerab Pass is the border crossing.",
+  "problem": "Some sources give 523 km; 596 km is the commonly used exam figure."
+ },
+ {
+  "num": 811,
+  "page": 89,
+  "question": "Which city of Pakistan has the highest literacy rate?",
+  "options": [
+   "Islamabad",
+   "Lahore",
+   "Karachi",
+   "Peshawar"
+  ],
+  "correct": 0,
+  "why": "Islamabad has the highest literacy rate among Pakistan's major cities (about 88 percent).",
+  "rel": "Karachi and Lahore follow. Pakistan's overall literacy is around 60 percent.",
+  "problem": "Figures vary by census year; Islamabad is the standard answer."
+ },
+ {
+  "num": 812,
+  "page": 89,
+  "question": "When did Fatima Jinnah join the Muslim League?",
+  "options": [
+   "1934",
+   "1939",
+   "1947",
+   "1929"
+  ],
+  "correct": 0,
+  "why": "Most sources say Fatima Jinnah entered Muslim League work in the mid/late 1930s, with 1934 (Bombay Provincial Muslim League committee) commonly cited.",
+  "rel": "She is called Madar-e-Millat. She contested the 1965 presidential election against Ayub Khan.",
+  "problem": "Source says 1939; sources disagree (1934, 1937, 1938). 1934 used as the most cited year. Low confidence."
+ },
+ {
+  "num": 813,
+  "page": 90,
+  "question": "In which years did the Khilafat Movement run?",
+  "options": [
+   "1905-1911",
+   "1930-1935",
+   "1942-1947",
+   "1919-1924"
+  ],
+  "correct": 3,
+  "why": "The Khilafat Movement ran from 1919 until the Turkish Caliphate was abolished in 1924.",
+  "rel": "Leaders were Maulana Muhammad Ali Jauhar and Shaukat Ali. Gandhi supported it."
+ },
+ {
+  "num": 814,
+  "page": 90,
+  "question": "In which city was the Indian National Congress formed in 1885?",
+  "options": [
+   "Calcutta",
+   "Bombay",
+   "Madras",
+   "Delhi"
+  ],
+  "correct": 1,
+  "why": "The first session of Congress was held in Bombay in December 1885.",
+  "rel": "A. O. Hume founded it. W. C. Bonnerjee was its first president."
+ },
+ {
+  "num": 815,
+  "page": 90,
+  "question": "Who was the first woman Governor of the State Bank of Pakistan?",
+  "options": [
+   "Dr. Ishrat Husain",
+   "Dr. Shamshad Akhtar",
+   "Dr. Reza Baqir",
+   "Dr. Asim Hafeez"
+  ],
+  "correct": 1,
+  "why": "Dr. Shamshad Akhtar became the first woman Governor of SBP in 2005.",
+  "rel": "SBP was established in 1948. Its first governor was Zahid Hussain."
+ },
+ {
+  "num": 816,
+  "page": 90,
+  "question": "Which city of Pakistan is called the 'City of Flowers'?",
+  "options": [
+   "Lahore",
+   "Quetta",
+   "Multan",
+   "Peshawar"
+  ],
+  "correct": 3,
+  "why": "Peshawar is known as the City of Flowers.",
+  "rel": "Quetta is the Fruit Garden of Pakistan. Lahore is the City of Gardens."
+ },
+ {
+  "num": 817,
+  "page": 90,
+  "question": "In which Surah are wudu, ghusl and tayammum described?",
+  "options": [
+   "Al-Baqarah",
+   "Al-Imran",
+   "Al-Anam",
+   "Al-Maidah"
+  ],
+  "correct": 3,
+  "why": "Surah Al-Maidah (5:6) details wudu, ghusl and tayammum.",
+  "rel": "Tayammum is also mentioned in An-Nisa 4:43.",
+  "problem": "Source spells 'al madiah'."
+ },
+ {
+  "num": 818,
+  "page": 90,
+  "question": "Under whose rule was the 1962 Constitution of Pakistan introduced?",
+  "options": [
+   "Yahya Khan",
+   "Iskander Mirza",
+   "Ayub Khan",
+   "Zia-ul-Haq"
+  ],
+  "correct": 2,
+  "why": "The 1962 Constitution was enforced by President Muhammad Ayub Khan.",
+  "rel": "It introduced a presidential system and Basic Democracies."
+ },
+ {
+  "num": 819,
+  "page": 90,
+  "question": "Which planet is nearest to the Sun?",
+  "options": [
+   "Venus",
+   "Mars",
+   "Mercury",
+   "Earth"
+  ],
+  "correct": 2,
+  "why": "Mercury is the closest planet to the Sun.",
+  "rel": "Venus is the hottest planet. Mercury has the shortest year (88 days)."
+ },
+ {
+  "num": 820,
+  "page": 90,
+  "question": "Which country hosted the first Asian Games (1951)?",
+  "options": [
+   "Japan",
+   "Philippines",
+   "China",
+   "India"
+  ],
+  "correct": 3,
+  "why": "The first Asian Games were held in New Delhi, India in 1951.",
+  "rel": "The 2026 Asian Games are in Aichi-Nagoya, Japan."
+ },
+ {
+  "num": 821,
+  "page": 91,
+  "question": "What is the value of cos 0 degrees?",
+  "options": [
+   "0",
+   "1",
+   "-1",
+   "1/2"
+  ],
+  "correct": 1,
+  "why": "cos 0 = 1.",
+  "rel": "sin 0 = 0, tan 0 = 0."
+ },
+ {
+  "num": 822,
+  "page": 91,
+  "question": "What is the value of sin 90 degrees?",
+  "options": [
+   "0",
+   "1",
+   "-1",
+   "1/2"
+  ],
+  "correct": 1,
+  "why": "sin 90 = 1.",
+  "rel": "cos 90 = 0, tan 90 is undefined."
+ },
+ {
+  "num": 823,
+  "page": 91,
+  "question": "Mahatma Gandhi was the leader of which country?",
+  "options": [
+   "India",
+   "Pakistan",
+   "Sri Lanka",
+   "South Africa"
+  ],
+  "correct": 0,
+  "why": "Gandhi led India's freedom struggle and is called Father of the Nation.",
+  "rel": "He started Satyagraha in South Africa. He was assassinated on 30 January 1948."
+ },
+ {
+  "num": 824,
+  "page": 91,
+  "question": "In which year did Muhammad bin Qasim enter Sindh?",
+  "options": [
+   "622 AD",
+   "711 AD",
+   "712 AD",
+   "1001 AD"
+  ],
+  "correct": 2,
+  "why": "Muhammad bin Qasim conquered Sindh in 712 AD, defeating Raja Dahir.",
+  "rel": "Sindh is called Bab-ul-Islam.",
+  "problem": "Some books give 711 AD for landing; 712 is the common exam answer."
+ },
+ {
+  "num": 825,
+  "page": 91,
+  "question": "Which country is called the 'Land of the Rising Sun'?",
+  "options": [
+   "China",
+   "South Korea",
+   "Japan",
+   "Thailand"
+  ],
+  "correct": 2,
+  "why": "Japan is called the Land of the Rising Sun (Nippon means origin of the sun).",
+  "rel": "Its capital is Tokyo. Its currency is the yen.",
+  "problem": "Source says 'City of rising sun... japan'; Japan is a country, so question fixed."
+ },
+ {
+  "num": 826,
+  "page": 91,
+  "question": "In which province/region is the Sheena (Shina) language spoken?",
+  "options": [
+   "Khyber Pakhtunkhwa",
+   "Balochistan",
+   "Sindh",
+   "Gilgit-Baltistan"
+  ],
+  "correct": 3,
+  "why": "Shina is spoken mainly in Gilgit-Baltistan.",
+  "rel": "Shina is also spoken in parts of Kohistan.",
+  "problem": "Repeat of Q796."
+ },
+ {
+  "num": 827,
+  "page": 91,
+  "question": "What is the tenure (term) of a Senator in Pakistan?",
+  "options": [
+   "3 years",
+   "6 years",
+   "4 years",
+   "5 years"
+  ],
+  "correct": 1,
+  "why": "Senators serve a 6-year term; half retire every 3 years.",
+  "rel": "The National Assembly's term is 5 years."
+ },
+ {
+  "num": 828,
+  "page": 91,
+  "question": "Who was the last British Viceroy/Governor-General of India?",
+  "options": [
+   "Lord Wavell",
+   "Lord Curzon",
+   "Lord Mountbatten",
+   "Lord Linlithgow"
+  ],
+  "correct": 2,
+  "why": "Lord Mountbatten was the last Viceroy and later first Governor-General of independent India.",
+  "rel": "The 3 June 1947 Plan is named after him.",
+  "problem": "Some say 'last Governor of India'; Mountbatten is the standard answer."
+ },
+ {
+  "num": 829,
+  "page": 92,
+  "question": "What is the currency of Saudi Arabia?",
+  "options": [
+   "Dinar",
+   "Riyal",
+   "Dirham",
+   "Rupee"
+  ],
+  "correct": 1,
+  "why": "The Saudi riyal is Saudi Arabia's currency.",
+  "rel": "UAE uses the dirham. Kuwait uses the dinar.",
+  "problem": "Source says 'Arabia'; interpreted as Saudi Arabia."
+ },
+ {
+  "num": 830,
+  "page": 92,
+  "question": "What is the height of the highest peak of Pakistan (K2)?",
+  "options": [
+   "8,848 m",
+   "8,126 m",
+   "8,611 m",
+   "7,500 m"
+  ],
+  "correct": 2,
+  "why": "K2 is Pakistan's highest peak at 8,611 m.",
+  "rel": "K2 is the second highest peak in the world. Nanga Parbat is 8,126 m.",
+  "problem": "Source says 'exact date' but gives 8611, so asked as height."
+ },
+ {
+  "num": 831,
+  "page": 92,
+  "question": "In which year was Bengal partitioned?",
+  "options": [
+   "1911",
+   "1857",
+   "1905",
+   "1947"
+  ],
+  "correct": 2,
+  "why": "Lord Curzon partitioned Bengal in 1905.",
+  "rel": "It was annulled in 1911. The Muslim League was founded in 1906."
+ },
+ {
+  "num": 832,
+  "page": 92,
+  "question": "Which is the famous salt mountain (range) of Pakistan?",
+  "options": [
+   "Khewra",
+   "Murree",
+   "Margalla",
+   "Koh-e-Sulaiman"
+  ],
+  "correct": 0,
+  "why": "The Khewra salt mine lies in the Salt Range of Punjab.",
+  "rel": "It is the second largest salt mine in the world."
+ },
+ {
+  "num": 833,
+  "page": 92,
+  "question": "Who built the Shah Jahan Mosque in Woking (UK)?",
+  "options": [
+   "Shah Jahan",
+   "Gottlieb Wilhelm Leitner",
+   "Aurangzeb",
+   "Sir Syed Ahmad Khan"
+  ],
+  "correct": 1,
+  "why": "The Shah Jahan Mosque at Woking was built in 1889 by Dr Gottlieb Leitner, funded by the Begum of Bhopal Shah Jahan.",
+  "rel": "It is the oldest purpose-built mosque in Britain.",
+  "problem": "Source answer is for Woking mosque; the Shah Jahan Mosque in Thatta was built by Shah Jahan."
+ },
+ {
+  "num": 834,
+  "page": 92,
+  "question": "In which battle was Hazrat Hamza (RA) martyred?",
+  "options": [
+   "Battle of Badr",
+   "Battle of Khandaq",
+   "Battle of Uhud",
+   "Battle of Khaybar"
+  ],
+  "correct": 2,
+  "why": "Hamza was martyred at Uhud in 625 CE (3 AH).",
+  "rel": "He is called Asadullah and Sayyid-ush-Shuhada."
+ },
+ {
+  "num": 835,
+  "page": 92,
+  "question": "Which gas is the main cause of global warming?",
+  "options": [
+   "Oxygen",
+   "Carbon dioxide (CO2)",
+   "Nitrogen",
+   "Helium"
+  ],
+  "correct": 1,
+  "why": "CO2 is the main greenhouse gas from human activity.",
+  "rel": "Methane is another strong greenhouse gas."
+ },
+ {
+  "num": 836,
+  "page": 92,
+  "question": "Where is Mahabat Khan Mosque located?",
+  "options": [
+   "Peshawar",
+   "Lahore",
+   "Multan",
+   "Thatta"
+  ],
+  "correct": 0,
+  "why": "Mahabat Khan Mosque is in Peshawar, built in the 17th century.",
+  "rel": "It was built under Mughal governor Mahabat Khan around 1630.",
+  "problem": "Source spells 'Masjid mohabbat'."
+ },
+ {
+  "num": 837,
+  "page": 92,
+  "question": "What is the deepest known place on Earth?",
+  "options": [
+   "Puerto Rico Trench",
+   "Java Trench",
+   "Challenger Deep",
+   "Tonga Trench"
+  ],
+  "correct": 2,
+  "why": "Challenger Deep in the Mariana Trench is about 10,900 m deep.",
+  "rel": "It lies in the western Pacific near Guam."
+ },
+ {
+  "num": 838,
+  "page": 93,
+  "question": "In which year did the USA invade Afghanistan?",
+  "options": [
+   "2003",
+   "2004",
+   "2001",
+   "1998"
+  ],
+  "correct": 2,
+  "why": "The US-led invasion began on 7 October 2001 after the 9/11 attacks.",
+  "rel": "US forces withdrew in August 2021.",
+  "problem": "Source says 2004, which is wrong."
+ },
+ {
+  "num": 839,
+  "page": 93,
+  "question": "The Pakistan-India war of 1965 was fought during which period?",
+  "options": [
+   "1 March - 15 April 1965",
+   "5 August - 23 September 1965",
+   "6 December - 16 December 1965",
+   "3 December - 16 December 1965"
+  ],
+  "correct": 1,
+  "why": "The war ran from August to the UN-brokered ceasefire on 23 September 1965.",
+  "rel": "The Tashkent Declaration was signed in January 1966. Defence Day is 6 September.",
+  "problem": "Question 'exact date' reworded to period."
+ },
+ {
+  "num": "839b",
+  "page": 93,
+  "question": "Who wrote the national anthem of Pakistan?",
+  "options": [
+   "Allama Iqbal",
+   "Faiz Ahmad Faiz",
+   "Hafeez Jalandhari",
+   "Josh Malihabadi"
+  ],
+  "correct": 2,
+  "why": "Hafeez Jalandhari wrote the lyrics of Qaumi Tarana.",
+  "rel": "Music was by Ahmed G. Chagla. It was adopted in 1954.",
+  "problem": "Question number missing in scan; placed after 839."
+ },
+ {
+  "num": 840,
+  "page": 93,
+  "question": "What is the capital of Turkey?",
+  "options": [
+   "Ankara",
+   "Istanbul",
+   "Izmir",
+   "Bursa"
+  ],
+  "correct": 0,
+  "why": "Ankara is the capital of Turkey.",
+  "rel": "Istanbul was the Ottoman capital."
+ },
+ {
+  "num": 841,
+  "page": 93,
+  "question": "What is the capital of Turkmenistan?",
+  "options": [
+   "Tashkent",
+   "Bishkek",
+   "Dushanbe",
+   "Ashgabat"
+  ],
+  "correct": 3,
+  "why": "Ashgabat is the capital of Turkmenistan.",
+  "rel": "Tashkent is Uzbekistan's capital."
+ },
+ {
+  "num": 842,
+  "page": 93,
+  "question": "In which game is the 'free throw' used?",
+  "options": [
+   "Football",
+   "Hockey",
+   "Basketball",
+   "Cricket"
+  ],
+  "correct": 2,
+  "why": "A free throw is a penalty shot in basketball.",
+  "rel": "A free throw is worth 1 point."
+ },
+ {
+  "num": 843,
+  "page": 93,
+  "question": "What is the height of K2?",
+  "options": [
+   "8,848 m",
+   "8,126 m",
+   "8,586 m",
+   "8,611 m"
+  ],
+  "correct": 3,
+  "why": "K2 is 8,611 m high.",
+  "rel": "Mount Everest is 8,848 m.",
+  "problem": "Source says 'length'; asked as height."
+ },
+ {
+  "num": 844,
+  "page": 93,
+  "question": "Into how many main geographical/administrative divisions is Pakistan commonly divided (provinces plus territories)?",
+  "options": [
+   "4",
+   "5",
+   "6 (4 provinces and 2 territories)",
+   "8"
+  ],
+  "correct": 2,
+  "why": "Pakistan has 4 provinces and territories such as Gilgit-Baltistan and AJK as per the standard exam answer.",
+  "rel": "The Islamabad Capital Territory is also federally administered.",
+  "problem": "Counting varies; the standard answer in the source is 6."
+ },
+ {
+  "num": 845,
+  "page": 94,
+  "question": "Who was the adopted son of the Prophet Muhammad (PBUH)?",
+  "options": [
+   "Usama bin Zaid (RA)",
+   "Ali (RA)",
+   "Salman Farsi (RA)",
+   "Zaid bin Haritha (RA)"
+  ],
+  "correct": 3,
+  "why": "Zaid bin Haritha was adopted by the Prophet before revelation.",
+  "rel": "His son Usama led the last army sent by the Prophet.",
+  "problem": "Repeat of Q806."
+ },
+ {
+  "num": 846,
+  "page": 94,
+  "question": "Who is the founder of Facebook?",
+  "options": [
+   "Jack Dorsey",
+   "Mark Zuckerberg",
+   "Larry Page",
+   "Elon Musk"
+  ],
+  "correct": 1,
+  "why": "Mark Zuckerberg founded Facebook in 2004 at Harvard.",
+  "rel": "The company was renamed Meta in 2021."
+ },
+ {
+  "num": 847,
+  "page": 94,
+  "question": "Who founded Microsoft?",
+  "options": [
+   "Steve Jobs and Steve Wozniak",
+   "Larry Page and Sergey Brin",
+   "Jeff Bezos and Elon Musk",
+   "Bill Gates and Paul Allen"
+  ],
+  "correct": 3,
+  "why": "Bill Gates and Paul Allen founded Microsoft in 1975.",
+  "rel": "Microsoft is based in Redmond, Washington."
+ },
+ {
+  "num": 848,
+  "page": 94,
+  "question": "When did Fatima Jinnah join the All India Muslim League?",
+  "options": [
+   "1934",
+   "1939",
+   "1947",
+   "1929"
+  ],
+  "correct": 0,
+  "why": "Most sources place her entry into Muslim League work in the mid/late 1930s, with 1934 commonly cited.",
+  "rel": "She was the sister of Quaid-e-Azam.",
+  "problem": "Source says 1939; sources disagree (1934, 1937, 1938). Low confidence. Repeat of Q812."
+ },
+ {
+  "num": 849,
+  "page": 94,
+  "question": "In which years did the Khilafat Movement run?",
+  "options": [
+   "1857-1860",
+   "1919-1924",
+   "1930-1932",
+   "1940-1947"
+  ],
+  "correct": 1,
+  "why": "The Khilafat Movement lasted from 1919 to 1924.",
+  "rel": "It ended when Turkey abolished the Caliphate.",
+  "problem": "Repeat of Q813."
+ },
+ {
+  "num": 850,
+  "page": 94,
+  "question": "In which city was the Indian National Congress formed?",
+  "options": [
+   "Bombay",
+   "Delhi",
+   "Lahore",
+   "Calcutta"
+  ],
+  "correct": 0,
+  "why": "Congress was founded in Bombay in 1885.",
+  "rel": "A. O. Hume was the founder.",
+  "problem": "Repeat of Q814."
+ },
+ {
+  "num": 851,
+  "page": 94,
+  "question": "Who was the first woman head (Governor) of the State Bank of Pakistan?",
+  "options": [
+   "Dr. Ishrat Husain",
+   "Dr. Shamshad Akhtar",
+   "Dr. Yaseen Anwar",
+   "Dr. Reza Baqir"
+  ],
+  "correct": 1,
+  "why": "Shamshad Akhtar became SBP Governor in 2005.",
+  "rel": "She served 2005-2006.",
+  "problem": "Repeat of Q815."
+ },
+ {
+  "num": 852,
+  "page": 94,
+  "question": "Which city is called the City of Flowers in Pakistan?",
+  "options": [
+   "Quetta",
+   "Peshawar",
+   "Faisalabad",
+   "Sialkot"
+  ],
+  "correct": 1,
+  "why": "Peshawar is called the City of Flowers.",
+  "rel": "It is the capital of Khyber Pakhtunkhwa.",
+  "problem": "Repeat of Q816."
+ },
+ {
+  "num": 853,
+  "page": 94,
+  "question": "Who was the most recent Chief Minister of Khyber Pakhtunkhwa (Oct 2025 to Oct 2026)?",
+  "options": [
+   "Ali Amin Gandapur",
+   "Mahmood Khan",
+   "Sohail Afridi",
+   "Pervez Khattak"
+  ],
+  "correct": 2,
+  "why": "Sohail Afridi became CM in October 2025 after Ali Amin Gandapur resigned. Web search says governor's rule was imposed on 11 October 2026, so the post is vacant as of Oct 2026.",
+  "rel": "Provincial governor Faisal Karim Kundi. The KP Assembly has 145 seats.",
+  "problem": "Source answer (Ali Amin Gandapur) is outdated; web result says governor's rule since 11 Oct 2026 - verify before exam."
+ },
+ {
+  "num": 854,
+  "page": 95,
+  "question": "In which Surah are wudu, ghusl and tayammum described?",
+  "options": [
+   "Al-Maidah",
+   "Al-Baqarah",
+   "Al-Kahf",
+   "Yaseen"
+  ],
+  "correct": 0,
+  "why": "Surah Al-Maidah verse 6 describes them.",
+  "rel": "Tayammum is also in An-Nisa 4:43.",
+  "problem": "Repeat of Q817."
+ },
+ {
+  "num": 855,
+  "page": 95,
+  "question": "Under whose regime was the 1962 Constitution introduced?",
+  "options": [
+   "General Ayub Khan",
+   "General Zia-ul-Haq",
+   "General Yahya Khan",
+   "Zulfikar Ali Bhutto"
+  ],
+  "correct": 0,
+  "why": "The 1962 Constitution came during Ayub Khan's rule.",
+  "rel": "It was abrogated in 1969.",
+  "problem": "Repeat of Q818."
+ },
+ {
+  "num": 856,
+  "page": 95,
+  "question": "Which planet is nearest to the Sun?",
+  "options": [
+   "Venus",
+   "Jupiter",
+   "Saturn",
+   "Mercury"
+  ],
+  "correct": 3,
+  "why": "Mercury is nearest to the Sun.",
+  "rel": "It has no moons.",
+  "problem": "Repeat of Q819."
+ },
+ {
+  "num": 857,
+  "page": 95,
+  "question": "Which Pakistani cricketer has the most Test wickets?",
+  "options": [
+   "Waqar Younis",
+   "Shoaib Akhtar",
+   "Wasim Akram",
+   "Saqlain Mushtaq"
+  ],
+  "correct": 2,
+  "why": "Wasim Akram has 414 Test wickets.",
+  "rel": "He captained Pakistan to the 1992 World Cup win as a player under Imran Khan.",
+  "problem": "Repeat of Q781."
+ },
+ {
+  "num": 858,
+  "page": 95,
+  "question": "Harrappa is near which city of Punjab?",
+  "options": [
+   "Multan",
+   "Sahiwal",
+   "Bahawalpur",
+   "Rawalpindi"
+  ],
+  "correct": 1,
+  "why": "Harappa is in Sahiwal district, Punjab.",
+  "rel": "Harappa civilisation dates to about 2500 BC. Mohenjo-daro is in Sindh.",
+  "problem": "Source says '20 km away'; actual distance is about 25-35 km depending on road, question reworded."
+ },
+ {
+  "num": 859,
+  "page": 95,
+  "question": "How many permanent members does the UN Security Council have?",
+  "options": [
+   "4",
+   "10",
+   "15",
+   "5"
+  ],
+  "correct": 3,
+  "why": "The five are USA, UK, France, Russia and China.",
+  "rel": "The Council has 15 members in total. They have veto power."
+ },
+ {
+  "num": 860,
+  "page": 95,
+  "question": "Which country hosted the first Asian Games?",
+  "options": [
+   "Japan",
+   "India",
+   "China",
+   "Thailand"
+  ],
+  "correct": 1,
+  "why": "The first Asian Games were held in New Delhi in 1951.",
+  "rel": "The games are held every four years.",
+  "problem": "Repeat of Q820."
+ },
+ {
+  "num": 861,
+  "page": 95,
+  "question": "What is the antonym of 'wild'?",
+  "options": [
+   "Fierce",
+   "Calm",
+   "Savage",
+   "Rough"
+  ],
+  "correct": 1,
+  "why": "Calm is the opposite (peaceful, not wild).",
+  "rel": "Tame is another common antonym.",
+  "problem": "Source answer Calm kept; 'tame' is also standard when 'wild' means untamed."
+ },
+ {
+  "num": 862,
+  "page": 96,
+  "question": "In which year was the Pakistan-China border agreement signed?",
+  "options": [
+   "1949",
+   "1951",
+   "1965",
+   "1963"
+  ],
+  "correct": 3,
+  "why": "The boundary agreement between Pakistan and China was signed on 2 March 1963.",
+  "rel": "China gave back about 1,942 sq km of area."
+ },
+ {
+  "num": 863,
+  "page": 96,
+  "question": "Snakes cannot _____.",
+  "options": [
+   "See",
+   "Smell",
+   "Swim",
+   "Hear (airborne sound)"
+  ],
+  "correct": 3,
+  "why": "Snakes have no external ears and cannot hear airborne sounds well; they sense ground vibrations.",
+  "rel": "They smell with the tongue and Jacobson's organ.",
+  "problem": "Source '(hear)' - completing question as 'Snakes cannot hear'."
+ },
+ {
+  "num": 864,
+  "page": 96,
+  "question": "Gandhi was the leader of which country?",
+  "options": [
+   "Nepal",
+   "Bangladesh",
+   "Burma",
+   "India"
+  ],
+  "correct": 3,
+  "why": "Gandhi led India's freedom movement.",
+  "rel": "He was born in Porbandar in 1869.",
+  "problem": "Repeat of Q823."
+ },
+ {
+  "num": 865,
+  "page": 96,
+  "question": "Who is the founder/owner of Facebook?",
+  "options": [
+   "Bill Gates",
+   "Jeff Bezos",
+   "Evan Spiegel",
+   "Mark Zuckerberg"
+  ],
+  "correct": 3,
+  "why": "Mark Zuckerberg founded Facebook and leads Meta.",
+  "rel": "Facebook began in 2004.",
+  "problem": "Repeat of Q846."
+ },
+ {
+  "num": 866,
+  "page": 96,
+  "question": "Which city is called the 'Heart of Pakistan'?",
+  "options": [
+   "Lahore",
+   "Karachi",
+   "Islamabad",
+   "Multan"
+  ],
+  "correct": 0,
+  "why": "Lahore is called the Heart of Pakistan (Dil of Pakistan).",
+  "rel": "Karachi is the City of Lights. Lahore is also the Cultural capital.",
+  "problem": "Nickname-based; Lahore is the standard answer."
+ },
+ {
+  "num": 867,
+  "page": 96,
+  "question": "Which country opposed Pakistan's entry into the UNO?",
+  "options": [
+   "Afghanistan",
+   "India",
+   "Iran",
+   "Burma"
+  ],
+  "correct": 0,
+  "why": "Afghanistan voted against Pakistan's membership in 1947.",
+  "rel": "It later reversed its stand."
+ },
+ {
+  "num": 868,
+  "page": 96,
+  "question": "Olympic Airways was the airline of which country?",
+  "options": [
+   "Turkey",
+   "Italy",
+   "Greece",
+   "Egypt"
+  ],
+  "correct": 2,
+  "why": "Olympic Airways was Greece's national airline (founded by Aristotle Onassis, now Olympic Air).",
+  "rel": "Greece is the birthplace of the Olympic Games."
+ },
+ {
+  "num": 869,
+  "page": 96,
+  "question": "Who won the ICC Men's Cricketer of the Year (Sir Garfield Sobers Trophy) for 2022?",
+  "options": [
+   "Babar Azam",
+   "Ben Stokes",
+   "Virat Kohli",
+   "Shaheen Afridi"
+  ],
+  "correct": 0,
+  "why": "Babar Azam won the Sobers Trophy for 2022 and also ODI Cricketer of the Year.",
+  "rel": "Shaheen Afridi won in 2021. Ben Stokes was Test Cricketer of 2022.",
+  "problem": "Verified by web search."
+ },
+ {
+  "num": 870,
+  "page": 96,
+  "question": "In which year did Pakistan join SEATO?",
+  "options": [
+   "1954",
+   "1955",
+   "1951",
+   "1959"
+  ],
+  "correct": 0,
+  "why": "Pakistan joined SEATO in 1954.",
+  "rel": "It joined CENTO (Baghdad Pact) in 1955 and left SEATO in 1973.",
+  "problem": "Source reads 'Q8. When Pakistan join SEATO?'. Number prefix ignored."
+ }
+]

@@ -1,0 +1,535 @@
+[
+{
+"item": 47,
+"section": "Verbal: Maths & Reasoning",
+"question": "If the 1st day of a month is Sunday, what day is the 17th?",
+"answer": "Monday",
+"wrong": [
+"Sunday",
+"Tuesday",
+"Saturday"
+],
+"reason": "17 - 1 = 16 days later; 16 = 14 + 2, so two days after Sunday is Monday.",
+"rep": 0
+},
+{
+"item": 64,
+"section": "Pakistan Studies",
+"question": "Who moved the Lahore (Pakistan) Resolution on 23 March 1940?",
+"answer": "A. K. Fazlul Haq",
+"wrong": [
+"Choudhry Khaliquzzaman",
+"Sir Sikandar Hayat Khan",
+"Liaquat Ali Khan"
+],
+"reason": "A. K. Fazlul Haq, Chief Minister of Bengal, moved the resolution at the Lahore session of the All India Muslim League and Choudhry Khaliquzzaman seconded it. Quaid-e-Azam Muhammad Ali Jinnah presided.",
+"rep": 1
+},
+{
+"item": 82,
+"section": "General Knowledge",
+"question": "What is the rank of Pakistan in the world by population (2026)?",
+"answer": "5th",
+"wrong": [
+"4th",
+"6th",
+"7th"
+],
+"reason": "After India, China, the United States and Indonesia, Pakistan is the 5th most populous country (about 255 to 260 million).",
+"rep": 0
+},
+{
+"item": 90,
+"section": "Islamiat",
+"question": "The nisab of zakat on silver is:",
+"answer": "52.5 tola (612.36 grams)",
+"wrong": [
+"7.5 tola (87.48 grams)",
+"40 tola",
+"100 tola"
+],
+"reason": "Nisab of silver is 52.5 tola (about 612.36 g); 7.5 tola (87.48 g) is the nisab of gold.",
+"rep": 0
+},
+{
+"item": 96,
+"section": "Islamiat",
+"question": "In which Ghazwa (battle) was Abu Jahl killed?",
+"answer": "Ghazwa Badr",
+"wrong": [
+"Ghazwa Uhud",
+"Ghazwa Khandaq",
+"Ghazwa Khaibar"
+],
+"reason": "Abu Jahl, chief of the Quraysh, was killed at Badr in 2 AH (624 CE).",
+"rep": 1
+},
+{
+"item": 102,
+"section": "General Knowledge",
+"question": "Approximately what percentage of Pakistan's total area is covered by Balochistan?",
+"answer": "About 44 percent (43.6 percent)",
+"wrong": [
+"About 25 percent",
+"About 33 percent",
+"About 55 percent"
+],
+"reason": "Balochistan covers 347,190 square km, which is about 43.6 percent (nearly 44 percent) of Pakistan's total area, making it the largest province by area.",
+"rep": 0
+},
+{
+"item": 106,
+"section": "Verbal: Maths & Reasoning",
+"question": "If the 2nd day of a month is Tuesday, what day will the 25th be?",
+"answer": "Thursday",
+"wrong": [
+"Wednesday",
+"Tuesday",
+"Friday"
+],
+"reason": "From the 2nd to the 25th is 23 days. 23 = 3 weeks + 2 days, so Tuesday + 2 days = Thursday.",
+"rep": 1
+},
+{
+"item": 113,
+"section": "Pakistan Studies",
+"question": "In which year did Pakistan and China sign the border (boundary) agreement?",
+"answer": "1963",
+"wrong": [
+"1951",
+"1959",
+"1971"
+],
+"reason": "The Sino-Pakistan boundary agreement was signed on 2 March 1963 in Peking by Zulfikar Ali Bhutto and Chen Yi.",
+"rep": 4
+},
+{
+"item": 119,
+"section": "Islamiat",
+"question": "Abdullah bin Ubayy was the leader of which group in Madinah?",
+"answer": "The Munafiqeen (hypocrites)",
+"wrong": [
+"The Ansar",
+"The Muhajireen",
+"The Banu Quraiza"
+],
+"reason": "Abdullah bin Ubayy was the chief of the hypocrites (Munafiqeen) of Madinah, who pretended to be Muslims while opposing the Prophet (PBUH).",
+"rep": 0
+},
+{
+"item": 128,
+"section": "Islamiat",
+"question": "Hazrat Hafsa (R.A.), a wife of the Prophet ﷺ, is called Ummul Momineen. What does this title mean?",
+"answer": "Mother of the Believers",
+"wrong": [
+"Mother of the Prophet",
+"Mother of the Caliphs",
+"Mother of the Companions"
+],
+"reason": "Ummul Momineen means Mother of the Believers and is the title of all wives of the Prophet ﷺ. Hazrat Hafsa was the daughter of Hazrat Umar (R.A.).",
+"rep": 0
+},
+{
+"item": 133,
+"section": "Verbal: English",
+"question": "Choose the synonym of CANDID.",
+"answer": "Frank",
+"wrong": [
+"Secretive",
+"Deceitful",
+"Shy"
+],
+"reason": "Candid means honest and straightforward in speech, so its synonym is frank.",
+"rep": 0
+},
+{
+"item": 139,
+"section": "Pakistan Studies",
+"question": "In which year did Choudhry Rahmat Ali first use the word Pakistan (pamphlet Now or Never)?",
+"answer": "1933",
+"wrong": [
+"1930",
+"1940",
+"1947"
+],
+"reason": "Rahmat Ali coined the name Pakistan in the pamphlet Now or Never, published on 28 January 1933 at Cambridge.",
+"rep": 0
+},
+{
+"item": 143,
+"section": "Islamiat",
+"question": "According to the Quran, Allah created the human being (Adam A.S.) from:",
+"answer": "Clay (soil)",
+"wrong": [
+"Light",
+"Fire",
+"Air"
+],
+"reason": "The Quran says man was created from clay (Surah Al-Mu'minun 23:12). Angels were made of light and jinn of smokeless fire.",
+"rep": 0
+},
+{
+"item": 149,
+"section": "Maths & Science",
+"question": "Which is the largest bone of the human body?",
+"answer": "Femur",
+"wrong": [
+"Humerus",
+"Tibia",
+"Skull"
+],
+"reason": "The femur (thigh bone) is the longest, largest and strongest bone in the human body.",
+"rep": 0
+},
+{
+"item": 178,
+"section": "Islamiat",
+"question": "In which Hijri year was Ghazwa Tabuk fought?",
+"answer": "9 AH",
+"wrong": [
+"7 AH",
+"8 AH",
+"10 AH"
+],
+"reason": "Ghazwa Tabuk took place in Rajab 9 AH (about October 630 CE) against the threat of a Byzantine attack. It was the last and largest expedition led by the Prophet (PBUH).",
+"rep": 0
+},
+{
+"item": 184,
+"section": "General Knowledge",
+"question": "On which date was the United Nations officially founded?",
+"answer": "24 October 1945",
+"wrong": [
+"26 June 1945",
+"10 December 1948",
+"1 January 1942"
+],
+"reason": "The UN Charter came into force on 24 October 1945, which is celebrated as UN Day. The Charter was signed earlier on 26 June 1945 in San Francisco.",
+"rep": 0
+},
+{
+"item": 191,
+"section": "Pakistan Studies",
+"question": "Who coined the name Pakistan?",
+"answer": "Choudhry Rahmat Ali",
+"wrong": [
+"Allama Iqbal",
+"Muhammad Ali Jinnah",
+"Sir Syed Ahmad Khan"
+],
+"reason": "Choudhry Rahmat Ali coined the name in his pamphlet Now or Never, published on 28 January 1933.",
+"rep": 0
+},
+{
+"item": 197,
+"section": "Verbal: Maths & Reasoning",
+"question": "What is one third of one fourth of 120?",
+"answer": "10",
+"wrong": [
+"30",
+"40",
+"12"
+],
+"reason": "One fourth of 120 = 30, and one third of 30 = 10.",
+"rep": 1
+},
+{
+"item": 202,
+"section": "Islamiat",
+"question": "Hazrat Umm Kulthum (R.A.) was related to the Prophet Muhammad (peace be upon him) as his:",
+"answer": "Daughter",
+"wrong": [
+"Wife",
+"Aunt",
+"Sister"
+],
+"reason": "Umm Kulthum was the Prophet's daughter and married Hazrat Uthman (R.A.) after the death of her sister Ruqayyah; he is called Dhun-Nurayn.",
+"rep": 0
+},
+{
+"item": 208,
+"section": "Pakistan Studies",
+"question": "In which year was Liaquat Ali Khan, the first Prime Minister of Pakistan, assassinated?",
+"answer": "1951",
+"wrong": [
+"1948",
+"1949",
+"1953"
+],
+"reason": "He was shot on 16 October 1951 at Company Bagh (later Liaquat Bagh), Rawalpindi.",
+"rep": 0
+},
+{
+"item": 219,
+"section": "Islamiat",
+"question": "In which city is Baitul Muqaddas (Masjid Al-Aqsa, the first Qibla of Muslims) located?",
+"answer": "Jerusalem",
+"wrong": [
+"Makkah",
+"Madinah",
+"Damascus"
+],
+"reason": "Baitul Muqaddas (Al-Aqsa Mosque) is in Jerusalem (Al-Quds), Palestine; it was the first Qibla of Muslims.",
+"rep": 0
+},
+{
+"item": 227,
+"section": "General Knowledge",
+"question": "What is the officially announced range of Pakistan's Ababeel ballistic missile?",
+"answer": "2,200 km",
+"wrong": [
+"750 km",
+"1,500 km",
+"2,750 km"
+],
+"reason": "ISPR announced the first flight test of the surface-to-surface missile Ababeel in January 2017 with a range of 2,200 km. It is capable of carrying multiple warheads (MIRV).",
+"rep": 0
+},
+{
+"item": 236,
+"section": "Pakistan Studies",
+"question": "In which year was the first census of Pakistan held?",
+"answer": "1951",
+"wrong": [
+"1947",
+"1961",
+"1972"
+],
+"reason": "The first census of Pakistan was held in February 1951; later censuses were in 1961, 1972, 1981, 1998, 2017 and 2023.",
+"rep": 0
+},
+{
+"item": 246,
+"section": "Verbal: Maths & Reasoning",
+"question": "If the 2nd day of a month is Monday, what day will the 18th be?",
+"answer": "Wednesday",
+"wrong": [
+"Monday",
+"Tuesday",
+"Thursday"
+],
+"reason": "From the 2nd to the 18th is 16 days. 16 divided by 7 leaves remainder 2, so Monday + 2 days = Wednesday.",
+"rep": 0
+},
+{
+"item": 255,
+"section": "General Knowledge",
+"question": "Where is the headquarters of the International Monetary Fund (IMF)?",
+"answer": "Washington, D.C.",
+"wrong": [
+"New York",
+"Geneva",
+"London"
+],
+"reason": "The IMF headquarters is at 700 19th Street NW, Washington, D.C., USA.",
+"rep": 0
+},
+{
+"item": 267,
+"section": "Verbal: Maths & Reasoning",
+"question": "What is one quarter of 120?",
+"answer": "30",
+"wrong": [
+"20",
+"40",
+"24"
+],
+"reason": "120 divided by 4 = 30.",
+"rep": 0
+},
+{
+"item": 272,
+"section": "Verbal: Maths & Reasoning",
+"question": "What is the LCM of 4 and 8?",
+"answer": "8",
+"wrong": [
+"4",
+"16",
+"32"
+],
+"reason": "8 is a multiple of 4 and the smallest common multiple of both numbers is 8.",
+"rep": 0
+},
+{
+"item": 281,
+"section": "General Knowledge",
+"question": "What is the currency of Russia?",
+"answer": "Ruble",
+"wrong": [
+"Rupee",
+"Dinar",
+"Lira"
+],
+"reason": "The official currency of Russia is the Russian ruble (code RUB), issued by the Central Bank of Russia.",
+"rep": 0
+},
+{
+"item": 290,
+"section": "Verbal: Maths & Reasoning",
+"question": "If the 5th day of a month is Friday, what day will the 28th be?",
+"answer": "Sunday",
+"wrong": [
+"Saturday",
+"Friday",
+"Monday"
+],
+"reason": "From the 5th to the 28th is 23 days; 23 = 3 weeks + 2 days, so Friday + 2 = Sunday.",
+"rep": 0
+},
+{
+"item": 295,
+"section": "Pakistan Studies",
+"question": "Who signed the Indus Waters Treaty (1960) on behalf of Pakistan?",
+"answer": "Field Marshal Ayub Khan",
+"wrong": [
+"Liaquat Ali Khan",
+"Zulfikar Ali Bhutto",
+"Iskander Mirza"
+],
+"reason": "The treaty was signed in Karachi on 19 September 1960 by President Ayub Khan of Pakistan and Prime Minister Nehru of India, with the World Bank also signing.",
+"rep": 0
+},
+{
+"item": 302,
+"section": "Verbal: Maths & Reasoning",
+"question": "Complete the series: 1A, 2D, 3H, ?",
+"answer": "4M",
+"wrong": [
+"4L",
+"4N",
+"5M"
+],
+"reason": "Numbers go 1, 2, 3, 4. Letters A, D, H, M move forward by 3, 4, 5, so the next letter is M.",
+"rep": 0
+},
+{
+"item": 309,
+"section": "Pakistan Studies",
+"question": "In which year was the first Round Table Conference held in London?",
+"answer": "1930",
+"wrong": [
+"1929",
+"1931",
+"1932"
+],
+"reason": "The first Round Table Conference began on 12 November 1930 in London. The Congress did not attend.",
+"rep": 0
+},
+{
+"item": 314,
+"section": "General Knowledge",
+"question": "In which year did the UN General Assembly adopt the Universal Declaration of Human Rights?",
+"answer": "1948",
+"wrong": [
+"1945",
+"1950",
+"1956"
+],
+"reason": "The Declaration was adopted on 10 December 1948 as resolution 217 A (III) in Paris.",
+"rep": 0
+},
+{
+"item": 321,
+"section": "Pakistan Studies",
+"question": "In which year did Quaid-e-Azam Muhammad Ali Jinnah leave the Indian National Congress?",
+"answer": "1920",
+"wrong": [
+"1913",
+"1916",
+"1928"
+],
+"reason": "Jinnah resigned from the Congress at its Nagpur session in December 1920 because he opposed Gandhi's non-cooperation movement.",
+"rep": 0
+},
+{
+"item": 331,
+"section": "Islamiat",
+"question": "What was the relationship of Hazrat Hamza (RA) with Prophet Muhammad (PBUH)?",
+"answer": "Paternal uncle (and foster brother)",
+"wrong": [
+"Maternal uncle",
+"Cousin",
+"Father-in-law"
+],
+"reason": "Hazrat Hamza was a son of Abdul Muttalib, so he was the Prophet's paternal uncle. Both were also nursed by Thuwaibah, so he was a foster brother too. He is called Sayyid-ush-Shuhada.",
+"rep": 0
+},
+{
+"item": 342,
+"section": "General Knowledge",
+"question": "Which country is known as the Land of the Rising Sun?",
+"answer": "Japan",
+"wrong": [
+"China",
+"South Korea",
+"Thailand"
+],
+"reason": "Japan's name Nippon or Nihon means sun origin, so it is called the Land of the Rising Sun.",
+"rep": 0
+},
+{
+"item": 350,
+"section": "Pakistan Studies",
+"question": "How many general (directly elected) seats are there in the National Assembly of Pakistan?",
+"answer": "266",
+"wrong": [
+"272",
+"336",
+"342"
+],
+"reason": "Of the 336 seats, 266 are general seats, 60 are reserved for women and 10 for non-Muslims. Before the 2022 delimitation it was 272 general out of 342.",
+"rep": 0
+},
+{
+"item": 361,
+"section": "Pakistan Studies",
+"question": "What was the main event that opened the Civil Disobedience Movement?",
+"answer": "The Salt March",
+"wrong": [
+"The Jallianwala Bagh protest",
+"The Chauri Chaura incident",
+"The Lucknow Pact"
+],
+"reason": "Gandhi marched from Sabarmati Ashram to Dandi in 1930 to defy the British salt tax and salt monopoly.",
+"rep": 0
+},
+{
+"item": 365,
+"section": "Pakistan Studies",
+"question": "The Swadeshi Movement began as a protest against which British decision?",
+"answer": "The Partition of Bengal",
+"wrong": [
+"The Rowlatt Act",
+"The Salt Tax",
+"The Simon Commission"
+],
+"reason": "The Swadeshi Movement (boycott of British goods) started in 1905 against Lord Curzon's Partition of Bengal.",
+"rep": 0
+},
+{
+"item": 369,
+"section": "Pakistan Studies",
+"question": "Which two leaders led the Home Rule Movement in India?",
+"answer": "Annie Besant and Bal Gangadhar Tilak",
+"wrong": [
+"Gandhi and Nehru",
+"Jinnah and Iqbal",
+"Gokhale and Lajpat Rai"
+],
+"reason": "Tilak founded his Home Rule League in April 1916 at Poona and Annie Besant founded hers in September 1916 at Madras.",
+"rep": 0
+},
+{
+"item": 373,
+"section": "General Knowledge",
+"question": "What did the American Civil Rights Movement mainly demand?",
+"answer": "Racial equality",
+"wrong": [
+"Women's right to vote",
+"Independence from Britain",
+"Workers' wages"
+],
+"reason": "The movement fought racial segregation and discrimination against African Americans and sought equal civil rights.",
+"rep": 0
+}
+]

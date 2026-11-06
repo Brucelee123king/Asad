@@ -1,0 +1,46 @@
+<style id="thCss">
+/* test start page (design 4): dark card, big timer ring, colour of the opened test */
+#view-home.thx{background:transparent!important;border:0!important;box-shadow:none!important;max-width:520px}
+#view-home.thx>:not(#th){display:none!important}
+#th{--ta:#22d3ee;--tb:#60a5fa;--bg:#fff;--tx:#0f172a;--mu:#64748b;--ch:#f1f5f9;--ln:#e2e8f0;--tgc:color-mix(in srgb,var(--ta) 75%,#000);background:var(--bg);color:var(--tx);border-radius:26px;padding:26px 20px 24px;text-align:center;box-shadow:0 14px 34px rgba(15,23,42,.10);border:1px solid var(--ln);font-family:"Plus Jakarta Sans",system-ui,sans-serif;position:relative;overflow:hidden}
+#th:before{content:"";position:absolute;inset:-40% -20% auto;height:70%;background:radial-gradient(closest-side,var(--ta),transparent);opacity:.16;pointer-events:none}
+#th .q-tg{position:relative;display:inline-block;border:1px solid var(--ln);color:var(--tgc);border-radius:99px;padding:6px 14px;font-weight:800;font-size:12px;letter-spacing:.04em;text-transform:uppercase;max-width:100%}
+#th .q-rg{position:relative;margin:26px auto 18px;width:190px;height:190px;border-radius:50%;background:conic-gradient(var(--ta),var(--tb),var(--ta));display:flex;align-items:center;justify-content:center;box-shadow:0 0 50px color-mix(in srgb,var(--ta) 45%,transparent)}
+#th .q-rg div{width:164px;height:164px;border-radius:50%;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center}
+#th .q-rg b{font-size:44px;color:var(--tx);font-variant-numeric:tabular-nums}#th .q-rg span{color:var(--mu);font-weight:700;font-size:13px}
+#th h3{position:relative;font-size:22px;margin:0 0 6px;color:var(--tx);font-weight:800}#th .q-s{position:relative;color:var(--mu);font-size:14px;margin:0 0 20px}
+#th .q-ch{position:relative;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:24px}#th .q-ch span{background:var(--ch);border:1px solid var(--ln);color:var(--tx);border-radius:12px;padding:9px 12px;font-size:12.5px;font-weight:700}
+#th .q-go{position:relative;display:block;width:100%;border:0;border-radius:18px;padding:18px;font-size:18px;font-weight:800;color:var(--tc,#0b1220);background:linear-gradient(90deg,var(--ta),var(--tb));cursor:pointer;box-shadow:0 10px 26px color-mix(in srgb,var(--ta) 35%,transparent)}
+#th .q-go:active{transform:scale(.98)}#th .q-bk{position:relative;display:inline-block;margin-top:16px;color:var(--mu);font-weight:700;background:none;border:0;font-size:15px;cursor:pointer;padding:6px 10px}
+html.dark #th{--bg:#0b1220;--tx:#f1f5f9;--mu:#94a3b8;--ch:#111c33;--ln:#1e293b;--tgc:color-mix(in srgb,var(--ta) 55%,#fff);box-shadow:0 18px 40px rgba(2,6,23,.35)}
+#th:before{opacity:.10}html.dark #th:before{opacity:.16}
+/* quiz progress line: neon tube in the colour of the test (--nc set when a test is opened) */
+.q-nbar{height:16px!important;border-radius:99px!important;background:linear-gradient(180deg,#05080f,#121b2b)!important;padding:3px;box-sizing:border-box;overflow:visible!important;box-shadow:inset 0 2px 5px rgba(0,0,0,.8),inset 0 -1px 1px rgba(255,255,255,.08),0 1px 0 rgba(255,255,255,.35),0 4px 10px rgba(0,0,0,.15)}
+.q-nbar #progress-bar-fill{position:relative;min-width:12px;border-radius:99px;background:linear-gradient(90deg,color-mix(in srgb,var(--nc,#4f46e5) 25%,transparent) 0%,var(--nc,#4f46e5) 45%,color-mix(in srgb,var(--nc,#4f46e5) 55%,#fff) 85%,#fff 100%)!important;box-shadow:0 0 6px var(--nc,#4f46e5),0 0 14px var(--nc,#4f46e5),0 0 24px color-mix(in srgb,var(--nc,#4f46e5) 55%,transparent);animation:qnGlow 1.8s ease-in-out infinite}
+.q-nbar #progress-bar-fill:before{content:"";position:absolute;right:-4px;top:50%;width:16px;height:16px;margin-top:-8px;border-radius:50%;background:radial-gradient(circle,#fff 0 25%,color-mix(in srgb,var(--nc,#4f46e5) 60%,#fff) 45%,transparent 72%)}
+.q-nbar #progress-bar-fill:after{content:"";position:absolute;top:2px;left:5px;right:9px;height:3px;border-radius:99px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.7))}
+@keyframes qnGlow{0%,100%{filter:brightness(1)}50%{filter:brightness(1.3)}}
+html.lite .q-nbar #progress-bar-fill{animation-duration:1.8s!important;animation-iteration-count:infinite!important}
+</style>
+<script>
+(function(){
+  var vh=document.getElementById('view-home');if(!vh)return;try{var pf=document.getElementById('progress-bar-fill');if(pf&&pf.parentElement)pf.parentElement.classList.add('q-nbar')}catch(e){}
+  var th=document.createElement('div');th.id='th';vh.insertBefore(th,vh.firstChild);vh.classList.add('thx');
+  function col(el){try{var c=getComputedStyle(el),bi=c.backgroundImage,m=bi&&bi.match(/rgba?\([^)]*\)/g);if(m&&m.length)return [m[0],m[m.length-1]];var b=c.backgroundColor;if(b&&!/rgba\(0, 0, 0, 0\)/.test(b))return [b,b]}catch(e){}return null}
+  function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function draw(){try{
+    var bd=document.getElementById('home-badge'),bt=(bd&&bd.textContent)||'',m=/\((.*)\)\s*$/.exec(bt),name=m?m[1]:bt;
+    var n=(typeof quizData!=='undefined'&&quizData)?quizData.length:0,secs=(typeof TEST_SECS!=='undefined')?TEST_SECS:n*30,mm=Math.floor(secs/60),ss=secs%60;
+    var a=col(document.getElementById('start-quiz-btn'))||col(vh.querySelector('[class*="bg-gradient"]'));
+    if(a){document.documentElement.style.setProperty('--nc',a[0]);th.style.setProperty('--ta',a[0]);th.style.setProperty('--tb',a[1]);var v=(a[0].match(/[\d.]+/g)||[]).map(Number),L=v.length>2?(0.299*v[0]+0.587*v[1]+0.114*v[2])/255:1;th.style.setProperty('--tc',L<0.5?'#fff':'#0b1220')}
+    th.innerHTML='<span class="q-tg">'+esc(name)+'</span><div class="q-rg"><div><b>'+String(mm).padStart(2,'0')+':'+String(ss).padStart(2,'0')+'</b><span>minutes</span></div></div>'+
+      '<h3>'+n+' MCQs</h3><p class="q-s">The clock starts when you tap Start.</p>'+
+      '<div class="q-ch"><span>📋 Palette</span><span>❌ Blank = wrong</span><span>⏱️ Auto-submit</span></div>'+
+      '<button type="button" class="q-go">Start Test</button><button type="button" class="q-bk">← All tests</button>';
+    th.querySelector('.q-go').onclick=function(){var b=document.getElementById('start-quiz-btn');if(b)b.click();else if(typeof startQuiz==='function')startQuiz()};
+    th.querySelector('.q-bk').onclick=function(){if(typeof showSelect==='function')showSelect()};
+  }catch(e){}}
+  var f=window.selectTest;if(typeof f==='function')window.selectTest=function(){var r=f.apply(this,arguments);draw();setTimeout(draw,60);return r};
+  window.__thDraw=draw;
+})();
+</script>

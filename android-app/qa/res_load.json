@@ -1,0 +1,2258 @@
+[
+ {
+  "lite": false,
+  "rate": 1,
+  "run": 0,
+  "responseEnd": 245.4000000001397,
+  "domInteractive": 662.1000000000931,
+  "dcl": 680.6000000000931,
+  "load": 819.7000000001863,
+  "fcp": 212,
+  "lcp": 784,
+  "lt": [
+   [
+    54,
+    83
+   ],
+   [
+    434,
+    157
+   ],
+   [
+    653,
+    68
+   ],
+   [
+    723,
+    95
+   ],
+   [
+    857,
+    74
+   ]
+  ],
+  "timers": {
+   "si": 0,
+   "st": 0,
+   "al": 20,
+   "raf": 24
+  },
+  "transfer": [
+   [
+    "css/fonts.css",
+    1890
+   ],
+   [
+    "css/fontawesome.css",
+    100188
+   ],
+   [
+    "css/tailwind.css",
+    29358
+   ],
+   [
+    "webfonts/fa-solid-900.woff2",
+    150424
+   ],
+   [
+    "fonts/inter-latin-700-normal.woff2",
+    24656
+   ],
+   [
+    "fonts/inter-latin-400-normal.woff2",
+    23964
+   ],
+   [
+    "fonts/inter-latin-600-normal.woff2",
+    24752
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-800-normal.woff2",
+    12196
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-600-normal.woff2",
+    12488
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-700-normal.woff2",
+    12544
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-400-normal.woff2",
+    12116
+   ],
+   [
+    "127.0.0.1:8765/favicon.ico",
+    635
+   ]
+  ],
+  "nodes": 2280,
+  "listeners": 112,
+  "docs": 1,
+  "heapMB": 4.62,
+  "heapTotMB": 5.5,
+  "script": 43,
+  "layout": 103,
+  "style": 146,
+  "errs": [
+   "error: Failed to load resource: the server responded with a status of 404 (File not found) @favicon.ico"
+  ]
+ },
+ {
+  "lite": false,
+  "rate": 1,
+  "run": 1,
+  "responseEnd": 75,
+  "domInteractive": 392.89999999990687,
+  "dcl": 414.30000000004657,
+  "load": 513.5,
+  "fcp": 144,
+  "lcp": 184,
+  "lt": [
+   [
+    170,
+    132
+   ],
+   [
+    316,
+    68
+   ],
+   [
+    384,
+    82
+   ],
+   [
+    529,
+    52
+   ]
+  ],
+  "timers": {
+   "si": 0,
+   "st": 0,
+   "al": 20,
+   "raf": 25
+  },
+  "transfer": [
+   [
+    "css/fonts.css",
+    1890
+   ],
+   [
+    "css/tailwind.css",
+    29358
+   ],
+   [
+    "css/fontawesome.css",
+    100188
+   ],
+   [
+    "webfonts/fa-solid-900.woff2",
+    150424
+   ],
+   [
+    "fonts/inter-latin-700-normal.woff2",
+    24656
+   ],
+   [
+    "fonts/inter-latin-400-normal.woff2",
+    23964
+   ],
+   [
+    "fonts/inter-latin-600-normal.woff2",
+    24752
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-800-normal.woff2",
+    12196
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-600-normal.woff2",
+    12488
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-400-normal.woff2",
+    12116
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-700-normal.woff2",
+    12544
+   ],
+   [
+    "127.0.0.1:8765/favicon.ico",
+    635
+   ]
+  ],
+  "nodes": 2280,
+  "listeners": 112,
+  "docs": 1,
+  "heapMB": 4.62,
+  "heapTotMB": 5.5,
+  "script": 58,
+  "layout": 105,
+  "style": 125,
+  "errs": [
+   "error: Failed to load resource: the server responded with a status of 404 (File not found) @favicon.ico"
+  ]
+ },
+ {
+  "lite": false,
+  "rate": 1,
+  "run": 2,
+  "responseEnd": 69.5,
+  "domInteractive": 339.89999999990687,
+  "dcl": 365.39999999990687,
+  "load": 450.5999999998603,
+  "fcp": 120,
+  "lcp": 120,
+  "lt": [
+   [
+    148,
+    110
+   ],
+   [
+    279,
+    50
+   ],
+   [
+    331,
+    78
+   ]
+  ],
+  "timers": {
+   "si": 0,
+   "st": 0,
+   "al": 20,
+   "raf": 25
+  },
+  "transfer": [
+   [
+    "css/fonts.css",
+    1890
+   ],
+   [
+    "css/fontawesome.css",
+    100188
+   ],
+   [
+    "css/tailwind.css",
+    29358
+   ],
+   [
+    "webfonts/fa-solid-900.woff2",
+    150424
+   ],
+   [
+    "fonts/inter-latin-700-normal.woff2",
+    24656
+   ],
+   [
+    "fonts/inter-latin-600-normal.woff2",
+    24752
+   ],
+   [
+    "fonts/inter-latin-400-normal.woff2",
+    23964
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-800-normal.woff2",
+    12196
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-400-normal.woff2",
+    12116
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-600-normal.woff2",
+    12488
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-700-normal.woff2",
+    12544
+   ],
+   [
+    "127.0.0.1:8765/favicon.ico",
+    635
+   ]
+  ],
+  "nodes": 2280,
+  "listeners": 112,
+  "docs": 1,
+  "heapMB": 4.62,
+  "heapTotMB": 5.25,
+  "script": 58,
+  "layout": 76,
+  "style": 107,
+  "errs": [
+   "error: Failed to load resource: the server responded with a status of 404 (File not found) @favicon.ico"
+  ]
+ },
+ {
+  "lite": false,
+  "rate": 4,
+  "run": 0,
+  "responseEnd": 217.69999999995343,
+  "domInteractive": 1928.5,
+  "dcl": 2004.5,
+  "load": 2428.6999999999534,
+  "fcp": 428,
+  "lcp": 1516,
+  "lt": [
+   [
+    333,
+    76
+   ],
+   [
+    883,
+    580
+   ],
+   [
+    1525,
+    142
+   ],
+   [
+    1771,
+    111
+   ],
+   [
+    1913,
+    217
+   ],
+   [
+    2130,
+    294
+   ],
+   [
+    2497,
+    86
+   ],
+   [
+    2587,
+    153
+   ],
+   [
+    2818,
+    110
+   ],
+   [
+    2948,
+    166
+   ],
+   [
+    3179,
+    88
+   ],
+   [
+    3343,
+    58
+   ],
+   [
+    3432,
+    72
+   ],
+   [
+    3544,
+    166
+   ],
+   [
+    3808,
+    129
+   ]
+  ],
+  "timers": {
+   "si": 0,
+   "st": 0,
+   "al": 20,
+   "raf": 13
+  },
+  "transfer": [
+   [
+    "css/fonts.css",
+    1890
+   ],
+   [
+    "css/fontawesome.css",
+    100188
+   ],
+   [
+    "css/tailwind.css",
+    29358
+   ],
+   [
+    "fonts/inter-latin-600-normal.woff2",
+    24752
+   ],
+   [
+    "fonts/inter-latin-700-normal.woff2",
+    24656
+   ],
+   [
+    "fonts/inter-latin-400-normal.woff2",
+    23964
+   ],
+   [
+    "webfonts/fa-solid-900.woff2",
+    150424
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-800-normal.woff2",
+    12196
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-600-normal.woff2",
+    12488
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-400-normal.woff2",
+    12116
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-700-normal.woff2",
+    12544
+   ],
+   [
+    "127.0.0.1:8765/favicon.ico",
+    635
+   ]
+  ],
+  "nodes": 2280,
+  "listeners": 112,
+  "docs": 1,
+  "heapMB": 4.62,
+  "heapTotMB": 5.75,
+  "script": 162,
+  "layout": 325,
+  "style": 1430,
+  "errs": [
+   "error: Failed to load resource: the server responded with a status of 404 (File not found) @favicon.ico"
+  ]
+ },
+ {
+  "lite": false,
+  "rate": 4,
+  "run": 1,
+  "responseEnd": 191.80000000004657,
+  "domInteractive": 2308.100000000093,
+  "dcl": 2364.1999999999534,
+  "load": 2612.600000000093,
+  "fcp": 492,
+  "lcp": 2044,
+  "lt": [
+   [
+    1076,
+    920
+   ],
+   [
+    2056,
+    120
+   ],
+   [
+    2194,
+    85
+   ],
+   [
+    2292,
+    192
+   ],
+   [
+    2484,
+    126
+   ],
+   [
+    2629,
+    52
+   ],
+   [
+    2685,
+    367
+   ],
+   [
+    3060,
+    80
+   ],
+   [
+    3174,
+    77
+   ],
+   [
+    3310,
+    51
+   ],
+   [
+    3441,
+    69
+   ],
+   [
+    3557,
+    70
+   ],
+   [
+    3900,
+    57
+   ],
+   [
+    4067,
+    70
+   ]
+  ],
+  "timers": {
+   "si": 0,
+   "st": 0,
+   "al": 20,
+   "raf": 13
+  },
+  "transfer": [
+   [
+    "css/fonts.css",
+    1890
+   ],
+   [
+    "css/fontawesome.css",
+    100188
+   ],
+   [
+    "css/tailwind.css",
+    29358
+   ],
+   [
+    "fonts/inter-latin-600-normal.woff2",
+    24752
+   ],
+   [
+    "fonts/inter-latin-700-normal.woff2",
+    24656
+   ],
+   [
+    "fonts/inter-latin-400-normal.woff2",
+    23964
+   ],
+   [
+    "webfonts/fa-solid-900.woff2",
+    150424
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-800-normal.woff2",
+    12196
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-600-normal.woff2",
+    12488
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-400-normal.woff2",
+    12116
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-700-normal.woff2",
+    12544
+   ],
+   [
+    "127.0.0.1:8765/favicon.ico",
+    635
+   ]
+  ],
+  "nodes": 2280,
+  "listeners": 112,
+  "docs": 1,
+  "heapMB": 4.62,
+  "heapTotMB": 5.75,
+  "script": 132,
+  "layout": 221,
+  "style": 1027,
+  "errs": [
+   "error: Failed to load resource: the server responded with a status of 404 (File not found) @favicon.ico"
+  ]
+ },
+ {
+  "lite": false,
+  "rate": 4,
+  "run": 2,
+  "responseEnd": 236.9000000001397,
+  "domInteractive": 1774.4000000001397,
+  "dcl": 1801.4000000001397,
+  "load": 1866.8000000000466,
+  "fcp": 380,
+  "lcp": 1220,
+  "lt": [
+   [
+    287,
+    62
+   ],
+   [
+    643,
+    511
+   ],
+   [
+    1225,
+    135
+   ],
+   [
+    1404,
+    100
+   ],
+   [
+    1550,
+    221
+   ],
+   [
+    1772,
+    78
+   ],
+   [
+    1874,
+    206
+   ],
+   [
+    2370,
+    211
+   ],
+   [
+    2703,
+    104
+   ],
+   [
+    2807,
+    117
+   ],
+   [
+    3012,
+    104
+   ],
+   [
+    3186,
+    53
+   ],
+   [
+    3317,
+    109
+   ],
+   [
+    3427,
+    110
+   ]
+  ],
+  "timers": {
+   "si": 0,
+   "st": 0,
+   "al": 20,
+   "raf": 13
+  },
+  "transfer": [
+   [
+    "css/fonts.css",
+    1890
+   ],
+   [
+    "css/fontawesome.css",
+    100188
+   ],
+   [
+    "css/tailwind.css",
+    29358
+   ],
+   [
+    "fonts/inter-latin-600-normal.woff2",
+    24752
+   ],
+   [
+    "fonts/inter-latin-700-normal.woff2",
+    24656
+   ],
+   [
+    "fonts/inter-latin-400-normal.woff2",
+    23964
+   ],
+   [
+    "webfonts/fa-solid-900.woff2",
+    150424
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-800-normal.woff2",
+    12196
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-600-normal.woff2",
+    12488
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-400-normal.woff2",
+    12116
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-700-normal.woff2",
+    12544
+   ],
+   [
+    "127.0.0.1:8765/favicon.ico",
+    635
+   ]
+  ],
+  "nodes": 2280,
+  "listeners": 112,
+  "docs": 1,
+  "heapMB": 4.62,
+  "heapTotMB": 5.75,
+  "script": 144,
+  "layout": 314,
+  "style": 1200,
+  "errs": [
+   "error: Failed to load resource: the server responded with a status of 404 (File not found) @favicon.ico"
+  ]
+ },
+ {
+  "lite": false,
+  "rate": 6,
+  "run": 0,
+  "responseEnd": 329.10000000009313,
+  "domInteractive": 2718.600000000093,
+  "dcl": 2896.6999999999534,
+  "load": 3312.100000000093,
+  "fcp": 576,
+  "lcp": 2420,
+  "lt": [
+   [
+    437,
+    112
+   ],
+   [
+    990,
+    882
+   ],
+   [
+    2000,
+    254
+   ],
+   [
+    2291,
+    67
+   ],
+   [
+    2435,
+    54
+   ],
+   [
+    2533,
+    168
+   ],
+   [
+    2701,
+    413
+   ],
+   [
+    3115,
+    196
+   ],
+   [
+    3348,
+    74
+   ],
+   [
+    3465,
+    164
+   ],
+   [
+    3655,
+    97
+   ],
+   [
+    3765,
+    268
+   ],
+   [
+    4106,
+    180
+   ],
+   [
+    4324,
+    102
+   ],
+   [
+    4427,
+    220
+   ],
+   [
+    4696,
+    55
+   ],
+   [
+    4785,
+    205
+   ]
+  ],
+  "timers": {
+   "si": 0,
+   "st": 0,
+   "al": 20,
+   "raf": 11
+  },
+  "transfer": [
+   [
+    "css/fonts.css",
+    1890
+   ],
+   [
+    "css/fontawesome.css",
+    100188
+   ],
+   [
+    "css/tailwind.css",
+    29358
+   ],
+   [
+    "fonts/inter-latin-600-normal.woff2",
+    24752
+   ],
+   [
+    "fonts/inter-latin-700-normal.woff2",
+    24656
+   ],
+   [
+    "fonts/inter-latin-400-normal.woff2",
+    23964
+   ],
+   [
+    "webfonts/fa-solid-900.woff2",
+    150424
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-800-normal.woff2",
+    12196
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-600-normal.woff2",
+    12488
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-700-normal.woff2",
+    12544
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-400-normal.woff2",
+    12116
+   ],
+   [
+    "127.0.0.1:8765/favicon.ico",
+    635
+   ]
+  ],
+  "nodes": 2280,
+  "listeners": 112,
+  "docs": 1,
+  "heapMB": 4.62,
+  "heapTotMB": 5.75,
+  "script": 320,
+  "layout": 448,
+  "style": 1778,
+  "errs": [
+   "error: Failed to load resource: the server responded with a status of 404 (File not found) @favicon.ico"
+  ]
+ },
+ {
+  "lite": false,
+  "rate": 6,
+  "run": 1,
+  "responseEnd": 408.5999999998603,
+  "domInteractive": 2748.7999999998137,
+  "dcl": 2804.1999999999534,
+  "load": 3310.7999999998137,
+  "fcp": 652,
+  "lcp": 2108,
+  "lt": [
+   [
+    414,
+    228
+   ],
+   [
+    1377,
+    666
+   ],
+   [
+    2116,
+    141
+   ],
+   [
+    2296,
+    185
+   ],
+   [
+    2499,
+    70
+   ],
+   [
+    2573,
+    145
+   ],
+   [
+    2719,
+    222
+   ],
+   [
+    2943,
+    356
+   ],
+   [
+    3319,
+    67
+   ],
+   [
+    3426,
+    86
+   ],
+   [
+    3513,
+    97
+   ],
+   [
+    3648,
+    279
+   ],
+   [
+    3953,
+    167
+   ],
+   [
+    4164,
+    53
+   ],
+   [
+    4318,
+    170
+   ],
+   [
+    4592,
+    326
+   ]
+  ],
+  "timers": {
+   "si": 0,
+   "st": 0,
+   "al": 20,
+   "raf": 10
+  },
+  "transfer": [
+   [
+    "css/fonts.css",
+    1890
+   ],
+   [
+    "css/fontawesome.css",
+    100188
+   ],
+   [
+    "css/tailwind.css",
+    29358
+   ],
+   [
+    "fonts/inter-latin-600-normal.woff2",
+    24752
+   ],
+   [
+    "fonts/inter-latin-700-normal.woff2",
+    24656
+   ],
+   [
+    "fonts/inter-latin-400-normal.woff2",
+    23964
+   ],
+   [
+    "webfonts/fa-solid-900.woff2",
+    150424
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-800-normal.woff2",
+    12196
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-600-normal.woff2",
+    12488
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-400-normal.woff2",
+    12116
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-700-normal.woff2",
+    12544
+   ],
+   [
+    "127.0.0.1:8765/favicon.ico",
+    635
+   ]
+  ],
+  "nodes": 2280,
+  "listeners": 112,
+  "docs": 1,
+  "heapMB": 4.63,
+  "heapTotMB": 5.75,
+  "script": 276,
+  "layout": 408,
+  "style": 2156,
+  "errs": [
+   "error: Failed to load resource: the server responded with a status of 404 (File not found) @favicon.ico"
+  ]
+ },
+ {
+  "lite": false,
+  "rate": 6,
+  "run": 2,
+  "responseEnd": 471.30000000004657,
+  "domInteractive": 2156.399999999907,
+  "dcl": 2184.1999999999534,
+  "load": 2241.600000000093,
+  "fcp": 452,
+  "lcp": 1804,
+  "lt": [
+   [
+    185,
+    107
+   ],
+   [
+    346,
+    63
+   ],
+   [
+    819,
+    702
+   ],
+   [
+    1658,
+    99
+   ],
+   [
+    1783,
+    125
+   ],
+   [
+    2016,
+    124
+   ],
+   [
+    2141,
+    99
+   ],
+   [
+    2250,
+    383
+   ],
+   [
+    2749,
+    76
+   ],
+   [
+    2847,
+    110
+   ],
+   [
+    3013,
+    158
+   ],
+   [
+    3219,
+    50
+   ],
+   [
+    3295,
+    234
+   ],
+   [
+    3576,
+    176
+   ]
+  ],
+  "timers": {
+   "si": 0,
+   "st": 0,
+   "al": 20,
+   "raf": 9
+  },
+  "transfer": [
+   [
+    "css/fonts.css",
+    1890
+   ],
+   [
+    "css/fontawesome.css",
+    100188
+   ],
+   [
+    "css/tailwind.css",
+    29358
+   ],
+   [
+    "webfonts/fa-solid-900.woff2",
+    150424
+   ],
+   [
+    "fonts/inter-latin-700-normal.woff2",
+    24656
+   ],
+   [
+    "fonts/inter-latin-600-normal.woff2",
+    24752
+   ],
+   [
+    "fonts/inter-latin-400-normal.woff2",
+    23964
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-400-normal.woff2",
+    12116
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-800-normal.woff2",
+    12196
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-600-normal.woff2",
+    12488
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-700-normal.woff2",
+    12544
+   ],
+   [
+    "127.0.0.1:8765/favicon.ico",
+    635
+   ]
+  ],
+  "nodes": 2280,
+  "listeners": 112,
+  "docs": 1,
+  "heapMB": 4.63,
+  "heapTotMB": 5.75,
+  "script": 189,
+  "layout": 310,
+  "style": 1589,
+  "errs": [
+   "error: Failed to load resource: the server responded with a status of 404 (File not found) @favicon.ico"
+  ]
+ },
+ {
+  "lite": true,
+  "rate": 1,
+  "run": 0,
+  "responseEnd": 254.19999999995343,
+  "domInteractive": 648.7999999998137,
+  "dcl": 655.6999999999534,
+  "load": 715.2999999998137,
+  "fcp": 288,
+  "lcp": 288,
+  "lt": [
+   [
+    368,
+    109
+   ],
+   [
+    490,
+    64
+   ],
+   [
+    568,
+    79
+   ],
+   [
+    648,
+    62
+   ],
+   [
+    779,
+    238
+   ],
+   [
+    1054,
+    102
+   ]
+  ],
+  "timers": {
+   "si": 0,
+   "st": 0,
+   "al": 20,
+   "raf": 61
+  },
+  "transfer": [
+   [
+    "css/fonts.css",
+    1890
+   ],
+   [
+    "css/fontawesome.css",
+    100188
+   ],
+   [
+    "css/tailwind.css",
+    29358
+   ],
+   [
+    "webfonts/fa-solid-900.woff2",
+    150424
+   ],
+   [
+    "fonts/inter-latin-700-normal.woff2",
+    24656
+   ],
+   [
+    "fonts/inter-latin-600-normal.woff2",
+    24752
+   ],
+   [
+    "fonts/inter-latin-400-normal.woff2",
+    23964
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-700-normal.woff2",
+    12544
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-600-normal.woff2",
+    12488
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-800-normal.woff2",
+    12196
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-400-normal.woff2",
+    12116
+   ],
+   [
+    "127.0.0.1:8765/favicon.ico",
+    635
+   ]
+  ],
+  "nodes": 2280,
+  "listeners": 112,
+  "docs": 1,
+  "heapMB": 4.62,
+  "heapTotMB": 5.75,
+  "script": 37,
+  "layout": 131,
+  "style": 100,
+  "errs": [
+   "error: Failed to load resource: the server responded with a status of 404 (File not found) @favicon.ico"
+  ]
+ },
+ {
+  "lite": true,
+  "rate": 1,
+  "run": 1,
+  "responseEnd": 236.30000000004657,
+  "domInteractive": 657.8000000000466,
+  "dcl": 666.1999999999534,
+  "load": 860.8000000000466,
+  "fcp": 120,
+  "lcp": 120,
+  "lt": [
+   [
+    377,
+    199
+   ],
+   [
+    588,
+    67
+   ],
+   [
+    700,
+    159
+   ],
+   [
+    890,
+    126
+   ],
+   [
+    1097,
+    62
+   ],
+   [
+    1165,
+    55
+   ]
+  ],
+  "timers": {
+   "si": 0,
+   "st": 0,
+   "al": 20,
+   "raf": 61
+  },
+  "transfer": [
+   [
+    "css/fonts.css",
+    1890
+   ],
+   [
+    "css/fontawesome.css",
+    100188
+   ],
+   [
+    "css/tailwind.css",
+    29358
+   ],
+   [
+    "webfonts/fa-solid-900.woff2",
+    150424
+   ],
+   [
+    "fonts/inter-latin-700-normal.woff2",
+    24656
+   ],
+   [
+    "fonts/inter-latin-600-normal.woff2",
+    24752
+   ],
+   [
+    "fonts/inter-latin-400-normal.woff2",
+    23964
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-700-normal.woff2",
+    12544
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-600-normal.woff2",
+    12488
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-800-normal.woff2",
+    12196
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-400-normal.woff2",
+    12116
+   ],
+   [
+    "127.0.0.1:8765/favicon.ico",
+    635
+   ]
+  ],
+  "nodes": 2280,
+  "listeners": 112,
+  "docs": 1,
+  "heapMB": 4.62,
+  "heapTotMB": 5.75,
+  "script": 29,
+  "layout": 117,
+  "style": 149,
+  "errs": [
+   "error: Failed to load resource: the server responded with a status of 404 (File not found) @favicon.ico"
+  ]
+ },
+ {
+  "lite": true,
+  "rate": 1,
+  "run": 2,
+  "responseEnd": 128.19999999995343,
+  "domInteractive": 521.8000000000466,
+  "dcl": 531.3999999999069,
+  "load": 679.5,
+  "fcp": 196,
+  "lcp": 196,
+  "lt": [
+   [
+    260,
+    179
+   ],
+   [
+    452,
+    62
+   ],
+   [
+    515,
+    58
+   ],
+   [
+    581,
+    96
+   ],
+   [
+    704,
+    93
+   ],
+   [
+    937,
+    132
+   ],
+   [
+    1078,
+    165
+   ]
+  ],
+  "timers": {
+   "si": 0,
+   "st": 0,
+   "al": 20,
+   "raf": 53
+  },
+  "transfer": [
+   [
+    "css/fonts.css",
+    1890
+   ],
+   [
+    "css/fontawesome.css",
+    100188
+   ],
+   [
+    "css/tailwind.css",
+    29358
+   ],
+   [
+    "webfonts/fa-solid-900.woff2",
+    150424
+   ],
+   [
+    "fonts/inter-latin-700-normal.woff2",
+    24656
+   ],
+   [
+    "fonts/inter-latin-600-normal.woff2",
+    24752
+   ],
+   [
+    "fonts/inter-latin-400-normal.woff2",
+    23964
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-700-normal.woff2",
+    12544
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-600-normal.woff2",
+    12488
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-800-normal.woff2",
+    12196
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-400-normal.woff2",
+    12116
+   ],
+   [
+    "127.0.0.1:8765/favicon.ico",
+    635
+   ]
+  ],
+  "nodes": 2280,
+  "listeners": 112,
+  "docs": 1,
+  "heapMB": 4.62,
+  "heapTotMB": 5.75,
+  "script": 34,
+  "layout": 97,
+  "style": 119,
+  "errs": [
+   "error: Failed to load resource: the server responded with a status of 404 (File not found) @favicon.ico"
+  ]
+ },
+ {
+  "lite": true,
+  "rate": 4,
+  "run": 0,
+  "responseEnd": 244.9000000001397,
+  "domInteractive": 1497.5,
+  "dcl": 1504,
+  "load": 1644.2000000001863,
+  "fcp": 368,
+  "lcp": 1176,
+  "lt": [
+   [
+    266,
+    92
+   ],
+   [
+    564,
+    546
+   ],
+   [
+    1234,
+    103
+   ],
+   [
+    1357,
+    111
+   ],
+   [
+    1487,
+    56
+   ],
+   [
+    1544,
+    98
+   ],
+   [
+    2516,
+    82
+   ],
+   [
+    2598,
+    87
+   ],
+   [
+    2826,
+    72
+   ],
+   [
+    2906,
+    101
+   ],
+   [
+    3008,
+    58
+   ],
+   [
+    3068,
+    202
+   ],
+   [
+    3287,
+    346
+   ]
+  ],
+  "timers": {
+   "si": 0,
+   "st": 0,
+   "al": 20,
+   "raf": 38
+  },
+  "transfer": [
+   [
+    "css/fonts.css",
+    1890
+   ],
+   [
+    "css/fontawesome.css",
+    100188
+   ],
+   [
+    "css/tailwind.css",
+    29358
+   ],
+   [
+    "fonts/inter-latin-600-normal.woff2",
+    24752
+   ],
+   [
+    "fonts/inter-latin-700-normal.woff2",
+    24656
+   ],
+   [
+    "fonts/inter-latin-400-normal.woff2",
+    23964
+   ],
+   [
+    "webfonts/fa-solid-900.woff2",
+    150424
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-400-normal.woff2",
+    12116
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-800-normal.woff2",
+    12196
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-700-normal.woff2",
+    12544
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-600-normal.woff2",
+    12488
+   ],
+   [
+    "127.0.0.1:8765/favicon.ico",
+    635
+   ]
+  ],
+  "nodes": 2280,
+  "listeners": 112,
+  "docs": 1,
+  "heapMB": 4.63,
+  "heapTotMB": 5.75,
+  "script": 149,
+  "layout": 215,
+  "style": 2144,
+  "errs": [
+   "error: Failed to load resource: the server responded with a status of 404 (File not found) @favicon.ico"
+  ]
+ },
+ {
+  "lite": true,
+  "rate": 4,
+  "run": 1,
+  "responseEnd": 270.30000000004657,
+  "domInteractive": 1438.5,
+  "dcl": 1474.0999999998603,
+  "load": 1799,
+  "fcp": 264,
+  "lcp": 1044,
+  "lt": [
+   [
+    160,
+    64
+   ],
+   [
+    533,
+    453
+   ],
+   [
+    1042,
+    100
+   ],
+   [
+    1153,
+    65
+   ],
+   [
+    1221,
+    93
+   ],
+   [
+    1319,
+    104
+   ],
+   [
+    1428,
+    142
+   ],
+   [
+    1571,
+    219
+   ],
+   [
+    2501,
+    89
+   ],
+   [
+    2591,
+    149
+   ],
+   [
+    2830,
+    235
+   ],
+   [
+    3066,
+    183
+   ],
+   [
+    3260,
+    143
+   ]
+  ],
+  "timers": {
+   "si": 0,
+   "st": 0,
+   "al": 20,
+   "raf": 26
+  },
+  "transfer": [
+   [
+    "css/fonts.css",
+    1890
+   ],
+   [
+    "css/fontawesome.css",
+    100188
+   ],
+   [
+    "css/tailwind.css",
+    29358
+   ],
+   [
+    "webfonts/fa-solid-900.woff2",
+    150424
+   ],
+   [
+    "fonts/inter-latin-700-normal.woff2",
+    24656
+   ],
+   [
+    "fonts/inter-latin-400-normal.woff2",
+    23964
+   ],
+   [
+    "fonts/inter-latin-600-normal.woff2",
+    24752
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-800-normal.woff2",
+    12196
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-600-normal.woff2",
+    12488
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-400-normal.woff2",
+    12116
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-700-normal.woff2",
+    12544
+   ],
+   [
+    "127.0.0.1:8765/favicon.ico",
+    635
+   ]
+  ],
+  "nodes": 2280,
+  "listeners": 112,
+  "docs": 1,
+  "heapMB": 4.62,
+  "heapTotMB": 5.75,
+  "script": 209,
+  "layout": 245,
+  "style": 1512,
+  "errs": [
+   "error: Failed to load resource: the server responded with a status of 404 (File not found) @favicon.ico"
+  ]
+ },
+ {
+  "lite": true,
+  "rate": 4,
+  "run": 2,
+  "responseEnd": 235.69999999995343,
+  "domInteractive": 937.9000000001397,
+  "dcl": 974.8000000000466,
+  "load": 1209.3000000000466,
+  "fcp": 428,
+  "lcp": 428,
+  "lt": [
+   [
+    320,
+    78
+   ],
+   [
+    517,
+    223
+   ],
+   [
+    805,
+    64
+   ],
+   [
+    932,
+    88
+   ],
+   [
+    1022,
+    181
+   ],
+   [
+    1221,
+    97
+   ],
+   [
+    2502,
+    118
+   ],
+   [
+    2620,
+    123
+   ]
+  ],
+  "timers": {
+   "si": 0,
+   "st": 0,
+   "al": 20,
+   "raf": 57
+  },
+  "transfer": [
+   [
+    "css/fonts.css",
+    1890
+   ],
+   [
+    "css/fontawesome.css",
+    100188
+   ],
+   [
+    "css/tailwind.css",
+    29358
+   ],
+   [
+    "fonts/inter-latin-600-normal.woff2",
+    24752
+   ],
+   [
+    "fonts/inter-latin-700-normal.woff2",
+    24656
+   ],
+   [
+    "fonts/inter-latin-400-normal.woff2",
+    23964
+   ],
+   [
+    "webfonts/fa-solid-900.woff2",
+    150424
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-800-normal.woff2",
+    12196
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-600-normal.woff2",
+    12488
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-400-normal.woff2",
+    12116
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-700-normal.woff2",
+    12544
+   ],
+   [
+    "127.0.0.1:8765/favicon.ico",
+    635
+   ]
+  ],
+  "nodes": 2280,
+  "listeners": 112,
+  "docs": 1,
+  "heapMB": 4.62,
+  "heapTotMB": 5.75,
+  "script": 109,
+  "layout": 160,
+  "style": 844,
+  "errs": [
+   "error: Failed to load resource: the server responded with a status of 404 (File not found) @favicon.ico"
+  ]
+ },
+ {
+  "lite": true,
+  "rate": 6,
+  "run": 0,
+  "responseEnd": 251.10000000009313,
+  "domInteractive": 1869,
+  "dcl": 1877.9000000001397,
+  "load": 2414.100000000093,
+  "fcp": 556,
+  "lcp": 556,
+  "lt": [
+   [
+    400,
+    102
+   ],
+   [
+    796,
+    675
+   ],
+   [
+    1545,
+    125
+   ],
+   [
+    1705,
+    151
+   ],
+   [
+    1864,
+    151
+   ],
+   [
+    2022,
+    391
+   ],
+   [
+    2432,
+    79
+   ],
+   [
+    2527,
+    110
+   ],
+   [
+    2718,
+    174
+   ],
+   [
+    2893,
+    107
+   ],
+   [
+    3009,
+    244
+   ],
+   [
+    3253,
+    130
+   ],
+   [
+    3418,
+    131
+   ],
+   [
+    3549,
+    221
+   ],
+   [
+    3771,
+    158
+   ]
+  ],
+  "timers": {
+   "si": 0,
+   "st": 0,
+   "al": 20,
+   "raf": 14
+  },
+  "transfer": [
+   [
+    "css/fonts.css",
+    1890
+   ],
+   [
+    "css/fontawesome.css",
+    100188
+   ],
+   [
+    "css/tailwind.css",
+    29358
+   ],
+   [
+    "fonts/inter-latin-600-normal.woff2",
+    24752
+   ],
+   [
+    "fonts/inter-latin-700-normal.woff2",
+    24656
+   ],
+   [
+    "fonts/inter-latin-400-normal.woff2",
+    23964
+   ],
+   [
+    "webfonts/fa-solid-900.woff2",
+    150424
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-800-normal.woff2",
+    12196
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-600-normal.woff2",
+    12488
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-400-normal.woff2",
+    12116
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-700-normal.woff2",
+    12544
+   ],
+   [
+    "127.0.0.1:8765/favicon.ico",
+    635
+   ]
+  ],
+  "nodes": 2280,
+  "listeners": 112,
+  "docs": 1,
+  "heapMB": 4.63,
+  "heapTotMB": 5.75,
+  "script": 135,
+  "layout": 277,
+  "style": 2309,
+  "errs": [
+   "error: Failed to load resource: the server responded with a status of 404 (File not found) @favicon.ico"
+  ]
+ },
+ {
+  "lite": true,
+  "rate": 6,
+  "run": 1,
+  "responseEnd": 241.0999999998603,
+  "domInteractive": 2460.6999999999534,
+  "dcl": 2510.5999999998603,
+  "load": 2598.0999999998603,
+  "fcp": 520,
+  "lcp": 1844,
+  "lt": [
+   [
+    392,
+    112
+   ],
+   [
+    1004,
+    788
+   ],
+   [
+    1852,
+    143
+   ],
+   [
+    2040,
+    415
+   ],
+   [
+    2460,
+    121
+   ],
+   [
+    2676,
+    220
+   ],
+   [
+    2914,
+    89
+   ],
+   [
+    3068,
+    116
+   ],
+   [
+    3184,
+    174
+   ],
+   [
+    3359,
+    153
+   ],
+   [
+    3512,
+    116
+   ],
+   [
+    3629,
+    165
+   ],
+   [
+    3795,
+    163
+   ],
+   [
+    3959,
+    71
+   ],
+   [
+    4032,
+    116
+   ],
+   [
+    4165,
+    173
+   ]
+  ],
+  "timers": {
+   "si": 0,
+   "st": 0,
+   "al": 20,
+   "raf": 14
+  },
+  "transfer": [
+   [
+    "css/fonts.css",
+    1890
+   ],
+   [
+    "css/fontawesome.css",
+    100188
+   ],
+   [
+    "css/tailwind.css",
+    29358
+   ],
+   [
+    "fonts/inter-latin-600-normal.woff2",
+    24752
+   ],
+   [
+    "fonts/inter-latin-700-normal.woff2",
+    24656
+   ],
+   [
+    "fonts/inter-latin-400-normal.woff2",
+    23964
+   ],
+   [
+    "webfonts/fa-solid-900.woff2",
+    150424
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-800-normal.woff2",
+    12196
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-400-normal.woff2",
+    12116
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-600-normal.woff2",
+    12488
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-700-normal.woff2",
+    12544
+   ],
+   [
+    "127.0.0.1:8765/favicon.ico",
+    635
+   ]
+  ],
+  "nodes": 2280,
+  "listeners": 112,
+  "docs": 1,
+  "heapMB": 4.63,
+  "heapTotMB": 5.5,
+  "script": 201,
+  "layout": 320,
+  "style": 2693,
+  "errs": [
+   "error: Failed to load resource: the server responded with a status of 404 (File not found) @favicon.ico"
+  ]
+ },
+ {
+  "lite": true,
+  "rate": 6,
+  "run": 2,
+  "responseEnd": 262.39999999990687,
+  "domInteractive": 2040.7999999998137,
+  "dcl": 2066.7999999998137,
+  "load": 2403.899999999907,
+  "fcp": 608,
+  "lcp": 1616,
+  "lt": [
+   [
+    442,
+    143
+   ],
+   [
+    956,
+    607
+   ],
+   [
+    1673,
+    139
+   ],
+   [
+    1833,
+    194
+   ],
+   [
+    2035,
+    67
+   ],
+   [
+    2109,
+    281
+   ],
+   [
+    2558,
+    137
+   ],
+   [
+    2708,
+    87
+   ],
+   [
+    2848,
+    93
+   ],
+   [
+    2966,
+    154
+   ],
+   [
+    3121,
+    66
+   ],
+   [
+    3215,
+    113
+   ],
+   [
+    3328,
+    138
+   ],
+   [
+    3468,
+    63
+   ],
+   [
+    3552,
+    144
+   ],
+   [
+    3696,
+    73
+   ],
+   [
+    3777,
+    103
+   ],
+   [
+    3881,
+    126
+   ]
+  ],
+  "timers": {
+   "si": 0,
+   "st": 0,
+   "al": 20,
+   "raf": 17
+  },
+  "transfer": [
+   [
+    "css/fonts.css",
+    1890
+   ],
+   [
+    "css/fontawesome.css",
+    100188
+   ],
+   [
+    "css/tailwind.css",
+    29358
+   ],
+   [
+    "fonts/inter-latin-600-normal.woff2",
+    24752
+   ],
+   [
+    "fonts/inter-latin-700-normal.woff2",
+    24656
+   ],
+   [
+    "fonts/inter-latin-400-normal.woff2",
+    23964
+   ],
+   [
+    "webfonts/fa-solid-900.woff2",
+    150424
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-400-normal.woff2",
+    12116
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-800-normal.woff2",
+    12196
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-600-normal.woff2",
+    12488
+   ],
+   [
+    "fonts/plus-jakarta-sans-latin-700-normal.woff2",
+    12544
+   ],
+   [
+    "127.0.0.1:8765/favicon.ico",
+    635
+   ]
+  ],
+  "nodes": 2280,
+  "listeners": 112,
+  "docs": 1,
+  "heapMB": 4.63,
+  "heapTotMB": 5.75,
+  "script": 149,
+  "layout": 370,
+  "style": 2558,
+  "errs": [
+   "error: Failed to load resource: the server responded with a status of 404 (File not found) @favicon.ico"
+  ]
+ }
+]

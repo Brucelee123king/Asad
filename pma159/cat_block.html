@@ -1,0 +1,19 @@
+<style id="catCss">
+/* category list: gold border cards, army emoji icons in white circles, army ribbon heading */
+#sec-menu button[onclick*="openSec"]{border:3px solid #f1d27a!important;box-shadow:0 0 0 2px rgba(201,164,58,.4),0 10px 24px rgba(0,0,0,.15)!important}
+#sec-menu .q-cic{flex:none;width:46px;height:46px;border-radius:50%;background:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:24px;line-height:1;box-shadow:0 0 0 3px rgba(255,255,255,.4)}
+#sec-menu .q-rib{display:flex;flex-direction:column;align-items:center;margin:4px 0 18px}
+#sec-menu .q-rib div{background:linear-gradient(135deg,#2e4a1e,#4d7c2a);color:#f1d27a;font-weight:900;font-size:19px;padding:11px 30px;clip-path:polygon(0 0,100% 0,94% 50%,100% 100%,0 100%,6% 50%);letter-spacing:.04em;white-space:nowrap}
+#sec-menu .q-rib p{margin:8px 0 0;color:#64748b;font-size:13px}html.dark #sec-menu .q-rib p{color:#94a3b8}
+</style>
+<script>
+(function(){
+  var IC={cn:'📜',iv:'🎯',lc:'🪖',o:'📚',pma:'🎖️',pg:'🎓',nv:'🧩',en:'📝',fa:'⚔️',hk:'🏆',lf:'🌟',hf:'🦅'};
+  function deco(){try{var m=document.getElementById('sec-menu');if(!m)return;
+    m.querySelectorAll('h2').forEach(function(h){if(/Choose a/i.test(h.textContent)&&!h.closest('.q-rib')){var w=h.parentElement;if(!w||w.querySelector('.q-rib'))return;var r=document.createElement('div');r.className='q-rib';r.innerHTML='<div>⭐ CHOOSE A CATEGORY ⭐</div><p>Tap a category to see its tests</p>';w.replaceWith(r)}});
+    m.querySelectorAll('button[onclick*="openSec"]').forEach(function(b){var k=/openSec\('([^']+)'\)/.exec(b.getAttribute('onclick')||'');if(!k||!IC[k[1]])return;var i=b.querySelector('i.fa-solid');if(i&&!b.querySelector('.q-cic')){var s=document.createElement('span');s.className='q-cic';if(k[1]==='pg')s.innerHTML='<span class="capimg" style="width:34px;height:34px"></span>';else s.textContent=IC[k[1]];i.replaceWith(s)}});
+  }catch(e){}}
+  var f=window.renderMenu;if(typeof f==='function')window.renderMenu=function(){var r=f.apply(this,arguments);deco();return r};
+  deco();setTimeout(deco,1200);
+})();
+</script>

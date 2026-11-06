@@ -1,0 +1,3182 @@
+[
+ {
+  "id": "T1-M-213",
+  "question": "How many faces does a triangular prism have?",
+  "options": [
+   "4",
+   "5",
+   "9",
+   "6"
+  ],
+  "correct": 1,
+  "why": "A triangular prism has 2 triangular ends and 3 rectangular side faces, so 2 + 3 = 5 faces.",
+  "rel": "A triangular prism has 6 vertices and 9 edges.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-214",
+  "question": "What is the capital city of Libya?",
+  "options": [
+   "Tripoli",
+   "Tunis",
+   "Benghazi",
+   "Algiers"
+  ],
+  "correct": 0,
+  "why": "Tripoli is the capital and largest city of Libya, on the Mediterranean coast. Benghazi is Libya's second city, not the capital.",
+  "rel": "Tunis is the capital of Tunisia and Algiers is the capital of Algeria.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-215",
+  "question": "Which currency is the most traded in world financial markets?",
+  "options": [
+   "US Dollar",
+   "British Pound",
+   "Euro",
+   "Japanese Yen"
+  ],
+  "correct": 0,
+  "why": "The US Dollar is used in most foreign exchange deals and is the main reserve currency of central banks.",
+  "rel": "The Euro is the second most traded currency in the world.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-216",
+  "question": "Which is the largest natural freshwater lake in Pakistan?",
+  "options": [
+   "Manchar Lake",
+   "Saif-ul-Malook Lake",
+   "Haleji Lake",
+   "Keenjhar Lake"
+  ],
+  "correct": 0,
+  "why": "Manchar Lake in Jamshoro/Dadu districts of Sindh, west of the Indus, is Pakistan's largest natural freshwater lake.",
+  "rel": "Keenjhar (Kalri) Lake in Thatta supplies drinking water to Karachi.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-217",
+  "question": "What is the official name of the sport commonly called Ping Pong?",
+  "options": [
+   "Badminton",
+   "Lawn Tennis",
+   "Squash",
+   "Table Tennis"
+  ],
+  "correct": 3,
+  "why": "Ping Pong is the popular name of Table Tennis, which is governed by the International Table Tennis Federation (ITTF).",
+  "rel": "Table tennis became an Olympic sport at the 1988 Seoul Olympics.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-218",
+  "question": "In which city is the Shah Jahan Mosque situated?",
+  "options": [
+   "Hyderabad",
+   "Thatta",
+   "Lahore",
+   "Multan"
+  ],
+  "correct": 1,
+  "why": "The Shah Jahan Mosque in Thatta, Sindh, was built by Mughal emperor Shah Jahan in the 17th century and is famous for its 93 domes.",
+  "rel": "The Makli Necropolis, a UNESCO World Heritage Site, is also near Thatta.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-219",
+  "question": "What is the capital city of Austria?",
+  "options": [
+   "Prague",
+   "Vienna",
+   "Salzburg",
+   "Budapest"
+  ],
+  "correct": 1,
+  "why": "Vienna, on the Danube River, is the capital of Austria. Budapest is Hungary's capital and Prague is the Czech capital.",
+  "rel": "The International Atomic Energy Agency (IAEA) and OPEC have their headquarters in Vienna.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-220",
+  "question": "Where is Jabal-e-Noor (Mountain of Light) located?",
+  "options": [
+   "Jeddah",
+   "Taif",
+   "Makkah",
+   "Madinah"
+  ],
+  "correct": 2,
+  "why": "Jabal-e-Noor is in Makkah. It has the Cave of Hira, where the first revelation came to the Holy Prophet (PBUH).",
+  "rel": "The first revealed verses were the opening verses of Surah Al-Alaq.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-221",
+  "question": "In which year did Sir Syed Ahmad Khan set up the Scientific Society?",
+  "options": [
+   "1864",
+   "1857",
+   "1886",
+   "1875"
+  ],
+  "correct": 0,
+  "why": "Sir Syed founded the Scientific Society at Ghazipur in 1864 to translate modern science books into Urdu; it later moved to Aligarh.",
+  "rel": "Sir Syed founded the MAO School at Aligarh in 1875.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-222",
+  "question": "The term 'agricultural shot' is used in which sport?",
+  "options": [
+   "Golf",
+   "Hockey",
+   "Cricket",
+   "Baseball"
+  ],
+  "correct": 2,
+  "why": "In cricket, an 'agricultural shot' is a wild cross-bat swing with no proper technique, like swinging a scythe.",
+  "rel": "A 'cow corner' is the cricket fielding area where such shots usually go (deep mid-wicket).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-223",
+  "question": "In which year did Lord Curzon carry out the Partition of Bengal?",
+  "options": [
+   "1905",
+   "1906",
+   "1909",
+   "1911"
+  ],
+  "correct": 0,
+  "why": "Lord Curzon partitioned Bengal in 1905, creating the new province of Eastern Bengal and Assam. 1911 is when it was cancelled.",
+  "rel": "The partition was annulled in 1911 by King George V at the Delhi Darbar.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-224",
+  "question": "What was the religion of King Najashi (Negus) of Abyssinia when the early Muslims migrated there?",
+  "options": [
+   "Judaism",
+   "Christianity",
+   "Zoroastrianism",
+   "Idol worship"
+  ],
+  "correct": 1,
+  "why": "Najashi was a Christian king who gave shelter to the Muslim emigrants; he later accepted Islam.",
+  "rel": "The Holy Prophet (PBUH) offered funeral prayer in absentia (Ghaibana) for Najashi.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-225",
+  "question": "What does the word 'Conceal' mean?",
+  "options": [
+   "To destroy",
+   "To hide",
+   "To reveal",
+   "To collect"
+  ],
+  "correct": 1,
+  "why": "'Conceal' means to hide something or keep it secret. 'Reveal' is its opposite.",
+  "rel": "The noun form is 'concealment'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-226",
+  "question": "In which province of Pakistan is Chagai district located?",
+  "options": [
+   "Gilgit-Baltistan",
+   "Sindh",
+   "Khyber Pakhtunkhwa",
+   "Balochistan"
+  ],
+  "correct": 3,
+  "why": "Chagai district is in Balochistan and borders both Iran and Afghanistan.",
+  "rel": "Pakistan conducted its nuclear tests in the Ras Koh Hills of Chagai on 28 May 1998.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-227",
+  "question": "Who founded the English newspaper 'Dawn' in 1941?",
+  "options": [
+   "Maulana Muhammad Ali Jauhar",
+   "Quaid-e-Azam Muhammad Ali Jinnah",
+   "Liaquat Ali Khan",
+   "Allama Muhammad Iqbal"
+  ],
+  "correct": 1,
+  "why": "Quaid-e-Azam founded Dawn in Delhi in October 1941 to put forward the Muslim League's point of view.",
+  "rel": "Maulana Muhammad Ali Jauhar ran the English weekly 'Comrade'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-228",
+  "question": "What is the approximate total length of the Indus River?",
+  "options": [
+   "1,600 km",
+   "6,650 km",
+   "3,180 km",
+   "2,525 km"
+  ],
+  "correct": 2,
+  "why": "The Indus is about 3,180 km long, rising near Lake Mansarovar in Tibet and falling into the Arabian Sea near Thatta.",
+  "rel": "6,650 km is the length of the Nile, the world's longest river.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-229",
+  "question": "In which year did the Chauri Chaura incident take place?",
+  "options": [
+   "1924",
+   "1922",
+   "1920",
+   "1919"
+  ],
+  "correct": 1,
+  "why": "On 4 February 1922, protesters burned a police station at Chauri Chaura (UP), and Gandhi then called off the Non-Cooperation Movement.",
+  "rel": "The Khilafat Movement lost much of its strength after Gandhi stopped the Non-Cooperation Movement.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-230",
+  "question": "Which drink is the national drink of Pakistan?",
+  "options": [
+   "Green tea",
+   "Mango shake",
+   "Lassi",
+   "Sugarcane juice"
+  ],
+  "correct": 3,
+  "why": "Sugarcane juice (ganne ka ras) was declared Pakistan's national drink in 2019 after a public poll.",
+  "rel": "Pakistan's national fruit is the mango.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-231",
+  "question": "In which year was Pakistan International Airlines (PIA) formed?",
+  "options": [
+   "1947",
+   "1962",
+   "1951",
+   "1955"
+  ],
+  "correct": 3,
+  "why": "PIA was formed in 1955 when the government merged Orient Airways into the new national airline.",
+  "rel": "Orient Airways was founded in 1946 in Calcutta with the support of Quaid-e-Azam.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-232",
+  "question": "According to Islamic teaching, how many prophet sons did Hazrat Ibrahim (A.S) have?",
+  "options": [
+   "One",
+   "Two",
+   "Three",
+   "Four"
+  ],
+  "correct": 1,
+  "why": "Hazrat Ibrahim (A.S) had two sons who were prophets: Hazrat Ismail (A.S) and Hazrat Ishaq (A.S).",
+  "rel": "Hazrat Ismail's mother was Hazrat Hajra and Hazrat Ishaq's mother was Hazrat Sarah.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-233",
+  "question": "In which year were non-party based general elections held in Pakistan?",
+  "options": [
+   "1970",
+   "1977",
+   "1988",
+   "1985"
+  ],
+  "correct": 3,
+  "why": "General Zia-ul-Haq held the general elections of February 1985 on a non-party basis.",
+  "rel": "Muhammad Khan Junejo became Prime Minister after the 1985 elections.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-234",
+  "question": "Who elects the Prime Minister of Pakistan?",
+  "options": [
+   "The National Assembly",
+   "The President",
+   "The Senate",
+   "The people directly"
+  ],
+  "correct": 0,
+  "why": "Under the 1973 Constitution, the Prime Minister is elected by a majority of the members of the National Assembly.",
+  "rel": "The President is elected by an electoral college of both houses of Parliament and the four provincial assemblies.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-235",
+  "question": "How many times has Pakistan won the Men's Hockey World Cup?",
+  "options": [
+   "2",
+   "4",
+   "5",
+   "3"
+  ],
+  "correct": 1,
+  "why": "Pakistan won the Hockey World Cup in 1971, 1978, 1982 and 1994.",
+  "rel": "Pakistan has won 3 Olympic gold medals in hockey (1960, 1968, 1984).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-236",
+  "question": "From which country did Pakistan buy Gwadar?",
+  "options": [
+   "Iran",
+   "United Arab Emirates",
+   "Saudi Arabia",
+   "Oman"
+  ],
+  "correct": 3,
+  "why": "Pakistan bought Gwadar from the Sultanate of Oman in September 1958 during PM Feroz Khan Noon's government.",
+  "rel": "Gwadar port is a key part of the China-Pakistan Economic Corridor (CPEC).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-237",
+  "question": "In which year did Pakistan win the ICC Men's T20 World Cup?",
+  "options": [
+   "2012",
+   "2022",
+   "2007",
+   "2009"
+  ],
+  "correct": 3,
+  "why": "Pakistan beat Sri Lanka in the 2009 final at Lord's under Younis Khan. In 2007 Pakistan lost the final to India.",
+  "rel": "Pakistan won the ICC Champions Trophy in 2017.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-238",
+  "question": "Why does the daytime sky look blue?",
+  "options": [
+   "Reflection of light from the oceans",
+   "Scattering of sunlight by air molecules",
+   "Absorption of red light by the Sun",
+   "Refraction of light by clouds"
+  ],
+  "correct": 1,
+  "why": "Air molecules scatter short blue wavelengths of sunlight much more than red ones (Rayleigh scattering), so blue light reaches us from all over the sky.",
+  "rel": "The same scattering makes sunsets look red, because blue light is scattered away over the long path.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-239",
+  "question": "How many months of the year have 31 days?",
+  "options": [
+   "8",
+   "5",
+   "7",
+   "6"
+  ],
+  "correct": 2,
+  "why": "January, March, May, July, August, October and December have 31 days, which makes 7 months.",
+  "rel": "February has 28 days, or 29 in a leap year.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-240",
+  "question": "Boris Johnson was the Prime Minister of which country?",
+  "options": [
+   "Canada",
+   "United Kingdom",
+   "Australia",
+   "New Zealand"
+  ],
+  "correct": 1,
+  "why": "Boris Johnson was UK Prime Minister and Conservative Party leader from 2019 to 2022.",
+  "rel": "He was followed by Liz Truss, who served only about 7 weeks.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-241",
+  "question": "Hazrat Hajra (A.S) was the mother of which Prophet?",
+  "options": [
+   "Hazrat Ishaq (A.S)",
+   "Hazrat Ismail (A.S)",
+   "Hazrat Yaqub (A.S)",
+   "Hazrat Musa (A.S)"
+  ],
+  "correct": 1,
+  "why": "Hazrat Hajra was the mother of Hazrat Ismail (A.S). Hazrat Ishaq's mother was Hazrat Sarah.",
+  "rel": "Her running between Safa and Marwah is remembered as Sa'i during Hajj and Umrah.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-242",
+  "question": "How many members does the UN Security Council have?",
+  "options": [
+   "5",
+   "10",
+   "20",
+   "15"
+  ],
+  "correct": 3,
+  "why": "The Security Council has 15 members: 5 permanent members with veto power and 10 non-permanent members elected for 2 years.",
+  "rel": "Pakistan is a non-permanent member of the Security Council for 2025-2026.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-243",
+  "question": "Tripoli is the capital of which North African country?",
+  "options": [
+   "Egypt",
+   "Libya",
+   "Tunisia",
+   "Morocco"
+  ],
+  "correct": 1,
+  "why": "Tripoli, on the Mediterranean coast, is the capital of Libya.",
+  "rel": "Rabat is the capital of Morocco and Cairo is the capital of Egypt.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-244",
+  "question": "The Khyber Pass connects Peshawar with which city?",
+  "options": [
+   "Quetta",
+   "Kandahar",
+   "Gilgit",
+   "Kabul (via Jalalabad)"
+  ],
+  "correct": 3,
+  "why": "The Khyber Pass links Peshawar in Pakistan with Jalalabad and Kabul in Afghanistan.",
+  "rel": "Torkham is the main border crossing at the Khyber Pass.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-245",
+  "question": "During the Hijrat Movement of 1920, Indian Muslims tried to migrate to which country?",
+  "options": [
+   "Saudi Arabia",
+   "Iran",
+   "Afghanistan",
+   "Turkey"
+  ],
+  "correct": 2,
+  "why": "Ulema declared India Dar-ul-Harb, and thousands of Muslims migrated to Afghanistan, which later closed its border to them.",
+  "rel": "The Hijrat Movement was part of the Khilafat Movement period.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-246",
+  "question": "Which is the largest lake on Earth?",
+  "options": [
+   "Lake Baikal",
+   "Lake Victoria",
+   "Lake Superior",
+   "Caspian Sea"
+  ],
+  "correct": 3,
+  "why": "The Caspian Sea is the largest enclosed inland body of water on Earth (about 371,000 sq km), even though it is called a sea.",
+  "rel": "Lake Superior is the largest freshwater lake by area, and Lake Baikal is the deepest lake.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-247",
+  "question": "Who gave Pakistan the motto 'Unity, Faith, Discipline'?",
+  "options": [
+   "Allama Muhammad Iqbal",
+   "Quaid-e-Azam Muhammad Ali Jinnah",
+   "Sir Syed Ahmad Khan",
+   "Liaquat Ali Khan"
+  ],
+  "correct": 1,
+  "why": "Quaid-e-Azam gave the nation the motto 'Unity, Faith and Discipline' (Ittehad, Yaqeen, Tanzeem).",
+  "rel": "The motto appears on the state emblem of Pakistan in Urdu.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-248",
+  "question": "In which month and year was the Nehru Report published?",
+  "options": [
+   "December 1927",
+   "May 1930",
+   "August 1928",
+   "March 1929"
+  ],
+  "correct": 2,
+  "why": "The Nehru Report, prepared by a committee under Motilal Nehru, was published in August 1928.",
+  "rel": "Quaid-e-Azam answered it with his Fourteen Points in March 1929.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-249",
+  "question": "What was the old British name of Attock city?",
+  "options": [
+   "Montgomery",
+   "Lyallpur",
+   "Jacobabad",
+   "Campbellpur"
+  ],
+  "correct": 3,
+  "why": "Attock was called Campbellpur after Sir Colin Campbell; it was renamed Attock in 1978.",
+  "rel": "Lyallpur is now Faisalabad and Montgomery is now Sahiwal.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-250",
+  "question": "How many Madani Surahs are there in the Holy Quran?",
+  "options": [
+   "30",
+   "114",
+   "86",
+   "28"
+  ],
+  "correct": 3,
+  "why": "28 Surahs were revealed after the Hijrah (Madani) and 86 before it (Makki), making 114 in total.",
+  "rel": "Surah Al-Baqarah, the longest Surah, is Madani.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-251",
+  "question": "How many Makki Surahs are there in the Holy Quran?",
+  "options": [
+   "114",
+   "90",
+   "28",
+   "86"
+  ],
+  "correct": 3,
+  "why": "86 Surahs were revealed in Makkah before the Hijrah; the other 28 are Madani.",
+  "rel": "Makki Surahs mostly deal with Tauheed, the Hereafter and Prophethood.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-252",
+  "question": "Against whom did the Muslims fight the Battle of Badr?",
+  "options": [
+   "The Byzantines",
+   "The Quraish of Makkah",
+   "The Jews of Madinah",
+   "The Persians"
+  ],
+  "correct": 1,
+  "why": "Ghazwa-e-Badr (2 AH) was fought against the idol-worshipping Quraish of Makkah led by Abu Jahl.",
+  "rel": "313 Muslims defeated about 1,000 Quraish fighters at Badr.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-253",
+  "question": "South Africa is famous worldwide as a leading producer of which mineral?",
+  "options": [
+   "Copper",
+   "Tin",
+   "Bauxite",
+   "Gold"
+  ],
+  "correct": 3,
+  "why": "South Africa's Witwatersrand Basin has produced more gold than anywhere else in history.",
+  "rel": "South Africa is also the world's largest producer of platinum.",
+  "status": "ok",
+  "note": "Notes listed gold, platinum and diamonds; MCQ uses gold."
+ },
+ {
+  "id": "T1-M-254",
+  "question": "Which is the largest bay in the world?",
+  "options": [
+   "Bay of Bengal",
+   "Gulf of Mexico",
+   "Hudson Bay",
+   "Bay of Biscay"
+  ],
+  "correct": 0,
+  "why": "The Bay of Bengal, about 2.17 million sq km in the northeastern Indian Ocean, is usually named the largest bay.",
+  "rel": "The Ganges-Brahmaputra delta, the world's largest delta, opens into the Bay of Bengal.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-255",
+  "question": "Which is the largest marginal sea in the world?",
+  "options": [
+   "Philippine Sea",
+   "Mediterranean Sea",
+   "Arabian Sea",
+   "Caribbean Sea"
+  ],
+  "correct": 0,
+  "why": "The Philippine Sea in the western Pacific covers about 5.7 million sq km, more than any other sea.",
+  "rel": "The Arabian Sea, on Pakistan's coast, is part of the Indian Ocean.",
+  "status": "ok",
+  "note": "Notes gave 'Philippine Sea / South China Sea'; the Philippine Sea is the larger, so it is used."
+ },
+ {
+  "id": "T1-M-256",
+  "question": "Which mountain range forms the border between Spain and France?",
+  "options": [
+   "Alps",
+   "Apennines",
+   "Carpathians",
+   "Pyrenees"
+  ],
+  "correct": 3,
+  "why": "The Pyrenees run about 430 km from the Bay of Biscay to the Mediterranean, between Spain and France.",
+  "rel": "The tiny country of Andorra lies in the Pyrenees.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-257",
+  "question": "Where is the western end (starting point) of the Himalayas?",
+  "options": [
+   "K2 in Pakistan",
+   "Nanga Parbat in Pakistan",
+   "Mount Everest in Nepal",
+   "Namcha Barwa in Tibet"
+  ],
+  "correct": 1,
+  "why": "The Himalayas stretch from Nanga Parbat in the west to Namcha Barwa in the east. K2 is in the Karakoram, not the Himalayas.",
+  "rel": "Nanga Parbat (8,126 m) is called the 'Killer Mountain'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-258",
+  "question": "The boxing champion Muhammad Ali belonged to which country?",
+  "options": [
+   "United Kingdom",
+   "Egypt",
+   "United States",
+   "Pakistan"
+  ],
+  "correct": 2,
+  "why": "Muhammad Ali, born Cassius Clay in Louisville, Kentucky, USA, was a three-time world heavyweight champion.",
+  "rel": "He won an Olympic gold medal at the 1960 Rome Olympics.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-259",
+  "question": "Which city hosted the 2016 Summer Olympics?",
+  "options": [
+   "Beijing",
+   "Rio de Janeiro",
+   "Tokyo",
+   "London"
+  ],
+  "correct": 1,
+  "why": "Rio de Janeiro, Brazil, hosted the 2016 Olympics, the first in South America. London hosted 2012 and Tokyo 2020.",
+  "rel": "Paris hosted 2024 and Los Angeles will host 2028.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-260",
+  "question": "Who is the Chief Minister of Sindh?",
+  "options": [
+   "Sarfraz Bugti",
+   "Syed Murad Ali Shah",
+   "Maryam Nawaz",
+   "Qaim Ali Shah"
+  ],
+  "correct": 1,
+  "why": "Syed Murad Ali Shah of the PPP is Chief Minister of Sindh; he started his third term in 2024.",
+  "rel": "Maryam Nawaz is CM of Punjab and Sarfraz Bugti is CM of Balochistan.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-261",
+  "question": "In which Hijri year was the Battle of the Trench (Ghazwa-e-Khandaq) fought?",
+  "options": [
+   "3 AH",
+   "2 AH",
+   "8 AH",
+   "5 AH"
+  ],
+  "correct": 3,
+  "why": "Ghazwa-e-Khandaq (also called Ahzab) was fought in 5 AH (627 AD). Badr was in 2 AH and Uhud in 3 AH.",
+  "rel": "The idea of digging the trench was given by Hazrat Salman Farsi (R.A).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-262",
+  "question": "Who took over power in Pakistan after General Yahya Khan resigned in 1971?",
+  "options": [
+   "Fazal Ilahi Chaudhry",
+   "General Tikka Khan",
+   "Nurul Amin",
+   "Zulfikar Ali Bhutto"
+  ],
+  "correct": 3,
+  "why": "Z.A. Bhutto became President and the first civilian Chief Martial Law Administrator on 20 December 1971.",
+  "rel": "Fazal Ilahi Chaudhry became President in 1973 when Bhutto became Prime Minister.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-263",
+  "question": "What is the approximate length of Pakistan's coastline?",
+  "options": [
+   "About 600 km",
+   "About 1,046 km",
+   "About 2,200 km",
+   "About 1,600 km"
+  ],
+  "correct": 1,
+  "why": "Pakistan's coastline on the Arabian Sea is about 1,046 km long; most of it is the Makran coast of Balochistan.",
+  "rel": "Karachi, Port Qasim and Gwadar are Pakistan's main seaports.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-264",
+  "question": "What is the currency of Turkey?",
+  "options": [
+   "Turkish Dinar",
+   "Turkish Riyal",
+   "Turkish Dirham",
+   "Turkish Lira"
+  ],
+  "correct": 3,
+  "why": "Turkey's currency is the Turkish Lira, divided into 100 kurus.",
+  "rel": "The capital of Turkey is Ankara.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-265",
+  "question": "What is the capital city of Australia?",
+  "options": [
+   "Perth",
+   "Melbourne",
+   "Canberra",
+   "Sydney"
+  ],
+  "correct": 2,
+  "why": "Canberra is Australia's planned federal capital. Sydney is the largest city but not the capital.",
+  "rel": "Canberra was chosen as a compromise between rival cities Sydney and Melbourne.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-266",
+  "question": "Which country is the world's largest producer and exporter of coffee?",
+  "options": [
+   "Ethiopia",
+   "Brazil",
+   "Vietnam",
+   "Colombia"
+  ],
+  "correct": 1,
+  "why": "Brazil has been the world's largest coffee producer and exporter for over 150 years. Vietnam is second.",
+  "rel": "Coffee is believed to have first been found in Ethiopia.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-267",
+  "question": "Which country is called the 'Land of a Thousand Lakes'?",
+  "options": [
+   "Finland",
+   "Sweden",
+   "Norway",
+   "Denmark"
+  ],
+  "correct": 0,
+  "why": "Finland is called the 'Land of a Thousand Lakes'; in fact it has over 180,000 lakes.",
+  "rel": "Norway is called the 'Land of the Midnight Sun'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-268",
+  "question": "In which year and city was SAARC founded?",
+  "options": [
+   "1980, Colombo",
+   "1990, Islamabad",
+   "1985, Kathmandu",
+   "1985, Dhaka"
+  ],
+  "correct": 3,
+  "why": "SAARC was founded on 8 December 1985 in Dhaka, Bangladesh. Kathmandu is where its secretariat is.",
+  "rel": "SAARC's secretariat is in Kathmandu, Nepal.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-269",
+  "question": "What is the main source of electricity generation in Pakistan?",
+  "options": [
+   "Solar",
+   "Nuclear",
+   "Hydel",
+   "Thermal (oil, gas and coal)"
+  ],
+  "correct": 3,
+  "why": "Most of Pakistan's electricity comes from thermal power plants using gas, oil and coal, followed by hydel power.",
+  "rel": "Tarbela is Pakistan's largest hydel power station.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-270",
+  "question": "Where is Jabal-e-Rehmat (Mount of Mercy) located?",
+  "options": [
+   "Mina",
+   "Muzdalifah",
+   "Madinah",
+   "Plain of Arafat"
+  ],
+  "correct": 3,
+  "why": "Jabal-e-Rehmat stands in the plain of Arafat near Makkah, where the Holy Prophet (PBUH) gave the Farewell Sermon.",
+  "rel": "Wuquf (standing) at Arafat on 9 Zil-Hajj is the main pillar of Hajj.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-271",
+  "question": "What is the currency of Japan?",
+  "options": [
+   "Ringgit",
+   "Yuan",
+   "Won",
+   "Yen"
+  ],
+  "correct": 3,
+  "why": "Japan's currency is the Yen. The Won is Korean, the Yuan is Chinese and the Ringgit is Malaysian.",
+  "rel": "The Yen is one of the world's main reserve currencies.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-272",
+  "question": "Who was the first Foreign Minister of Pakistan?",
+  "options": [
+   "Sir Muhammad Zafarullah Khan",
+   "Malik Ghulam Muhammad",
+   "Liaquat Ali Khan",
+   "Sardar Abdur Rab Nishtar"
+  ],
+  "correct": 0,
+  "why": "Sir Zafarullah Khan was appointed the first Foreign Minister by Quaid-e-Azam; he later became President of the UN General Assembly and of the ICJ.",
+  "rel": "Malik Ghulam Muhammad was Pakistan's first Finance Minister.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-273",
+  "question": "In which city is Nishtar Hospital located?",
+  "options": [
+   "Multan",
+   "Faisalabad",
+   "Bahawalpur",
+   "Lahore"
+  ],
+  "correct": 0,
+  "why": "Nishtar Hospital, one of Pakistan's biggest teaching hospitals, is in Multan, attached to Nishtar Medical University.",
+  "rel": "It is named after Sardar Abdur Rab Nishtar, a leader of the Pakistan Movement.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-274",
+  "question": "What is the currency of Poland?",
+  "options": [
+   "Forint",
+   "Koruna",
+   "Euro",
+   "Zloty"
+  ],
+  "correct": 3,
+  "why": "Poland's currency is the Zloty, meaning 'golden'. The Forint is Hungarian and the Koruna is Czech.",
+  "rel": "Poland is in the EU but has not adopted the Euro.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-275",
+  "question": "Who compiled 'Sahih al-Bukhari'?",
+  "options": [
+   "Imam Malik",
+   "Imam Muhammad bin Ismail al-Bukhari",
+   "Imam Muslim bin Hajjaj",
+   "Imam Abu Dawood"
+  ],
+  "correct": 1,
+  "why": "Imam Bukhari, born in Bukhara (now Uzbekistan) in 194 AH, compiled Sahih al-Bukhari.",
+  "rel": "Sahih Bukhari and Sahih Muslim together are called 'Sahihain'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-276",
+  "question": "During whose government was Mangla Dam built?",
+  "options": [
+   "Zulfikar Ali Bhutto",
+   "Field Marshal Ayub Khan",
+   "General Zia-ul-Haq",
+   "Iskander Mirza"
+  ],
+  "correct": 1,
+  "why": "Mangla Dam on the Jhelum River in Mirpur (AJK) was completed in 1967 under Ayub Khan, as part of the Indus Basin works.",
+  "rel": "Tarbela Dam was completed in 1976 under Bhutto's government.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-277",
+  "question": "What does OPEC stand for?",
+  "options": [
+   "Oil Producing and Exporting Council",
+   "Organization of the Petroleum Exporting Countries",
+   "Organization of Pacific Economic Countries",
+   "Organization of Petroleum and Energy Cooperation"
+  ],
+  "correct": 1,
+  "why": "OPEC is the Organization of the Petroleum Exporting Countries, founded in Baghdad in 1960.",
+  "rel": "OPEC's headquarters is in Vienna, Austria.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-278",
+  "question": "About what percentage of Pakistan's population is Muslim?",
+  "options": [
+   "About 60%",
+   "About 96%",
+   "About 85%",
+   "About 75%"
+  ],
+  "correct": 1,
+  "why": "Census figures show about 96 to 97% of Pakistanis are Muslims.",
+  "rel": "Christians and Hindus are the largest religious minorities of Pakistan.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-279",
+  "question": "Which is the longest river in Europe?",
+  "options": [
+   "Rhine",
+   "Danube",
+   "Volga",
+   "Dnieper"
+  ],
+  "correct": 2,
+  "why": "The Volga, about 3,530 km long, flows through Russia into the Caspian Sea. The Danube is second.",
+  "rel": "The Danube flows through more countries (10) than any other river.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-280",
+  "question": "What is the currency of Kuwait?",
+  "options": [
+   "Kuwaiti Riyal",
+   "Kuwaiti Dirham",
+   "Kuwaiti Pound",
+   "Kuwaiti Dinar"
+  ],
+  "correct": 3,
+  "why": "Kuwait's currency is the Kuwaiti Dinar, the highest-valued currency unit in the world.",
+  "rel": "Bahrain's Dinar and Oman's Rial are the next highest-valued currencies.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-281",
+  "question": "Who was the second Governor-General of Pakistan?",
+  "options": [
+   "Malik Ghulam Muhammad",
+   "Liaquat Ali Khan",
+   "Khawaja Nazimuddin",
+   "Iskander Mirza"
+  ],
+  "correct": 2,
+  "why": "Khawaja Nazimuddin became Governor-General in September 1948 after the death of Quaid-e-Azam.",
+  "rel": "In 1951 Khawaja Nazimuddin became the second Prime Minister and Ghulam Muhammad became Governor-General.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-282",
+  "question": "About how many Muslims were martyred in the Battle of the Trench (Khandaq)?",
+  "options": [
+   "22",
+   "14",
+   "6",
+   "70"
+  ],
+  "correct": 2,
+  "why": "Only about 6 Muslims were martyred at Khandaq because the trench stopped direct fighting. 70 were martyred at Uhud.",
+  "rel": "Hazrat Saad bin Muaz (R.A) was wounded at Khandaq and later died of his wound.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-283",
+  "question": "How many Muslims were martyred in the Battle of Uhud?",
+  "options": [
+   "14",
+   "6",
+   "313",
+   "70"
+  ],
+  "correct": 3,
+  "why": "About 70 Companions were martyred at Uhud, including the Prophet's uncle Hazrat Hamza (R.A). 14 were martyred at Badr.",
+  "rel": "Hazrat Hamza (R.A) is called Sayyid-ush-Shuhada (leader of the martyrs).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-284",
+  "question": "How many wives did the Holy Prophet (PBUH) have in his lifetime?",
+  "options": [
+   "13",
+   "7",
+   "11",
+   "9"
+  ],
+  "correct": 2,
+  "why": "Most scholars count 11 wives, called Ummahat-ul-Momineen (Mothers of the Believers). He left behind 9 wives at his death.",
+  "rel": "Hazrat Khadija (R.A) was his first wife and Hazrat Maimuna (R.A) the last he married.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-285",
+  "question": "What was the religion of the Quraish before Islam?",
+  "options": [
+   "Judaism",
+   "Idol worship",
+   "Christianity",
+   "Zoroastrianism"
+  ],
+  "correct": 1,
+  "why": "The Quraish worshipped idols; the Kaaba had 360 idols before the Conquest of Makkah.",
+  "rel": "Hubal was the chief idol in the Kaaba.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-286",
+  "question": "What is the deepest known point in the oceans?",
+  "options": [
+   "Challenger Deep (Mariana Trench)",
+   "Tonga Trench",
+   "Puerto Rico Trench",
+   "Java (Sunda) Trench"
+  ],
+  "correct": 0,
+  "why": "The Challenger Deep in the Mariana Trench, western Pacific, is about 10,900 m deep.",
+  "rel": "The Puerto Rico Trench is the deepest point of the Atlantic Ocean.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-287",
+  "question": "Which is the highest paved mountain pass in Pakistan?",
+  "options": [
+   "Lowari Pass",
+   "Khunjerab Pass",
+   "Babusar Pass",
+   "Shandur Pass"
+  ],
+  "correct": 1,
+  "why": "Khunjerab Pass, 4,693 m high, joins Gilgit-Baltistan with Xinjiang (China) on the Karakoram Highway.",
+  "rel": "Shandur Pass is famous for the world's highest polo ground.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-288",
+  "question": "Which is the tallest building in Pakistan?",
+  "options": [
+   "Arfa Software Technology Park, Lahore",
+   "Bahria Icon Tower, Karachi",
+   "MCB Tower, Karachi",
+   "Centaurus, Islamabad"
+  ],
+  "correct": 1,
+  "why": "Bahria Icon Tower in Clifton, Karachi, about 273 m tall, is Pakistan's tallest building.",
+  "rel": "Before it, the MCB Tower in Karachi was the tallest building in Pakistan.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-289",
+  "question": "Which highway links Pakistan with China?",
+  "options": [
+   "Grand Trunk Road",
+   "Karakoram Highway",
+   "Indus Highway",
+   "Makran Coastal Highway"
+  ],
+  "correct": 1,
+  "why": "The Karakoram Highway (N-35), built jointly by Pakistan and China, crosses into China at Khunjerab Pass.",
+  "rel": "It is often called the 'Eighth Wonder of the World'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-290",
+  "question": "In which year was the Organization of Islamic Cooperation (OIC) founded?",
+  "options": [
+   "1974",
+   "1981",
+   "1965",
+   "1969"
+  ],
+  "correct": 3,
+  "why": "The OIC was founded in Rabat, Morocco, in September 1969 after the arson attack on Al-Aqsa Mosque. 1974 was the Lahore summit.",
+  "rel": "Pakistan hosted the second OIC summit in Lahore in 1974.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-291",
+  "question": "Where is the headquarters of the World Bank?",
+  "options": [
+   "New York",
+   "Washington, D.C.",
+   "Geneva",
+   "London"
+  ],
+  "correct": 1,
+  "why": "The World Bank's headquarters is in Washington, D.C., USA. It was set up at the 1944 Bretton Woods Conference with the IMF.",
+  "rel": "The IMF's headquarters is also in Washington, D.C.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-292",
+  "question": "On which date were the 2018 general elections held in Pakistan?",
+  "options": [
+   "25 July 2018",
+   "11 May 2018",
+   "18 August 2018",
+   "8 February 2018"
+  ],
+  "correct": 0,
+  "why": "The general elections were held on 25 July 2018, and PTI won the most seats. 18 August 2018 is when Imran Khan took oath as PM.",
+  "rel": "The next general elections were held on 8 February 2024.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-293",
+  "question": "In which year was the Battle of Yamama fought?",
+  "options": [
+   "636 AD (15 AH)",
+   "640 AD (19 AH)",
+   "624 AD (2 AH)",
+   "632 AD (11 AH)"
+  ],
+  "correct": 3,
+  "why": "The Battle of Yamama was fought in 632 AD (11-12 AH) under Hazrat Abu Bakr (R.A) against the false prophet Musaylimah. 636 AD is Yarmouk.",
+  "rel": "Musaylimah was killed in this battle by Hazrat Wahshi (R.A).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-294",
+  "question": "The Battle of Yarmouk was fought against which empire?",
+  "options": [
+   "Byzantine (Eastern Roman) Empire",
+   "Mongol Empire",
+   "Persian (Sassanid) Empire",
+   "Ottoman Empire"
+  ],
+  "correct": 0,
+  "why": "Yarmouk (636 AD) was fought against the Byzantines under Hazrat Khalid bin Waleed (R.A). The Persians were defeated at Qadisiyyah.",
+  "rel": "The Battle of Qadisiyyah (636 AD) was against the Persian Empire.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-295",
+  "question": "Which old name of Makkah is used in Surah Aal-e-Imran?",
+  "options": [
+   "Ummul Qura",
+   "Bakkah",
+   "Taiba",
+   "Yathrib"
+  ],
+  "correct": 1,
+  "why": "Verse 96 of Surah Aal-e-Imran says the first House for mankind is at 'Bakkah'. Yathrib and Taiba are names of Madinah.",
+  "rel": "Ummul Qura (Mother of Towns) is another Quranic name for Makkah, used in Surah Al-An'am.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-296",
+  "question": "In which year did East Pakistan separate and become Bangladesh?",
+  "options": [
+   "1971",
+   "1970",
+   "1972",
+   "1969"
+  ],
+  "correct": 0,
+  "why": "East Pakistan separated on 16 December 1971 at the end of the 1971 war with India.",
+  "rel": "Sheikh Mujibur Rahman became the first leader of Bangladesh.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-297",
+  "question": "In which year was the first ICC Champions Trophy held?",
+  "options": [
+   "1975",
+   "2002",
+   "2004",
+   "1998"
+  ],
+  "correct": 3,
+  "why": "The first Champions Trophy was held in 1998 in Dhaka, Bangladesh, under the name 'ICC KnockOut'. South Africa won it.",
+  "rel": "Pakistan won the Champions Trophy in 2017, beating India in the final.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-298",
+  "question": "Who was President of Iran from 2021 until his death in 2024?",
+  "options": [
+   "Masoud Pezeshkian",
+   "Ebrahim Raisi",
+   "Hassan Rouhani",
+   "Mahmoud Ahmadinejad"
+  ],
+  "correct": 1,
+  "why": "Ebrahim Raisi became President in 2021 and died in a helicopter crash in May 2024. Rouhani was before him and Pezeshkian after him.",
+  "rel": "Masoud Pezeshkian was elected President of Iran in July 2024.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-299",
+  "question": "What is the capital city of Japan?",
+  "options": [
+   "Tokyo",
+   "Hiroshima",
+   "Osaka",
+   "Kyoto"
+  ],
+  "correct": 0,
+  "why": "Tokyo is the capital of Japan and the world's most populated metropolitan area. Kyoto was the old capital.",
+  "rel": "Kyoto was Japan's imperial capital for over 1,000 years.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-300",
+  "question": "Which is the largest enclosed body of water on Earth?",
+  "options": [
+   "Lake Superior",
+   "Dead Sea",
+   "Aral Sea",
+   "Caspian Sea"
+  ],
+  "correct": 3,
+  "why": "The Caspian Sea, about 371,000 sq km, is the largest enclosed (inland) body of water.",
+  "rel": "The Dead Sea is the lowest point on land and one of the saltiest water bodies.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-301",
+  "question": "How many general seats are there in the National Assembly of Pakistan?",
+  "options": [
+   "336",
+   "342",
+   "266",
+   "272"
+  ],
+  "correct": 2,
+  "why": "The National Assembly has 266 general seats; with 60 seats for women and 10 for minorities, the total is 336.",
+  "rel": "Before the FATA merger (25th Amendment) there were 272 general seats and 342 in total.",
+  "status": "fixed",
+  "note": "Notes said 336, but 336 is the total membership; the general seats are 266."
+ },
+ {
+  "id": "T1-M-302",
+  "question": "Which is the first Surah of the Holy Quran?",
+  "options": [
+   "Surah Al-Alaq",
+   "Surah Al-Fatihah",
+   "Surah Al-Ikhlas",
+   "Surah Al-Baqarah"
+  ],
+  "correct": 1,
+  "why": "Surah Al-Fatihah opens the Quran; it has 7 verses and is recited in every rakat of prayer. Al-Alaq was the first revealed.",
+  "rel": "Surah Al-Fatihah is also called 'Ummul Kitab' (Mother of the Book).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-303",
+  "question": "What is the nisab of Zakat on gold, and the rate?",
+  "options": [
+   "10 tolas; 10%",
+   "52.5 tolas; 2.5%",
+   "7.5 tolas; 5%",
+   "7.5 tolas; 2.5%"
+  ],
+  "correct": 3,
+  "why": "Zakat is due at 2.5% on gold of 7.5 tolas (about 87.48 g) or more, held for one lunar year. 52.5 tolas is the nisab for silver.",
+  "rel": "Zakat is the third pillar of Islam.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-304",
+  "question": "What is the nisab of Zakat on silver, and the rate?",
+  "options": [
+   "52.5 tolas; 5%",
+   "52.5 tolas; 2.5%",
+   "7.5 tolas; 2.5%",
+   "40 tolas; 10%"
+  ],
+  "correct": 1,
+  "why": "Zakat on silver is 2.5% (1/40th) when it reaches 52.5 tolas (about 612.36 g). 7.5 tolas is the nisab for gold.",
+  "rel": "Ushr is the Zakat on farm produce, at 10% or 5% depending on irrigation.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-305",
+  "question": "Where is Simly Dam located?",
+  "options": [
+   "Near Islamabad",
+   "Near Quetta",
+   "Near Lahore",
+   "Near Peshawar"
+  ],
+  "correct": 0,
+  "why": "Simly Dam is on the Soan River near Islamabad and is the main source of drinking water for the city.",
+  "rel": "Rawal Dam, on the Korang River, supplies water to Rawalpindi.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-306",
+  "question": "Fatima Jinnah contested which presidential election against Ayub Khan?",
+  "options": [
+   "1962",
+   "1965",
+   "1958",
+   "1970"
+  ],
+  "correct": 1,
+  "why": "Fatima Jinnah was the candidate of the Combined Opposition Parties in the January 1965 presidential election and lost to Ayub Khan.",
+  "rel": "She is called 'Madar-e-Millat' (Mother of the Nation).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-307",
+  "question": "What was the age of the Holy Prophet (PBUH) at the time of his death?",
+  "options": [
+   "63 years",
+   "65 years",
+   "61 years",
+   "60 years"
+  ],
+  "correct": 0,
+  "why": "The Holy Prophet (PBUH) passed away at the age of 63 (lunar years) in Madinah, in Rabi-ul-Awwal 11 AH (632 AD).",
+  "rel": "He received the first revelation at the age of 40.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-308",
+  "question": "Which is the fifth month of the Islamic calendar?",
+  "options": [
+   "Jamadi-ul-Awwal",
+   "Rajab",
+   "Rabi-ul-Sani",
+   "Jamadi-ul-Sani"
+  ],
+  "correct": 0,
+  "why": "The order is Muharram, Safar, Rabi-ul-Awwal, Rabi-ul-Sani, then Jamadi-ul-Awwal as the fifth month.",
+  "rel": "Ramadan is the ninth month of the Islamic calendar.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-309",
+  "question": "What is the currency of Russia?",
+  "options": [
+   "Tenge",
+   "Ruble",
+   "Lira",
+   "Hryvnia"
+  ],
+  "correct": 1,
+  "why": "Russia's currency is the Ruble, divided into 100 kopecks. The Hryvnia is Ukrainian and the Tenge is Kazakh.",
+  "rel": "Belarus also uses a currency called the ruble (Belarusian ruble).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-310",
+  "question": "What is the capital city of Turkey?",
+  "options": [
+   "Ankara",
+   "Istanbul",
+   "Izmir",
+   "Bursa"
+  ],
+  "correct": 0,
+  "why": "Ankara became the capital of the Republic of Turkey in 1923. Istanbul is the largest city but not the capital.",
+  "rel": "The Republic of Turkey was founded by Mustafa Kemal Ataturk in 1923.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-311",
+  "question": "Where is the Kareem Block market located?",
+  "options": [
+   "Blue Area, Islamabad",
+   "Allama Iqbal Town, Lahore",
+   "Satellite Town, Rawalpindi",
+   "Saddar, Karachi"
+  ],
+  "correct": 1,
+  "why": "Kareem Block market is a busy shopping area in Allama Iqbal Town, Lahore.",
+  "rel": "Allama Iqbal Town is in south-west Lahore.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-312",
+  "question": "How many days did the 1965 Pakistan-India war last?",
+  "options": [
+   "13 days",
+   "21 days",
+   "17 days",
+   "30 days"
+  ],
+  "correct": 2,
+  "why": "The war began on 6 September 1965 and the ceasefire came on 23 September, so it lasted 17 days. The 1971 war lasted about 13 days.",
+  "rel": "6 September is celebrated as Defence Day in Pakistan.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-313",
+  "question": "What is a synonym of 'Diversity'?",
+  "options": [
+   "Similarity",
+   "Unity",
+   "Variety",
+   "Scarcity"
+  ],
+  "correct": 2,
+  "why": "'Diversity' means variety or difference among things. 'Similarity' is close to its opposite.",
+  "rel": "The adjective form is 'diverse'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-314",
+  "question": "When was the Pakistan Military Academy (PMA) Kakul established?",
+  "options": [
+   "October 1947",
+   "August 1948",
+   "January 1951",
+   "March 1956"
+  ],
+  "correct": 0,
+  "why": "PMA Kakul, Abbottabad, was established in October 1947; Brigadier Francis Ingall was its first commandant.",
+  "rel": "Cadets who pass out of PMA are commissioned as Second Lieutenants.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-315",
+  "question": "Which two entities are Permanent Observer Non-Member States at the United Nations?",
+  "options": [
+   "Holy See and Taiwan",
+   "Palestine and the Holy See (Vatican City)",
+   "Palestine and Kosovo",
+   "Taiwan and Kosovo"
+  ],
+  "correct": 1,
+  "why": "The State of Palestine and the Holy See are non-member observer states; they can take part in UN meetings but cannot vote on resolutions.",
+  "rel": "Switzerland was an observer state for many years before joining the UN as a full member in 2002.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-316",
+  "question": "What is the total length of the Pakistan-India border, including the Line of Control?",
+  "options": [
+   "About 1,610 km",
+   "About 3,323 km",
+   "About 5,000 km",
+   "About 2,430 km"
+  ],
+  "correct": 1,
+  "why": "The Pakistan-India border is about 3,323 km long including the LoC in Kashmir. About 2,430 km is the length of the Pak-Afghan border (Durand Line).",
+  "rel": "The Wagah border near Lahore is the main crossing point between Pakistan and India.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-317",
+  "question": "What is a synonym of 'Zeal'?",
+  "options": [
+   "Laziness",
+   "Doubt",
+   "Enthusiasm",
+   "Fear"
+  ],
+  "correct": 2,
+  "why": "'Zeal' means great enthusiasm or passion for a cause. 'Laziness' is nearly its opposite.",
+  "rel": "A person full of zeal is called a 'zealot' (often used for an extreme supporter).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-318",
+  "question": "How many Caliphs are counted among the Khulafa-e-Rashideen (Rightly Guided Caliphs)?",
+  "options": [
+   "4",
+   "3",
+   "5",
+   "6"
+  ],
+  "correct": 0,
+  "why": "The four Rightly Guided Caliphs are Hazrat Abu Bakr, Hazrat Umar, Hazrat Usman and Hazrat Ali (R.A).",
+  "rel": "The period of the Khulafa-e-Rashideen lasted about 30 years (632-661 AD).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-319",
+  "question": "What is the capital city of Estonia?",
+  "options": [
+   "Tallinn",
+   "Riga",
+   "Helsinki",
+   "Vilnius"
+  ],
+  "correct": 0,
+  "why": "Tallinn, on the Gulf of Finland, is the capital of Estonia. Riga is Latvia's capital and Vilnius is Lithuania's.",
+  "rel": "Estonia, Latvia and Lithuania are called the Baltic States.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-320",
+  "question": "Which Pakistani city is known as the 'City of Lights'?",
+  "options": [
+   "Lahore",
+   "Islamabad",
+   "Faisalabad",
+   "Karachi"
+  ],
+  "correct": 3,
+  "why": "Karachi is called the 'City of Lights' for its busy round-the-clock life and business.",
+  "rel": "Lahore is called the 'City of Gardens' and Faisalabad the 'Manchester of Pakistan'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-321",
+  "question": "Who was the first Indian Commander-in-Chief of the Indian Army?",
+  "options": [
+   "General K. M. Cariappa",
+   "General Roy Bucher",
+   "General Rob Lockhart",
+   "General Sam Manekshaw"
+  ],
+  "correct": 0,
+  "why": "General K. M. Cariappa took command on 15 January 1949, which India celebrates as Army Day. Lockhart and Bucher were British.",
+  "rel": "Cariappa and Sam Manekshaw were the only two Indian Army officers given the rank of Field Marshal.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-322",
+  "question": "Who was the first Commander-in-Chief of the Pakistan Army?",
+  "options": [
+   "General Sir Frank Messervy",
+   "General Muhammad Ayub Khan",
+   "General Sir Douglas Gracey",
+   "Field Marshal Claude Auchinleck"
+  ],
+  "correct": 0,
+  "why": "British General Sir Frank Messervy commanded the Pakistan Army from August 1947 to February 1948. Gracey came after him.",
+  "rel": "General Ayub Khan was the first Pakistani Commander-in-Chief (from January 1951).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-323",
+  "question": "Who was the first Pakistani Commander-in-Chief of the Pakistan Army?",
+  "options": [
+   "General Akbar Khan",
+   "General Yahya Khan",
+   "General Muhammad Ayub Khan",
+   "General Muhammad Musa"
+  ],
+  "correct": 2,
+  "why": "General Ayub Khan took command on 17 January 1951, taking over from General Sir Douglas Gracey.",
+  "rel": "General Muhammad Musa succeeded Ayub Khan as Commander-in-Chief in 1958.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-324",
+  "question": "Who was the Chief of Army Staff of Pakistan from 1988 to 1991?",
+  "options": [
+   "General Asif Nawaz Janjua",
+   "General Abdul Waheed Kakar",
+   "General Jehangir Karamat",
+   "General Mirza Aslam Beg"
+  ],
+  "correct": 3,
+  "why": "General Mirza Aslam Beg became COAS after General Zia-ul-Haq died in the Bahawalpur air crash in August 1988.",
+  "rel": "General Zia-ul-Haq was killed in the C-130 crash on 17 August 1988.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-325",
+  "question": "Who was the Chief of Army Staff of Pakistan from 1991 to 1993?",
+  "options": [
+   "General Pervez Musharraf",
+   "General Asif Nawaz Janjua",
+   "General Abdul Waheed Kakar",
+   "General Mirza Aslam Beg"
+  ],
+  "correct": 1,
+  "why": "General Asif Nawaz Janjua served as COAS from August 1991 until his sudden death in January 1993.",
+  "rel": "General Abdul Waheed Kakar became COAS after him in 1993.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-326",
+  "question": "How many member states does the United Nations have?",
+  "options": [
+   "195",
+   "193",
+   "200",
+   "191"
+  ],
+  "correct": 1,
+  "why": "The UN has 193 member states; South Sudan became the 193rd member in July 2011.",
+  "rel": "The UN was founded on 24 October 1945 with 51 members.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-327",
+  "question": "What is the currency of Saudi Arabia?",
+  "options": [
+   "Saudi Pound",
+   "Saudi Dirham",
+   "Saudi Riyal",
+   "Saudi Dinar"
+  ],
+  "correct": 2,
+  "why": "Saudi Arabia's currency is the Riyal, fixed at about 3.75 Riyals to one US Dollar.",
+  "rel": "The UAE uses the Dirham and Kuwait uses the Dinar.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-328",
+  "question": "In which country is the Suez Canal located?",
+  "options": [
+   "Jordan",
+   "Israel",
+   "Egypt",
+   "Sudan"
+  ],
+  "correct": 2,
+  "why": "The Suez Canal cuts through the Isthmus of Suez in Egypt.",
+  "rel": "Egypt's President Gamal Abdel Nasser nationalised the canal in 1956.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-329",
+  "question": "How many total seats are there in the Provincial Assembly of Punjab?",
+  "options": [
+   "168",
+   "371",
+   "145",
+   "336"
+  ],
+  "correct": 1,
+  "why": "The Punjab Assembly has 371 seats: 297 general, 66 for women and 8 for non-Muslims. 336 is the National Assembly.",
+  "rel": "The Sindh Assembly has 168 seats.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-330",
+  "question": "Which titles were given to the Holy Prophet (PBUH) in Makkah for his honesty?",
+  "options": [
+   "Al-Farooq and Al-Siddiq",
+   "Ghani and Haider",
+   "Al-Sadiq and Al-Amin",
+   "Saifullah and Asadullah"
+  ],
+  "correct": 2,
+  "why": "The people of Makkah called him Al-Sadiq (the Truthful) and Al-Amin (the Trustworthy), and even his enemies kept their valuables with him.",
+  "rel": "Al-Farooq was the title of Hazrat Umar (R.A) and Al-Siddiq of Hazrat Abu Bakr (R.A).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-331",
+  "question": "Which is the smallest planet and the one closest to the Sun?",
+  "options": [
+   "Mars",
+   "Venus",
+   "Pluto",
+   "Mercury"
+  ],
+  "correct": 3,
+  "why": "Mercury is the smallest planet and the nearest to the Sun; it goes round the Sun in 88 days and has no moons. Pluto is no longer a planet.",
+  "rel": "Venus is the hottest planet even though Mercury is closer to the Sun.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-332",
+  "question": "What was the line dividing Pakistan and India in 1947 called?",
+  "options": [
+   "Radcliffe Line",
+   "Durand Line",
+   "McMahon Line",
+   "Line of Control"
+  ],
+  "correct": 0,
+  "why": "The Radcliffe Line was drawn by Sir Cyril Radcliffe, chairman of the Boundary Commissions. The Durand Line is the Pak-Afghan border.",
+  "rel": "The McMahon Line is the border line between India and China (Tibet).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-333",
+  "question": "Which companion is known by the title 'Asadullah' (Lion of Allah)?",
+  "options": [
+   "Hazrat Umar (R.A)",
+   "Hazrat Ali (R.A)",
+   "Hazrat Khalid bin Waleed (R.A)",
+   "Hazrat Abu Ubaidah (R.A)"
+  ],
+  "correct": 1,
+  "why": "Hazrat Ali (R.A) is called Asadullah and Haider-e-Karrar for his bravery, especially at Khaybar. Saifullah is Khalid bin Waleed's title.",
+  "rel": "Hazrat Ali (R.A) was the fourth Rightly Guided Caliph.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-334",
+  "question": "Who wrote the Punjabi epic 'Heer Ranjha' (1766)?",
+  "options": [
+   "Sultan Bahu",
+   "Waris Shah",
+   "Bulleh Shah",
+   "Mian Muhammad Bakhsh"
+  ],
+  "correct": 1,
+  "why": "Sufi poet Waris Shah wrote 'Heer' in Punjabi in 1766. Mian Muhammad Bakhsh wrote 'Saiful Malook'.",
+  "rel": "Waris Shah's tomb is in Jandiala Sher Khan, Sheikhupura.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-335",
+  "question": "Vienna is the capital of which country?",
+  "options": [
+   "Switzerland",
+   "Hungary",
+   "Germany",
+   "Austria"
+  ],
+  "correct": 3,
+  "why": "Vienna is the capital of Austria. Berlin is Germany's capital, Bern is Switzerland's and Budapest is Hungary's.",
+  "rel": "Vienna is famous for musicians like Mozart and Beethoven.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-336",
+  "question": "Who wrote the book 'India of My Dreams'?",
+  "options": [
+   "Mahatma Gandhi",
+   "Abul Kalam Azad",
+   "Rabindranath Tagore",
+   "Jawaharlal Nehru"
+  ],
+  "correct": 0,
+  "why": "'India of My Dreams' is a collection of Gandhi's writings about his vision of free India. Nehru wrote 'The Discovery of India'.",
+  "rel": "Gandhi's autobiography is 'The Story of My Experiments with Truth'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-337",
+  "question": "Where did the Jallianwala Bagh massacre take place in 1919?",
+  "options": [
+   "Lucknow",
+   "Amritsar",
+   "Lahore",
+   "Delhi"
+  ],
+  "correct": 1,
+  "why": "On 13 April 1919, British troops under General Dyer fired on an unarmed crowd at Jallianwala Bagh, Amritsar.",
+  "rel": "The protest was against the Rowlatt Act of 1919.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-338",
+  "question": "When did India carry out its first nuclear test, 'Smiling Buddha'?",
+  "options": [
+   "28 May 1998",
+   "18 May 1974",
+   "16 October 1964",
+   "11 May 1998"
+  ],
+  "correct": 1,
+  "why": "India's first nuclear test was on 18 May 1974 at Pokhran, Rajasthan. 11 May 1998 was its second set of tests.",
+  "rel": "Pakistan answered India's 1998 tests with its own tests at Chagai on 28 May 1998.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-339",
+  "question": "Which is the smallest country in the world?",
+  "options": [
+   "Nauru",
+   "San Marino",
+   "Vatican City",
+   "Monaco"
+  ],
+  "correct": 2,
+  "why": "Vatican City, about 0.49 sq km and inside Rome, is the smallest country. Monaco is second.",
+  "rel": "Vatican City is the centre of the Roman Catholic Church and home of the Pope.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-340",
+  "question": "Which river carries the largest volume of water in the world?",
+  "options": [
+   "Yangtze",
+   "Congo",
+   "Amazon",
+   "Nile"
+  ],
+  "correct": 2,
+  "why": "The Amazon in South America carries more water than any other river. The Nile is the longest but carries much less water.",
+  "rel": "The Congo is the second-largest river by water flow.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-341",
+  "question": "In which sport is 147 the maximum break?",
+  "options": [
+   "Snooker",
+   "Darts",
+   "Billiards",
+   "Bowling"
+  ],
+  "correct": 0,
+  "why": "In snooker, a 147 maximum break means potting all 15 reds with 15 blacks and then all six colours.",
+  "rel": "Pakistan's Muhammad Yousuf won the IBSF World Amateur Snooker Championship in 1994.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-342",
+  "question": "In which province of Pakistan is most of the Thar Desert?",
+  "options": [
+   "Balochistan",
+   "Khyber Pakhtunkhwa",
+   "Sindh",
+   "Punjab"
+  ],
+  "correct": 2,
+  "why": "Most of Pakistan's Thar Desert is in south-eastern Sindh (Tharparkar), on the border with Rajasthan, India.",
+  "rel": "The Thar coalfield in Tharparkar holds one of the world's largest coal reserves.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-343",
+  "question": "What is the capital city of Belarus?",
+  "options": [
+   "Riga",
+   "Minsk",
+   "Vilnius",
+   "Kyiv"
+  ],
+  "correct": 1,
+  "why": "Minsk is the capital of Belarus. Kyiv is Ukraine's capital and Vilnius is Lithuania's.",
+  "rel": "Belarus's currency is the Belarusian ruble.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-344",
+  "question": "Where was the highest air temperature on Earth recorded?",
+  "options": [
+   "Al Aziziyah, Libya",
+   "Sahara Desert, Algeria",
+   "Jacobabad, Pakistan",
+   "Death Valley, USA"
+  ],
+  "correct": 3,
+  "why": "Death Valley, California, recorded 56.7 C (134 F) in 1913, the official world record. The old Al Aziziyah record was cancelled in 2012.",
+  "rel": "Pakistan's highest recorded temperature is 53.7 C at Turbat (2017).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-345",
+  "question": "What is the currency of Armenia?",
+  "options": [
+   "Manat",
+   "Dram",
+   "Som",
+   "Lari"
+  ],
+  "correct": 1,
+  "why": "Armenia's currency is the Dram, introduced in 1993. The Manat is Azerbaijan's and the Lari is Georgia's.",
+  "rel": "The capital of Armenia is Yerevan.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-346",
+  "question": "Who was Chairman of NAB from 2017 to 2022?",
+  "options": [
+   "Justice (R) Javed Iqbal",
+   "Lt Gen (R) Nazir Ahmed Butt",
+   "Aftab Sultan",
+   "Qamar Zaman Chaudhry"
+  ],
+  "correct": 0,
+  "why": "Former Supreme Court judge Justice (R) Javed Iqbal headed NAB from October 2017 to 2022. Qamar Zaman Chaudhry was before him.",
+  "rel": "NAB (National Accountability Bureau) was set up in 1999.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-347",
+  "question": "What is the capital city of Bhutan?",
+  "options": [
+   "Kathmandu",
+   "Thimphu",
+   "Paro",
+   "Dhaka"
+  ],
+  "correct": 1,
+  "why": "Thimphu is the capital of Bhutan. Kathmandu is Nepal's capital; Paro is a Bhutanese town with its only international airport.",
+  "rel": "Bhutan measures progress through 'Gross National Happiness'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-348",
+  "question": "Which is the national sport of Pakistan?",
+  "options": [
+   "Kabaddi",
+   "Squash",
+   "Hockey",
+   "Cricket"
+  ],
+  "correct": 2,
+  "why": "Field hockey is Pakistan's national game; Pakistan has won 3 Olympic golds and 4 World Cups in it. Cricket is more popular but is not the national game.",
+  "rel": "Jahangir Khan and Jansher Khan made Pakistan famous in squash.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-349",
+  "question": "Who wrote the words of Pakistan's National Anthem?",
+  "options": [
+   "Ahmed Chagla",
+   "Allama Muhammad Iqbal",
+   "Faiz Ahmed Faiz",
+   "Hafeez Jalandhari"
+  ],
+  "correct": 3,
+  "why": "Hafeez Jalandhari wrote the National Anthem in Persianised Urdu in 1952. Ahmed Ghulamali Chagla composed its music.",
+  "rel": "The anthem was officially approved in August 1954.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-350",
+  "question": "How many members are there in the National Assembly of Pakistan?",
+  "options": [
+   "371",
+   "336",
+   "96",
+   "342"
+  ],
+  "correct": 1,
+  "why": "The National Assembly has 336 members: 266 general seats, 60 for women and 10 for minorities. 342 was the total before the FATA merger.",
+  "rel": "The Senate of Pakistan has 96 members.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-351",
+  "question": "What are the two houses of Pakistan's Parliament (Majlis-e-Shoora)?",
+  "options": [
+   "Senate and Supreme Court",
+   "Senate and Provincial Assembly",
+   "National Assembly and Cabinet",
+   "Senate and National Assembly"
+  ],
+  "correct": 3,
+  "why": "Under the 1973 Constitution, the Parliament has two houses: the Senate (upper house) and the National Assembly (lower house).",
+  "rel": "The Chairman of the Senate acts as President when the President is absent.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-352",
+  "question": "What is the capital city of Kuwait?",
+  "options": [
+   "Muscat",
+   "Manama",
+   "Kuwait City",
+   "Doha"
+  ],
+  "correct": 2,
+  "why": "Kuwait City, on the Persian Gulf, is the capital of Kuwait. Doha is Qatar's capital, Manama is Bahrain's and Muscat is Oman's.",
+  "rel": "Iraq invaded Kuwait in 1990, which led to the Gulf War of 1991.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-353",
+  "question": "Who designed the national flag of Pakistan?",
+  "options": [
+   "Abdur Rehman Chughtai",
+   "Sadequain",
+   "Hafeez Jalandhari",
+   "Syed Amir-ud-Din Kidwai"
+  ],
+  "correct": 3,
+  "why": "Amir-ud-Din Kidwai designed the flag based on the Muslim League flag, with a crescent and five-pointed star.",
+  "rel": "The white part of the flag stands for minorities and the green for the Muslim majority.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-354",
+  "question": "In which year was SAARC founded?",
+  "options": [
+   "1990",
+   "1980",
+   "1975",
+   "1985"
+  ],
+  "correct": 3,
+  "why": "SAARC was founded in December 1985 in Dhaka with 7 members; Afghanistan joined in 2007 as the 8th.",
+  "rel": "Pakistan hosted the 12th SAARC summit in Islamabad in 2004.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-355",
+  "question": "Which line marks much of the border between the USA and Canada?",
+  "options": [
+   "Mason-Dixon Line",
+   "38th Parallel",
+   "17th Parallel",
+   "49th Parallel"
+  ],
+  "correct": 3,
+  "why": "The 49th Parallel North forms most of the western USA-Canada border. The 38th Parallel divides North and South Korea.",
+  "rel": "The USA-Canada border is the world's longest international land border.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-356",
+  "question": "Which five countries have veto power in the UN Security Council?",
+  "options": [
+   "USA, UK, Russia, China and Germany",
+   "USA, UK, France, Japan and China",
+   "USA, Russia, China, India and France",
+   "USA, UK, Russia, China and France"
+  ],
+  "correct": 3,
+  "why": "The five permanent members (P5) with veto power are the USA, UK, Russia, China and France.",
+  "rel": "Germany, Japan, India and Brazil (the G4) are seeking permanent seats.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-357",
+  "question": "What does the Arabic word 'Badr' mean?",
+  "options": [
+   "Victory",
+   "Full moon",
+   "Water well",
+   "Valley"
+  ],
+  "correct": 1,
+  "why": "'Badr' means full moon. The battle is named after the well and village of Badr, south-west of Madinah.",
+  "rel": "The Battle of Badr took place on 17 Ramadan, 2 AH.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-358",
+  "question": "Which city is known as the hottest place in Pakistan?",
+  "options": [
+   "Jacobabad",
+   "Skardu",
+   "Murree",
+   "Quetta"
+  ],
+  "correct": 0,
+  "why": "Jacobabad in Sindh often crosses 50 C in summer and is famous as Pakistan's hottest city.",
+  "rel": "The highest temperature in Pakistan, 53.7 C, was recorded at Turbat in 2017.",
+  "status": "ok",
+  "note": "Notes said 'Turbat / Jacobabad'; MCQ uses Jacobabad and leaves Turbat out of the options."
+ },
+ {
+  "id": "T1-M-359",
+  "question": "About how many languages are spoken in Pakistan?",
+  "options": [
+   "About 10",
+   "More than 300",
+   "More than 70",
+   "About 25"
+  ],
+  "correct": 2,
+  "why": "More than 70 languages are spoken in Pakistan. Urdu is the national language; Punjabi, Pashto, Sindhi, Saraiki and Balochi are major ones.",
+  "rel": "Punjabi is the mother tongue of the largest number of Pakistanis.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-360",
+  "question": "What is the approximate length of the Pakistan-Iran border?",
+  "options": [
+   "About 2,430 km",
+   "About 909 km",
+   "About 3,323 km",
+   "About 596 km"
+  ],
+  "correct": 1,
+  "why": "The Pakistan-Iran border is about 909 km long (some sources say up to 959 km), from Koh-i-Malik Salih to Gwadar Bay. 2,430 km is the Pak-Afghan border.",
+  "rel": "The Pakistan-China border is about 596 km long.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-361",
+  "question": "Which dam is built on the Kabul River near Peshawar?",
+  "options": [
+   "Warsak Dam",
+   "Khanpur Dam",
+   "Tarbela Dam",
+   "Mangla Dam"
+  ],
+  "correct": 0,
+  "why": "Warsak Dam on the Kabul River near Peshawar was completed in 1960 with Canadian help. Tarbela is on the Indus and Mangla on the Jhelum.",
+  "rel": "Khanpur Dam is on the Haro River.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-362",
+  "question": "In which countries is the Hindu Kush mountain range located?",
+  "options": [
+   "China and Nepal",
+   "Afghanistan and Pakistan",
+   "Iran and Turkmenistan",
+   "Pakistan and India"
+  ],
+  "correct": 1,
+  "why": "The Hindu Kush runs mainly through Afghanistan and northern Pakistan, south-west from the Pamir Knot.",
+  "rel": "Tirich Mir (7,708 m) in Chitral is the highest peak of the Hindu Kush.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-363",
+  "question": "What is the currency of Bangladesh?",
+  "options": [
+   "Kyat",
+   "Rupee",
+   "Taka",
+   "Ngultrum"
+  ],
+  "correct": 2,
+  "why": "Bangladesh's currency is the Taka. The Ngultrum is Bhutan's and the Kyat is Myanmar's.",
+  "rel": "The Taka is divided into 100 poisha.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-364",
+  "question": "In which year did Quaid-e-Azam join the All-India Muslim League?",
+  "options": [
+   "1906",
+   "1913",
+   "1916",
+   "1920"
+  ],
+  "correct": 1,
+  "why": "Jinnah joined the Muslim League in 1913 while still a Congress member. The League was founded in 1906.",
+  "rel": "Jinnah left the Congress in 1920.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-365",
+  "question": "What is the capital city of Azerbaijan?",
+  "options": [
+   "Ashgabat",
+   "Tbilisi",
+   "Baku",
+   "Yerevan"
+  ],
+  "correct": 2,
+  "why": "Baku, on the west shore of the Caspian Sea, is the capital of Azerbaijan. Tbilisi is Georgia's and Yerevan is Armenia's.",
+  "rel": "Azerbaijan's currency is the Manat.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-366",
+  "question": "Which Maldivian served as President of the 76th UN General Assembly?",
+  "options": [
+   "Mohamed Nasheed",
+   "Abdulla Yameen",
+   "Ibrahim Mohamed Solih",
+   "Abdulla Shahid"
+  ],
+  "correct": 3,
+  "why": "Maldives Foreign Minister Abdulla Shahid was President of the 76th UNGA from September 2021 to September 2022.",
+  "rel": "Pakistan's Sir Zafarullah Khan was President of the 17th UN General Assembly (1962).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-367",
+  "question": "Which is the largest natural lake in Afghanistan?",
+  "options": [
+   "Band-e-Amir",
+   "Lake Shewa",
+   "Ab-e-Istada",
+   "Lake Zorkul"
+  ],
+  "correct": 0,
+  "why": "The notes give Band-e-Amir, a chain of six deep blue lakes in the Hindu Kush (Bamyan).",
+  "rel": "Band-e-Amir became Afghanistan's first national park in 2009.",
+  "status": "unsure",
+  "note": "Notes gave 'Band-e-Amir (or Hamun-e-Helmand)'; the seasonal Hamun lakes are larger in area, so the answer depends on the source. Kept Band-e-Amir; Hamun left out of the options."
+ },
+ {
+  "id": "T1-M-368",
+  "question": "Which country helped build the Warsak Dam?",
+  "options": [
+   "Canada",
+   "Japan",
+   "USA",
+   "China"
+  ],
+  "correct": 0,
+  "why": "Canada gave money and engineering help for Warsak Dam under the Colombo Plan.",
+  "rel": "The World Bank helped arrange the Indus Waters Treaty of 1960.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-369",
+  "question": "Who was the first Prime Minister of Pakistan?",
+  "options": [
+   "Muhammad Ali Bogra",
+   "Liaquat Ali Khan",
+   "Khawaja Nazimuddin",
+   "Sir Feroz Khan Noon"
+  ],
+  "correct": 1,
+  "why": "Liaquat Ali Khan was PM from 14 August 1947 until he was assassinated in Rawalpindi on 16 October 1951.",
+  "rel": "He is called 'Quaid-e-Millat'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-370",
+  "question": "Who was the last Governor-General and the first President of Pakistan?",
+  "options": [
+   "Ayub Khan",
+   "Khawaja Nazimuddin",
+   "Iskander Mirza",
+   "Malik Ghulam Muhammad"
+  ],
+  "correct": 2,
+  "why": "Iskander Mirza was Governor-General (1955-56) and became the first President under the 1956 Constitution (1956-58).",
+  "rel": "Iskander Mirza imposed martial law on 7 October 1958.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-371",
+  "question": "About how many times is Salah (prayer) mentioned in the Holy Quran?",
+  "options": [
+   "About 700 times",
+   "About 1,500 times",
+   "About 30 times",
+   "About 70 times"
+  ],
+  "correct": 0,
+  "why": "The notes say Salah is mentioned (or commanded) about 700 times in the Quran.",
+  "rel": "Salah is the second pillar of Islam, and was made obligatory on the night of Miraj.",
+  "status": "unsure",
+  "note": "Notes say 'over 700 times'. Counts differ by source and method; word counts of 'Salah' are much lower. Kept the notes' answer."
+ },
+ {
+  "id": "T1-M-372",
+  "question": "What is the approximate road distance between Peshawar and Rawalpindi?",
+  "options": [
+   "About 380 km",
+   "About 60 km",
+   "About 170-190 km",
+   "About 500 km"
+  ],
+  "correct": 2,
+  "why": "Peshawar and Rawalpindi are about 170-190 km apart by the GT Road or the M-1 Motorway.",
+  "rel": "The M-1 Motorway links Islamabad and Peshawar.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-373",
+  "question": "Which mountain pass connects Pakistan with China?",
+  "options": [
+   "Khyber Pass",
+   "Bolan Pass",
+   "Kohat Pass",
+   "Khunjerab Pass"
+  ],
+  "correct": 3,
+  "why": "Khunjerab Pass (4,693 m) in the Karakoram joins Pakistan and China. Khyber Pass connects Pakistan with Afghanistan.",
+  "rel": "The Bolan Pass links Quetta with Sibi in Balochistan.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-374",
+  "question": "What is the total area of Punjab province?",
+  "options": [
+   "About 205,344 sq km",
+   "About 140,914 sq km",
+   "About 101,741 sq km",
+   "About 347,190 sq km"
+  ],
+  "correct": 0,
+  "why": "Punjab covers about 205,344 sq km, roughly 26% of Pakistan's area. 347,190 sq km is Balochistan, the largest province.",
+  "rel": "Sindh covers about 140,914 sq km and Khyber Pakhtunkhwa about 101,741 sq km.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-375",
+  "question": "What is the capital city of Bulgaria?",
+  "options": [
+   "Belgrade",
+   "Sofia",
+   "Bucharest",
+   "Athens"
+  ],
+  "correct": 1,
+  "why": "Sofia, at the foot of Vitosha Mountain, is Bulgaria's capital. Bucharest is Romania's and Belgrade is Serbia's.",
+  "rel": "Bulgaria adopted the Euro on 1 January 2026, replacing the Lev.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-376",
+  "question": "In which city was leg-spinner Abdul Qadir born?",
+  "options": [
+   "Sialkot",
+   "Lahore",
+   "Karachi",
+   "Multan"
+  ],
+  "correct": 1,
+  "why": "Abdul Qadir was born in Lahore in 1955; he brought leg-spin back into modern cricket in the 1970s-80s.",
+  "rel": "His best Test bowling was 9 wickets for 56 runs against England in 1987.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-377",
+  "question": "What is a synonym of 'Cease'?",
+  "options": [
+   "Stop",
+   "Grow",
+   "Begin",
+   "Continue"
+  ],
+  "correct": 0,
+  "why": "'Cease' means to stop or come to an end. 'Begin' and 'Continue' are its opposites.",
+  "rel": "A 'ceasefire' is an agreement to stop fighting.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-378",
+  "question": "Which is the largest continent by both area and population?",
+  "options": [
+   "Asia",
+   "North America",
+   "Africa",
+   "Europe"
+  ],
+  "correct": 0,
+  "why": "Asia covers about 44.6 million sq km and has about 60% of the world's people. Africa is second in both.",
+  "rel": "Australia is the smallest continent.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-379",
+  "question": "Which Prophet was swallowed by a big fish?",
+  "options": [
+   "Hazrat Yusuf (A.S)",
+   "Hazrat Nooh (A.S)",
+   "Hazrat Yunus (A.S)",
+   "Hazrat Ayyub (A.S)"
+  ],
+  "correct": 2,
+  "why": "Hazrat Yunus (A.S) was swallowed by a fish and prayed 'La ilaha illa Anta Subhanaka inni kuntu minaz-zalimeen'.",
+  "rel": "Hazrat Yunus (A.S) is called 'Zun-Noon' (the one of the fish) in the Quran.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-380",
+  "question": "What is the currency of France?",
+  "options": [
+   "Franc",
+   "Euro",
+   "Pound",
+   "Mark"
+  ],
+  "correct": 1,
+  "why": "France uses the Euro; it replaced the French Franc (cash Euro came in 2002).",
+  "rel": "The European Central Bank, which manages the Euro, is in Frankfurt, Germany.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-381",
+  "question": "Which capital city does the River Thames flow through?",
+  "options": [
+   "London",
+   "Paris",
+   "Edinburgh",
+   "Dublin"
+  ],
+  "correct": 0,
+  "why": "The Thames flows about 346 km through southern England and passes through London into the North Sea. The Seine flows through Paris.",
+  "rel": "Tower Bridge over the Thames is a famous London landmark.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-382",
+  "question": "Who is Robert King?",
+  "options": [
+   "A Canadian astronaut",
+   "A British Prime Minister",
+   "An American TV writer and producer",
+   "An Australian cricketer"
+  ],
+  "correct": 2,
+  "why": "Robert King is an American screenwriter and producer who co-created the TV legal drama 'The Good Wife' with his wife Michelle King.",
+  "rel": "The Kings also created the follow-up series 'The Good Fight'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-383",
+  "question": "About how many Muslims marched in the expedition of Tabuk?",
+  "options": [
+   "30,000",
+   "3,000",
+   "10,000",
+   "313"
+  ],
+  "correct": 0,
+  "why": "About 30,000 Muslims joined the Tabuk expedition in 9 AH, the largest army led by the Holy Prophet (PBUH). 10,000 marched for the Conquest of Makkah.",
+  "rel": "The Tabuk expedition was against the Byzantines, and no battle was fought.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-384",
+  "question": "How many countries are members of the United Nations today?",
+  "options": [
+   "192",
+   "195",
+   "193",
+   "185"
+  ],
+  "correct": 2,
+  "why": "There are 193 UN member states; South Sudan was the latest to join, in 2011.",
+  "rel": "Palestine and the Holy See are non-member observer states.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-385",
+  "question": "Who was the first Governor-General of Bengal?",
+  "options": [
+   "Warren Hastings",
+   "Lord Cornwallis",
+   "Lord William Bentinck",
+   "Lord Clive"
+  ],
+  "correct": 0,
+  "why": "Warren Hastings became the first Governor-General of Bengal under the Regulating Act of 1773 and served till 1785. Lord William Bentinck was the first Governor-General of India.",
+  "rel": "Lord Canning was the first Viceroy of India (1858).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-386",
+  "question": "In 1950, Prime Minister Liaquat Ali Khan made a famous official visit to which country?",
+  "options": [
+   "United States",
+   "Soviet Union",
+   "China",
+   "United Kingdom"
+  ],
+  "correct": 0,
+  "why": "Liaquat Ali Khan visited the USA in May 1950 on President Truman's invitation, instead of the Soviet Union.",
+  "rel": "His speeches on that tour were published as the book 'Pakistan: The Heart of Asia'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-387",
+  "question": "What is a synonym of 'Bragging'?",
+  "options": [
+   "Boasting",
+   "Whispering",
+   "Begging",
+   "Complaining"
+  ],
+  "correct": 0,
+  "why": "'Bragging' means boasting, or talking too proudly about oneself.",
+  "rel": "A person who brags is called a 'braggart'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-388",
+  "question": "What is a synonym of 'Splendid'?",
+  "options": [
+   "Magnificent",
+   "Dull",
+   "Simple",
+   "Ordinary"
+  ],
+  "correct": 0,
+  "why": "'Splendid' means magnificent, grand or very impressive. 'Ordinary' and 'Dull' are its opposites.",
+  "rel": "The noun form is 'splendour'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-389",
+  "question": "Which archangel is in charge of rain and sustenance?",
+  "options": [
+   "Hazrat Jibrail (A.S)",
+   "Hazrat Mikail (A.S)",
+   "Hazrat Izrail (A.S)",
+   "Hazrat Israfil (A.S)"
+  ],
+  "correct": 1,
+  "why": "Hazrat Mikail (A.S) is in charge of rain, clouds and provisions. Jibrail brought revelation, Israfil will blow the trumpet and Izrail takes souls.",
+  "rel": "Hazrat Jibrail (A.S) is called 'Ruh-ul-Amin' in the Quran.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-390",
+  "question": "In which year did Quaid-e-Azam present his Fourteen Points?",
+  "options": [
+   "1928",
+   "1940",
+   "1930",
+   "1929"
+  ],
+  "correct": 3,
+  "why": "Jinnah presented the Fourteen Points in March 1929 in Delhi in reply to the Nehru Report (1928).",
+  "rel": "Allama Iqbal gave his Allahabad Address in 1930.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-391",
+  "question": "In which year were the first general elections held under the 1973 Constitution?",
+  "options": [
+   "1977",
+   "1985",
+   "1975",
+   "1973"
+  ],
+  "correct": 0,
+  "why": "The first elections under the 1973 Constitution were held in March 1977; protests over rigging led to General Zia's takeover in July 1977.",
+  "rel": "The 1977 opposition alliance was the Pakistan National Alliance (PNA).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-392",
+  "question": "What is the capital city of Russia?",
+  "options": [
+   "Kazan",
+   "Novosibirsk",
+   "Saint Petersburg",
+   "Moscow"
+  ],
+  "correct": 3,
+  "why": "Moscow is the capital of Russia and one of Europe's largest cities. Saint Petersburg was the capital before 1918.",
+  "rel": "The Kremlin in Moscow is the official home of the Russian President.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-393",
+  "question": "With which Indian Prime Minister did Ayub Khan sign the Indus Waters Treaty in 1960?",
+  "options": [
+   "Indira Gandhi",
+   "Jawaharlal Nehru",
+   "Lal Bahadur Shastri",
+   "Gulzarilal Nanda"
+  ],
+  "correct": 1,
+  "why": "Ayub Khan and Nehru signed the Indus Waters Treaty in Karachi on 19 September 1960, with the World Bank's help. Ayub signed the Tashkent Declaration with Shastri.",
+  "rel": "Under the treaty, Pakistan got the western rivers (Indus, Jhelum, Chenab) and India the eastern rivers (Ravi, Beas, Sutlej).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-394",
+  "question": "When and where was Sir Syed Ahmad Khan born?",
+  "options": [
+   "17 October 1817, Aligarh",
+   "9 November 1877, Sialkot",
+   "25 December 1876, Karachi",
+   "17 October 1817, Delhi"
+  ],
+  "correct": 3,
+  "why": "Sir Syed Ahmad Khan was born in Delhi on 17 October 1817. Aligarh is where he founded his college.",
+  "rel": "He wrote 'Asbab-e-Baghawat-e-Hind' (Causes of the Indian Revolt) about the 1857 war.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-395",
+  "question": "What was the title of Allama Iqbal's doctoral thesis, published as his first book in English?",
+  "options": [
+   "The Reconstruction of Religious Thought in Islam",
+   "Bang-e-Dra",
+   "The Development of Metaphysics in Persia",
+   "Asrar-e-Khudi"
+  ],
+  "correct": 2,
+  "why": "Iqbal's PhD thesis 'The Development of Metaphysics in Persia' (1908) was submitted to Munich University. 'Reconstruction' is his later lectures (1930).",
+  "rel": "Iqbal's first Urdu poetry collection was 'Bang-e-Dra' (1924).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-396",
+  "question": "Which two seas are joined by the Suez Canal?",
+  "options": [
+   "Red Sea and Arabian Sea",
+   "Mediterranean Sea and Black Sea",
+   "Mediterranean Sea and Red Sea",
+   "Red Sea and Dead Sea"
+  ],
+  "correct": 2,
+  "why": "The Suez Canal links the Mediterranean Sea with the Red Sea, giving the shortest sea route between Europe and Asia.",
+  "rel": "The Panama Canal joins the Atlantic and Pacific Oceans.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-397",
+  "question": "For how long did Liaquat Ali Khan serve as Prime Minister?",
+  "options": [
+   "1947 to 1951",
+   "1947 to 1948",
+   "1948 to 1953",
+   "1951 to 1953"
+  ],
+  "correct": 0,
+  "why": "Liaquat Ali Khan was PM from August 1947 until his assassination on 16 October 1951, about 4 years.",
+  "rel": "He was shot at Company Bagh, Rawalpindi, now called Liaquat Bagh.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-398",
+  "question": "How many pillars of Islam are there?",
+  "options": [
+   "4",
+   "6",
+   "7",
+   "5"
+  ],
+  "correct": 3,
+  "why": "The five pillars are Shahada, Salah, Zakat, Sawm (fasting) and Hajj.",
+  "rel": "The articles of faith (Iman-e-Mufassal) are seven.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-399",
+  "question": "Which Prophet was ordered by Allah to build the Ark?",
+  "options": [
+   "Hazrat Ibrahim (A.S)",
+   "Hazrat Musa (A.S)",
+   "Hazrat Nooh (A.S)",
+   "Hazrat Yunus (A.S)"
+  ],
+  "correct": 2,
+  "why": "Hazrat Nooh (A.S) built the Ark on Allah's command to save the believers from the Great Flood.",
+  "rel": "The Ark came to rest on Mount Judi, as stated in Surah Hud.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-400",
+  "question": "Hajj is which pillar of Islam?",
+  "options": [
+   "Fifth",
+   "Fourth",
+   "Third",
+   "Second"
+  ],
+  "correct": 0,
+  "why": "Hajj is the fifth pillar, compulsory once in life for every Muslim who can afford it and is physically able.",
+  "rel": "Zakat is the third pillar and fasting is the fourth.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-401",
+  "question": "Who was Prime Minister of Iraq from 2020 to 2022?",
+  "options": [
+   "Mohammed Shia Al-Sudani",
+   "Haider Al-Abadi",
+   "Mustafa Al-Kadhimi",
+   "Adil Abdul-Mahdi"
+  ],
+  "correct": 2,
+  "why": "Mustafa Al-Kadhimi, former intelligence chief, was Iraq's PM from May 2020 to October 2022. Al-Sudani came after him.",
+  "rel": "Mohammed Shia Al-Sudani became PM of Iraq in October 2022.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-402",
+  "question": "Who published the world's first printed weekly newspaper in 1605?",
+  "options": [
+   "Daniel Defoe",
+   "William Caxton",
+   "Johann Carolus",
+   "Johannes Gutenberg"
+  ],
+  "correct": 2,
+  "why": "Johann Carolus published the 'Relation' in Strasbourg in 1605, seen as the first printed newspaper. Gutenberg invented the printing press about 150 years earlier.",
+  "rel": "William Caxton brought the printing press to England in 1476.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-403",
+  "question": "Who elects the President of Pakistan?",
+  "options": [
+   "The National Assembly only",
+   "An electoral college of the Senate, National Assembly and four Provincial Assemblies",
+   "The people by direct vote",
+   "The Senate only"
+  ],
+  "correct": 1,
+  "why": "Under Article 41 of the Constitution, the President is elected by an electoral college of both houses of Parliament and all four provincial assemblies.",
+  "rel": "The President's term is 5 years.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-404",
+  "question": "Who elects the Prime Minister of Pakistan?",
+  "options": [
+   "The electoral college",
+   "The National Assembly",
+   "The Senate",
+   "The Chief Justice"
+  ],
+  "correct": 1,
+  "why": "The Prime Minister is elected by a majority vote of the members of the National Assembly.",
+  "rel": "A Prime Minister can be removed by a vote of no-confidence in the National Assembly.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-405",
+  "question": "Who developed the first effective polio vaccine in 1953?",
+  "options": [
+   "Edward Jenner",
+   "Louis Pasteur",
+   "Dr. Jonas Salk",
+   "Dr. Albert Sabin"
+  ],
+  "correct": 2,
+  "why": "Dr. Jonas Salk of the USA developed the injected (inactivated) polio vaccine in 1953. Sabin later made the oral vaccine.",
+  "rel": "Edward Jenner made the first vaccine, against smallpox, in 1796.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-406",
+  "question": "Which is the largest and widest river flowing through Bangladesh?",
+  "options": [
+   "Teesta",
+   "Jamuna (Brahmaputra)",
+   "Surma",
+   "Karnaphuli"
+  ],
+  "correct": 1,
+  "why": "The Brahmaputra, called the Jamuna in Bangladesh, is the widest river there; it rises in Tibet as the Yarlung Tsangpo.",
+  "rel": "The Padma (Ganges) and Jamuna join and then meet the Meghna before reaching the Bay of Bengal.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-407",
+  "question": "In which country did General Wojciech Jaruzelski impose martial law in 1981?",
+  "options": [
+   "Poland",
+   "Czechoslovakia",
+   "Hungary",
+   "Romania"
+  ],
+  "correct": 0,
+  "why": "Jaruzelski imposed martial law in Poland on 13 December 1981 to crush the Solidarity movement.",
+  "rel": "Solidarity was led by Lech Walesa, who later became President of Poland.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-408",
+  "question": "During whose government was Tarbela Dam completed?",
+  "options": [
+   "Zulfikar Ali Bhutto",
+   "Yahya Khan",
+   "Ayub Khan",
+   "Zia-ul-Haq"
+  ],
+  "correct": 0,
+  "why": "Tarbela Dam on the Indus was completed in 1976 under Bhutto's government. Mangla Dam was completed under Ayub Khan.",
+  "rel": "Tarbela is the world's largest earth-filled dam.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-409",
+  "question": "Where and when were the first Commonwealth Games held?",
+  "options": [
+   "London, UK, 1934",
+   "Auckland, New Zealand, 1950",
+   "Hamilton, Canada, 1930",
+   "Sydney, Australia, 1938"
+  ],
+  "correct": 2,
+  "why": "The first Commonwealth Games, then called the British Empire Games, were held in Hamilton, Canada, in 1930.",
+  "rel": "The Commonwealth Games are held every four years.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-410",
+  "question": "On which date did Gandhi launch the Quit India Movement?",
+  "options": [
+   "26 January 1930",
+   "15 August 1947",
+   "23 March 1940",
+   "8 August 1942"
+  ],
+  "correct": 3,
+  "why": "The Congress launched the Quit India Movement at its Bombay session on 8 August 1942, with the slogan 'Do or Die'.",
+  "rel": "The Muslim League replied with the slogan 'Divide and Quit'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-411",
+  "question": "When was the Pakistan-China Boundary Agreement signed?",
+  "options": [
+   "2 March 1963",
+   "19 September 1960",
+   "8 September 1958",
+   "21 May 1951"
+  ],
+  "correct": 0,
+  "why": "The boundary agreement was signed in Beijing on 2 March 1963 by Z.A. Bhutto and Chinese Foreign Minister Chen Yi.",
+  "rel": "Pakistan and China established diplomatic relations on 21 May 1951.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-412",
+  "question": "What is a synonym of 'Stationary'?",
+  "options": [
+   "Temporary",
+   "Motionless",
+   "Writing material",
+   "Moving"
+  ],
+  "correct": 1,
+  "why": "'Stationary' means not moving. Do not confuse it with 'stationery', which means writing materials.",
+  "rel": "'Stationery' (with 'e') means paper, pens and other office supplies.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-413",
+  "question": "For about how long did Hazrat Nooh's (A.S) Ark float during the Great Flood?",
+  "options": [
+   "About 150 days",
+   "About 7 days",
+   "About 40 days",
+   "About 1 year"
+  ],
+  "correct": 0,
+  "why": "The notes say the Ark floated about 150 days (5 to 6 months) before resting on Mount Judi.",
+  "rel": "Mount Judi is mentioned in Surah Hud, verse 44.",
+  "status": "unsure",
+  "note": "Notes say about 150 days; the Quran gives no number and other sources say 40 days of rain or about 6 months. Kept the notes' answer."
+ },
+ {
+  "id": "T1-M-414",
+  "question": "What is the term of the President of the UN General Assembly?",
+  "options": [
+   "One year",
+   "Two years",
+   "Six months",
+   "Five years"
+  ],
+  "correct": 0,
+  "why": "The President of the UN General Assembly is elected for one year (one session). The UN Secretary-General serves 5-year terms.",
+  "rel": "The presidency rotates among the five regional groups of the UN.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-415",
+  "question": "Who built 'Masjid-e-Zirar'?",
+  "options": [
+   "The hypocrites (Munafiqeen), urged by Abu Amir",
+   "The Jews of Banu Qainuqa",
+   "The Quraish of Makkah",
+   "The Christians of Najran"
+  ],
+  "correct": 0,
+  "why": "Hypocrites built Masjid-e-Zirar at the urging of Abu Amir the monk, to divide Muslims; it was demolished on the Prophet's order after Tabuk.",
+  "rel": "Masjid-e-Zirar is mentioned in Surah At-Tawbah, verse 107.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-416",
+  "question": "When was Pakistan's first Constitution enforced?",
+  "options": [
+   "8 June 1962",
+   "23 March 1956",
+   "12 March 1949",
+   "14 August 1973"
+  ],
+  "correct": 1,
+  "why": "Pakistan's first Constitution came into force on 23 March 1956 and made Pakistan an Islamic Republic. 12 March 1949 is the Objectives Resolution.",
+  "rel": "It was abrogated on 7 October 1958 by Iskander Mirza.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-417",
+  "question": "Who was the first human to travel into space in 1961?",
+  "options": [
+   "Valentina Tereshkova",
+   "Neil Armstrong",
+   "Yuri Gagarin",
+   "Alan Shepard"
+  ],
+  "correct": 2,
+  "why": "Soviet cosmonaut Yuri Gagarin orbited the Earth in Vostok 1 on 12 April 1961. Armstrong was the first man on the Moon (1969).",
+  "rel": "Valentina Tereshkova was the first woman in space (1963).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-418",
+  "question": "In the order of the Holy Quran (Mushaf), which is the third Surah?",
+  "options": [
+   "Surah Aal-e-Imran",
+   "Surah An-Nisa",
+   "Surah Al-Baqarah",
+   "Surah Al-Ma'idah"
+  ],
+  "correct": 0,
+  "why": "In the Mushaf order, Aal-e-Imran comes after Al-Fatihah and Al-Baqarah, so it is the third Surah. An-Nisa is fourth.",
+  "rel": "Surah Aal-e-Imran has 200 verses.",
+  "status": "fixed",
+  "note": "Notes asked about 'chronological order', but Aal-e-Imran is third only in the Mushaf (written) order, not in order of revelation. Question reworded."
+ },
+ {
+  "id": "T1-M-419",
+  "question": "Who was the 13th President of Pakistan (2018-2024)?",
+  "options": [
+   "Dr. Arif Alvi",
+   "Mamnoon Hussain",
+   "Asif Ali Zardari",
+   "Sadiq Sanjrani"
+  ],
+  "correct": 0,
+  "why": "Dr. Arif Alvi of PTI was President from 9 September 2018 to March 2024. Mamnoon Hussain was before him and Zardari after him.",
+  "rel": "Asif Ali Zardari became President for a second time in March 2024.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-420",
+  "question": "Around which period was the ancient city of Taxila founded?",
+  "options": [
+   "Around the 3rd century CE",
+   "Around the 10th century CE",
+   "Around the 6th century BCE",
+   "Around the 16th century CE"
+  ],
+  "correct": 2,
+  "why": "Taxila grew as a city around the 6th century BCE (some date it earlier) and flourished under the Achaemenid, Mauryan and Kushan empires.",
+  "rel": "Taxila is a UNESCO World Heritage Site and was a famous centre of Buddhist learning.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-421",
+  "question": "Which companion was given the title 'Saifullah' (Sword of Allah)?",
+  "options": [
+   "Hazrat Ali (R.A)",
+   "Hazrat Hamza (R.A)",
+   "Hazrat Khalid bin Waleed (R.A)",
+   "Hazrat Saad bin Abi Waqqas (R.A)"
+  ],
+  "correct": 2,
+  "why": "The Holy Prophet (PBUH) called Hazrat Khalid bin Waleed (R.A) Saifullah after his leadership at the Battle of Mu'tah (8 AH).",
+  "rel": "Hazrat Khalid bin Waleed (R.A) led the Muslims to victory at Yarmouk in 636 AD.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-422",
+  "question": "About how many Huffaz (memorisers of the Quran) were martyred in the Battle of Yamama?",
+  "options": [
+   "About 70",
+   "About 1,000",
+   "About 3,000",
+   "About 7"
+  ],
+  "correct": 0,
+  "why": "The notes say about 70 Huffaz were martyred at Yamama. Their loss led Hazrat Umar (R.A) to urge Hazrat Abu Bakr (R.A) to compile the Quran.",
+  "rel": "Hazrat Zaid bin Sabit (R.A) was given the task of collecting the Quran in one book.",
+  "status": "unsure",
+  "note": "Notes say 'around 70 (up to 360)'; other common sources say 700. Figures differ, so kept 70 as in the notes."
+ },
+ {
+  "id": "T1-M-423",
+  "question": "On which river is Diamer-Bhasha Dam being built?",
+  "options": [
+   "Chenab",
+   "Jhelum",
+   "Indus",
+   "Swat"
+  ],
+  "correct": 2,
+  "why": "Diamer-Bhasha Dam is being built on the Indus River in Gilgit-Baltistan, for water storage and about 4,500 MW of electricity.",
+  "rel": "Mohmand Dam is being built on the Swat River.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T1-M-424",
+  "question": "Which Prophet has the title 'Zabiullah'?",
+  "options": [
+   "Hazrat Ismail (A.S)",
+   "Hazrat Yaqub (A.S)",
+   "Hazrat Ishaq (A.S)",
+   "Hazrat Ibrahim (A.S)"
+  ],
+  "correct": 0,
+  "why": "Hazrat Ismail (A.S) is called Zabiullah because he willingly agreed to be sacrificed for Allah. Hazrat Ibrahim is Khalilullah.",
+  "rel": "Eid-ul-Adha is celebrated in memory of this sacrifice.",
+  "status": "ok",
+  "note": ""
+ }
+]

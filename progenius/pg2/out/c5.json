@@ -1,0 +1,1154 @@
+[
+ {
+  "id": "B289",
+  "question": "Where is the Kharan Desert located?",
+  "options": [
+   "Balochistan",
+   "Sindh",
+   "Khyber Pakhtunkhwa",
+   "Punjab"
+  ],
+  "correct": 0,
+  "why": "The Kharan Desert lies in the arid western part of Balochistan, around Kharan and Chagai.",
+  "rel": "It should not be confused with the Thar Desert (Sindh) or the Cholistan Desert (Punjab).",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B290",
+  "question": "On which continent is Lake Victoria?",
+  "options": [
+   "South America",
+   "North America",
+   "Asia",
+   "Africa"
+  ],
+  "correct": 3,
+  "why": "Lake Victoria lies in East Africa, shared by Tanzania, Uganda and Kenya.",
+  "rel": "Lake Victoria is a major source of the White Nile.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B291",
+  "question": "Which Caliph was the first to be called Amir-ul-Mu'minin (Commander of the Faithful)?",
+  "options": [
+   "Hazrat Abu Bakr (RA)",
+   "Hazrat Uthman ibn Affan (RA)",
+   "Hazrat Ali ibn Abi Talib (RA)",
+   "Hazrat Umar ibn al-Khattab (RA)"
+  ],
+  "correct": 3,
+  "why": "Hazrat Umar (RA), the second Caliph, was the first to take the title Amir-ul-Mu'minin.",
+  "rel": "The title means \"Commander of the Faithful\".",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B292",
+  "question": "What are Canada's official national sports?",
+  "options": [
+   "Lacrosse and football",
+   "Lacrosse and ice hockey",
+   "Ice hockey and baseball",
+   "Cricket and rugby"
+  ],
+  "correct": 1,
+  "why": "Canada's National Sports of Canada Act (1994) names lacrosse as the summer sport and ice hockey as the winter sport.",
+  "rel": "Ice hockey alone is an incomplete answer when the question asks for both national sports.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B293",
+  "question": "In which city is the Shah Jahan Mosque located?",
+  "options": [
+   "Lahore",
+   "Thatta",
+   "Multan",
+   "Hyderabad"
+  ],
+  "correct": 1,
+  "why": "The Shah Jahan Mosque, built by Mughal emperor Shah Jahan, stands in Thatta, Sindh.",
+  "rel": "The mosque is famous for its blue tile work and its acoustics.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B294",
+  "question": "What is the world's largest cold desert?",
+  "options": [
+   "Sahara Desert",
+   "Arctic",
+   "Antarctica",
+   "Gobi Desert"
+  ],
+  "correct": 2,
+  "why": "A desert is defined by very low rainfall, and Antarctica is the largest such region with a cold climate.",
+  "rel": "The Sahara is the world's largest hot desert.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B295",
+  "question": "Against whom was the Battle of Khaybar fought?",
+  "options": [
+   "The Byzantine Romans",
+   "The Jewish tribes of Khaybar",
+   "The Quraysh of Makkah",
+   "The Banu Hawazin"
+  ],
+  "correct": 1,
+  "why": "In 7 AH (628 CE), the Muslims fought the Jewish tribes in their fortresses at the oasis of Khaybar.",
+  "rel": "Khaybar is an oasis north of Madinah; the battle came after the Treaty of Hudaybiyyah.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B296",
+  "question": "Who wrote \"Kashf-ul-Mahjoob\"?",
+  "options": [
+   "Khawaja Moinuddin Chishti",
+   "Shaikh Bahauddin Zakariya",
+   "Ali ibn Usman al-Hujwiri (Data Ganj Bakhsh)",
+   "Shah Waliullah"
+  ],
+  "correct": 2,
+  "why": "Kashf-ul-Mahjoob was written by Ali ibn Usman al-Hujwiri, known as Data Ganj Bakhsh.",
+  "rel": "It is one of the earliest major Persian books on Sufism, and its author's shrine is in Lahore.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B297",
+  "question": "Which organization promotes the peaceful use of nuclear technology and applies nuclear safeguards?",
+  "options": [
+   "International Atomic Energy Agency (IAEA)",
+   "UNESCO",
+   "CTBTO",
+   "World Health Organization (WHO)"
+  ],
+  "correct": 0,
+  "why": "The IAEA, set up in 1957, promotes peaceful nuclear technology and checks that nuclear material is not used for weapons.",
+  "rel": "IAEA headquarters is in Vienna, Austria.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B298",
+  "question": "When was New Delhi inaugurated as the capital of British India?",
+  "options": [
+   "1947",
+   "1905",
+   "1931",
+   "1911"
+  ],
+  "correct": 2,
+  "why": "New Delhi was formally inaugurated by Viceroy Lord Irwin on 13 February 1931.",
+  "rel": "The decision to move the capital from Calcutta to Delhi was announced in 1911.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B299",
+  "question": "The Flint River (which joins the Chattahoochee) is located in which US state?",
+  "options": [
+   "Texas",
+   "Florida",
+   "Alabama",
+   "Georgia"
+  ],
+  "correct": 3,
+  "why": "This Flint River flows south through Georgia and joins the Chattahoochee to form the Apalachicola River.",
+  "rel": "There is also a different Flint River in Michigan.",
+  "status": "ok",
+  "note": "Question wording made specific because Michigan also has a Flint River.",
+  "match": null
+ },
+ {
+  "id": "B300",
+  "question": "What is the capital of Venezuela?",
+  "options": [
+   "Quito",
+   "Lima",
+   "Caracas",
+   "Bogota"
+  ],
+  "correct": 2,
+  "why": "Caracas is the capital of Venezuela, located in the north near the Caribbean coast.",
+  "rel": "Venezuela's official name is the Bolivarian Republic of Venezuela.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B301",
+  "question": "What is the currency of Cuba?",
+  "options": [
+   "Mexican peso",
+   "Cuban dollar",
+   "Cuban peso",
+   "Dominican peso"
+  ],
+  "correct": 2,
+  "why": "Cuba uses the Cuban peso (CUP).",
+  "rel": "Cuba unified its two-currency system in 2021.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B302",
+  "question": "Who was the first permanent president of the All-India Muslim League?",
+  "options": [
+   "Sir Adamjee Peerbhoy",
+   "Sir Aga Khan III",
+   "Nawab Viqar-ul-Mulk",
+   "Nawab Salimullah Khan"
+  ],
+  "correct": 1,
+  "why": "Sir Aga Khan III was elected the first permanent president of the All-India Muslim League in 1907-08.",
+  "rel": "The Muslim League was founded in Dhaka on 30 December 1906.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B303",
+  "question": "In which year was the OIC (Organisation of Islamic Cooperation) established?",
+  "options": [
+   "1974",
+   "1969",
+   "1945",
+   "1981"
+  ],
+  "correct": 1,
+  "why": "The OIC was set up in 1969 after the first Islamic Summit in Rabat, Morocco.",
+  "rel": "The OIC headquarters is in Jeddah, Saudi Arabia.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B304",
+  "question": "When did the United Nations officially come into existence?",
+  "options": [
+   "1 January 1942",
+   "24 October 1945",
+   "26 June 1945",
+   "10 December 1948"
+  ],
+  "correct": 1,
+  "why": "The UN came into existence on 24 October 1945, when its Charter was ratified by the required number of countries.",
+  "rel": "The UN Charter was signed on 26 June 1945 in San Francisco.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B305",
+  "question": "What does the word \"Tanzil\" mean?",
+  "options": [
+   "Explanation",
+   "Sending down (revelation)",
+   "Collection",
+   "Recitation"
+  ],
+  "correct": 1,
+  "why": "Tanzil means the sending down of divine revelation from Allah.",
+  "rel": "Tafsir means explanation of the Quran, which is a different term.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B306",
+  "question": "In which city is Heathrow Airport located?",
+  "options": [
+   "Dubai",
+   "London",
+   "Paris",
+   "New York"
+  ],
+  "correct": 1,
+  "why": "Heathrow Airport is the main international airport of London, United Kingdom.",
+  "rel": "Heathrow is one of the busiest airports in the world.",
+  "status": "unsure",
+  "note": "Original question \"Amnesty Airport\" is unclear (no such airport); assumed Heathrow was meant.",
+  "match": null
+ },
+ {
+  "id": "B307",
+  "question": "Which two countries are separated by the 38th parallel?",
+  "options": [
+   "Japan and South Korea",
+   "China and North Korea",
+   "North Korea and South Korea",
+   "Vietnam and Laos"
+  ],
+  "correct": 2,
+  "why": "After World War II, the 38th parallel was used as the dividing line between North and South Korea.",
+  "rel": "The Korean Demilitarized Zone (1953) follows the armistice line, which does not match the 38th parallel exactly.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B308",
+  "question": "Who led the Quraysh army at the Battle of Badr?",
+  "options": [
+   "Abu Jahl",
+   "Khalid ibn al-Walid",
+   "Abu Sufyan",
+   "Abu Lahab"
+  ],
+  "correct": 0,
+  "why": "Abu Jahl (Amr ibn Hisham) was the leader of the Quraysh force at Badr.",
+  "rel": "Abu Jahl was killed in the Battle of Badr in 2 AH (624 CE).",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B309",
+  "question": "Which country gave major help in building Warsak Dam?",
+  "options": [
+   "Japan",
+   "China",
+   "Canada",
+   "United States"
+  ],
+  "correct": 2,
+  "why": "Warsak Dam was built with Canadian help under the Colombo Plan.",
+  "rel": "Warsak Dam is on the Kabul River near Peshawar and was completed in 1960.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B310",
+  "question": "Which Chinese autonomous region borders Pakistan?",
+  "options": [
+   "Tibet",
+   "Xinjiang",
+   "Inner Mongolia",
+   "Ningxia"
+  ],
+  "correct": 1,
+  "why": "Pakistan's Gilgit-Baltistan borders the Xinjiang Uyghur Autonomous Region of China.",
+  "rel": "Pakistan and China are connected through the Khunjerab Pass.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B311",
+  "question": "Which pass connects Pakistan with China?",
+  "options": [
+   "Bolan Pass",
+   "Lowari Pass",
+   "Khyber Pass",
+   "Khunjerab Pass"
+  ],
+  "correct": 3,
+  "why": "The Khunjerab Pass on the Karakoram Highway links Gilgit-Baltistan with Xinjiang, China.",
+  "rel": "Khunjerab Pass is about 4,693 m high, one of the highest paved border crossings in the world.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B312",
+  "question": "Which city of Pakistan is popularly called the \"City of Flowers\"?",
+  "options": [
+   "Multan",
+   "Peshawar",
+   "Lahore",
+   "Quetta"
+  ],
+  "correct": 1,
+  "why": "Peshawar is popularly known as the City of Flowers.",
+  "rel": "Peshawar is the capital of Khyber Pakhtunkhwa.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B313",
+  "question": "Where is the Shahi Qila (Royal Fort) located?",
+  "options": [
+   "Lahore",
+   "Rawalpindi",
+   "Multan",
+   "Hyderabad"
+  ],
+  "correct": 0,
+  "why": "The Shahi Qila, or Lahore Fort, is in Lahore.",
+  "rel": "Lahore Fort and Shalamar Gardens together are a UNESCO World Heritage Site.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B314",
+  "question": "In which city is the main campus of the National College of Arts (NCA)?",
+  "options": [
+   "Islamabad",
+   "Peshawar",
+   "Karachi",
+   "Lahore"
+  ],
+  "correct": 3,
+  "why": "The National College of Arts has its main campus in Lahore.",
+  "rel": "NCA also has a campus in Rawalpindi.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B315",
+  "question": "The Darling River is in which country?",
+  "options": [
+   "South Africa",
+   "Australia",
+   "Canada",
+   "New Zealand"
+  ],
+  "correct": 1,
+  "why": "The Darling River is in south-eastern Australia.",
+  "rel": "The Darling is part of the Murray-Darling river system.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B316",
+  "question": "Who was Pakistan's first Commander-in-Chief of the Army?",
+  "options": [
+   "General Ayub Khan",
+   "General Douglas Gracey",
+   "General Muhammad Musa",
+   "General Sir Frank Messervy"
+  ],
+  "correct": 3,
+  "why": "General Sir Frank Messervy was the first C-in-C of the Pakistan Army, from August 1947 to February 1948.",
+  "rel": "Ayub Khan became the first Pakistani Commander-in-Chief in 1951.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B317",
+  "question": "What is the fifth pillar of Islam?",
+  "options": [
+   "Hajj",
+   "Zakat",
+   "Salah (prayer)",
+   "Sawm (fasting)"
+  ],
+  "correct": 0,
+  "why": "The five pillars are Shahadah, Salah, Zakat, Sawm and Hajj; Hajj is the fifth.",
+  "rel": "Hajj is performed in the month of Dhul-Hijjah by those who are able.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B318",
+  "question": "According to Hanafi fiqh, how many fard (obligatory) acts of Hajj are there?",
+  "options": [
+   "Seven",
+   "Three",
+   "Two",
+   "Five"
+  ],
+  "correct": 1,
+  "why": "In Hanafi fiqh the three fard acts of Hajj are Ihram, standing at Arafat and Tawaf al-Ziyarah.",
+  "rel": "Other schools count the essential acts (arkan) differently.",
+  "status": "ok",
+  "note": "Note in source wrongly listed shaving as fard; it is wajib. Answer three is correct.",
+  "match": null
+ },
+ {
+  "id": "B319",
+  "question": "In 622 CE, to which city did Prophet Muhammad (PBUH) migrate?",
+  "options": [
+   "Jerusalem",
+   "Madinah",
+   "Taif",
+   "Abyssinia"
+  ],
+  "correct": 1,
+  "why": "In 622 CE the Prophet (PBUH) migrated from Makkah to Madinah, then called Yathrib.",
+  "rel": "The Hijrah marks the start of the Islamic (Hijri) calendar.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B320",
+  "question": "Which part of the body does diphtheria mainly affect?",
+  "options": [
+   "Liver",
+   "Kidneys",
+   "Nose and throat",
+   "Skin of the feet"
+  ],
+  "correct": 2,
+  "why": "Diphtheria is a bacterial infection that mainly affects the nose and throat.",
+  "rel": "Diphtheria is caused by Corynebacterium diphtheriae and is prevented by vaccination.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B321",
+  "question": "How many Quran memorizers (huffaz) are traditionally reported to have been martyred at the Battle of Yamama?",
+  "options": [
+   "About 70",
+   "About 30",
+   "About 1,000",
+   "About 313"
+  ],
+  "correct": 0,
+  "why": "Traditional reports say about 70 huffaz were martyred at Yamama.",
+  "rel": "Their loss led to the collection of the Quran in one book under Hazrat Abu Bakr (RA).",
+  "status": "ok",
+  "note": "",
+  "match": 237
+ },
+ {
+  "id": "B322",
+  "question": "What is the full name of Imam Bukhari?",
+  "options": [
+   "Muhammad ibn Isma'il al-Bukhari",
+   "Ahmad ibn Hanbal",
+   "Muhammad ibn Isa al-Tirmidhi",
+   "Muslim ibn al-Hajjaj"
+  ],
+  "correct": 0,
+  "why": "Imam Bukhari's full name is Muhammad ibn Isma'il al-Bukhari, and his kunya is Abu Abdullah.",
+  "rel": "He was born in Bukhara in 810 CE and compiled Sahih al-Bukhari.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B323",
+  "question": "Who compiled Sunan Abi Dawud?",
+  "options": [
+   "Imam Ibn Majah",
+   "Imam Nasa'i",
+   "Imam Muslim",
+   "Imam Abu Dawud al-Sijistani"
+  ],
+  "correct": 3,
+  "why": "Sunan Abi Dawud was compiled by Imam Abu Dawud Sulayman ibn al-Ash'ath al-Sijistani.",
+  "rel": "It is one of the six major Sunni hadith books (Sihah Sittah).",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B324",
+  "question": "What does the name \"Pakistan\" mean?",
+  "options": [
+   "Land of Rivers",
+   "Land of Five Waters",
+   "Land of the Pure",
+   "Land of the Brave"
+  ],
+  "correct": 2,
+  "why": "In Persian/Urdu, \"Pak\" means pure and \"stan\" means land, so Pakistan means Land of the Pure.",
+  "rel": "The name was coined by Chaudhry Rahmat Ali in his 1933 pamphlet \"Now or Never\".",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B325",
+  "question": "Hazrat Aisha (RA) was the daughter of which Companion?",
+  "options": [
+   "Hazrat Abu Bakr (RA)",
+   "Hazrat Abbas (RA)",
+   "Hazrat Uthman (RA)",
+   "Hazrat Umar (RA)"
+  ],
+  "correct": 0,
+  "why": "Hazrat Aisha (RA) was the daughter of Hazrat Abu Bakr al-Siddiq (RA).",
+  "rel": "Hazrat Hafsa (RA), another wife of the Prophet (PBUH), was the daughter of Hazrat Umar (RA).",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B326",
+  "question": "Where is Masjid-e-Nabawi located?",
+  "options": [
+   "Makkah",
+   "Jerusalem",
+   "Madinah",
+   "Taif"
+  ],
+  "correct": 2,
+  "why": "Masjid-e-Nabawi, the Prophet's Mosque, is in Madinah, Saudi Arabia.",
+  "rel": "It was built by the Prophet (PBUH) after the Hijrah in 622 CE.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B327",
+  "question": "Bait-ul-Maqdis in Jerusalem is also known by which name?",
+  "options": [
+   "Masjid Quba",
+   "Masjid al-Haram",
+   "Masjid-e-Nabawi",
+   "Al-Aqsa"
+  ],
+  "correct": 3,
+  "why": "Bait-ul-Maqdis refers to the holy sanctuary in Jerusalem containing Masjid al-Aqsa.",
+  "rel": "Al-Aqsa was the first Qibla of the Muslims.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B328",
+  "question": "In which province is the Thal Desert?",
+  "options": [
+   "Balochistan",
+   "Sindh",
+   "Khyber Pakhtunkhwa",
+   "Punjab"
+  ],
+  "correct": 3,
+  "why": "The Thal Desert lies in Punjab, between the Indus and Jhelum rivers.",
+  "rel": "It covers parts of Bhakkar, Khushab, Layyah and Mianwali districts.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B329",
+  "question": "Near which city is the Cholistan Desert?",
+  "options": [
+   "Bahawalpur",
+   "Dera Ismail Khan",
+   "Sukkur",
+   "Quetta"
+  ],
+  "correct": 0,
+  "why": "The Cholistan Desert lies near Bahawalpur in southern Punjab.",
+  "rel": "Cholistan is also called Rohi, and Derawar Fort is its famous landmark.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B330",
+  "question": "Which is Pakistan's largest district by area?",
+  "options": [
+   "Awaran",
+   "Tharparkar",
+   "Chagai",
+   "Khuzdar"
+  ],
+  "correct": 2,
+  "why": "Chagai District in western Balochistan is the largest district of Pakistan by area.",
+  "rel": "Chagai borders both Iran and Afghanistan.",
+  "status": "ok",
+  "note": "",
+  "match": 118
+ },
+ {
+  "id": "B331",
+  "question": "In which river is the Indus blind dolphin found?",
+  "options": [
+   "Chenab River",
+   "Indus River",
+   "Jhelum River",
+   "Kabul River"
+  ],
+  "correct": 1,
+  "why": "The blind dolphin of Pakistan lives in the Indus River.",
+  "rel": "It has very poor eyesight and uses echolocation to find its way in muddy water.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B332",
+  "question": "Who elects the Prime Minister of Pakistan?",
+  "options": [
+   "The provincial assemblies",
+   "The National Assembly",
+   "The President",
+   "The Senate"
+  ],
+  "correct": 1,
+  "why": "The Prime Minister is elected by the National Assembly from among its members.",
+  "rel": "The President is elected by an electoral college of Parliament and the provincial assemblies.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B333",
+  "question": "Which Indian Prime Minister visited Pakistan in February 1999?",
+  "options": [
+   "Manmohan Singh",
+   "Rajiv Gandhi",
+   "Atal Bihari Vajpayee",
+   "I. K. Gujral"
+  ],
+  "correct": 2,
+  "why": "Atal Bihari Vajpayee came to Lahore by bus in February 1999.",
+  "rel": "His visit led to the signing of the Lahore Declaration.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B334",
+  "question": "Which of these countries has no system of national orders or honours?",
+  "options": [
+   "United Kingdom",
+   "Switzerland",
+   "France",
+   "Pakistan"
+  ],
+  "correct": 1,
+  "why": "Swiss tradition forbids national orders and titles, so Switzerland has no award like Pakistan's Nishan-e-Haider.",
+  "rel": "The Swiss armed forces do give service and mission awards, but no national gallantry order.",
+  "status": "unsure",
+  "note": "Original asked for Switzerland's highest military award; Switzerland has none in the usual sense, so the question was reframed.",
+  "match": null
+ },
+ {
+  "id": "B335",
+  "question": "What is the full form of ISPR?",
+  "options": [
+   "Inter-State Public Relations",
+   "Internal Security and Public Relations",
+   "Inter-Services Press Release",
+   "Inter-Services Public Relations"
+  ],
+  "correct": 3,
+  "why": "ISPR stands for Inter-Services Public Relations.",
+  "rel": "ISPR is the media wing of Pakistan's armed forces.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B336",
+  "question": "What is 2 + 2 ÷ 2?",
+  "options": [
+   "4",
+   "3",
+   "1",
+   "2"
+  ],
+  "correct": 1,
+  "why": "Division comes before addition: 2 ÷ 2 = 1, then 2 + 1 = 3.",
+  "rel": "The order of operations is often remembered as BODMAS.",
+  "status": "ok",
+  "note": "",
+  "match": 233
+ },
+ {
+  "id": "B337",
+  "question": "What is one quarter of one tenth of 120?",
+  "options": [
+   "3",
+   "30",
+   "12",
+   "4"
+  ],
+  "correct": 0,
+  "why": "One tenth of 120 is 12, and one quarter of 12 is 3.",
+  "rel": "One quarter of 120 is 30, and one tenth of 30 is also 3.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B338",
+  "question": "Manama is the capital of which country?",
+  "options": [
+   "Bahrain",
+   "Oman",
+   "Qatar",
+   "Kuwait"
+  ],
+  "correct": 0,
+  "why": "Manama is the capital and largest city of Bahrain.",
+  "rel": "Bahrain is an island country in the Persian Gulf.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B339",
+  "question": "What is the currency of Egypt?",
+  "options": [
+   "Egyptian dirham",
+   "Egyptian pound",
+   "Egyptian dinar",
+   "Egyptian riyal"
+  ],
+  "correct": 1,
+  "why": "Egypt's currency is the Egyptian pound (EGP).",
+  "rel": "One Egyptian pound is divided into 100 piastres.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B340",
+  "question": "What is the currency of Australia?",
+  "options": [
+   "New Zealand dollar",
+   "Australian rand",
+   "Australian pound",
+   "Australian dollar"
+  ],
+  "correct": 3,
+  "why": "Australia's currency is the Australian dollar (AUD).",
+  "rel": "The Australian dollar replaced the Australian pound in 1966.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B341",
+  "question": "Which two oceans are connected by the Panama Canal?",
+  "options": [
+   "Pacific and Indian",
+   "Atlantic and Pacific",
+   "Atlantic and Indian",
+   "Pacific and Arctic"
+  ],
+  "correct": 1,
+  "why": "The Panama Canal links the Atlantic Ocean (via the Caribbean Sea) with the Pacific Ocean.",
+  "rel": "The Panama Canal opened in 1914.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B342",
+  "question": "When was the World Trade Organization (WTO) established?",
+  "options": [
+   "1 January 2001",
+   "1 January 1948",
+   "24 October 1945",
+   "1 January 1995"
+  ],
+  "correct": 3,
+  "why": "The WTO started work on 1 January 1995, replacing the GATT system.",
+  "rel": "WTO headquarters is in Geneva, Switzerland.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B343",
+  "question": "In which city is the OIC headquartered?",
+  "options": [
+   "Cairo, Egypt",
+   "Rabat, Morocco",
+   "Jeddah, Saudi Arabia",
+   "Riyadh, Saudi Arabia"
+  ],
+  "correct": 2,
+  "why": "The OIC headquarters is in Jeddah, Saudi Arabia.",
+  "rel": "The OIC was founded in Rabat, Morocco, in 1969.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B344",
+  "question": "What is the capital of Argentina?",
+  "options": [
+   "Lima",
+   "Montevideo",
+   "Santiago",
+   "Buenos Aires"
+  ],
+  "correct": 3,
+  "why": "Buenos Aires is the capital and main port of Argentina.",
+  "rel": "Argentina is in the southern part of South America.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B345",
+  "question": "Who was Pakistan's second Governor-General?",
+  "options": [
+   "Khawaja Nazimuddin",
+   "Liaquat Ali Khan",
+   "Ghulam Muhammad",
+   "Iskander Mirza"
+  ],
+  "correct": 0,
+  "why": "Khawaja Nazimuddin became Governor-General after Quaid-e-Azam's death in September 1948.",
+  "rel": "Nazimuddin later became Pakistan's second Prime Minister.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B346",
+  "question": "What is the real cube root of unity?",
+  "options": [
+   "ω (omega)",
+   "1",
+   "-1",
+   "0"
+  ],
+  "correct": 1,
+  "why": "x³ = 1 has three roots (1, ω, ω²), but only 1 is a real number.",
+  "rel": "The other two cube roots of unity are complex numbers, and 1 + ω + ω² = 0.",
+  "status": "ok",
+  "note": "",
+  "match": 95
+ },
+ {
+  "id": "B347",
+  "question": "In which battle was Abu Jahl killed?",
+  "options": [
+   "Battle of Hunayn",
+   "Battle of the Trench",
+   "Battle of Uhud",
+   "Battle of Badr"
+  ],
+  "correct": 3,
+  "why": "Abu Jahl was killed at the Battle of Badr in 2 AH (624 CE).",
+  "rel": "Abu Jahl was the leader of the Quraysh army at Badr.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B348",
+  "question": "The Bay of Biscay lies along the coasts of which countries?",
+  "options": [
+   "France and Spain",
+   "Spain and Portugal",
+   "Ireland and United Kingdom",
+   "France and United Kingdom"
+  ],
+  "correct": 0,
+  "why": "The Bay of Biscay lies along the western coast of France and the northern coast of Spain.",
+  "rel": "It is part of the north-eastern Atlantic Ocean and is known for rough seas.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B349",
+  "question": "When was the All-India Muslim League founded?",
+  "options": [
+   "30 December 1906",
+   "23 March 1940",
+   "16 October 1905",
+   "28 December 1885"
+  ],
+  "correct": 0,
+  "why": "The All-India Muslim League was founded in Dhaka on 30 December 1906.",
+  "rel": "The Lahore Resolution was passed by the Muslim League in 1940.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B350",
+  "question": "Who was the first wife of Prophet Muhammad (PBUH)?",
+  "options": [
+   "Hazrat Khadijah (RA)",
+   "Hazrat Hafsa (RA)",
+   "Hazrat Aisha (RA)",
+   "Hazrat Sawdah (RA)"
+  ],
+  "correct": 0,
+  "why": "Hazrat Khadijah (RA) was the first wife of the Prophet (PBUH).",
+  "rel": "She is traditionally regarded as the first person to accept Islam.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B351",
+  "question": "Where is the Kirthar Range located?",
+  "options": [
+   "In central Punjab",
+   "On the Sindh-Balochistan border",
+   "In northern Gilgit-Baltistan",
+   "In Khyber Pakhtunkhwa near Chitral"
+  ],
+  "correct": 1,
+  "why": "The Kirthar Range runs along the border between Sindh and Balochistan.",
+  "rel": "Kirthar National Park is in Sindh.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B352",
+  "question": "Which place in Pakistan is the birthplace of Guru Nanak, the founder of Sikhism?",
+  "options": [
+   "Nankana Sahib",
+   "Hasan Abdal",
+   "Kartarpur",
+   "Taxila"
+  ],
+  "correct": 0,
+  "why": "Guru Nanak was born at Nankana Sahib, Punjab, marked by Gurdwara Janam Asthan.",
+  "rel": "Kartarpur is linked with the later life and death of Guru Nanak.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B353",
+  "question": "About how many languages are spoken in Pakistan?",
+  "options": [
+   "More than 300",
+   "More than 70",
+   "About 25",
+   "About 10"
+  ],
+  "correct": 1,
+  "why": "Surveys report more than 70 languages spoken in Pakistan.",
+  "rel": "Urdu is the national language and English is widely used for official work.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B354",
+  "question": "When was the Simla Conference held?",
+  "options": [
+   "1945",
+   "1940",
+   "1946",
+   "1935"
+  ],
+  "correct": 0,
+  "why": "The Simla Conference was held in June-July 1945 to form a new Viceroy's Executive Council.",
+  "rel": "It failed mainly over the Muslim League's claim to nominate all Muslim members.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B355",
+  "question": "Who is the Prime Minister of Pakistan (as of October 2026)?",
+  "options": [
+   "Nawaz Sharif",
+   "Shehbaz Sharif",
+   "Anwaar-ul-Haq Kakar",
+   "Imran Khan"
+  ],
+  "correct": 1,
+  "why": "Shehbaz Sharif was elected Prime Minister by the National Assembly in March 2024.",
+  "rel": "The Prime Minister is elected by the National Assembly.",
+  "status": "unsure",
+  "note": "Very recent (Oct 2026) fact; cannot fully confirm.",
+  "match": 51
+ },
+ {
+  "id": "B356",
+  "question": "When did the Chauri Chaura incident take place?",
+  "options": [
+   "8 August 1942",
+   "13 April 1919",
+   "4 February 1922",
+   "12 March 1930"
+  ],
+  "correct": 2,
+  "why": "The Chauri Chaura incident happened on 4 February 1922 in the United Provinces.",
+  "rel": "Gandhi called off the Non-Cooperation Movement after this violence.",
+  "status": "ok",
+  "note": "",
+  "match": 128
+ },
+ {
+  "id": "B357",
+  "question": "What was the religion of the Negus (Najashi) of Abyssinia before he accepted Islam?",
+  "options": [
+   "Christianity",
+   "Judaism",
+   "Idol worship",
+   "Zoroastrianism"
+  ],
+  "correct": 0,
+  "why": "The Najashi of Abyssinia was a Christian king.",
+  "rel": "He gave protection to the early Muslims who migrated to Abyssinia.",
+  "status": "ok",
+  "note": "",
+  "match": 106
+ },
+ {
+  "id": "B358",
+  "question": "According to the common count, how many Muslims fought at the Battle of Badr?",
+  "options": [
+   "1,000",
+   "700",
+   "3,000",
+   "313"
+  ],
+  "correct": 3,
+  "why": "The standard traditional count of the Muslim army at Badr is 313.",
+  "rel": "The Quraysh army at Badr was about 1,000 strong.",
+  "status": "ok",
+  "note": "",
+  "match": 193
+ },
+ {
+  "id": "B359",
+  "question": "Who is credited with founding the Indian National Congress?",
+  "options": [
+   "Lord Ripon",
+   "Allan Octavian Hume",
+   "Dadabhai Naoroji",
+   "Bal Gangadhar Tilak"
+  ],
+  "correct": 1,
+  "why": "A. O. Hume, a retired British civil servant, organized the founding of the Congress in 1885.",
+  "rel": "Womesh Chunder Bonnerjee was president of its first session in Bombay.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B360",
+  "question": "In which year was the Indian National Congress founded?",
+  "options": [
+   "1875",
+   "1885",
+   "1857",
+   "1906"
+  ],
+  "correct": 1,
+  "why": "The Indian National Congress was founded in December 1885 in Bombay.",
+  "rel": "Its first president was Womesh Chunder Bonnerjee.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ }
+]
