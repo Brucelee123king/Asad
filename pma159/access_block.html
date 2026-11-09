@@ -56,6 +56,7 @@
   /* ---- entering the app ---- */
   function getKey(id){return FB.getDoc(FB.doc(fs,'catKeys',id)).then(function(d){if(!d.exists())throw new Error('nokey');return d.data().pw})}
   window.__acGetKey=function(id){return getKey(id)};
+  window.__acReport=function(d){if(!fs||!cur)return Promise.reject(new Error('login'));var t=new Date(Date.now()+5*3600e3),day=String(t.getUTCFullYear()*10000+(t.getUTCMonth()+1)*100+t.getUTCDate());var body={uid:cur.uid,email:cur.email||'',type:d.type,msg:String(d.msg).slice(0,600),img:d.img||'',done:false,t:FB.serverTimestamp()};function tryN(n){if(n>3)return Promise.reject(new Error('limit'));return FB.setDoc(FB.doc(fs,'reports',cur.uid+'_'+day+'_'+n),body).catch(function(x){if(x&&/permission/i.test(x.code||x.message||''))return tryN(n+1);throw x})}return tryN(1)};
   window.__acPayProof=function(d){if(!fs||!cur)return Promise.reject(new Error('login'));d.email=cur.email||'';d.uid=cur.uid;d.t=FB.serverTimestamp();return FB.setDoc(FB.doc(fs,'payproofs',cur.uid),d)};
   /* LIMITED FREE OFFER (Nov 2026): Initial Test (all its categories) and Initial Interview are open for every signed-in user. Remove ids from FREE_OFFER to end it (and the catKeys rule in firestore.rules). */
   var FREE_OFFER=['o','pma','fa','hk','lc','pg','nv','cn','iv','en','lf','hf','int'];window.__freeOffer=FREE_OFFER;

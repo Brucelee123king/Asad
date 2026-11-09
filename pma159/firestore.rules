@@ -147,6 +147,26 @@ service cloud.firestore {
       allow read: if request.auth != null;
       allow write: if isAdmin();
     }
+    match /reports/{rid} {
+      function rday() {
+        let t = request.time + duration.value(5, 'h');
+        return string(t.year() * 10000 + t.month() * 100 + t.day());
+      }
+      allow read, update, delete: if isAdmin();
+      allow create: if request.auth != null
+        && rid.matches(request.auth.uid + '_' + rday() + '_[1-3]')
+        && request.resource.data.keys().hasOnly(['uid','email','type','msg','img','done','t'])
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.email == request.auth.token.email
+        && request.resource.data.type in ['wrong','bug','idea','other']
+        && request.resource.data.msg is string
+        && request.resource.data.msg.size() > 0
+        && request.resource.data.msg.size() <= 600
+        && request.resource.data.img is string
+        && request.resource.data.img.size() < 900000
+        && request.resource.data.done == false
+        && request.resource.data.t == request.time;
+    }
     match /catKeys/{cat} {
       allow read: if isAdmin()
         // LIMITED FREE OFFER: Initial Test categories and Initial Interview open for every signed-in user
