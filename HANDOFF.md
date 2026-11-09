@@ -455,3 +455,10 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 
 ## Private PDFs (admin only)
 - Card 04 "PDFs" is visible/openable only for the admin account. BKL in land_block.html lists the PDFs; pages in pma159/books/<dir>/ encrypted with the bk_issb130 key. Scanned books processed by books_src/make_scanned_pdf.py (deskew, border, OCR search).
+
+## Status (Nov 2026) – compact progress
+**Done and published:** Verbal / Non-Verbal / Academic cards on top of Initial PMA; 17 new academy categories (own colour + icon); Pro Genius +780; ISSB +1660 items + 24 drawings; Interview data; 18 PDF books (admin); limited free offer (Initial Test + Interview open to signed-in users, `FREE_OFFER` in access_block.html + catKeys rule); ISSB "coming soon" + TikTok contact; login cap fix.
+**Samples only (not published):** FaujPrep-style 3-force main page (4 text styles, Style 4 chosen); course pages 2-per-row for Army/PAF/Navy; course background options.
+**Pending:** user to pick card background style; real course pictures from user (no official-site scraping); new first page (force chooser) + per-force bottom bars; app name decision; GK 3000 / 500 Islamiat / 500 Pak Study / 800+ GK MCQs not yet tests; Mission Commission (25 MCQs) held (name rule); 4 essay topics awaiting OK.
+**Known issues:** Google sign-in needs a new APK (not done). Firebase 2-Step Verification must stay on for the console.
+**Next:** user picks design → build first page + force bottom bars → publish after approval.
