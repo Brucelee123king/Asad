@@ -59,15 +59,15 @@ def make(ALL, base_dir):
     tests = {}
     for i, (tid, name) in enumerate(vb_types.TYPES):
         lst = sorted(by.get(tid, []), key=lambda q: hashlib.md5(q['question'].encode('utf8')).hexdigest())
-        if lst: tests['VB-%d' % (i + 1)] = [dict(e, id=j + 1) for j, e in enumerate(lst)]
+        for n in range((len(lst) + 49) // 50): tests['VB-%d-%d' % (i + 1, n + 1)] = [dict(e, id=j + 1) for j, e in enumerate(lst[n * 50:(n + 1) * 50])]
     # Non Verbal: all picture questions (Non Verbal + copies of the Paid Non Verbal Booklet), one test per type (NV-n, n = position in NV_TYPES)
     pics = []
-    for k in sorted([k for k in ALL if k.startswith('NV-')], key=lambda x: int(x.split('-')[1])): pics += ALL[k]
+    for k in sorted([k for k in ALL if re.match(r'^NV-\d+$', k)], key=lambda x: int(x.split('-')[1])): pics += ALL[k]
     for k in sorted([k for k in ALL if k.startswith('PB-')], key=lambda x: int(x.split('-')[1])): pics += ALL[k]
     nvb = {}
     for q in pics:
         t = nv_type(q); nvb.setdefault(t, []).append(q)
     for i, (tid, name) in enumerate(NV_TYPES):
         lst = nvb.get(tid, [])
-        if lst: tests['NV-%d' % (i + 1)] = [dict(e, id=j + 1, sec='Non Verbal: ' + name) for j, e in enumerate(lst)]
+        for n in range((len(lst) + 49) // 50): tests['NV-%d-%d' % (i + 1, n + 1)] = [dict(e, id=j + 1, sec='Non Verbal: ' + name) for j, e in enumerate(lst[n * 50:(n + 1) * 50])]
     return tests, npick, sum(len(v) for k, v in tests.items() if k.startswith('VB-'))

@@ -1,0 +1,50 @@
+<script>
+/* Initial PMA menu (Nov 2026): three cards on top, built from ALL academies' MCQs (copies, made in lock_sections.py):
+   Verbal (VB-<type>-<part>), Non Verbal (NV-<type>-<part>), Academic (AC-<subject>-<part>); each opens its types, each type opens tests of 50.
+   Verbal and Non Verbal use the 'nv' lock, Academic uses the 'en' lock (same people already have both). The academies stay below. */
+(function(){
+  var VBN=['Number and Letter Series','Coding and Decoding','Mirror and Water Images','Direction Sense','Blood Relations','Age Problems','Calendar and Days','Clock Problems','Ranking and Order','Alphabet and Word Arrangement','Analogy','Odd One Out','Percentage and Fractions','Speed, Time and Work','Profit, Loss and Dozen','English Vocabulary and Grammar','Logical Reasoning','Basic Maths and Reasoning','Mixed Verbal'];
+  var VBE=['🔢','🔐','🪞','🧭','👨‍👩‍👦','🎂','📅','🕒','🏅','🔤','🔗','🎯','➗','🚆','💰','📖','🧠','✖️','🧩'];
+  var NVN=['Odd One Out','Analogy','Complete the Series','Missing Figure and Matrix','Mirror Images'];
+  var NVE=['🎯','🔗','➡️','🧱','🪞'];
+  var ACN=['English','Maths','Pakistan Studies','General Knowledge','Islamiat','Current Affairs','Everyday Science'];
+  var ACE=['📖','➗','🇵🇰','🌍','🕌','📰','🔬'];
+  var TOP={v:{name:'Verbal Intelligence',sub:'Series, coding-decoding, direction, blood relations, analogy, odd one out and more. Every type in tests of 50.',grad:'from-amber-600 to-orange-500',ic:'🧠',lk:'nv'},
+           n:{name:'Non Verbal Intelligence',sub:'Picture questions: odd one out, analogy, series, matrix and mirror images. Every type in tests of 50.',grad:'from-violet-700 to-fuchsia-600',ic:'🧩',lk:'nv'},
+           a:{name:'Academic',sub:'English, Maths, Pakistan Studies, GK, Islamiat, Current Affairs and Science. Every subject in tests of 50.',grad:'engrad',ic:'🎓',lk:'en'}};
+  window.__nvType=null;
+  function keys(pre,t){return Object.keys(ALL).filter(function(k){return k.indexOf(pre+'-'+t+'-')===0}).sort(function(a,b){return (+a.split('-')[2])-(+b.split('-')[2])})}
+  function nq(ks){return ks.reduce(function(t,k){return t+ALL[k].length},0)}
+  function back(fn,label){return '<div class="col-span-full"><button type="button" onclick="'+fn+'" class="inline-flex items-center gap-2 bg-white border border-slate-200 hover:border-amber-400 text-slate-700 text-sm font-semibold px-4 py-2 rounded-full shadow-sm"><i class="fa-solid fa-arrow-left"></i> '+label+'</button></div>'}
+  function typeCard(fn,emo,name,ks,grad){return '<button type="button" onclick="'+fn+'" class="col-span-full text-left bg-gradient-to-r '+grad+' text-white rounded-2xl shadow-xl hover:shadow-2xl transition p-5 flex items-center gap-4"><span style="flex:none;width:52px;height:52px;border-radius:16px;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;font-size:27px">'+emo+'</span><span class="flex flex-col gap-1"><span class="text-lg sm:text-xl font-bold leading-tight">'+name+'</span><span class="text-white/85 text-xs font-semibold">'+ks.length+' Test'+(ks.length===1?'':'s')+' &bull; '+nq(ks)+' MCQs</span></span><i class="fa-solid fa-arrow-right ml-auto"></i></button>'}
+  function testCard(k,i,tag,title,ac){var best=null;try{best=localStorage.getItem('mc_best_'+k)}catch(e){}
+    return '<button type="button" onclick="selectTest(\''+k+'\')" class="text-left bg-white rounded-2xl border border-slate-200 hover:border-'+ac+'-500 hover:shadow-lg transition p-5 flex flex-col gap-3"><div class="flex items-center justify-between"><span class="bg-'+ac+'-100 text-'+ac+'-800 text-xs font-bold px-3 py-1 rounded-full">'+tag+' &bull; Test '+(i+1)+'</span>'+(best!==null?'<span class="text-xs font-bold text-emerald-600"><i class="fa-solid fa-trophy"></i> Best '+best+'</span>':'')+'</div><div class="text-xl font-bold text-slate-900">'+title+' &ndash; Part '+(i+1)+'</div><div class="text-xs text-slate-500">'+ALL[k].length+' MCQs &bull; '+Math.max(1,Math.ceil(Math.max(60,ALL[k].length*30)/60))+' Minutes &bull; Reason for every answer</div><div class="text-sm font-semibold text-'+ac+'-700">'+(best!==null?'Try again':'Start')+' <i class="fa-solid fa-arrow-right ml-1"></i></div></button>'}
+  function head(gid,t,s,cnt){var g=document.getElementById(gid),h=g&&g.previousElementSibling;if(!h)return;var a=h.querySelector('h2'),p=h.querySelector('p'),c=h.querySelector('span');if(a)a.textContent=t;if(p)p.textContent=s;if(c)c.innerHTML=cnt}
+  window.openNvSub=function(p){if(p===null&&window.__nvType!==null){window.__nvType=null}else if(p===null){window.__nvType=null;openSec(null);return}else{nvSub=p;window.__nvType=null}renderNV();window.scrollTo(0,0)};
+  window.openNvType=function(t){window.__nvType=t;renderNV();window.scrollTo(0,0)};
+  window.renderNV=function(){var g=document.getElementById('nv-grid');if(!g)return;var isV=nvSub!=='n',pre=isV?'VB':'NV',N=isV?VBN:NVN,E=isV?VBE:NVE,T=TOP[isV?'v':'n'],all=Object.keys(ALL).filter(function(k){return k.indexOf(pre+'-')===0});
+    head('nv-grid',T.name,T.sub,all.length+' Tests &bull; '+nq(all)+' MCQs');
+    if(window.__nvType===null){g.innerHTML=N.map(function(n,i){var ks=keys(pre,i+1);return ks.length?typeCard('openNvType('+(i+1)+')',E[i],n,ks,T.grad):''}).join('');return}
+    var t=window.__nvType,ks=keys(pre,t);g.innerHTML=back('openNvSub(null)',T.name)+ks.map(function(k,i){return testCard(k,i,isV?'Verbal':'Non Verbal',N[t-1],'amber')}).join('')};
+  window.openEnSub=function(p){if(p===null&&enSub===null){openSec(null);return}enSub=p;renderEN();window.scrollTo(0,0)};
+  window.renderEN=function(){var g=document.getElementById('en-grid');if(!g)return;var all=Object.keys(ALL).filter(function(k){return k.indexOf('AC-')===0}),T=TOP.a;
+    head('en-grid',T.name,T.sub,all.length+' Tests &bull; '+nq(all)+' MCQs');
+    if(enSub===null||typeof enSub!=='number'){enSub=null;g.innerHTML=ACN.map(function(n,i){var ks=keys('AC',i+1);return ks.length?typeCard('openEnSub('+(i+1)+')',ACE[i],n,ks,'from-sky-700 to-indigo-600'):''}).join('');return}
+    var ks=keys('AC',enSub);g.innerHTML=back('openEnSub(null)','Academic')+ks.map(function(k,i){return testCard(k,i,ACN[enSub-1],ACN[enSub-1],'sky')}).join('')};
+  var _os=window.openSec;
+  window.openSec=function(id){var want=window.__secSub;window.__secSub=null;
+    if(id==='nv'){var r=_os.apply(this,arguments);nvSub=want||'v';window.__nvType=null;renderNV();return r}
+    if(id==='en'){enSub=null;var r2=_os.apply(this,arguments);renderEN();return r2}
+    return _os.apply(this,arguments)};
+  var _st=window.selectTest;
+  window.selectTest=function(k){var r=_st.apply(this,arguments);try{var m=/^(VB|NV|AC)-(\d+)-(\d+)$/.exec(String(k));if(m){var nm=(m[1]==='VB'?VBN:m[1]==='NV'?NVN:ACN)[+m[2]-1],gp=m[1]==='VB'?'Verbal':m[1]==='NV'?'Non Verbal':'Academic',b=document.getElementById('home-badge');if(b)b.textContent=ALL[k].length+' MCQs ('+gp+': '+nm+' – Part '+m[3]+')'}}catch(e){}return r};
+  var _rm=window.renderMenu;
+  window.renderMenu=function(){var r=_rm.apply(this,arguments);try{
+    var m=document.getElementById('sec-menu'),grid=m&&m.querySelector('.grid');if(!grid)return r;
+    grid.querySelectorAll('button[onclick^="openSec(\'nv\')"],button[onclick^="openSec(\'en\')"]').forEach(function(b){b.remove()});
+    var ks={v:Object.keys(ALL).filter(function(k){return k.indexOf('VB-')===0}),n:Object.keys(ALL).filter(function(k){return k.indexOf('NV-')===0}),a:Object.keys(ALL).filter(function(k){return k.indexOf('AC-')===0})};
+    var h=['v','n','a'].map(function(c){var T=TOP[c];return '<button type="button" onclick="window.__secSub=\''+c+'\';openSec(\''+T.lk+'\')" class="text-left bg-gradient-to-r '+T.grad+' text-white rounded-2xl shadow-xl hover:shadow-2xl hover:scale-[1.01] transition p-6 flex flex-col gap-2 tcard"><div class="flex items-center gap-3"><i class="fa-solid '+(c==='a'?'fa-book-open':c==='v'?'fa-brain':'fa-shapes')+' text-2xl"></i><span class="text-xl sm:text-2xl font-bold">'+T.name+'</span></div><div class="text-white/90 text-sm">'+T.sub+'</div><div class="text-white/80 text-xs font-semibold">'+ks[c].length+' Tests &bull; '+nq(ks[c])+' MCQs</div><div class="text-sm font-bold mt-1">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>'}).join('');
+    grid.insertAdjacentHTML('afterbegin',h);
+  }catch(e){}return r};
+})();
+</script>

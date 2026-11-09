@@ -14,13 +14,18 @@ ALL = json.load(open(dump, encoding='utf8'))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import vb_build
 _vb, _vbp, _vbn = vb_build.make(ALL, os.path.dirname(os.path.abspath(__file__)))
+for _k in [k for k in ALL if re.match(r'^(NV|VB)-\d+$', k)]: del ALL[_k]   # old one-test-per-type keys; typed tests of 50 replace them
 ALL.update(_vb)
+import ac_build
+_ac = ac_build.make(ALL, os.path.dirname(os.path.abspath(__file__)))
+ALL.update(_ac)
+print('academic copies:', sum(len(v) for v in _ac.values()), 'in', len(_ac), 'tests')
 print('verbal copies:', _vbp, '-> distinct', _vbn, 'in', len(_vb), 'tests')
 PW = json.load(open(pwf, encoding='utf8'))
 ITER, EXPIRY_DAYS = 100000, int(os.environ.get('EXPIRY_DAYS', '2'))
 def cat(k):
     p = k.split('-')[0]
-    return {'PMA': 'pma', 'FA': 'fa', 'HK': 'hk', 'MR': 'hk', 'CN': 'cn', 'IV': 'iv', 'LC': 'lc', 'PG': 'pg', 'PF': 'pg', 'PV': 'pg', 'PB': 'pg', 'NV': 'nv', 'VB': 'nv', 'EN': 'en', 'IS': 'en', 'HF': 'hf', 'LFE': 'lf', 'LFL': 'lf', 'LFS': 'lf'}.get(p, 'o')
+    return {'PMA': 'pma', 'FA': 'fa', 'HK': 'hk', 'MR': 'hk', 'CN': 'cn', 'IV': 'iv', 'LC': 'lc', 'PG': 'pg', 'PF': 'pg', 'PV': 'pg', 'PB': 'pg', 'NV': 'nv', 'VB': 'nv', 'EN': 'en', 'IS': 'en', 'AC': 'en', 'HF': 'hf', 'LFE': 'lf', 'LFL': 'lf', 'LFS': 'lf'}.get(p, 'o')
 groups = {}
 for k, v in ALL.items(): groups.setdefault(cat(k), {})[k] = v
 assert set(groups) == set(PW), (set(groups), set(PW))
