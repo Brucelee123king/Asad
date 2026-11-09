@@ -331,6 +331,16 @@ if os.path.exists(_pbp):
     for _n in range((len(_pbl) + 49) // 50):
         PB['PB-%d' % (_n + 1)] = [dict(e, id=k + 1) for k, e in enumerate(_pbl[_n * 50:(_n + 1) * 50])]
 
+# new academies (Nov 2026): ../academies/index.json [{slug,name,sub}] + ../academies/<slug>.json (7-field MCQs); tests XA<n>-<part> of 50
+XA = {}; XA_META = []
+_xai = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'academies', 'index.json')
+if os.path.exists(_xai):
+    for _i, _a in enumerate(json.load(open(_xai, encoding='utf8'))):
+        _l = json.load(open(os.path.join(os.path.dirname(_xai), _a['slug'] + '.json'), encoding='utf8'))
+        XA_META.append({'n': _i + 1, 'name': _a['name'], 'sub': _a.get('sub', ''), 'q': len(_l)})
+        for _n in range((len(_l) + 49) // 50):
+            XA['XA%d-%d' % (_i + 1, _n + 1)] = [{"id": k + 1, "question": q + (' (%d)' % rep if rep > 1 else ''), "options": o, "correct": a, "facts": why, "rel": rel,
+                                                  "pma": True, "sec": sec, "rep": rep} for k, (sec, q, o, a, why, rel, rep) in enumerate(_l[_n * 50:(_n + 1) * 50])]
 NV = {}; _nv_n = 0
 _nvp = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'progenius', 'nv_final.json')
 if os.path.exists(_nvp):
@@ -359,7 +369,7 @@ SPLIT_JS = '''(function () {
 m = re.search(r'const ALL = ', s)
 eol = s.index('\n', m.start())
 assert s[:eol].rstrip().endswith(';')
-s = s[:eol] + '\n        const PMA_DATA = ' + json.dumps(PMA, ensure_ascii=False) + ';\n        ' + SPLIT_JS + 'Object.assign(ALL, PMA_DATA);\n        const FA_DATA = ' + json.dumps(FA, ensure_ascii=False) + ';\n        Object.assign(ALL, FA_DATA);\n        const HK_DATA = ' + json.dumps(HK, ensure_ascii=False) + ';\n        Object.assign(ALL, HK_DATA);\n        const MR_DATA = ' + json.dumps(MR, ensure_ascii=False) + ';\n        Object.assign(ALL, MR_DATA);\n        const CN_DATA = ' + json.dumps(CN, ensure_ascii=False) + ';\n        Object.assign(ALL, CN_DATA);\n        const IV_DATA = ' + json.dumps(IV, ensure_ascii=False) + ';\n        Object.assign(ALL, IV_DATA);\n        const LC_DATA = ' + json.dumps(LC, ensure_ascii=False) + ';\n        Object.assign(ALL, LC_DATA);\n        const PV_DATA = ' + json.dumps(PV, ensure_ascii=False) + ';\n        Object.assign(ALL, PV_DATA);\n        const PB_DATA = ' + json.dumps(PB, ensure_ascii=False) + ';\n        Object.assign(ALL, PB_DATA);\n        const PG_DATA = ' + json.dumps(PG, ensure_ascii=False) + ';\n        Object.assign(ALL, PG_DATA);\n        const PF_DATA = ' + json.dumps(PF, ensure_ascii=False) + ';\n        Object.assign(ALL, PF_DATA);\n        const NV_DATA = ' + json.dumps(NV, ensure_ascii=False) + ';\n        Object.assign(ALL, NV_DATA);\n        const EN_DATA = ' + json.dumps(EN, ensure_ascii=False) + ';\n        Object.assign(ALL, EN_DATA);\n        const HK_META = ' + json.dumps(HK_META) + ';\n        let TEST_SECS = 1200;\n        const isPMA = k => String(k).indexOf("PMA-") === 0;\n        const isFA = k => String(k).indexOf("FA-") === 0;\n        const isHK = k => String(k).indexOf("HK-") === 0;\n        const isMR = k => String(k).indexOf("MR-") === 0;\n        const isCN = k => String(k).indexOf("CN-") === 0;\n        const isIV = k => String(k).indexOf("IV-") === 0;\n        const isLC = k => String(k).indexOf("LC-") === 0;\n        const isPG = k => String(k).indexOf("PG-") === 0;\n        const isPF = k => String(k).indexOf("PF-") === 0;\n        const isPV = k => String(k).indexOf("PV-") === 0;\n        const isPB = k => String(k).indexOf("PB-") === 0;\n        const isNV = k => String(k).indexOf("NV-") === 0;\n        const isVB = k => String(k).indexOf("VB-") === 0;\n        const isEN = k => String(k).indexOf("EN-") === 0;\n        const isIS = k => String(k).indexOf("IS-") === 0;\n        const isAC = k => isEN(k) || isIS(k);\n        const isLF = k => /^LF[ELS]-/.test(String(k));\n        const isHF = k => String(k).indexOf("HF-") === 0;\n        const isExtra = k => isPMA(k) || isFA(k) || isHK(k) || isMR(k) || isCN(k) || isIV(k) || isLC(k) || isPG(k) || isPF(k) || isPV(k) || isPB(k) || isNV(k) || isVB(k) || isEN(k) || isIS(k) || isLF(k) || isHF(k) || String(k).indexOf("AC-") === 0;\n        /* answer audit corrections (Oct 2026): patched by test key + question id, nothing is removed */\n        const CORR = ' + json.dumps(json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'corrections.json'), encoding='utf8')), ensure_ascii=False) + ';\n        Object.keys(CORR).forEach(function (k) { var arr = ALL[k]; if (!arr) return; arr.forEach(function (q) { var c = CORR[k][String(q.id)]; if (c) Object.assign(q, c); }); });' + s[eol:]
+s = s[:eol] + '\n        const PMA_DATA = ' + json.dumps(PMA, ensure_ascii=False) + ';\n        ' + SPLIT_JS + 'Object.assign(ALL, PMA_DATA);\n        const FA_DATA = ' + json.dumps(FA, ensure_ascii=False) + ';\n        Object.assign(ALL, FA_DATA);\n        const HK_DATA = ' + json.dumps(HK, ensure_ascii=False) + ';\n        Object.assign(ALL, HK_DATA);\n        const MR_DATA = ' + json.dumps(MR, ensure_ascii=False) + ';\n        Object.assign(ALL, MR_DATA);\n        const CN_DATA = ' + json.dumps(CN, ensure_ascii=False) + ';\n        Object.assign(ALL, CN_DATA);\n        const IV_DATA = ' + json.dumps(IV, ensure_ascii=False) + ';\n        Object.assign(ALL, IV_DATA);\n        const LC_DATA = ' + json.dumps(LC, ensure_ascii=False) + ';\n        Object.assign(ALL, LC_DATA);\n        const PV_DATA = ' + json.dumps(PV, ensure_ascii=False) + ';\n        Object.assign(ALL, PV_DATA);\n        const PB_DATA = ' + json.dumps(PB, ensure_ascii=False) + ';\n        Object.assign(ALL, PB_DATA);\n        const PG_DATA = ' + json.dumps(PG, ensure_ascii=False) + ';\n        Object.assign(ALL, PG_DATA);\n        const PF_DATA = ' + json.dumps(PF, ensure_ascii=False) + ';\n        Object.assign(ALL, PF_DATA);\n        const NV_DATA = ' + json.dumps(NV, ensure_ascii=False) + ';\n        Object.assign(ALL, NV_DATA);\n        const EN_DATA = ' + json.dumps(EN, ensure_ascii=False) + ';\n        Object.assign(ALL, EN_DATA);\n        const XA_DATA = ' + json.dumps(XA, ensure_ascii=False) + ';\n        Object.assign(ALL, XA_DATA);\n        const HK_META = ' + json.dumps(HK_META) + ';\n        let TEST_SECS = 1200;\n        const isPMA = k => String(k).indexOf("PMA-") === 0;\n        const isFA = k => String(k).indexOf("FA-") === 0;\n        const isHK = k => String(k).indexOf("HK-") === 0;\n        const isMR = k => String(k).indexOf("MR-") === 0;\n        const isCN = k => String(k).indexOf("CN-") === 0;\n        const isIV = k => String(k).indexOf("IV-") === 0;\n        const isLC = k => String(k).indexOf("LC-") === 0;\n        const isPG = k => String(k).indexOf("PG-") === 0;\n        const isPF = k => String(k).indexOf("PF-") === 0;\n        const isPV = k => String(k).indexOf("PV-") === 0;\n        const isPB = k => String(k).indexOf("PB-") === 0;\n        const isNV = k => String(k).indexOf("NV-") === 0;\n        const isVB = k => String(k).indexOf("VB-") === 0;\n        const isEN = k => String(k).indexOf("EN-") === 0;\n        const isIS = k => String(k).indexOf("IS-") === 0;\n        const isAC = k => isEN(k) || isIS(k);\n        const isLF = k => /^LF[ELS]-/.test(String(k));\n        const isHF = k => String(k).indexOf("HF-") === 0;\n        const isExtra = k => isPMA(k) || isFA(k) || isHK(k) || isMR(k) || isCN(k) || isIV(k) || isLC(k) || isPG(k) || isPF(k) || isPV(k) || isPB(k) || isNV(k) || isVB(k) || isEN(k) || isIS(k) || isLF(k) || isHF(k) || String(k).indexOf("AC-") === 0 || /^XA\\d+-/.test(String(k));\n        /* answer audit corrections (Oct 2026): patched by test key + question id, nothing is removed */\n        const CORR = ' + json.dumps(json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'corrections.json'), encoding='utf8')), ensure_ascii=False) + ';\n        Object.keys(CORR).forEach(function (k) { var arr = ALL[k]; if (!arr) return; arr.forEach(function (q) { var c = CORR[k][String(q.id)]; if (c) Object.assign(q, c); }); });' + s[eol:]
 
 # ---- 2. second section on the selection page ----
 sub('<div id="test-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>',
@@ -534,7 +544,13 @@ sub('<div id="fa-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap
                 <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Haroon Force Academy</h2>
                 <p class="text-white/90 text-sm sm:text-base">Haroon Forces Academy MCQs for the PMA initial test, in tests of 50. A repeated question is written once with its count.</p>
             </div>
-            <div id="hf-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>''')
+            <div id="hf-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+            <div class="bg-gradient-to-r from-teal-700 to-emerald-600 rounded-2xl text-white text-center px-6 py-8 sm:p-10 mt-10 mb-6 shadow-xl">
+                <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-3">Academy</span>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2">Academy</h2>
+                <p class="text-white/90 text-sm sm:text-base">Academic MCQs in tests of 50.</p>
+            </div>
+            <div id="xa-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>''')
 s = s.replace('@@HF_COUNT@@', '%d Tests &bull; %d MCQs' % (len([k for k in EN if k.startswith('HF-')]), _hf_n))
 s = s.replace('@@EN_COUNT@@', 'English &bull; Islamiat')
 s = s.replace('@@CN_COUNT@@', '%d Test &bull; %d MCQs' % (len(CN), sum(len(v) for v in CN.values())))
@@ -754,10 +770,11 @@ MENU_JS = """let curSec = null, menuReady = false;
             {id: 'iv', name: '100 Most Repeated Questions', sub: 'Most important verbal questions', grad: 'from-rose-700 to-pink-500', icon: 'fa-star', test: k => isIV(k)},
             {id: 'en', name: 'Academic PMA MCQs', sub: 'English MCQs and Islamiat MCQs PMA', grad: 'engrad', icon: 'fa-book-open', test: k => isAC(k)},
             {id: 'lf', name: 'Light Forces Academy MCQs', sub: 'Test experiences, 159 LC important MCQs and Seerah MCQs', grad: 'lfgrad', icon: 'fa-star-and-crescent', test: k => isLF(k)},
-            {id: 'hf', name: 'Haroon Force Academy', sub: 'Haroon Forces Academy MCQs for the PMA initial test', grad: 'hfgrad', icon: 'fa-shield-halved', test: k => isHF(k)}
+            {id: 'hf', name: 'Haroon Force Academy', sub: 'Haroon Forces Academy MCQs for the PMA initial test', grad: 'hfgrad', icon: 'fa-shield-halved', test: k => isHF(k)},
+            {id: 'xa', name: 'New Academies', sub: 'More academies', grad: 'from-teal-700 to-emerald-600', icon: 'fa-school', test: k => /^XA\\d+-/.test(String(k))}
         ];
         /* order of the category cards on the menu (user's choice, Oct 2026); SECS itself keeps its order because initMenu links it to the page blocks */
-        const MENU_ORDER = ['cn', 'iv', 'lc', 'o', 'pma', 'pg', 'nv', 'en', 'fa', 'hk', 'lf', 'hf'];
+        const MENU_ORDER = ['cn', 'iv', 'lc', 'o', 'pma', 'pg', 'nv', 'en', 'fa', 'hk', 'lf', 'hf', 'xa'];
         function initMenu() {
             if (menuReady) return; menuReady = true;
             const v = document.getElementById('view-select');
@@ -806,6 +823,7 @@ import sys as _s; _s.path.insert(0, _d)
 from lz_build import write_data as _lzw
 _cv = _lzw('covers', __import__('json').load(open(__import__('os').path.join(_d, 'lz_covers_src.json'))))
 _blk = _blk.replace('@@COVERS_V@@', _cv)
+_blk = _blk.replace('@@XA_META@@', json.dumps(XA_META, ensure_ascii=False))
 import json as _j
 _imgs=_j.load(open(os.path.join(_d,'space_imgs.json')))
 for _k,_v in _imgs.items(): _blk=_blk.replace('{{IMG_'+_k+'}}','data:image/webp;base64,'+_v)

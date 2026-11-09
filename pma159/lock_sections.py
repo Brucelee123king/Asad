@@ -25,6 +25,7 @@ PW = json.load(open(pwf, encoding='utf8'))
 ITER, EXPIRY_DAYS = 100000, int(os.environ.get('EXPIRY_DAYS', '2'))
 def cat(k):
     p = k.split('-')[0]
+    if re.match(r'^XA\d+$', p): return 'en'   # new academies use the Academic lock
     return {'PMA': 'pma', 'FA': 'fa', 'HK': 'hk', 'MR': 'hk', 'CN': 'cn', 'IV': 'iv', 'LC': 'lc', 'PG': 'pg', 'PF': 'pg', 'PV': 'pg', 'PB': 'pg', 'NV': 'nv', 'VB': 'nv', 'EN': 'en', 'IS': 'en', 'AC': 'en', 'HF': 'hf', 'LFE': 'lf', 'LFL': 'lf', 'LFS': 'lf'}.get(p, 'o')
 groups = {}
 for k, v in ALL.items(): groups.setdefault(cat(k), {})[k] = v

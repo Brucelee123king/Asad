@@ -31,13 +31,18 @@
     head('en-grid',T.name,T.sub,all.length+' Tests &bull; '+nq(all)+' MCQs');
     if(enSub===null||typeof enSub!=='number'){enSub=null;g.innerHTML=ACN.map(function(n,i){var ks=keys('AC',i+1);return ks.length?typeCard('openEnSub('+(i+1)+')',ACE[i],n,ks,'from-sky-700 to-indigo-600'):''}).join('');return}
     var ks=keys('AC',enSub);g.innerHTML=back('openEnSub(null)','Academic')+ks.map(function(k,i){return testCard(k,i,ACN[enSub-1],ACN[enSub-1],'sky')}).join('')};
+  window.XA_META=@@XA_META@@;window.__xaSel=1;
+  window.renderXA=function(){var g=document.getElementById('xa-grid');if(!g)return;var M=(window.XA_META||[]).filter(function(x){return x.n===window.__xaSel})[0];if(!M)return;var ks=Object.keys(ALL).filter(function(k){return k.indexOf('XA'+M.n+'-')===0}).sort(function(a,b){return (+a.split('-')[1])-(+b.split('-')[1])});
+    head('xa-grid',M.name,M.sub+' • Every answer shows a reason and a related fact.',ks.length+' Tests &bull; '+nq(ks)+' MCQs');
+    g.innerHTML=ks.map(function(k,i){return testCard(k,i,M.name.split(' ')[0],M.name,'teal')}).join('')};
   var _os=window.openSec;
   window.openSec=function(id){var want=window.__secSub;window.__secSub=null;
     if(id==='nv'){var r=_os.apply(this,arguments);nvSub=want||'v';window.__nvType=null;renderNV();return r}
+    if(id==='xa'){window.__xaSel=+(want||1);var r3=_os.apply(this,arguments);renderXA();return r3}
     if(id==='en'){enSub=null;var r2=_os.apply(this,arguments);renderEN();return r2}
     return _os.apply(this,arguments)};
   var _st=window.selectTest;
-  window.selectTest=function(k){if(!ALL[k]){var o=/^(VB|NV)-(\d+)$/.exec(String(k));if(o&&ALL[k+'-1'])k=k+'-1';else if(!ALL[k])return}var r=_st.call(this,k);try{var m=/^(VB|NV|AC)-(\d+)-(\d+)$/.exec(String(k));if(m){var nm=(m[1]==='VB'?VBN:m[1]==='NV'?NVN:ACN)[+m[2]-1],gp=m[1]==='VB'?'Verbal':m[1]==='NV'?'Non Verbal':'Academic',b=document.getElementById('home-badge');if(b)b.textContent=ALL[k].length+' MCQs ('+gp+': '+nm+' – Part '+m[3]+')'}}catch(e){}return r};
+  window.selectTest=function(k){if(!ALL[k]){var o=/^(VB|NV)-(\d+)$/.exec(String(k));if(o&&ALL[k+'-1'])k=k+'-1';else if(!ALL[k])return}var r=_st.call(this,k);try{var m=/^(VB|NV|AC)-(\d+)-(\d+)$/.exec(String(k));var xm=/^XA(\d+)-(\d+)$/.exec(String(k));if(xm){var XM=(window.XA_META||[]).filter(function(x){return x.n===+xm[1]})[0],xb2=document.getElementById('home-badge');if(XM&&xb2)xb2.textContent=ALL[k].length+' MCQs ('+XM.name+' – Part '+xm[2]+')'}if(m){var nm=(m[1]==='VB'?VBN:m[1]==='NV'?NVN:ACN)[+m[2]-1],gp=m[1]==='VB'?'Verbal':m[1]==='NV'?'Non Verbal':'Academic',b=document.getElementById('home-badge');if(b)b.textContent=ALL[k].length+' MCQs ('+gp+': '+nm+' – Part '+m[3]+')'}}catch(e){}return r};
   var _rm=window.renderMenu;
   window.renderMenu=function(){var r=_rm.apply(this,arguments);try{
     var m=document.getElementById('sec-menu'),grid=m&&m.querySelector('.grid');if(!grid)return r;
@@ -45,6 +50,7 @@
     var ks={v:Object.keys(ALL).filter(function(k){return k.indexOf('VB-')===0}),n:Object.keys(ALL).filter(function(k){return k.indexOf('NV-')===0}),a:Object.keys(ALL).filter(function(k){return k.indexOf('AC-')===0})};
     var h=['v','n','a'].map(function(c){var T=TOP[c];return '<button type="button" onclick="window.__secSub=\''+c+'\';openSec(\''+T.lk+'\')" class="text-left bg-gradient-to-r '+T.grad+' text-white rounded-2xl shadow-xl hover:shadow-2xl hover:scale-[1.01] transition p-6 flex flex-col gap-2 tcard"><div class="flex items-center gap-3"><i class="fa-solid '+(c==='a'?'fa-book-open':c==='v'?'fa-brain':'fa-shapes')+' text-2xl"></i><span class="text-xl sm:text-2xl font-bold">'+T.name+'</span></div><div class="text-white/90 text-sm">'+T.sub+'</div><div class="text-white/80 text-xs font-semibold">'+ks[c].length+' Tests &bull; '+nq(ks[c])+' MCQs</div><div class="text-sm font-bold mt-1">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>'}).join('');
     grid.insertAdjacentHTML('afterbegin',h);
+    var xb=grid.querySelector('button[onclick^="openSec(\'xa\')"]');if(xb){var xh=(window.XA_META||[]).map(function(M){var n=Object.keys(ALL).filter(function(k){return k.indexOf('XA'+M.n+'-')===0});return '<button type="button" onclick="window.__secSub=\''+M.n+'\';openSec(\'xa\')" class="text-left bg-gradient-to-r from-teal-700 to-emerald-600 text-white rounded-2xl shadow-xl hover:shadow-2xl hover:scale-[1.01] transition p-6 flex flex-col gap-2"><div class="flex items-center gap-3"><i class="fa-solid fa-school text-2xl"></i><span class="text-xl sm:text-2xl font-bold">'+M.name+' MCQs</span></div><div class="text-white/90 text-sm">'+M.sub+'</div><div class="text-white/80 text-xs font-semibold">'+n.length+' Tests &bull; '+nq(n)+' MCQs</div><div class="text-sm font-bold mt-1">Open <i class="fa-solid fa-arrow-right ml-1"></i></div></button>'}).join('');xb.insertAdjacentHTML('afterend',xh);xb.remove()}
   }catch(e){}return r};
 })();
 </script>
