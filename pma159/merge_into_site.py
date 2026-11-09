@@ -337,7 +337,7 @@ _xai = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'academies
 if os.path.exists(_xai):
     for _i, _a in enumerate(json.load(open(_xai, encoding='utf8'))):
         _l = json.load(open(os.path.join(os.path.dirname(_xai), _a['slug'] + '.json'), encoding='utf8'))
-        XA_META.append({'n': _i + 1, 'name': _a['name'], 'sub': _a.get('sub', ''), 'q': len(_l)})
+        XA_META.append({'n': _i + 1, 'name': _a['name'], 'sub': _a.get('sub', ''), 'q': len(_l), 'ic': _a.get('ic', '🏫'), 'c': _a.get('c', ['#0f766e', '#059669'])})
         for _n in range((len(_l) + 49) // 50):
             XA['XA%d-%d' % (_i + 1, _n + 1)] = [{"id": k + 1, "question": q + (' (%d)' % rep if rep > 1 else ''), "options": o, "correct": a, "facts": why, "rel": rel,
                                                   "pma": True, "sec": sec, "rep": rep} for k, (sec, q, o, a, why, rel, rep) in enumerate(_l[_n * 50:(_n + 1) * 50])]
