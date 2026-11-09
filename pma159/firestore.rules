@@ -149,6 +149,8 @@ service cloud.firestore {
     }
     match /catKeys/{cat} {
       allow read: if isAdmin()
+        // LIMITED FREE OFFER: Initial Test categories and Initial Interview open for every signed-in user
+        || (request.auth != null && cat in ['o','pma','fa','hk','lc','pg','nv','cn','iv','en','lf','hf','int'])
         || (request.auth != null
             && exists(/databases/$(database)/documents/users/$(request.auth.uid))
             && me().status == 'approved'

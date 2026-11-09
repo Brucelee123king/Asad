@@ -57,7 +57,9 @@
   function getKey(id){return FB.getDoc(FB.doc(fs,'catKeys',id)).then(function(d){if(!d.exists())throw new Error('nokey');return d.data().pw})}
   window.__acGetKey=function(id){return getKey(id)};
   window.__acPayProof=function(d){if(!fs||!cur)return Promise.reject(new Error('login'));d.email=cur.email||'';d.uid=cur.uid;d.t=FB.serverTimestamp();return FB.setDoc(FB.doc(fs,'payproofs',cur.uid),d)};
-  function enter(user,cats,offline){window.__acCats=(cats||[]).slice();try{window.__acEmail=(user&&user.email)||''}catch(e){}window.__acAdmin=!!(user&&(user.email||'').toLowerCase()===ADMIN);
+  /* LIMITED FREE OFFER (Nov 2026): Initial Test (all its categories) and Initial Interview are open for every signed-in user. Remove ids from FREE_OFFER to end it (and the catKeys rule in firestore.rules). */
+  var FREE_OFFER=['o','pma','fa','hk','lc','pg','nv','cn','iv','en','lf','hf','int'];window.__freeOffer=FREE_OFFER;
+  function enter(user,cats,offline){cats=(cats||[]).slice();FREE_OFFER.forEach(function(c){if(cats.indexOf(c)<0)cats.push(c)});window.__acCats=cats.slice();try{window.__acEmail=(user&&user.email)||''}catch(e){}window.__acAdmin=!!(user&&(user.email||'').toLowerCase()===ADMIN);
     if(!offline)ls('ac_state',JSON.stringify({uid:user&&user.uid,name:nm(user),cats:cats,status:'approved',t:Date.now()}));
     document.documentElement.classList.add('acok');document.documentElement.classList.toggle('acadmin',!!window.__acAdmin);A.classList.add('hide');showUser(nm(user)||'');try{cmSetup(user,(user.email||'').toLowerCase()===ADMIN)}catch(e){}try{onSetup(user)}catch(e){}
     return window.__lkSetAllowed(cats,offline||!fs?null:getKey);
