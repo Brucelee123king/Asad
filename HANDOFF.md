@@ -471,3 +471,8 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 - Tests: /home/user/fbbuild (audit.js = full app check, fr2.js forces, rng.js range box). Emulator: cd /home/user/fbemu && firebase emulators:start --only auth,firestore --project asadullah-notes ; server: cd /tmp/publish && python3 -m http.server 8099.
 - Waiting on user: full-size course pictures, Paid ProGenius cover, which missing courses to add (Sipahi, Graduate Course, FC, Rangers…), app name, MCQ tests from GK 3000 / 500 Islamiat / 500 Pak Study / 800+ GK.
 - User rules: simple English replies; NEVER build a new APK; publish only when user says "publish"; show samples first for UI; keep usage low.
+
+## Status 10 Nov 2026 (evening)
+- Published: Custom Range/Search Back fix, tab pages fill behind bottom bar, ISSB Guide journey line + step detail pages, Kit/Documents 2-per-row cards with photos (pma159/kitimg), Kit grouped in 4 headed sections, lists checked against ISSB sources.
+- IMPORTANT: pma159/issb_block.html is now the source for the ISSB UI (edited directly; issb_src/issb_tpl.html is OLD – do not rebuild from it). Data is pma159/lz/issb.<hash>.json; if you change it, use lz_build.write_data and replace the hash in issb_block.html. publish needs the tab/UI source in pma159/*_block.html, NOT site/index.html (it is regenerated).
+- No picture yet for: shalwar kameez/waistcoat, casual clothes, laundry bag, hangers, undergarments, shampoo, nail cutter, shaving kit (drawings/notes used).
