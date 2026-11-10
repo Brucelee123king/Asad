@@ -462,3 +462,12 @@ Result: Hakeem section 5720 MCQs: PMA 149 1517, 150 1441, 151 1042, 152 797, 153
 **Pending:** user to pick card background style; real course pictures from user (no official-site scraping); new first page (force chooser) + per-force bottom bars; app name decision; GK 3000 / 500 Islamiat / 500 Pak Study / 800+ GK MCQs not yet tests; Mission Commission (25 MCQs) held (name rule); 4 essay topics awaiting OK.
 **Known issues:** Google sign-in needs a new APK (not done). Firebase 2-Step Verification must stay on for the console.
 **Next:** user picks design → build first page + force bottom bars → publish after approval.
+
+## Status 10 Nov 2026 (latest – read this first)
+- Live: 3-force front page (Army/PAF/Navy) → zigzag course pages (gold road 1–6, full-screen bg) → Army/PMA Long Course → PMA page (Initial PMA, Interview, ISSB, PDFs). Other courses = "Coming soon".
+- Live: Verbal/Non-Verbal/Academic on top (type cards 2 per row), 18 new academies incl. MC Academy (XA tests, academies/index.json), free offer (FREE_OFFER in access_block.html), ISSB countdown to 17 Nov 2026 7 PM PKT (ISSB_OPEN in land_block.html; opens for all then), Report a Problem + admin Reports tab (reports rule in firestore.rules – already published by admin).
+- NOT yet published (committed): Custom Range + Search boxes scroll-lock and smaller gap above bottom bar. Run ./pma159/admin_publish.sh to send.
+- Publish: ./pma159/admin_publish.sh "msg" then commit+push branch ccr-de314e8d-fsrf1m. If GitHub Pages stalls at "syncing_files", push an empty commit in /home/user/asad-data to retry.
+- Tests: /home/user/fbbuild (audit.js = full app check, fr2.js forces, rng.js range box). Emulator: cd /home/user/fbemu && firebase emulators:start --only auth,firestore --project asadullah-notes ; server: cd /tmp/publish && python3 -m http.server 8099.
+- Waiting on user: full-size course pictures, Paid ProGenius cover, which missing courses to add (Sipahi, Graduate Course, FC, Rangers…), app name, MCQ tests from GK 3000 / 500 Islamiat / 500 Pak Study / 800+ GK.
+- User rules: simple English replies; NEVER build a new APK; publish only when user says "publish"; show samples first for UI; keep usage low.
