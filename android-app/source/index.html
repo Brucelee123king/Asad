@@ -1499,6 +1499,7 @@ html.dark #backBtn{background:rgba(15,23,42,.85);color:#e0e7ff;border-color:rgba
   window.__backSync=sync;
   function performBack(){
     if(window.__aiBackHook&&window.__aiBackHook())return;
+    var __ov=document.querySelector('#rngModal.open,#srchModal.open');if(__ov){if(__ov.id==='rngModal')window.closeRange();else window.closeSearch();try{history.pushState({n:1},'')}catch(e){}sync();return}
     if(window.__drawerBack&&window.__drawerBack()){sync();return}
     if(window.__nbBack&&window.__nbBack()){sync();return}
     if(window.__landBack&&window.__landBack()){sync();window.scrollTo(0,0);return}
@@ -2409,7 +2410,7 @@ html.dark #nbBar{--nb-bg:#0f172a;--nb-ic:#8b93a7;--nb-bd:#0f172a;box-shadow:0 -6
 html.acok #nbBar{display:flex}html.nbhide #nbBar{display:none!important}
 /* the page ends above the bar, so nothing is hidden behind it */
 html.acok:not(.nbhide) body{padding-bottom:0!important}html.acok:not(.nbhide) main{padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))!important}
-html.acok:not(.nbhide) #nbPage{bottom:calc(66px + env(safe-area-inset-bottom,0px))!important}
+html.acok:not(.nbhide) #nbPage{bottom:0!important;padding-bottom:calc(66px + env(safe-area-inset-bottom,0px))!important;box-sizing:border-box}
 #nbBar button{flex:1;position:relative;z-index:1;border:0;background:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:var(--nb-ic);font:700 10.5px 'Plus Jakarta Sans',system-ui,sans-serif;cursor:pointer;-webkit-tap-highlight-color:transparent;padding:0}
 #nbBar button i{font-size:20px;transition:color .3s,text-shadow .3s,transform .3s}
 #nbBar button.on{color:var(--c)}#nbBar button.on i{color:var(--c);transform:translateY(-1px);text-shadow:0 0 12px var(--c),0 0 26px var(--c)}
