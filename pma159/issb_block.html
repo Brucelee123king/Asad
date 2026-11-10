@@ -23,6 +23,7 @@ html.dark #isP{--b:#111c33;--t:#f1f5f9;--m:#94a3b8;--l:#1e293b}
 #isP .bk{display:inline-flex;align-items:center;gap:6px;background:var(--b);border:1px solid var(--l);border-radius:99px;padding:8px 14px;font-weight:800;margin-bottom:12px;font-size:14px}
 #isP .hd{border-radius:18px;padding:16px;color:#fff;margin-bottom:12px;border:3px solid #f1d27a}
 #isP .hd h3{margin:0;font-size:20px;font-weight:800}#isP .hd p{margin:4px 0 0;font-size:13px;opacity:.92}
+#isP .jn{position:relative;margin:6px 0 12px 14px;border-left:3px dashed #e0a458;padding-left:20px}#isP .js{position:relative;margin-bottom:14px}#isP .js>i{position:absolute;left:-34px;top:2px;width:28px;height:28px;border-radius:50%;background:#c2410c;color:#fff;font:800 13px/28px system-ui,sans-serif;text-align:center;font-style:normal;box-shadow:0 0 0 4px var(--bg,#fbf8f0)}#isP .js.g>i{background:#16a34a}#isP .js.r>i{background:#dc2626}#isP .jc{background:var(--b);border:1px solid var(--l);border-left:5px solid #c2410c;border-radius:14px;padding:10px 14px;box-shadow:0 6px 16px rgba(15,23,42,.05)}#isP .js.g .jc{border-left-color:#16a34a}#isP .js.r .jc{border-left-color:#dc2626}#isP .jc h4{margin:0 0 6px;font-size:15px}#isP .jc ul{margin:0;padding-left:18px;font-size:14px;line-height:1.55}#isP .jc li{margin:3px 0}
 #isP .bx{background:var(--b);border:1px solid var(--l);border-radius:16px;padding:12px 14px;margin-bottom:12px;box-shadow:0 6px 16px rgba(15,23,42,.05)}
 #isP .bx h4{margin:0 0 8px;font-size:15px;display:flex;justify-content:space-between;align-items:center}#isP .bx h4 small{color:var(--m);font-size:12px}
 #isP .bx ul{margin:0;padding-left:20px;font-size:14px;line-height:1.55}#isP .bx li{margin:3px 0}
@@ -84,10 +85,10 @@ function BOOT(D){
   function head(t,sub,grad,ic){return '<button type="button" class="bk" data-back="1">← Back</button><div class="hd" style="background:'+grad+'"><h3>'+ic+' '+esc(t)+'</h3>'+(sub?'<p>'+esc(sub)+'</p>':'')+'</div>'}
   function ul(t,a,cls){a=A(a);return a.length?'<div class="bx"><h4>'+t+' <small>'+a.length+'</small></h4><ul'+(cls?' class="'+cls+'"':'')+'>'+a.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul></div>':''}
   function chips(t,a){a=A(a);return a.length?'<div class="bx"><h4>'+t+' <small>'+a.length+'</small></h4><div class="tp">'+a.map(function(x){return '<span>'+esc(x)+'</span>'}).join('')+'</div></div>':''}
-  function guide(){var g=G.guide,d=O(D.days);
-    return head(g[1],g[2],g[3],g[0])+ul('📌 About ISSB',D.overview)+
-      (Object.keys(d).length?'<div class="bx"><h4>🗓️ Day by day</h4>'+Object.keys(d).map(function(k){return '<div class="day"><b>'+esc(k)+'</b><ul>'+A(d[k]).map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul></div>'}).join('')+'</div>':'')+
-      ul('🎒 Kit to carry',D.kit)+ul('📁 Documents',D.docs)+ul('✅ Do',D.dos)+ul('❌ Don\'t',D.donts)}
+  function guide(){var g=G.guide,d=O(D.days),n=0,steps=[];
+    function st(t,a,cls){a=A(a);if(a.length)steps.push([t,a,cls||''])}
+    st('📌 About ISSB',D.overview);Object.keys(d).forEach(function(k){st('🗓️ '+k,d[k])});st('🎒 Kit to carry',D.kit);st('📁 Documents',D.docs);st('✅ Do',D.dos,'g');st('❌ Don\'t',D.donts,'r');
+    return head(g[1],g[2],g[3],g[0])+'<div class="jn">'+steps.map(function(x){n++;return '<div class="js '+x[2]+'"><i>'+n+'</i><div class="jc"><h4>'+x[0]+'</h4><ul>'+x[1].map(function(y){return '<li>'+esc(y)+'</li>'}).join('')+'</ul></div></div>'}).join('')+'</div>'}
   function items(a,key,ur){return A(a).map(function(x,i){var s=typeof x==='string'?x:(x.s||x.q||x.w||''),r=typeof x==='string'?'':(x.r||x.a||x.sample||'');
     return '<div class="it'+(ur?' ur':'')+'"><div class="s">'+(key==='wat'?'<b style="font-size:16px">'+esc(s)+'</b>':esc(s))+'</div>'+(r?'<button type="button" class="sh" data-sh="1">👁 Show sample</button><span class="r" hidden>'+esc(r)+'</span>':'')+'</div>'}).join('')}
   function norm(k){var x=O(D[k]);if(k==='wat')return A(x.words).map(function(w){return {s:w.w||w.s,r:w.s&&w.w?w.s:(w.r||'')}});return A(x.items).concat(A(x.samples)).map(function(i){return typeof i==='string'?{s:i,r:''}:{s:i.s||i.q,r:i.r||i.a||''}})}
