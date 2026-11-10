@@ -4,7 +4,7 @@
  background:linear-gradient(90deg,#be123c,#ec4899);box-shadow:0 20px 25px -5px rgba(0,0,0,.18),0 8px 10px -6px rgba(0,0,0,.12)}
 #rngModal{position:fixed;left:0;top:0;right:0;bottom:0;z-index:9997;display:none;align-items:flex-start;justify-content:center;padding:16px;background:rgba(2,6,23,.55);overflow:auto}
 #rngModal.open{display:flex}
-#rngModal{padding-bottom:calc(96px + env(safe-area-inset-bottom,0px))!important}#rngModal .box{margin-bottom:calc(96px + env(safe-area-inset-bottom,0px))!important}
+#rngModal{padding-bottom:calc(72px + env(safe-area-inset-bottom,0px))!important;overscroll-behavior:contain}#rngModal .box{margin-bottom:8px!important}html:has(#rngModal.open),html:has(#rngModal.open) body{overflow:hidden!important;overscroll-behavior:none}
 #rngModal .box{width:min(720px,100%);margin:auto;margin-top:5vh;border-radius:22px;padding:18px;background:#fff;color:#0f172a;box-shadow:0 30px 70px -20px rgba(0,0,0,.5)}
 html.dark #rngModal .box{background:#0f172a;color:#e2e8f0;border:1px solid rgba(148,163,184,.18)}
 #rngModal .top{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:6px}
