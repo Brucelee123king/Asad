@@ -4448,6 +4448,8 @@ html.dark #isP{--b:#111c33;--t:#f1f5f9;--m:#94a3b8;--l:#1e293b}
 #isP .tc{display:flex;gap:10px;background:var(--b);border:1px solid var(--l);border-radius:12px;padding:9px 11px}#isP .tc span{font-size:20px;flex:none}
 #isP .gq .kp{width:56px;height:56px;flex:none;border-radius:10px;background:#fff;border:1px solid var(--l);object-fit:contain;display:block}#isP .gq span.kp svg{width:100%;height:100%;display:block}
 html:has(#isP) #obj3d{display:none!important}
+#isP .gg{display:grid;grid-template-columns:1fr 1fr;gap:10px}#isP .gg .gq{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;padding:10px 8px 12px;margin:0;border-radius:16px;background:var(--b);border:1px solid var(--l);font-size:12.5px;line-height:1.35;box-shadow:0 4px 10px rgba(15,23,42,.05)}
+#isP .gg .gq .ck{position:absolute;top:8px;left:8px;z-index:2}#isP .gg .gq .kp{width:100%;height:96px;border:0;background:#fff;border-radius:10px}#isP .gg .gq.ok{border-color:#16a34a;background:#f0fdf4}
 #isP .gq.g{border-color:#bbf7d0}#isP .gq.r{border-color:#fecaca}#isP .gq.c{border-color:#fde68a}
 #isP .bx{background:var(--b);border:1px solid var(--l);border-radius:16px;padding:12px 14px;margin-bottom:12px;box-shadow:0 6px 16px rgba(15,23,42,.05)}
 #isP .bx h4{margin:0 0 8px;font-size:15px;display:flex;justify-content:space-between;align-items:center}#isP .bx h4 small{color:var(--m);font-size:12px}
@@ -4524,7 +4526,7 @@ function BOOT(D){
   function gdetail(i){var x=gsteps()[i];if(!x)return guide();var g=G.guide,m=x.m,n=+i+1,body='';
     if(m==='f')body=x.a.map(function(t){return '<div class="fc"><span>'+gic(t)+'</span><p>'+esc(t)+'</p></div>'}).join('');
     else if(m==='d')body='<div class="tlw">'+x.a.map(function(t,k){return '<div class="tl"><i>'+(k+1)+'</i><div class="tc"><span>'+gic(t)+'</span><p>'+esc(t)+'</p></div></div>'}).join('')+'</div>';
-    else body=x.a.map(function(t){var id=hid('g'+x.t+t);return '<button type="button" class="q gq '+m+(ok[id]?' ok':'')+'" data-ck="'+id+'"><span class="ck">'+(ok[id]?'✓':'')+'</span>'+(m==='c'?kimg(t,x.t.indexOf('Documents')>-1):'')+'<span>'+esc(t)+'</span></button>'}).join('');
+    else body=x.a.map(function(t){var id=hid('g'+x.t+t);return '<button type="button" class="q gq '+m+(ok[id]?' ok':'')+'" data-ck="'+id+'"><span class="ck">'+(ok[id]?'✓':'')+'</span>'+(m==='c'?kimg(t,x.t.indexOf('Documents')>-1):'')+'<span>'+esc(t)+'</span></button>'}).join('');if(m==='c')body='<div class="gg">'+body+'</div>';
     var nav='';var all=gsteps();if(i+1<all.length)nav='<button type="button" class="big" data-gnext="'+(i+1)+'">Next: '+all[i+1].t+' →</button>';
     return '<button type="button" class="bk" data-back="1">← Back</button><div class="hd" style="background:'+g[3]+';display:flex;gap:12px;align-items:center"><span class="gn">'+n+'</span><h3 style="margin:0">'+x.t+'</h3></div><span class="chp">'+x.a.length+(m==='c'?' items · tap to tick':m==='g'||m==='r'?' points · tap to tick':m==='d'?' activities in order':' key facts')+'</span>'+body+nav}
   function items(a,key,ur){return A(a).map(function(x,i){var s=typeof x==='string'?x:(x.s||x.q||x.w||''),r=typeof x==='string'?'':(x.r||x.a||x.sample||'');
