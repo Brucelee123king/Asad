@@ -4538,6 +4538,10 @@ html.dark #isP .dsw button{border-color:rgba(212,175,55,.35)}html.dark #isP .dti
 #isP .dtb{display:flex;gap:6px;padding:0 12px;overflow-x:auto;scrollbar-width:none}#isP .dtb::-webkit-scrollbar{display:none}#isP .dtb button{flex:1 1 auto;white-space:nowrap;padding:8px 9px;border-radius:99px;background:var(--abc);border:1px solid #dbe2f0;font:800 11.5px 'Plus Jakarta Sans',system-ui,sans-serif;color:var(--abt);cursor:pointer}#isP .dtb button.on{background:#13315c;color:#f3d77a;border-color:#13315c}
 #isP .dw .ar-c .dst{margin:10px 12px 0}#isP .dw .ar-c .dpn{margin:10px 12px 12px;box-shadow:none;border:1px solid #e5e7eb}
 #isP .dlk{display:flex;gap:8px;margin-top:10px}#isP .dlk button{width:40px;height:40px;padding:0;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid #dbe2f0;background:transparent;font:800 14px 'Plus Jakarta Sans',system-ui,sans-serif;color:var(--abt);cursor:pointer}#isP .dlk button.on{background:#13315c;color:#f3d77a;border-color:#13315c}
+#isP .dst.wp:before{content:'';position:absolute;top:0;bottom:0;width:3px;z-index:3;background:linear-gradient(180deg,transparent,#f3d77a,transparent);box-shadow:0 0 18px #f3d77a;animation:dwp .7s cubic-bezier(.45,0,.25,1) forwards;pointer-events:none}
+@keyframes dwp{from{left:calc(50% + var(--wd,1)*50%)}to{left:calc(50% - var(--wd,1)*50%);opacity:0}}
+#isP .dtx{animation:dtx .55s ease both}@keyframes dtx{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+html.lite #isP .dst.wp:before{display:none}
 #isP .dsl{margin-top:10px;font:800 11.5px 'Plus Jakarta Sans',system-ui,sans-serif;color:var(--abm);text-transform:uppercase;letter-spacing:.4px}#isP .dsl+.dsw{margin-top:6px}
 #isP .dsh{padding:12px 14px 0;font:800 13px 'Plus Jakarta Sans',system-ui,sans-serif;color:var(--abt)}#isP .dsh+.dgr{padding-top:8px}
 #isP .dti img{object-fit:contain;background:#fff}
@@ -4658,10 +4662,13 @@ function BOOT(D){
     h+='<div class="dnote">ℹ️ ISSB asks for a closed-collar dress (pant, shirt, tie) and shalwar kameez with waistcoat. Colours and shoes here are style advice, not official rules.</div></div>';
     return h+(+i>=0&&al[+i+1]?'<button type="button" class="big" data-gnext="'+(+i+1)+'">Next: '+al[+i+1].t+' →</button>':'')}
   function dSwap(dir,full){var st=host&&host.querySelector('#dSt');if(!st)return;var olds=[].slice.call(st.querySelectorAll('.dimg')),n=new Image(),tok=(st.__tok=(st.__tok||0)+1);n.className='dimg';n.alt='';
-    if(dir){n.style.transition='none';n.style.transform='translateX('+(dir>0?'110%':'-110%')+')'}else{n.style.opacity='0'}
-    n.onload=function(){if(st.__tok!==tok)return;st.insertBefore(n,st.querySelector('.dar'));void n.offsetWidth;n.style.transition='';requestAnimationFrame(function(){n.style.transform='';n.style.opacity='1';
-      olds.forEach(function(o){if(dir)o.style.transform='translateX('+(dir>0?'-110%':'110%')+')';else o.style.opacity='0';setTimeout(function(){if(o.parentNode)o.parentNode.removeChild(o)},580)});if(!dPQ)setTimeout(dPre,250)})};n.src=dsrc();
-    var nm=host.querySelector('#dNm');if(nm)nm.textContent=dlab();var ct=host.querySelector('#dCt');if(ct)ct.textContent=(DR.m+1)+' / '+DT[DR.t].l.length;var stg=host.querySelector('#dSt');if(stg)stg.classList.toggle('one',DT[DR.t].l.length<2);
+    n.style.transition='none';if(dir){n.style.clipPath=dir>0?'inset(0 0 0 100%)':'inset(0 100% 0 0)';n.style.transform='translateX('+(dir>0?'14%':'-14%')+')'}else{n.style.opacity='0'}
+    n.onload=function(){if(st.__tok!==tok)return;st.insertBefore(n,st.querySelector('.dar'));void n.offsetWidth;
+      if(dir){n.style.transition='clip-path .7s cubic-bezier(.45,0,.25,1),transform .7s cubic-bezier(.45,0,.25,1)';st.classList.remove('wp');void st.offsetWidth;st.classList.add('wp');st.style.setProperty('--wd',dir>0?'1':'-1')}else n.style.transition='opacity .4s ease';
+      requestAnimationFrame(function(){n.style.clipPath='inset(0 0 0 0)';n.style.transform='';n.style.opacity='1';
+        olds.forEach(function(o){if(dir){o.style.transition='transform .7s cubic-bezier(.45,0,.25,1),opacity .35s ease .3s,filter .5s ease';o.style.transform='translateX('+(dir>0?'-22%':'22%')+') scale(.94)';o.style.opacity='0';o.style.filter='brightness(.6)'}else o.style.opacity='0';setTimeout(function(){if(o.parentNode)o.parentNode.removeChild(o)},780)});if(!dPQ)setTimeout(dPre,300)})};n.src=dsrc();
+    var nm=host.querySelector('#dNm');if(nm){nm.textContent=dlab();if(dir){nm.classList.remove('dtx');void nm.offsetWidth;nm.classList.add('dtx')}}
+    var ct=host.querySelector('#dCt');if(ct)ct.textContent=(DR.m+1)+' / '+DT[DR.t].l.length;var stg=host.querySelector('#dSt');if(stg)stg.classList.toggle('one',DT[DR.t].l.length<2);
     if(full){var cl=host.querySelector('#dCl');if(cl)cl.innerHTML=dctl();[].forEach.call(host.querySelectorAll('[data-dt]'),function(e){e.classList.toggle('on',+e.getAttribute('data-dt')===DR.t)})}
     var S=DR.s[DR.t];[].forEach.call(host.querySelectorAll('[data-dg]'),function(e){e.classList.toggle('on',+e.getAttribute('data-dv')===S[+e.getAttribute('data-dg')])})}
   function dMove(d){var T=DT[DR.t];if(T.l.length<2)return;DR.m=(DR.m+d+T.l.length)%T.l.length;dSwap(d)}
