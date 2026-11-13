@@ -1,0 +1,446 @@
+[
+ {
+  "src": "A",
+  "num": 14,
+  "question": "What are the two theories of relativity?",
+  "options": [
+   "Quantum Relativity and Special Relativity",
+   "General Relativity and Thermal Relativity",
+   "Special Relativity and General Relativity",
+   "Galilean Relativity and Quantum Relativity"
+  ],
+  "correct": 2,
+  "why": "Einstein published Special Relativity in 1905 and General Relativity in 1915.",
+  "rel": "General relativity describes gravity as curvature of spacetime. Special relativity covers space, time and motion without gravity."
+ },
+ {
+  "src": "A",
+  "num": 36,
+  "question": "When did Liaquat Ali Khan join the Muslim League?",
+  "options": [
+   "1923",
+   "1913",
+   "1930",
+   "1937"
+  ],
+  "correct": 0,
+  "why": "Liaquat Ali Khan is commonly said to have joined the Muslim League in 1923.",
+  "rel": "He became Pakistan's first Prime Minister in 1947. He was assassinated in Rawalpindi on 16 October 1951."
+ },
+ {
+  "src": "A",
+  "num": 51,
+  "question": "What is the world’s second-largest country by area?",
+  "options": [
+   "China",
+   "United States",
+   "Australia",
+   "Canada"
+  ],
+  "correct": 3,
+  "why": "By total area Canada is the second-largest country after Russia.",
+  "rel": "Russia is the largest by total area. China and the USA rank close together at third and fourth."
+ },
+ {
+  "src": "A",
+  "num": 67,
+  "question": "Who won the first FIFA World Cup?",
+  "options": [
+   "Argentina",
+   "Uruguay",
+   "Brazil",
+   "Italy"
+  ],
+  "correct": 1,
+  "why": "Uruguay won the first FIFA World Cup in 1930, beating Argentina 4-2 in the final.",
+  "rel": "The first tournament was held in Uruguay. It was held in 1930."
+ },
+ {
+  "src": "A",
+  "num": 82,
+  "question": "Give the capitals of Egypt, France, Germany, India, New Zealand, Russia and the United Kingdom.",
+  "options": [
+   "Alexandria, Paris, Berlin, New Delhi, Auckland, Moscow, London",
+   "Cairo, Lyon, Bonn, Mumbai, Wellington, St Petersburg, London",
+   "Cairo, Paris, Munich, New Delhi, Auckland, Moscow, Manchester",
+   "Cairo, Paris, Berlin, New Delhi, Wellington, Moscow, London"
+  ],
+  "correct": 3,
+  "why": "The capitals are Cairo (Egypt), Paris (France), Berlin (Germany), New Delhi (India), Wellington (New Zealand), Moscow (Russia) and London (UK).",
+  "rel": "Canberra is Australia's capital, not Sydney. Ankara is Turkiye's capital, not Istanbul.",
+  "problem": "Source question asks to list seven capitals; converted to a single combined-answer MCQ."
+ },
+ {
+  "src": "A",
+  "num": 95,
+  "question": "What is the title of Prophet Ibrahim (AS)?",
+  "options": [
+   "Kalimullah",
+   "Khalilullah",
+   "Safiullah",
+   "Rasulullah"
+  ],
+  "correct": 1,
+  "why": "Prophet Ibrahim (AS) is called Khalilullah, the Friend of Allah.",
+  "rel": "The Quran mentions this in 4:125. Kalimullah is the title of Musa (AS) and Safiullah of Adam (AS)."
+ },
+ {
+  "src": "A",
+  "num": 107,
+  "question": "Who wrote Pakistan’s national anthem lyrics?",
+  "options": [
+   "Hafeez Jalandhari",
+   "Allama Iqbal",
+   "Faiz Ahmad Faiz",
+   "Ahmad G. Chagla"
+  ],
+  "correct": 0,
+  "why": "Hafeez Jalandhari wrote the lyrics of Pakistan's national anthem.",
+  "rel": "The music was composed by Ahmad G. Chagla. The lyrics are in highly Persianized Urdu."
+ },
+ {
+  "src": "A",
+  "num": 120,
+  "question": "What is Pakistan’s national animal?",
+  "options": [
+   "Snow leopard",
+   "Indus dolphin",
+   "Markhor",
+   "Chukar partridge"
+  ],
+  "correct": 2,
+  "why": "The markhor, a wild mountain goat, is Pakistan's national animal.",
+  "rel": "The snow leopard is another well-known animal of Pakistan's mountains. The chukar is Pakistan's national bird."
+ },
+ {
+  "src": "A",
+  "num": 134,
+  "question": "Who wrote Daughter of Destiny?",
+  "options": [
+   "Fatima Jinnah",
+   "Benazir Bhutto",
+   "Begum Ra'ana Liaquat Ali Khan",
+   "Zulfikar Ali Bhutto"
+  ],
+  "correct": 1,
+  "why": "Benazir Bhutto wrote the memoir Daughter of Destiny, published in 1988.",
+  "rel": "She became Pakistan's first female Prime Minister in 1988. It is an autobiography."
+ },
+ {
+  "src": "B",
+  "num": 7,
+  "question": "Which countries are the Baltic States?",
+  "options": [
+   "Finland, Estonia and Latvia",
+   "Latvia, Lithuania and Poland",
+   "Estonia, Lithuania and Belarus",
+   "Estonia, Latvia and Lithuania"
+  ],
+  "correct": 3,
+  "why": "The three Baltic States are Estonia, Latvia and Lithuania.",
+  "rel": "All three border the Baltic Sea. Finland, Poland, Germany and Russia are not counted among them."
+ },
+ {
+  "src": "B",
+  "num": 17,
+  "question": "What was the former name of Attock city?",
+  "options": [
+   "Campbellpur",
+   "Montgomery",
+   "Lyallpur",
+   "Fort Sandeman"
+  ],
+  "correct": 0,
+  "why": "Attock was formerly called Campbellpur and was renamed Attock in 1978.",
+  "rel": "Attock Fort stands near a strategic crossing of the Indus. Montgomery (now Sahiwal) and Lyallpur (now Faisalabad) are other renamed cities."
+ },
+ {
+  "src": "B",
+  "num": 27,
+  "question": "How many months have 31 days?",
+  "options": [
+   "Six",
+   "Eight",
+   "Seven",
+   "Five"
+  ],
+  "correct": 2,
+  "why": "January, March, May, July, August, October and December have 31 days, so seven months.",
+  "rel": "April, June, September and November have 30 days. February has 28 or 29."
+ },
+ {
+  "src": "B",
+  "num": 37,
+  "question": "Where did Pakistan conduct its first nuclear tests?",
+  "options": [
+   "Kharan Desert only, Balochistan",
+   "Thar Desert, Sindh",
+   "Kahuta, Punjab",
+   "Chagai (Ras Koh Hills), Balochistan"
+  ],
+  "correct": 3,
+  "why": "Pakistan's first nuclear tests were on 28 May 1998 at Ras Koh Hills, Chagai District, Balochistan.",
+  "rel": "28 May is commemorated as Youm-e-Takbeer. More tests followed at Kharan on 30 May 1998.",
+  "problem": "Source answer is a long sentence; shortened. Kharan hosted the later tests, so it is a wrong option for the first test."
+ },
+ {
+  "src": "B",
+  "num": 47,
+  "question": "What does “Al-Saffah” mean?",
+  "options": [
+   "The generous",
+   "The blood-shedder",
+   "Top of a mountain",
+   "The just one"
+  ],
+  "correct": 1,
+  "why": "Al-Saffah is commonly translated as the blood-shedder.",
+  "rel": "Abu al-Abbas al-Saffah was the first Abbasid caliph. The Abbasids overthrew the Umayyads in 750 CE."
+ },
+ {
+  "src": "B",
+  "num": 57,
+  "question": "What are some historical names used for India?",
+  "options": [
+   "Bharat, Hindustan and India",
+   "Aryavarta only",
+   "Ceylon and Hindustan",
+   "Persia and India"
+  ],
+  "correct": 0,
+  "why": "Historical names of India include Bharat/Bharatavarsha, Hindustan and India.",
+  "rel": "The Indian Constitution uses both 'India' and 'Bharat'. Hindustan was used in Persianised contexts.",
+  "problem": "Open-ended question with no single answer; the standard set of names is used."
+ },
+ {
+  "src": "B",
+  "num": 68,
+  "question": "Between whom was Mawakhat-e-Madinah established?",
+  "options": [
+   "Aws and Khazraj",
+   "Quraish and Banu Hashim",
+   "Muhajirun and Ansar",
+   "Muslims and Jews of Madinah"
+  ],
+  "correct": 2,
+  "why": "Mawakhat-e-Madinah (brotherhood) was set up between the Muhajirun of Makkah and the Ansar of Madinah.",
+  "rel": "Muhajirun means those who migrated. Ansar means helpers."
+ },
+ {
+  "src": "B",
+  "num": 78,
+  "question": "Which country is the largest producer of carpets?",
+  "options": [
+   "India",
+   "Iran",
+   "China",
+   "Turkey"
+  ],
+  "correct": 1,
+  "why": "Iran is the country most commonly named as the first to recognise Pakistan in 1947 (verified by search; the exact date varies by source).",
+  "rel": "Pakistan became independent on 14 August 1947. 'First to recognise' can mean formal recognition or diplomatic relations.",
+  "problem": "Disputed point; Iran is the most commonly cited answer, but sources vary on the exact date."
+ },
+ {
+  "src": "B",
+  "num": 88,
+  "question": "What is the currency of Türkiye (Turkey)?",
+  "options": [
+   "Turkish dinar",
+   "Euro",
+   "Turkish rupee",
+   "Turkish lira"
+  ],
+  "correct": 3,
+  "why": "The currency of Turkiye is the Turkish lira (TRY).",
+  "rel": "Ankara is the capital. Istanbul is the largest city."
+ },
+ {
+  "src": "B",
+  "num": 98,
+  "question": "Which glacier is often listed as Pakistan's second-longest glacier after Siachen?",
+  "options": [
+   "Baltoro Glacier",
+   "Biafo Glacier",
+   "Batura Glacier",
+   "Hispar Glacier"
+  ],
+  "correct": 0,
+  "why": "Baltoro Glacier is often listed as Pakistan's second-longest after Siachen.",
+  "rel": "Siachen is the longest in the Karakoram. Baltoro gives access to Concordia and K2.",
+  "problem": "Ranking varies by measure; Biafo and Hispar are also very long, so the question is not fully clean."
+ },
+ {
+  "src": "B",
+  "num": 108,
+  "question": "Where were the 2016 Summer Olympics held?",
+  "options": [
+   "Tokyo, Japan",
+   "London, United Kingdom",
+   "Rio de Janeiro, Brazil",
+   "Beijing, China"
+  ],
+  "correct": 2,
+  "why": "The 2016 Summer Olympics were held in Rio de Janeiro, Brazil.",
+  "rel": "They ran from 5 to 21 August 2016. It was the first Summer Games in South America."
+ },
+ {
+  "src": "B",
+  "num": 118,
+  "question": "Which country is commonly said to have been the first to recognize Pakistan?",
+  "options": [
+   "Saudi Arabia",
+   "Iran",
+   "Turkey",
+   "Afghanistan"
+  ],
+  "correct": 1,
+  "why": "Iran is commonly cited as the first country to recognise Pakistan.",
+  "rel": "Pakistan became independent on 14 August 1947. Sources differ on exact recognition date.",
+  "problem": "Duplicate of the earlier 'first to recognise Pakistan' topic; commonly cited answer, sources vary."
+ },
+ {
+  "src": "B",
+  "num": 128,
+  "question": "What is the integral of cot x?",
+  "options": [
+   "-ln|sin x| + C",
+   "ln|cos x| + C",
+   "-ln|cos x| + C",
+   "ln|sin x| + C"
+  ],
+  "correct": 3,
+  "why": "cot x = cos x / sin x, so its integral is ln|sin x| + C.",
+  "rel": "The integral of tan x is -ln|cos x| + C. C is the constant of integration."
+ },
+ {
+  "src": "B",
+  "num": 138,
+  "question": "What are the main functions of the IMF?",
+  "options": [
+   "Promote international monetary cooperation, exchange stability and lend to members with balance-of-payments problems",
+   "Fund individual infrastructure projects and reduce poverty directly",
+   "Set world trade tariffs and settle trade disputes",
+   "Issue a single global currency"
+  ],
+  "correct": 0,
+  "why": "The IMF promotes monetary cooperation and exchange stability, monitors economies and lends to members with balance-of-payments problems.",
+  "rel": "Its headquarters are in Washington, D.C. Trade disputes are handled by the WTO and long-term development lending by the World Bank.",
+  "problem": "Open-ended 'main functions' question; the core function is used as the answer."
+ },
+ {
+  "src": "B",
+  "num": 148,
+  "question": "What type of legislature does Pakistan have at the federal level?",
+  "options": [
+   "Unicameral",
+   "Tricameral",
+   "Bicameral",
+   "Unitary single-house"
+  ],
+  "correct": 2,
+  "why": "Pakistan's Parliament has two chambers, the National Assembly and the Senate.",
+  "rel": "Bicameral means two chambers. Each province has a single-chamber provincial assembly."
+ },
+ {
+  "src": "B",
+  "num": 158,
+  "question": "What has historically been Pakistan's largest broad source category for electricity generation?",
+  "options": [
+   "Hydel",
+   "Thermal",
+   "Nuclear",
+   "Solar"
+  ],
+  "correct": 1,
+  "why": "Thermal (gas, coal, oil) has historically been Pakistan's largest source category, and still has the largest share of installed capacity (about 55.7% in FY2025).",
+  "rel": "Hydel is the largest single source in actual generation in FY2025 (about 31.4%). Nuclear supplied about 17.7%.",
+  "problem": "Depends on measure: thermal leads installed capacity, but in FY2025 hydel was the largest single source of generation (searched, Economic Survey/NEPRA data)."
+ },
+ {
+  "src": "B",
+  "num": 168,
+  "question": "Who founded the Urdu Defence Association?",
+  "options": [
+   "Mohsin-ul-Mulk",
+   "Sir Syed Ahmad Khan",
+   "Altaf Hussain Hali",
+   "Maulvi Abdul Haq"
+  ],
+  "correct": 0,
+  "why": "Mohsin-ul-Mulk is credited with organising the Urdu Defence Association in 1900.",
+  "rel": "It arose from the Urdu-Hindi controversy in the United Provinces. It is different from Anjuman-e-Taraqqi-e-Urdu."
+ },
+ {
+  "src": "B",
+  "num": 178,
+  "question": "Of 1,500 students, 1,200 are present. What percentage is present?",
+  "options": [
+   "75%",
+   "85%",
+   "70%",
+   "80%"
+  ],
+  "correct": 3,
+  "why": "1,200 / 1,500 x 100 = 80%.",
+  "rel": "Absent students are 300, which is 20%. Percentage = part / whole x 100."
+ },
+ {
+  "src": "B",
+  "num": 188,
+  "question": "Complete the sentence: “He served us ___ breakfast.”",
+  "options": [
+   "an good",
+   "the goods",
+   "a good",
+   "some goods"
+  ],
+  "correct": 2,
+  "why": "'Breakfast' takes 'a' when it is described, so 'He served us a good breakfast' is correct.",
+  "rel": "'He served us breakfast' is also correct. 'An' is used only before a vowel sound.",
+  "problem": "Source answer is a full sentence; the blank is taken as 'a good'."
+ },
+ {
+  "src": "B",
+  "num": 198,
+  "question": "When was the Battle of Uhud fought?",
+  "options": [
+   "2 AH (624 CE)",
+   "3 AH (625 CE)",
+   "5 AH (627 CE)",
+   "8 AH (630 CE)"
+  ],
+  "correct": 1,
+  "why": "The Battle of Uhud was fought in 3 AH (625 CE) near Mount Uhud.",
+  "rel": "It followed the Battle of Badr in 2 AH. Uhud lies north of Madinah."
+ },
+ {
+  "src": "B",
+  "num": 208,
+  "question": "Which province is known as Babul Islam?",
+  "options": [
+   "Sindh",
+   "Punjab",
+   "Balochistan",
+   "Khyber Pakhtunkhwa"
+  ],
+  "correct": 0,
+  "why": "Sindh is called Babul Islam (Gateway of Islam).",
+  "rel": "Muhammad bin Qasim conquered parts of Sindh in 711-712 CE. Islam first entered the subcontinent through Sindh."
+ },
+ {
+  "src": "B",
+  "num": 218,
+  "question": "Which Surah is traditionally called the “Heart of the Quran”?",
+  "options": [
+   "Surah Al-Fatiha",
+   "Surah Al-Baqarah",
+   "Surah Ar-Rahman",
+   "Surah Ya-Sin"
+  ],
+  "correct": 3,
+  "why": "Surah Ya-Sin (Surah 36) is traditionally called the Heart of the Quran.",
+  "rel": "It has 83 verses in the Hafs numbering. The hadith wording is debated by scholars.",
+  "problem": "Popular title based on a hadith whose grading is debated; still the standard exam answer."
+ }
+]

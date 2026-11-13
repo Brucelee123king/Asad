@@ -1,0 +1,9528 @@
+[
+{
+"q": "How many rivers are there in Balochistan?",
+"variants": [
+"How many rivers are there in Balochistan?"
+],
+"repeat": 3,
+"mentions": 3,
+"exps": [
+1004,
+2151,
+4044
+],
+"all_exps": [
+1004,
+2151,
+4044
+],
+"answers": [
+"7",
+"7 (Dasht, Hub, Zhob, Hingol, Mula, Bolan, Nari)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year was the Montagu-Chelmsford Reforms?",
+"variants": [
+"In which year was the Montagu-Chelmsford Reforms?",
+"When was the Montagu Chelmsford Reform?",
+"What was the date of the Montagu Chelmsford Reform?"
+],
+"repeat": 3,
+"mentions": 3,
+"exps": [
+1003,
+4017,
+4043
+],
+"all_exps": [
+1003,
+4017,
+4043
+],
+"answers": [
+"1919",
+"May or June 1918"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which country is the largest producer of carpets?",
+"variants": [
+"Which country is the largest producer of carpets?"
+],
+"repeat": 3,
+"mentions": 3,
+"exps": [
+1077,
+2183,
+4117
+],
+"all_exps": [
+1077,
+2183,
+4117
+],
+"answers": [
+"Iran"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who was the 2nd Prime Minister of Pakistan?",
+"variants": [
+"Who was the 2nd Prime Minister of Pakistan?"
+],
+"repeat": 3,
+"mentions": 3,
+"exps": [
+1043,
+3057,
+4083
+],
+"all_exps": [
+1043,
+3057,
+4083
+],
+"answers": [
+"Khawaja Nazimuddin",
+"Khwaja Nazimuddin",
+"Khuwaja Nazimuddin"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "\"Now or Never\" was published in which year and by whom?",
+"variants": [
+"\"Now or Never\" was published in which year and by whom?",
+"Who published \"Now or Never\" and when?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1098,
+4138
+],
+"all_exps": [
+1098,
+4138
+],
+"answers": [
+"1933 by Ch. Rehmat Ali"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Asadullah is a title of whom?",
+"variants": [
+"Asadullah is a title of whom?",
+"Asadullah is the title of whom?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1068,
+4108
+],
+"all_exps": [
+1068,
+4108
+],
+"answers": [
+"Hazrat Ali R.A",
+"Hazrat Ali RA"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Atique is the title of whom?",
+"variants": [
+"Atique is the title of whom?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1101,
+4141
+],
+"all_exps": [
+1101,
+4141
+],
+"answers": [
+"Hazrat Abu Bakr R.A",
+"Hazrat Abu Bakr RA"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Badar is the name of what?",
+"variants": [
+"Badar is the name of what?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1076,
+4116
+],
+"all_exps": [
+1076,
+4116
+],
+"answers": [
+"Village (meaning of Badar is \"Full Moon\")",
+"Village (meaning of Badar is \"full moon\")"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "By what other name is the Red Sea known?",
+"variants": [
+"By what other name is the Red Sea known?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1072,
+4112
+],
+"all_exps": [
+1072,
+4112
+],
+"answers": [
+"Gulf of Arabia"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Fill in the blank: Ali was born ___ 20 August 1997.",
+"variants": [
+"Fill in the blank: Ali was born ___ 20 August 1997.",
+"Fill in the blank: Ali was born ____ 20 August 1997."
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1113,
+4153
+],
+"all_exps": [
+1113,
+4153
+],
+"answers": [
+"On"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "From which year does Pakistan celebrate Defence Day?",
+"variants": [
+"From which year does Pakistan celebrate Defence Day?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1016,
+4056
+],
+"all_exps": [
+1016,
+4056
+],
+"answers": [
+"1966"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Hazrat Bilal RA was the slave of whom?",
+"variants": [
+"Hazrat Bilal RA was the slave of whom?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+2122,
+4214
+],
+"all_exps": [
+2122,
+4214
+],
+"answers": [
+"Umayyah bin Khalaf"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Hazrat Muaz (R.A) was the governor of which place?",
+"variants": [
+"Hazrat Muaz (R.A) was the governor of which place?",
+"Hazrat Muaz was governor of which place?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1013,
+4053
+],
+"all_exps": [
+1013,
+4053
+],
+"answers": [
+"Yemen"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many agencies were there in FATA?",
+"variants": [
+"How many agencies were there in FATA?",
+"How many agencies are there in FATA?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1021,
+4061
+],
+"all_exps": [
+1021,
+4061
+],
+"answers": [
+"7"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many farz are in tayammum?",
+"variants": [
+"How many farz are in tayammum?",
+"How many farz are there in tayammum?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+3092,
+4031
+],
+"all_exps": [
+3092,
+4031
+],
+"answers": [
+"3",
+"3 farz"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many idols were in the Khana Kaaba?",
+"variants": [
+"How many idols were in the Khana Kaaba?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1096,
+4136
+],
+"all_exps": [
+1096,
+4136
+],
+"answers": [
+"360"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many times is the name of Hazrat Jibrael mentioned in the Quran?",
+"variants": [
+"How many times is the name of Hazrat Jibrael mentioned in the Quran?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1168,
+4208
+],
+"all_exps": [
+1168,
+4208
+],
+"answers": [
+"4 times"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "If a person purchases a book for 500 and sells it for 700, what is the percentage of profit?",
+"variants": [
+"If a person purchases a book for 500 and sells it for 700, what is the percentage of profit?",
+"If a person purchases a book for 500 and sells it for 700, find the percentage of profit."
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1152,
+4192
+],
+"all_exps": [
+1152,
+4192
+],
+"answers": [
+"40%"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "In a room there are males and females; if the males are 3/2 of the females and the room contains 30 people, how many females are in the room?",
+"variants": [
+"In a room there are males and females; if the males are 3/2 of the females and the room contains 30 people, how many females are in the room?",
+"In a room there are males and females; if males are 3/2 of females and the room contains 30 people, how many females are in the room?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1028,
+4068
+],
+"all_exps": [
+1028,
+4068
+],
+"answers": [
+"10"
+],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "In which area of Pakistan is most coal found?",
+"variants": [
+"In which area of Pakistan is most coal found?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1123,
+4163
+],
+"all_exps": [
+1123,
+4163
+],
+"answers": [
+"Thar (Sindh)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which country was the NAM conference of 1955 held?",
+"variants": [
+"In which country was the NAM conference of 1955 held?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1145,
+4185
+],
+"all_exps": [
+1145,
+4185
+],
+"answers": [
+"Indonesia"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which Hijri year was the first Hajj offered?",
+"variants": [
+"In which Hijri year was the first Hajj offered?",
+"In which year was the first Hajj offered?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1084,
+4124
+],
+"all_exps": [
+1084,
+4124
+],
+"answers": [
+"9 Hijri"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year was the Badshahi Mosque built?",
+"variants": [
+"In which year was the Badshahi Mosque built?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1094,
+4134
+],
+"all_exps": [
+1094,
+4134
+],
+"answers": [
+"1673 by Mughal Emperor Aurangzeb"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year was the Tashkent Declaration?",
+"variants": [
+"In which year was the Tashkent Declaration?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1093,
+4133
+],
+"all_exps": [
+1093,
+4133
+],
+"answers": [
+"1966"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "On what date was the 1st War of Panipat?",
+"variants": [
+"On what date was the 1st War of Panipat?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1102,
+4142
+],
+"all_exps": [
+1102,
+4142
+],
+"answers": [
+"21 April 1526"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Pakistan opposed India's inclusion in which group?",
+"variants": [
+"Pakistan opposed India's inclusion in which group?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1132,
+4172
+],
+"all_exps": [
+1132,
+4172
+],
+"answers": [
+"NSG"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "The noun \"School\" can be replaced with which pronoun?",
+"variants": [
+"The noun \"School\" can be replaced with which pronoun?",
+"With what can the noun \"School\" be replaced?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1162,
+4202
+],
+"all_exps": [
+1162,
+4202
+],
+"answers": [
+"It"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What are ambassadors of Commonwealth countries called?",
+"variants": [
+"What are ambassadors of Commonwealth countries called?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1135,
+4175
+],
+"all_exps": [
+1135,
+4175
+],
+"answers": [
+"High Commissioner"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What are Laat and Uzza?",
+"variants": [
+"What are Laat and Uzza?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1060,
+4100
+],
+"all_exps": [
+1060,
+4100
+],
+"answers": [
+"Idols"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What are the functions of the IMF?",
+"variants": [
+"What are the functions of the IMF?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1137,
+4177
+],
+"all_exps": [
+1137,
+4177
+],
+"answers": [
+"Maintaining balance between demand and supply of currencies"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What does OPEC stand for?",
+"variants": [
+"What does OPEC stand for?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1195,
+2054
+],
+"all_exps": [
+1195,
+2054
+],
+"answers": [
+"Organization of Petroleum Exporting Countries",
+"Organization of the Petroleum Exporting Countries"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What does Saffah mean?",
+"variants": [
+"What does Saffah mean?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1047,
+4087
+],
+"all_exps": [
+1047,
+4087
+],
+"answers": [
+"Top of mountain"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is 2 + 2/2?",
+"variants": [
+"What is 2 + 2/2?",
+"What is 2+2/2?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1155,
+4195
+],
+"all_exps": [
+1155,
+4195
+],
+"answers": [
+"3"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "What is a synonym of \"Prescribe\"?",
+"variants": [
+"What is a synonym of \"Prescribe\"?",
+"What is a synonym of \"prescribe\"?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1051,
+4091
+],
+"all_exps": [
+1051,
+4091
+],
+"answers": [
+"Order, Command, Dictate"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is cutting the useless area of an image called?",
+"variants": [
+"What is cutting the useless area of an image called?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1143,
+4183
+],
+"all_exps": [
+1143,
+4183
+],
+"answers": [
+"Cropping"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is text styling in Word called?",
+"variants": [
+"What is text styling in Word called?",
+"What is text styling in Word?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1144,
+4184
+],
+"all_exps": [
+1144,
+4184
+],
+"answers": [
+"WordArt"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the area of forests in Pakistan?",
+"variants": [
+"What is the area of forests in Pakistan?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1121,
+4161
+],
+"all_exps": [
+1121,
+4161
+],
+"answers": [
+"In 1990 (3.28%), now (1.91%)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the best source of urgent energy for an athlete?",
+"variants": [
+"What is the best source of urgent energy for an athlete?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1151,
+4191
+],
+"all_exps": [
+1151,
+4191
+],
+"answers": [
+"Carbohydrates"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the capital of Sierra Leone?",
+"variants": [
+"What is the capital of Sierra Leone?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1139,
+4179
+],
+"all_exps": [
+1139,
+4179
+],
+"answers": [
+"Freetown"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the capital of Sri Lanka?",
+"variants": [
+"What is the capital of Sri Lanka?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1080,
+4120
+],
+"all_exps": [
+1080,
+4120
+],
+"answers": [
+"Colombo"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the circumference of the Earth?",
+"variants": [
+"What is the circumference of the Earth?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1136,
+4176
+],
+"all_exps": [
+1136,
+4176
+],
+"answers": [
+"40,075 KM"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the cube root of -2?",
+"variants": [
+"What is the cube root of -2?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1052,
+4092
+],
+"all_exps": [
+1052,
+4092
+],
+"answers": [
+"-1.25"
+],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "What is the date of birth of Quaid-e-Azam?",
+"variants": [
+"What is the date of birth of Quaid-e-Azam?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1069,
+4109
+],
+"all_exps": [
+1069,
+4109
+],
+"answers": [
+"25 December 1876",
+"25 Dec 1876"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the integral of cot x?",
+"variants": [
+"What is the integral of cot x?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1127,
+4167
+],
+"all_exps": [
+1127,
+4167
+],
+"answers": [
+"ln|sin x| + C",
+"ln |sin x| + C"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "What is the Jihad of women?",
+"variants": [
+"What is the Jihad of women?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1185,
+4225
+],
+"all_exps": [
+1185,
+4225
+],
+"answers": [
+"Hijaab",
+"Hijab"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the largest source of electric energy in Pakistan?",
+"variants": [
+"What is the largest source of electric energy in Pakistan?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1157,
+4197
+],
+"all_exps": [
+1157,
+4197
+],
+"answers": [
+"Thermal (both oil and gas)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the length of the Pakistan coast?",
+"variants": [
+"What is the length of the Pakistan coast?",
+"What is the length of Pakistan's coast?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1075,
+4115
+],
+"all_exps": [
+1075,
+4115
+],
+"answers": [
+"1046 KM"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the location of Iran with respect to Pakistan?",
+"variants": [
+"What is the location of Iran with respect to Pakistan?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1158,
+4198
+],
+"all_exps": [
+1158,
+4198
+],
+"answers": [
+"West"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "What is the name of the China-India border?",
+"variants": [
+"What is the name of the China-India border?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1184,
+4224
+],
+"all_exps": [
+1184,
+4224
+],
+"answers": [
+"McMahon Line"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the Nisab of gold?",
+"variants": [
+"What is the Nisab of gold?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1048,
+4088
+],
+"all_exps": [
+1048,
+4088
+],
+"answers": [
+"7.5 Tola or 84.87 grams",
+"7.5 tola or 84.87 grams"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the Pentagon?",
+"variants": [
+"What is the Pentagon?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1138,
+4178
+],
+"all_exps": [
+1138,
+4178
+],
+"answers": [
+"USA defence offices"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the purpose of the WTO?",
+"variants": [
+"What is the purpose of the WTO?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1149,
+4189
+],
+"all_exps": [
+1149,
+4189
+],
+"answers": [
+"Regulation of international trade"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the space between the margin and the start of a paragraph called?",
+"variants": [
+"What is the space between the margin and the start of a paragraph called?",
+"What is the space between the margin and the paragraph called?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1142,
+4182
+],
+"all_exps": [
+1142,
+4182
+],
+"answers": [
+"Indentation"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What type of parliamentary system does Pakistan have?",
+"variants": [
+"What type of parliamentary system does Pakistan have?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1147,
+4187
+],
+"all_exps": [
+1147,
+4187
+],
+"answers": [
+"Bicameral"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What was the currency of France before the Euro?",
+"variants": [
+"What was the currency of France before the Euro?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1171,
+4211
+],
+"all_exps": [
+1171,
+4211
+],
+"answers": [
+"Franc"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What was the exact date of the War of Independence of 1857?",
+"variants": [
+"What was the exact date of the War of Independence of 1857?",
+"What is the exact date of the 1857 War of Independence?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1049,
+4089
+],
+"all_exps": [
+1049,
+4089
+],
+"answers": [
+"10 May 1857"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What was the religion of the King of Habsha (Najashi)?",
+"variants": [
+"What was the religion of the King of Habsha (Najashi)?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1022,
+4062
+],
+"all_exps": [
+1022,
+4062
+],
+"answers": [
+"Armah (Najashi)"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What was the title of Hazrat Usman RA?",
+"variants": [
+"What was the title of Hazrat Usman RA?",
+"What was the title of Usman RA?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+2013,
+3146
+],
+"all_exps": [
+2013,
+3146
+],
+"answers": [
+"Zunnureen or Jami al Quran",
+"Jami al Quran"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What will be the third letter of \"Management\" in alphabetical arrangement?",
+"variants": [
+"What will be the third letter of \"Management\" in alphabetical arrangement?",
+"What will be the third letter in alphabetical arrangement of \"Management\"?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1025,
+4065
+],
+"all_exps": [
+1025,
+4065
+],
+"answers": [
+"G"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "When is friction maximum between tyres and road?",
+"variants": [
+"When is friction maximum between tyres and road?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1134,
+4174
+],
+"all_exps": [
+1134,
+4174
+],
+"answers": [
+"Hard brake",
+"During hard brake"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "When was Ghazwa e Khandaq fought?",
+"variants": [
+"When was Ghazwa e Khandaq fought?",
+"When was Ghazwa Khandaq fought?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+3117,
+3164
+],
+"all_exps": [
+3117,
+3164
+],
+"answers": [
+"Shawal 5 Hijri, 627 AD (opposition leader Abu Sufyan; Muslims were 3000 and kuffar 10000; 2nd name Ahzab)",
+"Shawal 5 Hijri, 627 CE"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When was the first democratic election held in Pakistan?",
+"variants": [
+"When was the first democratic election held in Pakistan?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1006,
+4046
+],
+"all_exps": [
+1006,
+4046
+],
+"answers": [
+"7 December 1970",
+"7 Dec 1970"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where do the Jhelum and Chenab meet?",
+"variants": [
+"Where do the Jhelum and Chenab meet?",
+"Where do the Rivers Jhelum and Chenab meet?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+2149,
+3067
+],
+"all_exps": [
+2149,
+3067
+],
+"answers": [
+"Trimmu, Muzaffargarh"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is Saiful Muluk Lake located?",
+"variants": [
+"Where is Saiful Muluk Lake located?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+3002,
+3121
+],
+"all_exps": [
+3002,
+3121
+],
+"answers": [
+"Naran",
+"Naran, KPK"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is the tomb of Bahauddin Zakariya?",
+"variants": [
+"Where is the tomb of Bahauddin Zakariya?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+2012,
+2094
+],
+"all_exps": [
+2012,
+2094
+],
+"answers": [
+"Multan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where were the 2016 Olympics held?",
+"variants": [
+"Where were the 2016 Olympics held?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1107,
+4147
+],
+"all_exps": [
+1107,
+4147
+],
+"answers": [
+"Brazil"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which angel brings revelations?",
+"variants": [
+"Which angel brings revelations?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1105,
+4145
+],
+"all_exps": [
+1105,
+4145
+],
+"answers": [
+"Hazrat Jibraiel AS"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which are the Baltic countries?",
+"variants": [
+"Which are the Baltic countries?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1007,
+4047
+],
+"all_exps": [
+1007,
+4047
+],
+"answers": [
+"Latvia, Finland, Poland, Germany, Russia etc"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which battle is called Jang-e-Furqan?",
+"variants": [
+"Which battle is called Jang-e-Furqan?",
+"What is Jang-e-Furqan called?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1154,
+4194
+],
+"all_exps": [
+1154,
+4194
+],
+"answers": [
+"Battle of Badar",
+"Battle of Badr"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which continent is called the Dark Continent?",
+"variants": [
+"Which continent is called the Dark Continent?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1071,
+4111
+],
+"all_exps": [
+1071,
+4111
+],
+"answers": [
+"Africa"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which country opposed Pakistan's membership in the UNO?",
+"variants": [
+"Which country opposed Pakistan's membership in the UNO?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1104,
+4144
+],
+"all_exps": [
+1104,
+4144
+],
+"answers": [
+"Afghanistan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which is the 2nd largest glacier in Pakistan?",
+"variants": [
+"Which is the 2nd largest glacier in Pakistan?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1097,
+4137
+],
+"all_exps": [
+1097,
+4137
+],
+"answers": [
+"Baltoro Glacier"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which is the largest oil refinery of Pakistan?",
+"variants": [
+"Which is the largest oil refinery of Pakistan?",
+"What is the largest oil refinery of Pakistan?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1148,
+4188
+],
+"all_exps": [
+1148,
+4188
+],
+"answers": [
+"Pak-Arab Refinery Ltd"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which is the largest road of Pakistan?",
+"variants": [
+"Which is the largest road of Pakistan?",
+"What is the largest road of Pakistan?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1095,
+4135
+],
+"all_exps": [
+1095,
+4135
+],
+"answers": [
+"N-5 National Highway"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which is the most developed continent?",
+"variants": [
+"Which is the most developed continent?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1023,
+4063
+],
+"all_exps": [
+1023,
+4063
+],
+"answers": [
+"Europe"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which is the oldest city of Pakistan?",
+"variants": [
+"Which is the oldest city of Pakistan?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1086,
+4126
+],
+"all_exps": [
+1086,
+4126
+],
+"answers": [
+"Multan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which key is the spell check key?",
+"variants": [
+"Which key is the spell check key?",
+"What is the spell check key?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1119,
+4159
+],
+"all_exps": [
+1119,
+4159
+],
+"answers": [
+"F7"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which mountain range separates Afghanistan from Pakistan?",
+"variants": [
+"Which mountain range separates Afghanistan from Pakistan?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+2132,
+2166
+],
+"all_exps": [
+2132,
+2166
+],
+"answers": [
+"Hindu Kush range"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which organization did Pakistan join in 2017?",
+"variants": [
+"Which organization did Pakistan join in 2017?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1116,
+4156
+],
+"all_exps": [
+1116,
+4156
+],
+"answers": [
+"SCO (Shanghai Cooperation Organization)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which pass lies between Chitral and Afghanistan?",
+"variants": [
+"Which pass lies between Chitral and Afghanistan?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1129,
+4169
+],
+"all_exps": [
+1129,
+4169
+],
+"answers": [
+"Dorah Pass"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which place connects Pakistan with Tajikistan?",
+"variants": [
+"Which place connects Pakistan with Tajikistan?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1059,
+4099
+],
+"all_exps": [
+1059,
+4099
+],
+"answers": [
+"Wakhan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which places does the Babusar Pass connect?",
+"variants": [
+"Which places does the Babusar Pass connect?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+3028,
+4034
+],
+"all_exps": [
+3028,
+4034
+],
+"answers": [
+"Gilgit with Abbottabad",
+"Gilgit and Abbottabad"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which planet is nearest to Earth?",
+"variants": [
+"Which planet is nearest to Earth?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1131,
+4171
+],
+"all_exps": [
+1131,
+4171
+],
+"answers": [
+"Venus"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which vitamin heals wounds?",
+"variants": [
+"Which vitamin heals wounds?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1150,
+4190
+],
+"all_exps": [
+1150,
+4190
+],
+"answers": [
+"Vitamin C, also called Ascorbic acid",
+"Vitamin C, also called ascorbic acid"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who demanded the separation of Sindh from Bombay?",
+"variants": [
+"Who demanded the separation of Sindh from Bombay?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1062,
+4102
+],
+"all_exps": [
+1062,
+4102
+],
+"answers": [
+"Muslims (Muhammad Ali Jinnah, 14 Points)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who is the Governor of Sindh?",
+"variants": [
+"Who is the Governor of Sindh?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1031,
+4071
+],
+"all_exps": [
+1031,
+4071
+],
+"answers": [
+"Imran Ismail"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who separated Bengal in 1913?",
+"variants": [
+"Who separated Bengal in 1913?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1074,
+4114
+],
+"all_exps": [
+1074,
+4114
+],
+"answers": [
+"Lord Curzon"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who was the 1st female Justice of the Balochistan High Court?",
+"variants": [
+"Who was the 1st female Justice of the Balochistan High Court?",
+"Who was the 1st female justice of the Balochistan High Court?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1141,
+4181
+],
+"all_exps": [
+1141,
+4181
+],
+"answers": [
+"Syeda Tahira Safdar"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who was the 1st Khalifa of Islam?",
+"variants": [
+"Who was the 1st Khalifa of Islam?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1089,
+4129
+],
+"all_exps": [
+1089,
+4129
+],
+"answers": [
+"Hazrat Abu Bakar R.A",
+"Hazrat Abu Bakar RA"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who was the first Muazzin of Islam?",
+"variants": [
+"Who was the first Muazzin of Islam?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1118,
+4158
+],
+"all_exps": [
+1118,
+4158
+],
+"answers": [
+"Hazrat Bilal R.A",
+"Hazrat Bilal RA"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who was the first Pakistani astronaut?",
+"variants": [
+"Who was the first Pakistani astronaut?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1090,
+4130
+],
+"all_exps": [
+1090,
+4130
+],
+"answers": [
+"Namira Salim in 2009"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who was the founder of the Urdu Defence Association?",
+"variants": [
+"Who was the founder of the Urdu Defence Association?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1167,
+4207
+],
+"all_exps": [
+1167,
+4207
+],
+"answers": [
+"Mohsin ul Mulk"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who was the President during the 1956 Constitution?",
+"variants": [
+"Who was the President during the 1956 Constitution?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1064,
+4104
+],
+"all_exps": [
+1064,
+4104
+],
+"answers": [
+"Iskander Mirza"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "With which country does Pakistan share a 1200 mile border?",
+"variants": [
+"With which country does Pakistan share a 1200 mile border?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1038,
+4078
+],
+"all_exps": [
+1038,
+4078
+],
+"answers": [
+"Afghanistan (confirm it)",
+"Afghanistan"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Ziarat is the residency of whom?",
+"variants": [
+"Ziarat is the residency of whom?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1181,
+4221
+],
+"all_exps": [
+1181,
+4221
+],
+"answers": [
+"Quaid-e-Azam"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "A book is purchased for 30 Rs and sold for 40 Rs. What is the profit percentage?",
+"variants": [
+"A book is purchased for 30 Rs and sold for 40 Rs. What is the profit percentage?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1029
+],
+"all_exps": [
+1029
+],
+"answers": [
+"33.3%"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "A book was purchased for 30 Rs and sold for 40 Rs. Find the profit in percent.",
+"variants": [
+"A book was purchased for 30 Rs and sold for 40 Rs. Find the profit in percent."
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4069
+],
+"all_exps": [
+4069
+],
+"answers": [
+"33.3%"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "After which ghazwa was Makkah conquered?",
+"variants": [
+"After which ghazwa was Makkah conquered?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2106
+],
+"all_exps": [
+2106
+],
+"answers": [
+"Hunain"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Amjad and Ahmed kept 24 balloons in total and Amjad kept three times more than Ahmed. How many balloons did Amjad keep?",
+"variants": [
+"Amjad and Ahmed kept 24 balloons in total and Amjad kept three times more than Ahmed. How many balloons did Amjad keep?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1221
+],
+"all_exps": [
+1221
+],
+"answers": [
+"18 balloons"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "Articles mostly come before what?",
+"variants": [
+"Articles mostly come before what?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4215
+],
+"all_exps": [
+4215
+],
+"answers": [
+"Noun (i.e. singular noun)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Articles usually come before which part of speech?",
+"variants": [
+"Articles usually come before which part of speech?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1175
+],
+"all_exps": [
+1175
+],
+"answers": [
+"Noun (i.e. singular noun)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Between which rivers is the Barri Doab?",
+"variants": [
+"Between which rivers is the Barri Doab?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1208
+],
+"all_exps": [
+1208
+],
+"answers": [
+"River Ravi and Beas"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Between whom was Mawakhat-e-Madinah (brotherhood) established?",
+"variants": [
+"Between whom was Mawakhat-e-Madinah (brotherhood) established?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1067
+],
+"all_exps": [
+1067
+],
+"answers": [
+"Ansar and Muhajireen"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Between whom was the Muwakhat (brotherhood) of Madinah?",
+"variants": [
+"Between whom was the Muwakhat (brotherhood) of Madinah?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4107
+],
+"all_exps": [
+4107
+],
+"answers": [
+"Ansaar and Muhajireen"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "During whose era did the Battle of Yamama take place?",
+"variants": [
+"During whose era did the Battle of Yamama take place?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4162
+],
+"all_exps": [
+4162
+],
+"answers": [
+"Hazrat Abu Bakar RA"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "During whose period did the Battle of Yamama take place?",
+"variants": [
+"During whose period did the Battle of Yamama take place?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1122
+],
+"all_exps": [
+1122
+],
+"answers": [
+"Hazrat Abu Bakar R.A"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Fill in the blank: He served us ______ breakfast.",
+"variants": [
+"Fill in the blank: He served us ______ breakfast."
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1187
+],
+"all_exps": [
+1187
+],
+"answers": [
+"A good"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Fill in the blank: They are three brothers, Ali is ______ of the three.",
+"variants": [
+"Fill in the blank: They are three brothers, Ali is ______ of the three."
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1186
+],
+"all_exps": [
+1186
+],
+"answers": [
+"Cleverest"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "For how long is the UN Secretary General appointed?",
+"variants": [
+"For how long is the UN Secretary General appointed?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3103
+],
+"all_exps": [
+3103
+],
+"answers": [
+"10 years"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "For how many days did the 1965 war last?",
+"variants": [
+"For how many days did the 1965 war last?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1235
+],
+"all_exps": [
+1235
+],
+"answers": [
+"17 days"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "For what is Namaz-e-Istasqa offered?",
+"variants": [
+"For what is Namaz-e-Istasqa offered?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1190
+],
+"all_exps": [
+1190
+],
+"answers": [
+"Rain"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "For what was Malala awarded?",
+"variants": [
+"For what was Malala awarded?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1111
+],
+"all_exps": [
+1111
+],
+"answers": [
+"Peace"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Fort Munro is in which district?",
+"variants": [
+"Fort Munro is in which district?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3001
+],
+"all_exps": [
+3001
+],
+"answers": [
+"Dera Ghazi Khan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "From where do plants get nitrogen?",
+"variants": [
+"From where do plants get nitrogen?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3111
+],
+"all_exps": [
+3111
+],
+"answers": [
+"Soil"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "From which city does the Karakoram start?",
+"variants": [
+"From which city does the Karakoram start?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3138
+],
+"all_exps": [
+3138
+],
+"answers": [
+"Hasan Abdal or Abbottabad"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Gwadar port was bought from which country?",
+"variants": [
+"Gwadar port was bought from which country?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2001
+],
+"all_exps": [
+2001
+],
+"answers": [
+"Oman"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Hamza Baba is a poet of which language?",
+"variants": [
+"Hamza Baba is a poet of which language?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3185
+],
+"all_exps": [
+3185
+],
+"answers": [
+"Pashto"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Hazrat Bilal R.A was the slave of whom?",
+"variants": [
+"Hazrat Bilal R.A was the slave of whom?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1174
+],
+"all_exps": [
+1174
+],
+"answers": [
+"Ummaiya bin Khalaf"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Hazrat Ishaq is the son of whom?",
+"variants": [
+"Hazrat Ishaq is the son of whom?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3059
+],
+"all_exps": [
+3059
+],
+"answers": [
+"Hazrat Sarah"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Hazrat Ismail is the son of whom?",
+"variants": [
+"Hazrat Ismail is the son of whom?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3058
+],
+"all_exps": [
+3058
+],
+"answers": [
+"Hazrat Hajra"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Hazrat Salma is the wife of whom?",
+"variants": [
+"Hazrat Salma is the wife of whom?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3160
+],
+"all_exps": [
+3160
+],
+"answers": [
+"Muhammad SAW"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "How many barrages are on the River Indus?",
+"variants": [
+"How many barrages are on the River Indus?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3024
+],
+"all_exps": [
+3024
+],
+"answers": [
+"6 (Jinnah, Guddu, Chashma, Sukkur, Kotri, Chaunsa)"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "How many books are there in Sahih Sitta?",
+"variants": [
+"How many books are there in Sahih Sitta?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2059
+],
+"all_exps": [
+2059
+],
+"answers": [
+"6"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many children did Ibrahim AS have?",
+"variants": [
+"How many children did Ibrahim AS have?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2096
+],
+"all_exps": [
+2096
+],
+"answers": [
+"13 children or 2 sons"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "How many Muslims and kuffar were in Ghazwa Khandaq?",
+"variants": [
+"How many Muslims and kuffar were in Ghazwa Khandaq?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3166
+],
+"all_exps": [
+3166
+],
+"answers": [
+"3000 Muslims and 10000 kuffar"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many Muslims were martyred in Ghazwa Ohad?",
+"variants": [
+"How many Muslims were martyred in Ghazwa Ohad?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1156
+],
+"all_exps": [
+1156
+],
+"answers": [
+"85"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many Muslims were there in Ghazwa Badar?",
+"variants": [
+"How many Muslims were there in Ghazwa Badar?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1114
+],
+"all_exps": [
+1114
+],
+"answers": [
+"313"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many Muslims were there in the Battle of Uhad?",
+"variants": [
+"How many Muslims were there in the Battle of Uhad?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1164
+],
+"all_exps": [
+1164
+],
+"answers": [
+"1000"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many official languages does the UN have?",
+"variants": [
+"How many official languages does the UN have?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2170
+],
+"all_exps": [
+2170
+],
+"answers": [
+"6 (Arabic, Chinese, English, French, Russian, Spanish)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many peaks above 8000 meters are there in Pakistan?",
+"variants": [
+"How many peaks above 8000 meters are there in Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2188
+],
+"all_exps": [
+2188
+],
+"answers": [
+"5"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many players are there in a baseball team?",
+"variants": [
+"How many players are there in a baseball team?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2005
+],
+"all_exps": [
+2005
+],
+"answers": [
+"9"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many reserved seats for women are there in the Senate?",
+"variants": [
+"How many reserved seats for women are there in the Senate?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2064
+],
+"all_exps": [
+2064
+],
+"answers": [
+"17"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many rivers flow in Punjab?",
+"variants": [
+"How many rivers flow in Punjab?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2147
+],
+"all_exps": [
+2147
+],
+"answers": [
+"5 (Jhelum, Chenab, Beas, Sutlej, Ravi)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many seats are there in the National Assembly?",
+"variants": [
+"How many seats are there in the National Assembly?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2040
+],
+"all_exps": [
+2040
+],
+"answers": [
+"342"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many seats are there in the Senate?",
+"variants": [
+"How many seats are there in the Senate?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2036
+],
+"all_exps": [
+2036
+],
+"answers": [
+"104"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many times was Namaz ordered in Islam?",
+"variants": [
+"How many times was Namaz ordered in Islam?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2165
+],
+"all_exps": [
+2165
+],
+"answers": [
+"700"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "How many tribes are in Madina?",
+"variants": [
+"How many tribes are in Madina?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3147
+],
+"all_exps": [
+3147
+],
+"answers": [
+"2"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "How many tribes are in Saudi Arabia?",
+"variants": [
+"How many tribes are in Saudi Arabia?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3150
+],
+"all_exps": [
+3150
+],
+"answers": [
+"100"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "How many verses were there in the first revelation (wahi)?",
+"variants": [
+"How many verses were there in the first revelation (wahi)?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2060
+],
+"all_exps": [
+2060
+],
+"answers": [
+"5"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How old was the Holy Prophet (PBUH) at the time of the Fijjar war?",
+"variants": [
+"How old was the Holy Prophet (PBUH) at the time of the Fijjar war?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4222
+],
+"all_exps": [
+4222
+],
+"answers": [
+"15"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How old was the Prophet (SAW) during the Battle of Fijjar?",
+"variants": [
+"How old was the Prophet (SAW) during the Battle of Fijjar?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4020
+],
+"all_exps": [
+4020
+],
+"answers": [
+"15 years"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Hub Lake is near which city?",
+"variants": [
+"Hub Lake is near which city?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3007
+],
+"all_exps": [
+3007
+],
+"answers": [
+"Karachi"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "If a helicopter needs 50 gallons to move 320 kilometers, how many gallons does it need to move 400 kilometers?",
+"variants": [
+"If a helicopter needs 50 gallons to move 320 kilometers, how many gallons does it need to move 400 kilometers?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1220
+],
+"all_exps": [
+1220
+],
+"answers": [
+"62.5 gallons"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "If a train covers 120 km per hour, how much will it cover in 18 minutes?",
+"variants": [
+"If a train covers 120 km per hour, how much will it cover in 18 minutes?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1222
+],
+"all_exps": [
+1222
+],
+"answers": [
+"36 km"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "If a train covers 120 miles per hour, how much will it cover in 12 minutes?",
+"variants": [
+"If a train covers 120 miles per hour, how much will it cover in 12 minutes?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1216
+],
+"all_exps": [
+1216
+],
+"answers": [
+"38.4 KM or 24 miles"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "If e > 1, then it is the equation of which conic?",
+"variants": [
+"If e > 1, then it is the equation of which conic?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3194
+],
+"all_exps": [
+3194
+],
+"answers": [
+"Parabola"
+],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "If nP2 = 20, what is the value of n?",
+"variants": [
+"If nP2 = 20, what is the value of n?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1223
+],
+"all_exps": [
+1223
+],
+"answers": [
+"10"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "In which battle did Muhammad SAW not participate?",
+"variants": [
+"In which battle did Muhammad SAW not participate?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2097
+],
+"all_exps": [
+2097
+],
+"answers": [
+"Saria"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which city is the National College of Arts of Pakistan?",
+"variants": [
+"In which city is the National College of Arts of Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2157
+],
+"all_exps": [
+2157
+],
+"answers": [
+"Lahore"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which country is Mount Olympus?",
+"variants": [
+"In which country is Mount Olympus?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1169
+],
+"all_exps": [
+1169
+],
+"answers": [
+"Greece"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which country is the Victoria Desert?",
+"variants": [
+"In which country is the Victoria Desert?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4023
+],
+"all_exps": [
+4023
+],
+"answers": [
+"Australia"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which district is Kalam Valley?",
+"variants": [
+"In which district is Kalam Valley?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4032
+],
+"all_exps": [
+4032
+],
+"answers": [
+"Swat"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which district is Taxila?",
+"variants": [
+"In which district is Taxila?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2069
+],
+"all_exps": [
+2069
+],
+"answers": [
+"Rawalpindi"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which ghazwa did the Muslims come back without a fight?",
+"variants": [
+"In which ghazwa did the Muslims come back without a fight?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4170
+],
+"all_exps": [
+4170
+],
+"answers": [
+"Tabook"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which Ghazwa did the Muslims come back without fighting?",
+"variants": [
+"In which Ghazwa did the Muslims come back without fighting?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1130
+],
+"all_exps": [
+1130
+],
+"answers": [
+"Tabook"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which Hijri year did Karbala happen?",
+"variants": [
+"In which Hijri year did Karbala happen?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2172
+],
+"all_exps": [
+2172
+],
+"answers": [
+"10 Muharram 61 Hijri, 680 AD in Iraq"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which period did Abu Sufyan accept Islam?",
+"variants": [
+"In which period did Abu Sufyan accept Islam?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1247
+],
+"all_exps": [
+1247
+],
+"answers": [
+"After Ghazwa Hunain and Fatah Makkah"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which place is Lake Manchester?",
+"variants": [
+"In which place is Lake Manchester?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1273
+],
+"all_exps": [
+1273
+],
+"answers": [
+"Brisbane, Queensland, Australia"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which year did Abdul Salam get the Nobel Prize?",
+"variants": [
+"In which year did Abdul Salam get the Nobel Prize?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1079
+],
+"all_exps": [
+1079
+],
+"answers": [
+"1979 in Physics"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year did Azan become compulsory?",
+"variants": [
+"In which year did Azan become compulsory?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3175
+],
+"all_exps": [
+3175
+],
+"answers": [
+"2 Hijri"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year did Hajj become farz?",
+"variants": [
+"In which year did Hajj become farz?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3176
+],
+"all_exps": [
+3176
+],
+"answers": [
+"9 Hijri"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year did Imran Khan attend the first China International Import Expo (CIIE)?",
+"variants": [
+"In which year did Imran Khan attend the first China International Import Expo (CIIE)?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2176
+],
+"all_exps": [
+2176
+],
+"answers": [
+"2018 in Shanghai"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year did Namaz become farz?",
+"variants": [
+"In which year did Namaz become farz?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3181
+],
+"all_exps": [
+3181
+],
+"answers": [
+"10 Nabwi"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year did Namaz e Janaza become farz?",
+"variants": [
+"In which year did Namaz e Janaza become farz?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3173
+],
+"all_exps": [
+3173
+],
+"answers": [
+"2 Hijri"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year did Parda become compulsory?",
+"variants": [
+"In which year did Parda become compulsory?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3162
+],
+"all_exps": [
+3162
+],
+"answers": [
+"4 Hijri"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year did Quaid-e-Azam give the Delhi Proposals?",
+"variants": [
+"In which year did Quaid-e-Azam give the Delhi Proposals?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1108
+],
+"all_exps": [
+1108
+],
+"answers": [
+"1916"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year did Roza become farz?",
+"variants": [
+"In which year did Roza become farz?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3168
+],
+"all_exps": [
+3168
+],
+"answers": [
+"2 Hijri"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year did Tayammum become farz?",
+"variants": [
+"In which year did Tayammum become farz?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3180
+],
+"all_exps": [
+3180
+],
+"answers": [
+"4 Hijri"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year did the 1st World War end?",
+"variants": [
+"In which year did the 1st World War end?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1193
+],
+"all_exps": [
+1193
+],
+"answers": [
+"1918"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year did the Nobel Prize ceremony start?",
+"variants": [
+"In which year did the Nobel Prize ceremony start?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3193
+],
+"all_exps": [
+3193
+],
+"answers": [
+"1901"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year did Zakat become farz?",
+"variants": [
+"In which year did Zakat become farz?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3172
+],
+"all_exps": [
+3172
+],
+"answers": [
+"2 Hijri"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year was Aligarh given the status of a college?",
+"variants": [
+"In which year was Aligarh given the status of a college?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2039
+],
+"all_exps": [
+2039
+],
+"answers": [
+"1977"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which year was interest prohibited?",
+"variants": [
+"In which year was interest prohibited?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3178
+],
+"all_exps": [
+3178
+],
+"answers": [
+"10 Hijri"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year was NATO signed?",
+"variants": [
+"In which year was NATO signed?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3188
+],
+"all_exps": [
+3188
+],
+"answers": [
+"1949"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year was sharab prohibited?",
+"variants": [
+"In which year was sharab prohibited?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3177
+],
+"all_exps": [
+3177
+],
+"answers": [
+"6 Hijri"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year was Sindh separated from Mumbai?",
+"variants": [
+"In which year was Sindh separated from Mumbai?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2134
+],
+"all_exps": [
+2134
+],
+"answers": [
+"1 Apr 1936"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year was Sindh taken by the British?",
+"variants": [
+"In which year was Sindh taken by the British?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3106
+],
+"all_exps": [
+3106
+],
+"answers": [
+"1843"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year was the capital of Pakistan shifted to Islamabad?",
+"variants": [
+"In which year was the capital of Pakistan shifted to Islamabad?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2046
+],
+"all_exps": [
+2046
+],
+"answers": [
+"14 Aug 1967"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which year was the Geneva Accord (Pact) signed?",
+"variants": [
+"In which year was the Geneva Accord (Pact) signed?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1019
+],
+"all_exps": [
+1019
+],
+"answers": [
+"1988"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year was the intelligence agency Mossad established?",
+"variants": [
+"In which year was the intelligence agency Mossad established?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2158
+],
+"all_exps": [
+2158
+],
+"answers": [
+"13 Dec 1949"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year was the Jinnah Research Centre established?",
+"variants": [
+"In which year was the Jinnah Research Centre established?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1191
+],
+"all_exps": [
+1191
+],
+"answers": [
+"1991"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which year was the Pirpur Report?",
+"variants": [
+"In which year was the Pirpur Report?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1008
+],
+"all_exps": [
+1008
+],
+"answers": [
+"1938"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Islamabad is located on which mountain range?",
+"variants": [
+"Islamabad is located on which mountain range?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2066
+],
+"all_exps": [
+2066
+],
+"answers": [
+"Margalla Hills"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Kahuta Laboratories were established during the government of whom?",
+"variants": [
+"Kahuta Laboratories were established during the government of whom?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2124
+],
+"all_exps": [
+2124
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Kip is the currency of which country?",
+"variants": [
+"Kip is the currency of which country?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2126
+],
+"all_exps": [
+2126
+],
+"answers": [
+"Laos"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Near which place do the Jhelum and Sutlej meet?",
+"variants": [
+"Near which place do the Jhelum and Sutlej meet?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2152
+],
+"all_exps": [
+2152
+],
+"answers": [
+"Punjnad"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Olympic is the airport of which country?",
+"variants": [
+"Olympic is the airport of which country?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1239
+],
+"all_exps": [
+1239
+],
+"answers": [
+"Greece"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "On what date did Pakistan join the United Nations?",
+"variants": [
+"On what date did Pakistan join the United Nations?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1099
+],
+"all_exps": [
+1099
+],
+"answers": [
+"30 September 1947"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "On what date did the USSR break up?",
+"variants": [
+"On what date did the USSR break up?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4028
+],
+"all_exps": [
+4028
+],
+"answers": [
+"26 Dec 1991"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "On what date was the book \"Causes of the Indian Revolt\" published?",
+"variants": [
+"On what date was the book \"Causes of the Indian Revolt\" published?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1160
+],
+"all_exps": [
+1160
+],
+"answers": [
+"10 May 1857"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "On what date was the Cabinet Mission?",
+"variants": [
+"On what date was the Cabinet Mission?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1228
+],
+"all_exps": [
+1228
+],
+"answers": [
+"1946"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "On what date was the cease fire agreement?",
+"variants": [
+"On what date was the cease fire agreement?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1260
+],
+"all_exps": [
+1260
+],
+"answers": [
+"27 July 1949"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "On what date was the conquest of Makkah?",
+"variants": [
+"On what date was the conquest of Makkah?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1279
+],
+"all_exps": [
+1279
+],
+"answers": [
+"20 Ramzan 8 Hijri 630 AD"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "On what date was the League of Nations founded?",
+"variants": [
+"On what date was the League of Nations founded?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4026
+],
+"all_exps": [
+4026
+],
+"answers": [
+"10 Jan 1920, HQ in Geneva, Switzerland"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "On what date was the Objective Resolution presented in the Assembly?",
+"variants": [
+"On what date was the Objective Resolution presented in the Assembly?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1161
+],
+"all_exps": [
+1161
+],
+"answers": [
+"7 March 1949"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "On what date was the Objective Resolution shown in the Assembly?",
+"variants": [
+"On what date was the Objective Resolution shown in the Assembly?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4201
+],
+"all_exps": [
+4201
+],
+"answers": [
+"7 March 1949"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "On what date was the Pakistan-Iran gas pipeline agreement signed?",
+"variants": [
+"On what date was the Pakistan-Iran gas pipeline agreement signed?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1254
+],
+"all_exps": [
+1254
+],
+"answers": [
+"16 March 2010"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "On what date was the Tashkent Declaration?",
+"variants": [
+"On what date was the Tashkent Declaration?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1234
+],
+"all_exps": [
+1234
+],
+"answers": [
+"10 January 1966"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "On which prophet was the Zaboor revealed?",
+"variants": [
+"On which prophet was the Zaboor revealed?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1204
+],
+"all_exps": [
+1204
+],
+"answers": [
+"Hazrat Dawood A.S"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "On which river is Balakot?",
+"variants": [
+"On which river is Balakot?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2062
+],
+"all_exps": [
+2062
+],
+"answers": [
+"Kunhar River"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "On which river is Ghazi Brotha Dam located?",
+"variants": [
+"On which river is Ghazi Brotha Dam located?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3019
+],
+"all_exps": [
+3019
+],
+"answers": [
+"River Indus"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "On which river is Wular Lake located?",
+"variants": [
+"On which river is Wular Lake located?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3004
+],
+"all_exps": [
+3004
+],
+"answers": [
+"Jhelum"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "On which river will the Bhasha and Kalabagh dams be built?",
+"variants": [
+"On which river will the Bhasha and Kalabagh dams be built?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3018
+],
+"all_exps": [
+3018
+],
+"answers": [
+"Indus River"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Pound sterling is the currency of which country?",
+"variants": [
+"Pound sterling is the currency of which country?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1257
+],
+"all_exps": [
+1257
+],
+"answers": [
+"UK"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Rickets disease is caused by the lack of what?",
+"variants": [
+"Rickets disease is caused by the lack of what?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2115
+],
+"all_exps": [
+2115
+],
+"answers": [
+"Lack of vitamin D or calcium"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Roohullah is the title of which prophet?",
+"variants": [
+"Roohullah is the title of which prophet?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1203
+],
+"all_exps": [
+1203
+],
+"answers": [
+"Hazrat Esa A.S"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Saifullah is the title of whom?",
+"variants": [
+"Saifullah is the title of whom?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1231
+],
+"all_exps": [
+1231
+],
+"answers": [
+"Khalid bin Waleed"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Sofia is the capital of which country?",
+"variants": [
+"Sofia is the capital of which country?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2123
+],
+"all_exps": [
+2123
+],
+"answers": [
+"Bulgaria"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "The Indian Councils Act is known as what?",
+"variants": [
+"The Indian Councils Act is known as what?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2117
+],
+"all_exps": [
+2117
+],
+"answers": [
+"Morley Minto Reforms"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "The Jamrud Pass connects Peshawar with which area?",
+"variants": [
+"The Jamrud Pass connects Peshawar with which area?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3091
+],
+"all_exps": [
+3091
+],
+"answers": [
+"FATA"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "The Khojak Pass connects Qila Abdullah with which place?",
+"variants": [
+"The Khojak Pass connects Qila Abdullah with which place?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3090
+],
+"all_exps": [
+3090
+],
+"answers": [
+"Chaman, Afghanistan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "The mantissa of a logarithm is always in what form?",
+"variants": [
+"The mantissa of a logarithm is always in what form?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4035
+],
+"all_exps": [
+4035
+],
+"answers": [
+"In decimal"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "The Panama Lake connects the Caspian Sea with what?",
+"variants": [
+"The Panama Lake connects the Caspian Sea with what?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2133
+],
+"all_exps": [
+2133
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Titu Meer was the son of whom?",
+"variants": [
+"Titu Meer was the son of whom?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2109
+],
+"all_exps": [
+2109
+],
+"answers": [
+"Abida Ruqayya Khatoon and Syed Mir Hassan Ali"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "To which tribe did Hafsa RA belong?",
+"variants": [
+"To which tribe did Hafsa RA belong?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2076
+],
+"all_exps": [
+2076
+],
+"answers": [
+"Banu Adi, Quraish"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Umme Kulsoom is the daughter of whom?",
+"variants": [
+"Umme Kulsoom is the daughter of whom?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1263
+],
+"all_exps": [
+1263
+],
+"answers": [
+"Muhammad PBUH"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Under whose captaincy did Pakistan win the 1992 World Cup?",
+"variants": [
+"Under whose captaincy did Pakistan win the 1992 World Cup?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3083
+],
+"all_exps": [
+3083
+],
+"answers": [
+"Imran Khan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What are the details of the 1st Battle of Panipat?",
+"variants": [
+"What are the details of the 1st Battle of Panipat?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2090
+],
+"all_exps": [
+2090
+],
+"answers": [
+"21 April 1526 between Babur (winner) and Ibrahim Lodhi"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What are the details of the 1st constitution of Pakistan?",
+"variants": [
+"What are the details of the 1st constitution of Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2029
+],
+"all_exps": [
+2029
+],
+"answers": [
+"Enforced on 23 March 1956 by Chaudhry Muhammad Ali. Abrogated on 7 Oct 1958 by Iskander Mirza"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What are the details of the 2nd Battle of Panipat?",
+"variants": [
+"What are the details of the 2nd Battle of Panipat?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2091
+],
+"all_exps": [
+2091
+],
+"answers": [
+"5 Nov 1556 between Akbar (winner) and Hemu (Hema Chandra)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What are the details of the 2nd constitution of Pakistan?",
+"variants": [
+"What are the details of the 2nd constitution of Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2026
+],
+"all_exps": [
+2026
+],
+"answers": [
+"Enforced on 8 June 1962 by Ayub Khan. Abrogated on 26 March 1969 by Ayub Khan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What are the details of the 3rd Battle of Panipat?",
+"variants": [
+"What are the details of the 3rd Battle of Panipat?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2092
+],
+"all_exps": [
+2092
+],
+"answers": [
+"14 Jan 1761 between Ahmad Shah Durrani/Abdali (winner) and Sadashiv Rao Bhau"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What are the details of the Battle of Badr?",
+"variants": [
+"What are the details of the Battle of Badr?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1245
+],
+"all_exps": [
+1245
+],
+"answers": [
+"17 Ramzan 2 Hijri 624 AD; Abu Jehl was the opponent leader; 313 Muslims against 950 kuffar; 14 Muslims martyred, 70 kuffar killed and 70 arrested; angels helped"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What are the details of the Battle of Uhd?",
+"variants": [
+"What are the details of the Battle of Uhd?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1246
+],
+"all_exps": [
+1246
+],
+"answers": [
+"5 Shawal 3 Hijri 625 AD; Abu Sufyan was the opponent leader; Hamza, paternal uncle of the Prophet, was martyred; the Prophet's tooth was martyred; 700 Muslims against 3000 kuffar; 70 Muslims martyred, 20 kuffar killed; Uhd is the name of a mountain; Uhd means commitment"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What are the details of the Quran?",
+"variants": [
+"What are the details of the Quran?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1264
+],
+"all_exps": [
+1264
+],
+"answers": [
+"114 surahs, 28 Makki, 86 Madni, 558 rukooh, 6666 ayat, 14 sajda, 30 paray, 7 manzil"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What are the names of the daughters of the Prophet SAW?",
+"variants": [
+"What are the names of the daughters of the Prophet SAW?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2144
+],
+"all_exps": [
+2144
+],
+"answers": [
+"1. Fatima 2. Zainab 3. Ruqayyah 4. Umme Kulsoom"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What are the names of the grandmothers of Muhammad SAW?",
+"variants": [
+"What are the names of the grandmothers of Muhammad SAW?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2086
+],
+"all_exps": [
+2086
+],
+"answers": [
+"Fatima (paternal) and Barrah (maternal)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What are the names of the wives of Prophet Muhammad SAW?",
+"variants": [
+"What are the names of the wives of Prophet Muhammad SAW?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2142
+],
+"all_exps": [
+2142
+],
+"answers": [
+"1. Khadija 2. Sawda 3. Aisha 4. Hafsa 5. Zainab bint Khuzaymah 6. Salma 7. Zainab bint Jahsh 8. Maimoona 9. Juwayriyah 10. Safiyyah 11. Rehana (2 divorced: Asma bint Nauman and Amra bint Yazid)"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What are the old names of India?",
+"variants": [
+"What are the old names of India?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4097
+],
+"all_exps": [
+4097
+],
+"answers": [
+"Hindustan, Bharat or Bhartavarsha etc"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What does Akhuwat (Mawakhaat) mean?",
+"variants": [
+"What does Akhuwat (Mawakhaat) mean?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1179
+],
+"all_exps": [
+1179
+],
+"answers": [
+"Brotherhood"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What does Akhuwat (Muwakhat) mean?",
+"variants": [
+"What does Akhuwat (Muwakhat) mean?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4219
+],
+"all_exps": [
+4219
+],
+"answers": [
+"Brotherhood"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What does HIT stand for?",
+"variants": [
+"What does HIT stand for?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3043
+],
+"all_exps": [
+3043
+],
+"answers": [
+"Heavy Industries Taxila in Rawalpindi"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What does IRDA mean?",
+"variants": [
+"What does IRDA mean?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1269
+],
+"all_exps": [
+1269
+],
+"answers": [
+"Insurance Regulatory and Development Authority"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What does Islam mean?",
+"variants": [
+"What does Islam mean?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1233
+],
+"all_exps": [
+1233
+],
+"answers": [
+"Peace"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What does Jabi mean?",
+"variants": [
+"What does Jabi mean?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2104
+],
+"all_exps": [
+2104
+],
+"answers": [
+"One who collects zakat"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What does Miraath mean?",
+"variants": [
+"What does Miraath mean?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3046
+],
+"all_exps": [
+3046
+],
+"answers": [
+"Riba free"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What does Muhammad mean?",
+"variants": [
+"What does Muhammad mean?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3116
+],
+"all_exps": [
+3116
+],
+"answers": [
+"Praised"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What does the Saindak Project produce?",
+"variants": [
+"What does the Saindak Project produce?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1146
+],
+"all_exps": [
+1146
+],
+"answers": [
+"Copper and gold"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is a terminating decimal called?",
+"variants": [
+"What is a terminating decimal called?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2116
+],
+"all_exps": [
+2116
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "What is another name of Ghazwa Badr?",
+"variants": [
+"What is another name of Ghazwa Badr?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2006
+],
+"all_exps": [
+2006
+],
+"answers": [
+"Furqan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is Hudaybiyyah?",
+"variants": [
+"What is Hudaybiyyah?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4220
+],
+"all_exps": [
+4220
+],
+"answers": [
+"Treaty (place)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is snake bite acid?",
+"variants": [
+"What is snake bite acid?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2174
+],
+"all_exps": [
+2174
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the acid of an ant bite called?",
+"variants": [
+"What is the acid of an ant bite called?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3084
+],
+"all_exps": [
+3084
+],
+"answers": [
+"Formic acid or carboxylic acid"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the area between the Chenab and Jhelum called?",
+"variants": [
+"What is the area between the Chenab and Jhelum called?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2153
+],
+"all_exps": [
+2153
+],
+"answers": [
+"Chaj Doab"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the area between the rivers Ravi and Beas called?",
+"variants": [
+"What is the area between the rivers Ravi and Beas called?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2146
+],
+"all_exps": [
+2146
+],
+"answers": [
+"Bari Doab"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the biggest city of Pakistan?",
+"variants": [
+"What is the biggest city of Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3096
+],
+"all_exps": [
+3096
+],
+"answers": [
+"Karachi"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the biggest district of Pakistan by population?",
+"variants": [
+"What is the biggest district of Pakistan by population?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3094
+],
+"all_exps": [
+3094
+],
+"answers": [
+"Lahore"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the biggest railway station of Pakistan?",
+"variants": [
+"What is the biggest railway station of Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4036
+],
+"all_exps": [
+4036
+],
+"answers": [
+"Lahore"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the biggest river of Asia?",
+"variants": [
+"What is the biggest river of Asia?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4022
+],
+"all_exps": [
+4022
+],
+"answers": [
+"Yangtze"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the biggest river of Pakistan?",
+"variants": [
+"What is the biggest river of Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2148
+],
+"all_exps": [
+2148
+],
+"answers": [
+"Indus River (3180 km)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the birth date of Muhammad SAW?",
+"variants": [
+"What is the birth date of Muhammad SAW?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3115
+],
+"all_exps": [
+3115
+],
+"answers": [
+"22 April 571 AD"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the capital of Haiti?",
+"variants": [
+"What is the capital of Haiti?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4014
+],
+"all_exps": [
+4014
+],
+"answers": [
+"Port au Prince or Cap Haitien"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the capital of Hawaii?",
+"variants": [
+"What is the capital of Hawaii?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4010
+],
+"all_exps": [
+4010
+],
+"answers": [
+"Honolulu"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the capital of Holland?",
+"variants": [
+"What is the capital of Holland?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4011
+],
+"all_exps": [
+4011
+],
+"answers": [
+"Amsterdam"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the capital of Honduras?",
+"variants": [
+"What is the capital of Honduras?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4013
+],
+"all_exps": [
+4013
+],
+"answers": [
+"Tegucigalpa"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the capital of Hong Kong?",
+"variants": [
+"What is the capital of Hong Kong?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4012
+],
+"all_exps": [
+4012
+],
+"answers": [
+"City of Victoria"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the capital of Qatar?",
+"variants": [
+"What is the capital of Qatar?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1275
+],
+"all_exps": [
+1275
+],
+"answers": [
+"Doha"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the capital of the Holy See?",
+"variants": [
+"What is the capital of the Holy See?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4016
+],
+"all_exps": [
+4016
+],
+"answers": [
+"Vatican City"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the currency of Vatican City?",
+"variants": [
+"What is the currency of Vatican City?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4033
+],
+"all_exps": [
+4033
+],
+"answers": [
+"Euro"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the currency of Vietnam?",
+"variants": [
+"What is the currency of Vietnam?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2137
+],
+"all_exps": [
+2137
+],
+"answers": [
+"Vietnamese dong"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the cutting of hair during Hajj called?",
+"variants": [
+"What is the cutting of hair during Hajj called?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3152
+],
+"all_exps": [
+3152
+],
+"answers": [
+"Halq or Taqseer or tonsure or rami"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the date of the Khilafat Movement?",
+"variants": [
+"What is the date of the Khilafat Movement?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4152
+],
+"all_exps": [
+4152
+],
+"answers": [
+"Started in 1919"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the date of the Pirpur Report?",
+"variants": [
+"What is the date of the Pirpur Report?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4048
+],
+"all_exps": [
+4048
+],
+"answers": [
+"1938"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the date of the Treaty of Hudaybiyyah?",
+"variants": [
+"What is the date of the Treaty of Hudaybiyyah?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4150
+],
+"all_exps": [
+4150
+],
+"answers": [
+"6 Hijri"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the first collection of Hadith?",
+"variants": [
+"What is the first collection of Hadith?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2105
+],
+"all_exps": [
+2105
+],
+"answers": [
+"Sahifa e Sadiqa"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the full name of Muhammad bin Qasim?",
+"variants": [
+"What is the full name of Muhammad bin Qasim?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3159
+],
+"all_exps": [
+3159
+],
+"answers": [
+"Muhammad bin Qasim al Thaqafi"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the Geneva Pact (year)?",
+"variants": [
+"What is the Geneva Pact (year)?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4059
+],
+"all_exps": [
+4059
+],
+"answers": [
+"1988"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the height of K-2?",
+"variants": [
+"What is the height of K-2?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3080
+],
+"all_exps": [
+3080
+],
+"answers": [
+"8611 metres"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the height of K2?",
+"variants": [
+"What is the height of K2?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2038
+],
+"all_exps": [
+2038
+],
+"answers": [
+"8611 meters or 28,251 feet"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the highest hadith book?",
+"variants": [
+"What is the highest hadith book?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3125
+],
+"all_exps": [
+3125
+],
+"answers": [
+"Sahih Bukhari"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the kissing of the Hajr Aswad called?",
+"variants": [
+"What is the kissing of the Hajr Aswad called?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2101
+],
+"all_exps": [
+2101
+],
+"answers": [
+"Istilam"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the land between Peshawar and Rawalpindi called?",
+"variants": [
+"What is the land between Peshawar and Rawalpindi called?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2127
+],
+"all_exps": [
+2127
+],
+"answers": [
+"Gandhara"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the largest and oldest barrage of Pakistan?",
+"variants": [
+"What is the largest and oldest barrage of Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3014
+],
+"all_exps": [
+3014
+],
+"answers": [
+"Sukkur Barrage"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the largest lake inside a country?",
+"variants": [
+"What is the largest lake inside a country?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2155
+],
+"all_exps": [
+2155
+],
+"answers": [
+"Lake Superior"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the largest mountain of the Balochistan plateau?",
+"variants": [
+"What is the largest mountain of the Balochistan plateau?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2156
+],
+"all_exps": [
+2156
+],
+"answers": [
+"Zarghun Ghar"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the largest organ of the UN?",
+"variants": [
+"What is the largest organ of the UN?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2118
+],
+"all_exps": [
+2118
+],
+"answers": [
+"General Assembly"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the largest waterfall in the world?",
+"variants": [
+"What is the largest waterfall in the world?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2141
+],
+"all_exps": [
+2141
+],
+"answers": [
+"Angel Falls"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the length of a cricket bat?",
+"variants": [
+"What is the length of a cricket bat?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2015
+],
+"all_exps": [
+2015
+],
+"answers": [
+"38 inches"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the length of the Indus Highway?",
+"variants": [
+"What is the length of the Indus Highway?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2081
+],
+"all_exps": [
+2081
+],
+"answers": [
+"1264 km"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the length of the LOC?",
+"variants": [
+"What is the length of the LOC?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1205
+],
+"all_exps": [
+1205
+],
+"answers": [
+"740 KM"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the length of the Mariana Trench?",
+"variants": [
+"What is the length of the Mariana Trench?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2082
+],
+"all_exps": [
+2082
+],
+"answers": [
+"2500 km (70 km width)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the length of the Pakistan-China border?",
+"variants": [
+"What is the length of the Pakistan-China border?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3040
+],
+"all_exps": [
+3040
+],
+"answers": [
+"523 km"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the length of the Pakistan-India border?",
+"variants": [
+"What is the length of the Pakistan-India border?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3041
+],
+"all_exps": [
+3041
+],
+"answers": [
+"2912 km"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the length of the River Indus?",
+"variants": [
+"What is the length of the River Indus?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4009
+],
+"all_exps": [
+4009
+],
+"answers": [
+"3180 KM"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the longest river of Pakistan?",
+"variants": [
+"What is the longest river of Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3132
+],
+"all_exps": [
+3132
+],
+"answers": [
+"Indus (3180 km)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the Manchester of Pakistan?",
+"variants": [
+"What is the Manchester of Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3104
+],
+"all_exps": [
+3104
+],
+"answers": [
+"Faisalabad"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the Mariana Trench?",
+"variants": [
+"What is the Mariana Trench?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1251
+],
+"all_exps": [
+1251
+],
+"answers": [
+"Deepest area of the earth and the Pacific Ocean; the deepest point is Challenger Deep"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the meaning of 'Urdu' in the Turkish language?",
+"variants": [
+"What is the meaning of 'Urdu' in the Turkish language?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2008
+],
+"all_exps": [
+2008
+],
+"answers": [
+"Army"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the multiplicative identity of a complex number?",
+"variants": [
+"What is the multiplicative identity of a complex number?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2161
+],
+"all_exps": [
+2161
+],
+"answers": [
+"1"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "What is the name of an aunt of the Holy Prophet SAW?",
+"variants": [
+"What is the name of an aunt of the Holy Prophet SAW?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2016
+],
+"all_exps": [
+2016
+],
+"answers": [
+"Umme Hakim Binte Muttalib"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the name of the book of Chaudhry Rahmat Ali?",
+"variants": [
+"What is the name of the book of Chaudhry Rahmat Ali?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2050
+],
+"all_exps": [
+2050
+],
+"answers": [
+"Emergency of Pakistan"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the name of the father of Hazrat Ibrahim AS?",
+"variants": [
+"What is the name of the father of Hazrat Ibrahim AS?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2073
+],
+"all_exps": [
+2073
+],
+"answers": [
+"Azar"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the name of the father of Usman RA?",
+"variants": [
+"What is the name of the father of Usman RA?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2135
+],
+"all_exps": [
+2135
+],
+"answers": [
+"Affan ibn Abi al-As"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the name of the first book of Ahadees?",
+"variants": [
+"What is the name of the first book of Ahadees?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1115
+],
+"all_exps": [
+1115
+],
+"answers": [
+"Sahifa Sadiqa"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the name of the first book of Ahadith?",
+"variants": [
+"What is the name of the first book of Ahadith?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4155
+],
+"all_exps": [
+4155
+],
+"answers": [
+"Sahifa Sadiqa"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the name of the mother of Ishaaq AS?",
+"variants": [
+"What is the name of the mother of Ishaaq AS?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1282
+],
+"all_exps": [
+1282
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the name of the mother of Ismael AS?",
+"variants": [
+"What is the name of the mother of Ismael AS?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1281
+],
+"all_exps": [
+1281
+],
+"answers": [
+"Hajra"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the old name of India?",
+"variants": [
+"What is the old name of India?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1057
+],
+"all_exps": [
+1057
+],
+"answers": [
+"Hindustan, Bharat or Bhartavarsha etc"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the oldest dam of Pakistan?",
+"variants": [
+"What is the oldest dam of Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3015
+],
+"all_exps": [
+3015
+],
+"answers": [
+"Warsak Dam"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the Rann of Kutch boundary also called?",
+"variants": [
+"What is the Rann of Kutch boundary also called?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2072
+],
+"all_exps": [
+2072
+],
+"answers": [
+"24 parallel lines"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the relation of Hazrat Asma with Zubair RA?",
+"variants": [
+"What is the relation of Hazrat Asma with Zubair RA?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3047
+],
+"all_exps": [
+3047
+],
+"answers": [
+"Wife"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the relation of Hazrat Safia with Muhammad SAW?",
+"variants": [
+"What is the relation of Hazrat Safia with Muhammad SAW?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2171
+],
+"all_exps": [
+2171
+],
+"answers": [
+"Wife"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the relation of Umme Kulsoom RA with Muhammad PBUH?",
+"variants": [
+"What is the relation of Umme Kulsoom RA with Muhammad PBUH?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3062
+],
+"all_exps": [
+3062
+],
+"answers": [
+"Daughter"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the Saindak project producing?",
+"variants": [
+"What is the Saindak project producing?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4186
+],
+"all_exps": [
+4186
+],
+"answers": [
+"Copper and gold"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the second name of Ghazwa Khandaq?",
+"variants": [
+"What is the second name of Ghazwa Khandaq?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3163
+],
+"all_exps": [
+3163
+],
+"answers": [
+"Ahzab"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the shortest river of Pakistan?",
+"variants": [
+"What is the shortest river of Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2150
+],
+"all_exps": [
+2150
+],
+"answers": [
+"Ravi (720 km)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the shortest river of the world?",
+"variants": [
+"What is the shortest river of the world?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3060
+],
+"all_exps": [
+3060
+],
+"answers": [
+"Roe River"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the total number of ghazwat?",
+"variants": [
+"What is the total number of ghazwat?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1225
+],
+"all_exps": [
+1225
+],
+"answers": [
+"27 (12 mentioned in Quran)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What kind of government system did the 1962 constitution have?",
+"variants": [
+"What kind of government system did the 1962 constitution have?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3197
+],
+"all_exps": [
+3197
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What was the age of Muhammad SAW during migration?",
+"variants": [
+"What was the age of Muhammad SAW during migration?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3195
+],
+"all_exps": [
+3195
+],
+"answers": [
+"53 or 52 years"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What was the age of the Prophet when he placed the Black Stone (Hajr Aswad)?",
+"variants": [
+"What was the age of the Prophet when he placed the Black Stone (Hajr Aswad)?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2042
+],
+"all_exps": [
+2042
+],
+"answers": [
+"35 years"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What was the duration of Quran revelation?",
+"variants": [
+"What was the duration of Quran revelation?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3074
+],
+"all_exps": [
+3074
+],
+"answers": [
+"23 years or 22 years 5 months 14 days"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What was the first battle of Islam?",
+"variants": [
+"What was the first battle of Islam?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3076
+],
+"all_exps": [
+3076
+],
+"answers": [
+"Waddan or Abwa"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What was the first ghazwa of Islam?",
+"variants": [
+"What was the first ghazwa of Islam?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2002
+],
+"all_exps": [
+2002
+],
+"answers": [
+"Widan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What was the first institution of Islam?",
+"variants": [
+"What was the first institution of Islam?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2102
+],
+"all_exps": [
+2102
+],
+"answers": [
+"Suffah"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What will be the last letter of UTYEAB when it is arranged alphabetically?",
+"variants": [
+"What will be the last letter of UTYEAB when it is arranged alphabetically?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1024
+],
+"all_exps": [
+1024
+],
+"answers": [
+"Y"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "What will be the last letter of UTYEAB when you arrange it alphabetically?",
+"variants": [
+"What will be the last letter of UTYEAB when you arrange it alphabetically?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4064
+],
+"all_exps": [
+4064
+],
+"answers": [
+"Y"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "When and by whom was Bengal separated?",
+"variants": [
+"When and by whom was Bengal separated?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1255
+],
+"all_exps": [
+1255
+],
+"answers": [
+"16 October 1905 by Lord Curzon"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When did India become a nuclear state?",
+"variants": [
+"When did India become a nuclear state?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3097
+],
+"all_exps": [
+3097
+],
+"answers": [
+"11 May 1998"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When did Pakistan become a member of the UNO?",
+"variants": [
+"When did Pakistan become a member of the UNO?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4193
+],
+"all_exps": [
+4193
+],
+"answers": [
+"30 Sep 1947"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When did Pakistan become a republic?",
+"variants": [
+"When did Pakistan become a republic?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3109
+],
+"all_exps": [
+3109
+],
+"answers": [
+"23 March 1956"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When did Pakistan join CENTO?",
+"variants": [
+"When did Pakistan join CENTO?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2181
+],
+"all_exps": [
+2181
+],
+"answers": [
+"1955 and left in 1979"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When did Pakistan join the UNO?",
+"variants": [
+"When did Pakistan join the UNO?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4139
+],
+"all_exps": [
+4139
+],
+"answers": [
+"30 September 1947"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When did Quaid-e-Azam sign the Lucknow Pact?",
+"variants": [
+"When did Quaid-e-Azam sign the Lucknow Pact?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4148
+],
+"all_exps": [
+4148
+],
+"answers": [
+"1916"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "When did the Battle of Uhad take place?",
+"variants": [
+"When did the Battle of Uhad take place?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1197
+],
+"all_exps": [
+1197
+],
+"answers": [
+"3 Hijri"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When did the Congress ministries start?",
+"variants": [
+"When did the Congress ministries start?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3145
+],
+"all_exps": [
+3145
+],
+"answers": [
+"1937 to 1939"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When did the Prophet migrate to Madina?",
+"variants": [
+"When did the Prophet migrate to Madina?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1236
+],
+"all_exps": [
+1236
+],
+"answers": [
+"13 Nabwi, 622 AD"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When do we celebrate Kashmir Day?",
+"variants": [
+"When do we celebrate Kashmir Day?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2045
+],
+"all_exps": [
+2045
+],
+"answers": [
+"5 Feb"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When was Ali RA martyred?",
+"variants": [
+"When was Ali RA martyred?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2184
+],
+"all_exps": [
+2184
+],
+"answers": [
+"21 Ramzan 40 Hijri, 30 January 661 AD"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When was Bengal partitioned?",
+"variants": [
+"When was Bengal partitioned?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3077
+],
+"all_exps": [
+3077
+],
+"answers": [
+"16 October 1905 by Lord Curzon"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When was Ghazwa e Tabuk fought?",
+"variants": [
+"When was Ghazwa e Tabuk fought?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3167
+],
+"all_exps": [
+3167
+],
+"answers": [
+"9 Hijri, 630 AD, 30000 Muslims fought against Romans"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When was Ghazwa Mu'tah fought?",
+"variants": [
+"When was Ghazwa Mu'tah fought?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3174
+],
+"all_exps": [
+3174
+],
+"answers": [
+"8 Hijri (first non-Arab war)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When was Jang e Yamama fought?",
+"variants": [
+"When was Jang e Yamama fought?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3170
+],
+"all_exps": [
+3170
+],
+"answers": [
+"11 Hijri. Leader Abu Bakar RA or Khalid bin Waleed RA. 13000 Muslims and 40000 kuffar. 70 hafiz shaheed"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "When was Makkah conquered?",
+"variants": [
+"When was Makkah conquered?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3078
+],
+"all_exps": [
+3078
+],
+"answers": [
+"20 Ramzan 8 Hijri, 630 AD"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When was Sui gas discovered?",
+"variants": [
+"When was Sui gas discovered?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2119
+],
+"all_exps": [
+2119
+],
+"answers": [
+"1952"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When was the 1st Hijrat e Habsha?",
+"variants": [
+"When was the 1st Hijrat e Habsha?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3182
+],
+"all_exps": [
+3182
+],
+"answers": [
+"5 Nabwi"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When was the 2nd Hijrat e Habsha?",
+"variants": [
+"When was the 2nd Hijrat e Habsha?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3179
+],
+"all_exps": [
+3179
+],
+"answers": [
+"7 Nabwi"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When was the Cabinet Mission?",
+"variants": [
+"When was the Cabinet Mission?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4049
+],
+"all_exps": [
+4049
+],
+"answers": [
+"1946"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When was the China-Pakistan border formed?",
+"variants": [
+"When was the China-Pakistan border formed?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3110
+],
+"all_exps": [
+3110
+],
+"answers": [
+"2 March 1963"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When was the first journey of the Holy Prophet to Madina?",
+"variants": [
+"When was the first journey of the Holy Prophet to Madina?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2160
+],
+"all_exps": [
+2160
+],
+"answers": [
+"13 Nabwi, 622 AD"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When was the last wahi revealed?",
+"variants": [
+"When was the last wahi revealed?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3156
+],
+"all_exps": [
+3156
+],
+"answers": [
+"18 Zul Hajj 10 Hijri"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When was the Nehru Report published?",
+"variants": [
+"When was the Nehru Report published?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4001
+],
+"all_exps": [
+4001
+],
+"answers": [
+"10 Aug 1928"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When was the PPP established?",
+"variants": [
+"When was the PPP established?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2178
+],
+"all_exps": [
+2178
+],
+"answers": [
+"Nov 1967"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When was the Shimla Conference held?",
+"variants": [
+"When was the Shimla Conference held?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2108
+],
+"all_exps": [
+2108
+],
+"answers": [
+"1945"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When was the Tehreek-e-Khilafat started?",
+"variants": [
+"When was the Tehreek-e-Khilafat started?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1112
+],
+"all_exps": [
+1112
+],
+"answers": [
+"Started in 1919"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When was West Pakistan declared One Unit?",
+"variants": [
+"When was West Pakistan declared One Unit?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4037
+],
+"all_exps": [
+4037
+],
+"answers": [
+"5 Oct 1955 by Iskandar Mirza or 1954 by Ch Muhammad Ali"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Where do the Pacific Ocean and Atlantic Ocean join?",
+"variants": [
+"Where do the Pacific Ocean and Atlantic Ocean join?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3112
+],
+"all_exps": [
+3112
+],
+"answers": [
+"Cape Horn or Suez Canal"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Where is Gandhara located?",
+"variants": [
+"Where is Gandhara located?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2167
+],
+"all_exps": [
+2167
+],
+"answers": [
+"Peshawar between Swat and Potohar valley, KPK"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is Hanna Lake located?",
+"variants": [
+"Where is Hanna Lake located?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3003
+],
+"all_exps": [
+3003
+],
+"answers": [
+"Balochistan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is Harappa situated?",
+"variants": [
+"Where is Harappa situated?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3061
+],
+"all_exps": [
+3061
+],
+"answers": [
+"Sahiwal on River Ravi"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is Heidelberg?",
+"variants": [
+"Where is Heidelberg?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2084
+],
+"all_exps": [
+2084
+],
+"answers": [
+"South Western Germany"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is Jabal e Noor?",
+"variants": [
+"Where is Jabal e Noor?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2111
+],
+"all_exps": [
+2111
+],
+"answers": [
+"Makkah"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is Jannat ul Baqi?",
+"variants": [
+"Where is Jannat ul Baqi?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2035
+],
+"all_exps": [
+2035
+],
+"answers": [
+"Madina"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is Kachura Lake located?",
+"variants": [
+"Where is Kachura Lake located?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3009
+],
+"all_exps": [
+3009
+],
+"answers": [
+"Skardu"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is Kalabagh?",
+"variants": [
+"Where is Kalabagh?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2075
+],
+"all_exps": [
+2075
+],
+"answers": [
+"Mianwali"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is Kalam Valley?",
+"variants": [
+"Where is Kalam Valley?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3093
+],
+"all_exps": [
+3093
+],
+"answers": [
+"Swat"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is Masjid Khaif located?",
+"variants": [
+"Where is Masjid Khaif located?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2103
+],
+"all_exps": [
+2103
+],
+"answers": [
+"Mina"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Where is Masjid Wazir Khan?",
+"variants": [
+"Where is Masjid Wazir Khan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3072
+],
+"all_exps": [
+3072
+],
+"answers": [
+"Lahore"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is Mirani Dam located?",
+"variants": [
+"Where is Mirani Dam located?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3012
+],
+"all_exps": [
+3012
+],
+"answers": [
+"Balochistan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is Moenjodaro?",
+"variants": [
+"Where is Moenjodaro?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3079
+],
+"all_exps": [
+3079
+],
+"answers": [
+"On River Indus, Larkana"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is Mount Olympus?",
+"variants": [
+"Where is Mount Olympus?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4209
+],
+"all_exps": [
+4209
+],
+"answers": [
+"Greece"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is Nanga Parbat?",
+"variants": [
+"Where is Nanga Parbat?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2193
+],
+"all_exps": [
+2193
+],
+"answers": [
+"Himalayas (9th highest peak of the world)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is Numal Lake?",
+"variants": [
+"Where is Numal Lake?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2194
+],
+"all_exps": [
+2194
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Where is Qila Bala Hisar?",
+"variants": [
+"Where is Qila Bala Hisar?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3070
+],
+"all_exps": [
+3070
+],
+"answers": [
+"Peshawar"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is Rakaposhi?",
+"variants": [
+"Where is Rakaposhi?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2191
+],
+"all_exps": [
+2191
+],
+"answers": [
+"Karakoram range (27th highest peak of the world)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is Rawal Lake located?",
+"variants": [
+"Where is Rawal Lake located?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3008
+],
+"all_exps": [
+3008
+],
+"answers": [
+"Islamabad"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is Shalimar Bagh?",
+"variants": [
+"Where is Shalimar Bagh?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2027
+],
+"all_exps": [
+2027
+],
+"answers": [
+"Lahore"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is Simly Lake located?",
+"variants": [
+"Where is Simly Lake located?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3005
+],
+"all_exps": [
+3005
+],
+"answers": [
+"Islamabad"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is the biggest polo ground in the world?",
+"variants": [
+"Where is the biggest polo ground in the world?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2004
+],
+"all_exps": [
+2004
+],
+"answers": [
+"Shandur Top, Gilgit"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is the Cholistan Desert?",
+"variants": [
+"Where is the Cholistan Desert?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2023
+],
+"all_exps": [
+2023
+],
+"answers": [
+"Bahawalpur"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is the CIA headquarters?",
+"variants": [
+"Where is the CIA headquarters?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2058
+],
+"all_exps": [
+2058
+],
+"answers": [
+"Langley, McLean, Virginia, US"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is the headquarters of the Commonwealth?",
+"variants": [
+"Where is the headquarters of the Commonwealth?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2112
+],
+"all_exps": [
+2112
+],
+"answers": [
+"London, UK"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is the headquarters of the World Food Organization?",
+"variants": [
+"Where is the headquarters of the World Food Organization?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3187
+],
+"all_exps": [
+3187
+],
+"answers": [
+"Rome, Italy"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is the Jinnah Research Centre situated?",
+"variants": [
+"Where is the Jinnah Research Centre situated?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1198
+],
+"all_exps": [
+1198
+],
+"answers": [
+"Queen Maud Land, Eastern Antarctica"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Where is the Kharan Desert?",
+"variants": [
+"Where is the Kharan Desert?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2186
+],
+"all_exps": [
+2186
+],
+"answers": [
+"Balochistan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is the Khewra Mine?",
+"variants": [
+"Where is the Khewra Mine?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3100
+],
+"all_exps": [
+3100
+],
+"answers": [
+"Pind Dadan Khan, Jhelum"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is the Kirthar Range?",
+"variants": [
+"Where is the Kirthar Range?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3123
+],
+"all_exps": [
+3123
+],
+"answers": [
+"Sindh"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is the permanent secretariat of SAARC?",
+"variants": [
+"Where is the permanent secretariat of SAARC?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3102
+],
+"all_exps": [
+3102
+],
+"answers": [
+"Kathmandu, Nepal"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is the Quaid-e-Azam Residency?",
+"variants": [
+"Where is the Quaid-e-Azam Residency?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3054
+],
+"all_exps": [
+3054
+],
+"answers": [
+"Ziarat"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is the Red Cross headquarters?",
+"variants": [
+"Where is the Red Cross headquarters?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1277
+],
+"all_exps": [
+1277
+],
+"answers": [
+"Geneva, Switzerland"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is the Salt Water Lake located?",
+"variants": [
+"Where is the Salt Water Lake located?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3006
+],
+"all_exps": [
+3006
+],
+"answers": [
+"Balochistan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is the Shah Jahan Mosque?",
+"variants": [
+"Where is the Shah Jahan Mosque?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2019
+],
+"all_exps": [
+2019
+],
+"answers": [
+"Thatta"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is the Thal Desert?",
+"variants": [
+"Where is the Thal Desert?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3124
+],
+"all_exps": [
+3124
+],
+"answers": [
+"Punjab"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is the tomb of Bulleh Shah?",
+"variants": [
+"Where is the tomb of Bulleh Shah?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2085
+],
+"all_exps": [
+2085
+],
+"answers": [
+"Kasur"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is the tomb of Data Ganj Bakhsh?",
+"variants": [
+"Where is the tomb of Data Ganj Bakhsh?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3069
+],
+"all_exps": [
+3069
+],
+"answers": [
+"Lahore"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is the Whitney mountain?",
+"variants": [
+"Where is the Whitney mountain?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2168
+],
+"all_exps": [
+2168
+],
+"answers": [
+"Appalachian Mountain Range, US"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Where is the WTO headquarters?",
+"variants": [
+"Where is the WTO headquarters?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4021
+],
+"all_exps": [
+4021
+],
+"answers": [
+"Geneva, Switzerland"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is the Zardak peak?",
+"variants": [
+"Where is the Zardak peak?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2080
+],
+"all_exps": [
+2080
+],
+"answers": [
+"In Kirthar Range, Sindh"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where was Sher Shah Suri buried?",
+"variants": [
+"Where was Sher Shah Suri buried?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1276
+],
+"all_exps": [
+1276
+],
+"answers": [
+"Sasaram, India"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where was the 2012 Olympic athletics held?",
+"variants": [
+"Where was the 2012 Olympic athletics held?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2154
+],
+"all_exps": [
+2154
+],
+"answers": [
+"UK"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Where was the first railway track established in Pakistan?",
+"variants": [
+"Where was the first railway track established in Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3189
+],
+"all_exps": [
+3189
+],
+"answers": [
+"Karachi and Kotri"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where was Zia ul Haq assassinated?",
+"variants": [
+"Where was Zia ul Haq assassinated?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1268
+],
+"all_exps": [
+1268
+],
+"answers": [
+"Bahawalpur"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where were the tribes of Aus and Khazraj settled?",
+"variants": [
+"Where were the tribes of Aus and Khazraj settled?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3050
+],
+"all_exps": [
+3050
+],
+"answers": [
+"Yemen"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which are the Kharif crops?",
+"variants": [
+"Which are the Kharif crops?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3108
+],
+"all_exps": [
+3108
+],
+"answers": [
+"Rice, maize, sorghum, cotton"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which are the Moaztain Surahs?",
+"variants": [
+"Which are the Moaztain Surahs?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1209
+],
+"all_exps": [
+1209
+],
+"answers": [
+"Surah Al-Falak and Surah An-Naas"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which area of Pakistan is famous for illegal weapons?",
+"variants": [
+"Which area of Pakistan is famous for illegal weapons?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2067
+],
+"all_exps": [
+2067
+],
+"answers": [
+"Darra Adam Khel"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which battle was the first non-Arab war?",
+"variants": [
+"Which battle was the first non-Arab war?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2098
+],
+"all_exps": [
+2098
+],
+"answers": [
+"Mutah"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which cell has no nucleus?",
+"variants": [
+"Which cell has no nucleus?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3157
+],
+"all_exps": [
+3157
+],
+"answers": [
+"Prokaryotic"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which continent has only one country?",
+"variants": [
+"Which continent has only one country?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3186
+],
+"all_exps": [
+3186
+],
+"answers": [
+"Australia"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which country accepted Pakistan first?",
+"variants": [
+"Which country accepted Pakistan first?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4157
+],
+"all_exps": [
+4157
+],
+"answers": [
+"Iran"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which country has no capital?",
+"variants": [
+"Which country has no capital?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2010
+],
+"all_exps": [
+2010
+],
+"answers": [
+"Nauru (It is also the smallest democratic country in the world)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which country has the highest number of satellites?",
+"variants": [
+"Which country has the highest number of satellites?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3044
+],
+"all_exps": [
+3044
+],
+"answers": [
+"America"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which country hosted the 2016 Olympics?",
+"variants": [
+"Which country hosted the 2016 Olympics?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2180
+],
+"all_exps": [
+2180
+],
+"answers": [
+"Brazil"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which country recognised Pakistan first?",
+"variants": [
+"Which country recognised Pakistan first?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1117
+],
+"all_exps": [
+1117
+],
+"answers": [
+"Iran"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which daughter of Usman was a wife of the Prophet SAW?",
+"variants": [
+"Which daughter of Usman was a wife of the Prophet SAW?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3149
+],
+"all_exps": [
+3149
+],
+"answers": [
+"Hafsha RA"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which idol did Taif worship?",
+"variants": [
+"Which idol did Taif worship?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3143
+],
+"all_exps": [
+3143
+],
+"answers": [
+"Uzza"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which instrument is used to measure the altitude of the sun?",
+"variants": [
+"Which instrument is used to measure the altitude of the sun?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3192
+],
+"all_exps": [
+3192
+],
+"answers": [
+"Sextant"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which is the biggest natural lake of Pakistan?",
+"variants": [
+"Which is the biggest natural lake of Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1262
+],
+"all_exps": [
+1262
+],
+"answers": [
+"Manchar in Dadu"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which is the lengthiest constitution of the world?",
+"variants": [
+"Which is the lengthiest constitution of the world?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1278
+],
+"all_exps": [
+1278
+],
+"answers": [
+"India (444 articles)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which is the lengthiest constitution?",
+"variants": [
+"Which is the lengthiest constitution?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1213
+],
+"all_exps": [
+1213
+],
+"answers": [
+"Indian Constitution"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which is the tallest tower of Asia?",
+"variants": [
+"Which is the tallest tower of Asia?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1241
+],
+"all_exps": [
+1241
+],
+"answers": [
+"Oriental Pearl TV"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which is the tallest tower of the world?",
+"variants": [
+"Which is the tallest tower of the world?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1242
+],
+"all_exps": [
+1242
+],
+"answers": [
+"KXJB TV"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which lake covers one full country?",
+"variants": [
+"Which lake covers one full country?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1259
+],
+"all_exps": [
+1259
+],
+"answers": [
+"Victoria"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which Pakistani woman and man climbed Mount Everest first?",
+"variants": [
+"Which Pakistani woman and man climbed Mount Everest first?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1238
+],
+"all_exps": [
+1238
+],
+"answers": [
+"Mirza Ali or Sabir Nazir and Samina Baig"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which party won the election in 2008?",
+"variants": [
+"Which party won the election in 2008?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2065
+],
+"all_exps": [
+2065
+],
+"answers": [
+"PPP"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which pass connects DI Khan and Gomal Zam Dam?",
+"variants": [
+"Which pass connects DI Khan and Gomal Zam Dam?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3155
+],
+"all_exps": [
+3155
+],
+"answers": [
+"Gomal Pass"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which picture is on the back of the 5000 rupee note?",
+"variants": [
+"Which picture is on the back of the 5000 rupee note?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2044
+],
+"all_exps": [
+2044
+],
+"answers": [
+"Faisal Mosque"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which places does the Dargai Pass connect?",
+"variants": [
+"Which places does the Dargai Pass connect?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3037
+],
+"all_exps": [
+3037
+],
+"answers": [
+"Mardan and Malakand"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which places does the Dorah Pass connect?",
+"variants": [
+"Which places does the Dorah Pass connect?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3036
+],
+"all_exps": [
+3036
+],
+"answers": [
+"Nuristan (Afghanistan) with Chitral"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which places does the Harnai Pass connect?",
+"variants": [
+"Which places does the Harnai Pass connect?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3025
+],
+"all_exps": [
+3025
+],
+"answers": [
+"Ziarat and Loralai"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which places does the Khojak Pass connect?",
+"variants": [
+"Which places does the Khojak Pass connect?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3029
+],
+"all_exps": [
+3029
+],
+"answers": [
+"Qila Abdullah with Chaman (Afghanistan)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which places does the Khunjerab Pass connect?",
+"variants": [
+"Which places does the Khunjerab Pass connect?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3026
+],
+"all_exps": [
+3026
+],
+"answers": [
+"Gilgit with China"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which places does the Khyber Pass connect?",
+"variants": [
+"Which places does the Khyber Pass connect?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3035
+],
+"all_exps": [
+3035
+],
+"answers": [
+"Kabul with Peshawar"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which places does the Malakand Pass connect?",
+"variants": [
+"Which places does the Malakand Pass connect?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3033
+],
+"all_exps": [
+3033
+],
+"answers": [
+"Peshawar and Chitral"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which places does the Mintaka/Muztagh Pass connect?",
+"variants": [
+"Which places does the Mintaka/Muztagh Pass connect?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3027
+],
+"all_exps": [
+3027
+],
+"answers": [
+"Gilgit with Hunza, or Baltistan with Yarkand (China)"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which places does the Shandur Pass connect?",
+"variants": [
+"Which places does the Shandur Pass connect?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3031
+],
+"all_exps": [
+3031
+],
+"answers": [
+"Gilgit with Chitral"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which places does the Shangla Pass connect?",
+"variants": [
+"Which places does the Shangla Pass connect?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3032
+],
+"all_exps": [
+3032
+],
+"answers": [
+"Upper Swat and Lower Swat"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which places does the Tochi Pass connect?",
+"variants": [
+"Which places does the Tochi Pass connect?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3030
+],
+"all_exps": [
+3030
+],
+"answers": [
+"Bannu (Pakistan) and Ghazni"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which province of Pakistan is called Babul Islam?",
+"variants": [
+"Which province of Pakistan is called Babul Islam?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1207
+],
+"all_exps": [
+1207
+],
+"answers": [
+"Sindh"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which sea has the most salty water?",
+"variants": [
+"Which sea has the most salty water?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1211
+],
+"all_exps": [
+1211
+],
+"answers": [
+"Dead Sea"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which strait lies between Greenland and Iceland?",
+"variants": [
+"Which strait lies between Greenland and Iceland?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2129
+],
+"all_exps": [
+2129
+],
+"answers": [
+"Denmark Strait"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which surah is called Uroos ul Quran?",
+"variants": [
+"Which surah is called Uroos ul Quran?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2125
+],
+"all_exps": [
+2125
+],
+"answers": [
+"Rehman"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which surah starts without Bismillah?",
+"variants": [
+"Which surah starts without Bismillah?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2048
+],
+"all_exps": [
+2048
+],
+"answers": [
+"Toba"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which Surah was recited in front of Najashi?",
+"variants": [
+"Which Surah was recited in front of Najashi?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1210
+],
+"all_exps": [
+1210
+],
+"answers": [
+"Surah Maryam"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which US president visited Pakistan after the 1965 war?",
+"variants": [
+"Which US president visited Pakistan after the 1965 war?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2088
+],
+"all_exps": [
+2088
+],
+"answers": [
+"Lyndon B. Johnson"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which was the first war with India over Kashmir?",
+"variants": [
+"Which was the first war with India over Kashmir?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4132
+],
+"all_exps": [
+4132
+],
+"answers": [
+"1947-1948 Indo-Pak War"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who built Masjid e Zarar?",
+"variants": [
+"Who built Masjid e Zarar?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3122
+],
+"all_exps": [
+3122
+],
+"answers": [
+"Amir al Rahib"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who conquered Egypt?",
+"variants": [
+"Who conquered Egypt?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4027
+],
+"all_exps": [
+4027
+],
+"answers": [
+"Zulqarnain RA in the era of Umar RA"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who discovered badminton?",
+"variants": [
+"Who discovered badminton?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2031
+],
+"all_exps": [
+2031
+],
+"answers": [
+"British army officer in India"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who established Bait ul Mal?",
+"variants": [
+"Who established Bait ul Mal?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2095
+],
+"all_exps": [
+2095
+],
+"answers": [
+"Ali RA"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who gave the suggestion for the Sulah Hudaibiya?",
+"variants": [
+"Who gave the suggestion for the Sulah Hudaibiya?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2047
+],
+"all_exps": [
+2047
+],
+"answers": [
+"Muhammad SAW"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who has the title Jami ul Quran?",
+"variants": [
+"Who has the title Jami ul Quran?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4073
+],
+"all_exps": [
+4073
+],
+"answers": [
+"Hazrat Usman RA"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who introduced Islamization?",
+"variants": [
+"Who introduced Islamization?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1266
+],
+"all_exps": [
+1266
+],
+"answers": [
+"Abul Ala Maududi"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who is Sadiq Sanjrani?",
+"variants": [
+"Who is Sadiq Sanjrani?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3056
+],
+"all_exps": [
+3056
+],
+"answers": [
+"Chairman Senate"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who is the angel of death?",
+"variants": [
+"Who is the angel of death?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2061
+],
+"all_exps": [
+2061
+],
+"answers": [
+"Izrael AS"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who is the author of 'The Conquest of Happiness'?",
+"variants": [
+"Who is the author of 'The Conquest of Happiness'?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2030
+],
+"all_exps": [
+2030
+],
+"answers": [
+"Bertrand Russell"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who is the author of the book 'Hamlet'?",
+"variants": [
+"Who is the author of the book 'Hamlet'?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2024
+],
+"all_exps": [
+2024
+],
+"answers": [
+"Shakespeare"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who is the only Pakistani woman to climb the top 5 peaks of the world?",
+"variants": [
+"Who is the only Pakistani woman to climb the top 5 peaks of the world?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2145
+],
+"all_exps": [
+2145
+],
+"answers": [
+"Samina Baig"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who is the only woman to have climbed the top 5 peaks of the world?",
+"variants": [
+"Who is the only woman to have climbed the top 5 peaks of the world?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4040
+],
+"all_exps": [
+4040
+],
+"answers": [
+"Junko Ishibashi"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who is the Railway Minister?",
+"variants": [
+"Who is the Railway Minister?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4070
+],
+"all_exps": [
+4070
+],
+"answers": [
+"Sheikh Rasheed Ahmad"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who led the enemy force in Ghazwa Uhad?",
+"variants": [
+"Who led the enemy force in Ghazwa Uhad?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1140
+],
+"all_exps": [
+1140
+],
+"answers": [
+"Abu Sufyan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who led the enemy force in the Battle of Uhud?",
+"variants": [
+"Who led the enemy force in the Battle of Uhud?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4180
+],
+"all_exps": [
+4180
+],
+"answers": [
+"Abu Sufyan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who made Hazrat Muaz governor of Yemen?",
+"variants": [
+"Who made Hazrat Muaz governor of Yemen?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3045
+],
+"all_exps": [
+3045
+],
+"answers": [
+"Muhammad SAW"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who made the Radcliffe Award?",
+"variants": [
+"Who made the Radcliffe Award?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3137
+],
+"all_exps": [
+3137
+],
+"answers": [
+"Sir Cyril Radcliffe"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who made Usman RA accept Islam?",
+"variants": [
+"Who made Usman RA accept Islam?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3114
+],
+"all_exps": [
+3114
+],
+"answers": [
+"Abu Bakar RA"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who mediated the Indus Waters Treaty?",
+"variants": [
+"Who mediated the Indus Waters Treaty?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1120
+],
+"all_exps": [
+1120
+],
+"answers": [
+"World Bank"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who nursed Muhammad SAW?",
+"variants": [
+"Who nursed Muhammad SAW?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3144
+],
+"all_exps": [
+3144
+],
+"answers": [
+"Halima RA"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who said \"The morals of the Quran are the embodiment of the Holy Prophet (S.A.W)\"?",
+"variants": [
+"Who said \"The morals of the Quran are the embodiment of the Holy Prophet (S.A.W)\"?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1201
+],
+"all_exps": [
+1201
+],
+"answers": [
+"Hazrat Ayesha R.A"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who scribed the Treaty of Hudaibiya?",
+"variants": [
+"Who scribed the Treaty of Hudaibiya?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3139
+],
+"all_exps": [
+3139
+],
+"answers": [
+"Hazrat Ali RA in 6 Hijri, 628 AD"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who selects the president of Pakistan?",
+"variants": [
+"Who selects the president of Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3120
+],
+"all_exps": [
+3120
+],
+"answers": [
+"Senate, National and Provincial Assemblies"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who signed CPEC?",
+"variants": [
+"Who signed CPEC?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2087
+],
+"all_exps": [
+2087
+],
+"answers": [
+"Nawaz Sharif and Xi Jinping"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who started the Mughal Empire?",
+"variants": [
+"Who started the Mughal Empire?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2055
+],
+"all_exps": [
+2055
+],
+"answers": [
+"Zaheeruddin Babar"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who started the Non-Cooperation Movement during the Khilafat Movement?",
+"variants": [
+"Who started the Non-Cooperation Movement during the Khilafat Movement?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3063
+],
+"all_exps": [
+3063
+],
+"answers": [
+"Gandhi"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who took government after Ayub Khan?",
+"variants": [
+"Who took government after Ayub Khan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3119
+],
+"all_exps": [
+3119
+],
+"answers": [
+"Yahya Khan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who was defeated in the Battle of Plassey?",
+"variants": [
+"Who was defeated in the Battle of Plassey?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2164
+],
+"all_exps": [
+2164
+],
+"answers": [
+"Clive defeated Siraj ud Daula at Plassey in 1757 and captured Calcutta"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who was the 1st woman Speaker of the Balochistan Assembly?",
+"variants": [
+"Who was the 1st woman Speaker of the Balochistan Assembly?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1103
+],
+"all_exps": [
+1103
+],
+"answers": [
+"Rahila Hameed Khan Durrani"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who was the 2nd caliph of Islam?",
+"variants": [
+"Who was the 2nd caliph of Islam?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3089
+],
+"all_exps": [
+3089
+],
+"answers": [
+"Umar RA"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who was the Chief of Army Staff in 1965?",
+"variants": [
+"Who was the Chief of Army Staff in 1965?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4003
+],
+"all_exps": [
+4003
+],
+"answers": [
+"General Musa Khan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who was the Chief of Army Staff in 1971?",
+"variants": [
+"Who was the Chief of Army Staff in 1971?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4005
+],
+"all_exps": [
+4005
+],
+"answers": [
+"General Yahya Khan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who was the Chief of Army Staff in 1999?",
+"variants": [
+"Who was the Chief of Army Staff in 1999?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4007
+],
+"all_exps": [
+4007
+],
+"answers": [
+"General Pervaiz Musharraf"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who was the eldest son of Zahiruddin Babar?",
+"variants": [
+"Who was the eldest son of Zahiruddin Babar?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3126
+],
+"all_exps": [
+3126
+],
+"answers": [
+"Humayun"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who was the first woman Speaker of the Balochistan Assembly?",
+"variants": [
+"Who was the first woman Speaker of the Balochistan Assembly?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4143
+],
+"all_exps": [
+4143
+],
+"answers": [
+"Rahila Hameed Khan Durrani"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who was the Governor of Yemen?",
+"variants": [
+"Who was the Governor of Yemen?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1229
+],
+"all_exps": [
+1229
+],
+"answers": [
+"Bazaan ibne Sasaan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who was the kuffar leader in Ghazwa Khandaq?",
+"variants": [
+"Who was the kuffar leader in Ghazwa Khandaq?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3165
+],
+"all_exps": [
+3165
+],
+"answers": [
+"Abu Sufyan RA"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who was the leader in the Battle of Yamama?",
+"variants": [
+"Who was the leader in the Battle of Yamama?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3075
+],
+"all_exps": [
+3075
+],
+"answers": [
+"Abu Bakar RA or Khalid bin Waleed"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who was the mediator of the Indus Treaty?",
+"variants": [
+"Who was the mediator of the Indus Treaty?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4160
+],
+"all_exps": [
+4160
+],
+"answers": [
+"World Bank"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who were the Nishan-e-Haider holders of 1999?",
+"variants": [
+"Who were the Nishan-e-Haider holders of 1999?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1232
+],
+"all_exps": [
+1232
+],
+"answers": [
+"Havaldar Lalak Jan, Colonel Sher Khan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who won the 2003 Cricket World Cup?",
+"variants": [
+"Who won the 2003 Cricket World Cup?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2083
+],
+"all_exps": [
+2083
+],
+"answers": [
+"Australia"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who won the 2020 Kabaddi World Cup?",
+"variants": [
+"Who won the 2020 Kabaddi World Cup?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3153
+],
+"all_exps": [
+3153
+],
+"answers": [
+"Pakistan"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who wrote Hayat e Javed?",
+"variants": [
+"Who wrote Hayat e Javed?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3142
+],
+"all_exps": [
+3142
+],
+"answers": [
+"Altaf Hussain Hali"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who wrote the book 'A Discipline Divided'?",
+"variants": [
+"Who wrote the book 'A Discipline Divided'?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2143
+],
+"all_exps": [
+2143
+],
+"answers": [
+"Gabriel Almond"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who wrote the book 'Hunter par Hunter'?",
+"variants": [
+"Who wrote the book 'Hunter par Hunter'?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2128
+],
+"all_exps": [
+2128
+],
+"answers": [
+"Sir Syed Ahmad Khan"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who wrote the book 'Jinnah's Vision of Pakistan'?",
+"variants": [
+"Who wrote the book 'Jinnah's Vision of Pakistan'?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2136
+],
+"all_exps": [
+2136
+],
+"answers": [
+"S. Mehmood"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who wrote the book Construction of Religious Boundaries?",
+"variants": [
+"Who wrote the book Construction of Religious Boundaries?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3151
+],
+"all_exps": [
+3151
+],
+"answers": [
+"Harjot Oberoi"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who wrote the book The Discipline Dilemma?",
+"variants": [
+"Who wrote the book The Discipline Dilemma?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3082
+],
+"all_exps": [
+3082
+],
+"answers": [
+"Roman Lewis"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who wrote the book The Dividing Discipline?",
+"variants": [
+"Who wrote the book The Dividing Discipline?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3081
+],
+"all_exps": [
+3081
+],
+"answers": [
+"Kalevi Jaakko Holsti"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who wrote Zabur e Ajam?",
+"variants": [
+"Who wrote Zabur e Ajam?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3183
+],
+"all_exps": [
+3183
+],
+"answers": [
+"Allama Iqbal"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Why was Malala given an award?",
+"variants": [
+"Why was Malala given an award?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4151
+],
+"all_exps": [
+4151
+],
+"answers": [
+"Peace"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "With whose assistance was KANUPP in Karachi built?",
+"variants": [
+"With whose assistance was KANUPP in Karachi built?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1224
+],
+"all_exps": [
+1224
+],
+"answers": [
+"Canadian assistance"
+],
+"confident_answer": true,
+"kind": "academic"
+}
+]

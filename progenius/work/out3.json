@@ -1,0 +1,456 @@
+[
+ {
+  "src": "A",
+  "num": 4,
+  "question": "Who is the new Prime Minister of Canada?",
+  "options": [
+   "Mark Carney",
+   "Justin Trudeau",
+   "Pierre Poilievre",
+   "Stephen Harper"
+  ],
+  "correct": 0,
+  "why": "As of Oct 2026, Mark Carney is Prime Minister of Canada. He became Liberal leader in March 2025 and won the April 2025 election.",
+  "rel": "Justin Trudeau resigned as Liberal leader in 2025. Ottawa is Canada's capital."
+ },
+ {
+  "src": "A",
+  "num": 19,
+  "question": "Who was Babur’s son and successor?",
+  "options": [
+   "Akbar",
+   "Jahangir",
+   "Shah Jahan",
+   "Humayun"
+  ],
+  "correct": 3,
+  "why": "Humayun succeeded his father Babur in 1530.",
+  "rel": "Babur won the First Battle of Panipat in 1526. Humayun ruled 1530-1540 and again from 1555."
+ },
+ {
+  "src": "A",
+  "num": 41,
+  "question": "What was Gilgit-Baltistan’s population?",
+  "options": [
+   "About 0.99 million",
+   "About 2.35 million",
+   "About 1.71 million",
+   "About 3.10 million"
+  ],
+  "correct": 2,
+  "why": "The 2023 census gave Gilgit-Baltistan a population of 1,709,049. The 2017 census figure was about 1.49 million.",
+  "rel": "Gilgit-Baltistan is not one of Pakistan's four provinces. Its capital is Gilgit.",
+  "problem": "Question has no date. Source gives 1.49 million (2017 census); latest 2023 census figure is 1.71 million, used here. Wrong options are far from both figures."
+ },
+ {
+  "src": "A",
+  "num": 56,
+  "question": "Where is NATO headquarters?",
+  "options": [
+   "Paris, France",
+   "Brussels, Belgium",
+   "Geneva, Switzerland",
+   "The Hague, Netherlands"
+  ],
+  "correct": 1,
+  "why": "NATO headquarters is in Brussels, Belgium.",
+  "rel": "NATO was founded on 4 April 1949. Its HQ is in the Haren area of Brussels."
+ },
+ {
+  "src": "A",
+  "num": 71,
+  "question": "Who was Pakistan’s Army Commander-in-Chief during the 1965 war?",
+  "options": [
+   "General Yahya Khan",
+   "General Muhammad Musa Khan",
+   "General Ayub Khan",
+   "General Gul Hassan Khan"
+  ],
+  "correct": 1,
+  "why": "Gen. Muhammad Musa Khan was Army Commander-in-Chief in the 1965 war.",
+  "rel": "The war began in September 1965. Ayub Khan was President."
+ },
+ {
+  "src": "A",
+  "num": 86,
+  "question": "Who is known as the father of robotics?",
+  "options": [
+   "Joseph F. Engelberger",
+   "George Devol",
+   "Isaac Asimov",
+   "Karel Capek"
+  ],
+  "correct": 0,
+  "why": "Joseph Engelberger is called the father of industrial robotics because he commercialized the Unimate robot.",
+  "rel": "George Devol patented an early programmable robot. Karel Capek coined the word 'robot'."
+ },
+ {
+  "src": "A",
+  "num": 100,
+  "question": "Who is the Chief Minister of Sindh?",
+  "options": [
+   "Qaim Ali Shah",
+   "Kamran Tessori",
+   "Sharjeel Memon",
+   "Syed Murad Ali Shah"
+  ],
+  "correct": 3,
+  "why": "As of Oct 2026, Syed Murad Ali Shah is Chief Minister of Sindh, in his third consecutive term.",
+  "rel": "He first took office in 2016. Kamran Tessori is Governor of Sindh, not Chief Minister."
+ },
+ {
+  "src": "A",
+  "num": 110,
+  "question": "What symbol is used for the set of rational numbers?",
+  "options": [
+   "R",
+   "Z",
+   "Q",
+   "N"
+  ],
+  "correct": 2,
+  "why": "Q is the symbol for rational numbers (quotient, p/q).",
+  "rel": "R is for real numbers, Z for integers, N for natural numbers."
+ },
+ {
+  "src": "A",
+  "num": 123,
+  "question": "Who founded Dawn newspaper?",
+  "options": [
+   "Liaquat Ali Khan",
+   "Allama Iqbal",
+   "Muhammad Ali Jinnah",
+   "Maulana Zafar Ali Khan"
+  ],
+  "correct": 2,
+  "why": "Jinnah founded Dawn in Delhi in 1941.",
+  "rel": "Dawn later moved to Pakistan. It is a major English-language newspaper."
+ },
+ {
+  "src": "A",
+  "num": 138,
+  "question": "What does CPEC stand for?",
+  "options": [
+   "China-Pakistan Energy Council",
+   "China-Pakistan Economic Corridor",
+   "Central Pakistan Economic Collaboration",
+   "China-Pakistan Export Corridor"
+  ],
+  "correct": 1,
+  "why": "CPEC stands for China-Pakistan Economic Corridor.",
+  "rel": "It is part of China's Belt and Road Initiative. It covers transport, energy and infrastructure."
+ },
+ {
+  "src": "B",
+  "num": 10,
+  "question": "What is the real cube root of unity?",
+  "options": [
+   "1",
+   "-1",
+   "0",
+   "2"
+  ],
+  "correct": 0,
+  "why": "The real cube root of 1 is 1.",
+  "rel": "x^3 = 1 has roots 1 and (-1 ± i√3)/2. The two complex roots are conjugates."
+ },
+ {
+  "src": "B",
+  "num": 20,
+  "question": "Which country is known as the Land of the Rising Sun?",
+  "options": [
+   "China",
+   "South Korea",
+   "Thailand",
+   "Japan"
+  ],
+  "correct": 3,
+  "why": "Japan is called the Land of the Rising Sun because Nippon means origin of the sun.",
+  "rel": "Tokyo is Japan's capital."
+ },
+ {
+  "src": "B",
+  "num": 30,
+  "question": "Who is Pakistan's Federal Minister for Railways?",
+  "options": [
+   "Khawaja Saad Rafique",
+   "Azam Khan Swati",
+   "Sheikh Rashid Ahmed",
+   "Muhammad Hanif Abbasi"
+  ],
+  "correct": 3,
+  "why": "As of Oct 2026, Muhammad Hanif Abbasi is Federal Minister for Railways.",
+  "rel": "Bilal Azhar Kayani is listed as State Minister for Railways. Saad Rafique and Sheikh Rashid were earlier ministers."
+ },
+ {
+  "src": "B",
+  "num": 40,
+  "question": "What is the smallest continent?",
+  "options": [
+   "Europe",
+   "Antarctica",
+   "Australia",
+   "South America"
+  ],
+  "correct": 2,
+  "why": "In the seven-continent model, Australia is the smallest continent.",
+  "rel": "Oceania is a wider region including New Zealand and Pacific islands."
+ },
+ {
+  "src": "B",
+  "num": 50,
+  "question": "What was Hazrat Hamza's relationship to Prophet Muhammad (PBUH)?",
+  "options": [
+   "Maternal uncle",
+   "Paternal uncle",
+   "Cousin",
+   "Father-in-law"
+  ],
+  "correct": 1,
+  "why": "Hazrat Hamza (RA) was the Prophet's paternal uncle and companion.",
+  "rel": "He was martyred at Uhud in 3 AH. He is called Asadullah (Lion of Allah)."
+ },
+ {
+  "src": "B",
+  "num": 61,
+  "question": "What are Laat and Uzza?",
+  "options": [
+   "Pre-Islamic Arabian deities",
+   "Names of two Companions",
+   "Names of two mountains near Makkah",
+   "Names of two wells of Makkah"
+  ],
+  "correct": 0,
+  "why": "Al-Lat and al-Uzza were idols worshipped in pre-Islamic Arabia.",
+  "rel": "They are named in Surah An-Najm (53:19-20). The third is Manat."
+ },
+ {
+  "src": "B",
+  "num": 71,
+  "question": "When was the Nehru Report published?",
+  "options": [
+   "30 August 1928",
+   "12 November 1927",
+   "28 May 1930",
+   "14 March 1929"
+  ],
+  "correct": 0,
+  "why": "The Nehru Report was published on 30 August 1928 under Motilal Nehru.",
+  "rel": "Jinnah answered with his Fourteen Points in 1929."
+ },
+ {
+  "src": "B",
+  "num": 81,
+  "question": "What is the capital of Sri Lanka?",
+  "options": [
+   "Kandy",
+   "Galle",
+   "Jaffna",
+   "Sri Jayawardenepura Kotte"
+  ],
+  "correct": 3,
+  "why": "Sri Jayawardenepura Kotte is Sri Lanka's legislative capital.",
+  "rel": "Colombo is the largest city and commercial centre. Sri Lanka is an island in the Indian Ocean.",
+  "problem": "Many quiz keys say Colombo, which is the commercial capital; Colombo is left out of the options because it is arguably also correct."
+ },
+ {
+  "src": "B",
+  "num": 91,
+  "question": "Who was the first Pakistani to travel to space?",
+  "options": [
+   "Anousheh Ansari",
+   "Sultan bin Salman Al Saud",
+   "Namira Salim",
+   "Suniti Williams"
+  ],
+  "correct": 2,
+  "why": "Namira Salim flew on Virgin Galactic's Galactic 04 mission in October 2023 and was the first Pakistani in space.",
+  "rel": "The flight was suborbital. Pakistan has no government astronaut on an orbital mission yet."
+ },
+ {
+  "src": "B",
+  "num": 101,
+  "question": "When was Prophet Muhammad (PBUH) born?",
+  "options": [
+   "610 CE",
+   "570 CE",
+   "622 CE",
+   "632 CE"
+  ],
+  "correct": 1,
+  "why": "The Prophet (PBUH) was born in Makkah around 570 CE, in the Year of the Elephant.",
+  "rel": "Some sources say 571 CE. The exact year is an estimate.",
+  "problem": "Exact year is 570 or 571 CE; 570 chosen as the standard answer."
+ },
+ {
+  "src": "B",
+  "num": 111,
+  "question": "When was the Treaty of Hudaybiyyah signed?",
+  "options": [
+   "2 AH (624 CE)",
+   "6 AH (628 CE)",
+   "8 AH (630 CE)",
+   "10 AH (632 CE)"
+  ],
+  "correct": 1,
+  "why": "The Treaty of Hudaybiyyah was signed in 6 AH (628 CE).",
+  "rel": "It was a truce between Madinah and the Quraysh. It came before the Conquest of Makkah in 8 AH."
+ },
+ {
+  "src": "B",
+  "num": 121,
+  "question": "What role did the World Bank play in the Indus Waters Treaty?",
+  "options": [
+   "It mediated and helped broker the treaty",
+   "It guaranteed it with troops",
+   "It was a signatory in place of Pakistan",
+   "It built the Tarbela Dam alone"
+  ],
+  "correct": 0,
+  "why": "The World Bank brokered the treaty, signed by India and Pakistan in 1960.",
+  "rel": "It was signed in Karachi on 19 September 1960. It divides the Indus system waters."
+ },
+ {
+  "src": "B",
+  "num": 131,
+  "question": "In which expedition did the Muslims return without a major battle?",
+  "options": [
+   "Battle of Uhud",
+   "Battle of Badr",
+   "Battle of Khaybar",
+   "Expedition of Tabuk"
+  ],
+  "correct": 3,
+  "why": "At Tabuk (9 AH) the Muslims returned without a full battle.",
+  "rel": "Tabuk is in northwestern Saudi Arabia. It took place in heat and scarcity.",
+  "problem": "Other expeditions also ended without fighting; Tabuk is the standard MCQ answer."
+ },
+ {
+  "src": "B",
+  "num": 141,
+  "question": "Who led the opposing Meccan force at the Battle of Uhud?",
+  "options": [
+   "Abu Jahl",
+   "Amr ibn al-As",
+   "Abu Sufyan ibn Harb",
+   "Ikrimah ibn Abi Jahl"
+  ],
+  "correct": 2,
+  "why": "Abu Sufyan led the Meccan army at Uhud. Khalid ibn al-Walid commanded the cavalry.",
+  "rel": "Uhud was in 3 AH (625 CE). Khalid later became Muslim.",
+  "problem": "Khalid ibn al-Walid led the cavalry, so he is not used as an option."
+ },
+ {
+  "src": "B",
+  "num": 151,
+  "question": "Which vitamin supports wound healing?",
+  "options": [
+   "Vitamin A",
+   "Vitamin D",
+   "Vitamin C",
+   "Vitamin B12"
+  ],
+  "correct": 2,
+  "why": "Vitamin C is needed to make collagen, which helps wounds heal.",
+  "rel": "Vitamin C is ascorbic acid. Its deficiency causes scurvy.",
+  "problem": "Vitamin A and protein also help wound healing, but Vitamin C is the standard answer."
+ },
+ {
+  "src": "B",
+  "num": 161,
+  "question": "When was Sir Syed Ahmad Khan's “Asbab-e-Baghawat-e-Hind” (“The Causes of the Indian Revolt”) published?",
+  "options": [
+   "1857",
+   "1858",
+   "1869",
+   "1875"
+  ],
+  "correct": 1,
+  "why": "Sir Syed's Asbab-e-Baghawat-e-Hind was published in 1858.",
+  "rel": "The uprising began at Meerut on 10 May 1857. Sir Syed blamed British policies."
+ },
+ {
+  "src": "B",
+  "num": 171,
+  "question": "Who was the last prophet sent to the Children of Israel, according to Islamic belief?",
+  "options": [
+   "Prophet Isa (AS)",
+   "Prophet Musa (AS)",
+   "Prophet Yahya (AS)",
+   "Prophet Dawud (AS)"
+  ],
+  "correct": 0,
+  "why": "Isa (AS) was the last prophet sent to Bani Israel before Prophet Muhammad (PBUH).",
+  "rel": "Isa was born to Maryam. Muhammad (PBUH) is the final prophet."
+ },
+ {
+  "src": "B",
+  "num": 181,
+  "question": "What was Hudaybiyyah?",
+  "options": [
+   "A mountain near Madinah",
+   "A battle fought in 3 AH",
+   "A well in Madinah",
+   "A place near Makkah where a treaty was signed"
+  ],
+  "correct": 3,
+  "why": "Hudaybiyyah is a place near Makkah where the 6 AH treaty was concluded.",
+  "rel": "The treaty gave a truce between Muslims and Quraysh. It followed the Prophet's attempted pilgrimage."
+ },
+ {
+  "src": "B",
+  "num": 191,
+  "question": "For what purpose is Salat al-Istisqa offered?",
+  "options": [
+   "To pray during an eclipse",
+   "To mark Eid",
+   "To pray for travellers",
+   "To pray for rain"
+  ],
+  "correct": 3,
+  "why": "Salat al-Istisqa is offered to ask Allah for rain during drought.",
+  "rel": "It is usually prayed in congregation. Istisqa means seeking water."
+ },
+ {
+  "src": "B",
+  "num": 201,
+  "question": "The FSB is the security agency of which country?",
+  "options": [
+   "China",
+   "Iran",
+   "Russia",
+   "Turkey"
+  ],
+  "correct": 2,
+  "why": "The FSB is the Federal Security Service of Russia.",
+  "rel": "It is a domestic security and counterintelligence agency."
+ },
+ {
+  "src": "B",
+  "num": 211,
+  "question": "Which Surah was recited before Najashi by Ja'far ibn Abi Talib?",
+  "options": [
+   "Surah Yusuf",
+   "Surah Maryam",
+   "Surah Al-Kahf",
+   "Surah Al-Baqarah"
+  ],
+  "correct": 1,
+  "why": "Ja'far ibn Abi Talib recited Surah Maryam before Najashi.",
+  "rel": "This was during the migration to Abyssinia. It speaks of Maryam and Isa."
+ },
+ {
+  "src": "B",
+  "num": 221,
+  "question": "A helicopter uses 50 gallons to travel 320 km. How much fuel is needed for 400 km at the same rate?",
+  "options": [
+   "62.5 gallons",
+   "60 gallons",
+   "64 gallons",
+   "70 gallons"
+  ],
+  "correct": 0,
+  "why": "Fuel per km is 50/320, so 400 km needs 50 x 400/320 = 62.5 gallons.",
+  "rel": "Fuel use is assumed proportional to distance."
+ }
+]

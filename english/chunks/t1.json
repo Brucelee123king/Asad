@@ -1,0 +1,977 @@
+[
+{
+"n": 1,
+"q": "In the sentence \"The young cadet answered confidently,\" the word \"confidently\" is a:",
+"options": [
+"noun",
+"adjective",
+"adverb",
+"preposition"
+],
+"passage": null,
+"key": "C",
+"expl": "It modifies the verb \"answered\" and tells how the action was performed."
+},
+{
+"n": 2,
+"q": "Which word is a pronoun in \"They completed the obstacle course\"?",
+"options": [
+"They",
+"completed",
+"obstacle",
+"course"
+],
+"passage": null,
+"key": "A",
+"expl": "\"They\" stands in place of a noun."
+},
+{
+"n": 3,
+"q": "In \"Honesty is essential for leadership,\" the word \"Honesty\" is a:",
+"options": [
+"verb",
+"abstract noun",
+"adjective",
+"conjunction"
+],
+"passage": null,
+"key": "B",
+"expl": "It names an abstract quality."
+},
+{
+"n": 4,
+"q": "Which word is an adjective in \"She gave a brief answer\"?",
+"options": [
+"She",
+"gave",
+"brief",
+"answer"
+],
+"passage": null,
+"key": "C",
+"expl": "\"Brief\" describes the noun \"answer\"."
+},
+{
+"n": 5,
+"q": "In \"The candidates waited outside,\" \"outside\" functions as a:",
+"options": [
+"adverb",
+"article",
+"pronoun",
+"conjunction"
+],
+"passage": null,
+"key": "A",
+"expl": "It tells where they waited."
+},
+{
+"n": 6,
+"q": "Which of the following is a conjunction?",
+"options": [
+"under",
+"because",
+"quickly",
+"brave"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Because\" joins clauses and introduces a reason."
+},
+{
+"n": 7,
+"q": "In \"The book is on the desk,\" \"on\" is a:",
+"options": [
+"preposition",
+"adverb",
+"interjection",
+"pronoun"
+],
+"passage": null,
+"key": "A",
+"expl": "It shows the relationship between \"book\" and \"desk\"."
+},
+{
+"n": 8,
+"q": "Which word is an interjection?",
+"options": [
+"Alas!",
+"although",
+"their",
+"smoothly"
+],
+"passage": null,
+"key": "A",
+"expl": "An interjection expresses sudden feeling or emotion."
+},
+{
+"n": 9,
+"q": "In \"Ali and Hamza trained together,\" \"and\" is a:",
+"options": [
+"coordinating conjunction",
+"preposition",
+"adjective",
+"adverb"
+],
+"passage": null,
+"key": "A",
+"expl": "It joins two coordinate nouns."
+},
+{
+"n": 10,
+"q": "Which word is a common noun?",
+"options": [
+"Pakistan",
+"Islamabad",
+"river",
+"Indus"
+],
+"passage": null,
+"key": "C",
+"expl": "\"River\" names a class, not a unique proper name."
+},
+{
+"n": 11,
+"q": "In \"He can swim well,\" \"can\" is a:",
+"options": [
+"main verb",
+"modal auxiliary",
+"noun",
+"preposition"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Can\" is a modal auxiliary expressing ability."
+},
+{
+"n": 12,
+"q": "Which option contains a possessive pronoun?",
+"options": [
+"my",
+"mine",
+"me",
+"I"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Mine\" stands alone as a possessive pronoun; \"my\" is a possessive determiner."
+},
+{
+"n": 13,
+"q": "In \"The wounded soldier recovered,\" \"wounded\" is functioning as a:",
+"options": [
+"noun",
+"adjective",
+"adverb",
+"conjunction"
+],
+"passage": null,
+"key": "B",
+"expl": "It describes the noun \"soldier\"."
+},
+{
+"n": 14,
+"q": "The word \"but\" in \"He was tired but continued\" is a:",
+"options": [
+"subordinating conjunction",
+"coordinating conjunction",
+"preposition",
+"interjection"
+],
+"passage": null,
+"key": "B",
+"expl": "\"But\" is a coordinating conjunction showing contrast."
+},
+{
+"n": 15,
+"q": "In \"Running improves stamina,\" \"Running\" is a:",
+"options": [
+"gerund functioning as a noun",
+"finite verb",
+"adjective",
+"preposition"
+],
+"passage": null,
+"key": "A",
+"expl": "The -ing form names an activity and serves as the subject."
+},
+{
+"n": 16,
+"q": "Which sentence contains an adverb of frequency?",
+"options": [
+"He arrived yesterday.",
+"He often exercises.",
+"He works here.",
+"He speaks softly."
+],
+"passage": null,
+"key": "B",
+"expl": "\"Often\" tells how frequently the action occurs."
+},
+{
+"n": 17,
+"q": "In \"This is the man who helped us,\" \"who\" is a:",
+"options": [
+"relative pronoun",
+"article",
+"preposition",
+"interjection"
+],
+"passage": null,
+"key": "A",
+"expl": "It introduces a relative clause and refers to \"man\"."
+},
+{
+"n": 18,
+"q": "Which word is a determiner/article in \"An officer entered the room\"?",
+"options": [
+"officer",
+"entered",
+"An",
+"room"
+],
+"passage": null,
+"key": "C",
+"expl": "\"An\" is the indefinite article modifying \"officer\"."
+},
+{
+"n": 19,
+"q": "In \"He is extremely careful,\" \"extremely\" modifies:",
+"options": [
+"He",
+"is",
+"careful",
+"the whole sentence only"
+],
+"passage": null,
+"key": "C",
+"expl": "It intensifies the adjective \"careful\"."
+},
+{
+"n": 20,
+"q": "Which pair consists entirely of prepositions?",
+"options": [
+"in, on",
+"and, but",
+"very, quite",
+"he, they"
+],
+"passage": null,
+"key": "A",
+"expl": "Both \"in\" and \"on\" express relationships of place/time."
+},
+{
+"n": 21,
+"q": "Choose the correct form: \"He ___ to the academy every morning.\"",
+"options": [
+"go",
+"goes",
+"went",
+"going"
+],
+"passage": null,
+"key": "B",
+"expl": "A habitual action with a third-person singular subject takes \"goes\"."
+},
+{
+"n": 22,
+"q": "\"They ___ the task before the instructor arrived.\"",
+"options": [
+"complete",
+"had completed",
+"have completed",
+"were completing"
+],
+"passage": null,
+"key": "B",
+"expl": "Past perfect marks the earlier of two past actions."
+},
+{
+"n": 23,
+"q": "\"I ___ this book since Monday.\"",
+"options": [
+"read",
+"am reading",
+"have been reading",
+"had read"
+],
+"passage": null,
+"key": "C",
+"expl": "\"Since Monday\" with an ongoing action calls for present perfect continuous."
+},
+{
+"n": 24,
+"q": "\"At 8 p.m. yesterday, we ___ for the test.\"",
+"options": [
+"studied",
+"were studying",
+"have studied",
+"study"
+],
+"passage": null,
+"key": "B",
+"expl": "An action in progress at a specific past time uses past continuous."
+},
+{
+"n": 25,
+"q": "\"By next June, she ___ her degree.\"",
+"options": [
+"completes",
+"completed",
+"will have completed",
+"is completing"
+],
+"passage": null,
+"key": "C",
+"expl": "Future perfect shows completion before a future point."
+},
+{
+"n": 26,
+"q": "Choose the simple past sentence.",
+"options": [
+"He trains daily.",
+"He trained yesterday.",
+"He has trained.",
+"He will train."
+],
+"passage": null,
+"key": "B",
+"expl": "\"Trained\" with a finished past time is simple past."
+},
+{
+"n": 27,
+"q": "\"The bus ___ before we reached the stop.\"",
+"options": [
+"left",
+"has left",
+"had left",
+"leaves"
+],
+"passage": null,
+"key": "C",
+"expl": "The bus departure happened before another past event."
+},
+{
+"n": 28,
+"q": "\"Listen! Someone ___ at the door.\"",
+"options": [
+"knocks",
+"knocked",
+"is knocking",
+"has knocked"
+],
+"passage": null,
+"key": "C",
+"expl": "\"Listen!\" signals an action happening now."
+},
+{
+"n": 29,
+"q": "\"She ___ in Rawalpindi for five years.\" (She still lives there.)",
+"options": [
+"lived",
+"has lived",
+"had lived",
+"will live"
+],
+"passage": null,
+"key": "B",
+"expl": "Present perfect links a past beginning to the present."
+},
+{
+"n": 30,
+"q": "\"When I was a child, I ___ cricket every evening.\"",
+"options": [
+"play",
+"played",
+"have played",
+"am playing"
+],
+"passage": null,
+"key": "B",
+"expl": "A completed past habit takes simple past."
+},
+{
+"n": 31,
+"q": "\"This time tomorrow, we ___ the written test.\"",
+"options": [
+"take",
+"took",
+"will be taking",
+"have taken"
+],
+"passage": null,
+"key": "C",
+"expl": "Future continuous describes an action in progress at a future time."
+},
+{
+"n": 32,
+"q": "Which sentence is in present perfect tense?",
+"options": [
+"I finish the work.",
+"I finished the work.",
+"I have finished the work.",
+"I had finished the work."
+],
+"passage": null,
+"key": "C",
+"expl": "Present perfect uses have/has + past participle."
+},
+{
+"n": 33,
+"q": "\"If he studies hard, he ___ the test.\"",
+"options": [
+"passes",
+"passed",
+"will pass",
+"would pass"
+],
+"passage": null,
+"key": "C",
+"expl": "First conditional: if + present simple, will + base verb."
+},
+{
+"n": 34,
+"q": "\"He ___ for two hours before the rain stopped.\"",
+"options": [
+"ran",
+"had been running",
+"has been running",
+"is running"
+],
+"passage": null,
+"key": "B",
+"expl": "Past perfect continuous emphasizes duration before another past event."
+},
+{
+"n": 35,
+"q": "\"The sun ___ in the east.\"",
+"options": [
+"rose",
+"rises",
+"is rising always",
+"has risen daily"
+],
+"passage": null,
+"key": "B",
+"expl": "Universal truths normally use simple present."
+},
+{
+"n": 36,
+"q": "\"We ___ dinner when the phone rang.\"",
+"options": [
+"had",
+"were having",
+"have had",
+"will have"
+],
+"passage": null,
+"key": "B",
+"expl": "A longer background action interrupted in the past uses past continuous."
+},
+{
+"n": 37,
+"q": "\"She ___ already ___ the form.\"",
+"options": [
+"has / submitted",
+"had / submit",
+"is / submitted",
+"was / submit"
+],
+"passage": null,
+"key": "A",
+"expl": "Present perfect is has + past participle."
+},
+{
+"n": 38,
+"q": "\"By the time you arrive, I ___ the report.\"",
+"options": [
+"finish",
+"finished",
+"will have finished",
+"am finishing yesterday"
+],
+"passage": null,
+"key": "C",
+"expl": "Completion before a future arrival takes future perfect."
+},
+{
+"n": 39,
+"q": "Which is grammatically correct?",
+"options": [
+"I am knowing him.",
+"I know him.",
+"I have knowing him.",
+"I was know him."
+],
+"passage": null,
+"key": "B",
+"expl": "Stative verb \"know\" is normally not used in the continuous form."
+},
+{
+"n": 40,
+"q": "\"He ___ to Lahore last week.\"",
+"options": [
+"has gone",
+"goes",
+"went",
+"had go"
+],
+"passage": null,
+"key": "C",
+"expl": "A definite finished time \"last week\" requires simple past."
+},
+{
+"n": 41,
+"q": "Choose the correct article: \"He is ___ honest man.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Honest\" begins with a vowel sound because the h is silent."
+},
+{
+"n": 42,
+"q": "\"She wants to become ___ engineer.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Engineer\" begins with a vowel sound."
+},
+{
+"n": 43,
+"q": "\"___ sun rises in the east.\"",
+"options": [
+"A",
+"An",
+"The",
+"No article"
+],
+"passage": null,
+"key": "C",
+"expl": "Unique objects such as the sun normally take \"the\"."
+},
+{
+"n": 44,
+"q": "\"He is ___ university student.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "A",
+"expl": "\"University\" begins with the consonant sound /ju:/."
+},
+{
+"n": 45,
+"q": "\"We crossed ___ Indus River.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "C",
+"expl": "Names of rivers take the definite article."
+},
+{
+"n": 46,
+"q": "Which sentence is correct?",
+"options": [
+"He plays the cricket.",
+"He plays cricket.",
+"He plays a cricket.",
+"He plays an cricket."
+],
+"passage": null,
+"key": "B",
+"expl": "Sports generally take no article when used generically."
+},
+{
+"n": 47,
+"q": "\"She is ___ best candidate in the group.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "C",
+"expl": "Superlatives normally take \"the\"."
+},
+{
+"n": 48,
+"q": "\"I saw ___ one-eyed man.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "A",
+"expl": "\"One\" begins with a /w/ consonant sound."
+},
+{
+"n": 49,
+"q": "\"He waited for ___ hour.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Hour\" begins with a vowel sound because h is silent."
+},
+{
+"n": 50,
+"q": "\"___ Himalayas lie north of Pakistan.\"",
+"options": [
+"A",
+"An",
+"The",
+"No article"
+],
+"passage": null,
+"key": "C",
+"expl": "Plural mountain ranges take \"the\"."
+},
+{
+"n": 51,
+"q": "Which phrase normally takes no article?",
+"options": [
+"the United States",
+"the Netherlands",
+"Mount Everest",
+"the Arabian Sea"
+],
+"passage": null,
+"key": "C",
+"expl": "Individual mountain peaks normally do not take an article."
+},
+{
+"n": 52,
+"q": "\"He went to ___ school to attend his class.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "D",
+"expl": "Institutional use of \"school\" for its primary purpose often takes no article."
+},
+{
+"n": 53,
+"q": "\"His father went to ___ school to meet the principal.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "C",
+"expl": "Here the school is a specific building/institution, not merely the activity of schooling."
+},
+{
+"n": 54,
+"q": "\"She bought ___ umbrella and ___ raincoat.\"",
+"options": [
+"a / a",
+"an / a",
+"the / an",
+"an / an"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Umbrella\" begins with a vowel sound; \"raincoat\" with a consonant sound."
+},
+{
+"n": 55,
+"q": "\"___ Quran is the holy book of Islam.\"",
+"options": [
+"A",
+"An",
+"The",
+"No article"
+],
+"passage": null,
+"key": "C",
+"expl": "Names of well-known sacred texts are conventionally used with \"the\" in this construction."
+},
+{
+"n": 56,
+"q": "Choose the correct phrase.",
+"options": [
+"an European country",
+"a European country",
+"the European country always",
+"European an country"
+],
+"passage": null,
+"key": "B",
+"expl": "\"European\" begins with /j/, a consonant sound."
+},
+{
+"n": 57,
+"q": "\"Pakistan is in ___ Asia.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "D",
+"expl": "Names of continents normally take no article."
+},
+{
+"n": 58,
+"q": "\"He is ___ MBA graduate.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "B",
+"expl": "The letter M is pronounced /em/, beginning with a vowel sound."
+},
+{
+"n": 59,
+"q": "\"This is ___ same book that I borrowed.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "C",
+"expl": "\"The same\" is the standard expression."
+},
+{
+"n": 60,
+"q": "\"She speaks ___ Urdu fluently.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "D",
+"expl": "Names of languages normally take no article."
+},
+{
+"n": 61,
+"q": "\"He is good ___ mathematics.\"",
+"options": [
+"in",
+"at",
+"on",
+"for"
+],
+"passage": null,
+"key": "B",
+"expl": "The standard collocation is \"good at\"."
+},
+{
+"n": 62,
+"q": "\"She is interested ___ military history.\"",
+"options": [
+"on",
+"at",
+"in",
+"for"
+],
+"passage": null,
+"key": "C",
+"expl": "The standard collocation is \"interested in\"."
+},
+{
+"n": 63,
+"q": "\"The test begins ___ 8:00 a.m.\"",
+"options": [
+"in",
+"on",
+"at",
+"by"
+],
+"passage": null,
+"key": "C",
+"expl": "Use \"at\" for exact clock times."
+},
+{
+"n": 64,
+"q": "\"We will meet ___ Monday.\"",
+"options": [
+"in",
+"on",
+"at",
+"from"
+],
+"passage": null,
+"key": "B",
+"expl": "Use \"on\" for days and dates."
+},
+{
+"n": 65,
+"q": "\"Pakistan became independent ___ 1947.\"",
+"options": [
+"in",
+"on",
+"at",
+"since"
+],
+"passage": null,
+"key": "A",
+"expl": "Use \"in\" for years."
+},
+{
+"n": 66,
+"q": "\"The cadets marched ___ the bridge.\"",
+"options": [
+"across",
+"between",
+"during",
+"since"
+],
+"passage": null,
+"key": "A",
+"expl": "\"Across\" expresses movement from one side to the other."
+},
+{
+"n": 67,
+"q": "\"He has lived here ___ 2022.\"",
+"options": [
+"for",
+"since",
+"from only",
+"during"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Since\" marks the starting point of an action continuing to the present."
+},
+{
+"n": 68,
+"q": "\"He has lived here ___ four years.\"",
+"options": [
+"since",
+"for",
+"at",
+"by"
+],
+"passage": null,
+"key": "B",
+"expl": "\"For\" expresses a duration."
+},
+{
+"n": 69,
+"q": "\"Divide the sweets ___ the two boys.\"",
+"options": [
+"among",
+"between",
+"into",
+"beside"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Between\" is standard for two distinct parties."
+},
+{
+"n": 70,
+"q": "\"The teacher distributed books ___ the students.\"",
+"options": [
+"between",
+"among",
+"through",
+"onto"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Among\" is used for a group of more than two."
+},
+{
+"n": 71,
+"q": "\"He was accused ___ theft.\"",
+"options": [
+"for",
+"of",
+"with",
+"by"
+],
+"passage": null,
+"key": "B",
+"expl": "The standard collocation is \"accused of\"."
+},
+{
+"n": 72,
+"q": "\"This book belongs ___ me.\"",
+"options": [
+"with",
+"for",
+"to",
+"at"
+],
+"passage": null,
+"key": "C",
+"expl": "\"Belong to\" is the correct construction."
+},
+{
+"n": 73,
+"q": "\"She is afraid ___ dogs.\"",
+"options": [
+"from",
+"of",
+"with",
+"at"
+],
+"passage": null,
+"key": "B",
+"expl": "The standard collocation is \"afraid of\"."
+},
+{
+"n": 74,
+"q": "\"The plane flew ___ the clouds.\"",
+"options": [
+"above",
+"between only",
+"beside",
+"since"
+],
+"passage": null,
+"key": "A",
+"expl": "\"Above\" indicates a higher position."
+},
+{
+"n": 75,
+"q": "\"He sat ___ me during the lecture.\"",
+"options": [
+"besides",
+"beside",
+"among",
+"across"
+],
+"passage": null,
+"key": "B",
+"expl": "\"Beside\" means next to; \"besides\" means in addition to."
+}
+]

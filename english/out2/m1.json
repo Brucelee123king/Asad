@@ -1,0 +1,686 @@
+[
+ {
+  "src": "m1-1",
+  "question": "In \"The very experienced instructor spoke calmly,\" \"very\" is a:",
+  "options": [
+   "noun",
+   "adverb",
+   "adjective",
+   "preposition"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Very\" modifies the adjective \"experienced\", and words that modify adjectives are adverbs.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "\"Very\" tells us how experienced the instructor is. It modifies the adjective \"experienced\", and a word that modifies an adjective is an adverb. A) It is not a noun: it does not name a person, place or thing. C) It is not an adjective: it does not describe the noun \"instructor\" directly. D) It is not a preposition: it does not join a noun to other words.",
+  "rel": "Other adverbs of degree: too, quite, extremely, so, rather. Example: \"She is extremely clever\" - \"extremely\" is an adverb modifying the adjective \"clever\"."
+ },
+ {
+  "src": "m1-2",
+  "question": "The word \"whose\" in \"The candidate whose file was missing returned\" is a:",
+  "options": [
+   "relative determiner/pronoun",
+   "interjection",
+   "preposition",
+   "article"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Whose\" links the clause to \"candidate\" and shows possession, so it is a relative pronoun/determiner.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "\"Whose\" joins the clause \"whose file was missing\" to the noun \"candidate\" and shows possession (the candidate's file), so it is a relative pronoun/determiner. B) It is not an interjection: it shows no sudden feeling like \"Oh!\". C) It is not a preposition: it does not show place or time. D) It is not an article: the only articles are a, an and the.",
+  "rel": "Other relative pronouns: who, whom, which, that. Example: \"The boy who won the prize is my cousin.\""
+ },
+ {
+  "src": "m1-3",
+  "question": "In \"Courage inspires others,\" \"Courage\" is a:",
+  "options": [
+   "proper noun",
+   "abstract noun",
+   "verb",
+   "adverb"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Courage\" is a quality we cannot touch or see, so it is an abstract noun.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "\"Courage\" is a quality; we cannot see or touch it, so it is an abstract noun. A) It is not a proper noun: it is not the name of a particular person or place and is not written with a capital in normal use. C) It is not a verb: the verb in the sentence is \"inspires\". D) It is not an adverb: it is the subject of the sentence.",
+  "rel": "Other abstract nouns: honesty, love, freedom, wisdom, childhood. Many are made with endings like -ness, -dom, -hood, -ity (kindness, freedom, childhood, ability)."
+ },
+ {
+  "src": "m1-4",
+  "question": "Which contains an auxiliary verb?",
+  "options": [
+   "Birds fly.",
+   "He has finished.",
+   "Tall trees grow.",
+   "Silence helps."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Has\" is a helping (auxiliary) verb used with the main verb \"finished\" to make the present perfect.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "In \"He has finished\", \"has\" is a helping (auxiliary) verb used with the main verb \"finished\" to make the present perfect tense. A) \"Birds fly\" has only one main verb, \"fly\". C) \"Tall trees grow\" has only the main verb \"grow\". D) \"Silence helps\" has only the main verb \"helps\".",
+  "rel": "The main auxiliary verbs are be (is, am, are, was, were), have (has, have, had) and do (do, does, did). Modals like can, will, must and should are also auxiliaries: \"She can swim.\""
+ },
+ {
+  "src": "m1-5",
+  "question": "In \"She worked despite the rain,\" \"despite\" is a:",
+  "options": [
+   "preposition",
+   "pronoun",
+   "interjection",
+   "adverb of manner"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Despite\" is followed by a noun (the rain) and shows its relation to the verb, so it is a preposition.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "\"Despite\" comes before the noun phrase \"the rain\" and shows its relation to the verb \"worked\", so it is a preposition. B) It is not a pronoun: it does not stand in place of a noun. C) It is not an interjection: it shows no sudden emotion. D) It is not an adverb of manner: it does not tell how she worked (like \"quickly\").",
+  "rel": "\"Despite\" and \"in spite of\" mean the same and are followed by a noun or verb-ing: \"despite the rain\" or \"in spite of being tired\". \"Although\" is a conjunction and needs a full clause: \"although it was raining\"."
+ },
+ {
+  "src": "m1-6",
+  "question": "By 10 p.m., they ___ the exercise.",
+  "options": [
+   "finish",
+   "will have finished",
+   "finished tomorrow",
+   "are finish"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"By + a future time\" shows an action completed before that time, so we use the future perfect \"will have finished\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "\"By 10 p.m.\" means the action will be complete before that future time, so we use the future perfect: will have + past participle (\"will have finished\"). A) \"finish\" is simple present and does not show completion before a future time. C) \"finished tomorrow\" mixes past tense with a future word. D) \"are finish\" is wrong grammar: \"are\" cannot be used with the base verb.",
+  "rel": "Same rule: \"By next year, she will have completed her degree.\" Signal words for future perfect: by then, by the time, by tomorrow, before + future time."
+ },
+ {
+  "src": "m1-7",
+  "question": "I ___ him yesterday at the library.",
+  "options": [
+   "meet",
+   "have met",
+   "met",
+   "am meeting"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Yesterday\" is a finished past time, so we use the simple past \"met\" (not present perfect).",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "\"Yesterday\" is a finished past time, so we use the simple past \"met\". A) \"meet\" is present tense and does not fit a past time. B) \"have met\" is present perfect, which is not used with a definite past time like yesterday. D) \"am meeting\" is present continuous and shows now or the future, not yesterday.",
+  "rel": "Other definite past time words that need simple past: last week, ago, in 2010, last night. Example: \"I saw him two days ago\" (not \"have seen\")."
+ },
+ {
+  "src": "m1-8",
+  "question": "She ___ for the interview when I called.",
+  "options": [
+   "prepared",
+   "was preparing",
+   "has prepared",
+   "will prepare"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "An action in progress when another past action happened takes the past continuous: \"was preparing\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "When one past action was in progress and another past action happened in the middle of it, the longer action takes the past continuous: \"was preparing\". A) \"prepared\" is simple past and shows a completed action, not one in progress. C) \"has prepared\" is present perfect and does not match the past clause \"when I called\". D) \"will prepare\" is future and does not fit a past event.",
+  "rel": "Same pattern: \"I was reading when the lights went out.\" The longer action uses was/were + verb-ing; the short action that interrupts uses simple past."
+ },
+ {
+  "src": "m1-9",
+  "question": "He ___ here since January.",
+  "options": [
+   "works",
+   "worked",
+   "has worked",
+   "is work"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Since + a point of time\" shows an action from the past continuing till now, so use the present perfect \"has worked\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "\"Since January\" shows an action that began in the past and is still going on, so we use the present perfect \"has worked\". A) \"works\" is simple present and does not connect the past to now. B) \"worked\" is simple past and shows a finished action, not one continuing till now. D) \"is work\" is wrong grammar.",
+  "rel": "\"Since\" is used with a point of time (since 2015, since Monday) and \"for\" with a period of time (for two years, for a week). Both take the present perfect: \"She has lived here for five years.\""
+ },
+ {
+  "src": "m1-10",
+  "question": "If you heat ice, it ___.",
+  "options": [
+   "melted",
+   "melts",
+   "will melted",
+   "would melt always"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "For general facts (zero conditional) both clauses use the simple present: \"it melts\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "This is a general scientific fact, so we use the zero conditional: if + simple present, simple present. So \"it melts\". A) \"melted\" is past tense and does not fit a general truth. C) \"will melted\" is wrong: after \"will\" we use the base form (melt). D) \"would melt always\" is the second conditional form used for unreal situations, not facts.",
+  "rel": "More zero conditional examples: \"If you heat water to 100 degrees, it boils.\" \"If it rains, the ground gets wet.\""
+ },
+ {
+  "src": "m1-11",
+  "question": "Choose: \"___ army officer entered the hall.\"",
+  "options": [
+   "A",
+   "An",
+   "The always",
+   "No article"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Army\" starts with a vowel sound, so we use \"an\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "\"Army\" begins with a vowel sound (a), so we use \"an\": \"An army officer\". A) \"A\" is used before consonant sounds only. C) \"The always\" is not a correct choice; the officer is not already known, and \"always\" makes no sense here. D) A singular countable noun like \"officer\" needs an article, so \"no article\" is wrong.",
+  "rel": "Other \"an\" words with vowel sounds: an apple, an hour (silent h), an honest man, an MBA (em sound)."
+ },
+ {
+  "src": "m1-12",
+  "question": "Choose: \"He studies at ___ university near his home.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"University\" starts with a \"yu\" (consonant) sound, so we use \"a\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "We choose \"a\" or \"an\" by sound, not by letter. \"University\" starts with a \"yu\" sound, which is a consonant sound, so we use \"a\". B) \"an\" is only for vowel sounds. C) \"the\" is for a particular university already known; here it is just any one university near his home. D) A singular countable noun needs an article, so \"no article\" is wrong.",
+  "rel": "Similar words with \"yu\" or \"w\" sounds that take \"a\": a uniform, a European, a one-way street, a useful book."
+ },
+ {
+  "src": "m1-13",
+  "question": "Which is correct?",
+  "options": [
+   "an useful tool",
+   "a useful tool",
+   "the useful tool always",
+   "useful an tool"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Useful\" starts with a \"yu\" consonant sound, so \"a useful tool\" is correct.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "\"Useful\" starts with a \"yu\" sound, which is a consonant sound, so \"a useful tool\" is correct. A) \"an useful\" is wrong because \"an\" is only for vowel sounds. C) \"the useful tool always\" is not a correct phrase; \"always\" makes no sense here. D) \"useful an tool\" has the wrong word order: the article must come before the adjective.",
+  "rel": "Same rule: a university, a unit, a union. But \"an umbrella\" and \"an uncle\" take \"an\" because they start with an \"uh\" vowel sound."
+ },
+ {
+  "src": "m1-14",
+  "question": "___ Pacific Ocean is the largest ocean.",
+  "options": [
+   "A",
+   "An",
+   "The",
+   "No article"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Names of oceans, seas and rivers take \"the\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Names of oceans, seas and rivers always take \"the\", so \"The Pacific Ocean\". A) and B) \"A\" and \"An\" are for one of many unspecified things, but there is only one Pacific Ocean. D) \"No article\" is wrong because ocean names need \"the\".",
+  "rel": "Other names with \"the\": the Indus, the Arabian Sea, the Himalayas, the Sahara. But names of single mountains and lakes take no article: Mount Everest, Lake Saif-ul-Malook."
+ },
+ {
+  "src": "m1-15",
+  "question": "Choose: \"She can play ___ piano.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "With musical instruments after \"play\" we use \"the\": play the piano.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "With musical instruments after \"play\" we use \"the\": play the piano. A) and B) \"a\" and \"an\" are not used this way after play with instruments. D) \"No article\" is used with sports and games (play cricket), not with instruments.",
+  "rel": "Compare: play the guitar, play the flute, play the violin; but play football, play chess, play hockey (no article)."
+ },
+ {
+  "src": "m1-16",
+  "question": "He apologized ___ being late.",
+  "options": [
+   "for",
+   "of",
+   "with",
+   "to"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "The fixed phrase is \"apologize for\" something.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "The fixed phrase is \"apologize for\" something (the reason). B) \"of\" does not go with apologize. C) \"with\" does not go with apologize. D) \"to\" is used for the person: \"apologize to someone\", not for the reason.",
+  "rel": "Full pattern: \"He apologized to the teacher for being late.\" Similar: thank someone for, blame someone for, forgive someone for."
+ },
+ {
+  "src": "m1-17",
+  "question": "The team consists ___ ten members.",
+  "options": [
+   "in",
+   "of",
+   "on",
+   "at"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The fixed phrase is \"consist of\", meaning to be made up of.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "The fixed phrase is \"consist of\", meaning to be made up of. A) \"consist in\" is a different, formal phrase meaning \"to have as the main part\" and does not fit here. C) \"on\" and D) \"at\" are not used with consist.",
+  "rel": "Similar phrases: \"be composed of\" and \"be made up of\" mean the same: \"Water is composed of hydrogen and oxygen.\" Note: we never say \"is consisted of\"."
+ },
+ {
+  "src": "m1-18",
+  "question": "He is responsible ___ the equipment.",
+  "options": [
+   "of",
+   "to",
+   "for",
+   "at"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "The fixed phrase is \"responsible for\" something.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "The fixed phrase is \"responsible for\" something or someone. A) \"of\" is wrong with responsible. B) \"to\" is used for the person you report to: \"responsible to the manager\", not for the equipment. D) \"at\" is not used with responsible.",
+  "rel": "Other adjectives with \"for\": famous for, ready for, eligible for, grateful for (something). Example: \"Lahore is famous for its food.\""
+ },
+ {
+  "src": "m1-19",
+  "question": "The river flows ___ the valley.",
+  "options": [
+   "through",
+   "since",
+   "besides",
+   "among"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Through\" means moving from one side or end to the other, as a river does in a valley.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "\"Through\" means moving inside something from one side or end to the other, which is how a river moves in a valley. B) \"since\" is used for time, not place. C) \"besides\" means \"in addition to\" (not \"beside\", next to). D) \"among\" means in the middle of many separate things, like people or trees.",
+  "rel": "Compare: across (from one side to the other on a surface: walk across the road), through (inside something: walk through the forest), along (following a line: walk along the river)."
+ },
+ {
+  "src": "m1-20",
+  "question": "She was absent ___ class yesterday.",
+  "options": [
+   "from",
+   "of",
+   "to",
+   "at"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "The fixed phrase is \"absent from\" a place or class.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "The fixed phrase is \"absent from\" a place, class or duty. B) \"of\", C) \"to\" and D) \"at\" are not used with absent.",
+  "rel": "Opposite: \"present at\" or \"present in\": \"She was present at the meeting.\" Similar \"from\" phrases: different from, free from, safe from."
+ },
+ {
+  "src": "m1-21",
+  "question": "Passive of \"The mechanic repaired the vehicle\" is:",
+  "options": [
+   "The vehicle repaired.",
+   "The vehicle was repaired by the mechanic.",
+   "The vehicle is repair.",
+   "The mechanic was repaired."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Simple past active becomes was/were + past participle: \"The vehicle was repaired by the mechanic.\"",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "The active is simple past, so the passive uses was/were + past participle: \"The vehicle was repaired by the mechanic.\" A) \"The vehicle repaired\" has no \"was\", so it wrongly says the vehicle did the repairing. C) \"is repair\" uses the wrong tense and the base form instead of the past participle. D) \"The mechanic was repaired\" reverses the meaning.",
+  "rel": "Same rule: \"She wrote a letter\" becomes \"A letter was written by her.\" Plural object uses were: \"They built houses\" becomes \"Houses were built by them.\""
+ },
+ {
+  "src": "m1-22",
+  "question": "Passive of \"They have postponed the match\" is:",
+  "options": [
+   "The match has been postponed.",
+   "The match had postpone.",
+   "The match is postponing.",
+   "The match was postponing."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Present perfect active becomes has/have been + past participle: \"The match has been postponed.\"",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "The active is present perfect, so the passive is has/have been + past participle: \"The match has been postponed.\" B) \"had postpone\" uses the wrong tense and the base form. C) \"is postponing\" is active present continuous. D) \"was postponing\" is active past continuous, not passive.",
+  "rel": "Same rule: \"She has written the report\" becomes \"The report has been written by her.\" The doer \"by them\" is often dropped when it is general."
+ },
+ {
+  "src": "m1-23",
+  "question": "Passive of \"You should follow the instructions\" is:",
+  "options": [
+   "The instructions should be followed.",
+   "The instructions should followed.",
+   "The instructions are should follow.",
+   "The instructions followed you."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "With a modal, the passive is modal + be + past participle: \"should be followed\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "With a modal verb, the passive is modal + be + past participle: \"The instructions should be followed.\" B) \"should followed\" is missing \"be\". C) \"are should follow\" puts two verbs wrongly together; a modal never follows \"are\". D) \"The instructions followed you\" changes the meaning and is not passive.",
+  "rel": "Same rule with other modals: \"You must finish the work\" becomes \"The work must be finished.\" \"We can solve it\" becomes \"It can be solved.\""
+ },
+ {
+  "src": "m1-24",
+  "question": "Active of \"The room is cleaned every day\" is:",
+  "options": [
+   "Someone cleans the room every day.",
+   "Someone cleaned room tomorrow.",
+   "The room cleans someone.",
+   "Someone is clean the room."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Is cleaned\" is simple present passive; with no doer named we use \"someone\": \"Someone cleans the room every day.\"",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "\"Is cleaned\" is simple present passive and no doer is given, so in the active we use \"someone\" with simple present: \"Someone cleans the room every day.\" B) \"cleaned\" is past and \"tomorrow\" is future, so the tense is mixed up, and \"the\" is missing. C) \"The room cleans someone\" reverses the meaning. D) \"is clean\" is wrong grammar for an action verb.",
+  "rel": "Same rule: \"English is spoken all over the world\" becomes \"People speak English all over the world.\" When no doer is named, use someone, people or they."
+ },
+ {
+  "src": "m1-25",
+  "question": "Which verb is intransitive in the sentence \"The child laughed loudly\"?",
+  "options": [
+   "child",
+   "laughed",
+   "loudly",
+   "the"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Laughed\" is the verb and has no object, so it is intransitive.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "\"Laughed\" is the verb and it has no object (nobody or nothing is laughed), so it is intransitive. A) \"child\" is a noun, the subject. C) \"loudly\" is an adverb telling how he laughed. D) \"the\" is an article.",
+  "rel": "Other common intransitive verbs: sleep, arrive, go, cry, die. A transitive verb needs an object: \"She ate an apple\" (apple is the object)."
+ },
+ {
+  "src": "m1-26",
+  "question": "Indirect: Sara said, \"I am busy now.\"",
+  "options": [
+   "Sara said that she was busy then.",
+   "Sara said she is busy now yesterday.",
+   "Sara told that I was busy.",
+   "Sara asked if she busy."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "In indirect speech \"am\" changes to \"was\", \"I\" to \"she\" and \"now\" to \"then\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "In indirect speech after \"said\" (past), the present \"am\" changes to \"was\", \"I\" changes to \"she\", and \"now\" changes to \"then\": \"Sara said that she was busy then.\" B) keeps \"is\" and \"now\" and adds \"yesterday\", which makes no sense. C) \"told\" needs an object (told me), and \"I\" was not changed to \"she\". D) \"asked if\" is for questions, and the verb \"was\" is missing.",
+  "rel": "Other changes: here becomes there, this becomes that, today becomes that day, tomorrow becomes the next day. Example: He said, \"I will come tomorrow\" becomes He said that he would come the next day."
+ },
+ {
+  "src": "m1-27",
+  "question": "Indirect: He said, \"I may leave today.\"",
+  "options": [
+   "He said that he might leave that day.",
+   "He said he may left today.",
+   "He told he might leaves.",
+   "He asked to leave yesterday."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "In indirect speech \"may\" changes to \"might\", \"I\" to \"he\" and \"today\" to \"that day\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "In indirect speech \"may\" changes to \"might\", \"I\" to \"he\", and \"today\" to \"that day\": \"He said that he might leave that day.\" B) \"may left\" is wrong: after a modal we use the base form, and \"may\" and \"today\" were not changed. C) \"told\" needs an object, and \"might leaves\" is wrong grammar. D) \"asked\" is for questions or requests, and \"yesterday\" is wrong.",
+  "rel": "Other modal changes: can becomes could, will becomes would, shall becomes should. Must usually becomes had to."
+ },
+ {
+  "src": "m1-28",
+  "question": "Indirect: She said to him, \"Please sit down.\"",
+  "options": [
+   "She requested him to sit down.",
+   "She said him please sit.",
+   "She asked that he sat down.",
+   "She ordered him sitting."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "A polite request with \"please\" is reported with \"requested\" + object + to-infinitive.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A polite request with \"please\" is reported with \"requested\" + object + to-infinitive, and \"please\" is dropped: \"She requested him to sit down.\" B) \"said him\" is wrong (\"said\" takes \"to\": said to him) and it keeps \"please\". C) \"asked that he sat down\" is not the right pattern for a command. D) \"ordered\" is too strong for a polite request, and \"sitting\" should be \"to sit\".",
+  "rel": "For orders use ordered or commanded: He said, \"Close the door\" becomes He ordered me to close the door. For negative requests: requested him not to go."
+ },
+ {
+  "src": "m1-29",
+  "question": "Indirect: He said, \"What a beautiful view!\"",
+  "options": [
+   "He exclaimed that it was a very beautiful view.",
+   "He asked whether the view was beautiful.",
+   "He ordered a beautiful view.",
+   "He said what was a view?"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "An exclamation is reported with \"exclaimed that\" and the sentence becomes a statement.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "An exclamation is reported with \"exclaimed that\" and changed into a statement: \"He exclaimed that it was a very beautiful view.\" The word \"What\" becomes \"very\". B) \"asked whether\" turns it into a question, which is wrong. C) \"ordered\" is for commands. D) \"said what was a view?\" keeps a question form and makes no sense.",
+  "rel": "Other exclamations: He said, \"Hurrah! We won\" becomes He exclaimed with joy that they had won. \"Alas!\" is reported with \"exclaimed with sorrow\"."
+ },
+ {
+  "src": "m1-30",
+  "question": "Indirect questions use:",
+  "options": [
+   "statement word order",
+   "question inversion always",
+   "no verb",
+   "only past perfect"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Indirect questions are not real questions, so they use statement word order (subject before verb), e.g. He asked where I lived.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "Indirect questions are not real questions, so they use statement word order: subject before verb, e.g. \"He asked where I lived\" (not \"where did I live\"). B) \"question inversion\" is used in direct questions only. C) An indirect question still has a verb. D) The tense depends on the reporting verb, not \"only past perfect\".",
+  "rel": "Same rule: Direct \"Where is the bank?\" becomes \"Can you tell me where the bank is?\" Yes/no questions use if or whether: \"She asked if I was ready.\""
+ },
+ {
+  "src": "m1-31",
+  "question": "Synonym of \"robust\" is:",
+  "options": [
+   "strong",
+   "fragile",
+   "silent",
+   "rare"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Robust\" means strong and healthy.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "\"Robust\" means strong and healthy, so its synonym is \"strong\". B) \"fragile\" means easily broken, which is the opposite. C) \"silent\" means quiet, not related. D) \"rare\" means not common, not related.",
+  "rel": "Other synonyms of robust: sturdy, tough, vigorous, hardy. Antonyms: weak, frail, delicate."
+ },
+ {
+  "src": "m1-32",
+  "question": "Antonym of \"transparent\" is:",
+  "options": [
+   "clear",
+   "opaque",
+   "visible",
+   "plain"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Transparent\" means see-through; its opposite is \"opaque\", meaning light cannot pass through.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "\"Transparent\" means see-through, so its antonym is \"opaque\", meaning light cannot pass through it. A) \"clear\", C) \"visible\" and D) \"plain\" all have meanings close to transparent, so they are not opposites.",
+  "rel": "\"Translucent\" is in the middle: lets some light through but you cannot see clearly (like frosted glass). In a figurative sense, transparent also means honest and open."
+ },
+ {
+  "src": "m1-33",
+  "question": "Synonym of \"restrain\" is:",
+  "options": [
+   "control",
+   "release",
+   "encourage only",
+   "expand"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Restrain\" means to hold back or control.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "\"Restrain\" means to hold back or keep under control, so its synonym is \"control\". B) \"release\" means to set free, which is the opposite. C) \"encourage only\" means to push someone forward, also opposite. D) \"expand\" means to make bigger, not related.",
+  "rel": "Other synonyms of restrain: curb, check, hold back, suppress. Noun form: restraint (\"He showed restraint\")."
+ },
+ {
+  "src": "m1-34",
+  "question": "Antonym of \"frequent\" is:",
+  "options": [
+   "common",
+   "regular",
+   "rare",
+   "repeated"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Frequent\" means happening often; its opposite is \"rare\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "\"Frequent\" means happening often, so its antonym is \"rare\" (happening seldom). A) \"common\", B) \"regular\" and D) \"repeated\" all have meanings close to frequent, so they are synonyms, not opposites.",
+  "rel": "Other antonyms of frequent: infrequent, occasional, uncommon. Adverb pair: frequently versus rarely or seldom."
+ },
+ {
+  "src": "m1-35",
+  "question": "Synonym of \"evaluate\" is:",
+  "options": [
+   "assess",
+   "ignore",
+   "hide",
+   "destroy"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Evaluate\" means to judge or assess the value of something.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "\"Evaluate\" means to judge or measure the value or quality of something, so its synonym is \"assess\". B) \"ignore\" means to pay no attention, which is the opposite. C) \"hide\" means to keep out of sight. D) \"destroy\" means to ruin completely.",
+  "rel": "Other synonyms of evaluate: appraise, judge, rate, examine. Noun form: evaluation (\"a performance evaluation\")."
+ },
+ {
+  "src": "m1-36",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "He is capable to do it.",
+   "He is capable of doing it.",
+   "He is capable for do it.",
+   "He capable of do it."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The correct pattern is \"capable of\" + verb-ing.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "The correct pattern is \"capable of\" + verb-ing: \"He is capable of doing it.\" A) \"capable to do\" is a common mistake; capable does not take a to-infinitive. C) \"capable for do\" uses the wrong preposition and the base verb. D) \"He capable of do it\" has no verb \"is\" and uses \"do\" instead of \"doing\".",
+  "rel": "Compare: \"able to do\" uses to-infinitive (He is able to do it), but \"capable of doing\" uses -ing. Similar: fond of reading, good at swimming."
+ },
+ {
+  "src": "m1-37",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "The police is investigating.",
+   "The police are investigating.",
+   "The police are investigates.",
+   "A police are investigating."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Police\" is a plural noun, so it takes a plural verb: \"are investigating\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "\"Police\" is a plural noun even without \"s\", so it takes the plural verb: \"The police are investigating.\" A) \"is\" is singular, so it is wrong. C) \"are investigates\" is wrong grammar: after \"are\" we use the -ing form. D) \"A police\" is wrong: we cannot use \"a\" with police; we say \"a police officer\".",
+  "rel": "Other nouns that are always plural: cattle, people, clothes, scissors, trousers. Example: \"The cattle are grazing.\""
+ },
+ {
+  "src": "m1-38",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "I look forward to meet you.",
+   "I look forward to meeting you.",
+   "I look forward for meet you.",
+   "I am look forward to meeting you."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "In \"look forward to\", \"to\" is a preposition, so it is followed by verb-ing: \"meeting\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "In \"look forward to\", the word \"to\" is a preposition, not part of an infinitive, so it is followed by verb-ing: \"I look forward to meeting you.\" A) \"to meet\" wrongly treats \"to\" as an infinitive. C) \"for meet\" uses the wrong preposition and the base verb. D) \"am look\" is wrong grammar; it should be \"I am looking forward\".",
+  "rel": "Other phrases where \"to\" is a preposition and takes -ing: be used to, object to, be committed to, get used to. Example: \"I am used to waking up early.\""
+ }
+]

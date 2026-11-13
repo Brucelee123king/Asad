@@ -1,0 +1,171 @@
+[
+{
+"item": 10,
+"section": "Pakistan Studies",
+"question": "Who presented the Fourteen Points in 1929?",
+"answer": "Quaid-e-Azam Muhammad Ali Jinnah",
+"wrong": [
+"Allama Iqbal",
+"Sir Syed Ahmad Khan",
+"Liaquat Ali Khan"
+],
+"reason": "Quaid-e-Azam Muhammad Ali Jinnah presented his Fourteen Points at the Muslim League council in Delhi in March 1929, in reply to the Nehru Report.",
+"rep": 0
+},
+{
+"item": 19,
+"section": "Islamiat",
+"question": "How many gates (doors) does Jannah have?",
+"answer": "Eight",
+"wrong": [
+"Seven",
+"Four",
+"Twelve"
+],
+"reason": "A hadith in Bukhari and Muslim says Paradise has eight gates, one of which is Ar-Rayyan for those who fast.",
+"rep": 0
+},
+{
+"item": 22,
+"section": "General Knowledge",
+"question": "Attabad Lake in Gilgit-Baltistan was formed due to a:",
+"answer": "Landslide",
+"wrong": [
+"Glacier melt",
+"Earthquake fault",
+"Man-made dam construction"
+],
+"reason": "A massive landslide on 4 January 2010 blocked the Hunza River near Attabad village and created the lake. It also flooded part of the Karakoram Highway.",
+"rep": 0
+},
+{
+"item": 27,
+"section": "Pakistan Studies",
+"question": "The ancient Indus Valley site of Harappa is located near which city of Pakistan?",
+"answer": "Sahiwal",
+"wrong": [
+"Multan",
+"Larkana",
+"Bahawalpur"
+],
+"reason": "Harappa lies in Punjab, about 24 km west of Sahiwal, on a dry former course of the Ravi River. Mohenjo-daro, the other major site, is near Larkana in Sindh.",
+"rep": 0
+},
+{
+"item": 30,
+"section": "Current Affairs",
+"question": "Who is the President of France (as of October 2026)?",
+"answer": "Emmanuel Macron",
+"wrong": [
+"Francois Hollande",
+"Marine Le Pen",
+"Sebastien Lecornu"
+],
+"reason": "Emmanuel Macron is serving his second term, which ends in May 2027. Sebastien Lecornu is the Prime Minister, not the President.",
+"rep": 0
+},
+{
+"item": 39,
+"section": "General Knowledge",
+"question": "Who wrote the book Mein Kampf (My Struggle)?",
+"answer": "Adolf Hitler",
+"wrong": [
+"Benito Mussolini",
+"Joseph Stalin",
+"Winston Churchill"
+],
+"reason": "Mein Kampf was written by Adolf Hitler (vol. 1 in 1925, vol. 2 in 1926) while he was in prison after the failed Munich Putsch.",
+"rep": 0
+},
+{
+"item": 47,
+"section": "Pakistan Studies",
+"question": "The Makran Coastal Highway (N-10) connects which two cities?",
+"answer": "Karachi and Gwadar",
+"wrong": [
+"Karachi and Quetta",
+"Gwadar and Quetta",
+"Karachi and Hyderabad"
+],
+"reason": "The N-10 Makran Coastal Highway runs along the Arabian Sea from Karachi to Gwadar via Ormara and Pasni.",
+"rep": 0
+},
+{
+"item": 57,
+"section": "Islamiat",
+"question": "Which Companion of the Prophet (PBUH) is known by the title Saifullah (Sword of Allah)?",
+"answer": "Hazrat Khalid bin Walid (RA)",
+"wrong": [
+"Hazrat Hamza (RA)",
+"Hazrat Ali (RA)",
+"Hazrat Umar (RA)"
+],
+"reason": "The Prophet (PBUH) gave Khalid bin Walid the title Saifullah, traditionally after the Battle of Mu'tah.",
+"rep": 0
+},
+{
+"item": 61,
+"section": "Pakistan Studies",
+"question": "In which year did Allama Iqbal deliver his Allahabad Address, presenting the idea of a separate Muslim state in north-western India?",
+"answer": "1930",
+"wrong": [
+"1906",
+"1940",
+"1947"
+],
+"reason": "Iqbal gave the Allahabad Address on 29 December 1930 at the annual session of the All-India Muslim League.",
+"rep": 0
+},
+{
+"item": 67,
+"section": "Verbal: Maths & Reasoning",
+"question": "Which letter comes immediately after M in the English alphabet?",
+"answer": "N",
+"wrong": [
+"L",
+"O",
+"P"
+],
+"reason": "The alphabet runs ... K, L, M, N, O ... so N follows M.",
+"rep": 0
+},
+{
+"item": 83,
+"section": "Pakistan Studies",
+"question": "Who was the first Commander-in-Chief of the Pakistan Army after independence in 1947?",
+"answer": "General Sir Frank Messervy",
+"wrong": [
+"General Sir Douglas Gracey",
+"General Muhammad Ayub Khan",
+"General Sir Claude Auchinleck"
+],
+"reason": "Frank Messervy, a British officer, was the first C-in-C from 15 August 1947 to February 1948. Douglas Gracey succeeded him and Ayub Khan was the first Pakistani C-in-C in 1951.",
+"rep": 0
+},
+{
+"item": 87,
+"section": "Pakistan Studies",
+"question": "Harappa, in Punjab, Pakistan, is the type site of which ancient civilization?",
+"answer": "Indus Valley Civilization (Bronze Age)",
+"wrong": [
+"Mesopotamian Civilization",
+"Egyptian Civilization",
+"Gandhara Civilization"
+],
+"reason": "Harappa gave its name to the Harappan or Indus Valley Civilization, a Bronze Age civilization, first excavated from 1920-21.",
+"rep": 0
+},
+{
+"item": 91,
+"section": "Maths & Science",
+"question": "What is the formula for the circumference of a circle with radius r?",
+"answer": "2 pi r",
+"wrong": [
+"pi r squared",
+"pi d squared",
+"4 pi r"
+],
+"reason": "Circumference = 2 x pi x r = pi x diameter. Pi r squared is the area.",
+"rep": 0
+}
+]

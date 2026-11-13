@@ -1,0 +1,496 @@
+[
+{
+"n": 1,
+"q": "In \"The very experienced instructor spoke calmly,\" \"very\" is a:",
+"options": [
+"noun",
+"adverb",
+"adjective",
+"preposition"
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 2,
+"q": "The word \"whose\" in \"The candidate whose file was missing returned\" is a:",
+"options": [
+"relative determiner/pronoun",
+"interjection",
+"preposition",
+"article"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 3,
+"q": "In \"Courage inspires others,\" \"Courage\" is a:",
+"options": [
+"proper noun",
+"abstract noun",
+"verb",
+"adverb"
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 4,
+"q": "Which contains an auxiliary verb?",
+"options": [
+"Birds fly.",
+"He has finished.",
+"Tall trees grow.",
+"Silence helps."
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 5,
+"q": "In \"She worked despite the rain,\" \"despite\" is a:",
+"options": [
+"preposition",
+"pronoun",
+"interjection",
+"adverb of manner"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 6,
+"q": "\"By 10 p.m., they ___ the exercise.\"",
+"options": [
+"finish",
+"will have finished",
+"finished tomorrow",
+"are finish"
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 7,
+"q": "\"I ___ him yesterday at the library.\"",
+"options": [
+"meet",
+"have met",
+"met",
+"am meeting"
+],
+"passage": null,
+"key": "C",
+"expl": ""
+},
+{
+"n": 8,
+"q": "\"She ___ for the interview when I called.\"",
+"options": [
+"prepared",
+"was preparing",
+"has prepared",
+"will prepare"
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 9,
+"q": "\"He ___ here since January.\"",
+"options": [
+"works",
+"worked",
+"has worked",
+"is work"
+],
+"passage": null,
+"key": "C",
+"expl": ""
+},
+{
+"n": 10,
+"q": "\"If you heat ice, it ___.\"",
+"options": [
+"melted",
+"melts",
+"will melted",
+"would melt always"
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 11,
+"q": "Choose: \"___ army officer entered the hall.\"",
+"options": [
+"A",
+"An",
+"The always",
+"No article"
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 12,
+"q": "Choose: \"He studies at ___ university near his home.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 13,
+"q": "Which is correct?",
+"options": [
+"an useful tool",
+"a useful tool",
+"the useful tool always",
+"useful an tool"
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 14,
+"q": "\"___ Pacific Ocean is the largest ocean.\"",
+"options": [
+"A",
+"An",
+"The",
+"No article"
+],
+"passage": null,
+"key": "C",
+"expl": ""
+},
+{
+"n": 15,
+"q": "Choose: \"She can play ___ piano.\"",
+"options": [
+"a",
+"an",
+"the",
+"no article"
+],
+"passage": null,
+"key": "C",
+"expl": ""
+},
+{
+"n": 16,
+"q": "He apologized ___ being late.",
+"options": [
+"for",
+"of",
+"with",
+"to"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 17,
+"q": "The team consists ___ ten members.",
+"options": [
+"in",
+"of",
+"on",
+"at"
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 18,
+"q": "He is responsible ___ the equipment.",
+"options": [
+"of",
+"to",
+"for",
+"at"
+],
+"passage": null,
+"key": "C",
+"expl": ""
+},
+{
+"n": 19,
+"q": "The river flows ___ the valley.",
+"options": [
+"through",
+"since",
+"besides",
+"among"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 20,
+"q": "She was absent ___ class yesterday.",
+"options": [
+"from",
+"of",
+"to",
+"at"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 21,
+"q": "Passive of \"The mechanic repaired the vehicle\" is:",
+"options": [
+"The vehicle repaired.",
+"The vehicle was repaired by the mechanic.",
+"The vehicle is repair.",
+"The mechanic was repaired."
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 22,
+"q": "Passive of \"They have postponed the match\" is:",
+"options": [
+"The match has been postponed.",
+"The match had postpone.",
+"The match is postponing.",
+"The match was postponing."
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 23,
+"q": "Passive of \"You should follow the instructions\" is:",
+"options": [
+"The instructions should be followed.",
+"The instructions should followed.",
+"The instructions are should follow.",
+"The instructions followed you."
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 24,
+"q": "Active of \"The room is cleaned every day\" is:",
+"options": [
+"Someone cleans the room every day.",
+"Someone cleaned room tomorrow.",
+"The room cleans someone.",
+"Someone is clean the room."
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 25,
+"q": "Which verb is intransitive in the sentence \"The child laughed loudly\"?",
+"options": [
+"child",
+"laughed",
+"loudly",
+"the"
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 26,
+"q": "Indirect: Sara said, \"I am busy now.\"",
+"options": [
+"Sara said that she was busy then.",
+"Sara said she is busy now yesterday.",
+"Sara told that I was busy.",
+"Sara asked if she busy."
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 27,
+"q": "Indirect: He said, \"I may leave today.\"",
+"options": [
+"He said that he might leave that day.",
+"He said he may left today.",
+"He told he might leaves.",
+"He asked to leave yesterday."
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 28,
+"q": "Indirect: She said to him, \"Please sit down.\"",
+"options": [
+"She requested him to sit down.",
+"She said him please sit.",
+"She asked that he sat down.",
+"She ordered him sitting."
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 29,
+"q": "Indirect: He said, \"What a beautiful view!\"",
+"options": [
+"He exclaimed that it was a very beautiful view.",
+"He asked whether the view was beautiful.",
+"He ordered a beautiful view.",
+"He said what was a view?"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 30,
+"q": "Indirect questions use:",
+"options": [
+"statement word order",
+"question inversion always",
+"no verb",
+"only past perfect"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 31,
+"q": "Synonym of \"robust\" is:",
+"options": [
+"strong",
+"fragile",
+"silent",
+"rare"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 32,
+"q": "Antonym of \"transparent\" is:",
+"options": [
+"clear",
+"opaque",
+"visible",
+"plain"
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 33,
+"q": "Synonym of \"restrain\" is:",
+"options": [
+"control",
+"release",
+"encourage only",
+"expand"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 34,
+"q": "Antonym of \"frequent\" is:",
+"options": [
+"common",
+"regular",
+"rare",
+"repeated"
+],
+"passage": null,
+"key": "C",
+"expl": ""
+},
+{
+"n": 35,
+"q": "Synonym of \"evaluate\" is:",
+"options": [
+"assess",
+"ignore",
+"hide",
+"destroy"
+],
+"passage": null,
+"key": "A",
+"expl": ""
+},
+{
+"n": 36,
+"q": "Choose the correct sentence.",
+"options": [
+"He is capable to do it.",
+"He is capable of doing it.",
+"He is capable for do it.",
+"He capable of do it."
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 37,
+"q": "Choose the correct sentence.",
+"options": [
+"The police is investigating.",
+"The police are investigating.",
+"The police are investigates.",
+"A police are investigating."
+],
+"passage": null,
+"key": "B",
+"expl": ""
+},
+{
+"n": 38,
+"q": "Choose the correct sentence.",
+"options": [
+"I look forward to meet you.",
+"I look forward to meeting you.",
+"I look forward for meet you.",
+"I am look forward to meeting you."
+],
+"passage": null,
+"key": "B",
+"expl": ""
+}
+]

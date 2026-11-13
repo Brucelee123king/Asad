@@ -1,0 +1,1202 @@
+[
+ {
+  "src": "t2-76",
+  "question": "\"The train passed ___ the tunnel.\"",
+  "options": [
+   "through",
+   "across",
+   "over",
+   "beside"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Through\" means entering and moving within an enclosed space.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-77",
+  "question": "\"The cat jumped ___ the wall.\"",
+  "options": [
+   "over",
+   "at",
+   "since",
+   "between"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Over\" expresses movement above and across.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-78",
+  "question": "\"He arrived ___ the airport on time.\"",
+  "options": [
+   "in",
+   "at",
+   "on",
+   "by"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"At\" is used for a specific point/place such as an airport.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-79",
+  "question": "\"She insisted ___ paying the bill.\"",
+  "options": [
+   "to",
+   "on",
+   "at",
+   "for"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The standard pattern is \"insist on + -ing\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-80",
+  "question": "\"The decision depends ___ the weather.\"",
+  "options": [
+   "in",
+   "on",
+   "at",
+   "for"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The standard collocation is \"depend on\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-81",
+  "question": "Change to passive: \"The officer signed the document.\"",
+  "options": [
+   "The document signed the officer.",
+   "The document was signed by the officer.",
+   "The document is signed by the officer yesterday.",
+   "The officer was signed by the document."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Simple past passive is was/were + past participle.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-82",
+  "question": "Passive of \"They are building a bridge\" is:",
+  "options": [
+   "A bridge is being built by them.",
+   "A bridge was built by them.",
+   "A bridge has been built by them.",
+   "A bridge is built them."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Present continuous passive is am/is/are being + past participle.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-83",
+  "question": "Passive of \"She has completed the task\" is:",
+  "options": [
+   "The task has completed.",
+   "The task has been completed by her.",
+   "The task was completed by her.",
+   "The task is completing by her."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Present perfect passive is has/have been + past participle.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-84",
+  "question": "Active form of \"The gate was opened by the guard\" is:",
+  "options": [
+   "The guard opened the gate.",
+   "The guard opens the gate.",
+   "The gate opened the guard.",
+   "The guard was opening by the gate."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "The doer becomes the subject and simple past is retained.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-85",
+  "question": "Passive of \"They will announce the result tomorrow\" is:",
+  "options": [
+   "The result will announce tomorrow.",
+   "The result will be announced tomorrow.",
+   "The result is announced tomorrow.",
+   "The result has announced tomorrow."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Future passive is will be + past participle.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-86",
+  "question": "Which sentence cannot normally be changed into passive voice?",
+  "options": [
+   "He wrote a letter.",
+   "They repaired the road.",
+   "The baby slept.",
+   "She completed the form."
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Intransitive \"slept\" has no object to become the passive subject.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-87",
+  "question": "Passive of \"Open the door\" is best expressed as:",
+  "options": [
+   "Let the door be opened.",
+   "The door open.",
+   "Door is opened you.",
+   "Let open the door by you."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Imperative passive can use \"Let + object + be + past participle\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-88",
+  "question": "Passive of \"Someone has stolen my bag\" is:",
+  "options": [
+   "My bag has been stolen.",
+   "My bag had stolen.",
+   "My bag is stealing.",
+   "My bag was stole."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "The unknown agent can be omitted in passive voice.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-89",
+  "question": "Passive of \"The teacher is checking the papers\" is:",
+  "options": [
+   "The papers are checked.",
+   "The papers are being checked by the teacher.",
+   "The papers were being checked.",
+   "The papers have checked."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Present continuous passive requires \"are being checked\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-90",
+  "question": "Passive of \"You must obey the rules\" is:",
+  "options": [
+   "The rules must obey.",
+   "The rules must be obeyed.",
+   "The rules are must obeyed.",
+   "The rules have to obey you."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Modal passive is modal + be + past participle.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-91",
+  "question": "Active of \"English is spoken in many countries\" is:",
+  "options": [
+   "People speak English in many countries.",
+   "People spoke English in many countries only.",
+   "English speaks people.",
+   "Many countries are speaking English people."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "An indefinite agent such as \"people\" is natural in active voice.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-92",
+  "question": "Passive of \"They had finished the work\" is:",
+  "options": [
+   "The work had been finished.",
+   "The work has been finished.",
+   "The work was finishing.",
+   "The work had finished them."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Past perfect passive is had been + past participle.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-93",
+  "question": "Passive of \"Who wrote this letter?\" is:",
+  "options": [
+   "By whom was this letter written?",
+   "By who this letter wrote?",
+   "Whom wrote this letter?",
+   "This letter was wrote by whom?"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Formal passive interrogative: \"By whom was ... written?\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-94",
+  "question": "Which is a correct passive sentence?",
+  "options": [
+   "The road is repairing.",
+   "The road is being repaired.",
+   "The road being repaired is.",
+   "The road has repairing."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Present continuous passive uses \"is being repaired\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-95",
+  "question": "Passive of \"The storm damaged several houses\" is:",
+  "options": [
+   "Several houses were damaged by the storm.",
+   "Several houses damaged the storm.",
+   "Several houses are damage by storm.",
+   "The storm was damaged by several houses."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Simple past passive uses were + past participle.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-96",
+  "question": "Passive of \"They make cars here\" is:",
+  "options": [
+   "Cars are made here.",
+   "Cars were made here yesterday.",
+   "Cars make here.",
+   "Cars are making here."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Simple present passive is am/is/are + past participle.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-97",
+  "question": "Passive of \"The committee may approve the plan\" is:",
+  "options": [
+   "The plan may be approved by the committee.",
+   "The plan may approved.",
+   "The plan is may approve.",
+   "The plan may been approved."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Modal passive uses may + be + past participle.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-98",
+  "question": "Active of \"The message was sent by Ali\" is:",
+  "options": [
+   "Ali sent the message.",
+   "Ali sends the message now necessarily.",
+   "The message sent Ali.",
+   "Ali was sent the message by it."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "The passive subject becomes the object and the agent becomes subject.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-99",
+  "question": "Passive of \"They were watching the match\" is:",
+  "options": [
+   "The match was watched.",
+   "The match was being watched by them.",
+   "The match is being watched.",
+   "The match has been watched."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Past continuous passive is was/were being + past participle.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-100",
+  "question": "In passive voice, the main verb is normally in the:",
+  "options": [
+   "base form only",
+   "past participle form",
+   "present participle only",
+   "infinitive without be"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Passive constructions require a form of be plus the past participle.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-101",
+  "question": "Change to indirect speech: He said, \"I am tired.\"",
+  "options": [
+   "He said that I am tired.",
+   "He said that he was tired.",
+   "He says that he was tired.",
+   "He said that he is tired yesterday."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "With a past reporting verb like \"said\", \"am\" changes to \"was\". The pronoun \"I\" changes to \"he\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-102",
+  "question": "She said, \"I have finished my work.\"",
+  "options": [
+   "She said that she had finished her work.",
+   "She said that she has finished my work.",
+   "She said she finished her work tomorrow.",
+   "She told that she had finish work."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Present perfect normally backshifts to past perfect.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-103",
+  "question": "He said to me, \"You are late.\"",
+  "options": [
+   "He said me that I was late.",
+   "He told me that I was late.",
+   "He told that you were late.",
+   "He said to I that I was late."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Said to\" commonly becomes \"told + object\"; \"you\" becomes \"I\" by context.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-104",
+  "question": "Ali said, \"I will come tomorrow.\"",
+  "options": [
+   "Ali said that he would come the next day.",
+   "Ali said that I will come tomorrow.",
+   "Ali says that he would come yesterday.",
+   "Ali told he would came next day."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Will\" backshifts to \"would\" and \"tomorrow\" to \"the next day\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-105",
+  "question": "She said, \"I can swim.\"",
+  "options": [
+   "She said that she could swim.",
+   "She said that she can swam.",
+   "She told that I could swim.",
+   "She said she could swam."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Can\" normally changes to \"could\" in reported speech.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-106",
+  "question": "He said, \"I saw him yesterday.\"",
+  "options": [
+   "He said that he had seen him the previous day.",
+   "He said that he saw him tomorrow.",
+   "He said he sees him yesterday.",
+   "He told that he had saw him."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Simple past may backshift to past perfect; \"yesterday\" becomes \"the previous day\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-107",
+  "question": "The teacher said, \"The earth revolves around the sun.\"",
+  "options": [
+   "The teacher said that the earth revolved around the sun only.",
+   "The teacher said that the earth revolves around the sun.",
+   "The teacher told that the earth has revolved.",
+   "The teacher said earth revolving."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Universal truths usually remain in the present tense.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-108",
+  "question": "He said to me, \"Do you know the answer?\"",
+  "options": [
+   "He asked me if I knew the answer.",
+   "He told me do I know the answer.",
+   "He asked that I know answer.",
+   "He said me whether do I knew."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Yes/no questions use asked + if/whether + statement word order.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-109",
+  "question": "She said, \"Where are you going?\"",
+  "options": [
+   "She asked where was I going.",
+   "She asked where I was going.",
+   "She said where I am going.",
+   "She asked that where I went."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Wh-question keeps the question word but uses statement word order.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-110",
+  "question": "The officer said, \"Stand at ease.\"",
+  "options": [
+   "The officer requested them standing.",
+   "The officer ordered them to stand at ease.",
+   "The officer said that stand at ease.",
+   "The officer asked they standed."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Commands are commonly reported with ordered/told + object + to-infinitive.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-111",
+  "question": "He said, \"Please help me.\"",
+  "options": [
+   "He requested me to help him.",
+   "He ordered me help him.",
+   "He said me please to help.",
+   "He asked that I helped him yesterday."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Polite requests are reported with requested/asked + object + to-infinitive.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-112",
+  "question": "Mother said, \"Do not waste time.\"",
+  "options": [
+   "Mother advised me not to waste time.",
+   "Mother said me do not waste time.",
+   "Mother told that not waste time.",
+   "Mother advised not wasting me."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Negative commands/advice use not to + verb.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-113",
+  "question": "He said, \"Alas! I have failed.\"",
+  "options": [
+   "He exclaimed with sorrow that he had failed.",
+   "He said alas that he fails.",
+   "He exclaimed with joy that he had failed.",
+   "He asked whether he failed."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Alas\" shows sorrow, so we use \"exclaimed with sorrow\". Present perfect \"have failed\" changes to \"had failed\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-114",
+  "question": "She said, \"Hurrah! We have won.\"",
+  "options": [
+   "She exclaimed with joy that they had won.",
+   "She exclaimed with sorrow that they won.",
+   "She said hurrah we have won.",
+   "She ordered that they had won."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Hurrah\" shows joy, so we use \"exclaimed with joy\". \"We have won\" changes to \"they had won\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-115",
+  "question": "He said, \"May you succeed!\"",
+  "options": [
+   "He prayed that I might succeed.",
+   "He said that I may succeeded.",
+   "He asked me to succeeding.",
+   "He ordered success."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Wishes/prayers are often reported with prayed/wished + might.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-116",
+  "question": "\"This\" generally changes to ___ in reported speech when distance shifts.",
+  "options": [
+   "these",
+   "that",
+   "here",
+   "now"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "In reported speech, \"this\" commonly changes to \"that\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-117",
+  "question": "\"Now\" commonly changes to:",
+  "options": [
+   "then",
+   "tomorrow",
+   "there",
+   "before only"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Now\" commonly becomes \"then\" when the reporting perspective shifts.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-118",
+  "question": "\"Here\" commonly changes to:",
+  "options": [
+   "there",
+   "then",
+   "that",
+   "before"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Here\" commonly becomes \"there\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-119",
+  "question": "Which reporting verb is most suitable for a question?",
+  "options": [
+   "asked",
+   "ordered",
+   "exclaimed",
+   "promised always"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Questions are generally reported with \"asked\" or \"inquired\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-120",
+  "question": "In reported questions, the word order is generally:",
+  "options": [
+   "question order",
+   "statement order",
+   "inverted twice",
+   "verb only"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Reported questions do not normally retain subject-auxiliary inversion.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-121",
+  "question": "Choose the synonym of \"abandon\".",
+  "options": [
+   "leave",
+   "collect",
+   "repair",
+   "praise"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Abandon\" means to leave or give up.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-122",
+  "question": "Choose the antonym of \"scarce\".",
+  "options": [
+   "rare",
+   "limited",
+   "abundant",
+   "small"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Scarce\" means insufficient; \"abundant\" means plentiful.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-123",
+  "question": "Synonym of \"brave\" is:",
+  "options": [
+   "cowardly",
+   "courageous",
+   "weak",
+   "silent"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Courageous\" is a direct synonym of \"brave\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-124",
+  "question": "Antonym of \"ancient\" is:",
+  "options": [
+   "old",
+   "historic",
+   "modern",
+   "former"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Modern\" contrasts with \"ancient\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-125",
+  "question": "Synonym of \"rapid\" is:",
+  "options": [
+   "slow",
+   "swift",
+   "late",
+   "weak"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Rapid\" means fast or swift.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-126",
+  "question": "Antonym of \"expand\" is:",
+  "options": [
+   "increase",
+   "enlarge",
+   "contract",
+   "extend"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Contract\" means to become smaller.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-127",
+  "question": "Synonym of \"assist\" is:",
+  "options": [
+   "help",
+   "oppose",
+   "delay",
+   "refuse"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Assist\" means to help.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-128",
+  "question": "Antonym of \"hostile\" is:",
+  "options": [
+   "unfriendly",
+   "aggressive",
+   "friendly",
+   "angry"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Friendly\" is the opposite of hostile.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-129",
+  "question": "Synonym of \"accurate\" is:",
+  "options": [
+   "precise",
+   "careless",
+   "vague",
+   "rough"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Precise\" closely matches \"accurate\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-130",
+  "question": "Antonym of \"optimistic\" is:",
+  "options": [
+   "hopeful",
+   "positive",
+   "pessimistic",
+   "cheerful"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Pessimistic\" is the opposite in outlook.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-131",
+  "question": "Synonym of \"commence\" is:",
+  "options": [
+   "end",
+   "begin",
+   "avoid",
+   "reduce"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Commence\" means begin.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-132",
+  "question": "Antonym of \"conceal\" is:",
+  "options": [
+   "hide",
+   "cover",
+   "reveal",
+   "protect"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Reveal\" means make known or visible.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-133",
+  "question": "Synonym of \"vital\" is:",
+  "options": [
+   "essential",
+   "minor",
+   "optional",
+   "weak"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Vital\" can mean essential or critically important.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-134",
+  "question": "Antonym of \"permanent\" is:",
+  "options": [
+   "lasting",
+   "fixed",
+   "temporary",
+   "stable"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Temporary\" is not permanent.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-135",
+  "question": "Synonym of \"diligent\" is:",
+  "options": [
+   "lazy",
+   "hardworking",
+   "careless",
+   "reckless"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Diligent\" means hardworking and careful.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-136",
+  "question": "Antonym of \"superior\" is:",
+  "options": [
+   "higher",
+   "better",
+   "inferior",
+   "excellent"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Inferior\" is the direct opposite.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-137",
+  "question": "Synonym of \"obstacle\" is:",
+  "options": [
+   "hindrance",
+   "benefit",
+   "reward",
+   "solution"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "An obstacle is a hindrance or barrier.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-138",
+  "question": "Antonym of \"rigid\" is:",
+  "options": [
+   "stiff",
+   "flexible",
+   "strict",
+   "hard"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Flexible\" is the opposite of rigid.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-139",
+  "question": "Synonym of \"terminate\" is:",
+  "options": [
+   "continue",
+   "end",
+   "begin",
+   "expand"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Terminate\" means bring to an end.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-140",
+  "question": "Antonym of \"victory\" is:",
+  "options": [
+   "success",
+   "triumph",
+   "defeat",
+   "achievement"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Defeat\" is the opposite of victory.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-141",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "He do not know me.",
+   "He does not knows me.",
+   "He does not know me.",
+   "He not does know me."
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "After \"does not,\" use the base form \"know\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-142",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "She is senior than me.",
+   "She is senior to me.",
+   "She is senior from me.",
+   "She is more senior than me always."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The conventional construction is \"senior to\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-143",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "Neither of the boys are absent.",
+   "Neither of the boys is absent.",
+   "Neither boys is absent.",
+   "Neither of boys are absent."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Neither\" is singular in standard formal usage here.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-144",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "Each of the players have a kit.",
+   "Each of the players has a kit.",
+   "Each players has kit.",
+   "Each of players have a kit."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Each\" takes a singular verb.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-145",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "He has been living here since five years.",
+   "He has been living here for five years.",
+   "He is living here for five years ago.",
+   "He lived here since five years."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Use \"for\" with a duration.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-146",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "I prefer tea than coffee.",
+   "I prefer tea to coffee.",
+   "I prefer tea over than coffee.",
+   "I prefer tea from coffee."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The standard construction is \"prefer X to Y\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-147",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "One of my friend is here.",
+   "One of my friends is here.",
+   "One of my friends are here.",
+   "One my friends is here."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "After \"one of,\" use a plural noun and singular verb.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-148",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "The news are good.",
+   "The news is good.",
+   "The news were good always.",
+   "News are a good."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"News\" is grammatically singular.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-149",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "He is good in English.",
+   "He is good at English.",
+   "He is good on English.",
+   "He is good for English."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The usual collocation is \"good at\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t2-150",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "She discussed about the issue.",
+   "She discussed the issue.",
+   "She discussed on the issue.",
+   "She was discussed the issue."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Discuss\" is transitive; it does not require \"about\" before the object.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ }
+]

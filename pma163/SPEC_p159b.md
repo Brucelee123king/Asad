@@ -1,0 +1,14 @@
+# Add a narrative test-experience file to the PMA 159 MCQ section
+
+Context: the site has 308 existing PMA 159 MCQs (list: /home/user/Asad/pma163/pma159_existing.txt, one per line `<index><TAB><question>  => <correct answer>`). The new source is /home/user/Asad/pma163/clean.txt: 10 candidate write-ups (Light Forces Academy, PMA 159 / Navy tests of October 2026). Candidates only mention the questions they remember, usually without options and without answers. Ignore everything that is not a concrete question (medical, height, tips, pass or fail, topics like "prepositions were dominant").
+
+## Your job
+1. Read the whole file and list every CONCRETE remembered question or item (for example "factorial of 4", "Where was Benazir assassinated", "Mangla Dam is on which river", "Capital of Somalia", "Hazrat Hajra is the mother of", "2024 election date", "Simla Agreement"). Number them 1, 2, 3 ... in order of appearance (the same question appearing in two write-ups is two items). Vague items with no recoverable question (for example "rivalry in cricket?", "organizations headquarters", "world straits", "Imam Bukhari and Tirmizi question", "perimeter", "adjective degrees 3 name") may be skipped, or turned into a clear MCQ only if the intended question is obvious.
+2. For each item decide MATCH or NEW exactly as follows.
+   - MATCH: the existing list already has an MCQ that asks the SAME fact (same content, same correct answer; wording may differ; for maths and days questions the numbers must be the same). Use `grep -i` with key words, numbers and synonyms. Output `(item_number, existing_index)`.
+   - NEW: no such MCQ exists. Write `(item_number, section, question, correct_answer, [wrong1, wrong2, wrong3], reason, rep)` with rep 0.
+     - section must be one of: "Pakistan Studies", "Verbal: Maths & Reasoning", "Islamiat", "General Knowledge", "Verbal: English", "Maths & Science", "Current Affairs".
+     - Since the candidates give no answers, work out the correct answer yourself and verify EVERY fact with WebSearch (a deferred tool: first call ToolSearch with query `select:WebSearch`): office holders and dates as of October 2026, geography, Islamic history, Pakistan Studies. If the question is unclear or the answer is disputed, skip it and report its number. Make three plausible wrong options.
+     - reason: one or two clear English sentences with the key fact or the working.
+     - Do not use the characters < > & anywhere. Do not add questions that the candidates did not mention.
+3. Write the output as Python file `/home/user/Asad/pma163/m_q1.py` with `MATCH = [...]` and `NEW = [...]` (and a dict `ITEMS = {item_number: "short text of the remembered question"}` for all items you listed). Validate with `python3 /home/user/Asad/pma163/check163.py /home/user/Asad/pma163/m_q1.py` and fix problems. Reply SHORT: number of items, MATCH count, NEW count, skipped numbers with the reason.

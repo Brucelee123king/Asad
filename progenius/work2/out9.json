@@ -1,0 +1,1206 @@
+[
+ {
+  "num": 871,
+  "page": 97,
+  "question": "Jawab-e-Shikwa was written by which poet?",
+  "options": [
+   "Altaf Hussain Hali",
+   "Faiz Ahmed Faiz",
+   "Mirza Ghalib",
+   "Allama Iqbal"
+  ],
+  "correct": 3,
+  "why": "Allama Iqbal wrote Shikwa (1909) and its reply Jawab-e-Shikwa (1913).",
+  "rel": "Iqbal is the national poet of Pakistan. Both poems are in the book Bang-e-Dra."
+ },
+ {
+  "num": 872,
+  "page": 97,
+  "question": "Multan is famous for?",
+  "options": [
+   "City of Lights",
+   "City of Roses",
+   "City of Saints and Shrines",
+   "City of Gardens"
+  ],
+  "correct": 2,
+  "why": "Multan has many shrines of Sufi saints, so it is called the City of Saints (Pirs).",
+  "rel": "Multan is also called the City of Aulia. Famous shrines: Bahauddin Zakariya and Shah Rukn-e-Alam."
+ },
+ {
+  "num": 873,
+  "page": 97,
+  "question": "Humayun was defeated by whom?",
+  "options": [
+   "Akbar",
+   "Hemu",
+   "Sher Shah Suri",
+   "Ibrahim Lodi"
+  ],
+  "correct": 2,
+  "why": "Sher Shah Suri defeated Humayun at Chausa (1539) and Kannauj (1540).",
+  "rel": "Humayun later regained the throne in 1555. Sher Shah built the Grand Trunk Road."
+ },
+ {
+  "num": 874,
+  "page": 97,
+  "question": "Which is the smallest bone in the human body?",
+  "options": [
+   "Radius",
+   "Incus",
+   "Stapes (in the ear)",
+   "Femur"
+  ],
+  "correct": 2,
+  "why": "The stapes (stirrup) in the middle ear is the smallest bone, about 3 mm long.",
+  "rel": "The femur is the longest bone. The three ear bones are malleus, incus and stapes."
+ },
+ {
+  "num": 875,
+  "page": 97,
+  "question": "The World Health Organization (WHO) headquarters is in which country?",
+  "options": [
+   "Austria",
+   "Belgium",
+   "United States",
+   "Switzerland"
+  ],
+  "correct": 3,
+  "why": "WHO headquarters is in Geneva, Switzerland.",
+  "rel": "WHO was founded on 7 April 1948 (World Health Day)."
+ },
+ {
+  "num": 876,
+  "page": 97,
+  "question": "From which country did Pakistan buy Gwadar?",
+  "options": [
+   "Oman",
+   "UAE",
+   "Saudi Arabia",
+   "Iran"
+  ],
+  "correct": 0,
+  "why": "Pakistan bought Gwadar from the Sultan of Oman in 1958.",
+  "rel": "Gwadar is a deep-sea port on the Arabian Sea in Balochistan. It is a key CPEC project.",
+  "problem": "Source says 'import'; it should be 'buy/purchase'."
+ },
+ {
+  "num": 877,
+  "page": 97,
+  "question": "The Suez Canal is in which continent?",
+  "options": [
+   "South America",
+   "Europe",
+   "Australia",
+   "Africa"
+  ],
+  "correct": 3,
+  "why": "The Suez Canal is in Egypt, which is mainly in Africa. The canal marks the Africa-Asia boundary.",
+  "rel": "The canal links the Mediterranean Sea with the Red Sea. It opened in 1869.",
+  "problem": "Source answer 'Egypt' is a country, not a continent. Answer given is Africa."
+ },
+ {
+  "num": 878,
+  "page": 97,
+  "question": "Which is the smallest continent?",
+  "options": [
+   "Antarctica",
+   "Australia (Oceania)",
+   "Europe",
+   "South America"
+  ],
+  "correct": 1,
+  "why": "Australia is the smallest continent by land area.",
+  "rel": "Asia is the largest continent. Antarctica has the lowest population."
+ },
+ {
+  "num": 879,
+  "page": 98,
+  "question": "How many members does the United Nations have?",
+  "options": [
+   "185",
+   "193",
+   "195",
+   "201"
+  ],
+  "correct": 1,
+  "why": "The UN has 193 member states. South Sudan was the newest, joining in 2011.",
+  "rel": "Palestine and Vatican City are non-member observer states. The UN was founded in 1945."
+ },
+ {
+  "num": 880,
+  "page": 98,
+  "question": "The Bolan Pass connects Quetta with which place?",
+  "options": [
+   "Chitral",
+   "Sibi",
+   "Gilgit",
+   "Peshawar"
+  ],
+  "correct": 1,
+  "why": "The Bolan Pass links Quetta with Sibi and the Sindh plains.",
+  "rel": "It is a pass in the Brahui range in Balochistan."
+ },
+ {
+  "num": 881,
+  "page": 98,
+  "question": "The Wagah border connects Pakistan with which country?",
+  "options": [
+   "India",
+   "Iran",
+   "China",
+   "Afghanistan"
+  ],
+  "correct": 0,
+  "why": "Wagah (Lahore side) is the main road border crossing between Pakistan and India, near Amritsar.",
+  "rel": "The Beating Retreat ceremony is held daily at Wagah. Torkham connects Pakistan with Afghanistan.",
+  "problem": "Source spelled 'Waghan'; taken as Wagah. The Wakhan Corridor is in Afghanistan."
+ },
+ {
+  "num": 882,
+  "page": 98,
+  "question": "What is the capital of Kazakhstan?",
+  "options": [
+   "Tashkent",
+   "Bishkek",
+   "Almaty",
+   "Astana"
+  ],
+  "correct": 3,
+  "why": "Astana is the capital of Kazakhstan. It was named Nur-Sultan from 2019 to 2022, then renamed Astana.",
+  "rel": "Almaty was the old capital until 1997."
+ },
+ {
+  "num": 883,
+  "page": 98,
+  "question": "What is the length of the Durand Line?",
+  "options": [
+   "1,800 km",
+   "2,640 km",
+   "1,200 km",
+   "3,100 km"
+  ],
+  "correct": 1,
+  "why": "The Durand Line between Pakistan and Afghanistan is about 2,640 km (about 1,640 miles).",
+  "rel": "It was drawn in 1893 by Sir Mortimer Durand. Afghanistan does not formally accept it.",
+  "problem": "Source says '1600 miles'; commonly it is about 1,640 miles (2,640 km)."
+ },
+ {
+  "num": 884,
+  "page": 98,
+  "question": "What is the height of the Eiffel Tower (with antenna)?",
+  "options": [
+   "330 metres",
+   "380 metres",
+   "275 metres",
+   "420 metres"
+  ],
+  "correct": 0,
+  "why": "The Eiffel Tower is about 330 m tall including its antenna.",
+  "rel": "It was built in 1889 in Paris by Gustave Eiffel. Original height was about 300 m.",
+  "problem": "Source says 300 m, which was the original height; current height is about 330 m."
+ },
+ {
+  "num": 885,
+  "page": 98,
+  "question": "In which country is the University of Benin?",
+  "options": [
+   "Kenya",
+   "Ghana",
+   "Nigeria",
+   "Benin Republic"
+  ],
+  "correct": 2,
+  "why": "The University of Benin is in Benin City, Edo State, Nigeria.",
+  "rel": "Do not confuse Benin City (Nigeria) with the country Benin."
+ },
+ {
+  "num": 886,
+  "page": 98,
+  "question": "What is the height of Tirich Mir?",
+  "options": [
+   "7,708 metres",
+   "8,611 metres",
+   "7,200 metres",
+   "6,250 metres"
+  ],
+  "correct": 0,
+  "why": "Tirich Mir in Chitral, KPK, is 7,708 m high.",
+  "rel": "It is the highest peak of the Hindu Kush range. K2 (8,611 m) is the highest in Pakistan."
+ },
+ {
+  "num": 887,
+  "page": 98,
+  "question": "How many Islamic countries are there in Asia (standard exam answer)?",
+  "options": [
+   "8",
+   "30",
+   "15",
+   "44"
+  ],
+  "correct": 2,
+  "why": "Exam books commonly give 15, though the number depends on the definition used.",
+  "rel": "The OIC has 57 member states in total.",
+  "problem": "Source answer 15 is not exact; the count depends on definition (Muslim-majority countries in Asia are more than 15)."
+ },
+ {
+  "num": 888,
+  "page": 99,
+  "question": "Which is the largest lake in the world?",
+  "options": [
+   "Lake Baikal",
+   "Lake Victoria",
+   "Caspian Sea",
+   "Lake Superior"
+  ],
+  "correct": 2,
+  "why": "The Caspian Sea (Central Asia) is the largest inland water body by area, about 371,000 sq km.",
+  "rel": "Lake Superior is the largest freshwater lake by area. Lake Baikal is the deepest."
+ },
+ {
+  "num": 889,
+  "page": 99,
+  "question": "Which is the world's largest sea port?",
+  "options": [
+   "Dubai (Jebel Ali)",
+   "Shanghai (China)",
+   "Rotterdam",
+   "Singapore"
+  ],
+  "correct": 1,
+  "why": "The Port of Shanghai is the busiest and largest container port in the world.",
+  "rel": "Gwadar is Pakistan's deep-sea port; Karachi is its largest port.",
+  "problem": "Source text 'sew part' read as 'sea port'. Rankings depend on measure."
+ },
+ {
+  "num": 890,
+  "page": 99,
+  "question": "Which of these is different from the rest: Rome, Paris, Berlin, New York?",
+  "options": [
+   "Paris",
+   "Rome",
+   "Berlin",
+   "New York"
+  ],
+  "correct": 3,
+  "why": "Rome, Paris and Berlin are national capitals; New York is not a capital.",
+  "rel": "Washington, D.C. is the capital of the USA.",
+  "problem": "Question had no options; reconstructed from the answer."
+ },
+ {
+  "num": 891,
+  "page": 99,
+  "question": "What is the capital of Italy?",
+  "options": [
+   "Venice",
+   "Rome",
+   "Naples",
+   "Milan"
+  ],
+  "correct": 1,
+  "why": "Rome is the capital of Italy.",
+  "rel": "Vatican City is inside Rome."
+ },
+ {
+  "num": 892,
+  "page": 99,
+  "question": "What is the unit of magnetic flux?",
+  "options": [
+   "Gauss",
+   "Weber",
+   "Tesla",
+   "Henry"
+  ],
+  "correct": 1,
+  "why": "The SI unit of magnetic flux is the weber (Wb).",
+  "rel": "Tesla is the unit of magnetic flux density."
+ },
+ {
+  "num": 893,
+  "page": 99,
+  "question": "One horsepower is equal to how many watts?",
+  "options": [
+   "746 watts",
+   "100 watts",
+   "550 watts",
+   "1,000 watts"
+  ],
+  "correct": 0,
+  "why": "1 horsepower equals about 746 watts.",
+  "rel": "1 kilowatt = 1000 watts.",
+  "problem": "Source question 'one hour power' is garbled; reconstructed as one horsepower."
+ },
+ {
+  "num": 894,
+  "page": 99,
+  "question": "The pinhole camera was invented by?",
+  "options": [
+   "Al-Biruni",
+   "Ibn Sina",
+   "Ibn al-Haytham",
+   "Al-Khwarizmi"
+  ],
+  "correct": 2,
+  "why": "Ibn al-Haytham (Alhazen) described the pinhole camera (camera obscura) in his Book of Optics.",
+  "rel": "He is called the father of modern optics."
+ },
+ {
+  "num": 895,
+  "page": 99,
+  "question": "Which is the deepest part of the Earth's oceans?",
+  "options": [
+   "Java Trench",
+   "Tonga Trench",
+   "Puerto Rico Trench",
+   "Mariana Trench"
+  ],
+  "correct": 3,
+  "why": "The Mariana Trench in the Pacific Ocean is about 11,000 m deep.",
+  "rel": "Its deepest point is Challenger Deep."
+ },
+ {
+  "num": 896,
+  "page": 100,
+  "question": "The Earth is divided into how many continents?",
+  "options": [
+   "6",
+   "5",
+   "7",
+   "8"
+  ],
+  "correct": 2,
+  "why": "The usual model has seven continents.",
+  "rel": "They are Asia, Africa, North America, South America, Antarctica, Europe and Australia."
+ },
+ {
+  "num": 897,
+  "page": 100,
+  "question": "Water flows through pipes, and blood flows through?",
+  "options": [
+   "Bones",
+   "Veins",
+   "Muscles",
+   "Nerves"
+  ],
+  "correct": 1,
+  "why": "Blood flows through blood vessels such as veins (and arteries).",
+  "rel": "Veins carry blood to the heart; arteries carry it away.",
+  "problem": "Question reworded from a garbled original; arteries also carry blood but are not given as an option."
+ },
+ {
+  "num": 898,
+  "page": 100,
+  "question": "How many days are there in a leap year?",
+  "options": [
+   "367",
+   "365",
+   "364",
+   "366"
+  ],
+  "correct": 3,
+  "why": "A leap year has 366 days because February has 29 days.",
+  "rel": "A leap year comes every 4 years."
+ },
+ {
+  "num": 899,
+  "page": 100,
+  "question": "Choose the correct word: There is no one else to hide ___.",
+  "options": [
+   "behind",
+   "between",
+   "over",
+   "across"
+  ],
+  "correct": 0,
+  "why": "We say 'hide behind' someone or something.",
+  "rel": "Preposition use is a common English test topic.",
+  "problem": "Question text garbled; reconstructed."
+ },
+ {
+  "num": 900,
+  "page": 100,
+  "question": "A light year is a unit of?",
+  "options": [
+   "Mass",
+   "Distance",
+   "Speed",
+   "Time"
+  ],
+  "correct": 1,
+  "why": "A light year is the distance light travels in one year, about 9.46 trillion km.",
+  "rel": "Light speed is about 3 lakh km per second."
+ },
+ {
+  "num": 901,
+  "page": 100,
+  "question": "Which is the world's smallest country?",
+  "options": [
+   "Liechtenstein",
+   "Vatican City",
+   "San Marino",
+   "Monaco"
+  ],
+  "correct": 1,
+  "why": "Vatican City is the smallest country by area (about 0.44 sq km).",
+  "rel": "Monaco is the second smallest.",
+  "problem": "Source says 'county'; read as 'country'."
+ },
+ {
+  "num": 902,
+  "page": 100,
+  "question": "What is the unit of force?",
+  "options": [
+   "Watt",
+   "Joule",
+   "Pascal",
+   "Newton"
+  ],
+  "correct": 3,
+  "why": "The SI unit of force is the newton (N).",
+  "rel": "1 N = 1 kg m/s squared."
+ },
+ {
+  "num": 903,
+  "page": 100,
+  "question": "The kWh (kilowatt-hour) is a unit of?",
+  "options": [
+   "Current",
+   "Energy",
+   "Power",
+   "Force"
+  ],
+  "correct": 1,
+  "why": "kWh measures energy. Power is in watts or kilowatts.",
+  "rel": "1 kWh = 3.6 million joules.",
+  "problem": "Source answer 'Power' is wrong; kWh is energy."
+ },
+ {
+  "num": 904,
+  "page": 100,
+  "question": "What is the area of a circle?",
+  "options": [
+   "2 pi r",
+   "pi r cubed",
+   "pi d squared",
+   "pi r squared"
+  ],
+  "correct": 3,
+  "why": "Area of a circle = pi x r x r.",
+  "rel": "Circumference = 2 pi r."
+ },
+ {
+  "num": 905,
+  "page": 101,
+  "question": "What is the currency of Bangladesh?",
+  "options": [
+   "Rufiyaa",
+   "Taka",
+   "Rupee",
+   "Ringgit"
+  ],
+  "correct": 1,
+  "why": "Bangladesh's currency is the taka.",
+  "rel": "Pakistan and India use the rupee."
+ },
+ {
+  "num": 906,
+  "page": 101,
+  "question": "IMF stands for?",
+  "options": [
+   "International Monetary Fund",
+   "International Money Foundation",
+   "International Military Force",
+   "Indian Monetary Fund"
+  ],
+  "correct": 0,
+  "why": "IMF is the International Monetary Fund, which helps countries with financial stability.",
+  "rel": "Its headquarters is in Washington, D.C.",
+  "problem": "Source answer was only 'monetary'."
+ },
+ {
+  "num": 907,
+  "page": 101,
+  "question": "NaCl is the chemical formula of?",
+  "options": [
+   "Sodium chloride",
+   "Sodium hydroxide",
+   "Calcium chloride",
+   "Sodium carbonate"
+  ],
+  "correct": 0,
+  "why": "NaCl is common salt, sodium chloride.",
+  "rel": "Washing soda is Na2CO3.",
+  "problem": "Question reconstructed from the answer."
+ },
+ {
+  "num": 908,
+  "page": 101,
+  "question": "Who is the current Chief of the Naval Staff of Pakistan (as of Oct 2026)?",
+  "options": [
+   "Admiral Naveed Ashraf",
+   "Admiral Muhammad Amjad Khan Niazi",
+   "Admiral Zafar Mahmood Abbasi",
+   "Admiral Asif Sandila"
+  ],
+  "correct": 0,
+  "why": "As of Oct 2026, Admiral Naveed Ashraf is CNS. He took charge on 7 October 2023.",
+  "rel": "He succeeded Admiral Amjad Khan Niazi.",
+  "problem": "Checked by web search; matches the source."
+ },
+ {
+  "num": 909,
+  "page": 101,
+  "question": "Which country is called the 'Land of a Thousand Lakes'?",
+  "options": [
+   "Norway",
+   "Canada",
+   "Finland",
+   "Sweden"
+  ],
+  "correct": 2,
+  "why": "Finland has about 188,000 lakes and is known by this name.",
+  "rel": "Minnesota (USA) is also called the Land of 10,000 Lakes."
+ },
+ {
+  "num": 910,
+  "page": 101,
+  "question": "The medium which carries signals from source to destination is called?",
+  "options": [
+   "Transmission channel",
+   "Encoder",
+   "Decoder",
+   "Modulator"
+  ],
+  "correct": 0,
+  "why": "The channel (transmission medium) carries the signal from sender to receiver.",
+  "rel": "Examples are cable, fibre and air."
+ },
+ {
+  "num": 911,
+  "page": 101,
+  "question": "The highest mountain of the world, Mount Everest, is in which country?",
+  "options": [
+   "Bhutan",
+   "Pakistan",
+   "India",
+   "Nepal"
+  ],
+  "correct": 3,
+  "why": "Mount Everest (8,849 m) is on the Nepal-China border and is mainly credited to Nepal.",
+  "rel": "K2 is the highest mountain in Pakistan."
+ },
+ {
+  "num": 912,
+  "page": 101,
+  "question": "When did Pakistan join the UN?",
+  "options": [
+   "24 October 1945",
+   "14 August 1947",
+   "23 March 1956",
+   "30 September 1947"
+  ],
+  "correct": 3,
+  "why": "Pakistan became a UN member on 30 September 1947.",
+  "rel": "Pakistan was the 56th member."
+ },
+ {
+  "num": 913,
+  "page": 102,
+  "question": "Which river flows along the Salt Range?",
+  "options": [
+   "Chenab",
+   "Ravi",
+   "Indus River",
+   "Sutlej"
+  ],
+  "correct": 2,
+  "why": "The Indus flows along the western side of the Salt Range.",
+  "rel": "The Jhelum also flows along its northern edge. Khewra has a famous salt mine.",
+  "problem": "Jhelum also touches the Salt Range; standard answer here is Indus."
+ },
+ {
+  "num": 914,
+  "page": 102,
+  "question": "In an n-p-n transistor, the p region works as the?",
+  "options": [
+   "Collector",
+   "Emitter",
+   "Base",
+   "Gate"
+  ],
+  "correct": 2,
+  "why": "In an n-p-n transistor the middle p-type layer is the base.",
+  "rel": "The other two layers are emitter and collector."
+ },
+ {
+  "num": 915,
+  "page": 102,
+  "question": "Who was the first Chief of Naval Staff of the Pakistan Navy?",
+  "options": [
+   "Admiral Mohammad Shariff",
+   "Admiral Muzaffar Hassan",
+   "Vice Admiral M. S. Choudri",
+   "Vice Admiral Hasan Hafeez Ahmed"
+  ],
+  "correct": 3,
+  "why": "H. H. Ahmed was the first Chief of Naval Staff (1972-1975) after the title changed from C-in-C.",
+  "rel": "Vice Admiral Choudri was the first Pakistani Commander-in-Chief (1953-59)."
+ },
+ {
+  "num": 916,
+  "page": 102,
+  "question": "How many metres are there in 2 km?",
+  "options": [
+   "20,000 m",
+   "200 m",
+   "2,000 m",
+   "1,000 m"
+  ],
+  "correct": 2,
+  "why": "1 km = 1000 m, so 2 km = 2000 m.",
+  "rel": "1 mile is about 1.6 km."
+ },
+ {
+  "num": 917,
+  "page": 102,
+  "question": "In which district is Mohenjo-Daro located?",
+  "options": [
+   "Larkana",
+   "Sukkur",
+   "Khairpur",
+   "Hyderabad"
+  ],
+  "correct": 0,
+  "why": "Mohenjo-Daro is in Larkana district, Sindh.",
+  "rel": "It is a UNESCO World Heritage Site of the Indus Valley Civilization.",
+  "problem": "Source question is unclear ('20 km away'); answer Larkana only."
+ },
+ {
+  "num": 918,
+  "page": 102,
+  "question": "The Asian Development Bank (ADB) headquarters is in which country?",
+  "options": [
+   "China",
+   "Japan",
+   "Philippines",
+   "Singapore"
+  ],
+  "correct": 2,
+  "why": "ADB is headquartered in Manila, Philippines.",
+  "rel": "ADB was set up in 1966."
+ },
+ {
+  "num": 919,
+  "page": 102,
+  "question": "Which is the deepest river in the world?",
+  "options": [
+   "Amazon",
+   "Yangtze",
+   "Congo River",
+   "Nile"
+  ],
+  "correct": 2,
+  "why": "The Congo River is the deepest, over 220 m in places.",
+  "rel": "The Nile is often called the longest river."
+ },
+ {
+  "num": 920,
+  "page": 102,
+  "question": "The border between Pakistan and Afghanistan is called?",
+  "options": [
+   "McMahon Line",
+   "Radcliffe Line",
+   "Line of Control",
+   "Durand Line"
+  ],
+  "correct": 3,
+  "why": "The Durand Line is the 2,640 km Pakistan-Afghanistan border.",
+  "rel": "The Radcliffe Line separates Pakistan and India."
+ },
+ {
+  "num": 921,
+  "page": 102,
+  "question": "Which prophet was inside the fish?",
+  "options": [
+   "Hazrat Yunus (AS)",
+   "Hazrat Ibrahim (AS)",
+   "Hazrat Nuh (AS)",
+   "Hazrat Musa (AS)"
+  ],
+  "correct": 0,
+  "why": "Hazrat Yunus (AS), called Dhun-Nun, was swallowed by a fish.",
+  "rel": "Surah Yunus is the 10th surah of the Quran."
+ },
+ {
+  "num": 922,
+  "page": 103,
+  "question": "When were the first direct general elections (one person, one vote) held in Pakistan?",
+  "options": [
+   "1965",
+   "1970",
+   "1977",
+   "1956"
+  ],
+  "correct": 1,
+  "why": "The first direct general elections based on adult franchise were held in December 1970.",
+  "rel": "Awami League won in East Pakistan; PPP won in West Pakistan.",
+  "problem": "Source answer text was mismatched ('Brussels and Luxembourg'); standard answer 1970 used."
+ },
+ {
+  "num": 923,
+  "page": 103,
+  "question": "Zulfiqar Ali Bhutto gave Pakistan which constitution?",
+  "options": [
+   "The 1973 Constitution",
+   "The 1962 Constitution",
+   "The 1935 Act",
+   "The 1956 Constitution"
+  ],
+  "correct": 0,
+  "why": "The 1973 Constitution, Pakistan's third, was passed under Z. A. Bhutto.",
+  "rel": "It is still in force. The 1956 and 1962 constitutions came earlier.",
+  "problem": "Source question was garbled; reconstructed."
+ },
+ {
+  "num": 924,
+  "page": 103,
+  "question": "How many agencies were there in FATA?",
+  "options": [
+   "9",
+   "12",
+   "7",
+   "5"
+  ],
+  "correct": 2,
+  "why": "FATA had 7 tribal agencies (Bajaur, Mohmand, Khyber, Orakzai, Kurram, North and South Waziristan).",
+  "rel": "FATA was merged into Khyber Pakhtunkhwa in 2018 (25th Amendment).",
+  "problem": "FATA no longer exists as of Oct 2026."
+ },
+ {
+  "num": 925,
+  "page": 103,
+  "question": "In which year was the Montagu-Chelmsford Reform introduced?",
+  "options": [
+   "1947",
+   "1919",
+   "1935",
+   "1909"
+  ],
+  "correct": 1,
+  "why": "The Government of India Act 1919 came from the Montagu-Chelmsford Reforms.",
+  "rel": "Morley-Minto Reforms: 1909. Government of India Act: 1935."
+ },
+ {
+  "num": 926,
+  "page": 103,
+  "question": "Which is the largest country by area?",
+  "options": [
+   "China",
+   "Canada",
+   "Russia",
+   "United States"
+  ],
+  "correct": 2,
+  "why": "Russia is the largest country with about 17 million sq km.",
+  "rel": "India has the largest population (about 1.43 billion), then China."
+ },
+ {
+  "num": 927,
+  "page": 104,
+  "question": "How many member countries are in the European Union (EU)?",
+  "options": [
+   "27",
+   "25",
+   "30",
+   "28"
+  ],
+  "correct": 0,
+  "why": "The EU has 27 members after the UK left in 2020.",
+  "rel": "The EU headquarters is Brussels, Belgium. The Maastricht Treaty took effect in 1993."
+ },
+ {
+  "num": 928,
+  "page": 104,
+  "question": "Which of these is not a member of the United Nations?",
+  "options": [
+   "Vatican City",
+   "Switzerland",
+   "Pakistan",
+   "Japan"
+  ],
+  "correct": 0,
+  "why": "Vatican City is only a non-member observer state of the UN.",
+  "rel": "Palestine is also a non-member observer state. Switzerland joined in 2002.",
+  "problem": "Both Vatican City and Palestine are non-members; only one is given as an option."
+ },
+ {
+  "num": 929,
+  "page": 104,
+  "question": "Who was the first Governor General of Pakistan?",
+  "options": [
+   "Ghulam Muhammad",
+   "Quaid-e-Azam Muhammad Ali Jinnah",
+   "Khawaja Nazimuddin",
+   "Iskander Mirza"
+  ],
+  "correct": 1,
+  "why": "Jinnah took oath as the first Governor General on 15 August 1947.",
+  "rel": "Next ones were Nazimuddin, Ghulam Muhammad and Iskander Mirza."
+ },
+ {
+  "num": 930,
+  "page": 104,
+  "question": "Who founded the Dawn newspaper?",
+  "options": [
+   "Liaquat Ali Khan",
+   "Allama Iqbal",
+   "Maulana Zafar Ali Khan",
+   "Quaid-e-Azam Muhammad Ali Jinnah"
+  ],
+  "correct": 3,
+  "why": "Jinnah founded Dawn in Delhi in 1941.",
+  "rel": "It began as a weekly newspaper."
+ },
+ {
+  "num": 931,
+  "page": 105,
+  "question": "Which pass connects Pakistan and Afghanistan?",
+  "options": [
+   "Khunjerab Pass",
+   "Khyber Pass",
+   "Lowari Pass",
+   "Shandur Pass"
+  ],
+  "correct": 1,
+  "why": "The Khyber Pass links Peshawar with Jalalabad (Afghanistan).",
+  "rel": "Torkham is the border point at the Khyber Pass."
+ },
+ {
+  "num": 932,
+  "page": 105,
+  "question": "The Khunjerab Pass connects Pakistan with which country?",
+  "options": [
+   "China",
+   "Afghanistan",
+   "Iran",
+   "India"
+  ],
+  "correct": 0,
+  "why": "Khunjerab (Gilgit-Baltistan) links Pakistan with Xinjiang, China.",
+  "rel": "At about 4,693 m it is among the highest paved border crossings."
+ },
+ {
+  "num": 933,
+  "page": 105,
+  "question": "The Muztagh Pass connects Baltistan with?",
+  "options": [
+   "Chitral",
+   "Yarkand (China)",
+   "Quetta",
+   "Swat"
+  ],
+  "correct": 1,
+  "why": "Muztagh Pass links Baltistan with Yarkand in Xinjiang, China.",
+  "rel": "Mintaka and Khunjerab also link Gilgit-Baltistan with China.",
+  "problem": "Source gives two answers (Hunza / Yarkand); Baltistan-Yarkand used."
+ },
+ {
+  "num": 934,
+  "page": 105,
+  "question": "The Tochi Pass connects Bannu (Pakistan) with?",
+  "options": [
+   "Ghazni (Afghanistan)",
+   "Kandahar",
+   "Herat",
+   "Kabul"
+  ],
+  "correct": 0,
+  "why": "The Tochi Pass links Bannu in Pakistan with Ghazni in Afghanistan.",
+  "rel": "It lies in North Waziristan."
+ },
+ {
+  "num": 935,
+  "page": 105,
+  "question": "The Shandur Pass connects Gilgit with?",
+  "options": [
+   "Skardu",
+   "Swat",
+   "Dir",
+   "Chitral"
+  ],
+  "correct": 3,
+  "why": "Shandur Pass links Chitral (KPK) with Gilgit-Baltistan.",
+  "rel": "The world's highest polo ground is at Shandur."
+ },
+ {
+  "num": 936,
+  "page": 105,
+  "question": "The Lowari Pass connects Dir and Peshawar region with?",
+  "options": [
+   "Chitral",
+   "Skardu",
+   "Quetta",
+   "Gilgit"
+  ],
+  "correct": 0,
+  "why": "Lowari Pass links Dir with Chitral.",
+  "rel": "The Lowari Tunnel is a major road tunnel there."
+ },
+ {
+  "num": 937,
+  "page": 105,
+  "question": "The Bolan Pass connects Quetta with?",
+  "options": [
+   "Gilgit",
+   "Peshawar",
+   "Chitral",
+   "The Sindh plains (Sibi and Jacobabad)"
+  ],
+  "correct": 3,
+  "why": "Bolan Pass joins Quetta with Sibi and the Sindh plains.",
+  "rel": "It is in the Brahui range, Balochistan."
+ },
+ {
+  "num": 938,
+  "page": 106,
+  "question": "Who was the first Prime Minister of Pakistan to visit China?",
+  "options": [
+   "Huseyn Shaheed Suhrawardy",
+   "Chaudhry Muhammad Ali",
+   "Zulfiqar Ali Bhutto",
+   "Liaquat Ali Khan"
+  ],
+  "correct": 0,
+  "why": "Suhrawardy visited China in 1956 while he was the 5th PM (1956-57).",
+  "rel": "China-Pakistan ties began in 1951."
+ },
+ {
+  "num": 939,
+  "page": 106,
+  "question": "In which year did Bangladesh separate from Pakistan?",
+  "options": [
+   "1970",
+   "1973",
+   "1965",
+   "1971"
+  ],
+  "correct": 3,
+  "why": "East Pakistan became Bangladesh on 16 December 1971.",
+  "rel": "The Hamoodur Rahman Commission studied the fall of Dhaka."
+ },
+ {
+  "num": 940,
+  "page": 106,
+  "question": "In the 1970 elections, who led the winning party in East Pakistan?",
+  "options": [
+   "Zulfiqar Ali Bhutto",
+   "Maulana Bhashani",
+   "Yahya Khan",
+   "Sheikh Mujibur Rahman (Awami League)"
+  ],
+  "correct": 3,
+  "why": "The Awami League led by Sheikh Mujib won almost all East Pakistan seats.",
+  "rel": "Z. A. Bhutto's PPP won most seats in West Pakistan.",
+  "problem": "Question reconstructed from the notes."
+ },
+ {
+  "num": 941,
+  "page": 106,
+  "question": "The Warsak Dam is built on which river?",
+  "options": [
+   "Kabul River",
+   "Indus River",
+   "Haro River",
+   "Jhelum River"
+  ],
+  "correct": 0,
+  "why": "Warsak Dam (KPK) is on the Kabul River.",
+  "rel": "Mangla is on the Jhelum, Tarbela on the Indus, Mirani on the Dasht."
+ },
+ {
+  "num": 942,
+  "page": 106,
+  "question": "Which is the smallest continent?",
+  "options": [
+   "Australia (Oceania)",
+   "South America",
+   "Europe",
+   "Antarctica"
+  ],
+  "correct": 0,
+  "why": "Australia is the smallest continent by area.",
+  "rel": "Asia is largest by area and population."
+ },
+ {
+  "num": 943,
+  "page": 107,
+  "question": "Which country of the world lies in two continents?",
+  "options": [
+   "Turkey",
+   "Saudi Arabia",
+   "Greece",
+   "Iran"
+  ],
+  "correct": 0,
+  "why": "Turkey lies in both Europe and Asia.",
+  "rel": "Istanbul is split by the Bosphorus. Russia and Egypt also span two continents.",
+  "problem": "More than one country spans two continents; Turkey is the standard exam answer."
+ },
+ {
+  "num": 944,
+  "page": 107,
+  "question": "From whom did Pakistan buy Gwadar, and in which year?",
+  "options": [
+   "UAE, 1971",
+   "Oman, 1958",
+   "Oman, 1947",
+   "Iran, 1948"
+  ],
+  "correct": 1,
+  "why": "Pakistan bought Gwadar from Oman in 1958 for about 3 million dollars.",
+  "rel": "Gwadar is on the Balochistan coast of the Arabian Sea."
+ },
+ {
+  "num": 945,
+  "page": 107,
+  "question": "Which continent is known as the 'Dark Continent'?",
+  "options": [
+   "South America",
+   "Asia",
+   "Africa",
+   "Antarctica"
+  ],
+  "correct": 2,
+  "why": "Africa was called the Dark Continent because it was little known to Europeans.",
+  "rel": "Africa is the second largest continent."
+ },
+ {
+  "num": 946,
+  "page": 107,
+  "question": "For how many years is the President of Pakistan elected?",
+  "options": [
+   "Three years",
+   "Six years",
+   "Five years",
+   "Four years"
+  ],
+  "correct": 2,
+  "why": "The President is elected for a five-year term by an electoral college.",
+  "rel": "The 1973 Constitution sets this term."
+ },
+ {
+  "num": 947,
+  "page": 107,
+  "question": "Who had the longest tenure as President of Pakistan?",
+  "options": [
+   "Zia-ul-Haq",
+   "Ayub Khan",
+   "Pervez Musharraf",
+   "Asif Ali Zardari"
+  ],
+  "correct": 1,
+  "why": "Ayub Khan was President for about 10 years 5 months (1958-1969).",
+  "rel": "Zia-ul-Haq was President for about 9 years 11 months.",
+  "problem": "Zia ruled longer if martial law is counted; for the presidency alone Ayub is the usual answer."
+ },
+ {
+  "num": 948,
+  "page": 108,
+  "question": "Campbellpur is the old name of which city of Pakistan?",
+  "options": [
+   "Mardan",
+   "Attock",
+   "Kohat",
+   "Sargodha"
+  ],
+  "correct": 1,
+  "why": "Attock was earlier called Campbellpur.",
+  "rel": "The Attock Fort was built by Akbar."
+ },
+ {
+  "num": 949,
+  "page": 108,
+  "question": "Tirmizi (Jami at-Tirmidhi) is a book of?",
+  "options": [
+   "Tafsir",
+   "Hadith",
+   "Fiqh",
+   "Poetry"
+  ],
+  "correct": 1,
+  "why": "Jami at-Tirmidhi is one of the six authentic Hadith books (Sihah Sitta).",
+  "rel": "The others are Bukhari, Muslim, Abu Dawud, Nasai and Ibn Majah."
+ },
+ {
+  "num": 950,
+  "page": 108,
+  "question": "Nobel Prizes are given in how many fields today?",
+  "options": [
+   "8",
+   "6",
+   "4",
+   "5"
+  ],
+  "correct": 1,
+  "why": "Prizes are given in Physics, Chemistry, Medicine, Literature, Peace and Economics (added 1969).",
+  "rel": "The prizes were first given in 1901.",
+  "problem": "Source mentions five fields and '1930'; Economics was added later, so six."
+ },
+ {
+  "num": 951,
+  "page": 108,
+  "question": "How many Nobel Prizes does Pakistan have (as of Oct 2026)?",
+  "options": [
+   "3",
+   "1",
+   "4",
+   "2"
+  ],
+  "correct": 3,
+  "why": "Pakistan has 2 Nobel laureates: Abdus Salam (Physics, 1979) and Malala Yousafzai (Peace, 2014).",
+  "rel": "Malala is the youngest Nobel laureate.",
+  "problem": "Checked by web search; no new Pakistani winner in 2026 found."
+ },
+ {
+  "num": 952,
+  "page": 108,
+  "question": "What is the chemical symbol of gold?",
+  "options": [
+   "Au",
+   "Gd",
+   "Go",
+   "Ag"
+  ],
+  "correct": 0,
+  "why": "Au comes from the Latin word Aurum.",
+  "rel": "Silver is Ag (Argentum)."
+ },
+ {
+  "num": 953,
+  "page": 108,
+  "question": "What is the capital of Gilgit-Baltistan?",
+  "options": [
+   "Gilgit",
+   "Hunza",
+   "Chilas",
+   "Skardu"
+  ],
+  "correct": 0,
+  "why": "Gilgit is the capital of Gilgit-Baltistan.",
+  "rel": "Skardu is the main town of Baltistan."
+ },
+ {
+  "num": 954,
+  "page": 108,
+  "question": "Who gave the name 'United Nations'?",
+  "options": [
+   "Winston Churchill",
+   "Joseph Stalin",
+   "Woodrow Wilson",
+   "Franklin D. Roosevelt"
+  ],
+  "correct": 3,
+  "why": "US President Roosevelt suggested the name; it was first used in the Declaration by United Nations (1 Jan 1942).",
+  "rel": "The UN Charter came into force on 24 October 1945."
+ }
+]

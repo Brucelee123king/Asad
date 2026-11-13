@@ -1,0 +1,363 @@
+[
+ {
+  "id": "M342",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "app.com.pk",
+   "profit.pakistantoday.com.pk",
+   "textalks.com"
+  ],
+  "note": "Textiles ~60% of Pakistan exports ($17.9bn of $30.1bn, FY26)"
+ },
+ {
+  "id": "M354",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Chief_minister_(Pakistan)",
+   "en.wikipedia.org/wiki/Maryam_Nawaz",
+   "arynews.tv"
+  ],
+  "note": "Maryam Nawaz CM Punjab, Murad Ali Shah CM Sindh since Feb 2024; no change found by Nov 2026"
+ },
+ {
+  "id": "M386",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/President_of_Pakistan",
+   "mofa.gov.pk/president-of-pakistan",
+   "gdeltcloud.com"
+  ],
+  "note": "Asif Ali Zardari president since 10 Mar 2024; still in office in 2026"
+ },
+ {
+  "id": "M390",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Li_Qiang",
+   "charter97.org (Oct 2026)",
+   "faf.ae (May 2026)"
+  ],
+  "note": "Xi Jinping is President of China (third term since 2023), still in 2026"
+ },
+ {
+  "id": "M391",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Hero_of_the_Republic",
+   "aljazeera.com 2025/12/13",
+   "medals.org.uk/north-korea"
+  ],
+  "note": "Hero of the DPRK (Hero of the Republic) is North Korea's top hero title"
+ },
+ {
+  "id": "M399",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "worldatlas.com",
+   "developmentaid.org",
+   "statista.com"
+  ],
+  "note": "China is the largest tea producer (~half of world output)"
+ },
+ {
+  "id": "M420",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "gold.org goldhub",
+   "pubs.usgs.gov mcs2026-gold",
+   "statista.com"
+  ],
+  "note": "Russia is 2nd largest gold producer after China (2025)"
+ },
+ {
+  "id": "M437",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_Pakistan_Test_cricket_records",
+   "espncricinfo.com"
+  ],
+  "note": "Wasim Akram: most Pakistan wickets (414 Test, 502 ODI, 916 total)"
+ },
+ {
+  "id": "M446",
+  "verdict": "none",
+  "ans": -1,
+  "fix": "No Chief Minister now: governor's rule in KP since 11 Oct 2026 (Governor Faisal Karim Kundi as administrator); last CM was Sohail Afridi (15 Oct 2025 - 11 Oct 2026)",
+  "src": [
+   "en.wikipedia.org/wiki/Sohail_Afridi",
+   "en.wikipedia.org/wiki/2026_in_Pakistan",
+   "en.wikipedia.org/wiki/Chief_minister_(Pakistan)"
+  ],
+  "note": "Federal govt imposed governor's rule in KP on 11 Oct 2026, removing Afridi govt"
+ },
+ {
+  "id": "M447",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/2026_in_Pakistan",
+   "en.wikipedia.org/wiki/Chief_minister_(Pakistan)",
+   "arynews.tv"
+  ],
+  "note": "Murad Ali Shah CM Sindh since 26 Feb 2024, still in 2026"
+ },
+ {
+  "id": "M455",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/2026_in_Pakistan",
+   "en.wikipedia.org/wiki/Chief_minister_(Pakistan)",
+   "arynews.tv"
+  ],
+  "note": "Murad Ali Shah CM Sindh since 26 Feb 2024, still in 2026"
+ },
+ {
+  "id": "M461",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Organisation_of_Islamic_Cooperation",
+   "oic-oci.org"
+  ],
+  "note": "OIC has 57 member states"
+ },
+ {
+  "id": "M474",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/2026_in_Pakistan",
+   "en.wikipedia.org/wiki/Chief_minister_(Pakistan)"
+  ],
+  "note": "Sarfraz Bugti CM Balochistan since Mar 2024, still in 2026"
+ },
+ {
+  "id": "M495",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_ambassadors_of_the_United_States_to_Pakistan",
+   "pk.usembassy.gov"
+  ],
+  "note": "Natalie A. Baker charge d'affaires since 10 Jan 2025; no confirmed ambassador listed (page edited Sep 2026)"
+ },
+ {
+  "id": "M498",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Khalid_Maqbool_Siddiqui",
+   "mofept.gov.pk"
+  ],
+  "note": "Khalid Maqbool Siddiqui federal education minister since 11 Mar 2024"
+ },
+ {
+  "id": "M504",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Khawaja_Asif",
+   "mod.gov.pk"
+  ],
+  "note": "Khawaja Asif defence minister since 2022, kept in 2024 cabinet, ongoing"
+ },
+ {
+  "id": "M505",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Constitution_of_Pakistan",
+   "na.gov.pk"
+  ],
+  "note": "1973 Constitution has 280 articles in 12 parts"
+ },
+ {
+  "id": "M515",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Nusantara_(city)",
+   "en.wikipedia.org/wiki/Jakarta"
+  ],
+  "note": "Jakarta still capital; move to Nusantara not complete (target 2028, no decree)"
+ },
+ {
+  "id": "M517",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Districts_of_Khyber_Pakhtunkhwa",
+   "en.wikipedia.org/wiki/Khyber_Pakhtunkhwa"
+  ],
+  "note": "KP has 40 districts after Upper Swat and Paharpur created Oct 2025 (older figure 38)"
+ },
+ {
+  "id": "M542",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population",
+   "worldometers.info"
+  ],
+  "note": "Pakistan is 5th most populous (after India, China, USA, Indonesia)"
+ },
+ {
+  "id": "M548",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Chief_Justice_of_Pakistan",
+   "en.wikipedia.org/wiki/2026_in_Pakistan"
+  ],
+  "note": "Yahya Afridi Chief Justice of Pakistan since 26 Oct 2024"
+ },
+ {
+  "id": "M562",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Organisation_of_Islamic_Cooperation",
+   "oic-oci.org"
+  ],
+  "note": "OIC has 57 member states"
+ },
+ {
+  "id": "M571",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/President_of_Iran"
+  ],
+  "note": "Masoud Pezeshkian president of Iran since 28 Jul 2024, still listed in 2026"
+ },
+ {
+  "id": "M586",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Li_Qiang",
+   "charter97.org (Oct 2026)",
+   "faf.ae (May 2026)"
+  ],
+  "note": "Xi Jinping is President of China as of 2026"
+ },
+ {
+  "id": "M594",
+  "verdict": "unclear",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Adam_in_Islam",
+   "sunnah.com/bukhari:3326"
+  ],
+  "note": "Hadith says 60 cubits; converts to ~90 ft (27 m) or ~30 m (98 ft) depending on cubit; option metres mismatch"
+ },
+ {
+  "id": "M602",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Men's_FIH_Hockey_World_Cup"
+  ],
+  "note": "Pakistan won 1971, 1978, 1982, 1994; last in 1994 (Sydney)"
+ },
+ {
+  "id": "M612",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Amendments_to_the_Constitution_of_Pakistan"
+  ],
+  "note": "27th Amendment enacted 13 Nov 2025; 24 amendments enacted; 28th not passed yet"
+ },
+ {
+  "id": "M630",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "worldatlas.com",
+   "developmentaid.org",
+   "statista.com"
+  ],
+  "note": "China is the largest tea producer, India second"
+ },
+ {
+  "id": "M633",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/1965_Pakistani_presidential_election"
+  ],
+  "note": "Ayub Khan was Convention Muslim League candidate; Fatima Jinnah ran for Combined Opposition Parties"
+ },
+ {
+  "id": "M642",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+   "fifa.com"
+  ],
+  "note": "Brazil has most World Cup titles (5)"
+ },
+ {
+  "id": "M654",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_FIFA_World_Cup_finals",
+   "fifa.com"
+  ],
+  "note": "Brazil 5 titles: 1958, 1962, 1970, 1994, 2002"
+ },
+ {
+  "id": "M656",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Li_Qiang",
+   "charter97.org (Oct 2026)",
+   "npr (2023-03-11)"
+  ],
+  "note": "Li Qiang Premier of China since March 2023, still in 2026"
+ }
+]

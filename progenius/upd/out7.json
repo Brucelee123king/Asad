@@ -1,0 +1,20 @@
+[
+ {
+  "id": "PF307",
+  "action": "note",
+  "new_why": "Pakistani exam books give about 2,250 km, but most current sources (and PF349) give the Durand Line as about 2,640 km. As of Oct 2026 the 2,250 km figure is an older exam number; 2,640 km is not among the options.",
+  "reason": "Internal inconsistency with PF349 (2,640 km); standard figure is about 2,640 km."
+ },
+ {
+  "id": "PG210",
+  "action": "note",
+  "new_why": "As of Oct 2026 the school answer is Venus (closest approach), but a 2019 study showed Mercury is nearest to Earth on average, so check wording of the exam.",
+  "reason": "Known astronomy caveat: average distance favours Mercury; closest approach favours Venus."
+ },
+ {
+  "id": "PF195",
+  "action": "note",
+  "new_why": "As of Oct 2026 the Amazon length is quoted from about 6,400 km to 6,992 km depending on the source; 6,992 km is the figure given in this option set.",
+  "reason": "Length of Amazon varies by measurement; only 6992 option is near the larger commonly quoted value."
+ }
+]

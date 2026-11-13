@@ -1,0 +1,2252 @@
+[
+ {
+  "id": 1,
+  "text": "90% of 90 (81)",
+  "count": 16,
+  "src": "WU1,2,3,12,14,18,20,22,23,27,28,29,30,36,41,46,50,53,55,58"
+ },
+ {
+  "id": 2,
+  "text": "5% of 80",
+  "count": 1,
+  "src": "WU1"
+ },
+ {
+  "id": 3,
+  "text": "Date of the Lucknow Pact",
+  "count": 1,
+  "src": "WU1"
+ },
+ {
+  "id": 4,
+  "text": "Highest plateau in Balochistan",
+  "count": 2,
+  "src": "WU1,36"
+ },
+ {
+  "id": 5,
+  "text": "Current Chief Minister of Sindh",
+  "count": 1,
+  "src": "WU1"
+ },
+ {
+  "id": 6,
+  "text": "Old name of Karachi",
+  "count": 3,
+  "src": "WU1,36,46,53"
+ },
+ {
+  "id": 7,
+  "text": "Who has taken the most wickets in Test cricket",
+  "count": 3,
+  "src": "WU1,3,4,50,52"
+ },
+ {
+  "id": 8,
+  "text": "Currency of Sri Lanka",
+  "count": 2,
+  "src": "WU1,21"
+ },
+ {
+  "id": 9,
+  "text": "Capital of Hungary",
+  "count": 1,
+  "src": "WU1"
+ },
+ {
+  "id": 10,
+  "text": "Meaning of the word Pakistan",
+  "count": 1,
+  "src": "WU1"
+ },
+ {
+  "id": 11,
+  "text": "Location of the Dasht river",
+  "count": 1,
+  "src": "WU1"
+ },
+ {
+  "id": 12,
+  "text": "Word closest in meaning to Lucid",
+  "count": 1,
+  "src": "WU2"
+ },
+ {
+  "id": 13,
+  "text": "Odd one out: Football and other games (rest of list not remembered)",
+  "count": 1,
+  "src": "WU2"
+ },
+ {
+  "id": 14,
+  "text": "If the 4th of a month is Monday, what day is the 24th",
+  "count": 1,
+  "src": "WU2"
+ },
+ {
+  "id": 15,
+  "text": "One third of 120 (40)",
+  "count": 4,
+  "src": "WU2,14,41,44"
+ },
+ {
+  "id": 16,
+  "text": "A helicopter travels 320 km on 60 gallons, how many gallons for 400 km",
+  "count": 1,
+  "src": "WU2"
+ },
+ {
+  "id": 17,
+  "text": "In a class of 1500 students 1200 are present, find the percentage present (or absent)",
+  "count": 5,
+  "src": "WU2,14,22,41,51,55"
+ },
+ {
+  "id": 18,
+  "text": "How many months have 31 days (7)",
+  "count": 5,
+  "src": "WU2,7,20,22,46,53"
+ },
+ {
+  "id": 19,
+  "text": "Snake cannot hear and a bat cannot ? (see)",
+  "count": 3,
+  "src": "WU2,4,51,52,55"
+ },
+ {
+  "id": 20,
+  "text": "Antonym (opposite) of wild (tame)",
+  "count": 4,
+  "src": "WU2,11,12,29,56"
+ },
+ {
+  "id": 21,
+  "text": "If 5 men write 5 pages in 5 minutes, how long will 1 man take to write 1 page (5 minutes)",
+  "count": 5,
+  "src": "WU2,18,25,27,45,51,55"
+ },
+ {
+  "id": 22,
+  "text": "Vehicle is to wheels as sound is to ?",
+  "count": 1,
+  "src": "WU2"
+ },
+ {
+  "id": 23,
+  "text": "Why we boil milk (to kill germs)",
+  "count": 9,
+  "src": "WU2,3,7,8,21,22,32,36,50,58"
+ },
+ {
+  "id": 24,
+  "text": "Why parents send their children to school (education / grooming)",
+  "count": 8,
+  "src": "WU2,7,8,22,28,32,41,58"
+ },
+ {
+  "id": 25,
+  "text": "Last letter of BEAUTY after rearranging the letters",
+  "count": 6,
+  "src": "WU2,8,12,22,25,29,58"
+ },
+ {
+  "id": 26,
+  "text": "Rearrange PARDLEO to get an animal (LEOPARD); also asked as LEOPARD reversed",
+  "count": 4,
+  "src": "WU2,22,41,58"
+ },
+ {
+  "id": 27,
+  "text": "Which word remains the same when reflected in a mirror (TWSWT)",
+  "count": 2,
+  "src": "WU2,58"
+ },
+ {
+  "id": 28,
+  "text": "Ali is 4 years old and his sister is 4 times older (3 questions)",
+  "count": 1,
+  "src": "WU2"
+ },
+ {
+  "id": 29,
+  "text": "2+2/2 (DMAS rule) (3)",
+  "count": 9,
+  "src": "WU2,12,21,25,28,29,30,32,44,45"
+ },
+ {
+  "id": 30,
+  "text": "Who wrote Jinnah of Pakistan (Stanley Wolpert)",
+  "count": 1,
+  "src": "WU2"
+ },
+ {
+  "id": 31,
+  "text": "Masjid Nabwi is in which city (Madina)",
+  "count": 1,
+  "src": "WU2"
+ },
+ {
+  "id": 32,
+  "text": "In which year did Quaid-e-Azam give his 14 points (1929)",
+  "count": 7,
+  "src": "WU2,13,30,35,43,51,58"
+ },
+ {
+  "id": 33,
+  "text": "Chauri Chaura incident year (1922)",
+  "count": 2,
+  "src": "WU2,14"
+ },
+ {
+  "id": 34,
+  "text": "Pakistan's first democratic general elections year (1970)",
+  "count": 1,
+  "src": "WU2"
+ },
+ {
+  "id": 35,
+  "text": "Which article gives the right to education (25A)",
+  "count": 2,
+  "src": "WU2,51"
+ },
+ {
+  "id": 36,
+  "text": "Age of Prophet Muhammad SAW when his grandfather died (write-up said 7 years)",
+  "count": 2,
+  "src": "WU2,42"
+ },
+ {
+  "id": 37,
+  "text": "Age of Prophet Muhammad SAW when he migrated to Madina (53)",
+  "count": 1,
+  "src": "WU2"
+ },
+ {
+  "id": 38,
+  "text": "Hazrat Abu Bakr RA was the father of whom (Hazrat Ayesha RA)",
+  "count": 2,
+  "src": "WU2,16"
+ },
+ {
+  "id": 39,
+  "text": "First woman martyred in Islam (Hazrat Sumayya RA)",
+  "count": 1,
+  "src": "WU2"
+ },
+ {
+  "id": 40,
+  "text": "How many faces does a prism have (5)",
+  "count": 2,
+  "src": "WU2,12,29"
+ },
+ {
+  "id": 41,
+  "text": "CPEC is a project of which country",
+  "count": 1,
+  "src": "WU2"
+ },
+ {
+  "id": 42,
+  "text": "Karakoram Highway is also known as",
+  "count": 1,
+  "src": "WU2"
+ },
+ {
+  "id": 43,
+  "text": "Khunjerab Pass connects which countries (Pakistan and China)",
+  "count": 3,
+  "src": "WU2,8,22"
+ },
+ {
+  "id": 44,
+  "text": "How many Nobel prizes has Pakistan won (2)",
+  "count": 1,
+  "src": "WU2"
+ },
+ {
+  "id": 45,
+  "text": "Who is the largest oil supplier",
+  "count": 1,
+  "src": "WU2"
+ },
+ {
+  "id": 46,
+  "text": "Hafeez Kardar is a well known player of which sport (cricket)",
+  "count": 1,
+  "src": "WU2"
+ },
+ {
+  "id": 47,
+  "text": "If the 1st of a month is Sunday, what day is the 17th",
+  "count": 1,
+  "src": "WU3,50"
+ },
+ {
+  "id": 48,
+  "text": "National day of Pakistan",
+  "count": 1,
+  "src": "WU3,50"
+ },
+ {
+  "id": 49,
+  "text": "Who wrote Friends Not Masters",
+  "count": 1,
+  "src": "WU3,50"
+ },
+ {
+  "id": 50,
+  "text": "Foreign Minister of Pakistan (current / list of foreign ministers)",
+  "count": 2,
+  "src": "WU3,4,50,52"
+ },
+ {
+  "id": 51,
+  "text": "Jahangir Khan is a famous player of which sport (squash)",
+  "count": 2,
+  "src": "WU3,4,50,52"
+ },
+ {
+  "id": 52,
+  "text": "Chief Minister of Balochistan",
+  "count": 1,
+  "src": "WU3,50"
+ },
+ {
+  "id": 53,
+  "text": "First battle (ghazwa) of Islam",
+  "count": 3,
+  "src": "WU3,22,50,58"
+ },
+ {
+  "id": 54,
+  "text": "First Governor General of Pakistan",
+  "count": 6,
+  "src": "WU4,12,16,21,26,29,41,52"
+ },
+ {
+  "id": 55,
+  "text": "President of Azad Jammu and Kashmir",
+  "count": 1,
+  "src": "WU4,52"
+ },
+ {
+  "id": 56,
+  "text": "In which Hijrah year was Hajj made obligatory",
+  "count": 1,
+  "src": "WU4,52"
+ },
+ {
+  "id": 57,
+  "text": "Name of the first Muslim martyr (first martyr of Islam)",
+  "count": 3,
+  "src": "WU4,8,42,52"
+ },
+ {
+  "id": 58,
+  "text": "At what price was Gwadar port bought",
+  "count": 1,
+  "src": "WU4,52"
+ },
+ {
+  "id": 59,
+  "text": "Longest river in Asia",
+  "count": 2,
+  "src": "WU5,25,26"
+ },
+ {
+  "id": 60,
+  "text": "Age of Prophet Muhammad SAW when his mother died",
+  "count": 5,
+  "src": "WU5,25,28,35,46,53,56"
+ },
+ {
+  "id": 61,
+  "text": "Who was martyred in the Battle of Badr",
+  "count": 1,
+  "src": "WU5,25"
+ },
+ {
+  "id": 62,
+  "text": "Who presented the Objectives Resolution",
+  "count": 1,
+  "src": "WU5,25"
+ },
+ {
+  "id": 63,
+  "text": "Total number of Punjab seats in the National Assembly",
+  "count": 2,
+  "src": "WU5,25,32"
+ },
+ {
+  "id": 64,
+  "text": "Who presented the Lahore (Pakistan) Resolution",
+  "count": 2,
+  "src": "WU5,25,46,53"
+ },
+ {
+  "id": 65,
+  "text": "When was the Battle of Badr fought (2 Hijri)",
+  "count": 6,
+  "src": "WU5,14,21,25,36,51,56"
+ },
+ {
+  "id": 66,
+  "text": "Name of America's mission against Iran",
+  "count": 1,
+  "src": "WU5,25"
+ },
+ {
+  "id": 67,
+  "text": "Which daughter of Hazrat Umar RA married the Prophet SAW (Hazrat Hafsa RA)",
+  "count": 5,
+  "src": "WU6,14,17,25,32,49"
+ },
+ {
+  "id": 68,
+  "text": "Second name of Makkah (Masjid al Haram)",
+  "count": 2,
+  "src": "WU6,25,49"
+ },
+ {
+  "id": 69,
+  "text": "Hitler belonged to which country",
+  "count": 2,
+  "src": "WU6,25,49"
+ },
+ {
+  "id": 70,
+  "text": "Who counts the population (Army)",
+  "count": 2,
+  "src": "WU6,25,49"
+ },
+ {
+  "id": 71,
+  "text": "Headquarters of the oil organization (OPEC)",
+  "count": 2,
+  "src": "WU6,25,49"
+ },
+ {
+  "id": 72,
+  "text": "Favourite fruit of Pakistan (mango)",
+  "count": 2,
+  "src": "WU6,25,49"
+ },
+ {
+  "id": 73,
+  "text": "Battle of the Trench (Ghazwa Khandaq / Ahzab)",
+  "count": 2,
+  "src": "WU7,18,25,27"
+ },
+ {
+  "id": 74,
+  "text": "Age of Prophet Muhammad SAW at the first revelation",
+  "count": 1,
+  "src": "WU7,25"
+ },
+ {
+  "id": 75,
+  "text": "Indus Waters Treaty (question details not remembered)",
+  "count": 2,
+  "src": "WU7,25,46,53"
+ },
+ {
+  "id": 76,
+  "text": "When and where was the All-India Muslim League founded (1906, Dhaka)",
+  "count": 3,
+  "src": "WU7,14,25,44"
+ },
+ {
+  "id": 77,
+  "text": "Odd one out: football, cricket, hockey, baseball",
+  "count": 1,
+  "src": "WU8"
+ },
+ {
+  "id": 78,
+  "text": "Odd one out: monkey, ape, chimpanzee, panda, baboon",
+  "count": 5,
+  "src": "WU8,18,27,28,41,51,55"
+ },
+ {
+  "id": 79,
+  "text": "Largest province of Pakistan by area",
+  "count": 2,
+  "src": "WU8,56"
+ },
+ {
+  "id": 80,
+  "text": "Highest peak of Pakistan",
+  "count": 1,
+  "src": "WU8"
+ },
+ {
+  "id": 81,
+  "text": "Synonym of wild",
+  "count": 1,
+  "src": "WU8"
+ },
+ {
+  "id": 82,
+  "text": "Current rank of Pakistan in world population",
+  "count": 1,
+  "src": "WU8"
+ },
+ {
+  "id": 83,
+  "text": "In the 1956 Constitution the President was selected by",
+  "count": 1,
+  "src": "WU8"
+ },
+ {
+  "id": 84,
+  "text": "First Prime Minister of Pakistan",
+  "count": 2,
+  "src": "WU11,25"
+ },
+ {
+  "id": 85,
+  "text": "When was Bengal partitioned (1905)",
+  "count": 2,
+  "src": "WU11,18,27"
+ },
+ {
+  "id": 86,
+  "text": "Syria is the old name of",
+  "count": 1,
+  "src": "WU11"
+ },
+ {
+  "id": 87,
+  "text": "British Prime Minister at the time of partition of India",
+  "count": 2,
+  "src": "WU11,18,27"
+ },
+ {
+  "id": 88,
+  "text": "How many Khulafa-e-Rashideen",
+  "count": 2,
+  "src": "WU11,16"
+ },
+ {
+  "id": 89,
+  "text": "Prophet Muhammad SAW shajra nasab meets which sahabi",
+  "count": 1,
+  "src": "WU11"
+ },
+ {
+  "id": 90,
+  "text": "Nisab of zakat for silver",
+  "count": 1,
+  "src": "WU11"
+ },
+ {
+  "id": 91,
+  "text": "When did Pakistan become a SAARC member",
+  "count": 1,
+  "src": "WU11"
+ },
+ {
+  "id": 92,
+  "text": "Who ruled Sindh when Muhammad bin Qasim conquered it",
+  "count": 1,
+  "src": "WU11"
+ },
+ {
+  "id": 93,
+  "text": "In which year was Sui gas discovered",
+  "count": 1,
+  "src": "WU11"
+ },
+ {
+  "id": 94,
+  "text": "In which year was the film Jinnah released",
+  "count": 2,
+  "src": "WU11,41"
+ },
+ {
+  "id": 95,
+  "text": "Important ghazwa of 5 Hijri",
+  "count": 1,
+  "src": "WU11"
+ },
+ {
+  "id": 96,
+  "text": "In which ghazwa did Abu Jahl die",
+  "count": 2,
+  "src": "WU11,35"
+ },
+ {
+  "id": 97,
+  "text": "Current Chief of Naval Staff of Pakistan (Admiral Naveed Ashraf)",
+  "count": 2,
+  "src": "WU11,17"
+ },
+ {
+  "id": 98,
+  "text": "Which major entity did Pakistan privatize in December 2025",
+  "count": 1,
+  "src": "WU11"
+ },
+ {
+  "id": 99,
+  "text": "In which year was the first Nobel Prize given",
+  "count": 1,
+  "src": "WU12,29"
+ },
+ {
+  "id": 100,
+  "text": "Where is the OIC headquarters",
+  "count": 1,
+  "src": "WU12,29"
+ },
+ {
+  "id": 101,
+  "text": "Capital of Australia",
+  "count": 1,
+  "src": "WU12,29"
+ },
+ {
+  "id": 102,
+  "text": "Percentage of Pakistan's total area covered by Balochistan",
+  "count": 1,
+  "src": "WU12,29"
+ },
+ {
+  "id": 103,
+  "text": "Who introduced the Basic Democracy System in Pakistan",
+  "count": 1,
+  "src": "WU12,29"
+ },
+ {
+  "id": 104,
+  "text": "Official designation of Muhammad Ali Bogra",
+  "count": 1,
+  "src": "WU12,29"
+ },
+ {
+  "id": 105,
+  "text": "Nelson Mandela was the leader of which country",
+  "count": 1,
+  "src": "WU12,29"
+ },
+ {
+  "id": 106,
+  "text": "If the 2nd of a month is Tuesday, what day is the 25th",
+  "count": 2,
+  "src": "WU12,25,29"
+ },
+ {
+  "id": 107,
+  "text": "Triangle with one side given, find the other two sides",
+  "count": 1,
+  "src": "WU12,29"
+ },
+ {
+  "id": 108,
+  "text": "In which year did Quaid-e-Azam join the Muslim League (1913)",
+  "count": 4,
+  "src": "WU12,16,17,20,29"
+ },
+ {
+  "id": 109,
+  "text": "National tree of Pakistan (deodar)",
+  "count": 1,
+  "src": "WU13"
+ },
+ {
+  "id": 110,
+  "text": "Which area separates Pakistan from Central Asia (Wakhan)",
+  "count": 1,
+  "src": "WU13"
+ },
+ {
+  "id": 111,
+  "text": "Human senses (5)",
+  "count": 1,
+  "src": "WU13"
+ },
+ {
+  "id": 112,
+  "text": "How many breaths does a human take in a day (20000 to 25000)",
+  "count": 1,
+  "src": "WU13"
+ },
+ {
+  "id": 113,
+  "text": "Pakistan-China border agreement year (1963)",
+  "count": 5,
+  "src": "WU13,17,20,28,36"
+ },
+ {
+  "id": 114,
+  "text": "Amnesty International headquarters (London)",
+  "count": 1,
+  "src": "WU13"
+ },
+ {
+  "id": 115,
+  "text": "Derivative of cos theta",
+  "count": 1,
+  "src": "WU13"
+ },
+ {
+  "id": 116,
+  "text": "30 passengers (people), 2/3 are male, find the number (or percentage) of females",
+  "count": 3,
+  "src": "WU14,22,30"
+ },
+ {
+  "id": 117,
+  "text": "Which battle was fought in 8 Hijri",
+  "count": 1,
+  "src": "WU14"
+ },
+ {
+  "id": 118,
+  "text": "How many Muslims were in the Battle of Badr",
+  "count": 2,
+  "src": "WU14,20"
+ },
+ {
+  "id": 119,
+  "text": "Abdullah bin Ubayy was the leader of whom (munafiqeen)",
+  "count": 1,
+  "src": "WU14"
+ },
+ {
+  "id": 120,
+  "text": "In which city was Benazir Bhutto assassinated",
+  "count": 1,
+  "src": "WU14"
+ },
+ {
+  "id": 121,
+  "text": "When was the Khilafat Movement started (1919)",
+  "count": 3,
+  "src": "WU14,51,59"
+ },
+ {
+  "id": 122,
+  "text": "How many houses does the Pakistan Parliament have",
+  "count": 1,
+  "src": "WU14"
+ },
+ {
+  "id": 123,
+  "text": "When did the Kargil war start (year)",
+  "count": 2,
+  "src": "WU14,56"
+ },
+ {
+  "id": 124,
+  "text": "When did Russia invade Afghanistan",
+  "count": 1,
+  "src": "WU16"
+ },
+ {
+  "id": 125,
+  "text": "Pioneer of AI",
+  "count": 1,
+  "src": "WU16"
+ },
+ {
+  "id": 126,
+  "text": "When did Allama Iqbal give the idea of Pakistan",
+  "count": 1,
+  "src": "WU16"
+ },
+ {
+  "id": 127,
+  "text": "Which border connects Pakistan and Afghanistan",
+  "count": 2,
+  "src": "WU16,37"
+ },
+ {
+  "id": 128,
+  "text": "Hazrat Hafsa RA was the mother of whom (Ummul Momineen)",
+  "count": 1,
+  "src": "WU16"
+ },
+ {
+  "id": 129,
+  "text": "How many atomic tests did Pakistan conduct on 28 May 1998",
+  "count": 1,
+  "src": "WU16"
+ },
+ {
+  "id": 130,
+  "text": "First Pakistani to receive a Nobel Prize (Abdus Salam)",
+  "count": 2,
+  "src": "WU16,44"
+ },
+ {
+  "id": 131,
+  "text": "Global warming increases due to which element",
+  "count": 1,
+  "src": "WU16"
+ },
+ {
+  "id": 132,
+  "text": "When was the Pakistan (Lahore) Resolution passed",
+  "count": 1,
+  "src": "WU16"
+ },
+ {
+  "id": 133,
+  "text": "Synonym of candid",
+  "count": 1,
+  "src": "WU16"
+ },
+ {
+  "id": 134,
+  "text": "When the actual words of a speaker are reported the same, it is called (direct speech)",
+  "count": 1,
+  "src": "WU16"
+ },
+ {
+  "id": 135,
+  "text": "Aslam looks forward to ... Ali (preposition)",
+  "count": 1,
+  "src": "WU16"
+ },
+ {
+  "id": 136,
+  "text": "Who attacked the Kaaba first (Abraha)",
+  "count": 1,
+  "src": "WU16"
+ },
+ {
+  "id": 137,
+  "text": "Green Bus project is of which city",
+  "count": 1,
+  "src": "WU16"
+ },
+ {
+  "id": 138,
+  "text": "Hindi-Urdu controversy happened in which region",
+  "count": 1,
+  "src": "WU16"
+ },
+ {
+  "id": 139,
+  "text": "When was the word Pakistan first used (1933)",
+  "count": 1,
+  "src": "WU17"
+ },
+ {
+  "id": 140,
+  "text": "When was the Hijrat from Makkah to Madina (622 AD)",
+  "count": 2,
+  "src": "WU17,56"
+ },
+ {
+  "id": 141,
+  "text": "Pakistan's 3rd largest city (Faisalabad)",
+  "count": 1,
+  "src": "WU17"
+ },
+ {
+  "id": 142,
+  "text": "Lyallpur is the old name of (Faisalabad)",
+  "count": 1,
+  "src": "WU17"
+ },
+ {
+  "id": 143,
+  "text": "God made humans from what (soil)",
+  "count": 1,
+  "src": "WU17"
+ },
+ {
+  "id": 144,
+  "text": "When was the 1962 Constitution abrogated (1969)",
+  "count": 1,
+  "src": "WU17"
+ },
+ {
+  "id": 145,
+  "text": "Which article of the Constitution declares Islam as the state religion (Article 2)",
+  "count": 1,
+  "src": "WU17"
+ },
+ {
+  "id": 146,
+  "text": "City on the Sindh-Punjab border (Kashmore, not confirmed)",
+  "count": 1,
+  "src": "WU17"
+ },
+ {
+  "id": 147,
+  "text": "Second Prime Minister of Pakistan / PM after Liaquat Ali Khan (Khawaja Nazimuddin)",
+  "count": 4,
+  "src": "WU17,18,27,36,37"
+ },
+ {
+  "id": 148,
+  "text": "Interpol headquarters (Lyon, France)",
+  "count": 1,
+  "src": "WU17"
+ },
+ {
+  "id": 149,
+  "text": "Largest bone of the human body (femur)",
+  "count": 1,
+  "src": "WU17"
+ },
+ {
+  "id": 150,
+  "text": "90% of 60",
+  "count": 1,
+  "src": "WU18,27"
+ },
+ {
+  "id": 151,
+  "text": "Log of 100",
+  "count": 1,
+  "src": "WU18,27"
+ },
+ {
+  "id": 152,
+  "text": "One third of 10% of 90",
+  "count": 2,
+  "src": "WU18,27,30"
+ },
+ {
+  "id": 153,
+  "text": "One third of 10% of 120",
+  "count": 1,
+  "src": "WU18,27"
+ },
+ {
+  "id": 154,
+  "text": "Quarter of one tenth of 120",
+  "count": 2,
+  "src": "WU18,27,37"
+ },
+ {
+  "id": 155,
+  "text": "A class has 500 students, 340 boys and 160 girls, find the percentage of girls",
+  "count": 2,
+  "src": "WU18,27,30"
+ },
+ {
+  "id": 156,
+  "text": "Today is Monday, what day will it be 15 days after",
+  "count": 1,
+  "src": "WU18,27"
+ },
+ {
+  "id": 157,
+  "text": "How many manzils in the Quran",
+  "count": 2,
+  "src": "WU18,27,37"
+ },
+ {
+  "id": 158,
+  "text": "How many prophets are mentioned in the Quran",
+  "count": 1,
+  "src": "WU18,27"
+ },
+ {
+  "id": 159,
+  "text": "Head of state in the 1973 Constitution of Pakistan",
+  "count": 1,
+  "src": "WU18,27"
+ },
+ {
+  "id": 160,
+  "text": "In which year did Pakistan join the UN",
+  "count": 1,
+  "src": "WU18,27"
+ },
+ {
+  "id": 161,
+  "text": "On which date did Pakistan join the UN",
+  "count": 1,
+  "src": "WU18,27"
+ },
+ {
+  "id": 162,
+  "text": "NATO headquarters",
+  "count": 3,
+  "src": "WU18,20,27,56"
+ },
+ {
+  "id": 163,
+  "text": "Largest planet",
+  "count": 2,
+  "src": "WU18,27,37"
+ },
+ {
+  "id": 164,
+  "text": "Planet with the largest number of moons",
+  "count": 1,
+  "src": "WU18,27"
+ },
+ {
+  "id": 165,
+  "text": "Which rivers came to Pakistan's share under the Indus Waters Treaty",
+  "count": 4,
+  "src": "WU18,27,32,37,46,53"
+ },
+ {
+  "id": 166,
+  "text": "Capital of Ghana",
+  "count": 3,
+  "src": "WU18,19,27,32"
+ },
+ {
+  "id": 167,
+  "text": "Lira is the currency of which country",
+  "count": 1,
+  "src": "WU18,27"
+ },
+ {
+  "id": 168,
+  "text": "Who built the Badshahi Mosque",
+  "count": 1,
+  "src": "WU18,27"
+ },
+ {
+  "id": 169,
+  "text": "How many pillars of Islam",
+  "count": 2,
+  "src": "WU18,27,37"
+ },
+ {
+  "id": 170,
+  "text": "Capital of Bahrain",
+  "count": 1,
+  "src": "WU19"
+ },
+ {
+  "id": 171,
+  "text": "When did Quaid-e-Azam receive the title Quaid-e-Azam",
+  "count": 2,
+  "src": "WU19,22"
+ },
+ {
+  "id": 172,
+  "text": "Montagu-Chelmsford reforms (question details not remembered)",
+  "count": 1,
+  "src": "WU19"
+ },
+ {
+  "id": 173,
+  "text": "Second Governor General of Pakistan",
+  "count": 2,
+  "src": "WU20,56"
+ },
+ {
+  "id": 174,
+  "text": "SI is the unit of",
+  "count": 1,
+  "src": "WU20"
+ },
+ {
+  "id": 175,
+  "text": "A car at 90 km/h, how much distance in 12 minutes",
+  "count": 1,
+  "src": "WU20"
+ },
+ {
+  "id": 176,
+  "text": "General Qamar Javed Bajwa belongs to which PMA Long Course",
+  "count": 1,
+  "src": "WU20"
+ },
+ {
+  "id": 177,
+  "text": "How many Corps are in the Pakistan Army",
+  "count": 1,
+  "src": "WU20"
+ },
+ {
+  "id": 178,
+  "text": "In which Hijri year was Ghazwa Tabuk",
+  "count": 1,
+  "src": "WU20"
+ },
+ {
+  "id": 179,
+  "text": "Which agreement was made in the 1965 war (Tashkent)",
+  "count": 1,
+  "src": "WU20"
+ },
+ {
+  "id": 180,
+  "text": "Leader of Germany in World War 2",
+  "count": 1,
+  "src": "WU20"
+ },
+ {
+  "id": 181,
+  "text": "Capital of Pakistan",
+  "count": 1,
+  "src": "WU21"
+ },
+ {
+  "id": 182,
+  "text": "Current Chief of Army Staff of Pakistan",
+  "count": 2,
+  "src": "WU21,38"
+ },
+ {
+  "id": 183,
+  "text": "UN headquarters",
+  "count": 1,
+  "src": "WU22"
+ },
+ {
+  "id": 184,
+  "text": "UN founding date",
+  "count": 1,
+  "src": "WU22"
+ },
+ {
+  "id": 185,
+  "text": "China-Pakistan joint agreement or project (not clear in write-up)",
+  "count": 1,
+  "src": "WU22"
+ },
+ {
+  "id": 186,
+  "text": "Reversed spelling of PARIS, is it a word or animal",
+  "count": 1,
+  "src": "WU22"
+ },
+ {
+  "id": 187,
+  "text": "USA independence date",
+  "count": 2,
+  "src": "WU22,42"
+ },
+ {
+  "id": 188,
+  "text": "Name of the NAB chairman",
+  "count": 1,
+  "src": "WU22"
+ },
+ {
+  "id": 189,
+  "text": "Meaning of jihad",
+  "count": 1,
+  "src": "WU22"
+ },
+ {
+  "id": 190,
+  "text": "When did Karbala happen",
+  "count": 1,
+  "src": "WU22"
+ },
+ {
+  "id": 191,
+  "text": "Who coined the name Pakistan",
+  "count": 1,
+  "src": "WU22"
+ },
+ {
+  "id": 192,
+  "text": "War of independence year",
+  "count": 1,
+  "src": "WU22"
+ },
+ {
+  "id": 193,
+  "text": "K2 is in which mountain range",
+  "count": 1,
+  "src": "WU22"
+ },
+ {
+  "id": 194,
+  "text": "Who built the Kaaba",
+  "count": 1,
+  "src": "WU22"
+ },
+ {
+  "id": 195,
+  "text": "Hazrat Ismail and Ishaq were sons of whom",
+  "count": 1,
+  "src": "WU22"
+ },
+ {
+  "id": 196,
+  "text": "First qibla of Muslims",
+  "count": 1,
+  "src": "WU22"
+ },
+ {
+  "id": 197,
+  "text": "One third of one fourth of 120",
+  "count": 2,
+  "src": "WU23,32"
+ },
+ {
+  "id": 198,
+  "text": "Simla Agreement (who signed it, 1972)",
+  "count": 4,
+  "src": "WU23,26,35,37"
+ },
+ {
+  "id": 199,
+  "text": "Hindu Muslim ambassador of unity (Jinnah)",
+  "count": 1,
+  "src": "WU23"
+ },
+ {
+  "id": 200,
+  "text": "Capital of Cuba",
+  "count": 2,
+  "src": "WU23,51"
+ },
+ {
+  "id": 201,
+  "text": "Number of archers in Ghazwa Uhud",
+  "count": 1,
+  "src": "WU23"
+ },
+ {
+  "id": 202,
+  "text": "Relation of Hazrat Umm Kulthum with Prophet Muhammad SAW",
+  "count": 1,
+  "src": "WU23"
+ },
+ {
+  "id": 203,
+  "text": "Which prophet was swallowed by a fish",
+  "count": 2,
+  "src": "WU23,56"
+ },
+ {
+  "id": 204,
+  "text": "Israel is the laqab of which prophet",
+  "count": 1,
+  "src": "WU23"
+ },
+ {
+  "id": 205,
+  "text": "Name of the President of China",
+  "count": 2,
+  "src": "WU23,36"
+ },
+ {
+  "id": 206,
+  "text": "Train speed is twice the speed of a car, the car covers 60 km in 30 minutes, how many km does the train cover in 30 minutes",
+  "count": 1,
+  "src": "WU25"
+ },
+ {
+  "id": 207,
+  "text": "Ali is 4 years old and his sister is three times older, sister's age when Ali is 10",
+  "count": 1,
+  "src": "WU25"
+ },
+ {
+  "id": 208,
+  "text": "Liaquat Ali Khan was assassinated in (place or year)",
+  "count": 1,
+  "src": "WU25"
+ },
+ {
+  "id": 209,
+  "text": "Largest river in Pakistan",
+  "count": 1,
+  "src": "WU26"
+ },
+ {
+  "id": 210,
+  "text": "How many languages are spoken in Pakistan",
+  "count": 1,
+  "src": "WU26"
+ },
+ {
+  "id": 211,
+  "text": "Most popular city of the world",
+  "count": 1,
+  "src": "WU26"
+ },
+ {
+  "id": 212,
+  "text": "Capital of Bhutan",
+  "count": 1,
+  "src": "WU26"
+ },
+ {
+  "id": 213,
+  "text": "Capital of Somalia",
+  "count": 2,
+  "src": "WU26,58"
+ },
+ {
+  "id": 214,
+  "text": "Kiwi is associated with which country",
+  "count": 2,
+  "src": "WU26,58"
+ },
+ {
+  "id": 215,
+  "text": "City of gardens",
+  "count": 1,
+  "src": "WU26"
+ },
+ {
+  "id": 216,
+  "text": "Amir Khusro is the first poet of which language",
+  "count": 1,
+  "src": "WU26"
+ },
+ {
+  "id": 217,
+  "text": "Meaning of idleness",
+  "count": 1,
+  "src": "WU26"
+ },
+ {
+  "id": 218,
+  "text": "Which type of democracy",
+  "count": 1,
+  "src": "WU26"
+ },
+ {
+  "id": 219,
+  "text": "Where is Baitul Muqaddas located",
+  "count": 1,
+  "src": "WU26"
+ },
+ {
+  "id": 220,
+  "text": "Last battle fought by Prophet Muhammad SAW",
+  "count": 3,
+  "src": "WU26,42,58"
+ },
+ {
+  "id": 221,
+  "text": "Ahmad (x) is 5 years old and his sister (y) is three times older, sister's age when he is 10",
+  "count": 2,
+  "src": "WU28,46,53"
+ },
+ {
+  "id": 222,
+  "text": "Biggest ocean (Pacific)",
+  "count": 2,
+  "src": "WU28,46,53"
+ },
+ {
+  "id": 223,
+  "text": "Which US president said our biggest fear is fear itself (Franklin D. Roosevelt)",
+  "count": 2,
+  "src": "WU30,43"
+ },
+ {
+  "id": 224,
+  "text": "Which prophet was against Nimrod",
+  "count": 1,
+  "src": "WU30"
+ },
+ {
+  "id": 225,
+  "text": "How many times is the name of Prophet Muhammad SAW mentioned in the Quran",
+  "count": 1,
+  "src": "WU30"
+ },
+ {
+  "id": 226,
+  "text": "Name of the 3rd daughter of Prophet Muhammad SAW",
+  "count": 1,
+  "src": "WU30"
+ },
+ {
+  "id": 227,
+  "text": "Range of the Ababeel missile",
+  "count": 1,
+  "src": "WU30"
+ },
+ {
+  "id": 228,
+  "text": "Since when has the Al-Khalid tank been in service",
+  "count": 3,
+  "src": "WU30,41,56"
+ },
+ {
+  "id": 229,
+  "text": "Who will host the FIFA World Cup 22",
+  "count": 1,
+  "src": "WU32"
+ },
+ {
+  "id": 230,
+  "text": "How many seats are in the National Assembly of Pakistan",
+  "count": 1,
+  "src": "WU32"
+ },
+ {
+  "id": 231,
+  "text": "How many times did Prophet Muhammad SAW fight against the Romans",
+  "count": 1,
+  "src": "WU32"
+ },
+ {
+  "id": 232,
+  "text": "Which article of the Constitution gives freedom of speech",
+  "count": 1,
+  "src": "WU32"
+ },
+ {
+  "id": 233,
+  "text": "Which country won the FIFA World Cup 2022",
+  "count": 1,
+  "src": "WU32"
+ },
+ {
+  "id": 234,
+  "text": "Year of the first Olympic match",
+  "count": 1,
+  "src": "WU32"
+ },
+ {
+  "id": 235,
+  "text": "Nehru Report (question details not remembered)",
+  "count": 1,
+  "src": "WU35"
+ },
+ {
+  "id": 236,
+  "text": "When was the first census in Pakistan",
+  "count": 1,
+  "src": "WU35"
+ },
+ {
+  "id": 237,
+  "text": "Relation of Abu Talib with Prophet Muhammad SAW",
+  "count": 1,
+  "src": "WU35"
+ },
+ {
+  "id": 238,
+  "text": "Musa AS is the son of which prophet (Imran)",
+  "count": 1,
+  "src": "WU35"
+ },
+ {
+  "id": 239,
+  "text": "According to the 1956 Constitution, the age for Governor or Prime Minister",
+  "count": 1,
+  "src": "WU35"
+ },
+ {
+  "id": 240,
+  "text": "Indus Valley Civilization is related to",
+  "count": 1,
+  "src": "WU35"
+ },
+ {
+  "id": 241,
+  "text": "Life between birth and the Day of Judgment is called (Barzakh)",
+  "count": 1,
+  "src": "WU35"
+ },
+ {
+  "id": 242,
+  "text": "Battle of Panipat date (year)",
+  "count": 2,
+  "src": "WU35,56"
+ },
+ {
+  "id": 243,
+  "text": "Wajibat in namaz",
+  "count": 2,
+  "src": "WU35,38"
+ },
+ {
+  "id": 244,
+  "text": "Battle in which Prophet Muhammad SAW did not participate",
+  "count": 1,
+  "src": "WU35"
+ },
+ {
+  "id": 245,
+  "text": "Battle of Plassey date (1757)",
+  "count": 2,
+  "src": "WU35,56"
+ },
+ {
+  "id": 246,
+  "text": "If the 2nd of a month is Monday, what day is the 18th",
+  "count": 1,
+  "src": "WU36"
+ },
+ {
+  "id": 247,
+  "text": "First President of Pakistan",
+  "count": 1,
+  "src": "WU36"
+ },
+ {
+  "id": 248,
+  "text": "Famous player of which team (name like Ahsan Rizwan)",
+  "count": 1,
+  "src": "WU36"
+ },
+ {
+  "id": 249,
+  "text": "Who married two daughters of Hazrat Usman RA",
+  "count": 1,
+  "src": "WU36"
+ },
+ {
+  "id": 250,
+  "text": "Who wrote the National Anthem of Pakistan",
+  "count": 1,
+  "src": "WU36"
+ },
+ {
+  "id": 251,
+  "text": "Hazrat Bilal RA was the slave of whom",
+  "count": 1,
+  "src": "WU36"
+ },
+ {
+  "id": 252,
+  "text": "Name of the Pakistan league (PSL)",
+  "count": 1,
+  "src": "WU36"
+ },
+ {
+  "id": 253,
+  "text": "Number of ayahs in the Quran",
+  "count": 1,
+  "src": "WU37"
+ },
+ {
+  "id": 254,
+  "text": "Who presented the 1962 Constitution",
+  "count": 1,
+  "src": "WU37"
+ },
+ {
+  "id": 255,
+  "text": "IMF headquarters",
+  "count": 1,
+  "src": "WU37"
+ },
+ {
+  "id": 256,
+  "text": "Planet closest to the earth",
+  "count": 1,
+  "src": "WU37"
+ },
+ {
+  "id": 257,
+  "text": "Capital of Iran",
+  "count": 1,
+  "src": "WU37"
+ },
+ {
+  "id": 258,
+  "text": "Riyal is the currency of which country",
+  "count": 1,
+  "src": "WU37"
+ },
+ {
+  "id": 259,
+  "text": "90% of 70",
+  "count": 1,
+  "src": "WU37"
+ },
+ {
+  "id": 260,
+  "text": "1956 Constitution (question details not remembered)",
+  "count": 1,
+  "src": "WU38"
+ },
+ {
+  "id": 261,
+  "text": "Hazrat Abbas RA is called what (father of ...)",
+  "count": 1,
+  "src": "WU38"
+ },
+ {
+  "id": 262,
+  "text": "Who won the 2022 Asia Cup",
+  "count": 1,
+  "src": "WU38"
+ },
+ {
+  "id": 263,
+  "text": "First woman Prime Minister of Pakistan",
+  "count": 2,
+  "src": "WU38,51,55"
+ },
+ {
+  "id": 264,
+  "text": "USA first prime minister (question unclear in write-up)",
+  "count": 1,
+  "src": "WU38"
+ },
+ {
+  "id": 265,
+  "text": "Capital of Austria",
+  "count": 1,
+  "src": "WU38"
+ },
+ {
+  "id": 266,
+  "text": "If the 26th is Sunday, what day is the 4th",
+  "count": 1,
+  "src": "WU41"
+ },
+ {
+  "id": 267,
+  "text": "Quarter of 120",
+  "count": 1,
+  "src": "WU41"
+ },
+ {
+  "id": 268,
+  "text": "Who was the Viceroy at the time of partition of India",
+  "count": 1,
+  "src": "WU41"
+ },
+ {
+  "id": 269,
+  "text": "First child to embrace Islam",
+  "count": 1,
+  "src": "WU41"
+ },
+ {
+  "id": 270,
+  "text": "When did Fatima Jinnah (Mother of the Nation) die",
+  "count": 1,
+  "src": "WU41"
+ },
+ {
+  "id": 271,
+  "text": "Who sang the national anthem (Qaumi Tarana)",
+  "count": 1,
+  "src": "WU41"
+ },
+ {
+  "id": 272,
+  "text": "LCM of 4 and 8",
+  "count": 1,
+  "src": "WU41"
+ },
+ {
+  "id": 273,
+  "text": "Last revealed surah",
+  "count": 1,
+  "src": "WU41"
+ },
+ {
+  "id": 274,
+  "text": "Zabihullah is the title of which prophet",
+  "count": 1,
+  "src": "WU41"
+ },
+ {
+  "id": 275,
+  "text": "Smallest surah of the Quran",
+  "count": 2,
+  "src": "WU41,56"
+ },
+ {
+  "id": 276,
+  "text": "Heart of the Quran (which surah)",
+  "count": 1,
+  "src": "WU41"
+ },
+ {
+  "id": 277,
+  "text": "Namaz was made obligatory in which place or night",
+  "count": 1,
+  "src": "WU41"
+ },
+ {
+  "id": 278,
+  "text": "Head of state under the 1962 Constitution",
+  "count": 1,
+  "src": "WU41"
+ },
+ {
+  "id": 279,
+  "text": "President elected by (context not given)",
+  "count": 2,
+  "src": "WU41,51"
+ },
+ {
+  "id": 280,
+  "text": "What is the subcontinent called",
+  "count": 1,
+  "src": "WU41"
+ },
+ {
+  "id": 281,
+  "text": "Currency of Russia",
+  "count": 1,
+  "src": "WU42"
+ },
+ {
+  "id": 282,
+  "text": "Which is an international capital: Dubai, Islamabad, Dhaka",
+  "count": 1,
+  "src": "WU42"
+ },
+ {
+  "id": 283,
+  "text": "Munafiq laqab: who had it",
+  "count": 1,
+  "src": "WU42"
+ },
+ {
+  "id": 284,
+  "text": "Which city lies along Pakistan's coastline",
+  "count": 1,
+  "src": "WU42"
+ },
+ {
+  "id": 285,
+  "text": "One Unit scheme year (1955)",
+  "count": 1,
+  "src": "WU43"
+ },
+ {
+  "id": 286,
+  "text": "When is Islamophobia Day celebrated (15 March)",
+  "count": 1,
+  "src": "WU43"
+ },
+ {
+  "id": 287,
+  "text": "Proportion question with numbers 8, 12, 15",
+  "count": 1,
+  "src": "WU43"
+ },
+ {
+  "id": 288,
+  "text": "First governor of Sindh",
+  "count": 1,
+  "src": "WU43"
+ },
+ {
+  "id": 289,
+  "text": "Prime Minister of France",
+  "count": 1,
+  "src": "WU43"
+ },
+ {
+  "id": 290,
+  "text": "5th of a month is Friday, what day is the 28th",
+  "count": 1,
+  "src": "WU44"
+ },
+ {
+  "id": 291,
+  "text": "Kashmir Highway renamed Srinagar Highway",
+  "count": 1,
+  "src": "WU44"
+ },
+ {
+  "id": 292,
+  "text": "If the 1st of a month is Monday, what day is the 15th (Monday)",
+  "count": 1,
+  "src": "WU45"
+ },
+ {
+  "id": 293,
+  "text": "Rohtas Fort is located in which city or district",
+  "count": 1,
+  "src": "WU45"
+ },
+ {
+  "id": 294,
+  "text": "Percentage of Muslim League seats in the 1945-46 elections",
+  "count": 1,
+  "src": "WU45"
+ },
+ {
+  "id": 295,
+  "text": "Indus Waters Treaty was signed by which Pakistani personality",
+  "count": 1,
+  "src": "WU45"
+ },
+ {
+  "id": 296,
+  "text": "Pakistan Navy Headquarters is in which city",
+  "count": 1,
+  "src": "WU45"
+ },
+ {
+  "id": 297,
+  "text": "x% of one fourth of 100",
+  "count": 1,
+  "src": "WU46,53"
+ },
+ {
+  "id": 298,
+  "text": "40% of 60",
+  "count": 1,
+  "src": "WU46,53"
+ },
+ {
+  "id": 299,
+  "text": "x% of one third of 100",
+  "count": 1,
+  "src": "WU46,53"
+ },
+ {
+  "id": 300,
+  "text": "A toy bought at 30 and sold at 40, profit percentage",
+  "count": 1,
+  "src": "WU46,53"
+ },
+ {
+  "id": 301,
+  "text": "If the 3rd of a month is Sunday, what day is the 15th",
+  "count": 1,
+  "src": "WU46,53"
+ },
+ {
+  "id": 302,
+  "text": "Letter and alphabetical series 1A 2D 3H",
+  "count": 1,
+  "src": "WU46,53"
+ },
+ {
+  "id": 303,
+  "text": "Number series 1/22, 22/3, 5/33, 33/7",
+  "count": 1,
+  "src": "WU46,53"
+ },
+ {
+  "id": 304,
+  "text": "Cow is to milk as bark is to dog (analogy)",
+  "count": 1,
+  "src": "WU46,53"
+ },
+ {
+  "id": 305,
+  "text": "Miles per hour speed into minutes",
+  "count": 1,
+  "src": "WU46,53"
+ },
+ {
+  "id": 306,
+  "text": "Train A runs at 60 km/h and train B is twice as fast, km covered by B in 30 minutes",
+  "count": 1,
+  "src": "WU46,53"
+ },
+ {
+  "id": 307,
+  "text": "Which animal accompanied Ashab e Kahf",
+  "count": 1,
+  "src": "WU46,53"
+ },
+ {
+  "id": 308,
+  "text": "In which city did the Quraish live",
+  "count": 1,
+  "src": "WU46,53"
+ },
+ {
+  "id": 309,
+  "text": "Year of the first Round Table Conference",
+  "count": 1,
+  "src": "WU46,53"
+ },
+ {
+  "id": 310,
+  "text": "Who started the Faraizi movement",
+  "count": 1,
+  "src": "WU46,53"
+ },
+ {
+  "id": 311,
+  "text": "Age of Hazrat Ali RA when he was martyred",
+  "count": 1,
+  "src": "WU46,53"
+ },
+ {
+  "id": 312,
+  "text": "Who served Prophet Muhammad SAW for 10 years (Anas RA)",
+  "count": 1,
+  "src": "WU46,53"
+ },
+ {
+  "id": 313,
+  "text": "Iran, Turkey and Pakistan formed which organization (RCD)",
+  "count": 1,
+  "src": "WU46,53"
+ },
+ {
+  "id": 314,
+  "text": "Year of the UNO first Declaration of Human Rights",
+  "count": 1,
+  "src": "WU46,53"
+ },
+ {
+  "id": 315,
+  "text": "Pakistan national bird",
+  "count": 1,
+  "src": "WU46,53"
+ },
+ {
+  "id": 316,
+  "text": "Pakistan's biggest prize (award)",
+  "count": 1,
+  "src": "WU46,53"
+ },
+ {
+  "id": 317,
+  "text": "Heart of Pakistan (which city)",
+  "count": 1,
+  "src": "WU46,53"
+ },
+ {
+  "id": 318,
+  "text": "Synonym of jubilant",
+  "count": 1,
+  "src": "WU46,53"
+ },
+ {
+  "id": 319,
+  "text": "Opposite word to glory",
+  "count": 1,
+  "src": "WU46,53"
+ },
+ {
+  "id": 320,
+  "text": "An article of the 1973 Constitution (not specified in write-up)",
+  "count": 1,
+  "src": "WU50"
+ },
+ {
+  "id": 321,
+  "text": "Year Quaid-e-Azam left the Congress",
+  "count": 1,
+  "src": "WU50"
+ },
+ {
+  "id": 322,
+  "text": "Year Fatima Jinnah joined the Muslim League",
+  "count": 1,
+  "src": "WU50"
+ },
+ {
+  "id": 323,
+  "text": "Alphabetic series A C F",
+  "count": 1,
+  "src": "WU51,55"
+ },
+ {
+  "id": 324,
+  "text": "90% of 80",
+  "count": 1,
+  "src": "WU51"
+ },
+ {
+  "id": 325,
+  "text": "80% of 80",
+  "count": 1,
+  "src": "WU51"
+ },
+ {
+  "id": 326,
+  "text": "If the 1st of a month is Monday, what day is the 12th",
+  "count": 1,
+  "src": "WU51,55"
+ },
+ {
+  "id": 327,
+  "text": "Odd one out: football, cricket, tennis",
+  "count": 1,
+  "src": "WU51,55"
+ },
+ {
+  "id": 328,
+  "text": "Capital of Nepal",
+  "count": 1,
+  "src": "WU51"
+ },
+ {
+  "id": 329,
+  "text": "From which country did Pakistan buy Gwadar",
+  "count": 2,
+  "src": "WU51,56"
+ },
+ {
+  "id": 330,
+  "text": "Capital of Saudi Arabia",
+  "count": 1,
+  "src": "WU51"
+ },
+ {
+  "id": 331,
+  "text": "Relationship of Hazrat Hamza RA with Prophet Muhammad SAW",
+  "count": 1,
+  "src": "WU51"
+ },
+ {
+  "id": 332,
+  "text": "Priority order of words in a dictionary (dictionary arrangement)",
+  "count": 2,
+  "src": "WU52,58"
+ },
+ {
+  "id": 333,
+  "text": "Allah's most favourite nafl namaz (Tahajjud)",
+  "count": 1,
+  "src": "WU52"
+ },
+ {
+  "id": 334,
+  "text": "Which battle is called Youm al Furqan",
+  "count": 1,
+  "src": "WU55"
+ },
+ {
+  "id": 335,
+  "text": "Old capital of Pakistan",
+  "count": 1,
+  "src": "WU56"
+ },
+ {
+  "id": 336,
+  "text": "Sindh was conquered by whom",
+  "count": 1,
+  "src": "WU56"
+ },
+ {
+  "id": 337,
+  "text": "Marvi is a folk story of which province",
+  "count": 1,
+  "src": "WU56"
+ },
+ {
+  "id": 338,
+  "text": "Liaquat Ali Khan's first official visit to which country",
+  "count": 1,
+  "src": "WU56"
+ },
+ {
+  "id": 339,
+  "text": "Door of knowledge is which sahabi",
+  "count": 1,
+  "src": "WU56"
+ },
+ {
+  "id": 340,
+  "text": "In which ghazwa were most sahaba martyred",
+  "count": 1,
+  "src": "WU56"
+ },
+ {
+  "id": 341,
+  "text": "Largest continent in the world",
+  "count": 1,
+  "src": "WU56"
+ },
+ {
+  "id": 342,
+  "text": "Which country is called the Rising Sun",
+  "count": 1,
+  "src": "WU56"
+ },
+ {
+  "id": 343,
+  "text": "Coldest place in the world",
+  "count": 1,
+  "src": "WU56"
+ },
+ {
+  "id": 344,
+  "text": "Liaquat-Nehru report and Balochistan's capital (unclear in write-up)",
+  "count": 1,
+  "src": "WU56"
+ },
+ {
+  "id": 345,
+  "text": "Current NAB SG",
+  "count": 1,
+  "src": "WU56"
+ },
+ {
+  "id": 346,
+  "text": "Pakistan Air Force day",
+  "count": 1,
+  "src": "WU56"
+ },
+ {
+  "id": 347,
+  "text": "Recent fighter jet from China (J-35 etc)",
+  "count": 1,
+  "src": "WU56"
+ },
+ {
+  "id": 348,
+  "text": "Injeel was revealed on which prophet",
+  "count": 1,
+  "src": "WU56"
+ },
+ {
+  "id": 349,
+  "text": "Height of K2 (8611 m)",
+  "count": 1,
+  "src": "WU56"
+ },
+ {
+  "id": 350,
+  "text": "How many general seats in the Pakistan National Assembly",
+  "count": 1,
+  "src": "WU56"
+ },
+ {
+  "id": 351,
+  "text": "How many sons did Prophet Muhammad SAW have",
+  "count": 1,
+  "src": "WU56"
+ },
+ {
+  "id": 352,
+  "text": "Name of Hazrat Khadija RA's father",
+  "count": 1,
+  "src": "WU56"
+ },
+ {
+  "id": 353,
+  "text": "Currency of Brazil",
+  "count": 1,
+  "src": "WU56"
+ },
+ {
+  "id": 354,
+  "text": "Longest river in the world (Nile)",
+  "count": 1,
+  "src": "WU56"
+ },
+ {
+  "id": 355,
+  "text": "Who received the Millat e Quaid award",
+  "count": 1,
+  "src": "WU56"
+ },
+ {
+  "id": 356,
+  "text": "Date of Eid-ul-Fitr",
+  "count": 1,
+  "src": "WU58"
+ },
+ {
+  "id": 357,
+  "text": "Quit India Movement leader (Mahatma Gandhi)",
+  "count": 1,
+  "src": "WU59"
+ },
+ {
+  "id": 358,
+  "text": "Year the Quit India Movement was launched (1942)",
+  "count": 1,
+  "src": "WU59"
+ },
+ {
+  "id": 359,
+  "text": "Civil Disobedience Movement was started by (Gandhi)",
+  "count": 1,
+  "src": "WU59"
+ },
+ {
+  "id": 360,
+  "text": "Year the Civil Disobedience Movement began (1930)",
+  "count": 1,
+  "src": "WU59"
+ },
+ {
+  "id": 361,
+  "text": "Main event of the Civil Disobedience Movement (Salt March)",
+  "count": 1,
+  "src": "WU59"
+ },
+ {
+  "id": 362,
+  "text": "Salt March was led by (Gandhi)",
+  "count": 1,
+  "src": "WU59"
+ },
+ {
+  "id": 363,
+  "text": "Year the Non-Cooperation Movement began (1920)",
+  "count": 1,
+  "src": "WU59"
+ },
+ {
+  "id": 364,
+  "text": "Non-Cooperation Movement was launched by (Gandhi)",
+  "count": 1,
+  "src": "WU59"
+ },
+ {
+  "id": 365,
+  "text": "Swadeshi Movement is associated with the Partition of Bengal (1905)",
+  "count": 1,
+  "src": "WU59"
+ },
+ {
+  "id": 366,
+  "text": "Year the Swadeshi Movement began (1905)",
+  "count": 1,
+  "src": "WU59"
+ },
+ {
+  "id": 367,
+  "text": "Khilafat Movement was founded by Indian Muslim leaders",
+  "count": 1,
+  "src": "WU59"
+ },
+ {
+  "id": 368,
+  "text": "Khilafat Movement was launched to support the Ottoman Caliphate",
+  "count": 1,
+  "src": "WU59"
+ },
+ {
+  "id": 369,
+  "text": "Home Rule Movement was led by Annie Besant and Tilak",
+  "count": 1,
+  "src": "WU59"
+ },
+ {
+  "id": 370,
+  "text": "Year the Home Rule Movement was launched (1916)",
+  "count": 1,
+  "src": "WU59"
+ },
+ {
+  "id": 371,
+  "text": "Movement associated with Martin Luther King Jr (Civil Rights Movement)",
+  "count": 1,
+  "src": "WU59"
+ },
+ {
+  "id": 372,
+  "text": "Who led the Civil Rights Movement in the USA (Martin Luther King Jr)",
+  "count": 1,
+  "src": "WU59"
+ },
+ {
+  "id": 373,
+  "text": "American Civil Rights Movement sought racial equality",
+  "count": 1,
+  "src": "WU59"
+ },
+ {
+  "id": 374,
+  "text": "Who led the anti-apartheid movement in South Africa (Nelson Mandela)",
+  "count": 1,
+  "src": "WU59"
+ },
+ {
+  "id": 375,
+  "text": "Suffragette Movement demanded women's right to vote",
+  "count": 1,
+  "src": "WU59"
+ }
+]

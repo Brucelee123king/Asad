@@ -1,0 +1,370 @@
+[
+ {
+  "id": "C36",
+  "question": "In which year did the Chauri Chaura incident take place?",
+  "options": [
+   "1922",
+   "1919",
+   "1920",
+   "1924"
+  ],
+  "correct": 0,
+  "why": "The Chauri Chaura incident occurred on 4 February 1922 in British India. Following the violent incident, Mahatma Gandhi suspended the Non-Cooperation Movement.",
+  "rel": "Chauri Chaura is a town in the Gorakhpur district of present-day Uttar Pradesh, India.",
+  "status": "ok",
+  "note": "",
+  "match": 128
+ },
+ {
+  "id": "C37",
+  "question": "In which year were Pakistan's first general elections held on the basis of adult franchise?",
+  "options": [
+   "1970",
+   "1962",
+   "1965",
+   "1977"
+  ],
+  "correct": 0,
+  "why": "Pakistan held its first general elections based on adult franchise in December 1970. The Awami League won a majority of seats in the National Assembly.",
+  "rel": "The 1970 elections were held under the Legal Framework Order of General Yahya Khan.",
+  "status": "ok",
+  "note": "",
+  "match": 91
+ },
+ {
+  "id": "C38",
+  "question": "Which article of the Constitution of Pakistan guarantees the right to education?",
+  "options": [
+   "Article 25-A",
+   "Article 19-A",
+   "Article 25",
+   "Article 37"
+  ],
+  "correct": 0,
+  "why": "Article 25-A makes it the state's responsibility to provide free and compulsory education to children aged 5–16 years, in the manner determined by law.",
+  "rel": "Article 25-A was added by the 18th Amendment in 2010.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C39",
+  "question": "How old was Prophet Muhammad (PBUH) when his grandfather, Abdul Muttalib, passed away?",
+  "options": [
+   "About 6 years old",
+   "About 10 years old",
+   "About 8 years old",
+   "About 12 years old"
+  ],
+  "correct": 2,
+  "why": "Prophet Muhammad ﷺ was born around 570 CE. His grandfather, Abdul Muttalib, took care of him after his mother's death and passed away when Muhammad ﷺ was approximately eight years old.",
+  "rel": "After Abdul Muttalib's death, his uncle Abu Talib took care of him.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C40",
+  "question": "How old was Prophet Muhammad (PBUH) when he migrated from Makkah to Madinah?",
+  "options": [
+   "About 40 years old",
+   "About 53 years old",
+   "About 50 years old",
+   "About 63 years old"
+  ],
+  "correct": 1,
+  "why": "The Hijrah took place in 622 CE. Prophet Muhammad ﷺ was approximately 53 years old at the time of his migration to Madinah.",
+  "rel": "The Prophet (PBUH) passed away in Madinah at about 63 years of age.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C41",
+  "question": "Hazrat Abu Bakr (RA) was the father of which wife of Prophet Muhammad (PBUH)?",
+  "options": [
+   "Hazrat Hafsa (RA)",
+   "Hazrat Khadija (RA)",
+   "Hazrat Ayesha (RA)",
+   "Hazrat Zainab (RA)"
+  ],
+  "correct": 2,
+  "why": "Hazrat Ayesha (R.A.) was the daughter of Hazrat Abu Bakr (R.A.), the first Caliph of Islam. She became one of the most important transmitters of Hadith and Islamic knowledge.",
+  "rel": "Hazrat Hafsa (RA) was the daughter of Hazrat Umar (RA).",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C42",
+  "question": "Who was the first woman martyr in Islam?",
+  "options": [
+   "Hazrat Khadija (RA)",
+   "Hazrat Umm Ammarah (RA)",
+   "Hazrat Sumayyah bint Khayyat (RA)",
+   "Hazrat Asma bint Abu Bakr (RA)"
+  ],
+  "correct": 2,
+  "why": "Hazrat Sumayyah (R.A.) was among the earliest Muslims persecuted in Makkah. She is widely recognised as the first martyr in Islamic history.",
+  "rel": "She was the mother of Hazrat Ammar bin Yasir (RA).",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C43",
+  "question": "How many faces does a triangular prism have?",
+  "options": [
+   "4",
+   "5",
+   "6",
+   "9"
+  ],
+  "correct": 1,
+  "why": "A triangular prism has two triangular faces and three rectangular faces. Therefore, it has five faces in total.",
+  "rel": "A triangular prism has 9 edges and 6 vertices.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C44",
+  "question": "The China–Pakistan Economic Corridor (CPEC) is a joint project between which two countries?",
+  "options": [
+   "Pakistan and China",
+   "Pakistan and Iran",
+   "China and Afghanistan",
+   "Pakistan and Saudi Arabia"
+  ],
+  "correct": 0,
+  "why": "CPEC is an economic development initiative connecting Pakistan's Gwadar Port with China's Xinjiang region through transport, energy and infrastructure projects.",
+  "rel": "CPEC is part of China's Belt and Road Initiative, launched in 2013.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C45",
+  "question": "What is another name for the Karakoram Highway?",
+  "options": [
+   "Grand Trunk Road",
+   "China–Pakistan Friendship Highway",
+   "Silk Route Expressway",
+   "Indus Highway"
+  ],
+  "correct": 1,
+  "why": "The Karakoram Highway connects Pakistan with China through the mountainous Karakoram region. It is an important route for trade, travel and bilateral connectivity.",
+  "rel": "The Karakoram Highway (N-35) is often called the Eighth Wonder of the World.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C46",
+  "question": "Which two countries are connected by the Khunjerab Pass?",
+  "options": [
+   "Pakistan and Afghanistan",
+   "Pakistan and India",
+   "China and Tajikistan",
+   "Pakistan and China"
+  ],
+  "correct": 3,
+  "why": "Khunjerab Pass lies in the Karakoram Mountains along the Pakistan–China border. It is the highest paved international border crossing in the world.",
+  "rel": "Khunjerab Pass is about 4,693 metres above sea level.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C47",
+  "question": "How many Nobel Prizes have been awarded to Pakistani individuals?",
+  "options": [
+   "1",
+   "3",
+   "4",
+   "2"
+  ],
+  "correct": 3,
+  "why": "Two Pakistani individuals have received Nobel Prizes: Abdus Salam, who won the Nobel Prize in Physics in 1979, and Malala Yousafzai, who received the Nobel Peace Prize in 2014.",
+  "rel": "Malala Yousafzai, aged 17, is the youngest Nobel laureate ever.",
+  "status": "ok",
+  "note": "",
+  "match": 39
+ },
+ {
+  "id": "C48",
+  "question": "Who holds the record for the most wickets in men's Test cricket?",
+  "options": [
+   "Shane Warne",
+   "James Anderson",
+   "Muttiah Muralitharan",
+   "Anil Kumble"
+  ],
+  "correct": 2,
+  "why": "The Sri Lankan spin bowler retired with 800 Test wickets, the highest total in the history of men's Test cricket.",
+  "rel": "Shane Warne is second with 708 Test wickets.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C49",
+  "question": "Hafeez Kardar was a famous player of which sport?",
+  "options": [
+   "Hockey",
+   "Squash",
+   "Football",
+   "Cricket"
+  ],
+  "correct": 3,
+  "why": "Abdul Hafeez Kardar was a prominent Pakistani cricketer and the country's first Test captain after independence. He played a major role in establishing Pakistan in international Test cricket.",
+  "rel": "Pakistan played its first Test match in 1952 against India.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C50",
+  "question": "In which year was the Lucknow Pact signed?",
+  "options": [
+   "1906",
+   "1911",
+   "1916",
+   "1919"
+  ],
+  "correct": 2,
+  "why": "The Lucknow Pact was an agreement between the Indian National Congress and the All-India Muslim League in December 1916. It established a framework for constitutional reforms and cooperation between the two organisations.",
+  "rel": "Quaid-e-Azam was called the 'Ambassador of Hindu-Muslim Unity' for his role in the pact.",
+  "status": "ok",
+  "note": "",
+  "match": 596
+ },
+ {
+  "id": "C51",
+  "question": "Which is the highest plateau in Balochistan?",
+  "options": [
+   "Kalat Plateau",
+   "Potohar Plateau",
+   "Kharan Plateau",
+   "Makran Plateau"
+  ],
+  "correct": 0,
+  "why": "The Kalat region is an elevated area in central Balochistan. Plateau-related questions can sometimes use different geographical classifications, so the exact wording of the original test question matters.",
+  "rel": "The Potohar Plateau is in northern Punjab.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C52",
+  "question": "What was the former name of Karachi?",
+  "options": [
+   "Kolachi",
+   "Debal",
+   "Thatta",
+   "Mehran"
+  ],
+  "correct": 0,
+  "why": "Karachi developed from a small fishing settlement traditionally associated with the name Kolachi. The settlement later grew into a major port city and Pakistan's largest city.",
+  "rel": "Karachi was Pakistan's first capital.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C53",
+  "question": "What is the currency of Sri Lanka?",
+  "options": [
+   "Taka",
+   "Rufiyaa",
+   "Sri Lankan Rupee",
+   "Pakistani Rupee"
+  ],
+  "correct": 2,
+  "why": "The Sri Lankan rupee is the official currency of Sri Lanka. It is subdivided into 100 cents.",
+  "rel": "Sri Lanka's legislative capital is Sri Jayawardenepura Kotte.",
+  "status": "ok",
+  "note": "",
+  "match": 346
+ },
+ {
+  "id": "C54",
+  "question": "What is the capital of Hungary?",
+  "options": [
+   "Bucharest",
+   "Prague",
+   "Vienna",
+   "Budapest"
+  ],
+  "correct": 3,
+  "why": "Budapest is the capital and largest city of Hungary. It was formed through the unification of Buda, Óbuda and Pest in 1873.",
+  "rel": "The River Danube flows through Budapest.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C55",
+  "question": "What does the word 'Pakistan' mean?",
+  "options": [
+   "Land of the Rivers",
+   "Land of the Free",
+   "Land of the Pure",
+   "Land of the Faithful"
+  ],
+  "correct": 2,
+  "why": "The name Pakistan is commonly interpreted as “Land of the Pure.” It is associated with the Persian and Urdu word pak, meaning pure, and the suffix -stan, meaning land or place.",
+  "rel": "The name 'Pakistan' was coined by Chaudhry Rahmat Ali in 1933.",
+  "status": "ok",
+  "note": "",
+  "match": 559
+ },
+ {
+  "id": "C56",
+  "question": "Where is the Dasht River located?",
+  "options": [
+   "Sindh, Pakistan",
+   "Khyber Pakhtunkhwa, Pakistan",
+   "Gilgit-Baltistan, Pakistan",
+   "Balochistan, Pakistan"
+  ],
+  "correct": 3,
+  "why": "The Dasht River is located in southwestern Balochistan and flows through the region towards the Arabian Sea. It is associated with the Gwadar and Kech areas.",
+  "rel": "The Mirani Dam is built on the Dasht River.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "C57",
+  "question": "Who is the current Chief Minister of Sindh (as of 2026)?",
+  "options": [
+   "Qaim Ali Shah",
+   "Murad Saeed",
+   "Sharjeel Inam Memon",
+   "Syed Murad Ali Shah"
+  ],
+  "correct": 3,
+  "why": "Syed Murad Ali Shah is serving as Chief Minister of Sindh. He is a member of the Pakistan Peoples Party (PPP) and has a background in engineering and public administration.",
+  "rel": "He began his third term as Chief Minister of Sindh in February 2024.",
+  "status": "ok",
+  "note": "",
+  "match": 0
+ },
+ {
+  "id": "C58",
+  "question": "Which country is the world's largest crude oil producer?",
+  "options": [
+   "Saudi Arabia",
+   "United States of America",
+   "Russia",
+   "Iraq"
+  ],
+  "correct": 1,
+  "why": "The United States remained the world's largest crude oil producer in 2025, averaging approximately 13.6 million barrels per day. The answer may differ if the original question refers specifically to oil exports or Pakistan's oil imports.",
+  "rel": "Saudi Arabia is the world's largest crude oil exporter.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ }
+]

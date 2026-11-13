@@ -1,0 +1,212 @@
+[
+ {
+  "question": "Which female companion narrated the most Hadith?",
+  "options": [
+   "Hazrat Hafsa (RA)",
+   "Hazrat Aisha (RA)",
+   "Hazrat Umm Salama (RA)",
+   "Hazrat Fatima (RA)"
+  ],
+  "correct": 1,
+  "why": "Hazrat Aisha (RA), wife of the Holy Prophet (PBUH), narrated about 2210 Hadith, the most by any woman. Umm Salama (RA) and Hafsa (RA) narrated far fewer, and Hazrat Fatima (RA) narrated very few.",
+  "rel": "Hazrat Abu Hurairah (RA) narrated the most Hadith overall (about 5374). Hazrat Aisha (RA) is called Umm-ul-Momineen and Siddiqa.",
+  "rep": 0,
+  "src": "exp 8",
+  "note": ""
+ },
+ {
+  "question": "What is the capital of Somalia?",
+  "options": [
+   "Nairobi",
+   "Djibouti",
+   "Mogadishu",
+   "Addis Ababa"
+  ],
+  "correct": 2,
+  "why": "Mogadishu is the capital and largest city of Somalia, on the Indian Ocean coast. Nairobi is the capital of Kenya, Addis Ababa of Ethiopia, and Djibouti city of Djibouti.",
+  "rel": "Somalia is in the Horn of Africa. Its currency is the Somali shilling.",
+  "rep": 0,
+  "src": "exp 8",
+  "note": ""
+ },
+ {
+  "question": "Who was Bulleh Shah?",
+  "options": [
+   "A Mughal emperor",
+   "A Punjabi Sufi poet",
+   "A Sikh ruler of Punjab",
+   "A Pashto poet"
+  ],
+  "correct": 1,
+  "why": "Bulleh Shah (1680-1757) was a famous Punjabi Sufi poet. His shrine is in Kasur, Punjab. He was not a king or ruler, and he wrote in Punjabi, not Pashto.",
+  "rel": "Waris Shah wrote Heer Ranjha in Punjabi. Rehman Baba and Khushal Khan Khattak are famous Pashto poets.",
+  "rep": 0,
+  "src": "exp 8",
+  "note": ""
+ },
+ {
+  "question": "Who was the second Khalifa of Islam?",
+  "options": [
+   "Hazrat Abu Bakr (RA)",
+   "Hazrat Usman (RA)",
+   "Hazrat Ali (RA)",
+   "Hazrat Umar Farooq (RA)"
+  ],
+  "correct": 3,
+  "why": "Hazrat Umar Farooq (RA) became the second Khalifa in 634 AD after Hazrat Abu Bakr (RA). Abu Bakr (RA) was the first, Usman (RA) the third and Ali (RA) the fourth.",
+  "rel": "Hazrat Umar (RA) ruled about 10 years (634-644 AD). He started the Hijri calendar.",
+  "rep": 0,
+  "src": "exp 8",
+  "note": ""
+ },
+ {
+  "question": "Who is known as Abu Hafs?",
+  "options": [
+   "Hazrat Umar Farooq (RA)",
+   "Hazrat Abu Bakr (RA)",
+   "Hazrat Ali (RA)",
+   "Hazrat Khalid bin Waleed (RA)"
+  ],
+  "correct": 0,
+  "why": "Abu Hafs was the kunya (title) of Hazrat Umar (RA); Hafs means lion cub, and his daughter was Hafsa (RA). Abu Turab was Hazrat Ali's title, and Saifullah was Khalid bin Waleed's title. Abu Bakr is itself a kunya.",
+  "rel": "Hazrat Umar (RA) was also called Al-Farooq. Hazrat Usman (RA) was called Zun-Nurain.",
+  "rep": 0,
+  "src": "exp 8",
+  "note": ""
+ },
+ {
+  "question": "What is the capital of Azad Jammu and Kashmir?",
+  "options": [
+   "Mirpur",
+   "Muzaffarabad",
+   "Srinagar",
+   "Rawalakot"
+  ],
+  "correct": 1,
+  "why": "Muzaffarabad is the capital of Azad Jammu and Kashmir, on the Jhelum and Neelum rivers. Mirpur and Rawalakot are other AJK cities, and Srinagar is the summer capital of Indian-held Kashmir.",
+  "rel": "Gilgit is the capital of Gilgit-Baltistan. Mangla Dam is in Mirpur district, AJK.",
+  "rep": 0,
+  "src": "exp 8",
+  "note": ""
+ },
+ {
+  "question": "Who was the second Governor-General of Pakistan?",
+  "options": [
+   "Ghulam Muhammad",
+   "Iskander Mirza",
+   "Liaquat Ali Khan",
+   "Khawaja Nazimuddin"
+  ],
+  "correct": 3,
+  "why": "Khawaja Nazimuddin became the second Governor-General in September 1948 after Quaid-e-Azam died. Ghulam Muhammad was the third and Iskander Mirza the fourth (last). Liaquat Ali Khan was the first Prime Minister.",
+  "rel": "Quaid-e-Azam was the first Governor-General. Khawaja Nazimuddin later became the second Prime Minister in 1951.",
+  "rep": 0,
+  "src": "exp 8",
+  "note": ""
+ },
+ {
+  "question": "The Simla (Shimla) Agreement was signed in which year and by whom?",
+  "options": [
+   "1966, Ayub Khan and Lal Bahadur Shastri",
+   "1972, Zulfikar Ali Bhutto and Indira Gandhi",
+   "1999, Nawaz Sharif and Atal Bihari Vajpayee",
+   "1950, Liaquat Ali Khan and Jawaharlal Nehru"
+  ],
+  "correct": 1,
+  "why": "The Simla Agreement was signed on 2 July 1972 by Zulfikar Ali Bhutto and Indira Gandhi after the 1971 war. 1966 was the Tashkent Declaration, 1999 the Lahore Declaration, and 1950 the Liaquat-Nehru Pact.",
+  "rel": "The ceasefire line in Kashmir was renamed the Line of Control (LoC) under the Simla Agreement. It was signed in Simla, India.",
+  "rep": 0,
+  "src": "exp 9",
+  "note": "Asked twice in the same write-up (items 6 and 16)."
+ },
+ {
+  "question": "On which date were the general elections of 2024 held in Pakistan?",
+  "options": [
+   "8 February 2024",
+   "25 July 2024",
+   "8 March 2024",
+   "11 May 2024"
+  ],
+  "correct": 0,
+  "why": "Pakistan's 12th general elections were held on 8 February 2024. 25 July was the date of the 2018 election and 11 May of the 2013 election; 8 March 2024 was not an election day.",
+  "rel": "Shehbaz Sharif became Prime Minister in March 2024 after this election. The 2018 election was held on 25 July 2018.",
+  "rep": 0,
+  "src": "exp 9",
+  "note": ""
+ },
+ {
+  "question": "Choose the synonym of EMINENT.",
+  "options": [
+   "Ordinary",
+   "Hidden",
+   "Distinguished",
+   "Imminent"
+  ],
+  "correct": 2,
+  "why": "Eminent means famous and respected, so distinguished is the synonym. Ordinary and hidden are nearly opposites. Imminent is a different word meaning about to happen.",
+  "rel": "Prominent and renowned are also synonyms of eminent. Antonym: obscure or unknown.",
+  "rep": 0,
+  "src": "exp 9",
+  "note": ""
+ },
+ {
+  "question": "Change into indirect speech: The teacher asked, \"Who speaks English?\"",
+  "options": [
+   "The teacher asked who speaks English.",
+   "The teacher asked who spoke English.",
+   "The teacher asked that who spoke English.",
+   "The teacher asked who had spoken English?"
+  ],
+  "correct": 1,
+  "why": "In indirect speech the present tense (speaks) changes to past tense (spoke), and the question word who is kept with no that and no question mark. Option A keeps the present tense, C wrongly adds that, and D uses the wrong tense and a question mark.",
+  "rel": "Yes/no questions use if or whether: He asked, \"Are you ready?\" becomes He asked if I was ready. Present continuous changes to past continuous.",
+  "rep": 0,
+  "src": "exp 9",
+  "note": ""
+ },
+ {
+  "question": "What are the three degrees of adjectives?",
+  "options": [
+   "Positive, Comparative, Superlative",
+   "Simple, Compound, Complex",
+   "Present, Past, Future",
+   "Positive, Negative, Neutral"
+  ],
+  "correct": 0,
+  "why": "Adjectives have three degrees: positive (tall), comparative (taller) and superlative (tallest). Simple, compound, complex are kinds of sentences, and present, past, future are tenses.",
+  "rel": "Irregular forms: good, better, best and bad, worse, worst. Long adjectives use more and most (more beautiful, most beautiful).",
+  "rep": 0,
+  "src": "exp 9",
+  "note": ""
+ },
+ {
+  "question": "What are the two pieces of the male Ihram called?",
+  "options": [
+   "Qamees and Shalwar",
+   "Izar and Rida",
+   "Jubba and Amama",
+   "Kafan and Chadar"
+  ],
+  "correct": 1,
+  "why": "The male Ihram is two white unstitched sheets: the Izar (wrapped round the waist) and the Rida (over the shoulders). Stitched clothes like qamees, shalwar or jubba are not allowed in Ihram for men.",
+  "rel": "Miqat is the place where pilgrims must enter Ihram. Women wear their normal modest stitched clothes in Ihram.",
+  "rep": 0,
+  "src": "exp 9",
+  "note": ""
+ },
+ {
+  "question": "In which year did East Pakistan separate and become Bangladesh?",
+  "options": [
+   "1965",
+   "1969",
+   "1971",
+   "1973"
+  ],
+  "correct": 2,
+  "why": "East Pakistan separated on 16 December 1971 after the war with India and became Bangladesh. 1965 was the Pakistan-India war, 1969 was when Yahya Khan took power, and Pakistan recognised Bangladesh in 1974.",
+  "rel": "Sheikh Mujib-ur-Rehman was the founder of Bangladesh. The Simla Agreement followed in July 1972.",
+  "rep": 0,
+  "src": "exp 9",
+  "note": ""
+ }
+]

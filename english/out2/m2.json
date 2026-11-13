@@ -1,0 +1,668 @@
+[
+ {
+  "src": "m2-39",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "She has less books than me.",
+   "She has fewer books than I do.",
+   "She has lesser books than I.",
+   "She have fewer books."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Use \"fewer\" with countable nouns like books, and \"than I do\" is the correct comparison.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "B is right: 'books' can be counted, so we use 'fewer', and 'than I do' is correct (I have books). A) 'less' is for uncountable nouns like water or sugar, not books. C) 'lesser' means lower in importance, not smaller in number. D) 'She have' is wrong: with 'she' we use 'has'.",
+  "rel": "Fewer time, less water: fewer is for things you count (fewer chairs), less is for things you cannot count (less money). Compare: 'He is taller than I am' or 'taller than me' in informal English."
+ },
+ {
+  "src": "m2-40",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "He denied to take the money.",
+   "He denied taking the money.",
+   "He denied take the money.",
+   "He denied that taking money."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Deny\" is followed by a gerund (-ing form), so \"denied taking\" is correct.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "B is right: the verb 'deny' is followed by a gerund (verb + ing), so 'denied taking'. A) 'deny to take' is wrong: 'deny' does not take 'to' + verb. C) 'denied take' is wrong: a bare verb cannot follow 'deny'. D) 'denied that taking' is wrong: 'that' needs a full clause like 'that he took'.",
+  "rel": "Other verbs followed by -ing: admit, avoid, enjoy, finish, mind, suggest (He admitted stealing). You can also say 'He denied that he had taken the money.'"
+ },
+ {
+  "src": "m2-41",
+  "question": "\"Adaptable\" means:",
+  "options": [
+   "able to adjust",
+   "unable to change",
+   "careless",
+   "slow only"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Adaptable\" means able to adjust to new conditions.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: 'adaptable' means able to adjust or change to fit new conditions. B) 'unable to change' is the opposite meaning. C) 'careless' means not paying attention, a different idea. D) 'slow only' has no link to the word.",
+  "rel": "Synonyms: flexible, versatile, adjustable. Antonyms: rigid, inflexible. Do not confuse adapt (adjust) with adopt (take as your own)."
+ },
+ {
+  "src": "m2-42",
+  "question": "\"Deterrent\" means something that:",
+  "options": [
+   "discourages an action",
+   "guarantees reward",
+   "increases confusion",
+   "records history"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "A deterrent is something that discourages or stops people from doing an action.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: a deterrent is something that discourages people or stops them from doing something, e.g. heavy fines are a deterrent to crime. B) a deterrent does not promise a reward; that is an incentive. C) it does not increase confusion. D) recording history is a record or archive, not a deterrent.",
+  "rel": "Verb: deter (to discourage). Opposite idea: incentive or motivation, which encourages an action. Example: Nuclear weapons are called a deterrent."
+ },
+ {
+  "src": "m2-43",
+  "question": "\"Sustain\" most nearly means:",
+  "options": [
+   "maintain",
+   "destroy",
+   "forget",
+   "interrupt"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Sustain\" means to keep something going, that is, to maintain it.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: 'sustain' means to keep something going or to maintain it. B) 'destroy' is the opposite. C) 'forget' is unrelated. D) 'interrupt' means to stop for a while, which is nearly the opposite.",
+  "rel": "Synonyms: maintain, uphold, support, continue. Related: 'sustainable development' means growth that can be kept going; 'sustain an injury' means to suffer an injury."
+ },
+ {
+  "src": "m2-44",
+  "question": "\"Explicit\" means:",
+  "options": [
+   "clearly stated",
+   "hidden",
+   "uncertain",
+   "impossible"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Explicit\" means stated clearly and directly, with nothing hidden.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: 'explicit' means stated clearly and directly, with nothing left hidden. B) 'hidden' is the opposite. C) 'uncertain' means not sure, not clear. D) 'impossible' is unrelated.",
+  "rel": "Antonym: implicit (suggested but not said directly). Synonyms of explicit: clear, plain, direct, unambiguous."
+ },
+ {
+  "src": "m2-45",
+  "question": "\"Arbitrary\" can mean:",
+  "options": [
+   "based on random choice or personal whim",
+   "carefully reasoned only",
+   "legally required always",
+   "scientifically proven"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Arbitrary\" means based on random choice or personal wish, not on reason.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: 'arbitrary' means based on random choice or personal wish, not on reason or rules. B) 'carefully reasoned' is the opposite. C) 'legally required' is not the meaning. D) 'scientifically proven' is the opposite of a random choice.",
+  "rel": "Synonyms: random, capricious, whimsical. Example: an arbitrary arrest is one made without proper legal reason."
+ },
+ {
+  "src": "m2-46",
+  "question": "He was exhausted, ___ he continued working.",
+  "options": [
+   "yet",
+   "because",
+   "unless",
+   "therefore because"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Yet\" shows contrast: he was tired, but he still continued.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: 'yet' shows contrast here: he was tired, but still he continued working. B) 'because' shows reason; tiredness is not the reason for continuing. C) 'unless' means 'if not' and gives no sense. D) 'therefore because' joins two connectors together, which is wrong.",
+  "rel": "Other contrast words: but, however, still, nevertheless. Example: It was raining, yet we went out."
+ },
+ {
+  "src": "m2-47",
+  "question": "I will call you ___ I arrive.",
+  "options": [
+   "when",
+   "unless",
+   "despite",
+   "during"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"When\" introduces the time of the action: I will call you at the time I arrive.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: 'when' tells the time: I will call you at the time I arrive. B) 'unless' means 'if not', so the meaning becomes wrong. C) 'despite' must be followed by a noun or -ing, not a clause like 'I arrive'. D) 'during' is followed by a noun (during the trip), not a clause.",
+  "rel": "In time clauses about the future we use present tense: 'when I arrive', not 'when I will arrive'. Same with as soon as, before, after, until."
+ },
+ {
+  "src": "m2-48",
+  "question": "She saved money ___ she could buy a laptop.",
+  "options": [
+   "so that",
+   "although",
+   "unless",
+   "whereas"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"So that\" shows purpose: she saved money for the purpose of buying a laptop.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: 'so that' shows purpose: she saved money in order to buy a laptop. B) 'although' shows contrast, which does not fit. C) 'unless' means 'if not' and gives no sense. D) 'whereas' compares two different facts, not purpose.",
+  "rel": "Other purpose forms: in order to, so as to, to (She saved money to buy a laptop). 'So that' is often followed by can, could, will or would."
+ },
+ {
+  "src": "m2-49",
+  "question": "He is not only punctual ___ also reliable.",
+  "options": [
+   "but",
+   "and only",
+   "nor",
+   "or"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "The correct pair is \"not only ... but also\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: the fixed pair is 'not only ... but also'. B) 'and only' does not form this pair. C) 'nor' pairs with 'neither' (neither ... nor). D) 'or' pairs with 'either' (either ... or).",
+  "rel": "Other correlative pairs: either ... or, neither ... nor, both ... and, whether ... or. Example: Both Ali and Sara passed."
+ },
+ {
+  "src": "m2-50",
+  "question": "The task was ___ difficult that many candidates ran out of time.",
+  "options": [
+   "so",
+   "such a",
+   "too much",
+   "very a"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "The pattern is \"so + adjective + that\"; \"difficult\" is an adjective, so \"so\" is correct.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: the pattern is 'so + adjective + that'; 'difficult' is an adjective. B) 'such a' needs a noun: 'such a difficult task that'. C) 'too much' does not go before an adjective with 'that'. D) 'very a' is not correct English.",
+  "rel": "Compare: so + adjective (so hot that), such + a + adjective + noun (such a hot day that). 'Too' is used with 'to': too hot to go out."
+ },
+ {
+  "src": "m2-51",
+  "question": "Read: \"A checklist does not replace expertise; it protects expertise from avoidable omission.\" The main point is:",
+  "options": [
+   "checklists make expertise unnecessary",
+   "checklists help experts avoid forgetting routine steps",
+   "experts should never use lists",
+   "omissions are always unavoidable"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The sentence says a checklist protects expertise from avoidable omission, so it helps experts not forget routine steps.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "B is right: the line says a checklist 'protects expertise from avoidable omission', so it helps experts not forget routine steps. A) wrong: the line says it 'does not replace expertise'. C) wrong: the passage supports using lists. D) wrong: the line calls omissions 'avoidable'.",
+  "rel": "A semicolon often joins two linked ideas; the second part here explains the first. Main-point questions: find the idea the whole sentence supports, not a single word."
+ },
+ {
+  "src": "m2-52",
+  "question": "In the same sentence, \"omission\" most nearly means:",
+  "options": [
+   "something left out",
+   "a reward",
+   "an explanation",
+   "a prediction"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "An omission is something that is left out or forgotten.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: an omission is something left out or forgotten. B) a reward is a prize, not related. C) an explanation is giving reasons. D) a prediction is a guess about the future.",
+  "rel": "Verb: omit (to leave out). Similar words: exclusion, oversight, gap. Opposite: inclusion, addition."
+ },
+ {
+  "src": "m2-53",
+  "question": "If a passage states evidence first and a conclusion later, the reader should:",
+  "options": [
+   "distinguish the supporting evidence from the conclusion",
+   "treat every sentence as identical in function",
+   "ignore connectors",
+   "assume the first sentence is always the conclusion"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "A good reader separates the supporting evidence from the conclusion it leads to.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: a good reader separates the evidence (support) from the conclusion it leads to. B) wrong: sentences have different jobs, so they are not identical. C) wrong: connectors like 'therefore' and 'so' show where the conclusion starts. D) wrong: here the conclusion comes later, so the first sentence is not always the conclusion.",
+  "rel": "Conclusion signal words: therefore, thus, hence, so, consequently. Evidence signal words: because, since, for example, studies show."
+ },
+ {
+  "src": "m2-54",
+  "question": "A writer says, \"The plan is costly; nevertheless, it may be necessary.\" \"Nevertheless\" signals:",
+  "options": [
+   "contrast",
+   "cause",
+   "time",
+   "addition only"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Nevertheless\" means \"in spite of that\", so it shows contrast.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: 'nevertheless' means 'in spite of that', so it shows contrast between 'costly' and 'necessary'. B) cause words are because or since. C) time words are then, later, after. D) addition words are also, moreover, furthermore.",
+  "rel": "Similar contrast words: however, nonetheless, still, even so, yet. Example: He was ill; nonetheless, he came to work."
+ },
+ {
+  "src": "m2-55",
+  "question": "The best way to infer an unknown word from context is to:",
+  "options": [
+   "use surrounding clues and sentence logic",
+   "choose the longest option",
+   "ignore grammar",
+   "always assume a positive meaning"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Context clues and the logic of the sentence help you guess the meaning of an unknown word.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: you guess an unknown word from clues around it and the logic of the sentence. B) the longest option is not a method; length shows nothing. C) grammar helps you know if the word is a noun, verb or adjective, so do not ignore it. D) the meaning can be positive or negative; you cannot assume.",
+  "rel": "Types of context clues: definition, synonym, antonym (contrast), and example clues. Words like 'but' and 'unlike' often show an antonym clue."
+ },
+ {
+  "src": "m2-56",
+  "question": "Which is an adverb of manner?",
+  "options": [
+   "carefully",
+   "yesterday",
+   "often",
+   "outside"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Adverbs of manner tell how something is done; \"carefully\" tells how. Yesterday is time, often is frequency, outside is place.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: an adverb of manner tells HOW something is done, and 'carefully' tells how. B) 'yesterday' is an adverb of time (when). C) 'often' is an adverb of frequency (how often). D) 'outside' is an adverb of place (where).",
+  "rel": "Many adverbs of manner end in -ly: quickly, slowly, loudly. Some do not: fast, hard, well (She sings well)."
+ },
+ {
+  "src": "m2-57",
+  "question": "\"By the time the test started, I ___ my notes.\"",
+  "options": [
+   "reviewed already now",
+   "had reviewed",
+   "have review",
+   "will reviewing"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "An action finished before another past action uses the past perfect: \"had reviewed\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "B is right: reviewing was finished before another past action (the test started), so we use the past perfect 'had reviewed'. A) 'reviewed already now' mixes past with 'now' and is wrong. C) 'have review' is wrong: present perfect needs 'reviewed', and the time is past. D) 'will reviewing' is wrong: future does not fit and 'will' needs a base verb.",
+  "rel": "'By the time' + past simple usually goes with past perfect in the other clause. Example: By the time we reached the station, the train had left."
+ },
+ {
+  "src": "m2-58",
+  "question": "Choose: \"He is ___ honorable officer.\"",
+  "options": [
+   "a",
+   "an",
+   "the only",
+   "no article"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Honorable\" starts with a silent h, so it has a vowel sound and takes \"an\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "B is right: in 'honorable' the h is silent, so the word starts with a vowel sound and takes 'an'. A) 'a' is used before a consonant sound. C) 'the only' changes the meaning and is not the expected article. D) a singular countable noun like 'officer' needs an article.",
+  "rel": "Other silent-h words: an hour, an honest man, an heir. But 'a university', 'a European' take 'a' because they start with a 'yu' sound."
+ },
+ {
+  "src": "m2-59",
+  "question": "The correct collocation is:",
+  "options": [
+   "depend of",
+   "depend on",
+   "depend at",
+   "depend to"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The verb \"depend\" is always followed by \"on\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "B is right: the verb 'depend' is always followed by 'on'. A) 'depend of' is a common mistake. C) 'depend at' is wrong. D) 'depend to' is wrong.",
+  "rel": "Also 'rely on', 'insist on', 'count on'. The adjective too: dependent on (but independent of)."
+ },
+ {
+  "src": "m2-60",
+  "question": "Passive of \"They can solve the problem\" is:",
+  "options": [
+   "The problem can be solved.",
+   "The problem can solved.",
+   "The problem is can solve.",
+   "The problem can solving."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Passive with a modal is modal + be + past participle: \"can be solved\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: passive with a modal is modal + be + past participle, so 'can be solved'. B) 'can solved' misses 'be'. C) 'is can solve' puts two auxiliaries wrongly and has no passive form. D) 'can solving' uses -ing, which is not passive.",
+  "rel": "Same rule with other modals: must be done, should be finished, will be sent, may be delayed."
+ },
+ {
+  "src": "m2-61",
+  "question": "Indirect: He said, \"I must leave now.\" In ordinary backshift, \"must\" may become:",
+  "options": [
+   "had to",
+   "has to yesterday",
+   "musted",
+   "would leaving"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "In reported speech \"must\" (for need/duty) usually changes to \"had to\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: in reported speech 'must' (meaning need or duty) usually changes to 'had to': He said that he had to leave then. B) 'has to yesterday' is wrong tense and wrong time word. C) 'musted' does not exist; 'must' has no past form. D) 'would leaving' is wrong: 'would' needs a base verb.",
+  "rel": "Other backshifts: can to could, will to would, may to might, is to was. Also 'now' becomes 'then' and 'today' becomes 'that day'."
+ },
+ {
+  "src": "m2-62",
+  "question": "Antonym of \"lenient\" is:",
+  "options": [
+   "strict",
+   "gentle",
+   "mild",
+   "tolerant"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Lenient\" means soft and easy-going, so its opposite is \"strict\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: 'lenient' means soft and not strict in punishment, so its opposite is 'strict'. B) 'gentle', C) 'mild' and D) 'tolerant' all have a similar meaning to lenient, so they are synonyms, not antonyms.",
+  "rel": "Other antonyms of lenient: harsh, severe, stern, rigid. Other synonyms: merciful, forgiving, permissive."
+ },
+ {
+  "src": "m2-63",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "She is one of the best player.",
+   "She is one of the best players.",
+   "She is one of best players is.",
+   "She one of the best player."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"One of the\" is followed by a plural noun: \"one of the best players\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "B is right: 'one of the' + superlative is followed by a plural noun: 'one of the best players'. A) 'player' is singular, which is wrong after 'one of the'. C) extra 'is' at the end and missing 'the' make it wrong. D) it has no verb ('is') and uses a singular noun.",
+  "rel": "Same rule: one of my friends, one of the tallest buildings. The verb stays singular: One of the boys is absent."
+ },
+ {
+  "src": "m2-64",
+  "question": "\"Plausible\" means:",
+  "options": [
+   "seemingly reasonable or believable",
+   "obviously impossible",
+   "very loud",
+   "completely proven beyond doubt"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Plausible\" means something seems reasonable or believable.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: 'plausible' means something seems reasonable or believable. B) 'obviously impossible' is the opposite. C) 'very loud' is unrelated (that is 'loud' or 'deafening'). D) 'completely proven' is too strong; plausible only seems true, it is not proven.",
+  "rel": "Synonyms: believable, credible, likely. Antonyms: implausible, unlikely, far-fetched."
+ },
+ {
+  "src": "m2-65",
+  "question": "Complete: \"___ he was inexperienced, he learned quickly.\"",
+  "options": [
+   "Although",
+   "Because of",
+   "Unless",
+   "Therefore"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Although\" shows contrast between two clauses: inexperienced, but he learned quickly.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: 'although' joins two clauses that show contrast: he was inexperienced, but he learned quickly. B) 'because of' needs a noun (because of his inexperience) and shows reason, not contrast. C) 'unless' means 'if not' and gives no sense. D) 'therefore' shows result and cannot start the first clause like this.",
+  "rel": "Other contrast words: though, even though, despite (+ noun or -ing), in spite of. Example: Despite being inexperienced, he learned quickly."
+ },
+ {
+  "src": "m2-66",
+  "question": "A paragraph whose examples all support one claim has strong:",
+  "options": [
+   "unity",
+   "ambiguity",
+   "contradiction",
+   "inversion"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Unity means every part of a paragraph supports one main idea.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: unity means every part of a paragraph supports one main idea or claim. B) ambiguity means unclear, with two possible meanings. C) contradiction means parts that go against each other. D) inversion means changing the normal word order.",
+  "rel": "Related writing ideas: coherence (ideas flow logically with good links) and topic sentence (the sentence that gives the main claim)."
+ },
+ {
+  "src": "m2-67",
+  "question": "Which word is a coordinating conjunction?",
+  "options": [
+   "although",
+   "because",
+   "but",
+   "while"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Coordinating conjunctions are FANBOYS (for, and, nor, but, or, yet, so); \"but\" is one of them. The others are subordinating.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "C is right: 'but' is a coordinating conjunction; these are FANBOYS: for, and, nor, but, or, yet, so. A) 'although', B) 'because' and D) 'while' are subordinating conjunctions; they start a dependent clause.",
+  "rel": "Coordinating conjunctions join equal parts: I was tired, but I worked. Subordinating ones make one clause depend on another: Although I was tired, I worked."
+ },
+ {
+  "src": "m2-68",
+  "question": "\"She ___ the report before the meeting began.\"",
+  "options": [
+   "had read",
+   "has read tomorrow",
+   "reads yesterday",
+   "is read"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Reading was finished before the meeting began, so we use past perfect \"had read\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: the reading finished before the meeting began (both in the past), so we use the past perfect 'had read'. B) 'has read tomorrow' mixes present perfect with a future word. C) 'reads yesterday' mixes present tense with a past word. D) 'is read' is a present passive and gives the wrong meaning.",
+  "rel": "Pattern: had + past participle for the earlier past action. Example: The guests had left before we arrived."
+ },
+ {
+  "src": "m2-69",
+  "question": "Choose: \"___ United Kingdom\".",
+  "options": [
+   "A",
+   "An",
+   "The",
+   "No article"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Country names with words like Kingdom, States or Republic take \"the\": the United Kingdom.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "C is right: names of countries with words like Kingdom, States or Republic take 'the': the United Kingdom. A) 'A' and B) 'An' are for one thing among many, not a unique country name. D) 'no article' is used with most single-word country names like Pakistan, not with this one.",
+  "rel": "Also: the United States, the Islamic Republic of Pakistan, the Netherlands, the Philippines. But: Pakistan, China, France (no 'the')."
+ },
+ {
+  "src": "m2-70",
+  "question": "He is proud ___ his achievement.",
+  "options": [
+   "of",
+   "from",
+   "with",
+   "at"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "The adjective \"proud\" is followed by \"of\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: the adjective 'proud' is followed by 'of'. B) 'from', C) 'with' and D) 'at' are wrong prepositions with 'proud'.",
+  "rel": "Other adjectives with 'of': afraid of, fond of, aware of, jealous of, capable of. Example: She is fond of reading."
+ },
+ {
+  "src": "m2-71",
+  "question": "Passive of \"The manager is reviewing the application\" is:",
+  "options": [
+   "The application is being reviewed by the manager.",
+   "The application is reviewed yesterday.",
+   "The application has review.",
+   "The manager is being reviewed by the application."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Present continuous passive is is/are + being + past participle: \"is being reviewed\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: present continuous passive is is/are + being + past participle: 'is being reviewed', and the object 'the application' becomes the subject. B) 'is reviewed yesterday' has the wrong tense and a past time word. C) 'has review' is not a passive and the verb form is wrong. D) it swaps the roles: the manager reviews the application, not the other way.",
+  "rel": "Past continuous passive: was/were being + past participle (The road was being repaired). Present perfect passive: has been reviewed."
+ },
+ {
+  "src": "m2-72",
+  "question": "Indirect: \"Do not touch the switch,\" he said to us.",
+  "options": [
+   "He warned us not to touch the switch.",
+   "He said us do not touch.",
+   "He asked that we not touched.",
+   "He told not touch us."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "A negative command in reported speech uses \"not to\" + verb; \"warned\" fits a caution.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: a negative command in reported speech uses 'not to' + verb, and 'warned' suits a caution: He warned us not to touch the switch. B) 'said us' is wrong ('said to us') and the command form is not changed. C) 'asked that we not touched' is wrong grammar. D) 'told not touch us' has wrong word order and no 'to'.",
+  "rel": "Positive commands use 'to' + verb: 'Open the door' becomes He told me to open the door. Reporting verbs for commands: told, ordered, advised, requested."
+ },
+ {
+  "src": "m2-73",
+  "question": "Synonym of \"allocate\" is:",
+  "options": [
+   "assign",
+   "remove",
+   "hide",
+   "oppose"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Allocate\" means to give or assign something for a purpose.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: 'allocate' means to give or assign something for a purpose, e.g. allocate funds for schools. B) 'remove' is almost the opposite. C) 'hide' is unrelated. D) 'oppose' means to be against.",
+  "rel": "Synonyms: assign, distribute, allot, earmark. Noun: allocation (budget allocation)."
+ },
+ {
+  "src": "m2-74",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "There are less candidates today.",
+   "There are fewer candidates today.",
+   "There is fewer candidates today.",
+   "There are lesser candidate today."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Candidates\" is countable and plural, so use \"are fewer\".",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "B is right: 'candidates' is a plural countable noun, so we use 'are fewer'. A) 'less' is for uncountable nouns, not candidates. C) 'is' does not agree with plural 'candidates'. D) 'lesser' is wrong here and 'candidate' should be plural.",
+  "rel": "Fewer students, less homework. Also: 'a number of' (countable) versus 'an amount of' (uncountable)."
+ },
+ {
+  "src": "m2-75",
+  "question": "Complete: \"He left early ___ avoid the traffic.\"",
+  "options": [
+   "in order to",
+   "because",
+   "although",
+   "despite"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"In order to\" + base verb shows purpose: he left early to avoid traffic.",
+  "passage": null,
+  "skip": false,
+  "note": "",
+  "why": "A is right: 'in order to' + base verb shows purpose: he left early to avoid traffic. B) 'because' needs a full clause (because he wanted to avoid). C) 'although' shows contrast and needs a clause. D) 'despite' shows contrast and needs a noun or -ing, not 'avoid'.",
+  "rel": "Other purpose forms: to, so as to, so that (He left early so that he could avoid the traffic). Negative: so as not to, in order not to."
+ }
+]

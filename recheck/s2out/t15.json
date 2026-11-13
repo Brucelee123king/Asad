@@ -1,0 +1,348 @@
+[
+ {
+  "id": "M9564",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "app.com.pk (budget FY2026-27)",
+   "US Treasury readout Jul 2026",
+   "pid.gov.pk"
+  ],
+  "note": "Muhammad Aurangzeb is Finance & Revenue Minister in 2026 (presented FY27 budget June 2026)"
+ },
+ {
+  "id": "M9584",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Speaker_of_the_Provincial_Assembly_of_Punjab",
+   "Dawn",
+   "app.com.pk (budget session June 2026)"
+  ],
+  "note": "Malik Muhammad Ahmad Khan speaker since Feb 2024, still presiding 2026"
+ },
+ {
+  "id": "M9604",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Younis_Khan",
+   "Eurosport",
+   "Reuters via Himalayan Times"
+  ],
+  "note": "Younis Khan 10,099 Test runs, Pakistan's highest"
+ },
+ {
+  "id": "M9608",
+  "verdict": "unclear",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "IAEA country profile (six regions)",
+   "sesric.org",
+   "testpointpk.com (five)"
+  ],
+  "note": "Sources differ: most list six regions, some textbooks/MCQ banks five; six not an option"
+ },
+ {
+  "id": "M9615",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "pid.gov.pk",
+   "gavi.org board page",
+   "app.com.pk Jan 2026"
+  ],
+  "note": "Syed Mustafa Kamal is Health minister in 2026"
+ },
+ {
+  "id": "M9619",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "Arab News",
+   "ARY News",
+   "Business Recorder"
+  ],
+  "note": "Rice widely cited as second-largest export after textiles (~$3.2bn FY25)"
+ },
+ {
+  "id": "M9627",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_tallest_buildings_in_Pakistan",
+   "skyscrapercenter.com",
+   "zameen.com"
+  ],
+  "note": "Bahria Icon Tower, Karachi (~273-300 m) is tallest in Pakistan"
+ },
+ {
+  "id": "M9633",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/President_of_Pakistan"
+  ],
+  "note": "Asif Ali Zardari President since 10 March 2024"
+ },
+ {
+  "id": "M9635",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "european-union.europa.eu (known fact)"
+  ],
+  "note": "EU has 27 members since UK left in 2020 (not web-checked: search limit)"
+ },
+ {
+  "id": "M9642",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Nishan-e-Haider",
+   "dawn.com (10 + Saif Ali Janjua)"
+  ],
+  "note": "11 recipients (10 Army + Rashid Minhas PAF); none after 1999 per Wikipedia"
+ },
+ {
+  "id": "M9644",
+  "verdict": "none",
+  "ans": -1,
+  "fix": "Nabil Fahmy",
+  "src": [
+   "wam.ae",
+   "english.ahram.org.eg",
+   "arabnews.pk"
+  ],
+  "note": "Nabil Fahmy replaced Ahmed Aboul Gheit as Arab League SG on 1 July 2026"
+ },
+ {
+  "id": "M9645",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/South_Asian_Airlines",
+   "airhex.com"
+  ],
+  "note": "Closest match South Asian Airlines (Bangladesh) founded 1998 (Airhex says 2002); name in question vague"
+ },
+ {
+  "id": "M9647",
+  "verdict": "unclear",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Liaquat_Ali_Khan",
+   "banglapedia.org",
+   "geo.tv"
+  ],
+  "note": "Both Quaid-e-Millat and Shaheed-e-Millat are his titles; two options correct"
+ },
+ {
+  "id": "M9705",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Kigo,_Uganda"
+  ],
+  "note": "Kigo Hill is in Kigo, Wakiso District, Uganda, on Lake Victoria"
+ },
+ {
+  "id": "M9710",
+  "verdict": "unclear",
+  "ans": 1,
+  "fix": "",
+  "src": [],
+  "note": "NOT web-checked: shared search limit used up and no Wikipedia page for Kobo Hills; needs recheck"
+ },
+ {
+  "id": "M9749",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Narowal_District"
+  ],
+  "note": "Narowal is in Gujranwala Division"
+ },
+ {
+  "id": "M9772",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Nishan-e-Haider",
+   "dawn.com"
+  ],
+  "note": "11 people received Nishan-e-Haider"
+ },
+ {
+  "id": "M9778",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/G20"
+  ],
+  "note": "United States holds 2026 G20 presidency; summit in Miami"
+ },
+ {
+  "id": "M9855",
+  "verdict": "unclear",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Divisions_of_Pakistan",
+   "en.wikipedia.org/wiki/List_of_districts_in_Punjab,_Pakistan"
+  ],
+  "note": "Punjab now 10 divisions (Gujrat added 2022); PBS 2023 table may use 9. PBS 2023 table not reachable (web search limit hit, pbs.gov.pk 404); current counts differ from census-time counts"
+ },
+ {
+  "id": "M9856",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_districts_in_Sindh",
+   "en.wikipedia.org/wiki/Divisions_of_Pakistan"
+  ],
+  "note": "Sindh has 6 divisions"
+ },
+ {
+  "id": "M9857",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Divisions_of_Pakistan",
+   "en.wikipedia.org/wiki/List_of_districts_in_Khyber_Pakhtunkhwa"
+  ],
+  "note": "KP has 7 divisions"
+ },
+ {
+  "id": "M9858",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_districts_in_Balochistan,_Pakistan"
+  ],
+  "note": "Balochistan had 8 divisions in 2022-23 (11 after 2026 changes)"
+ },
+ {
+  "id": "M9859",
+  "verdict": "unclear",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Divisions_of_Pakistan"
+  ],
+  "note": "Sum 9or10+6+7+8 = 30-31 at census time (34 now); PBS 2023 table not reachable (web search limit hit, pbs.gov.pk 404); current counts differ from census-time counts"
+ },
+ {
+  "id": "M9860",
+  "verdict": "unclear",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_districts_in_Punjab,_Pakistan"
+  ],
+  "note": "Punjab has 41 districts since Oct 2022 (36 before); 41 not an option, PBS 2023 table may use 36. PBS 2023 table not reachable (web search limit hit, pbs.gov.pk 404); current counts differ from census-time counts"
+ },
+ {
+  "id": "M9861",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_districts_in_Sindh",
+   "en.wikipedia.org/wiki/Districts_of_Pakistan"
+  ],
+  "note": "Sindh has 30 districts, all with 2023 census figures"
+ },
+ {
+  "id": "M9862",
+  "verdict": "unclear",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_districts_in_Khyber_Pakhtunkhwa"
+  ],
+  "note": "KP had about 35-38 districts at 2023 (40 after Oct 2025). PBS 2023 table not reachable (web search limit hit, pbs.gov.pk 404); current counts differ from census-time counts"
+ },
+ {
+  "id": "M9863",
+  "verdict": "unclear",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_districts_in_Balochistan,_Pakistan",
+   "en.wikipedia.org/wiki/Districts_of_Pakistan"
+  ],
+  "note": "Balochistan ~36 districts before 2026 changes (42 now); 34 vs 36 unsure. PBS 2023 table not reachable (web search limit hit, pbs.gov.pk 404); current counts differ from census-time counts"
+ },
+ {
+  "id": "M9864",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Districts_of_Pakistan",
+   "ictadministration.gov.pk"
+  ],
+  "note": "ICT is a single district"
+ },
+ {
+  "id": "M9865",
+  "verdict": "unclear",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/2023_Pakistani_census",
+   "en.wikipedia.org/wiki/Districts_of_Pakistan"
+  ],
+  "note": "App counts (36+30+35+34+1=136) are self-consistent; Wikipedia mentions 156 census districts; PBS 2023 table not reachable (web search limit hit, pbs.gov.pk 404); current counts differ from census-time counts"
+ },
+ {
+  "id": "M9915",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "un.org (known fact)"
+  ],
+  "note": "Guterres is Portuguese (former PM of Portugal), SG until 31 Dec 2026"
+ },
+ {
+  "id": "M9926",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Deputy_Prime_Minister_of_Pakistan"
+  ],
+  "note": "Ishaq Dar Deputy PM since 28 April 2024"
+ },
+ {
+  "id": "M9937",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_Test_cricket_records"
+  ],
+  "note": "Muttiah Muralitharan, 800 Test wickets"
+ }
+]

@@ -1,0 +1,127 @@
+<style>
+#rsDim{position:fixed;inset:0;z-index:2147483000;background:rgba(15,23,42,.45);-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);opacity:0;pointer-events:none;transition:opacity .2s}
+#rsDim.on{opacity:1;pointer-events:auto}
+/* leave / resume box: cream (design 5) + big stopped clock (design 10); shining bar in the test colour */
+#rsSh{--cb:#fbf8f0;--ct:#2b2416;--cm:#8a7a5a;--cl:#e1d8c4;--cd:#d9cba9;--cbb:linear-gradient(180deg,#fbf6ea,#ece2cb);--cbt:#3b2f1a;--ac:#8a6a2a;--rsc:#0d9488;
+  position:fixed;left:0;right:0;bottom:0;z-index:2147483001;max-width:520px;margin:0 auto;background:var(--cb);color:var(--ct);border-radius:28px 28px 0 0;padding:22px 22px calc(24px + env(safe-area-inset-bottom));box-shadow:0 -10px 40px rgba(0,0,0,.25);transform:translateY(110%);transition:transform .28s cubic-bezier(.2,.8,.2,1);font-family:"Plus Jakarta Sans",system-ui,sans-serif}
+html.dark #rsSh{--cb:#1b1814;--ct:#f3eee2;--cm:#b9ab8c;--cl:#3d362c;--cd:#4b4338;--cbb:linear-gradient(180deg,#3b342b,#2a251f);--cbt:#f3eee2;--ac:#e2d3b0;box-shadow:0 -10px 40px rgba(0,0,0,.6)}
+#rsSh.on{transform:none}
+html.rsLock,html.rsLock body{overflow:hidden!important;overscroll-behavior:none!important;touch-action:none}html.rsLock #rsSh,html.rsLock #rsSh *{touch-action:pan-y}#rsSh{overscroll-behavior:contain}
+#rsSh .rs-tag{display:block;color:var(--ac);font-weight:800;letter-spacing:.12em;font-size:11px;text-transform:uppercase;padding-right:40px}
+#rsSh h2{margin:6px 0 0;font-size:24px;font-weight:800;color:var(--ct)}
+#rsSh .rs-ck{text-align:center;margin:12px 0 4px}#rsSh .rs-cl{color:var(--ac);font-weight:800;font-size:12px;letter-spacing:.08em}
+#rsSh .rs-t{display:block;font-size:62px;font-weight:800;letter-spacing:2px;line-height:1.1;font-variant-numeric:tabular-nums}#rsSh .rs-ck span{color:var(--cm);font-size:13px;font-weight:700}
+#rsSh .rs-bar{position:relative;height:16px;border-radius:99px;background:linear-gradient(180deg,#05080f,#121b2b);margin:16px 0 8px;padding:3px;box-shadow:inset 0 2px 5px rgba(0,0,0,.8),inset 0 -1px 1px rgba(255,255,255,.08),0 1px 0 rgba(255,255,255,.35),0 4px 10px rgba(0,0,0,.18)}
+#rsSh .rs-bar i{position:relative;display:block;height:100%;border-radius:99px;transition:width .5s;
+  background:linear-gradient(90deg,color-mix(in srgb,var(--rsc) 25%,transparent) 0%,var(--rsc) 45%,color-mix(in srgb,var(--rsc) 55%,#fff) 85%,#fff 100%);
+  box-shadow:0 0 6px var(--rsc),0 0 14px var(--rsc),0 0 26px color-mix(in srgb,var(--rsc) 60%,transparent);animation:rsGlow 1.8s ease-in-out infinite}
+#rsSh .rs-bar i:before{content:"";position:absolute;right:-4px;top:50%;width:18px;height:18px;margin-top:-9px;border-radius:50%;background:radial-gradient(circle,#fff 0 25%,color-mix(in srgb,var(--rsc) 60%,#fff) 45%,transparent 72%);filter:blur(.5px)}
+#rsSh .rs-bar i:after{content:"";position:absolute;top:2px;left:6px;right:10px;height:3px;border-radius:99px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.7))}
+@keyframes rsGlow{0%,100%{filter:brightness(1)}50%{filter:brightness(1.3)}}
+html.lite #rsSh .rs-bar i{animation-duration:1.8s!important;animation-iteration-count:infinite!important}
+#rsSh .rs-ln{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--cl);font-size:15px}#rsSh .rs-ln span{color:var(--cm)}#rsSh .rs-ln:last-of-type{border:0}
+#rsSh .rs-b1{display:block;width:100%;height:56px;border-radius:18px;border:1px solid var(--cd);background:var(--cbb);color:var(--cbt);font-size:16px;font-weight:800;margin-top:16px;box-shadow:0 8px 20px rgba(120,95,40,.16);cursor:pointer}
+#rsSh .rs-b2{display:block;width:100%;border:0;background:none;color:var(--ac);font-weight:800;font-size:15px;margin-top:12px;padding:6px;cursor:pointer}
+#rsSh .rs-x{position:absolute;right:16px;top:16px;width:34px;height:34px;border-radius:50%;background:var(--cl);border:0;display:flex;align-items:center;justify-content:center;color:var(--cm);font-size:15px;cursor:pointer}
+</style>
+<div id="rsDim"></div>
+<div id="rsSh" role="dialog" aria-modal="true"><button class="rs-x" type="button" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+  <small class="rs-tag"></small><h2></h2>
+  <div class="rs-ck"><div class="rs-cl"></div><b class="rs-t"></b><span>time left</span></div>
+  <div class="rs-bar"><i></i></div>
+  <div class="rs-ln"><span>Question</span><b class="rs-q"></b></div><div class="rs-ln"><span>Answered</span><b class="rs-a"></b></div><div class="rs-ln"><span>Saved</span><b>✓ answers and time</b></div>
+  <button class="rs-b1" type="button"></button><button class="rs-b2" type="button"></button></div>
+<script>
+/* Resume a test: progress of an unfinished test is kept on this phone (localStorage 'rs_<testKey>').
+   Leaving asks Stay / Leave and save; opening the same test again asks Resume / Restart. */
+(function(){
+  var dim=document.getElementById('rsDim'),sh=document.getElementById('rsSh');if(!sh)return;
+  var $=function(c){return sh.querySelector(c)},onX=null,on1=null,on2=null,bypass=false;
+  function K(){return 'rs_'+currentTestKey}
+  function sig(){try{return String(quizData.length)+'|'+String((quizData[0]||{}).question||'').slice(0,40)}catch(e){return ''}}
+  function load(){try{var s=JSON.parse(localStorage.getItem(K())||'null');if(!s||s.g!==sig()||!(s.t>0)||!s.a)return null;if(!s.a.some(function(x){return x!==null})&&!s.i)return null;return s}catch(e){return null}}
+  function clear(){try{localStorage.removeItem(K())}catch(e){}}
+  function save(){try{if(typeof quizActive==='undefined'||!quizActive||!currentTestKey||document.getElementById('view-quiz').classList.contains('hidden'))return;localStorage.setItem(K(),JSON.stringify({g:sig(),i:currentQuestionIndex,a:userAnswers,t:timeRemaining,at:Date.now()}))}catch(e){}}
+  window.__rsSave=save;
+  function fmt(t){t=Math.max(0,t|0);return String(Math.floor(t/60)).padStart(2,'0')+':'+String(t%60).padStart(2,'0')}
+  function tname(){try{var b=document.getElementById('home-badge');var m=b&&/\((.*)\)/.exec(b.textContent||'');return m?m[1]:String(currentTestKey).replace('-',' – ')}catch(e){return ''}}
+  function lockBg(on){document.documentElement.classList.toggle('rsLock',!!on)}
+  function close(){dim.classList.remove('on');sh.classList.remove('on');lockBg(false)}
+  function theme(){try{var nc=getComputedStyle(document.documentElement).getPropertyValue('--nc').trim();if(nc){sh.style.setProperty('--rsc',nc);return}var e=document.getElementById('progress-bar-fill');if(!e)return;var c=getComputedStyle(e),bg=c.backgroundImage&&c.backgroundImage!=='none'?c.backgroundImage:c.backgroundColor;if(bg&&!/rgba\(0, 0, 0, 0\)|transparent/.test(bg)){sh.style.setProperty('--rsbg',bg);var m=String(bg).match(/rgba?\([^)]*\)/);if(m)sh.style.setProperty('--rsc',m[0])}else sh.style.removeProperty('--rsbg')}catch(x){}}
+  function open(o){theme();lockBg(true);
+    $('.rs-tag').textContent=tname();$('h2').textContent=o.title;$('.rs-cl').textContent=o.cl||'⏸ CLOCK STOPPED';
+    var n=o.a.length,ans=o.a.filter(function(x){return x!==null}).length;
+    $('.rs-q').textContent=(o.i+1)+' of '+n;$('.rs-a').textContent=ans;$('.rs-t').textContent=fmt(o.t);
+    $('.rs-bar i').style.width=Math.max(4,Math.round(100*ans/Math.max(1,n)))+'%';
+    $('.rs-b1').innerHTML=o.b1;$('.rs-b2').innerHTML=o.b2;onX=o.x;on1=o.f1;on2=o.f2;
+    dim.classList.add('on');sh.classList.add('on')}
+  function fire(f){close();if(f)try{f()}catch(e){console.error(e)}}
+  $('.rs-x').onclick=function(){fire(onX)};dim.onclick=function(){fire(onX)};
+  $('.rs-b1').onclick=function(){fire(on1)};$('.rs-b2').onclick=function(){fire(on2)};
+
+  function restore(s){
+    bypass=true;try{origStart()}finally{bypass=false}
+    userAnswers=s.a.slice(0,quizData.length);while(userAnswers.length<quizData.length)userAnswers.push(null);
+    currentQuestionIndex=Math.min(Math.max(0,s.i|0),quizData.length-1);timeRemaining=s.t;
+    try{renderPalette()}catch(e){}loadQuestion(currentQuestionIndex);updateTimerDisplays();save()}
+  function askResume(s){
+    open({cl:'⏸ PAUSED',title:'Continue your test?',i:s.i|0,a:s.a,t:s.t,
+      b1:'<i class="fa-solid fa-play"></i>&nbsp; Resume from Question '+((s.i|0)+1),b2:'<i class="fa-solid fa-rotate-right"></i>&nbsp; Restart from the beginning',
+      x:null,f1:function(){restore(s)},f2:function(){clear();bypass=true;try{origStart()}finally{bypass=false}save()}})}
+
+  var origStart=window.startQuiz;
+  window.startQuiz=function(){
+    if(!bypass&&!quizActive){var s=load();if(s){askResume(s);return}}
+    var r=origStart.apply(this,arguments);save();return r};
+  var origSel=window.selectTest;
+  window.selectTest=function(){var r=origSel.apply(this,arguments);var s=load();if(s)setTimeout(function(){askResume(s)},120);return r};
+
+  /* leaving */
+  function resumeTimer(){try{if(timerInterval)clearInterval(timerInterval);if(typeof quizActive==='undefined'||!quizActive)return;timerInterval=setInterval(function(){timeRemaining--;updateTimerDisplays();if(timeRemaining<=0){clearInterval(timerInterval);try{closeSubmitModal()}catch(e){}autoSubmitQuiz()}},1000)}catch(e){}}
+  function askLeave(onLeave,onStay){
+    save();try{if(timerInterval)clearInterval(timerInterval)}catch(e){}var stay=function(){resumeTimer();onStay&&onStay()};
+    open({title:'Leave this test?',
+      i:currentQuestionIndex,a:userAnswers,t:timeRemaining,
+      b1:'▶ Resume test',b2:'Leave and save progress',x:stay,f1:stay,f2:function(){save();if(timerInterval)clearInterval(timerInterval);quizActive=false;onLeave&&onLeave()}})}
+  window.__rsLeave=askLeave;
+  var origShow=window.showSelect;
+  window.showSelect=function(){
+    if(typeof quizActive!=='undefined'&&quizActive&&!document.getElementById('view-quiz').classList.contains('hidden')){
+      var self=this,args=arguments;askLeave(function(){origShow.apply(self,args)},null);return}
+    return origShow.apply(this,arguments)};
+
+  /* finished: forget the saved progress */
+  ['computeAndDisplayResults','autoSubmitQuiz','executeSubmitQuiz'].forEach(function(n){var f=window[n];if(typeof f!=='function')return;
+    window[n]=function(){clear();return f.apply(this,arguments)}});
+
+  setInterval(save,3000);
+  document.addEventListener('visibilitychange',function(){if(document.hidden)save()});
+  window.addEventListener('pagehide',save);
+  document.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('#options-container,#palette-grid,#btn-next,#btn-prev'))setTimeout(save,50)},true);
+})();
+</script>
+<style>
+.cpg{margin-top:6px}.cpg .r{display:flex;justify-content:space-between;align-items:center;font-size:13px;font-weight:800;margin-bottom:6px}
+.cpg .tr{position:relative;height:10px;border-radius:99px;background:rgba(255,255,255,.28)}
+.cpg .fl{position:absolute;left:0;top:0;bottom:0;border-radius:99px;background:linear-gradient(90deg,#fff,#fef3c7);box-shadow:0 0 10px rgba(255,255,255,.6);transition:width .6s}
+.cpg .dt{position:absolute;top:50%;width:5px;height:5px;margin:-2.5px 0 0 -2.5px;border-radius:50%;background:rgba(15,23,42,.35)}
+.cpg .ok{display:inline-flex;align-items:center;gap:6px;margin:8px auto 0;padding:5px 14px;border-radius:99px;background:#22c55e;color:#fff;font-size:12px;font-weight:800;letter-spacing:.04em;box-shadow:0 4px 12px rgba(0,0,0,.2)}
+</style>
+<script>
+/* Category progress: MCQs in tests finished (mc_best_<key> saved) / all MCQs of the category */
+(function(){
+  function done(k){try{return localStorage.getItem('mc_best_'+k)!==null}catch(e){return false}}
+  function deco(){try{
+    var keys=Object.keys(ALL);
+    document.querySelectorAll('#sec-menu button[onclick*="openSec"]').forEach(function(b){
+      var m=/openSec\('([^']+)'\)/.exec(b.getAttribute('onclick')||'');if(!m)return;var sc=SECS.find(function(x){return x.id===m[1]});if(!sc)return;
+      var ks=keys.filter(sc.test),tot=0,d=0;ks.forEach(function(k){var n=(ALL[k]||[]).length;tot+=n;if(done(k))d+=n});
+      var p=tot?Math.floor(100*d/tot):0;if(d&&!p)p=1;
+      var el=b.querySelector('.cpg');if(!el){el=document.createElement('div');el.className='cpg';var t=b.querySelector('.text-xs');if(t)t.after(el);else b.insertBefore(el,b.lastElementChild)}
+      el.innerHTML='<div class="r"><span>Progress</span><span>'+p+'%'+(p>=100?' <i class="fa-regular fa-circle-check"></i>':'')+'</span></div><div class="tr"><div class="fl" style="width:'+p+'%"></div>'+[4,33,66,96].map(function(x){return '<span class="dt" style="left:'+x+'%"></span>'}).join('')+'</div>'+(p>=100?'<div style="text-align:center"><span class="ok"><i class="fa-solid fa-bolt"></i>COMPLETED</span></div>':'');
+    })}catch(e){}}
+  var f=window.renderMenu;if(typeof f==='function')window.renderMenu=function(){var r=f.apply(this,arguments);deco();return r};
+  window.__cpgDeco=deco;deco();setTimeout(deco,1500);
+  document.addEventListener('visibilitychange',function(){if(!document.hidden)deco()});
+})();
+</script>

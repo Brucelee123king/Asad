@@ -1,0 +1,2143 @@
+{
+ "rate": 4,
+ "lite": false,
+ "sections": {
+  "o": {
+   "sync": 7.2,
+   "paint": 319.7,
+   "lt": [
+    [
+     6299,
+     133
+    ]
+   ],
+   "m": {
+    "TaskDuration": 241.1,
+    "ScriptDuration": 2.5,
+    "LayoutDuration": 20.2,
+    "RecalcStyleDuration": 165.5,
+    "LayoutCount": 2,
+    "RecalcStyleCount": 2
+   },
+   "vis": 443,
+   "nodes": 1077
+  },
+  "pma": {
+   "sync": 1.7,
+   "paint": 301.5,
+   "lt": [
+    [
+     7144,
+     136
+    ],
+    [
+     7303,
+     145
+    ]
+   ],
+   "m": {
+    "TaskDuration": 275.8,
+    "ScriptDuration": 4.6,
+    "LayoutDuration": 9.2,
+    "RecalcStyleDuration": 237.4,
+    "LayoutCount": 2,
+    "RecalcStyleCount": 2
+   },
+   "vis": 346,
+   "nodes": 1077
+  },
+  "fa": {
+   "sync": 17.3,
+   "paint": 288.9,
+   "lt": [
+    [
+     8236,
+     168
+    ],
+    [
+     8424,
+     106
+    ]
+   ],
+   "m": {
+    "TaskDuration": 259.3,
+    "ScriptDuration": 3,
+    "LayoutDuration": 11.6,
+    "RecalcStyleDuration": 191.3,
+    "LayoutCount": 2,
+    "RecalcStyleCount": 2
+   },
+   "vis": 427,
+   "nodes": 1077
+  },
+  "hk": {
+   "sync": 12.4,
+   "paint": 281.4,
+   "lt": [
+    [
+     9440,
+     171
+    ],
+    [
+     9643,
+     152
+    ]
+   ],
+   "m": {
+    "TaskDuration": 279.5,
+    "ScriptDuration": 8.2,
+    "LayoutDuration": 10.7,
+    "RecalcStyleDuration": 210.5,
+    "LayoutCount": 2,
+    "RecalcStyleCount": 2
+   },
+   "vis": 311,
+   "nodes": 1077
+  },
+  "lc": {
+   "sync": 6.7,
+   "paint": 248.8,
+   "lt": [
+    [
+     10585,
+     100
+    ]
+   ],
+   "m": {
+    "TaskDuration": 177.3,
+    "ScriptDuration": 0.4,
+    "LayoutDuration": 3.3,
+    "RecalcStyleDuration": 159.8,
+    "LayoutCount": 2,
+    "RecalcStyleCount": 2
+   },
+   "vis": 323,
+   "nodes": 1077
+  }
+ },
+ "hk": {
+  "149": {
+   "sync": 6.7,
+   "paint": 364.2,
+   "lt": [
+    [
+     15076,
+     129
+    ],
+    [
+     15213,
+     146
+    ]
+   ],
+   "m": {
+    "TaskDuration": 380.7,
+    "ScriptDuration": 5.9,
+    "LayoutDuration": 11.6,
+    "RecalcStyleDuration": 324.5,
+    "LayoutCount": 2,
+    "RecalcStyleCount": 2
+   },
+   "vis": 566
+  },
+  "157": {
+   "sync": 1.6,
+   "paint": 281.1,
+   "lt": [
+    [
+     15985,
+     163
+    ]
+   ],
+   "m": {
+    "TaskDuration": 285.9,
+    "ScriptDuration": 2.7,
+    "LayoutDuration": 3.8,
+    "RecalcStyleDuration": 255.4,
+    "LayoutCount": 2,
+    "RecalcStyleCount": 2
+   },
+   "vis": 323
+  },
+  "'all'": {
+   "sync": 5.1,
+   "paint": 347.3,
+   "lt": [
+    [
+     12209,
+     127
+    ]
+   ],
+   "m": {
+    "TaskDuration": 334.4,
+    "ScriptDuration": 2.1,
+    "LayoutDuration": 1.2,
+    "RecalcStyleDuration": 302.2,
+    "LayoutCount": 2,
+    "RecalcStyleCount": 2
+   },
+   "vis": 350
+  },
+  "'rep'": {
+   "sync": 9.1,
+   "paint": 368.8,
+   "lt": [
+    [
+     12994,
+     189
+    ],
+    [
+     13203,
+     170
+    ]
+   ],
+   "m": {
+    "TaskDuration": 366.2,
+    "ScriptDuration": 7,
+    "LayoutDuration": 9.5,
+    "RecalcStyleDuration": 314,
+    "LayoutCount": 2,
+    "RecalcStyleCount": 2
+   },
+   "vis": 399
+  },
+  "'con'": {
+   "sync": 4.4,
+   "paint": 224.5,
+   "lt": [
+    [
+     13813,
+     159
+    ],
+    [
+     13987,
+     106
+    ]
+   ],
+   "m": {
+    "TaskDuration": 227.4,
+    "ScriptDuration": 2.4,
+    "LayoutDuration": 5,
+    "RecalcStyleDuration": 188.3,
+    "LayoutCount": 2,
+    "RecalcStyleCount": 2
+   },
+   "vis": 296
+  },
+  "'imp'": {
+   "sync": 4.2,
+   "paint": 186.8,
+   "lt": [
+    [
+     14614,
+     98
+    ]
+   ],
+   "m": {
+    "TaskDuration": 197.1,
+    "ScriptDuration": 0.8,
+    "LayoutDuration": 3.7,
+    "RecalcStyleDuration": 169.3,
+    "LayoutCount": 2,
+    "RecalcStyleCount": 2
+   },
+   "vis": 296
+  }
+ },
+ "render": {
+  "renderSelect": {
+   "sync": 2.6,
+   "paint": 265.1,
+   "lt": [
+    [
+     3683,
+     71
+    ],
+    [
+     3792,
+     90
+    ]
+   ],
+   "m": {
+    "TaskDuration": 185.9,
+    "ScriptDuration": 3.3,
+    "LayoutDuration": 1,
+    "RecalcStyleDuration": 148.4,
+    "LayoutCount": 2,
+    "RecalcStyleCount": 2
+   }
+  },
+  "renderPMA": {
+   "sync": 0.6,
+   "paint": 145.5,
+   "lt": [
+    [
+     4044,
+     66
+    ]
+   ],
+   "m": {
+    "TaskDuration": 120.5,
+    "ScriptDuration": 0.8,
+    "LayoutDuration": 0.5,
+    "RecalcStyleDuration": 103.7,
+    "LayoutCount": 2,
+    "RecalcStyleCount": 2
+   }
+  },
+  "renderFA": {
+   "sync": 0.7,
+   "paint": 331,
+   "lt": [
+    [
+     4225,
+     130
+    ]
+   ],
+   "m": {
+    "TaskDuration": 273.4,
+    "ScriptDuration": 2,
+    "LayoutDuration": 0.1,
+    "RecalcStyleDuration": 251.9,
+    "LayoutCount": 2,
+    "RecalcStyleCount": 2
+   }
+  },
+  "renderHK": {
+   "sync": 0.5,
+   "paint": 171.1,
+   "lt": [],
+   "m": {
+    "TaskDuration": 228.6,
+    "ScriptDuration": 1.3,
+    "LayoutDuration": 0.2,
+    "RecalcStyleDuration": 205.7,
+    "LayoutCount": 3,
+    "RecalcStyleCount": 3
+   }
+  },
+  "renderLC": {
+   "sync": 0.3,
+   "paint": 232.9,
+   "lt": [
+    [
+     4906,
+     77
+    ]
+   ],
+   "m": {
+    "TaskDuration": 158.2,
+    "ScriptDuration": 2.7,
+    "LayoutDuration": 0.6,
+    "RecalcStyleDuration": 133.5,
+    "LayoutCount": 2,
+    "RecalcStyleCount": 2
+   }
+  },
+  "renderMenu": {
+   "sync": 1.2,
+   "paint": 337.1,
+   "lt": [
+    [
+     5174,
+     108
+    ]
+   ],
+   "m": {
+    "TaskDuration": 303.8,
+    "ScriptDuration": 3.9,
+    "LayoutDuration": 5.7,
+    "RecalcStyleDuration": 262,
+    "LayoutCount": 2,
+    "RecalcStyleCount": 2
+   }
+  },
+  "applySec": {
+   "sync": 20.5,
+   "paint": 384.9,
+   "lt": [
+    [
+     5610,
+     91
+    ]
+   ],
+   "m": {
+    "TaskDuration": 317.3,
+    "ScriptDuration": 1.5,
+    "LayoutDuration": 8.4,
+    "RecalcStyleDuration": 247.5,
+    "LayoutCount": 2,
+    "RecalcStyleCount": 2
+   }
+  },
+  "showSelect": {
+   "sync": 22.1,
+   "paint": 292.8,
+   "lt": [
+    [
+     5997,
+     107
+    ]
+   ],
+   "m": {
+    "TaskDuration": 210.7,
+    "ScriptDuration": 2.3,
+    "LayoutDuration": 6.4,
+    "RecalcStyleDuration": 162.6,
+    "LayoutCount": 2,
+    "RecalcStyleCount": 2
+   }
+  }
+ },
+ "tests": {
+  "o 1-50": {
+   "key": "1-50",
+   "n": 50,
+   "selectTest": {
+    "sync": 1.6,
+    "paint": 293.5,
+    "lt": [
+     [
+      17743,
+      241
+     ]
+    ],
+    "m": {
+     "TaskDuration": 263.2,
+     "ScriptDuration": 0.4,
+     "LayoutDuration": 11.5,
+     "RecalcStyleDuration": 227.5,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "homeNodes": 1127,
+   "renderPalette": {
+    "sync": 0.3,
+    "paint": 118.2,
+    "lt": [],
+    "m": {
+     "TaskDuration": 74.6,
+     "ScriptDuration": 1,
+     "LayoutDuration": 1.3,
+     "RecalcStyleDuration": 53.9,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "start": {
+    "sync": 6.3,
+    "paint": 183.2,
+    "lt": [
+     [
+      18173,
+      57
+     ]
+    ],
+    "m": {
+     "TaskDuration": 146.8,
+     "ScriptDuration": 6.7,
+     "LayoutDuration": 9.5,
+     "RecalcStyleDuration": 102,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "quizNodes": 1139,
+   "quizVis": 380,
+   "nav": {
+    "ansSync": 3.8,
+    "ansPaint": 204.7,
+    "nextSync": 10,
+    "nextPaint": 239.5,
+    "styleMs": 330.9,
+    "layoutMs": 12.1,
+    "longtasks": 28
+   },
+   "updatePalette": {
+    "sync": 1.3,
+    "paint": 220.6,
+    "lt": [
+     [
+      25822,
+      108
+     ]
+    ],
+    "m": {
+     "TaskDuration": 199.3,
+     "ScriptDuration": 2.4,
+     "LayoutDuration": 3.7,
+     "RecalcStyleDuration": 170.8,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "loadQ": {
+    "sync": 2.3,
+    "paint": 258.3,
+    "lt": [
+     [
+      26195,
+      79
+     ]
+    ],
+    "m": {
+     "TaskDuration": 169,
+     "ScriptDuration": 3,
+     "LayoutDuration": 4.8,
+     "RecalcStyleDuration": 143.6,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "jump": {
+    "sync": 2.5,
+    "paint": 182,
+    "lt": [
+     [
+      26445,
+      98
+     ]
+    ],
+    "m": {
+     "TaskDuration": 176.3,
+     "ScriptDuration": 2.4,
+     "LayoutDuration": 4.2,
+     "RecalcStyleDuration": 149.8,
+     "LayoutCount": 3,
+     "RecalcStyleCount": 3
+    }
+   },
+   "submit": {
+    "sync": 2.2,
+    "paint": 426.6,
+    "lt": [
+     [
+      26685,
+      84
+     ],
+     [
+      26775,
+      186
+     ]
+    ],
+    "m": {
+     "TaskDuration": 412.5,
+     "ScriptDuration": 2.1,
+     "LayoutDuration": 46.5,
+     "RecalcStyleDuration": 278.6,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "resNodes": 2125,
+   "resVis": 1309,
+   "reviewIncorrect": {
+    "sync": 13.5,
+    "paint": 267.5,
+    "lt": [
+     [
+      27407,
+      176
+     ],
+     [
+      27598,
+      125
+     ]
+    ],
+    "m": {
+     "TaskDuration": 298.2,
+     "ScriptDuration": 5,
+     "LayoutDuration": 4.7,
+     "RecalcStyleDuration": 239.9,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "reviewAll": {
+    "sync": 2.4,
+    "paint": 634.5,
+    "lt": [
+     [
+      27878,
+      322
+     ]
+    ],
+    "m": {
+     "TaskDuration": 641.2,
+     "ScriptDuration": 1.6,
+     "LayoutDuration": 20.1,
+     "RecalcStyleDuration": 518.2,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "restart": {
+    "sync": 3.6,
+    "paint": 183.1,
+    "lt": [],
+    "m": {
+     "TaskDuration": 162.6,
+     "ScriptDuration": 0.7,
+     "LayoutDuration": 6,
+     "RecalcStyleDuration": 130.4,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "back": {
+    "sync": 11,
+    "paint": 372.2,
+    "lt": [
+     [
+      28738,
+      130
+     ]
+    ],
+    "m": {
+     "TaskDuration": 329.6,
+     "ScriptDuration": 5.8,
+     "LayoutDuration": 18,
+     "RecalcStyleDuration": 273.7,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   }
+  },
+  "PMA-1": {
+   "key": "PMA-1",
+   "n": 50,
+   "selectTest": {
+    "sync": 10.3,
+    "paint": 359.5,
+    "lt": [
+     [
+      29507,
+      88
+     ]
+    ],
+    "m": {
+     "TaskDuration": 254.2,
+     "ScriptDuration": 0.7,
+     "LayoutDuration": 6.4,
+     "RecalcStyleDuration": 223.9,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "homeNodes": 2126,
+   "renderPalette": {
+    "sync": 0.3,
+    "paint": 254.8,
+    "lt": [
+     [
+      29819,
+      117
+     ],
+     [
+      29957,
+      162
+     ]
+    ],
+    "m": {
+     "TaskDuration": 319.4,
+     "ScriptDuration": 2.7,
+     "LayoutDuration": 0.1,
+     "RecalcStyleDuration": 297.4,
+     "LayoutCount": 3,
+     "RecalcStyleCount": 3
+    }
+   },
+   "start": {
+    "sync": 2.6,
+    "paint": 358.2,
+    "lt": [
+     [
+      30222,
+      120
+     ]
+    ],
+    "m": {
+     "TaskDuration": 368,
+     "ScriptDuration": 26.3,
+     "LayoutDuration": 8.4,
+     "RecalcStyleDuration": 257.4,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "quizNodes": 2126,
+   "quizVis": 380,
+   "nav": {
+    "ansSync": 4,
+    "ansPaint": 286.7,
+    "nextSync": 11.5,
+    "nextPaint": 270.2,
+    "styleMs": 460.3,
+    "layoutMs": 14.1,
+    "longtasks": 35
+   },
+   "updatePalette": {
+    "sync": 2.3,
+    "paint": 396.2,
+    "lt": [
+     [
+      40483,
+      163
+     ],
+     [
+      40686,
+      151
+     ]
+    ],
+    "m": {
+     "TaskDuration": 373.3,
+     "ScriptDuration": 4.1,
+     "LayoutDuration": 0.1,
+     "RecalcStyleDuration": 338.9,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "loadQ": {
+    "sync": 1.9,
+    "paint": 433.8,
+    "lt": [
+     [
+      41090,
+      130
+     ]
+    ],
+    "m": {
+     "TaskDuration": 363.5,
+     "ScriptDuration": 2.3,
+     "LayoutDuration": 4.3,
+     "RecalcStyleDuration": 326.5,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "jump": {
+    "sync": 35.2,
+    "paint": 499,
+    "lt": [
+     [
+      41578,
+      195
+     ]
+    ],
+    "m": {
+     "TaskDuration": 490.8,
+     "ScriptDuration": 2.7,
+     "LayoutDuration": 8.4,
+     "RecalcStyleDuration": 446.8,
+     "LayoutCount": 3,
+     "RecalcStyleCount": 3
+    }
+   },
+   "submit": {
+    "sync": 9.9,
+    "paint": 789,
+    "lt": [
+     [
+      42396,
+      392
+     ]
+    ],
+    "m": {
+     "TaskDuration": 801.6,
+     "ScriptDuration": 1.6,
+     "LayoutDuration": 26.3,
+     "RecalcStyleDuration": 648.8,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "resNodes": 2226,
+   "resVis": 1409,
+   "reviewIncorrect": {
+    "sync": 4.3,
+    "paint": 387.9,
+    "lt": [
+     [
+      43291,
+      454
+     ],
+     [
+      43829,
+      160
+     ]
+    ],
+    "m": {
+     "TaskDuration": 520.3,
+     "ScriptDuration": 4.7,
+     "LayoutDuration": 24.9,
+     "RecalcStyleDuration": 278.3,
+     "LayoutCount": 3,
+     "RecalcStyleCount": 3
+    }
+   },
+   "reviewAll": {
+    "sync": 16.6,
+    "paint": 383.6,
+    "lt": [
+     [
+      44399,
+      184
+     ]
+    ],
+    "m": {
+     "TaskDuration": 456.8,
+     "ScriptDuration": 4.6,
+     "LayoutDuration": 22,
+     "RecalcStyleDuration": 328,
+     "LayoutCount": 3,
+     "RecalcStyleCount": 3
+    }
+   },
+   "restart": {
+    "sync": 2,
+    "paint": 192.5,
+    "lt": [
+     [
+      44762,
+      114
+     ]
+    ],
+    "m": {
+     "TaskDuration": 171.6,
+     "ScriptDuration": 1.4,
+     "LayoutDuration": 5,
+     "RecalcStyleDuration": 141.9,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "back": {
+    "sync": 2.1,
+    "paint": 210.5,
+    "lt": [
+     [
+      44991,
+      80
+     ]
+    ],
+    "m": {
+     "TaskDuration": 148,
+     "ScriptDuration": 4.2,
+     "LayoutDuration": 8.5,
+     "RecalcStyleDuration": 113.9,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   }
+  },
+  "FA-1": {
+   "key": "FA-1",
+   "n": 50,
+   "selectTest": {
+    "sync": 4.8,
+    "paint": 130.2,
+    "lt": [],
+    "m": {
+     "TaskDuration": 91.2,
+     "ScriptDuration": 1,
+     "LayoutDuration": 2,
+     "RecalcStyleDuration": 60.4,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "homeNodes": 2227,
+   "renderPalette": {
+    "sync": 0.5,
+    "paint": 138.8,
+    "lt": [
+     [
+      45713,
+      60
+     ]
+    ],
+    "m": {
+     "TaskDuration": 144.7,
+     "ScriptDuration": 1.8,
+     "LayoutDuration": 2,
+     "RecalcStyleDuration": 120.3,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "start": {
+    "sync": 2.4,
+    "paint": 272,
+    "lt": [
+     [
+      45897,
+      89
+     ]
+    ],
+    "m": {
+     "TaskDuration": 172.4,
+     "ScriptDuration": 7.1,
+     "LayoutDuration": 2.4,
+     "RecalcStyleDuration": 139.2,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "quizNodes": 2227,
+   "quizVis": 380,
+   "nav": {
+    "ansSync": 2.5,
+    "ansPaint": 326.1,
+    "nextSync": 17.2,
+    "nextPaint": 331.6,
+    "styleMs": 533.6,
+    "layoutMs": 11.3,
+    "longtasks": 32
+   },
+   "updatePalette": {
+    "sync": 0.2,
+    "paint": 356.9,
+    "lt": [
+     [
+      57466,
+      95
+     ]
+    ],
+    "m": {
+     "TaskDuration": 299.1,
+     "ScriptDuration": 2.2,
+     "LayoutDuration": 0.4,
+     "RecalcStyleDuration": 277.8,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "loadQ": {
+    "sync": 1.6,
+    "paint": 377,
+    "lt": [
+     [
+      57817,
+      166
+     ]
+    ],
+    "m": {
+     "TaskDuration": 340.4,
+     "ScriptDuration": 3.3,
+     "LayoutDuration": 11.2,
+     "RecalcStyleDuration": 296.7,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "jump": {
+    "sync": 12.9,
+    "paint": 567.9,
+    "lt": [
+     [
+      58200,
+      280
+     ]
+    ],
+    "m": {
+     "TaskDuration": 512.8,
+     "ScriptDuration": 8.3,
+     "LayoutDuration": 7.8,
+     "RecalcStyleDuration": 459.8,
+     "LayoutCount": 3,
+     "RecalcStyleCount": 3
+    }
+   },
+   "submit": {
+    "sync": 11.8,
+    "paint": 802.5,
+    "lt": [
+     [
+      58792,
+      486
+     ]
+    ],
+    "m": {
+     "TaskDuration": 784.4,
+     "ScriptDuration": 1.6,
+     "LayoutDuration": 57.7,
+     "RecalcStyleDuration": 633.7,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "resNodes": 2360,
+   "resVis": 1542,
+   "reviewIncorrect": {
+    "sync": 18.1,
+    "paint": 435.9,
+    "lt": [
+     [
+      60598,
+      255
+     ]
+    ],
+    "m": {
+     "TaskDuration": 440.4,
+     "ScriptDuration": 2.4,
+     "LayoutDuration": 39.9,
+     "RecalcStyleDuration": 298.2,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "reviewAll": {
+    "sync": 6.3,
+    "paint": 538.5,
+    "lt": [
+     [
+      61021,
+      308
+     ],
+     [
+      61383,
+      285
+     ]
+    ],
+    "m": {
+     "TaskDuration": 865.6,
+     "ScriptDuration": 22.7,
+     "LayoutDuration": 39.5,
+     "RecalcStyleDuration": 666.3,
+     "LayoutCount": 3,
+     "RecalcStyleCount": 3
+    }
+   },
+   "restart": {
+    "sync": 1.2,
+    "paint": 176.5,
+    "lt": [
+     [
+      61915,
+      81
+     ]
+    ],
+    "m": {
+     "TaskDuration": 198,
+     "ScriptDuration": 2,
+     "LayoutDuration": 5.6,
+     "RecalcStyleDuration": 118,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "back": {
+    "sync": 10.6,
+    "paint": 235.8,
+    "lt": [
+     [
+      62210,
+      60
+     ]
+    ],
+    "m": {
+     "TaskDuration": 292.1,
+     "ScriptDuration": 1.4,
+     "LayoutDuration": 12,
+     "RecalcStyleDuration": 143.9,
+     "LayoutCount": 3,
+     "RecalcStyleCount": 3
+    }
+   }
+  },
+  "HK-1": {
+   "key": "HK-1",
+   "n": 50,
+   "selectTest": {
+    "sync": 4.7,
+    "paint": 215.5,
+    "lt": [
+     [
+      62781,
+      80
+     ]
+    ],
+    "m": {
+     "TaskDuration": 177.6,
+     "ScriptDuration": 0.6,
+     "LayoutDuration": 8.4,
+     "RecalcStyleDuration": 106.8,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "homeNodes": 2361,
+   "renderPalette": {
+    "sync": 0.6,
+    "paint": 127.4,
+    "lt": [
+     [
+      63034,
+      55
+     ]
+    ],
+    "m": {
+     "TaskDuration": 118.3,
+     "ScriptDuration": 2.1,
+     "LayoutDuration": 1.6,
+     "RecalcStyleDuration": 97.1,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "start": {
+    "sync": 2.3,
+    "paint": 148.8,
+    "lt": [
+     [
+      63165,
+      72
+     ]
+    ],
+    "m": {
+     "TaskDuration": 115.4,
+     "ScriptDuration": 2.5,
+     "LayoutDuration": 6.1,
+     "RecalcStyleDuration": 89.8,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "quizNodes": 2361,
+   "quizVis": 380,
+   "nav": {
+    "ansSync": 2.8,
+    "ansPaint": 293.7,
+    "nextSync": 16.2,
+    "nextPaint": 332.2,
+    "styleMs": 535.8,
+    "layoutMs": 11.5,
+    "longtasks": 28
+   },
+   "updatePalette": {
+    "sync": 0.8,
+    "paint": 434.5,
+    "lt": [
+     [
+      73645,
+      209
+     ]
+    ],
+    "m": {
+     "TaskDuration": 364.2,
+     "ScriptDuration": 1.1,
+     "LayoutDuration": 0.1,
+     "RecalcStyleDuration": 346,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "loadQ": {
+    "sync": 1.3,
+    "paint": 458.4,
+    "lt": [
+     [
+      74094,
+      229
+     ]
+    ],
+    "m": {
+     "TaskDuration": 388.6,
+     "ScriptDuration": 0.5,
+     "LayoutDuration": 4.5,
+     "RecalcStyleDuration": 347.1,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "jump": {
+    "sync": 14,
+    "paint": 333.4,
+    "lt": [
+     [
+      74556,
+      116
+     ]
+    ],
+    "m": {
+     "TaskDuration": 308.2,
+     "ScriptDuration": 1.9,
+     "LayoutDuration": 5.3,
+     "RecalcStyleDuration": 277.4,
+     "LayoutCount": 3,
+     "RecalcStyleCount": 3
+    }
+   },
+   "submit": {
+    "sync": 7.4,
+    "paint": 757.9,
+    "lt": [],
+    "m": {
+     "TaskDuration": 676.3,
+     "ScriptDuration": 1.3,
+     "LayoutDuration": 42.2,
+     "RecalcStyleDuration": 553.8,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "resNodes": 2328,
+   "resVis": 1509,
+   "reviewIncorrect": {
+    "sync": 26.7,
+    "paint": 881.8,
+    "lt": [
+     [
+      77070,
+      333
+     ]
+    ],
+    "m": {
+     "TaskDuration": 877.2,
+     "ScriptDuration": 2.3,
+     "LayoutDuration": 39.4,
+     "RecalcStyleDuration": 721.5,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "reviewAll": {
+    "sync": 8.7,
+    "paint": 712,
+    "lt": [
+     [
+      77953,
+      395
+     ]
+    ],
+    "m": {
+     "TaskDuration": 705,
+     "ScriptDuration": 1.9,
+     "LayoutDuration": 53.3,
+     "RecalcStyleDuration": 548.6,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "restart": {
+    "sync": 0.4,
+    "paint": 591,
+    "lt": [
+     [
+      78707,
+      273
+     ]
+    ],
+    "m": {
+     "TaskDuration": 537.2,
+     "ScriptDuration": 1.2,
+     "LayoutDuration": 2,
+     "RecalcStyleDuration": 516,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "back": {
+    "sync": 2.4,
+    "paint": 618.2,
+    "lt": [
+     [
+      79274,
+      206
+     ]
+    ],
+    "m": {
+     "TaskDuration": 540.1,
+     "ScriptDuration": 1.8,
+     "LayoutDuration": 7.3,
+     "RecalcStyleDuration": 488.8,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   }
+  },
+  "LC-1": {
+   "key": "LC-1",
+   "n": 50,
+   "selectTest": {
+    "sync": 6.1,
+    "paint": 484.7,
+    "lt": [
+     [
+      80369,
+      252
+     ]
+    ],
+    "m": {
+     "TaskDuration": 478.8,
+     "ScriptDuration": 2.4,
+     "LayoutDuration": 5.5,
+     "RecalcStyleDuration": 432.2,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "homeNodes": 2328,
+   "renderPalette": {
+    "sync": 0.2,
+    "paint": 593.1,
+    "lt": [
+     [
+      80873,
+      235
+     ]
+    ],
+    "m": {
+     "TaskDuration": 564.9,
+     "ScriptDuration": 0.6,
+     "LayoutDuration": 3.9,
+     "RecalcStyleDuration": 528.8,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "start": {
+    "sync": 3.2,
+    "paint": 788,
+    "lt": [],
+    "m": {
+     "TaskDuration": 703,
+     "ScriptDuration": 4,
+     "LayoutDuration": 13.9,
+     "RecalcStyleDuration": 651.8,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "quizNodes": 2328,
+   "quizVis": 380,
+   "nav": {
+    "ansSync": 6.4,
+    "ansPaint": 286.1,
+    "nextSync": 15.2,
+    "nextPaint": 292,
+    "styleMs": 470.1,
+    "layoutMs": 11.2,
+    "longtasks": 25
+   },
+   "updatePalette": {
+    "sync": 0.8,
+    "paint": 315.9,
+    "lt": [
+     [
+      93286,
+      176
+     ]
+    ],
+    "m": {
+     "TaskDuration": 528.7,
+     "ScriptDuration": 4.7,
+     "LayoutDuration": 2.6,
+     "RecalcStyleDuration": 493.7,
+     "LayoutCount": 3,
+     "RecalcStyleCount": 3
+    }
+   },
+   "loadQ": {
+    "sync": 1.4,
+    "paint": 433.7,
+    "lt": [
+     [
+      93643,
+      197
+     ]
+    ],
+    "m": {
+     "TaskDuration": 376,
+     "ScriptDuration": 3.1,
+     "LayoutDuration": 3.9,
+     "RecalcStyleDuration": 350,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "jump": {
+    "sync": 17.1,
+    "paint": 384.6,
+    "lt": [
+     [
+      94093,
+      185
+     ]
+    ],
+    "m": {
+     "TaskDuration": 345.2,
+     "ScriptDuration": 4,
+     "LayoutDuration": 4.9,
+     "RecalcStyleDuration": 316,
+     "LayoutCount": 3,
+     "RecalcStyleCount": 3
+    }
+   },
+   "submit": {
+    "sync": 9.8,
+    "paint": 658.1,
+    "lt": [
+     [
+      94625,
+      347
+     ]
+    ],
+    "m": {
+     "TaskDuration": 665.4,
+     "ScriptDuration": 0.6,
+     "LayoutDuration": 31.8,
+     "RecalcStyleDuration": 511.6,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "resNodes": 2328,
+   "resVis": 1509,
+   "reviewIncorrect": {
+    "sync": 18.8,
+    "paint": 643.4,
+    "lt": [
+     [
+      95967,
+      298
+     ],
+     [
+      96322,
+      261
+     ]
+    ],
+    "m": {
+     "TaskDuration": 886.5,
+     "ScriptDuration": 1.5,
+     "LayoutDuration": 28.6,
+     "RecalcStyleDuration": 782.6,
+     "LayoutCount": 3,
+     "RecalcStyleCount": 3
+    }
+   },
+   "reviewAll": {
+    "sync": 36.5,
+    "paint": 554.8,
+    "lt": [
+     [
+      96978,
+      446
+     ]
+    ],
+    "m": {
+     "TaskDuration": 582.2,
+     "ScriptDuration": 15.5,
+     "LayoutDuration": 47.4,
+     "RecalcStyleDuration": 406.4,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "restart": {
+    "sync": 2.5,
+    "paint": 127.8,
+    "lt": [
+     [
+      97529,
+      68
+     ]
+    ],
+    "m": {
+     "TaskDuration": 143.2,
+     "ScriptDuration": 0.5,
+     "LayoutDuration": 5.4,
+     "RecalcStyleDuration": 84.5,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "back": {
+    "sync": 10.5,
+    "paint": 209.6,
+    "lt": [
+     [
+      97703,
+      81
+     ]
+    ],
+    "m": {
+     "TaskDuration": 230.4,
+     "ScriptDuration": 1.6,
+     "LayoutDuration": 9,
+     "RecalcStyleDuration": 88.7,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   }
+  },
+  "CN-1(89)": {
+   "key": "CN-1",
+   "n": 89,
+   "selectTest": {
+    "sync": 3.4,
+    "paint": 167.6,
+    "lt": [
+     [
+      98319,
+      60
+     ]
+    ],
+    "m": {
+     "TaskDuration": 121.8,
+     "ScriptDuration": 1.7,
+     "LayoutDuration": 6.3,
+     "RecalcStyleDuration": 89.8,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "homeNodes": 2368,
+   "renderPalette": {
+    "sync": 2.5,
+    "paint": 201.7,
+    "lt": [
+     [
+      98515,
+      53
+     ]
+    ],
+    "m": {
+     "TaskDuration": 154.8,
+     "ScriptDuration": 1.6,
+     "LayoutDuration": 2,
+     "RecalcStyleDuration": 124.4,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "start": {
+    "sync": 7.4,
+    "paint": 255.4,
+    "lt": [
+     [
+      98724,
+      108
+     ]
+    ],
+    "m": {
+     "TaskDuration": 240.5,
+     "ScriptDuration": 8.3,
+     "LayoutDuration": 4.3,
+     "RecalcStyleDuration": 185.1,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "quizNodes": 2368,
+   "quizVis": 419,
+   "nav": {
+    "ansSync": 4.8,
+    "ansPaint": 330.3,
+    "nextSync": 14.8,
+    "nextPaint": 305.1,
+    "styleMs": 571.4,
+    "layoutMs": 11.7,
+    "longtasks": 29
+   },
+   "updatePalette": {
+    "sync": 0.8,
+    "paint": 414.8,
+    "lt": [
+     [
+      110461,
+      199
+     ]
+    ],
+    "m": {
+     "TaskDuration": 379,
+     "ScriptDuration": 1.5,
+     "LayoutDuration": 0.1,
+     "RecalcStyleDuration": 355.5,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "loadQ": {
+    "sync": 2,
+    "paint": 387.6,
+    "lt": [
+     [
+      110889,
+      152
+     ]
+    ],
+    "m": {
+     "TaskDuration": 375.5,
+     "ScriptDuration": 1.9,
+     "LayoutDuration": 5.3,
+     "RecalcStyleDuration": 343.8,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "jump": {
+    "sync": 21.4,
+    "paint": 547.2,
+    "lt": [
+     [
+      111301,
+      369
+     ]
+    ],
+    "m": {
+     "TaskDuration": 556.9,
+     "ScriptDuration": 1.4,
+     "LayoutDuration": 10.1,
+     "RecalcStyleDuration": 500.9,
+     "LayoutCount": 3,
+     "RecalcStyleCount": 3
+    }
+   },
+   "submit": {
+    "sync": 3.4,
+    "paint": 1107.9,
+    "lt": [
+     [
+      111862,
+      823
+     ]
+    ],
+    "m": {
+     "TaskDuration": 1069.3,
+     "ScriptDuration": 4.2,
+     "LayoutDuration": 118,
+     "RecalcStyleDuration": 600.4,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "resNodes": 3291,
+   "resVis": 2432,
+   "reviewIncorrect": {
+    "sync": 24.3,
+    "paint": 873.6,
+    "lt": [],
+    "m": {
+     "TaskDuration": 897.8,
+     "ScriptDuration": 23.6,
+     "LayoutDuration": 137,
+     "RecalcStyleDuration": 562.5,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "reviewAll": {
+    "sync": 30.5,
+    "paint": 592.3,
+    "lt": [
+     [
+      115269,
+      270
+     ]
+    ],
+    "m": {
+     "TaskDuration": 660.7,
+     "ScriptDuration": 1.5,
+     "LayoutDuration": 49.6,
+     "RecalcStyleDuration": 402,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "restart": {
+    "sync": 2.9,
+    "paint": 238.9,
+    "lt": [
+     [
+      116192,
+      169
+     ]
+    ],
+    "m": {
+     "TaskDuration": 262.6,
+     "ScriptDuration": 10.6,
+     "LayoutDuration": 4.5,
+     "RecalcStyleDuration": 147.1,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "back": {
+    "sync": 18.1,
+    "paint": 248.3,
+    "lt": [],
+    "m": {
+     "TaskDuration": 259.4,
+     "ScriptDuration": 1.7,
+     "LayoutDuration": 3,
+     "RecalcStyleDuration": 99.6,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   }
+  },
+  "IV-1(107)": {
+   "key": "IV-1",
+   "n": 107,
+   "selectTest": {
+    "sync": 4.4,
+    "paint": 271.5,
+    "lt": [
+     [
+      117109,
+      65
+     ]
+    ],
+    "m": {
+     "TaskDuration": 206.6,
+     "ScriptDuration": 0.4,
+     "LayoutDuration": 5.7,
+     "RecalcStyleDuration": 92.3,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "homeNodes": 3309,
+   "renderPalette": {
+    "sync": 2.2,
+    "paint": 97.4,
+    "lt": [
+     [
+      117438,
+      54
+     ]
+    ],
+    "m": {
+     "TaskDuration": 92.3,
+     "ScriptDuration": 1.2,
+     "LayoutDuration": 1.2,
+     "RecalcStyleDuration": 72.6,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "start": {
+    "sync": 7.4,
+    "paint": 257.1,
+    "lt": [
+     [
+      117556,
+      134
+     ]
+    ],
+    "m": {
+     "TaskDuration": 204.7,
+     "ScriptDuration": 8.2,
+     "LayoutDuration": 15.4,
+     "RecalcStyleDuration": 147.1,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "quizNodes": 3309,
+   "quizVis": 437,
+   "nav": {
+    "ansSync": 8.4,
+    "ansPaint": 407.4,
+    "nextSync": 16.7,
+    "nextPaint": 395.9,
+    "styleMs": 670.4,
+    "layoutMs": 13.9,
+    "longtasks": 25
+   },
+   "updatePalette": {
+    "sync": 2.7,
+    "paint": 624.7,
+    "lt": [
+     [
+      131511,
+      264
+     ]
+    ],
+    "m": {
+     "TaskDuration": 486.9,
+     "ScriptDuration": 3.4,
+     "LayoutDuration": 6.6,
+     "RecalcStyleDuration": 449.1,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "loadQ": {
+    "sync": 0.6,
+    "paint": 482.9,
+    "lt": [
+     [
+      132167,
+      246
+     ]
+    ],
+    "m": {
+     "TaskDuration": 441.8,
+     "ScriptDuration": 3.9,
+     "LayoutDuration": 1.7,
+     "RecalcStyleDuration": 409.9,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "jump": {
+    "sync": 22,
+    "paint": 570.8,
+    "lt": [
+     [
+      132653,
+      265
+     ]
+    ],
+    "m": {
+     "TaskDuration": 536.1,
+     "ScriptDuration": 0.6,
+     "LayoutDuration": 7.3,
+     "RecalcStyleDuration": 482,
+     "LayoutCount": 3,
+     "RecalcStyleCount": 3
+    }
+   },
+   "submit": {
+    "sync": 26.8,
+    "paint": 1552.4,
+    "lt": [
+     [
+      133275,
+      810
+     ]
+    ],
+    "m": {
+     "TaskDuration": 1543.9,
+     "ScriptDuration": 2,
+     "LayoutDuration": 148.6,
+     "RecalcStyleDuration": 1118.9,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "resNodes": 3735,
+   "resVis": 2858,
+   "reviewIncorrect": {
+    "sync": 26.5,
+    "paint": 1210.4,
+    "lt": [
+     [
+      136445,
+      543
+     ]
+    ],
+    "m": {
+     "TaskDuration": 1228.3,
+     "ScriptDuration": 28.2,
+     "LayoutDuration": 60.1,
+     "RecalcStyleDuration": 986,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "reviewAll": {
+    "sync": 24.7,
+    "paint": 816.9,
+    "lt": [
+     [
+      137703,
+      246
+     ]
+    ],
+    "m": {
+     "TaskDuration": 1147.1,
+     "ScriptDuration": 3.7,
+     "LayoutDuration": 72.8,
+     "RecalcStyleDuration": 753.8,
+     "LayoutCount": 3,
+     "RecalcStyleCount": 3
+    }
+   },
+   "restart": {
+    "sync": 0.8,
+    "paint": 168.7,
+    "lt": [
+     [
+      139220,
+      83
+     ]
+    ],
+    "m": {
+     "TaskDuration": 227.9,
+     "ScriptDuration": 1.3,
+     "LayoutDuration": 4.3,
+     "RecalcStyleDuration": 121.5,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "back": {
+    "sync": 21.6,
+    "paint": 297,
+    "lt": [
+     [
+      139427,
+      114
+     ],
+     [
+      139600,
+      74
+     ]
+    ],
+    "m": {
+     "TaskDuration": 426,
+     "ScriptDuration": 6,
+     "LayoutDuration": 5.8,
+     "RecalcStyleDuration": 257.9,
+     "LayoutCount": 3,
+     "RecalcStyleCount": 3
+    }
+   }
+  },
+  "MR biggest": {
+   "key": "MR-5",
+   "n": 835,
+   "selectTest": {
+    "sync": 13,
+    "paint": 208.5,
+    "lt": [
+     [
+      140360,
+      70
+     ]
+    ],
+    "m": {
+     "TaskDuration": 232.1,
+     "ScriptDuration": 4.7,
+     "LayoutDuration": 5.3,
+     "RecalcStyleDuration": 80.1,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "homeNodes": 4463,
+   "renderPalette": {
+    "sync": 6.2,
+    "paint": 204.9,
+    "lt": [
+     [
+      140545,
+      64
+     ]
+    ],
+    "m": {
+     "TaskDuration": 183.5,
+     "ScriptDuration": 1.7,
+     "LayoutDuration": 0.6,
+     "RecalcStyleDuration": 143,
+     "LayoutCount": 3,
+     "RecalcStyleCount": 3
+    }
+   },
+   "start": {
+    "sync": 30.4,
+    "paint": 347.6,
+    "lt": [
+     [
+      140825,
+      88
+     ],
+     [
+      140956,
+      143
+     ]
+    ],
+    "m": {
+     "TaskDuration": 384.6,
+     "ScriptDuration": 34.6,
+     "LayoutDuration": 18.5,
+     "RecalcStyleDuration": 293.9,
+     "LayoutCount": 3,
+     "RecalcStyleCount": 3
+    }
+   },
+   "quizNodes": 4463,
+   "quizVis": 1165,
+   "nav": {
+    "ansSync": 9.9,
+    "ansPaint": 469.4,
+    "nextSync": 20.9,
+    "nextPaint": 478.7,
+    "styleMs": 865.4,
+    "layoutMs": 19.8,
+    "longtasks": 28
+   },
+   "updatePalette": {
+    "sync": 1.4,
+    "paint": 403.8,
+    "lt": [
+     [
+      158129,
+      146
+     ]
+    ],
+    "m": {
+     "TaskDuration": 491.9,
+     "ScriptDuration": 1,
+     "LayoutDuration": 2,
+     "RecalcStyleDuration": 459.3,
+     "LayoutCount": 3,
+     "RecalcStyleCount": 3
+    }
+   },
+   "loadQ": {
+    "sync": 8.9,
+    "paint": 369.3,
+    "lt": [
+     [
+      158539,
+      175
+     ]
+    ],
+    "m": {
+     "TaskDuration": 329.1,
+     "ScriptDuration": 1.3,
+     "LayoutDuration": 3.3,
+     "RecalcStyleDuration": 280.3,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "jump": {
+    "sync": 36.9,
+    "paint": 341.4,
+    "lt": [
+     [
+      158962,
+      122
+     ]
+    ],
+    "m": {
+     "TaskDuration": 347.1,
+     "ScriptDuration": 2.4,
+     "LayoutDuration": 24.1,
+     "RecalcStyleDuration": 266.5,
+     "LayoutCount": 3,
+     "RecalcStyleCount": 3
+    }
+   },
+   "submit": {
+    "sync": 65.4,
+    "paint": 5644.6,
+    "lt": [
+     [
+      159313,
+      65
+     ],
+     [
+      159379,
+      3922
+     ]
+    ],
+    "m": {
+     "TaskDuration": 5805.3,
+     "ScriptDuration": 17,
+     "LayoutDuration": 722.4,
+     "RecalcStyleDuration": 3602.2,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "resNodes": 21692,
+   "resVis": 20087,
+   "reviewIncorrect": {
+    "sync": 229,
+    "paint": 3967.7,
+    "lt": [
+     [
+      171698,
+      229
+     ],
+     [
+      171928,
+      2457
+     ]
+    ],
+    "m": {
+     "TaskDuration": 6292.1,
+     "ScriptDuration": 12.8,
+     "LayoutDuration": 627.4,
+     "RecalcStyleDuration": 4323.8,
+     "LayoutCount": 3,
+     "RecalcStyleCount": 3
+    }
+   },
+   "reviewAll": {
+    "sync": 287.6,
+    "paint": 6948.5,
+    "lt": [
+     [
+      177554,
+      1444
+     ],
+     [
+      178999,
+      289
+     ],
+     [
+      179289,
+      4138
+     ]
+    ],
+    "m": {
+     "TaskDuration": 8888.3,
+     "ScriptDuration": 1.8,
+     "LayoutDuration": 890.2,
+     "RecalcStyleDuration": 5758.8,
+     "LayoutCount": 3,
+     "RecalcStyleCount": 3
+    }
+   },
+   "restart": {
+    "sync": 16.6,
+    "paint": 495.2,
+    "lt": [
+     [
+      186460,
+      338
+     ]
+    ],
+    "m": {
+     "TaskDuration": 526.2,
+     "ScriptDuration": 4.6,
+     "LayoutDuration": 2.9,
+     "RecalcStyleDuration": 404.5,
+     "LayoutCount": 2,
+     "RecalcStyleCount": 2
+    }
+   },
+   "back": {
+    "sync": 13.5,
+    "paint": 304.3,
+    "lt": [
+     [
+      187043,
+      175
+     ]
+    ],
+    "m": {
+     "TaskDuration": 324.8,
+     "ScriptDuration": 2.7,
+     "LayoutDuration": 97.7,
+     "RecalcStyleDuration": 150.9,
+     "LayoutCount": 3,
+     "RecalcStyleCount": 3
+    }
+   }
+  }
+ },
+ "menuNodes": 1077,
+ "menuVisNodes": 381,
+ "errs": [
+  "error: Failed to load resource: the server responded with a status of 404 (File not found) @favicon.ico"
+ ]
+}

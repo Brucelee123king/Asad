@@ -1,0 +1,548 @@
+[
+{
+"item": 2,
+"section": "Verbal: Maths & Reasoning",
+"question": "What is 5% of 80?",
+"answer": "4",
+"wrong": [
+"2",
+"5",
+"8"
+],
+"reason": "5% of 80 = (5 / 100) x 80 = 4.",
+"rep": 0
+},
+{
+"item": 53,
+"section": "Islamiat",
+"question": "Which was the first major battle fought between the Muslims and the Quraysh of Makkah?",
+"answer": "Battle of Badr",
+"wrong": [
+"Battle of Uhud",
+"Battle of the Trench (Khandaq)",
+"Battle of Hunayn"
+],
+"reason": "The Battle of Badr, fought on 17 Ramadan 2 AH, was the first large-scale battle between the Muslims and the Quraysh. Earlier expeditions such as Abwa were only raids without fighting.",
+"rep": 2
+},
+{
+"item": 80,
+"section": "Pakistan Studies",
+"question": "Which is the highest peak of Pakistan?",
+"answer": "K2",
+"wrong": [
+"Nanga Parbat",
+"Broad Peak",
+"Tirich Mir"
+],
+"reason": "K2 (8,611 m) in the Karakoram is the highest peak of Pakistan and second highest in the world.",
+"rep": 0
+},
+{
+"item": 87,
+"section": "Pakistan Studies",
+"question": "Who was the British Prime Minister at the time of the partition of India in 1947?",
+"answer": "Clement Attlee",
+"wrong": [
+"Winston Churchill",
+"Neville Chamberlain",
+"Harold Macmillan"
+],
+"reason": "Labour leader Clement Attlee was Prime Minister (1945-51) when the Indian Independence Act 1947 was passed.",
+"rep": 1
+},
+{
+"item": 93,
+"section": "Pakistan Studies",
+"question": "In which year was the Sui gas field discovered?",
+"answer": "1952",
+"wrong": [
+"1947",
+"1955",
+"1960"
+],
+"reason": "Sui gas field in Balochistan was discovered in 1952; commercial supply to Karachi began in 1955.",
+"rep": 0
+},
+{
+"item": 98,
+"section": "Current Affairs",
+"question": "Which national airline did Pakistan privatize in December 2025 (won by Arif Habib consortium)?",
+"answer": "Pakistan International Airlines (PIA)",
+"wrong": [
+"Pakistan Steel Mills",
+"Pakistan Railways",
+"Pakistan State Oil"
+],
+"reason": "On 23 December 2025 the Arif Habib-led consortium won 75 percent of PIA with a bid of Rs135 billion.",
+"rep": 0
+},
+{
+"item": 104,
+"section": "Pakistan Studies",
+"question": "What was the official designation of Muhammad Ali Bogra (1953 to 1955)?",
+"answer": "Prime Minister of Pakistan",
+"wrong": [
+"Governor General of Pakistan",
+"President of Pakistan",
+"Chief Justice of Pakistan"
+],
+"reason": "Muhammad Ali Bogra was the third Prime Minister of Pakistan, from 17 April 1953 to 12 August 1955, appointed by Governor General Ghulam Muhammad.",
+"rep": 0
+},
+{
+"item": 110,
+"section": "Pakistan Studies",
+"question": "Which narrow strip of Afghan territory separates Pakistan from Central Asia (Tajikistan)?",
+"answer": "Wakhan Corridor",
+"wrong": [
+"Khyber Pass",
+"Bolan Pass",
+"Kurram Valley"
+],
+"reason": "The Wakhan Corridor in Afghanistan's Badakhshan province lies between Tajikistan to the north and Pakistan to the south.",
+"rep": 0
+},
+{
+"item": 115,
+"section": "Maths & Science",
+"question": "What is the derivative of cos(theta) with respect to theta?",
+"answer": "-sin(theta)",
+"wrong": [
+"sin(theta)",
+"-cos(theta)",
+"tan(theta)"
+],
+"reason": "The derivative of cos(theta) is -sin(theta); the derivative of sin(theta) is cos(theta).",
+"rep": 0
+},
+{
+"item": 124,
+"section": "General Knowledge",
+"question": "In which year did the Soviet Union (Russia) invade Afghanistan?",
+"answer": "1979",
+"wrong": [
+"1971",
+"1985",
+"1989"
+],
+"reason": "Soviet troops entered Afghanistan in late December 1979 and withdrew in February 1989.",
+"rep": 0
+},
+{
+"item": 131,
+"section": "Maths & Science",
+"question": "Global warming increases mainly due to the rise of which gas in the atmosphere?",
+"answer": "Carbon dioxide",
+"wrong": [
+"Oxygen",
+"Nitrogen",
+"Argon"
+],
+"reason": "Carbon dioxide is the main greenhouse gas released by burning fossil fuels. It traps heat in the atmosphere and raises the earth temperature.",
+"rep": 0
+},
+{
+"item": 135,
+"section": "Verbal: English",
+"question": "Fill in the blank with the correct preposition: Aslam looks forward ___ meeting Ali.",
+"answer": "to",
+"wrong": [
+"for",
+"at",
+"on"
+],
+"reason": "The phrasal verb is look forward to, meaning to wait with pleasure for something.",
+"rep": 0
+},
+{
+"item": 141,
+"section": "Pakistan Studies",
+"question": "Which is the third largest city of Pakistan by population?",
+"answer": "Faisalabad",
+"wrong": [
+"Rawalpindi",
+"Multan",
+"Peshawar"
+],
+"reason": "In the 2023 census Karachi, Lahore and Faisalabad (about 3.69 million) are the three largest cities. Rawalpindi is fourth.",
+"rep": 0
+},
+{
+"item": 145,
+"section": "Pakistan Studies",
+"question": "Which Article of the 1973 Constitution declares Islam as the State religion of Pakistan?",
+"answer": "Article 2",
+"wrong": [
+"Article 1",
+"Article 6",
+"Article 227"
+],
+"reason": "Article 2 of the 1973 Constitution states that Islam shall be the State religion of Pakistan.",
+"rep": 0
+},
+{
+"item": 168,
+"section": "Pakistan Studies",
+"question": "Which Mughal emperor built the Badshahi Mosque in Lahore?",
+"answer": "Aurangzeb Alamgir",
+"wrong": [
+"Shah Jahan",
+"Akbar",
+"Jahangir"
+],
+"reason": "The Badshahi Mosque was built by Aurangzeb between 1671 and 1673.",
+"rep": 0
+},
+{
+"item": 180,
+"section": "General Knowledge",
+"question": "Who was the leader (Fuhrer) of Germany during World War 2?",
+"answer": "Adolf Hitler",
+"wrong": [
+"Otto von Bismarck",
+"Benito Mussolini",
+"Joseph Stalin"
+],
+"reason": "Adolf Hitler led Nazi Germany from 1933 until his death in 1945. Mussolini led Italy and Stalin led the Soviet Union.",
+"rep": 0
+},
+{
+"item": 188,
+"section": "Current Affairs",
+"question": "Who is the current Chairman of the National Accountability Bureau (NAB) of Pakistan?",
+"answer": "Lt Gen (retd) Nazir Ahmad Butt",
+"wrong": [
+"Aftab Sultan",
+"Javed Iqbal",
+"Qamar Zaman Chaudhry"
+],
+"reason": "Nazir Ahmad Butt became NAB chairman on 4 March 2023 and received a three-year extension notified from 6 March 2026.",
+"rep": 0
+},
+{
+"item": 194,
+"section": "Islamiat",
+"question": "Which prophets raised the foundations of the Kaaba (as stated in Surah Al-Baqarah, verse 127)?",
+"answer": "Hazrat Ibrahim (AS) and Hazrat Ismail (AS)",
+"wrong": [
+"Hazrat Nuh (AS) and Hazrat Hud (AS)",
+"Hazrat Musa (AS) and Hazrat Harun (AS)",
+"Hazrat Yaqub (AS) and Hazrat Yusuf (AS)"
+],
+"reason": "The Quran says Ibrahim and Ismail raised the foundations of the House (Kaaba) in Makkah.",
+"rep": 0
+},
+{
+"item": 200,
+"section": "General Knowledge",
+"question": "What is the capital of Cuba?",
+"answer": "Havana",
+"wrong": [
+"Santiago de Cuba",
+"Kingston",
+"Santo Domingo"
+],
+"reason": "Havana is the capital and largest city of Cuba.",
+"rep": 1
+},
+{
+"item": 206,
+"section": "Verbal: Maths & Reasoning",
+"question": "A train runs at twice the speed of a car. The car covers 60 km in 30 minutes. How many km will the train cover in 30 minutes?",
+"answer": "120 km",
+"wrong": [
+"60 km",
+"90 km",
+"240 km"
+],
+"reason": "In 30 minutes the car covers 60 km, so the train covers twice that distance in the same time: 2 x 60 = 120 km.",
+"rep": 0
+},
+{
+"item": 214,
+"section": "General Knowledge",
+"question": "The kiwi, a flightless bird, is the national symbol of which country?",
+"answer": "New Zealand",
+"wrong": [
+"Australia",
+"South Africa",
+"Fiji"
+],
+"reason": "The kiwi is New Zealand's national bird, and New Zealanders are nicknamed Kiwis.",
+"rep": 1
+},
+{
+"item": 224,
+"section": "Islamiat",
+"question": "Which Prophet (A.S.) opposed the tyrant king Nimrod (Namrud)?",
+"answer": "Hazrat Ibrahim (A.S.)",
+"wrong": [
+"Hazrat Musa (A.S.)",
+"Hazrat Nuh (A.S.)",
+"Hazrat Isa (A.S.)"
+],
+"reason": "Hazrat Ibrahim (A.S.) debated Nimrod (Quran 2:258) and was thrown into the fire, which Allah made cool and safe.",
+"rep": 0
+},
+{
+"item": 229,
+"section": "General Knowledge",
+"question": "Which country hosted the FIFA World Cup 2022?",
+"answer": "Qatar",
+"wrong": [
+"Russia",
+"Saudi Arabia",
+"United Arab Emirates"
+],
+"reason": "The 2022 FIFA World Cup was held in Qatar, the first Arab country to host it; the final was played at Lusail Stadium on 18 December 2022.",
+"rep": 0
+},
+{
+"item": 238,
+"section": "Islamiat",
+"question": "Hazrat Musa (AS) was the son of which person?",
+"answer": "Imran",
+"wrong": [
+"Harun",
+"Yaqub",
+"Ibrahim"
+],
+"reason": "Islamic tradition names Imran (Amram) as the father of Hazrat Musa (AS) and Hazrat Harun (AS).",
+"rep": 0
+},
+{
+"item": 251,
+"section": "Islamiat",
+"question": "Hazrat Bilal (R.A.) was the slave of whom before he was freed?",
+"answer": "Umayya bin Khalaf",
+"wrong": [
+"Abu Jahl",
+"Abu Lahab",
+"Utbah bin Rabia"
+],
+"reason": "Bilal bin Rabah (R.A.) was a slave of Umayya bin Khalaf, who tortured him for accepting Islam. Hazrat Abu Bakr (R.A.) bought and freed him.",
+"rep": 0
+},
+{
+"item": 259,
+"section": "Verbal: Maths & Reasoning",
+"question": "What is 90% of 70?",
+"answer": "63",
+"wrong": [
+"60",
+"65",
+"7"
+],
+"reason": "90% of 70 = 0.9 x 70 = 63.",
+"rep": 0
+},
+{
+"item": 269,
+"section": "Islamiat",
+"question": "Who was the first child to embrace Islam?",
+"answer": "Hazrat Ali (R.A.)",
+"wrong": [
+"Hazrat Zaid bin Haritha (R.A.)",
+"Hazrat Abdullah bin Abbas (R.A.)",
+"Hazrat Hasan (R.A.)"
+],
+"reason": "Hazrat Ali (R.A.), the young cousin of the Prophet (PBUH), is the first child to accept Islam.",
+"rep": 0
+},
+{
+"item": 277,
+"section": "Islamiat",
+"question": "On which night was the five daily prayers (Salah) made obligatory for Muslims?",
+"answer": "Night of Miraj (Shab-e-Miraj)",
+"wrong": [
+"Laylat-ul-Qadr",
+"Shab-e-Barat",
+"Night of Hijrat"
+],
+"reason": "The five daily prayers were prescribed during the Isra and Miraj journey of the Prophet (PBUH), when 50 prayers were reduced to five.",
+"rep": 0
+},
+{
+"item": 286,
+"section": "Current Affairs",
+"question": "On which date is the International Day to Combat Islamophobia observed?",
+"answer": "15 March",
+"wrong": [
+"5 February",
+"5 August",
+"14 August"
+],
+"reason": "The UN General Assembly declared 15 March as the International Day to Combat Islamophobia in 2022, on a resolution moved by Pakistan and the OIC.",
+"rep": 0
+},
+{
+"item": 292,
+"section": "Verbal: Maths & Reasoning",
+"question": "If the 1st day of a month is Monday, what day will the 15th be?",
+"answer": "Monday",
+"wrong": [
+"Sunday",
+"Tuesday",
+"Saturday"
+],
+"reason": "From the 1st to the 15th is 14 days, exactly two weeks, so the day is the same: Monday.",
+"rep": 0
+},
+{
+"item": 298,
+"section": "Verbal: Maths & Reasoning",
+"question": "What is 40% of 60?",
+"answer": "24",
+"wrong": [
+"20",
+"22",
+"26"
+],
+"reason": "40% of 60 = 40/100 x 60 = 24.",
+"rep": 0
+},
+{
+"item": 306,
+"section": "Verbal: Maths & Reasoning",
+"question": "Train A runs at 60 km/h and train B is twice as fast. How many km does train B cover in 30 minutes?",
+"answer": "60 km",
+"wrong": [
+"30 km",
+"120 km",
+"90 km"
+],
+"reason": "Speed of B = 120 km/h. In 30 minutes (half an hour) it covers 120 x 1/2 = 60 km.",
+"rep": 0
+},
+{
+"item": 312,
+"section": "Islamiat",
+"question": "Which companion served the Prophet Muhammad (PBUH) for ten years?",
+"answer": "Hazrat Anas bin Malik (R.A.)",
+"wrong": [
+"Hazrat Abu Hurairah (R.A.)",
+"Hazrat Bilal (R.A.)",
+"Hazrat Zaid bin Thabit (R.A.)"
+],
+"reason": "Hazrat Anas bin Malik (R.A.) served the Prophet (PBUH) for ten years in Madinah, starting as a boy.",
+"rep": 0
+},
+{
+"item": 318,
+"section": "Verbal: English",
+"question": "Choose the synonym of JUBILANT.",
+"answer": "Joyful",
+"wrong": [
+"Sorrowful",
+"Angry",
+"Fearful"
+],
+"reason": "Jubilant means feeling or showing great joy, so joyful is the closest meaning.",
+"rep": 0
+},
+{
+"item": 324,
+"section": "Verbal: Maths & Reasoning",
+"question": "What is 90% of 80?",
+"answer": "72",
+"wrong": [
+"70",
+"76",
+"8"
+],
+"reason": "90% of 80 = 0.9 x 80 = 72.",
+"rep": 0
+},
+{
+"item": 336,
+"section": "Pakistan Studies",
+"question": "Who conquered Sindh in 711-712 AD?",
+"answer": "Muhammad bin Qasim",
+"wrong": [
+"Mahmud of Ghazni",
+"Tariq bin Ziyad",
+"Qutb-ud-Din Aibak"
+],
+"reason": "The Umayyad general Muhammad bin Qasim, nephew of Hajjaj bin Yusuf, defeated Raja Dahir and conquered Sindh.",
+"rep": 0
+},
+{
+"item": 346,
+"section": "Pakistan Studies",
+"question": "On which date is Pakistan Air Force Day observed every year?",
+"answer": "7 September",
+"wrong": [
+"6 September",
+"14 August",
+"23 March"
+],
+"reason": "PAF Day on 7 September commemorates the role of the PAF in the 1965 war. Defence Day is 6 September.",
+"rep": 0
+},
+{
+"item": 359,
+"section": "Pakistan Studies",
+"question": "Who started the Civil Disobedience Movement in British India?",
+"answer": "Mahatma Gandhi",
+"wrong": [
+"Muhammad Ali Jinnah",
+"Bal Gangadhar Tilak",
+"Jawaharlal Nehru"
+],
+"reason": "Gandhi began the Civil Disobedience Movement in 1930 with the Salt March.",
+"rep": 0
+},
+{
+"item": 363,
+"section": "Pakistan Studies",
+"question": "In which year did the Non-Cooperation Movement begin in India?",
+"answer": "1920",
+"wrong": [
+"1905",
+"1916",
+"1930"
+],
+"reason": "Gandhi launched the Non-Cooperation Movement in 1920 and called it off in February 1922 after the Chauri Chaura incident.",
+"rep": 0
+},
+{
+"item": 367,
+"section": "Pakistan Studies",
+"question": "Which brothers were the leading figures of the Khilafat Movement?",
+"answer": "Maulana Muhammad Ali Jauhar and Maulana Shaukat Ali",
+"wrong": [
+"Maulana Abul Kalam Azad and Maulana Hasrat Mohani",
+"Hakim Ajmal Khan and Dr Ansari",
+"Liaquat Ali Khan and Ghulam Muhammad"
+],
+"reason": "The Ali brothers, Muhammad Ali Jauhar and Shaukat Ali, were the central leaders of the Khilafat Movement (1919-1924).",
+"rep": 0
+},
+{
+"item": 371,
+"section": "General Knowledge",
+"question": "Martin Luther King Jr. is associated with which movement?",
+"answer": "The Civil Rights Movement",
+"wrong": [
+"The Suffragette Movement",
+"The Anti-apartheid Movement",
+"The Quit India Movement"
+],
+"reason": "King led the nonviolent American Civil Rights Movement in the 1950s and 1960s and gave the 'I Have a Dream' speech in 1963.",
+"rep": 0
+},
+{
+"item": 375,
+"section": "General Knowledge",
+"question": "What did the Suffragette Movement demand?",
+"answer": "The right to vote for women",
+"wrong": [
+"Independence for India",
+"Abolition of slavery",
+"An end to racial segregation"
+],
+"reason": "The suffragettes, led in Britain by Emmeline Pankhurst, campaigned for women's suffrage (the vote).",
+"rep": 0
+}
+]

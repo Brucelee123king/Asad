@@ -1,0 +1,25 @@
+{
+ "type": "III",
+ "num": 11,
+ "kind": "series",
+ "pdf_page": 23,
+ "stem_groups": [
+  [
+   "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><rect width=\"100\" height=\"100\" fill=\"#fff\"/><rect x=\"2\" y=\"38\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.2\"/><g transform=\"translate(2,38) scale(.24)\"><circle cx=\"16\" cy=\"16\" r=\"6\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/><path d=\"M16,84L16,64\" stroke=\"#111\" stroke-width=\"3\"/><path d=\"M11,70L16,62L21,70\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/></g><text x=\"14\" y=\"71\" font-size=\"7\" font-family=\"Arial\" text-anchor=\"middle\">A</text><rect x=\"26\" y=\"38\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.2\"/><g transform=\"translate(26,38) scale(.24)\"><path d=\"M28,46L48,46\" stroke=\"#111\" stroke-width=\"3\"/><path d=\"M42,41L50,46L42,51\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/><circle cx=\"82\" cy=\"82\" r=\"6\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/></g><text x=\"38\" y=\"71\" font-size=\"7\" font-family=\"Arial\" text-anchor=\"middle\">B</text><rect x=\"50\" y=\"38\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.2\"/><text x=\"62\" y=\"56\" font-size=\"16\" font-family=\"Arial\" font-weight=\"bold\" text-anchor=\"middle\">?</text><text x=\"62\" y=\"71\" font-size=\"7\" font-family=\"Arial\" text-anchor=\"middle\">C</text><rect x=\"74\" y=\"38\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"#111\" stroke-width=\"1.2\"/><g transform=\"translate(74,38) scale(.24)\"><path d=\"M64,16L84,16\" stroke=\"#111\" stroke-width=\"3\"/><path d=\"M78,11L86,16L78,21\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/><circle cx=\"82\" cy=\"82\" r=\"6\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/></g><text x=\"86\" y=\"71\" font-size=\"7\" font-family=\"Arial\" text-anchor=\"middle\">D</text></svg>"
+  ]
+ ],
+ "noq": true,
+ "options": [
+  "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><rect width=\"100\" height=\"100\" fill=\"#fff\"/><rect x=\"4\" y=\"4\" width=\"92\" height=\"92\" fill=\"none\" stroke=\"#111\" stroke-width=\"2\"/><path d=\"M16,88L16,70\" stroke=\"#111\" stroke-width=\"3\"/><path d=\"M11,76L16,68L21,76\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/><circle cx=\"76\" cy=\"84\" r=\"6\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/></svg>",
+  "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><rect width=\"100\" height=\"100\" fill=\"#fff\"/><rect x=\"4\" y=\"4\" width=\"92\" height=\"92\" fill=\"none\" stroke=\"#111\" stroke-width=\"2\"/><circle cx=\"16\" cy=\"14\" r=\"6\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/><path d=\"M80,88L80,70\" stroke=\"#111\" stroke-width=\"3\"/><path d=\"M75,76L80,68L85,76\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/></svg>",
+  "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><rect width=\"100\" height=\"100\" fill=\"#fff\"/><rect x=\"4\" y=\"4\" width=\"92\" height=\"92\" fill=\"none\" stroke=\"#111\" stroke-width=\"2\"/><path d=\"M88,22L68,22\" stroke=\"#111\" stroke-width=\"3\"/><path d=\"M74,17L66,22L74,27\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/><circle cx=\"76\" cy=\"82\" r=\"6\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/></svg>",
+  "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><rect width=\"100\" height=\"100\" fill=\"#fff\"/><rect x=\"4\" y=\"4\" width=\"92\" height=\"92\" fill=\"none\" stroke=\"#111\" stroke-width=\"2\"/><circle cx=\"16\" cy=\"16\" r=\"6\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/><path d=\"M50,72L50,52\" stroke=\"#111\" stroke-width=\"3\"/><path d=\"M45,58L50,50L55,58\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/></svg>",
+  "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><rect width=\"100\" height=\"100\" fill=\"#fff\"/><rect x=\"4\" y=\"4\" width=\"92\" height=\"92\" fill=\"none\" stroke=\"#111\" stroke-width=\"2\"/><path d=\"M82,50L62,50\" stroke=\"#111\" stroke-width=\"3\"/><path d=\"M68,45L60,50L68,55\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/><circle cx=\"86\" cy=\"86\" r=\"6\" fill=\"none\" stroke=\"#111\" stroke-width=\"3\"/></svg>"
+ ],
+ "correct": 3,
+ "book_answer": 4,
+ "why": "The figures go in pairs. A and C both have a circle in the top-left corner and an up arrow, and the up arrow moves from the bottom-left towards the centre. B and D both have a circle in the bottom-right corner and a right arrow that moves up towards the top-right. So C needs the circle top-left and the up arrow in the middle: option 4. Option 1 and option 2 have the up arrow, but the circle is in the wrong corner.",
+ "trick": "When figures A and C look alike and B and D look alike, the series has two alternating sequences; solve each one separately.",
+ "confidence": "high",
+ "note": "Whole row A, B, ?, D drawn as one SVG because D comes after the ?."
+}

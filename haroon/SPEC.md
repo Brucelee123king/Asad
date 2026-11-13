@@ -1,0 +1,10 @@
+# Task: turn YOUR chunk of Haroon Forces Academy questions (question + answer, no options) into checked MCQs
+Input: /home/user/Asad/haroon/chunks/c<N>.json = list of items {"id","q" (question),"a" (answer as printed),"x" (explanation, only some items)}. Items come from teacher notes for the Pakistan Military Academy (PMA) Long Course initial test.
+For EVERY item write one MCQ:
+1. CHECK THE ANSWER. Today is 31 October 2026. Use your knowledge carefully (Pakistan affairs, Islamiat, GK, current affairs, English, maths, verbal reasoning). Solve maths/reasoning items yourself. If the printed answer is wrong or outdated, use the correct answer and set "status":"fixed" with a short "note" (what the notes said and why it is wrong). If you cannot be sure (e.g. very recent 2026 events, opinion-style items), keep the printed answer and set "status":"unsure" with a note. Otherwise "status":"ok".
+2. Write a clear question in simple English (fix spelling/grammar of the notes; keep the meaning). If the notes item is a statement (e.g. "Founder of PPP: Zulfikar Ali Bhutto"), make it a question ("Who founded the PPP?").
+3. Write exactly 4 options: the correct answer + 3 believable wrong options of the same kind (no "All of the above", no joke options, no two options that could both be right). Put the correct one in a random position.
+4. "why": 1-2 short sentences: why the answer is correct (and why a tempting wrong option is wrong if useful). Use the notes' explanation if it is right.
+5. "rel": one short related fact (different from "why").
+Output: /home/user/Asad/haroon/out/c<N>.json = a JSON list, same order as the input, each {"id":..,"question":..,"options":[4 strings],"correct":0-3,"why":..,"rel":..,"status":"ok|fixed|unsure","note":".."}.
+Validate with python at the end (valid JSON, same number of items as input, 4 options each, correct in 0-3, no duplicate options). Write the file in parts while you work (so nothing is lost), but the final file must be complete. Do not edit other files. Reply SHORT: count written, and the list of "fixed" ids with one line each, and the count of "unsure".

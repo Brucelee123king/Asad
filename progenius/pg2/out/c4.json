@@ -1,0 +1,1154 @@
+[
+ {
+  "id": "A217",
+  "question": "By whom is the Prime Minister of Pakistan elected?",
+  "options": [
+   "Senate",
+   "National Assembly",
+   "Electoral college of Parliament and provincial assemblies",
+   "The people by direct vote"
+  ],
+  "correct": 1,
+  "why": "Under the Constitution, the Prime Minister is elected by the National Assembly from among its members.",
+  "rel": "The President is elected by an electoral college of both Houses of Parliament and the four Provincial Assemblies.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A218",
+  "question": "What is the main purpose of sending children to school?",
+  "options": [
+   "To keep them busy at home",
+   "To make them earn money early",
+   "To get education and learn skills",
+   "To keep them away from friends"
+  ],
+  "correct": 2,
+  "why": "Schools give children knowledge, skills and social development for a useful life.",
+  "rel": "Article 25-A of Pakistan's Constitution makes free education a right for children aged 5 to 16.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A219",
+  "question": "What is 90% of 90?",
+  "options": [
+   "81",
+   "80",
+   "72",
+   "90"
+  ],
+  "correct": 0,
+  "why": "90 x 90/100 = 81.",
+  "rel": "10% of 90 is 9, so 90% is 90 - 9 = 81.",
+  "status": "ok",
+  "note": "",
+  "match": 139
+ },
+ {
+  "id": "A220",
+  "question": "What is the currency of Russia?",
+  "options": [
+   "Russian dinar",
+   "Russian mark",
+   "Russian krone",
+   "Russian ruble"
+  ],
+  "correct": 3,
+  "why": "Russia's currency is the ruble (RUB).",
+  "rel": "Moscow is the capital of Russia.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A221",
+  "question": "Who became Pakistan's first woman fighter pilot qualified for combat duty?",
+  "options": [
+   "Marium Mukhtiar",
+   "Saba Khan",
+   "Shazia Nawaz",
+   "Ayesha Farooq"
+  ],
+  "correct": 3,
+  "why": "Flight Lieutenant Ayesha Farooq became Pakistan's first female fighter pilot qualified for combat in 2013.",
+  "rel": "Women had served in other PAF roles before this milestone.",
+  "status": "fixed",
+  "note": "Question 'first woman in PAF' was vague; reworded to first combat-qualified female fighter pilot.",
+  "match": null
+ },
+ {
+  "id": "A222",
+  "question": "By whom is the President of Pakistan elected?",
+  "options": [
+   "National Assembly alone",
+   "Electoral college of both Houses of Parliament and the four Provincial Assemblies",
+   "Senate alone",
+   "Direct vote of the people"
+  ],
+  "correct": 1,
+  "why": "The Constitution says the President is elected by an electoral college of the Senate, National Assembly and the four Provincial Assemblies.",
+  "rel": "The President's term is five years.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A223",
+  "question": "Why is raw milk boiled before drinking?",
+  "options": [
+   "To kill harmful germs",
+   "To increase its fat",
+   "To add vitamins",
+   "To make it sweeter"
+  ],
+  "correct": 0,
+  "why": "Heating milk destroys harmful microbes, making it safe to drink.",
+  "rel": "Pasteurization heats milk to a set temperature for a short time to kill germs.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A224",
+  "question": "In which Hijri year was the Battle of Badr fought?",
+  "options": [
+   "2 AH",
+   "1 AH",
+   "3 AH",
+   "5 AH"
+  ],
+  "correct": 0,
+  "why": "The Battle of Badr took place in Ramadan, 2 AH (624 CE).",
+  "rel": "Badr is also called Jang-e-Furqan.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A225",
+  "question": "What was Hazrat Hamza (RA)'s relation to Prophet Muhammad (PBUH)?",
+  "options": [
+   "Paternal uncle",
+   "Maternal uncle",
+   "Cousin",
+   "Father-in-law"
+  ],
+  "correct": 0,
+  "why": "Hamza (RA) was a son of Abdul Muttalib, so he was the Prophet's paternal uncle (and also his foster-brother).",
+  "rel": "He was martyred at the Battle of Uhud.",
+  "status": "ok",
+  "note": "",
+  "match": 133
+ },
+ {
+  "id": "A226",
+  "question": "Where is the Badshahi Mosque located?",
+  "options": [
+   "Delhi",
+   "Multan",
+   "Peshawar",
+   "Lahore"
+  ],
+  "correct": 3,
+  "why": "The Badshahi Mosque was built in Lahore by Mughal emperor Aurangzeb.",
+  "rel": "It was completed in 1673.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A227",
+  "question": "What is the approximate length of Pakistan's coastline?",
+  "options": [
+   "760 km",
+   "1,500 km",
+   "1,046 km",
+   "2,640 km"
+  ],
+  "correct": 2,
+  "why": "Pakistan's coastline along the Arabian Sea is commonly given as about 1,046 km.",
+  "rel": "The coast is shared by Sindh and Balochistan.",
+  "status": "ok",
+  "note": "",
+  "match": 156
+ },
+ {
+  "id": "A228",
+  "question": "What is the currency of Cuba?",
+  "options": [
+   "Cuban peso",
+   "Cuban dollar",
+   "Cuban real",
+   "Cuban colon"
+  ],
+  "correct": 0,
+  "why": "Cuba's official currency is the Cuban peso (CUP).",
+  "rel": "Cuba ended its dual-currency system in 2021.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A229",
+  "question": "What is the longest river in Asia?",
+  "options": [
+   "Yellow River",
+   "Yangtze River",
+   "Mekong River",
+   "Indus River"
+  ],
+  "correct": 1,
+  "why": "The Yangtze in China, about 6,300 km long, is the longest river in Asia.",
+  "rel": "It is the third-longest river in the world.",
+  "status": "ok",
+  "note": "",
+  "match": 129
+ },
+ {
+  "id": "A230",
+  "question": "The Yellow Sea lies between China and which peninsula?",
+  "options": [
+   "Malay Peninsula",
+   "Arabian Peninsula",
+   "Korean Peninsula",
+   "Indochina Peninsula"
+  ],
+  "correct": 2,
+  "why": "The Yellow Sea lies between mainland China and the Korean Peninsula.",
+  "rel": "It supports important fisheries and shipping routes.",
+  "status": "fixed",
+  "note": "Printed 'fishing' was not a clear answer; reworded to a precise location question.",
+  "match": null
+ },
+ {
+  "id": "B231",
+  "question": "Abdul Qadir was a well-known player of which sport?",
+  "options": [
+   "Hockey",
+   "Squash",
+   "Cricket",
+   "Football"
+  ],
+  "correct": 2,
+  "why": "Abdul Qadir was a famous Pakistani leg-spin bowler.",
+  "rel": "He played for Pakistan mainly from the late 1970s to the early 1990s.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B232",
+  "question": "Which prophet is also called Israel (Isra'il)?",
+  "options": [
+   "Prophet Ishaq (AS)",
+   "Prophet Yaqub (AS)",
+   "Prophet Yusuf (AS)",
+   "Prophet Musa (AS)"
+  ],
+  "correct": 1,
+  "why": "In Islamic tradition, Prophet Yaqub (AS) is also called Isra'il.",
+  "rel": "Bani Isra'il means the Children of Israel.",
+  "status": "ok",
+  "note": "Reworded: 'original name' changed to 'also called'.",
+  "match": 140
+ },
+ {
+  "id": "B233",
+  "question": "Where will the 2027 ICC Men's ODI Cricket World Cup be held?",
+  "options": [
+   "South Africa, Zimbabwe and Namibia",
+   "India, Sri Lanka and Bangladesh",
+   "England and Wales",
+   "Australia and New Zealand"
+  ],
+  "correct": 0,
+  "why": "The 2027 Men's Cricket World Cup is jointly hosted by South Africa, Zimbabwe and Namibia.",
+  "rel": "It is scheduled from October to November 2027.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B234",
+  "question": "In which year did the English East India Company's ship first arrive at Surat?",
+  "options": [
+   "1600",
+   "1612",
+   "1608",
+   "1615"
+  ],
+  "correct": 2,
+  "why": "Captain William Hawkins arrived at Surat on 24 August 1608.",
+  "rel": "The East India Company was chartered in 1600 by Queen Elizabeth I.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B235",
+  "question": "Jinnah's Fourteen Points were presented in response to which report?",
+  "options": [
+   "Simon Commission Report",
+   "Nehru Report",
+   "Pirpur Report",
+   "Shareef Report"
+  ],
+  "correct": 1,
+  "why": "The Nehru Report (1928) ignored Muslim demands, so Jinnah answered with his Fourteen Points in 1929.",
+  "rel": "The Nehru Report was published on 30 August 1928.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B236",
+  "question": "Which word comes first in dictionary order?",
+  "options": [
+   "Academic",
+   "Accident",
+   "Acquire",
+   "Actual"
+  ],
+  "correct": 0,
+  "why": "Comparing letters left to right, 'Aca' comes before 'Acc', 'Acq' and 'Act'.",
+  "rel": "Dictionary order compares words letter by letter from the left.",
+  "status": "unsure",
+  "note": "Source question was incomplete; options rebuilt so that 'Academic' (the printed key) comes first.",
+  "match": null
+ },
+ {
+  "id": "B237",
+  "question": "Who made an early working solar cell in 1883?",
+  "options": [
+   "Thomas Edison",
+   "Alessandro Volta",
+   "Charles Fritts",
+   "Michael Faraday"
+  ],
+  "correct": 2,
+  "why": "Charles Fritts made an early selenium solar cell in 1883.",
+  "rel": "Modern silicon solar cells were developed at Bell Labs in 1954.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B238",
+  "question": "Who accompanied Prophet Muhammad (PBUH) during the Hijrah to Madinah?",
+  "options": [
+   "Hazrat Umar (RA)",
+   "Hazrat Ali (RA)",
+   "Hazrat Abu Bakr (RA)",
+   "Hazrat Uthman (RA)"
+  ],
+  "correct": 2,
+  "why": "Hazrat Abu Bakr (RA) travelled with the Prophet (PBUH) to Madinah in 622 CE.",
+  "rel": "They stayed in the Cave of Thawr on the way.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B239",
+  "question": "What is the capital of Venezuela?",
+  "options": [
+   "Bogota",
+   "Caracas",
+   "Lima",
+   "Quito"
+  ],
+  "correct": 1,
+  "why": "Caracas is the capital and largest city of Venezuela.",
+  "rel": "Venezuela is in northern South America with a Caribbean coastline.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B240",
+  "question": "In which Hijri year was the Battle of Uhud fought?",
+  "options": [
+   "2 AH",
+   "3 AH",
+   "5 AH",
+   "8 AH"
+  ],
+  "correct": 1,
+  "why": "The Battle of Uhud was fought in 3 AH (625 CE) near Madinah.",
+  "rel": "About 700 Muslims fought after about 300 withdrew.",
+  "status": "ok",
+  "note": "",
+  "match": 275
+ },
+ {
+  "id": "B241",
+  "question": "Who is the Supreme Commander of Pakistan's Armed Forces?",
+  "options": [
+   "The Prime Minister of Pakistan",
+   "The Chief of Army Staff",
+   "The President of Pakistan",
+   "The Chairman Joint Chiefs of Staff Committee"
+  ],
+  "correct": 2,
+  "why": "The Constitution makes the President the Supreme Commander of the Armed Forces.",
+  "rel": "Asif Ali Zardari is the current President of Pakistan.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B242",
+  "question": "Where is the headquarters of OPEC?",
+  "options": [
+   "Riyadh, Saudi Arabia",
+   "Baghdad, Iraq",
+   "Vienna, Austria",
+   "Geneva, Switzerland"
+  ],
+  "correct": 2,
+  "why": "OPEC's headquarters is in Vienna, Austria.",
+  "rel": "OPEC was founded in Baghdad in September 1960.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B243",
+  "question": "The Manila Pact is also known as what?",
+  "options": [
+   "Baghdad Pact (CENTO)",
+   "North Atlantic Treaty (NATO)",
+   "Southeast Asia Collective Defense Treaty (SEATO)",
+   "Warsaw Pact"
+  ],
+  "correct": 2,
+  "why": "The Manila Pact of 8 September 1954 is the Southeast Asia Collective Defense Treaty that created SEATO.",
+  "rel": "SEATO was dissolved in 1977.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B244",
+  "question": "In which Pakistani river is the blind Indus river dolphin found?",
+  "options": [
+   "Indus River",
+   "Jhelum River",
+   "Kabul River",
+   "Swat River"
+  ],
+  "correct": 0,
+  "why": "The Indus river dolphin lives mainly in the Indus River system of Pakistan.",
+  "rel": "It is an endangered freshwater dolphin.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B245",
+  "question": "What does the word 'Tanzil' mean?",
+  "options": [
+   "Recitation",
+   "Explanation",
+   "Sending down (revelation)",
+   "Collection"
+  ],
+  "correct": 2,
+  "why": "In Quranic use, Tanzil means the sending down of divine revelation.",
+  "rel": "Tafsir means explanation of the Quran.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B246",
+  "question": "How many people have received the Nishan-e-Haider?",
+  "options": [
+   "9",
+   "10",
+   "12",
+   "11"
+  ],
+  "correct": 3,
+  "why": "Eleven brave soldiers have been awarded the Nishan-e-Haider.",
+  "rel": "It is Pakistan's highest military gallantry award.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B247",
+  "question": "Who wrote Tafsir al-Tabari?",
+  "options": [
+   "Ibn Kathir",
+   "Muhammad ibn Jarir al-Tabari",
+   "Imam Bukhari",
+   "Imam Ghazali"
+  ],
+  "correct": 1,
+  "why": "Tafsir al-Tabari was written by Muhammad ibn Jarir al-Tabari.",
+  "rel": "The work is also called Jami' al-Bayan.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B248",
+  "question": "What is the approximate length of the Indus River?",
+  "options": [
+   "About 1,600 km",
+   "About 3,180 km",
+   "About 2,400 km",
+   "About 4,500 km"
+  ],
+  "correct": 1,
+  "why": "The Indus is about 3,180 km long.",
+  "rel": "It rises in Tibet and falls into the Arabian Sea.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B249",
+  "question": "What is the approximate length of the Amazon River?",
+  "options": [
+   "About 4,300 km",
+   "About 6,400 km",
+   "About 5,500 km",
+   "About 7,500 km"
+  ],
+  "correct": 1,
+  "why": "The Amazon is commonly given as about 6,400 km long.",
+  "rel": "It has the largest water discharge of any river.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B250",
+  "question": "Who wrote the Urdu novel 'Raja Gidh'?",
+  "options": [
+   "Ashfaq Ahmed",
+   "Qurratulain Hyder",
+   "Umera Ahmed",
+   "Bano Qudsia"
+  ],
+  "correct": 3,
+  "why": "'Raja Gidh' (1981) is a famous Urdu novel by Bano Qudsia.",
+  "rel": "Bano Qudsia was the wife of writer Ashfaq Ahmed.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B251",
+  "question": "Where is the shrine of Data Ganj Bakhsh located?",
+  "options": [
+   "Multan",
+   "Pakpattan",
+   "Lahore",
+   "Sehwan"
+  ],
+  "correct": 2,
+  "why": "The shrine of Ali Hujwiri (Data Ganj Bakhsh) is in Lahore.",
+  "rel": "His famous book is Kashf-ul-Mahjoob.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B252",
+  "question": "In which Hijri year was the Battle of Uhud fought?",
+  "options": [
+   "3 AH",
+   "1 AH",
+   "2 AH",
+   "4 AH"
+  ],
+  "correct": 0,
+  "why": "Uhud was fought in 3 AH (625 CE), one year after Badr.",
+  "rel": "Hazrat Hamza (RA) was martyred at Uhud.",
+  "status": "ok",
+  "note": "",
+  "match": 275
+ },
+ {
+  "id": "B253",
+  "question": "What is the capital of France?",
+  "options": [
+   "Lyon",
+   "Marseille",
+   "Paris",
+   "Nice"
+  ],
+  "correct": 2,
+  "why": "Paris is the capital and largest city of France.",
+  "rel": "France is a permanent member of the UN Security Council.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B254",
+  "question": "In which year did Quaid-e-Azam present his Fourteen Points?",
+  "options": [
+   "1929",
+   "1927",
+   "1928",
+   "1930"
+  ],
+  "correct": 0,
+  "why": "Jinnah presented his Fourteen Points in March 1929.",
+  "rel": "They were a response to the Nehru Report of 1928.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B255",
+  "question": "When and where was the All-India Muslim League founded?",
+  "options": [
+   "30 December 1906, Aligarh",
+   "23 March 1940, Lahore",
+   "30 December 1906, Dhaka",
+   "28 December 1885, Bombay"
+  ],
+  "correct": 2,
+  "why": "The Muslim League was founded in Dhaka on 30 December 1906.",
+  "rel": "It was formed during the All-India Muhammadan Educational Conference session.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B256",
+  "question": "Who was the first permanent president of the All-India Muslim League?",
+  "options": [
+   "Nawab Salimullah Khan",
+   "Nawab Viqar-ul-Mulk",
+   "Sir Aga Khan III",
+   "Muhammad Ali Jinnah"
+  ],
+  "correct": 2,
+  "why": "Sir Aga Khan III became the first permanent president of the Muslim League.",
+  "rel": "Nawab Viqar-ul-Mulk presided over the founding session in 1906.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B257",
+  "question": "On what date did Israel declare independence?",
+  "options": [
+   "15 August 1947",
+   "14 May 1948",
+   "29 November 1947",
+   "2 November 1917"
+  ],
+  "correct": 1,
+  "why": "Israel declared independence in Tel Aviv on 14 May 1948.",
+  "rel": "2 November 1917 is the date of the Balfour Declaration.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B258",
+  "question": "Who is the President of France?",
+  "options": [
+   "Francois Hollande",
+   "Nicolas Sarkozy",
+   "Marine Le Pen",
+   "Emmanuel Macron"
+  ],
+  "correct": 3,
+  "why": "Emmanuel Macron has been President of France since 2017 and began his second term in 2022.",
+  "rel": "The French president is elected for five years.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B259",
+  "question": "What is the deepest known point in the ocean?",
+  "options": [
+   "Java Trench",
+   "Puerto Rico Trench",
+   "Tonga Trench",
+   "Challenger Deep"
+  ],
+  "correct": 3,
+  "why": "Challenger Deep in the Mariana Trench is about 10.9 km deep, the deepest known point.",
+  "rel": "The Mariana Trench is in the western Pacific Ocean.",
+  "status": "ok",
+  "note": "",
+  "match": 116
+ },
+ {
+  "id": "B260",
+  "question": "Who is regarded as the founder of modern nursing?",
+  "options": [
+   "Mother Teresa",
+   "Clara Barton",
+   "Florence Nightingale",
+   "Marie Curie"
+  ],
+  "correct": 2,
+  "why": "Florence Nightingale set up modern nursing after her work in the Crimean War.",
+  "rel": "International Nurses Day (12 May) is her birthday.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B261",
+  "question": "Which country holds the G20 presidency in 2026?",
+  "options": [
+   "South Africa",
+   "India",
+   "Brazil",
+   "United States"
+  ],
+  "correct": 3,
+  "why": "The United States took over the G20 presidency on 1 December 2025.",
+  "rel": "South Africa held the G20 presidency in 2025.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B262",
+  "question": "Where is the headquarters of the Organisation of Islamic Cooperation (OIC)?",
+  "options": [
+   "Riyadh, Saudi Arabia",
+   "Cairo, Egypt",
+   "Rabat, Morocco",
+   "Jeddah, Saudi Arabia"
+  ],
+  "correct": 3,
+  "why": "The OIC General Secretariat is in Jeddah, Saudi Arabia.",
+  "rel": "The OIC was founded in 1969 at the Rabat Islamic Summit.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B263",
+  "question": "How was the OIC founded?",
+  "options": [
+   "By Saudi Arabia alone",
+   "By many Muslim countries together at the 1969 Rabat Summit",
+   "By Pakistan alone",
+   "By the United Nations"
+  ],
+  "correct": 1,
+  "why": "The OIC was set up jointly by the states at the 1969 Islamic Summit in Rabat; no single country founded it.",
+  "rel": "The summit was called after the arson attack on Al-Aqsa Mosque in 1969.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B264",
+  "question": "Which currency is used in Cuba?",
+  "options": [
+   "Cuban dollar",
+   "Cuban peso (CUP)",
+   "Cuban escudo",
+   "Cuban sol"
+  ],
+  "correct": 1,
+  "why": "The Cuban peso (CUP) is Cuba's official currency.",
+  "rel": "Cuba ended its dual-currency system in 2021.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B265",
+  "question": "Which Pakistani city is often called one of the hottest in the world?",
+  "options": [
+   "Multan",
+   "Sibi",
+   "Jacobabad",
+   "Turbat"
+  ],
+  "correct": 2,
+  "why": "Jacobabad in Sindh is often cited as one of the hottest cities due to extreme summer heat.",
+  "rel": "A single-day record and a yearly average are different measures of heat.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B266",
+  "question": "What is the world's second-largest continent by area?",
+  "options": [
+   "North America",
+   "South America",
+   "Africa",
+   "Europe"
+  ],
+  "correct": 2,
+  "why": "Africa is second in area after Asia.",
+  "rel": "The Equator and both tropics pass through Africa.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B267",
+  "question": "When did the five daily prayers (Salah) become obligatory?",
+  "options": [
+   "On the night of Mi'raj, before the Hijrah",
+   "After the Battle of Badr",
+   "After the Conquest of Makkah",
+   "In the first year after Hijrah"
+  ],
+  "correct": 0,
+  "why": "The five daily prayers were made obligatory during the Mi'raj, before the migration to Madinah.",
+  "rel": "The exact date of the Mi'raj is not agreed by all scholars.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B268",
+  "question": "Which is commonly cited as Pakistan's largest artificial freshwater lake?",
+  "options": [
+   "Keenjhar Lake",
+   "Manchar Lake",
+   "Haleji Lake",
+   "Hanna Lake"
+  ],
+  "correct": 0,
+  "why": "Keenjhar (Kalri) Lake in Thatta, Sindh is commonly cited as Pakistan's largest artificial freshwater lake.",
+  "rel": "Manchar Lake is called Pakistan's largest natural freshwater lake.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B269",
+  "question": "What is the world's largest lake by surface area?",
+  "options": [
+   "Caspian Sea",
+   "Lake Superior",
+   "Lake Victoria",
+   "Lake Baikal"
+  ],
+  "correct": 0,
+  "why": "The Caspian Sea is the largest inland body of water by area.",
+  "rel": "Lake Baikal is the deepest lake.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B270",
+  "question": "What is the height of Mount Everest?",
+  "options": [
+   "8,611 m",
+   "8,126 m",
+   "8,586 m",
+   "8,848.86 m"
+  ],
+  "correct": 3,
+  "why": "Nepal and China announced Everest's height as 8,848.86 m in 2020.",
+  "rel": "8,611 m is the height of K2, the world's second-highest peak.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B271",
+  "question": "Which pass connects Quetta with Sibi?",
+  "options": [
+   "Khyber Pass",
+   "Khojak Pass",
+   "Bolan Pass",
+   "Tochi Pass"
+  ],
+  "correct": 2,
+  "why": "The Bolan Pass links Quetta with Sibi through Balochistan's hills.",
+  "rel": "Khojak Pass connects Quetta with Chaman.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B272",
+  "question": "In which city is Nishtar Hospital located?",
+  "options": [
+   "Lahore",
+   "Faisalabad",
+   "Bahawalpur",
+   "Multan"
+  ],
+  "correct": 3,
+  "why": "Nishtar Hospital is a large teaching hospital in Multan.",
+  "rel": "Multan is called the City of Saints.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B273",
+  "question": "Which corridor separates Pakistan from Tajikistan?",
+  "options": [
+   "Siliguri Corridor",
+   "Khyber Corridor",
+   "Wakhan Corridor",
+   "Karakoram Corridor"
+  ],
+  "correct": 2,
+  "why": "Afghanistan's narrow Wakhan Corridor lies between Pakistan and Tajikistan.",
+  "rel": "It reaches up to the border with China.",
+  "status": "fixed",
+  "note": "Printed wording 'separates Pakistan from the Middle East' was wrong; it separates Pakistan from Tajikistan.",
+  "match": 141
+ },
+ {
+  "id": "B274",
+  "question": "Over about how many years was the Quran revealed?",
+  "options": [
+   "About 13 years",
+   "About 23 years",
+   "About 10 years",
+   "About 40 years"
+  ],
+  "correct": 1,
+  "why": "Revelation lasted about 23 years: about 13 in Makkah and 10 in Madinah.",
+  "rel": "The first revealed verses are Surah Al-Alaq 96:1-5.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B275",
+  "question": "Which Companion married Hazrat Fatimah (RA), the Prophet's daughter?",
+  "options": [
+   "Hazrat Umar (RA)",
+   "Hazrat Ali (RA)",
+   "Hazrat Abu Bakr (RA)",
+   "Hazrat Talha (RA)"
+  ],
+  "correct": 1,
+  "why": "Hazrat Ali (RA) married Fatimah (RA), so he was the Prophet's son-in-law.",
+  "rel": "Hazrat Uthman (RA) married two of the Prophet's daughters and is called Dhun-Nurayn.",
+  "status": "ok",
+  "note": "Reworded so only one option is correct (Uthman was also a son-in-law).",
+  "match": null
+ },
+ {
+  "id": "B276",
+  "question": "Which constitution of Pakistan introduced a presidential system?",
+  "options": [
+   "Constitution of 1962",
+   "Constitution of 1956",
+   "Constitution of 1973",
+   "Government of India Act 1935"
+  ],
+  "correct": 0,
+  "why": "The 1962 Constitution, made under Ayub Khan, gave Pakistan a presidential system.",
+  "rel": "The 1973 Constitution set up a parliamentary federal system.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B277",
+  "question": "What is the currency of Libya?",
+  "options": [
+   "Libyan pound",
+   "Libyan riyal",
+   "Libyan dirham",
+   "Libyan dinar"
+  ],
+  "correct": 3,
+  "why": "Libya's currency is the Libyan dinar (LYD).",
+  "rel": "It replaced the Libyan pound in 1971.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B278",
+  "question": "What is the world's deepest lake?",
+  "options": [
+   "Lake Tanganyika",
+   "Lake Baikal",
+   "Caspian Sea",
+   "Lake Superior"
+  ],
+  "correct": 1,
+  "why": "Lake Baikal in Russia is about 1,642 m deep, the deepest lake.",
+  "rel": "It is also one of the oldest lakes in the world.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B279",
+  "question": "Where and when were the first Asian Games held?",
+  "options": [
+   "Tokyo, 1958",
+   "Manila, 1954",
+   "Bangkok, 1966",
+   "New Delhi, 1951"
+  ],
+  "correct": 3,
+  "why": "The first Asian Games opened in New Delhi on 4 March 1951.",
+  "rel": "The Asian Games are run by the Olympic Council of Asia.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B280",
+  "question": "In which province of Pakistan is the Cholistan Desert?",
+  "options": [
+   "Sindh",
+   "Balochistan",
+   "Punjab",
+   "Khyber Pakhtunkhwa"
+  ],
+  "correct": 2,
+  "why": "Cholistan lies in southern Punjab, mainly in the Bahawalpur region.",
+  "rel": "It is locally called Rohi.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B281",
+  "question": "Which is the largest city of Sindh by population?",
+  "options": [
+   "Hyderabad",
+   "Karachi",
+   "Sukkur",
+   "Larkana"
+  ],
+  "correct": 1,
+  "why": "Karachi is Sindh's capital and Pakistan's largest city.",
+  "rel": "Hyderabad is Sindh's second-largest city.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B282",
+  "question": "In which year was the first Nobel Prize awarded?",
+  "options": [
+   "1895",
+   "1896",
+   "1901",
+   "1905"
+  ],
+  "correct": 2,
+  "why": "The first Nobel Prizes were given in 1901.",
+  "rel": "The Economics prize was added in 1969.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B283",
+  "question": "Which angel is called Ruh-ul-Qudus (the Holy Spirit)?",
+  "options": [
+   "Hazrat Mikaeel (AS)",
+   "Hazrat Israfeel (AS)",
+   "Hazrat Izraeel (AS)",
+   "Hazrat Jibreel (AS)"
+  ],
+  "correct": 3,
+  "why": "Ruh-ul-Qudus is a title of Angel Jibreel (AS), who brought revelation.",
+  "rel": "He is also called Ruh-ul-Amin (the trustworthy spirit).",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B284",
+  "question": "What was the relationship between Asma bint Abu Bakr (RA) and Zubair ibn al-Awwam (RA)?",
+  "options": [
+   "Brother and sister",
+   "Mother and son",
+   "Husband and wife",
+   "Father and daughter"
+  ],
+  "correct": 2,
+  "why": "Asma (RA) was the wife of Zubair ibn al-Awwam (RA).",
+  "rel": "Their son was Abdullah ibn al-Zubair (RA).",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B285",
+  "question": "What is one quarter of one tenth of 120?",
+  "options": [
+   "12",
+   "3",
+   "4",
+   "30"
+  ],
+  "correct": 1,
+  "why": "One tenth of 120 is 12, and one quarter of 12 is 3.",
+  "rel": "120 / 10 / 4 = 3, which is the same as 120 / 40.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B286",
+  "question": "Who was the formal President of Cuba during the Cuban Missile Crisis of 1962?",
+  "options": [
+   "Fidel Castro",
+   "Fulgencio Batista",
+   "Osvaldo Dorticos",
+   "Raul Castro"
+  ],
+  "correct": 2,
+  "why": "Osvaldo Dorticos was Cuba's President in 1962; Fidel Castro was Prime Minister.",
+  "rel": "The crisis was between the USA and the Soviet Union over missiles in Cuba.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B287",
+  "question": "Which major battle came after the Battle of Badr?",
+  "options": [
+   "Battle of Uhud",
+   "Battle of the Trench (Khandaq)",
+   "Battle of Hunayn",
+   "Battle of Tabuk"
+  ],
+  "correct": 0,
+  "why": "After Badr (2 AH), the next major battle was Uhud in 3 AH.",
+  "rel": "Uhud was fought near Madinah in 625 CE.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B288",
+  "question": "In which battle was Hazrat Hamza (RA) martyred?",
+  "options": [
+   "Battle of Uhud",
+   "Battle of Badr",
+   "Battle of Khandaq",
+   "Battle of Khaybar"
+  ],
+  "correct": 0,
+  "why": "Hazrat Hamza (RA) was martyred at Uhud in 3 AH.",
+  "rel": "He was killed by Wahshi ibn Harb.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ }
+]

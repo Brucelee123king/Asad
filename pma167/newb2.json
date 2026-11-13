@@ -1,0 +1,535 @@
+[
+{
+"item": 29,
+"section": "Verbal: Maths & Reasoning",
+"question": "Solve using the DMAS rule: 2 + 2 / 2 = ?",
+"answer": "3",
+"wrong": [
+"2",
+"4",
+"1"
+],
+"reason": "Division comes before addition (DMAS), so 2 / 2 = 1 and then 2 + 1 = 3.",
+"rep": 8
+},
+{
+"item": 55,
+"section": "Current Affairs",
+"question": "Who was elected President of Azad Jammu and Kashmir (AJK) in September 2026?",
+"answer": "Dr Najeeb Naqi Khan",
+"wrong": [
+"Chaudhry Latif Akbar",
+"Sultan Mehmood Chaudhry",
+"Raja Farooq Haider"
+],
+"reason": "Dr Najeeb Naqi Khan of PML-N was elected the 25th President of AJK on 24 September 2026, winning 32 votes against 13 for PPP's Latif Akbar. The post had been vacant since the death of Sultan Mehmood Chaudhry on 31 January 2026.",
+"rep": 0
+},
+{
+"item": 81,
+"section": "Verbal: English",
+"question": "Choose the synonym of WILD.",
+"answer": "Untamed",
+"wrong": [
+"Tame",
+"Domesticated",
+"Gentle"
+],
+"reason": "Wild means living in natural state, not tamed, so Untamed is the synonym; Tame is the opposite.",
+"rep": 0
+},
+{
+"item": 88,
+"section": "Islamiat",
+"question": "How many Khulafa-e-Rashideen (Rightly Guided Caliphs) were there?",
+"answer": "4",
+"wrong": [
+"3",
+"5",
+"6"
+],
+"reason": "They were Abu Bakr, Umar, Uthman and Ali (may Allah be pleased with them).",
+"rep": 1
+},
+{
+"item": 94,
+"section": "Pakistan Studies",
+"question": "In which year was the film Jinnah (starring Christopher Lee) released?",
+"answer": "1998",
+"wrong": [
+"1988",
+"1995",
+"2005"
+],
+"reason": "Jinnah, directed by Jamil Dehlavi, was released in 1998.",
+"rep": 1
+},
+{
+"item": 99,
+"section": "General Knowledge",
+"question": "In which year were the first Nobel Prizes awarded?",
+"answer": "1901",
+"wrong": [
+"1895",
+"1905",
+"1910"
+],
+"reason": "The first Nobel Prizes were awarded on 10 December 1901, five years after Alfred Nobel died.",
+"rep": 0
+},
+{
+"item": 105,
+"section": "General Knowledge",
+"question": "Nelson Mandela was the leader of which country?",
+"answer": "South Africa",
+"wrong": [
+"Nigeria",
+"Kenya",
+"Zimbabwe"
+],
+"reason": "Nelson Mandela led the anti-apartheid struggle and became the first democratically elected President of South Africa in 1994.",
+"rep": 0
+},
+{
+"item": 111,
+"section": "Maths & Science",
+"question": "How many traditional (basic) senses does a human being have?",
+"answer": "Five",
+"wrong": [
+"Three",
+"Four",
+"Six"
+],
+"reason": "The five traditional senses are sight, hearing, smell, taste and touch.",
+"rep": 0
+},
+{
+"item": 118,
+"section": "Islamiat",
+"question": "How many Muslims took part in the Battle of Badr?",
+"answer": "313",
+"wrong": [
+"300",
+"700",
+"1000"
+],
+"reason": "The Muslim army at Badr (2 AH) had about 313 men, against roughly 1000 of the Quraysh.",
+"rep": 1
+},
+{
+"item": 127,
+"section": "Pakistan Studies",
+"question": "The border between Pakistan and Afghanistan is called the:",
+"answer": "Durand Line",
+"wrong": [
+"Radcliffe Line",
+"McMahon Line",
+"Line of Control"
+],
+"reason": "The Durand Line (1893) is the international border between Pakistan and Afghanistan, about 2640 km long. The Radcliffe Line is the India-Pakistan border.",
+"rep": 1
+},
+{
+"item": 132,
+"section": "Pakistan Studies",
+"question": "On which date was the Lahore (Pakistan) Resolution passed?",
+"answer": "23 March 1940",
+"wrong": [
+"14 August 1947",
+"23 March 1956",
+"30 December 1906"
+],
+"reason": "The Lahore Resolution was passed at Minar-e-Pakistan (Iqbal Park), Lahore, on 23 March 1940 at the All India Muslim League session. It is remembered as Pakistan Day.",
+"rep": 0
+},
+{
+"item": 136,
+"section": "Islamiat",
+"question": "Who led an army with elephants to demolish the Kaaba in the Year of the Elephant?",
+"answer": "Abraha",
+"wrong": [
+"Abu Jahl",
+"Abu Lahab",
+"Abdul Muttalib"
+],
+"reason": "Abraha, the Abyssinian governor of Yemen, marched on Makkah with elephants and his army was destroyed (Surah Al-Fil, 105). Abdul Muttalib was the Prophet's grandfather.",
+"rep": 0
+},
+{
+"item": 142,
+"section": "Pakistan Studies",
+"question": "Lyallpur is the old name of which Pakistani city?",
+"answer": "Faisalabad",
+"wrong": [
+"Sargodha",
+"Sahiwal",
+"Gujranwala"
+],
+"reason": "Lyallpur was named after Sir James Lyall and renamed Faisalabad in 1977 in honour of King Faisal of Saudi Arabia.",
+"rep": 0
+},
+{
+"item": 148,
+"section": "General Knowledge",
+"question": "Where is the headquarters of Interpol located?",
+"answer": "Lyon, France",
+"wrong": [
+"Paris, France",
+"Geneva, Switzerland",
+"Brussels, Belgium"
+],
+"reason": "Interpol (International Criminal Police Organization) has its General Secretariat in Lyon, France.",
+"rep": 0
+},
+{
+"item": 176,
+"section": "Pakistan Studies",
+"question": "General Qamar Javed Bajwa, former Chief of Army Staff, passed out from the Pakistan Military Academy with which Long Course?",
+"answer": "62nd PMA Long Course",
+"wrong": [
+"60th PMA Long Course",
+"64th PMA Long Course",
+"66th PMA Long Course"
+],
+"reason": "Bajwa was commissioned on 24 October 1980 in the 16th Baloch Regiment after passing out with the 62nd PMA Long Course. He was the 10th Army Chief (2016 to 2022).",
+"rep": 0
+},
+{
+"item": 181,
+"section": "General Knowledge",
+"question": "What is the capital of Pakistan?",
+"answer": "Islamabad",
+"wrong": [
+"Karachi",
+"Lahore",
+"Rawalpindi"
+],
+"reason": "Islamabad is the capital of Pakistan. Karachi was the first capital and Rawalpindi served as the temporary capital in the 1960s.",
+"rep": 0
+},
+{
+"item": 190,
+"section": "Islamiat",
+"question": "In which year (Hijri) did the Battle of Karbala take place?",
+"answer": "61 AH",
+"wrong": [
+"40 AH",
+"50 AH",
+"72 AH"
+],
+"reason": "The Battle of Karbala was fought on 10 Muharram 61 AH (10 October 680 CE), where Hazrat Imam Hussain (RA) was martyred.",
+"rep": 0
+},
+{
+"item": 196,
+"section": "Islamiat",
+"question": "Before the change of qibla in 2 AH, towards which place did Muslims pray?",
+"answer": "Bait ul Maqdis (Masjid al-Aqsa), Jerusalem",
+"wrong": [
+"Masjid al-Haram only",
+"Masjid an-Nabawi",
+"Masjid Quba"
+],
+"reason": "Muslims first prayed toward Bait ul Maqdis in Jerusalem, then the qibla was changed to the Kaaba in Makkah.",
+"rep": 0
+},
+{
+"item": 201,
+"section": "Islamiat",
+"question": "How many archers did the Prophet (peace be upon him) place on the hill (Jabal Rumat) in the Battle of Uhud?",
+"answer": "50",
+"wrong": [
+"40",
+"70",
+"100"
+],
+"reason": "The Prophet placed 50 archers under Abdullah bin Jubayr on the hill to guard the rear of the Muslim army.",
+"rep": 0
+},
+{
+"item": 207,
+"section": "Verbal: Maths & Reasoning",
+"question": "Ali is 4 years old and his sister is three times his age. How old will the sister be when Ali is 10 years old?",
+"answer": "18 years",
+"wrong": [
+"12 years",
+"16 years",
+"30 years"
+],
+"reason": "Sister is 3 x 4 = 12 now. Ali needs 6 more years to reach 10, so the sister will be 12 + 6 = 18.",
+"rep": 0
+},
+{
+"item": 217,
+"section": "Verbal: English",
+"question": "What is the meaning of the word idleness?",
+"answer": "Laziness",
+"wrong": [
+"Eagerness",
+"Honesty",
+"Bravery"
+],
+"reason": "Idleness means the state of doing no work or being lazy; its synonym is laziness.",
+"rep": 0
+},
+{
+"item": 225,
+"section": "Islamiat",
+"question": "How many times is the name Muhammad mentioned in the Holy Quran?",
+"answer": "4 times",
+"wrong": [
+"2 times",
+"5 times",
+"7 times"
+],
+"reason": "The name Muhammad appears four times: 3:144, 33:40, 47:2 and 48:29 (Ahmad appears once, 61:6).",
+"rep": 0
+},
+{
+"item": 233,
+"section": "General Knowledge",
+"question": "Which country won the FIFA World Cup 2022?",
+"answer": "Argentina",
+"wrong": [
+"France",
+"Croatia",
+"Brazil"
+],
+"reason": "Argentina beat France 4-2 on penalties after a 3-3 draw in the final, winning its third World Cup.",
+"rep": 0
+},
+{
+"item": 241,
+"section": "Islamiat",
+"question": "What is the life between death and the Day of Judgment called in Islam?",
+"answer": "Barzakh",
+"wrong": [
+"Mahshar",
+"Qiyamah",
+"Sirat"
+],
+"reason": "Barzakh is the intermediate stage between death and resurrection, based on Surah Al-Muminun, verse 100.",
+"rep": 0
+},
+{
+"item": 252,
+"section": "General Knowledge",
+"question": "What is the full name of the PSL, the Pakistani cricket league?",
+"answer": "Pakistan Super League",
+"wrong": [
+"Pakistan Sports League",
+"Pakistan Standard League",
+"Premier Super League"
+],
+"reason": "PSL stands for Pakistan Super League, the professional Twenty20 cricket league of Pakistan, started in 2016.",
+"rep": 0
+},
+{
+"item": 266,
+"section": "Verbal: Maths & Reasoning",
+"question": "If the 26th day of a month is Sunday, what day will the 4th day of that month be?",
+"answer": "Saturday",
+"wrong": [
+"Friday",
+"Sunday",
+"Monday"
+],
+"reason": "From the 4th to the 26th is 22 days; 22 = 3 weeks + 1 day, so the 4th is one day before Sunday, which is Saturday.",
+"rep": 0
+},
+{
+"item": 270,
+"section": "Pakistan Studies",
+"question": "In which year did Fatima Jinnah, the Mother of the Nation (Madar-e-Millat), die?",
+"answer": "1967",
+"wrong": [
+"1964",
+"1965",
+"1971"
+],
+"reason": "Fatima Jinnah died in Karachi on 9 July 1967.",
+"rep": 0
+},
+{
+"item": 278,
+"section": "Pakistan Studies",
+"question": "Who was the head of state under the 1962 Constitution of Pakistan?",
+"answer": "The President",
+"wrong": [
+"The Prime Minister",
+"The Governor General",
+"The Chief Justice"
+],
+"reason": "The 1962 Constitution gave Pakistan a presidential system in which the President was both head of state and head of government; the post of Prime Minister was abolished.",
+"rep": 0
+},
+{
+"item": 289,
+"section": "Current Affairs",
+"question": "Who is the Prime Minister of France (as of October 2026)?",
+"answer": "Sebastien Lecornu",
+"wrong": [
+"Francois Bayrou",
+"Gabriel Attal",
+"Michel Barnier"
+],
+"reason": "Sebastien Lecornu has been Prime Minister of France since 9 September 2025 and was still in office in October 2026.",
+"rep": 0
+},
+{
+"item": 293,
+"section": "Pakistan Studies",
+"question": "In which district of Punjab is Rohtas Fort located?",
+"answer": "Jhelum",
+"wrong": [
+"Rawalpindi",
+"Lahore",
+"Attock"
+],
+"reason": "Rohtas Fort was built by Sher Shah Suri near Dina in Jhelum district and is a UNESCO World Heritage Site since 1997.",
+"rep": 0
+},
+{
+"item": 301,
+"section": "Verbal: Maths & Reasoning",
+"question": "If the 3rd day of a month is Sunday, what day will the 15th day of that month be?",
+"answer": "Friday",
+"wrong": [
+"Thursday",
+"Saturday",
+"Sunday"
+],
+"reason": "From the 3rd to the 15th is 12 days; 12 = 1 week + 5 days, so Sunday + 5 days = Friday.",
+"rep": 0
+},
+{
+"item": 308,
+"section": "Islamiat",
+"question": "In which city did the Quraish tribe live?",
+"answer": "Makkah",
+"wrong": [
+"Madinah",
+"Taif",
+"Jeddah"
+],
+"reason": "The Quraish were the ruling tribe of Makkah and guardians of the Kaaba.",
+"rep": 0
+},
+{
+"item": 313,
+"section": "Pakistan Studies",
+"question": "Iran, Turkey and Pakistan formed which organization in 1964?",
+"answer": "Regional Cooperation for Development (RCD)",
+"wrong": [
+"Economic Cooperation Organization (ECO)",
+"SEATO",
+"Baghdad Pact"
+],
+"reason": "RCD was founded in July 1964 by Iran, Pakistan and Turkey for economic and social development. It was replaced by ECO in 1985.",
+"rep": 0
+},
+{
+"item": 319,
+"section": "Verbal: English",
+"question": "Choose the antonym of GLORY.",
+"answer": "Disgrace",
+"wrong": [
+"Honour",
+"Fame",
+"Triumph"
+],
+"reason": "Glory means great honour and fame; its opposite is disgrace or shame.",
+"rep": 0
+},
+{
+"item": 326,
+"section": "Verbal: Maths & Reasoning",
+"question": "If the 1st day of a month is Monday, what day will the 12th be?",
+"answer": "Friday",
+"wrong": [
+"Thursday",
+"Saturday",
+"Wednesday"
+],
+"reason": "The 1st, 8th and 15th are Mondays. The 12th is 4 days after the 8th, so it is Friday.",
+"rep": 0
+},
+{
+"item": 340,
+"section": "Islamiat",
+"question": "In which Ghazwa were about 70 Companions martyred, the largest number in any Ghazwa?",
+"answer": "Ghazwa Uhud",
+"wrong": [
+"Ghazwa Badr",
+"Ghazwa Khandaq",
+"Ghazwa Khaibar"
+],
+"reason": "About 70 Muslims were martyred at Uhud (3 AH), including Hazrat Hamza (RA). Far fewer were martyred at Badr (14) and Khandaq (about 6).",
+"rep": 0
+},
+{
+"item": 348,
+"section": "Islamiat",
+"question": "On which Prophet was the Injeel (Gospel) revealed?",
+"answer": "Hazrat Isa (AS)",
+"wrong": [
+"Hazrat Musa (AS)",
+"Hazrat Dawood (AS)",
+"Hazrat Ibrahim (AS)"
+],
+"reason": "Tawrat was revealed on Musa, Zabur on Dawood, Injeel on Isa (Jesus) and the Quran on Prophet Muhammad (PBUH).",
+"rep": 0
+},
+{
+"item": 360,
+"section": "Pakistan Studies",
+"question": "In which year did the Civil Disobedience Movement begin?",
+"answer": "1930",
+"wrong": [
+"1920",
+"1922",
+"1942"
+],
+"reason": "The movement began on 12 March 1930 when Gandhi started the Salt March.",
+"rep": 0
+},
+{
+"item": 364,
+"section": "Pakistan Studies",
+"question": "Who launched the Non-Cooperation Movement?",
+"answer": "Mahatma Gandhi",
+"wrong": [
+"Annie Besant",
+"Lala Lajpat Rai",
+"Muhammad Ali Jinnah"
+],
+"reason": "Gandhi launched it in 1920 so that Indians would withdraw cooperation from British institutions.",
+"rep": 0
+},
+{
+"item": 368,
+"section": "Pakistan Studies",
+"question": "The Khilafat Movement was launched by Indian Muslims to support which institution?",
+"answer": "The Ottoman Caliphate",
+"wrong": [
+"The Mughal Empire",
+"The Abbasid Caliphate in Baghdad",
+"The Safavid dynasty"
+],
+"reason": "After World War I, Indian Muslims tried to protect the Ottoman Caliph and the Ottoman Empire's territory from being broken up.",
+"rep": 0
+},
+{
+"item": 372,
+"section": "General Knowledge",
+"question": "Who led the Civil Rights Movement in the USA?",
+"answer": "Martin Luther King Jr.",
+"wrong": [
+"Nelson Mandela",
+"Malcolm X",
+"Abraham Lincoln"
+],
+"reason": "Martin Luther King Jr. was the best known leader of the nonviolent Civil Rights Movement in the USA.",
+"rep": 0
+}
+]

@@ -1,0 +1,457 @@
+[
+{
+"item": 1,
+"text": "90% of 90 (81)",
+"count": 16,
+"existing_idx": 0,
+"existing": "0\t90% of 90 is:  => 81"
+},
+{
+"item": 5,
+"text": "Current Chief Minister of Sindh",
+"count": 1,
+"existing_idx": 228,
+"existing": "228\tWho is the current Chief Minister of Sindh? (current affairs)  => Syed Murad Ali Shah"
+},
+{
+"item": 7,
+"text": "Who has taken the most wickets in Test cricket",
+"count": 3,
+"existing_idx": 205,
+"existing": "205\tWho has taken the most wickets in Test cricket?  => Muttiah Muralitharan"
+},
+{
+"item": 9,
+"text": "Capital of Hungary",
+"count": 1,
+"existing_idx": 304,
+"existing": "304\tWhat is the capital of Hungary?  => Budapest"
+},
+{
+"item": 11,
+"text": "Location of the Dasht river",
+"count": 1,
+"existing_idx": 338,
+"existing": "338\tIn which province of Pakistan is the Dasht River located?  => Balochistan"
+},
+{
+"item": 14,
+"text": "If the 4th of a month is Monday, what day is the 24th",
+"count": 1,
+"existing_idx": 26,
+"existing": "26\tIf the 4th day of a month is Monday, what day is the 24th?  => Sunday"
+},
+{
+"item": 16,
+"text": "A helicopter travels 320 km on 60 gallons, how many gallons for 400 km",
+"count": 1,
+"existing_idx": 14,
+"existing": "14\tA helicopter travels 320 km on 60 gallons. How many gallons are needed for 400 km?  => 75 gallons"
+},
+{
+"item": 18,
+"text": "How many months have 31 days (7)",
+"count": 5,
+"existing_idx": 7,
+"existing": "7\tHow many months of the year have 31 days?  => 7"
+},
+{
+"item": 20,
+"text": "Antonym (opposite) of wild (tame)",
+"count": 4,
+"existing_idx": 55,
+"existing": "55\tAntonym of WILD:  => Tame"
+},
+{
+"item": 23,
+"text": "Why we boil milk (to kill germs)",
+"count": 9,
+"existing_idx": 53,
+"existing": "53\tWhy do we boil milk?  => To kill germs"
+},
+{
+"item": 25,
+"text": "Last letter of BEAUTY after rearranging the letters",
+"count": 6,
+"existing_idx": 47,
+"existing": "47\tArrange the letters of BEAUTY alphabetically. Which letter comes last?  => Y"
+},
+{
+"item": 27,
+"text": "Which word remains the same when reflected in a mirror (TWSWT)",
+"count": 2,
+"existing_idx": 51,
+"existing": "51\tWhich word remains the same when reflected in a mirror (vertical mirror)?  => TWMWT"
+},
+{
+"item": 30,
+"text": "Who wrote Jinnah of Pakistan (Stanley Wolpert)",
+"count": 1,
+"existing_idx": 98,
+"existing": "98\t'Jinnah of Pakistan' was written by:  => Stanley Wolpert"
+},
+{
+"item": 32,
+"text": "In which year did Quaid-e-Azam give his 14 points (1929)",
+"count": 7,
+"existing_idx": 79,
+"existing": "79\tIn which year did the Quaid-e-Azam present his Fourteen Points?  => 1929"
+},
+{
+"item": 34,
+"text": "Pakistan's first democratic general elections year (1970)",
+"count": 1,
+"existing_idx": 96,
+"existing": "96\tPakistan's first direct general elections were held in:  => 1970"
+},
+{
+"item": 37,
+"text": "Age of Prophet Muhammad SAW when he migrated to Madina (53)",
+"count": 1,
+"existing_idx": 175,
+"existing": "175\tAt what age did the Prophet ﷺ migrate to Madinah?  => 53 years"
+},
+{
+"item": 39,
+"text": "First woman martyred in Islam (Hazrat Sumayya RA)",
+"count": 1,
+"existing_idx": 145,
+"existing": "145\tWho was the first woman martyred in Islam?  => Hazrat Sumayya (R.A.)"
+},
+{
+"item": 41,
+"text": "CPEC is a project of which country",
+"count": 1,
+"existing_idx": 101,
+"existing": "101\tCPEC is a project of which country in Pakistan?  => China"
+},
+{
+"item": 43,
+"text": "Khunjerab Pass connects which countries (Pakistan and China)",
+"count": 3,
+"existing_idx": 100,
+"existing": "100\tThe Khunjerab Pass connects Pakistan with:  => China"
+},
+{
+"item": 46,
+"text": "Hafeez Kardar is a well known player of which sport (cricket)",
+"count": 1,
+"existing_idx": 103,
+"existing": "103\tHafeez Kardar was a famous Pakistani ___ player.  => Cricket"
+},
+{
+"item": 51,
+"text": "Jahangir Khan is a famous player of which sport (squash)",
+"count": 2,
+"existing_idx": 305,
+"existing": "305\tJahangir Khan is world-famous for which sport?  => Squash"
+},
+{
+"item": 54,
+"text": "First Governor General of Pakistan",
+"count": 6,
+"existing_idx": 80,
+"existing": "80\tWho was the first Governor General of Pakistan?  => Quaid-e-Azam Muhammad Ali Jinnah"
+},
+{
+"item": 60,
+"text": "Age of Prophet Muhammad SAW when his mother died",
+"count": 5,
+"existing_idx": 173,
+"existing": "173\tThe Prophet's ﷺ mother, Hazrat Amina, passed away when he was about:  => 6 years old"
+},
+{
+"item": 65,
+"text": "When was the Battle of Badr fought (2 Hijri)",
+"count": 6,
+"existing_idx": 149,
+"existing": "149\tIn which Hijri year was the Battle of Badr fought?  => 2 AH"
+},
+{
+"item": 71,
+"text": "Headquarters of the oil organization (OPEC)",
+"count": 2,
+"existing_idx": 190,
+"existing": "190\tWhere is the headquarters of OPEC (oil organisation)?  => Vienna"
+},
+{
+"item": 73,
+"text": "Battle of the Trench (Ghazwa Khandaq / Ahzab)",
+"count": 2,
+"existing_idx": 151,
+"existing": "151\tGhazwa Ahzab is also known as:  => Ghazwa Khandaq (Trench)"
+},
+{
+"item": 76,
+"text": "When and where was the All-India Muslim League founded (1906, Dhaka)",
+"count": 3,
+"existing_idx": 138,
+"existing": "138\tThe All India Muslim League was founded in:  => 1906, Dhaka"
+},
+{
+"item": 79,
+"text": "Largest province of Pakistan by area",
+"count": 2,
+"existing_idx": 141,
+"existing": "141\tWhich province of Pakistan is the largest by area?  => Balochistan"
+},
+{
+"item": 85,
+"text": "When was Bengal partitioned (1905)",
+"count": 2,
+"existing_idx": 339,
+"existing": "339\tIn which year was Bengal first partitioned by Lord Curzon?  => 1905"
+},
+{
+"item": 100,
+"text": "Where is the OIC headquarters",
+"count": 1,
+"existing_idx": 299,
+"existing": "299\tWhere is the headquarters of the OIC and how many members does it have?  => Jeddah, 57 members"
+},
+{
+"item": 108,
+"text": "In which year did Quaid-e-Azam join the Muslim League (1913)",
+"count": 4,
+"existing_idx": 291,
+"existing": "291\tIn which year did Quaid-e-Azam join the All-India Muslim League?  => 1913"
+},
+{
+"item": 120,
+"text": "In which city was Benazir Bhutto assassinated",
+"count": 1,
+"existing_idx": 310,
+"existing": "310\tWhere was Benazir Bhutto assassinated on 27 December 2007?  => Liaquat Bagh, Rawalpindi"
+},
+{
+"item": 123,
+"text": "When did the Kargil war start (year)",
+"count": 2,
+"existing_idx": 123,
+"existing": "123\tThe 'Kargil War' between Pakistan and India took place in:  => 1999"
+},
+{
+"item": 130,
+"text": "First Pakistani to receive a Nobel Prize (Abdus Salam)",
+"count": 2,
+"existing_idx": 383,
+"existing": "383\tWho was the first Pakistani to win a Nobel Prize?  => Dr Abdus Salam"
+},
+{
+"item": 150,
+"text": "90% of 60",
+"count": 1,
+"existing_idx": 1,
+"existing": "1\t90% of 60 is:  => 54"
+},
+{
+"item": 152,
+"text": "One third of 10% of 90",
+"count": 2,
+"existing_idx": 3,
+"existing": "3\tOne third of 10% of 90 is:  => 3"
+},
+{
+"item": 154,
+"text": "Quarter of one tenth of 120",
+"count": 2,
+"existing_idx": 364,
+"existing": "364\tA quarter of 10% of 120 is:  => 3"
+},
+{
+"item": 156,
+"text": "Today is Monday, what day will it be 15 days after",
+"count": 1,
+"existing_idx": 31,
+"existing": "31\tToday is Monday. What day will it be 15 days later?  => Tuesday"
+},
+{
+"item": 158,
+"text": "How many prophets are mentioned in the Quran",
+"count": 1,
+"existing_idx": 165,
+"existing": "165\tHow many Prophets are mentioned by name in the Quran?  => 25"
+},
+{
+"item": 160,
+"text": "In which year did Pakistan join the UN",
+"count": 1,
+"existing_idx": 90,
+"existing": "90\tIn which year did Pakistan join the United Nations?  => 1947"
+},
+{
+"item": 163,
+"text": "Largest planet",
+"count": 2,
+"existing_idx": 206,
+"existing": "206\tWhich is the largest planet in the Solar System?  => Jupiter"
+},
+{
+"item": 165,
+"text": "Which rivers came to Pakistan's share under the Indus Waters Treaty",
+"count": 4,
+"existing_idx": 89,
+"existing": "89\tUnder the Indus Waters Treaty (1960), which rivers were allotted to Pakistan?  => Indus, Jhelum and Chenab"
+},
+{
+"item": 167,
+"text": "Lira is the currency of which country",
+"count": 1,
+"existing_idx": 203,
+"existing": "203\tThe Lira is the currency of:  => Turkey"
+},
+{
+"item": 170,
+"text": "Capital of Bahrain",
+"count": 1,
+"existing_idx": 199,
+"existing": "199\tWhich is the capital of Bahrain?  => Manama"
+},
+{
+"item": 175,
+"text": "A car at 90 km/h, how much distance in 12 minutes",
+"count": 1,
+"existing_idx": 16,
+"existing": "16\tA train moves at 90 km/h. How much distance will it cover in 12 minutes?  => 18 km"
+},
+{
+"item": 183,
+"text": "UN headquarters",
+"count": 1,
+"existing_idx": 188,
+"existing": "188\tWhere is the headquarters of the United Nations?  => New York"
+},
+{
+"item": 193,
+"text": "K2 is in which mountain range",
+"count": 1,
+"existing_idx": 340,
+"existing": "340\tK2, the second highest peak in the world, lies in which mountain range?  => Karakoram"
+},
+{
+"item": 198,
+"text": "Simla Agreement (who signed it, 1972)",
+"count": 4,
+"existing_idx": 330,
+"existing": "330\tBetween which leaders was the Simla Agreement signed in 1972?  => Zulfikar Ali Bhutto and Indira Gandhi"
+},
+{
+"item": 204,
+"text": "Israel is the laqab of which prophet",
+"count": 1,
+"existing_idx": 157,
+"existing": "157\tThe prophet whose title was 'Israel' is:  => Hazrat Yaqub (A.S.)"
+},
+{
+"item": 213,
+"text": "Capital of Somalia",
+"count": 2,
+"existing_idx": 321,
+"existing": "321\tWhat is the capital of Somalia?  => Mogadishu"
+},
+{
+"item": 222,
+"text": "Biggest ocean (Pacific)",
+"count": 2,
+"existing_idx": 224,
+"existing": "224\tWhich is the largest ocean on Earth?  => Pacific Ocean"
+},
+{
+"item": 230,
+"text": "How many seats are in the National Assembly of Pakistan",
+"count": 1,
+"existing_idx": 388,
+"existing": "388\tWhat is the total number of seats in the National Assembly of Pakistan (after the 25th Amendment)?  => 336"
+},
+{
+"item": 245,
+"text": "Battle of Plassey date (1757)",
+"count": 2,
+"existing_idx": 122,
+"existing": "122\tIn which year was the Battle of Plassey fought?  => 1757"
+},
+{
+"item": 249,
+"text": "Who married two daughters of Hazrat Usman RA",
+"count": 1,
+"existing_idx": 312,
+"existing": "312\tWho married two daughters of the Prophet Muhammad (PBUH), one after the other?  => Hazrat Usman (R.A.)"
+},
+{
+"item": 263,
+"text": "First woman Prime Minister of Pakistan",
+"count": 2,
+"existing_idx": 194,
+"existing": "194\tWho was the first woman Prime Minister of Pakistan?  => Benazir Bhutto"
+},
+{
+"item": 275,
+"text": "Smallest surah of the Quran",
+"count": 2,
+"existing_idx": 159,
+"existing": "159\tWhich is the shortest Surah of the Quran?  => Surah Al-Kawthar"
+},
+{
+"item": 300,
+"text": "A toy bought at 30 and sold at 40, profit percentage",
+"count": 1,
+"existing_idx": 11,
+"existing": "11\tA boy bought a pen for Rs 30 and sold it for Rs 40. What is the profit percentage?  => 33.33%"
+},
+{
+"item": 317,
+"text": "Heart of Pakistan (which city)",
+"count": 1,
+"existing_idx": 107,
+"existing": "107\tWhich city is called the 'Heart of Pakistan'?  => Lahore"
+},
+{
+"item": 328,
+"text": "Capital of Nepal",
+"count": 1,
+"existing_idx": 362,
+"existing": "362\tWhat is the capital of Nepal?  => Kathmandu"
+},
+{
+"item": 330,
+"text": "Capital of Saudi Arabia",
+"count": 1,
+"existing_idx": 303,
+"existing": "303\tWhat is the capital of Saudi Arabia?  => Riyadh"
+},
+{
+"item": 335,
+"text": "Old capital of Pakistan",
+"count": 1,
+"existing_idx": 109,
+"existing": "109\tWhich was the old (first) capital of Pakistan?  => Karachi"
+},
+{
+"item": 341,
+"text": "Largest continent in the world",
+"count": 1,
+"existing_idx": 300,
+"existing": "300\tWhich is the largest continent in the world?  => Asia"
+},
+{
+"item": 352,
+"text": "Name of Hazrat Khadija RA's father",
+"count": 1,
+"existing_idx": 311,
+"existing": "311\tWhat was the name of the father of Hazrat Khadija (R.A.)?  => Khuwaylid bin Asad"
+},
+{
+"item": 354,
+"text": "Longest river in the world (Nile)",
+"count": 1,
+"existing_idx": 301,
+"existing": "301\tWhat is the longest river in the world?  => Nile River"
+},
+{
+"item": 358,
+"text": "Year the Quit India Movement was launched (1942)",
+"count": 1,
+"existing_idx": 392,
+"existing": "392\tIn which year was the Quit India Movement launched?  => 1942"
+}
+]

@@ -1,0 +1,1202 @@
+[
+ {
+  "src": "t3-151",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "He returned back home.",
+   "He returned home.",
+   "He back returned home.",
+   "He returned to back home."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Return\" already means \"go back\", so adding \"back\" is extra (redundant). Say \"returned home\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-152",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "I am used to wake early.",
+   "I am used to waking early.",
+   "I used to waking early now.",
+   "I am use to wake early."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Be used to\" (habit) is followed by a noun or -ing form: \"used to waking\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-153",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "If I was you, I would apply.",
+   "If I were you, I would apply.",
+   "If I am you, I would apply.",
+   "If I were you, I will applied."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "In an imaginary condition we use \"were\" for all subjects: \"If I were you, I would...\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-154",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "He is married with a doctor.",
+   "He is married to a doctor.",
+   "He is married by a doctor.",
+   "He married to with a doctor."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "We say \"married to\" someone, not \"married with\" or \"married by\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-155",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "She did not went there.",
+   "She did not go there.",
+   "She not did go there.",
+   "She did not gone there."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "After \"did not\" we use the base (first) form of the verb: \"did not go\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-156",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "The furniture are expensive.",
+   "The furniture is expensive.",
+   "The furnitures are expensive.",
+   "Furniture are an expensive."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Furniture\" is an uncountable noun, so it takes a singular verb \"is\" and has no plural \"furnitures\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-157",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "He asked that where I lived.",
+   "He asked where I lived.",
+   "He asked where did I live.",
+   "He asked where I did lived."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "In reported questions, use statement word order (where I lived) and do not add \"that\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-158",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "There is many reasons.",
+   "There are many reasons.",
+   "There have many reasons.",
+   "There are much reasons."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Reasons\" is plural, so use \"are\" and \"many\" (not \"is\" or \"much\").",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-159",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "My brother is elder than me.",
+   "My brother is older than I am.",
+   "My brother is more elder than me.",
+   "My brother older to me."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Elder\" is not used with \"than\"; for comparing age we say \"older than\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-160",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "He hardly never complains.",
+   "He hardly ever complains.",
+   "He ever hardly never complains.",
+   "He hardly complains never."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Hardly\" is already negative, so \"hardly never\" is a double negative. Use \"hardly ever\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-161",
+  "question": "The word \"resilient\" most nearly means:",
+  "options": [
+   "able to recover quickly",
+   "easily broken",
+   "unwilling to learn",
+   "extremely noisy"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Resilient means able to recover quickly from difficulty or shock.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-162",
+  "question": "\"Prudent\" means:",
+  "options": [
+   "careless",
+   "wise and cautious",
+   "angry",
+   "rapid"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Prudent means wise and careful, showing good judgment.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-163",
+  "question": "\"Inevitable\" means:",
+  "options": [
+   "avoidable",
+   "uncertain",
+   "certain to happen",
+   "temporary"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Inevitable means certain to happen; it cannot be avoided.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-164",
+  "question": "\"Concise\" means:",
+  "options": [
+   "brief but complete",
+   "very confusing",
+   "lengthy",
+   "careless"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Concise means brief but complete: saying much in few words.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-165",
+  "question": "\"Reluctant\" means:",
+  "options": [
+   "eager",
+   "unwilling or hesitant",
+   "certain",
+   "powerful"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Reluctant means unwilling or hesitant to do something.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-166",
+  "question": "\"Meticulous\" means:",
+  "options": [
+   "careless",
+   "very careful about details",
+   "lazy",
+   "fearful"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Meticulous means very careful about every small detail.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-167",
+  "question": "\"Impartial\" means:",
+  "options": [
+   "biased",
+   "neutral and fair",
+   "hostile",
+   "uncertain"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Impartial means neutral and fair, not favouring any side.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-168",
+  "question": "\"Feasible\" means:",
+  "options": [
+   "possible and practical",
+   "illegal",
+   "dangerous only",
+   "impossible"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Feasible means possible and practical to do.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-169",
+  "question": "\"Adverse\" means:",
+  "options": [
+   "favorable",
+   "harmful or unfavorable",
+   "equal",
+   "pleasant"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Adverse means harmful or unfavourable, e.g. adverse weather.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-170",
+  "question": "\"Coherent\" means:",
+  "options": [
+   "logical and connected",
+   "broken physically",
+   "secret",
+   "angry"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Coherent means logical and well connected, easy to follow.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-171",
+  "question": "\"Vigilant\" means:",
+  "options": [
+   "watchful",
+   "sleepy",
+   "careless",
+   "weak"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Vigilant means alert and watchful for danger.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-172",
+  "question": "\"Ambiguous\" means:",
+  "options": [
+   "clear",
+   "having more than one possible meaning",
+   "certain",
+   "short"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Ambiguous means having more than one possible meaning, so not clear.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-173",
+  "question": "\"Endeavour\" means:",
+  "options": [
+   "attempt or effort",
+   "victory",
+   "order",
+   "rest"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Endeavour means a serious attempt or effort.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-174",
+  "question": "\"Integrity\" most nearly means:",
+  "options": [
+   "dishonesty",
+   "moral uprightness",
+   "physical speed",
+   "anger"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Integrity means honesty and strong moral principles (moral uprightness).",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-175",
+  "question": "\"Mitigate\" means:",
+  "options": [
+   "make less severe",
+   "make worse",
+   "ignore entirely",
+   "measure exactly"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Mitigate means to make something less severe or less harmful.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-176",
+  "question": "\"Obsolete\" means:",
+  "options": [
+   "newly invented",
+   "no longer in use",
+   "expensive",
+   "dangerous"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Obsolete means outdated and no longer in use.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-177",
+  "question": "\"Credible\" means:",
+  "options": [
+   "believable",
+   "unrelated",
+   "illegal",
+   "weak"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Credible means believable and worthy of trust.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-178",
+  "question": "\"Scrutinize\" means:",
+  "options": [
+   "examine closely",
+   "avoid looking at",
+   "destroy",
+   "summarize quickly"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Scrutinize means to examine something very closely and carefully.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-179",
+  "question": "\"Assert\" means:",
+  "options": [
+   "state confidently",
+   "hide",
+   "forget",
+   "apologize"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Assert means to state something confidently and strongly.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-180",
+  "question": "\"Contingency\" most nearly means:",
+  "options": [
+   "a possible future event or emergency",
+   "a fixed certainty",
+   "a celebration",
+   "a routine fact only"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "A contingency is a possible future event or emergency that you prepare for.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-181",
+  "question": "The cadet trained daily ___ he wanted to improve his endurance.",
+  "options": [
+   "because",
+   "although",
+   "unless",
+   "whereas"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "The second part gives the reason for training, so \"because\" fits.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-182",
+  "question": "___ the weather was severe, the exercise continued.",
+  "options": [
+   "Because",
+   "Although",
+   "Unless",
+   "So that"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Severe weather and the exercise continuing are in contrast, so \"Although\" fits.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-183",
+  "question": "You will not improve ___ you practise regularly.",
+  "options": [
+   "if",
+   "unless",
+   "because",
+   "and"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Unless\" means \"if not\": you will not improve if you do not practise.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-184",
+  "question": "He is both intelligent ___ hardworking.",
+  "options": [
+   "or",
+   "nor",
+   "and",
+   "but"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Both\" always pairs with \"and\": both ... and.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-185",
+  "question": "Neither Ali ___ Hamza was late.",
+  "options": [
+   "and",
+   "or",
+   "nor",
+   "but"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Neither\" always pairs with \"nor\": neither ... nor.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-186",
+  "question": "The instructions were so clear ___ everyone understood them.",
+  "options": [
+   "than",
+   "that",
+   "as",
+   "which"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The pattern is \"so + adjective + that\" to show a result.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-187",
+  "question": "He studied hard; ___, he passed the test.",
+  "options": [
+   "however",
+   "therefore",
+   "otherwise",
+   "nevertheless"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Passing the test is the result of studying hard, so \"therefore\" fits.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-188",
+  "question": "The road was blocked; ___, we took another route.",
+  "options": [
+   "consequently",
+   "although",
+   "unless",
+   "because of only"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Taking another route was the result of the blocked road, so \"consequently\" fits.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-189",
+  "question": "She is taller ___ her sister.",
+  "options": [
+   "then",
+   "than",
+   "to",
+   "from"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Comparatives like \"taller\" are followed by \"than\", not \"then\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-190",
+  "question": "No sooner had the bell rung ___ the candidates entered.",
+  "options": [
+   "when",
+   "than",
+   "then",
+   "that"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"No sooner\" is always followed by \"than\": No sooner ... than.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-191",
+  "question": "Hardly had we arrived ___ it began to rain.",
+  "options": [
+   "than",
+   "when",
+   "that",
+   "because"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Hardly\" is followed by \"when\": Hardly ... when.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-192",
+  "question": "He behaves as if he ___ everything.",
+  "options": [
+   "knows",
+   "knew",
+   "will know",
+   "has knowing"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"As if\" for an unreal situation in the present takes the past form: \"as if he knew\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-193",
+  "question": "If I had known, I ___ you.",
+  "options": [
+   "would tell",
+   "would have told",
+   "will tell",
+   "told"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Third conditional: If + had + past participle, would have + past participle (\"would have told\").",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-194",
+  "question": "The officer asked the men ___ remain calm.",
+  "options": [
+   "for",
+   "to",
+   "that they to",
+   "of"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The pattern is \"ask + person + to + verb\": asked the men to remain calm.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-195",
+  "question": "He succeeded ___ working consistently.",
+  "options": [
+   "by",
+   "with",
+   "at",
+   "to"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"By + -ing\" tells the method of doing something: succeeded by working.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-196",
+  "question": "The candidate was tired, ___ he completed the run.",
+  "options": [
+   "yet",
+   "because",
+   "so that",
+   "unless"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Being tired and still completing the run is a contrast, so \"yet\" fits.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-197",
+  "question": "Take an umbrella ___ it rains.",
+  "options": [
+   "in case",
+   "although",
+   "because of",
+   "despite"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"In case\" shows a precaution against something that may happen.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-198",
+  "question": "He would rather walk ___ wait for the bus.",
+  "options": [
+   "than",
+   "to",
+   "from",
+   "as"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "The fixed pattern is \"would rather X than Y\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-199",
+  "question": "The more you practise, ___ you become.",
+  "options": [
+   "the better",
+   "better only",
+   "the best",
+   "more best"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "The double comparative pattern is \"The more ..., the better ...\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-200",
+  "question": "He spoke quietly ___ disturb the class.",
+  "options": [
+   "so as not to",
+   "because not",
+   "for not",
+   "unless to"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"So as not to\" shows negative purpose: he spoke quietly to avoid disturbing the class.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-201",
+  "question": "[Passage 1 - Discipline and Performance] The central idea of the passage is that discipline:",
+  "options": [
+   "is only strict obedience",
+   "combines self-control, reliability, and judgment",
+   "depends mainly on motivation",
+   "prevents all change"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The passage says discipline is more than obedience: it means self-control and reliability, combined with judgment.",
+  "passage": "Discipline is often misunderstood as mere obedience to rules. In demanding institutions, however, it has a wider meaning. It includes the ability to control impulses, keep commitments, manage time, and continue working even when motivation is low. A disciplined person does not depend entirely on mood. He or she builds routines that make useful action easier and harmful delay less likely. Discipline therefore supports reliability: teammates can predict that a disciplined person will prepare, arrive on time, and complete assigned duties. Yet discipline without judgment can become mechanical. Mature discipline combines consistency with the ability to adapt when circumstances genuinely change.",
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-202",
+  "question": "[Passage 1 - Discipline and Performance] According to the passage, a disciplined person does NOT depend entirely on:",
+  "options": [
+   "routine",
+   "mood",
+   "commitment",
+   "time management"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The passage says: \"A disciplined person does not depend entirely on mood.\"",
+  "passage": "Discipline is often misunderstood as mere obedience to rules. In demanding institutions, however, it has a wider meaning. It includes the ability to control impulses, keep commitments, manage time, and continue working even when motivation is low. A disciplined person does not depend entirely on mood. He or she builds routines that make useful action easier and harmful delay less likely. Discipline therefore supports reliability: teammates can predict that a disciplined person will prepare, arrive on time, and complete assigned duties. Yet discipline without judgment can become mechanical. Mature discipline combines consistency with the ability to adapt when circumstances genuinely change.",
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-203",
+  "question": "[Passage 1 - Discipline and Performance] The word \"mechanical\" most nearly means:",
+  "options": [
+   "automatic and unthinking",
+   "highly emotional",
+   "physically strong",
+   "mathematically exact"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Discipline without judgment can become mechanical\" means it becomes automatic and unthinking.",
+  "passage": "Discipline is often misunderstood as mere obedience to rules. In demanding institutions, however, it has a wider meaning. It includes the ability to control impulses, keep commitments, manage time, and continue working even when motivation is low. A disciplined person does not depend entirely on mood. He or she builds routines that make useful action easier and harmful delay less likely. Discipline therefore supports reliability: teammates can predict that a disciplined person will prepare, arrive on time, and complete assigned duties. Yet discipline without judgment can become mechanical. Mature discipline combines consistency with the ability to adapt when circumstances genuinely change.",
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-204",
+  "question": "[Passage 1 - Discipline and Performance] Which quality is linked directly with discipline in the passage?",
+  "options": [
+   "Reliability",
+   "Humor",
+   "Popularity",
+   "Creativity only"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "The passage says: \"Discipline therefore supports reliability.\"",
+  "passage": "Discipline is often misunderstood as mere obedience to rules. In demanding institutions, however, it has a wider meaning. It includes the ability to control impulses, keep commitments, manage time, and continue working even when motivation is low. A disciplined person does not depend entirely on mood. He or she builds routines that make useful action easier and harmful delay less likely. Discipline therefore supports reliability: teammates can predict that a disciplined person will prepare, arrive on time, and complete assigned duties. Yet discipline without judgment can become mechanical. Mature discipline combines consistency with the ability to adapt when circumstances genuinely change.",
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-205",
+  "question": "[Passage 1 - Discipline and Performance] The author would most likely agree that good discipline should be:",
+  "options": [
+   "rigid in every situation",
+   "consistent but adaptable",
+   "based on fear",
+   "unrelated to judgment"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The last line says mature discipline \"combines consistency with the ability to adapt\".",
+  "passage": "Discipline is often misunderstood as mere obedience to rules. In demanding institutions, however, it has a wider meaning. It includes the ability to control impulses, keep commitments, manage time, and continue working even when motivation is low. A disciplined person does not depend entirely on mood. He or she builds routines that make useful action easier and harmful delay less likely. Discipline therefore supports reliability: teammates can predict that a disciplined person will prepare, arrive on time, and complete assigned duties. Yet discipline without judgment can become mechanical. Mature discipline combines consistency with the ability to adapt when circumstances genuinely change.",
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-206",
+  "question": "[Passage 2 - Learning from Error] The passage argues that errors become useful when learners:",
+  "options": [
+   "ignore them",
+   "analyse and correct their causes",
+   "repeat more questions immediately",
+   "avoid difficult topics"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The passage says effective learners \"identify the cause, correct the method, and test the correction\".",
+  "passage": "Errors are unavoidable in serious learning. Their value, however, depends on what happens after they are noticed. Repeating an error without analysis produces little improvement. Effective learners identify the cause, correct the method, and test the correction under similar conditions. They also distinguish between a careless mistake and a conceptual misunderstanding. The first may require better attention; the second may require rebuilding knowledge from the foundation. This process can feel slower than simply doing more questions, but it usually produces more durable progress because it changes the mechanism that caused the failure.",
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-207",
+  "question": "[Passage 2 - Learning from Error] A conceptual misunderstanding may require:",
+  "options": [
+   "more speed only",
+   "rebuilding knowledge from the foundation",
+   "less attention",
+   "memorizing the same answer"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The passage says a conceptual misunderstanding \"may require rebuilding knowledge from the foundation\".",
+  "passage": "Errors are unavoidable in serious learning. Their value, however, depends on what happens after they are noticed. Repeating an error without analysis produces little improvement. Effective learners identify the cause, correct the method, and test the correction under similar conditions. They also distinguish between a careless mistake and a conceptual misunderstanding. The first may require better attention; the second may require rebuilding knowledge from the foundation. This process can feel slower than simply doing more questions, but it usually produces more durable progress because it changes the mechanism that caused the failure.",
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-208",
+  "question": "[Passage 2 - Learning from Error] The phrase \"durable progress\" most nearly means progress that is:",
+  "options": [
+   "temporary",
+   "long-lasting",
+   "accidental",
+   "rapid only"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Durable means long-lasting, so durable progress is progress that lasts.",
+  "passage": "Errors are unavoidable in serious learning. Their value, however, depends on what happens after they are noticed. Repeating an error without analysis produces little improvement. Effective learners identify the cause, correct the method, and test the correction under similar conditions. They also distinguish between a careless mistake and a conceptual misunderstanding. The first may require better attention; the second may require rebuilding knowledge from the foundation. This process can feel slower than simply doing more questions, but it usually produces more durable progress because it changes the mechanism that caused the failure.",
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-209",
+  "question": "[Passage 2 - Learning from Error] Which distinction does the passage recommend?",
+  "options": [
+   "Easy and hard exams",
+   "Careless mistakes and conceptual misunderstandings",
+   "Teachers and students",
+   "Written and oral work"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The passage says learners \"distinguish between a careless mistake and a conceptual misunderstanding\".",
+  "passage": "Errors are unavoidable in serious learning. Their value, however, depends on what happens after they are noticed. Repeating an error without analysis produces little improvement. Effective learners identify the cause, correct the method, and test the correction under similar conditions. They also distinguish between a careless mistake and a conceptual misunderstanding. The first may require better attention; the second may require rebuilding knowledge from the foundation. This process can feel slower than simply doing more questions, but it usually produces more durable progress because it changes the mechanism that caused the failure.",
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-210",
+  "question": "[Passage 2 - Learning from Error] The passage suggests that simply doing more questions can be inferior because it may:",
+  "options": [
+   "be illegal",
+   "fail to change the cause of error",
+   "always lower confidence",
+   "take no time"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The careful method works better \"because it changes the mechanism that caused the failure\"; just doing more questions may not.",
+  "passage": "Errors are unavoidable in serious learning. Their value, however, depends on what happens after they are noticed. Repeating an error without analysis produces little improvement. Effective learners identify the cause, correct the method, and test the correction under similar conditions. They also distinguish between a careless mistake and a conceptual misunderstanding. The first may require better attention; the second may require rebuilding knowledge from the foundation. This process can feel slower than simply doing more questions, but it usually produces more durable progress because it changes the mechanism that caused the failure.",
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-211",
+  "question": "[Passage 3 - Decision Making Under Pressure] According to the passage, pressure can:",
+  "options": [
+   "only improve attention",
+   "narrow attention and cause information to be overlooked",
+   "eliminate uncertainty",
+   "make all decisions easy"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The passage says pressure narrows attention and can make a person \"overlook information\".",
+  "passage": "Pressure narrows attention. This can be useful when a task demands immediate focus, but it can also make a person overlook information that would normally be considered. Good decision makers therefore use simple structures under stress: they identify the objective, separate facts from assumptions, compare the most realistic options, and consider the likely consequences of each. They also know when time is too limited for perfect information. In such cases, the goal is not certainty but a reasonable decision based on the best available evidence. Afterward, reviewing the outcome helps improve future judgment.",
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-212",
+  "question": "[Passage 3 - Decision Making Under Pressure] Good decision makers separate:",
+  "options": [
+   "facts from assumptions",
+   "speed from strength",
+   "leaders from teams",
+   "rules from laws only"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "The passage says good decision makers \"separate facts from assumptions\".",
+  "passage": "Pressure narrows attention. This can be useful when a task demands immediate focus, but it can also make a person overlook information that would normally be considered. Good decision makers therefore use simple structures under stress: they identify the objective, separate facts from assumptions, compare the most realistic options, and consider the likely consequences of each. They also know when time is too limited for perfect information. In such cases, the goal is not certainty but a reasonable decision based on the best available evidence. Afterward, reviewing the outcome helps improve future judgment.",
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-213",
+  "question": "[Passage 3 - Decision Making Under Pressure] When perfect information is impossible, the goal should be:",
+  "options": [
+   "total certainty",
+   "a reasonable evidence-based decision",
+   "no decision at all",
+   "a random choice"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The passage says \"the goal is not certainty but a reasonable decision based on the best available evidence\".",
+  "passage": "Pressure narrows attention. This can be useful when a task demands immediate focus, but it can also make a person overlook information that would normally be considered. Good decision makers therefore use simple structures under stress: they identify the objective, separate facts from assumptions, compare the most realistic options, and consider the likely consequences of each. They also know when time is too limited for perfect information. In such cases, the goal is not certainty but a reasonable decision based on the best available evidence. Afterward, reviewing the outcome helps improve future judgment.",
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-214",
+  "question": "[Passage 3 - Decision Making Under Pressure] Why review the outcome afterward?",
+  "options": [
+   "To assign blame",
+   "To improve future judgment",
+   "To avoid evidence",
+   "To make the original decision perfect"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The passage says \"reviewing the outcome helps improve future judgment\".",
+  "passage": "Pressure narrows attention. This can be useful when a task demands immediate focus, but it can also make a person overlook information that would normally be considered. Good decision makers therefore use simple structures under stress: they identify the objective, separate facts from assumptions, compare the most realistic options, and consider the likely consequences of each. They also know when time is too limited for perfect information. In such cases, the goal is not certainty but a reasonable decision based on the best available evidence. Afterward, reviewing the outcome helps improve future judgment.",
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-215",
+  "question": "[Passage 3 - Decision Making Under Pressure] The tone of the passage is primarily:",
+  "options": [
+   "instructional and analytical",
+   "comic",
+   "angry",
+   "nostalgic"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "The passage calmly explains steps for making decisions, so its tone is instructional and analytical.",
+  "passage": "Pressure narrows attention. This can be useful when a task demands immediate focus, but it can also make a person overlook information that would normally be considered. Good decision makers therefore use simple structures under stress: they identify the objective, separate facts from assumptions, compare the most realistic options, and consider the likely consequences of each. They also know when time is too limited for perfect information. In such cases, the goal is not certainty but a reasonable decision based on the best available evidence. Afterward, reviewing the outcome helps improve future judgment.",
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-216",
+  "question": "[Passage 4 - Teamwork] The passage says individual talent alone is:",
+  "options": [
+   "sufficient for teamwork",
+   "not sufficient for effective team performance",
+   "harmful",
+   "unrelated to performance"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The passage says a team \"is not effective merely because its members are individually talented\".",
+  "passage": "A team is not effective merely because its members are individually talented. Performance depends on coordination: members must understand the objective, know their responsibilities, share relevant information, and adjust when another member encounters difficulty. Trust reduces the time spent checking whether others will perform basic duties, but trust does not mean the absence of accountability. Strong teams make standards clear and address problems early. They also avoid confusing agreement with unity. Members may disagree about methods while still remaining committed to the same mission.",
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-217",
+  "question": "[Passage 4 - Teamwork] Trust in a team does NOT mean:",
+  "options": [
+   "reduced unnecessary checking",
+   "absence of accountability",
+   "confidence in basic duties",
+   "reliable performance"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The passage says \"trust does not mean the absence of accountability\".",
+  "passage": "A team is not effective merely because its members are individually talented. Performance depends on coordination: members must understand the objective, know their responsibilities, share relevant information, and adjust when another member encounters difficulty. Trust reduces the time spent checking whether others will perform basic duties, but trust does not mean the absence of accountability. Strong teams make standards clear and address problems early. They also avoid confusing agreement with unity. Members may disagree about methods while still remaining committed to the same mission.",
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-218",
+  "question": "[Passage 4 - Teamwork] Strong teams should address problems:",
+  "options": [
+   "only at the end",
+   "early",
+   "secretly and never openly",
+   "after standards are removed"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The passage says strong teams \"address problems early\".",
+  "passage": "A team is not effective merely because its members are individually talented. Performance depends on coordination: members must understand the objective, know their responsibilities, share relevant information, and adjust when another member encounters difficulty. Trust reduces the time spent checking whether others will perform basic duties, but trust does not mean the absence of accountability. Strong teams make standards clear and address problems early. They also avoid confusing agreement with unity. Members may disagree about methods while still remaining committed to the same mission.",
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-219",
+  "question": "[Passage 4 - Teamwork] Members can disagree about methods while still:",
+  "options": [
+   "sharing commitment to the same mission",
+   "having no unity",
+   "rejecting all standards",
+   "avoiding communication"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "The last line says members may disagree about methods \"while still remaining committed to the same mission\".",
+  "passage": "A team is not effective merely because its members are individually talented. Performance depends on coordination: members must understand the objective, know their responsibilities, share relevant information, and adjust when another member encounters difficulty. Trust reduces the time spent checking whether others will perform basic duties, but trust does not mean the absence of accountability. Strong teams make standards clear and address problems early. They also avoid confusing agreement with unity. Members may disagree about methods while still remaining committed to the same mission.",
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-220",
+  "question": "[Passage 4 - Teamwork] The best title would be:",
+  "options": [
+   "Why Talent Is Useless",
+   "Elements of Effective Teamwork",
+   "The End of Accountability",
+   "Individual Competition Only"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The whole passage explains what makes a team effective: coordination, trust, accountability and shared mission.",
+  "passage": "A team is not effective merely because its members are individually talented. Performance depends on coordination: members must understand the objective, know their responsibilities, share relevant information, and adjust when another member encounters difficulty. Trust reduces the time spent checking whether others will perform basic duties, but trust does not mean the absence of accountability. Strong teams make standards clear and address problems early. They also avoid confusing agreement with unity. Members may disagree about methods while still remaining committed to the same mission.",
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-221",
+  "question": "[Passage 5 - Reading Efficiently] Efficient readers vary their pace according to:",
+  "options": [
+   "page color",
+   "purpose",
+   "handwriting",
+   "mood only"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The passage says \"Skilled readers vary their pace according to purpose.\"",
+  "passage": "Efficient reading is not the same as reading every line at maximum speed. Skilled readers vary their pace according to purpose. They may scan a page to locate a date, skim an article to grasp its main argument, or read slowly when a paragraph contains dense reasoning. They also monitor comprehension. If a key sentence is unclear, they pause, reread, and connect it with surrounding ideas. This flexible approach is especially useful in timed tests, where spending too long on one difficult sentence can reduce the time available for easier questions.",
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-222",
+  "question": "[Passage 5 - Reading Efficiently] To locate a specific date quickly, a reader may:",
+  "options": [
+   "scan",
+   "memorize the whole page",
+   "read every line slowly",
+   "avoid headings"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "The passage says readers \"scan a page to locate a date\".",
+  "passage": "Efficient reading is not the same as reading every line at maximum speed. Skilled readers vary their pace according to purpose. They may scan a page to locate a date, skim an article to grasp its main argument, or read slowly when a paragraph contains dense reasoning. They also monitor comprehension. If a key sentence is unclear, they pause, reread, and connect it with surrounding ideas. This flexible approach is especially useful in timed tests, where spending too long on one difficult sentence can reduce the time available for easier questions.",
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-223",
+  "question": "[Passage 5 - Reading Efficiently] Skimming is mainly used to:",
+  "options": [
+   "find a single word only",
+   "grasp the main argument or general idea",
+   "translate every sentence",
+   "check spelling"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The passage says readers \"skim an article to grasp its main argument\".",
+  "passage": "Efficient reading is not the same as reading every line at maximum speed. Skilled readers vary their pace according to purpose. They may scan a page to locate a date, skim an article to grasp its main argument, or read slowly when a paragraph contains dense reasoning. They also monitor comprehension. If a key sentence is unclear, they pause, reread, and connect it with surrounding ideas. This flexible approach is especially useful in timed tests, where spending too long on one difficult sentence can reduce the time available for easier questions.",
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-224",
+  "question": "[Passage 5 - Reading Efficiently] If a key sentence is unclear, skilled readers should:",
+  "options": [
+   "guess and move on always",
+   "pause, reread, and connect it with context",
+   "stop the test",
+   "ignore the paragraph entirely"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The passage says they \"pause, reread, and connect it with surrounding ideas\".",
+  "passage": "Efficient reading is not the same as reading every line at maximum speed. Skilled readers vary their pace according to purpose. They may scan a page to locate a date, skim an article to grasp its main argument, or read slowly when a paragraph contains dense reasoning. They also monitor comprehension. If a key sentence is unclear, they pause, reread, and connect it with surrounding ideas. This flexible approach is especially useful in timed tests, where spending too long on one difficult sentence can reduce the time available for easier questions.",
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "t3-225",
+  "question": "[Passage 5 - Reading Efficiently] In timed tests, spending too long on one sentence can:",
+  "options": [
+   "increase all scores automatically",
+   "reduce time for easier questions",
+   "make scanning impossible forever",
+   "guarantee comprehension"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The passage says it \"can reduce the time available for easier questions\".",
+  "passage": "Efficient reading is not the same as reading every line at maximum speed. Skilled readers vary their pace according to purpose. They may scan a page to locate a date, skim an article to grasp its main argument, or read slowly when a paragraph contains dense reasoning. They also monitor comprehension. If a key sentence is unclear, they pause, reread, and connect it with surrounding ideas. This flexible approach is especially useful in timed tests, where spending too long on one difficult sentence can reduce the time available for easier questions.",
+  "skip": false,
+  "note": ""
+ }
+]

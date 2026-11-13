@@ -1,0 +1,87 @@
+<!doctype html><html><head><meta charset="utf8"><style>
+*{box-sizing:border-box;margin:0;padding:0}body{background:#cbd5e1;font-family:"Inter",system-ui,sans-serif;padding:24px;display:grid;grid-template-columns:repeat(3,360px);gap:28px;width:1180px}
+.cell h2{font-size:20px;font-weight:900;color:#0f172a;margin:0 0 4px}.cell p.d{font-size:13px;color:#334155;margin:0 0 10px;height:36px}
+.ph{width:360px;height:740px;border-radius:40px;border:10px solid #0b0f14;overflow:hidden;position:relative;box-shadow:0 20px 40px rgba(0,0,0,.35)}
+.sb{height:26px;display:flex;justify-content:space-between;align-items:center;padding:0 18px;font-size:11px;font-weight:700}
+.pg{display:block;width:100%;border-radius:3px;box-shadow:0 6px 16px rgba(0,0,0,.35)}
+.b{display:flex;align-items:center;justify-content:center;border-radius:50%;width:34px;height:34px;font-weight:800;font-size:16px;flex:none}
+.tag{position:absolute;left:12px;top:12px;background:#f1d27a;color:#3b2a05;font-weight:900;font-size:22px;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:9;box-shadow:0 4px 10px rgba(0,0,0,.4)}
+/* 1 classic dark (current) */
+.d1{background:#2a2f3a}.d1 .sb{background:#0b1220;color:#fff}.d1 .tb{background:linear-gradient(180deg,#0b1220,#111a2e);color:#fff;display:flex;align-items:center;gap:6px;padding:8px 10px}
+.d1 .tb .t{flex:1;min-width:0}.d1 .tb b{font-size:12px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.d1 .tb small{font-size:9.5px;color:#94a3b8}
+.d1 .b{background:rgba(255,255,255,.08);color:#fff;width:30px;height:30px;font-size:13px}.d1 .chip{font-size:10px;color:#fde68a;border:1px solid #334155;border-radius:99px;padding:4px 8px;font-weight:800}
+.d1 .bar{height:3px;background:rgba(255,255,255,.1)}.d1 .bar i{display:block;width:32%;height:100%;background:linear-gradient(90deg,#d4a017,#fde68a)}
+.d1 .sc{padding:8px}.d1 .sc img{margin-bottom:8px}.d1 .fz{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);display:flex;gap:2px;background:rgba(11,18,32,.92);border-radius:99px;padding:4px;color:#fff;font-weight:800;font-size:12px}
+.d1 .fz span{padding:8px 10px}.d1 .fz .y{color:#fde68a}
+.d1 .gh{position:absolute;right:4px;top:260px;width:18px;height:34px;border-radius:9px;background:#d4a017}
+/* 2 light paper */
+.d2{background:#f4f1ea}.d2 .sb{color:#111}.d2 .tb{display:flex;align-items:center;gap:8px;padding:8px 12px;background:#fff;border-bottom:1px solid #e5e0d4}
+.d2 .tb b{flex:1;font-size:13px;color:#111}.d2 .b{background:#f4f1ea;color:#333;width:32px;height:32px;font-size:14px}
+.d2 .sc{padding:12px 14px}.d2 .sc img{margin-bottom:12px;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.d2 .bt{position:absolute;left:0;right:0;bottom:0;background:#fff;border-top:1px solid #e5e0d4;display:flex;justify-content:space-around;padding:8px 0 12px;font-size:10px;color:#555;text-align:center;font-weight:700}.d2 .bt div span{display:block;font-size:18px}
+.d2 .pn{position:absolute;right:14px;bottom:72px;background:rgba(0,0,0,.65);color:#fff;font-size:11px;font-weight:800;border-radius:8px;padding:5px 9px}
+/* 3 book mode */
+.d3{background:#e8dcc4}.d3 .sb{color:#3b2a05}.d3 .tb{display:flex;align-items:center;gap:8px;padding:8px 12px;color:#3b2a05}.d3 .tb b{flex:1;font-size:13px}.d3 .b{background:rgba(59,42,5,.1);color:#3b2a05;width:32px;height:32px}
+.d3 .page{margin:12px 16px;background:#fbf6ea;border-radius:4px 10px 10px 4px;box-shadow:inset 10px 0 14px -10px rgba(0,0,0,.35),0 10px 24px rgba(0,0,0,.25);padding:6px;position:relative}
+.d3 .page img{box-shadow:none;filter:sepia(.25)}
+.d3 .curl{position:absolute;right:0;bottom:0;width:46px;height:46px;background:linear-gradient(135deg,transparent 50%,#d6c8a8 50%);border-radius:0 0 10px 0;box-shadow:-3px -3px 6px rgba(0,0,0,.15)}
+.d3 .sl{position:absolute;left:16px;right:16px;bottom:22px}.d3 .sl .r{height:6px;border-radius:9px;background:#cdbb95}.d3 .sl .r i{display:block;width:30%;height:100%;border-radius:9px;background:#7c5a12}
+.d3 .sl .k{position:absolute;left:30%;top:-6px;width:18px;height:18px;border-radius:50%;background:#7c5a12;margin-left:-9px;border:3px solid #fbf6ea}.d3 .sl p{text-align:center;font-size:11px;font-weight:800;color:#3b2a05;margin-top:10px}
+.d3 .sw{position:absolute;top:340px;font-size:26px;color:rgba(59,42,5,.4)}.d3 .sw.l{left:2px}.d3 .sw.r{right:2px}
+/* 4 drive style */
+.d4{background:#202124}.d4 .sb{color:#fff}.d4 .tb{display:flex;align-items:center;gap:6px;padding:8px 10px;color:#e8eaed}.d4 .tb b{flex:1;font-size:13px;font-weight:600}.d4 .b{background:none;color:#e8eaed;width:30px;height:30px;font-size:17px}
+.d4 .sc{padding:6px 10px}.d4 .sc img{margin-bottom:10px;border-radius:0}
+.d4 .pn{position:absolute;left:12px;bottom:98px;background:#3c4043;color:#e8eaed;font-size:11px;font-weight:700;border-radius:6px;padding:5px 9px}
+.d4 .th{position:absolute;left:0;right:0;bottom:0;height:88px;background:#2d2e30;display:flex;gap:8px;padding:10px;overflow:hidden}.d4 .th img{height:66px;width:auto;border-radius:2px;opacity:.8}.d4 .th img.c{opacity:1;outline:3px solid #8ab4f8}
+/* 5 army theme */
+.d5{background:#13291a}.d5 .sb{background:#0b1a12;color:#f1d27a}.d5 .tb{display:flex;align-items:center;gap:6px;padding:8px 10px;background:linear-gradient(120deg,#1f4d32,#2e6b3f);color:#fff;border-bottom:3px solid #f1d27a}
+.d5 .tb b{flex:1;font-size:12.5px}.d5 .b{background:rgba(241,210,122,.18);color:#f1d27a;width:30px;height:30px;font-size:14px}
+.d5 .wrap{display:flex}.d5 .rail{width:62px;background:#0b1a12;padding:8px 6px;display:flex;flex-direction:column;gap:8px;height:640px;overflow:hidden}.d5 .rail img{width:100%;border-radius:2px;opacity:.75;border:2px solid transparent}.d5 .rail img.c{opacity:1;border-color:#f1d27a}
+.d5 .rail i{font-style:normal;color:#f1d27a;font-size:9px;font-weight:800;text-align:center;margin-top:-6px}
+.d5 .sc{flex:1;padding:8px}.d5 .sc img{margin-bottom:8px;border:2px solid #f1d27a}
+.d5 .fz{position:absolute;right:10px;bottom:18px;display:flex;flex-direction:column;gap:6px}.d5 .fz span{width:40px;height:40px;border-radius:50%;background:#f1d27a;color:#3b2a05;font-weight:900;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 10px rgba(0,0,0,.4)}
+/* 6 night focus */
+.d6{background:#000}.d6 .sb{color:#9ca3af}.d6 .tb{display:flex;align-items:center;gap:8px;padding:8px 12px;color:#e5e7eb}.d6 .tb b{flex:1;font-size:13px}.d6 .b{background:#111;color:#e5e7eb;width:32px;height:32px;border:1px solid #222}
+.d6 .sc{padding:10px}.d6 .sc img{box-shadow:none;border-radius:6px;margin-bottom:10px}
+.d6 .pan{position:absolute;left:12px;right:12px;bottom:14px;background:#111;border:1px solid #222;border-radius:18px;padding:10px 12px;color:#e5e7eb;font-size:11px;font-weight:700}
+.d6 .row{display:flex;align-items:center;gap:10px;margin:4px 0}.d6 .r{flex:1;height:5px;border-radius:9px;background:#333}.d6 .r i{display:block;height:100%;border-radius:9px;background:#fbbf24}
+.d6 .md{display:flex;gap:6px;margin-top:6px}.d6 .md span{flex:1;text-align:center;padding:6px 0;border-radius:10px;background:#1f2937}.d6 .md span.on{background:#fbbf24;color:#111}
+</style></head><body>
+
+<div class="cell"><h2>1 · Classic Dark (now)</h2><p class="d">Current reader. Dark, gold progress line, floating zoom pill, fast scroll handle.</p>
+<div class="ph d1"><div class="tag">1</div><div class="sb"><span>11:20</span><span>📶 🔋</span></div>
+<div class="tb"><span class="b">←</span><div class="t"><b>Paid ProGenius</b><small>Page 2 of 80</small></div><span class="b">⌕</span><span class="chip">2 / 80</span><span class="b" style="color:#fde68a">▦</span></div><div class="bar"><i></i></div>
+<div class="sc"><img class="pg" src="p2.jpg"><img class="pg" src="p3.jpg"></div><div class="gh"></div>
+<div class="fz"><span>−</span><span class="y">100%</span><span>+</span><span class="y">Fit</span><span class="y">▦ Pages</span></div></div></div>
+
+<div class="cell"><h2>2 · Light Paper</h2><p class="d">Clean white, like a real notebook. Easy on eyes in daylight. Tab bar at bottom.</p>
+<div class="ph d2"><div class="tag">2</div><div class="sb"><span>11:20</span><span>📶 🔋</span></div>
+<div class="tb"><span class="b">←</span><b>Paid ProGenius</b><span class="b">⌕</span><span class="b">⋮</span></div>
+<div class="sc"><img class="pg" src="p2.jpg"><img class="pg" src="p3.jpg"></div><div class="pn">2 / 80</div>
+<div class="bt"><div><span>▦</span>Pages</div><div><span>🔍</span>Search</div><div><span>🔖</span>Bookmark</div><div><span>Aa</span>Zoom</div><div><span>🌙</span>Night</div></div></div></div>
+
+<div class="cell"><h2>3 · Book Mode</h2><p class="d">One page at a time. Swipe left/right like a real book. Page slider at the bottom.</p>
+<div class="ph d3"><div class="tag">3</div><div class="sb"><span>11:20</span><span>📶 🔋</span></div>
+<div class="tb"><span class="b">←</span><b>Paid ProGenius</b><span class="b">⌕</span><span class="b">🔖</span></div>
+<div class="page"><img class="pg" src="p2.jpg"><div class="curl"></div></div><span class="sw l">‹</span><span class="sw r">›</span>
+<div class="sl"><div class="r"><i></i></div><div class="k"></div><p>Page 24 of 80</p></div></div></div>
+
+<div class="cell"><h2>4 · Drive Style</h2><p class="d">Like the Google Drive PDF viewer. Dark grey, page number chip, thumbnails strip.</p>
+<div class="ph d4"><div class="tag">4</div><div class="sb"><span>11:20</span><span>📶 🔋</span></div>
+<div class="tb"><span class="b">←</span><b>Paid ProGenius.pdf</b><span class="b">⌕</span><span class="b">⋮</span></div>
+<div class="sc"><img class="pg" src="p2.jpg"><img class="pg" src="p3.jpg"></div><div class="pn">2 / 80</div>
+<div class="th"><img src="p1.jpg"><img class="c" src="p2.jpg"><img src="p3.jpg"><img src="p4.jpg"><img src="p1.jpg"></div></div></div>
+
+<div class="cell"><h2>5 · Army Green & Gold</h2><p class="d">App's own colours. Page list on the left side, gold round zoom buttons.</p>
+<div class="ph d5"><div class="tag">5</div><div class="sb"><span>11:20</span><span>📶 🔋</span></div>
+<div class="tb"><span class="b">←</span><b>🪖 Paid ProGenius</b><span class="b">⌕</span><span class="b">▦</span></div>
+<div class="wrap"><div class="rail"><img src="p1.jpg"><i>1</i><img class="c" src="p2.jpg"><i>2</i><img src="p3.jpg"><i>3</i><img src="p4.jpg"><i>4</i></div>
+<div class="sc"><img class="pg" src="p2.jpg"><img class="pg" src="p3.jpg"></div></div>
+<div class="fz"><span>+</span><span>−</span><span style="font-size:11px">Fit</span></div></div></div>
+
+<div class="cell"><h2>6 · Night Focus</h2><p class="d">Black background, white text pages for night study. Brightness and mode controls.</p>
+<div class="ph d6"><div class="tag">6</div><div class="sb"><span>11:20</span><span>📶 🔋</span></div>
+<div class="tb"><span class="b">←</span><b>Paid ProGenius</b><span class="b">⌕</span><span class="b">⋮</span></div>
+<div class="sc"><img class="pg" src="p2inv.jpg"></div>
+<div class="pan"><div class="row">☀️<div class="r"><i style="width:60%"></i></div>60%</div><div class="md"><span>Day</span><span>Sepia</span><span class="on">Night</span></div></div></div></div>
+</body></html>

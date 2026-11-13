@@ -1,0 +1,17 @@
+[
+ {
+  "id": "PF245",
+  "action": "change",
+  "new_correct": 3,
+  "new_why": "As of Oct 2026, records say Samina Baig summited K2 on 22 July 2022 around 7 AM, about three hours before Naila Kiani, so Baig is the first Pakistani woman and Kiani the second.",
+  "new_rel": "Naila Kiani was the first Pakistani woman to summit Gasherbrum II (8,035 m), in 2021.",
+  "reason": "Search (Friday Times, Gulf News, Wikipedia on Naila Kiani): Baig reached the top first on 22 Jul 2022; some outlets call them joint firsts."
+ },
+ {
+  "id": "PF455",
+  "action": "note",
+  "new_why": "As of Oct 2026, the President is traditionally called Supreme Commander of the armed forces, but Article 243 gives control and command to the Federal Government; the 27th Amendment (Nov 2025) created the Chief of Defence Forces (Field Marshal Asim Munir).",
+  "new_rel": "The President appoints the army chief/CDF on the Prime Minister's advice.",
+  "reason": "Search (Al Jazeera, Aaj, Arab News): 27th Amendment changed Article 243 and created the CDF post; no source found stating a changed supreme commander. Answer remains the President, the standard exam answer."
+ }
+]

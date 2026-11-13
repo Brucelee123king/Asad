@@ -1,0 +1,610 @@
+[
+ {
+  "src": "m1-1",
+  "question": "In \"The very experienced instructor spoke calmly,\" \"very\" is a:",
+  "options": [
+   "noun",
+   "adverb",
+   "adjective",
+   "preposition"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Very\" modifies the adjective \"experienced\", and words that modify adjectives are adverbs.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-2",
+  "question": "The word \"whose\" in \"The candidate whose file was missing returned\" is a:",
+  "options": [
+   "relative determiner/pronoun",
+   "interjection",
+   "preposition",
+   "article"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Whose\" links the clause to \"candidate\" and shows possession, so it is a relative pronoun/determiner.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-3",
+  "question": "In \"Courage inspires others,\" \"Courage\" is a:",
+  "options": [
+   "proper noun",
+   "abstract noun",
+   "verb",
+   "adverb"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Courage\" is a quality we cannot touch or see, so it is an abstract noun.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-4",
+  "question": "Which contains an auxiliary verb?",
+  "options": [
+   "Birds fly.",
+   "He has finished.",
+   "Tall trees grow.",
+   "Silence helps."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Has\" is a helping (auxiliary) verb used with the main verb \"finished\" to make the present perfect.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-5",
+  "question": "In \"She worked despite the rain,\" \"despite\" is a:",
+  "options": [
+   "preposition",
+   "pronoun",
+   "interjection",
+   "adverb of manner"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Despite\" is followed by a noun (the rain) and shows its relation to the verb, so it is a preposition.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-6",
+  "question": "By 10 p.m., they ___ the exercise.",
+  "options": [
+   "finish",
+   "will have finished",
+   "finished tomorrow",
+   "are finish"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"By + a future time\" shows an action completed before that time, so we use the future perfect \"will have finished\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-7",
+  "question": "I ___ him yesterday at the library.",
+  "options": [
+   "meet",
+   "have met",
+   "met",
+   "am meeting"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Yesterday\" is a finished past time, so we use the simple past \"met\" (not present perfect).",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-8",
+  "question": "She ___ for the interview when I called.",
+  "options": [
+   "prepared",
+   "was preparing",
+   "has prepared",
+   "will prepare"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "An action in progress when another past action happened takes the past continuous: \"was preparing\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-9",
+  "question": "He ___ here since January.",
+  "options": [
+   "works",
+   "worked",
+   "has worked",
+   "is work"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Since + a point of time\" shows an action from the past continuing till now, so use the present perfect \"has worked\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-10",
+  "question": "If you heat ice, it ___.",
+  "options": [
+   "melted",
+   "melts",
+   "will melted",
+   "would melt always"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "For general facts (zero conditional) both clauses use the simple present: \"it melts\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-11",
+  "question": "Choose: \"___ army officer entered the hall.\"",
+  "options": [
+   "A",
+   "An",
+   "The always",
+   "No article"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Army\" starts with a vowel sound, so we use \"an\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-12",
+  "question": "Choose: \"He studies at ___ university near his home.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"University\" starts with a \"yu\" (consonant) sound, so we use \"a\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-13",
+  "question": "Which is correct?",
+  "options": [
+   "an useful tool",
+   "a useful tool",
+   "the useful tool always",
+   "useful an tool"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Useful\" starts with a \"yu\" consonant sound, so \"a useful tool\" is correct.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-14",
+  "question": "___ Pacific Ocean is the largest ocean.",
+  "options": [
+   "A",
+   "An",
+   "The",
+   "No article"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "Names of oceans, seas and rivers take \"the\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-15",
+  "question": "Choose: \"She can play ___ piano.\"",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "With musical instruments after \"play\" we use \"the\": play the piano.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-16",
+  "question": "He apologized ___ being late.",
+  "options": [
+   "for",
+   "of",
+   "with",
+   "to"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "The fixed phrase is \"apologize for\" something.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-17",
+  "question": "The team consists ___ ten members.",
+  "options": [
+   "in",
+   "of",
+   "on",
+   "at"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The fixed phrase is \"consist of\", meaning to be made up of.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-18",
+  "question": "He is responsible ___ the equipment.",
+  "options": [
+   "of",
+   "to",
+   "for",
+   "at"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "The fixed phrase is \"responsible for\" something.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-19",
+  "question": "The river flows ___ the valley.",
+  "options": [
+   "through",
+   "since",
+   "besides",
+   "among"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Through\" means moving from one side or end to the other, as a river does in a valley.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-20",
+  "question": "She was absent ___ class yesterday.",
+  "options": [
+   "from",
+   "of",
+   "to",
+   "at"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "The fixed phrase is \"absent from\" a place or class.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-21",
+  "question": "Passive of \"The mechanic repaired the vehicle\" is:",
+  "options": [
+   "The vehicle repaired.",
+   "The vehicle was repaired by the mechanic.",
+   "The vehicle is repair.",
+   "The mechanic was repaired."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "Simple past active becomes was/were + past participle: \"The vehicle was repaired by the mechanic.\"",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-22",
+  "question": "Passive of \"They have postponed the match\" is:",
+  "options": [
+   "The match has been postponed.",
+   "The match had postpone.",
+   "The match is postponing.",
+   "The match was postponing."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Present perfect active becomes has/have been + past participle: \"The match has been postponed.\"",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-23",
+  "question": "Passive of \"You should follow the instructions\" is:",
+  "options": [
+   "The instructions should be followed.",
+   "The instructions should followed.",
+   "The instructions are should follow.",
+   "The instructions followed you."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "With a modal, the passive is modal + be + past participle: \"should be followed\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-24",
+  "question": "Active of \"The room is cleaned every day\" is:",
+  "options": [
+   "Someone cleans the room every day.",
+   "Someone cleaned room tomorrow.",
+   "The room cleans someone.",
+   "Someone is clean the room."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Is cleaned\" is simple present passive; with no doer named we use \"someone\": \"Someone cleans the room every day.\"",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-25",
+  "question": "Which verb is intransitive in the sentence \"The child laughed loudly\"?",
+  "options": [
+   "child",
+   "laughed",
+   "loudly",
+   "the"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Laughed\" is the verb and has no object, so it is intransitive.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-26",
+  "question": "Indirect: Sara said, \"I am busy now.\"",
+  "options": [
+   "Sara said that she was busy then.",
+   "Sara said she is busy now yesterday.",
+   "Sara told that I was busy.",
+   "Sara asked if she busy."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "In indirect speech \"am\" changes to \"was\", \"I\" to \"she\" and \"now\" to \"then\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-27",
+  "question": "Indirect: He said, \"I may leave today.\"",
+  "options": [
+   "He said that he might leave that day.",
+   "He said he may left today.",
+   "He told he might leaves.",
+   "He asked to leave yesterday."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "In indirect speech \"may\" changes to \"might\", \"I\" to \"he\" and \"today\" to \"that day\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-28",
+  "question": "Indirect: She said to him, \"Please sit down.\"",
+  "options": [
+   "She requested him to sit down.",
+   "She said him please sit.",
+   "She asked that he sat down.",
+   "She ordered him sitting."
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "A polite request with \"please\" is reported with \"requested\" + object + to-infinitive.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-29",
+  "question": "Indirect: He said, \"What a beautiful view!\"",
+  "options": [
+   "He exclaimed that it was a very beautiful view.",
+   "He asked whether the view was beautiful.",
+   "He ordered a beautiful view.",
+   "He said what was a view?"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "An exclamation is reported with \"exclaimed that\" and the sentence becomes a statement.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-30",
+  "question": "Indirect questions use:",
+  "options": [
+   "statement word order",
+   "question inversion always",
+   "no verb",
+   "only past perfect"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "Indirect questions are not real questions, so they use statement word order (subject before verb), e.g. He asked where I lived.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-31",
+  "question": "Synonym of \"robust\" is:",
+  "options": [
+   "strong",
+   "fragile",
+   "silent",
+   "rare"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Robust\" means strong and healthy.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-32",
+  "question": "Antonym of \"transparent\" is:",
+  "options": [
+   "clear",
+   "opaque",
+   "visible",
+   "plain"
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Transparent\" means see-through; its opposite is \"opaque\", meaning light cannot pass through.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-33",
+  "question": "Synonym of \"restrain\" is:",
+  "options": [
+   "control",
+   "release",
+   "encourage only",
+   "expand"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Restrain\" means to hold back or control.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-34",
+  "question": "Antonym of \"frequent\" is:",
+  "options": [
+   "common",
+   "regular",
+   "rare",
+   "repeated"
+  ],
+  "correct": 2,
+  "book_key": "C",
+  "reason": "\"Frequent\" means happening often; its opposite is \"rare\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-35",
+  "question": "Synonym of \"evaluate\" is:",
+  "options": [
+   "assess",
+   "ignore",
+   "hide",
+   "destroy"
+  ],
+  "correct": 0,
+  "book_key": "A",
+  "reason": "\"Evaluate\" means to judge or assess the value of something.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-36",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "He is capable to do it.",
+   "He is capable of doing it.",
+   "He is capable for do it.",
+   "He capable of do it."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "The correct pattern is \"capable of\" + verb-ing.",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-37",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "The police is investigating.",
+   "The police are investigating.",
+   "The police are investigates.",
+   "A police are investigating."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "\"Police\" is a plural noun, so it takes a plural verb: \"are investigating\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ },
+ {
+  "src": "m1-38",
+  "question": "Choose the correct sentence.",
+  "options": [
+   "I look forward to meet you.",
+   "I look forward to meeting you.",
+   "I look forward for meet you.",
+   "I am look forward to meeting you."
+  ],
+  "correct": 1,
+  "book_key": "B",
+  "reason": "In \"look forward to\", \"to\" is a preposition, so it is followed by verb-ing: \"meeting\".",
+  "passage": null,
+  "skip": false,
+  "note": ""
+ }
+]

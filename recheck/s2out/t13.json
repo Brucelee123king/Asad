@@ -1,0 +1,362 @@
+[
+ {
+  "id": "M7699",
+  "verdict": "unclear",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Raja_Aziz_Bhatti",
+   "https://gujrat.punjab.gov.pk/node/114",
+   "https://www.brecorder.com/news/522691"
+  ],
+  "note": "Most official commemorations say 12 Sep 1965 (not an option); Punjab govt and Nishan-e-Haider citation say 10 Sep 1965, so 10 Sep is the best option"
+ },
+ {
+  "id": "M7764",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "https://www.nst.com.my/amp/sports/badminton/2026/05/1431731/china-deny-france-historic-upset-seal-12th-thomas-cup-title-watch",
+   "https://www.badmintonplanet.com/?p=26049",
+   "https://us.yonex.com/blogs/badminton/china-and-korea-triumph-at-thomas-uber-cup-finals-2026"
+  ],
+  "note": "China beat France 3-1 in the 2026 Thomas Cup final (Horsens, 3 May 2026)"
+ },
+ {
+  "id": "M7767",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Chief_Justice_of_Pakistan",
+   "https://en.wikipedia.org/wiki/Yahya_Afridi",
+   "https://www.bolnews.com/pakistan/justice-munib-akhtar-takes-oath-as-acting-chief-justice-of-pakistan"
+  ],
+  "note": "Yahya Afridi is CJP since 26 Oct 2024 (term to Oct 2027); Munib Akhtar only acting briefly in 2026"
+ },
+ {
+  "id": "M7796",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "IMF World Economic Outlook April 2026",
+   "https://www.statista.com/statistics/268173/countries-with-the-largest-gross-domestic-product-gdp",
+   "https://statisticstimes.com/economy/united-states-vs-china-economy.php"
+  ],
+  "note": "US is largest by nominal GDP in 2026 (~32 trillion USD), China second (~21 trillion)"
+ },
+ {
+  "id": "M7797",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Syed_Sardar_Ali_Shah",
+   "https://www.thenews.pk/print/1436227-sardar-shah-calls-for-respectful-discourse-on-sindh-s-political-and-educational-issues",
+   "https://en.wikipedia.org/wiki/Sindh_Education_and_Literacy_Department"
+  ],
+  "note": "Syed Sardar Ali Shah is Sindh Education Minister since March 2024, still called so in Sept 2026 news"
+ },
+ {
+  "id": "M7827",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "https://ddindia.co.in/2026/10/eam-jaishankar-to-visit-ghana-cote-divoire-and-ethiopia-from-october-6-10/",
+   "https://www.zawya.com/en/press-release/africa-press-releases/india-official-visit-of-external-affairs-minister-to-ghana-cote-divoire-and-ethiopia-october-06-10-2026-1522767",
+   "https://en.wikipedia.org/wiki/S._Jaishankar"
+  ],
+  "note": "S. Jaishankar is India's External Affairs Minister (visited Africa 6-10 Oct 2026)"
+ },
+ {
+  "id": "M7828",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Abbas_Araghchi",
+   "https://www.presstv.co.uk/Detail/2026/10/05/777664/Iran-Armenia-Araghchi-Mirzoyan-",
+   "https://digg.com/world-business/hr0noiqk"
+  ],
+  "note": "Abbas Araghchi is Iran's FM since Aug 2024, still in office Oct 2026"
+ },
+ {
+  "id": "M7847",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "https://www.un.org/sustainabledevelopment/blog/2025/11/press-release-wup2025/",
+   "https://desapublications.un.org/un-desa-voice/feature/december-2025/latest-urbanization-data-reveal-worlds-most-populous-cities",
+   "https://www.upi.com/Top_News/World-News/2025/11/25/jakarta-worlds-biggest-city/6671764099677/"
+  ],
+  "note": "UN WUP 2025: Jakarta ~42 million is the most populous city, ahead of Dhaka and Tokyo"
+ },
+ {
+  "id": "M7856",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Bakht_Muhammad_Kakar",
+   "Balochistan cabinet (Sarfraz Bugti govt)"
+  ],
+  "note": "Bakht Muhammad Kakar is Balochistan Health Minister since Sept 2024; Sarfraz Bugti is the CM"
+ },
+ {
+  "id": "M7868",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Kristalina_Georgieva",
+   "IMF press release 12 April 2024 (second term)"
+  ],
+  "note": "Kristalina Georgieva is IMF MD since Oct 2019; reappointed for a 2nd 5-year term from Oct 2024"
+ },
+ {
+  "id": "M7939",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Nawaz_Sharif",
+   "https://en.wikipedia.org/wiki/List_of_prime_ministers_of_Pakistan"
+  ],
+  "note": "Nawaz Sharif was PM three times: 1990-93, 1997-99, 2013-17"
+ },
+ {
+  "id": "M7982",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Nuclear_power_in_Pakistan",
+   "https://en.wikipedia.org/wiki/Karachi_Nuclear_Power_Plant"
+  ],
+  "note": "Karachi K-2 + K-3 = 2,210 MW, larger than Chashma C-1 to C-4 (1,330 MW)"
+ },
+ {
+  "id": "M7996",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/States_and_union_territories_of_India",
+   "https://knowindia.india.gov.in"
+  ],
+  "note": "India has 28 states and 8 union territories"
+ },
+ {
+  "id": "M7999",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Rana_Sikandar_Hayat",
+   "Punjab govt cabinet (Maryam Nawaz)"
+  ],
+  "note": "Rana Sikandar Hayat is Punjab Minister for School & Higher Education since March 2024"
+ },
+ {
+  "id": "M8033",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Senate_of_Pakistan",
+   "Constitution of Pakistan Article 59"
+  ],
+  "note": "Senate has 96 seats; 17 reserved for women (4 per province + 1 Islamabad)"
+ },
+ {
+  "id": "M8238",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Census_in_Pakistan",
+   "https://www.pbs.gov.pk"
+  ],
+  "note": "Seven censuses: 1951, 1961, 1972, 1981, 1998, 2017, 2023"
+ },
+ {
+  "id": "M8297",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "https://www.finance.gov.pk/survey/chapter_26/10_Education.pdf",
+   "HIES 2024-25 (PBS)"
+  ],
+  "note": "Economic Survey 2025-26: literacy (10+) rose from 61 to 63 percent in 2024-25"
+ },
+ {
+  "id": "M8309",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table",
+   "https://olympics.com"
+  ],
+  "note": "USA has most all-time Olympic medals (~3,100), far ahead of Soviet Union"
+ },
+ {
+  "id": "M8318",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "https://www.nobelprize.org/prizes/physics/1979/salam/facts/",
+   "https://en.wikipedia.org/wiki/Abdus_Salam"
+  ],
+  "note": "Only Dr Abdus Salam (1979) won the Physics Nobel"
+ },
+ {
+  "id": "M8334",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Shanghai_Cooperation_Organisation",
+   "https://eng.sectsco.org"
+  ],
+  "note": "SCO has 10 full members; Belarus joined 4 July 2024 as latest"
+ },
+ {
+  "id": "M8427",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "Seerat-un-Nabi (Shibli Nomani / Qazi Sulaiman Mansoorpuri)",
+   "Pakistani Islamiyat textbooks"
+  ],
+  "note": "Textbooks give 9/12 Rabi-ul-Awwal, 22 April 571 AD (some say 20 April 571); 22 April 571 is the listed option"
+ },
+ {
+  "id": "M8465",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "https://www.ucs.org/resources/satellite-database",
+   "https://en.wikipedia.org/wiki/Starlink"
+  ],
+  "note": "USA operates by far the most satellites (thousands, mostly Starlink); China second"
+ },
+ {
+  "id": "M8554",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Inter-Services_Intelligence",
+   "ISPR"
+  ],
+  "note": "Lt Gen Muhammad Asim Malik is DG ISI since 30 Sept 2024 (incumbent)"
+ },
+ {
+  "id": "M8598",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/ICC_Champions_Trophy",
+   "https://www.icc-cricket.com"
+  ],
+  "note": "India has 3 titles (2002 shared, 2013, 2025); Australia 2"
+ },
+ {
+  "id": "M8642",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Attaullah_Tarar",
+   "https://en.wikipedia.org/wiki/Ministry_of_Information_and_Broadcasting_(Pakistan)"
+  ],
+  "note": "Attaullah Tarar is Federal Information Minister since 11 March 2024"
+ },
+ {
+  "id": "M8664",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Novak_Djokovic",
+   "https://ausopen.com"
+  ],
+  "note": "Djokovic has 10 Australian Open titles, the most"
+ },
+ {
+  "id": "M8690",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Jimmy_Connors",
+   "https://en.wikipedia.org/wiki/Novak_Djokovic"
+  ],
+  "note": "Connors 109 titles; Federer 103; Djokovic 102 (Oct 2026)"
+ },
+ {
+  "id": "M8695",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Michael_Phelps",
+   "https://olympics.com"
+  ],
+  "note": "Michael Phelps has 23 Olympic golds (28 medals), the most ever"
+ },
+ {
+  "id": "M8705",
+  "verdict": "unclear",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "Constitution of Pakistan Art. 175A and 177 (pakistani.org)",
+   "https://en.wikipedia.org/wiki/Chief_Justice_of_Pakistan"
+  ],
+  "note": "Art 177 says the President appoints the CJP in accordance with Art 175A; Art 175A(3) (26th amendment) gives the CJP nomination; both 175A and 177 are defensible"
+ },
+ {
+  "id": "M8722",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/X_Corp.",
+   "https://en.wikipedia.org/wiki/Elon_Musk"
+  ],
+  "note": "Elon Musk owns X; it now sits under his SpaceX/xAI group (since 2025-26)"
+ },
+ {
+  "id": "M8740",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "https://www.finance.gov.pk/survey/chapter_26/8_Trade%20and%20Payments.pdf",
+   "State Bank of Pakistan country-wise remittances"
+  ],
+  "note": "Saudi Arabia is the top remittance source (ahead of UAE) in FY2024 and FY2026"
+ },
+ {
+  "id": "M8744",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "https://www.un.org/development/desa/pd/world-population-prospects",
+   "https://en.wikipedia.org/wiki/List_of_countries_by_population_(United_Nations)"
+  ],
+  "note": "India passed China in 2023 as most populous country (~1.46 billion)"
+ }
+]

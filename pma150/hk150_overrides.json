@@ -1,0 +1,25 @@
+{
+ "remove": [
+  "Vehicle is to wheel as sound is to what?",
+  "Which city lies on the border of Punjab and Sindh?",
+  "Fill in the blank: The mother ___ up her emotion",
+  "Which country shares the longest land border with Pakistan?",
+  "On which date did the Indian Independence Act 1947 come into effect",
+  "In a class of 32 students, 2/3 are male."
+ ],
+ "fix": {
+  "After arranging the letters of the word MANAGEMENT in alphabetical order": {
+   "correct": 0,
+   "reason": "MANAGEMENT has the letters M, A, N, A, G, E, M, E, N, T. In alphabetical order: A, A, E, E, G, M, M, N, N, T. Counting from the end: T (1st), N (2nd), N (3rd), so the third letter from the last is N.",
+   "rel": "MANAGEMENT has 10 letters: A, E, M and N appear twice each."
+  },
+  "What is the motto given by the Quaid-e-Azam to the nation?": {
+   "correct": 0,
+   "reason": "The Quaid-e-Azam gave the nation the motto Unity, Faith, Discipline (Ittehad, Yaqeen-e-Muhkam, Nazm). This is the order used in his speeches and in Pakistani textbooks.",
+   "rel": "In Urdu the motto is often written as Ittehad, Tanzeem, Yaqeen-e-Muhkam; some books change the order, but Unity, Faith, Discipline is the standard English form."
+  },
+  "Who was elected Chief Minister of Khyber Pakhtunkhwa in October 2025": {
+   "rel": "Since 11 October 2026 Khyber Pakhtunkhwa has been under governor's rule (Governor Faisal Karim Kundi), so the province has no sitting Chief Minister at the moment. In 2021-22 the answer was Mahmood Khan."
+  }
+ }
+}

@@ -1,0 +1,7 @@
+# Task: find the VERBAL INTELLIGENCE questions in a list of MCQs
+Input: /home/user/Asad/verbal/chunks/<NAME>.json = list of {"ref","q" (question),"a" (correct answer)}.
+A question is VERBAL if it belongs to the verbal intelligence test (reasoning with words, letters and numbers), for example:
+age problems; direction sense; percentage / simple arithmetic word problems (speed, work, fractions of a number, averages); ranking and order / comparison; coding-decoding; mirror and water images of letters, numbers or words; number and letter series; analogy (word or number pairs); classification / odd one out; idioms, phrases and expressions; synonyms, antonyms, closest meaning, one-word substitutes, spelling, jumbled words, dictionary order; time sequence, clocks, calendar, days and dates; dozen / eggs / counting; blood relations; profit and loss; simple logic statements.
+NOT verbal: general knowledge, Pakistan studies, history, geography, Islamiat, current affairs, science, computer, sports, persons, capitals/currencies, academic maths (trigonometry, logs, algebra formulas, geometry facts), English grammar rules (tenses, active/passive voice, narration, parts of speech, prepositions in sentences).
+If unsure, decide by this: would it appear in a PMA/ISSB "Verbal Intelligence Test"? Yes = verbal.
+Output: write /home/user/Asad/verbal/out/<NAME>.json = {"verbal":["ref",...]} (refs exactly as given). Validate with python. Do not edit other files. Reply in 2 lines: how many questions, how many verbal.

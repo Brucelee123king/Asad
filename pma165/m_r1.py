@@ -1,0 +1,3 @@
+MATCH = [(1,79),(2,82),(3,81),(4,83),(5,231),(6,84),(7,123),(8,124),(9,291),(10,303),(11,202),(12,188),(13,307),(15,80),(16,293),(17,134),(18,158),(19,154),(20,155),(21,157),(23,145)]
+NEW = []
+ITEMS = {1:"Fourteen Points year",2:"SCO HQ",3:"First Chief Justice",4:"Coastline length",5:"Deputy PM Oct 2026",6:"Afghanistan direction",7:"Kargil year",8:"East Pakistan to Bangladesh",9:"Jinnah joined Muslim League",10:"Saudi capital",11:"Saudi currency",12:"UN HQ",13:"Khyber Pass",14:"Gwadar price (skipped)",15:"First Governor-General",16:"First Foreign Minister",17:"CDF amendment",18:"Last Surah",19:"Ruhullah",20:"Father of Ibrahim",21:"Israel title",22:"Hajj obligatory year (skipped)",23:"First martyr"}

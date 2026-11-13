@@ -1,0 +1,36 @@
+{
+ "fixes": [
+  {
+   "n": 113,
+   "field": "opts",
+   "index": 2,
+   "old": "Surah An-Naml, =)",
+   "new": "Surah An-Naml",
+   "why": "stray \", =)\" characters after option text"
+  },
+  {
+   "n": 173,
+   "field": "opts",
+   "index": 2,
+   "old": "Surah An-Naml, =)",
+   "new": "Surah An-Naml",
+   "why": "stray \", =)\" characters after option text"
+  },
+  {
+   "n": 570,
+   "field": "opts",
+   "index": 2,
+   "old": "The lonian Sea",
+   "new": "The Ionian Sea",
+   "why": "OCR: lowercase L instead of capital I in \"Ionian\""
+  },
+  {
+   "n": 928,
+   "field": "opts",
+   "index": 2,
+   "old": "The lonian Sea",
+   "new": "The Ionian Sea",
+   "why": "OCR: lowercase L instead of capital I in \"Ionian\""
+  }
+ ]
+}

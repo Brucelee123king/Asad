@@ -1,0 +1,458 @@
+[
+ {
+  "src": "A",
+  "num": 7,
+  "question": "When did Bangladesh gain independence?",
+  "options": [
+   "16 December 1971",
+   "14 August 1947",
+   "26 March 1971",
+   "21 February 1952"
+  ],
+  "correct": 2,
+  "why": "Bangladesh declared independence on 26 March 1971, which is its Independence Day.",
+  "rel": "Victory came on 16 December 1971 when Pakistan surrendered in Dhaka. Bangladesh was formerly East Pakistan.",
+  "problem": "Ambiguous: 26 March is declaration, 16 December is Victory Day."
+ },
+ {
+  "src": "A",
+  "num": 22,
+  "question": "What is cos 0°?",
+  "options": [
+   "1",
+   "0",
+   "-1",
+   "1/2"
+  ],
+  "correct": 0,
+  "why": "On the unit circle cosine is the x-coordinate, which is 1 at 0 degrees.",
+  "rel": "cos 90° = 0 and cos 180° = -1."
+ },
+ {
+  "src": "A",
+  "num": 44,
+  "question": "Which country produces large quantities of black tea?",
+  "options": [
+   "Brazil",
+   "Japan",
+   "Argentina",
+   "Kenya"
+  ],
+  "correct": 3,
+  "why": "Kenya is a leading producer and exporter of black tea.",
+  "rel": "China leads in total tea production. India is also a major tea producer.",
+  "problem": "Rankings vary; China/India lead overall tea, Kenya is top black tea exporter."
+ },
+ {
+  "src": "A",
+  "num": 59,
+  "question": "Which country has the largest maritime boundary?",
+  "options": [
+   "Australia",
+   "Russia",
+   "Canada",
+   "Indonesia"
+  ],
+  "correct": 1,
+  "why": "Russia is often cited among countries with the largest maritime boundary/EEZ, but the answer depends on definition.",
+  "rel": "Canada is commonly cited for the longest coastline. A coastline is not the same as a maritime boundary.",
+  "problem": "Ambiguous: depends on definition (coastline, maritime boundary, EEZ). By EEZ, France/US/Russia/Australia rank near the top."
+ },
+ {
+  "src": "A",
+  "num": 74,
+  "question": "Who won the 2019 ICC Cricket World Cup?",
+  "options": [
+   "New Zealand",
+   "India",
+   "England",
+   "Australia"
+  ],
+  "correct": 2,
+  "why": "England won the 2019 ICC Cricket World Cup, beating New Zealand in the final at Lord's.",
+  "rel": "The final was decided on boundary count after a tied Super Over. It was England's first World Cup title."
+ },
+ {
+  "src": "A",
+  "num": 88,
+  "question": "Who is the Prime Minister of Pakistan?",
+  "options": [
+   "Imran Khan",
+   "Shehbaz Sharif",
+   "Nawaz Sharif",
+   "Bilawal Bhutto Zardari"
+  ],
+  "correct": 1,
+  "why": "As of Oct 2026, Shehbaz Sharif is Prime Minister of Pakistan, serving since March 2024.",
+  "rel": "The PM is elected by the National Assembly. Asif Ali Zardari is the President."
+ },
+ {
+  "src": "A",
+  "num": 102,
+  "question": "Which company owns PlayStation?",
+  "options": [
+   "Microsoft",
+   "Nintendo",
+   "Sega",
+   "Sony"
+  ],
+  "correct": 3,
+  "why": "PlayStation is owned by Sony Interactive Entertainment, part of Sony Group.",
+  "rel": "The original PlayStation launched in Japan in 1994. Xbox belongs to Microsoft."
+ },
+ {
+  "src": "A",
+  "num": 113,
+  "question": "What is the old name of Türkiye?",
+  "options": [
+   "Ottoman Empire",
+   "Persian Empire",
+   "Mughal Empire",
+   "Byzantine Empire"
+  ],
+  "correct": 0,
+  "why": "The Ottoman Empire preceded the Republic of Türkiye, which was proclaimed in 1923.",
+  "rel": "Anatolia (Asia Minor) is the region, not the state's old name. Türkiye's capital is Ankara.",
+  "problem": "Ambiguous: source says Anatolia is only the region; Ottoman Empire is the standard state predecessor."
+ },
+ {
+  "src": "A",
+  "num": 126,
+  "question": "What is the fastest-running bird?",
+  "options": [
+   "Eagle",
+   "Ostrich",
+   "Emu",
+   "Peacock"
+  ],
+  "correct": 1,
+  "why": "The ostrich is the fastest-running bird, reaching about 70 km/h in short bursts.",
+  "rel": "Ostriches are flightless birds native to Africa. They are the largest living birds."
+ },
+ {
+  "src": "B",
+  "num": 2,
+  "question": "What is another name for the Holy Quran?",
+  "options": [
+   "Al-Zabur",
+   "Al-Injil",
+   "Al-Furqan",
+   "Al-Tawrah"
+  ],
+  "correct": 2,
+  "why": "Al-Furqan, meaning the Criterion, is one of the Quran's names.",
+  "rel": "Other names include Al-Kitab and Al-Dhikr. Al-Furqan separates truth from falsehood."
+ },
+ {
+  "src": "B",
+  "num": 12,
+  "question": "When did Abu Sufyan accept Islam?",
+  "options": [
+   "2 AH (624 CE)",
+   "6 AH (628 CE)",
+   "10 AH (632 CE)",
+   "8 AH (630 CE)"
+  ],
+  "correct": 3,
+  "why": "Abu Sufyan accepted Islam at the Conquest of Makkah in Ramadan 8 AH.",
+  "rel": "He was the father of Muawiyah ibn Abi Sufyan. Makkah was conquered largely without fighting."
+ },
+ {
+  "src": "B",
+  "num": 22,
+  "question": "What was the religion of the Negus (Najashi), king of Abyssinia, at the time of the early Muslim migration?",
+  "options": [
+   "Christian",
+   "Jewish",
+   "Zoroastrian",
+   "Pagan (idol worshipper)"
+  ],
+  "correct": 0,
+  "why": "By the traditional account, Najashi was a Christian who protected the Muslim migrants.",
+  "rel": "Ja'far ibn Abi Talib spoke to him for the Muslims. Abyssinia is the historic Ethiopia."
+ },
+ {
+  "src": "B",
+  "num": 32,
+  "question": "What is the lowest point on Earth?",
+  "options": [
+   "Dead Sea shore",
+   "Challenger Deep",
+   "Lake Baikal",
+   "Death Valley"
+  ],
+  "correct": 1,
+  "why": "Challenger Deep in the Mariana Trench is the deepest known point of the ocean and Earth's lowest point.",
+  "rel": "It lies in the western Pacific Ocean. The Dead Sea shore is the lowest exposed land.",
+  "problem": "Ambiguous: Dead Sea shore is the lowest land point; Challenger Deep is the lowest point overall."
+ },
+ {
+  "src": "B",
+  "num": 42,
+  "question": "Who was Pakistan's first woman Governor-General?",
+  "options": [
+   "Fatima Jinnah",
+   "Benazir Bhutto",
+   "Begum Ra'ana Liaquat Ali Khan",
+   "Begum Shaista Ikramullah"
+  ],
+  "correct": 2,
+  "why": "Pakistan never had a woman Governor-General; Begum Ra'ana Liaquat Ali Khan was its first woman governor (Sindh, 1973-76).",
+  "rel": "Jinnah was the first Governor-General. The post ended when Pakistan became a republic in 1956.",
+  "problem": "Question premise is false: no woman Governor-General; answer is first woman governor."
+ },
+ {
+  "src": "B",
+  "num": 52,
+  "question": "What is the cube root of −2?",
+  "options": [
+   "-√2 (about -1.41)",
+   "-2/3",
+   "-8",
+   "-∛2 (about -1.26)"
+  ],
+  "correct": 3,
+  "why": "The cube root of a negative number is negative, so the cube root of -2 is -∛2, about -1.26.",
+  "rel": "1.26 cubed is about 2. Cube root of -8 is -2."
+ },
+ {
+  "src": "B",
+  "num": 63,
+  "question": "Who advocated separating Sindh from the Bombay Presidency?",
+  "options": [
+   "Sindhi Muslim leaders and the All-India Muslim League (Jinnah)",
+   "Indian National Congress",
+   "Hindu Mahasabha",
+   "Unionist Party"
+  ],
+  "correct": 0,
+  "why": "Sindhi Muslim leaders and the Muslim League backed separation; Jinnah included it in his Fourteen Points (1929).",
+  "rel": "Sindh became a separate province in 1936. The Government of India Act 1935 was then coming into force.",
+  "problem": "Source answer is vague; standard answer is Muslim League/Jinnah and Sindhi leaders."
+ },
+ {
+  "src": "B",
+  "num": 73,
+  "question": "Is the Red Sea also known as the Gulf of Arabia?",
+  "options": [
+   "Yes",
+   "No",
+   "Only in ancient times",
+   "Only in the Persian Gulf region"
+  ],
+  "correct": 1,
+  "why": "The Red Sea is not called the Gulf of Arabia; its historic name is the Erythraean Sea.",
+  "rel": "It lies between northeast Africa and Arabia. It joins the Gulf of Aden via Bab-el-Mandeb."
+ },
+ {
+  "src": "B",
+  "num": 83,
+  "question": "Who is commonly credited with providing an intellectual vision for a separate Muslim-majority state in South Asia?",
+  "options": [
+   "Chaudhry Rahmat Ali",
+   "Sir Syed Ahmad Khan",
+   "Allama Muhammad Iqbal",
+   "Maulana Muhammad Ali Jauhar"
+  ],
+  "correct": 2,
+  "why": "Allama Iqbal gave the vision in his Allahabad Address of December 1930.",
+  "rel": "Rahmat Ali coined the name Pakistan in 1933 in Now or Never. Iqbal is called the Poet of the East."
+ },
+ {
+  "src": "B",
+  "num": 93,
+  "question": "What was the first major war between Pakistan and India over Kashmir?",
+  "options": [
+   "1965 war",
+   "1971 war",
+   "Kargil War (1999)",
+   "1947-48 war"
+  ],
+  "correct": 3,
+  "why": "The first Indo-Pakistani war over Kashmir was fought in 1947-48.",
+  "rel": "A UN-arranged ceasefire took effect on 1 January 1949. It began soon after Partition."
+ },
+ {
+  "src": "B",
+  "num": 103,
+  "question": "When was the First Battle of Panipat fought?",
+  "options": [
+   "21 April 1526",
+   "21 April 1556",
+   "5 November 1556",
+   "17 March 1527"
+  ],
+  "correct": 0,
+  "why": "Babur defeated Ibrahim Lodi at the First Battle of Panipat on 21 April 1526.",
+  "rel": "This began Mughal rule in northern India. The Second Battle of Panipat was in 1556."
+ },
+ {
+  "src": "B",
+  "num": 113,
+  "question": "When did the Khilafat Movement begin?",
+  "options": [
+   "1906",
+   "1919",
+   "1924",
+   "1930"
+  ],
+  "correct": 1,
+  "why": "The Khilafat Movement began in 1919 and continued into the early 1920s.",
+  "rel": "It aimed to save the Ottoman Caliphate after WWI. It overlapped with Non-Cooperation."
+ },
+ {
+  "src": "B",
+  "num": 123,
+  "question": "During whose caliphate was the Battle of Yamama fought?",
+  "options": [
+   "Hazrat Umar (RA)",
+   "Hazrat Uthman (RA)",
+   "Hazrat Abu Bakr (RA)",
+   "Hazrat Ali (RA)"
+  ],
+  "correct": 2,
+  "why": "The Battle of Yamama was fought in 11 AH during Abu Bakr's caliphate against Musaylima.",
+  "rel": "Many Quran reciters died there. This led to the collection of the Quran."
+ },
+ {
+  "src": "B",
+  "num": 133,
+  "question": "Pakistan has opposed India's unconditional inclusion in which group?",
+  "options": [
+   "Missile Technology Control Regime",
+   "Shanghai Cooperation Organisation",
+   "BRICS",
+   "Nuclear Suppliers Group (NSG)"
+  ],
+  "correct": 3,
+  "why": "Pakistan opposes India's unconditional inclusion in the Nuclear Suppliers Group.",
+  "rel": "Pakistan favours a criteria-based approach. The NSG coordinates nuclear export controls."
+ },
+ {
+  "src": "B",
+  "num": 143,
+  "question": "What is the space between a document margin and the start of a paragraph called?",
+  "options": [
+   "Indentation",
+   "Line spacing",
+   "Justification",
+   "Tabulation"
+  ],
+  "correct": 0,
+  "why": "Indentation is the inset of a paragraph from the margin.",
+  "rel": "First-line and hanging indents are common. Paragraph spacing is the vertical gap."
+ },
+ {
+  "src": "B",
+  "num": 153,
+  "question": "A book costs Rs 500 and is sold for Rs 700. What is the profit percentage?",
+  "options": [
+   "28.5%",
+   "40%",
+   "20%",
+   "50%"
+  ],
+  "correct": 1,
+  "why": "Profit is 700-500 = Rs 200; 200/500 x 100 = 40%.",
+  "rel": "Profit % is always on cost price. Loss % is calculated the same way."
+ },
+ {
+  "src": "B",
+  "num": 163,
+  "question": "Which pronoun can replace the singular noun “school” in a sentence?",
+  "options": [
+   "He",
+   "They",
+   "It",
+   "She"
+  ],
+  "correct": 2,
+  "why": "A singular thing like a school is replaced by the pronoun \"it\".",
+  "rel": "Use \"they\" for plural schools. Example: The school is old. It needs repairs."
+ },
+ {
+  "src": "B",
+  "num": 173,
+  "question": "What is one tenth of 90?",
+  "options": [
+   "10",
+   "1",
+   "0.9",
+   "9"
+  ],
+  "correct": 3,
+  "why": "One tenth means dividing by 10, and 90 / 10 = 9.",
+  "rel": "One hundredth of 90 is 0.9. Ten percent equals one tenth."
+ },
+ {
+  "src": "B",
+  "num": 183,
+  "question": "How old was Prophet Muhammad (PBUH) during the Harb al-Fijar?",
+  "options": [
+   "About 15 years",
+   "About 10 years",
+   "About 25 years",
+   "About 40 years"
+  ],
+  "correct": 0,
+  "why": "Traditional accounts say he was about 15 (some say 14-20) at Harb al-Fijar.",
+  "rel": "It was a series of pre-Islamic tribal conflicts. He did not fight as a main combatant.",
+  "problem": "Reports vary on exact age; 15 is the commonly given figure."
+ },
+ {
+  "src": "B",
+  "num": 193,
+  "question": "When was the Lahore Resolution adopted?",
+  "options": [
+   "14 August 1947",
+   "23 March 1940",
+   "23 March 1956",
+   "6 September 1965"
+  ],
+  "correct": 1,
+  "why": "The Lahore Resolution was adopted on 23 March 1940 at the Muslim League session in Lahore.",
+  "rel": "It is also called the Pakistan Resolution. 23 March is Pakistan Day."
+ },
+ {
+  "src": "B",
+  "num": 203,
+  "question": "Who is Pakistan's Federal Minister for Finance and Revenue?",
+  "options": [
+   "Ishaq Dar",
+   "Miftah Ismail",
+   "Muhammad Aurangzeb",
+   "Shaukat Tarin"
+  ],
+  "correct": 2,
+  "why": "As of Oct 2026, Senator Muhammad Aurangzeb is Federal Minister for Finance and Revenue, since March 2024.",
+  "rel": "He was in Bangkok for IMF-World Bank meetings in October 2026. Ishaq Dar is Deputy PM and Foreign Minister."
+ },
+ {
+  "src": "B",
+  "num": 213,
+  "question": "Which parties signed the Lucknow Pact?",
+  "options": [
+   "Muslim League and Unionist Party",
+   "Congress and Hindu Mahasabha",
+   "Khilafat Committee and Congress",
+   "Indian National Congress and All-India Muslim League"
+  ],
+  "correct": 3,
+  "why": "The Lucknow Pact of 1916 was signed by the Congress and the Muslim League.",
+  "rel": "Congress accepted separate electorates for Muslims. Jinnah played a key role."
+ },
+ {
+  "src": "B",
+  "num": 223,
+  "question": "A train travels at 120 km/h. How far does it travel in 18 minutes?",
+  "options": [
+   "36 km",
+   "30 km",
+   "40 km",
+   "24 km"
+  ],
+  "correct": 0,
+  "why": "18 minutes is 0.3 hour, so distance = 120 x 0.3 = 36 km.",
+  "rel": "Distance = speed x time. 120 km/h means 2 km per minute."
+ }
+]

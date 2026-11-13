@@ -1,0 +1,1154 @@
+[
+ {
+  "id": "B361",
+  "question": "What is the UN status of Palestine and the Holy See (Vatican City)?",
+  "options": [
+   "The Holy See is a full member; Palestine is an observer",
+   "Palestine is a full member; the Holy See is an observer",
+   "Both are full member states",
+   "Both are non-member observer states"
+  ],
+  "correct": 3,
+  "why": "Neither is a full UN member; both have non-member observer state status in the General Assembly.",
+  "rel": "The UN has 193 member states.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B362",
+  "question": "Which countries are known as the Baltic States?",
+  "options": [
+   "Denmark, Sweden and Finland",
+   "Finland, Estonia and Latvia",
+   "Estonia, Latvia and Lithuania",
+   "Poland, Lithuania and Belarus"
+  ],
+  "correct": 2,
+  "why": "Estonia, Latvia and Lithuania are the three Baltic States on the eastern shore of the Baltic Sea.",
+  "rel": "Their capitals are Tallinn, Riga and Vilnius.",
+  "status": "ok",
+  "note": "",
+  "match": 92
+ },
+ {
+  "id": "B363",
+  "question": "Which party did Quaid-e-Azam join before joining the Muslim League?",
+  "options": [
+   "Khilafat Committee",
+   "Indian National Congress",
+   "Unionist Party",
+   "Home Rule League"
+  ],
+  "correct": 1,
+  "why": "Jinnah joined the Indian National Congress in 1906 and the Muslim League in 1913.",
+  "rel": "Jinnah left the Congress in 1920.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B364",
+  "question": "In which Hijri year did Hazrat Khalid bin Walid (RA) accept Islam?",
+  "options": [
+   "8 AH",
+   "10 AH",
+   "6 AH",
+   "5 AH"
+  ],
+  "correct": 0,
+  "why": "Khalid bin Walid (RA) accepted Islam in 8 AH, shortly before the conquest of Makkah.",
+  "rel": "He is known by the title Saifullah (Sword of Allah).",
+  "status": "ok",
+  "note": "",
+  "match": 96
+ },
+ {
+  "id": "B365",
+  "question": "Which neighbouring country is separated from Pakistan by the Durand Line?",
+  "options": [
+   "China",
+   "India",
+   "Iran",
+   "Afghanistan"
+  ],
+  "correct": 3,
+  "why": "The Durand Line is the border between Pakistan and Afghanistan.",
+  "rel": "The Pakistan-Afghanistan border is about 2,640 km long.",
+  "status": "unsure",
+  "note": "Original '1,200 miles' border question is unclear; no border matches that figure exactly, so asked about the Durand Line (Afghanistan).",
+  "match": null
+ },
+ {
+  "id": "B366",
+  "question": "In which battle were about 70 Muslim Companions martyred?",
+  "options": [
+   "Battle of Hunain",
+   "Battle of Badr",
+   "Battle of Uhud",
+   "Battle of the Trench (Khandaq)"
+  ],
+  "correct": 2,
+  "why": "About 70 Muslims were martyred at the Battle of Uhud.",
+  "rel": "The Battle of Uhud was fought in 3 AH (625 CE).",
+  "status": "ok",
+  "note": "",
+  "match": 234
+ },
+ {
+  "id": "B367",
+  "question": "Which prophet has the title 'Kalimullah'?",
+  "options": [
+   "Prophet Isa (AS)",
+   "Prophet Adam (AS)",
+   "Prophet Ibrahim (AS)",
+   "Prophet Musa (AS)"
+  ],
+  "correct": 3,
+  "why": "Kalimullah means 'the one who spoke with Allah', the title of Prophet Musa (AS).",
+  "rel": "The Torah (Taurat) was revealed to Musa (AS).",
+  "status": "ok",
+  "note": "",
+  "match": 137
+ },
+ {
+  "id": "B368",
+  "question": "What is Pakistan's national flower?",
+  "options": [
+   "Rose",
+   "Tulip",
+   "Jasmine",
+   "Lotus"
+  ],
+  "correct": 2,
+  "why": "Jasmine (Chambeli) is the national flower of Pakistan.",
+  "rel": "Pakistan's national tree is the Deodar.",
+  "status": "ok",
+  "note": "",
+  "match": 70
+ },
+ {
+  "id": "B369",
+  "question": "How often does a leap year usually occur?",
+  "options": [
+   "Every 3 years",
+   "Every 5 years",
+   "Every 4 years",
+   "Every 2 years"
+  ],
+  "correct": 2,
+  "why": "A leap year comes every 4 years, adding 29 February.",
+  "rel": "A century year is a leap year only if divisible by 400, so 1900 was not but 2000 was.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B370",
+  "question": "In which Hijri year was Makkah conquered?",
+  "options": [
+   "8 AH",
+   "6 AH",
+   "7 AH",
+   "9 AH"
+  ],
+  "correct": 0,
+  "why": "Makkah was conquered in Ramadan 8 AH (630 CE).",
+  "rel": "It followed the breach of the Treaty of Hudaybiyyah.",
+  "status": "ok",
+  "note": "",
+  "match": 148
+ },
+ {
+  "id": "B371",
+  "question": "How many months of the year have 31 days?",
+  "options": [
+   "Seven",
+   "Eight",
+   "Six",
+   "Five"
+  ],
+  "correct": 0,
+  "why": "January, March, May, July, August, October and December have 31 days.",
+  "rel": "February has 28 days, or 29 in a leap year.",
+  "status": "ok",
+  "note": "",
+  "match": 111
+ },
+ {
+  "id": "B372",
+  "question": "In which year were the Montagu-Chelmsford Reforms enacted as the Government of India Act?",
+  "options": [
+   "1909",
+   "1935",
+   "1916",
+   "1919"
+  ],
+  "correct": 3,
+  "why": "The Montagu-Chelmsford Report of 1918 led to the Government of India Act 1919.",
+  "rel": "The Act introduced dyarchy in the provinces.",
+  "status": "ok",
+  "note": "",
+  "match": 88
+ },
+ {
+  "id": "B373",
+  "question": "A light-year is a unit of what?",
+  "options": [
+   "Speed",
+   "Time",
+   "Distance",
+   "Brightness"
+  ],
+  "correct": 2,
+  "why": "A light-year is the distance light travels in one year.",
+  "rel": "One light-year is about 9.46 trillion km.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B374",
+  "question": "In which year did the War of Independence take place in the subcontinent?",
+  "options": [
+   "1885",
+   "1847",
+   "1857",
+   "1867"
+  ],
+  "correct": 2,
+  "why": "The War of Independence (called the Mutiny by the British) broke out in 1857.",
+  "rel": "It began at Meerut on 10 May 1857.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B375",
+  "question": "In which year did Sir Syed Ahmad Khan establish the Scientific Society?",
+  "options": [
+   "1875",
+   "1857",
+   "1886",
+   "1864"
+  ],
+  "correct": 3,
+  "why": "Sir Syed set up the Scientific Society at Ghazipur in 1864.",
+  "rel": "Its aim was to translate Western science books into Urdu; it later moved to Aligarh.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B376",
+  "question": "Which book did Sir Syed Ahmad Khan write in reply to William Muir's 'Life of Mahomet'?",
+  "options": [
+   "Asar-us-Sanadid",
+   "Asbab-e-Baghawat-e-Hind",
+   "Khutbat-e-Ahmadiya",
+   "Tabyin-ul-Kalam"
+  ],
+  "correct": 2,
+  "why": "Sir Syed wrote Khutbat-e-Ahmadiya to answer Muir's criticism of the Prophet (PBUH).",
+  "rel": "Muir's biography was published in 1858-1861.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B377",
+  "question": "In which year did Sir Syed Ahmad Khan establish the MAO School at Aligarh?",
+  "options": [
+   "1886",
+   "1864",
+   "1875",
+   "1877"
+  ],
+  "correct": 2,
+  "why": "The Muhammadan Anglo-Oriental School at Aligarh was founded in 1875.",
+  "rel": "It became MAO College in 1877 and Aligarh Muslim University in 1920.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B378",
+  "question": "In which year was the Indian National Congress founded?",
+  "options": [
+   "1906",
+   "1885",
+   "1875",
+   "1855"
+  ],
+  "correct": 1,
+  "why": "The Congress was founded in 1885, with A.O. Hume as a key organizer.",
+  "rel": "Its first session was held in Bombay in December 1885.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B379",
+  "question": "In which year was Bengal partitioned?",
+  "options": [
+   "1905",
+   "1909",
+   "1911",
+   "1899"
+  ],
+  "correct": 0,
+  "why": "The Partition of Bengal took effect in October 1905 under Lord Curzon.",
+  "rel": "It was annulled in 1911.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B380",
+  "question": "In which year did the Simla Deputation meet the Viceroy?",
+  "options": [
+   "1905",
+   "1909",
+   "1911",
+   "1906"
+  ],
+  "correct": 3,
+  "why": "The Simla Deputation met Lord Minto on 1 October 1906.",
+  "rel": "It was led by Sir Aga Khan III and asked for separate electorates.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B381",
+  "question": "When was the All-India Muslim League founded in Dhaka?",
+  "options": [
+   "16 October 1905",
+   "25 December 1909",
+   "1 October 1906",
+   "30 December 1906"
+  ],
+  "correct": 3,
+  "why": "The Muslim League was founded in Dhaka on 30 December 1906.",
+  "rel": "It was founded during the annual session of the Muhammadan Educational Conference.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B382",
+  "question": "In which year were the Morley-Minto Reforms enacted?",
+  "options": [
+   "1906",
+   "1919",
+   "1911",
+   "1909"
+  ],
+  "correct": 3,
+  "why": "The Indian Councils Act 1909 is known as the Morley-Minto Reforms.",
+  "rel": "These reforms gave Muslims separate electorates.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B383",
+  "question": "In which year was the Partition of Bengal annulled?",
+  "options": [
+   "1905",
+   "1911",
+   "1909",
+   "1913"
+  ],
+  "correct": 1,
+  "why": "The partition was cancelled at the Delhi Durbar on 12 December 1911.",
+  "rel": "In 1911 the capital was also shifted from Calcutta to Delhi.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B384",
+  "question": "In which year did Quaid-e-Azam join the All-India Muslim League?",
+  "options": [
+   "1916",
+   "1920",
+   "1906",
+   "1913"
+  ],
+  "correct": 3,
+  "why": "Jinnah joined the Muslim League in 1913 while still a Congress member.",
+  "rel": "He had joined the Indian National Congress in 1906.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B385",
+  "question": "In which year was the Lucknow Pact signed?",
+  "options": [
+   "1916",
+   "1928",
+   "1919",
+   "1913"
+  ],
+  "correct": 0,
+  "why": "The Lucknow Pact was signed in 1916.",
+  "rel": "It was an agreement between the Congress and the Muslim League that accepted separate electorates.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B386",
+  "question": "When did the Jallianwala Bagh massacre take place?",
+  "options": [
+   "10 May 1857",
+   "13 April 1919",
+   "23 March 1931",
+   "13 April 1909"
+  ],
+  "correct": 1,
+  "why": "The massacre took place in Amritsar on 13 April 1919.",
+  "rel": "Brigadier-General Reginald Dyer ordered the troops to fire.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B387",
+  "question": "During which period did the Khilafat Movement take place?",
+  "options": [
+   "1937-1939",
+   "1928-1932",
+   "1906-1911",
+   "1919-1924"
+  ],
+  "correct": 3,
+  "why": "The Khilafat Movement ran from about 1919 until the Caliphate was abolished in 1924.",
+  "rel": "It aimed to save the Ottoman Caliphate after World War I.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B388",
+  "question": "In which year was the Nehru Report published?",
+  "options": [
+   "1928",
+   "1929",
+   "1927",
+   "1930"
+  ],
+  "correct": 0,
+  "why": "The Nehru Report was published in 1928.",
+  "rel": "It was prepared by a committee chaired by Motilal Nehru.",
+  "status": "ok",
+  "note": "",
+  "match": 152
+ },
+ {
+  "id": "B389",
+  "question": "In which year did Quaid-e-Azam present his Fourteen Points?",
+  "options": [
+   "1930",
+   "1928",
+   "1929",
+   "1927"
+  ],
+  "correct": 2,
+  "why": "Jinnah presented his Fourteen Points in 1929.",
+  "rel": "They were a reply to the Nehru Report of 1928.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B390",
+  "question": "In which year did Allama Iqbal deliver the Allahabad Address?",
+  "options": [
+   "1928",
+   "1940",
+   "1933",
+   "1930"
+  ],
+  "correct": 3,
+  "why": "Iqbal delivered the Allahabad Address on 29 December 1930.",
+  "rel": "It proposed a consolidated Muslim state in north-west India.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B391",
+  "question": "During which years were the Round Table Conferences held in London?",
+  "options": [
+   "1930-1932",
+   "1928-1930",
+   "1935-1937",
+   "1942-1944"
+  ],
+  "correct": 0,
+  "why": "Three Round Table Conferences were held in London between 1930 and 1932.",
+  "rel": "Congress attended only the second conference.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B392",
+  "question": "During which period did Congress ministries rule the provinces?",
+  "options": [
+   "1935-1937",
+   "1937-1939",
+   "1945-1947",
+   "1939-1942"
+  ],
+  "correct": 1,
+  "why": "Congress formed ministries after the 1937 elections and resigned in 1939.",
+  "rel": "They resigned in protest at India being taken into World War II without consultation.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B393",
+  "question": "When did the Muslim League observe the Day of Deliverance?",
+  "options": [
+   "22 December 1939",
+   "16 August 1946",
+   "14 August 1947",
+   "23 March 1940"
+  ],
+  "correct": 0,
+  "why": "Jinnah called for the Day of Deliverance on 22 December 1939.",
+  "rel": "It celebrated the end of Congress ministries.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B394",
+  "question": "When was the Lahore Resolution passed?",
+  "options": [
+   "23 March 1940",
+   "3 June 1947",
+   "14 August 1947",
+   "22 December 1939"
+  ],
+  "correct": 0,
+  "why": "The Lahore Resolution was adopted at the Muslim League session in Lahore in March 1940.",
+  "rel": "It later became known as the Pakistan Resolution.",
+  "status": "ok",
+  "note": "",
+  "match": 270
+ },
+ {
+  "id": "B395",
+  "question": "In which year did the Cripps Mission come to India?",
+  "options": [
+   "1940",
+   "1942",
+   "1946",
+   "1945"
+  ],
+  "correct": 1,
+  "why": "Sir Stafford Cripps came to India in March 1942.",
+  "rel": "Its proposals were rejected by both the Congress and the Muslim League.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B396",
+  "question": "In which year were the Gandhi-Jinnah talks held?",
+  "options": [
+   "1942",
+   "1945",
+   "1946",
+   "1944"
+  ],
+  "correct": 3,
+  "why": "The Gandhi-Jinnah talks were held in Bombay in September 1944.",
+  "rel": "The talks failed over the Pakistan demand.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B397",
+  "question": "In which year was the Wavell Plan announced?",
+  "options": [
+   "1944",
+   "1942",
+   "1946",
+   "1945"
+  ],
+  "correct": 3,
+  "why": "Lord Wavell announced his plan in 1945.",
+  "rel": "It proposed reforming the Viceroy's Executive Council.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B398",
+  "question": "In which year was the Simla Conference held?",
+  "options": [
+   "1945",
+   "1906",
+   "1946",
+   "1942"
+  ],
+  "correct": 0,
+  "why": "Lord Wavell called the Simla Conference in June-July 1945.",
+  "rel": "It failed over the Muslim League's right to nominate all Muslim members.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B399",
+  "question": "When were the last elections held in British India before independence?",
+  "options": [
+   "1939-40",
+   "1947-48",
+   "1936-37",
+   "1945-46"
+  ],
+  "correct": 3,
+  "why": "The central and provincial elections were held in 1945-46.",
+  "rel": "The Muslim League won almost all Muslim seats.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B400",
+  "question": "In which year did the Cabinet Mission come to India?",
+  "options": [
+   "1947",
+   "1945",
+   "1942",
+   "1946"
+  ],
+  "correct": 3,
+  "why": "The Cabinet Mission came to India in 1946.",
+  "rel": "Its members were Pethick-Lawrence, Stafford Cripps and A.V. Alexander.",
+  "status": "ok",
+  "note": "",
+  "match": 94
+ },
+ {
+  "id": "B401",
+  "question": "When was the 3rd June Plan announced?",
+  "options": [
+   "14 August 1947",
+   "3 June 1946",
+   "20 February 1947",
+   "3 June 1947"
+  ],
+  "correct": 3,
+  "why": "Lord Mountbatten announced the partition plan on 3 June 1947.",
+  "rel": "It provided for the division of British India into India and Pakistan.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B402",
+  "question": "On what date did Pakistan become independent?",
+  "options": [
+   "3 June 1947",
+   "23 March 1940",
+   "15 August 1947",
+   "14 August 1947"
+  ],
+  "correct": 3,
+  "why": "Pakistan came into being on 14 August 1947.",
+  "rel": "Pakistan joined the United Nations on 30 September 1947.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B403",
+  "question": "According to the 2023 census (PBS), how many divisions does Punjab have?",
+  "options": [
+   "9",
+   "7",
+   "8",
+   "11"
+  ],
+  "correct": 0,
+  "why": "The source lists 9 divisions for Punjab in the PBS 2023 census baseline.",
+  "rel": "Division counts can change when new divisions are notified.",
+  "status": "unsure",
+  "note": "Punjab notified new divisions around 2022 (e.g. Gujrat), so the current count may be 10 or more; kept printed 9.",
+  "match": null
+ },
+ {
+  "id": "B404",
+  "question": "According to the 2023 census (PBS), how many divisions does Sindh have?",
+  "options": [
+   "5",
+   "6",
+   "7",
+   "8"
+  ],
+  "correct": 1,
+  "why": "Sindh has 6 divisions: Karachi, Hyderabad, Mirpurkhas, Sukkur, Larkana and Shaheed Benazirabad.",
+  "rel": "Manchar is Pakistan's largest natural freshwater lake, in Sindh.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B405",
+  "question": "According to the 2023 census (PBS), how many divisions does Khyber Pakhtunkhwa have?",
+  "options": [
+   "6",
+   "8",
+   "7",
+   "9"
+  ],
+  "correct": 2,
+  "why": "KP has 7 divisions: Malakand, Hazara, Mardan, Peshawar, Kohat, Bannu and Dera Ismail Khan.",
+  "rel": "The former FATA districts are now part of KP divisions.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B406",
+  "question": "According to the 2023 census (PBS), how many divisions does Balochistan have?",
+  "options": [
+   "10",
+   "8",
+   "7",
+   "6"
+  ],
+  "correct": 1,
+  "why": "Balochistan has 8 divisions in the 2023 census list.",
+  "rel": "Balochistan is Pakistan's largest province by area.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B407",
+  "question": "According to the 2023 census (PBS), how many divisions does Pakistan have?",
+  "options": [
+   "33",
+   "26",
+   "30",
+   "28"
+  ],
+  "correct": 2,
+  "why": "The source gives 30 divisions in the PBS 2023 census baseline.",
+  "rel": "The same source counts 136 districts including Islamabad.",
+  "status": "unsure",
+  "note": "Total depends on provincial notifications; kept printed figure.",
+  "match": null
+ },
+ {
+  "id": "B408",
+  "question": "According to the 2023 census (PBS), how many districts does Punjab have?",
+  "options": [
+   "36",
+   "34",
+   "40",
+   "38"
+  ],
+  "correct": 0,
+  "why": "The source lists 36 districts for Punjab.",
+  "rel": "Punjab is Pakistan's most populous province.",
+  "status": "unsure",
+  "note": "Punjab notified new districts in 2022 (e.g. Wazirabad, Murree, Talagang), so the count may be higher; kept printed 36.",
+  "match": null
+ },
+ {
+  "id": "B409",
+  "question": "According to the 2023 census (PBS), how many districts does Sindh have?",
+  "options": [
+   "24",
+   "27",
+   "33",
+   "30"
+  ],
+  "correct": 3,
+  "why": "Sindh has 30 districts, including 7 districts of Karachi.",
+  "rel": "Keenjhar Lake in Sindh is a major source of water for Karachi.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B410",
+  "question": "According to the 2023 census (PBS), how many districts does Khyber Pakhtunkhwa have?",
+  "options": [
+   "35",
+   "38",
+   "26",
+   "30"
+  ],
+  "correct": 0,
+  "why": "The PBS 2023 table lists 35 districts for KP.",
+  "rel": "District counts change when new districts are created.",
+  "status": "unsure",
+  "note": "Sources differ (34, 35 or more); kept printed 35.",
+  "match": null
+ },
+ {
+  "id": "B411",
+  "question": "According to the 2023 census (PBS), how many districts does Balochistan have?",
+  "options": [
+   "34",
+   "38",
+   "30",
+   "32"
+  ],
+  "correct": 0,
+  "why": "The source lists 34 districts for Balochistan.",
+  "rel": "Chagai is the largest district of Balochistan by area.",
+  "status": "unsure",
+  "note": "New districts have been notified in Balochistan; count may differ; kept printed 34.",
+  "match": null
+ },
+ {
+  "id": "B412",
+  "question": "How many districts does Islamabad Capital Territory have?",
+  "options": [
+   "1",
+   "2",
+   "5",
+   "3"
+  ],
+  "correct": 0,
+  "why": "Islamabad Capital Territory is counted as a single district.",
+  "rel": "ICT is federally administered and is not a province.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B413",
+  "question": "According to the 2023 census (PBS), how many districts does Pakistan have?",
+  "options": [
+   "160",
+   "136",
+   "150",
+   "124"
+  ],
+  "correct": 1,
+  "why": "The source gives 136 districts including Islamabad in the PBS 2023 baseline.",
+  "rel": "District totals change as provinces create new districts.",
+  "status": "unsure",
+  "note": "Total depends on new district notifications; kept printed 136.",
+  "match": null
+ },
+ {
+  "id": "B414",
+  "question": "What was the religion of Najashi, King of Abyssinia, before he accepted Islam?",
+  "options": [
+   "Judaism",
+   "Christianity",
+   "Idol worship",
+   "Zoroastrianism"
+  ],
+  "correct": 1,
+  "why": "Najashi (the Negus) was a Christian king of Abyssinia.",
+  "rel": "He gave protection to the Muslims who migrated to Abyssinia.",
+  "status": "ok",
+  "note": "",
+  "match": 106
+ },
+ {
+  "id": "B415",
+  "question": "What is the currency of Indonesia?",
+  "options": [
+   "Baht",
+   "Ringgit",
+   "Rupiah",
+   "Peso"
+  ],
+  "correct": 2,
+  "why": "Indonesia's currency is the Indonesian rupiah (IDR).",
+  "rel": "Indonesia is building Nusantara as its new capital.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B416",
+  "question": "Who was the mother of Prophet Ismail (AS)?",
+  "options": [
+   "Hazrat Sarah",
+   "Hazrat Asiya",
+   "Hazrat Maryam",
+   "Hazrat Hajra (Hajar)"
+  ],
+  "correct": 3,
+  "why": "Hazrat Hajra was the mother of Ismail (AS).",
+  "rel": "The well of Zamzam is linked with Hajra and Ismail (AS).",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B417",
+  "question": "In which year did Pakistan win the Men's Hockey World Cup in Sydney?",
+  "options": [
+   "1990",
+   "1995",
+   "1982",
+   "1994"
+  ],
+  "correct": 3,
+  "why": "Pakistan won its fourth Hockey World Cup in Sydney in 1994.",
+  "rel": "Pakistan also won the World Cup in 1971, 1978 and 1982.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B418",
+  "question": "Who wrote the famous Punjabi qissa 'Sohni Mahiwal'?",
+  "options": [
+   "Fazal Shah",
+   "Waris Shah",
+   "Hashim Shah",
+   "Bulleh Shah"
+  ],
+  "correct": 0,
+  "why": "Fazal Shah is credited with the best-known Punjabi version of Sohni Mahiwal.",
+  "rel": "Waris Shah wrote the famous version of Heer Ranjha.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B419",
+  "question": "Who wrote 'Kashf-ul-Mahjoob'?",
+  "options": [
+   "Baba Farid Ganj Shakar",
+   "Ali bin Usman Hujwiri (Data Ganj Bakhsh)",
+   "Shaikh Ahmad Sirhindi",
+   "Khawaja Moinuddin Chishti"
+  ],
+  "correct": 1,
+  "why": "Kashf-ul-Mahjoob was written by Ali bin Usman Hujwiri.",
+  "rel": "It is one of the earliest books on Sufism in Persian.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B420",
+  "question": "Who won the 1999 ICC Cricket World Cup?",
+  "options": [
+   "South Africa",
+   "Sri Lanka",
+   "Australia",
+   "Pakistan"
+  ],
+  "correct": 2,
+  "why": "Australia won the 1999 World Cup.",
+  "rel": "Australia beat Pakistan in the final at Lord's.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B421",
+  "question": "Where is NATO's headquarters?",
+  "options": [
+   "Washington, D.C., USA",
+   "Paris, France",
+   "Brussels, Belgium",
+   "Geneva, Switzerland"
+  ],
+  "correct": 2,
+  "why": "NATO's headquarters is in Brussels, Belgium.",
+  "rel": "NATO was founded on 4 April 1949.",
+  "status": "ok",
+  "note": "",
+  "match": 32
+ },
+ {
+  "id": "B422",
+  "question": "Which wife of Prophet Muhammad (PBUH) was the daughter of Hazrat Umar (RA)?",
+  "options": [
+   "Hazrat Zainab (RA)",
+   "Hazrat Umm Salama (RA)",
+   "Hazrat Hafsa (RA)",
+   "Hazrat Aisha (RA)"
+  ],
+  "correct": 2,
+  "why": "Hazrat Hafsa (RA) was the daughter of Hazrat Umar (RA).",
+  "rel": "She kept the written copy of the Quran compiled under Abu Bakr (RA).",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B423",
+  "question": "Who is the youngest recipient of the Nishan-e-Haider?",
+  "options": [
+   "Sawar Muhammad Hussain",
+   "Major Aziz Bhatti",
+   "Lance Naik Muhammad Mahfuz",
+   "Pilot Officer Rashid Minhas"
+  ],
+  "correct": 3,
+  "why": "Rashid Minhas was only 20 when he was martyred in 1971.",
+  "rel": "He crashed his aircraft to stop it being taken to India.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B424",
+  "question": "Who was the first Commander-in-Chief of the Pakistan Army?",
+  "options": [
+   "General Muhammad Musa",
+   "General Ayub Khan",
+   "General Douglas Gracey",
+   "General Sir Frank Messervy"
+  ],
+  "correct": 3,
+  "why": "General Sir Frank Messervy was the first C-in-C, from August 1947.",
+  "rel": "Ayub Khan became the first Pakistani C-in-C in 1951.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B425",
+  "question": "According to the Quran (2:127), who raised the foundations of the Kaaba?",
+  "options": [
+   "Prophet Adam and Prophet Shees (AS)",
+   "Prophet Nuh (AS)",
+   "Prophet Ibrahim and Prophet Ismail (AS)",
+   "Prophet Ishaq and Prophet Yaqub (AS)"
+  ],
+  "correct": 2,
+  "why": "Surah Al-Baqarah 2:127 says Ibrahim and Ismail (AS) raised the foundations of the House.",
+  "rel": "Some traditions say Adam (AS) built it first, but the Quran names Ibrahim and Ismail (AS).",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B426",
+  "question": "The Manila Pact is another name for which treaty?",
+  "options": [
+   "Southeast Asia Collective Defense Treaty (SEATO)",
+   "Warsaw Pact",
+   "Baghdad Pact (CENTO)",
+   "North Atlantic Treaty (NATO)"
+  ],
+  "correct": 0,
+  "why": "The Manila Pact of 1954 created SEATO.",
+  "rel": "SEATO was dissolved in 1977.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B427",
+  "question": "In which Hijri year was the Qibla changed from Bait-ul-Maqdis to the Kaaba?",
+  "options": [
+   "3 AH",
+   "1 AH",
+   "2 AH",
+   "5 AH"
+  ],
+  "correct": 2,
+  "why": "The Qibla was changed in 2 AH, about 16-17 months after the Hijrah.",
+  "rel": "Masjid al-Qiblatain in Madinah is linked with this event.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B428",
+  "question": "What was the old name of Faisalabad?",
+  "options": [
+   "Jacobabad",
+   "Montgomery",
+   "Campbellpur",
+   "Lyallpur"
+  ],
+  "correct": 3,
+  "why": "Faisalabad was called Lyallpur until it was renamed in 1977.",
+  "rel": "It was renamed in honour of King Faisal of Saudi Arabia.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B429",
+  "question": "According to the 2023 census, which is Pakistan's most populous district?",
+  "options": [
+   "Karachi Central",
+   "Faisalabad",
+   "Rawalpindi",
+   "Lahore"
+  ],
+  "correct": 3,
+  "why": "Lahore District had the largest population (about 13 million) in the 2023 census.",
+  "rel": "Karachi is a bigger city, but it is split into several districts.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B430",
+  "question": "Who first proposed the idea of SAARC?",
+  "options": [
+   "President Ziaur Rahman of Bangladesh",
+   "General Zia-ul-Haq",
+   "Indira Gandhi",
+   "King Birendra of Nepal"
+  ],
+  "correct": 0,
+  "why": "Bangladesh's President Ziaur Rahman proposed regional cooperation in 1980.",
+  "rel": "SAARC was formally established in Dhaka in December 1985.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B431",
+  "question": "How many books are included in the Sihah Sittah (Kutub al-Sittah)?",
+  "options": [
+   "Five",
+   "Six",
+   "Four",
+   "Seven"
+  ],
+  "correct": 1,
+  "why": "Kutub al-Sittah means 'the six books' of hadith.",
+  "rel": "Sahih al-Bukhari and Sahih Muslim are the two most famous of them.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "B432",
+  "question": "Who martyred Hazrat Hamza (RA) at the Battle of Uhud?",
+  "options": [
+   "Ikrimah bin Abi Jahl",
+   "Abu Sufyan",
+   "Wahshi ibn Harb",
+   "Khalid bin Walid"
+  ],
+  "correct": 2,
+  "why": "Wahshi ibn Harb killed Hamza (RA) with a spear at Uhud.",
+  "rel": "Wahshi later accepted Islam.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ }
+]

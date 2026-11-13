@@ -1,0 +1,242 @@
+[
+ {
+  "id": "M4110",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/South_Asian_Association_for_Regional_Cooperation",
+   "anantamias.com/saarc-countries",
+   "globaledge.msu.edu"
+  ],
+  "note": "SAARC has 8 members (Afghanistan joined 2007)"
+ },
+ {
+  "id": "M4158",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "tribune.com.pk/story/1651978",
+   "rferl.org/a/29082782.html",
+   "propakistani.pk"
+  ],
+  "note": "KP traffic police issued first licences to transgender persons in March 2018"
+ },
+ {
+  "id": "M4311",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Samarkand_Kufic_Quran",
+   "islamonline.net/fr/histoire-du-coran",
+   "ejournals.kias.edu.my"
+  ],
+  "note": "Accounts vary 4-9; majority view/common answer is 5 copies (Makkah, Madinah, Damascus, Kufa, Basra)"
+ },
+ {
+  "id": "M4480",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "pbs.gov.pk 2023 census table 2",
+   "en.wikipedia.org/wiki/Lahore_District",
+   "citypopulation.de"
+  ],
+  "note": "Lahore district ~13.0 million in 2023 census, largest district"
+ },
+ {
+  "id": "M4546",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/National_Assembly_of_Pakistan",
+   "geo.tv/latest/521184",
+   "arab.news/cqgpe"
+  ],
+  "note": "NA has 336 seats: 266 general + 60 women + 10 minorities"
+ },
+ {
+  "id": "M4580",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "kingabdullah.jo",
+   "mofa.gov.ae (Sep 2026)",
+   "petra.gov.jo"
+  ],
+  "note": "King Abdullah II still Jordan's king in Sep 2026"
+ },
+ {
+  "id": "M4641",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Ahmed_al-Sharaa",
+   "en.wikipedia.org/wiki/Presidency_of_Ahmed_al-Sharaa",
+   "khaleejtimes.com"
+  ],
+  "note": "Ahmed al-Sharaa president since 29 Jan 2025, still in office 2026"
+ },
+ {
+  "id": "M4776",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "pm.gov.au",
+   "hrw.org (May 2025 election)",
+   "gdeltcloud.com (May 2026)"
+  ],
+  "note": "Albanese PM since 2022, re-elected May 2025, still PM in 2026"
+ },
+ {
+  "id": "M5129",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "globalfirepower.com 2026 (via tempo.co)",
+   "logos-pres.md 2026 ranking",
+   "statista.com"
+  ],
+  "note": "China ~2.0 million active personnel, India 2nd ~1.4-1.5 million"
+ },
+ {
+  "id": "M5208",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "pbs.gov.pk 2023 census press release",
+   "en.wikipedia.org/wiki/2023_Pakistani_census",
+   "bos.punjab.gov.pk"
+  ],
+  "note": "Punjab 127.68 million in 2023 census"
+ },
+ {
+  "id": "M5258",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "wisden.com",
+   "icc-cricket.com",
+   "newswav.com (Root 14,000 runs, Jun 2026)"
+  ],
+  "note": "Tendulkar 15,921 Test runs still record; Root 2nd ~1,900 behind (Aug 2026)"
+ },
+ {
+  "id": "M5414",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Cricket_World_Cup_records",
+   "aljazeera.com 2023 final",
+   "thequint.com"
+  ],
+  "note": "Australia 6 ODI World Cup titles (last 2023)"
+ },
+ {
+  "id": "M5512",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Member_states_of_the_Commonwealth_of_Nations",
+   "britannica.com",
+   "geographyworlds.com (2026)"
+  ],
+  "note": "Commonwealth has 56 member states"
+ },
+ {
+  "id": "M5626",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "worldometers.info",
+   "databoks.katadata.co.id (Oct 2026)",
+   "populationpyramids.org"
+  ],
+  "note": "Order: India, China, USA, Indonesia, Pakistan, Nigeria (6th), Brazil (7th)"
+ },
+ {
+  "id": "M9322",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Gilgit-Baltistan",
+   "en.wikipedia.org/wiki/2017_Pakistani_census",
+   "pnd.gog.pk GB at a glance"
+  ],
+  "note": "GB 1,709,049 in 2023 census (~1.71m); 1.49m in 2017"
+ },
+ {
+  "id": "M9353",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "dawn.com/news/1818349",
+   "app.com.pk (Aug 2026)",
+   "geo.tv/latest/533309"
+  ],
+  "note": "Sarfraz Bugti CM Balochistan since March 2024, still in office Aug 2026"
+ },
+ {
+  "id": "M9408",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "pid.gov.pk press 33394 (Jul 2026)",
+   "brecorder.com/news/40428852",
+   "thenews.pk"
+  ],
+  "note": "Hanif Abbasi Railways Minister through 2026"
+ },
+ {
+  "id": "M9432",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "na.gov.pk/en/speaker.php",
+   "na.gov.pk press release Aug 2026",
+   "en.wikipedia.org/wiki/Ayaz_Sadiq"
+  ],
+  "note": "Ayaz Sadiq NA Speaker since 1 March 2024, still in Aug 2026"
+ },
+ {
+  "id": "M9462",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "space.com/virgin-galactic-first-pakistani-space-galactic04",
+   "en.wikipedia.org/wiki/Namira_Salim",
+   "arabnews.com/node/2386826"
+  ],
+  "note": "Namira Salim flew Galactic 04, 6 Oct 2023; Tiangong Pakistani flight not yet flown"
+ },
+ {
+  "id": "M9525",
+  "verdict": "unclear",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "Qurtubi via usul.ai (70 qurra)",
+   "en.wikipedia.org/wiki/Battle_of_al-Yamama (~360)",
+   "shamela.ws (Bukhari sharh ~500)"
+  ],
+  "note": "Qurtubi: 70 qurra killed; other accounts 360/500/700 - sources disagree"
+ }
+]

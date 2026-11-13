@@ -1,0 +1,344 @@
+[
+ {
+  "id": "M11072",
+  "verdict": "unclear",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "own reasoning"
+  ],
+  "note": "Pipe is the only non-tobacco item, but Tobacco is the raw material; both defensible"
+ },
+ {
+  "id": "M11079",
+  "verdict": "unclear",
+  "ans": 4,
+  "fix": "",
+  "src": [
+   "own reasoning"
+  ],
+  "note": "Mule is the only hybrid; Ox is the only bovine; both defensible"
+ },
+ {
+  "id": "M11096",
+  "verdict": "unclear",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "own reasoning"
+  ],
+  "note": "Oxygen is the only gas, but 'Protenium' is not a real element; ambiguous"
+ },
+ {
+  "id": "M11210",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "own reasoning"
+  ],
+  "note": "Most general reason: people need to eat food"
+ },
+ {
+  "id": "M11215",
+  "verdict": "unclear",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "own reasoning"
+  ],
+  "note": "Rain forms when water vapour in clouds cools/condenses; both options partial"
+ },
+ {
+  "id": "M11219",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "own reasoning"
+  ],
+  "note": "Shoes protect the feet"
+ },
+ {
+  "id": "M11220",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "own reasoning"
+  ],
+  "note": "People see a doctor to get treatment"
+ },
+ {
+  "id": "M11225",
+  "verdict": "unclear",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "own reasoning"
+  ],
+  "note": "Trust and moral-wrong options both commonly accepted"
+ },
+ {
+  "id": "M11236",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "own reasoning"
+  ],
+  "note": "3 x 3 = 9 = 10 - 1"
+ },
+ {
+  "id": "M11286",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "own reasoning"
+  ],
+  "note": "Common letters G,E,R,A,L = 5"
+ },
+ {
+  "id": "M11312",
+  "verdict": "unclear",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "own reasoning"
+  ],
+  "note": "Teeth are for biting/chewing; Eating also defensible"
+ },
+ {
+  "id": "M11902",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "UCS Satellite Database",
+   "Wikipedia"
+  ],
+  "note": "USA operates by far the most satellites (mostly Starlink)"
+ },
+ {
+  "id": "M11903",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_current_Pakistani_chief_ministers"
+  ],
+  "note": "Murad Ali Shah is CM Sindh"
+ },
+ {
+  "id": "M11904",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "tribune.com.pk (11 Oct 2026)",
+   "aljazeera.com 12 Oct 2026",
+   "arynews.tv"
+  ],
+  "note": "Governor's rule imposed 11 Oct 2026; Governor Faisal Karim Kundi runs KP"
+ },
+ {
+  "id": "M11905",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_current_Pakistani_chief_ministers"
+  ],
+  "note": "Maryam Nawaz is CM Punjab"
+ },
+ {
+  "id": "M11906",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/List_of_current_Pakistani_chief_ministers"
+  ],
+  "note": "Sarfraz Bugti is CM Balochistan"
+ },
+ {
+  "id": "M11947",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "Wikipedia",
+   "Britannica"
+  ],
+  "note": "Xi Jinping is President of China"
+ },
+ {
+  "id": "M12058",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "senate.gov.pk",
+   "Wikipedia"
+  ],
+  "note": "Senate has 96 seats after FATA merger"
+ },
+ {
+  "id": "M12082",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "saarc-sec.org",
+   "Wikipedia"
+  ],
+  "note": "SAARC has 8 members"
+ },
+ {
+  "id": "M12150",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "Wikipedia",
+   "Britannica"
+  ],
+  "note": "Sukkur Barrage is commonly called the largest barrage/irrigation system"
+ },
+ {
+  "id": "M12268",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "NEPRA State of Industry",
+   "Wikipedia"
+  ],
+  "note": "Thermal (gas, coal, oil) is largest share of generation"
+ },
+ {
+  "id": "M12299",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "Wikipedia",
+   "Google Maps"
+  ],
+  "note": "Kareem Block is in Allama Iqbal Town, Lahore"
+ },
+ {
+  "id": "M12330",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "na.gov.pk",
+   "Wikipedia"
+  ],
+  "note": "National Assembly has 336 seats"
+ },
+ {
+  "id": "M12343",
+  "verdict": "change",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Ab-i_Istada",
+   "CIA World Factbook (major lakes)",
+   "iaglr.org"
+  ],
+  "note": "Ab-i-Istada (~520 sq km) is Afghanistan's largest natural lake; Band-e-Amir is a chain of small lakes"
+ },
+ {
+  "id": "M12346",
+  "verdict": "unclear",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "blog.quranmajeed.com",
+   "mysalahmat.com",
+   "corpus.quran.com"
+  ],
+  "note": "Word salah appears ~67-83 times; '700' is a popular claim not supported by counts"
+ },
+ {
+  "id": "M12357",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "un.org",
+   "Wikipedia"
+  ],
+  "note": "UN has 193 member states"
+ },
+ {
+  "id": "M12390",
+  "verdict": "unclear",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Battle_of_al-Yamama",
+   "alislam.org",
+   "testpointpk.com"
+  ],
+  "note": "Sources differ: ~70, ~360, ~700 huffaz"
+ },
+ {
+  "id": "M12398",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "World Shipping Council",
+   "Wikipedia"
+  ],
+  "note": "Shanghai is the busiest container port"
+ },
+ {
+  "id": "M12413",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Nishan-e-Haider"
+  ],
+  "note": "Awarded 11 times; none after 1999"
+ },
+ {
+  "id": "M12425",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "SIPRI",
+   "Wikipedia"
+  ],
+  "note": "USA is the largest arms exporter"
+ },
+ {
+  "id": "M12428",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "en.wikipedia.org/wiki/Amendments_to_the_Constitution_of_Pakistan",
+   "arynews.tv 27 Oct 2026",
+   "dunyanews.tv"
+  ],
+  "note": "27th enacted 13 Nov 2025; 28th still pending on 1 Nov 2026"
+ },
+ {
+  "id": "M12441",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "Wikipedia (Men's FIH Hockey World Cup)",
+   "FIH"
+  ],
+  "note": "Pakistan has won 4 titles, the most"
+ }
+]

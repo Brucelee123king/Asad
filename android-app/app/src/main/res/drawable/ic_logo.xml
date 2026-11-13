@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- mortarboard -->
+    <path android:fillColor="#FFFFFF" android:pathData="M54,30 L88,45 L54,60 L20,45 Z" />
+    <!-- cap body -->
+    <path android:fillColor="#FFFFFF" android:pathData="M34,55 L34,70 C34,77 74,77 74,70 L74,55 L54,64 Z" />
+    <!-- tassel -->
+    <path android:fillColor="#FBBF24" android:pathData="M82.8,47 L85.2,47 L85.2,66 L82.8,66 Z" />
+    <path android:fillColor="#FBBF24" android:pathData="M84,65.8 A3.2,3.2 0 1,0 84.01,65.8 Z" />
+</vector>

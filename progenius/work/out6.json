@@ -1,0 +1,441 @@
+[
+ {
+  "src": "A",
+  "num": 8,
+  "question": "Who wrote Pakistan: A Hard Country?",
+  "options": [
+   "Anatol Lieven",
+   "Ahmed Rashid",
+   "Stephen Cohen",
+   "Owen Bennett-Jones"
+  ],
+  "correct": 0,
+  "why": "Anatol Lieven wrote Pakistan: A Hard Country (2011).",
+  "rel": "The book looks at Pakistan's state, society, politics and security."
+ },
+ {
+  "src": "A",
+  "num": 23,
+  "question": "Who wrote Mein Kampf?",
+  "options": [
+   "Benito Mussolini",
+   "Joseph Goebbels",
+   "Heinrich Himmler",
+   "Adolf Hitler"
+  ],
+  "correct": 3,
+  "why": "Mein Kampf was written by Adolf Hitler.",
+  "rel": "It was published in two volumes in the 1920s."
+ },
+ {
+  "src": "A",
+  "num": 45,
+  "question": "Where do the Indus and Kabul rivers meet?",
+  "options": [
+   "Near Sukkur, Sindh",
+   "Near Kalabagh, Mianwali",
+   "Near Attock, Punjab",
+   "Near Mithankot, Punjab"
+  ],
+  "correct": 2,
+  "why": "The Kabul River joins the Indus near Attock Khurd in Punjab.",
+  "rel": "The Indus then flows south to the Arabian Sea."
+ },
+ {
+  "src": "A",
+  "num": 61,
+  "question": "What is evaporation?",
+  "options": [
+   "Change of a vapour into a liquid",
+   "Change of a liquid into vapour from its surface",
+   "Change of a solid directly into vapour",
+   "Change of a liquid into a solid"
+  ],
+  "correct": 1,
+  "why": "Evaporation turns liquid into vapour at the surface and can happen below boiling point.",
+  "rel": "Condensation is the reverse process."
+ },
+ {
+  "src": "A",
+  "num": 76,
+  "question": "Who captained Pakistan to the 1992 Cricket World Cup title?",
+  "options": [
+   "Wasim Akram",
+   "Imran Khan",
+   "Javed Miandad",
+   "Inzamam-ul-Haq"
+  ],
+  "correct": 1,
+  "why": "Imran Khan led Pakistan to the 1992 World Cup title.",
+  "rel": "Pakistan beat England in the final at Melbourne."
+ },
+ {
+  "src": "A",
+  "num": 89,
+  "question": "Where is NATO’s headquarters?",
+  "options": [
+   "Brussels, Belgium",
+   "Paris, France",
+   "Geneva, Switzerland",
+   "The Hague, Netherlands"
+  ],
+  "correct": 0,
+  "why": "NATO's headquarters is in Brussels, Belgium.",
+  "rel": "NATO's founding treaty dates to 4 April 1949."
+ },
+ {
+  "src": "A",
+  "num": 103,
+  "question": "What is a zero matrix?",
+  "options": [
+   "A matrix with all diagonal elements one",
+   "A matrix with only one row",
+   "A matrix whose determinant is one",
+   "A matrix in which every element is zero"
+  ],
+  "correct": 3,
+  "why": "A zero matrix has every element equal to zero.",
+  "rel": "Adding a zero matrix of the same size leaves a matrix unchanged."
+ },
+ {
+  "src": "A",
+  "num": 115,
+  "question": "What is the world’s largest sea?",
+  "options": [
+   "Coral Sea",
+   "Arabian Sea",
+   "Philippine Sea",
+   "Caribbean Sea"
+  ],
+  "correct": 2,
+  "why": "The Philippine Sea is commonly cited as the largest sea (marginal sea).",
+  "rel": "It lies in the western North Pacific Ocean.",
+  "problem": "Ranking of seas depends on the definition used; Philippine Sea is the standard answer."
+ },
+ {
+  "src": "A",
+  "num": 128,
+  "question": "From whom did Pakistan purchase Gwadar?",
+  "options": [
+   "Iran",
+   "United Arab Emirates",
+   "Oman",
+   "Saudi Arabia"
+  ],
+  "correct": 2,
+  "why": "Pakistan bought Gwadar from the Sultanate of Oman and took possession in 1958.",
+  "rel": "Gwadar is a major CPEC port in Balochistan."
+ },
+ {
+  "src": "B",
+  "num": 3,
+  "question": "When were the Montagu-Chelmsford Reforms enacted?",
+  "options": [
+   "1909",
+   "1919",
+   "1935",
+   "1947"
+  ],
+  "correct": 1,
+  "why": "The Government of India Act 1919 implemented the Montagu-Chelmsford Reforms.",
+  "rel": "The reforms introduced dyarchy in the provinces."
+ },
+ {
+  "src": "B",
+  "num": 13,
+  "question": "Hazrat Muadh ibn Jabal was appointed governor/representative to which region?",
+  "options": [
+   "Yemen",
+   "Syria",
+   "Egypt",
+   "Iraq"
+  ],
+  "correct": 0,
+  "why": "The Prophet (PBUH) sent Muadh ibn Jabal to Yemen to teach and judge.",
+  "rel": "This is a well-known report in hadith literature."
+ },
+ {
+  "src": "B",
+  "num": 23,
+  "question": "Which is the most developed continent?",
+  "options": [
+   "Africa",
+   "Asia",
+   "South America",
+   "Europe"
+  ],
+  "correct": 3,
+  "why": "Europe ranks highest on many human-development measures.",
+  "rel": "The Human Development Index combines health, education and income.",
+  "problem": "No single official answer; North America also ranks high. Europe chosen as standard answer."
+ },
+ {
+  "src": "B",
+  "num": 33,
+  "question": "Who is known by the title “Jami-ul-Quran”?",
+  "options": [
+   "Hazrat Abu Bakr (RA)",
+   "Hazrat Umar (RA)",
+   "Hazrat Ali (RA)",
+   "Hazrat Uthman ibn Affan (RA)"
+  ],
+  "correct": 3,
+  "why": "Uthman (RA) is called Jami-ul-Quran because he standardized and distributed copies of the Quran.",
+  "rel": "Abu Bakr (RA) ordered the first collection after the Battle of Yamama.",
+  "problem": "Some sources also apply the title to Abu Bakr (RA); Uthman is the common answer."
+ },
+ {
+  "src": "B",
+  "num": 43,
+  "question": "Who was Pakistan's second Prime Minister?",
+  "options": [
+   "Muhammad Ali Bogra",
+   "Chaudhry Muhammad Ali",
+   "Khawaja Nazimuddin",
+   "Huseyn Shaheed Suhrawardy"
+  ],
+  "correct": 2,
+  "why": "Nazimuddin became PM in 1951 after Liaquat Ali Khan was assassinated.",
+  "rel": "He had earlier been Governor-General of Pakistan."
+ },
+ {
+  "src": "B",
+  "num": 53,
+  "question": "When was the Quit India Movement launched?",
+  "options": [
+   "9 August 1940",
+   "8 August 1942",
+   "14 August 1942",
+   "15 March 1942"
+  ],
+  "correct": 1,
+  "why": "The Congress passed the Quit India resolution in Bombay on 8 August 1942.",
+  "rel": "Gandhi gave the 'Do or Die' call."
+ },
+ {
+  "src": "B",
+  "num": 64,
+  "question": "Who won the 2018 FIFA World Cup?",
+  "options": [
+   "France",
+   "Croatia",
+   "Belgium",
+   "Germany"
+  ],
+  "correct": 0,
+  "why": "France beat Croatia 4-2 in the 2018 final.",
+  "rel": "Russia hosted the tournament."
+ },
+ {
+  "src": "B",
+  "num": 74,
+  "question": "What is the capital of Kyrgyzstan?",
+  "options": [
+   "Bishkek",
+   "Tashkent",
+   "Dushanbe",
+   "Almaty"
+  ],
+  "correct": 0,
+  "why": "Bishkek is the capital of Kyrgyzstan.",
+  "rel": "Kyrgyzstan is landlocked and its currency is the som."
+ },
+ {
+  "src": "B",
+  "num": 84,
+  "question": "What was Allama Iqbal's first Persian philosophical book?",
+  "options": [
+   "Rumuz-e-Bekhudi",
+   "Payam-e-Mashriq",
+   "Javed Nama",
+   "Asrar-e-Khudi"
+  ],
+  "correct": 3,
+  "why": "Asrar-e-Khudi (1915) was Iqbal's first Persian philosophical book.",
+  "rel": "Bang-e-Dara (1924) was his first major Urdu collection."
+ },
+ {
+  "src": "B",
+  "num": 94,
+  "question": "When was the Tashkent Declaration signed?",
+  "options": [
+   "10 January 1965",
+   "23 September 1965",
+   "10 January 1966",
+   "2 July 1972"
+  ],
+  "correct": 2,
+  "why": "The Tashkent Declaration was signed on 10 January 1966 by Shastri and Ayub Khan.",
+  "rel": "It followed the 1965 Indo-Pakistani War."
+ },
+ {
+  "src": "B",
+  "num": 104,
+  "question": "Who was the first woman Speaker of the Balochistan Assembly?",
+  "options": [
+   "Nasreen Jalil",
+   "Rahila Hameed Khan Durrani",
+   "Fehmida Mirza",
+   "Shehla Raza"
+  ],
+  "correct": 1,
+  "why": "Rahila Durrani was elected the first woman Speaker of the Balochistan Assembly in December 2015.",
+  "rel": "She served until August 2018; Abdul Quddus Bizenjo succeeded her."
+ },
+ {
+  "src": "B",
+  "num": 114,
+  "question": "Complete the sentence: “Ali was born ___ 20 August 1997.”",
+  "options": [
+   "in",
+   "on",
+   "at",
+   "by"
+  ],
+  "correct": 1,
+  "why": "Use 'on' with a specific date, for example 'on 20 August 1997'.",
+  "rel": "Use 'in' with a month or year, like 'in August'."
+ },
+ {
+  "src": "B",
+  "num": 124,
+  "question": "Where are Pakistan's major coal reserves found?",
+  "options": [
+   "Thar, Sindh",
+   "Quetta, Balochistan",
+   "Dera Ghazi Khan, Punjab",
+   "Peshawar, Khyber Pakhtunkhwa"
+  ],
+  "correct": 0,
+  "why": "Thar in Tharparkar district, Sindh, has Pakistan's largest coal resource.",
+  "rel": "Coal is also found in Balochistan, Punjab and KP."
+ },
+ {
+  "src": "B",
+  "num": 134,
+  "question": "How is an earthquake's magnitude measured?",
+  "options": [
+   "Modified Mercalli scale",
+   "Beaufort scale",
+   "Fujita scale",
+   "Moment Magnitude scale"
+  ],
+  "correct": 3,
+  "why": "Modern earthquake magnitude is reported on the Moment Magnitude scale (Mw); Richter was the older scale.",
+  "rel": "Mercalli measures intensity (effects), not magnitude.",
+  "problem": "Richter scale is the traditional exam answer; Mw is the modern one."
+ },
+ {
+  "src": "B",
+  "num": 144,
+  "question": "What is cutting away unwanted parts of an image called?",
+  "options": [
+   "Resizing",
+   "Rotating",
+   "Cropping",
+   "Flipping"
+  ],
+  "correct": 2,
+  "why": "Cropping removes unwanted outer parts of an image.",
+  "rel": "Resizing changes dimensions, not the visible bounds."
+ },
+ {
+  "src": "B",
+  "num": 154,
+  "question": "When did Pakistan become a member of the UN?",
+  "options": [
+   "14 August 1947",
+   "15 October 1947",
+   "30 September 1947",
+   "24 October 1945"
+  ],
+  "correct": 2,
+  "why": "Pakistan was admitted to the UN on 30 September 1947.",
+  "rel": "It was admitted by UN General Assembly Resolution 108 (II)."
+ },
+ {
+  "src": "B",
+  "num": 164,
+  "question": "What does SAFTA stand for?",
+  "options": [
+   "South Asian Fair Trade Agreement",
+   "South Asian Free Trade Area",
+   "Southern Asia Free Tariff Alliance",
+   "South Asian Finance and Trade Association"
+  ],
+  "correct": 1,
+  "why": "SAFTA stands for South Asian Free Trade Area.",
+  "rel": "It was signed in 2004 and took effect in 2006 under SAARC."
+ },
+ {
+  "src": "B",
+  "num": 174,
+  "question": "What is one tenth of 120?",
+  "options": [
+   "12",
+   "10",
+   "14",
+   "1.2"
+  ],
+  "correct": 0,
+  "why": "One tenth of 120 is 120 / 10 = 12.",
+  "rel": "One tenth means 10 percent."
+ },
+ {
+  "src": "B",
+  "num": 184,
+  "question": "Who produced the first complete, published Urdu translation of the Quran?",
+  "options": [
+   "Maulana Ashraf Ali Thanvi",
+   "Maulana Ahmad Raza Khan",
+   "Maulana Aashiq Ilahi Merathi",
+   "Shah Abdul Qadir"
+  ],
+  "correct": 3,
+  "why": "Shah Abdul Qadir's idiomatic Urdu translation (1790, published 1829) is commonly credited as the first complete Urdu translation.",
+  "rel": "His brother Shah Rafiuddin made the first verbatim (word-by-word) Urdu translation.",
+  "problem": "Disputed: Shah Rafiuddin's verbatim translation is also called first complete; Shah Abdul Qadir is the common answer."
+ },
+ {
+  "src": "B",
+  "num": 194,
+  "question": "In which year did World War I end?",
+  "options": [
+   "1916",
+   "1917",
+   "1919",
+   "1918"
+  ],
+  "correct": 3,
+  "why": "World War I ended in 1918 with the Armistice on 11 November.",
+  "rel": "The Treaty of Versailles was signed in 1919."
+ },
+ {
+  "src": "B",
+  "num": 204,
+  "question": "Who is known by the title “Ruhullah”?",
+  "options": [
+   "Prophet Musa (AS)",
+   "Prophet Ibrahim (AS)",
+   "Prophet Isa (AS)",
+   "Prophet Yahya (AS)"
+  ],
+  "correct": 2,
+  "why": "Prophet Isa (AS) is called Ruhullah, meaning Spirit of Allah, in Islamic tradition.",
+  "rel": "Musa (AS) is Kalimullah and Ibrahim (AS) is Khalilullah."
+ },
+ {
+  "src": "B",
+  "num": 214,
+  "question": "Which country has the world's longest written national constitution?",
+  "options": [
+   "United States",
+   "India",
+   "Pakistan",
+   "Brazil"
+  ],
+  "correct": 1,
+  "why": "India has the longest written constitution of any sovereign country.",
+  "rel": "It was adopted on 26 November 1949 and took effect on 26 January 1950."
+ }
+]

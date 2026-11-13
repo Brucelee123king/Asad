@@ -1,0 +1,2 @@
+[{"num":11,"pick":3,"confidence":"high","rule":"Dot moves clockwise around the ellipse about 40 degrees per step, and the bar moves clockwise around the frame edge. The next dot is just right of top and the bar is at lower left.","alt":[]},
+{"num":12,"pick":3,"confidence":"high","rule":"Square with chevron flap and circle rotates 90 degrees counterclockwise each step with period 4. The next figure repeats figure 1: V at top, circle below.","alt":[]}]

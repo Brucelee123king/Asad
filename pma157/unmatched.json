@@ -1,0 +1,9321 @@
+[
+{
+"q": "What is 2+2/2?",
+"variants": [
+"What is 2+2/2?",
+"What is 2+2÷2?",
+"What is 2 + 2 ÷ 2?"
+],
+"repeat": 6,
+"mentions": 8,
+"exps": [
+1001,
+3011,
+4004,
+4007,
+4012,
+6005
+],
+"all_exps": [
+1001,
+3011,
+4004,
+4007,
+4012,
+6005
+],
+"answers": [
+"3"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "Where is the IMF headquarter?",
+"variants": [
+"Where is the IMF headquarter?",
+"Where is the headquarters of the IMF?",
+"Where is the IMF headquarters?"
+],
+"repeat": 5,
+"mentions": 5,
+"exps": [
+3011,
+4002,
+4008,
+6002,
+6006
+],
+"all_exps": [
+3011,
+4002,
+4008,
+6002,
+6006
+],
+"answers": [
+"Washington D.C. (USA)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is the WHO headquarters?",
+"variants": [
+"Where is the WHO headquarters?",
+"Where is the WHO headquarter?"
+],
+"repeat": 4,
+"mentions": 6,
+"exps": [
+1001,
+4004,
+4007,
+4008
+],
+"all_exps": [
+1001,
+4004,
+4007,
+4008
+],
+"answers": [
+"Geneva, Switzerland",
+"Geneva"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who are the members of the OIC?",
+"variants": [
+"Who are the members of the OIC?",
+"How many members does the OIC have?",
+"How many members are in the OIC?"
+],
+"repeat": 4,
+"mentions": 4,
+"exps": [
+2002,
+3008,
+4003,
+4004
+],
+"all_exps": [
+2002,
+3008,
+4003,
+4004
+],
+"answers": [
+"57 member countries"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the opposite of wild?",
+"variants": [
+"What is the opposite of wild?"
+],
+"repeat": 3,
+"mentions": 5,
+"exps": [
+1001,
+2005,
+5010
+],
+"all_exps": [
+1001,
+2005,
+5010
+],
+"answers": [
+"Tame"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the currency of Denmark?",
+"variants": [
+"What is the currency of Denmark?"
+],
+"repeat": 3,
+"mentions": 4,
+"exps": [
+2006,
+3008,
+4004
+],
+"all_exps": [
+2006,
+3008,
+4004
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the fastest bird?",
+"variants": [
+"What is the fastest bird?",
+"Which is the fastest bird?"
+],
+"repeat": 3,
+"mentions": 4,
+"exps": [
+1001,
+2005,
+3011
+],
+"all_exps": [
+1001,
+2005,
+3011
+],
+"answers": [
+"Peregrine Falcon"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the national dish of Pakistan?",
+"variants": [
+"What is the national dish of Pakistan?"
+],
+"repeat": 3,
+"mentions": 3,
+"exps": [
+2008,
+3003,
+5010
+],
+"all_exps": [
+2008,
+3003,
+5010
+],
+"answers": [
+"Nihari"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who is the author of Romeo and Juliet?",
+"variants": [
+"Who is the author of Romeo and Juliet?",
+"Who is the author of the book Romeo and Juliet?"
+],
+"repeat": 3,
+"mentions": 3,
+"exps": [
+3003,
+4006,
+5002
+],
+"all_exps": [
+3003,
+4006,
+5002
+],
+"answers": [
+"Shakespeare",
+"William Shakespeare"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who was the first leader (president) of the Indian National Congress?",
+"variants": [
+"Who was the first leader (president) of the Indian National Congress?",
+"Who was the first president of the Indian National Congress?",
+"Who was the president of the Indian National Congress (first presidency)?"
+],
+"repeat": 3,
+"mentions": 3,
+"exps": [
+4002,
+6001,
+6003
+],
+"all_exps": [
+4002,
+6001,
+6003
+],
+"answers": [
+"Womesh Chunder Bonnerjee",
+"Womesh Chandra Bonerjee"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who was the US president during World War II?",
+"variants": [
+"Who was the US president during World War II?"
+],
+"repeat": 3,
+"mentions": 3,
+"exps": [
+4006,
+5002,
+5010
+],
+"all_exps": [
+4006,
+5002,
+5010
+],
+"answers": [
+"Franklin D. Roosevelt"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who wrote Romeo and Juliet?",
+"variants": [
+"Who wrote Romeo and Juliet?",
+"Who wrote \"Romeo and Juliet\"?"
+],
+"repeat": 3,
+"mentions": 3,
+"exps": [
+2003,
+2008,
+4004
+],
+"all_exps": [
+2003,
+2008,
+4004
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "If 5 men write 5 pages in 5 minutes, how many pages will 1 man write in 5 minutes?",
+"variants": [
+"If 5 men write 5 pages in 5 minutes, how many pages will 1 man write in 5 minutes?"
+],
+"repeat": 2,
+"mentions": 4,
+"exps": [
+1001,
+1004
+],
+"all_exps": [
+1001,
+1004
+],
+"answers": [
+"1 page"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "Fill in the blank: She left her keys ___ the table.",
+"variants": [
+"Fill in the blank: She left her keys ___ the table."
+],
+"repeat": 2,
+"mentions": 3,
+"exps": [
+3001,
+5010
+],
+"all_exps": [
+3001,
+5010
+],
+"answers": [
+"On"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In 2023, which player scored 13,000 runs in ODI cricket?",
+"variants": [
+"In 2023, which player scored 13,000 runs in ODI cricket?",
+"Which player scored 13,000 runs in ODI in 2023?"
+],
+"repeat": 2,
+"mentions": 3,
+"exps": [
+3001,
+5010
+],
+"all_exps": [
+3001,
+5010
+],
+"answers": [
+"Virat Kohli"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "The Rafah crossing is between Gaza and which country?",
+"variants": [
+"The Rafah crossing is between Gaza and which country?"
+],
+"repeat": 2,
+"mentions": 3,
+"exps": [
+3001,
+5010
+],
+"all_exps": [
+3001,
+5010
+],
+"answers": [
+"Egypt"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the largest country of Africa?",
+"variants": [
+"What is the largest country of Africa?",
+"Which is the largest country in Africa?"
+],
+"repeat": 2,
+"mentions": 3,
+"exps": [
+3001,
+5010
+],
+"all_exps": [
+3001,
+5010
+],
+"answers": [
+"Algeria"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the oldest language of Pakistan?",
+"variants": [
+"What is the oldest language of Pakistan?"
+],
+"repeat": 2,
+"mentions": 3,
+"exps": [
+3001,
+5010
+],
+"all_exps": [
+3001,
+5010
+],
+"answers": [
+"Sindhi; if not given then Brahui"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the synonym of KITH?",
+"variants": [
+"What is the synonym of KITH?",
+"What is a synonym of kith?"
+],
+"repeat": 2,
+"mentions": 3,
+"exps": [
+3001,
+5010
+],
+"all_exps": [
+3001,
+5010
+],
+"answers": [
+"Relatives"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which country hosted the FIFA World Cup in 2023?",
+"variants": [
+"Which country hosted the FIFA World Cup in 2023?",
+"Which Muslim country hosted the FIFA World Cup in 2023?"
+],
+"repeat": 2,
+"mentions": 3,
+"exps": [
+1004,
+3001
+],
+"all_exps": [
+1004,
+3001
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which mountain range is located in the northwest of Pakistan?",
+"variants": [
+"Which mountain range is located in the northwest of Pakistan?"
+],
+"repeat": 2,
+"mentions": 3,
+"exps": [
+3001,
+5010
+],
+"all_exps": [
+3001,
+5010
+],
+"answers": [
+"Hindu Kush"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who was the writer of Romeo and Juliet?",
+"variants": [
+"Who was the writer of Romeo and Juliet?",
+"Who is the writer of Romeo and Juliet?"
+],
+"repeat": 2,
+"mentions": 3,
+"exps": [
+1008,
+5007
+],
+"all_exps": [
+1008,
+5007
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Ali is taller than Akbar. Umair is younger than Ali. Which statement is true?",
+"variants": [
+"Ali is taller than Akbar. Umair is younger than Ali. Which statement is true?",
+"Ali is taller than Akbar and Umair is younger than Ali. Who is taller?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+2008,
+3003
+],
+"all_exps": [
+2008,
+3003
+],
+"answers": [
+"Ali is taller than Umair and Akbar"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "At an eclipse, how many foci are there?",
+"variants": [
+"At an eclipse, how many foci are there?",
+"How many foci does an eclipse have?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+2008,
+3003
+],
+"all_exps": [
+2008,
+3003
+],
+"answers": [
+"Two foci (Earth & Moon/Sun positions)"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Between whom was the Lucknow Pact made?",
+"variants": [
+"Between whom was the Lucknow Pact made?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+4006,
+5002
+],
+"all_exps": [
+4006,
+5002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "From which country did Pakistan buy Gwadar?",
+"variants": [
+"From which country did Pakistan buy Gwadar?",
+"From whom did Pakistan buy Gwadar?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+3002,
+4011
+],
+"all_exps": [
+3002,
+4011
+],
+"answers": [
+"Oman"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many faces does a plain prism have?",
+"variants": [
+"How many faces does a plain prism have?",
+"How many faces does a plain prism contain?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+4008,
+5009
+],
+"all_exps": [
+4008,
+5009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "If 1200 of 1500 are present, what is the percentage?",
+"variants": [
+"If 1200 of 1500 are present, what is the percentage?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+5003,
+5006
+],
+"all_exps": [
+5003,
+5006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "In which game did Pakistan win at the Olympics 2024?",
+"variants": [
+"In which game did Pakistan win at the Olympics 2024?",
+"In which game did Pakistan win at the 2024 Olympics?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+3005,
+5010
+],
+"all_exps": [
+3005,
+5010
+],
+"answers": [
+"Arshad Nadeem, 92.97 in javelin throw, Pakistan's first individual gold medal"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year did the Nobel Prize ceremony start?",
+"variants": [
+"In which year did the Nobel Prize ceremony start?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+4006,
+5002
+],
+"all_exps": [
+4006,
+5002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which year were the provinces of West Pakistan merged into one province?",
+"variants": [
+"In which year were the provinces of West Pakistan merged into one province?",
+"In which year was West Pakistan merged into one province?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+2004,
+5010
+],
+"all_exps": [
+2004,
+5010
+],
+"answers": [
+"1955 (One Unit Scheme)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "The rouble is the currency of which country?",
+"variants": [
+"The rouble is the currency of which country?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+5003,
+5010
+],
+"all_exps": [
+5003,
+5010
+],
+"answers": [
+"Russia"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What are people who do not believe in Allah called?",
+"variants": [
+"What are people who do not believe in Allah called?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+4008,
+5010
+],
+"all_exps": [
+4008,
+5010
+],
+"answers": [
+"Atheist or non-believers; in Arabic Kafir"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the currency of Mongolia?",
+"variants": [
+"What is the currency of Mongolia?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+2010,
+3011
+],
+"all_exps": [
+2010,
+3011
+],
+"answers": [
+"Tögrög (MNT)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the length of the Gaza Strip?",
+"variants": [
+"What is the length of the Gaza Strip?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1010,
+4010
+],
+"all_exps": [
+1010,
+4010
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the length of the Pakistan-Afghanistan border?",
+"variants": [
+"What is the length of the Pakistan-Afghanistan border?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+2008,
+3003
+],
+"all_exps": [
+2008,
+3003
+],
+"answers": [
+"2,640 km (Durand Line)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What was the Khilafat Usmania (Ottoman Caliphate) question about?",
+"variants": [
+"What was the Khilafat Usmania (Ottoman Caliphate) question about?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+4006,
+5002
+],
+"all_exps": [
+4006,
+5002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Where is the OIC headquarters?",
+"variants": [
+"Where is the OIC headquarters?",
+"Where is the headquarters of the OIC?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+3003,
+6006
+],
+"all_exps": [
+3003,
+6006
+],
+"answers": [
+"Jeddah, Saudi Arabia"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which article of the Constitution covers freedom of speech?",
+"variants": [
+"Which article of the Constitution covers freedom of speech?",
+"Which article of the Constitution of Pakistan covers freedom of speech?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+2003,
+2004
+],
+"all_exps": [
+2003,
+2004
+],
+"answers": [
+"Article 19"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which country hosted the SCO conference in 2023?",
+"variants": [
+"Which country hosted the SCO conference in 2023?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+4006,
+5002
+],
+"all_exps": [
+4006,
+5002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which country in 2025 gives free Umrah visas to 50+ nations?",
+"variants": [
+"Which country in 2025 gives free Umrah visas to 50+ nations?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+3005,
+5010
+],
+"all_exps": [
+3005,
+5010
+],
+"answers": [
+"Saudi Arabia"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which Pakistani scientist was awarded in Iran in 2024?",
+"variants": [
+"Which Pakistani scientist was awarded in Iran in 2024?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+3003,
+5010
+],
+"all_exps": [
+3003,
+5010
+],
+"answers": [
+"Dr. Ata-ur-Rahman",
+"Dr Ata-ur-Rehman"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who is the Chief Minister of Balochistan?",
+"variants": [
+"Who is the Chief Minister of Balochistan?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+4004,
+5010
+],
+"all_exps": [
+4004,
+5010
+],
+"answers": [
+"Sarfaraz Bugti"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who is the founder of YouTube?",
+"variants": [
+"Who is the founder of YouTube?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+3008,
+5005
+],
+"all_exps": [
+3008,
+5005
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who is the owner of X (Twitter)?",
+"variants": [
+"Who is the owner of X (Twitter)?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+2005,
+4007
+],
+"all_exps": [
+2005,
+4007
+],
+"answers": [
+"Elon Musk"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who is the youngest Microsoft specialist?",
+"variants": [
+"Who is the youngest Microsoft specialist?",
+"Who is the youngest Microsoft specialist of Pakistan?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+3008,
+4003
+],
+"all_exps": [
+3008,
+4003
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who won the cricket World Cup in 2023?",
+"variants": [
+"Who won the cricket World Cup in 2023?",
+"Who won the 2023 Cricket World Cup?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+1006,
+5005
+],
+"all_exps": [
+1006,
+5005
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who wrote Sohni Mahiwal?",
+"variants": [
+"Who wrote Sohni Mahiwal?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+2004,
+5010
+],
+"all_exps": [
+2004,
+5010
+],
+"answers": [
+"Hashim Shah"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who wrote the book 'The Malakand Field Force' (The Malakand of soldiers in the field)?",
+"variants": [
+"Who wrote the book 'The Malakand Field Force' (The Malakand of soldiers in the field)?",
+"Who wrote the book 'The Malakand Field Force' (The Malakand of soldier in the field)?"
+],
+"repeat": 2,
+"mentions": 2,
+"exps": [
+4003,
+4007
+],
+"all_exps": [
+4003,
+4007
+],
+"answers": [
+"Winston Churchill"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "A man walks 20 km in 40 minutes. How long does he take for 1 km?",
+"variants": [
+"A man walks 20 km in 40 minutes. How long does he take for 1 km?"
+],
+"repeat": 1,
+"mentions": 3,
+"exps": [
+1001
+],
+"all_exps": [
+1001
+],
+"answers": [
+"2 minutes"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "Babusar Pass connects Gilgit with which valley?",
+"variants": [
+"Babusar Pass connects Gilgit with which valley?"
+],
+"repeat": 1,
+"mentions": 3,
+"exps": [
+1001
+],
+"all_exps": [
+1001
+],
+"answers": [
+"Kaghan Valley"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Bat cannot see, snake cannot hear. True or false?",
+"variants": [
+"Bat cannot see, snake cannot hear. True or false?"
+],
+"repeat": 1,
+"mentions": 3,
+"exps": [
+1001
+],
+"all_exps": [
+1001
+],
+"answers": [
+"True"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "In which year did Nawaz Sharif stop the war?",
+"variants": [
+"In which year did Nawaz Sharif stop the war?"
+],
+"repeat": 1,
+"mentions": 3,
+"exps": [
+1001
+],
+"all_exps": [
+1001
+],
+"answers": [
+"1999"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year did the Nobel ceremony begin?",
+"variants": [
+"In which year did the Nobel ceremony begin?"
+],
+"repeat": 1,
+"mentions": 3,
+"exps": [
+1001
+],
+"all_exps": [
+1001
+],
+"answers": [
+"1901"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year was the Chauri Chaura incident?",
+"variants": [
+"In which year was the Chauri Chaura incident?"
+],
+"repeat": 1,
+"mentions": 3,
+"exps": [
+1001
+],
+"all_exps": [
+1001
+],
+"answers": [
+"1922"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year were the Quaid-e-Azam's 14 Points?",
+"variants": [
+"In which year were the Quaid-e-Azam's 14 Points?"
+],
+"repeat": 1,
+"mentions": 3,
+"exps": [
+1001
+],
+"all_exps": [
+1001
+],
+"answers": [
+"1929"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Light is to window as sound is to what?",
+"variants": [
+"Light is to window as sound is to what?"
+],
+"repeat": 1,
+"mentions": 3,
+"exps": [
+1001
+],
+"all_exps": [
+1001
+],
+"answers": [
+"Ear"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "Rearrange EATBUY into a correct word. What is its last letter?",
+"variants": [
+"Rearrange EATBUY into a correct word. What is its last letter?"
+],
+"repeat": 1,
+"mentions": 3,
+"exps": [
+1001
+],
+"all_exps": [
+1001
+],
+"answers": [
+"T (word: BEAUTY)"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "Rearrange the letters EARPOLRD to make a word.",
+"variants": [
+"Rearrange the letters EARPOLRD to make a word."
+],
+"repeat": 1,
+"mentions": 3,
+"exps": [
+1001
+],
+"all_exps": [
+1001
+],
+"answers": [
+"LEOPARD"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "Relationship: Angle, rectangle, square... What are they?",
+"variants": [
+"Relationship: Angle, rectangle, square... What are they?"
+],
+"repeat": 1,
+"mentions": 3,
+"exps": [
+1001
+],
+"all_exps": [
+1001
+],
+"answers": [
+"All geometric shapes"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "Relationship: Hockey, Football... What are they?",
+"variants": [
+"Relationship: Hockey, Football... What are they?"
+],
+"repeat": 1,
+"mentions": 3,
+"exps": [
+1001
+],
+"all_exps": [
+1001
+],
+"answers": [
+"All are sports"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "Relationship: monkey, ape, chimpanzee. What are they?",
+"variants": [
+"Relationship: monkey, ape, chimpanzee. What are they?"
+],
+"repeat": 1,
+"mentions": 3,
+"exps": [
+1001
+],
+"all_exps": [
+1001
+],
+"answers": [
+"All are primates"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "Which is the 3rd letter alphabetically in the word \"Management\"?",
+"variants": [
+"Which is the 3rd letter alphabetically in the word \"Management\"?"
+],
+"repeat": 1,
+"mentions": 3,
+"exps": [
+1001
+],
+"all_exps": [
+1001
+],
+"answers": [
+"A"
+],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "Who was the 3rd Governor General of Pakistan?",
+"variants": [
+"Who was the 3rd Governor General of Pakistan?"
+],
+"repeat": 1,
+"mentions": 3,
+"exps": [
+1001
+],
+"all_exps": [
+1001
+],
+"answers": [
+"Iskander Mirza"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "A rectangle has a width of 8 and a length of 4. What is its area?",
+"variants": [
+"A rectangle has a width of 8 and a length of 4. What is its area?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+3001
+],
+"all_exps": [
+3001
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "According to which article does the Chief Justice become Chief Justice?",
+"variants": [
+"According to which article does the Chief Justice become Chief Justice?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+3001
+],
+"all_exps": [
+3001
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Change into passive voice: He asked, \"Where are you going?\"",
+"variants": [
+"Change into passive voice: He asked, \"Where are you going?\""
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+3001
+],
+"all_exps": [
+3001
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Fill in the blank with a preposition: He is kind ___ slave.",
+"variants": [
+"Fill in the blank with a preposition: He is kind ___ slave."
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+5007
+],
+"all_exps": [
+5007
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "For what reason was the 2023 Nobel Prize in Medicine awarded?",
+"variants": [
+"For what reason was the 2023 Nobel Prize in Medicine awarded?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+3001
+],
+"all_exps": [
+3001
+],
+"answers": [
+"Corona Vaccine"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "For what reason was the recent Nobel Prize in Physics awarded?",
+"variants": [
+"For what reason was the recent Nobel Prize in Physics awarded?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+3001
+],
+"all_exps": [
+3001
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "How did the UN describe the genocide in Gaza?",
+"variants": [
+"How did the UN describe the genocide in Gaza?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+5007
+],
+"all_exps": [
+5007
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "How many Afghan refugees came to Pakistan?",
+"variants": [
+"How many Afghan refugees came to Pakistan?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+5007
+],
+"all_exps": [
+5007
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "How many days did the Pak-India 1965 war last?",
+"variants": [
+"How many days did the Pak-India 1965 war last?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+1001
+],
+"all_exps": [
+1001
+],
+"answers": [
+"17 days"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many medals did Pakistan win at the 2024 Olympics?",
+"variants": [
+"How many medals did Pakistan win at the 2024 Olympics?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+5007
+],
+"all_exps": [
+5007
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "How many votes did the US cast at the UN on the ceasefire in Gaza?",
+"variants": [
+"How many votes did the US cast at the UN on the ceasefire in Gaza?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+3001
+],
+"all_exps": [
+3001
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In 2023, why was the OIC meeting held?",
+"variants": [
+"In 2023, why was the OIC meeting held?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+5007
+],
+"all_exps": [
+5007
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which battle were the teeth of Prophet Muhammad (PBUH) martyred?",
+"variants": [
+"In which battle were the teeth of Prophet Muhammad (PBUH) martyred?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+2006
+],
+"all_exps": [
+2006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which year did Pakistan join the United Nations?",
+"variants": [
+"In which year did Pakistan join the United Nations?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+3001
+],
+"all_exps": [
+3001
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which year was the nuclear test (of Pakistan) held?",
+"variants": [
+"In which year was the nuclear test (of Pakistan) held?",
+"Where was the nuclear test (of Pakistan) held?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+3005
+],
+"all_exps": [
+3005
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Moscow is the capital of which country?",
+"variants": [
+"Moscow is the capital of which country?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+2006
+],
+"all_exps": [
+2006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "On what date was the Simla Pact signed?",
+"variants": [
+"On what date was the Simla Pact signed?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+5007
+],
+"all_exps": [
+5007
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "On what date were Quaid-e-Azam's 14 points announced?",
+"variants": [
+"On what date were Quaid-e-Azam's 14 points announced?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+5007
+],
+"all_exps": [
+5007
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "On which date did the Khilafat Movement take place?",
+"variants": [
+"On which date did the Khilafat Movement take place?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+2006
+],
+"all_exps": [
+2006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Solve: 4x+5=6",
+"variants": [
+"Solve: 4x+5=6"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+3001
+],
+"all_exps": [
+3001
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "The British thought the 1857 war was a revolt by whom?",
+"variants": [
+"The British thought the 1857 war was a revolt by whom?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+3001
+],
+"all_exps": [
+3001
+],
+"answers": [
+"Muslim"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "The Simla Pact took place after which war?",
+"variants": [
+"The Simla Pact took place after which war?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+3001
+],
+"all_exps": [
+3001
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the definition of a radian?",
+"variants": [
+"What is the definition of a radian?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+3001
+],
+"all_exps": [
+3001
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the difference between rational and irrational numbers?",
+"variants": [
+"What is the difference between rational and irrational numbers?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+2006
+],
+"all_exps": [
+2006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the law of intensity?",
+"variants": [
+"What is the law of intensity?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+3001
+],
+"all_exps": [
+3001
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the main supply of water for Gaza?",
+"variants": [
+"What is the main supply of water for Gaza?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+5007
+],
+"all_exps": [
+5007
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What was the population of Gaza before the air strike of 11 October?",
+"variants": [
+"What was the population of Gaza before the air strike of 11 October?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+2006
+],
+"all_exps": [
+2006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "When did the Indus civilization flourish?",
+"variants": [
+"When did the Indus civilization flourish?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+5007
+],
+"all_exps": [
+5007
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "When was the Simla Agreement signed?",
+"variants": [
+"When was the Simla Agreement signed?",
+"Who signed the Simla Agreement?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"2 July 1972",
+"Zulfikar Ali Bhutto and Indira Gandhi"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which country joined BRICS in 2024?",
+"variants": [
+"Which country joined BRICS in 2024?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+3001
+],
+"all_exps": [
+3001
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which CPEC project or place in Khyber Pakhtunkhwa is meant?",
+"variants": [
+"Which CPEC project or place in Khyber Pakhtunkhwa is meant?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+3001
+],
+"all_exps": [
+3001
+],
+"answers": [
+"Rashakyi"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who is known as the Daughter of the Dynasty (Daughter of the East)?",
+"variants": [
+"Who is known as the Daughter of the Dynasty (Daughter of the East)?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+3001
+],
+"all_exps": [
+3001
+],
+"answers": [
+"Benazir Bhutto"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who is the Prime Minister of Iran in 2025?",
+"variants": [
+"Who is the Prime Minister of Iran in 2025?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+3001
+],
+"all_exps": [
+3001
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who is the superior-most authority in the country according to the Constitution of 1973?",
+"variants": [
+"Who is the superior-most authority in the country according to the Constitution of 1973?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+3001
+],
+"all_exps": [
+3001
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who nationalised the banks in Pakistan? Options: a) Gen Ayub b) Gen Yahya c) Zulfiqar Ali Bhutto d) Gen Pervez Musharraf e) Gen Zia ul Haq",
+"variants": [
+"Who nationalised the banks in Pakistan? Options: a) Gen Ayub b) Gen Yahya c) Zulfiqar Ali Bhutto d) Gen Pervez Musharraf e) Gen Zia ul Haq"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+3001
+],
+"all_exps": [
+3001
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who was the Viceroy (Lord) at the time of the partition of Bengal?",
+"variants": [
+"Who was the Viceroy (Lord) at the time of the partition of Bengal?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+3001
+],
+"all_exps": [
+3001
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Why did the USA enter World War II?",
+"variants": [
+"Why did the USA enter World War II?"
+],
+"repeat": 1,
+"mentions": 2,
+"exps": [
+3001
+],
+"all_exps": [
+3001
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "15 pencils cost 175. What is the price of 12 pencils?",
+"variants": [
+"15 pencils cost 175. What is the price of 12 pencils?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"140"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "5 men complete a work in 11 days. How many days will 1 man take?",
+"variants": [
+"5 men complete a work in 11 days. How many days will 1 man take?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"55"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "A bat cannot see; how does a bat find its way like a snake (logical analogy)?",
+"variants": [
+"A bat cannot see; how does a bat find its way like a snake (logical analogy)?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3003
+],
+"all_exps": [
+3003
+],
+"answers": [
+"Uses echo / infrared"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "A car covers 90 km/h and the train speed is double the car. How much distance does the train cover in 30 minutes?",
+"variants": [
+"A car covers 90 km/h and the train speed is double the car. How much distance does the train cover in 30 minutes?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "A man moves north, turns left, then left again. What is the present direction?",
+"variants": [
+"A man moves north, turns left, then left again. What is the present direction?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6003
+],
+"all_exps": [
+6003
+],
+"answers": [
+"South"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "A person moves north, then south, then turns left. What is the present direction?",
+"variants": [
+"A person moves north, then south, then turns left. What is the present direction?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6003
+],
+"all_exps": [
+6003
+],
+"answers": [
+"West"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "A person purchased a pen for 30 rupees and sold it at 40% profit. What is the selling price?",
+"variants": [
+"A person purchased a pen for 30 rupees and sold it at 40% profit. What is the selling price?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6003
+],
+"all_exps": [
+6003
+],
+"answers": [
+"42 rupees"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "A person walks 10 miles north, turns left, then right. What is the present direction?",
+"variants": [
+"A person walks 10 miles north, turns left, then right. What is the present direction?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6003
+],
+"all_exps": [
+6003
+],
+"answers": [
+"North"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "A train covers 120 km in 1 hour. How much distance does the train cover in 18 minutes?",
+"variants": [
+"A train covers 120 km in 1 hour. How much distance does the train cover in 18 minutes?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4004
+],
+"all_exps": [
+4004
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "A train covers 120 km in 2 hours. What is its speed?",
+"variants": [
+"A train covers 120 km in 2 hours. What is its speed?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6004
+],
+"all_exps": [
+6004
+],
+"answers": [
+"60 km/h"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "A train goes at double the speed of a car. The car goes 60 km/hr for 60 minutes. How far does the train travel in 30 minutes?",
+"variants": [
+"A train goes at double the speed of a car. The car goes 60 km/hr for 60 minutes. How far does the train travel in 30 minutes?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3003
+],
+"all_exps": [
+3003
+],
+"answers": [
+"60 km"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "A train is moving at a speed of 90 km/hr. How much distance will it cover in twelve minutes?",
+"variants": [
+"A train is moving at a speed of 90 km/hr. How much distance will it cover in twelve minutes?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2005
+],
+"all_exps": [
+2005
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "A train moves at double the speed of a car, and the car travels 60 km in 60 minutes. How much does the train travel in 30 minutes?",
+"variants": [
+"A train moves at double the speed of a car, and the car travels 60 km in 60 minutes. How much does the train travel in 30 minutes?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2008
+],
+"all_exps": [
+2008
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "A train's speed is double a car's speed and the car goes 30 km/h. What distance does the train cover in 30 minutes?",
+"variants": [
+"A train's speed is double a car's speed and the car goes 30 km/h. What distance does the train cover in 30 minutes?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6003
+],
+"all_exps": [
+6003
+],
+"answers": [
+"30 km"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "According to the constitution of Pakistan, what is the minimum age required for the president?",
+"variants": [
+"According to the constitution of Pakistan, what is the minimum age required for the president?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5006
+],
+"all_exps": [
+5006
+],
+"answers": [
+"45 years"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Ali is 4 years old and his sister is three times older than Ali. What is the age of the sister when Ali is 12 years old?",
+"variants": [
+"Ali is 4 years old and his sister is three times older than Ali. What is the age of the sister when Ali is 12 years old?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4004
+],
+"all_exps": [
+4004
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "Ali is 4 years old and his sister is three times older than Ali. What will be the age of his sister when Ali is 10 years old?",
+"variants": [
+"Ali is 4 years old and his sister is three times older than Ali. What will be the age of his sister when Ali is 10 years old?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4012
+],
+"all_exps": [
+4012
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "Ali is shorter than Khalid and Usman is shorter than Waseem. Who is the tallest or shortest?",
+"variants": [
+"Ali is shorter than Khalid and Usman is shorter than Waseem. Who is the tallest or shortest?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "Ali is six years older than his sister. When Ali's sister is 12 years old, what is Ali's age?",
+"variants": [
+"Ali is six years older than his sister. When Ali's sister is 12 years old, what is Ali's age?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "Area is always positive or negative?",
+"variants": [
+"Area is always positive or negative?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3011
+],
+"all_exps": [
+3011
+],
+"answers": [
+"Positive"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Army is to soldier as navy is to what?",
+"variants": [
+"Army is to soldier as navy is to what?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"Sailor"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "Arrange MANAGEMENT alphabetically; what is the 3rd last letter?",
+"variants": [
+"Arrange MANAGEMENT alphabetically; what is the 3rd last letter?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3011
+],
+"all_exps": [
+3011
+],
+"answers": [
+"T"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "Arrange the letters of LEOPARD (after arranging, what is the word?)",
+"variants": [
+"Arrange the letters of LEOPARD (after arranging, what is the word?)"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3011
+],
+"all_exps": [
+3011
+],
+"answers": [
+"LEOPARD"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "Arrange the letters of PARIS IS A CITY (after arranging, what is the sentence?)",
+"variants": [
+"Arrange the letters of PARIS IS A CITY (after arranging, what is the sentence?)"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3011
+],
+"all_exps": [
+3011
+],
+"answers": [
+"PARIS IS A CITY"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "At which river do the River Indus and River Kabul meet?",
+"variants": [
+"At which river do the River Indus and River Kabul meet?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4003
+],
+"all_exps": [
+4003
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Between whom was the Shimla Agreement signed?",
+"variants": [
+"Between whom was the Shimla Agreement signed?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5005
+],
+"all_exps": [
+5005
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Boat is to water as aeroplane is to what?",
+"variants": [
+"Boat is to water as aeroplane is to what?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"Air"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "By what are integers represented?",
+"variants": [
+"By what are integers represented?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4008
+],
+"all_exps": [
+4008
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "By what other name is the Karakoram Highway known?",
+"variants": [
+"By what other name is the Karakoram Highway known?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5009
+],
+"all_exps": [
+5009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "By whom did Pakistan meet with China?",
+"variants": [
+"By whom did Pakistan meet with China?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4008
+],
+"all_exps": [
+4008
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Change into active voice: He asked, 'Where are you going?'",
+"variants": [
+"Change into active voice: He asked, 'Where are you going?'"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Change into passive voice: Parents send their children to school.",
+"variants": [
+"Change into passive voice: Parents send their children to school."
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Change into passive voice: They constructed a wall.",
+"variants": [
+"Change into passive voice: They constructed a wall."
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Change into passive voice: We boil the milk.",
+"variants": [
+"Change into passive voice: We boil the milk."
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Choose the correct sentence: Ali runs more faster than Akram.",
+"variants": [
+"Choose the correct sentence: Ali runs more faster than Akram."
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Choose the odd one out: Monkey, baboon, ape, chimpanzee, panda.",
+"variants": [
+"Choose the odd one out: Monkey, baboon, ape, chimpanzee, panda."
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6003
+],
+"all_exps": [
+6003
+],
+"answers": [
+"Panda"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "Convert a sentence from active voice to passive voice.",
+"variants": [
+"Convert a sentence from active voice to passive voice."
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5002
+],
+"all_exps": [
+5002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "During COVID-19, which city took responsibility for Hajj accommodations?",
+"variants": [
+"During COVID-19, which city took responsibility for Hajj accommodations?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2002
+],
+"all_exps": [
+2002
+],
+"answers": [
+"Makkah"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "During the Khilafat Movement, where did 20,000 Muslims from the subcontinent migrate?",
+"variants": [
+"During the Khilafat Movement, where did 20,000 Muslims from the subcontinent migrate?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6006
+],
+"all_exps": [
+6006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Emperor Hirohito belongs to which country?",
+"variants": [
+"Emperor Hirohito belongs to which country?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4008
+],
+"all_exps": [
+4008
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Emperor Hirohito was the leader of which country?",
+"variants": [
+"Emperor Hirohito was the leader of which country?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5009
+],
+"all_exps": [
+5009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Fill in the blank: They said that Adil ___ ill.",
+"variants": [
+"Fill in the blank: They said that Adil ___ ill."
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "For what did Malala Yousafzai get the Nobel Prize?",
+"variants": [
+"For what did Malala Yousafzai get the Nobel Prize?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4011
+],
+"all_exps": [
+4011
+],
+"answers": [
+"Peace"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Freedom of speech belongs to which Article?",
+"variants": [
+"Freedom of speech belongs to which Article?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Article 19"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "From which country did Pakistan receive the most remittances in 2024?",
+"variants": [
+"From which country did Pakistan receive the most remittances in 2024?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1010
+],
+"all_exps": [
+1010
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Going 2 km towards north, then turning left, then turning right, in which direction are you going now?",
+"variants": [
+"Going 2 km towards north, then turning left, then turning right, in which direction are you going now?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2010
+],
+"all_exps": [
+2010
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "Hen is to chicken as cow is to what?",
+"variants": [
+"Hen is to chicken as cow is to what?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"Calf"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "Hirohito was the emperor of which country during World War II?",
+"variants": [
+"Hirohito was the emperor of which country during World War II?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5006
+],
+"all_exps": [
+5006
+],
+"answers": [
+"Japan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How did Pakistan react to Israel's recent attacks?",
+"variants": [
+"How did Pakistan react to Israel's recent attacks?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1010
+],
+"all_exps": [
+1010
+],
+"answers": [
+"Condemned Israel"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How did the USA vote in the UN on the Gaza war?",
+"variants": [
+"How did the USA vote in the UN on the Gaza war?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5009
+],
+"all_exps": [
+5009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "How is altitude measured: feet, km or miles?",
+"variants": [
+"How is altitude measured: feet, km or miles?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4004
+],
+"all_exps": [
+4004
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "How long did the flood (toofan) during the time of Prophet Noah (A.S.) last?",
+"variants": [
+"How long did the flood (toofan) during the time of Prophet Noah (A.S.) last?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2002
+],
+"all_exps": [
+2002
+],
+"answers": [
+"Almost 6 months"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How long does sunlight take to reach the Earth?",
+"variants": [
+"How long does sunlight take to reach the Earth?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"8 min 20 sec"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How long is the Gaza Strip?",
+"variants": [
+"How long is the Gaza Strip?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1010
+],
+"all_exps": [
+1010
+],
+"answers": [
+"41 km"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many Afghan refugees came to Pakistan during the cold war?",
+"variants": [
+"How many Afghan refugees came to Pakistan during the cold war?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"3 million"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many Afghan refugees does Pakistan host?",
+"variants": [
+"How many Afghan refugees does Pakistan host?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4007
+],
+"all_exps": [
+4007
+],
+"answers": [
+"3 million"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many Arab countries fought against Israel in 1948?",
+"variants": [
+"How many Arab countries fought against Israel in 1948?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1010
+],
+"all_exps": [
+1010
+],
+"answers": [
+"7"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many continents are there?",
+"variants": [
+"How many continents are there?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"7"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many countries have diplomatic relations with Israel?",
+"variants": [
+"How many countries have diplomatic relations with Israel?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2001
+],
+"all_exps": [
+2001
+],
+"answers": [
+"Over 160"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many days are there in a week?",
+"variants": [
+"How many days are there in a week?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"7"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "How many districts does Sindh have?",
+"variants": [
+"How many districts does Sindh have?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"29"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many equations are required to eliminate one variable?",
+"variants": [
+"How many equations are required to eliminate one variable?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6004
+],
+"all_exps": [
+6004
+],
+"answers": [
+"2"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many factories did India have during the partition?",
+"variants": [
+"How many factories did India have during the partition?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4003
+],
+"all_exps": [
+4003
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "How many foci does an ellipse have?",
+"variants": [
+"How many foci does an ellipse have?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Two"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many general seats are there in the National Assembly?",
+"variants": [
+"How many general seats are there in the National Assembly?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2009
+],
+"all_exps": [
+2009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "How many languages are spoken in Pakistan?",
+"variants": [
+"How many languages are spoken in Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6001
+],
+"all_exps": [
+6001
+],
+"answers": [
+"70-77"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many lines can be drawn from a single line?",
+"variants": [
+"How many lines can be drawn from a single line?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Infinite"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many member states are in the OIC?",
+"variants": [
+"How many member states are in the OIC?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3005
+],
+"all_exps": [
+3005
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "How many parts does the 1973 Constitution have?",
+"variants": [
+"How many parts does the 1973 Constitution have?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "How many periods of martial law has Pakistan experienced, and when?",
+"variants": [
+"How many periods of martial law has Pakistan experienced, and when?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Four: 7 October 1958 (Iskander Mirza, Ayub Khan as CMLA), 25 March 1969 (Yahya Khan), 5 July 1977 (Zia-ul-Haq), 12 October 1999 (Pervez Musharraf)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many provinces or districts were there in India at the time of separation?",
+"variants": [
+"How many provinces or districts were there in India at the time of separation?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1006
+],
+"all_exps": [
+1006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "How many rivers are there in Punjab?",
+"variants": [
+"How many rivers are there in Punjab?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"5"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many seats does the National Assembly of Pakistan have, and the Senate?",
+"variants": [
+"How many seats does the National Assembly of Pakistan have, and the Senate?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"National Assembly 336 seats (lower house); Senate 96 seats (upper house)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "How many sides does a plane prism have?",
+"variants": [
+"How many sides does a plane prism have?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5006
+],
+"all_exps": [
+5006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "How many total seats are there in the KPK Senate?",
+"variants": [
+"How many total seats are there in the KPK Senate?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1006
+],
+"all_exps": [
+1006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "How many total seats for women are there in the National Assembly?",
+"variants": [
+"How many total seats for women are there in the National Assembly?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1006
+],
+"all_exps": [
+1006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "How many vowel letters are in the series: A b d A U C M A u E?",
+"variants": [
+"How many vowel letters are in the series: A b d A U C M A u E?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4010
+],
+"all_exps": [
+4010
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "How much did Noah's flood last?",
+"variants": [
+"How much did Noah's flood last?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3002
+],
+"all_exps": [
+3002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "How much does a human breathe in one minute, one hour or one day?",
+"variants": [
+"How much does a human breathe in one minute, one hour or one day?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4003
+],
+"all_exps": [
+4003
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Humayun was the son of whom?",
+"variants": [
+"Humayun was the son of whom?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5005
+],
+"all_exps": [
+5005
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "If 1200 of 1500 students are present, what is the percentage of absent students?",
+"variants": [
+"If 1200 of 1500 students are present, what is the percentage of absent students?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5002
+],
+"all_exps": [
+5002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "If 5 men write 5 pages in 5 minutes, in how many minutes will 1 man write 1 page?",
+"variants": [
+"If 5 men write 5 pages in 5 minutes, in how many minutes will 1 man write 1 page?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4012
+],
+"all_exps": [
+4012
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "If 5 men write 5 papers in 5 minutes, how much will 1 man write in 5 minutes?",
+"variants": [
+"If 5 men write 5 papers in 5 minutes, how much will 1 man write in 5 minutes?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2005
+],
+"all_exps": [
+2005
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "If Ali's sister is your mother, then what is Ali to you?",
+"variants": [
+"If Ali's sister is your mother, then what is Ali to you?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4012
+],
+"all_exps": [
+4012
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "If AX = B, what is X?",
+"variants": [
+"If AX = B, what is X?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"A⁻¹B"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "If five men write five pages in five minutes, in how much time will one man write one page?",
+"variants": [
+"If five men write five pages in five minutes, in how much time will one man write one page?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "If the 2nd day of a month is Friday, what day will the 12th date of the month be?",
+"variants": [
+"If the 2nd day of a month is Friday, what day will the 12th date of the month be?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "In 2023, in which country did people protest the most about their economy?",
+"variants": [
+"In 2023, in which country did people protest the most about their economy?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In a classroom of 1500 students, 1200 are present. What is the percentage of absent students?",
+"variants": [
+"In a classroom of 1500 students, 1200 are present. What is the percentage of absent students?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2005
+],
+"all_exps": [
+2005
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "In a total of 500 students, 360 are present. Find the number of absent students.",
+"variants": [
+"In a total of 500 students, 360 are present. Find the number of absent students."
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4009
+],
+"all_exps": [
+4009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "In an alphabet series, which letter comes 4th from the last in a jumbled series?",
+"variants": [
+"In an alphabet series, which letter comes 4th from the last in a jumbled series?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3008
+],
+"all_exps": [
+3008
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "In which area of Pakistan is rainfall very low?",
+"variants": [
+"In which area of Pakistan is rainfall very low?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4003
+],
+"all_exps": [
+4003
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which city is the Mohabbat Ali Mosque located?",
+"variants": [
+"In which city is the Mohabbat Ali Mosque located?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6006
+],
+"all_exps": [
+6006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which city is the OIC headquarters?",
+"variants": [
+"In which city is the OIC headquarters?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2008
+],
+"all_exps": [
+2008
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which city was NATO formed?",
+"variants": [
+"In which city was NATO formed?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4007
+],
+"all_exps": [
+4007
+],
+"answers": [
+"Washington DC"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which constitution of Pakistan was a bicameral legislature adopted?",
+"variants": [
+"In which constitution of Pakistan was a bicameral legislature adopted?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2008
+],
+"all_exps": [
+2008
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which constitution was the bicameral legislature introduced?",
+"variants": [
+"In which constitution was the bicameral legislature introduced?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3003
+],
+"all_exps": [
+3003
+],
+"answers": [
+"1973 Constitution"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which countries will FIFA 2026 be held?",
+"variants": [
+"In which countries will FIFA 2026 be held?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4003
+],
+"all_exps": [
+4003
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which country is the INTERPOL headquarters?",
+"variants": [
+"In which country is the INTERPOL headquarters?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2008
+],
+"all_exps": [
+2008
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which country was the Round Table Conference held?",
+"variants": [
+"In which country was the Round Table Conference held?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4004
+],
+"all_exps": [
+4004
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which direction does a non-verbal series mostly come?",
+"variants": [
+"In which direction does a non-verbal series mostly come?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"Anti-clockwise"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which district is Harappa?",
+"variants": [
+"In which district is Harappa?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4004
+],
+"all_exps": [
+4004
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which district is Taxila?",
+"variants": [
+"In which district is Taxila?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1004
+],
+"all_exps": [
+1004
+],
+"answers": [
+"Rawalpindi"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which game is the word Love used for a zero score?",
+"variants": [
+"In which game is the word Love used for a zero score?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4008
+],
+"all_exps": [
+4008
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which ghazwa did Abu Jahl die?",
+"variants": [
+"In which ghazwa did Abu Jahl die?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6002
+],
+"all_exps": [
+6002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which Islamic month did Pakistan come into being?",
+"variants": [
+"In which Islamic month did Pakistan come into being?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1002
+],
+"all_exps": [
+1002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which province is Warsak Dam?",
+"variants": [
+"In which province is Warsak Dam?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4004
+],
+"all_exps": [
+4004
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which sport did Pakistan win a gold medal in the 2023 Olympics?",
+"variants": [
+"In which sport did Pakistan win a gold medal in the 2023 Olympics?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1006
+],
+"all_exps": [
+1006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which year did Dhaka separate from Pakistan?",
+"variants": [
+"In which year did Dhaka separate from Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6002
+],
+"all_exps": [
+6002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which year did Fatima Jinnah join the Muslim League?",
+"variants": [
+"In which year did Fatima Jinnah join the Muslim League?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5005
+],
+"all_exps": [
+5005
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which year did India conduct its first atomic explosion?",
+"variants": [
+"In which year did India conduct its first atomic explosion?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [
+"1974"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year did India launch Chandrayaan-3?",
+"variants": [
+"In which year did India launch Chandrayaan-3?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"2023"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year did Pakistan conduct its nuclear blasts?",
+"variants": [
+"In which year did Pakistan conduct its nuclear blasts?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5005
+],
+"all_exps": [
+5005
+],
+"answers": [
+"1998"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In which year was Kashmir sold?",
+"variants": [
+"In which year was Kashmir sold?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5009
+],
+"all_exps": [
+5009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which year was the Pak-China boundary agreement signed?",
+"variants": [
+"In which year was the Pak-China boundary agreement signed?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which year was the SCO established?",
+"variants": [
+"In which year was the SCO established?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5001
+],
+"all_exps": [
+5001
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "In which year will the Neon city project be completed?",
+"variants": [
+"In which year will the Neon city project be completed?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5005
+],
+"all_exps": [
+5005
+],
+"answers": [
+"2027"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "In World War II, who pushed Germany into war?",
+"variants": [
+"In World War II, who pushed Germany into war?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6006
+],
+"all_exps": [
+6006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Into how many physiographic regions is Pakistan divided?",
+"variants": [
+"Into how many physiographic regions is Pakistan divided?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4003
+],
+"all_exps": [
+4003
+],
+"answers": [
+"The option 5 was not there, candidate marked 6"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Into which river does the Ravi river fall?",
+"variants": [
+"Into which river does the Ravi river fall?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"Indus"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Is 0 included in the natural numbers?",
+"variants": [
+"Is 0 included in the natural numbers?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3008
+],
+"all_exps": [
+3008
+],
+"answers": [
+"No, 0 is not included in natural numbers"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Iskander Mirza was what of Pakistan?",
+"variants": [
+"Iskander Mirza was what of Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6006
+],
+"all_exps": [
+6006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Justice Bhagwan Das belonged to which religion?",
+"variants": [
+"Justice Bhagwan Das belonged to which religion?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5009
+],
+"all_exps": [
+5009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Karl Benz is the inventor of what?",
+"variants": [
+"Karl Benz is the inventor of what?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [
+"Automobile"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Malali was appointed first chief justice of which province in 2023?",
+"variants": [
+"Malali was appointed first chief justice of which province in 2023?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2009
+],
+"all_exps": [
+2009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "On what date did Pakistan join the OIC?",
+"variants": [
+"On what date did Pakistan join the OIC?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5006
+],
+"all_exps": [
+5006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "On what date did Pakistan make its first attack?",
+"variants": [
+"On what date did Pakistan make its first attack?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6002
+],
+"all_exps": [
+6002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "On what date did the Gaza war start?",
+"variants": [
+"On what date did the Gaza war start?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6001
+],
+"all_exps": [
+6001
+],
+"answers": [
+"7 Oct 2023"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "On what date was the 1962 Constitution abolished?",
+"variants": [
+"On what date was the 1962 Constitution abolished?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6006
+],
+"all_exps": [
+6006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "On what date was the Organisation of Islamic Cooperation (OIC) founded?",
+"variants": [
+"On what date was the Organisation of Islamic Cooperation (OIC) founded?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5009
+],
+"all_exps": [
+5009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "One question about the ICJ was related to Israel; what was it?",
+"variants": [
+"One question about the ICJ was related to Israel; what was it?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3005
+],
+"all_exps": [
+3005
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Out of 1500 students, 1340 are male. What is the percentage of females?",
+"variants": [
+"Out of 1500 students, 1340 are male. What is the percentage of females?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "Parachinar meets with Afghanistan through which route?",
+"variants": [
+"Parachinar meets with Afghanistan through which route?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4008
+],
+"all_exps": [
+4008
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Rearrange BUYAET and tell the last letter.",
+"variants": [
+"Rearrange BUYAET and tell the last letter."
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3011
+],
+"all_exps": [
+3011
+],
+"answers": [
+"BEAUTY -> Y"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "Rearrange the letters F O D A F O D I L to make a word. What is it?",
+"variants": [
+"Rearrange the letters F O D A F O D I L to make a word. What is it?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"Flower"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "Rubble is the currency of which country?",
+"variants": [
+"Rubble is the currency of which country?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4008
+],
+"all_exps": [
+4008
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "The 2023 Nobel Prize in Economics was awarded for work on what?",
+"variants": [
+"The 2023 Nobel Prize in Economics was awarded for work on what?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2003
+],
+"all_exps": [
+2003
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "The Nobel Peace Prize 2023 was given to a man of which country?",
+"variants": [
+"The Nobel Peace Prize 2023 was given to a man of which country?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3008
+],
+"all_exps": [
+3008
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "The speed of a train is twice the speed of a car and the car covers 60 km in 30 minutes. How many km does the train cover in 30 minutes?",
+"variants": [
+"The speed of a train is twice the speed of a car and the car covers 60 km in 30 minutes. How many km does the train cover in 30 minutes?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4012
+],
+"all_exps": [
+4012
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "Through which pass does Parachinar meet Afghanistan?",
+"variants": [
+"Through which pass does Parachinar meet Afghanistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Kurram Pass"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "To whom was the 2023 Nobel Prize in Medicine given?",
+"variants": [
+"To whom was the 2023 Nobel Prize in Medicine given?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2010
+],
+"all_exps": [
+2010
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Torque depends on what?",
+"variants": [
+"Torque depends on what?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"Distance & force"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Under which article does the Chief Justice become chief justice?",
+"variants": [
+"Under which article does the Chief Justice become chief justice?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"175A"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What are the capital and currency of Mexico?",
+"variants": [
+"What are the capital and currency of Mexico?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Mexico City, Mexican Peso (MXN)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What are the capital and currency of the United Kingdom?",
+"variants": [
+"What are the capital and currency of the United Kingdom?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"London, Pound Sterling (GBP)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What are the capital and currency of the United States?",
+"variants": [
+"What are the capital and currency of the United States?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Washington D.C., US Dollar (USD)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What are the capitals of Australia, Canada and Japan?",
+"variants": [
+"What are the capitals of Australia, Canada and Japan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Canberra, Ottawa, Tokyo"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What are the cross product and dot product of vectors?",
+"variants": [
+"What are the cross product and dot product of vectors?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3008
+],
+"all_exps": [
+3008
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "What border limit did Pakistan support for a Palestinian state?",
+"variants": [
+"What border limit did Pakistan support for a Palestinian state?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1010
+],
+"all_exps": [
+1010
+],
+"answers": [
+"1967 borders"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What currency is used in Denmark?",
+"variants": [
+"What currency is used in Denmark?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2002
+],
+"all_exps": [
+2002
+],
+"answers": [
+"Danish Krone DKK"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What did Carl Benz invent?",
+"variants": [
+"What did Carl Benz invent?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2005
+],
+"all_exps": [
+2005
+],
+"answers": [
+"Motor Car"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What did Pakistan demand at the UN for Palestine?",
+"variants": [
+"What did Pakistan demand at the UN for Palestine?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1010
+],
+"all_exps": [
+1010
+],
+"answers": [
+"Ceasefire"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What does KPK stand for?",
+"variants": [
+"What does KPK stand for?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6004
+],
+"all_exps": [
+6004
+],
+"answers": [
+"Khyber Pakhtunkhwa"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What does optimistic mean?",
+"variants": [
+"What does optimistic mean?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6001
+],
+"all_exps": [
+6001
+],
+"answers": [
+"Positive outlook or expecting positive things to happen"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What does Pakistan's economy depend on mainly?",
+"variants": [
+"What does Pakistan's economy depend on mainly?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"Agriculture"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What fraction of Pakistan's total area is the area of Balochistan?",
+"variants": [
+"What fraction of Pakistan's total area is the area of Balochistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is (x² × x²) / x²?",
+"variants": [
+"What is (x² × x²) / x²?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6004
+],
+"all_exps": [
+6004
+],
+"answers": [
+"x²"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "What is 1/3 of 1/10 of 120?",
+"variants": [
+"What is 1/3 of 1/10 of 120?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "What is 1/3 of one tenth of 90?",
+"variants": [
+"What is 1/3 of one tenth of 90?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1006
+],
+"all_exps": [
+1006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "What is 1369 × 1369?",
+"variants": [
+"What is 1369 × 1369?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"1874161"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "What is 2√8 + 3√8?",
+"variants": [
+"What is 2√8 + 3√8?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6004
+],
+"all_exps": [
+6004
+],
+"answers": [
+"5√8"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "What is 45% of 300?",
+"variants": [
+"What is 45% of 300?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"135"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "What is 70% of 70?",
+"variants": [
+"What is 70% of 70?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5002
+],
+"all_exps": [
+5002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "What is a poem written on the death of a beloved or friend called?",
+"variants": [
+"What is a poem written on the death of a beloved or friend called?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2005
+],
+"all_exps": [
+2005
+],
+"answers": [
+"Elegy"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is Bunyan-um-Marsoos?",
+"variants": [
+"What is Bunyan-um-Marsoos?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6002
+],
+"all_exps": [
+6002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is Hamas's primary goal?",
+"variants": [
+"What is Hamas's primary goal?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1010
+],
+"all_exps": [
+1010
+],
+"answers": [
+"Palestinian freedom"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is Israel's largest city?",
+"variants": [
+"What is Israel's largest city?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2001
+],
+"all_exps": [
+2001
+],
+"answers": [
+"Tel Aviv"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is it called when one man holds absolute power?",
+"variants": [
+"What is it called when one man holds absolute power?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5006
+],
+"all_exps": [
+5006
+],
+"answers": [
+"monarch"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is Log 100?",
+"variants": [
+"What is Log 100?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"2"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "What is Newton's second law?",
+"variants": [
+"What is Newton's second law?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"F = ma"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is one quarter of 1/10 of 120?",
+"variants": [
+"What is one quarter of 1/10 of 120?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "What is Pakistan's latest aircraft?",
+"variants": [
+"What is Pakistan's latest aircraft?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2003
+],
+"all_exps": [
+2003
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is Palestine's status at the UN?",
+"variants": [
+"What is Palestine's status at the UN?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1010
+],
+"all_exps": [
+1010
+],
+"answers": [
+"Observer state"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the approximate area of KPK?",
+"variants": [
+"What is the approximate area of KPK?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"101,741 sq km"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the biggest river of the world?",
+"variants": [
+"What is the biggest river of the world?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6006
+],
+"all_exps": [
+6006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the biggest source of fresh water on earth?",
+"variants": [
+"What is the biggest source of fresh water on earth?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5009
+],
+"all_exps": [
+5009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the correct indirect speech of: He said, \"We won the match.\"?",
+"variants": [
+"What is the correct indirect speech of: He said, \"We won the match.\"?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6004
+],
+"all_exps": [
+6004
+],
+"answers": [
+"He said that they had won"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the date of Pakistan's first atomic test?",
+"variants": [
+"What is the date of Pakistan's first atomic test?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"28 May 1998"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the deepest land on earth?",
+"variants": [
+"What is the deepest land on earth?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4007
+],
+"all_exps": [
+4007
+],
+"answers": [
+"Marina Trench (candidate marked Dead Sea by mistake)"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the deepest place on Earth?",
+"variants": [
+"What is the deepest place on Earth?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Challenger Deep, Marina Trench in the Pacific Ocean"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the deepest point of the Pacific Ocean?",
+"variants": [
+"What is the deepest point of the Pacific Ocean?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Marina Trench"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the formula of ammonium?",
+"variants": [
+"What is the formula of ammonium?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"NH₄⁺"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the Gandhara region?",
+"variants": [
+"What is the Gandhara region?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2009
+],
+"all_exps": [
+2009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the heart of Pakistan?",
+"variants": [
+"What is the heart of Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1002
+],
+"all_exps": [
+1002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the highest temperature recorded in Turbat?",
+"variants": [
+"What is the highest temperature recorded in Turbat?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"53.7 degrees in 2017; the hottest place is Jacobabad"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the international police office?",
+"variants": [
+"What is the international police office?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1008
+],
+"all_exps": [
+1008
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the largest pass of Pakistan?",
+"variants": [
+"What is the largest pass of Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6001
+],
+"all_exps": [
+6001
+],
+"answers": [
+"Karakoram Pass, connects Gilgit with Xinjiang"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the last letter of the word YTEABU after arranging it?",
+"variants": [
+"What is the last letter of the word YTEABU after arranging it?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4007
+],
+"all_exps": [
+4007
+],
+"answers": [
+"y"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "What is the least count of a screw gauge?",
+"variants": [
+"What is the least count of a screw gauge?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"0.01 mm"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the length of the Pak-Afghan border in km?",
+"variants": [
+"What is the length of the Pak-Afghan border in km?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [
+"2300"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the log of 60 with base 4?",
+"variants": [
+"What is the log of 60 with base 4?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3005
+],
+"all_exps": [
+3005
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "What is the longest river of Pakistan?",
+"variants": [
+"What is the longest river of Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4003
+],
+"all_exps": [
+4003
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the magnitude of any unity?",
+"variants": [
+"What is the magnitude of any unity?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1006
+],
+"all_exps": [
+1006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the name of the boundary between Pakistan and Afghanistan?",
+"variants": [
+"What is the name of the boundary between Pakistan and Afghanistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2002
+],
+"all_exps": [
+2002
+],
+"answers": [
+"Durand Line"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the name of the father of Hazrat Ibrahim AS?",
+"variants": [
+"What is the name of the father of Hazrat Ibrahim AS?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1004
+],
+"all_exps": [
+1004
+],
+"answers": [
+"Aazar"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the name of the India-China border?",
+"variants": [
+"What is the name of the India-China border?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"LAC (Line of Actual Control)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the Pakistan-Afghanistan border called?",
+"variants": [
+"What is the Pakistan-Afghanistan border called?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"Durand Line"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the population of Gaza after the ongoing attack?",
+"variants": [
+"What is the population of Gaza after the ongoing attack?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1010
+],
+"all_exps": [
+1010
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the population of Gaza?",
+"variants": [
+"What is the population of Gaza?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2001
+],
+"all_exps": [
+2001
+],
+"answers": [
+"Over 2 million"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the power of quadratic equations?",
+"variants": [
+"What is the power of quadratic equations?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5009
+],
+"all_exps": [
+5009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the property of a skew symmetric matrix?",
+"variants": [
+"What is the property of a skew symmetric matrix?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6001
+],
+"all_exps": [
+6001
+],
+"answers": [
+"A transpose = A-1"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the range of sine and cosine?",
+"variants": [
+"What is the range of sine and cosine?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4005
+],
+"all_exps": [
+4005
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the Rann of Kutch boundary also called?",
+"variants": [
+"What is the Rann of Kutch boundary also called?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1004
+],
+"all_exps": [
+1004
+],
+"answers": [
+"24 parallel lines"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the square root of 7?",
+"variants": [
+"What is the square root of 7?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5001
+],
+"all_exps": [
+5001
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the sum of two vectors A and B?",
+"variants": [
+"What is the sum of two vectors A and B?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the Sun?",
+"variants": [
+"What is the Sun?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"Star"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the synonym of eminent?",
+"variants": [
+"What is the synonym of eminent?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4003
+],
+"all_exps": [
+4003
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the Tashkent Agreement?",
+"variants": [
+"What is the Tashkent Agreement?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5009
+],
+"all_exps": [
+5009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the total number of atomic blasts by Pakistan?",
+"variants": [
+"What is the total number of atomic blasts by Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5006
+],
+"all_exps": [
+5006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What is the total number of OIC members?",
+"variants": [
+"What is the total number of OIC members?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4007
+],
+"all_exps": [
+4007
+],
+"answers": [
+"57"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the unit of elasticity?",
+"variants": [
+"What is the unit of elasticity?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"N/m²"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the unit of gravity (acceleration due to gravity)?",
+"variants": [
+"What is the unit of gravity (acceleration due to gravity)?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6004
+],
+"all_exps": [
+6004
+],
+"answers": [
+"m/s²"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What is the Urdu meaning of army?",
+"variants": [
+"What is the Urdu meaning of army?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3008
+],
+"all_exps": [
+3008
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What operation did Pakistan launch against the Indian Operation Sindoor?",
+"variants": [
+"What operation did Pakistan launch against the Indian Operation Sindoor?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4007
+],
+"all_exps": [
+4007
+],
+"answers": [
+"Bunyanum Marsoos"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What should be the capital of Palestine, according to Pakistan?",
+"variants": [
+"What should be the capital of Palestine, according to Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1010
+],
+"all_exps": [
+1010
+],
+"answers": [
+"Jerusalem (Al-Quds)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What was Quaid-e-Azam's qualification?",
+"variants": [
+"What was Quaid-e-Azam's qualification?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"Barrister"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What was the capital of the Abbasid Khilafat?",
+"variants": [
+"What was the capital of the Abbasid Khilafat?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2009
+],
+"all_exps": [
+2009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What was the date of the Tashkent Declaration?",
+"variants": [
+"What was the date of the Tashkent Declaration?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4004
+],
+"all_exps": [
+4004
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What was the Khilafat Movement?",
+"variants": [
+"What was the Khilafat Movement?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3009
+],
+"all_exps": [
+3009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What was the main focus of the 2023 OIC summit?",
+"variants": [
+"What was the main focus of the 2023 OIC summit?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2009
+],
+"all_exps": [
+2009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What was the meaning of the Pakistan Seerat Conference 2023?",
+"variants": [
+"What was the meaning of the Pakistan Seerat Conference 2023?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4007
+],
+"all_exps": [
+4007
+],
+"answers": [
+"Prophet (PBUH) and peace"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What was the name of Pakistan's nuclear test?",
+"variants": [
+"What was the name of Pakistan's nuclear test?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6001
+],
+"all_exps": [
+6001
+],
+"answers": [
+"Youm-e-Takbeer"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What was the name of Pakistan's operation against India's Operation Sindoor?",
+"variants": [
+"What was the name of Pakistan's operation against India's Operation Sindoor?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Bunyanum Marsoos"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "What was the population of Gaza before the Israel attack?",
+"variants": [
+"What was the population of Gaza before the Israel attack?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1010
+],
+"all_exps": [
+1010
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What was the population of Gaza before the war?",
+"variants": [
+"What was the population of Gaza before the war?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5009
+],
+"all_exps": [
+5009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What was the question about apples?",
+"variants": [
+"What was the question about apples?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6006
+],
+"all_exps": [
+6006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "What was the question about COP28?",
+"variants": [
+"What was the question about COP28?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4012
+],
+"all_exps": [
+4012
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "When did Israel resume attacks on Gaza?",
+"variants": [
+"When did Israel resume attacks on Gaza?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1010
+],
+"all_exps": [
+1010
+],
+"answers": [
+"October 2023"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When did Pakistan hold large protests in support of Palestine?",
+"variants": [
+"When did Pakistan hold large protests in support of Palestine?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2001
+],
+"all_exps": [
+2001
+],
+"answers": [
+"October 2023"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When did Pakistan observe Solidarity Day with Palestine?",
+"variants": [
+"When did Pakistan observe Solidarity Day with Palestine?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2001
+],
+"all_exps": [
+2001
+],
+"answers": [
+"October 29, 2023"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When did Quaid-e-Azam give his 29 points?",
+"variants": [
+"When did Quaid-e-Azam give his 29 points?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4003
+],
+"all_exps": [
+4003
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "When did the OIC hold its first meeting against Israel?",
+"variants": [
+"When did the OIC hold its first meeting against Israel?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2001
+],
+"all_exps": [
+2001
+],
+"answers": [
+"1969"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When did the UN proclaim the Universal Declaration of Human Rights?",
+"variants": [
+"When did the UN proclaim the Universal Declaration of Human Rights?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4003
+],
+"all_exps": [
+4003
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "When was Hamas founded?",
+"variants": [
+"When was Hamas founded?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1010
+],
+"all_exps": [
+1010
+],
+"answers": [
+"1987"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When was Israel established?",
+"variants": [
+"When was Israel established?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1010
+],
+"all_exps": [
+1010
+],
+"answers": [
+"1948"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When was separate electorate accepted by both the Muslim League and Congress?",
+"variants": [
+"When was separate electorate accepted by both the Muslim League and Congress?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4003
+],
+"all_exps": [
+4003
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "When was the Palestine Liberation Organization (PLO) founded?",
+"variants": [
+"When was the Palestine Liberation Organization (PLO) founded?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2001
+],
+"all_exps": [
+2001
+],
+"answers": [
+"1964"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "When were the Minto-Morley Reforms?",
+"variants": [
+"When were the Minto-Morley Reforms?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4003
+],
+"all_exps": [
+4003
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Where is Bhasha Dam situated?",
+"variants": [
+"Where is Bhasha Dam situated?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Where is Majid Wazir Khan (Masjid Wazir Khan) located?",
+"variants": [
+"Where is Majid Wazir Khan (Masjid Wazir Khan) located?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3008
+],
+"all_exps": [
+3008
+],
+"answers": [
+"Lahore"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is the Al-Aqsa Mosque located?",
+"variants": [
+"Where is the Al-Aqsa Mosque located?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2001
+],
+"all_exps": [
+2001
+],
+"answers": [
+"Jerusalem"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is the Chashma Power Plant located?",
+"variants": [
+"Where is the Chashma Power Plant located?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6001
+],
+"all_exps": [
+6001
+],
+"answers": [
+"Mianwali, Punjab, Pakistan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is the Ghaznavi Mosque located?",
+"variants": [
+"Where is the Ghaznavi Mosque located?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3011
+],
+"all_exps": [
+3011
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Where is the Kachenjunga mountain located?",
+"variants": [
+"Where is the Kachenjunga mountain located?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2004
+],
+"all_exps": [
+2004
+],
+"answers": [
+"It is the 3rd highest mountain, lies between India and Nepal"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where is the UNO headquarters located?",
+"variants": [
+"Where is the UNO headquarters located?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3005
+],
+"all_exps": [
+3005
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Where is Warsak Dam situated?",
+"variants": [
+"Where is Warsak Dam situated?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Where was Pakistan's first nuclear test conducted?",
+"variants": [
+"Where was Pakistan's first nuclear test conducted?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2004
+],
+"all_exps": [
+2004
+],
+"answers": [
+"Chagai, Balochistan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where was the G20 Summit 2025 held?",
+"variants": [
+"Where was the G20 Summit 2025 held?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2004
+],
+"all_exps": [
+2004
+],
+"answers": [
+"South Africa (Cape Town)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Where was the headquarters of the Abbasid era?",
+"variants": [
+"Where was the headquarters of the Abbasid era?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6006
+],
+"all_exps": [
+6006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Where were the G20 summits of 2023 and 2025 held?",
+"variants": [
+"Where were the G20 summits of 2023 and 2025 held?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5002
+],
+"all_exps": [
+5002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which agreement ended the 1965 Indo-Pak war?",
+"variants": [
+"Which agreement ended the 1965 Indo-Pak war?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2004
+],
+"all_exps": [
+2004
+],
+"answers": [
+"Tashkent Agreement (January 1966)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which agreement was made between Pakistan and India in 1976?",
+"variants": [
+"Which agreement was made between Pakistan and India in 1976?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3003
+],
+"all_exps": [
+3003
+],
+"answers": [
+"Nuclear Non-Proliferation (1976) / Tashkent 1966 (depending on phrasing)"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which agreement was signed between Pakistan and India in 1976?",
+"variants": [
+"Which agreement was signed between Pakistan and India in 1976?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2008
+],
+"all_exps": [
+2008
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which are the largest cities by area?",
+"variants": [
+"Which are the largest cities by area?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6001
+],
+"all_exps": [
+6001
+],
+"answers": [
+"1) Semersooq in Greenland, 2) Avannaata in Greenland, 3) Nagqu in China"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which are the longest groups in the periodic table?",
+"variants": [
+"Which are the longest groups in the periodic table?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"Group 1 & 2"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which area suffered the most damage in the 2023 Israel-Gaza conflict?",
+"variants": [
+"Which area suffered the most damage in the 2023 Israel-Gaza conflict?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1010
+],
+"all_exps": [
+1010
+],
+"answers": [
+"Gaza"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which award was won in medicine in 2023?",
+"variants": [
+"Which award was won in medicine in 2023?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4007
+],
+"all_exps": [
+4007
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which billionaire bought X (formerly Twitter)?",
+"variants": [
+"Which billionaire bought X (formerly Twitter)?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2004
+],
+"all_exps": [
+2004
+],
+"answers": [
+"Elon Musk"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which city is called the city of the rising sun?",
+"variants": [
+"Which city is called the city of the rising sun?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4004
+],
+"all_exps": [
+4004
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which city is known as the city of saints?",
+"variants": [
+"Which city is known as the city of saints?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6006
+],
+"all_exps": [
+6006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which continent has the most countries?",
+"variants": [
+"Which continent has the most countries?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1002
+],
+"all_exps": [
+1002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which country created the robot Sophia?",
+"variants": [
+"Which country created the robot Sophia?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5005
+],
+"all_exps": [
+5005
+],
+"answers": [
+"Saudi Arabia"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which country has a maritime (sea) border with Pakistan?",
+"variants": [
+"Which country has a maritime (sea) border with Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1008
+],
+"all_exps": [
+1008
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which country hosted COP 28?",
+"variants": [
+"Which country hosted COP 28?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5009
+],
+"all_exps": [
+5009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which country hosted Hajj in 2024?",
+"variants": [
+"Which country hosted Hajj in 2024?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1004
+],
+"all_exps": [
+1004
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which country hosted OC 2022/2023?",
+"variants": [
+"Which country hosted OC 2022/2023?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2004
+],
+"all_exps": [
+2004
+],
+"answers": [
+"Not fully clear which OC; could be China (2022 Winter Olympics) or India"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which country hosted the 2022 Football Asia Cup?",
+"variants": [
+"Which country hosted the 2022 Football Asia Cup?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3011
+],
+"all_exps": [
+3011
+],
+"answers": [
+"Qatar"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which country hosted the G20 summit in 2024?",
+"variants": [
+"Which country hosted the G20 summit in 2024?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4003
+],
+"all_exps": [
+4003
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which country hosted the G20 summit in 2025?",
+"variants": [
+"Which country hosted the G20 summit in 2025?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4006
+],
+"all_exps": [
+4006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which country hosts the 2026 FIFA World Cup?",
+"variants": [
+"Which country hosts the 2026 FIFA World Cup?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5009
+],
+"all_exps": [
+5009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which country is ending interest-based banking by 2028?",
+"variants": [
+"Which country is ending interest-based banking by 2028?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2003
+],
+"all_exps": [
+2003
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which country is the host of the G20 Summit 2025?",
+"variants": [
+"Which country is the host of the G20 Summit 2025?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2003
+],
+"all_exps": [
+2003
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which country issued the first postal stamp?",
+"variants": [
+"Which country issued the first postal stamp?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3011
+],
+"all_exps": [
+3011
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which country joined NATO due to Russia?",
+"variants": [
+"Which country joined NATO due to Russia?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6006
+],
+"all_exps": [
+6006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which country launched a space mission (space related question)?",
+"variants": [
+"Which country launched a space mission (space related question)?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [
+"India"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which country launched Chandrayaan in 2023 or 2025?",
+"variants": [
+"Which country launched Chandrayaan in 2023 or 2025?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4007
+],
+"all_exps": [
+4007
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which country printed the most Qurans in 2023?",
+"variants": [
+"Which country printed the most Qurans in 2023?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3011
+],
+"all_exps": [
+3011
+],
+"answers": [
+"Saudi Arabia"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which country provides the most military aid to Israel?",
+"variants": [
+"Which country provides the most military aid to Israel?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2001
+],
+"all_exps": [
+2001
+],
+"answers": [
+"USA"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which country started the water cooler initiative for Hajj in 2024?",
+"variants": [
+"Which country started the water cooler initiative for Hajj in 2024?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5002
+],
+"all_exps": [
+5002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which country submitted a report on Israel in the ICJ?",
+"variants": [
+"Which country submitted a report on Israel in the ICJ?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1008
+],
+"all_exps": [
+1008
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which country suffered the most loss in World War 2?",
+"variants": [
+"Which country suffered the most loss in World War 2?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which country was the first to accept Pakistan?",
+"variants": [
+"Which country was the first to accept Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4004
+],
+"all_exps": [
+4004
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which country won the Cricket World Cup in 1992?",
+"variants": [
+"Which country won the Cricket World Cup in 1992?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3008
+],
+"all_exps": [
+3008
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which country won the most FIFA World Cups as of 2024?",
+"variants": [
+"Which country won the most FIFA World Cups as of 2024?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6006
+],
+"all_exps": [
+6006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which country won the World Cup in 2023?",
+"variants": [
+"Which country won the World Cup in 2023?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which country's statements did Pakistan support during Israel's attacks on Gaza?",
+"variants": [
+"Which country's statements did Pakistan support during Israel's attacks on Gaza?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2001
+],
+"all_exps": [
+2001
+],
+"answers": [
+"Turkey"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which film was shortlisted for the Oscar award in 2023?",
+"variants": [
+"Which film was shortlisted for the Oscar award in 2023?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1007
+],
+"all_exps": [
+1007
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which international organization played a key role in Israel's establishment?",
+"variants": [
+"Which international organization played a key role in Israel's establishment?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2001
+],
+"all_exps": [
+2001
+],
+"answers": [
+"UN"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which is different: Painting, sketch, drawing, picture?",
+"variants": [
+"Which is different: Painting, sketch, drawing, picture?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"Painting"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "Which is the biggest country by area?",
+"variants": [
+"Which is the biggest country by area?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Russia"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which is the biggest country by population?",
+"variants": [
+"Which is the biggest country by population?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4007
+],
+"all_exps": [
+4007
+],
+"answers": [
+"India"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which is the biggest country in Africa?",
+"variants": [
+"Which is the biggest country in Africa?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Algeria"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which is the biggest country in Europe?",
+"variants": [
+"Which is the biggest country in Europe?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Russia"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which is the hottest planet?",
+"variants": [
+"Which is the hottest planet?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5005
+],
+"all_exps": [
+5005
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which is the hottest thing on earth: iron, diamond, mercury or silver?",
+"variants": [
+"Which is the hottest thing on earth: iron, diamond, mercury or silver?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which is the largest country in Europe?",
+"variants": [
+"Which is the largest country in Europe?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Ukraine"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which is the largest country in North America?",
+"variants": [
+"Which is the largest country in North America?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Canada"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which is the lightest metal?",
+"variants": [
+"Which is the lightest metal?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"Lithium"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which is the smallest river of Pakistan?",
+"variants": [
+"Which is the smallest river of Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5009
+],
+"all_exps": [
+5009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which Islamic countries sided with which country at the UN in 2024?",
+"variants": [
+"Which Islamic countries sided with which country at the UN in 2024?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which Islamic country sent astronauts to space in 2023?",
+"variants": [
+"Which Islamic country sent astronauts to space in 2023?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6001
+],
+"all_exps": [
+6001
+],
+"answers": [
+"UAE"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which isotope is used to treat goiter?",
+"variants": [
+"Which isotope is used to treat goiter?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"Iodine"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which letter comes next in the series: B3, D5, F7, ... what will be J?",
+"variants": [
+"Which letter comes next in the series: B3, D5, F7, ... what will be J?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3002
+],
+"all_exps": [
+3002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "Which letter is missing: A, E, I, __, U?",
+"variants": [
+"Which letter is missing: A, E, I, __, U?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"O"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "Which letter represents integers?",
+"variants": [
+"Which letter represents integers?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Z"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which mountain is called the Killer Mountain?",
+"variants": [
+"Which mountain is called the Killer Mountain?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"Nanga Parbat"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which mountain range is called the Roof of the World?",
+"variants": [
+"Which mountain range is called the Roof of the World?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5003
+],
+"all_exps": [
+5003
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which Muslim country took the water cooler initiative for Hajj in 2024?",
+"variants": [
+"Which Muslim country took the water cooler initiative for Hajj in 2024?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4006
+],
+"all_exps": [
+4006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which Muslim leader said that he would fight Israel and Palestine together with all Muslim countries?",
+"variants": [
+"Which Muslim leader said that he would fight Israel and Palestine together with all Muslim countries?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4010
+],
+"all_exps": [
+4010
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which narrow strip in northeastern Afghanistan separates Pakistan from Tajikistan?",
+"variants": [
+"Which narrow strip in northeastern Afghanistan separates Pakistan from Tajikistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2005
+],
+"all_exps": [
+2005
+],
+"answers": [
+"Wakhan Corridor"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which number comes next: 2, 4, 8, 16, ?",
+"variants": [
+"Which number comes next: 2, 4, 8, 16, ?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4004
+],
+"all_exps": [
+4004
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "Which of the options is the numeric method for Thailand? (A. 1000, B. 200061, C. 200065)",
+"variants": [
+"Which of the options is the numeric method for Thailand? (A. 1000, B. 200061, C. 200065)"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6006
+],
+"all_exps": [
+6006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+},
+{
+"q": "Which one is different: Mango, carrot, apple, banana?",
+"variants": [
+"Which one is different: Mango, carrot, apple, banana?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"Carrot"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "Which operator measures area?",
+"variants": [
+"Which operator measures area?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3011
+],
+"all_exps": [
+3011
+],
+"answers": [
+"Planimeter"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which Pakistani player has taken the most wickets in Test matches?",
+"variants": [
+"Which Pakistani player has taken the most wickets in Test matches?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2002
+],
+"all_exps": [
+2002
+],
+"answers": [
+"Wasim Akram"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which Pakistani scientist won an award in Iran in 2024?",
+"variants": [
+"Which Pakistani scientist won an award in Iran in 2024?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2008
+],
+"all_exps": [
+2008
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which Pakistani scientist won an award in Iran?",
+"variants": [
+"Which Pakistani scientist won an award in Iran?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4007
+],
+"all_exps": [
+4007
+],
+"answers": [
+"Dr M. Raza Shah"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which Pakistani signed the Simla Conference (Agreement)?",
+"variants": [
+"Which Pakistani signed the Simla Conference (Agreement)?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4008
+],
+"all_exps": [
+4008
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which Palestinian mosque was most affected by IDF strikes?",
+"variants": [
+"Which Palestinian mosque was most affected by IDF strikes?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4003
+],
+"all_exps": [
+4003
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which Palestinian organization is resisting against Israel?",
+"variants": [
+"Which Palestinian organization is resisting against Israel?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [
+"Hamas"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which planet has the most moons?",
+"variants": [
+"Which planet has the most moons?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3003
+],
+"all_exps": [
+3003
+],
+"answers": [
+"Saturn (146 moons)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which player has scored the fastest runs in ODIs?",
+"variants": [
+"Which player has scored the fastest runs in ODIs?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1008
+],
+"all_exps": [
+1008
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which player has scored the most runs in Test matches?",
+"variants": [
+"Which player has scored the most runs in Test matches?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5001
+],
+"all_exps": [
+5001
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which Prophet stayed inside the fish's belly?",
+"variants": [
+"Which Prophet stayed inside the fish's belly?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2002
+],
+"all_exps": [
+2002
+],
+"answers": [
+"Prophet Yunus (A.S.)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which ray is negatively charged?",
+"variants": [
+"Which ray is negatively charged?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"Beta"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which scientist got a Nobel Prize in Iran in 2023?",
+"variants": [
+"Which scientist got a Nobel Prize in Iran in 2023?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4012
+],
+"all_exps": [
+4012
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which team has won the most PSL titles?",
+"variants": [
+"Which team has won the most PSL titles?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2002
+],
+"all_exps": [
+2002
+],
+"answers": [
+"Islamabad United (3 titles)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which two regions does the Khunjerab Pass connect?",
+"variants": [
+"Which two regions does the Khunjerab Pass connect?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Gilgit-Baltistan and Xinjiang"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which UN organization banned funding to Israel?",
+"variants": [
+"Which UN organization banned funding to Israel?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4010
+],
+"all_exps": [
+4010
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which union stands against the Israeli attack on Gaza?",
+"variants": [
+"Which union stands against the Israeli attack on Gaza?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4008
+],
+"all_exps": [
+4008
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Which viceroy partitioned Bengal in 1905, and who annulled it in 1911?",
+"variants": [
+"Which viceroy partitioned Bengal in 1905, and who annulled it in 1911?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Lord Curzon in 1905; annulled in 1911 by Viceroy Hardinge"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Which word reads the same after mirror image?",
+"variants": [
+"Which word reads the same after mirror image?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3011
+],
+"all_exps": [
+3011
+],
+"answers": [
+"MOM / WOW type"
+],
+"confident_answer": true,
+"kind": "verbal"
+},
+{
+"q": "Who abolished the 1962 constitution?",
+"variants": [
+"Who abolished the 1962 constitution?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2005
+],
+"all_exps": [
+2005
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who accepted the 23rd resolution in 1996?",
+"variants": [
+"Who accepted the 23rd resolution in 1996?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4003
+],
+"all_exps": [
+4003
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who became Iran's president after the death of Ibrahim Raisi?",
+"variants": [
+"Who became Iran's president after the death of Ibrahim Raisi?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2010
+],
+"all_exps": [
+2010
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who became the leader of Pakistan in 1972?",
+"variants": [
+"Who became the leader of Pakistan in 1972?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6003
+],
+"all_exps": [
+6003
+],
+"answers": [
+"Zulfiqar Ali Bhutto"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who controls the Gaza Strip?",
+"variants": [
+"Who controls the Gaza Strip?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1010
+],
+"all_exps": [
+1010
+],
+"answers": [
+"Palestine (Hamas)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who decided the name of Pakistan?",
+"variants": [
+"Who decided the name of Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5006
+],
+"all_exps": [
+5006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who discovered hydrogen?",
+"variants": [
+"Who discovered hydrogen?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"Cavendish"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who elected the president in 1962: the Senate, the National Assembly, or both?",
+"variants": [
+"Who elected the president in 1962: the Senate, the National Assembly, or both?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5006
+],
+"all_exps": [
+5006
+],
+"answers": [
+"both"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who first used the term Muslim community in the subcontinent?",
+"variants": [
+"Who first used the term Muslim community in the subcontinent?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5005
+],
+"all_exps": [
+5005
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who formed NATO?",
+"variants": [
+"Who formed NATO?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"USA, Washington DC"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who got the Nobel Prize in 2023?",
+"variants": [
+"Who got the Nobel Prize in 2023?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4011
+],
+"all_exps": [
+4011
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who helped most in ending the Israel-Palestine war?",
+"variants": [
+"Who helped most in ending the Israel-Palestine war?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2003
+],
+"all_exps": [
+2003
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who invented the bulb?",
+"variants": [
+"Who invented the bulb?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2009
+],
+"all_exps": [
+2009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who invented the light bulb?",
+"variants": [
+"Who invented the light bulb?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Thomas Edison"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who is a member of UNO?",
+"variants": [
+"Who is a member of UNO?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2003
+],
+"all_exps": [
+2003
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who is known as the father of chemistry?",
+"variants": [
+"Who is known as the father of chemistry?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2005
+],
+"all_exps": [
+2005
+],
+"answers": [
+"Jabir ibn Hayan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who is the author of the book 'My Brother'?",
+"variants": [
+"Who is the author of the book 'My Brother'?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6002
+],
+"all_exps": [
+6002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who is the author of the book 'Origin of Species'?",
+"variants": [
+"Who is the author of the book 'Origin of Species'?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who is the author of the book The Prince?",
+"variants": [
+"Who is the author of the book The Prince?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6006
+],
+"all_exps": [
+6006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who is the author of The Loyal Muhammadans of India?",
+"variants": [
+"Who is the author of The Loyal Muhammadans of India?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3003
+],
+"all_exps": [
+3003
+],
+"answers": [
+"Sir Syed Ahmed Khan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who is the Chief Minister of KPK?",
+"variants": [
+"Who is the Chief Minister of KPK?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Sohail Afridi"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who is the current owner of X?",
+"variants": [
+"Who is the current owner of X?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6006
+],
+"all_exps": [
+6006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who is the current political leader of Hamas?",
+"variants": [
+"Who is the current political leader of Hamas?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2001
+],
+"all_exps": [
+2001
+],
+"answers": [
+"Ismail Haniyeh"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who is the defense minister of Pakistan?",
+"variants": [
+"Who is the defense minister of Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1002
+],
+"all_exps": [
+1002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who is the father of chemistry?",
+"variants": [
+"Who is the father of chemistry?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5009
+],
+"all_exps": [
+5009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who is the founder of Facebook?",
+"variants": [
+"Who is the founder of Facebook?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5009
+],
+"all_exps": [
+5009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who is the Governor of KPK?",
+"variants": [
+"Who is the Governor of KPK?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Faisal Karim Kundi"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who is the greatest leader of Pakistan?",
+"variants": [
+"Who is the greatest leader of Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"Quaid-e-Azam"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who is the leader of Afghanistan?",
+"variants": [
+"Who is the leader of Afghanistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Hibatullah Akhunzada"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who is the pioneer of AI?",
+"variants": [
+"Who is the pioneer of AI?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2004
+],
+"all_exps": [
+2004
+],
+"answers": [
+"John McCarthy"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who is the present Prime Minister of France?",
+"variants": [
+"Who is the present Prime Minister of France?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Sebastien Lecornu; previous Francois Bayrou"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who is the President of Palestine?",
+"variants": [
+"Who is the President of Palestine?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1010
+],
+"all_exps": [
+1010
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who is the Prime Minister of Afghanistan?",
+"variants": [
+"Who is the Prime Minister of Afghanistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Muhammad Hassan Akhund"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who is the Supreme Leader of Iran?",
+"variants": [
+"Who is the Supreme Leader of Iran?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Ayatollah Ali Khamenei"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who is the writer of the drama Hamlet?",
+"variants": [
+"Who is the writer of the drama Hamlet?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2005
+],
+"all_exps": [
+2005
+],
+"answers": [
+"Shakespeare"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who is the writer of the Juliet cartoon?",
+"variants": [
+"Who is the writer of the Juliet cartoon?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5009
+],
+"all_exps": [
+5009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who is the writer of the novel Dune?",
+"variants": [
+"Who is the writer of the novel Dune?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2005
+],
+"all_exps": [
+2005
+],
+"answers": [
+"Franklin Patrick Herbert Jr"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who led the USA in World War II?",
+"variants": [
+"Who led the USA in World War II?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2004
+],
+"all_exps": [
+2004
+],
+"answers": [
+"Franklin D. Roosevelt (later Harry S. Truman after 1945)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who nationalised banks in Pakistan?",
+"variants": [
+"Who nationalised banks in Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Zulfikar Ali Bhutto"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who painted The Starry Night?",
+"variants": [
+"Who painted The Starry Night?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6006
+],
+"all_exps": [
+6006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who presented the Pakistani point of view regarding the Israel-Palestine war in the UN?",
+"variants": [
+"Who presented the Pakistani point of view regarding the Israel-Palestine war in the UN?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3008
+],
+"all_exps": [
+3008
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who signed the Indus Water Treaty on the Pakistan side?",
+"variants": [
+"Who signed the Indus Water Treaty on the Pakistan side?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6003
+],
+"all_exps": [
+6003
+],
+"answers": [
+"Ayub Khan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who was Baba Bulleh Shah?",
+"variants": [
+"Who was Baba Bulleh Shah?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"A Punjabi Sufi poet"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who was Emperor Hirohito?",
+"variants": [
+"Who was Emperor Hirohito?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1010
+],
+"all_exps": [
+1010
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who was given the 2023 Nobel Prize in Literature?",
+"variants": [
+"Who was given the 2023 Nobel Prize in Literature?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6006
+],
+"all_exps": [
+6006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who was the 2nd prime minister of Pakistan?",
+"variants": [
+"Who was the 2nd prime minister of Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6006
+],
+"all_exps": [
+6006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who was the captain of the Pakistan one day cricket team in 2023?",
+"variants": [
+"Who was the captain of the Pakistan one day cricket team in 2023?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4012
+],
+"all_exps": [
+4012
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who was the Chief Minister during 1971?",
+"variants": [
+"Who was the Chief Minister during 1971?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Nurul Amin"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who was the first female to rule in a democratic government?",
+"variants": [
+"Who was the first female to rule in a democratic government?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4003
+],
+"all_exps": [
+4003
+],
+"answers": [
+"Benazir Bhutto (marked)"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who was the first Nobel Prize winner of Pakistan?",
+"variants": [
+"Who was the first Nobel Prize winner of Pakistan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+3008
+],
+"all_exps": [
+3008
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who was the first to join Germany in World War II?",
+"variants": [
+"Who was the first to join Germany in World War II?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5009
+],
+"all_exps": [
+5009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who was the first woman Chief Justice of the Pakistan Shariah court?",
+"variants": [
+"Who was the first woman Chief Justice of the Pakistan Shariah court?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Ashraf Jehan"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who was the first woman governor of Sindh?",
+"variants": [
+"Who was the first woman governor of Sindh?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4002
+],
+"all_exps": [
+4002
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who was the President of India during the 1971 and 1999 wars?",
+"variants": [
+"Who was the President of India during the 1971 and 1999 wars?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6006
+],
+"all_exps": [
+6006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who was the Test cricket captain in 2023?",
+"variants": [
+"Who was the Test cricket captain in 2023?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1007
+],
+"all_exps": [
+1007
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who was the winner of chess in 2023?",
+"variants": [
+"Who was the winner of chess in 2023?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+4003
+],
+"all_exps": [
+4003
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who was the youngest chess winner in 2023?",
+"variants": [
+"Who was the youngest chess winner in 2023?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2003
+],
+"all_exps": [
+2003
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who were the presidents of China in order?",
+"variants": [
+"Who were the presidents of China in order?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Mao Zedong (1954-1959), Liu Shaoqi (1959-1968), Li Xiannian (1983-1988), Hu Jintao (2003-2013), Xi Jinping (2013-present)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who won the Ballon d'Or football award?",
+"variants": [
+"Who won the Ballon d'Or football award?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2010
+],
+"all_exps": [
+2010
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who won the Ballon d'Or in 2023?",
+"variants": [
+"Who won the Ballon d'Or in 2023?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1006
+],
+"all_exps": [
+1006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who won the first ODI World Cup?",
+"variants": [
+"Who won the first ODI World Cup?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"West Indies"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who won the women's FIFA World Cup in 2023?",
+"variants": [
+"Who won the women's FIFA World Cup in 2023?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1009
+],
+"all_exps": [
+1009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who wrote Bang-e-Dara?",
+"variants": [
+"Who wrote Bang-e-Dara?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6005
+],
+"all_exps": [
+6005
+],
+"answers": [
+"Allama Iqbal"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who wrote Daughter of Dynasty?",
+"variants": [
+"Who wrote Daughter of Dynasty?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Benazir Bhutto"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who wrote Mother of Destiny?",
+"variants": [
+"Who wrote Mother of Destiny?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+6006
+],
+"all_exps": [
+6006
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who wrote Now or Never?",
+"variants": [
+"Who wrote Now or Never?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Chaudhry Rahmat Ali, 1933"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Who wrote the book The Republic?",
+"variants": [
+"Who wrote the book The Republic?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5009
+],
+"all_exps": [
+5009
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who wrote the first Urdu book named Diwan?",
+"variants": [
+"Who wrote the first Urdu book named Diwan?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2004
+],
+"all_exps": [
+2004
+],
+"answers": [
+"Historically debated; Mirza Ghalib commonly accepted"
+],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Who wrote The Story of the Malakand Field Force?",
+"variants": [
+"Who wrote The Story of the Malakand Field Force?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+5010
+],
+"all_exps": [
+5010
+],
+"answers": [
+"Winston Churchill"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Why did Pakistan reject establishing relations with Israel?",
+"variants": [
+"Why did Pakistan reject establishing relations with Israel?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2001
+],
+"all_exps": [
+2001
+],
+"answers": [
+"Both A and B (religious reasons and political reasons)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Why does the Pakistani passport say \"Valid for all countries except Israel\"?",
+"variants": [
+"Why does the Pakistani passport say \"Valid for all countries except Israel\"?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1010
+],
+"all_exps": [
+1010
+],
+"answers": [
+"All of the above (no diplomatic relations, Israel is a prohibited country, religious reasons)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Why has Pakistan not recognized Israel?",
+"variants": [
+"Why has Pakistan not recognized Israel?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1010
+],
+"all_exps": [
+1010
+],
+"answers": [
+"All of the above (religious reasons, occupation of Palestine, solidarity with the Muslim world)"
+],
+"confident_answer": true,
+"kind": "academic"
+},
+{
+"q": "Why was Malala Yousafzai given the Nobel Prize?",
+"variants": [
+"Why was Malala Yousafzai given the Nobel Prize?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+1004
+],
+"all_exps": [
+1004
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Writer, director, actor: which one is different from the rest?",
+"variants": [
+"Writer, director, actor: which one is different from the rest?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2005
+],
+"all_exps": [
+2005
+],
+"answers": [],
+"confident_answer": false,
+"kind": "academic"
+},
+{
+"q": "Z=3, X=5, V=7, T=9. What comes next?",
+"variants": [
+"Z=3, X=5, V=7, T=9. What comes next?"
+],
+"repeat": 1,
+"mentions": 1,
+"exps": [
+2005
+],
+"all_exps": [
+2005
+],
+"answers": [],
+"confident_answer": false,
+"kind": "verbal"
+}
+]

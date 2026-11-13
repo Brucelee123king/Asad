@@ -1,0 +1,2147 @@
+[
+ {
+  "id": "T2-B-1",
+  "question": "Which planet is called the 'sister' or 'twin' of Earth?",
+  "options": [
+   "Mars",
+   "Venus",
+   "Mercury",
+   "Jupiter"
+  ],
+  "correct": 1,
+  "why": "Venus is called Earth's sister because it is very close to Earth in size, mass and distance from the Sun.",
+  "rel": "Venus is the hottest planet in the solar system because of its thick carbon dioxide atmosphere.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-2",
+  "question": "In which year was the Holy Prophet Muhammad (PBUH) born?",
+  "options": [
+   "575 AD",
+   "571 AD",
+   "580 AD",
+   "610 AD"
+  ],
+  "correct": 1,
+  "why": "The Holy Prophet (PBUH) was born in Makkah in 571 AD (the Year of the Elephant). 610 AD is the year of the first revelation.",
+  "rel": "He was born in the Banu Hashim clan of the Quraysh tribe.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-3",
+  "question": "When is World Hepatitis Day observed?",
+  "options": [
+   "28 July",
+   "7 April",
+   "1 December",
+   "24 March"
+  ],
+  "correct": 0,
+  "why": "World Hepatitis Day is marked every year on 28 July, the birthday of Nobel winner Baruch Blumberg, who discovered the hepatitis B virus.",
+  "rel": "1 December is World AIDS Day and 24 March is World TB Day.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-4",
+  "question": "In which year was the first Test cricket match played?",
+  "options": [
+   "1877",
+   "1844",
+   "1882",
+   "1900"
+  ],
+  "correct": 0,
+  "why": "The first Test match was played between Australia and England at Melbourne in March 1877.",
+  "rel": "The Ashes series between England and Australia began in 1882.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-5",
+  "question": "In which year did the First Round Table Conference begin in London?",
+  "options": [
+   "1928",
+   "1930",
+   "1932",
+   "1935"
+  ],
+  "correct": 1,
+  "why": "The First Round Table Conference opened in London in November 1930; the Second was in 1931 and the Third in 1932.",
+  "rel": "Quaid-e-Azam attended the First and Second Round Table Conferences.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-6",
+  "question": "Who wrote the book 'Pakistan: A Hard Country'?",
+  "options": [
+   "Stephen P. Cohen",
+   "Anatol Lieven",
+   "Ayesha Jalal",
+   "Christophe Jaffrelot"
+  ],
+  "correct": 1,
+  "why": "'Pakistan: A Hard Country' (2011) was written by British journalist and scholar Anatol Lieven.",
+  "rel": "Stephen P. Cohen wrote 'The Idea of Pakistan'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-7",
+  "question": "Which organization mediated the Indus Waters Treaty between Pakistan and India?",
+  "options": [
+   "United Nations",
+   "IMF",
+   "World Bank",
+   "Commonwealth"
+  ],
+  "correct": 2,
+  "why": "The World Bank brokered the Indus Waters Treaty, signed in Karachi on 19 September 1960.",
+  "rel": "The treaty was signed by President Ayub Khan and Indian PM Jawaharlal Nehru.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-8",
+  "question": "Who proposed the heliocentric (Sun-centred) model of the solar system?",
+  "options": [
+   "Galileo Galilei",
+   "Isaac Newton",
+   "Ptolemy",
+   "Nicolaus Copernicus"
+  ],
+  "correct": 3,
+  "why": "Copernicus showed that the planets, including Earth, move around the Sun. Ptolemy had taught that Earth was the centre.",
+  "rel": "Galileo later supported Copernicus's idea using his telescope.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-9",
+  "question": "Who is the Head of State according to the 1973 Constitution of Pakistan?",
+  "options": [
+   "President",
+   "Prime Minister",
+   "Chief Justice",
+   "Speaker of the National Assembly"
+  ],
+  "correct": 0,
+  "why": "Under the 1973 Constitution the President is the Head of State, while the Prime Minister is the head of government.",
+  "rel": "Article 41 of the Constitution deals with the President.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-10",
+  "question": "Which ruler of Mysore did the British defeat and kill at Seringapatam in 1799?",
+  "options": [
+   "Tipu Sultan",
+   "Hyder Ali",
+   "Siraj-ud-Daula",
+   "Ranjit Singh"
+  ],
+  "correct": 0,
+  "why": "Tipu Sultan was killed fighting the British in the Fourth Anglo-Mysore War at Seringapatam in 1799.",
+  "rel": "Tipu Sultan is known as the 'Tiger of Mysore'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-11",
+  "question": "Who is the author of 'Pakistaniaat'?",
+  "options": [
+   "Ayesha Jalal",
+   "Akbar S. Ahmed",
+   "Ishtiaq Ahmed",
+   "Javed Jabbar"
+  ],
+  "correct": 3,
+  "why": "The notes give Javed Jabbar as the author of 'Pakistaniaat'.",
+  "rel": "Javed Jabbar has also served as a federal minister for information.",
+  "status": "unsure",
+  "note": "Could not confirm this book/author; 'Pakistaniaat' is also the name of a journal of Pakistan studies. Kept printed answer."
+ },
+ {
+  "id": "T2-B-12",
+  "question": "Who wrote 'Kitab al-Umm'?",
+  "options": [
+   "Imam Abu Hanifa",
+   "Imam Malik",
+   "Imam Al-Shafi'i",
+   "Imam Ahmad bin Hanbal"
+  ],
+  "correct": 2,
+  "why": "'Kitab al-Umm' is the main book of fiqh written by Imam Muhammad bin Idris al-Shafi'i.",
+  "rel": "Imam Malik wrote 'Al-Muwatta'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-13",
+  "question": "The Tochi Pass connects which two places?",
+  "options": [
+   "Peshawar and Kabul",
+   "Quetta and Kandahar",
+   "Chitral and Badakhshan",
+   "Bannu and Ghazni"
+  ],
+  "correct": 3,
+  "why": "The Tochi Pass in North Waziristan links Bannu in Pakistan with Ghazni in Afghanistan.",
+  "rel": "The Khyber Pass links Peshawar with Kabul.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-14",
+  "question": "Where is the headquarters of Amnesty International?",
+  "options": [
+   "Geneva, Switzerland",
+   "London, UK",
+   "New York, USA",
+   "Paris, France"
+  ],
+  "correct": 1,
+  "why": "Amnesty International, the human rights organization founded in 1961, has its headquarters in London.",
+  "rel": "Amnesty International won the Nobel Peace Prize in 1977.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-15",
+  "question": "In which country is the Leaning Tower of Pisa?",
+  "options": [
+   "France",
+   "Spain",
+   "Greece",
+   "Italy"
+  ],
+  "correct": 3,
+  "why": "The Leaning Tower of Pisa is the bell tower of Pisa Cathedral in Italy.",
+  "rel": "Its tilt is caused by soft ground under one side of the foundation.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-16",
+  "question": "In which year was the first nationwide martial law imposed in Pakistan?",
+  "options": [
+   "1958",
+   "1953",
+   "1969",
+   "1977"
+  ],
+  "correct": 0,
+  "why": "Martial law was imposed across Pakistan on 7 October 1958. (In 1953 only a limited martial law was imposed in Lahore.)",
+  "rel": "Pakistan's second martial law was imposed by General Yahya Khan in 1969.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-17",
+  "question": "In which year did construction of Tarbela Dam start?",
+  "options": [
+   "1960",
+   "1968",
+   "1972",
+   "1976"
+  ],
+  "correct": 1,
+  "why": "Work on Tarbela Dam on the Indus River began in 1968; it was completed in 1976.",
+  "rel": "Tarbela is one of the largest earth-filled dams in the world.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-18",
+  "question": "Where is the International Court of Justice located?",
+  "options": [
+   "The Hague",
+   "Geneva",
+   "New York",
+   "Vienna"
+  ],
+  "correct": 0,
+  "why": "The ICJ, the main judicial body of the UN, sits in the Peace Palace in The Hague, Netherlands.",
+  "rel": "The ICJ has 15 judges elected for nine-year terms.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-19",
+  "question": "The passes of the Hindu Kush connect Pakistan with which country?",
+  "options": [
+   "China",
+   "Iran",
+   "Afghanistan",
+   "Tajikistan"
+  ],
+  "correct": 2,
+  "why": "The Hindu Kush range lies along the Pakistan-Afghanistan border and its passes link the two countries.",
+  "rel": "The Khunjerab Pass in the Karakoram links Pakistan with China.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-20",
+  "question": "What was the old name of Sahiwal?",
+  "options": [
+   "Lyallpur",
+   "Campbellpur",
+   "Montgomery",
+   "Jacobabad"
+  ],
+  "correct": 2,
+  "why": "Sahiwal was called Montgomery after Sir Robert Montgomery; it was renamed in 1966.",
+  "rel": "Lyallpur is the old name of Faisalabad.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-21",
+  "question": "In which district is Rohtas Fort located?",
+  "options": [
+   "Attock",
+   "Chakwal",
+   "Rawalpindi",
+   "Jhelum"
+  ],
+  "correct": 3,
+  "why": "Rohtas Fort was built by Sher Shah Suri near Jhelum in the 16th century.",
+  "rel": "Rohtas Fort is a UNESCO World Heritage Site since 1997.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-22",
+  "question": "Who was the first Pakistani to climb Mount Everest?",
+  "options": [
+   "Ashraf Aman",
+   "Hassan Sadpara",
+   "Samina Baig",
+   "Nazir Sabir"
+  ],
+  "correct": 3,
+  "why": "Nazir Sabir reached the summit of Mount Everest in May 2000. Samina Baig was the first Pakistani woman (2013).",
+  "rel": "Ashraf Aman was the first Pakistani to climb K2 (1977).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-23",
+  "question": "Who was the first Foreign Minister of Pakistan?",
+  "options": [
+   "Liaquat Ali Khan",
+   "Sir Zafarullah Khan",
+   "Muhammad Ali Bogra",
+   "Manzur Qadir"
+  ],
+  "correct": 1,
+  "why": "Sir Muhammad Zafarullah Khan was Pakistan's first Foreign Minister (1947-1954).",
+  "rel": "He later became President of the International Court of Justice.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-24",
+  "question": "Which is the largest lake in the world?",
+  "options": [
+   "Lake Superior",
+   "Caspian Sea",
+   "Lake Victoria",
+   "Lake Baikal"
+  ],
+  "correct": 1,
+  "why": "The Caspian Sea, between Europe and Asia, is the largest lake by area. Lake Superior is the largest freshwater lake by area.",
+  "rel": "Lake Baikal is the deepest lake in the world.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-25",
+  "question": "In which year did the Hindi-Urdu controversy start?",
+  "options": [
+   "1867",
+   "1857",
+   "1875",
+   "1885"
+  ],
+  "correct": 0,
+  "why": "In 1867 Hindus of Benares demanded that Hindi replace Urdu in courts, which started the controversy.",
+  "rel": "This controversy led Sir Syed Ahmad Khan to put forward ideas close to the Two-Nation Theory.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-26",
+  "question": "In which year did Muhammad bin Qasim conquer Sindh?",
+  "options": [
+   "632 AD",
+   "711 AD",
+   "1001 AD",
+   "712 AD"
+  ],
+  "correct": 3,
+  "why": "Muhammad bin Qasim defeated Raja Dahir and conquered Sindh in 712 AD.",
+  "rel": "Because Islam entered the subcontinent through Sindh, it is called Bab-ul-Islam.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-27",
+  "question": "Who was the father of the Mughal emperor Humayun?",
+  "options": [
+   "Babur",
+   "Akbar",
+   "Sher Shah Suri",
+   "Jahangir"
+  ],
+  "correct": 0,
+  "why": "Zahir-ud-Din Babur founded the Mughal Empire and was Humayun's father. Akbar was Humayun's son.",
+  "rel": "Babur wrote his memoirs, the 'Tuzk-e-Babri' (Baburnama).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-28",
+  "question": "In which year did Pakistan buy Gwadar from Oman?",
+  "options": [
+   "1947",
+   "1958",
+   "1955",
+   "1962"
+  ],
+  "correct": 1,
+  "why": "Pakistan bought Gwadar from the Sultan of Oman on 8 September 1958 during Feroz Khan Noon's government.",
+  "rel": "Gwadar is now a deep-sea port and a key part of CPEC.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-29",
+  "question": "What is the antonym of 'Embarrass'?",
+  "options": [
+   "Put at ease",
+   "Humiliate",
+   "Fluster",
+   "Shame"
+  ],
+  "correct": 0,
+  "why": "To embarrass is to make someone feel awkward or ashamed, so the opposite is to put them at ease. The other options mean nearly the same as 'embarrass'.",
+  "rel": "'Embarrass' is spelled with double 'r' and double 's'.",
+  "status": "fixed",
+  "note": "Notes said 'Avoid', which is not an opposite of 'embarrass'; correct antonym is 'put at ease' (relieve/comfort)."
+ },
+ {
+  "id": "T2-B-30",
+  "question": "In which year were the first Asian Games held in New Delhi?",
+  "options": [
+   "1948",
+   "1951",
+   "1954",
+   "1962"
+  ],
+  "correct": 1,
+  "why": "The first Asian Games were held in New Delhi, India, in March 1951.",
+  "rel": "The Asian Games are held every four years.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-31",
+  "question": "What is the height of Tirich Mir, the highest peak of the Hindu Kush?",
+  "options": [
+   "8,611 metres",
+   "8,126 metres",
+   "7,708 metres",
+   "7,492 metres"
+  ],
+  "correct": 2,
+  "why": "Tirich Mir in Chitral is 7,708 m high, the highest peak of the Hindu Kush. 8,611 m is K2 and 8,126 m is Nanga Parbat.",
+  "rel": "Tirich Mir was first climbed by a Norwegian team in 1950.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-32",
+  "question": "Which was the only (first) Muslim country to oppose Pakistan's membership of the UN in 1947?",
+  "options": [
+   "Iran",
+   "Afghanistan",
+   "Egypt",
+   "Turkey"
+  ],
+  "correct": 1,
+  "why": "Afghanistan voted against Pakistan's admission to the UN in September 1947, mainly over the Durand Line issue.",
+  "rel": "Iran was the first country to recognize Pakistan.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-33",
+  "question": "Who abrogated the 1956 Constitution of Pakistan?",
+  "options": [
+   "Ayub Khan",
+   "Ghulam Muhammad",
+   "Iskander Mirza",
+   "Yahya Khan"
+  ],
+  "correct": 2,
+  "why": "President Iskander Mirza abrogated the 1956 Constitution on 7 October 1958 and declared martial law.",
+  "rel": "Ayub Khan removed Iskander Mirza 20 days later, on 27 October 1958.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-34",
+  "question": "Where is the headquarters of OPEC?",
+  "options": [
+   "Riyadh, Saudi Arabia",
+   "Geneva, Switzerland",
+   "Baghdad, Iraq",
+   "Vienna, Austria"
+  ],
+  "correct": 3,
+  "why": "OPEC has been headquartered in Vienna since 1965. It was founded in Baghdad in 1960.",
+  "rel": "OPEC was founded by Iran, Iraq, Kuwait, Saudi Arabia and Venezuela.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-35",
+  "question": "The Thomas Cup is associated with which sport?",
+  "options": [
+   "Tennis",
+   "Table tennis",
+   "Squash",
+   "Badminton"
+  ],
+  "correct": 3,
+  "why": "The Thomas Cup is the men's world team championship of badminton.",
+  "rel": "The women's badminton team championship is the Uber Cup.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-36",
+  "question": "In which province is the archaeological site of Kot Diji located?",
+  "options": [
+   "Punjab",
+   "Balochistan",
+   "Khyber Pakhtunkhwa",
+   "Sindh"
+  ],
+  "correct": 3,
+  "why": "Kot Diji is in Khairpur district of Sindh; it is an early Indus civilization site.",
+  "rel": "Kot Diji Fort was built by the Talpur rulers.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-37",
+  "question": "Who founded the Khudai Khidmatgar movement?",
+  "options": [
+   "Khan Abdul Wali Khan",
+   "Abdul Samad Achakzai",
+   "Sardar Abdul Qayyum Khan",
+   "Khan Abdul Ghaffar Khan"
+  ],
+  "correct": 3,
+  "why": "Khan Abdul Ghaffar Khan (Bacha Khan) founded the Khudai Khidmatgar ('Servants of God') movement in 1929.",
+  "rel": "Its members were also called 'Red Shirts' because of their uniform.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-38",
+  "question": "Wudu (ablution) and Tayammum are described in which Surah?",
+  "options": [
+   "Surah Al-Baqarah",
+   "Surah Al-Anfal",
+   "Surah Al-Imran",
+   "Surah Al-Ma'idah"
+  ],
+  "correct": 3,
+  "why": "Verse 6 of Surah Al-Ma'idah describes the method of wudu and allows tayammum when water is not available.",
+  "rel": "Surah Al-Ma'idah is the 5th Surah of the Quran.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-39",
+  "question": "What is the synonym of 'Persistent'?",
+  "options": [
+   "Determined",
+   "Careless",
+   "Hesitant",
+   "Temporary"
+  ],
+  "correct": 0,
+  "why": "'Persistent' means continuing firmly despite difficulty, which is the same as 'determined'.",
+  "rel": "The noun form is 'persistence'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-40",
+  "question": "Which country did Liaquat Ali Khan visit on his first official foreign tour as Prime Minister?",
+  "options": [
+   "USA",
+   "USSR",
+   "UK",
+   "China"
+  ],
+  "correct": 0,
+  "why": "Liaquat Ali Khan made his famous visit to the USA in May 1950, instead of going to the USSR.",
+  "rel": "His speeches on that tour were published as 'Pakistan: The Heart of Asia'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-41",
+  "question": "What was the old name of Attock?",
+  "options": [
+   "Lyallpur",
+   "Montgomery",
+   "Jacobabad",
+   "Campbellpur"
+  ],
+  "correct": 3,
+  "why": "Attock was called Campbellpur after Sir Colin Campbell; it was renamed Attock in 1978.",
+  "rel": "Attock Fort was built by Mughal emperor Akbar.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-42",
+  "question": "In which year was Jinnah given the title 'Quaid-e-Azam'?",
+  "options": [
+   "1938",
+   "1930",
+   "1940",
+   "1947"
+  ],
+  "correct": 0,
+  "why": "Jinnah was given the title Quaid-e-Azam in 1938 by Maulana Mazharuddin.",
+  "rel": "Jinnah was given the title 'Ambassador of Hindu-Muslim Unity' by Sarojini Naidu.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-43",
+  "question": "When did Pakistan's first Education Conference begin in Karachi?",
+  "options": [
+   "14 August 1948",
+   "27 November 1947",
+   "1 January 1950",
+   "11 September 1948"
+  ],
+  "correct": 1,
+  "why": "The first Pakistan Educational Conference was held in Karachi from 27 November to 1 December 1947; Quaid-e-Azam sent a message to it.",
+  "rel": "Fazlur Rahman was the Education Minister who chaired the conference.",
+  "status": "fixed",
+  "note": "Notes said 1 December 1947, which was the closing day; the conference began on 27 November 1947."
+ },
+ {
+  "id": "T2-B-44",
+  "question": "On which date was the Objectives Resolution passed?",
+  "options": [
+   "23 March 1940",
+   "14 August 1947",
+   "23 March 1956",
+   "12 March 1949"
+  ],
+  "correct": 3,
+  "why": "The Constituent Assembly passed the Objectives Resolution, moved by Liaquat Ali Khan, on 12 March 1949.",
+  "rel": "Through the 8th Amendment (1985) it became a substantive part of the Constitution (Article 2A).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-45",
+  "question": "The Victoria Cross is the highest military award of which country?",
+  "options": [
+   "France",
+   "Britain",
+   "USA",
+   "Germany"
+  ],
+  "correct": 1,
+  "why": "The Victoria Cross is the highest gallantry award of the British (and Commonwealth) armed forces, started in 1856.",
+  "rel": "The Medal of Honor is the USA's highest military award.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-46",
+  "question": "In which year was Tarbela Dam completed?",
+  "options": [
+   "1968",
+   "1967",
+   "1985",
+   "1976"
+  ],
+  "correct": 3,
+  "why": "Tarbela Dam was completed and began operating in 1976; construction had started in 1968.",
+  "rel": "Mangla Dam on the Jhelum River was completed in 1967.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-47",
+  "question": "When was the Quit India Movement started?",
+  "options": [
+   "22 March 1942",
+   "1 September 1939",
+   "8 August 1942",
+   "23 March 1940"
+  ],
+  "correct": 2,
+  "why": "The Congress launched the Quit India Movement on 8 August 1942 in Bombay.",
+  "rel": "The Muslim League did not join the Quit India Movement.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-48",
+  "question": "With the help of which country was KANUPP (Karachi Nuclear Power Plant) built?",
+  "options": [
+   "China",
+   "France",
+   "Canada",
+   "USA"
+  ],
+  "correct": 2,
+  "why": "KANUPP, Pakistan's first nuclear power plant (1972), was built with Canadian help.",
+  "rel": "Later plants like Chashma and K-2/K-3 were built with Chinese help.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-49",
+  "question": "In which year did Dr. Abdus Salam win the Nobel Prize in Physics?",
+  "options": [
+   "1979",
+   "1974",
+   "1983",
+   "1990"
+  ],
+  "correct": 0,
+  "why": "Dr. Abdus Salam shared the 1979 Nobel Prize in Physics for work on the electroweak theory.",
+  "rel": "He was the first Pakistani to win a Nobel Prize.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-50",
+  "question": "In which country was the OIC established?",
+  "options": [
+   "Saudi Arabia",
+   "Morocco",
+   "Pakistan",
+   "Egypt"
+  ],
+  "correct": 1,
+  "why": "The OIC was set up at the Rabat summit in Morocco in September 1969. Its headquarters is in Jeddah, Saudi Arabia.",
+  "rel": "Pakistan hosted the 2nd OIC summit at Lahore in 1974.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-51",
+  "question": "What is the antonym of 'Sympathetic'?",
+  "options": [
+   "Caring",
+   "Unfeeling",
+   "Kind",
+   "Compassionate"
+  ],
+  "correct": 1,
+  "why": "'Sympathetic' means showing care for others' feelings, so 'unfeeling' is the opposite. The other options are synonyms.",
+  "rel": "The noun form is 'sympathy'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-52",
+  "question": "What does 'Irksome' mean?",
+  "options": [
+   "Pleasant",
+   "Annoying",
+   "Tiring",
+   "Exciting"
+  ],
+  "correct": 1,
+  "why": "'Irksome' means irritating or annoying.",
+  "rel": "It comes from the verb 'irk', meaning to annoy.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-53",
+  "question": "Who was the first President of India?",
+  "options": [
+   "Jawaharlal Nehru",
+   "S. Radhakrishnan",
+   "Rajendra Prasad",
+   "Zakir Husain"
+  ],
+  "correct": 2,
+  "why": "Dr. Rajendra Prasad became India's first President in 1950. Nehru was the first Prime Minister.",
+  "rel": "Zakir Husain was India's first Muslim President.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-54",
+  "question": "What is the synonym of 'Spontaneous'?",
+  "options": [
+   "Planned",
+   "Unforced",
+   "Deliberate",
+   "Rehearsed"
+  ],
+  "correct": 1,
+  "why": "'Spontaneous' means happening naturally without planning, so 'unforced' is closest. The others are opposites.",
+  "rel": "'Spontaneity' is the noun form.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-55",
+  "question": "Where is the Gobi Desert located?",
+  "options": [
+   "Mongolia and China",
+   "Kazakhstan and Russia",
+   "India and Pakistan",
+   "Iran and Afghanistan"
+  ],
+  "correct": 0,
+  "why": "The Gobi Desert covers southern Mongolia and northern China.",
+  "rel": "The Thar Desert lies in India and Pakistan.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-56",
+  "question": "Who is the author of the book on 'Happiness' named in the notes?",
+  "options": [
+   "Paulo Coelho",
+   "Robin Sharma",
+   "Mitch Albom",
+   "Neil Pasricha"
+  ],
+  "correct": 3,
+  "why": "The notes name Neil Pasricha, a Canadian author known for books on happiness such as 'The Happiness Equation'.",
+  "rel": "Neil Pasricha also wrote 'The Book of Awesome'.",
+  "status": "unsure",
+  "note": "Many books are titled 'Happiness'; Pasricha's well-known book is 'The Happiness Equation'. Kept printed answer."
+ },
+ {
+  "id": "T2-B-57",
+  "question": "How many member countries does the Commonwealth of Nations have?",
+  "options": [
+   "54",
+   "53",
+   "56",
+   "58"
+  ],
+  "correct": 2,
+  "why": "The Commonwealth has 56 members after Gabon and Togo joined in 2022.",
+  "rel": "Its headquarters is Marlborough House in London.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-58",
+  "question": "How many years did Pakistan take to make its first Constitution?",
+  "options": [
+   "7 years",
+   "9 years",
+   "11 years",
+   "5 years"
+  ],
+  "correct": 1,
+  "why": "Pakistan became independent in 1947 and its first Constitution came into force on 23 March 1956, about 9 years later.",
+  "rel": "Until 1956 Pakistan was run under the Government of India Act 1935 (amended).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-59",
+  "question": "In which year did Benazir Bhutto first become Prime Minister?",
+  "options": [
+   "1986",
+   "1988",
+   "1990",
+   "1993"
+  ],
+  "correct": 1,
+  "why": "Benazir Bhutto became PM on 2 December 1988, the first woman to lead a Muslim country. Her second term began in 1993.",
+  "rel": "She was assassinated in Rawalpindi on 27 December 2007.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-60",
+  "question": "Who was made Chief Martial Law Administrator when Pakistan's first martial law was imposed in 1958?",
+  "options": [
+   "General Yahya Khan",
+   "General Zia-ul-Haq",
+   "General Ayub Khan",
+   "General Musa Khan"
+  ],
+  "correct": 2,
+  "why": "President Iskander Mirza proclaimed martial law on 7 October 1958 and named General Ayub Khan as Chief Martial Law Administrator; Ayub took full power soon after.",
+  "rel": "Ayub Khan later became Pakistan's first Field Marshal.",
+  "status": "ok",
+  "note": "Reworded: Iskander Mirza proclaimed it; Ayub was the CMLA."
+ },
+ {
+  "id": "T2-B-61",
+  "question": "In which year did Quaid-e-Azam resign from the Indian National Congress?",
+  "options": [
+   "1913",
+   "1916",
+   "1920",
+   "1928"
+  ],
+  "correct": 2,
+  "why": "Jinnah left the Congress in 1920 (Nagpur session) because he opposed Gandhi's Non-Cooperation Movement.",
+  "rel": "Jinnah joined the All-India Muslim League in 1913.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-62",
+  "question": "Who started the Non-Cooperation Movement?",
+  "options": [
+   "Jawaharlal Nehru",
+   "Maulana Muhammad Ali Jauhar",
+   "Bal Gangadhar Tilak",
+   "Mahatma Gandhi"
+  ],
+  "correct": 3,
+  "why": "Gandhi launched the Non-Cooperation Movement in 1920; he called it off in 1922 after the Chauri Chaura incident.",
+  "rel": "It was linked with the Khilafat Movement of the Muslims.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-63",
+  "question": "Who wrote the travel book 'Rihla'?",
+  "options": [
+   "Ibn Battuta",
+   "Al-Biruni",
+   "Ibn Khaldun",
+   "Marco Polo"
+  ],
+  "correct": 0,
+  "why": "'Al-Rihla' is the travel account of Moroccan traveller Ibn Battuta, who visited India in the 14th century.",
+  "rel": "Al-Biruni wrote 'Kitab al-Hind' about India.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-64",
+  "question": "Which mountain range lies in the northwest of Pakistan?",
+  "options": [
+   "Karakoram",
+   "Hindu Kush",
+   "Himalayas",
+   "Sulaiman Range"
+  ],
+  "correct": 1,
+  "why": "The Hindu Kush runs through northwestern Pakistan (Chitral) into Afghanistan.",
+  "rel": "The Karakoram lies in the north and contains K2.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-65",
+  "question": "When was the Pakistan-Iran gas pipeline agreement signed?",
+  "options": [
+   "11 March 2013",
+   "20 April 2015",
+   "2 March 2008",
+   "16 March 2010"
+  ],
+  "correct": 3,
+  "why": "Pakistan and Iran signed the gas pipeline agreement on 16 March 2010; the groundbreaking took place in March 2013.",
+  "rel": "The project is also called the 'Peace Pipeline'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-66",
+  "question": "The Panama Canal connects which two oceans?",
+  "options": [
+   "Atlantic and Indian Oceans",
+   "Pacific and Indian Oceans",
+   "Atlantic and Pacific Oceans",
+   "Atlantic and Arctic Oceans"
+  ],
+  "correct": 2,
+  "why": "The Panama Canal cuts across Panama to link the Atlantic Ocean (Caribbean Sea) with the Pacific Ocean.",
+  "rel": "The Suez Canal links the Mediterranean Sea with the Red Sea.",
+  "status": "fixed",
+  "note": "Notes said only 'Pacific Ocean'; the canal connects the Atlantic and the Pacific."
+ },
+ {
+  "id": "T2-B-67",
+  "question": "In which country did the game of chess originate?",
+  "options": [
+   "India",
+   "Persia",
+   "China",
+   "Greece"
+  ],
+  "correct": 0,
+  "why": "Chess began in India around the 6th century as 'chaturanga' and then spread to Persia.",
+  "rel": "The world governing body of chess is FIDE.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-68",
+  "question": "On which date did the State of Kalat (Balochistan) join Pakistan?",
+  "options": [
+   "14 August 1947",
+   "1 July 1970",
+   "27 March 1948",
+   "3 October 1947"
+  ],
+  "correct": 2,
+  "why": "The Khan of Kalat signed the accession to Pakistan on 27 March 1948.",
+  "rel": "Balochistan became a full province on 1 July 1970.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-69",
+  "question": "Who wrote the novel 'The Book of Happiness'?",
+  "options": [
+   "Nina Berberova",
+   "Leo Tolstoy",
+   "Anton Chekhov",
+   "Vladimir Nabokov"
+  ],
+  "correct": 0,
+  "why": "'The Book of Happiness' is a novel by Russian-born writer Nina Berberova.",
+  "rel": "Berberova lived in Paris and later in the USA.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-70",
+  "question": "When is the International Day of Education observed?",
+  "options": [
+   "8 September",
+   "5 October",
+   "24 January",
+   "21 February"
+  ],
+  "correct": 2,
+  "why": "The UN General Assembly declared 24 January as the International Day of Education.",
+  "rel": "8 September is International Literacy Day and 5 October is World Teachers' Day.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-71",
+  "question": "Where do the Indus and Kabul rivers meet?",
+  "options": [
+   "Kalabagh",
+   "Attock",
+   "Tarbela",
+   "Mithankot"
+  ],
+  "correct": 1,
+  "why": "The Kabul River joins the Indus near Attock.",
+  "rel": "At Mithankot the Indus receives the combined waters of the Punjab rivers (Panjnad).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-72",
+  "question": "Which place in Pakistan is famous for making small arms?",
+  "options": [
+   "Darra Adam Khel",
+   "Sialkot",
+   "Wazirabad",
+   "Gujranwala"
+  ],
+  "correct": 0,
+  "why": "Darra Adam Khel in Kohat district is known for its hand-made small arms market.",
+  "rel": "Sialkot is famous for sports goods and surgical instruments.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-73",
+  "question": "Which is the oldest library in Pakistan?",
+  "options": [
+   "Punjab Public Library",
+   "National Library of Pakistan",
+   "Quaid-e-Azam Library",
+   "Liaquat Memorial Library"
+  ],
+  "correct": 0,
+  "why": "The Punjab Public Library in Lahore was founded in 1884, making it the oldest library listed here.",
+  "rel": "The National Library of Pakistan is in Islamabad.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-74",
+  "question": "Who was the first Prime Minister of Azad Jammu and Kashmir?",
+  "options": [
+   "Sardar Ibrahim Khan",
+   "Sardar Abdul Qayyum Khan",
+   "Khan Abdul Hamid Khan",
+   "Sardar Sikandar Hayat Khan"
+  ],
+  "correct": 2,
+  "why": "The post of AJK Prime Minister was created in 1975 and Khan Abdul Hamid Khan was the first to hold it.",
+  "rel": "Sardar Muhammad Ibrahim Khan was the first President of AJK (1947).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-75",
+  "question": "Who was the first person to climb Mount Everest (with Tenzing Norgay)?",
+  "options": [
+   "Edmund Hillary",
+   "George Mallory",
+   "Reinhold Messner",
+   "Junko Tabei"
+  ],
+  "correct": 0,
+  "why": "New Zealander Edmund Hillary and Sherpa Tenzing Norgay reached the summit on 29 May 1953.",
+  "rel": "Junko Tabei of Japan was the first woman to climb Everest (1975).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-76",
+  "question": "How many member countries does the United Nations have?",
+  "options": [
+   "193",
+   "191",
+   "195",
+   "197"
+  ],
+  "correct": 0,
+  "why": "The UN has 193 member states; South Sudan became the 193rd in 2011.",
+  "rel": "Vatican City and Palestine are non-member observer states.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-77",
+  "question": "Which is the largest (freshwater) lake of Pakistan?",
+  "options": [
+   "Keenjhar Lake",
+   "Haleji Lake",
+   "Manchar Lake",
+   "Saif-ul-Malook Lake"
+  ],
+  "correct": 2,
+  "why": "Manchar Lake in Jamshoro district, Sindh, is Pakistan's largest freshwater lake.",
+  "rel": "Keenjhar Lake supplies water to Karachi.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-78",
+  "question": "When was NATO formed?",
+  "options": [
+   "24 October 1945",
+   "14 May 1955",
+   "4 April 1949",
+   "8 September 1954"
+  ],
+  "correct": 2,
+  "why": "NATO was set up by the North Atlantic Treaty, signed in Washington on 4 April 1949.",
+  "rel": "14 May 1955 is when the Warsaw Pact was signed.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-79",
+  "question": "Which rivers were given to India under the Indus Waters Treaty?",
+  "options": [
+   "Ravi, Beas and Sutlej",
+   "Chenab, Sutlej and Jhelum",
+   "Indus, Jhelum and Chenab",
+   "Ravi, Chenab and Jhelum"
+  ],
+  "correct": 0,
+  "why": "India got the three eastern rivers (Ravi, Beas, Sutlej); Pakistan got the three western rivers (Indus, Jhelum, Chenab).",
+  "rel": "The treaty was signed on 19 September 1960 with World Bank mediation.",
+  "status": "fixed",
+  "note": "Notes said Chenab, Sutlej, Jhelum; Chenab and Jhelum are western rivers given to Pakistan. India got Ravi, Beas, Sutlej."
+ },
+ {
+  "id": "T2-B-80",
+  "question": "In which year did the State of Swat accede to Pakistan?",
+  "options": [
+   "1948",
+   "1947",
+   "1955",
+   "1969"
+  ],
+  "correct": 1,
+  "why": "The Wali of Swat signed the accession to Pakistan in November 1947. The state was fully merged into Pakistan in 1969.",
+  "rel": "Saidu Sharif was the capital of Swat State.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-81",
+  "question": "Which country is shaped like a boot?",
+  "options": [
+   "Chile",
+   "Italy",
+   "Norway",
+   "Greece"
+  ],
+  "correct": 1,
+  "why": "Italy is famous for its boot-like shape on the map.",
+  "rel": "Chile is known as the long, thin country of South America.",
+  "status": "ok",
+  "note": "Notes said 'boat'; meant 'boot'."
+ },
+ {
+  "id": "T2-B-82",
+  "question": "Who is the current Chancellor of Germany (as of 2026)?",
+  "options": [
+   "Olaf Scholz",
+   "Angela Merkel",
+   "Friedrich Merz",
+   "Frank-Walter Steinmeier"
+  ],
+  "correct": 2,
+  "why": "Friedrich Merz (CDU) became Chancellor of Germany on 6 May 2025, replacing Olaf Scholz. Steinmeier is the President.",
+  "rel": "Angela Merkel was Germany's first woman Chancellor (2005-2021).",
+  "status": "fixed",
+  "note": "Notes said Olaf Scholz; he was replaced by Friedrich Merz in May 2025."
+ },
+ {
+  "id": "T2-B-83",
+  "question": "In which year was SUPARCO established?",
+  "options": [
+   "1956",
+   "1972",
+   "1981",
+   "1961"
+  ],
+  "correct": 3,
+  "why": "SUPARCO started as a committee on 16 September 1961 under Dr. Abdus Salam.",
+  "rel": "Pakistan launched its first rocket, Rehbar-I, in 1962.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-84",
+  "question": "How many amendments have been made to the 1973 Constitution of Pakistan?",
+  "options": [
+   "27",
+   "34",
+   "26",
+   "25"
+  ],
+  "correct": 0,
+  "why": "The 26th Amendment was passed in October 2024 and the 27th Amendment in November 2025.",
+  "rel": "The 18th Amendment (2010) gave more powers to the provinces.",
+  "status": "fixed",
+  "note": "Notes said 34, which is wrong; 27 amendments by late 2025 (check for any newer one)."
+ },
+ {
+  "id": "T2-B-85",
+  "question": "How many full member countries does BRICS have?",
+  "options": [
+   "10",
+   "9",
+   "5",
+   "11"
+  ],
+  "correct": 0,
+  "why": "BRICS: Brazil, Russia, India, China, South Africa, plus Egypt, Ethiopia, Iran, UAE (2024) and Indonesia (January 2025) = 10.",
+  "rel": "BRICS started as BRIC in 2009; South Africa joined in 2010.",
+  "status": "fixed",
+  "note": "Notes said 9; Indonesia joined as the 10th full member in January 2025."
+ },
+ {
+  "id": "T2-B-86",
+  "question": "Lake Superior is in which continent?",
+  "options": [
+   "Europe",
+   "Africa",
+   "South America",
+   "North America"
+  ],
+  "correct": 3,
+  "why": "Lake Superior lies on the USA-Canada border and is one of the Great Lakes of North America.",
+  "rel": "It is the largest freshwater lake in the world by area.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-87",
+  "question": "According to the notes, what is the average width of the Amazon River?",
+  "options": [
+   "500 feet",
+   "10,000 feet",
+   "50 feet",
+   "2,300 feet"
+  ],
+  "correct": 3,
+  "why": "The notes give 2,300 feet; the Amazon's width actually varies a lot with season, from about 1.6 km to many km in the wet season.",
+  "rel": "The Amazon carries more water than any other river in the world.",
+  "status": "unsure",
+  "note": "Average width figures vary by source and season; could not confirm 2,300 feet. Kept printed answer."
+ },
+ {
+  "id": "T2-B-88",
+  "question": "Islamabad lies at the foot of which hills?",
+  "options": [
+   "Murree Hills",
+   "Salt Range",
+   "Margalla Hills",
+   "Kirthar Range"
+  ],
+  "correct": 2,
+  "why": "Islamabad is built at the foot of the Margalla Hills, which form its northern edge.",
+  "rel": "Margalla Hills National Park covers these hills.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-89",
+  "question": "What is the other name of the Battle of Badr given in the Quran?",
+  "options": [
+   "Yaum-ul-Ahzab",
+   "Yaum-ul-Hunain",
+   "Yaum-ul-Fath",
+   "Yaum-ul-Furqan"
+  ],
+  "correct": 3,
+  "why": "The Quran calls the day of Badr 'Yaum-ul-Furqan' (the Day of Criterion) because it separated truth from falsehood (Surah Al-Anfal, 8:41).",
+  "rel": "The Battle of Badr took place on 17 Ramadan, 2 AH.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-90",
+  "question": "How many times is the name 'Muhammad' (PBUH) mentioned in the Quran?",
+  "options": [
+   "5 times",
+   "2 times",
+   "4 times",
+   "7 times"
+  ],
+  "correct": 2,
+  "why": "The name 'Muhammad' appears four times in the Quran (3:144, 33:40, 47:2, 48:29).",
+  "rel": "The name 'Ahmad' appears once, in Surah As-Saff.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-91",
+  "question": "Who was the foster sister of the Holy Prophet (PBUH)?",
+  "options": [
+   "Hazrat Halima Sadia (RA)",
+   "Hazrat Umm-e-Aiman (RA)",
+   "Hazrat Fatima bint Asad (RA)",
+   "Hazrat Shaima (RA)"
+  ],
+  "correct": 3,
+  "why": "Hazrat Shaima was the daughter of Hazrat Halima Sadia, the Prophet's foster mother.",
+  "rel": "Hazrat Umm-e-Aiman was the Prophet's nurse after his mother died.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-92",
+  "question": "'Israel' is the title of which Prophet?",
+  "options": [
+   "Hazrat Ishaq (AS)",
+   "Hazrat Yusuf (AS)",
+   "Hazrat Yaqub (AS)",
+   "Hazrat Musa (AS)"
+  ],
+  "correct": 2,
+  "why": "'Israel' was the title of Hazrat Yaqub (AS); his descendants are called Bani Israel.",
+  "rel": "Hazrat Yusuf (AS) was a son of Hazrat Yaqub (AS).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-93",
+  "question": "In which year of Hijrah did the Holy Prophet (PBUH) perform Hajjat-ul-Wida (the Farewell Hajj)?",
+  "options": [
+   "8 AH",
+   "9 AH",
+   "11 AH",
+   "10 AH"
+  ],
+  "correct": 3,
+  "why": "The Farewell Hajj was performed in 10 AH (632 AD), when the Prophet gave the famous Farewell Sermon.",
+  "rel": "The Holy Prophet (PBUH) passed away in 11 AH.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-94",
+  "question": "Who was the mother of Hazrat Ismail (AS)?",
+  "options": [
+   "Hazrat Sarah (RA)",
+   "Hazrat Maryam (AS)",
+   "Hazrat Hajra (RA)",
+   "Hazrat Asiya (RA)"
+  ],
+  "correct": 2,
+  "why": "Hazrat Hajra was the wife of Hazrat Ibrahim (AS) and mother of Hazrat Ismail (AS). Hazrat Sarah was the mother of Hazrat Ishaq (AS).",
+  "rel": "Sa'i between Safa and Marwa remembers Hazrat Hajra's search for water.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-95",
+  "question": "What is the synonym of 'Retreat' (as a verb)?",
+  "options": [
+   "Advance",
+   "Attack",
+   "Drawback",
+   "Withdraw"
+  ],
+  "correct": 3,
+  "why": "To retreat means to move back or withdraw. 'Drawback' means a disadvantage.",
+  "rel": "The opposite of 'retreat' is 'advance'.",
+  "status": "fixed",
+  "note": "Notes said 'Drawback', which today means a disadvantage; the correct synonym is 'withdraw/withdrawal'."
+ },
+ {
+  "id": "T2-B-96",
+  "question": "When did the Cripps Mission come to India?",
+  "options": [
+   "August 1942",
+   "March 1946",
+   "June 1945",
+   "March 1942"
+  ],
+  "correct": 3,
+  "why": "Sir Stafford Cripps arrived in India on 22 March 1942 with proposals for India's future after the war.",
+  "rel": "The Cabinet Mission came in March 1946.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-97",
+  "question": "What is a common cause of Vitamin D deficiency?",
+  "options": [
+   "Too little vitamin C in the diet",
+   "Not enough exposure to sunlight",
+   "Drinking too much water",
+   "Too much sleep"
+  ],
+  "correct": 1,
+  "why": "The skin makes Vitamin D when exposed to sunlight, so lack of sunlight causes deficiency.",
+  "rel": "Lack of Vitamin D causes rickets in children.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-98",
+  "question": "How many times has the 1973 Constitution of Pakistan been amended?",
+  "options": [
+   "34",
+   "22",
+   "20",
+   "27"
+  ],
+  "correct": 3,
+  "why": "The 27th Amendment was passed in November 2025, after the 26th Amendment of October 2024.",
+  "rel": "The 1973 Constitution came into force on 14 August 1973.",
+  "status": "fixed",
+  "note": "Notes said 34, which is wrong; 27 amendments by late 2025 (check for any newer one)."
+ },
+ {
+  "id": "T2-B-99",
+  "question": "Which of today's Pakistani provinces did the British occupy first?",
+  "options": [
+   "Khyber Pakhtunkhwa",
+   "Sindh",
+   "Punjab",
+   "Balochistan"
+  ],
+  "correct": 1,
+  "why": "The British conquered Sindh in 1843 (Charles Napier). Punjab, including today's KP, was annexed in 1849.",
+  "rel": "Sindh was made part of the Bombay Presidency in 1847.",
+  "status": "fixed",
+  "note": "Notes said KPK; Sindh was taken first (1843), while KP areas were annexed with Punjab in 1849."
+ },
+ {
+  "id": "T2-B-100",
+  "question": "Which is the brightest planet seen in the night sky?",
+  "options": [
+   "Jupiter",
+   "Mars",
+   "Venus",
+   "Saturn"
+  ],
+  "correct": 2,
+  "why": "Venus is the brightest planet in our sky. It is not a star; the only star in the solar system is the Sun.",
+  "rel": "Venus is often called the 'Morning Star' or 'Evening Star'.",
+  "status": "fixed",
+  "note": "Notes said 'brightest star in the solar system: Venus'; Venus is a planet (the only star is the Sun). Question reworded."
+ },
+ {
+  "id": "T2-B-101",
+  "question": "When did Pakistan join the United Nations?",
+  "options": [
+   "30 September 1947",
+   "14 August 1947",
+   "24 October 1945",
+   "15 December 1947"
+  ],
+  "correct": 0,
+  "why": "Pakistan became a UN member on 30 September 1947.",
+  "rel": "Afghanistan was the only country to vote against Pakistan's admission.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-102",
+  "question": "The Asian Games started in which country?",
+  "options": [
+   "Japan",
+   "India",
+   "China",
+   "Philippines"
+  ],
+  "correct": 1,
+  "why": "The first Asian Games were held in New Delhi, India, in 1951.",
+  "rel": "Pakistan hosted the South Asian Games, not the Asian Games.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-103",
+  "question": "How many days did the 1965 Pakistan-India war last?",
+  "options": [
+   "13 days",
+   "21 days",
+   "10 days",
+   "17 days"
+  ],
+  "correct": 3,
+  "why": "The war began on 6 September 1965 and ended with a ceasefire on 23 September 1965, lasting 17 days.",
+  "rel": "The Tashkent Declaration was signed in January 1966.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-104",
+  "question": "Who was the first Governor-General of independent India?",
+  "options": [
+   "C. Rajagopalachari",
+   "Lord Wavell",
+   "Lord Mountbatten",
+   "Lord Linlithgow"
+  ],
+  "correct": 2,
+  "why": "Lord Mountbatten stayed on as independent India's first Governor-General (1947-48). C. Rajagopalachari was the last (and only Indian) one.",
+  "rel": "Quaid-e-Azam was Pakistan's first Governor-General.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-105",
+  "question": "What is Pakistan's rank in the world by population?",
+  "options": [
+   "4th",
+   "6th",
+   "7th",
+   "5th"
+  ],
+  "correct": 3,
+  "why": "With about 240 million people, Pakistan is the 5th most populous country after India, China, the USA and Indonesia.",
+  "rel": "Pakistan's 2023 census counted about 241 million people.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-106",
+  "question": "In which year did the Holy Prophet (PBUH) migrate to Madinah?",
+  "options": [
+   "610 AD",
+   "630 AD",
+   "632 AD",
+   "622 AD"
+  ],
+  "correct": 3,
+  "why": "The Hijrah took place in 622 AD; the Islamic calendar starts from this event.",
+  "rel": "610 AD was the year of the first revelation, and 630 AD the conquest of Makkah.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-107",
+  "question": "How many peaks above 8,000 metres are in Pakistan?",
+  "options": [
+   "3",
+   "4",
+   "14",
+   "5"
+  ],
+  "correct": 3,
+  "why": "Pakistan has five 8,000 m peaks: K2, Nanga Parbat, Gasherbrum I, Broad Peak and Gasherbrum II. The world has 14.",
+  "rel": "K2 (8,611 m) is the second-highest mountain in the world.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-108",
+  "question": "When was the Pakistan-China border agreement signed?",
+  "options": [
+   "21 May 1951",
+   "2 March 1963",
+   "18 June 1978",
+   "5 July 1977"
+  ],
+  "correct": 1,
+  "why": "The Pakistan-China boundary agreement was signed on 2 March 1963 in Beijing.",
+  "rel": "21 May 1951 is the date diplomatic relations were set up between Pakistan and China.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-109",
+  "question": "In which city was the Indian National Congress founded?",
+  "options": [
+   "Calcutta",
+   "Delhi",
+   "Lahore",
+   "Bombay"
+  ],
+  "correct": 3,
+  "why": "The Congress was founded in Bombay in December 1885 by A.O. Hume.",
+  "rel": "The All-India Muslim League was founded in Dhaka in 1906.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-110",
+  "question": "The zero factor property (if ab = 0 then a = 0 or b = 0) is also called the:",
+  "options": [
+   "Additive identity property",
+   "Distributive property",
+   "Commutative property",
+   "Zero product property"
+  ],
+  "correct": 3,
+  "why": "If a product equals zero, at least one factor must be zero; this is the zero product property, used to solve quadratic equations.",
+  "rel": "The additive identity property says a + 0 = a.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-111",
+  "question": "When did Dr. Abdul Qadeer Khan die?",
+  "options": [
+   "28 May 2021",
+   "10 October 2019",
+   "25 December 2020",
+   "10 October 2021"
+  ],
+  "correct": 3,
+  "why": "Dr. A.Q. Khan, father of Pakistan's nuclear programme, died in Islamabad on 10 October 2021.",
+  "rel": "Pakistan's nuclear tests were held on 28 May 1998 (Youm-e-Takbeer).",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-112",
+  "question": "In which city is OPEC headquartered?",
+  "options": [
+   "Kuwait City",
+   "Jeddah",
+   "Vienna",
+   "Tehran"
+  ],
+  "correct": 2,
+  "why": "OPEC moved its headquarters from Geneva to Vienna in 1965.",
+  "rel": "OPEC was formed in Baghdad in September 1960.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-113",
+  "question": "When did Islamabad formally become the capital of Pakistan in place of Karachi?",
+  "options": [
+   "14 August 1959",
+   "1 August 1960",
+   "14 August 1973",
+   "14 August 1967"
+  ],
+  "correct": 3,
+  "why": "Islamabad was formally declared the federal capital on 14 August 1967; Rawalpindi served as interim capital before that.",
+  "rel": "Islamabad was designed by Greek planner Constantinos Doxiadis.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-114",
+  "question": "In which year was the Lucknow Pact signed?",
+  "options": [
+   "1906",
+   "1919",
+   "1916",
+   "1928"
+  ],
+  "correct": 2,
+  "why": "The Lucknow Pact between the Muslim League and Congress was signed in December 1916; Jinnah played the main role.",
+  "rel": "The Congress accepted separate electorates for Muslims in this pact.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-115",
+  "question": "What is China's highest military award?",
+  "options": [
+   "Order of Lenin",
+   "August 1st Medal",
+   "Medal of Honor",
+   "Victoria Cross"
+  ],
+  "correct": 1,
+  "why": "The 'August 1st Medal' (Bayi Medal), created in 2017, is the highest honour of China's armed forces.",
+  "rel": "The Medal of the Republic is China's highest state honour.",
+  "status": "fixed",
+  "note": "Notes said just 'Hero'; China's highest military award is the August 1st Medal."
+ },
+ {
+  "id": "T2-B-116",
+  "question": "In which year was the Nehru Report published?",
+  "options": [
+   "1916",
+   "1928",
+   "1929",
+   "1935"
+  ],
+  "correct": 1,
+  "why": "The Nehru Report was presented in 1928; Jinnah replied with his Fourteen Points in 1929.",
+  "rel": "The report was drafted by a committee led by Motilal Nehru.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-117",
+  "question": "In which year was the Pirpur Report published?",
+  "options": [
+   "1938",
+   "1937",
+   "1940",
+   "1945"
+  ],
+  "correct": 0,
+  "why": "The Pirpur Report (1938) of the Muslim League described the mistreatment of Muslims under Congress ministries (1937-39).",
+  "rel": "Its committee was headed by Raja Syed Muhammad Mehdi of Pirpur.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-118",
+  "question": "What is the synonym of 'Console'?",
+  "options": [
+   "Upset",
+   "Blame",
+   "Ignore",
+   "Comfort"
+  ],
+  "correct": 3,
+  "why": "To console someone means to comfort them in sadness.",
+  "rel": "The noun form is 'consolation'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-119",
+  "question": "Muslim Bagh in Balochistan is famous for which mineral?",
+  "options": [
+   "Chromite",
+   "Coal",
+   "Copper",
+   "Gypsum"
+  ],
+  "correct": 0,
+  "why": "Muslim Bagh (Qila Saifullah district) has Pakistan's main chromite deposits.",
+  "rel": "Saindak is famous for copper and gold.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-120",
+  "question": "When was the First Battle of Panipat fought?",
+  "options": [
+   "5 November 1556",
+   "14 January 1761",
+   "17 March 1527",
+   "21 April 1526"
+  ],
+  "correct": 3,
+  "why": "Babur defeated Ibrahim Lodi in the First Battle of Panipat on 21 April 1526, founding the Mughal Empire.",
+  "rel": "The Second Battle of Panipat was in 1556 and the Third in 1761.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-121",
+  "question": "When did Sir Syed Ahmad Khan die?",
+  "options": [
+   "27 March 1898",
+   "17 October 1817",
+   "24 May 1875",
+   "11 September 1948"
+  ],
+  "correct": 0,
+  "why": "Sir Syed died on 27 March 1898 in Aligarh. He was born on 17 October 1817.",
+  "rel": "He is buried next to the mosque of Aligarh Muslim University.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-122",
+  "question": "Which region is called 'Bab-ul-Islam' (Gateway of Islam)?",
+  "options": [
+   "Punjab",
+   "Balochistan",
+   "Sindh",
+   "Kashmir"
+  ],
+  "correct": 2,
+  "why": "Sindh is called Bab-ul-Islam because Islam entered the subcontinent through it with Muhammad bin Qasim in 712 AD.",
+  "rel": "Multan is called the 'City of Saints'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-123",
+  "question": "Who was the first Pakistani woman to climb K2?",
+  "options": [
+   "Samina Baig",
+   "Naila Kiani",
+   "Girami Baig",
+   "Ayesha Gulalai"
+  ],
+  "correct": 0,
+  "why": "Samina Baig became the first Pakistani woman to summit K2 on 22 July 2022. (The first woman in the world to climb K2 was Wanda Rutkiewicz of Poland, 1986.)",
+  "rel": "Samina Baig was also the first Pakistani woman to climb Mount Everest (2013).",
+  "status": "fixed",
+  "note": "Notes said 'first woman to climb K2'; she was the first Pakistani woman. The first woman overall was Wanda Rutkiewicz (1986)."
+ },
+ {
+  "id": "T2-B-124",
+  "question": "In which year was the Muhammadan Anglo-Oriental school (later Aligarh University) founded?",
+  "options": [
+   "1857",
+   "1886",
+   "1920",
+   "1875"
+  ],
+  "correct": 3,
+  "why": "Sir Syed founded the MAO school at Aligarh in 1875; it became a college in 1877 and Aligarh Muslim University in 1920.",
+  "rel": "Sir Syed also founded the Muhammadan Educational Conference in 1886.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-125",
+  "question": "When was Major Aziz Bhatti martyred?",
+  "options": [
+   "6 September 1965",
+   "23 September 1965",
+   "17 December 1971",
+   "12 September 1965"
+  ],
+  "correct": 3,
+  "why": "Major Raja Aziz Bhatti was martyred on 12 September 1965 on the BRB Canal near Lahore and received the Nishan-e-Haider.",
+  "rel": "6 September is observed as Defence Day in Pakistan.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-126",
+  "question": "Which is considered the world's oldest sport?",
+  "options": [
+   "Football",
+   "Polo",
+   "Cricket",
+   "Wrestling"
+  ],
+  "correct": 3,
+  "why": "Wrestling is generally considered the oldest sport; cave drawings of it are thousands of years old.",
+  "rel": "Polo is called the 'game of kings'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-127",
+  "question": "How many founding member countries did the UN have in 1945?",
+  "options": [
+   "50",
+   "51",
+   "45",
+   "58"
+  ],
+  "correct": 1,
+  "why": "The UN started with 51 original members in 1945 (50 signed in San Francisco and Poland signed later).",
+  "rel": "The UN Charter came into force on 24 October 1945, now celebrated as UN Day.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-128",
+  "question": "What form of government did the 1956 Constitution of Pakistan provide?",
+  "options": [
+   "Presidential",
+   "Parliamentary",
+   "Monarchy",
+   "Military rule"
+  ],
+  "correct": 1,
+  "why": "The 1956 Constitution gave Pakistan a parliamentary system with the Prime Minister as head of government.",
+  "rel": "The 1962 Constitution introduced a presidential system.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-129",
+  "question": "What is the synonym of 'Indifference'?",
+  "options": [
+   "Lack of concern",
+   "Deep interest",
+   "Great care",
+   "Strong love"
+  ],
+  "correct": 0,
+  "why": "'Indifference' means not caring or having no interest.",
+  "rel": "The adjective form is 'indifferent'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-130",
+  "question": "When did Pakistan become a full member of the SCO?",
+  "options": [
+   "9 June 2017",
+   "15 June 2001",
+   "10 July 2015",
+   "4 July 2024"
+  ],
+  "correct": 0,
+  "why": "Pakistan and India became full SCO members at the Astana summit on 9 June 2017.",
+  "rel": "The SCO was founded in Shanghai on 15 June 2001.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-131",
+  "question": "The 1956 Constitution of Pakistan set up which system of government?",
+  "options": [
+   "Presidential system",
+   "One-party system",
+   "Parliamentary system",
+   "Military system"
+  ],
+  "correct": 2,
+  "why": "The 1956 Constitution was parliamentary; the presidential system came with the 1962 Constitution.",
+  "rel": "Iskander Mirza became Pakistan's first President under the 1956 Constitution.",
+  "status": "fixed",
+  "note": "Notes said 'Presidential'; 1956 was parliamentary (the 1962 Constitution was presidential)."
+ },
+ {
+  "id": "T2-B-132",
+  "question": "What is the range of the Hatf-1 missile?",
+  "options": [
+   "290 km",
+   "750 km",
+   "2,750 km",
+   "70 km"
+  ],
+  "correct": 3,
+  "why": "Hatf-1 is a short-range battlefield missile with a range of about 70 km.",
+  "rel": "Shaheen-III has a range of about 2,750 km.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-133",
+  "question": "How many articles are in the 1973 Constitution of Pakistan?",
+  "options": [
+   "234",
+   "280",
+   "250",
+   "295"
+  ],
+  "correct": 1,
+  "why": "The 1973 Constitution has 280 articles. The 1956 Constitution had 234 and the 1962 one had 250.",
+  "rel": "The Constitution also has a Preamble and several schedules.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-134",
+  "question": "Which article of the 1973 Constitution gives the right to education?",
+  "options": [
+   "Article 19A",
+   "Article 25A",
+   "Article 6",
+   "Article 62"
+  ],
+  "correct": 1,
+  "why": "Article 25A, added by the 18th Amendment (2010), makes free and compulsory education for children aged 5-16 a right.",
+  "rel": "Article 19A gives the right to information.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-135",
+  "question": "What is the synonym of 'Zeal'?",
+  "options": [
+   "Apathy",
+   "Boredom",
+   "Laziness",
+   "Passion"
+  ],
+  "correct": 3,
+  "why": "'Zeal' means great energy or enthusiasm, the same as passion.",
+  "rel": "A person full of zeal is called 'zealous'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-136",
+  "question": "Khanpur Dam is built on which river?",
+  "options": [
+   "Soan River",
+   "Kunhar River",
+   "Swat River",
+   "Haro River"
+  ],
+  "correct": 3,
+  "why": "Khanpur Dam near Haripur is on the Haro River and supplies water to Islamabad and Rawalpindi.",
+  "rel": "Rawal Dam is built on the Korang River.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-137",
+  "question": "Which is described in the notes as Pakistan's second highest civil award?",
+  "options": [
+   "Sitara-i-Imtiaz",
+   "Tamgha-i-Imtiaz",
+   "Hilal-i-Imtiaz",
+   "Pride of Performance"
+  ],
+  "correct": 2,
+  "why": "The notes give Hilal-i-Imtiaz, which comes after the Nishan-i-Imtiaz for services to the country.",
+  "rel": "Pakistan's highest civil award is the Nishan-e-Pakistan.",
+  "status": "unsure",
+  "note": "Sources differ: many list Hilal-e-Pakistan as the second highest civil award. Kept printed answer."
+ },
+ {
+  "id": "T2-B-138",
+  "question": "Where is the headquarters of the IMF?",
+  "options": [
+   "Washington D.C.",
+   "New York",
+   "Geneva",
+   "London"
+  ],
+  "correct": 0,
+  "why": "The International Monetary Fund is based in Washington D.C., USA.",
+  "rel": "The World Bank is also headquartered in Washington D.C.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-139",
+  "question": "Who wrote 'Humayun Nama'?",
+  "options": [
+   "Gulbadan Begum",
+   "Abul Fazl",
+   "Babur",
+   "Jahangir"
+  ],
+  "correct": 0,
+  "why": "'Humayun Nama' was written by Gulbadan Begum, Humayun's sister and Babur's daughter.",
+  "rel": "Abul Fazl wrote 'Akbar Nama'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-140",
+  "question": "Who wrote the Punjabi folk tale 'Sohni Mahiwal'?",
+  "options": [
+   "Waris Shah",
+   "Bulleh Shah",
+   "Hashim Shah",
+   "Fazal Shah"
+  ],
+  "correct": 3,
+  "why": "The famous Punjabi qissa 'Sohni Mahiwal' was written by Fazal Shah. Waris Shah wrote 'Heer Ranjha'.",
+  "rel": "Hashim Shah wrote 'Sassi Punnun'.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-141",
+  "question": "In which year was the first Cricket World Cup held?",
+  "options": [
+   "1971",
+   "1979",
+   "1975",
+   "1983"
+  ],
+  "correct": 2,
+  "why": "The first Cricket World Cup was played in England in 1975 and won by the West Indies.",
+  "rel": "Pakistan won the World Cup in 1992.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-142",
+  "question": "When did the USA invade Iraq?",
+  "options": [
+   "11 September 2001",
+   "7 October 2001",
+   "2 August 1990",
+   "20 March 2003"
+  ],
+  "correct": 3,
+  "why": "The US-led invasion of Iraq began on 20 March 2003.",
+  "rel": "7 October 2001 is when the US invaded Afghanistan; 2 August 1990 is when Iraq invaded Kuwait.",
+  "status": "ok",
+  "note": ""
+ },
+ {
+  "id": "T2-B-143",
+  "question": "Who wrote the novel 'Ice Candy Man'?",
+  "options": [
+   "Kamila Shamsie",
+   "Mohsin Hamid",
+   "Bapsi Sidhwa",
+   "Khushwant Singh"
+  ],
+  "correct": 2,
+  "why": "'Ice Candy Man' (1988), about Partition in Lahore, was written by Bapsi Sidhwa.",
+  "rel": "The novel was made into the film 'Earth' (1998).",
+  "status": "ok",
+  "note": ""
+ }
+]

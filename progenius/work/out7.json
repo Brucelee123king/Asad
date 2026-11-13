@@ -1,0 +1,444 @@
+[
+ {
+  "src": "A",
+  "num": 10,
+  "question": "What does Radd-ul-Fasaad mean?",
+  "options": [
+   "Protection of borders",
+   "Elimination of terrorists only",
+   "Rejection of discord and mischief",
+   "Restoration of peace talks"
+  ],
+  "correct": 2,
+  "why": "Radd means rejection and fasaad means disorder or strife, so the phrase means rejecting discord.",
+  "rel": "Operation Radd-ul-Fasaad was launched in February 2017. It was a nationwide counter-terrorism operation."
+ },
+ {
+  "src": "A",
+  "num": 25,
+  "question": "What is the currency of New Zealand?",
+  "options": [
+   "New Zealand dollar",
+   "Australian dollar",
+   "Fijian dollar",
+   "Canadian dollar"
+  ],
+  "correct": 0,
+  "why": "New Zealand uses the New Zealand dollar (NZD), written NZ$.",
+  "rel": "Wellington is the capital of New Zealand. Auckland is its largest city."
+ },
+ {
+  "src": "A",
+  "num": 47,
+  "question": "What is Pakistan’s longest river?",
+  "options": [
+   "Jhelum River",
+   "Chenab River",
+   "Sutlej River",
+   "Indus River"
+  ],
+  "correct": 3,
+  "why": "The Indus is Pakistan's longest river and the backbone of its irrigation.",
+  "rel": "Major tributaries include Jhelum, Chenab, Ravi, Sutlej and Kabul."
+ },
+ {
+  "src": "A",
+  "num": 62,
+  "question": "What is condensation?",
+  "options": [
+   "Change of liquid into vapour",
+   "Change of water vapour into liquid",
+   "Change of solid into gas",
+   "Change of liquid into solid"
+  ],
+  "correct": 1,
+  "why": "Condensation is when water vapour cools and turns into liquid water.",
+  "rel": "Clouds form by condensation. Evaporation is the opposite process."
+ },
+ {
+  "src": "A",
+  "num": 77,
+  "question": "Which languages/technologies are used to build websites?",
+  "options": [
+   "C, C++ and Assembly",
+   "COBOL, Fortran and Pascal",
+   "HTML, CSS and JavaScript",
+   "SQL, MATLAB and R"
+  ],
+  "correct": 2,
+  "why": "HTML structures content, CSS styles it and JavaScript adds interactivity.",
+  "rel": "Java and JavaScript are different languages. PHP is commonly used on the server side.",
+  "problem": "Question is loosely worded; the standard core web technologies are used as the answer."
+ },
+ {
+  "src": "A",
+  "num": 91,
+  "question": "What does NATO stand for, and when was it established?",
+  "options": [
+   "North Atlantic Treaty Organization, 4 April 1949",
+   "North Atlantic Trade Organization, 4 April 1949",
+   "North Atlantic Treaty Organization, 4 April 1955",
+   "North American Treaty Organization, 4 April 1951"
+  ],
+  "correct": 0,
+  "why": "NATO means North Atlantic Treaty Organization and the treaty was signed on 4 April 1949.",
+  "rel": "It was signed in Washington, D.C. with 12 founding members."
+ },
+ {
+  "src": "A",
+  "num": 104,
+  "question": "What percentage of Pakistan is covered by forests?",
+  "options": [
+   "About 9.5%",
+   "About 12.3%",
+   "About 15.0%",
+   "About 4.7%"
+  ],
+  "correct": 3,
+  "why": "As of Oct 2026, the Pakistan Economic Survey (2026) puts forest area at about 4.1 million hectares, around 4.7% of land.",
+  "rel": "Pakistan loses about 11,000 hectares of forest a year. Older and FAO figures such as 2.2% are also quoted.",
+  "problem": "No single figure: 2.2% (FAO, often in old MCQ keys), 4.7% (Economic Survey 2026), 5.1% (PFI) all appear. Check the exam's key."
+ },
+ {
+  "src": "A",
+  "num": 116,
+  "question": "Complete: “He will ___ here by now.”",
+  "options": [
+   "has reached",
+   "have reached",
+   "had reached",
+   "having reached"
+  ],
+  "correct": 1,
+  "why": "The future perfect uses will have plus past participle, so the answer is 'have reached'.",
+  "rel": "Future perfect: will have + past participle. 'Arrive' is often preferred over 'reach here' in formal usage.",
+  "problem": "Source notes 'have arrived' is more natural, but 'have reached' fits the blank."
+ },
+ {
+  "src": "A",
+  "num": 129,
+  "question": "Which area is called Babul Islam?",
+  "options": [
+   "Punjab",
+   "Balochistan",
+   "Sindh",
+   "Khyber Pakhtunkhwa"
+  ],
+  "correct": 2,
+  "why": "Sindh is called Babul Islam, the Gateway of Islam, because Islam first entered the subcontinent here.",
+  "rel": "Muhammad bin Qasim's campaign in Sindh took place in 711-712 CE."
+ },
+ {
+  "src": "B",
+  "num": 4,
+  "question": "How many major rivers are commonly listed for Balochistan?",
+  "options": [
+   "3",
+   "7",
+   "12",
+   "15"
+  ],
+  "correct": 1,
+  "why": "Some general knowledge sources list seven major rivers for Balochistan.",
+  "rel": "Rivers include Hingol, Dasht, Porali, Hub, Zhob, Nari and Bolan. Many are seasonal.",
+  "problem": "Count depends on classification; 7 is the commonly quoted figure."
+ },
+ {
+  "src": "B",
+  "num": 14,
+  "question": "What is the inverse of a scalar matrix?",
+  "options": [
+   "A null matrix",
+   "A skew-symmetric matrix",
+   "An upper triangular non-diagonal matrix",
+   "Also a scalar matrix"
+  ],
+  "correct": 3,
+  "why": "If A = aI with a not zero, then A inverse = (1/a)I, which is again scalar.",
+  "rel": "A zero scalar matrix has no inverse because its determinant is zero."
+ },
+ {
+  "src": "B",
+  "num": 24,
+  "question": "What is the last letter when “UTYEAB” is arranged alphabetically?",
+  "options": [
+   "Y",
+   "U",
+   "T",
+   "B"
+  ],
+  "correct": 0,
+  "why": "Sorted alphabetically the letters are A, B, E, T, U, Y, so the last is Y.",
+  "rel": "Alphabetical order puts Y after U and T."
+ },
+ {
+  "src": "B",
+  "num": 34,
+  "question": "Which is Pakistan's largest district by area?",
+  "options": [
+   "Kharan",
+   "Khuzdar",
+   "Chagai",
+   "Lasbela"
+  ],
+  "correct": 2,
+  "why": "Chagai in Balochistan, about 44,748 sq km, is the largest district of Pakistan by area.",
+  "rel": "As of Oct 2026 Chagai is still listed as the largest. Its headquarters is Dalbandin."
+ },
+ {
+  "src": "B",
+  "num": 44,
+  "question": "What is an empty set?",
+  "options": [
+   "A set with exactly one element",
+   "A set with no elements",
+   "An infinite set",
+   "A set containing only the number zero"
+  ],
+  "correct": 1,
+  "why": "The empty set has no elements, so its cardinality is zero.",
+  "rel": "It is written as the symbol ∅ or { }. It is a subset of every set."
+ },
+ {
+  "src": "B",
+  "num": 54,
+  "question": "Who is known by the title “Kaleemullah”?",
+  "options": [
+   "Prophet Ibrahim (AS)",
+   "Prophet Isa (AS)",
+   "Prophet Nuh (AS)",
+   "Prophet Musa (AS)"
+  ],
+  "correct": 3,
+  "why": "Kaleemullah means one who spoke with Allah, a title of Prophet Musa.",
+  "rel": "Khalilullah is Prophet Ibrahim and Ruhullah is Prophet Isa."
+ },
+ {
+  "src": "B",
+  "num": 65,
+  "question": "Who was President when Pakistan's 1956 Constitution came into force?",
+  "options": [
+   "Iskander Mirza",
+   "Ghulam Muhammad",
+   "Ayub Khan",
+   "Yahya Khan"
+  ],
+  "correct": 0,
+  "why": "Iskander Mirza became the first President when the 1956 Constitution came into force.",
+  "rel": "Pakistan became a republic on 23 March 1956. The constitution was abrogated in 1958."
+ },
+ {
+  "src": "B",
+  "num": 75,
+  "question": "Who partitioned Bengal in 1905?",
+  "options": [
+   "Lord Minto",
+   "Lord Hardinge",
+   "Lord Curzon",
+   "Lord Ripon"
+  ],
+  "correct": 2,
+  "why": "Lord Curzon, the Viceroy, partitioned Bengal in 1905.",
+  "rel": "The partition was annulled in 1911. It stimulated the Swadeshi Movement."
+ },
+ {
+  "src": "B",
+  "num": 85,
+  "question": "When did Abu Bakr (RA) lead the Hajj, and when was Hajj made obligatory?",
+  "options": [
+   "6 AH",
+   "9 AH",
+   "10 AH",
+   "8 AH"
+  ],
+  "correct": 1,
+  "why": "Abu Bakr (RA) led the Hajj in 9 AH.",
+  "rel": "The Prophet (PBUH) performed the Farewell Pilgrimage in 10 AH.",
+  "problem": "Question has two parts; the year Hajj became obligatory is disputed (commonly 6, 9 or 10 AH). Answer given is for the Hajj led by Abu Bakr."
+ },
+ {
+  "src": "B",
+  "num": 95,
+  "question": "When was the Badshahi Mosque built?",
+  "options": [
+   "1648",
+   "1627",
+   "1707",
+   "1673"
+  ],
+  "correct": 3,
+  "why": "The Badshahi Mosque, commissioned by Aurangzeb, was completed in 1673.",
+  "rel": "It stands in Lahore opposite Lahore Fort. It was once among the world's largest mosques."
+ },
+ {
+  "src": "B",
+  "num": 105,
+  "question": "Which country voted against Pakistan's admission to the UN in 1947?",
+  "options": [
+   "Afghanistan",
+   "India",
+   "Iran",
+   "Egypt"
+  ],
+  "correct": 0,
+  "why": "Afghanistan cast the only vote against Pakistan's admission to the UN.",
+  "rel": "Pakistan was admitted on 30 September 1947."
+ },
+ {
+  "src": "B",
+  "num": 115,
+  "question": "What was the approximate Muslim force at the Battle of Badr?",
+  "options": [
+   "1,000",
+   "700",
+   "313",
+   "3,000"
+  ],
+  "correct": 2,
+  "why": "Traditional accounts say about 313 Muslims fought at Badr.",
+  "rel": "Badr took place in 2 AH (624 CE) against a much larger Quraysh force."
+ },
+ {
+  "src": "B",
+  "num": 125,
+  "question": "In which Hijri year was zakat made obligatory?",
+  "options": [
+   "10 AH",
+   "2 AH",
+   "12 AH",
+   "20 AH"
+  ],
+  "correct": 1,
+  "why": "Zakat is commonly dated as made obligatory in 2 AH.",
+  "rel": "Zakat is one of the Five Pillars of Islam.",
+  "problem": "Some scholars give other dates (e.g. 8 or 9 AH); 2 AH is the common exam answer."
+ },
+ {
+  "src": "B",
+  "num": 135,
+  "question": "When is friction between a tyre and the road at its maximum useful level?",
+  "options": [
+   "When the wheels are fully locked and sliding",
+   "When the tyre is stationary and unloaded",
+   "When the road is wet with zero tyre pressure",
+   "Just before the tyre starts to skid"
+  ],
+  "correct": 3,
+  "why": "Friction is highest near the limit of static friction, just before sliding begins.",
+  "rel": "Locked sliding tyres have less friction than rolling tyres near peak grip. ABS prevents wheel lockup.",
+  "problem": "Question is vague; many MCQ keys say 'hard braking'. Answer chosen is the scientific one."
+ },
+ {
+  "src": "B",
+  "num": 145,
+  "question": "Which Microsoft Word feature creates decorative text?",
+  "options": [
+   "WordArt",
+   "Clip Art",
+   "SmartArt",
+   "Format Painter"
+  ],
+  "correct": 0,
+  "why": "WordArt applies stylized, decorative effects to text.",
+  "rel": "It suits titles and headings, not long body text."
+ },
+ {
+  "src": "B",
+  "num": 155,
+  "question": "Which battle is called Jang-e-Furqan?",
+  "options": [
+   "Battle of Uhud",
+   "Battle of Khandaq",
+   "Battle of Badr",
+   "Battle of Hunain"
+  ],
+  "correct": 2,
+  "why": "Badr is called Jang-e-Furqan because it distinguished truth from falsehood.",
+  "rel": "It took place in 2 AH (624 CE)."
+ },
+ {
+  "src": "B",
+  "num": 165,
+  "question": "How many Muslims were initially present at the Battle of Uhud?",
+  "options": [
+   "313",
+   "About 1,000",
+   "3,000",
+   "1,500"
+  ],
+  "correct": 1,
+  "why": "About 1,000 Muslims set out for Uhud, and around 300 withdrew before the battle.",
+  "rel": "Uhud took place in 3 AH (625 CE). About 700 Muslims actually fought.",
+  "problem": "Ambiguous: about 700 actually fought; 700 left out of options to avoid confusion."
+ },
+ {
+  "src": "B",
+  "num": 175,
+  "question": "Who enslaved Hazrat Bilal (RA) before his freedom?",
+  "options": [
+   "Umayyah ibn Khalaf",
+   "Abu Jahl",
+   "Abu Lahab",
+   "Utbah ibn Rabiah"
+  ],
+  "correct": 0,
+  "why": "Bilal (RA) was enslaved by Umayyah ibn Khalaf and tortured for accepting Islam.",
+  "rel": "Abu Bakr (RA) bought and freed him."
+ },
+ {
+  "src": "B",
+  "num": 185,
+  "question": "What is the McMahon Line?",
+  "options": [
+   "Afghanistan-Pakistan boundary line",
+   "India-Pakistan boundary line",
+   "Iran-Pakistan boundary line",
+   "Eastern China-India boundary line (1914 Simla Convention)"
+  ],
+  "correct": 3,
+  "why": "The McMahon Line is the eastern sector boundary between China and India drawn at the 1914 Simla Convention.",
+  "rel": "It is named after Henry McMahon. India accepts it but China disputes it."
+ },
+ {
+  "src": "B",
+  "num": 195,
+  "question": "What is the world's largest island?",
+  "options": [
+   "Borneo",
+   "Greenland",
+   "New Guinea",
+   "Madagascar"
+  ],
+  "correct": 1,
+  "why": "Greenland is the world's largest island; Australia counts as a continent.",
+  "rel": "Greenland is an autonomous territory of Denmark."
+ },
+ {
+  "src": "B",
+  "num": 205,
+  "question": "To which prophet was the Zabur revealed?",
+  "options": [
+   "Prophet Dawud (AS)",
+   "Prophet Musa (AS)",
+   "Prophet Isa (AS)",
+   "Prophet Muhammad (PBUH)"
+  ],
+  "correct": 0,
+  "why": "The Zabur was revealed to Prophet Dawud.",
+  "rel": "Torah to Musa, Injil to Isa, Quran to Muhammad (PBUH)."
+ },
+ {
+  "src": "B",
+  "num": 215,
+  "question": "In which year did Shah Waliullah die?",
+  "options": [
+   "1703",
+   "1731",
+   "1762",
+   "1799"
+  ],
+  "correct": 2,
+  "why": "Shah Waliullah died in 1762.",
+  "rel": "He was born in 1703. He translated the Quran into Persian."
+ }
+]

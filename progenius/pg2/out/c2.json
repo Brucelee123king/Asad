@@ -1,0 +1,1154 @@
+[
+ {
+  "id": "A73",
+  "question": "What was Hazrat Umm Kulthum's (RA) relation to Prophet Muhammad (PBUH)?",
+  "options": [
+   "Daughter",
+   "Wife",
+   "Aunt",
+   "Granddaughter"
+  ],
+  "correct": 0,
+  "why": "Umm Kulthum (RA) was one of the four daughters of the Prophet (PBUH) and Hazrat Khadijah (RA).",
+  "rel": "She married Hazrat Uthman (RA) after the death of her sister Ruqayyah (RA).",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A74",
+  "question": "Which river is often cited as the world's shortest river?",
+  "options": [
+   "Tiber River (Italy)",
+   "Jordan River (Middle East)",
+   "Roe River (Montana, USA)",
+   "Ravi River (Pakistan)"
+  ],
+  "correct": 2,
+  "why": "The Roe River in Montana, about 61 m long, is the river most often cited as the shortest in the world.",
+  "rel": "Shortest-river rankings depend on how a river's source and mouth are measured, so records differ.",
+  "status": "ok",
+  "note": "Commonly cited answer; rankings depend on definition.",
+  "match": null
+ },
+ {
+  "id": "A75",
+  "question": "In which Hijri year did Hazrat Khalid bin Walid (RA) accept Islam?",
+  "options": [
+   "5 AH",
+   "6 AH",
+   "8 AH",
+   "10 AH"
+  ],
+  "correct": 2,
+  "why": "Khalid bin Walid (RA) accepted Islam in 8 AH, shortly before the Conquest of Makkah.",
+  "rel": "He is known by the title Saifullah (the Sword of Allah).",
+  "status": "ok",
+  "note": "",
+  "match": 96
+ },
+ {
+  "id": "A76",
+  "question": "Who led the disbelievers (Quraysh) at the Battle of Badr?",
+  "options": [
+   "Abu Lahab",
+   "Abu Jahl",
+   "Abu Sufyan",
+   "Khalid bin Walid"
+  ],
+  "correct": 1,
+  "why": "Abu Jahl (Amr ibn Hisham) was the leading commander of the Quraysh at Badr and was killed there.",
+  "rel": "The Battle of Badr was fought in 2 AH; about 313 Muslims took part.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A77",
+  "question": "Which is the second-largest continent by area?",
+  "options": [
+   "North America",
+   "Europe",
+   "Africa",
+   "South America"
+  ],
+  "correct": 2,
+  "why": "Asia is the largest continent and Africa is second by area.",
+  "rel": "Africa has 54 recognised countries, more than any other continent.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A78",
+  "question": "Which is the longest glacier in the Karakoram range (claimed by Pakistan)?",
+  "options": [
+   "Baltoro Glacier",
+   "Siachen Glacier",
+   "Biafo Glacier",
+   "Batura Glacier"
+  ],
+  "correct": 1,
+  "why": "Siachen, about 76 km long, is the longest glacier in the Karakoram.",
+  "rel": "Siachen is among the longest glaciers outside the polar regions.",
+  "status": "ok",
+  "note": "Question reworded: Siachen is the longest/largest, 'highest' is not precise.",
+  "match": null
+ },
+ {
+  "id": "A79",
+  "question": "How many Nishan-e-Haider awards have been given in total?",
+  "options": [
+   "11",
+   "9",
+   "10",
+   "12"
+  ],
+  "correct": 0,
+  "why": "The commonly listed total of Nishan-e-Haider recipients is 11 (including Saif Ali Janjua's Hilal-e-Kashmir).",
+  "rel": "The first recipient was Captain Muhammad Sarwar Shaheed (1947-48 war).",
+  "status": "ok",
+  "note": "Commonly listed total; no new award known as of Nov 2026.",
+  "match": null
+ },
+ {
+  "id": "A80",
+  "question": "Where is the headquarters of the UN Human Rights Office (OHCHR)?",
+  "options": [
+   "Geneva, Switzerland",
+   "Vienna, Austria",
+   "The Hague, Netherlands",
+   "New York, USA"
+  ],
+  "correct": 0,
+  "why": "The Office of the UN High Commissioner for Human Rights (OHCHR) is based in Geneva.",
+  "rel": "The UN Human Rights Council also meets in Geneva.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A81",
+  "question": "Where is the headquarters of NATO?",
+  "options": [
+   "Geneva, Switzerland",
+   "Washington, D.C., USA",
+   "Paris, France",
+   "Brussels, Belgium"
+  ],
+  "correct": 3,
+  "why": "NATO's headquarters is in Brussels, Belgium.",
+  "rel": "NATO was set up by the North Atlantic Treaty signed on 4 April 1949.",
+  "status": "ok",
+  "note": "",
+  "match": 32
+ },
+ {
+  "id": "A82",
+  "question": "Who is the Secretary-General of the Arab League?",
+  "options": [
+   "Ahmed Aboul Gheit",
+   "Hossam Zaki",
+   "Amr Moussa",
+   "Nabil Elaraby"
+  ],
+  "correct": 0,
+  "why": "Ahmed Aboul Gheit of Egypt has been Secretary-General of the Arab League since 2016.",
+  "rel": "The Arab League was founded in 1945 and has its headquarters in Cairo.",
+  "status": "unsure",
+  "note": "His second term was due to end in mid-2026; check whether a successor has taken over.",
+  "match": null
+ },
+ {
+  "id": "A83",
+  "question": "In which year was 'South Asian Aviation' founded?",
+  "options": [
+   "2003",
+   "1998",
+   "1993",
+   "1985"
+  ],
+  "correct": 1,
+  "why": "The source gives 1998 as the founding year.",
+  "rel": "PIA, Pakistan's national airline, was formed in 1955 (incorporated 1956).",
+  "status": "unsure",
+  "note": "Question does not name a clearly known organisation; kept source answer 1998.",
+  "match": null
+ },
+ {
+  "id": "A84",
+  "question": "Against which team and where did Pakistan play its first Test match (October 1952)?",
+  "options": [
+   "West Indies, at Karachi",
+   "India, at Delhi",
+   "England, at Lord's",
+   "India, at Lucknow"
+  ],
+  "correct": 1,
+  "why": "Pakistan's first Test was against India at Delhi, starting 16 October 1952.",
+  "rel": "Pakistan won its second Test at Lucknow; India won the 1952 series 2-1.",
+  "status": "ok",
+  "note": "Note in source said Pakistan won the series 2-1; actually India won 2-1.",
+  "match": null
+ },
+ {
+  "id": "A85",
+  "question": "Which title is given to Liaquat Ali Khan?",
+  "options": [
+   "Fakhr-e-Millat",
+   "Madar-e-Millat",
+   "Quaid-e-Millat",
+   "Shaheed-e-Millat"
+  ],
+  "correct": 3,
+  "why": "Liaquat Ali Khan, Pakistan's first Prime Minister, was assassinated in 1951 and is called Shaheed-e-Millat.",
+  "rel": "Madar-e-Millat is the title of Fatima Jinnah.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A86",
+  "question": "On which date is Youm-e-Takbeer observed in Pakistan?",
+  "options": [
+   "14 August",
+   "23 March",
+   "6 September",
+   "28 May"
+  ],
+  "correct": 3,
+  "why": "Youm-e-Takbeer marks Pakistan's nuclear tests of 28 May 1998.",
+  "rel": "The tests were conducted in the Ras Koh Hills, Chagai, Balochistan.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A87",
+  "question": "Who was the foster mother (wet-nurse) of the Holy Prophet (PBUH) in his childhood?",
+  "options": [
+   "Hazrat Fatima bint Asad",
+   "Hazrat Umm Ayman",
+   "Hazrat Halima Sa'diyah",
+   "Hazrat Aminah"
+  ],
+  "correct": 2,
+  "why": "Halima Sa'diyah of the Banu Sa'd tribe nursed and raised the Prophet (PBUH) in the desert in his early years.",
+  "rel": "After his mother's death, his grandfather Abdul Muttalib and then his uncle Abu Talib cared for him.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A88",
+  "question": "What does 'Tanzil' mean?",
+  "options": [
+   "Memorisation",
+   "Explanation",
+   "Sending down (revelation)",
+   "Recitation"
+  ],
+  "correct": 2,
+  "why": "Tanzil means sending down; in Quranic usage it refers to the revelation of the Quran.",
+  "rel": "Tafsir means explanation of the Quran and Tilawat means recitation.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A89",
+  "question": "What is the literal meaning of 'Zakat'?",
+  "options": [
+   "Fasting",
+   "Prayer",
+   "Purification and growth",
+   "Pilgrimage"
+  ],
+  "correct": 2,
+  "why": "Zakat literally means purification and growth; in Islamic law it is obligatory almsgiving.",
+  "rel": "Zakat is the third pillar of Islam and was made obligatory in 2 AH.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A90",
+  "question": "In which direction does Iran lie from Pakistan?",
+  "options": [
+   "South",
+   "East",
+   "West",
+   "North"
+  ],
+  "correct": 2,
+  "why": "Iran borders Pakistan's Balochistan province on the west.",
+  "rel": "The Pakistan-Iran border is about 900 km long.",
+  "status": "ok",
+  "note": "",
+  "match": 236
+ },
+ {
+  "id": "A91",
+  "question": "In which year CE did the Hijrah take place, the event from which the Hijri calendar begins?",
+  "options": [
+   "622 CE",
+   "632 CE",
+   "570 CE",
+   "610 CE"
+  ],
+  "correct": 0,
+  "why": "The Hijri calendar is counted from the Hijrah (migration) to Madinah in 622 CE.",
+  "rel": "Hazrat Umar (RA) formally adopted the Hijri calendar about 17 years after the Hijrah.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A92",
+  "question": "What is the currency of Egypt?",
+  "options": [
+   "Egyptian riyal",
+   "Egyptian pound",
+   "Egyptian dirham",
+   "Egyptian dinar"
+  ],
+  "correct": 1,
+  "why": "Egypt's currency is the Egyptian pound (EGP).",
+  "rel": "Egypt's capital is Cairo.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A93",
+  "question": "Who was the first Prime Minister of Pakistan?",
+  "options": [
+   "Liaquat Ali Khan",
+   "Muhammad Ali Bogra",
+   "I. I. Chundrigar",
+   "Khawaja Nazimuddin"
+  ],
+  "correct": 0,
+  "why": "Liaquat Ali Khan became Pakistan's first Prime Minister on 14 August 1947.",
+  "rel": "He was assassinated in Rawalpindi on 16 October 1951.",
+  "status": "ok",
+  "note": "",
+  "match": 50
+ },
+ {
+  "id": "A94",
+  "question": "What is the approximate length of Pakistan's coastline?",
+  "options": [
+   "About 1,046 km",
+   "About 2,046 km",
+   "About 746 km",
+   "About 1,446 km"
+  ],
+  "correct": 0,
+  "why": "Pakistan's coastline is usually given as about 1,046 km along the Arabian Sea.",
+  "rel": "Most of the coastline lies in Balochistan; the rest is in Sindh.",
+  "status": "ok",
+  "note": "",
+  "match": 156
+ },
+ {
+  "id": "A95",
+  "question": "How many surahs of the Quran are commonly counted as Madani?",
+  "options": [
+   "24",
+   "32",
+   "28",
+   "86"
+  ],
+  "correct": 2,
+  "why": "In the common conventional count, 28 surahs are Madani and 86 are Makki.",
+  "rel": "Madani surahs were revealed after the Hijrah and often deal with laws and society.",
+  "status": "ok",
+  "note": "Common count; some classifications differ slightly.",
+  "match": null
+ },
+ {
+  "id": "A96",
+  "question": "To which region was Hazrat Mu'adh bin Jabal (RA) sent as governor/judge?",
+  "options": [
+   "Syria",
+   "Abyssinia",
+   "Yemen",
+   "Bahrain"
+  ],
+  "correct": 2,
+  "why": "The Prophet (PBUH) sent Mu'adh bin Jabal (RA) to Yemen as a teacher, judge and governor.",
+  "rel": "Mu'adh (RA) was known for his deep knowledge of halal and haram.",
+  "status": "ok",
+  "note": "",
+  "match": 98
+ },
+ {
+  "id": "A97",
+  "question": "What does the word 'Badr' mean?",
+  "options": [
+   "Crescent",
+   "Victory",
+   "Full moon",
+   "Star"
+  ],
+  "correct": 2,
+  "why": "Badr means full moon; it is also the name of the place where the Battle of Badr was fought.",
+  "rel": "Badr is a place near Madinah.",
+  "status": "ok",
+  "note": "",
+  "match": 157
+ },
+ {
+  "id": "A98",
+  "question": "What is the purpose of the NFC Award in Pakistan?",
+  "options": [
+   "To distribute revenues between the federation and the provinces",
+   "To fix the defence budget",
+   "To set the State Bank's interest rate",
+   "To allocate seats in the National Assembly"
+  ],
+  "correct": 0,
+  "why": "The National Finance Commission Award divides specified federal revenues between the federation and the provinces under Article 160 of the Constitution.",
+  "rel": "NFC stands for National Finance Commission; the 7th NFC Award was given in 2009-10.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A99",
+  "question": "In which year did Quaid-e-Azam Muhammad Ali Jinnah join the Indian National Congress?",
+  "options": [
+   "1920",
+   "1896",
+   "1913",
+   "1906"
+  ],
+  "correct": 3,
+  "why": "Jinnah joined the Indian National Congress in 1906 (commonly cited year).",
+  "rel": "He joined the Muslim League in 1913 and left the Congress in 1920.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A100",
+  "question": "According to Hanafi fiqh, how many fard (obligatory) acts are there in Hajj?",
+  "options": [
+   "Three",
+   "Two",
+   "Seven",
+   "Five"
+  ],
+  "correct": 0,
+  "why": "Hanafi teaching lists three fara'id of Hajj: Ihram, staying at Arafat (Wuquf) and Tawaf al-Ziyarah.",
+  "rel": "Other schools of fiqh classify the pillars of Hajj differently.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A101",
+  "question": "Where is the headquarters of the International Atomic Energy Agency (IAEA)?",
+  "options": [
+   "Geneva, Switzerland",
+   "Vienna, Austria",
+   "Paris, France",
+   "New York, USA"
+  ],
+  "correct": 1,
+  "why": "The IAEA is based at the Vienna International Centre, Austria.",
+  "rel": "The IAEA was founded in 1957.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A102",
+  "question": "Who is called 'Ruh-ul-Qudus' (the Holy Spirit) in Islam?",
+  "options": [
+   "Hazrat Jibraeel (AS)",
+   "Hazrat Isa (AS)",
+   "Hazrat Israfeel (AS)",
+   "Hazrat Mikaeel (AS)"
+  ],
+  "correct": 0,
+  "why": "In Islamic interpretation Ruh-ul-Qudus refers to the angel Jibraeel (AS).",
+  "rel": "Jibraeel (AS) brought revelation to the prophets.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A103",
+  "question": "Which of the following are the five permanent members of the UN Security Council?",
+  "options": [
+   "Japan, France, Russia, UK and USA",
+   "China, France, Russia, UK and USA",
+   "China, France, India, UK and USA",
+   "China, Germany, Russia, UK and USA"
+  ],
+  "correct": 1,
+  "why": "The five permanent members are China, France, Russia, the United Kingdom and the United States.",
+  "rel": "Each permanent member has veto power over substantive resolutions.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A104",
+  "question": "In which year did the British annex Sindh?",
+  "options": [
+   "1857",
+   "1849",
+   "1839",
+   "1843"
+  ],
+  "correct": 3,
+  "why": "The British annexed Sindh in 1843 after the battles of Miani and Dubbo.",
+  "rel": "Sir Charles Napier led the British campaign.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A105",
+  "question": "Where is the Shah Jahan Mosque located?",
+  "options": [
+   "Multan, Punjab",
+   "Thatta, Sindh",
+   "Lahore, Punjab",
+   "Peshawar, KP"
+  ],
+  "correct": 1,
+  "why": "The Shah Jahan Mosque, built by Mughal emperor Shah Jahan, is in Thatta, Sindh.",
+  "rel": "It is famous for its blue glazed tile work and many domes.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A106",
+  "question": "Which is the most populous city of Pakistan?",
+  "options": [
+   "Faisalabad",
+   "Rawalpindi",
+   "Lahore",
+   "Karachi"
+  ],
+  "correct": 3,
+  "why": "Karachi is Pakistan's largest city by population.",
+  "rel": "Lahore is the second most populous city.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A107",
+  "question": "In which district is Keenjhar Lake located?",
+  "options": [
+   "Badin, Sindh",
+   "Thatta, Sindh",
+   "Dadu, Sindh",
+   "Jamshoro, Sindh"
+  ],
+  "correct": 1,
+  "why": "Keenjhar Lake lies in Thatta District, Sindh.",
+  "rel": "It is one of Pakistan's largest freshwater lakes and supplies water to Karachi.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A108",
+  "question": "Which dam/hydropower project has India built on the Indus River in Ladakh (former Jammu & Kashmir state)?",
+  "options": [
+   "Baglihar",
+   "Kishanganga",
+   "Tarbela",
+   "Nimoo Bazgo"
+  ],
+  "correct": 3,
+  "why": "India's Nimoo Bazgo hydropower project is built on the Indus River in Ladakh.",
+  "rel": "Baglihar is on the Chenab and Kishanganga is on the Neelum (Kishanganga) river.",
+  "status": "fixed",
+  "note": "Source answer (Diamer-Bhasha) is a Pakistani dam; India's project on the Indus is Nimoo Bazgo.",
+  "match": null
+ },
+ {
+  "id": "A109",
+  "question": "Which country helped Pakistan build Warsak Dam?",
+  "options": [
+   "China",
+   "Canada",
+   "USA",
+   "United Kingdom"
+  ],
+  "correct": 1,
+  "why": "Warsak Dam was built with Canadian assistance under the Colombo Plan.",
+  "rel": "Warsak Dam is on the Kabul River near Peshawar and was completed in 1960.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A110",
+  "question": "Which is the third surah of the Quran?",
+  "options": [
+   "Surah An-Nisa",
+   "Surah Al-Ma'idah",
+   "Surah Aal-e-Imran",
+   "Surah Al-Baqarah"
+  ],
+  "correct": 2,
+  "why": "Surah Aal-e-Imran is the third surah in the standard order of the Quran.",
+  "rel": "It has 200 verses and is named after the family of Imran.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A111",
+  "question": "How many huffaz (memorisers of the Quran) are traditionally reported to have been martyred at the Battle of Yamama?",
+  "options": [
+   "About 70",
+   "About 40",
+   "About 700",
+   "About 313"
+  ],
+  "correct": 0,
+  "why": "Historical reports say about 70 huffaz were martyred at Yamama.",
+  "rel": "Their loss led Hazrat Abu Bakr (RA) to have the Quran compiled into one book.",
+  "status": "ok",
+  "note": "",
+  "match": 237
+ },
+ {
+  "id": "A112",
+  "question": "When did the five daily prayers (Salah) become obligatory?",
+  "options": [
+   "At the Farewell Hajj",
+   "At the Battle of Badr",
+   "After the Conquest of Makkah",
+   "On the night of Mi'raj"
+  ],
+  "correct": 3,
+  "why": "The five daily prayers were made obligatory during Isra and Mi'raj, before the Hijrah.",
+  "rel": "Mi'raj is commonly placed around the 10th-12th year of Prophethood.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A113",
+  "question": "What is the name of Japan's parliament?",
+  "options": [
+   "Duma",
+   "National Diet",
+   "Knesset",
+   "Bundestag"
+  ],
+  "correct": 1,
+  "why": "Japan's parliament is the National Diet (Kokkai).",
+  "rel": "It has two houses: the House of Representatives and the House of Councillors.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A114",
+  "question": "Which is the largest district of Balochistan by area?",
+  "options": [
+   "Chagai",
+   "Awaran",
+   "Kharan",
+   "Khuzdar"
+  ],
+  "correct": 0,
+  "why": "Chagai is the largest district of Balochistan by area.",
+  "rel": "Pakistan's 1998 nuclear tests were carried out in Chagai.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A115",
+  "question": "Which is the smallest continent?",
+  "options": [
+   "South America",
+   "Antarctica",
+   "Australia",
+   "Europe"
+  ],
+  "correct": 2,
+  "why": "In the seven-continent model, Australia is the smallest continent.",
+  "rel": "Australia is also the only continent occupied by a single country.",
+  "status": "ok",
+  "note": "",
+  "match": 123
+ },
+ {
+  "id": "A116",
+  "question": "The Darling is a river in which country?",
+  "options": [
+   "Canada",
+   "Australia",
+   "New Zealand",
+   "South Africa"
+  ],
+  "correct": 1,
+  "why": "The Darling River is in south-eastern Australia.",
+  "rel": "It joins the Murray River, Australia's longest river.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A117",
+  "question": "Which is the last surah of the Quran in its standard order?",
+  "options": [
+   "Surah Al-Falaq",
+   "Surah Al-Kawthar",
+   "Surah Al-Ikhlas",
+   "Surah An-Nas"
+  ],
+  "correct": 3,
+  "why": "Surah An-Nas (114) is the final surah in the standard order of the Quran.",
+  "rel": "The last verse revealed is a separate question; many scholars name Al-Baqarah 2:281.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A118",
+  "question": "Multan is famous as the city of what?",
+  "options": [
+   "Gardens",
+   "Lights",
+   "Colleges",
+   "Saints"
+  ],
+  "correct": 3,
+  "why": "Multan is known as the City of Saints because of its many Sufi shrines.",
+  "rel": "Lahore is called the City of Gardens.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A119",
+  "question": "Which land is often called the 'Land of Prophets'?",
+  "options": [
+   "Yemen",
+   "Egypt",
+   "Iraq",
+   "Palestine"
+  ],
+  "correct": 3,
+  "why": "Palestine is often called the land of prophets because many prophets lived and preached there.",
+  "rel": "Masjid al-Aqsa in Jerusalem was the first qibla of Muslims.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A120",
+  "question": "In which language did Bulleh Shah write his poetry?",
+  "options": [
+   "Punjabi",
+   "Pashto",
+   "Sindhi",
+   "Persian"
+  ],
+  "correct": 0,
+  "why": "Bulleh Shah was a famous Punjabi Sufi poet.",
+  "rel": "His shrine is in Kasur, Punjab.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A121",
+  "question": "Which is the largest lake of Germany by area?",
+  "options": [
+   "Lake Starnberg",
+   "Lake Constance",
+   "Lake Müritz",
+   "Lake Chiemsee"
+  ],
+  "correct": 1,
+  "why": "Lake Constance (Bodensee) is the largest lake touching Germany by area.",
+  "rel": "It is shared with Switzerland and Austria; Müritz is the largest lake wholly in Germany.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A122",
+  "question": "How many years after independence did East Pakistan separate from Pakistan?",
+  "options": [
+   "About 30 years",
+   "About 19 years",
+   "About 24 years",
+   "About 14 years"
+  ],
+  "correct": 2,
+  "why": "Pakistan became independent in 1947 and East Pakistan separated in 1971: 1971 - 1947 = 24.",
+  "rel": "East Pakistan became Bangladesh in 1971.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A123",
+  "question": "When was the state of Israel formed?",
+  "options": [
+   "14 May 1948",
+   "15 August 1947",
+   "2 November 1917",
+   "5 June 1967"
+  ],
+  "correct": 0,
+  "why": "Israel declared independence on 14 May 1948.",
+  "rel": "2 November 1917 is the date of the Balfour Declaration.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A124",
+  "question": "Which is the world's largest permanent desert lake?",
+  "options": [
+   "Dead Sea",
+   "Lake Baikal",
+   "Caspian Sea",
+   "Lake Turkana"
+  ],
+  "correct": 3,
+  "why": "Lake Turkana in Kenya is known as the world's largest permanent desert lake.",
+  "rel": "It is also the world's largest alkaline lake.",
+  "status": "fixed",
+  "note": "Source said Caspian Sea (largest lake overall); largest desert lake is Lake Turkana.",
+  "match": null
+ },
+ {
+  "id": "A125",
+  "question": "Who was the second Caliph of Islam?",
+  "options": [
+   "Hazrat Umar (RA)",
+   "Hazrat Uthman (RA)",
+   "Hazrat Abu Bakr (RA)",
+   "Hazrat Ali (RA)"
+  ],
+  "correct": 0,
+  "why": "Hazrat Umar ibn al-Khattab (RA) succeeded Hazrat Abu Bakr (RA) as the second Rightly Guided Caliph.",
+  "rel": "He is known by the title Al-Farooq.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A126",
+  "question": "Which is the second pillar of Islam?",
+  "options": [
+   "Hajj",
+   "Zakat",
+   "Sawm (fasting)",
+   "Salah (prayer)"
+  ],
+  "correct": 3,
+  "why": "The five pillars are Shahadah, Salah, Zakat, Sawm and Hajj; Salah is second.",
+  "rel": "Zakat is the third pillar.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A127",
+  "question": "In which battle was Hazrat Hamza (RA) martyred?",
+  "options": [
+   "Battle of Uhud",
+   "Battle of the Trench",
+   "Battle of Hunain",
+   "Battle of Badr"
+  ],
+  "correct": 0,
+  "why": "Hazrat Hamza (RA) was martyred at the Battle of Uhud in 3 AH.",
+  "rel": "He is called Sayyid-ush-Shuhada (leader of the martyrs).",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A128",
+  "question": "In which battle was Abu Jahl killed?",
+  "options": [
+   "Battle of Uhud",
+   "Battle of the Trench",
+   "Battle of Badr",
+   "Battle of Khaybar"
+  ],
+  "correct": 2,
+  "why": "Abu Jahl was killed at the Battle of Badr in 2 AH.",
+  "rel": "Badr is also called Yaum-ul-Furqan (Jang-e-Furqan).",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A129",
+  "question": "Jahangir Khan is famous for which sport?",
+  "options": [
+   "Squash",
+   "Hockey",
+   "Tennis",
+   "Cricket"
+  ],
+  "correct": 0,
+  "why": "Jahangir Khan is a Pakistani squash legend.",
+  "rel": "He won 555 matches in a row from 1981 to 1986.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A130",
+  "question": "What is the currency of Egypt?",
+  "options": [
+   "Egyptian dinar",
+   "Egyptian dirham",
+   "Egyptian pound",
+   "Egyptian riyal"
+  ],
+  "correct": 2,
+  "why": "Egypt's currency is the Egyptian pound (EGP).",
+  "rel": "The Suez Canal in Egypt links the Mediterranean and Red seas.",
+  "status": "ok",
+  "note": "Duplicate of A92.",
+  "match": null
+ },
+ {
+  "id": "A131",
+  "question": "Which river is commonly listed as the world's third-longest?",
+  "options": [
+   "Congo",
+   "Mekong",
+   "Yangtze",
+   "Amazon"
+  ],
+  "correct": 2,
+  "why": "The Yangtze, about 6,300 km long, is usually listed as the third-longest river after the Nile and Amazon.",
+  "rel": "The Yangtze is also the longest river in Asia.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A132",
+  "question": "How many months of the year have 31 days?",
+  "options": [
+   "Six",
+   "Seven",
+   "Eight",
+   "Five"
+  ],
+  "correct": 1,
+  "why": "January, March, May, July, August, October and December have 31 days.",
+  "rel": "Four months have 30 days and February has 28 or 29.",
+  "status": "ok",
+  "note": "",
+  "match": 111
+ },
+ {
+  "id": "A133",
+  "question": "Which surahs are called Al-Mu'awwidhatayn?",
+  "options": [
+   "Al-Fatiha and Al-Ikhlas",
+   "Al-Falaq and An-Nas",
+   "Al-Kafirun and Al-Falaq",
+   "Al-Ikhlas and An-Nas"
+  ],
+  "correct": 1,
+  "why": "Al-Mu'awwidhatayn are Surah Al-Falaq (113) and Surah An-Nas (114), recited for seeking protection.",
+  "rel": "Surah Al-Ikhlas is said to equal one third of the Quran.",
+  "status": "ok",
+  "note": "",
+  "match": 286
+ },
+ {
+  "id": "A134",
+  "question": "Which of the following seas does Turkey border?",
+  "options": [
+   "Red Sea",
+   "Black Sea",
+   "Arabian Sea",
+   "Caspian Sea"
+  ],
+  "correct": 1,
+  "why": "Turkey borders the Black Sea in the north (as well as the Aegean, Mediterranean and Marmara seas).",
+  "rel": "Istanbul lies on the Bosphorus, which links the Black Sea with the Sea of Marmara.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A135",
+  "question": "Which province of Pakistan is called Bab-ul-Islam?",
+  "options": [
+   "Khyber Pakhtunkhwa",
+   "Punjab",
+   "Balochistan",
+   "Sindh"
+  ],
+  "correct": 3,
+  "why": "Sindh is called Bab-ul-Islam (Gateway of Islam) because Islam entered the subcontinent there.",
+  "rel": "Muhammad bin Qasim conquered Sindh in 712 CE.",
+  "status": "ok",
+  "note": "",
+  "match": 79
+ },
+ {
+  "id": "A136",
+  "question": "Who wrote the book 'Friends Not Masters'?",
+  "options": [
+   "Pervez Musharraf",
+   "Ayub Khan",
+   "Zulfikar Ali Bhutto",
+   "Liaquat Ali Khan"
+  ],
+  "correct": 1,
+  "why": "'Friends Not Masters' (1967) is the political autobiography of President Ayub Khan.",
+  "rel": "Pervez Musharraf's memoir is 'In the Line of Fire'.",
+  "status": "fixed",
+  "note": "Source was unclear; 'Friends Not Masters' is Ayub Khan's 1967 autobiography.",
+  "match": null
+ },
+ {
+  "id": "A137",
+  "question": "Evaluate: 2 + 2 ÷ 2",
+  "options": [
+   "4",
+   "1",
+   "3",
+   "2"
+  ],
+  "correct": 2,
+  "why": "Division comes before addition: 2 + (2 ÷ 2) = 2 + 1 = 3.",
+  "rel": "By BODMAS, brackets and orders come before division, multiplication, addition and subtraction.",
+  "status": "ok",
+  "note": "",
+  "match": 233
+ },
+ {
+  "id": "A138",
+  "question": "Which pass in Pakistan is commonly cited as the highest paved international border crossing in the world?",
+  "options": [
+   "Khyber Pass",
+   "Babusar Pass",
+   "Lowari Pass",
+   "Khunjerab Pass"
+  ],
+  "correct": 3,
+  "why": "Khunjerab Pass (about 4,693 m) on the Karakoram Highway is commonly cited as Pakistan's highest pass and the world's highest paved border crossing.",
+  "rel": "It links Gilgit-Baltistan with Xinjiang, China.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A139",
+  "question": "How many surahs are there in the Quran?",
+  "options": [
+   "114",
+   "110",
+   "116",
+   "112"
+  ],
+  "correct": 0,
+  "why": "The Quran has 114 surahs.",
+  "rel": "The longest surah is Al-Baqarah and the shortest is Al-Kawthar.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A140",
+  "question": "Where is the headquarters of the International Civil Aviation Organization (ICAO)?",
+  "options": [
+   "Geneva, Switzerland",
+   "New York, USA",
+   "Montreal, Canada",
+   "Paris, France"
+  ],
+  "correct": 2,
+  "why": "ICAO, the UN agency for civil aviation, is headquartered in Montreal, Canada.",
+  "rel": "ICAO was set up under the Chicago Convention of 1944.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A141",
+  "question": "Where is the headquarters of the World Health Organization (WHO)?",
+  "options": [
+   "Vienna, Austria",
+   "New York, USA",
+   "Geneva, Switzerland",
+   "Rome, Italy"
+  ],
+  "correct": 2,
+  "why": "The WHO is headquartered in Geneva, Switzerland.",
+  "rel": "WHO was founded on 7 April 1948, now marked as World Health Day.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A142",
+  "question": "In which year were the Summer Olympics cancelled because of World War I?",
+  "options": [
+   "1914",
+   "1916",
+   "1912",
+   "1920"
+  ],
+  "correct": 1,
+  "why": "The 1916 Berlin Olympics were cancelled because of World War I; 1914 was not an Olympic year.",
+  "rel": "The 1940 and 1944 Games were cancelled because of World War II.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A143",
+  "question": "What is the capital of Colombia?",
+  "options": [
+   "Bogotá",
+   "Quito",
+   "Caracas",
+   "Lima"
+  ],
+  "correct": 0,
+  "why": "Bogotá is the capital of Colombia.",
+  "rel": "Caracas is Venezuela's capital, Lima is Peru's and Quito is Ecuador's.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ },
+ {
+  "id": "A144",
+  "question": "Which gas is most abundant in the Sun?",
+  "options": [
+   "Helium",
+   "Nitrogen",
+   "Hydrogen",
+   "Oxygen"
+  ],
+  "correct": 2,
+  "why": "The Sun is made mostly of hydrogen (about 73% by mass), with helium second.",
+  "rel": "The Sun gets its energy from nuclear fusion of hydrogen into helium.",
+  "status": "ok",
+  "note": "",
+  "match": null
+ }
+]

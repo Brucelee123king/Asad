@@ -1,0 +1,210 @@
+{
+ "base": {
+  "idleMenu": {
+   "fps": 6,
+   "avgFrameMs": 169.8,
+   "maxFrame": 300,
+   "busyPct": 85,
+   "styleMs": 752,
+   "layoutMs": 4,
+   "scriptMs": 15
+  },
+  "scroll": {
+   "frames": 24,
+   "avg": 166.3,
+   "max": 317
+  },
+  "idleQuiz": {
+   "fps": 7.3,
+   "avgFrameMs": 137.5,
+   "maxFrame": 367,
+   "busyPct": 85,
+   "styleMs": 742,
+   "layoutMs": 10,
+   "scriptMs": 6
+  },
+  "answerNextPaintMs": 298
+ },
+ "lite": {
+  "idleMenu": {
+   "fps": 7.3,
+   "avgFrameMs": 137,
+   "maxFrame": 200,
+   "busyPct": 95,
+   "styleMs": 861,
+   "layoutMs": 0,
+   "scriptMs": 16
+  },
+  "scroll": {
+   "frames": 26,
+   "avg": 138.8,
+   "max": 350
+  },
+  "idleQuiz": {
+   "fps": 8.3,
+   "avgFrameMs": 124,
+   "maxFrame": 183,
+   "busyPct": 105,
+   "styleMs": 969,
+   "layoutMs": 3,
+   "scriptMs": 11
+  },
+  "answerNextPaintMs": 367.4
+ },
+ "noBackdrop": {
+  "idleMenu": {
+   "fps": 7.3,
+   "avgFrameMs": 140.6,
+   "maxFrame": 250,
+   "busyPct": 79,
+   "styleMs": 697,
+   "layoutMs": 5,
+   "scriptMs": 8
+  },
+  "scroll": {
+   "frames": 24,
+   "avg": 139.7,
+   "max": 250
+  },
+  "idleQuiz": {
+   "fps": 8.7,
+   "avgFrameMs": 115.9,
+   "maxFrame": 217,
+   "busyPct": 89,
+   "styleMs": 781,
+   "layoutMs": 6,
+   "scriptMs": 12
+  },
+  "answerNextPaintMs": 392.1
+ },
+ "noAnim": {
+  "idleMenu": {
+   "fps": 8.7,
+   "avgFrameMs": 119,
+   "maxFrame": 217,
+   "busyPct": 111,
+   "styleMs": 1030,
+   "layoutMs": 0,
+   "scriptMs": 13
+  },
+  "scroll": {
+   "frames": 26,
+   "avg": 136,
+   "max": 317
+  },
+  "idleQuiz": {
+   "fps": 11,
+   "avgFrameMs": 93.4,
+   "maxFrame": 150,
+   "busyPct": 103,
+   "styleMs": 930,
+   "layoutMs": 4,
+   "scriptMs": 10
+  },
+  "answerNextPaintMs": 319.6
+ },
+ "noFilter": {
+  "idleMenu": {
+   "fps": 10,
+   "avgFrameMs": 100.5,
+   "maxFrame": 150,
+   "busyPct": 96,
+   "styleMs": 874,
+   "layoutMs": 6,
+   "scriptMs": 9
+  },
+  "scroll": {
+   "frames": 24,
+   "avg": 118.2,
+   "max": 200
+  },
+  "idleQuiz": {
+   "fps": 10.3,
+   "avgFrameMs": 97.5,
+   "maxFrame": 167,
+   "busyPct": 101,
+   "styleMs": 907,
+   "layoutMs": 6,
+   "scriptMs": 10
+  },
+  "answerNextPaintMs": 326
+ },
+ "noDecor": {
+  "idleMenu": {
+   "fps": 11.7,
+   "avgFrameMs": 88.6,
+   "maxFrame": 133,
+   "busyPct": 109,
+   "styleMs": 1024,
+   "layoutMs": 6,
+   "scriptMs": 7
+  },
+  "scroll": {
+   "frames": 23,
+   "avg": 105.7,
+   "max": 300
+  },
+  "idleQuiz": {
+   "fps": 13,
+   "avgFrameMs": 77.4,
+   "maxFrame": 117,
+   "busyPct": 95,
+   "styleMs": 873,
+   "layoutMs": 4,
+   "scriptMs": 10
+  },
+  "answerNextPaintMs": 225
+ },
+ "noRafLoop": {
+  "idleMenu": {
+   "fps": 60.7,
+   "avgFrameMs": 16.6,
+   "maxFrame": 17,
+   "busyPct": 13,
+   "styleMs": 15,
+   "layoutMs": 16,
+   "scriptMs": 8
+  },
+  "scroll": {
+   "frames": 30,
+   "avg": 16.7,
+   "max": 17
+  },
+  "idleQuiz": {
+   "fps": 21.7,
+   "avgFrameMs": 46.3,
+   "maxFrame": 117,
+   "busyPct": 9,
+   "styleMs": 27,
+   "layoutMs": 6,
+   "scriptMs": 6
+  },
+  "answerNextPaintMs": 79.3
+ },
+ "allOff": {
+  "idleMenu": {
+   "fps": 60.7,
+   "avgFrameMs": 16.6,
+   "maxFrame": 17,
+   "busyPct": 4,
+   "styleMs": 0,
+   "layoutMs": 0,
+   "scriptMs": 9
+  },
+  "scroll": {
+   "frames": 30,
+   "avg": 16.7,
+   "max": 17
+  },
+  "idleQuiz": {
+   "fps": 60.3,
+   "avgFrameMs": 16.6,
+   "maxFrame": 17,
+   "busyPct": 5,
+   "styleMs": 1,
+   "layoutMs": 3,
+   "scriptMs": 9
+  },
+  "answerNextPaintMs": 30.9
+ }
+}

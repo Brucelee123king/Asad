@@ -1,0 +1,706 @@
+[
+{
+"id": 4,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 10,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 16,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 22,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 28,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 34,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 40,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 46,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 52,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 58,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 64,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 70,
+"pick": 1,
+"confidence": "medium",
+"note": "Lahore is often called heart of Pakistan; ambiguous"
+},
+{
+"id": 76,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 82,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 88,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 94,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 100,
+"pick": 1,
+"confidence": "medium",
+"note": "Senate+NA = 2 houses; some count President as 3rd"
+},
+{
+"id": 106,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 112,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 118,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 124,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 130,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 136,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 142,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 148,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 154,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 160,
+"pick": 0,
+"confidence": "medium",
+"note": "3180 km common; 2880 km also quoted"
+},
+{
+"id": 166,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 172,
+"pick": 2,
+"confidence": "medium",
+"note": "Founding member at 1969 Rabat summit; 1974 Lahore summit also cited"
+},
+{
+"id": 178,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 184,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 190,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 196,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 202,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 208,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 214,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 220,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 226,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 232,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 238,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 244,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 250,
+"pick": 1,
+"confidence": "low",
+"note": "Question is garbled; Kohat Pass is the only fit"
+},
+{
+"id": 256,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 262,
+"pick": 3,
+"confidence": "medium",
+"note": "Gen Muhammad Shariff first CJCSC 1976"
+},
+{
+"id": 268,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 274,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 280,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 286,
+"pick": 2,
+"confidence": "medium",
+"note": "Hamza led first expedition (Saif al-Bahr); sources differ"
+},
+{
+"id": 292,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 298,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 304,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 310,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 316,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 322,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 328,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 334,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 340,
+"pick": 0,
+"confidence": "medium",
+"note": "Fazal Shah Sayyad usually credited"
+},
+{
+"id": 346,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 352,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 358,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 364,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 370,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 376,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 382,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 388,
+"pick": 1,
+"confidence": "medium",
+"note": "WGC 2025: China 1st, Russia 2nd; Australia close"
+},
+{
+"id": 394,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 400,
+"pick": 3,
+"confidence": "medium",
+"note": "Liaquat Ali Khan speeches book, not certain"
+},
+{
+"id": 406,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 412,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 418,
+"pick": 0,
+"confidence": "low",
+"note": "Exam answer unclear"
+},
+{
+"id": 424,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 430,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 436,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 442,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 448,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 454,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 460,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 466,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 472,
+"pick": 3,
+"confidence": "medium",
+"note": "909 km common in Pakistani sources; others say 959"
+},
+{
+"id": 478,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 484,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 490,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 496,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 502,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 508,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 514,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 520,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 526,
+"pick": 2,
+"confidence": "medium",
+"note": "Sibi on Bolan route; question vague"
+},
+{
+"id": 532,
+"pick": 0,
+"confidence": "medium",
+"note": "Ionian vs Adriatic arguable"
+},
+{
+"id": 538,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 544,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 550,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 556,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 562,
+"pick": 1,
+"confidence": "low",
+"note": "711 or 712 both cited"
+},
+{
+"id": 568,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 574,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 580,
+"pick": 0,
+"confidence": "low",
+"note": "5 or 6 regions both used"
+},
+{
+"id": 586,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 592,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 598,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 604,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 610,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 616,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 622,
+"pick": 3,
+"confidence": "medium",
+"note": "Nisa 4:43 also mentions tayammum"
+},
+{
+"id": 628,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 634,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 640,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 646,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 652,
+"pick": 1,
+"confidence": "medium",
+"note": "Shanghai vs Ningbo-Zhoushan depends on metric"
+},
+{
+"id": 658,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 664,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 670,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 676,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 682,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 688,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 694,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 700,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 706,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 712,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 718,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 724,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 730,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 736,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 742,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 748,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 754,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 760,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 766,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 772,
+"pick": 3,
+"confidence": "medium",
+"note": "Quran says Judi; Bible says Ararat"
+},
+{
+"id": 778,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 784,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 790,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 796,
+"pick": 0,
+"confidence": "high"
+},
+{
+"id": 802,
+"pick": 3,
+"confidence": "high"
+},
+{
+"id": 808,
+"pick": 2,
+"confidence": "high"
+},
+{
+"id": 814,
+"pick": 1,
+"confidence": "high"
+},
+{
+"id": 820,
+"pick": 1,
+"confidence": "high"
+}
+]

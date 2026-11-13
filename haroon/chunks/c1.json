@@ -1,0 +1,1698 @@
+[
+{
+"src": "T1",
+"n": 1,
+"q": "Who is the Chief Minister of Sindh?",
+"a": "Syed Murad Ali Shah",
+"x": "He has served multiple tenures as the Chief Minister of Sindh representing PPP.",
+"id": "T1-M-1"
+},
+{
+"src": "T1",
+"n": 2,
+"q": "Which is the third Surah of the Holy Quran?",
+"a": "Surah Aal-e-Imran",
+"x": "Surah Aal-e-Imran is the 3rd Surah, consisting of 200 verses and revealed in Madinah.",
+"id": "T1-M-2"
+},
+{
+"src": "T1",
+"n": 3,
+"q": "What is the capital city of Sindh province?",
+"a": "Karachi",
+"x": "Karachi is the largest city of Pakistan and the provincial capital of Sindh.",
+"id": "T1-M-3"
+},
+{
+"src": "T1",
+"n": 4,
+"q": "What is the antonym of 'Wild'?",
+"a": "Tamed / Domesticated",
+"x": "'Tamed' means brought under human control or domesticated.",
+"id": "T1-M-4"
+},
+{
+"src": "T1",
+"n": 5,
+"q": "What was the official title given to Liaquat Ali Khan?",
+"a": "Quaid-e-Millat (Leader of the Nation)",
+"x": "He was Pakistan's first Prime Minister and trusted lieutenant of Quaid-e-Azam.",
+"id": "T1-M-5"
+},
+{
+"src": "T1",
+"n": 6,
+"q": "In which year did Pakistan join SEATO?",
+"a": "1954",
+"x": "Pakistan signed the Southeast Asia Treaty Organization (Manila Pact) in September 1954.",
+"id": "T1-M-6"
+},
+{
+"src": "T1",
+"n": 7,
+"q": "What is one-third of 120?",
+"a": "40",
+"x": "Calculation: 120 / 3 = 40.",
+"id": "T1-M-7"
+},
+{
+"src": "T1",
+"n": 8,
+"q": "What is 90% of 90?",
+"a": "81",
+"x": "Calculation: (90 / 100) * 90 = 81.",
+"id": "T1-M-8"
+},
+{
+"src": "T1",
+"n": 9,
+"q": "Why do we boil milk before consumption?",
+"a": "To kill harmful bacteria and germs",
+"x": "Boiling pasteurizes milk by eliminating pathogenic microorganisms.",
+"id": "T1-M-9"
+},
+{
+"src": "T1",
+"n": 10,
+"q": "The Holy Injeel (Gospel) was revealed to which Prophet?",
+"a": "Hazrat Isa (A.S)",
+"x": "Hazrat Isa (Jesus) received the Injeel from Allah Almighty.",
+"id": "T1-M-10"
+},
+{
+"src": "T1",
+"n": 11,
+"q": "Which is the last (12th) month of the Islamic calendar?",
+"a": "Dhul-Hijjah",
+"x": "Dhul-Hijjah is the month of the annual Hajj pilgrimage and Eid-ul-Adha.",
+"id": "T1-M-11"
+},
+{
+"src": "T1",
+"n": 12,
+"q": "When was the Pak-China Border Agreement signed?",
+"a": "2 March 1963",
+"x": "The historic border agreement settled the boundary between Xinjiang and northern areas.",
+"id": "T1-M-12"
+},
+{
+"src": "T1",
+"n": 13,
+"q": "Hazrat Maryam (A.S) is the mother of which Prophet?",
+"a": "Hazrat Isa (A.S)",
+"x": "Hazrat Maryam miraculously gave birth to Hazrat Isa (A.S) without a father.",
+"id": "T1-M-13"
+},
+{
+"src": "T1",
+"n": 14,
+"q": "In which Nabwi year was five daily Namaz made obligatory?",
+"a": "10th Nabwi",
+"x": "Namaz was mandated during the miraculous journey of Isra and Mi'raj.",
+"id": "T1-M-14"
+},
+{
+"src": "T1",
+"n": 15,
+"q": "What is the synonym of 'Prevalent'?",
+"a": "Widespread / Common / Frequent",
+"x": "'Prevalent' indicates something that is predominant or widely accepted.",
+"id": "T1-M-15"
+},
+{
+"src": "T1",
+"n": 16,
+"q": "Which is the longest river in Europe?",
+"a": "Volga River",
+"x": "The Volga River flows through Central Russia into the Caspian Sea (length approx 3,530 km).",
+"id": "T1-M-16"
+},
+{
+"src": "T1",
+"n": 17,
+"q": "Which is the smallest continent in the world?",
+"a": "Australia",
+"x": "Australia is the smallest continent by land area and is also known as an island continent.",
+"id": "T1-M-17"
+},
+{
+"src": "T1",
+"n": 18,
+"q": "Where and when was Liaquat Ali Khan assassinated?",
+"a": "Rawalpindi on 16 October 1951",
+"x": "He was shot dead at Company Bagh (now Liaquat Bagh) in Rawalpindi by Said Akbar.",
+"id": "T1-M-18"
+},
+{
+"src": "T1",
+"n": 19,
+"q": "What is the absolute value of any real number?",
+"a": "Always positive (or zero)",
+"x": "The absolute value |x| represents distance from zero on a number line and is never negative.",
+"id": "T1-M-19"
+},
+{
+"src": "T1",
+"n": 20,
+"q": "In statistics, average is also referred to as?",
+"a": "Arithmetic Mean",
+"x": "Mean is computed by dividing the sum of values by the total count.",
+"id": "T1-M-20"
+},
+{
+"src": "T1",
+"n": 21,
+"q": "What was the total strength of the Senate of Pakistan?",
+"a": "100 seats (formerly 104; now 96 after 25th Amendment)",
+"x": "Seats were reduced following the merger of FATA into Khyber Pakhtunkhwa.",
+"id": "T1-M-21"
+},
+{
+"src": "T1",
+"n": 22,
+"q": "How many general seats does each province have in the Senate?",
+"a": "23 seats (equal representation per province)",
+"x": "Senate provides equal representation to all four provinces regardless of population.",
+"id": "T1-M-22"
+},
+{
+"src": "T1",
+"n": 23,
+"q": "During the Khilafat Movement (1920), Muslims migrated to which country?",
+"a": "Afghanistan",
+"x": "This migration was known as the Hijrat Movement, where leaders declared India Dar-ul-Harb.",
+"id": "T1-M-23"
+},
+{
+"src": "T1",
+"n": 24,
+"q": "Where did the Holy Prophet's (PBUH) mother Hazrat Amina pass away?",
+"a": "Al-Abwa",
+"x": "She passed away at Abwa, located between Makkah and Madinah, when the Prophet was six.",
+"id": "T1-M-24"
+},
+{
+"src": "T1",
+"n": 25,
+"q": "Who was the first Muazzin of Islam?",
+"a": "Hazrat Bilal ibn Rabah (R.A)",
+"x": "Hazrat Bilal was chosen by Prophet Muhammad (PBUH) to call the very first Azan in Madinah.",
+"id": "T1-M-25"
+},
+{
+"src": "T1",
+"n": 26,
+"q": "Who were the first to offer Islamic prayer (Namaz)?",
+"a": "Hazrat Muhammad (PBUH) and Hazrat Khadija (R.A)",
+"x": "Hazrat Khadija was the first person to pray alongside the Holy Prophet (PBUH).",
+"id": "T1-M-26"
+},
+{
+"src": "T1",
+"n": 27,
+"q": "Which pass connects Chitral with Upper Dir?",
+"a": "Lowari Pass",
+"x": "The Lowari Pass connects Dir and Chitral in KP, now bypassed by Lowari Tunnel.",
+"id": "T1-M-27"
+},
+{
+"src": "T1",
+"n": 28,
+"q": "Who was the last Governor-General of Pakistan?",
+"a": "Major General Iskander Mirza",
+"x": "He became Governor-General in 1955 and the first President of Pakistan in 1956.",
+"id": "T1-M-28"
+},
+{
+"src": "T1",
+"n": 29,
+"q": "What is celebrated internationally on 12th July?",
+"a": "Malala Day",
+"x": "Declared by the United Nations on Malala Yousafzai's birthday to advocate for girls' education.",
+"id": "T1-M-29"
+},
+{
+"src": "T1",
+"n": 30,
+"q": "Who was the first captain of the Indian women's cricket team?",
+"a": "Shantha Rangaswamy",
+"x": "She led the Indian women's team in their inaugural Test match in 1976.",
+"id": "T1-M-30"
+},
+{
+"src": "T1",
+"n": 31,
+"q": "How many recipients have received the Nishan-e-Haider?",
+"a": "11 Recipients",
+"x": "10 military personnel plus Naik Saif Ali Janjua (Hilal-e-Kashmir, declared equivalent).",
+"id": "T1-M-31"
+},
+{
+"src": "T1",
+"n": 32,
+"q": "How many articles were there in the 1956 Constitution of Pakistan?",
+"a": "234 Articles",
+"x": "The 1956 Constitution had 234 articles arranged in 13 parts and 6 schedules.",
+"id": "T1-M-32"
+},
+{
+"src": "T1",
+"n": 33,
+"q": "In which year were general elections held after the 1973 Constitution?",
+"a": "1977",
+"x": "The elections were held on 7 March 1977, followed by nationwide protests and Martial Law.",
+"id": "T1-M-33"
+},
+{
+"src": "T1",
+"n": 34,
+"q": "In which country is the Great Slave Lake located?",
+"a": "Canada",
+"x": "Located in the Northwest Territories of Canada, it is the deepest lake in North America.",
+"id": "T1-M-34"
+},
+{
+"src": "T1",
+"n": 35,
+"q": "How many continents are there in the world?",
+"a": "Seven (7)",
+"x": "Asia, Africa, North America, South America, Antarctica, Europe, and Australia.",
+"id": "T1-M-35"
+},
+{
+"src": "T1",
+"n": 36,
+"q": "Ghazwa-e-Tabook was fought against which empire?",
+"a": "Byzantine Empire (Romans)",
+"x": "It took place in 9 AH under the direct leadership of Prophet Muhammad (PBUH).",
+"id": "T1-M-36"
+},
+{
+"src": "T1",
+"n": 37,
+"q": "When was the Tashkent Declaration signed between Pakistan and India?",
+"a": "10 January 1966",
+"x": "Signed by President Ayub Khan and PM Lal Bahadur Shastri to resolve the 1965 war.",
+"id": "T1-M-37"
+},
+{
+"src": "T1",
+"n": 38,
+"q": "Which is the most abundant chemical element in the universe?",
+"a": "Hydrogen",
+"x": "Hydrogen constitutes roughly 75% of the elemental mass of the entire universe.",
+"id": "T1-M-38"
+},
+{
+"src": "T1",
+"n": 39,
+"q": "Who was the first President of the Islamic Republic of Pakistan?",
+"a": "Iskander Mirza",
+"x": "He took oath on 23 March 1956 when Pakistan adopted its first constitution.",
+"id": "T1-M-39"
+},
+{
+"src": "T1",
+"n": 40,
+"q": "What was the relationship between Hazrat Asma (R.A) and Hazrat Aisha (R.A)?",
+"a": "Sisters (Paternal)",
+"x": "Both were daughters of Hazrat Abu Bakr Siddique (R.A).",
+"id": "T1-M-40"
+},
+{
+"src": "T1",
+"n": 41,
+"q": "When was the Basic Democracies system introduced in Pakistan?",
+"a": "1959",
+"x": "Introduced by Field Marshal Ayub Khan to create 80,000 local electoral units.",
+"id": "T1-M-41"
+},
+{
+"src": "T1",
+"n": 42,
+"q": "Mangla Dam was constructed during whose governmental era?",
+"a": "Field Marshal Ayub Khan",
+"x": "Built on the Jhelum River in Mirpur (AJK) as part of the Indus Basin Project in 1967.",
+"id": "T1-M-42"
+},
+{
+"src": "T1",
+"n": 43,
+"q": "Which is the longest river in North America?",
+"a": "Missouri River",
+"x": "The Missouri River flows over 3,767 km before joining the Mississippi River.",
+"id": "T1-M-43"
+},
+{
+"src": "T1",
+"n": 44,
+"q": "By which treaty was Kashmir sold to Gulab Singh in 1846?",
+"a": "Treaty of Amritsar",
+"x": "The British East India Company sold the valley for 75 lakh Nanakshahi rupees on 16 March 1846.",
+"id": "T1-M-44"
+},
+{
+"src": "T1",
+"n": 45,
+"q": "Who was the founder of the Mughal Empire in India?",
+"a": "Zaheer-ud-din Muhammad Babur",
+"x": "Babur founded the empire after defeating Ibrahim Lodhi at the First Battle of Panipat in 1526.",
+"id": "T1-M-45"
+},
+{
+"src": "T1",
+"n": 46,
+"q": "Which country opposed Pakistan's membership in the UNO in 1947?",
+"a": "Afghanistan",
+"x": "Afghanistan initially cast the sole negative vote over the Durand Line border dispute.",
+"id": "T1-M-46"
+},
+{
+"src": "T1",
+"n": 47,
+"q": "How many permanent member states are there in SAARC?",
+"a": "8 Member States",
+"x": "Afghanistan, Bangladesh, Bhutan, India, Maldives, Nepal, Pakistan, and Sri Lanka.",
+"id": "T1-M-47"
+},
+{
+"src": "T1",
+"n": 48,
+"q": "Which is the smallest continent by land area?",
+"a": "Australia",
+"x": "Australia covers approximately 7.69 million square kilometers.",
+"id": "T1-M-48"
+},
+{
+"src": "T1",
+"n": 49,
+"q": "What is the historical significance of Sindh?",
+"a": "Birthplace of Indus Valley Civilization / Bab-ul-Islam",
+"x": "Sindh earned the title 'Bab-ul-Islam' after Muhammad bin Qasim's conquest in 712 AD.",
+"id": "T1-M-49"
+},
+{
+"src": "T1",
+"n": 50,
+"q": "Which book of Hadith is regarded as the most authentic after the Quran?",
+"a": "Sahih al-Bukhari",
+"x": "Compiled by Imam Muhammad al-Bukhari, containing rigorously authenticated Hadiths.",
+"id": "T1-M-50"
+},
+{
+"src": "T1",
+"n": 51,
+"q": "When is International Day of Education celebrated globally?",
+"a": "24 January",
+"x": "Proclaimed by the United Nations General Assembly in celebration of education's role in peace.",
+"id": "T1-M-51"
+},
+{
+"src": "T1",
+"n": 52,
+"q": "Pakistan purchased Gwadar from which country in 1958?",
+"a": "Sultanate of Oman",
+"x": "Gwadar was officially handed over to Pakistan on 8 September 1958 for £3 million.",
+"id": "T1-M-52"
+},
+{
+"src": "T1",
+"n": 53,
+"q": "Which city is famously known as the 'City of Mosques'?",
+"a": "Dhaka (Bangladesh)",
+"x": "Dhaka is renowned for hundreds of historic and contemporary mosques throughout the city.",
+"id": "T1-M-53"
+},
+{
+"src": "T1",
+"n": 54,
+"q": "How many heads of expenditure (Masarif-e-Zakat) are specified in the Quran?",
+"a": "Eight (8)",
+"x": "Specified in Surah At-Tawbah, Ayah 60 (Fuqara, Masakeen, Amileen, Mu'allafat-ul-Quloob, etc.).",
+"id": "T1-M-54"
+},
+{
+"src": "T1",
+"n": 55,
+"q": "Which South American country is known as the longest north-to-south nation?",
+"a": "Chile",
+"x": "Chile spans over 4,300 km along the southwestern coast of South America.",
+"id": "T1-M-55"
+},
+{
+"src": "T1",
+"n": 56,
+"q": "Who served as the President of the 76th UN General Assembly?",
+"a": "Abdulla Shahid",
+"x": "The Maldivian politician served as UNGA President from 2021 to 2022.",
+"id": "T1-M-56"
+},
+{
+"src": "T1",
+"n": 57,
+"q": "Which city is known as the 'Heart of Pakistan'?",
+"a": "Lahore",
+"x": "Lahore is culturally and historically celebrated as the cultural center and heart of Pakistan.",
+"id": "T1-M-57"
+},
+{
+"src": "T1",
+"n": 58,
+"q": "Which city is termed the 'Manchester of Pakistan'?",
+"a": "Faisalabad",
+"x": "Faisalabad earned this nickname due to its vast textile manufacturing industry.",
+"id": "T1-M-58"
+},
+{
+"src": "T1",
+"n": 59,
+"q": "What is the official currency of Albania?",
+"a": "Albanian Lek",
+"x": "The Lek (ALL) has been the currency of Albania since 1926.",
+"id": "T1-M-59"
+},
+{
+"src": "T1",
+"n": 60,
+"q": "What is the meaning of the word 'Hikmah' in Islamic literature?",
+"a": "Wisdom / Insight",
+"x": "Hikmah denotes profound insight, wisdom, and understanding of divine truth.",
+"id": "T1-M-60"
+},
+{
+"src": "T1",
+"n": 61,
+"q": "What was the relationship of Hazrat Abu Talib to Prophet Muhammad (PBUH)?",
+"a": "Paternal Uncle",
+"x": "Abu Talib was the brother of the Prophet's father, Abdullah, and protected him in Makkah.",
+"id": "T1-M-61"
+},
+{
+"src": "T1",
+"n": 62,
+"q": "Who took custody of the Holy Prophet (PBUH) after the death of Hazrat Amina?",
+"a": "Hazrat Abdul Muttalib (Grandfather)",
+"x": "His grandfather cared for him until he passed away when the Prophet was eight years old.",
+"id": "T1-M-62"
+},
+{
+"src": "T1",
+"n": 63,
+"q": "When was the Nehru Report submitted by Motilal Nehru?",
+"a": "10 August 1928",
+"x": "The report proposed dominion status and rejected separate electorates for Muslims.",
+"id": "T1-M-63"
+},
+{
+"src": "T1",
+"n": 64,
+"q": "How long did Hazrat Abu Bakr Siddique (R.A) govern as Caliph?",
+"a": "2 Years and 3 Months (approx 27 months)",
+"x": "His caliphate lasted from 632 AD until his demise in 634 AD.",
+"id": "T1-M-64"
+},
+{
+"src": "T1",
+"n": 65,
+"q": "Who wrote the lyrics of Pakistan's National Anthem?",
+"a": "Hafeez Jalandhari",
+"x": "Composed in 1952, the lyrics were officially approved by the Government in 1954.",
+"id": "T1-M-65"
+},
+{
+"src": "T1",
+"n": 66,
+"q": "When was the 26th Constitutional Amendment passed in Pakistan?",
+"a": "May 2019",
+"x": "It increased parliamentary seats for the merged erstwhile tribal districts of KP.",
+"id": "T1-M-66"
+},
+{
+"src": "T1",
+"n": 67,
+"q": "What is the area of Gilgit-Baltistan?",
+"a": "72,971 sq km (approx 28,174 sq miles)",
+"x": "Gilgit-Baltistan is situated in the far northern territory of Pakistan.",
+"id": "T1-M-67"
+},
+{
+"src": "T1",
+"n": 68,
+"q": "Which city of Pakistan is known as 'Madinat-ul-Auliya' (City of Saints)?",
+"a": "Multan",
+"x": "Multan is world-renowned for its historic Sufi shrines and spiritual heritage.",
+"id": "T1-M-68"
+},
+{
+"src": "T1",
+"n": 69,
+"q": "In which war was Major Raja Aziz Bhatti Shaheed awarded Nishan-e-Haider?",
+"a": "1965 Indo-Pak War",
+"x": "He defended the Burki sector of Lahore valiantly for several days until martyrdom.",
+"id": "T1-M-69"
+},
+{
+"src": "T1",
+"n": 70,
+"q": "Who introduced the 1962 Constitution of Pakistan?",
+"a": "Field Marshal Ayub Khan",
+"x": "The constitution established a presidential system with indirect elections.",
+"id": "T1-M-70"
+},
+{
+"src": "T1",
+"n": 71,
+"q": "Which was the first major battle in Islamic history?",
+"a": "Ghazwa-e-Badr",
+"x": "Fought on 17 Ramadan 2 AH (624 AD), resulting in a decisive victory for Muslims.",
+"id": "T1-M-71"
+},
+{
+"src": "T1",
+"n": 72,
+"q": "Where is the battlefield of Badr located?",
+"a": "Badr, Hejaz (Saudi Arabia)",
+"x": "Located southwest of Madinah near the Red Sea coast.",
+"id": "T1-M-72"
+},
+{
+"src": "T1",
+"n": 73,
+"q": "In which battle was Abu Jahl killed?",
+"a": "Battle of Badr",
+"x": "He was slain by two young Ansari brothers, Mu'adh and Mu'awwidh.",
+"id": "T1-M-73"
+},
+{
+"src": "T1",
+"n": 74,
+"q": "Which pass connects Pakistan (Gilgit-Baltistan) with China (Xinjiang)?",
+"a": "Khunjerab Pass",
+"x": "At 4,693 meters, it is the highest paved international border crossing in the world.",
+"id": "T1-M-74"
+},
+{
+"src": "T1",
+"n": 75,
+"q": "What is the provincial capital of Khyber Pakhtunkhwa?",
+"a": "Peshawar",
+"x": "Peshawar is one of the oldest living cities in South Asia.",
+"id": "T1-M-75"
+},
+{
+"src": "T1",
+"n": 76,
+"q": "Which is the largest and most populous city in Pakistan?",
+"a": "Karachi",
+"x": "Karachi is the financial capital and main seaport of Pakistan.",
+"id": "T1-M-76"
+},
+{
+"src": "T1",
+"n": 77,
+"q": "What is the total length of the Indo-Pak international border?",
+"a": "3,323 km",
+"x": "Border spans across Punjab, Rajasthan, Gujarat, and the Line of Control in Kashmir.",
+"id": "T1-M-77"
+},
+{
+"src": "T1",
+"n": 78,
+"q": "Which country shares the Durand Line border with Pakistan?",
+"a": "Afghanistan",
+"x": "Established in 1893 between Sir Mortimer Durand and Amir Abdur Rahman Khan.",
+"id": "T1-M-78"
+},
+{
+"src": "T1",
+"n": 79,
+"q": "In which year was Pakistan declared an Islamic Republic in its constitution?",
+"a": "1956",
+"x": "The 1956 Constitution officially named the state 'Islamic Republic of Pakistan'.",
+"id": "T1-M-79"
+},
+{
+"src": "T1",
+"n": 80,
+"q": "What form of government was provided under the 1962 Constitution?",
+"a": "Presidential System",
+"x": "All executive authority was concentrated in the office of the President.",
+"id": "T1-M-80"
+},
+{
+"src": "T1",
+"n": 81,
+"q": "How many sons did Hazrat Ibrahim (A.S) have?",
+"a": "Two (Hazrat Ismail and Hazrat Ishaq)",
+"x": "Hazrat Ismail from Hazrat Hajra and Hazrat Ishaq from Hazrat Sarah.",
+"id": "T1-M-81"
+},
+{
+"src": "T1",
+"n": 82,
+"q": "Who was the President of Pakistan when the 1973 Constitution took effect?",
+"a": "Fazal Ilahi Chaudhry",
+"x": "Fazal Ilahi Chaudhry served as President while Z.A. Bhutto became Prime Minister.",
+"id": "T1-M-82"
+},
+{
+"src": "T1",
+"n": 83,
+"q": "What was the total number of members in the Constituent Assembly under the Cabinet Mission?",
+"a": "389 Members",
+"x": "Reduced to 299 for India and 79 for Pakistan following the 1947 partition.",
+"id": "T1-M-83"
+},
+{
+"src": "T1",
+"n": 84,
+"q": "The Arabian Sea is a marginal sea of which major ocean?",
+"a": "Indian Ocean",
+"x": "It borders Pakistan to the south along Sindh and Balochistan coastlines.",
+"id": "T1-M-84"
+},
+{
+"src": "T1",
+"n": 85,
+"q": "Which Prophet of Allah holds the title 'Safiullah'?",
+"a": "Hazrat Adam (A.S)",
+"x": "Safiullah means 'The Chosen One of Allah'.",
+"id": "T1-M-85"
+},
+{
+"src": "T1",
+"n": 86,
+"q": "Which Prophet of Allah holds the title 'Kaleemullah'?",
+"a": "Hazrat Musa (A.S)",
+"x": "Kaleemullah means 'The One who conversed with Allah' on Mount Sinai.",
+"id": "T1-M-86"
+},
+{
+"src": "T1",
+"n": 87,
+"q": "Which is the provincial capital of Punjab province?",
+"a": "Lahore",
+"x": "Lahore has been the historical seat of power in Punjab for centuries.",
+"id": "T1-M-87"
+},
+{
+"src": "T1",
+"n": 88,
+"q": "On which date did Pakistan become a member of the United Nations?",
+"a": "30 September 1947",
+"x": "Pakistan joined the UN just weeks after achieving sovereign independence.",
+"id": "T1-M-88"
+},
+{
+"src": "T1",
+"n": 89,
+"q": "Which geographical region is known as the 'Roof of the World'?",
+"a": "Pamir Plateau / Tibetan Plateau",
+"x": "The high plateaus of Central Asia have an average elevation exceeding 4,500 meters.",
+"id": "T1-M-89"
+},
+{
+"src": "T1",
+"n": 90,
+"q": "Which is the highest plateau in Pakistan?",
+"a": "Deosai National Park",
+"x": "Located in Gilgit-Baltistan, Deosai is the second highest plateau on Earth after Changtang.",
+"id": "T1-M-90"
+},
+{
+"src": "T1",
+"n": 91,
+"q": "Which is the third largest ocean in the world?",
+"a": "Indian Ocean",
+"x": "Covering around 70.56 million sq km, behind the Pacific and Atlantic oceans.",
+"id": "T1-M-91"
+},
+{
+"src": "T1",
+"n": 92,
+"q": "Which two Surahs of the Quran are together called 'Al-Mu'awwidhatayn'?",
+"a": "Surah Al-Falaq and Surah An-Naas",
+"x": "Both Surahs provide refuge and spiritual protection from evils and whispers.",
+"id": "T1-M-92"
+},
+{
+"src": "T1",
+"n": 93,
+"q": "How many Grand Slam tournaments are held annually in professional tennis?",
+"a": "Four (4)",
+"x": "Australian Open, French Open (Roland Garros), Wimbledon, and US Open.",
+"id": "T1-M-93"
+},
+{
+"src": "T1",
+"n": 94,
+"q": "Mohenjo-daro is an ancient archaeological site of which civilization?",
+"a": "Indus Valley Civilization",
+"x": "Located in Larkana District, Sindh, dating back to 2500 BCE.",
+"id": "T1-M-94"
+},
+{
+"src": "T1",
+"n": 95,
+"q": "What is the road distance between Peshawar and Rawalpindi via the Motorway (M1)?",
+"a": "Approx 160-178 km",
+"x": "M-1 Motorway links Islamabad/Rawalpindi with Peshawar.",
+"id": "T1-M-95"
+},
+{
+"src": "T1",
+"n": 96,
+"q": "What is the antonym of 'Opaque'?",
+"a": "Transparent / Clear",
+"x": "An opaque object blocks light entirely; a transparent object lets light pass freely.",
+"id": "T1-M-96"
+},
+{
+"src": "T1",
+"n": 97,
+"q": "How many Muslims fought in the Battle of Badr?",
+"a": "313 Muslims",
+"x": "The poorly equipped Muslim army triumphed over 1,000 well-armed Quraish warriors.",
+"id": "T1-M-97"
+},
+{
+"src": "T1",
+"n": 98,
+"q": "Which preposition correctly fills: 'He died ___ malaria'?",
+"a": "of",
+"x": "In English grammar, one dies 'of' a disease and dies 'from' an injury or cause.",
+"id": "T1-M-98"
+},
+{
+"src": "T1",
+"n": 99,
+"q": "What is the alternative historical name for the Lahore Resolution (1940)?",
+"a": "Pakistan Resolution (Qarardad-e-Pakistan)",
+"x": "Passed on 23 March 1940 at Minto Park (now Iqbal Park), Lahore.",
+"id": "T1-M-99"
+},
+{
+"src": "T1",
+"n": 100,
+"q": "How many founding member countries signed the UN Charter in 1945?",
+"a": "51 Countries",
+"x": "50 countries signed on 26 June 1945 in San Francisco; Poland signed shortly after.",
+"id": "T1-M-100"
+},
+{
+"src": "T1",
+"n": 101,
+"q": "Who is honored as the founder and ideological father of Pakistan?",
+"a": "Quaid-e-Azam Muhammad Ali Jinnah",
+"x": "He formulated and led the political struggle for a sovereign Muslim homeland.",
+"id": "T1-M-101"
+},
+{
+"src": "T1",
+"n": 102,
+"q": "Which constitutional document was passed first in Pakistan's history?",
+"a": "Objectives Resolution (1949)",
+"x": "Moved by Liaquat Ali Khan on 12 March 1949, setting constitutional foundations.",
+"id": "T1-M-102"
+},
+{
+"src": "T1",
+"n": 103,
+"q": "What regional organization was established in 1985 by Pakistan, Iran, and Turkey?",
+"a": "Economic Cooperation Organization (ECO)",
+"x": "ECO was the successor organization to the earlier Regional Cooperation for Development (RCD).",
+"id": "T1-M-103"
+},
+{
+"src": "T1",
+"n": 104,
+"q": "How many years did Prophet Muhammad (PBUH) live in Makkah?",
+"a": "53 Years",
+"x": "He lived in Makkah from birth (570 AD) until the Hijrah to Madinah (622 AD).",
+"id": "T1-M-104"
+},
+{
+"src": "T1",
+"n": 105,
+"q": "What was the ancient name of the holy city of Madinah before Islam?",
+"a": "Yathrib",
+"x": "The city was renamed 'Madinat-un-Nabi' (City of the Prophet) after the Hijrah.",
+"id": "T1-M-105"
+},
+{
+"src": "T1",
+"n": 106,
+"q": "Who was elected as the President of the First Constituent Assembly of Pakistan?",
+"a": "Quaid-e-Azam Muhammad Ali Jinnah",
+"x": "Elected unanimously on 11 August 1947, delivering his landmark vision address.",
+"id": "T1-M-106"
+},
+{
+"src": "T1",
+"n": 107,
+"q": "What is the synonym of the word 'Mediate'?",
+"a": "Arbitrate / Intercede / Negotiate",
+"x": "To mediate is to intervene between conflicting parties to bring about a settlement.",
+"id": "T1-M-107"
+},
+{
+"src": "T1",
+"n": 108,
+"q": "Where is the permanent General Secretariat of the OIC located?",
+"a": "Jeddah, Saudi Arabia",
+"x": "The Organization of Islamic Cooperation operates its headquarters from Jeddah.",
+"id": "T1-M-108"
+},
+{
+"src": "T1",
+"n": 109,
+"q": "Where is the famous historical residency of Quaid-e-Azam located in Balochistan?",
+"a": "Ziarat",
+"x": "Quaid-e-Azam spent the last days of his life at the Ziarat Residency in 1948.",
+"id": "T1-M-109"
+},
+{
+"src": "T1",
+"n": 110,
+"q": "What is the capital city of Ukraine?",
+"a": "Kyiv",
+"x": "Kyiv is situated along the Dnieper River in north-central Ukraine.",
+"id": "T1-M-110"
+},
+{
+"src": "T1",
+"n": 111,
+"q": "Which foreign country assisted Pakistan in constructing the Warsak Dam?",
+"a": "Canada",
+"x": "Canada provided financial and technical aid under the Colombo Plan in 1960.",
+"id": "T1-M-111"
+},
+{
+"src": "T1",
+"n": 112,
+"q": "Which is the largest city in Punjab by population?",
+"a": "Lahore",
+"x": "Lahore has a population of over 13 million residents.",
+"id": "T1-M-112"
+},
+{
+"src": "T1",
+"n": 113,
+"q": "Which is the largest city in Sindh by population?",
+"a": "Karachi",
+"x": "Karachi is Pakistan's largest cosmopolitan metropolis.",
+"id": "T1-M-113"
+},
+{
+"src": "T1",
+"n": 114,
+"q": "Who was the supreme commander of the Quraish forces in the Battle of Badr?",
+"a": "Abu Jahl (Amr ibn Hisham)",
+"x": "He was the staunch opponent of Islam and was slain during the battle.",
+"id": "T1-M-114"
+},
+{
+"src": "T1",
+"n": 115,
+"q": "Who was the military leader of the Quraish in the Battle of Uhud?",
+"a": "Abu Sufyan ibn Harb",
+"x": "Abu Sufyan led the Meccan army against Muslims in 3 AH before accepting Islam later.",
+"id": "T1-M-115"
+},
+{
+"src": "T1",
+"n": 116,
+"q": "In which European country is the active volcano Mount Etna situated?",
+"a": "Italy",
+"x": "Mount Etna is located on the east coast of the island of Sicily in southern Italy.",
+"id": "T1-M-116"
+},
+{
+"src": "T1",
+"n": 117,
+"q": "Which is the deepest lake in the world?",
+"a": "Lake Baikal",
+"x": "Located in Siberia, Russia, reaching a maximum depth of 1,642 meters.",
+"id": "T1-M-117"
+},
+{
+"src": "T1",
+"n": 118,
+"q": "Which is the largest freshwater lake in the world by surface area?",
+"a": "Lake Superior",
+"x": "Spanning the border between Canada and the United States (approx 82,103 sq km).",
+"id": "T1-M-118"
+},
+{
+"src": "T1",
+"n": 119,
+"q": "Which two major oceans are joined by the Panama Canal?",
+"a": "Pacific Ocean and Atlantic Ocean",
+"x": "The 82 km waterway cuts across the Isthmus of Panama, saving voyages around South America.",
+"id": "T1-M-119"
+},
+{
+"src": "T1",
+"n": 120,
+"q": "In which year was the Organization of Islamic Cooperation (OIC) founded?",
+"a": "1969",
+"x": "Established following the criminal arson attack on the Al-Aqsa Mosque in Jerusalem.",
+"id": "T1-M-120"
+},
+{
+"src": "T1",
+"n": 121,
+"q": "What is a geometric angle measuring less than 90 degrees called?",
+"a": "Acute Angle",
+"x": "An angle between 0° and 90° is acute; exactly 90° is a right angle.",
+"id": "T1-M-121"
+},
+{
+"src": "T1",
+"n": 122,
+"q": "Who is the youngest recipient of the Nobel Peace Prize?",
+"a": "Malala Yousafzai",
+"x": "She was awarded the Nobel Peace Prize in 2014 at the age of 17.",
+"id": "T1-M-122"
+},
+{
+"src": "T1",
+"n": 123,
+"q": "When did the Kargil armed conflict take place between Pakistan and India?",
+"a": "May to July 1999",
+"x": "Fighting erupted in the high-altitude peaks of Kargil district in Kashmir.",
+"id": "T1-M-123"
+},
+{
+"src": "T1",
+"n": 124,
+"q": "Which is the longest and largest river flowing through Pakistan?",
+"a": "Indus River",
+"x": "Originates in Tibet, travels 3,180 km, and empties into the Arabian Sea near Karachi.",
+"id": "T1-M-124"
+},
+{
+"src": "T1",
+"n": 125,
+"q": "Which is the largest barrage in Pakistan?",
+"a": "Sukkur Barrage (Lloyd Barrage)",
+"x": "Built on the Indus River in Sindh, commissioned in 1932 with 66 spans.",
+"id": "T1-M-125"
+},
+{
+"src": "T1",
+"n": 126,
+"q": "On which river did India construct the controversial Baglihar Dam?",
+"a": "Chenab River",
+"x": "Built in Indian-administered Jammu & Kashmir, subject to Indus Waters Treaty arbitration.",
+"id": "T1-M-126"
+},
+{
+"src": "T1",
+"n": 127,
+"q": "What form of government was adopted under the 1973 Constitution of Pakistan?",
+"a": "Federal Parliamentary Republic",
+"x": "It established a bicameral legislature with executive power vested in the Prime Minister.",
+"id": "T1-M-127"
+},
+{
+"src": "T1",
+"n": 128,
+"q": "What is the literal meaning of the word 'Zakat' in Arabic?",
+"a": "To purify / To cleanse / To grow",
+"x": "Paying Zakat purifies one's wealth and soul from greed and spiritual impurities.",
+"id": "T1-M-128"
+},
+{
+"src": "T1",
+"n": 129,
+"q": "What does the term 'Rukoo' signify in Islamic prayer?",
+"a": "Bowing down",
+"x": "A posture of reverence where one bows forward with hands on the knees.",
+"id": "T1-M-129"
+},
+{
+"src": "T1",
+"n": 130,
+"q": "Where is the largest and oldest salt mine in Pakistan situated?",
+"a": "Khewra, District Jhelum, Punjab",
+"x": "Discovered by Alexander's troops in 320 BCE, Khewra is the second largest in the world.",
+"id": "T1-M-130"
+},
+{
+"src": "T1",
+"n": 131,
+"q": "What is the official demarcated length of the Durand Line?",
+"a": "Approx 2,640 km (2,670 km)",
+"x": "The international border separating Pakistan and Afghanistan.",
+"id": "T1-M-131"
+},
+{
+"src": "T1",
+"n": 132,
+"q": "What is the capital city of Chile?",
+"a": "Santiago",
+"x": "Santiago is the political and economic center of Chile, situated in the central valley.",
+"id": "T1-M-132"
+},
+{
+"src": "T1",
+"n": 133,
+"q": "Who served as the Chief Minister of Punjab from 2018 to 2022?",
+"a": "Sardar Usman Ahmad Khan Buzdar",
+"x": "He served as CM representing Pakistan Tehreek-e-Insaf (PTI).",
+"id": "T1-M-133"
+},
+{
+"src": "T1",
+"n": 134,
+"q": "How many faces does a standard triangular prism have?",
+"a": "5 Faces",
+"x": "A triangular prism consists of 2 triangular bases and 3 rectangular sides.",
+"id": "T1-M-134"
+},
+{
+"src": "T1",
+"n": 135,
+"q": "Hazrat Abu Bakr Siddique (R.A) was the father of which Mother of the Believers?",
+"a": "Hazrat Aisha (R.A)",
+"x": "Hazrat Aisha was married to Prophet Muhammad (PBUH) in Madinah.",
+"id": "T1-M-135"
+},
+{
+"src": "T1",
+"n": 136,
+"q": "The Wakhan Corridor, which separates Pakistan from Tajikistan, belongs to?",
+"a": "Afghanistan",
+"x": "A narrow strip of territory in northeastern Afghanistan created in 1893.",
+"id": "T1-M-136"
+},
+{
+"src": "T1",
+"n": 137,
+"q": "Who served as the Speaker of the National Assembly of Pakistan during 2018-2022?",
+"a": "Asad Qaiser",
+"x": "Elected as Speaker under the PTI government in August 2018.",
+"id": "T1-M-137"
+},
+{
+"src": "T1",
+"n": 138,
+"q": "Under the 1973 Constitution, whose advice is binding upon the President?",
+"a": "Prime Minister",
+"x": "Article 48 states that the President acts in accordance with the advice of the Cabinet or PM.",
+"id": "T1-M-138"
+},
+{
+"src": "T1",
+"n": 139,
+"q": "In which province of Pakistan are the Chagai Hills located?",
+"a": "Balochistan",
+"x": "Famous as the site where Pakistan conducted its historic nuclear tests on 28 May 1998.",
+"id": "T1-M-139"
+},
+{
+"src": "T1",
+"n": 140,
+"q": "Who presides over a joint sitting of Parliament during presidential impeachment?",
+"a": "Speaker of the National Assembly",
+"x": "Article 47 mandates the procedure for removing or impeaching the President.",
+"id": "T1-M-140"
+},
+{
+"src": "T1",
+"n": 141,
+"q": "In which year did Quaid-e-Azam Muhammad Ali Jinnah join the All-India Muslim League?",
+"a": "1913",
+"x": "Persuaded by Maulana Muhammad Ali Jouhar and Syed Wazir Hasan.",
+"id": "T1-M-141"
+},
+{
+"src": "T1",
+"n": 142,
+"q": "Narowal district is located in which administrative division of Punjab?",
+"a": "Gujranwala Division",
+"x": "Narowal lies in northeastern Punjab, famous for Kartarpur Sahib.",
+"id": "T1-M-142"
+},
+{
+"src": "T1",
+"n": 143,
+"q": "In which year did Sir Syed Ahmad Khan establish the Scientific Society?",
+"a": "1864",
+"x": "Founded at Ghazipur to translate scientific and modern works into Urdu.",
+"id": "T1-M-143"
+},
+{
+"src": "T1",
+"n": 144,
+"q": "Which is the largest and deepest ocean on Earth?",
+"a": "Pacific Ocean",
+"x": "Covers more than 30% of Earth's surface and contains the Mariana Trench.",
+"id": "T1-M-144"
+},
+{
+"src": "T1",
+"n": 145,
+"q": "Which is the smallest and shallowest of the world's five oceans?",
+"a": "Arctic Ocean",
+"x": "Surrounds the North Pole and is mostly covered by polar sea ice.",
+"id": "T1-M-145"
+},
+{
+"src": "T1",
+"n": 146,
+"q": "Which is the largest subtropical hot desert in the world?",
+"a": "Sahara Desert",
+"x": "Spans over 9.2 million square kilometers across North Africa.",
+"id": "T1-M-146"
+},
+{
+"src": "T1",
+"n": 147,
+"q": "What is the sacred pilgrim attire worn during Hajj and Umrah called?",
+"a": "Ihram",
+"x": "Consists of two white seamless sheets for men, signifying equality before Allah.",
+"id": "T1-M-147"
+},
+{
+"src": "T1",
+"n": 148,
+"q": "Who was Zaheer-ud-din Muhammad Babur?",
+"a": "First Mughal Emperor of India",
+"x": "Descendant of Timur and Genghis Khan who established the Mughal dynasty in 1526.",
+"id": "T1-M-148"
+},
+{
+"src": "T1",
+"n": 149,
+"q": "When does Pakistan celebrate 'Youm-e-Takbeer' (National Nuclear Day)?",
+"a": "28 May",
+"x": "Commemorates the successful nuclear detonations at Chagai, Balochistan in 1998.",
+"id": "T1-M-149"
+},
+{
+"src": "T1",
+"n": 150,
+"q": "On which date is Kashmir Solidarity Day observed across Pakistan?",
+"a": "5 February",
+"x": "Observed annually as a national holiday to express solidarity with Kashmiri people.",
+"id": "T1-M-150"
+},
+{
+"src": "T1",
+"n": 151,
+"q": "Which is the outermost planet in the Solar System from the Sun?",
+"a": "Neptune",
+"x": "Neptune is the eighth and farthest known major planet from the Sun.",
+"id": "T1-M-151"
+},
+{
+"src": "T1",
+"n": 152,
+"q": "Which is the longest, heaviest, and strongest bone in the human body?",
+"a": "Femur (Thighbone)",
+"x": "Extends from the hip to the knee joint, supporting the body weight.",
+"id": "T1-M-152"
+},
+{
+"src": "T1",
+"n": 153,
+"q": "When was the State Bank of Pakistan (SBP) inaugurated?",
+"a": "1 July 1948",
+"x": "Quaid-e-Azam Muhammad Ali Jinnah personally inaugurated the central bank.",
+"id": "T1-M-153"
+},
+{
+"src": "T1",
+"n": 154,
+"q": "What is the official length of the border between Pakistan and Iran?",
+"a": "Approx 909 to 959 km",
+"x": "Border separates Balochistan province from Iran's Sistan and Baluchestan province.",
+"id": "T1-M-154"
+},
+{
+"src": "T1",
+"n": 155,
+"q": "What was the name of the nationwide counter-terrorism operation launched in 2017?",
+"a": "Operation Radd-ul-Fasaad",
+"x": "Launched on 22 February 2017 to eliminate sleeper cells and terrorist residue.",
+"id": "T1-M-155"
+},
+{
+"src": "T1",
+"n": 156,
+"q": "Which foreign nation funded and engineered the Warsak Dam on the Kabul River?",
+"a": "Canada",
+"x": "Constructed under the Colombo Plan financial assistance program in 1960.",
+"id": "T1-M-156"
+},
+{
+"src": "T1",
+"n": 157,
+"q": "Where is the Naval Headquarters (NHQ) of Pakistan located?",
+"a": "Islamabad",
+"x": "The command headquarters of the Pakistan Navy is situated in the federal capital.",
+"id": "T1-M-157"
+},
+{
+"src": "T1",
+"n": 158,
+"q": "Nelson Mandela was the renowned anti-apartheid leader of which country?",
+"a": "South Africa",
+"x": "He spent 27 years in prison and became South Africa's first Black president in 1994.",
+"id": "T1-M-158"
+},
+{
+"src": "T1",
+"n": 159,
+"q": "Hazrat Ismail (A.S) was the elder son of which Prophet?",
+"a": "Hazrat Ibrahim (A.S)",
+"x": "Born to Hazrat Hajra; both submitted willingly to Allah's divine commandment.",
+"id": "T1-M-159"
+},
+{
+"src": "T1",
+"n": 160,
+"q": "When was the historic Indus Waters Treaty signed?",
+"a": "19 September 1960",
+"x": "Signed in Karachi by Field Marshal Ayub Khan and PM Jawaharlal Nehru, mediated by World Bank.",
+"id": "T1-M-160"
+},
+{
+"src": "T1",
+"n": 161,
+"q": "What is the approximate total route length of the CPEC transport corridor?",
+"a": "Around 2,442 to 3,000 km",
+"x": "Connects Gwadar Port in southwest Pakistan to Kashgar in Xinjiang, China.",
+"id": "T1-M-161"
+},
+{
+"src": "T1",
+"n": 162,
+"q": "Which is the longest river in the continent of Asia?",
+"a": "Yangtze River (Chang Jiang)",
+"x": "Flows 6,300 km across China and is the third longest river globally.",
+"id": "T1-M-162"
+},
+{
+"src": "T1",
+"n": 163,
+"q": "Who was the first Pakistani citizen to win a Nobel Prize?",
+"a": "Dr. Abdus Salam",
+"x": "Awarded the 1979 Nobel Prize in Physics for Electroweak Unification.",
+"id": "T1-M-163"
+},
+{
+"src": "T1",
+"n": 164,
+"q": "What is the capital city of Mongolia?",
+"a": "Ulaanbaatar",
+"x": "Ulaanbaatar is the coldest national capital city in the world.",
+"id": "T1-M-164"
+},
+{
+"src": "T1",
+"n": 165,
+"q": "In which year was the Colombo Plan / Baghdad Pact initiated?",
+"a": "1950 (Colombo Plan) / 1955 (Baghdad Pact/CENTO)",
+"x": "Pakistan was an active partner in Western-backed regional security and economic treaties.",
+"id": "T1-M-165"
+},
+{
+"src": "T1",
+"n": 166,
+"q": "In which year did Quaid-e-Azam present his historic Delhi Muslim Proposals?",
+"a": "1927",
+"x": "A set of political demands proposed by Muslim leaders accepting joint electorates conditionally.",
+"id": "T1-M-166"
+},
+{
+"src": "T1",
+"n": 167,
+"q": "What is 80% of 90?",
+"a": "72",
+"x": "Calculation: (80 / 100) * 90 = 72.",
+"id": "T1-M-167"
+},
+{
+"src": "T1",
+"n": 168,
+"q": "What system of governance is mandated by the 1973 Constitution?",
+"a": "Federal Parliamentary",
+"x": "Executive authority rests with the Prime Minister, accountable to Parliament.",
+"id": "T1-M-168"
+},
+{
+"src": "T1",
+"n": 169,
+"q": "Which is the largest hydroelectric dam in the world by power output?",
+"a": "Three Gorges Dam (China)",
+"x": "Built across the Yangtze River with an installed generating capacity of 22,500 MW.",
+"id": "T1-M-169"
+},
+{
+"src": "T1",
+"n": 170,
+"q": "Which Surah of the Holy Quran does not begin with Bismillah?",
+"a": "Surah At-Tawbah (Surah Bara'at)",
+"x": "Revealed concerning divine declaration of disavowal toward polytheists.",
+"id": "T1-M-170"
+},
+{
+"src": "T1",
+"n": 171,
+"q": "Which is the shortest Surah in the Holy Quran?",
+"a": "Surah Al-Kawthar",
+"x": "Comprises just 3 verses and 10 words, promising abundant heavenly blessings.",
+"id": "T1-M-171"
+},
+{
+"src": "T1",
+"n": 172,
+"q": "When was Pakistan admitted to the United Nations?",
+"a": "30 September 1947",
+"x": "Admission was sponsored by the United Kingdom and passed by the General Assembly.",
+"id": "T1-M-172"
+},
+{
+"src": "T1",
+"n": 173,
+"q": "What is the provincial capital city of Balochistan?",
+"a": "Quetta",
+"x": "Quetta is located at an elevation of 1,680 meters and known as the Fruit Garden of Pakistan.",
+"id": "T1-M-173"
+},
+{
+"src": "T1",
+"n": 174,
+"q": "What is the claimed operational range of Pakistan's Ababeel ballistic missile?",
+"a": "2,200 km",
+"x": "Ababeel is a surface-to-surface ballistic missile capable of carrying MIRV warheads.",
+"id": "T1-M-174"
+},
+{
+"src": "T1",
+"n": 175,
+"q": "What is the total geographical area of Punjab province?",
+"a": "205,344 sq km",
+"x": "Punjab is the second largest province of Pakistan by area and the most populous.",
+"id": "T1-M-175"
+},
+{
+"src": "T1",
+"n": 176,
+"q": "Which neighboring country is connected to Pakistan via the ancient Silk Route?",
+"a": "China",
+"x": "Connected through the Karakoram Highway via the Khunjerab Pass.",
+"id": "T1-M-176"
+},
+{
+"src": "T1",
+"n": 177,
+"q": "Which country has the highest population in the world?",
+"a": "India (surpassed China in 2023)",
+"x": "Both nations possess populations exceeding 1.4 billion residents.",
+"id": "T1-M-177"
+},
+{
+"src": "T1",
+"n": 178,
+"q": "In which city was former Prime Minister Benazir Bhutto assassinated?",
+"a": "Rawalpindi",
+"x": "Assassinated in a suicide attack after addressing an election rally at Liaquat Bagh on 27 Dec 2007.",
+"id": "T1-M-178"
+},
+{
+"src": "T1",
+"n": 179,
+"q": "What is the literal and Islamic meaning of the word 'Ayat'?",
+"a": "Sign / Proof / Verse of the Quran",
+"x": "An Ayah is an individual sentence or verse in the Holy Quran denoting divine signs.",
+"id": "T1-M-179"
+},
+{
+"src": "T1",
+"n": 180,
+"q": "What is the meaning of the term 'Ahl al-Bayt' in Islam?",
+"a": "People of the House (Family of the Holy Prophet PBUH)",
+"x": "Refers specifically to the purified household and immediate lineage of Prophet Muhammad (PBUH).",
+"id": "T1-M-180"
+},
+{
+"src": "T1",
+"n": 181,
+"q": "Which Islamic month is traditionally honored as the 'Month of Allah' (Shahrullah)?",
+"a": "Rajab (or Muharram)",
+"x": "Muharram and Rajab are among the four sacred inviolable months in Islam.",
+"id": "T1-M-181"
+},
+{
+"src": "T1",
+"n": 182,
+"q": "In which Islamic month is the festival of Eid-ul-Adha celebrated?",
+"a": "Dhul-Hijjah (10th)",
+"x": "Celebrated in commemoration of Prophet Ibrahim's willingness to sacrifice his son.",
+"id": "T1-M-182"
+},
+{
+"src": "T1",
+"n": 183,
+"q": "From which country did the modern game of squash originate?",
+"a": "England (Harrow School)",
+"x": "Invented by schoolboys at Harrow School in London around 1830.",
+"id": "T1-M-183"
+},
+{
+"src": "T1",
+"n": 184,
+"q": "In which years did Pakistan co-host the ICC Cricket World Cup?",
+"a": "1987 (Reliance Cup) and 1996 (Wills World Cup)",
+"x": "Co-hosted with India in 1987 and with India and Sri Lanka in 1996.",
+"id": "T1-M-184"
+},
+{
+"src": "T1",
+"n": 185,
+"q": "Which language was recognized as the co-national language alongside Urdu in 1956 and 1962?",
+"a": "Bengali",
+"x": "Bengali was accorded official status following the Bengali Language Movement.",
+"id": "T1-M-185"
+},
+{
+"src": "T1",
+"n": 186,
+"q": "What is the official state-run news agency of Pakistan?",
+"a": "Associated Press of Pakistan (APP)",
+"x": "Provides domestic and international news wire feeds to media outlets.",
+"id": "T1-M-186"
+},
+{
+"src": "T1",
+"n": 187,
+"q": "Which observance falls on 12th July internationally?",
+"a": "World Simplicity Day / Malala Day",
+"x": "Commemorates simplicity advocate Henry David Thoreau and UN Malala Day.",
+"id": "T1-M-187"
+},
+{
+"src": "T1",
+"n": 188,
+"q": "Who was the final Prophet sent to the Children of Israel (Bani Israel)?",
+"a": "Hazrat Isa (A.S)",
+"x": "Hazrat Isa was the last prophet sent specifically to the Israelites before Prophet Muhammad (PBUH).",
+"id": "T1-M-188"
+},
+{
+"src": "T1",
+"n": 189,
+"q": "Which social media giant was founded by Mark Zuckerberg in 2004?",
+"a": "Facebook (Meta)",
+"x": "Created in February 2004 with fellow Harvard university roommates.",
+"id": "T1-M-189"
+},
+{
+"src": "T1",
+"n": 190,
+"q": "What is the trigonometric product of cot(x) and tan(x)?",
+"a": "1",
+"x": "Identity: cot(x) = 1 / tan(x), therefore cot(x) * tan(x) = 1.",
+"id": "T1-M-190"
+},
+{
+"src": "T1",
+"n": 191,
+"q": "How many quadrants are there in a two-dimensional Cartesian coordinate plane?",
+"a": "Four (4) Quadrants",
+"x": "Divided by the X-axis and Y-axis into Quadrants I, II, III, and IV.",
+"id": "T1-M-191"
+},
+{
+"src": "T1",
+"n": 192,
+"q": "Who authored the famous one-act play 'The Man of Destiny' about Napoleon?",
+"a": "George Bernard Shaw",
+"x": "Written in 1897 featuring Napoleon Bonaparte at the Battle of Lodi.",
+"id": "T1-M-192"
+},
+{
+"src": "T1",
+"n": 193,
+"q": "Who was the first adult male to embrace Islam?",
+"a": "Hazrat Abu Bakr Siddique (R.A)",
+"x": "Hazrat Abu Bakr accepted Islam immediately upon receiving the call without hesitation.",
+"id": "T1-M-193"
+},
+{
+"src": "T1",
+"n": 194,
+"q": "How many daughters did Prophet Muhammad (PBUH) have?",
+"a": "Four (4) Daughters",
+"x": "Hazrat Zainab, Hazrat Ruqayyah, Hazrat Umm Kulthum, and Hazrat Fatimah (R.A).",
+"id": "T1-M-194"
+},
+{
+"src": "T1",
+"n": 195,
+"q": "Who coined and suggested the historic name 'PAKISTAN' in 1933?",
+"a": "Choudhary Rahmat Ali",
+"x": "Proposed in his famous pamphlet 'Now or Never; Are We to Live or Perish For Ever?'.",
+"id": "T1-M-195"
+},
+{
+"src": "T1",
+"n": 196,
+"q": "Where did Pakistan's first Prime Minister Liaquat Ali Khan die?",
+"a": "Rawalpindi (16 October 1951)",
+"x": "He succumbed to gunshot wounds sustained during a public gathering at Company Bagh.",
+"id": "T1-M-196"
+},
+{
+"src": "T1",
+"n": 197,
+"q": "What is the standard official length of a full marathon race?",
+"a": "26.219 miles (42.195 kilometers)",
+"x": "Standardized at the 1908 Olympic Games in London from Windsor Castle to White City Stadium.",
+"id": "T1-M-197"
+},
+{
+"src": "T1",
+"n": 198,
+"q": "Jahangir Khan is a world-renowned Pakistani champion of which sport?",
+"a": "Squash",
+"x": "Unbeaten in 555 consecutive competitive squash matches from 1981 to 1986 (Guinness World Record).",
+"id": "T1-M-198"
+},
+{
+"src": "T1",
+"n": 199,
+"q": "Which is the oldest functioning university in Pakistan?",
+"a": "University of the Punjab (Lahore)",
+"x": "Established in October 1882 under British colonial rule.",
+"id": "T1-M-199"
+},
+{
+"src": "T1",
+"n": 200,
+"q": "Which cricketer holds the world record for the highest individual score in a Test match?",
+"a": "Brian Lara (West Indies)",
+"x": "Scored 400 not out against England at St John's, Antigua in 2004.",
+"id": "T1-M-200"
+},
+{
+"src": "T1",
+"n": 201,
+"q": "Where is the International Islamic University (IIUI) located?",
+"a": "Islamabad",
+"x": "Established in 1980, its main campus is situated in Sector H-10, Islamabad.",
+"id": "T1-M-201"
+},
+{
+"src": "T1",
+"n": 202,
+"q": "In which province of Pakistan are the Chagai Hills situated?",
+"a": "Balochistan",
+"x": "Famous desert hills where nuclear devices were tested on 28 and 30 May 1998.",
+"id": "T1-M-202"
+},
+{
+"src": "T1",
+"n": 203,
+"q": "In which year did Muhammad bin Qasim conquer Sindh?",
+"a": "712 AD",
+"x": "Led the Umayyad naval campaign defeating Raja Dahir at the Battle of Aror.",
+"id": "T1-M-203"
+},
+{
+"src": "T1",
+"n": 204,
+"q": "In how many disciplines is the Nobel Prize awarded?",
+"a": "Six (6) Disciplines",
+"x": "Physics, Chemistry, Physiology or Medicine, Literature, Peace, and Economic Sciences.",
+"id": "T1-M-204"
+},
+{
+"src": "T1",
+"n": 205,
+"q": "In which year was Malala Yousafzai awarded the Nobel Peace Prize?",
+"a": "2014",
+"x": "Shared the prize with Indian child rights activist Kailash Satyarthi.",
+"id": "T1-M-205"
+},
+{
+"src": "T1",
+"n": 206,
+"q": "Which country lies to the east of Pakistan?",
+"a": "India",
+"x": "Pakistan shares its eastern border with India along Punjab, Rajasthan, Sindh, and Kashmir.",
+"id": "T1-M-206"
+},
+{
+"src": "T1",
+"n": 207,
+"q": "What lies directly south of Afghanistan?",
+"a": "Pakistan (Balochistan and KP)",
+"x": "Pakistan surrounds southern and eastern borders of landlocked Afghanistan.",
+"id": "T1-M-207"
+},
+{
+"src": "T1",
+"n": 208,
+"q": "Where is the Kharan Desert situated?",
+"a": "Balochistan Province",
+"x": "A sandy desert located in southwestern Balochistan, site of the second nuclear test (Chagai-II).",
+"id": "T1-M-208"
+},
+{
+"src": "T1",
+"n": 209,
+"q": "Hazrat Hafsa (R.A) was the daughter of which revered Companion?",
+"a": "Hazrat Umar ibn al-Khattab (R.A)",
+"x": "She was the wife of the Holy Prophet (PBUH) and custodian of the standardized Quranic manuscript.",
+"id": "T1-M-209"
+},
+{
+"src": "T1",
+"n": 210,
+"q": "Which Companion of the Prophet holds the title 'Zun-Noorain' (Possessor of Two Lights)?",
+"a": "Hazrat Usman ibn Affan (R.A)",
+"x": "Given this title because he married two daughters of the Prophet: Ruqayyah and Umm Kulthum.",
+"id": "T1-M-210"
+},
+{
+"src": "T1",
+"n": 211,
+"q": "In which year was the Khilafat Movement launched in the subcontinent?",
+"a": "1919",
+"x": "Launched by Maulana Muhammad Ali and Maulana Shaukat Ali to safeguard Ottoman Caliphate.",
+"id": "T1-M-211"
+},
+{
+"src": "T1",
+"n": 212,
+"q": "Which is the primary and largest river of Pakistan?",
+"a": "Indus River",
+"x": "Referred to as the economic lifeline of Pakistan's agriculture and industry.",
+"id": "T1-M-212"
+}
+]

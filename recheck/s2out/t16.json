@@ -1,0 +1,347 @@
+[
+ {
+  "id": "M9955",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "U.S. EIA (eia.gov)",
+   "https://en.wikipedia.org/wiki/List_of_countries_by_oil_production"
+  ],
+  "note": "USA is the world's largest crude oil producer since 2018 (~13 mb/d). Not re-searched: search limit reached."
+ },
+ {
+  "id": "M9982",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Sohail_Afridi",
+   "https://en.wikipedia.org/wiki/List_of_chief_ministers_of_Khyber_Pakhtunkhwa"
+  ],
+  "note": "Sohail Afridi became KP CM on 15 Oct 2025 after Gandapur."
+ },
+ {
+  "id": "M9999",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Nazir_Ahmed_Butt",
+   "https://dailytimes.com.pk/1460726/nab-chairman-nazir-ahmed-gets-three-year-tenure-extension/",
+   "https://www.thenews.pk/print/1402985-nab-chief-service-extension-notified"
+  ],
+  "note": "Lt Gen (R) Nazir Ahmed Butt is NAB chairman; 3-year extension from 6 Mar 2026."
+ },
+ {
+  "id": "M10000",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "https://www.elysee.fr/en/diary-october-2026",
+   "Reuters (term ends 2027)"
+  ],
+  "note": "Emmanuel Macron is President of France; term runs to 2027."
+ },
+ {
+  "id": "M10012",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Fatima_Jinnah",
+   "https://www.allamaiqbal.com/webcont/393/FatimaJinnah[1893-1967].html"
+  ],
+  "note": "Sources give 1937-38; 1938 (Women's Central Sub-Committee) is the only listed option that fits."
+ },
+ {
+  "id": "M10021",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "https://www.un.org/en/about-us/member-states",
+   "https://en.wikipedia.org/wiki/Member_states_of_the_United_Nations"
+  ],
+  "note": "UN has 193 member states (South Sudan last, 2011)."
+ },
+ {
+  "id": "M10030",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Maryam_Nawaz",
+   "https://www.app.com.pk/?p=1227617"
+  ],
+  "note": "Maryam Nawaz is Punjab CM since Feb 2024; named CM in 2026 reports."
+ },
+ {
+  "id": "M10033",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "https://fafen.org/history-of-constitutional-amendments-in-pakistan/",
+   "https://dailytimes.com.pk/1399935/president-zardari-signs-27th-constitutional-amendment-into-law/",
+   "https://southasia.com.pk/2026/07/04/charter-of-convenience/"
+  ],
+  "note": "27th Amendment enacted Nov 2025; 28th still not passed per mid-2026 reports."
+ },
+ {
+  "id": "M10037",
+  "verdict": "unclear",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/A._K._Fazlul_Huq"
+  ],
+  "note": "Wikipedia: involved with League from 1906 founding; exam books give 1913; he rejoined in 1937. Sources differ."
+ },
+ {
+  "id": "M10043",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Electricity_sector_in_Pakistan"
+  ],
+  "note": "FY2025: hydro 31.5% is the largest single source (fossil 46.2% split among gas, coal, oil; nuclear 17.7%)."
+ },
+ {
+  "id": "M10049",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "https://www.dawn.com/news/1973874",
+   "https://www.aljazeera.com/news/2026/2/17/incoming-bangladesh-pm-tarique-rahman-lawmakers-sworn-into-parliament"
+  ],
+  "note": "Tarique Rahman sworn in as Bangladesh PM on 17 Feb 2026."
+ },
+ {
+  "id": "M10055",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "IISS Military Balance",
+   "https://en.wikipedia.org/wiki/List_of_countries_by_number_of_military_and_paramilitary_personnel"
+  ],
+  "note": "China (PLA ~2.0 million active) has the largest active military."
+ },
+ {
+  "id": "M10068",
+  "verdict": "unclear",
+  "ans": 3,
+  "fix": "",
+  "src": [],
+  "note": "No clear agreed source (Suhrawardy is often called father of democracy, not an option); kept app answer. Search limit reached."
+ },
+ {
+  "id": "M10093",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "UN World Population Prospects",
+   "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population"
+  ],
+  "note": "India overtook China in 2023 as most populous."
+ },
+ {
+  "id": "M10095",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Sohail_Afridi",
+   "https://www.aljazeera.com/news/2026/10/12/what-do-emergency-and-governor-rule-in-pakistans-khyber-pakhtunkhwa-mean"
+  ],
+  "note": "Sohail Afridi was CM until governor's rule on 11 Oct 2026."
+ },
+ {
+  "id": "M10119",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Malik_Ahmad_Khan",
+   "https://www.dawn.com/news/1816922/pml-n-clinches-speaker-deputy-slots-in-punjab-pa",
+   "https://www.app.com.pk/?p=1227617"
+  ],
+  "note": "Malik Muhammad Ahmad Khan is Punjab Assembly Speaker since Feb 2024, still in 2026."
+ },
+ {
+  "id": "M10148",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "https://www.aljazeera.com/news/2026/10/12/what-do-emergency-and-governor-rule-in-pakistans-khyber-pakhtunkhwa-mean",
+   "https://en.wikipedia.org/wiki/Khalid_Maqbool_Siddiqui"
+  ],
+  "note": "Asif Ali Zardari is President; signed KP proclamation on 11 Oct 2026."
+ },
+ {
+  "id": "M10153",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Minister_of_Defence_(Pakistan)",
+   "https://mod.gov.pk",
+   "arynews.tv"
+  ],
+  "note": "Khawaja Asif is Defence Minister (since Mar 2024, still Oct 2026)."
+ },
+ {
+  "id": "M10160",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "https://www.nobelprize.org",
+   "https://en.wikipedia.org/wiki/List_of_Pakistani_Nobel_laureates"
+  ],
+  "note": "Abdus Salam (1979 Physics) and Malala Yousafzai (2014 Peace) = two (common exam answer)."
+ },
+ {
+  "id": "M10170",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Khalid_Maqbool_Siddiqui",
+   "https://www.thenews.pk/print/1408632-country-needs-education-emergency-as-25m-children-out-of-school-says-khalid-maqbool",
+   "app.com.pk"
+  ],
+  "note": "Dr Khalid Maqbool Siddiqui is Federal Education Minister in 2026."
+ },
+ {
+  "id": "M10171",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "https://www.gavi.org/governance/gavi-board/members/syed-mustafa-kamal",
+   "https://tribune.com.pk/story/2621756/mustafa-kamal-sets-tone-for-independence-month"
+  ],
+  "note": "Syed Mustafa Kamal is Federal Health Minister in 2026."
+ },
+ {
+  "id": "M10177",
+  "verdict": "unclear",
+  "ans": 1,
+  "fix": "",
+  "src": [],
+  "note": "Could not identify which Kalsoom Begum; search limit reached; kept app answer."
+ },
+ {
+  "id": "M10242",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Maryam_Nawaz",
+   "https://en.wikipedia.org/wiki/Murad_Ali_Shah"
+  ],
+  "note": "Maryam Nawaz (Punjab) and Murad Ali Shah (Sindh) since Feb 2024."
+ },
+ {
+  "id": "M10244",
+  "verdict": "unclear",
+  "ans": 0,
+  "fix": "",
+  "src": [],
+  "note": "Folk symbolism varies (black horse linked to both luck and death/defeat); no reliable source; kept app answer."
+ },
+ {
+  "id": "M10266",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "https://www.aljazeera.com/news/2026/10/12/what-do-emergency-and-governor-rule-in-pakistans-khyber-pakhtunkhwa-mean"
+  ],
+  "note": "Asif Ali Zardari is President of Pakistan (since Mar 2024)."
+ },
+ {
+  "id": "M10272",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Raja_Aziz_Bhatti",
+   "ispr.gov.pk"
+  ],
+  "note": "Aziz Bhatti was martyred in the 1965 war and awarded Nishan-e-Haider for it."
+ },
+ {
+  "id": "M10283",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Lists_of_countries_by_mineral_production",
+   "USGS Mineral Commodity Summaries"
+  ],
+  "note": "2024 USGS: China 380 t, Russia 310 t, Australia 290 t; Russia is 2nd."
+ },
+ {
+  "id": "M10306",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "UN World Population Prospects",
+   "https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population"
+  ],
+  "note": "Pakistan is 5th most populous (after India, China, USA, Indonesia)."
+ },
+ {
+  "id": "M10312",
+  "verdict": "keep",
+  "ans": 0,
+  "fix": "",
+  "src": [
+   "ESPNcricinfo",
+   "https://en.wikipedia.org/wiki/Wasim_Akram"
+  ],
+  "note": "Wasim Akram has most international wickets for Pakistan (916)."
+ },
+ {
+  "id": "M10329",
+  "verdict": "keep",
+  "ans": 2,
+  "fix": "",
+  "src": [
+   "https://www.oic-oci.org",
+   "https://en.wikipedia.org/wiki/Organisation_of_Islamic_Cooperation"
+  ],
+  "note": "OIC has 57 member states."
+ },
+ {
+  "id": "M10332",
+  "verdict": "keep",
+  "ans": 3,
+  "fix": "",
+  "src": [
+   "Common trivia ('blind as a bat', snakes have no outer ears)"
+  ],
+  "note": "Popular saying: bats cannot see, snakes cannot hear."
+ },
+ {
+  "id": "M10340",
+  "verdict": "keep",
+  "ans": 1,
+  "fix": "",
+  "src": [
+   "https://en.wikipedia.org/wiki/Sohail_Afridi",
+   "https://www.aljazeera.com/news/2026/10/12/what-do-emergency-and-governor-rule-in-pakistans-khyber-pakhtunkhwa-mean",
+   "arynews.tv"
+  ],
+  "note": "Governor's rule imposed in KP on 11 Oct 2026; no elected CM."
+ }
+]
